@@ -1,0 +1,316 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame0" Name="LandReward_Frame">
+		<Property Name="UnifiedSize" Value="{{0.000000,489.000000},{0.000000,473.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.500000,-245.000000},{0.500000,-225.000000}}"/>
+    <Window Type="TLBB_DragTitle" Name="LandReward_DragTitle">
+		<Property Name="UnifiedSize" Value="{{1.000000,-86.000000},{0.000000,20.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.000000,43.000000},{0.000000,11.000000}}"/>
+      <Property Name="DragTarget" Value="LandReward_Frame" />
+      <Property Name="Font" Value="YouYuan11.25" />
+      <Property Name="HorzFormatting" Value="HorzCentred"/>
+      <Property Name="Text" Value="#{LJDL_170823_01}" />
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="LandReward_Close">
+		<Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="LandReward_Close();" />
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="LandReward_Help">
+		<Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{1.000000,-484.000000},{0.000000,14.000000}}"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="LandReward_Client">
+		<Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,-55.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,35.000000}}"/>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="LandReward_DengLu_Info">
+          <Property Name="UnifiedSize" Value="{{1.000000,-1.000000},{1.000000,-344.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,0.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          <Property Name="VertFormatting" Value="VertCentred"/>
+          <Property Name="Text" Value="#{LJDL_170823_04}"/>
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="LandReward_DengLu_InfoText">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{1.000000,-344.000000}}"/>
+          <Property Name="Text" Value="#{LJDL_170823_05}"/>
+        </Window>
+        <Window Type="TLBB_Frame_Lace3" Name="LandReward_DengLu_Bk1">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,54.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{1.000000,-324.000000}}"/>
+          <Window Type="TLBB_ActionButton" Name="LandReward_DengLu_Bk1_Icon1">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.500000,-20.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="LandReward_DengLu_Bk1_Icon2">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,120.000000},{0.500000,-20.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="LandReward_DengLu_Bk1_Icon3">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,170.000000},{0.500000,-20.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="LandReward_DengLu_Bk1_Info1">
+            <Property Name="UnifiedSize" Value="{{0.000000,144.000000},{0.000000,54.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,216.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#{LJDL_170823_06}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="LandReward_DengLu_Bk1_Button1">
+            <Property Name="UnifiedSize" Value="{{0.000000,94.000000},{0.000000,31.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-108.000000},{0.500000,-15.000000}}"/>
+            <Property Name="PushedImage" Value="set:PlayReturn image:PlayReturn_Lingqu_Pushed"/>
+            <Property Name="NormalImage" Value="set:PlayReturn image:PlayReturn_Lingqu_Normal"/>
+            <Property Name="HoverImage" Value="set:PlayReturn image:PlayReturn_Lingqu_Hover"/>
+            <Property Name="DisabledImage" Value="set:PlayReturn image:PlayReturn_Yilingqu_Disable"/>
+            <Event Name="Clicked" Function="LandReward_DengLu_GetGift(1);"/>
+          </Window>
+		<Window Type="TLBB_StaticImageNULL" Name="LandReward_DengLu_Bk1_Button1NotReach">
+			<Property Name="UnifiedSize" Value="{{0.000000,94.000000},{0.000000,31.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{1.000000,-108.000000},{0.500000,-15.000000}}"/>
+			<Property Name="RiseOnClick" Value="False"/>
+			<Property Name="Image" Value="set:PlayReturn image:PlayReturn_Yilingqu_WeiDaCheng"/>
+		</Window>
+          <Window Type="TLBB_StaticImageNULL" Name="LandReward_DengLu_Bk1_Info2">
+            <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,14.000000},{0.000000,3.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:BaiBao image:BaiBao_11"/>
+          </Window>>
+        </Window>
+        <Window Type="TLBB_Frame_Lace3" Name="LandReward_DengLu_Bk2">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,54.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{1.000000,-270.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="LandReward_DengLu_Bk2_Info2">
+            <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,14.000000},{0.000000,3.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:BaiBao image:BaiBao_12"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="LandReward_DengLu_Bk2_Icon1">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.500000,-20.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="LandReward_DengLu_Bk2_Icon2">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,120.000000},{0.500000,-20.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="LandReward_DengLu_Bk2_Icon3">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,170.000000},{0.500000,-20.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="LandReward_DengLu_Bk2_Info1">
+            <Property Name="UnifiedSize" Value="{{0.000000,144.000000},{0.000000,54.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,216.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#{LJDL_170823_07}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="LandReward_DengLu_Bk2_Button1">
+            <Property Name="UnifiedSize" Value="{{0.000000,94.000000},{0.000000,31.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-108.000000},{0.500000,-15.000000}}"/>
+            <Property Name="PushedImage" Value="set:PlayReturn image:PlayReturn_Lingqu_Pushed"/>
+            <Property Name="NormalImage" Value="set:PlayReturn image:PlayReturn_Lingqu_Normal"/>
+            <Property Name="HoverImage" Value="set:PlayReturn image:PlayReturn_Lingqu_Hover"/>
+            <Property Name="DisabledImage" Value="set:PlayReturn image:PlayReturn_Yilingqu_Disable"/>
+            <Event Name="Clicked" Function="LandReward_DengLu_GetGift(2);"/>
+          </Window>
+		<Window Type="TLBB_StaticImageNULL" Name="LandReward_DengLu_Bk2_Button1NotReach">
+			<Property Name="UnifiedSize" Value="{{0.000000,94.000000},{0.000000,31.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{1.000000,-108.000000},{0.500000,-15.000000}}"/>
+			<Property Name="RiseOnClick" Value="False"/>
+			<Property Name="Image" Value="set:PlayReturn image:PlayReturn_Yilingqu_WeiDaCheng"/>
+		</Window>
+        </Window>
+        <Window Type="TLBB_Frame_Lace3" Name="LandReward_DengLu_Bk3">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,54.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{1.000000,-216.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="LandReward_DengLu_Bk3_Info2">
+            <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,14.000000},{0.000000,3.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:BaiBao image:BaiBao_13"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="LandReward_DengLu_Bk3_Icon1">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.500000,-20.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="LandReward_DengLu_Bk3_Icon2">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,120.000000},{0.500000,-20.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="LandReward_DengLu_Bk3_Icon3">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,170.000000},{0.500000,-20.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="LandReward_DengLu_Bk3_Info1">
+            <Property Name="UnifiedSize" Value="{{0.000000,144.000000},{0.000000,54.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,216.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#{LJDL_170823_08}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="LandReward_DengLu_Bk3_Button1">
+            <Property Name="UnifiedSize" Value="{{0.000000,94.000000},{0.000000,31.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-108.000000},{0.500000,-15.000000}}"/>
+            <Property Name="PushedImage" Value="set:PlayReturn image:PlayReturn_Lingqu_Pushed"/>
+            <Property Name="NormalImage" Value="set:PlayReturn image:PlayReturn_Lingqu_Normal"/>
+            <Property Name="HoverImage" Value="set:PlayReturn image:PlayReturn_Lingqu_Hover"/>
+            <Property Name="DisabledImage" Value="set:PlayReturn image:PlayReturn_Yilingqu_Disable"/>
+            <Event Name="Clicked" Function="LandReward_DengLu_GetGift(3);"/>
+          </Window>
+		<Window Type="TLBB_StaticImageNULL" Name="LandReward_DengLu_Bk3_Button1NotReach">
+			<Property Name="UnifiedSize" Value="{{0.000000,94.000000},{0.000000,31.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{1.000000,-108.000000},{0.500000,-15.000000}}"/>
+			<Property Name="RiseOnClick" Value="False"/>
+			<Property Name="Image" Value="set:PlayReturn image:PlayReturn_Yilingqu_WeiDaCheng"/>
+		</Window>
+        </Window>
+        <Window Type="TLBB_Frame_Lace3" Name="LandReward_DengLu_Bk4">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,54.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{1.000000,-162.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="LandReward_DengLu_Bk4_Info2">
+            <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,14.000000},{0.000000,3.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:BaiBao image:BaiBao_14"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="LandReward_DengLu_Bk4_Icon1">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.500000,-20.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="LandReward_DengLu_Bk4_Icon2">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,120.000000},{0.500000,-20.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="LandReward_DengLu_Bk4_Icon3">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,170.000000},{0.500000,-20.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="LandReward_DengLu_Bk4_Info1">
+            <Property Name="UnifiedSize" Value="{{0.000000,144.000000},{0.000000,54.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,216.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#{LJDL_170823_09}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="LandReward_DengLu_Bk4_Button1">
+            <Property Name="UnifiedSize" Value="{{0.000000,94.000000},{0.000000,31.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-108.000000},{0.500000,-15.000000}}"/>
+            <Property Name="PushedImage" Value="set:PlayReturn image:PlayReturn_Lingqu_Pushed"/>
+            <Property Name="NormalImage" Value="set:PlayReturn image:PlayReturn_Lingqu_Normal"/>
+            <Property Name="HoverImage" Value="set:PlayReturn image:PlayReturn_Lingqu_Hover"/>
+            <Property Name="DisabledImage" Value="set:PlayReturn image:PlayReturn_Yilingqu_Disable"/>
+            <Event Name="Clicked" Function="LandReward_DengLu_GetGift(4);"/>
+          </Window>
+		<Window Type="TLBB_StaticImageNULL" Name="LandReward_DengLu_Bk4_Button1NotReach">
+			<Property Name="UnifiedSize" Value="{{0.000000,94.000000},{0.000000,31.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{1.000000,-108.000000},{0.500000,-15.000000}}"/>
+			<Property Name="RiseOnClick" Value="False"/>
+			<Property Name="Image" Value="set:PlayReturn image:PlayReturn_Yilingqu_WeiDaCheng"/>
+		</Window>
+        </Window>
+        <Window Type="TLBB_Frame_Lace3" Name="LandReward_DengLu_Bk5">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,54.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{1.000000,-108.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="LandReward_DengLu_Bk5_Info2">
+            <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,14.000000},{0.000000,3.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:BaiBao image:BaiBao_15"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="LandReward_DengLu_Bk5_Icon1">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.500000,-20.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="LandReward_DengLu_Bk5_Icon2">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,120.000000},{0.500000,-20.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="LandReward_DengLu_Bk5_Icon3">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,170.000000},{0.500000,-20.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="LandReward_DengLu_Bk5_Info1">
+            <Property Name="UnifiedSize" Value="{{0.000000,144.000000},{0.000000,54.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,216.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#{LJDL_170823_10}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="LandReward_DengLu_Bk5_Button1">
+            <Property Name="UnifiedSize" Value="{{0.000000,94.000000},{0.000000,31.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-108.000000},{0.500000,-15.000000}}"/>
+            <Property Name="PushedImage" Value="set:PlayReturn image:PlayReturn_Lingqu_Pushed"/>
+            <Property Name="NormalImage" Value="set:PlayReturn image:PlayReturn_Lingqu_Normal"/>
+            <Property Name="HoverImage" Value="set:PlayReturn image:PlayReturn_Lingqu_Hover"/>
+            <Property Name="DisabledImage" Value="set:PlayReturn image:PlayReturn_Yilingqu_Disable"/>
+            <Event Name="Clicked" Function="LandReward_DengLu_GetGift(5);"/>
+          </Window>
+		<Window Type="TLBB_StaticImageNULL" Name="LandReward_DengLu_Bk5_Button1NotReach">
+			<Property Name="UnifiedSize" Value="{{0.000000,94.000000},{0.000000,31.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{1.000000,-108.000000},{0.500000,-15.000000}}"/>
+			<Property Name="RiseOnClick" Value="False"/>
+			<Property Name="Image" Value="set:PlayReturn image:PlayReturn_Yilingqu_WeiDaCheng"/>
+		</Window>
+        </Window>
+        <Window Type="TLBB_Frame_Lace3" Name="LandReward_DengLu_Bk6">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,54.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{1.000000,-54.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="LandReward_DengLu_Bk6_Info2">
+            <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,14.000000},{0.000000,3.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:BaiBao image:BaiBao_16"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="LandReward_DengLu_Bk6_Icon1">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.500000,-20.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="LandReward_DengLu_Bk6_Icon2">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,120.000000},{0.500000,-20.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="LandReward_DengLu_Bk6_Icon3">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,170.000000},{0.500000,-20.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="LandReward_DengLu_Bk6_Info1">
+            <Property Name="UnifiedSize" Value="{{0.000000,144.000000},{0.000000,54.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,216.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#{LJDL_170823_11}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="LandReward_DengLu_Bk6_Button1">
+            <Property Name="UnifiedSize" Value="{{0.000000,94.000000},{0.000000,31.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-108.000000},{0.500000,-15.000000}}"/>
+            <Property Name="PushedImage" Value="set:PlayReturn image:PlayReturn_Lingqu_Pushed"/>
+            <Property Name="NormalImage" Value="set:PlayReturn image:PlayReturn_Lingqu_Normal"/>
+            <Property Name="HoverImage" Value="set:PlayReturn image:PlayReturn_Lingqu_Hover"/>
+            <Property Name="DisabledImage" Value="set:PlayReturn image:PlayReturn_Yilingqu_Disable"/>
+            <Event Name="Clicked" Function="LandReward_DengLu_GetGift(6);"/>
+          </Window>
+		<Window Type="TLBB_StaticImageNULL" Name="LandReward_DengLu_Bk6_Button1NotReach">
+			<Property Name="UnifiedSize" Value="{{0.000000,94.000000},{0.000000,31.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{1.000000,-108.000000},{0.500000,-15.000000}}"/>
+			<Property Name="RiseOnClick" Value="False"/>
+			<Property Name="Image" Value="set:PlayReturn image:PlayReturn_Yilingqu_WeiDaCheng"/>
+		</Window>
+        </Window>
+      </Window>
+    </Window>
+</GUILayout>

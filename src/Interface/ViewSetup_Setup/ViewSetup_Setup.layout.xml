@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" ?>
+<GUILayout>
+    <Window Type="TLBB_MainFrame0" Name="ViewSetup_Setup_Frame">
+        <Property Name="UnifiedPosition" Value="{{0.5,-170},{0.5,-208}}" />
+        <Property Name="AbsoluteSize" Value="w:340 h:415" />
+        <Window Type="TLBB_DragTitle" Name="ViewSetup_Setup_DragTitle">
+            <Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
+            <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+            <Property Name="DragTarget" Value="ViewSetup_Setup_Frame" />
+            <Window Type="TLBB_SimpleText" Name="ViewSetup_Setup_PageHeader">
+                <Property Name="Position" Value="x:0.0 y:0.0" />
+                <Property Name="Size" Value="w:1.0 h:1.0" />
+                <Property Name="Font" Value="YouYuan11.25" />
+                <Property Name="HorzFormatting" Value="HorzCentred" />
+                <Property Name="VertFormatting" Value="VertCentred" />
+                <Property Name="RiseOnClick" Value="False" />
+                <Property Name="Text" Value="#{XSYH_XML_12}" />
+            </Window>
+        </Window>
+        <Window Type="TLBB_ButtonHelp" Name="ViewSetup_Setup_Help">
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+            <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+            <Property Name="Text" Value="TLBB_ButtonHelp" />
+            <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*ViewSetup&quot;);' />
+        </Window>
+        <Window Type="TLBB_ButtonClose" Name="ViewSetup_Setup_Close">
+            <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+            <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+            <Property Name="Text" Value="TLBB_ButtonClose" />
+            <Event Name="Clicked" Function="this:Hide();" />
+        </Window>
+      <Window Type="TLBB_SimpleText" Name="ViewSetup_Setup_Text1">
+        <Property Name="UnifiedPosition" Value="{{0.0,10.000000},{0.0,42.000000}" />
+        <Property Name="UnifiedSize" Value="{{1,-20.000000},{0.000000,18.000000}" />
+        <Property Name="Text" Value="#{XSYH_XML_16}" />
+        <Property Name="HorzFormatting" Value="LeftAligned" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="ViewSetup_Setup_Text2">
+        <Property Name="UnifiedPosition" Value="{{0.0,10.000000},{0.0,64.000000}" />
+        <Property Name="UnifiedSize" Value="{{1,-20.000000},{0.000000,18.000000}" />
+        <Property Name="Text" Value="#{XSYH_XML_17}" />
+        <Property Name="HorzFormatting" Value="LeftAligned" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="ViewSetup_Setup_Text3">
+        <Property Name="UnifiedPosition" Value="{{0.0,10.000000},{0.0,83.000000}" />
+        <Property Name="UnifiedSize" Value="{{1,-20.000000},{0.000000,40.000000}" />
+        <Property Name="Text" Value="#{XSYH_XML_18}" />
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="ViewSetup_Setup_Text4">
+        <Property Name="UnifiedPosition" Value="{{0.0,10.000000},{0.0,125.000000}" />
+        <Property Name="UnifiedSize" Value="{{1,-20.000000},{0.000000,18.000000}" />
+        <Property Name="Text" Value="#{XSYH_XML_19}" />
+        <Property Name="HorzFormatting" Value="LeftAligned" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="ViewSetup_Setup_Text5">
+        <Property Name="UnifiedPosition" Value="{{0.0,10.000000},{0.0,148.000000}" />
+        <Property Name="UnifiedSize" Value="{{1,-20.000000},{0.000000,50.000000}" />
+        <Property Name="Text" Value="#{XSYH_XML_20}" />
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="ViewSetup_Setup_Button1">
+        <Property Name="UnifiedPosition" Value="{{0.0,129.000000},{0.0,205.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.0,93.000000},{0.000000,20.000000}" />
+        <Property Name="Text" Value="#{XSYH_XML_7}" />
+        <Event Name="Clicked" Function="ViewSetup_Setup_ClickViewSetup(1);" />
+
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="ViewSetup_Setup_Button2">
+        <Property Name="UnifiedPosition" Value="{{0.0,223.000000},{0.0,205.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.0,93.000000},{0.000000,20.000000}" />
+        <Property Name="Text" Value="#{XSYH_XML_8}" />
+        <Event Name="Clicked" Function="ViewSetup_Setup_ClickViewSetup(2);" />
+
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="ViewSetup_Setup_Text6">
+        <Property Name="UnifiedPosition" Value="{{0.0,10.000000},{0.0,232.000000}" />
+        <Property Name="UnifiedSize" Value="{{1,-20.000000},{0.000000,18.000000}" />
+        <Property Name="Text" Value="#{XSYH_XML_21}" />
+        <Property Name="HorzFormatting" Value="LeftAligned" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+      
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="ViewSetup_Setup_Text7">
+        <Property Name="UnifiedPosition" Value="{{0.0,10.000000},{0.0,253.000000}" />
+        <Property Name="UnifiedSize" Value="{{1,-20.000000},{0.000000,20.000000}" />
+        <Property Name="Text" Value="#{XSYH_XML_22}" />
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="ViewSetup_Setup_Button3">
+        <Property Name="UnifiedPosition" Value="{{0.0,223.000000},{0.0,278.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.0,93.000000},{0.000000,20.000000}" />
+        <Property Name="Text" Value="#{XSYH_XML_13}" />
+        <Event Name="Clicked" Function="ViewSetup_Setup_CloseSkyEye();" />
+
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="ViewSetup_Setup_Text8">
+        <Property Name="UnifiedPosition" Value="{{0.0,10.000000},{0.0,305.000000}" />
+        <Property Name="UnifiedSize" Value="{{1,-20.000000},{0.000000,18.000000}" />
+        <Property Name="Text" Value="#{XSYH_XML_23}" />
+        <Property Name="HorzFormatting" Value="LeftAligned" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="ViewSetup_Setup_Text9">
+        <Property Name="UnifiedPosition" Value="{{0.0,10.000000},{0.0,324.000000}" />
+        <Property Name="UnifiedSize" Value="{{1,-20.000000},{0.000000,40.000000}" />
+        <Property Name="Text" Value="#{XSYH_XML_24}" />
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="ViewSetup_Setup_Button4">
+        <Property Name="UnifiedPosition" Value="{{0.0,129.000000},{0.0,368.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.0,93.000000},{0.000000,20.000000}" />
+        <Property Name="Text" Value="#{XSYH_XML_14}" />
+        <Event Name="Clicked" Function="ViewSetup_Setup_ScreenSize(1);" />
+
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="ViewSetup_Setup_Button5">
+        <Property Name="UnifiedPosition" Value="{{0.0,223.000000},{0.0,368.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.0,93.000000},{0.000000,20.000000}" />
+        <Property Name="Text" Value="#{XSYH_XML_15}" />
+        <Event Name="Clicked" Function="ViewSetup_Setup_ScreenSize(2);" />
+
+      </Window>
+    </Window>
+</GUILayout>

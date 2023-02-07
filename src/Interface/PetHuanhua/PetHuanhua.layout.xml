@@ -1,0 +1,194 @@
+<?xml version="1.0" ?>
+<GUILayout>
+	<Window Type="TLBB_MainFrame1" Name="PetHuanhua_Frame">
+		<Property Name="UnifiedPosition" Value="{{0.35,0},{0.10,0}}" />
+		<Property Name="AbsoluteSize" Value="w:300 h:520" />
+		<Event Name="Hidden" Function="PetHuanhua_OnHidden();" />
+		
+		<Window Type="TLBB_DragTitle" Name="PetHuanhua_DragTitle">
+			<Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
+			<Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+			<Property Name="DragTarget" Value="PetHuanhua_Frame" />
+			<Property Name="Font" Value="YouYuan11.25" />
+			<Property Name="HorzFormatting" Value="HorzCentred" />
+			<Property Name="VertFormatting" Value="VertCentred" />
+			<Property Name="Text" Value="#{RXZS_XML_6}" />
+		</Window>
+		<Window Type="TLBB_ButtonHelp" Name="PetHuanhua_Help">
+			<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+			<Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+			<Property Name="Text" Value="TLBB_ButtonHelp" />
+			<Event Name="Clicked" Function='Helper:GotoHelper(&quot;*PetHuanhua&quot;);' />
+		</Window>
+		<Window Type="TLBB_ButtonClose" Name="PetHuanhua_Close">
+			<Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+			<Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+			<Property Name="Text" Value="TLBB_ButtonClose" />
+			<Event Name="Clicked" Function="PetHuanhua_Close_Window();" />
+		</Window>
+		<Window Type="DefaultWindow" Name="PetHuanhua_Function_Frame">
+			<Property Name="AbsolutePosition" Value="x:7.000000 y:36.000000" />
+			<Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-55.000000}" />
+      <Window Type="TLBB_SimpleText" Name="PetHuanhua_Text1">
+        <Property Name="UnifiedPosition" Value="{{0.0,5.000000},{0.000000,3.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.0,250.000000},{0.000000,20.000000}" />
+        <Property Name="Text" Value="#{RXZS_XML_7}" />
+        <Property Name="TextColor" Value="FFFAFFA4" />
+        <Property Name="HorzFormatting" Value="LeftAligned" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+      </Window>
+      <Window Type="TLBB_FramePet" Name="PetHuanhua_FakeObject_Frame" >
+        <Property Name="Position" Value="x:0.000000 y:0.062921" />
+        <Property Name="AbsoluteSize" Value="w:286.000000 h:137.000000" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Window Type="TLBB_MeshWindow" Name="PetHuanhua_FakeObject" >
+          <Property Name="Position" Value="x:0.100000 y:0.100000" />
+          <Property Name="Size" Value="w:0.800000 h:0.850000" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="ShowControl" Value="PetHuanhua_Frame" />
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="PetHuanhua_FakeObject_Frame_PetHead" >
+          <Property Name="AbsolutePosition" Value="x:109.000000 y:0.000000" />
+          <Property Name="AbsoluteSize" Value="w:68.000000 h:26.000000" />
+          <Property Name="Image" Value="set:CommonItem image:PetFrame_Head" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+        <Window Type="TLBB_ButtonTurnLeft" Name="PetHuanhua_Model_TurnLeft" >
+          <Property Name="UnifiedPosition" Value="{{0.100000,0.299999},{1.000000,-34.000000}" />
+          <Property Name="AbsoluteSize" Value="w:25.000000 h:25.000000" />
+          <Event Name="CaptureLost" Function="PetHuanhua_Pet_Modle_TurnLeft(0);" />
+          <Event Name="MouseButtonDown" Function="PetHuanhua_Pet_Modle_TurnLeft(1);" />
+          <Event Name="MouseButtonUp" Function="PetHuanhua_Pet_Modle_TurnLeft(0);" />
+        </Window>
+        <Window Type="TLBB_ButtonTurnRight" Name="PetHuanhua_Model_TurnRight" >
+          <Property Name="UnifiedPosition" Value="{{0.790000,-0.330002},{1.000000,-34.000000}" />
+          <Property Name="AbsoluteSize" Value="w:25.000000 h:25.000000" />
+          <Event Name="CaptureLost" Function="PetHuanhua_Pet_Modle_TurnRight(0);" />
+          <Event Name="MouseButtonDown" Function="PetHuanhua_Pet_Modle_TurnRight(1);" />
+          <Event Name="MouseButtonUp" Function="PetHuanhua_Pet_Modle_TurnRight(0);" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="PetHuanhua_Text2">
+        <Property Name="UnifiedPosition" Value="{{0.0,5.000000},{0.000000,168.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.0,216.000000},{0.000000,20.000000}" />
+        <Property Name="Text" Value="#{RXZS_XML_8}" />
+        <Property Name="TextColor" Value="FFFAFFA4" />
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="PetHuanhua_Pet_Text">
+        <Property Name="UnifiedPosition" Value="{{0.076655,0.000000},{0.000000,190.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.540070,0.000000},{0.000000,20.000000}" />
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="PetHuanhua_PetList_Select">
+        <Property Name="UnifiedPosition" Value="{{0.627178,0.000000},{0.000000,190.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.306620,0.000000},{0.000000,20.000000}" />
+        <Property Name="Text" Value="#{RXZS_XML_9}" />
+        <Event Name="Clicked" Function="PetHuanhua_SelectPet_Clicked();" />
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="PetHuanhua_Jian">
+        <Property Name="UnifiedPosition" Value="{{0.132159,0.000000},{0.000000,213.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.75,0.000000},{0.000000,20.000000}" />
+        <Property Name="Text" Value="#{RXZS_XML_10}" />
+        <Event Name="Clicked" Function="PetHuanhua_Pet_Show();" />
+      </Window>
+      <Window Type="TLBB_Frame_Lace4" Name="PetHuanhua_Text3">
+        <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,238.000000}" />
+        <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,108.000000}" />
+        <Window Type="TLBB_StaticText" Name="PetHuanhua_Text3_1">
+			<Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,6.000000}" />
+			<Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{1.000000,-12.000000}" />
+			<Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+			<Property Name="RiseOnClick" Value="False" />
+			<Property Name="VertFormatting" Value="TopAligned" />
+			<Property Name="Text" Value="#{RXZS_XML_11}" />
+			<Property Name="VertScrollbar" Value="true" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="PetHuanhua_MoneyInfo" >
+        <Property Name="UnifiedPosition" Value="{{0.120000,0.000000},{1.000000,-91.000000}" />
+        <Property Name="AbsoluteSize" Value="w:219.000000 h:22.000000" />
+        <Property Name="Text" Value="#{INTERFACE_XML_789}" />
+        <Property Name="TextColor" Value="FFFFF263" />
+        <Window Type="TLBB_Money" Name="PetHuanhua_Money" >
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}" />
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}" />
+          <Property Name="CopperIcon" Value="set:Button6 image:Lace_JiaoziTong" />
+          <Property Name="GoldIcon" Value="set:Button6 image:Lace_JiaoziJin" />
+          <Property Name="HorzFormatting" Value="RightAligned" />
+          <Property Name="MoneyNumber" Value="0" />
+          <Property Name="SilverIcon" Value="set:Button6 image:Lace_JiaoziYin" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="PetHuanhua_SelfJiaozi_Info" >
+        <Property Name="UnifiedPosition" Value="{{0.120000,0.000000},{1.000000,-69.000000}" />
+        <Property Name="AbsoluteSize" Value="w:219.000000 h:22.000000" />
+        <Property Name="Text" Value="#{BDJB_051210_1}" />
+        <Property Name="TextColor" Value="FFFFF263" />
+        <Window Type="TLBB_Money" Name="PetHuanhua_SelfJiaozi" >
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}" />
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}" />
+          <Property Name="CopperIcon" Value="set:Button6 image:Lace_JiaoziTong" />
+          <Property Name="GoldIcon" Value="set:Button6 image:Lace_JiaoziJin" />
+          <Property Name="HorzFormatting" Value="RightAligned" />
+          <Property Name="MoneyNumber" Value="0" />
+          <Property Name="SilverIcon" Value="set:Button6 image:Lace_JiaoziYin" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="PetHuanhua_SelfMoney_Info" >
+        <Property Name="UnifiedPosition" Value="{{0.120000,0.000000},{1.000000,-47.000000}" />
+        <Property Name="AbsoluteSize" Value="w:219.000000 h:22.000000" />
+        <Property Name="Text" Value="#{INTERFACE_XML_834}" />
+        <Property Name="TextColor" Value="FFFFF263" />
+        <Window Type="TLBB_Money" Name="PetHuanhua_SelfMoney" >
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}" />
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}" />
+          <Property Name="HorzFormatting" Value="RightAligned" />
+          <Property Name="MoneyNumber" Value="0" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_ButtonCheck" Name="PetHuanhua_ModeSelect" >
+        <Property Name="AbsolutePosition" Value="x:8.000000 y:354.000000" />
+        <Property Name="AbsoluteSize" Value="w:12.000000 h:12.000000" />
+        <Property Name="CheckMode" Value="1" />
+        <Property Name="Tooltip" Value="#{RXZS_XML_12}" />
+        <Event Name="MouseLButtonDown" Function="PetHuanhua_ChangeModel(0);" />
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="PetHuanhua_ModelText" >
+        <Property Name="AbsolutePosition" Value="x:25.000000 y:350.000000" />
+        <Property Name="AbsoluteSize" Value="w:120.000000 h:20.000000" />
+        <Property Name="HorzFormatting" Value="LeftAligned" />
+        <Property Name="Text" Value="#{RXZS_XML_13}" />
+        <Property Name="TextColor" Value="FFFFF263" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+      </Window>
+      <Window Type="TLBB_ButtonCheck" Name="PetHuanhua_ModeSelect2" >
+        <Property Name="AbsolutePosition" Value="x:146.000000 y:354.000000" />
+        <Property Name="AbsoluteSize" Value="w:12.000000 h:12.000000" />
+        <Property Name="CheckMode" Value="1" />
+        <Property Name="Tooltip" Value="#{RXZS_XML_36}" />
+        <Event Name="MouseLButtonDown" Function="PetHuanhua_ChangeModel(1);" />
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="PetHuanhua_ModelText2" >
+        <Property Name="AbsolutePosition" Value="x:163.000000 y:350.000000" />
+        <Property Name="AbsoluteSize" Value="w:120.000000 h:20.000000" />
+        <Property Name="HorzFormatting" Value="LeftAligned" />
+        <Property Name="Text" Value="#{RXZS_XML_37}" />
+        <Property Name="TextColor" Value="FFFFF263" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="PetHuanhua_OK">
+				<Property Name="UnifiedPosition" Value="{{1.000000,-80.000000},{1.000000,-20.000000}" />
+				<Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+				<Property Name="Text" Value="#{RXZS_XML_14}" />			
+				<Event Name="Clicked" Function="PetHuanhua_OK_Clicked();" />				
+			</Window>
+			<Window Type="TLBB_ButtonCommon" Name="PetHuanhua_Cancel">
+				<Property Name="UnifiedPosition" Value="{{1.000000,-40.000000},{1.000000,-20.000000}" />
+				<Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+				<Property Name="Text" Value="#{INTERFACE_XML_542}" />
+				<Event Name="Clicked" Function="PetHuanhua_Close_Window();" />
+			</Window>
+		</Window>
+	</Window>
+</GUILayout>

@@ -1,0 +1,936 @@
+<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame2" Name="Packet_Temporary_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,352.000000},{0.000000,300.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{1.00000,-648.000000},{1.00000,-455.000000}}"/>
+    <Event Name="Hidden" Function="this:Hide()" />
+    <Window Type="TLBB_DragTitle" Name="Packet_Temporary_DragTitle">
+      <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,4.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}" />
+      <Property Name="DragTarget" Value="Packet_Temporary_Frame"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="VertFormatting" Value="VertCentred"/>        
+      <Property Name="HorzFormatting" Value="HorzCentred"/>
+      <Property Name="Text" Value="#gFF0FA0天机行囊"/>
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="Packet_Temporary_Close">
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,5.000000}" />
+      <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000"/>
+      <Event Name="Clicked" Function="Packet_Temporary_CloseFunction();"/>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="Packet_Temporary_Help">
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}" />
+      <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000"/>
+      <Event Name="Clicked" Function=""/>
+    </Window>
+    <Window Type="DefaultWindow" Name="Packet_Temporary_BK">
+      <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,-30.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,30.000000}}"/>
+        <Window Type="DefaultWindow" Name="Packet_Temporary_Space_Line1">
+          <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,34.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+		   <Property Name="AlwaysOnTop" Value="true" />
+          <Window Type="TLBB_ActionButton" Name="Packet_Temporary_Space_Line1_Row1_button">
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <!-- <Property Name="DraggingEnabled" Value="True" /> -->
+            <!-- <Property Name="DragAcceptName" Value="p00" /> -->
+            <Event Name="RBClicked" Function="Packet_Temporary_Select(1)" />
+            <!-- <Event Name="Clicked" Function="" /> -->
+			<Window Type="TLBB_SimpleText" Name="Packet_Temporary_Num1">
+                <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-64.000000},{1.000000,-16.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="Packet_Temporary_Space_Line1_Row2_button">
+            <Property Name="UnifiedPosition" Value="{{0.000000,34.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <!-- <Property Name="DraggingEnabled" Value="True" /> -->
+            <!-- <Property Name="DragAcceptName" Value="p01" /> -->
+            <Event Name="RBClicked" Function="Packet_Temporary_Select(2)" />
+            <!-- <Event Name="Clicked" Function="" /> -->
+			<Window Type="TLBB_SimpleText" Name="Packet_Temporary_Num2">
+                <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-64.000000},{1.000000,-16.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="Packet_Temporary_Space_Line1_Row3_button">
+            <Property Name="UnifiedPosition" Value="{{0.000000,68.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <!-- <Property Name="DraggingEnabled" Value="True" /> -->
+            <!-- <Property Name="DragAcceptName" Value="p02" /> -->
+            <Event Name="RBClicked" Function="Packet_Temporary_Select(3)" />
+            <!-- <Event Name="Clicked" Function="" /> -->
+			<Window Type="TLBB_SimpleText" Name="Packet_Temporary_Num3">
+                <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-64.000000},{1.000000,-16.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="Packet_Temporary_Space_Line1_Row4_button">
+            <Property Name="UnifiedPosition" Value="{{0.000000,102.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <!-- <Property Name="DraggingEnabled" Value="True" /> -->
+            <!-- <Property Name="DragAcceptName" Value="p03" /> -->
+            <Event Name="RBClicked" Function="Packet_Temporary_Select(4)" />
+            <!-- <Event Name="Clicked" Function="" /> -->
+			<Window Type="TLBB_SimpleText" Name="Packet_Temporary_Num4">
+                <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-64.000000},{1.000000,-16.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="Packet_Temporary_Space_Line1_Row5_button">
+            <Property Name="UnifiedPosition" Value="{{0.000000,136.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <!-- <Property Name="DraggingEnabled" Value="True" /> -->
+            <!-- <Property Name="DragAcceptName" Value="p04" /> -->
+            <Event Name="RBClicked" Function="Packet_Temporary_Select(5)" />
+            <!-- <Event Name="Clicked" Function="" /> -->
+			<Window Type="TLBB_SimpleText" Name="Packet_Temporary_Num5">
+                <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-64.000000},{1.000000,-16.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="Packet_Temporary_Space_Line1_Row6_button">
+            <Property Name="UnifiedPosition" Value="{{0.000000,170.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <!-- <Property Name="DraggingEnabled" Value="True" /> -->
+            <!-- <Property Name="DragAcceptName" Value="p05" /> -->
+            <Event Name="RBClicked" Function="Packet_Temporary_Select(6)" />
+            <!-- <Event Name="Clicked" Function="" /> -->
+			<Window Type="TLBB_SimpleText" Name="Packet_Temporary_Num6">
+                <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-64.000000},{1.000000,-16.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="Packet_Temporary_Space_Line1_Row7_button">
+            <Property Name="UnifiedPosition" Value="{{0.000000,204.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <!-- <Property Name="DraggingEnabled" Value="True" /> -->
+            <!-- <Property Name="DragAcceptName" Value="p06" /> -->
+            <Event Name="RBClicked" Function="Packet_Temporary_Select(7)" />
+            <!-- <Event Name="Clicked" Function="" /> -->
+			<Window Type="TLBB_SimpleText" Name="Packet_Temporary_Num7">
+                <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-64.000000},{1.000000,-16.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="Packet_Temporary_Space_Line1_Row8_button">
+            <Property Name="UnifiedPosition" Value="{{0.000000,238.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <!-- <Property Name="DraggingEnabled" Value="True" /> -->
+            <!-- <Property Name="DragAcceptName" Value="p07" /> -->
+            <Event Name="RBClicked" Function="Packet_Temporary_Select(8)" />
+            <!-- <Event Name="Clicked" Function="" /> -->
+			<Window Type="TLBB_SimpleText" Name="Packet_Temporary_Num8">
+                <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-64.000000},{1.000000,-16.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="Packet_Temporary_Space_Line1_Row9_button">
+            <Property Name="UnifiedPosition" Value="{{0.000000,272.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <!-- <Property Name="DraggingEnabled" Value="True" /> -->
+            <!-- <Property Name="DragAcceptName" Value="p08" /> -->
+            <Event Name="RBClicked" Function="Packet_Temporary_Select(9)" />
+            <!-- <Event Name="Clicked" Function="" /> -->
+			<Window Type="TLBB_SimpleText" Name="Packet_Temporary_Num9">
+                <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-64.000000},{1.000000,-16.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="Packet_Temporary_Space_Line1_Row10_button">
+            <Property Name="UnifiedPosition" Value="{{0.000000,306.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <!-- <Property Name="DraggingEnabled" Value="True" /> -->
+            <!-- <Property Name="DragAcceptName" Value="p09" /> -->
+            <Event Name="RBClicked" Function="Packet_Temporary_Select(10)" />
+            <!-- <Event Name="Clicked" Function="" /> -->
+			<Window Type="TLBB_SimpleText" Name="Packet_Temporary_Num10">
+                <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-64.000000},{1.000000,-16.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Packet_Temporary_Space_Line2">
+          <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,34.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,34.000000}}" />
+		   <Property Name="AlwaysOnTop" Value="true" />
+          <Window Type="TLBB_ActionButton" Name="Packet_Temporary_Space_Line2_Row1_button">
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <!-- <Property Name="DraggingEnabled" Value="True" /> -->
+            <!-- <Property Name="DragAcceptName" Value="p10" /> -->
+            <Event Name="RBClicked" Function="Packet_Temporary_Select(11)" />
+            <!-- <Event Name="Clicked" Function="" /> -->
+			<Window Type="TLBB_SimpleText" Name="Packet_Temporary_Num11">
+                <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-64.000000},{1.000000,-16.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="Packet_Temporary_Space_Line2_Row2_button">
+            <Property Name="UnifiedPosition" Value="{{0.000000,34.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <!-- <Property Name="DraggingEnabled" Value="True" /> -->
+            <!-- <Property Name="DragAcceptName" Value="p11" /> -->
+            <Event Name="RBClicked" Function="Packet_Temporary_Select(12)" />
+            <!-- <Event Name="Clicked" Function="" /> -->
+			<Window Type="TLBB_SimpleText" Name="Packet_Temporary_Num12">
+                <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-64.000000},{1.000000,-16.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="Packet_Temporary_Space_Line2_Row3_button">
+            <Property Name="UnifiedPosition" Value="{{0.000000,68.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <!-- <Property Name="DraggingEnabled" Value="True" /> -->
+            <!-- <Property Name="DragAcceptName" Value="p12" /> -->
+            <Event Name="RBClicked" Function="Packet_Temporary_Select(13)" />
+            <!-- <Event Name="Clicked" Function="" /> -->
+			<Window Type="TLBB_SimpleText" Name="Packet_Temporary_Num13">
+                <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-64.000000},{1.000000,-16.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="Packet_Temporary_Space_Line2_Row4_button">
+            <Property Name="UnifiedPosition" Value="{{0.000000,102.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <!-- <Property Name="DraggingEnabled" Value="True" /> -->
+            <!-- <Property Name="DragAcceptName" Value="p13" /> -->
+            <Event Name="RBClicked" Function="Packet_Temporary_Select(14)" />
+            <!-- <Event Name="Clicked" Function="" /> -->
+			<Window Type="TLBB_SimpleText" Name="Packet_Temporary_Num14">
+                <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-64.000000},{1.000000,-16.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="Packet_Temporary_Space_Line2_Row5_button">
+            <Property Name="UnifiedPosition" Value="{{0.000000,136.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <!-- <Property Name="DraggingEnabled" Value="True" /> -->
+            <!-- <Property Name="DragAcceptName" Value="p14" /> -->
+            <Event Name="RBClicked" Function="Packet_Temporary_Select(15)" />
+            <!-- <Event Name="Clicked" Function="" /> -->
+			<Window Type="TLBB_SimpleText" Name="Packet_Temporary_Num15">
+                <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-64.000000},{1.000000,-16.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="Packet_Temporary_Space_Line2_Row6_button">
+            <Property Name="UnifiedPosition" Value="{{0.000000,170.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <!-- <Property Name="DraggingEnabled" Value="True" /> -->
+            <!-- <Property Name="DragAcceptName" Value="p15" /> -->
+            <Event Name="RBClicked" Function="Packet_Temporary_Select(16)" />
+            <!-- <Event Name="Clicked" Function="" /> -->
+			<Window Type="TLBB_SimpleText" Name="Packet_Temporary_Num16">
+                <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-64.000000},{1.000000,-16.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="Packet_Temporary_Space_Line2_Row7_button">
+            <Property Name="UnifiedPosition" Value="{{0.000000,204.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <!-- <Property Name="DraggingEnabled" Value="True" /> -->
+            <!-- <Property Name="DragAcceptName" Value="p16" /> -->
+            <Event Name="RBClicked" Function="Packet_Temporary_Select(17)" />
+            <!-- <Event Name="Clicked" Function="" /> -->
+			<Window Type="TLBB_SimpleText" Name="Packet_Temporary_Num17">
+                <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-64.000000},{1.000000,-16.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="Packet_Temporary_Space_Line2_Row8_button">
+            <Property Name="UnifiedPosition" Value="{{0.000000,238.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <!-- <Property Name="DraggingEnabled" Value="True" /> -->
+            <!-- <Property Name="DragAcceptName" Value="p17" /> -->
+            <Event Name="RBClicked" Function="Packet_Temporary_Select(18)" />
+            <!-- <Event Name="Clicked" Function="" /> -->
+			<Window Type="TLBB_SimpleText" Name="Packet_Temporary_Num18">
+                <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-64.000000},{1.000000,-16.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="Packet_Temporary_Space_Line2_Row9_button">
+            <Property Name="UnifiedPosition" Value="{{0.000000,272.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <!-- <Property Name="DraggingEnabled" Value="True" /> -->
+            <!-- <Property Name="DragAcceptName" Value="p18" /> -->
+            <Event Name="RBClicked" Function="Packet_Temporary_Select(19)" />
+            <!-- <Event Name="Clicked" Function="" /> -->
+			<Window Type="TLBB_SimpleText" Name="Packet_Temporary_Num19">
+                <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-64.000000},{1.000000,-16.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="Packet_Temporary_Space_Line2_Row10_button">
+            <Property Name="UnifiedPosition" Value="{{0.000000,306.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <!-- <Property Name="DraggingEnabled" Value="True" /> -->
+            <!-- <Property Name="DragAcceptName" Value="p19" /> -->
+            <Event Name="RBClicked" Function="Packet_Temporary_Select(20)" />
+            <!-- <Event Name="Clicked" Function="" /> -->
+			<Window Type="TLBB_SimpleText" Name="Packet_Temporary_Num20">
+                <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-64.000000},{1.000000,-16.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Packet_Temporary_Space_Line3">
+          <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,34.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,68.000000}}" />
+		   <Property Name="AlwaysOnTop" Value="true" />
+          <Window Type="TLBB_ActionButton" Name="Packet_Temporary_Space_Line3_Row1_button">
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <!-- <Property Name="DraggingEnabled" Value="True" /> -->
+            <!-- <Property Name="DragAcceptName" Value="p20" /> -->
+            <Event Name="RBClicked" Function="Packet_Temporary_Select(21)" />
+            <!-- <Event Name="Clicked" Function="" /> -->
+			<Window Type="TLBB_SimpleText" Name="Packet_Temporary_Num21">
+                <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-64.000000},{1.000000,-16.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="Packet_Temporary_Space_Line3_Row2_button">
+            <Property Name="UnifiedPosition" Value="{{0.000000,34.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <!-- <Property Name="DraggingEnabled" Value="True" /> -->
+            <!-- <Property Name="DragAcceptName" Value="p21" /> -->
+            <Event Name="RBClicked" Function="Packet_Temporary_Select(22)" />
+            <!-- <Event Name="Clicked" Function="" /> -->
+			<Window Type="TLBB_SimpleText" Name="Packet_Temporary_Num22">
+                <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-64.000000},{1.000000,-16.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="Packet_Temporary_Space_Line3_Row3_button">
+            <Property Name="UnifiedPosition" Value="{{0.000000,68.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <!-- <Property Name="DraggingEnabled" Value="True" /> -->
+            <!-- <Property Name="DragAcceptName" Value="p22" /> -->
+            <Event Name="RBClicked" Function="Packet_Temporary_Select(23)" />
+            <!-- <Event Name="Clicked" Function="" /> -->
+			<Window Type="TLBB_SimpleText" Name="Packet_Temporary_Num23">
+                <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-64.000000},{1.000000,-16.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="Packet_Temporary_Space_Line3_Row4_button">
+            <Property Name="UnifiedPosition" Value="{{0.000000,102.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <!-- <Property Name="DraggingEnabled" Value="True" /> -->
+            <!-- <Property Name="DragAcceptName" Value="p23" /> -->
+            <Event Name="RBClicked" Function="Packet_Temporary_Select(24)" />
+            <!-- <Event Name="Clicked" Function="" /> -->
+			<Window Type="TLBB_SimpleText" Name="Packet_Temporary_Num24">
+                <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-64.000000},{1.000000,-16.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="Packet_Temporary_Space_Line3_Row5_button">
+            <Property Name="UnifiedPosition" Value="{{0.000000,136.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <!-- <Property Name="DraggingEnabled" Value="True" /> -->
+            <!-- <Property Name="DragAcceptName" Value="p24" /> -->
+            <Event Name="RBClicked" Function="Packet_Temporary_Select(25)" />
+            <!-- <Event Name="Clicked" Function="" /> -->
+			<Window Type="TLBB_SimpleText" Name="Packet_Temporary_Num25">
+                <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-64.000000},{1.000000,-16.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="Packet_Temporary_Space_Line3_Row6_button">
+            <Property Name="UnifiedPosition" Value="{{0.000000,170.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <!-- <Property Name="DraggingEnabled" Value="True" /> -->
+            <!-- <Property Name="DragAcceptName" Value="p25" /> -->
+            <Event Name="RBClicked" Function="Packet_Temporary_Select(26)" />
+            <!-- <Event Name="Clicked" Function="" /> -->
+			<Window Type="TLBB_SimpleText" Name="Packet_Temporary_Num26">
+                <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-64.000000},{1.000000,-16.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="Packet_Temporary_Space_Line3_Row7_button">
+            <Property Name="UnifiedPosition" Value="{{0.000000,204.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <!-- <Property Name="DraggingEnabled" Value="True" /> -->
+            <!-- <Property Name="DragAcceptName" Value="p26" /> -->
+            <Event Name="RBClicked" Function="Packet_Temporary_Select(27)" />
+            <!-- <Event Name="Clicked" Function="" /> -->
+			<Window Type="TLBB_SimpleText" Name="Packet_Temporary_Num27">
+                <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-64.000000},{1.000000,-16.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="Packet_Temporary_Space_Line3_Row8_button">
+            <Property Name="UnifiedPosition" Value="{{0.000000,238.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <!-- <Property Name="DraggingEnabled" Value="True" /> -->
+            <!-- <Property Name="DragAcceptName" Value="p27" /> -->
+            <Event Name="RBClicked" Function="Packet_Temporary_Select(28)" />
+            <!-- <Event Name="Clicked" Function="" /> -->
+			<Window Type="TLBB_SimpleText" Name="Packet_Temporary_Num28">
+                <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-64.000000},{1.000000,-16.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="Packet_Temporary_Space_Line3_Row9_button">
+            <Property Name="UnifiedPosition" Value="{{0.000000,272.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <!-- <Property Name="DraggingEnabled" Value="True" /> -->
+            <!-- <Property Name="DragAcceptName" Value="p28" /> -->
+            <Event Name="RBClicked" Function="Packet_Temporary_Select(29)" />
+            <!-- <Event Name="Clicked" Function="" /> -->
+			<Window Type="TLBB_SimpleText" Name="Packet_Temporary_Num29">
+                <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-64.000000},{1.000000,-16.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="Packet_Temporary_Space_Line3_Row10_button">
+            <Property Name="UnifiedPosition" Value="{{0.000000,306.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <!-- <Property Name="DraggingEnabled" Value="True" /> -->
+            <!-- <Property Name="DragAcceptName" Value="p29" /> -->
+            <Event Name="RBClicked" Function="Packet_Temporary_Select(30)" />
+            <!-- <Event Name="Clicked" Function="" /> -->
+			<Window Type="TLBB_SimpleText" Name="Packet_Temporary_Num30">
+                <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-64.000000},{1.000000,-16.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Packet_Temporary_Space_Line4">
+          <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,34.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,102.000000}}" />
+		   <Property Name="AlwaysOnTop" Value="true" />
+          <Window Type="TLBB_ActionButton" Name="Packet_Temporary_Space_Line4_Row1_button">
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <!-- <Property Name="DraggingEnabled" Value="True" /> -->
+            <!-- <Property Name="DragAcceptName" Value="p30" /> -->
+            <Event Name="RBClicked" Function="Packet_Temporary_Select(31)" />
+            <!-- <Event Name="Clicked" Function="" /> -->
+			<Window Type="TLBB_SimpleText" Name="Packet_Temporary_Num31">
+                <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-64.000000},{1.000000,-16.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="Packet_Temporary_Space_Line4_Row2_button">
+            <Property Name="UnifiedPosition" Value="{{0.000000,34.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <!-- <Property Name="DraggingEnabled" Value="True" /> -->
+            <!-- <Property Name="DragAcceptName" Value="p31" /> -->
+            <Event Name="RBClicked" Function="Packet_Temporary_Select(32)" />
+            <!-- <Event Name="Clicked" Function="" /> -->
+			<Window Type="TLBB_SimpleText" Name="Packet_Temporary_Num32">
+                <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-64.000000},{1.000000,-16.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="Packet_Temporary_Space_Line4_Row3_button">
+            <Property Name="UnifiedPosition" Value="{{0.000000,68.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <!-- <Property Name="DraggingEnabled" Value="True" /> -->
+            <!-- <Property Name="DragAcceptName" Value="p32" /> -->
+            <Event Name="RBClicked" Function="Packet_Temporary_Select(33)" />
+            <!-- <Event Name="Clicked" Function="" /> -->
+			<Window Type="TLBB_SimpleText" Name="Packet_Temporary_Num33">
+                <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-64.000000},{1.000000,-16.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="Packet_Temporary_Space_Line4_Row4_button">
+            <Property Name="UnifiedPosition" Value="{{0.000000,102.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <!-- <Property Name="DraggingEnabled" Value="True" /> -->
+            <!-- <Property Name="DragAcceptName" Value="p33" /> -->
+            <Event Name="RBClicked" Function="Packet_Temporary_Select(34)" />
+            <!-- <Event Name="Clicked" Function="" /> -->
+			<Window Type="TLBB_SimpleText" Name="Packet_Temporary_Num34">
+                <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-64.000000},{1.000000,-16.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="Packet_Temporary_Space_Line4_Row5_button">
+            <Property Name="UnifiedPosition" Value="{{0.000000,136.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <!-- <Property Name="DraggingEnabled" Value="True" /> -->
+            <!-- <Property Name="DragAcceptName" Value="p34" /> -->
+            <Event Name="RBClicked" Function="Packet_Temporary_Select(35)" />
+            <!-- <Event Name="Clicked" Function="" /> -->
+			<Window Type="TLBB_SimpleText" Name="Packet_Temporary_Num35">
+                <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-64.000000},{1.000000,-16.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="Packet_Temporary_Space_Line4_Row6_button">
+            <Property Name="UnifiedPosition" Value="{{0.000000,170.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <!-- <Property Name="DraggingEnabled" Value="True" /> -->
+            <!-- <Property Name="DragAcceptName" Value="p35" /> -->
+            <Event Name="RBClicked" Function="Packet_Temporary_Select(36)" />
+            <!-- <Event Name="Clicked" Function="" /> -->
+			<Window Type="TLBB_SimpleText" Name="Packet_Temporary_Num36">
+                <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-64.000000},{1.000000,-16.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="Packet_Temporary_Space_Line4_Row7_button">
+            <Property Name="UnifiedPosition" Value="{{0.000000,204.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <!-- <Property Name="DraggingEnabled" Value="True" /> -->
+            <!-- <Property Name="DragAcceptName" Value="p36" /> -->
+            <Event Name="RBClicked" Function="Packet_Temporary_Select(37)" />
+            <!-- <Event Name="Clicked" Function="" /> -->
+			<Window Type="TLBB_SimpleText" Name="Packet_Temporary_Num37">
+                <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-64.000000},{1.000000,-16.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="Packet_Temporary_Space_Line4_Row8_button">
+            <Property Name="UnifiedPosition" Value="{{0.000000,238.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <!-- <Property Name="DraggingEnabled" Value="True" /> -->
+            <!-- <Property Name="DragAcceptName" Value="p37" /> -->
+            <Event Name="RBClicked" Function="Packet_Temporary_Select(38)" />
+            <!-- <Event Name="Clicked" Function="" /> -->
+			<Window Type="TLBB_SimpleText" Name="Packet_Temporary_Num38">
+                <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-64.000000},{1.000000,-16.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="Packet_Temporary_Space_Line4_Row9_button">
+            <Property Name="UnifiedPosition" Value="{{0.000000,272.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <!-- <Property Name="DraggingEnabled" Value="True" /> -->
+            <!-- <Property Name="DragAcceptName" Value="p38" /> -->
+            <Event Name="RBClicked" Function="Packet_Temporary_Select(39)" />
+            <!-- <Event Name="Clicked" Function="" /> -->
+			<Window Type="TLBB_SimpleText" Name="Packet_Temporary_Num39">
+                <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-64.000000},{1.000000,-16.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="Packet_Temporary_Space_Line4_Row10_button">
+            <Property Name="UnifiedPosition" Value="{{0.000000,306.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <!-- <Property Name="DraggingEnabled" Value="True" /> -->
+            <!-- <Property Name="DragAcceptName" Value="p39" /> -->
+            <Event Name="RBClicked" Function="Packet_Temporary_Select(40)" />
+            <!-- <Event Name="Clicked" Function="" /> -->
+			<Window Type="TLBB_SimpleText" Name="Packet_Temporary_Num40">
+                <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-64.000000},{1.000000,-16.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Packet_Temporary_Space_Line5">
+          <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,34.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,136.000000}}" />
+		   <Property Name="AlwaysOnTop" Value="true" />
+          <Window Type="TLBB_ActionButton" Name="Packet_Temporary_Space_Line5_Row1_button">
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <!-- <Property Name="DraggingEnabled" Value="True" /> -->
+            <!-- <Property Name="DragAcceptName" Value="p40" /> -->
+            <Event Name="RBClicked" Function="Packet_Temporary_Select(41)" />
+            <!-- <Event Name="Clicked" Function="" /> -->
+			<Window Type="TLBB_SimpleText" Name="Packet_Temporary_Num41">
+                <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-64.000000},{1.000000,-16.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="Packet_Temporary_Space_Line5_Row2_button">
+            <Property Name="UnifiedPosition" Value="{{0.000000,34.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <!-- <Property Name="DraggingEnabled" Value="True" /> -->
+            <!-- <Property Name="DragAcceptName" Value="p41" /> -->
+            <Event Name="RBClicked" Function="Packet_Temporary_Select(42)" />
+            <!-- <Event Name="Clicked" Function="" /> -->
+			<Window Type="TLBB_SimpleText" Name="Packet_Temporary_Num42">
+                <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-64.000000},{1.000000,-16.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="Packet_Temporary_Space_Line5_Row3_button">
+            <Property Name="UnifiedPosition" Value="{{0.000000,68.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <!-- <Property Name="DraggingEnabled" Value="True" /> -->
+            <!-- <Property Name="DragAcceptName" Value="p42" /> -->
+            <Event Name="RBClicked" Function="Packet_Temporary_Select(43)" />
+            <!-- <Event Name="Clicked" Function="" /> -->
+			<Window Type="TLBB_SimpleText" Name="Packet_Temporary_Num43">
+                <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-64.000000},{1.000000,-16.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="Packet_Temporary_Space_Line5_Row4_button">
+            <Property Name="UnifiedPosition" Value="{{0.000000,102.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <!-- <Property Name="DraggingEnabled" Value="True" /> -->
+            <!-- <Property Name="DragAcceptName" Value="p43" /> -->
+            <Event Name="RBClicked" Function="Packet_Temporary_Select(44)" />
+            <!-- <Event Name="Clicked" Function="" /> -->
+			<Window Type="TLBB_SimpleText" Name="Packet_Temporary_Num44">
+                <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-64.000000},{1.000000,-16.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="Packet_Temporary_Space_Line5_Row5_button">
+            <Property Name="UnifiedPosition" Value="{{0.000000,136.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <!-- <Property Name="DraggingEnabled" Value="True" /> -->
+            <!-- <Property Name="DragAcceptName" Value="p44" /> -->
+            <Event Name="RBClicked" Function="Packet_Temporary_Select(45)" />
+            <!-- <Event Name="Clicked" Function="" /> -->
+			<Window Type="TLBB_SimpleText" Name="Packet_Temporary_Num45">
+                <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-64.000000},{1.000000,-16.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="Packet_Temporary_Space_Line5_Row6_button">
+            <Property Name="UnifiedPosition" Value="{{0.000000,170.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <!-- <Property Name="DraggingEnabled" Value="True" /> -->
+            <!-- <Property Name="DragAcceptName" Value="p45" /> -->
+            <Event Name="RBClicked" Function="Packet_Temporary_Select(46)" />
+            <!-- <Event Name="Clicked" Function="" /> -->
+			<Window Type="TLBB_SimpleText" Name="Packet_Temporary_Num46">
+                <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-64.000000},{1.000000,-16.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="Packet_Temporary_Space_Line5_Row7_button">
+            <Property Name="UnifiedPosition" Value="{{0.000000,204.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <!-- <Property Name="DraggingEnabled" Value="True" /> -->
+            <!-- <Property Name="DragAcceptName" Value="p46" /> -->
+            <Event Name="RBClicked" Function="Packet_Temporary_Select(47)" />
+            <!-- <Event Name="Clicked" Function="" /> -->
+			<Window Type="TLBB_SimpleText" Name="Packet_Temporary_Num47">
+                <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-64.000000},{1.000000,-16.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="Packet_Temporary_Space_Line5_Row8_button">
+            <Property Name="UnifiedPosition" Value="{{0.000000,238.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <!-- <Property Name="DraggingEnabled" Value="True" /> -->
+            <!-- <Property Name="DragAcceptName" Value="p47" /> -->
+            <Event Name="RBClicked" Function="Packet_Temporary_Select(48)" />
+            <!-- <Event Name="Clicked" Function="" /> -->
+			<Window Type="TLBB_SimpleText" Name="Packet_Temporary_Num48">
+                <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-64.000000},{1.000000,-16.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="Packet_Temporary_Space_Line5_Row9_button">
+            <Property Name="UnifiedPosition" Value="{{0.000000,272.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <!-- <Property Name="DraggingEnabled" Value="True" /> -->
+            <!-- <Property Name="DragAcceptName" Value="p48" /> -->
+            <Event Name="RBClicked" Function="Packet_Temporary_Select(49)" />
+            <!-- <Event Name="Clicked" Function="" /> -->
+			<Window Type="TLBB_SimpleText" Name="Packet_Temporary_Num49">
+                <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-64.000000},{1.000000,-16.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="Packet_Temporary_Space_Line5_Row10_button">
+            <Property Name="UnifiedPosition" Value="{{0.000000,306.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <!-- <Property Name="DraggingEnabled" Value="True" /> -->
+            <!-- <Property Name="DragAcceptName" Value="p49" /> -->
+            <Event Name="RBClicked" Function="Packet_Temporary_Select(50)" />
+            <!-- <Event Name="Clicked" Function="" /> -->
+			<Window Type="TLBB_SimpleText" Name="Packet_Temporary_Num50">
+                <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-64.000000},{1.000000,-16.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Packet_Temporary_Space_Line6">
+          <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,34.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,170.000000}}" />
+		   <Property Name="AlwaysOnTop" Value="true" />
+          <Window Type="TLBB_ActionButton" Name="Packet_Temporary_Space_Line6_Row1_button">
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <!-- <Property Name="DraggingEnabled" Value="True" /> -->
+            <!-- <Property Name="DragAcceptName" Value="p50" /> -->
+            <Event Name="RBClicked" Function="Packet_Temporary_Select(51)" />
+            <!-- <Event Name="Clicked" Function="" /> -->
+			<Window Type="TLBB_SimpleText" Name="Packet_Temporary_Num51">
+                <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-64.000000},{1.000000,-16.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="Packet_Temporary_Space_Line6_Row2_button">
+            <Property Name="UnifiedPosition" Value="{{0.000000,34.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <!-- <Property Name="DraggingEnabled" Value="True" /> -->
+            <!-- <Property Name="DragAcceptName" Value="p51" /> -->
+            <Event Name="RBClicked" Function="Packet_Temporary_Select(52)" />
+            <!-- <Event Name="Clicked" Function="" /> -->
+			<Window Type="TLBB_SimpleText" Name="Packet_Temporary_Num52">
+                <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-64.000000},{1.000000,-16.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="Packet_Temporary_Space_Line6_Row3_button">
+            <Property Name="UnifiedPosition" Value="{{0.000000,68.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <!-- <Property Name="DraggingEnabled" Value="True" /> -->
+            <!-- <Property Name="DragAcceptName" Value="p52" /> -->
+            <Event Name="RBClicked" Function="Packet_Temporary_Select(53)" />
+            <!-- <Event Name="Clicked" Function="" /> -->
+			<Window Type="TLBB_SimpleText" Name="Packet_Temporary_Num53">
+                <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-64.000000},{1.000000,-16.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="Packet_Temporary_Space_Line6_Row4_button">
+            <Property Name="UnifiedPosition" Value="{{0.000000,102.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <!-- <Property Name="DraggingEnabled" Value="True" /> -->
+            <!-- <Property Name="DragAcceptName" Value="p53" /> -->
+            <Event Name="RBClicked" Function="Packet_Temporary_Select(54)" />
+            <!-- <Event Name="Clicked" Function="" /> -->
+			<Window Type="TLBB_SimpleText" Name="Packet_Temporary_Num54">
+                <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-64.000000},{1.000000,-16.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="Packet_Temporary_Space_Line6_Row5_button">
+            <Property Name="UnifiedPosition" Value="{{0.000000,136.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <!-- <Property Name="DraggingEnabled" Value="True" /> -->
+            <!-- <Property Name="DragAcceptName" Value="p54" /> -->
+            <Event Name="RBClicked" Function="Packet_Temporary_Select(55)" />
+            <!-- <Event Name="Clicked" Function="" /> -->
+			<Window Type="TLBB_SimpleText" Name="Packet_Temporary_Num55">
+                <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-64.000000},{1.000000,-16.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="Packet_Temporary_Space_Line6_Row6_button">
+            <Property Name="UnifiedPosition" Value="{{0.000000,170.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <!-- <Property Name="DraggingEnabled" Value="True" /> -->
+            <!-- <Property Name="DragAcceptName" Value="p55" /> -->
+            <Event Name="RBClicked" Function="Packet_Temporary_Select(56)" />
+            <!-- <Event Name="Clicked" Function="" /> -->
+			<Window Type="TLBB_SimpleText" Name="Packet_Temporary_Num56">
+                <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-64.000000},{1.000000,-16.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="Packet_Temporary_Space_Line6_Row7_button">
+            <Property Name="UnifiedPosition" Value="{{0.000000,204.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <!-- <Property Name="DraggingEnabled" Value="True" /> -->
+            <!-- <Property Name="DragAcceptName" Value="p56" /> -->
+            <Event Name="RBClicked" Function="Packet_Temporary_Select(57)" />
+            <!-- <Event Name="Clicked" Function="" /> -->
+			<Window Type="TLBB_SimpleText" Name="Packet_Temporary_Num57">
+                <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-64.000000},{1.000000,-16.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="Packet_Temporary_Space_Line6_Row8_button">
+            <Property Name="UnifiedPosition" Value="{{0.000000,238.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <!-- <Property Name="DraggingEnabled" Value="True" /> -->
+            <!-- <Property Name="DragAcceptName" Value="p57" /> -->
+            <Event Name="RBClicked" Function="Packet_Temporary_Select(58)" />
+            <!-- <Event Name="Clicked" Function="" /> -->
+			<Window Type="TLBB_SimpleText" Name="Packet_Temporary_Num58">
+                <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-64.000000},{1.000000,-16.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="Packet_Temporary_Space_Line6_Row9_button">
+            <Property Name="UnifiedPosition" Value="{{0.000000,272.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <!-- <Property Name="DraggingEnabled" Value="True" /> -->
+            <!-- <Property Name="DragAcceptName" Value="p58" /> -->
+            <Event Name="RBClicked" Function="Packet_Temporary_Select(59)" />
+            <!-- <Event Name="Clicked" Function="" /> -->
+			<Window Type="TLBB_SimpleText" Name="Packet_Temporary_Num59">
+                <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-64.000000},{1.000000,-16.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="Packet_Temporary_Space_Line6_Row10_button">
+            <Property Name="UnifiedPosition" Value="{{0.000000,306.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <!-- <Property Name="DraggingEnabled" Value="True" /> -->
+            <!-- <Property Name="DragAcceptName" Value="p59" /> -->
+            <Event Name="RBClicked" Function="Packet_Temporary_Select(60)" />
+            <!-- <Event Name="Clicked" Function="" /> -->
+			<Window Type="TLBB_SimpleText" Name="Packet_Temporary_Num60">
+                <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-64.000000},{1.000000,-16.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+            </Window>
+          </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace3" Name="Packet_Temporary_TextFrame">
+        <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{0.000000,24.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.00000,5.000000},{1.00000,-54.000000}}"/>
+		<Property Name="AlwaysOnTop" Value="true" />
+        <Window Type="TLBB_SimpleText" Name="Packet_Temporary_TipsText">
+          <Property Name="UnifiedSize" Value="{{1.000000,-5.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.00000,5.000000},{0.500000,-9.000000}}"/>
+          <Property Name="HorzFormatting" Value="LeftAligned"/>
+          <Property Name="Text" Value="#cfff263右键道具放入背包。"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="Packet_Temporary_CleanButton">
+        <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.00000,-123.000000},{1.00000,-29.000000}}"/>
+		<Property Name="AlwaysOnTop" Value="true" />
+        <Property Name="Text" Value="#cfff263上一页"/>
+        <Property Name="Tooltip" Value=""/>
+        <Event Name="Clicked" Function="Packet_Temporary_CleanButtonClk(); "/>
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="Packet_Temporary_PutButton">
+        <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.00000,-63.000000},{1.00000,-29.000000}}"/>
+		<Property Name="AlwaysOnTop" Value="true" />
+        <Property Name="Text" Value="#cfff263下一页"/>
+        <Property Name="Tooltip" Value="#Y点击该按钮，将当前天机锦囊内的所有物品存入背包。"/>
+        <Event Name="Clicked" Function="Packet_Temporary_MoveAllItemToPacket(); "/>
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="Packet_Temporary_DeleteButton">
+        <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.00000,5.000000},{1.00000,-29.000000}}"/>
+		<Property Name="AlwaysOnTop" Value="true" />
+        <Property Name="Text" Value="#cfff263全部丢弃"/>
+        <Property Name="Tooltip" Value="#Y点击该按钮，将#G丢弃#Y当前在#G天机行囊#Y内的#G所有物品#Y。且该操作#G不可找回#Y，请#G谨慎#Y操作。"/>
+        <Event Name="Clicked" Function="Packet_Temporary_CleanAllItem(); "/>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

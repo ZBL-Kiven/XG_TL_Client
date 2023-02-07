@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_Frame_Lace4" Name="ShaXingDaojishi_Mini_Frame">
+		<Property Name="UnifiedSize" Value="{{0.000000,170.000000},{0.000000,35.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{1.000000,-173.000000},{0.500000,79.000000}}"/>
+    <Window Type="TLBB_ButtonNULL" Name="ShaXingDaojishi_Mini">
+      <Property Name="UnifiedSize" Value="{{1.0,0.000000},{1.0,0.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.0,0.000000}}" />
+      <Window Type="TLBB_SimpleText" Name="ShaXingDaojishi_Mini_PageHeader">
+        <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,22.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.500000,-70.000000},{0.500000,-11.000000}}" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Text" Value="#{XSX_220705_111}" />
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="ShaXingDaojishi_Mini_Small">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+        <Event Name="Clicked" Function="ShaXingDaojishi_Mini_Open()" />
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="ShaXingDaojishi_Mini_Image">
+        <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.500000,-9.000000}}" />
+        <Property Name="MouseRButtonHollow" Value="True" />
+        <Property Name="MouseMoveHollow" Value="True" />
+        <Property Name="MouseLButtonHollow" Value="True" />
+        <Property Name="MouseHollow" Value="True" />
+        <Property Name="PushedImage" Value="set:SongLiao02 image:Up_Pushed"/>
+        <Property Name="NormalImage" Value="set:SongLiao02 image:Up_Normal"/>
+        <Property Name="HoverImage" Value="set:SongLiao02 image:Up_Hover"/>
+        <Property Name="DisabledImage" Value="set:SongLiao02 image:Up_Disabled"/>
+        <Event Name="Clicked" Function="ShaXingDaojishi_Mini_Open()" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

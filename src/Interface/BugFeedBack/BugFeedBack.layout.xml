@@ -1,0 +1,168 @@
+<?xml version="1.0" ?>
+<GUILayout>
+    <Window Type="TLBB_MainFrame1" Name="BugFeedBack_Frame">
+      <Property Name="UnifiedPosition" Value="{{0.500000,-225.000000},{0.500000,-225.000000}" />
+      <Property Name="AbsoluteSize" Value="w:450.000000 h:470.000000"  />
+	  <Event Name="Hidden" Function="BugFeedBack_OnHidden();" />
+        <Window Type="TLBB_DragTitle" Name="BugFeedBack_DragTitle">
+            <Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
+            <Property Name="UnifiedSize" Value="{{1.000000,-52.000000},{0.000000,20.000000}" />
+            <Property Name="DragTarget" Value="BugFeedBack_Frame" />
+            <Property Name="Text" Value="#{BUGFK_XML_2}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="Font" Value="YouYuan11.25" />
+        </Window>
+      <Window Type="TLBB_ButtonHelp" Name="BugFeedBack_Help">
+        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+        <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+		<Event Name="Clicked" Function='Helper:GotoHelper("");' />
+      </Window>
+      <Window Type="TLBB_ButtonClose" Name="BugFeedBack_Close">
+        <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+        <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+		<Event Name="Clicked" Function="this:Hide();" />
+      </Window>
+      <Window Type="TLBB_Frame_Lace3" Name="BugFeedBack_Content">
+        <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,33.000000}" />
+        <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-75.000000}" />
+      <Window Type="TLBB_SimpleText" Name="BugFeedBack_Explain1">
+        <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,10.000000}" />
+        <Property Name="AbsoluteSize" Value="w:74.000000 h:20.000000" />
+        <Property Name="TextColor" Value="FFFFF263" />
+        <Property Name="Text" Value="#{BUGFK_XML_3}"/>
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="Tooltip" Value="#{BUGFK_XML_14}"/>
+      </Window>
+      <Window Type="TLBB_EditBoxNormal" Name="BugFeedBack_SimpleEditbox">
+        <Property Name="UnifiedPosition" Value="{{0.000000,85.000000},{0.000000,10.000000}" />
+        <Property Name="AbsoluteSize" Value="w:335.000000 h:20.000000" />
+        <Property Name="MaxTextLength" Value="50" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+    </Window>
+      <Window Type="TLBB_SimpleText" Name="BugFeedBack_Explain2">
+        <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,35.000000}" />
+        <Property Name="AbsoluteSize" Value="w:74.000000 h:20.000000" />
+        <Property Name="TextColor" Value="FFFFF263" />
+        <Property Name="Text" Value="#{BUGFK_XML_4}"/>
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="Tooltip" Value="#{BUGFK_XML_15}"/>
+      </Window>
+      <Window Type="TLBB_MultiIMEEditBox" Name="BugFeedBack_DetailEditbox">
+        <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.000000,60.000000}" />
+        <Property Name="AbsoluteSize" Value="w:409.000000 h:200.000000" />
+        <Property Name="MaxTextLength" Value="1000" />
+        <Property Name="VertScrollbar" Value="True" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+		<Property Name="SelectedTextColour" Value="FFFFFFFF" />
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="BugFeedBack_Explain3">
+        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,265.000000}" />
+        <Property Name="AbsoluteSize" Value="w:120.000000 h:20.000000" />
+        <Property Name="TextColor" Value="FFFFF263" />
+        <Property Name="Text" Value="#{BUGFK_XML_5}"/>
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="BugFeedBack_Explain4">
+        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,290.000000}" />
+        <Property Name="AbsoluteSize" Value="w:166.000000 h:20.000000" />
+        <Property Name="TextColor" Value="FFFFF263" />
+        <Property Name="Text" Value="#{BUGFK_XML_6}"/>
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+      </Window>
+      <Window Type="TLBB_ButtonCheck" Name="BugFeedBack_Checktime1">
+        <Property Name="UnifiedPosition" Value="{{0,15.000000},{0.000000,315.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.0,12.000000},{0.000000,12.000000}" />
+		<Event Name="MouseButtonUp" Function="BugFeedBack_Check_Clicked(1);" />
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="BugFeedBack_Explain5">
+        <Property Name="UnifiedPosition" Value="{{0.000000,35.000000},{0.000000,312.000000}" />
+        <Property Name="AbsoluteSize" Value="w:30.000000 h:20.000000" />
+        <Property Name="TextColor" Value="FFFFF263" />
+        <Property Name="Text" Value="#{BUGFK_XML_7}"/>
+        <Property Name="VertFormatting" Value="VertCentred" />
+      </Window>
+      <Window Type="TLBB_ButtonCheck" Name="BugFeedBack_Checktime2">
+        <Property Name="UnifiedPosition" Value="{{0,100.000000},{0.000000,315.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.0,12.000000},{0.000000,12.000000}" />
+		<Event Name="MouseButtonUp" Function="BugFeedBack_Check_Clicked(2);" />
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="BugFeedBack_Explain6">
+        <Property Name="UnifiedPosition" Value="{{0.000000,120.000000},{0.000000,312.000000}" />
+        <Property Name="AbsoluteSize" Value="w:60.000000 h:20.000000" />
+        <Property Name="TextColor" Value="FFFFF263" />
+        <Property Name="Text" Value="#{BUGFK_XML_8}"/>
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="Tooltip" Value="#{BUGFK_XML_16}"/>
+      </Window>
+      <Window Type="TLBB_EditBoxNormal" Name="BugFeedBack_TimeEditbox">
+        <Property Name="UnifiedPosition" Value="{{0.000000,185.000000},{0.000000,312.000000}" />
+        <Property Name="AbsoluteSize" Value="w:245.000000 h:20.000000" />
+        <Property Name="MaxTextLength" Value="30" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="BugFeedBack_Explain7">
+        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,340.000000}" />
+        <Property Name="AbsoluteSize" Value="w:166.000000 h:20.000000" />
+        <Property Name="TextColor" Value="FFFFF263" />
+        <Property Name="Text" Value="#{BUGFK_XML_9}"/>
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+      </Window>
+      <Window Type="TLBB_ButtonCheck" Name="BugFeedBack_Checkname1">
+        <Property Name="UnifiedPosition" Value="{{0,15.000000},{0.000000,365.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.0,12.000000},{0.000000,12.000000}" />
+		<Event Name="MouseButtonUp" Function="BugFeedBack_Check_Clicked(3);" />
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="BugFeedBack_Explain8">
+        <Property Name="UnifiedPosition" Value="{{0.000000,35.000000},{0.000000,362.000000}" />
+        <Property Name="AbsoluteSize" Value="w:30.000000 h:20.000000" />
+        <Property Name="TextColor" Value="FFFFF263" />
+        <Property Name="Text" Value="#{BUGFK_XML_10}"/>
+        <Property Name="VertFormatting" Value="VertCentred" />
+      </Window>
+      <Window Type="TLBB_ButtonCheck" Name="BugFeedBack_Checkname2">
+        <Property Name="UnifiedPosition" Value="{{0,100.000000},{0.000000,365.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.0,12.000000},{0.000000,12.000000}" />
+		<Event Name="MouseButtonUp" Function="BugFeedBack_Check_Clicked(4);" />
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="BugFeedBack_Explain9">
+        <Property Name="UnifiedPosition" Value="{{0.000000,120.000000},{0.000000,362.000000}" />
+        <Property Name="AbsoluteSize" Value="w:60.000000 h:20.000000" />
+        <Property Name="TextColor" Value="FFFFF263" />
+        <Property Name="Text" Value="#{BUGFK_XML_11}"/>
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="Tooltip" Value="#{BUGFK_XML_17}"/>
+      </Window>
+      <Window Type="TLBB_EditBoxNormal" Name="BugFeedBack_NameEditbox">
+        <Property Name="UnifiedPosition" Value="{{0.000000,185.000000},{0.000000,362.000000}" />
+        <Property Name="AbsoluteSize" Value="w:245.000000 h:20.000000" />
+        <Property Name="MaxTextLength" Value="30" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+      </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace5" Name="BugFeedBack_Blank">
+        <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{1.000000,-39.000000}" />
+        <Property Name="UnifiedSize" Value="{{1.000000,-135.000000},{0.000000,20.000000}" />
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="BugFeedBack_Update">
+        <Property Name="UnifiedPosition" Value="{{1.000000,-128.000000},{1.000000,-39.000000}" />
+        <Property Name="AbsoluteSize" Value="w:60.000000 h:20.000000" />
+        <Property Name="Text" Value="#{BUGFK_XML_12}" />
+		<Event Name="Clicked" Function="BugFeedBack_Submit();" />
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="BugFeedBack_Cancel">
+        <Property Name="UnifiedPosition" Value="{{1.000000,-68.000000},{1.000000,-39.000000}" />
+        <Property Name="AbsoluteSize" Value="w:60.000000 h:20.000000" />
+        <Property Name="Text" Value="#{BUGFK_XML_13}" />
+		<Event Name="Clicked" Function="this:Hide();" />
+      </Window>
+    </Window>
+</GUILayout>

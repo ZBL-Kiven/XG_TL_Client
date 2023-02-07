@@ -1,0 +1,139 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame0" Name="MenPaiWar_TopListAward_Frame">
+    <Property Name="UnifiedPosition" Value="{{0.500000,-182.000000},{0.500000,-168.000000}" />
+    <Property Name="UnifiedSize" Value="{{0.000000,364.000000},{0.000000,366.000000}" />
+    <Event Name="Hidden" Function="" />
+    <Window Type="TLBB_DragTitle" Name="MenPaiWar_TopListAward_DragTitle">
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+      <Property Name="DragTarget" Value="MenPaiWar_TopListAward_Frame" />
+      <Property Name="Font" Value="YouYuan11.25" />
+      <Property Name="Text" Value="#{MPCG_191029_343}" />
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="MenPaiWar_TopListAward_Help">
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}" />
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="MenPaiWar_TopListAward_Close">
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}" />
+      <Event Name="Clicked" Function="MenPaiWar_TopListAward_Hide()"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="MenPaiWar_TopListAward_Client">
+      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,36.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-55.000000}" />
+      <Window Type="DefaultWindow" Name="MenPaiWar_TopListAward_AwardBK">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Window Type="TLBB_Frame_Lace3" Name="MenPaiWar_TopListAward_Award1BK">
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}" />
+          <Property Name="UnifiedSize" Value="{{0.000000,350.000000},{0.000000,62.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="MenPaiWar_TopListAward_Award1Image">
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}" />
+            <Property Name="UnifiedSize" Value="{{0.000000,340.000000},{0.000000,52.000000}}"/>
+            <Property Name="Image" Value="set:MenPaiFirstOne_BattleTable image:MenPaiFirstOne_BattleAward1"/>
+            <Window Type="TLBB_SimpleText" Name="MenPaiWar_TopListAward_AwardInfo1">
+              <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.500000,-8.000000}" />
+              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,20.000000}}"/>
+              <Property Name="Text" Value="#{MPCG_191029_344}" />
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="MenPaiWar_TopListAward_Icon1">
+              <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,210.000000},{0.500000,-20.000000}}"/>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="MenPaiWar_TopListAward_Icon1_2">
+              <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,260.000000},{0.500000,-20.000000}}"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TLBB_Frame_Lace3" Name="MenPaiWar_TopListAward_Award2BK">
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,62.000000}" />
+          <Property Name="UnifiedSize" Value="{{0.000000,350.000000},{0.000000,62.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="MenPaiWar_TopListAward_Award2Image">
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}" />
+            <Property Name="UnifiedSize" Value="{{0.000000,340.000000},{0.000000,52.000000}}"/>
+            <Property Name="Image" Value="set:MenPaiFirstOne_BattleTable image:MenPaiFirstOne_BattleAward2"/>
+            <Window Type="TLBB_SimpleText" Name="MenPaiWar_TopListAward_AwardInfo2">
+              <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.500000,-8.000000}" />
+              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,20.000000}}"/>
+              <Property Name="Text" Value="#{MPCG_191029_345}" />
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="MenPaiWar_TopListAward_Icon2">
+              <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,210.000000},{0.500000,-20.000000}}"/>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="MenPaiWar_TopListAward_Icon2_2">
+              <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,260.000000},{0.500000,-20.000000}}"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TLBB_Frame_Lace3" Name="MenPaiWar_TopListAward_Award3BK">
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,124.000000}" />
+          <Property Name="UnifiedSize" Value="{{0.000000,350.000000},{0.000000,62.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="MenPaiWar_TopListAward_Award3Image">
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}" />
+            <Property Name="UnifiedSize" Value="{{0.000000,340.000000},{0.000000,52.000000}}"/>
+            <Property Name="Image" Value="set:MenPaiFirstOne_BattleTable image:MenPaiFirstOne_BattleAward3"/>
+            <Window Type="TLBB_SimpleText" Name="MenPaiWar_TopListAward_AwardInfo3">
+              <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.500000,-8.000000}" />
+              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,20.000000}}"/>
+              <Property Name="Text" Value="#{MPCG_191029_346}" />
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="MenPaiWar_TopListAward_Icon3">
+              <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,210.000000},{0.500000,-20.000000}}"/>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="MenPaiWar_TopListAward_Icon3_2">
+              <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,260.000000},{0.500000,-20.000000}}"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TLBB_Frame_Lace3" Name="MenPaiWar_TopListAward_Award4BK">
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,186.000000}" />
+          <Property Name="UnifiedSize" Value="{{0.000000,350.000000},{0.000000,62.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="MenPaiWar_TopListAward_Award4Image">
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}" />
+            <Property Name="UnifiedSize" Value="{{0.000000,340.000000},{0.000000,52.000000}}"/>
+            <Property Name="Image" Value="set:MenPaiFirstOne_BattleTable image:MenPaiFirstOne_BattleAward3"/>
+            <Window Type="TLBB_SimpleText" Name="MenPaiWar_TopListAward_AwardInfo4">
+              <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.500000,-8.000000}" />
+              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,20.000000}}"/>
+              <Property Name="Text" Value="#{MPCG_191029_347}" />
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="MenPaiWar_TopListAward_Icon4">
+              <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,210.000000},{0.500000,-20.000000}}"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TLBB_Frame_Lace3" Name="MenPaiWar_TopListAward_Award5BK">
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,248.000000}" />
+          <Property Name="UnifiedSize" Value="{{0.000000,350.000000},{0.000000,62.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="MenPaiWar_TopListAward_Awar54Image">
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}" />
+            <Property Name="UnifiedSize" Value="{{0.000000,340.000000},{0.000000,52.000000}}"/>
+            <Property Name="Image" Value="set:MenPaiFirstOne_BattleTable image:MenPaiFirstOne_BattleAward3"/>
+            <Window Type="TLBB_SimpleText" Name="MenPaiWar_TopListAward_AwardInfo5">
+              <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.500000,-8.000000}" />
+              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,20.000000}}"/>
+              <Property Name="Text" Value="#{MPCG_191029_348}" />
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="MenPaiWar_TopListAward_Icon5">
+              <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,210.000000},{0.500000,-20.000000}}"/>
+            </Window>
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_SimpleMulitiTextFrame" Name="PetSoulEffectSelfTips_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,92.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-178.000000},{0.200000,100.000000}}"/>
+    <Property Name="AlwaysOnTop" Value="True"/>
+       <Window Type="TLBB_SelfWindow" Name="PetSoulEffectSelfTipsText">
+          <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{1.000000,-8.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="MinHeight" Value="10"/>
+          <Property Name="MaxWidth" Value="190"/>
+          <Property Name="TextColor" Value="FFFFF263" />
+       </Window>
+  </Window>
+</GUILayout>

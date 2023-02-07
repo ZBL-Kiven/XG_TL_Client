@@ -1,0 +1,198 @@
+<?xml version="1.0" ?>
+<GUILayout>
+    <Window Type="TLBB_MainFrame1" Name="WuhunExtraPropertyDel_Frame">
+        <Property Name="UnifiedPosition" Value="{{0.5,-128},{0.5,-178}}" />
+        <Property Name="AbsoluteSize" Value="w:390 h:400" />
+        <Event Name="Hidden" Function="WuhunExtraPropertyDel_OnHiden();" />
+        <Window Type="TLBB_DragTitle" Name="WuhunExtraPropertyDel_DragTitle">
+          <Property Name="AbsolutePosition" Value="x:40.000000 y:11.000000" />
+          <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}" />
+            <Property Name="DragTarget" Value="WuhunExtraPropertyDel_Frame" />
+            <Window Type="TLBB_SimpleText" Name="WuhunExtraPropertyDel_Title">
+                <Property Name="Position" Value="x:0.0 y:0.0" />
+                <Property Name="Size" Value="w:1.0 h:1.0" />
+                <Property Name="Font" Value="YouYuan11.25" />
+                <Property Name="HorzFormatting" Value="HorzCentred" />
+                <Property Name="VertFormatting" Value="VertCentred" />
+                <Property Name="RiseOnClick" Value="False" />
+                <Property Name="Text" Value="#{WH_xml_XX(88)}" />
+            </Window>
+        </Window>
+        <Window Type="TLBB_ButtonHelp" Name="WuhunExtraPropertyDel_Help">
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+            <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+            <Property Name="Text" Value="TLBB_ButtonHelp" />
+            <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*WuhunExtraPropertyDel&quot;);' />
+        </Window>
+        <Window Type="TLBB_ButtonClose" Name="WuhunExtraPropertyDel_Close">
+          <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+          <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+            <Property Name="Text" Value="TLBB_ButtonClose" />
+            <Event Name="Clicked" Function="this:Hide();" />
+        </Window>
+        <Window Type="DefaultWindow" Name="WuhunExtraPropertyDel_Frame_Client">
+            <Property Name="AbsolutePosition" Value="x:7.000000 y:36.000000" />
+            <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-55.000000}" />
+          <Window Type="TLBB_SimpleMulitiTextFrame" Name="WuhunExtraPropertyDel_Info">
+                <Property Name="Position" Value="x:0.0 y:0.0" />
+                <Property Name="AbsoluteSize" Value="w:377 h:60" />
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+                <Property Name="RiseOnClick" Value="False" />
+                <Property Name="Text" Value="#{WH_xml_XX(89)}" />
+                <Property Name="TextColor" Value="FFFFF263" />
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="WuhunExtraPropertyDel_Info2">
+                <Property Name="Position" Value="x:0.059233 y:0.211594" />
+                <Property Name="UnifiedSize" Value="{{0.6,0.000000},{0.000000,36.000000}" />
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+                <Property Name="RiseOnClick" Value="False" />
+                <Property Name="Text" Value="#{WH_xml_XX(90)}" />
+                <Property Name="TextColor" Value="FFFFF263" />
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="WuhunExtraPropertyDel_Object1">
+                <Property Name="Position" Value="x:0.738676 y:0.211594" />
+                <Property Name="AbsoluteSize" Value="w:36 h:36" />                
+                <Property Name="DragAcceptName" Value="G90" />
+                <Property Name="DraggingEnabled" Value="True" />
+                <Event Name="RBClicked" Function="WuhunExtraPropertyDel_Resume_Equip();" />
+            </Window>
+          <Window Type="TLBB_SimpleText" Name="WuhunExtraPropertyDel_Info3">
+            <Property Name="Position" Value="x:0.059233 y:0.339130" />
+            <Property Name="UnifiedSize" Value="{{0.9,0.000000},{0.000000,20.000000}" />
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+            <Property Name="RiseOnClick" Value="False" />
+            <Property Name="Text" Value="#{WH_xml_XX(91)}" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+          <Window Type="TLBB_ButtonCheckForRMBShop" Name="WuhunExtraPropertyDel_Property1" >
+                <Property Name="Position" Value="x:0.015915 y:0.417391" />
+								<Property Name="AbsoluteSize" Value="w:180.000000 h:19.000000" />
+								<Property Name="CheckMode" Value="1"/>
+								<Event Name="MouseLButtonDown" Function="WuhunExtraPropertyDel_Select_AttrEx(1);"/>
+						</Window>
+						<Window Type="TLBB_ButtonCheckForRMBShop" Name="WuhunExtraPropertyDel_Property2" >
+                <Property Name="Position" Value="x:0.506631 y:0.417391" />
+								<Property Name="AbsoluteSize" Value="w:180.000000 h:19.000000" />
+								<Property Name="CheckMode" Value="1"/>
+								<Event Name="MouseLButtonDown" Function="WuhunExtraPropertyDel_Select_AttrEx(2);"/>
+						</Window>
+						<Window Type="TLBB_ButtonCheckForRMBShop" Name="WuhunExtraPropertyDel_Property3" >
+                <Property Name="Position" Value="x:0.015915 y:0.478261" />
+								<Property Name="AbsoluteSize" Value="w:180.000000 h:19.000000" />
+								<Property Name="CheckMode" Value="1"/>
+								<Event Name="MouseLButtonDown" Function="WuhunExtraPropertyDel_Select_AttrEx(3);"/>
+						</Window>
+						<Window Type="TLBB_ButtonCheckForRMBShop" Name="WuhunExtraPropertyDel_Property4" >
+                <Property Name="Position" Value="x:0.506631 y:0.478261" />
+								<Property Name="AbsoluteSize" Value="w:180.000000 h:19.000000" />
+								<Property Name="CheckMode" Value="1"/>
+								<Event Name="MouseLButtonDown" Function="WuhunExtraPropertyDel_Select_AttrEx(4);"/>
+						</Window>
+						<Window Type="TLBB_ButtonCheckForRMBShop" Name="WuhunExtraPropertyDel_Property5" >
+                <Property Name="Position" Value="x:0.015915 y:0.539130" />
+								<Property Name="AbsoluteSize" Value="w:180.000000 h:19.000000" />
+								<Property Name="CheckMode" Value="1"/>
+								<Event Name="MouseLButtonDown" Function="WuhunExtraPropertyDel_Select_AttrEx(5);"/>
+						</Window>
+						<Window Type="TLBB_ButtonCheckForRMBShop" Name="WuhunExtraPropertyDel_Property6" >
+                <Property Name="Position" Value="x:0.506631 y:0.539130" />
+								<Property Name="AbsoluteSize" Value="w:180.000000 h:19.000000" />
+								<Property Name="CheckMode" Value="1"/>
+								<Event Name="MouseLButtonDown" Function="WuhunExtraPropertyDel_Select_AttrEx(6);"/>
+						</Window>
+						<Window Type="TLBB_ButtonCheckForRMBShop" Name="WuhunExtraPropertyDel_Property7" >
+                <Property Name="Position" Value="x:0.015915 y:0.600000" />
+								<Property Name="AbsoluteSize" Value="w:180.000000 h:19.000000" />
+								<Property Name="CheckMode" Value="1"/>
+								<Event Name="MouseLButtonDown" Function="WuhunExtraPropertyDel_Select_AttrEx(7);"/>
+						</Window>
+						<Window Type="TLBB_ButtonCheckForRMBShop" Name="WuhunExtraPropertyDel_Property8" >
+                <Property Name="Position" Value="x:0.506631 y:0.600000" />
+								<Property Name="AbsoluteSize" Value="w:180.000000 h:19.000000" />
+								<Property Name="CheckMode" Value="1"/>
+								<Event Name="MouseLButtonDown" Function="WuhunExtraPropertyDel_Select_AttrEx(8);"/>
+						</Window>
+						<Window Type="TLBB_ButtonCheckForRMBShop" Name="WuhunExtraPropertyDel_Property9" >
+                <Property Name="Position" Value="x:0.015915 y:0.660870" />
+								<Property Name="AbsoluteSize" Value="w:180.000000 h:19.000000" />
+								<Property Name="CheckMode" Value="1"/>
+								<Event Name="MouseLButtonDown" Function="WuhunExtraPropertyDel_Select_AttrEx(9);"/>
+						</Window>
+						<Window Type="TLBB_ButtonCheckForRMBShop" Name="WuhunExtraPropertyDel_Property10" >
+                <Property Name="Position" Value="x:0.506631 y:0.660870" />
+								<Property Name="AbsoluteSize" Value="w:180.000000 h:19.000000" />
+								<Property Name="CheckMode" Value="1"/>
+								<Event Name="MouseLButtonDown" Function="WuhunExtraPropertyDel_Select_AttrEx(10);"/>
+						</Window>
+            <Window Type="TLBB_SimpleMulitiTextFrame" Name="WuhunExtraPropertyDel_Money_Text">
+                <Property Name="UnifiedPosition" Value="{{0.0500,0.000000},{1.000000,-102.00000}" />
+                <Property Name="UnifiedSize" Value="{{0.9,0.000000},{0.000000,22.000000}" />
+                <Property Name="TextColor" Value="FFFFF263" />
+                <Property Name="Text" Value="#{INTERFACE_XML_789}" />
+                <Property Name="HorzFormatting" Value="LeftAligned" />
+                <Property Name="VertFormatting" Value="VertCentred" />
+                <Property Name="RiseOnClick" Value="False" />
+                <Window Type="TLBB_Money" Name="WuhunExtraPropertyDel_DemandMoney">
+                    <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}" />
+                    <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}" />
+                    <Property Name="MoneyNumber" Value="0" />
+                    <Property Name="HorzFormatting" Value="RightAligned" />
+                    <Property Name="AlignFix" Value="True" />
+                    <Property Name="GoldIcon" Value = "set:Button6 image:Lace_JiaoziJin" />
+                    <Property Name="SilverIcon" Value = "set:Button6 image:Lace_JiaoziYin" />
+                    <Property Name="CopperIcon" Value = "set:Button6 image:Lace_JiaoziTong" />
+                </Window>
+            </Window>
+            <Window Type="TLBB_SimpleMulitiTextFrame" Name="WuhunExtraPropertyDel_Jiaozi_Text">
+                <Property Name="UnifiedPosition" Value="{{0.0500,0.000000},{1.000000,-80.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.9,0.000000},{0.000000,22.000000}" />
+                <Property Name="TextColor" Value="FFFFF263" />
+                <Property Name="Text" Value="#{BDJB_051210_1}" />
+                <Property Name="HorzFormatting" Value="LeftAligned" />
+                <Property Name="VertFormatting" Value="VertCentred" />
+                <Property Name="RiseOnClick" Value="False" />
+                <Window Type="TLBB_Money" Name="WuhunExtraPropertyDel_SelfJiaozi">
+                    <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}" />
+                    <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}" />
+                    <Property Name="MoneyNumber" Value="0" />
+                    <Property Name="HorzFormatting" Value="RightAligned" />
+                    <Property Name="AlignFix" Value="True" />
+                    <Property Name="GoldIcon" Value = "set:Button6 image:Lace_JiaoziJin" />
+                    <Property Name="SilverIcon" Value = "set:Button6 image:Lace_JiaoziYin" />
+                    <Property Name="CopperIcon" Value = "set:Button6 image:Lace_JiaoziTong" />
+                </Window>
+            </Window>
+            <Window Type="TLBB_SimpleMulitiTextFrame" Name="WuhunExtraPropertyDel_SelfMoney_Text">
+                <Property Name="UnifiedPosition" Value="{{0.0500,0.000000},{1.000000,-58.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.9,0.000000},{0.000000,22.000000}" />
+                <Property Name="TextColor" Value="FFFFF263" />
+                <Property Name="Text" Value="#{INTERFACE_XML_834}" />
+                <Property Name="HorzFormatting" Value="LeftAligned" />
+                <Property Name="VertFormatting" Value="VertCentred" />
+                <Property Name="RiseOnClick" Value="False" />
+                <Window Type="TLBB_Money" Name="WuhunExtraPropertyDel_SelfMoney">
+                    <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}" />
+                    <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}" />
+                    <Property Name="HorzFormatting" Value="RightAligned" />
+                    <Property Name="MoneyNumber" Value="0" />
+                </Window>
+            </Window>
+            <Window Type="TLBB_Frame_Lace5" Name="WuhunExtraPropertyDel_Blank">
+              <Property Name="UnifiedSize" Value="{{1.000000,-85.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-29.000000}}"/>
+            </Window>
+            <Window Type="TLBB_ButtonCommon" Name="WuhunExtraPropertyDel_OK">
+                <Property Name="UnifiedPosition" Value="{{1.000000,-83.000000},{1.000000,-29.000000}" />
+                <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+                <Property Name="Text" Value="#{INTERFACE_XML_557}" />
+                <Event Name="Clicked" Function="WuhunExtraPropertyDel_OK_Clicked();" />
+            </Window>
+            <Window Type="TLBB_ButtonCommon" Name="WuhunExtraPropertyDel_Cancel">
+                <Property Name="UnifiedPosition" Value="{{1.000000,-43.000000},{1.000000,-29.000000}" />
+                <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+                <Property Name="Text" Value="#{INTERFACE_XML_542}" />
+                <Event Name="Clicked" Function="WuhunExtraPropertyDel_Close();" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

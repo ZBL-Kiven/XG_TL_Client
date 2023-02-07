@@ -1,0 +1,154 @@
+<?xml version="1.0" ?>
+<GUILayout>
+    <Window Type="TLBB_MainFrame1" Name="SJ_CaiLiaoQiangHua_Frame">
+      <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,410.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-150.000000},{0.500000,-205.000000}}"/>
+      <Event Name="Hidden" Function="SJ_CaiLiaoQiangHua_Close();" />
+        <Window Type="TLBB_DragTitle" Name="SJ_CaiLiaoQiangHua_DragTitle">
+            <Property Name="AbsolutePosition" Value="x:40.000000 y:10.000000" />
+            <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,30.000000}" />
+            <Property Name="DragTarget" Value="SJ_CaiLiaoQiangHua_Frame" />
+            <Window Type="TLBB_SimpleText" Name="SJ_CaiLiaoQiangHua_Title">
+                <Property Name="Position" Value="x:0.0 y:0.0" />
+                <Property Name="Size" Value="w:1.0 h:1.0" />
+                <Property Name="Font" Value="YouYuan11.25" />
+                <Property Name="HorzFormatting" Value="HorzCentred" />
+                <Property Name="VertFormatting" Value="VertCentred" />
+                <Property Name="Text" Value="#gFF0FA0材料点金" />
+            </Window>
+        </Window>
+	<Window Type="TLBB_ButtonHelp" Name="SJ_CaiLiaoQiangHua_Help">
+          <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+          <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+            <Property Name="Text" Value="TLBB_ButtonHelp" />
+            <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*SJ_CaiLiaoQiangHua&quot;);' />
+        </Window>
+        <Window Type="TLBB_ButtonClose" Name="SJ_CaiLiaoQiangHua_Close">
+            <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+            <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+            <Property Name="Text" Value="TLBB_ButtonClose" />
+            <Event Name="Clicked" Function="SJ_CaiLiaoQiangHua_Close();" />
+        </Window>
+        <Window Type="DefaultWindow" Name="SJ_CaiLiaoQiangHua_Frame_Client">
+            <Property Name="AbsolutePosition" Value="x:7.000000 y:30.000000" />
+            <Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{1.000000,-39.000000}" />
+            <Property Name="RiseOnClick" Value="False" />
+            <Window Type="TLBB_SimpleMulitiTextFrame" Name="SJ_CaiLiaoQiangHua_Info1">
+                <Property Name="Position" Value="x:0.0 y:0.0" />
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,115.000000}" />
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+                <Property Name="RiseOnClick" Value="False" />
+                <Property Name="TextColor" Value="FFFFF263" />
+              <Property Name="Text" Value="#{ZZQH_180929_5}" />
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="SJ_CaiLiaoQiangHua_Info2">
+              <Property Name="UnifiedSize" Value="{{0.000000,156.000000},{0.000000,36.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,48.000000},{0.000000,118.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+            <Property Name="RiseOnClick" Value="False" />
+            <Property Name="TextColor" Value="FFFFF263" />
+            <Property Name="Text" Value="#cfff263请放入#G3级棉布#cfff263或#G3级秘银#cfff263：" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="SJ_CaiLiaoQiangHua_Bk">
+            <Property Name="UnifiedSize" Value="{{1.000000,-59.000000},{0.000000,62.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,150.000000}}"/>
+            <Window Type="TLBB_ActionButton" Name="SJ_CaiLiaoQiangHua_Object1">
+              <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,11.000000}}"/>
+              <Property Name="Empty" Value="false" />
+              <Property Name="DragAcceptName" Value="I23" />
+              <Property Name="DraggingEnabled" Value="True" />
+              <Event Name="RBClicked" Function="SJ_CaiLiaoQiangHua_ClearObj(1);" />
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="SJ_CaiLiaoQiangHua_Object2">
+              <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,170.000000},{0.000000,11.000000}}"/>
+              <Property Name="Empty" Value="False"/>
+              <Property Name="DraggingEnabled" Value="True"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="SJ_CaiLiaoQiangHua_Info3">
+              <Property Name="UnifiedSize" Value="{{0.000000,107.000000},{0.000000,36.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,10.000000}}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="RiseOnClick" Value="False" />
+              <Property Name="TextColor" Value="FFFFF263" />
+              <Property Name="Text" Value="#cfff263点金后可获得：" />
+            </Window>
+          </Window>          
+          <Window Type="TLBB_SimpleText" Name="SJ_CaiLiaoQiangHua_Info5">
+            <Property Name="UnifiedSize" Value="{{0.000000,89.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,51.000000},{0.000000,226.000000}}"/>
+            <Property Name="HorzFormatting" Value="LeftAligned"/>
+            <Property Name="RiseOnClick" Value="False" />
+            <Property Name="TextColor" Value="FFFFF263" />
+            <Property Name="Text" Value="#cfff263请放入#G点金玉#cfff263：" />
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="SJ_CaiLiaoQiangHua_Object3">
+            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,200.000000},{0.000000,227.000000}}"/>
+            <Property Name="Empty" Value="false" />
+            <Property Name="DragAcceptName" Value="I24" />
+            <Property Name="DraggingEnabled" Value="True" />
+            <Event Name="RBClicked" Function="SJ_CaiLiaoQiangHua_ClearObj(3);" />
+          </Window>
+          <Window Type="TLBB_SimpleMulitiTextFrame" Name="SJ_CaiLiaoQiangHua_Info4">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,22.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-90.000000}}"/>
+            <Property Name="TextColor" Value="FFFFF263" />
+            <Property Name="Text" Value="#cfff263点金花费：" />
+            <Window Type="TLBB_Money" Name="SJ_CaiLiaoQiangHua_Money">
+              <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}" />
+              <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}" />
+              <Property Name="HorzFormatting" Value="RightAligned" />
+              <Property Name="MoneyNumber" Value="0" />
+              <Property Name="GoldIcon" Value = "set:Button6 image:Lace_JiaoziJin" />
+              <Property Name="SilverIcon" Value = "set:Button6 image:Lace_JiaoziYin" />
+              <Property Name="CopperIcon" Value = "set:Button6 image:Lace_JiaoziTong" />
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleMulitiTextFrame" Name="SJ_CaiLiaoQiangHua_Jiaozi_Text">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,22.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-68.000000}}"/>
+            <Property Name="TextColor" Value="FFFFF263" />
+            <Property Name="Text" Value="#cfff263拥有交子：" />
+            <Window Type="TLBB_Money" Name="SJ_CaiLiaoQiangHua_SelfJiaozi">
+              <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}" />
+              <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}" />
+              <Property Name="HorzFormatting" Value="RightAligned" />
+              <Property Name="MoneyNumber" Value="0" />
+              <Property Name="GoldIcon" Value = "set:Button6 image:Lace_JiaoziJin" />
+              <Property Name="SilverIcon" Value = "set:Button6 image:Lace_JiaoziYin" />
+              <Property Name="CopperIcon" Value = "set:Button6 image:Lace_JiaoziTong" />
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleMulitiTextFrame" Name="SJ_CaiLiaoQiangHua_Money_Text">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,22.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-46.000000}}"/>
+            <Property Name="TextColor" Value="FFFFF263" />
+            <Property Name="Text" Value="#cfff263拥有金钱：" />
+            <Window Type="TLBB_Money" Name="SJ_CaiLiaoQiangHua_SelfMoney">
+              <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}" />
+              <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}" />
+              <Property Name="HorzFormatting" Value="RightAligned" />
+              <Property Name="MoneyNumber" Value="0" />
+            </Window>
+          </Window>
+            <Window Type="TLBB_Frame_Lace5" Name="SJ_CaiLiaoQiangHua_Blank">
+                <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-20.000000}" />
+                <Property Name="UnifiedSize" Value="{{1.000000,-84.000000},{0.000000,20.000000}" />
+            </Window>
+            <Window Type="TLBB_ButtonCommon" Name="SJ_CaiLiaoQiangHua_OK">
+                <Property Name="UnifiedPosition" Value="{{1.000000,-82.000000},{1.000000,-25.000000}" />
+                <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+                <Property Name="Text" Value="点金" />
+                <Event Name="Clicked" Function="SJ_CaiLiaoQiangHua_DianJin();" />
+            </Window>
+            <Window Type="TLBB_ButtonCommon" Name="SJ_CaiLiaoQiangHua_Cancel">
+                <Property Name="UnifiedPosition" Value="{{1.000000,-42.000000},{1.000000,-25.000000}" />
+                <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+                <Property Name="Text" Value="取消" />
+                <Event Name="Clicked" Function="SJ_CaiLiaoQiangHua_Close();" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

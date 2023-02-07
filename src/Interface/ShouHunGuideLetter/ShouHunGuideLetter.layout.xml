@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" ?>
+<GUILayout>
+    <Window Type="TLBB_MainFrameNULL" Name="ShouHunGuideLetter_Frame">
+      <Property Name="UnifiedSize" Value="{{0.000000,532.000000},{0.000000,327.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-266.000000},{0.500000,-163.500000}}"/>
+        <Window Type="TLBB_DragTitle" Name="ShouHunGuideLetter_DragTitle">
+            <Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
+            <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+            <Property Name="DragTarget" Value="ShouHunGuideLetter_Frame" />
+        </Window>
+        <Window Type="TLBB_ButtonClose" Name="ShouHunGuideLetter_Close">
+          <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-28.000000},{0.000000,10.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="Clicked" Function="ShouHunGuideLetter_OnHiden();" />
+        </Window>
+      <Window Type="DefaultWindow" Name="ShouHunGuideLetter_background_Frame">
+        <Property Name="UnifiedSize" Value="{{0.000000,532.000000},{0.000000,327.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Window Type="TLBB_StaticImageNULL" Name="ShouHunGuideLetter_background1">
+          <Property Name="UnifiedSize" Value="{{0.000000,512.000000},{0.000000,327.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:ShouHunGuideLetter image:PetsoulLetter_L"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="ShouHunGuideLetter_background2">
+          <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,163.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,512.000000},{0.000000,0.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:ShouHunGuideLetter image:PetsoulLetter_RT"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="ShouHunGuideLetter_background3">
+          <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,163.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,512.000000},{0.000000,163.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:ShouHunGuideLetter image:PetsoulLetter_RB"/>
+        </Window>
+      </Window>
+        <Window Type="DefaultWindow" Name="ShouHunGuideLetter_Function_Frame">
+            <Property Name="AbsolutePosition" Value="x:6.000000 y:36.000000" />
+            <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-55.000000}" />
+            <Window Type="TLBB_ButtonCommon" Name="ShouHunGuideLetter_QianWang">
+              <Property Name="UnifiedSize" Value="{{0.000000,72.000000},{0.000000,26.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-86.000000},{1.000000,-32.000000}}"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="Tooltip" Value="#{SHYD_20211227_07}"/>
+              <Property Name="Text" Value="#{SHYD_20211227_06}" />
+                <Event Name="Clicked" Function="ShouHunGuideLetter_Clicked()" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

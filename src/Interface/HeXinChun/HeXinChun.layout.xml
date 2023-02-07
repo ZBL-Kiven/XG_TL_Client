@@ -1,0 +1,946 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="HeXinChun_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,669.000000},{0.000000,448.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-352.000000},{0.500000,-288.000000}}"/>
+    <Event Name="Hidden" Function="HeXinChun_OnHiden();"/>
+    <Window Type="DefaultWindow" Name="HeXinChun_ButtonLeft">
+      <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,330.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,10.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Window Type="TLBB_StaticImageNULL" Name="HeXinChun_ButtonLeft_Image1">
+        <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,44.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-8.000000},{0.000000,0.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Image" Value="set:SpecialFrame image:SpecialFrame01ImageL1"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="TLBB_ButtonCheckNULL" Name="HeXinChun_FenYe1">
+        <Property Name="UnifiedSize" Value="{{0.000000,33.000000},{0.000000,82.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,38.000000}}"/>
+        <Property Name="PushedImage" Value="set:Zhanjianghu image:Hexinchun_2"/>
+        <Property Name="NormalImage" Value="set:Zhanjianghu image:Hexinchun_1"/>
+		<Property Name="HoverImage" Value="set:Zhanjianghu image:Hexinchun_2"/>
+		<Property Name="DisabledImage" Value="set:Zhanjianghu image:Hexinchun_1"/>
+        <Property Name="CheckMode" Value="1"/>
+
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="HeXinChun_FenYe1_Tips">
+        <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,28.000000},{0.000000,36.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="HeXinChun_ButtonLeft_Image2">
+        <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,14.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-8.000000},{0.000000,116.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Image" Value="set:SpecialFrame image:SpecialFrame01ImageL2"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="TLBB_ButtonCheckNULL" Name="HeXinChun_FenYe2">
+        <Property Name="UnifiedSize" Value="{{0.000000,33.000000},{0.000000,82.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,120.000000}}"/>
+
+        <Property Name="PushedImage" Value="set:Zhanjianghu image:Zhanjianghu_2"/>
+        <Property Name="NormalImage" Value="set:Zhanjianghu image:Zhanjianghu_1"/>
+		<Property Name="HoverImage" Value="set:Zhanjianghu image:Zhanjianghu_2"/>
+		<Property Name="DisabledImage" Value="set:Zhanjianghu image:Zhanjianghu_1"/>
+        <Property Name="CheckMode" Value="1"/>
+		<Event Name="Clicked" Function="HeXinChun_ChangeTabIndex();"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="HeXinChun_FenYe2_Tips">
+        <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,28.000000},{0.000000,118.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="HeXinChun_ButtonLeft_Image3">
+        <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,14.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-8.000000},{0.000000,198.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Image" Value="set:SpecialFrame image:SpecialFrame01ImageL2"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+
+      <Window Type="TLBB_StaticImageNULL" Name="HeXinChun_ButtonLeft_Image4">
+        <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,46.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-7.000000},{0.000000,208.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Image" Value="set:SpecialFrame image:SpecialFrame01ImageL3"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+    </Window>
+    <Window Type="TLBB_SpecialFrame01" Name="HeXinChun_MainFrame">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      <Window Type="TLBB_SpecialTitle01" Name="HeXinChun_DragTitleBK">
+        <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,27.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-100.000000},{0.000000,0.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+      </Window>
+      <Window Type="TLBB_DragTitle" Name="HeXinChun_DragTitle">
+        <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,5.000000}}"/>
+        <Property Name="Font" Value="YouYuan11.25" />
+        <Property Name="HorzFormatting" Value="HorzCentred"/>
+        <Property Name="Text" Value="#{CJYJ_180104_11}" />
+		<Property Name="DragTarget" Value="HeXinChun_Frame"/>
+      </Window>
+      <Window Type="TLBB_SpecialClose" Name="HeXinChun_Close">
+        <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,45.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-46.000000},{0.000000,0.000000}}"/>
+        <Event Name="Clicked" Function="HeXinChun_Close();" />
+      </Window>
+      <Window Type="DefaultWindow" Name="HeXinChun_Frame_Client">
+        <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{1.000000,-50.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,30.000000}}"/>
+
+    <Window Type="TLBB_StaticImageNULL" Name="HeXinChun_leftLine">
+		<Property Name="UnifiedSize" Value="{{0.000000,2.000000},{0.000000,20.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,0.000000}}"/>
+		<Property Name="Image" Value="set:Anniversary5 image:7riVLine"/>
+	</Window>
+	<Window Type="TLBB_StaticImageNULL" Name="HeXinChun_rightLine">
+		<Property Name="UnifiedSize" Value="{{0.000000,2.000000},{0.000000,20.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{1.000000,-22.000000},{0.000000,0.000000}}"/>
+
+	</Window>
+
+		  <Window Type="TLBB_ButtonHelp" Name="HeXinChun_Button_Help">
+		<Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{1.000000,-191.000000},{0.000000,377.000000}}"/>
+            <Property Name="Tooltip" Value="#{CJYJ_201222_107}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="Clicked" Function="HeXinChun_HelpClicked();"/>
+          </Window>
+		  	<Window Type="TLBB_SimpleText" Name="HeXinChun_Text">
+		<Property Name="UnifiedSize" Value="{{0.000000,405.000000},{0.000000,44.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,354.000000}}"/>
+		                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+		<Property Name="Text" Value="#{CJYJ_180111_97}"/>
+		<Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+		<Property Name="Font" Value="SongTiBmp12"/>
+		<Property Name="AlwaysOnTop" Value="True"/>
+	</Window>
+	<Window Type="DefaultWindow" Name="HeXinChun_Frame_ImageBK">
+		<Property Name="UnifiedSize" Value="{{0.000000,588.000000},{0.000000,397.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+		<Property Name="RiseOnClick" Value="False"/>
+	
+        <Window Type="TLBB_StaticImageNULL" Name="HeXinChun_Client1_Image1">
+            <Property Name="UnifiedSize" Value="{{0.000000,512.000000},{0.000000,397.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,1.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:HeXinChun image:BJ1"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="HeXinChun_Client1_Image2">
+            <Property Name="UnifiedSize" Value="{{0.000000,76.000000},{0.000000,397.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,512.000000},{0.000000,1.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:HeXinChun1 image:BJ2"/>
+          </Window>
+	</Window>
+		  <Window Type="DefaultWindow" Name="HeXinChun_Page1_Icon1">
+            <Property Name="UnifiedSize" Value="{{0.000000,79.000000},{0.000000,203.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.1250000,-60.000000},{0.000000,16.000000}}"/>
+			<Property Name="AlwaysOnTop" Value="True"/>
+            <Window Type="TLBB_StaticImageNULL" Name="HeXinChun_Page1_oneResign">
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-11.5000000},{1.000000,-201.000000}}"/>
+              <Property Name="Image" Value="set:HeXinChun1 image:resign"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="HeXinChun_Page1_oneLine">
+              <Property Name="UnifiedSize" Value="{{0.000000,2.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-1.000000},{0.000000,0.000000}}"/>
+              <Property Name="Image" Value="set:HeXinChun1 image:7riVLine"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="HeXinChun_one_ButtonTip">
+              <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,7.500000},{1.000000,-152.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+              <Window Type="TLBB_ButtonNULL" Name="HeXinChun_one_Button">
+                <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,56.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-12.000000},{1.000000,-183.000000}}"/>
+				<Property Name="Visible" Value="False"/>
+                <Property Name="PushedImage" Value="set:HeXinChun1 image:AnniversaryLotteryButton_Pushed"/>
+                <Property Name="NormalImage" Value="set:HeXinChun1 image:AnniversaryLotteryButton_Normal"/>
+                <Property Name="HoverImage" Value="set:HeXinChun1 image:AnniversaryLotteryButton_Hover"/>
+                <Property Name="DisabledImage" Value="set:HeXinChun1 image:AnniversaryLotteryButton_Normal"/>
+                <Property Name="Font" Value="YouYuan11.25"/>
+                <Property Name="Tooltip" Value="#{SJFL_150608_11}" />
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Event Name="Clicked" Function="HeXinChun_OnClick(1)"/>
+                <Window Type="TLBB_SimpleText" Name="HeXinChun_Page1_one_LotteryButtonText">
+                  <Property Name="UnifiedSize" Value="{{0.000000,22.000000},{0.000000,56.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="HorzFormatting" Value="HorzCentred"/>
+                  <Property Name="Font" Value="YouYuan11.25"/>
+                  <Property Name="Text" Value=""/>
+				  <Property Name="Tooltip" Value="#{SJFL_150608_11}" />
+                </Window>
+              </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="HeXinChun_Page1_one_Date">
+                  <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,60.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.500000,4.000000},{1.000000,-113.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                  <Property Name="Image" Value="set:HeXinChun3 image:chuxi"/>
+                </Window>
+            <Window Type="TLBB_ButtonNULL" Name="HeXinChun_Page1_one_Button">
+              <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,98.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-29.500000},{1.000000,-183.000000}}"/>
+              <Property Name="PushedImage" Value="set:HeXinChun2 image:DenglongHover"/>
+              <Property Name="NormalImage" Value="set:HeXinChun2 image:DenglongDark"/>
+              <Property Name="HoverImage" Value="set:HeXinChun2 image:DenglongHover"/>
+              <Property Name="DisabledImage" Value="set:HeXinChun2 image:DenglongDark"/>
+			  <Property Name="Tooltip" Value="#{CJYJ_201222_01}"/>
+
+              <Window Type="TLBB_ActionButton" Name="HeXinChun_Page1_one">
+                <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-16.500000},{1.000000,-64.000000}}"/>
+                <Event Name="Clicked" Function="HeXinChun_OnClick(1)"/>
+                <Window Type="TLBB_StaticImageNULL" Name="HeXinChun_Page1_oneMark">
+                  <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,25.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{1.000000,-30.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                  <Property Name="Image" Value="set:Seven image:Seven_ke"/>
+                </Window>
+              </Window>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="HeXinChun_oneText">
+              <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-30.000000},{1.000000,-22.000000}}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="VertFormatting" Value="BottomAligned"/>
+			  		<Property Name="Visible" Value="False"/>
+              <Property Name="Text" Value="#{CJYJ_180104_14}"/>
+            </Window>
+          </Window>
+		  <Window Type="DefaultWindow" Name="HeXinChun_Page1_Icon2">
+            <Property Name="UnifiedSize" Value="{{0.000000,79.000000},{0.000000,203.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.2500000,-65.000000},{0.000000,16.000000}}"/>
+			<Property Name="AlwaysOnTop" Value="True"/>
+            <Window Type="TLBB_StaticImageNULL" Name="HeXinChun_Page1_twoResign">
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-11.500000},{1.000000,-201.000000}}"/>
+              <Property Name="Image" Value="set:HeXinChun1 image:resign"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="HeXinChun_Page1_twoLine">
+              <Property Name="UnifiedSize" Value="{{0.000000,2.000000},{0.000000,10.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-1.000000},{0.000000,0.000000}}"/>
+              <Property Name="Image" Value="set:HeXinChun1 image:7riVLine"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="HeXinChun_two_ButtonTip">
+              <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,7.500000},{1.000000,-162.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+              <Window Type="TLBB_ButtonNULL" Name="HeXinChun_two_Button">
+                <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,56.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-12.000000},{1.000000,-193.000000}}"/>
+				<Property Name="Visible" Value="False"/>
+                <Property Name="Tooltip" Value="#{SJFL_150608_13}" />
+                <Property Name="PushedImage" Value="set:HeXinChun1 image:AnniversaryLotteryButton_Pushed"/>
+                <Property Name="NormalImage" Value="set:HeXinChun1 image:AnniversaryLotteryButton_Normal"/>
+                <Property Name="HoverImage" Value="set:HeXinChun1 image:AnniversaryLotteryButton_Hover"/>
+                <Property Name="DisabledImage" Value="set:HeXinChun1 image:AnniversaryLotteryButton_Normal"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Event Name="Clicked" Function="HeXinChun_OnClick(2)"/>
+                <Window Type="TLBB_SimpleText" Name="HeXinChun_Page1_two_LotteryButtonText">
+                  <Property Name="UnifiedSize" Value="{{0.000000,22.000000},{0.000000,56.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="HorzFormatting" Value="HorzCentred"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Font" Value="YouYuan11.25"/>
+                  <Property Name="Text" Value=""/>
+                <Property Name="Tooltip" Value="#{SJFL_150608_11}" />
+                </Window>
+              </Window>
+	<Window Type="TLBB_StaticImageNULL" Name="HeXinChun_Page1_two_Date">
+		<Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,60.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.500000,4.000000},{1.000000,-123.000000}}"/>
+		<Property Name="MouseRButtonHollow" Value="True"/>
+		<Property Name="MouseMoveHollow" Value="True"/>
+		<Property Name="MouseLButtonHollow" Value="True"/>
+		<Property Name="MouseHollow" Value="True"/>
+		<Property Name="Image" Value="set:HeXinChun3 image:chunjie"/>
+		<Property Name="AlwaysOnTop" Value="True"/>
+	</Window>
+            <Window Type="TLBB_ButtonNULL" Name="HeXinChun_Page1_two_Button">
+              <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,98.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-29.500000},{1.000000,-193.000000}}"/>
+              <Property Name="PushedImage" Value="set:HeXinChun2 image:DenglongHover"/>
+              <Property Name="NormalImage" Value="set:HeXinChun2 image:DenglongDark"/>
+              <Property Name="HoverImage" Value="set:HeXinChun2 image:DenglongHover"/>
+              <Property Name="DisabledImage" Value="set:HeXinChun2 image:DenglongDark"/>
+			  <Property Name="Tooltip" Value="#{CJYJ_201222_01}"/>
+
+              <Window Type="TLBB_ActionButton" Name="HeXinChun_Page1_two">
+                <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-16.500000},{1.000000,-64.000000}}"/>
+                <Event Name="Clicked" Function="HeXinChun_OnClick(2)"/>
+                <Window Type="TLBB_StaticImageNULL" Name="HeXinChun_Page1_twoMark">
+                  <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,25.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{1.000000,-30.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                  <Property Name="Image" Value="set:Seven image:Seven_ke"/>
+                </Window>
+              </Window>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="HeXinChun_twoText">
+              <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-30.000000},{1.000000,-22.000000}}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="VertFormatting" Value="BottomAligned"/>
+			  		<Property Name="Visible" Value="False"/>
+              <Property Name="Text" Value="#{CJYJ_180104_15}"/>
+            </Window>
+          </Window>
+		  <Window Type="DefaultWindow" Name="HeXinChun_Page1_Icon3">
+            <Property Name="UnifiedSize" Value="{{0.000000,79.000000},{0.000000,203.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.3750000,-70.000000},{0.000000,16.000000}}"/>
+			<Property Name="AlwaysOnTop" Value="True"/>
+            <Window Type="TLBB_StaticImageNULL" Name="HeXinChun_Page1_threeResign">
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-11.500000},{1.000000,-201.000000}}"/>
+              <Property Name="Image" Value="set:HeXinChun1 image:resign"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="HeXinChun_Page1_threeLine">
+              <Property Name="UnifiedSize" Value="{{0.000000,2.000000},{0.000000,15.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-1.000000},{0.000000,0.000000}}"/>
+              <Property Name="Image" Value="set:HeXinChun1 image:7riVLine"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="HeXinChun_three_ButtonTip">
+              <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,7.500000},{1.000000,-157.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+              <Window Type="TLBB_ButtonNULL" Name="HeXinChun_three_Button">
+                <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,56.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-12.000000},{1.000000,-188.000000}}"/>
+				<Property Name="Visible" Value="False"/>
+                <Property Name="Tooltip" Value="#{SJFL_150608_15}" />
+                <Property Name="PushedImage" Value="set:HeXinChun1 image:AnniversaryLotteryButton_Pushed"/>
+                <Property Name="NormalImage" Value="set:HeXinChun1 image:AnniversaryLotteryButton_Normal"/>
+                <Property Name="HoverImage" Value="set:HeXinChun1 image:AnniversaryLotteryButton_Hover"/>
+                <Property Name="DisabledImage" Value="set:HeXinChun1 image:AnniversaryLotteryButton_Normal"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Event Name="Clicked" Function="HeXinChun_OnClick(3)"/>
+                <Window Type="TLBB_SimpleText" Name="HeXinChun_Page1_three_LotteryButtonText">
+                  <Property Name="UnifiedSize" Value="{{0.000000,22.000000},{0.000000,56.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="HorzFormatting" Value="HorzCentred"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Font" Value="YouYuan11.25"/>
+                  <Property Name="Text" Value=""/>
+                <Property Name="Tooltip" Value="#{SJFL_150608_11}" />
+                </Window>
+              </Window>
+	<Window Type="TLBB_StaticImageNULL" Name="HeXinChun_Page1_three_Date">
+		<Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,60.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.500000,4.000000},{1.000000,-118.000000}}"/>
+		<Property Name="MouseRButtonHollow" Value="True"/>
+		<Property Name="MouseMoveHollow" Value="True"/>
+		<Property Name="MouseLButtonHollow" Value="True"/>
+		<Property Name="MouseHollow" Value="True"/>
+		<Property Name="Image" Value="set:HeXinChun3 image:2"/>
+		<Property Name="AlwaysOnTop" Value="True"/>
+	</Window>
+            <Window Type="TLBB_ButtonNULL" Name="HeXinChun_Page1_three_Button">
+              <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,98.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-29.500000},{1.000000,-188.000000}}"/>
+              <Property Name="PushedImage" Value="set:HeXinChun2 image:DenglongHover"/>
+              <Property Name="NormalImage" Value="set:HeXinChun2 image:DenglongDark"/>
+              <Property Name="HoverImage" Value="set:HeXinChun2 image:DenglongHover"/>
+              <Property Name="DisabledImage" Value="set:HeXinChun2 image:DenglongDark"/>
+			  <Property Name="Tooltip" Value="#{CJYJ_201222_01}"/>
+
+              <Window Type="TLBB_ActionButton" Name="HeXinChun_Page1_three">
+                <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-16.500000},{1.000000,-64.000000}}"/>
+                <Event Name="Clicked" Function="HeXinChun_OnClick(3)"/>
+                <Window Type="TLBB_StaticImageNULL" Name="HeXinChun_Page1_threeMark">
+                  <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,25.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{1.000000,-30.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                  <Property Name="Image" Value="set:Seven image:Seven_ke"/>
+                </Window>
+              </Window>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="HeXinChun_threeText">
+              <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-30.000000},{1.000000,-22.000000}}"/>
+              <Property Name="Text" Value="#{CJYJ_180104_16}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="VertFormatting" Value="BottomAligned"/>
+			  		<Property Name="Visible" Value="False"/>
+            </Window>
+          </Window>
+		  <Window Type="DefaultWindow" Name="HeXinChun_Page1_Icon4">
+            <Property Name="UnifiedSize" Value="{{0.000000,79.000000},{0.000000,203.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-75.000000},{0.000000,16.000000}}"/>
+			<Property Name="AlwaysOnTop" Value="True"/>
+            <Window Type="TLBB_StaticImageNULL" Name="HeXinChun_Page1_fourResign">
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-11.500000},{1.000000,-201.000000}}"/>
+              <Property Name="Image" Value="set:HeXinChun1 image:resign"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="HeXinChun_Page1_fourLine">
+              <Property Name="UnifiedSize" Value="{{0.000000,2.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-1.000000},{0.000000,0.000000}}"/>
+              <Property Name="Image" Value="set:HeXinChun1 image:7riVLine"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="HeXinChun_four_ButtonTip">
+              <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,7.500000},{1.000000,-152.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+              <Window Type="TLBB_ButtonNULL" Name="HeXinChun_four_Button">
+                <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,56.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-12.000000},{1.000000,-183.000000}}"/>
+				<Property Name="Visible" Value="False"/>
+                <Property Name="Tooltip" Value="#{SJFL_150608_17}" />
+                <Property Name="PushedImage" Value="set:HeXinChun1 image:AnniversaryLotteryButton_Pushed"/>
+                <Property Name="NormalImage" Value="set:HeXinChun1 image:AnniversaryLotteryButton_Normal"/>
+                <Property Name="HoverImage" Value="set:HeXinChun1 image:AnniversaryLotteryButton_Hover"/>
+                <Property Name="DisabledImage" Value="set:HeXinChun1 image:AnniversaryLotteryButton_Normal"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Event Name="Clicked" Function="HeXinChun_OnClick(4)"/>
+                <Window Type="TLBB_SimpleText" Name="HeXinChun_Page1_four_LotteryButtonText">
+                  <Property Name="UnifiedSize" Value="{{0.000000,22.000000},{0.000000,56.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="HorzFormatting" Value="HorzCentred"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Font" Value="YouYuan11.25"/>
+                  <Property Name="Text" Value=""/>
+                <Property Name="Tooltip" Value="#{SJFL_150608_11}" />
+                </Window>
+              </Window>
+	<Window Type="TLBB_StaticImageNULL" Name="HeXinChun_Page1_four_Date">
+		<Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,60.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.500000,4.000000},{1.000000,-114.000000}}"/>
+		<Property Name="MouseRButtonHollow" Value="True"/>
+		<Property Name="MouseMoveHollow" Value="True"/>
+		<Property Name="MouseLButtonHollow" Value="True"/>
+		<Property Name="MouseHollow" Value="True"/>
+		<Property Name="Image" Value="set:HeXinChun3 image:3"/>
+		<Property Name="AlwaysOnTop" Value="True"/>
+	</Window>
+            <Window Type="TLBB_ButtonNULL" Name="HeXinChun_Page1_four_Button">
+              <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,98.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-29.500000},{1.000000,-183.000000}}"/>
+              <Property Name="PushedImage" Value="set:HeXinChun2 image:DenglongHover"/>
+              <Property Name="NormalImage" Value="set:HeXinChun2 image:DenglongDark"/>
+              <Property Name="HoverImage" Value="set:HeXinChun2 image:DenglongHover"/>
+              <Property Name="DisabledImage" Value="set:HeXinChun2 image:DenglongDark"/>
+			  <Property Name="Tooltip" Value="#{CJYJ_201222_01}"/>
+
+              <Window Type="TLBB_ActionButton" Name="HeXinChun_Page1_four">
+                <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-16.500000},{1.000000,-64.000000}}"/>
+                <Event Name="Clicked" Function="HeXinChun_OnClick(4)"/>
+                <Window Type="TLBB_StaticImageNULL" Name="HeXinChun_Page1_fourMark">
+                  <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,25.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{1.000000,-30.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                  <Property Name="Image" Value="set:Seven image:Seven_ke"/>
+                </Window>
+              </Window>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="HeXinChun_fourText">
+              <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-30.000000},{1.000000,-22.000000}}"/>
+              <Property Name="Text" Value="#{CJYJ_180104_17}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="VertFormatting" Value="BottomAligned"/>
+			  		<Property Name="Visible" Value="False"/>
+            </Window>
+          </Window>
+		  <Window Type="DefaultWindow" Name="HeXinChun_Page1_Icon5">
+            <Property Name="UnifiedSize" Value="{{0.000000,79.000000},{0.000000,203.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.6250000,-80.000000},{0.000000,16.000000}}"/>
+			<Property Name="AlwaysOnTop" Value="True"/>
+            <Window Type="TLBB_StaticImageNULL" Name="HeXinChun_Page1_fiveResign">
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-11.500000},{1.000000,-201.000000}}"/>
+              <Property Name="Image" Value="set:HeXinChun1 image:resign"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="HeXinChun_Page1_fiveLine">
+              <Property Name="UnifiedSize" Value="{{0.000000,2.000000},{0.000000,25.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-1.000000},{0.000000,0.000000}}"/>
+              <Property Name="Image" Value="set:HeXinChun1 image:7riVLine"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="HeXinChun_five_ButtonTip">
+              <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,7.500000},{1.000000,-148.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+              <Window Type="TLBB_ButtonNULL" Name="HeXinChun_five_Button">
+                <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,56.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-12.000000},{1.000000,-178.000000}}"/>
+				<Property Name="Visible" Value="False"/>
+                <Property Name="Tooltip" Value="#{SJFL_150608_19}" />
+                <Property Name="PushedImage" Value="set:HeXinChun1 image:AnniversaryLotteryButton_Pushed"/>
+                <Property Name="NormalImage" Value="set:HeXinChun1 image:AnniversaryLotteryButton_Normal"/>
+                <Property Name="HoverImage" Value="set:HeXinChun1 image:AnniversaryLotteryButton_Hover"/>
+                <Property Name="DisabledImage" Value="set:HeXinChun1 image:AnniversaryLotteryButton_Normal"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Event Name="Clicked" Function="HeXinChun_OnClick(5)"/>
+                <Window Type="TLBB_SimpleText" Name="HeXinChun_Page1_five_LotteryButtonText">
+                  <Property Name="UnifiedSize" Value="{{0.000000,22.000000},{0.000000,56.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="HorzFormatting" Value="HorzCentred"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Font" Value="YouYuan11.25"/>
+                  <Property Name="Text" Value=""/>
+                <Property Name="Tooltip" Value="#{SJFL_150608_11}" />
+                </Window>
+              </Window>
+	<Window Type="TLBB_StaticImageNULL" Name="HeXinChun_Page1_five_Date">
+		<Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,60.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.500000,4.000000},{1.000000,-109.000000}}"/>
+		<Property Name="MouseRButtonHollow" Value="True"/>
+		<Property Name="MouseMoveHollow" Value="True"/>
+		<Property Name="MouseLButtonHollow" Value="True"/>
+		<Property Name="MouseHollow" Value="True"/>
+		<Property Name="Image" Value="set:HeXinChun3 image:4"/>
+		<Property Name="AlwaysOnTop" Value="True"/>
+	</Window>
+            <Window Type="TLBB_ButtonNULL" Name="HeXinChun_Page1_five_Button">
+              <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,98.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-29.500000},{1.000000,-178.000000}}"/>
+              <Property Name="PushedImage" Value="set:HeXinChun2 image:DenglongHover"/>
+              <Property Name="NormalImage" Value="set:HeXinChun2 image:DenglongDark"/>
+              <Property Name="HoverImage" Value="set:HeXinChun2 image:DenglongHover"/>
+              <Property Name="DisabledImage" Value="set:HeXinChun2 image:DenglongDark"/>
+			  <Property Name="Tooltip" Value="#{CJYJ_201222_01}"/>
+
+              <Window Type="TLBB_ActionButton" Name="HeXinChun_Page1_five">
+                <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-16.500000},{1.000000,-64.000000}}"/>
+                <Event Name="Clicked" Function="HeXinChun_OnClick(5)"/>
+                <Window Type="TLBB_StaticImageNULL" Name="HeXinChun_Page1_fiveMark">
+                  <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,25.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{1.000000,-30.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                  <Property Name="Image" Value="set:Seven image:Seven_ke"/>
+                </Window>
+              </Window>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="HeXinChun_fiveText">
+              <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-30.000000},{1.000000,-22.000000}}"/>
+              <Property Name="Text" Value="#{CJYJ_180104_18}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="VertFormatting" Value="BottomAligned"/>
+			  		<Property Name="Visible" Value="False"/>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="HeXinChun_Page1_Icon6">
+            <Property Name="UnifiedSize" Value="{{0.000000,79.000000},{0.000000,203.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.7500000,-85.000000},{0.000000,16.000000}}"/>
+			<Property Name="AlwaysOnTop" Value="True"/>
+            <Window Type="TLBB_StaticImageNULL" Name="HeXinChun_Page1_sixResign">
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-11.500000},{1.000000,-201.000000}}"/>
+              <Property Name="Image" Value="set:HeXinChun1 image:resign"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="HeXinChun_Page1_sixLine">
+              <Property Name="UnifiedSize" Value="{{0.000000,2.000000},{0.000000,30.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-1.000000},{0.000000,0.000000}}"/>
+              <Property Name="Image" Value="set:HeXinChun1 image:7riVLine"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="HeXinChun_six_ButtonTip">
+              <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,7.500000},{1.000000,-143.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+              <Window Type="TLBB_ButtonNULL" Name="HeXinChun_six_Button">
+                <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,56.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-12.000000},{1.000000,-173.000000}}"/>
+				<Property Name="Visible" Value="False"/>
+                <Property Name="Tooltip" Value="#{SJFL_150608_21}"/>
+                <Property Name="PushedImage" Value="set:HeXinChun1 image:AnniversaryLotteryButton_Pushed"/>
+                <Property Name="NormalImage" Value="set:HeXinChun1 image:AnniversaryLotteryButton_Normal"/>
+                <Property Name="HoverImage" Value="set:HeXinChun1 image:AnniversaryLotteryButton_Hover"/>
+                <Property Name="DisabledImage" Value="set:HeXinChun1 image:AnniversaryLotteryButton_Normal"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Event Name="Clicked" Function="HeXinChun_OnClick(6)"/>
+                <Window Type="TLBB_SimpleText" Name="HeXinChun_sixText">
+                  <Property Name="UnifiedSize" Value="{{0.000000,22.000000},{0.000000,56.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="HorzFormatting" Value="HorzCentred"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Font" Value="YouYuan11.25"/>
+                <Property Name="Tooltip" Value="#{SJFL_150608_11}" />
+                </Window>
+              </Window>
+	<Window Type="TLBB_StaticImageNULL" Name="HeXinChun_Page1_six_Date">
+		<Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,60.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.500000,4.000000},{1.000000,-104.000000}}"/>
+		<Property Name="MouseRButtonHollow" Value="True"/>
+		<Property Name="MouseMoveHollow" Value="True"/>
+		<Property Name="MouseLButtonHollow" Value="True"/>
+		<Property Name="MouseHollow" Value="True"/>
+		<Property Name="Image" Value="set:HeXinChun3 image:5"/>
+		<Property Name="AlwaysOnTop" Value="True"/>
+	</Window>
+            <Window Type="TLBB_ButtonNULL" Name="HeXinChun_Page1_six_Button">
+              <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,98.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-29.500000},{1.000000,-173.000000}}"/>
+              <Property Name="PushedImage" Value="set:HeXinChun2 image:DenglongHover"/>
+              <Property Name="NormalImage" Value="set:HeXinChun2 image:DenglongDark"/>
+              <Property Name="HoverImage" Value="set:HeXinChun2 image:DenglongHover"/>
+              <Property Name="DisabledImage" Value="set:HeXinChun2 image:DenglongDark"/>
+			  <Property Name="Tooltip" Value="#{CJYJ_201222_01}"/>
+
+              <Window Type="TLBB_ActionButton" Name="HeXinChun_Page1_six">
+                <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-16.500000},{1.000000,-64.000000}}"/>
+                <Event Name="Clicked" Function="HeXinChun_OnClick(6)"/>
+                <Window Type="TLBB_StaticImageNULL" Name="HeXinChun_Page1_sixMark">
+                  <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,25.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{1.000000,-30.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                  <Property Name="Image" Value="set:Seven image:Seven_ke"/>
+                </Window>
+              </Window>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="HeXinChun_Page1_sixText">
+              <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-30.000000},{1.000000,-22.000000}}"/>
+              <Property Name="Text" Value="#{CJYJ_180104_19}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="VertFormatting" Value="BottomAligned"/>
+			  		<Property Name="Visible" Value="False"/>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="HeXinChun_Page1_Icon7">
+            <Property Name="UnifiedSize" Value="{{0.000000,79.000000},{0.000000,203.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.8750000,-89.0000},{0.000000,16.000000}}"/>
+			<Property Name="AlwaysOnTop" Value="True"/>
+            <Window Type="TLBB_StaticImageNULL" Name="HeXinChun_Page1_sevevResign">
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-11.500000},{1.000000,-201.000000}}"/>
+              <Property Name="Image" Value="set:HeXinChun1 image:resign"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="HeXinChun_Page1_sevenLine">
+              <Property Name="UnifiedSize" Value="{{0.000000,2.000000},{0.000000,24.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-1.000000},{0.000000,0.000000}}"/>
+              <Property Name="Image" Value="set:HeXinChun1 image:7riVLine"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="HeXinChun_seven_ButtonTip">
+              <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,7.500000},{1.000000,-150.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+              <Window Type="TLBB_ButtonNULL" Name="HeXinChun_seven_Button">
+                <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,56.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-12.000000},{1.000000,-179.000000}}"/>
+				<Property Name="Visible" Value="False"/>
+                <Property Name="PushedImage" Value="set:HeXinChun1 image:AnniversaryLotteryButton_Pushed"/>
+                <Property Name="NormalImage" Value="set:HeXinChun1 image:AnniversaryLotteryButton_Normal"/>
+                <Property Name="HoverImage" Value="set:HeXinChun1 image:AnniversaryLotteryButton_Hover"/>
+                <Property Name="DisabledImage" Value="set:HeXinChun1 image:AnniversaryLotteryButton_Normal"/>
+                <Property Name="Tooltip" Value="#{SJFL_150608_23}"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Event Name="Clicked" Function="HeXinChun_OnClick(7)"/>
+                <Window Type="TLBB_SimpleText" Name="HeXinChun_sevenText">
+                  <Property Name="UnifiedSize" Value="{{0.000000,22.000000},{0.000000,56.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="HorzFormatting" Value="HorzCentred"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Font" Value="YouYuan11.25"/>
+                  <Property Name="Text" Value=""/>
+                <Property Name="Tooltip" Value="#{SJFL_150608_11}" />
+                </Window>
+              </Window>
+	<Window Type="TLBB_StaticImageNULL" Name="HeXinChun_Page1_seven_Date">
+		<Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,60.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.500000,4.000000},{1.000000,-110.000000}}"/>
+		<Property Name="MouseRButtonHollow" Value="True"/>
+		<Property Name="MouseMoveHollow" Value="True"/>
+		<Property Name="MouseLButtonHollow" Value="True"/>
+		<Property Name="MouseHollow" Value="True"/>
+		<Property Name="Image" Value="set:HeXinChun3 image:6"/>
+		<Property Name="AlwaysOnTop" Value="True"/>
+	</Window>
+            <Window Type="TLBB_ButtonNULL" Name="HeXinChun_Page1_seven_Button">
+              <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,98.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-29.500000},{1.000000,-179.000000}}"/>
+              <Property Name="PushedImage" Value="set:HeXinChun2 image:DenglongHover"/>
+              <Property Name="NormalImage" Value="set:HeXinChun2 image:DenglongDark"/>
+              <Property Name="HoverImage" Value="set:HeXinChun2 image:DenglongHover"/>
+              <Property Name="DisabledImage" Value="set:HeXinChun2 image:DenglongDark"/>
+			  <Property Name="Tooltip" Value="#{CJYJ_201222_01}"/>
+
+              <Window Type="TLBB_ActionButton" Name="HeXinChun_Page1_seven">
+                <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-16.500000},{1.000000,-64.000000}}"/>
+                <Event Name="Clicked" Function="HeXinChun_OnClick(7)"/>
+                <Window Type="TLBB_StaticImageNULL" Name="HeXinChun_Page1_sevenMark">
+                  <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,25.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{1.000000,-30.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                  <Property Name="Image" Value="set:Seven image:Seven_ke"/>
+                </Window>
+              </Window>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="HeXinChun_Page1_sevenText">
+              <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-30.000000},{1.000000,-22.000000}}"/>
+              <Property Name="Text" Value="#{CJYJ_180104_20}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="VertFormatting" Value="BottomAligned"/>
+			  		<Property Name="Visible" Value="False"/>
+            </Window>
+          </Window> 
+          <Window Type="DefaultWindow" Name="HeXinChun_Page1_Icon8">
+            <Property Name="UnifiedSize" Value="{{0.000000,79.000000},{0.000000,203.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.8750000,-20.000000},{0.000000,16.000000}}"/>
+			<Property Name="AlwaysOnTop" Value="True"/>
+            <Window Type="TLBB_StaticImageNULL" Name="HeXinChun_Page1_eightResign">
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-11.500000},{1.000000,-201.000000}}"/>
+              <Property Name="Image" Value="set:HeXinChun1 image:resign"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="HeXinChun_Page1_eightLine">
+              <Property Name="UnifiedSize" Value="{{0.000000,2.000000},{0.000000,24.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-1.000000},{0.000000,0.000000}}"/>
+              <Property Name="Image" Value="set:HeXinChun1 image:7riVLine"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="HeXinChun_eight_ButtonTip">
+              <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,7.500000},{1.000000,-154.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+              <Window Type="TLBB_ButtonNULL" Name="HeXinChun_eight_Button">
+                <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,56.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-12.000000},{1.000000,-179.000000}}"/>
+				<Property Name="Visible" Value="False"/>
+                <Property Name="PushedImage" Value="set:HeXinChun1 image:AnniversaryLotteryButton_Pushed"/>
+                <Property Name="NormalImage" Value="set:HeXinChun1 image:AnniversaryLotteryButton_Normal"/>
+                <Property Name="HoverImage" Value="set:HeXinChun1 image:AnniversaryLotteryButton_Hover"/>
+                <Property Name="DisabledImage" Value="set:HeXinChun1 image:AnniversaryLotteryButton_Normal"/>
+                <Property Name="Tooltip" Value="#{SJFL_150608_23}"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Event Name="Clicked" Function="HeXinChun_OnClick(8)"/>
+                <Window Type="TLBB_SimpleText" Name="HeXinChun_eightText">
+                  <Property Name="UnifiedSize" Value="{{0.000000,22.000000},{0.000000,56.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="HorzFormatting" Value="HorzCentred"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Font" Value="YouYuan11.25"/>
+                  <Property Name="Text" Value=""/>
+                <Property Name="Tooltip" Value="#{SJFL_150608_11}" />
+                </Window>
+              </Window>
+	<Window Type="TLBB_StaticImageNULL" Name="HeXinChun_Page1_eight_Date">
+		<Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,60.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.500000,4.000000},{1.000000,-115.000000}}"/>
+		<Property Name="MouseRButtonHollow" Value="True"/>
+		<Property Name="MouseMoveHollow" Value="True"/>
+		<Property Name="MouseLButtonHollow" Value="True"/>
+		<Property Name="MouseHollow" Value="True"/>
+		<Property Name="Image" Value="set:HeXinChun3 image:7"/>
+		<Property Name="AlwaysOnTop" Value="True"/>
+	</Window>
+            <Window Type="TLBB_ButtonNULL" Name="HeXinChun_Page1_eight_Button">
+              <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,98.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-29.500000},{1.000000,-185.000000}}"/>
+              <Property Name="PushedImage" Value="set:HeXinChun2 image:DenglongHover"/>
+              <Property Name="NormalImage" Value="set:HeXinChun2 image:DenglongDark"/>
+              <Property Name="HoverImage" Value="set:HeXinChun2 image:DenglongHover"/>
+              <Property Name="DisabledImage" Value="set:HeXinChun2 image:DenglongDark"/>
+			  <Property Name="Tooltip" Value="#{CJYJ_201222_01}"/>
+
+              <Window Type="TLBB_ActionButton" Name="HeXinChun_Page1_eight">
+                <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-16.500000},{1.000000,-64.000000}}"/>
+                <Event Name="Clicked" Function="HeXinChun_OnClick(8)"/>
+                <Window Type="TLBB_StaticImageNULL" Name="HeXinChun_Page1_eightMark">
+                  <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,25.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{1.000000,-30.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                  <Property Name="Image" Value="set:Seven image:Seven_ke"/>
+                </Window>
+              </Window>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="HeXinChun_Page1_eightText">
+              <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-30.000000},{1.000000,-22.000000}}"/>
+              <Property Name="Text" Value="#{CJYJ_180104_21}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="VertFormatting" Value="BottomAligned"/>
+			  		<Property Name="Visible" Value="False"/>
+            </Window>
+          </Window> 
+		</Window>
+    </Window>
+  </Window>
+</GUILayout>

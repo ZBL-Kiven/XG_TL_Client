@@ -1,0 +1,73 @@
+<?xml version="1.0" ?>
+<GUILayout>
+	<Window Type="DefaultWindow" Name="HuaShanGRMatchSingle">
+    <Property Name="UnifiedPosition" Value="{{1.000000,-402.000000},{0.000000,0.000000}}"/>
+	<Property Name="UnifiedSize" Value="{{0.000000,207.000000},{0.000000,37.000000}" />
+	<Property Name="ZOrderChangeEnabled" Value="True" />
+    <Property Name="MouseHollow" Value="True" />
+		<Property Name="MouseLButtonHollow" Value="True" />
+		<Property Name="MouseMoveHollow" Value="True" />
+		<Property Name="MouseRButtonHollow" Value="True" />		
+		<Window Type="TLBB_StaticImageNULL" Name="HuaShanGRMatchSingle_Bang">
+			<Property Name="AbsolutePosition" Value="x:0.000000 y:0.000000" />
+			<Property Name="AbsoluteSize" Value="w:33.000000 h:37.000000" />
+			<Property Name="RiseOnClick" Value="False" />
+			<Property Name="ZOrderChangeEnabled" Value="False" />
+			<Property Name="Image" Value="set:CommonFrame2 image:Bang" />
+		</Window>
+		<Window Type="TLBB_Frame2" Name="HuaShanGRMatchSingle_BK">
+			<Property Name="AbsolutePosition" Value="x:33.000000 y:0.000000" />
+			<Property Name="AbsoluteSize" Value="w:153.000000 h:22.000000" />
+			<Property Name="RiseOnClick" Value="False" />
+			<Window Type="TLBB_SimpleText" Name="HuaShanGRMatchSingle_Position" >
+					<Property Name="AbsolutePosition" Value="x:5.000000 y:1.000000" />
+					<Property Name="AbsoluteSize" Value="w:5.000000 h:20.000000" />
+					<Property Name="HorzFormatting" Value="LeftAligned" />
+					<Property Name="VertFormatting" Value="VertCentred" />
+					<Property Name="RiseOnClick" Value="False" />
+					<Property Name="Text" Value="" />
+			</Window>
+			<Window Type="TLBB_SimpleText" Name="HuaShanGRMatchSingle_GuildText" >
+					<Property Name="AbsolutePosition" Value="x:12.000000 y:1.000000" />
+					<Property Name="AbsoluteSize" Value="w:80.000000 h:20.000000" />
+					<Property Name="HorzFormatting" Value="LeftAligned" />
+					<Property Name="VertFormatting" Value="VertCentred" />
+					<Property Name="RiseOnClick" Value="False" />
+					<Property Name="Text" Value="" />
+			</Window>
+			<Window Type="TLBB_SimpleText" Name="HuaShanGRMatchSingle_ScoreText" >
+					<Property Name="AbsolutePosition" Value="x:93.000000 y:1.000000" />
+					<Property Name="AbsoluteSize" Value="w:56.000000 h:20.000000" />
+					<Property Name="HorzFormatting" Value="RightAligned" />
+					<Property Name="VertFormatting" Value="VertCentred" />
+					<Property Name="RiseOnClick" Value="False" />
+					<Property Name="Text" Value="" />
+			</Window>
+		</Window>
+    <Window Type="TLBB_StaticImageNULL" Name="HuaShanGRMatchSingle_Help_Bk" >
+      <Property Name="AbsolutePosition" Value="x:185.000000 y:0.000000" />
+      <Property Name="AbsoluteSize" Value="w:22.000000 h:22.000000" />
+      <Property Name="Image" Value="set:CommonFrame image:BtnHelp_BK2" />
+      <Property Name="MouseHollow" Value="true" />
+      <Window Type="TLBB_ButtonNULL" Name="HuaShanGRMatchSingleOpen">
+        <Property Name="AbsolutePosition" Value="x:4.000000 y:4.000000" />
+        <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+        <Property Name="Tooltip" Value="#{FHZD_XML_30}"/>
+        <Property Name="HoverImage" Value="set:CommonStaticImage image:MinimapZoomOut_Hover" />
+        <Property Name="NormalImage" Value="set:CommonStaticImage image:MinimapZoomOut_Normal" />
+        <Property Name="PushedImage" Value="set:CommonStaticImage image:MinimapZoomOut_Pushed" />
+        <Event Name="Clicked" Function="HuaShanGRMatchSingle_Open();"/>
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="HuaShanGRMatchSingleClose">
+        <Property Name="AbsolutePosition" Value="x:4.000000 y:4.000000" />
+        <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+        <Property Name="Tooltip" Value="#{FHZD_XML_31}"/>
+        <Property Name="HoverImage" Value="set:CommonStaticImage image:MinimapZoomIn_Hover" />
+        <Property Name="NormalImage" Value="set:CommonStaticImage image:MinimapZoomIn_Normal" />
+        <Property Name="PushedImage" Value="set:CommonStaticImage image:MinimapZoomIn_Pushed" />
+        <Property Name="Visible" Value="False" />
+        <Event Name="Clicked" Function="HuaShanGRMatchSingle_Close();"/>
+        </Window>
+    </Window>
+</Window>
+</GUILayout>

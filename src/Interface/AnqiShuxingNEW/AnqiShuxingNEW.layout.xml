@@ -1,0 +1,294 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame1" Name="AnqiShuxingNEW_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,508.000000},{0.000000,445.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-250.000000},{0.500000,-217.000000}}"/>
+    <Event Name="Hidden" Function="AnqiShuxingNEW_Reset(1);" />
+    <Window Type="TLBB_DragTitle" Name="AnqiShuxingNEW_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+      <Property Name="DragTarget" Value="AnqiShuxingNEW_Frame" />
+      <Property Name="Font" Value="YouYuan11.25" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="Text" Value="#{FBSJ_081209_07}" />
+      <Property Name="VertFormatting" Value="VertCentred" />
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="AnqiShuxingNEW_Close">
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+      <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+      <Property Name="Text" Value="TLBB_ButtonClose" />
+      <Event Name="Clicked" Function="AnqiShuxingNEW_Cancel_Clicked();" />
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="AnqiShuxingNEW_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+      <Property Name="Text" Value="TLBB_ButtonHelp"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="AnqiShuxingNEW_Frame_Client">
+      <Property Name="AbsolutePosition" Value="x:7.000000 y:30.000000" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{1.000000,-49.000000}" />
+      <Property Name="RiseOnClick" Value="False" />
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="AnqiShuxingNEW_Info">
+        <Property Name="Position" Value="x:0.0 y:0.0" />
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-310.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,6.000000}}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Text" Value="#{FBSJ_081209_56}" />
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="AnqiShuxingNEW_Icon">
+        <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-50.000000},{1.000000,-270.000000}}"/>
+        <Property Name="Image" Value="set:MijiUI image:MijiUIarrow_hov"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="AnqiShuxingNEW_BeforeText">
+        <Property Name="UnifiedSize" Value="{{0.000000,220.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,18.000000},{0.000000,95.000000}}"/>
+        <Property Name="Text" Value="#{CXYH_140813_1}" />
+        <Property Name="HorzFormatting" Value="HorzCentred"/>
+      </Window>
+      <Window Type="TLBB_ActionButton" Name="AnqiShuxingNEW_BeforeIcon">
+        <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,112.000000},{0.000000,118.000000}}"/>
+        <Property Name="DragAcceptName" Value="G140" />
+        <Property Name="DraggingEnabled" Value="True" />
+        <Event Name="RBClicked" Function="AnqiShuxingNEW_Clear();" />
+      </Window>
+
+      <Window Type="TLBB_Frame_Lace2" Name="AnqiShuxingNEW_Before">
+        <Property Name="UnifiedSize" Value="{{0.490000,-1.000000},{0.000000,133.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.010000,0.000000},{1.000000,-240.000000}}"/>
+        <Window Type="DefaultWindow" Name="AnqiShuxingNEW_BeforeAttr">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,132.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-132.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="AnqiShuxingNEW_BeforeAttrText">
+            <Property Name="UnifiedSize" Value="{{1.000000,1.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#{CXYH_140813_6}" />
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="AnqiShuxingNEW_Kuang1">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,24.000000}}"/>
+            <Window Type="TLBB_Frame_Lace1" Name="AnqiShuxingNEW_BeforeAttrFirstBK">
+              <Property Name="UnifiedSize" Value="{{1.000000,-40.000000},{0.000000,36.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,36.000000},{0.000000,0.000000}}"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="AnqiShuxingNEW_BeforeAttrFirst">
+              <Property Name="UnifiedSize" Value="{{1.000000,-40.000000},{0.000000,36.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,38.000000},{0.000000,1.000000}}"/>
+              <Property Name="Text" Value="" />
+              <Property Name="VertFormatting" Value="TopAligned"/>
+              <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="AnqiShuxingNEW_Kuang1_Image">
+              <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,1.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="Image" Value="set:CommonFrame28 image:CommonFrame28_ANQI1"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="AnqiShuxingNEW_Kuang2">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,59.000000}}"/>
+            <Window Type="TLBB_Frame_Lace1" Name="AnqiShuxingNEW_BeforeAttrSecondBK">
+              <Property Name="UnifiedSize" Value="{{1.000000,-40.000000},{0.000000,36.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,36.000000},{0.000000,0.000000}}"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="AnqiShuxingNEW_BeforeAttrSecond">
+              <Property Name="UnifiedSize" Value="{{1.000000,-40.000000},{0.000000,36.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,38.000000},{0.000000,1.000000}}"/>
+              <Property Name="Text" Value="" />
+              <Property Name="VertFormatting" Value="TopAligned"/>
+              <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="AnqiShuxingNEW_Kuang2_Image">
+              <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,1.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="Image" Value="set:CommonFrame28 image:CommonFrame28_ANQI2"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="AnqiShuxingNEW_Kuang3">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,94.000000}}"/>
+            <Window Type="TLBB_Frame_Lace1" Name="AnqiShuxingNEW_BeforeAttrThirdBK">
+              <Property Name="UnifiedSize" Value="{{1.000000,-40.000000},{0.000000,36.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,36.000000},{0.000000,0.000000}}"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="AnqiShuxingNEW_BeforeAttrThird">
+              <Property Name="UnifiedSize" Value="{{1.000000,-40.000000},{0.000000,36.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,38.000000},{0.000000,1.000000}}"/>
+              <Property Name="Text" Value="" />
+              <Property Name="VertFormatting" Value="TopAligned"/>
+              <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="AnqiShuxingNEW_Kuang3_Image">
+              <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,1.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="Image" Value="set:CommonFrame28 image:CommonFrame28_ANQI3"/>
+            </Window>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="AnqiShuxingNEW_AfterText">
+        <Property Name="UnifiedSize" Value="{{0.000000,220.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,258.000000},{0.000000,95.000000}}"/>
+        <Property Name="Text" Value="#{CXYH_140813_5}" />
+        <Property Name="HorzFormatting" Value="HorzCentred"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="AnqiShuxingNEW_AfterIcon_BK">
+        <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,353.000000},{0.000000,118.000000}}"/>
+        <Property Name="Image" Value="set:CommonItem image:ActionBK"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="AnqiShuxingNEW_AfterIcon">
+        <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,353.000000},{0.000000,118.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="Image" Value="set: image:"/>
+      </Window>
+      <Window Type="TLBB_Frame_Lace2" Name="AnqiShuxingNEW_After">
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,1.000000},{1.000000,-240.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.490000,-1.000000},{0.000000,133.000000}" />
+        <Window Type="DefaultWindow" Name="AnqiShuxingNEW_AfterAttr">
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-132.000000}" />
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,132.000000}" />
+          <Window Type="TLBB_SimpleTextFrame" Name="AnqiShuxingNEW_AfterAttrText">
+            <Property Name="UnifiedSize" Value="{{1.000000,1.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#{CXYH_140813_7}" />
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="AnqiShuxingNEW_Kuang4">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,24.000000}}"/>
+            <Window Type="TLBB_Frame_Lace1" Name="AnqiShuxingNEW_AfterAttrFirstBK">
+              <Property Name="UnifiedSize" Value="{{1.000000,-40.000000},{0.000000,36.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,36.000000},{0.000000,0.000000}}"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="AnqiShuxingNEW_AfterAttrFirst">
+              <Property Name="UnifiedSize" Value="{{1.000000,-40.000000},{0.000000,36.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,38.000000},{0.000000,1.000000}}"/>
+              <Property Name="Text" Value="" />
+              <Property Name="VertFormatting" Value="TopAligned"/>
+              <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="AnqiShuxingNEW_Kuang4_Image">
+              <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,1.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="Image" Value="set:CommonFrame28 image:CommonFrame28_ANQI1"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="AnqiShuxingNEW_Kuang5">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,59.000000}}"/>
+            <Window Type="TLBB_Frame_Lace1" Name="AnqiShuxingNEW_AfterAttrSecondBK">
+              <Property Name="UnifiedSize" Value="{{1.000000,-40.000000},{0.000000,36.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,36.000000},{0.000000,0.000000}}"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="AnqiShuxingNEW_AfterAttrSecond">
+              <Property Name="UnifiedSize" Value="{{1.000000,-40.000000},{0.000000,36.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,38.000000},{0.000000,1.000000}}"/>
+              <Property Name="Text" Value="" />
+              <Property Name="VertFormatting" Value="TopAligned"/>
+              <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="AnqiShuxingNEW_Kuang5_Image">
+              <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,1.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="Image" Value="set:CommonFrame28 image:CommonFrame28_ANQI2"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="AnqiShuxingNEW_Kuang6">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,94.000000}}"/>
+            <Window Type="TLBB_Frame_Lace1" Name="AnqiShuxingNEW_AfterAttrThirdBK">
+              <Property Name="UnifiedSize" Value="{{1.000000,-40.000000},{0.000000,36.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,36.000000},{0.000000,0.000000}}"/>
+              <Property Name="Text" Value="" />
+              <Property Name="VertFormatting" Value="TopAligned"/>
+              <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="AnqiShuxingNEW_AfterAttrThird">
+              <Property Name="UnifiedSize" Value="{{1.000000,-40.000000},{0.000000,36.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,38.000000},{0.000000,1.000000}}"/>
+              <Property Name="Text" Value="" />
+              <Property Name="VertFormatting" Value="TopAligned"/>
+              <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="AnqiShuxingNEW_Kuang6_Image">
+              <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,1.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="Image" Value="set:CommonFrame28 image:CommonFrame28_ANQI3"/>
+            </Window>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="AnqiShuxingNEW_TIHUAN">
+        <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,320.000000},{1.000000,-105.000000}}"/>
+        <Property Name="Text" Value="#{CXYH_140813_9}" />
+        <Event Name="Clicked" Function="AnqiShuxingNEW_SaveChange_Clicked(0);" />
+      </Window>
+      <Window Type="DefaultWindow" Name="AnqiShuxingNEW_Money">
+        <Property Name="UnifiedPosition" Value="{{0.010000,0.000000},{1.000000,-83.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.980000,0.000000},{0.000000,60.000000}" />
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="AnqiShuxingNEW_Want">
+          <Property Name="UnifiedSize" Value="{{1,0.000000},{0.000000,20.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}" />
+          <Property Name="TextColor" Value="FFFFF263"/>
+          <Property Name="Text" Value="#{INTERFACE_XML_789}" />
+          <Window Type="TLBB_JiaoZi" Name="AnqiShuxingNEW_WantNum">
+            <Property Name="UnifiedPosition" Value="{{0.0,80.000000},{0.000000,2.000000}" />
+            <Property Name="UnifiedSize" Value="{{1.0,-86.000000},{1.000000,-4.000000}" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="AnqiShuxingNEW_Have">
+          <Property Name="UnifiedSize" Value="{{1,0.000000},{0.000000,20.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,20.000000}" />
+          <Property Name="TextColor" Value="FFFFF263"/>
+          <Property Name="Text" Value="#{BDJB_051210_1}" />
+          <Window Type="TLBB_JiaoZi" Name="AnqiShuxingNEW_HaveNum">
+            <Property Name="UnifiedPosition" Value="{{0.0,80.000000},{0.000000,2.000000}" />
+            <Property Name="UnifiedSize" Value="{{1.0,-86.000000},{1.000000,-4.000000}" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="AnqiShuxingNEW_HaveGold">
+          <Property Name="UnifiedSize" Value="{{1,0.000000},{0.000000,20.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,40.000000}" />
+          <Property Name="TextColor" Value="FFFFF263"/>
+          <Property Name="Text" Value="#{INTERFACE_XML_834}" />
+          <Window Type="TLBB_Money" Name="AnqiShuxingNEW_HaveGoldNum">
+            <Property Name="UnifiedPosition" Value="{{0.0,80.000000},{0.000000,2.000000}" />
+            <Property Name="UnifiedSize" Value="{{1.0,-86.000000},{1.000000,-4.000000}" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace5" Name="AnqiShuxingNEW_Blank">
+        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-20.000000}" />
+        <Property Name="UnifiedSize" Value="{{1.000000,-84.000000},{0.000000,20.000000}" />
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="AnqiShuxingNEW_OK">
+        <Property Name="UnifiedPosition" Value="{{1.000000,-82.000000},{1.000000,-20.000000}" />
+        <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+        <Property Name="Text" Value="#{INTERFACE_XML_557}" />
+        <Event Name="Clicked" Function="AnqiShuxingNEW_OK_Clicked();" />
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="AnqiShuxingNEW_Cancel">
+        <Property Name="UnifiedPosition" Value="{{1.000000,-42.000000},{1.000000,-20.000000}" />
+        <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+        <Property Name="Text" Value="#{INTERFACE_XML_542}" />
+        <Event Name="Clicked" Function="AnqiShuxingNEW_Cancel_Clicked();" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

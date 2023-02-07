@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame0" Name="PetSoul_MonopolyGameAwards_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,330.000000},{0.000000,384.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-132.000000},{0.500000,-200.000000}}"/>
+    <Window Type="TLBB_DragTitle" Name="PetSoul_MonopolyGameAwards_DragTitle">
+      <Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+      <Property Name="DragTarget" Value="PetSoul_MonopolyGameAwards_Frame" />
+      <Window Type="TLBB_SimpleText" Name="PetSoul_MonopolyGameAwards_PageHeader">
+        <Property Name="Position" Value="x:0.0 y:0.0" />
+        <Property Name="Size" Value="w:1.0 h:1.0" />
+        <Property Name="Font" Value="YouYuan11.25" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Text" Value="#{ZSPVP_211231_42}" />
+      </Window>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="PetSoul_MonopolyGameAwards_Help">
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+      <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+      <Property Name="Text" Value="TLBB_ButtonHelp" />
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="PetSoul_MonopolyGameAwards_Close">
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+      <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+      <Property Name="Text" Value="TLBB_ButtonClose" />
+      <Event Name="Clicked" Function="this:Hide();" />
+    </Window>
+    <Window Type="TLBB_Frame_Lace4" Name="PetSoul_MonopolyGameAwards_Client">
+      <Property Name="AbsolutePosition" Value="x:6.000000 y:36.000000" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-55.000000}" />
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="PetSoul_MonopolyGameAwards_Shen">
+        <Property Name="UnifiedSize" Value="{{1.000000,-16.000000},{0.000000,100.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,8.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Window Type="TLBB_SimpleText" Name="PetSoul_MonopolyGameAwards_ShenText1">
+          <Property Name="UnifiedSize" Value="{{0.000000,160.000000},{0.000000,36.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+          <Property Name="TextColor" Value="FFFFF263"/>
+          <Property Name="Text" Value="#{ZSPVP_211231_62}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="PetSoul_MonopolyGameAwards_ShenIcon1">
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,50.000000}}"/>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="PetSoul_MonopolyGameAwards_ShenIcon2">
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,50.000000}}"/>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="PetSoul_MonopolyGameAwards_ShenIcon3">
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,90.000000},{0.000000,50.000000}}"/>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="PetSoul_MonopolyGameAwards_ShenIcon4">
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,140.000000},{0.000000,50.000000}}"/>
+        </Window>
+
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="PetSoul_MonopolyGameAwards_Yi">
+        <Property Name="UnifiedSize" Value="{{1.000000,-16.000000},{0.000000,100.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,100.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Window Type="TLBB_SimpleText" Name="PetSoul_MonopolyGameAwards_YiText1">
+          <Property Name="UnifiedSize" Value="{{0.000000,160.000000},{0.000000,36.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+          <Property Name="TextColor" Value="FFFFF263"/>
+          <Property Name="Text" Value="#{ZSPVP_211231_63}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="PetSoul_MonopolyGameAwards_YiIcon1">
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,50.000000}}"/>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="PetSoul_MonopolyGameAwards_YiIcon2">
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,50.000000}}"/>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="PetSoul_MonopolyGameAwards_YiIcon3">
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,90.000000},{0.000000,50.000000}}"/>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="PetSoul_MonopolyGameAwards_YiIcon4">
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,140.000000},{0.000000,50.000000}}"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="PetSoul_MonopolyGameAwards_Yao">
+        <Property Name="UnifiedSize" Value="{{1.000000,-16.000000},{0.000000,100.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,200.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Window Type="TLBB_SimpleText" Name="PetSoul_MonopolyGameAwards_YaoText1">
+          <Property Name="UnifiedSize" Value="{{0.000000,160.000000},{0.000000,36.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+          <Property Name="TextColor" Value="FFFFF263"/>
+          <Property Name="Text" Value="#{ZSPVP_211231_64}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="PetSoul_MonopolyGameAwards_YaoIcon">
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,50.000000}}"/>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

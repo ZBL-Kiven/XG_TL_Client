@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" ?>
+<GUILayout>
+    <Window Type="TLBB_HeroFrame01" Name="ZLHeroMeeting_Vote_Frame">
+		<Property Name="UnifiedSize" Value="{{0.000000,545.000000},{0.000000,342.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.500000,-280.000000},{0.120000,-0.159996}}"/>
+
+      <Window Type="TLBB_HeroTitle01" Name="ZLHeroMeeting_Vote_DragTitleBK">	
+		<Property Name="UnifiedSize" Value="{{1.000000,-200.000000},{0.000000,30.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,-2.000000}}"/>	
+            <Window Type="TLBB_SimpleText" Name="ZLHeroMeeting_Vote_PageHeader">
+                <Property Name="Position" Value="x:0.0 y:0.0" />
+                <Property Name="Size" Value="w:1.0 h:1.0" />
+                <Property Name="Font" Value="YouYuan11.25" />
+                <Property Name="HorzFormatting" Value="HorzCentred" />
+                <Property Name="VertFormatting" Value="VertCentred" />
+                <Property Name="RiseOnClick" Value="False" />
+                <Property Name="Text" Value="#{YXDHGN_210222_74}" />
+            </Window>
+        </Window>
+        <Window Type="TLBB_DragTitle" Name="ZLHeroMeeting_Vote_DragTitle">
+            <Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
+            <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+            <Property Name="DragTarget" Value="ZLHeroMeeting_Vote_Frame" />
+      </Window>
+        <Window Type="TLBB_ButtonNULL" Name="ZLHeroMeeting_Vote_Close">
+			<Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,14.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.000000,8.159996}}"/>
+			<Property Name="PushedImage" Value="set:ZLHeroMeeting image:Close_Push"/>
+			<Property Name="NormalImage" Value="set:ZLHeroMeeting image:Close_Normal"/>
+			<Property Name="HoverImage" Value="set:ZLHeroMeeting image:Close_Hover"/>
+			<Property Name="DisabledImage" Value="set:ZLHeroMeeting image:Close_Push"/>
+            <Event Name="Clicked" Function="ZLHeroMeeting_join_OnHiden();" />
+        </Window>
+        <Window Type="TLBB_HeroLace01" Name="ZLHeroMeeting_Vote_Function_Frame">
+			<Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-35.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,28.159996}}"/>
+        <Window Type="TLBB_StaticImageNULL" Name="ZLHeroMeeting_Vote_Function_FrameBK">
+			<Property Name="UnifiedSize" Value="{{0.000000,532.000000},{0.000000,306.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+			<Property Name="RiseOnClick" Value="False"/>
+			<Property Name="Image" Value="set:ZLHeroMeeting image:DrawBK"/>
+		</Window>
+            <Window Type="TLBB_SimpleText" Name="ZLHeroMeeting_Vote_Info0">
+		<Property Name="UnifiedSize" Value="{{1.000000,-353.000000},{0.000000,19.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.000000,49.000000},{0.000000,141.160004}}"/>
+                <Property Name="HorzFormatting" Value="HorzCentred" />
+                <Property Name="VertFormatting" Value="VertCentred" />
+                <Property Name="Text" Value="#{YXDHGN_210222_46}" />
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="ZLHeroMeeting_Vote_Info">
+				<Property Name="UnifiedSize" Value="{{1.000000,-353.000000},{0.000000,19.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,49.000000},{0.000000,6.0}}"/>
+                <Property Name="HorzFormatting" Value="HorzCentred" />
+                <Property Name="VertFormatting" Value="VertCentred" />
+                <Property Name="Text" Value="#{YXDHGN_210222_40}" />
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="ZLHeroMeeting_Vote_Info_Lineleft">
+				<Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,6.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,178.000000},{0.000000,14.000000}}"/>
+				<Property Name="Image" Value="set:ZLHeroMeeting image:TitleLineLeft"/>
+                <Property Name="RiseOnClick" Value="False" />
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="ZLHeroMeeting_Vote_Info_LineRight">
+				<Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,6.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,14.000000}}"/>
+				<Property Name="Image" Value="set:ZLHeroMeeting image:TitleLineRight"/>
+                <Property Name="RiseOnClick" Value="False" />
+            </Window>
+
+            <Window Type="TLBB_SimpleText" Name="ZLHeroMeeting_Vote_Info1">
+				<Property Name="UnifiedSize" Value="{{1.000000,-353.000000},{0.000000,19.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,320.000000},{0.000000,6.000000}}"/>
+                <Property Name="HorzFormatting" Value="HorzCentred" />
+                <Property Name="VertFormatting" Value="VertCentred" />
+                <Property Name="Text" Value="#{YXDHGN_210222_47}" />
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="ZLHeroMeeting_Vote_Info1_Lineleft">
+				<Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,6.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,449.000000},{0.000000,14.000000}}"/>
+				<Property Name="Image" Value="set:ZLHeroMeeting image:TitleLineLeft"/>
+                <Property Name="RiseOnClick" Value="False" />
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="ZLHeroMeeting_Vote_Info1_LineRight">
+				<Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,6.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,313.000000},{0.000000,14.000000}}"/>
+				<Property Name="Image" Value="set:ZLHeroMeeting image:TitleLineRight"/>
+                <Property Name="RiseOnClick" Value="False" />
+            </Window>
+      <Window Type="TLBB_MultiColumnList" Name="ZLHeroMeeting_Vote_ListTitleClient">
+		<Property Name="UnifiedSize" Value="{{1.000000,-248.000000},{0.000000,20.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,34.000000}}"/>
+        <Property Name="ForceHorzScrollbar" Value="False" />
+        <Property Name="SortSettingEnabled" Value="False" />
+        <Property Name="SelectionMode" Value="RowSingle" />
+		<Property Name="ColumnHeader" Value="text: width:0.15 id:0" />
+		<Property Name="ColumnHeader" Value="text: width:0.35 id:1" />
+		<Property Name="ColumnHeader" Value="text: width:0.15 id:2" />
+		<Property Name="ColumnHeader" Value="text: width:0.15 id:3" />
+		<Property Name="ColumnHeader" Value="text: width:0.19 id:4" />
+        <Property Name="ColumnsSizable" Value="False" />
+        <Property Name="ColumnsMovable" Value="False" />
+        <Property Name="ColumnsAdjust" Value="True" />
+		<Property Name="AlwaysOnTop" Value="True"/>
+
+        <Window Type="DefaultWindow" Name="ZLHeroMeeting_Vote_ListTitle1">
+			<Property Name="UnifiedSize" Value="{{0.400000,-79.000000},{0.000000,22.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="ZLHeroMeeting_Vote_ListTitle1_text">
+            <Property Name="UnifiedSize" Value="{{1.000000,-2.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+            <Property Name="Text" Value="#{YXDHGN_210222_76}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="ZLHeroMeeting_Vote_ListTitle2">
+		<Property Name="UnifiedSize" Value="{{0.100000,17.000002},{0.000000,22.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.400000,-44.000000},{0.000000,0.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="ZLHeroMeeting_Vote_ListTitle2_text">
+            <Property Name="UnifiedSize" Value="{{1.000000,-2.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+            <Property Name="Text" Value="#{YXDHGN_210222_77}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="ZLHeroMeeting_Vote_ListTitle3">
+		<Property Name="UnifiedSize" Value="{{0.100000,9.000000},{0.000000,22.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.500000,-0.500000},{0.000000,0.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="ZLHeroMeeting_Vote_ListTitle3_text">
+			<Property Name="UnifiedSize" Value="{{1.000000,-2.000000},{0.000000,20.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,1.500000},{0.000000,1.000000}}"/>
+            <Property Name="Text" Value="#{YXDHGN_210222_78}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="ZLHeroMeeting_Vote_ListTitle4">
+		<Property Name="UnifiedSize" Value="{{0.400000,-70.999992},{0.000000,22.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.600000,12.199997},{0.000000,0.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="ZLHeroMeeting_Vote_ListTitle4_text">
+            <Property Name="UnifiedSize" Value="{{1.000000,-2.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+            <Property Name="Text" Value="#{YXDHGN_210222_79}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="ZLHeroMeeting_Vote_ListTitle5">
+		<Property Name="UnifiedSize" Value="{{0.400000,-66.000000000},{0.000000,20.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.600000,59.000000},{0.000000,0.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="ZLHeroMeeting_Vote_ListTitle5_text">
+            <Property Name="UnifiedSize" Value="{{1.000000,-2.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+            <Property Name="Text" Value="#{YXDHGN_210222_80}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TLBB_HeroLace02" Name="ZLHeroMeeting_Vote_ListBK">
+		<Property Name="UnifiedSize" Value="{{0.000000,266.000000},{0.000000,243.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.000000,11.000000},{0.000000,54.000000}}"/>
+		<Property Name="RiseOnClick" Value="False"/>
+		<Property Name="MouseRButtonHollow" Value="True"/>
+		<Property Name="MouseMoveHollow" Value="True"/>
+		<Property Name="MouseLButtonHollow" Value="True"/>
+		<Property Name="MouseHollow" Value="True"/>
+      </Window>
+            <Window Type="TLBB_MultiColumnList3" Name="ZLHeroMeeting_Vote_List">
+				<Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,267.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,34.000000}}"/>
+				<Property Name="ForceHorzScrollbar" Value="False" />
+				<Property Name="ForceVertScrollbar" Value="True" />
+				<Property Name="SortSettingEnabled" Value="False" />
+				<Property Name="SelectionMode" Value="RowSingle" />
+				<Property Name="ColumnHeader" Value="text: width:0.15 id:0" />
+				<Property Name="ColumnHeader" Value="text: width:0.35 id:1" />
+				<Property Name="ColumnHeader" Value="text: width:0.15 id:2" />
+				<Property Name="ColumnHeader" Value="text: width:0.15 id:3" />
+				<Property Name="ColumnHeader" Value="text: width:0.19 id:4" />
+				<Property Name="ColumnsSizable" Value="False" />
+				<Property Name="ColumnsMovable" Value="False" />
+				<Property Name="ColumnsAdjust" Value="True" />
+				<Event Name="SelectionChanged" Function="ZLHeroMeeting_Vote_SelectChanged();" />
+            </Window>
+			<Window Type="TLBB_StaticImageNULL" Name="ZLHeroMeeting_Vote_Icon">
+				<Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,310.000000},{0.000000,178.000000}}"/>
+				<Property Name="Image" Value="set:ManProtagonist image:ManProtagonist_1"/>
+			</Window>
+            <Window Type="TLBB_SimpleText" Name="ZLHeroMeeting_Vote_Tenet_TextLevel">
+				<Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,16.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.500000,150.500000},{0.000000,196.000000}}"/>
+                <Property Name="Text" Value="" />
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+                <Property Name="VertFormatting" Value="VertCentred" />
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="ZLHeroMeeting_Vote_Tenet_TextMenPai">
+				<Property Name="UnifiedSize" Value="{{0.000000,31.000000},{0.000000,16.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.500000,106.500000},{0.000000,196.000000}}"/>
+                <Property Name="Text" Value="" />
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+                <Property Name="VertFormatting" Value="VertCentred" />
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="ZLHeroMeeting_Vote_Tenet_Text">
+			<Property Name="UnifiedSize" Value="{{0.000000,219.000000},{0.000000,140.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.500000,40.500000},{0.000000,25.000000}}"/>
+                <Property Name="Text" Value="#{YXDHGN_210222_83}" />
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+                <Property Name="VertFormatting" Value="VertCentred" />
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="ZLHeroMeeting_Vote_Tenet_Text1">
+				<Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,21.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.500000,102.500000},{0.000000,182.000000}}"/>
+                <Property Name="Text" Value="#{YXDHGN_210222_84}" />
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+                <Property Name="VertFormatting" Value="VertCentred" />
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="ZLHeroMeeting_Vote_Tenet_Text2">
+				<Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,21.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.500000,102.500000},{0.000000,203.000000}}"/>
+                <Property Name="Text" Value="#{YXDHGN_210222_85}" />
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+                <Property Name="VertFormatting" Value="VertCentred" />
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="ZLHeroMeeting_Vote_Tenet_Text3">
+				<Property Name="UnifiedSize" Value="{{0.000000,220.000000},{0.000000,35.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.500000,39.500000},{0.000000,230.000000}}"/>
+                <Property Name="Text" Value="#{YXDHGN_210222_86}" />
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+                <Property Name="VertFormatting" Value="VertCentred" />
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="ZLHeroMeeting_Vote_Line">
+				<Property Name="UnifiedSize" Value="{{0.000000,227.000000},{0.000000,80.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.500000,36.500000},{0.000000,164.000000}}"/>
+				<Property Name="RiseOnClick" Value="False"/>
+				<Property Name="Image" Value="set:ZLHeroMeeting image:BKLine"/>
+            </Window>
+            <Window Type="TLBB_ButtonCommon" Name="ZLHeroMeeting_Vote_F5">
+				<Property Name="UnifiedSize" Value="{{0.000000,97.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.500000,44.500000},{1.000000,-37.000000}}"/>
+				<Property Name="PushedImage" Value="set:ZLHeroMeeting image:SmallButton_Push"/>
+				<Property Name="NormalImage" Value="set:ZLHeroMeeting image:SmallButton_Normal"/>
+				<Property Name="HoverImage" Value="set:ZLHeroMeeting image:SmallButton_Hover"/>
+				<Property Name="DisabledImage" Value="set:ZLHeroMeeting image:SmallButton_Disable"/>
+                <Property Name="Text" Value="#{YXDHGN_210222_88}" />
+                <Event Name="Clicked" Function="ZLHeroMeeting_Vote_RefreshClick();" />
+            </Window>
+            <Window Type="TLBB_ButtonCommon" Name="ZLHeroMeeting_Vote_Vote">
+				<Property Name="UnifiedSize" Value="{{0.000000,97.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.500000,153.500000},{1.000000,-37.000000}}"/>
+				<Property Name="PushedImage" Value="set:ZLHeroMeeting image:SmallButton_Push"/>
+				<Property Name="NormalImage" Value="set:ZLHeroMeeting image:SmallButton_Normal"/>
+				<Property Name="HoverImage" Value="set:ZLHeroMeeting image:SmallButton_Hover"/>
+				<Property Name="DisabledImage" Value="set:ZLHeroMeeting image:SmallButton_Disable"/>
+                <Property Name="Text" Value="#{YXDHGN_210222_91}" />
+                <Event Name="Clicked" Function="ZLHeroMeeting_Vote_Click();" />
+            </Window> 
+        </Window>
+    </Window>
+</GUILayout>

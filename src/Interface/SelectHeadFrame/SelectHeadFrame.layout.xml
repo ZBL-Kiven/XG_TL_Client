@@ -1,0 +1,299 @@
+<?xml version="1.0" ?>
+<GUILayout>
+	<Window Type="TLBB_MainFrame1" Name="SelectHeadFrame_Frame">
+		<Property Name="UnifiedPosition" Value="{{0.3,0},{0.15,0}}" />
+		<Property Name="UnifiedSize" Value="{{0,465},{0.0,280}}" />
+    <Event Name="Hidden" Function="SelectHeadFrame_Cancel_Clicked();" />
+		<Window Type="TLBB_DragTitle" Name="SelectHeadFrame_DragTitle">
+			<Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
+			<Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+			<Property Name="DragTarget" Value="SelectHeadFrame_Frame" />
+			<Property Name="Font" Value="YouYuan11.25" />
+			<Property Name="Text" Value="#{TXDI_xml_01}" />
+			<Property Name="HorzFormatting" Value="HorzCentred" />
+			<Property Name="VertFormatting" Value="VertCentred" />
+		</Window>
+		<Window Type="TLBB_ButtonHelp" Name="SelectHeadFrame_Help">
+			<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+			<Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+			<Event Name="Clicked" Function='Helper:GotoHelper(&quot;*SelectHeadFrame&quot;);' />
+		</Window>
+		<Window Type="TLBB_ButtonClose" Name="SelectHeadFrame_Close">
+			<Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+			<Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+			<Event Name="Clicked" Function="this:Hide();" />
+		</Window>
+		<Window Type="DefaultWindow" Name="SelectHeadFrame_Function_Frame">
+			<Property Name="AbsolutePosition" Value="x:7.000000 y:36.000000" />
+			<Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-55.000000}" />
+			<Window Type="TLBB_FramePlayerOther" Name="SelectHeadFrame_Model_Frame">
+				<Property Name="Position" Value="x:0.0 y:0.0" />
+				<Property Name="UnifiedSize" Value="{{0.000000,270.000000},{0.000000,128.000000}" />
+				<Window Type="DefaultWindow" Name="SelectHeadFrame_Preview">
+					<Property Name="UnifiedPosition" Value="{{0.0,8.000000},{0.0,12.000000}}" />
+					<Property Name="UnifiedSize" Value="{{0.000000,252.000000},{0.000000,95.000000}}" />
+					<Property Name="MouseHollow" Value="True" />
+					<Property Name="MouseLButtonHollow" Value="True" />
+					<Property Name="MouseMoveHollow" Value="True" />
+					<Property Name="MouseRButtonHollow" Value="True" />
+					<Property Name="ZOrderChangeEnabled" Value="False" />
+					<Window Type="TLBB_StaticImageNULL" Name="SelectHeadFrame_Preview2">
+						<Property Name="AbsolutePosition" Value="x:0.000000 y:0.000000" />
+						<Property Name="AbsoluteSize" Value="w:235.000000 h:95.000000" />
+						<Property Name="RiseOnClick" Value="False" />
+						<Property Name="Image" Value="set:CharStyleFrame1 image:MainFrame1" />
+					</Window>
+					<Window Type="TLBB_StaticImageNULL" Name="SelectHeadFrame_Preview_Icon">
+						<Property Name="AbsolutePosition" Value="x:23.000000 y:35.000000" />
+						<Property Name="AbsoluteSize" Value="w:48.000000 h:48.000000" />
+						<Property Name="Image" Value="set:ManProtagonist image:ManProtagonist_1" />
+					</Window>
+					<Window Type="TLBB_StaticImageNULL" Name="SelectHeadFrame_Preview_LevelFrame">
+						<Property Name="AbsolutePosition" Value="x:0.000000 y:0.000000" />
+						<Property Name="AbsoluteSize" Value="w:30.000000 h:14.000000" />
+						<Property Name="Image" Value="set:CharStyleFrame1 image:LevelFrame1" />	
+						<Window Type="TLBB_SimpleText" Name="SelectHeadFrame_Preview_LevelText">
+							<Property Name="AbsolutePosition" Value="x:96.000000 y:58.000000" />
+							<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+							<Property Name="HorzFormatting" Value="HorzCentred" />
+							<Property Name="VertFormatting" Value="VertCentred" />
+							<Property Name="RiseOnClick" Value="False" />
+							<Property Name="Text" Value="1" />
+						</Window>
+					</Window>
+					<Window Type="TLBB_StaticImageNULL" Name="SelectHeadFrame_Preview_NameBar">
+						<Property Name="AbsolutePosition" Value="x:96.000000 y:22.000000" />
+						<Property Name="AbsoluteSize" Value="w:98.000000 h:18.000000" />
+						<Property Name="RiseOnClick" Value="False" />
+						<Property Name="Image" Value="set:CharStyleFrame1 image:NameBar1" />
+						<Window Type="TLBB_SimpleText" Name="SelectHeadFrame_Preview_Name">
+							<Property Name="Position" Value="x:0 y:0" />
+							<Property Name="Size" Value="w:1 h:1" />
+							<Property Name="HorzFormatting" Value="HorzCentred" />
+							<Property Name="VertFormatting" Value="VertCentred" />
+						</Window>
+					</Window>
+					<Window Type="TLBB_StaticImageNULL" Name="SelectHeadFrame_Preview_TypeIcon">
+						<Property Name="ZOrderChangeEnabled" Value="False" />
+						<Property Name="AbsolutePosition" Value="x:99.000000 y:72.000000" />
+						<Property Name="AbsoluteSize" Value="w:23.000000 h:21.000000" />
+						<Property Name="Image" Value="set:CharStyleFrame1 image:TypeIcon1" />
+					</Window>
+			    <Window Type="TLBB_StaticImageNULL" Name="SelectHeadFrame_Preview_Xiezhugongji_Icon">
+			      <Property Name="AlwaysOnTop" Value="True" />
+			      <Property Name="AbsolutePosition" Value="x:162.000000 y:63.000000" />
+			      <Property Name="AbsoluteSize" Value="w:32.000000 h:32.000000" />
+			      <Property Name="Image" Value="set:CharStyleFrame1 image:Xiezhu1_Hover" />
+			    </Window>
+					<Window Type="TLBB_StaticImageNULL" Name="SelectHeadFrame_Preview_DataBack">
+						<Property Name="AbsolutePosition" Value="x:96.000000 y:38.000000" />
+						<Property Name="AbsoluteSize" Value="w:98.000000 h:18.000000" />
+						<Property Name="Image" Value="set:CharStyleFrame1 image:DataBack1" />
+						<Window Type="TLBB_ProgressPropertyRed" Name="SelectHeadFrame_Preview_HP">
+							<Property Name="AbsolutePosition" Value="x:1.000000 y:0.000000" />
+							<Property Name="UnifiedSize" Value="{{1.000000,-2.000000},{0.000000,5.000000}}" />
+							<Property Name="CurrentProgress" Value="1.0" />
+							<Property Name="EffectColor" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+							<Property Name="EffectColorLevel" Value="index:0 tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+							<Property Name="MoveSpeed" Value="5000" />
+						</Window>
+						<Window Type="TLBB_ProgressPropertyBlue" Name="SelectHeadFrame_Preview_MP">
+							<Property Name="AbsolutePosition" Value="x:1.000000 y:6.000000" />
+							<Property Name="UnifiedSize" Value="{{1.000000,-2.000000},{0.000000,5.000000}}" />
+							<Property Name="CurrentProgress" Value="1.0" />
+							<Property Name="ProgressImage" Value="set:PlayerFrame image:10PX_Bar_Blue" />
+							<Property Name="EffectColor" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+							<Property Name="EffectColorLevel" Value="index:0 tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+							<Property Name="MoveSpeed" Value="5000" />
+						</Window>
+						<Window Type="TLBB_ProgressPropertyYellow" Name="SelectHeadFrame_Preview_SP">
+							<Property Name="AbsolutePosition" Value="x:1.000000 y:12.000000" />
+							<Property Name="UnifiedSize" Value="{{1.000000,-2.000000},{0.000000,5.000000}}" />
+							<Property Name="CurrentProgress" Value="1.0" />
+							<Property Name="ProgressImage" Value="set:PlayerFrame image:10PX_Bar_Yellow" />
+							<Property Name="EffectColor" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+							<Property Name="EffectColorLevel" Value="index:0 tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+							<Property Name="MoveSpeed" Value="5000" />
+						</Window>			
+						<Window Type="TLBB_StaticImageNULL" Name="SelectHeadFrame_Preview_DataFront">
+							<Property Name="AbsolutePosition" Value="x:0.000000 y:0.000000" />
+							<Property Name="UnifiedSize" Value="{{1.000000,.000000},{1.000000,0.000000}}" />
+							<Property Name="Image" Value="set:CharStyleFrame1 image:DataBack1" />
+						</Window>
+					</Window>
+			    <Window Type="TLBB_MapImage" Name="SelectHeadFrame_Preview_CampFrame">
+			    	<Property Name="ZOrderChangeEnabled" Value="False" />
+			      <Property Name="AbsolutePosition" Value="x:194.000000 y:8.000000" />
+			      <Property Name="AbsoluteSize" Value="w:25.000000 h:87.000000" />
+			      <Property Name="AlwaysOnTop" Value="True" />
+			      <Property Name="ChildImage" Value="name:Reputation0 set:CharStyleFrame1 image:TragetCamp1_ShaoLin" />
+			      <Property Name="ChildImage" Value="name:Reputation1 set:CharStyleFrame1 image:TragetCamp1_MingJiao" />
+			      <Property Name="ChildImage" Value="name:Reputation2 set:CharStyleFrame1 image:TragetCamp1_GaiBang" />
+			      <Property Name="ChildImage" Value="name:Reputation3 set:CharStyleFrame1 image:TragetCamp1_WuDang" />
+			      <Property Name="ChildImage" Value="name:Reputation4 set:CharStyleFrame1 image:TragetCamp1_EMei" />
+			      <Property Name="ChildImage" Value="name:Reputation5 set:CharStyleFrame1 image:TragetCamp1_XinXiu" />
+			      <Property Name="ChildImage" Value="name:Reputation6 set:CharStyleFrame1 image:TragetCamp1_TianLong" />
+			      <Property Name="ChildImage" Value="name:Reputation7 set:CharStyleFrame1 image:TragetCamp1_TianShan" />
+			      <Property Name="ChildImage" Value="name:Reputation8 set:CharStyleFrame1 image:TragetCamp1_XiaoYao" />
+			      <Property Name="ChildImage" Value="name:Reputation9 set:CharStyleFrame1 image:TragetCamp1_XinShou" />     
+			    </Window>
+					<Window Type="TLBB_StaticImageNULL" Name="SelectHeadFrame_Preview_TypeFrame">
+						<Property Name="AbsolutePosition" Value="x:17.000000 y:25.000000" />
+						<Property Name="AbsoluteSize" Value="w:63.000000 h:83.000000" />
+						<Property Name="AlwaysOnTop" Value="True" />
+						<Property Name="MouseHollow" Value="True" />
+						<Property Name="MouseLButtonHollow" Value="True" />
+						<Property Name="MouseMoveHollow" Value="True" />
+						<Property Name="MouseRButtonHollow" Value="True" />
+						<Property Name="Image" Value="set:CharStyleFrame2 image:TypeFrame1" />
+					</Window>
+					<Window Type="TLBB_StaticImageNULL" Name="SelectHeadFrame_Preview_TopFrame">
+						<Property Name="AlwaysOnTop" Value="True" />
+						<Property Name="AbsolutePosition" Value="x:0.000000 y:0.000000" />
+						<Property Name="AbsoluteSize" Value="w:1.000000 h:1.000000" />
+						<Property Name="Image" Value="set:CharStyleFrame2 image:TypeFrame1" />
+					</Window>
+				</Window>
+			</Window>
+			<Window Type="DefaultWindow" Name="SelectHeadFrame_StyleList">
+				<Property Name="AbsolutePosition" Value="x:275.0 y:1.0" />
+				<Property Name="AbsoluteSize" Value="w:170.000000 h:105.000000" />
+				<Window Type="TLBB_ActionButton" Name="SelectHeadFrame_Skill1_BKG">
+					<Property Name="AbsolutePosition" Value="x:0.0 y:0.0" />
+					<Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+					<Property Name="Empty" Value="False" />
+					<Property Name="UseDefaultTooltip" Value="True" />
+          <Event Name="Clicked" Function="SelectHeadFrame_Clicked(1);" />
+				</Window>
+				<Window Type="TLBB_ActionButton" Name="SelectHeadFrame_Skill2_BKG">
+					<Property Name="AbsolutePosition" Value="x:35.0 y:0.0" />
+					<Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+					<Property Name="Empty" Value="False" />
+					<Property Name="UseDefaultTooltip" Value="True" />
+          <Event Name="Clicked" Function="SelectHeadFrame_Clicked(2);" />
+				</Window>
+				<Window Type="TLBB_ActionButton" Name="SelectHeadFrame_Skill3_BKG">
+					<Property Name="AbsolutePosition" Value="x:70.0 y:0.0" />
+					<Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+					<Property Name="Empty" Value="False" />
+					<Property Name="UseDefaultTooltip" Value="True" />
+          <Event Name="Clicked" Function="SelectHeadFrame_Clicked(3);" />
+				</Window>
+				<Window Type="TLBB_ActionButton" Name="SelectHeadFrame_Skill4_BKG">
+					<Property Name="AbsolutePosition" Value="x:105.0 y:0.0" />
+					<Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+					<Property Name="Empty" Value="False" />
+					<Property Name="UseDefaultTooltip" Value="True" />
+          <Event Name="Clicked" Function="SelectHeadFrame_Clicked(4);" />
+				</Window>
+				<Window Type="TLBB_ActionButton" Name="SelectHeadFrame_Skill5_BKG">
+					<Property Name="AbsolutePosition" Value="x:0.0 y:35.0" />
+					<Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+					<Property Name="Empty" Value="False" />
+					<Property Name="UseDefaultTooltip" Value="True" />
+          <Event Name="Clicked" Function="SelectHeadFrame_Clicked(5);" />
+				</Window>
+				<Window Type="TLBB_ActionButton" Name="SelectHeadFrame_Skill6_BKG">
+					<Property Name="AbsolutePosition" Value="x:35.0 y:35.0" />
+					<Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+					<Property Name="Empty" Value="False" />
+					<Property Name="UseDefaultTooltip" Value="True" />
+          <Event Name="Clicked" Function="SelectHeadFrame_Clicked(6);" />
+				</Window>
+				<Window Type="TLBB_ActionButton" Name="SelectHeadFrame_Skill7_BKG">
+					<Property Name="AbsolutePosition" Value="x:70.0 y:35.0" />
+					<Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+					<Property Name="Empty" Value="False" />
+					<Property Name="UseDefaultTooltip" Value="True" />
+          <Event Name="Clicked" Function="SelectHeadFrame_Clicked(7);" />
+				</Window>
+				<Window Type="TLBB_ActionButton" Name="SelectHeadFrame_Skill8_BKG">
+					<Property Name="AbsolutePosition" Value="x:105.0 y:35.0" />
+					<Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+					<Property Name="Empty" Value="False" />
+					<Property Name="UseDefaultTooltip" Value="True" />
+          <Event Name="Clicked" Function="SelectHeadFrame_Clicked(8);" />
+				</Window>
+				<Window Type="TLBB_ActionButton" Name="SelectHeadFrame_Skill9_BKG">
+					<Property Name="AbsolutePosition" Value="x:0.0 y:70.0" />
+					<Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+					<Property Name="Empty" Value="False" />
+					<Property Name="UseDefaultTooltip" Value="True" />
+          <Event Name="Clicked" Function="SelectHeadFrame_Clicked(9);" />
+				</Window>
+				<Window Type="TLBB_ActionButton" Name="SelectHeadFrame_Skill10_BKG">
+					<Property Name="AbsolutePosition" Value="x:35.0 y:70.0" />
+					<Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+					<Property Name="Empty" Value="False" />
+					<Property Name="UseDefaultTooltip" Value="True" />
+          <Event Name="Clicked" Function="SelectHeadFrame_Clicked(10);" />
+				</Window>
+				<Window Type="TLBB_ActionButton" Name="SelectHeadFrame_Skill11_BKG">
+					<Property Name="AbsolutePosition" Value="x:70.0 y:70.0" />
+					<Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+					<Property Name="Empty" Value="False" />
+					<Property Name="UseDefaultTooltip" Value="True" />
+          <Event Name="Clicked" Function="SelectHeadFrame_Clicked(11);" />
+				</Window>
+				<Window Type="TLBB_ActionButton" Name="SelectHeadFrame_Skill12_BKG">
+					<Property Name="AbsolutePosition" Value="x:105.0 y:70.0" />
+					<Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+					<Property Name="Empty" Value="False" />
+					<Property Name="UseDefaultTooltip" Value="True" />
+          <Event Name="Clicked" Function="SelectHeadFrame_Clicked(12);" />
+				</Window>
+				<Window Type="TLBB_ButtonNULL" Name="SelectHeadFrame_PageUp">
+					<Property Name="UnifiedPosition" Value="{{1.000000,-23.000000},{0.000000,15.000000}" />
+					<Property Name="AbsoluteSize" Value="w:20.0 h:26.0" />
+					<Property Name="NormalImage" Value="set:Button6 image:PageUp_Btn_Normal" />
+					<Property Name="HoverImage" Value="set:Button6 image:PageUp_Btn_Hover" />
+					<Property Name="PushedImage" Value="set:Button6 image:PageUp_Btn_Pushed" />
+					<Property Name="DisabledImage" Value="set:Button6 image:PageUp_Btn_Disabled" />
+					<Event Name="Clicked" Function="SelectHeadFrame_Page(-1);" />
+				</Window>
+				<Window Type="TLBB_ButtonNULL" Name="SelectHeadFrame_PageDown">
+					<Property Name="UnifiedPosition" Value="{{1.000000,-23.000000},{1.000000,-41.000000}" />
+					<Property Name="AbsoluteSize" Value="w:20.0 h:26.0" />
+					<Property Name="NormalImage" Value="set:Button6 image:PageDown_Btn_Normal" />
+					<Property Name="HoverImage" Value="set:Button6 image:PageDown_Btn_Hover" />
+					<Property Name="PushedImage" Value="set:Button6 image:PageDown_Btn_Pushed" />
+					<Property Name="DisabledImage" Value="set:Button6 image:PageDown_Btn_Disabled" />
+					<Event Name="Clicked" Function="SelectHeadFrame_Page(1);" />
+				</Window>
+			</Window>
+			<Window Type="TLBB_SimpleMulitiTextFrame" Name="SelectHeadFrame_Require">
+				<Property Name="UnifiedPosition" Value="{{0.0,275.000000},{0.01,106.000000}" />
+				<Property Name="UnifiedSize" Value="{{0.000000,175.000000},{0.000000,20.000000}" />
+				<Property Name="Text" Value="" />
+				<Property Name="TextColor" Value="FFFFF263" />
+				<Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+				<Property Name="VertFormatting" Value="TopAligned" />
+				<Property Name="RiseOnClick" Value="False" />
+			</Window>
+			<Window Type="TLBB_StaticText" Name="SelectHeadFrame_WarningText">
+				<Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.01,127.000000}" />
+				<Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.99,-150.000000}" />
+				<Property Name="Text" Value="#{INTERFACE_XML_1013}" />
+				<Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+				<Property Name="VertFormatting" Value="TopAligned" />
+				<Property Name="VertScrollbar" Value="true" />
+			</Window>
+			<Window Type="TLBB_Frame_Lace5" Name="SelectHeadFrame_Blank">
+				<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}" />
+				<Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}" />
+			</Window>
+			<Window Type="TLBB_ButtonCommon" Name="SelectHeadFrame_Accept">
+				<Property Name="UnifiedPosition" Value="{{1.000000,-80.000000},{1.000000,-20.000000}" />
+				<Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+				<Property Name="Text" Value="#{INTERFACE_XML_557}" />
+        <Event Name="Clicked" Function="SelectHeadFrame_OK_Clicked();" />
+			</Window>
+			<Window Type="TLBB_ButtonCommon" Name="SelectHeadFrame_Cancel">
+				<Property Name="UnifiedPosition" Value="{{1.000000,-40.000000},{1.000000,-20.000000}" />
+				<Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+				<Property Name="Text" Value="#{INTERFACE_XML_542}" />
+				<Event Name="Clicked" Function="this:Hide();" />
+			</Window>
+		</Window>
+	</Window>
+</GUILayout>

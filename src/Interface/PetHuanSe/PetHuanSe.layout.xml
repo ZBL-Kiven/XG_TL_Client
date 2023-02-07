@@ -1,0 +1,373 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame1" Name="PetHuanSe_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,408.000000},{0.000000,525.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.350000,-17.000000},{0.100000,10.000000}}"/>
+    <Event Name="Hidden" Function="PetHuanSe_Close_Window();"/>
+    <Window Type="TLBB_DragTitle" Name="PetHuanSe_DragTitle">
+      <Property Name="AbsolutePosition" Value="x:40.000000 y:12.000000" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}" />
+      <Property Name="DragTarget" Value="PetHuanSe_Frame" />
+      <Property Name="Font" Value="YouYuan11.25" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="VertFormatting" Value="VertCentred" />
+      <Property Name="Text" Value="#{FTHS_120719_09}" />
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="PetHuanSe_Help">
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+      <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+      <Property Name="Text" Value="TLBB_ButtonHelp" />
+      <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*PetHuanSe&quot;);' />
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="PetHuanSe_Close">
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+      <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+      <Property Name="Text" Value="TLBB_ButtonClose" />
+      <Event Name="Clicked" Function="PetHuanSe_Close_Window();" />
+    </Window>
+    <Window Type="DefaultWindow" Name="PetHuanSe_Function_Frame">
+      <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-51.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,32.000000}}"/>
+      <Window Type="TLBB_FramePet" Name="PetHuanSe_FakeObject_Frame" >
+        <Property Name="UnifiedSize" Value="{{0.000000,250.000000},{0.000000,288.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,137.399994},{0.062921,53.604660}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Window Type="DefaultWindow" Name="PetHuanSe_FakeObject1">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-5.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,00.000000},{0.000000,0}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Window Type="TLBB_MeshWindow" Name="PetHuanSe_FakeObject" >
+            <Property Name="UnifiedSize" Value="{{0.800000,23.000000},{1.000000,27.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.100000,-12.000000},{0.100000,-26.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="ShowControl" Value="PetHuanSe_Frame" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="PetHuanSe_Pet_Type">
+            <Property Name="UnifiedSize" Value="{{0.400000,24.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,61.000000},{0.000000,236.000000}}"/>
+            <Property Name="TextColor" Value="FFFFF263"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="PetHuanSe_FakeObject_Frame_PetHead" >
+            <Property Name="AbsolutePosition" Value="x:88.000000 y:0.000000" />
+            <Property Name="AbsoluteSize" Value="w:68.000000 h:26.000000" />
+            <Property Name="Image" Value="set:CommonItem image:PetFrame_Head" />
+            <Property Name="RiseOnClick" Value="False" />
+          </Window>
+          <Window Type="TLBB_ButtonTurnLeft" Name="PetHuanSe_Model_TurnLeft" >
+            <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.100000,0.000000},{1.000000,-48.000000}}"/>
+            <Event Name="CaptureLost" Function="PetHuanSe_Pet_Modle_TurnLeft(0);" />
+            <Event Name="MouseButtonDown" Function="PetHuanSe_Pet_Modle_TurnLeft(1);" />
+            <Event Name="MouseButtonUp" Function="PetHuanSe_Pet_Modle_TurnLeft(0);" />
+          </Window>
+          <Window Type="TLBB_ButtonTurnRight" Name="PetHuanSe_Model_TurnRight" >
+            <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.790000,0.000000},{1.000000,-48.000000}}"/>
+            <Event Name="CaptureLost" Function="PetHuanSe_Pet_Modle_TurnRight(0);" />
+            <Event Name="MouseButtonDown" Function="PetHuanSe_Pet_Modle_TurnRight(1);" />
+            <Event Name="MouseButtonUp" Function="PetHuanSe_Pet_Modle_TurnRight(0);" />
+          </Window>
+          <Window Type="DefaultWindow" Name="PetHuanSe_IconK">
+            <Property Name="UnifiedSize" Value="{{0.000000,220.000000},{0.000000,26.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,19.000000},{1.000000,-23.000000}}"/>
+            <Window Type="TLBB_ActionButtonNULL" Name="PetHuanSe_Icon0">
+              <Property Name="UnifiedSize" Value="{{0.000000,22.000000},{0.000000,22.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="Empty" Value="False" />
+              <Property Name="UseDefaultTooltip" Value="True" />
+              <Event Name="Clicked" Function="PetHuanSe_ColorBox_Selected(1);"/>
+              <Window Type="TLBB_StaticImageNULL" Name="PetHuanSe_Mask0">
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+                <Event Name="MouseLButtonDown" Function="PetHuanSe_ColorBox_Selected(1);"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_Animate" Name="PetHuanSe_Animate0">
+              <Property Name="UnifiedSize" Value="{{0.000000,22.000000},{0.000000,22.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="Animate" Value="FuTiHuanSeJihuo"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+            </Window>
+            <Window Type="TLBB_ActionButtonNULL" Name="PetHuanSe_Icon1">
+              <Property Name="UnifiedSize" Value="{{0.000000,22.000000},{0.000000,22.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,24.000000},{0.000000,0.000000}}"/>
+              <Property Name="UseDefaultTooltip" Value="True" />
+              <Property Name="Empty" Value="False" />
+              <Event Name="Clicked" Function="PetHuanSe_ColorBox_Selected(2);"/>
+              <Window Type="TLBB_StaticImageNULL" Name="PetHuanSe_Mask1">
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+                <Event Name="MouseLButtonDown" Function="PetHuanSe_ColorBox_Selected(2);"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_Animate" Name="PetHuanSe_Animate1">
+              <Property Name="UnifiedSize" Value="{{0.000000,22.000000},{0.000000,22.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,24.000000},{0.000000,0.000000}}"/>
+              <Property Name="Animate" Value="FuTiHuanSeJihuo"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+            </Window>
+            <Window Type="TLBB_ActionButtonNULL" Name="PetHuanSe_Icon2">
+              <Property Name="UnifiedSize" Value="{{0.000000,22.000000},{0.000000,22.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,48.000000},{0.000000,0.000000}}"/>
+              <Property Name="UseDefaultTooltip" Value="True" />
+              <Property Name="Empty" Value="False" />
+              <Event Name="Clicked" Function="PetHuanSe_ColorBox_Selected(3);"/>
+              <Window Type="TLBB_StaticImageNULL" Name="PetHuanSe_Mask2">
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+                <Event Name="MouseLButtonDown" Function="PetHuanSe_ColorBox_Selected(3);"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_Animate" Name="PetHuanSe_Animate2">
+              <Property Name="UnifiedSize" Value="{{0.000000,22.000000},{0.000000,22.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,48.000000},{0.000000,0.000000}}"/>
+              <Property Name="Animate" Value="FuTiHuanSeJihuo"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+            </Window>
+            <Window Type="TLBB_ActionButtonNULL" Name="PetHuanSe_Icon3">
+              <Property Name="UnifiedSize" Value="{{0.000000,22.000000},{0.000000,22.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,72.000000},{0.000000,0.000000}}"/>
+              <Property Name="UseDefaultTooltip" Value="True" />
+              <Property Name="Empty" Value="False" />
+              <Event Name="Clicked" Function="PetHuanSe_ColorBox_Selected(4);"/>
+              <Window Type="TLBB_StaticImageNULL" Name="PetHuanSe_Mask3">
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+                <Event Name="MouseLButtonDown" Function="PetHuanSe_ColorBox_Selected(4);"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_Animate" Name="PetHuanSe_Animate3">
+              <Property Name="UnifiedSize" Value="{{0.000000,22.000000},{0.000000,22.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,72.000000},{0.000000,0.000000}}"/>
+              <Property Name="Animate" Value="FuTiHuanSeJihuo"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+            </Window>
+            <Window Type="TLBB_ActionButtonNULL" Name="PetHuanSe_Icon4">
+              <Property Name="UnifiedSize" Value="{{0.000000,22.000000},{0.000000,22.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,96.000000},{0.000000,0.000000}}"/>
+              <Property Name="UseDefaultTooltip" Value="True" />
+              <Property Name="Empty" Value="False" />
+              <Event Name="Clicked" Function="PetHuanSe_ColorBox_Selected(5);"/>
+              <Window Type="TLBB_StaticImageNULL" Name="PetHuanSe_Mask4">
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+                <Event Name="MouseLButtonDown" Function="PetHuanSe_ColorBox_Selected(5);"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_Animate" Name="PetHuanSe_Animate4">
+              <Property Name="UnifiedSize" Value="{{0.000000,22.000000},{0.000000,22.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,96.000000},{0.000000,0.000000}}"/>
+              <Property Name="Animate" Value="FuTiHuanSeJihuo"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+            </Window>
+            <Window Type="TLBB_ActionButtonNULL" Name="PetHuanSe_Icon5">
+              <Property Name="UnifiedSize" Value="{{0.000000,22.000000},{0.000000,22.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,120.000000},{0.000000,0.000000}}"/>
+              <Property Name="UseDefaultTooltip" Value="True" />
+              <Property Name="Empty" Value="False" />
+              <Event Name="Clicked" Function="PetHuanSe_ColorBox_Selected(6);"/>
+              <Window Type="TLBB_StaticImageNULL" Name="PetHuanSe_Mask5">
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+                <Event Name="MouseLButtonDown" Function="PetHuanSe_ColorBox_Selected(6);"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_Animate" Name="PetHuanSe_Animate5">
+              <Property Name="UnifiedSize" Value="{{0.000000,22.000000},{0.000000,22.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,120.000000},{0.000000,0.000000}}"/>
+              <Property Name="Animate" Value="FuTiHuanSeJihuo"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+            </Window>
+            <Window Type="TLBB_ActionButtonNULL" Name="PetHuanSe_Icon6">
+              <Property Name="UnifiedSize" Value="{{0.000000,22.000000},{0.000000,22.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,144.000000},{0.000000,0.000000}}"/>
+              <Property Name="UseDefaultTooltip" Value="True" />
+              <Property Name="Empty" Value="False" />
+              <Event Name="Clicked" Function="PetHuanSe_ColorBox_Selected(7);"/>
+              <Window Type="TLBB_StaticImageNULL" Name="PetHuanSe_Mask6">
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+                <Event Name="MouseLButtonDown" Function="PetHuanSe_ColorBox_Selected(7);"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_Animate" Name="PetHuanSe_Animate6">
+              <Property Name="UnifiedSize" Value="{{0.000000,22.000000},{0.000000,22.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,144.000000},{0.000000,0.000000}}"/>
+              <Property Name="Animate" Value="FuTiHuanSeJihuo"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+            </Window>
+            <Window Type="TLBB_ActionButtonNULL" Name="PetHuanSe_Icon7">
+              <Property Name="UnifiedSize" Value="{{0.000000,22.000000},{0.000000,22.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,168.000000},{0.000000,0.000000}}"/>
+              <Property Name="UseDefaultTooltip" Value="True" />
+              <Property Name="Empty" Value="False" />
+              <Event Name="Clicked" Function="PetHuanSe_ColorBox_Selected(8);"/>
+              <Window Type="TLBB_StaticImageNULL" Name="PetHuanSe_Mask7">
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+                <Event Name="MouseLButtonDown" Function="PetHuanSe_ColorBox_Selected(8);"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_Animate" Name="PetHuanSe_Animate7">
+              <Property Name="UnifiedSize" Value="{{0.000000,22.000000},{0.000000,22.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,168.000000},{0.000000,0.000000}}"/>
+              <Property Name="Animate" Value="FuTiHuanSeJihuo"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+            </Window>
+            <Window Type="TLBB_ActionButtonNULL" Name="PetHuanSe_Icon8">
+              <Property Name="UnifiedSize" Value="{{0.000000,22.000000},{0.000000,22.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,192.000000},{0.000000,0.000000}}"/>
+              <Property Name="UseDefaultTooltip" Value="True" />
+              <Property Name="Empty" Value="False" />
+              <Event Name="Clicked" Function="PetHuanSe_ColorBox_Selected(9);"/>
+              <Window Type="TLBB_StaticImageNULL" Name="PetHuanSe_Mask8">
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+                <Event Name="MouseLButtonDown" Function="PetHuanSe_ColorBox_Selected(9);"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_Animate" Name="PetHuanSe_Animate8">
+              <Property Name="UnifiedSize" Value="{{0.000000,22.000000},{0.000000,22.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,192.000000},{0.000000,0.000000}}"/>
+              <Property Name="Animate" Value="FuTiHuanSeJihuo"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+            </Window>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="PetHuanSe_Frame5">
+        <Property Name="UnifiedSize" Value="{{0.400000,-22.000000},{0.830000,-10.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.250000,-96.000000},{0.000000,75.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Window Type="TLBB_ListBoxCommon" Name="PetHuanSe_EquiptShapeList">
+          <Property Name="UnifiedSize" Value="{{0.960000,0.000000},{0.960000,0.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.020000,0.000000},{0.020000,0.000000}}"/>
+          <Event Name="ItemSelectionChanged" Function="PetHuanSe_ListBox_Selected();"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="PetHuanSe_MoneyInfo" >
+        <Property Name="UnifiedSize" Value="{{0.000000,250.000000},{0.000000,22.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.120000,90.000000},{1.000000,-91.200012}}"/>
+        <Property Name="TextColor" Value="FFFFF263"/>
+        <Property Name="Text" Value="#{INTERFACE_XML_789}"/>
+        <Window Type="TLBB_Money" Name="PetHuanSe_Money" >
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="CopperIcon" Value="set:Button6 image:Lace_JiaoziTong" />
+          <Property Name="GoldIcon" Value="set:Button6 image:Lace_JiaoziJin" />
+          <Property Name="HorzFormatting" Value="RightAligned" />
+          <Property Name="MoneyNumber" Value="0" />
+          <Property Name="SilverIcon" Value="set:Button6 image:Lace_JiaoziYin" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="PetHuanSe_SelfJiaozi_Info" >
+        <Property Name="UnifiedSize" Value="{{0.000000,250.000000},{0.000000,22.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.120000,90.000000},{1.000000,-69.200012}}"/>
+        <Property Name="TextColor" Value="FFFFF263"/>
+        <Property Name="Text" Value="#{BDJB_051210_1}"/>
+        <Window Type="TLBB_Money" Name="PetHuanSe_SelfJiaozi" >
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="CopperIcon" Value="set:Button6 image:Lace_JiaoziTong" />
+          <Property Name="GoldIcon" Value="set:Button6 image:Lace_JiaoziJin" />
+          <Property Name="HorzFormatting" Value="RightAligned" />
+          <Property Name="MoneyNumber" Value="0" />
+          <Property Name="SilverIcon" Value="set:Button6 image:Lace_JiaoziYin" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="PetHuanSe_shuoming_Info" >
+        <Property Name="UnifiedSize" Value="{{0.000000,392.000000},{0.000000,61.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.120000,-46.000000},{1.000000,-470.000000}}"/>
+        <Property Name="TextColor" Value="FFFFF263"/>
+        <Property Name="Text" Value="#{FTHS_120719_21}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="PetHuanSe_SelfMoney_Info" >
+        <Property Name="UnifiedSize" Value="{{0.000000,250.000000},{0.000000,22.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.120000,90.000000},{1.000000,-47.200012}}"/>
+        <Property Name="TextColor" Value="FFFFF263"/>
+        <Property Name="Text" Value="#{INTERFACE_XML_834}"/>
+        <Window Type="TLBB_Money" Name="PetHuanSe_SelfMoney" >
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="HorzFormatting" Value="RightAligned" />
+          <Property Name="MoneyNumber" Value="0" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace5" Name="PetHuanSe_Blank">
+        <Property Name="UnifiedSize" Value="{{1.000000,-124.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-20.000000}}"/>
+      </Window>
+      <Window Type="TLBB_ComboList" Name="PetHuanSe_SearchMode">
+        <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,331.000000},{0.000000,64.000000}}"/>
+        <Event Name="ListSelectionAccepted" Function="PetHuanSe_SearchMode_Changed();" />
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="PetHuanSe_Explain2">
+        <Property Name="UnifiedSize" Value="{{0.650000,-126.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,64.000000}}"/>
+        <Property Name="TextColor" Value="FFFFF263"/>
+        <Property Name="Text" Value="#{FTHS_120719_11}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        <Property Name="VertFormatting" Value="TopAligned"/>
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="PetHuanSe_Explain3">
+        <Property Name="UnifiedSize" Value="{{0.650000,-63.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,137.000000},{0.000000,64.000000}}"/>
+        <Property Name="TextColor" Value="FFFFF263"/>
+        <Property Name="Text" Value="#{FTHS_120719_12}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        <Property Name="VertFormatting" Value="TopAligned"/>
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="PetHuanSe_Replace">
+        <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-123.000000},{1.000000,-20.000000}}"/>
+        <Property Name="Tooltip" Value="#{GXHDZ_141121_59}"/>
+        <Property Name="Text" Value="#{GXHDZ_141121_58}" />
+        <Event Name="Clicked" Function="PetHuanSe_Visual_Clicked();" />
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="PetHuanSe_OK">
+        <Property Name="UnifiedPosition" Value="{{1.000000,-83.000000},{1.000000,-20.000000}" />
+        <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+        <Property Name="Text" Value="#{FTHS_120719_39}" />
+        <Event Name="Clicked" Function="PetHuanSe_OK_Clicked();" />
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="PetHuanSe_Cancel">
+        <Property Name="UnifiedPosition" Value="{{1.000000,-43.000000},{1.000000,-20.000000}" />
+        <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+        <Property Name="Text" Value="#{FTHS_120719_07}" />
+        <Event Name="Clicked" Function="PetHuanSe_Close_Window();" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" ?>
+<GUILayout>
+    <Window Type="TLBB_MainFrame1" Name="YuanbaoBangdingExchange_Frame">
+        <Property Name="UnifiedPosition" Value="{{0.5,-128},{0.15,0}}" />
+        <Property Name="AbsoluteSize" Value="w:256 h:233" />
+        <Event Name="Hidden" Function="YuanbaoBangdingExchange_OnHidden();" />
+        <Event Name="Shown" Function="YuanbaoBangdingExchange_OnShown();" />
+        <Window Type="TLBB_DragTitle" Name="YuanbaoBangdingExchange_DragTitle">
+            <Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
+            <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+            <Property Name="DragTarget" Value="YuanbaoBangdingExchange_Frame" />
+            <Property Name="Text" Value="#{BDYB_XML_090714_04}" />
+            <Property Name="Font" Value="YouYuan11.25" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+        </Window>
+        <Window Type="TLBB_ButtonHelp" Name="YuanbaoBangdingExchange_Help">
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+            <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+            <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*YuanbaoBangdingExchange&quot;);' />
+        </Window>
+        <Window Type="TLBB_ButtonClose" Name="YuanbaoBangdingExchange_Close">
+            <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+            <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+            <Event Name="Clicked" Function="YuanbaoBangdingExchange_Hide();" />
+        </Window>
+        <Window Type="DefaultWindow" Name="YuanbaoBangdingExchange_Function_Frame">
+            <Property Name="AbsolutePosition" Value="x:7.000000 y:36.000000" />
+            <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-55.000000}" />
+            <Window Type="TLBB_SimpleText" Name="YuanbaoBangdingExchange_Text2">
+                <Property Name="AbsolutePosition" Value="x:10.0 y:55.0" />
+                <Property Name="UnifiedSize" Value="{{1.0,-20.000000},{0.000000,40.000000}" />
+                <Property Name="Text" Value="#{BDYB_090811_01}" />
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+                <Property Name="VertFormatting" Value="VertCentred" />
+                <Property Name="TextColor" Value="FFFFF263" />
+            </Window>
+            <Window Type="TLBB_EditBoxNormal" Name="YuanbaoBangdingExchange_Moral_Value">
+                <Property Name="AbsolutePosition" Value="x:50.0 y:102.0" />
+                <Property Name="UnifiedSize" Value="{{1.0,-100.000000},{0.000000,20.000000}" />
+				<Property Name="MaxTextLength" Value="4" />
+                <Property Name="ValidationString" Value="[0-9]*" />
+              <Event Name="TextChanged" Function="YuanbaoBangdingExchange_Count_Change();" />
+            </Window>
+            <Window Type="TLBB_SimpleMulitiTextFrame" Name="YuanbaoBangdingExchange_Text1">
+                <Property Name="AbsolutePosition" Value="x:10.0 y:128.0" />
+                <Property Name="UnifiedSize" Value="{{1.0,-20.000000},{0.000000,20.000000}" />
+                <Property Name="Text" Value="#{BDYB_XML_090714_05}" />
+                <Property Name="HorzFormatting" Value="LeftAligned" />
+                <Property Name="VertFormatting" Value="VertCentred" />
+                <Property Name="TextColor" Value="FFFFF263" />
+            </Window>
+          <Window Type="TLBB_SimpleMulitiTextFrame" Name="YuanbaoBangdingExchange_Text3">
+            <Property Name="AbsolutePosition" Value="x:10.0 y:6.0" />
+            <Property Name="UnifiedSize" Value="{{1.0,-20.000000},{0.000000,42.000000}" />
+            <Property Name="Text" Value="#{BDYB_XML_090817_1}" />
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+            <Property Name="VertFormatting" Value="VertCentred" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+          <Window Type="TLBB_Frame_Lace5" Name="YuanbaoBangdingExchange_Blank">
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}" />
+                <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}" />
+            </Window>
+            <Window Type="TLBB_ButtonCommon" Name="YuanbaoBangdingExchange_OK">
+                <Property Name="UnifiedPosition" Value="{{1.000000,-80.000000},{1.000000,-20.000000}" />
+                <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+                <Property Name="Text" Value="#{INTERFACE_XML_258}" />
+                <Event Name="Clicked" Function="YuanbaoBangdingExchange_OK_Clicked();" />
+            </Window>
+            <Window Type="TLBB_ButtonCommon" Name="YuanbaoBangdingExchange_Cancel">
+                <Property Name="UnifiedPosition" Value="{{1.000000,-40.000000},{1.000000,-20.000000}" />
+                <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+                <Property Name="Text" Value="#{INTERFACE_XML_542}" />
+                <Event Name="Clicked" Function="YuanbaoBangdingExchange_Hide();" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

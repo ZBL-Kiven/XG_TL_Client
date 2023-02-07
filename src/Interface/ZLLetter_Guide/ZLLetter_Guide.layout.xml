@@ -1,0 +1,112 @@
+<?xml version="1.0" ?>
+<GUILayout>
+    <Window Type="DefaultWindow" Name="ZLLetter_Guide_Frame">
+      <Property Name="UnifiedSize" Value="{{0.000000,854.000000},{0.000000,476.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-427.000000},{0.500000,-238.000000}}"/>
+        <Event Name="Hidden" Function="ZLLetter_Guide_Frame_OnHiden();" />
+        <Window Type="TLBB_DragTitle" Name="ZLLetter_Guide_DragTitle">
+          <Property Name="UnifiedSize" Value="{{1.000000,-85.000000},{0.000000,73.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,48.000000},{0.000000,64.000000}}"/>
+            <Property Name="DragTarget" Value="ZLLetter_Guide_Frame" />
+        </Window>
+        <Window Type="TLBB_ButtonClose" Name="ZLLetter_Guide_Close">
+          <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-21.000000},{0.000000,117.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="Clicked" Function="ZLLetter_Guide_Hide();" />
+        </Window>
+      <Window Type="DefaultWindow" Name="ZLLetter_Guide_background_Frame">
+        <Property Name="UnifiedSize" Value="{{0.000000,854.000000},{0.000000,476.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Window Type="TLBB_StaticImageNULL" Name="ZLLetter_Guide_background1">
+          <Property Name="UnifiedSize" Value="{{0.000000,512.000000},{0.000000,476.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:ZLLetter1 image:ZLLetter_ditu1"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="ZLLetter_Guide_background2">
+          <Property Name="UnifiedSize" Value="{{0.000000,342.000000},{0.000000,476.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,512.000000},{0.000000,0.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:ZLLetter2 image:ZLLetter_ditu2"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="ZLLetter_Guide_Title">
+          <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,13.000000},{0.000000,110.000000}}"/>
+          <Property Name="Text" Value="#{YXDHYD_20210325_41}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="Font" Value="YouYuan11.25"/>
+        </Window>
+
+      </Window>
+      <Window Type="DefaultWindow" Name="ZLLetter_Guide_Function_Frame">
+            <Property Name="AbsolutePosition" Value="x:6.000000 y:36.000000" />
+            <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-55.000000}" />
+        <Window Type="TLBB_SimpleText" Name="ZLLetter_Guide_Info">
+          <Property Name="UnifiedSize" Value="{{0.000000,250.000000},{0.000000,16.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-107.000000},{0.000000,113.000000}}"/>
+          <Property Name="Text" Value="#{YXDHYD_20210325_31}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          <Property Name="Font" Value="SongTiBmp12"/>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="ZLLetter_Guide_Goto">
+          <Property Name="UnifiedSize" Value="{{0.000000,75.000000},{0.000000,16.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,130.000000},{0.000000,113.000000}}"/>
+          <Property Name="Text" Value="#{YXDHYD_20210325_32}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="Font" Value="SongTiBmp12"/>
+		  <Event Name="Clicked" Function="ZLLetter_Guide_NewClicked()"/>
+        </Window>
+            <Window Type="TLBB_ButtonNULL" Name="ZLLetter_Guide_Letter1_Image">
+              <Property Name="UnifiedSize" Value="{{0.000000,155.000000},{0.000000,138.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,284.000000},{0.000000,147.000000}}"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="PushedImage" Value="set:ZLLetter5 image:ZLLetter_baitie_pushed"/>
+              <Property Name="NormalImage" Value="set:ZLLetter5 image:ZLLetter_baitie_normal"/>
+              <Property Name="HoverImage" Value="set:ZLLetter5 image:ZLLetter_baitie_hover"/>
+              <Property Name="DisabledImage" Value=""/>
+              <Event Name="Clicked" Function="ZLLetter_Guide_Clicked(1)"/>
+            </Window>
+            <Window Type="TLBB_ButtonNULL" Name="ZLLetter_Guide_Letter2_Image">
+              <Property Name="UnifiedSize" Value="{{0.000000,73.000000},{0.000000,122.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,438.000000},{0.000000,159.000000}}"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="PushedImage" Value="set:ZLLetter3 image:ZLLetter_mihan1_pushed"/>
+              <Property Name="NormalImage" Value="set:ZLLetter3 image:ZLLetter_mihan1_normal"/>
+              <Property Name="HoverImage" Value="set:ZLLetter3 image:ZLLetter_mihan1_hover"/>
+              <Property Name="DisabledImage" Value=""/>
+              <Event Name="Clicked" Function="ZLLetter_Guide_Clicked(2)"/>
+            </Window>
+            <Window Type="TLBB_ButtonNULL" Name="ZLLetter_Guide_Letter3_Image">
+              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,127.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,566.000000},{0.000000,157.000000}}"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="PushedImage" Value="set:ZLLetter3 image:ZLLetter_juanzhou_pushed"/>
+              <Property Name="NormalImage" Value="set:ZLLetter3 image:ZLLetter_juanzhou_normal"/>
+              <Property Name="HoverImage" Value="set:ZLLetter3 image:ZLLetter_juanzhou_hover"/>
+              <Property Name="DisabledImage" Value=""/>
+              <Event Name="Clicked" Function="ZLLetter_Guide_Clicked(3)"/>
+            </Window>
+            <Window Type="TLBB_ButtonNULL" Name="ZLLetter_Guide_Letter4_Image">
+              <Property Name="UnifiedSize" Value="{{0.000000,76.000000},{0.000000,106.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,682.000000},{0.000000,170.000000}}"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="PushedImage" Value="set:ZLLetter4 image:ZLLetter_mihan2_pushed"/>
+              <Property Name="NormalImage" Value="set:ZLLetter4 image:ZLLetter_mihan2_normal"/>
+              <Property Name="HoverImage" Value="set:ZLLetter4 image:ZLLetter_mihan2_hover"/>
+              <Property Name="DisabledImage" Value=""/>
+              <Event Name="Clicked" Function="ZLLetter_Guide_Clicked(4)"/>
+            </Window>
+            <Window Type="TLBB_ButtonCommon" Name="ZLLetter_Guide_GotoBtn">
+              <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,26.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-351.000000},{1.000000,-92.000000}}"/>
+                <Property Name="Text" Value="激活" />
+              <Property Name="AlwaysOnTop" Value="True"/>
+                <Event Name="Clicked" Function="ZLLetter_Guide_Clicked(5)" />
+            </Window>
+        </Window>
+  </Window>
+</GUILayout>

@@ -1,0 +1,198 @@
+<?xml version="1.0" ?>
+<GUILayout>
+	<Window Type="TLBB_MainFrame1" Name="PetLingXingUp_Frame">
+		<Property Name="UnifiedPosition" Value="{{0.35,0},{0.10,0}}" />
+		<Property Name="AbsoluteSize" Value="w:300 h:500" />
+		<Event Name="Hidden" Function="PetLingXingUp_OnHidden();" />
+		
+		<Window Type="TLBB_DragTitle" Name="PetLingXingUp_DragTitle">
+			<Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
+			<Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+			<Property Name="DragTarget" Value="PetLingXingUp_Frame" />
+			<Property Name="Font" Value="YouYuan11.25" />
+			<Property Name="HorzFormatting" Value="HorzCentred" />
+			<Property Name="VertFormatting" Value="VertCentred" />
+			<Property Name="Text" Value="#{RXZS_XML_16}" />
+		</Window>
+		<Window Type="TLBB_ButtonHelp" Name="PetLingXingUp_Help">
+			<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+			<Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+			<Property Name="Text" Value="TLBB_ButtonHelp" />
+			<Event Name="Clicked" Function='Helper:GotoHelper(&quot;*PetLingXingUp&quot;);' />
+		</Window>
+		<Window Type="TLBB_ButtonClose" Name="PetLingXingUp_Close">
+			<Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+			<Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+			<Property Name="Text" Value="TLBB_ButtonClose" />
+			<Event Name="Clicked" Function="PetLingXingUp_Close_Window();" />
+		</Window>
+		<Window Type="DefaultWindow" Name="PetLingXingUp_Function_Frame">
+			<Property Name="AbsolutePosition" Value="x:7.000000 y:36.000000" />
+			<Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-55.000000}" />
+      <Window Type="TLBB_SimpleText" Name="PetLingXingUp_Text1">
+        <Property Name="UnifiedPosition" Value="{{0.0,5.000000},{0.000000,3.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.0,250.000000},{0.000000,20.000000}" />
+        <Property Name="Text" Value="#{RXZS_XML_17}" />
+        <Property Name="TextColor" Value="FFFAFFA4" />
+        <Property Name="HorzFormatting" Value="LeftAligned" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+      </Window>
+      <Window Type="TLBB_FramePet" Name="PetLingXingUp_FakeObject_Frame" >
+        <Property Name="Position" Value="x:0.000000 y:0.062921" />
+        <Property Name="AbsoluteSize" Value="w:286.000000 h:137.000000" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Window Type="TLBB_MeshWindow" Name="PetLingXingUp_FakeObject" >
+          <Property Name="Position" Value="x:0.100000 y:0.100000" />
+          <Property Name="Size" Value="w:0.800000 h:0.850000" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="ShowControl" Value="PetLingXingUp_Frame" />
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="PetLingXingUp_FakeObject_Frame_PetHead" >
+          <Property Name="AbsolutePosition" Value="x:109.000000 y:0.000000" />
+          <Property Name="AbsoluteSize" Value="w:68.000000 h:26.000000" />
+          <Property Name="Image" Value="set:CommonItem image:PetFrame_Head" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+        <Window Type="TLBB_ButtonTurnLeft" Name="PetLingXingUp_Model_TurnLeft" >
+          <Property Name="UnifiedPosition" Value="{{0.100000,0.299999},{1.000000,-34.000000}" />
+          <Property Name="AbsoluteSize" Value="w:25.000000 h:25.000000" />
+          <Event Name="CaptureLost" Function="PetLingXingUp_Pet_Modle_TurnLeft(0);" />
+          <Event Name="MouseButtonDown" Function="PetLingXingUp_Pet_Modle_TurnLeft(1);" />
+          <Event Name="MouseButtonUp" Function="PetLingXingUp_Pet_Modle_TurnLeft(0);" />
+        </Window>
+        <Window Type="TLBB_ButtonTurnRight" Name="PetLingXingUp_Model_TurnRight" >
+          <Property Name="UnifiedPosition" Value="{{0.790000,-0.330002},{1.000000,-34.000000}" />
+          <Property Name="AbsoluteSize" Value="w:25.000000 h:25.000000" />
+          <Event Name="CaptureLost" Function="PetLingXingUp_Pet_Modle_TurnRight(0);" />
+          <Event Name="MouseButtonDown" Function="PetLingXingUp_Pet_Modle_TurnRight(1);" />
+          <Event Name="MouseButtonUp" Function="PetLingXingUp_Pet_Modle_TurnRight(0);" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="PetLingXingUp_Text2">
+        <Property Name="UnifiedPosition" Value="{{0.0,5.000000},{0.000000,168.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.0,216.000000},{0.000000,20.000000}" />
+        <Property Name="Text" Value="#{RXZS_XML_18}" />
+        <Property Name="TextColor" Value="FFFAFFA4" />
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="PetLingXingUp_Pet_Text">
+        <Property Name="UnifiedPosition" Value="{{0.069686,0.000000},{0.000000,190.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.547038,0.000000},{0.000000,20.000000}" />
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="PetLingXingUp_PetList_Select">
+        <Property Name="UnifiedPosition" Value="{{0.627178,0.000000},{0.000000,190.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.306620,0.000000},{0.000000,20.000000}" />
+        <Property Name="Text" Value="#{INTERFACE_XML_959}" />
+        <Event Name="Clicked" Function="PetLingXingUp_SelectPet_Clicked();" />
+      </Window>
+      <Window Type="TLBB_Frame_Lace4" Name="PetLingXingUp_Text3">
+		<Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,217.000000}" />
+		<Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,85.000000}" />
+        <Window Type="TLBB_StaticText" Name="PetLingXingUp_Text3_1">
+			<Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,6.000000}" />
+			<Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{1.000000,-12.000000}" />
+			<Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+			<Property Name="RiseOnClick" Value="False" />
+			<Property Name="VertFormatting" Value="TopAligned" />
+			<Property Name="Text" Value="#{RXZS_XML_19}" />
+			<Property Name="VertScrollbar" Value="true" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="PetLingXingUp_Probability">
+        <Property Name="UnifiedPosition" Value="{{0.094077,0.000000},{0.000000,306.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.825784,0.000000},{0.000000,20.000000}" />
+        <Window Type="TLBB_SimpleText" Name="PetLingXingUp_Probability_Text">
+          <Property Name="UnifiedPosition" Value="{{0.0,10.000000},{0.000000,0.000000}" />
+          <Property Name="UnifiedSize" Value="{{0.0,120.000000},{0.000000,20.000000}" />
+          <Property Name="Text" Value="#{RXZS_XML_20}" />
+          <Property Name="TextColor" Value="FFFAFFA4" />
+          <Property Name="HorzFormatting" Value="LeftAligned" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="PetLingXingUp_Probability_Percent">
+          <Property Name="UnifiedPosition" Value="{{0.0,150.000000},{0.000000,0.000000}" />
+          <Property Name="UnifiedSize" Value="{{0.0,60.000000},{0.000000,20.000000}" />
+          <Property Name="Text" Value="" />
+          <Property Name="TextColor" Value="FFFAFFA4" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="PetLingXingUp_Wuxing">
+          <Property Name="UnifiedPosition" Value="{{0.094077,0.000000},{0.000000,330.000000}" />
+          <Property Name="UnifiedSize" Value="{{0.825784,0.000000},{0.000000,20.000000}" />
+          <Window Type="TLBB_SimpleText" Name="PetLingXingUp_Wuxing_Text">
+             <Property Name="UnifiedPosition" Value="{{0.0,10.000000},{0.000000,0.000000}" />
+             <Property Name="UnifiedSize" Value="{{0.0,120.000000},{0.000000,20.000000}" />
+              <Property Name="Text" Value="#{RXZS_XML_21}" />
+             <Property Name="TextColor" Value="FFFAFFA4" />
+             <Property Name="HorzFormatting" Value="LeftAligned" />
+             <Property Name="VertFormatting" Value="VertCentred" />
+        </Window>
+          <Window Type="TLBB_SimpleText" Name="PetLingXingUp_Wuxing_Percent">
+            <Property Name="UnifiedPosition" Value="{{0.0,150.000000},{0.000000,0.000000}" />
+            <Property Name="UnifiedSize" Value="{{0.0,60.000000},{0.000000,20.000000}" />
+            <Property Name="Text" Value="" />
+            <Property Name="TextColor" Value="FFFAFFA4" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="VertFormatting" Value="VertCentred" />
+          </Window>
+        </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="PetLingXingUp_MoneyInfo" >
+        <Property Name="UnifiedPosition" Value="{{0.120000,0.000000},{1.000000,-91.000000}" />
+        <Property Name="AbsoluteSize" Value="w:219.000000 h:22.000000" />
+        <Property Name="Text" Value="#{INTERFACE_XML_789}" />
+        <Property Name="TextColor" Value="FFFFF263" />
+        <Window Type="TLBB_Money" Name="PetLingXingUp_Money" >
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}" />
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}" />
+          <Property Name="CopperIcon" Value="set:Button6 image:Lace_JiaoziTong" />
+          <Property Name="GoldIcon" Value="set:Button6 image:Lace_JiaoziJin" />
+          <Property Name="HorzFormatting" Value="RightAligned" />
+          <Property Name="MoneyNumber" Value="0" />
+          <Property Name="SilverIcon" Value="set:Button6 image:Lace_JiaoziYin" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="PetLingXingUp_SelfJiaozi_Info" >
+        <Property Name="UnifiedPosition" Value="{{0.120000,0.000000},{1.000000,-69.000000}" />
+        <Property Name="AbsoluteSize" Value="w:219.000000 h:22.000000" />
+        <Property Name="Text" Value="#{BDJB_051210_1}" />
+        <Property Name="TextColor" Value="FFFFF263" />
+        <Window Type="TLBB_Money" Name="PetLingXingUp_SelfJiaozi" >
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}" />
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}" />
+          <Property Name="CopperIcon" Value="set:Button6 image:Lace_JiaoziTong" />
+          <Property Name="GoldIcon" Value="set:Button6 image:Lace_JiaoziJin" />
+          <Property Name="HorzFormatting" Value="RightAligned" />
+          <Property Name="MoneyNumber" Value="0" />
+          <Property Name="SilverIcon" Value="set:Button6 image:Lace_JiaoziYin" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="PetLingXingUp_SelfMoney_Info" >
+        <Property Name="UnifiedPosition" Value="{{0.120000,0.000000},{1.000000,-47.000000}" />
+        <Property Name="AbsoluteSize" Value="w:219.000000 h:22.000000" />
+        <Property Name="Text" Value="#{INTERFACE_XML_834}" />
+        <Property Name="TextColor" Value="FFFFF263" />
+        <Window Type="TLBB_Money" Name="PetLingXingUp_SelfMoney" >
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}" />
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}" />
+          <Property Name="HorzFormatting" Value="RightAligned" />
+          <Property Name="MoneyNumber" Value="0" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="PetLingXingUp_OK">
+				<Property Name="UnifiedPosition" Value="{{1.000000,-80.000000},{1.000000,-20.000000}" />
+				<Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+				<Property Name="Text" Value="#{RXZS_XML_22}" />			
+				<Event Name="Clicked" Function="PetLingXingUp_OK_Clicked();" />				
+			</Window>
+			<Window Type="TLBB_ButtonCommon" Name="PetLingXingUp_Cancel">
+				<Property Name="UnifiedPosition" Value="{{1.000000,-40.000000},{1.000000,-20.000000}" />
+				<Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+				<Property Name="Text" Value="#{INTERFACE_XML_542}" />
+				<Event Name="Clicked" Function="PetLingXingUp_Close_Window();" />
+			</Window>
+		</Window>
+	</Window>
+</GUILayout>

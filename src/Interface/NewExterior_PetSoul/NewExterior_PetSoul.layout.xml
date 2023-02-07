@@ -1,0 +1,1223 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="NewExterior_PetSoul_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,966.000000},{0.000000,574.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-480.000000},{0.500000,-290.000000}" />
+    <Event Name="Hidden" Function="NewExterior_PetSoul_OnHidden();" />
+    <Window Type="TLBB_DragTitle" Name="NewExterior_PetSoul_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-60.000000},{0.000000,30.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,2.000000}}"/>
+      <Property Name="Text" Value="#{WGTJ_201222_175}"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Property Name="DragTarget" Value="NewExterior_PetSoul_Frame" />
+    </Window>
+    <Window Type="TLBB_ButtonNULL" Name="NewExterior_PetSoul_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,11.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-26.000000},{0.000000,14.000000}}"/>
+      <Property Name="PushedImage" Value="set:NewExterior3 image:NewExterior_guanbi_Pushed"/>
+      <Property Name="NormalImage" Value="set:NewExterior3 image:NewExterior_guanbi_Normal"/>
+      <Property Name="HoverImage" Value="set:NewExterior3 image:NewExterior_guanbi_Hover"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Event Name="Clicked" Function="NewExterior_PetSoul_CloseClick();" />
+    </Window>
+    <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_BK">
+      <Property Name="UnifiedSize" Value="{{0.000000,966.000000},{0.000000,574.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      <Property Name="MouseRButtonHollow" Value="True"/>
+      <Property Name="MouseMoveHollow" Value="True"/>
+      <Property Name="MouseLButtonHollow" Value="True"/>
+      <Property Name="MouseHollow" Value="True"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Property Name="Image" Value="set:NewExterior3 image:NewExterior_BK"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="NewExterior_PetSoul_Function_Frame">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-32.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,32.000000}}"/>
+      <Window Type="DefaultWindow" Name="NewExterior_PetSoul_Frame_LeftClient">
+        <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{1.000000,0.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+        <Window Type="TLBB_ButtonNULL" Name="NewExterior_PetSoul_Dress_LeftCheckBtn">
+          <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,72.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,10.000000}}"/>
+          <Event Name="Clicked" Function="NewExterior_PetSoul_OpenFashion()"/>
+          <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_Dress_LeftCheckBtnActive">
+            <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,72.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewExterior3 image:NewExterior_yeqian_02_Normal"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="NewExterior_PetSoul_Dress_LeftBtn">
+            <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,56.000000},{0.500000,-23.000000}}"/>
+            <Property Name="Tooltip" Value=""/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="MouseLButtonDown" Function="NewExterior_PetSoul_OpenFashion()"/>
+            <Event Name="MouseRClick" Function="NewExterior_PetSoul_ActionToDressBox();" />
+            <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_Dress_LockImg">
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_Dress_ActionImg">
+              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,33.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="NewExterior_PetSoul_Ride_LeftCheckBtn">
+          <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,72.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,82.000000}}"/>
+          <Event Name="Clicked" Function="NewExterior_PetSoul_OpenRide()"/>
+          <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_Ride_LeftCheckBtnActive">
+            <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,72.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewExterior3 image:NewExterior_yeqian_07_Normal"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="NewExterior_PetSoul_Ride_LeftBtn">
+            <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,56.000000},{0.500000,-23.000000}}"/>
+            <Property Name="Tooltip" Value=""/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="MouseLButtonDown" Function="NewExterior_PetSoul_OpenRide()"/>
+            <Event Name="MouseRClick" Function="NewExterior_PetSoul_TakeOffRide();" />
+            <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_Ride_LockImg">
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_Ride_ActionImg">
+              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,33.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="NewExterior_PetSoul_FaceStyle_LeftCheckBtn">
+          <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,72.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,154.000000}}"/>
+          <Event Name="Clicked" Function="NewExterior_PetSoul_OpenFace()"/>
+          <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_FaceStyle_LeftCheckBtnActive">
+            <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,72.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewExterior3 image:NewExterior_yeqian_03_Normal"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="NewExterior_PetSoul_FaceStyle_LeftBtn">
+            <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,56.000000},{0.500000,-23.000000}}"/>
+            <Property Name="Tooltip" Value=""/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="MouseLButtonDown" Function="NewExterior_PetSoul_OpenFace()"/>
+            <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_FaceStyle_LockImg">
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_FaceStyle_ActionImg">
+              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,33.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="NewExterior_PetSoul_HairStyle_LeftCheckBtn">
+          <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,72.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,226.000000}}"/>
+          <Event Name="Clicked" Function="NewExterior_PetSoul_OpenHair()"/>
+          <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_HairStyle_LeftCheckBtnActive">
+            <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,72.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewExterior3 image:NewExterior_yeqian_04_Normal"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="NewExterior_PetSoul_HairStyle_LeftBtn">
+            <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,56.000000},{0.500000,-23.000000}}"/>
+            <Property Name="Tooltip" Value=""/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="MouseLButtonDown" Function="NewExterior_PetSoul_OpenHair()"/>
+            <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_HairStyle_LockImg">
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_HairStyle_ActionImg">
+              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,33.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="NewExterior_PetSoul_PlayerFrame_LeftFrame">
+          <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,72.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,298.000000}}"/>
+          <Event Name="Clicked" Function="NewExterior_PetSoul_OpenPortrait()"/>
+          <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_PlayerFrame_LeftCheckBtnActive">
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,72.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewExterior3 image:NewExterior_yeqian_06_Normal"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="NewExterior_PetSoul_PlayerFrame_LeftBtn">
+            <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,56.000000},{0.500000,-23.000000}}"/>
+            <Property Name="Tooltip" Value=""/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="MouseLButtonDown" Function="NewExterior_PetSoul_OpenPortrait()"/>
+            <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_PlayerFrame_LockImg">
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_PlayerFrame_ActionImg">
+              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,33.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="NewExterior_PetSoul_Weapon_LeftCheckBtn">
+          <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,72.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,370.000000}}"/>        
+          <Event Name="Clicked" Function="NewExterior_PetSoul_OpenWeapon()"/>
+          <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_Weapon_LeftCheckBtnActive">
+            <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,72.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Weapon image:Weapon_Page_Normal"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="NewExterior_PetSoul_Weapon_LeftBtn">
+            <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,56.000000},{0.500000,-23.000000}}"/>
+            <Property Name="Tooltip" Value=""/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="MouseLButtonDown" Function="NewExterior_PetSoul_OpenWeapon()"/>
+			<Event Name="MouseRClick" Function="NewExterior_PetSoul_TakeOffWeapon()" />
+            <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_Weapon_LockImg">
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_Weapon_ActionImg">
+              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,33.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+            </Window>
+          </Window>
+        </Window> 
+
+        <Window Type="TLBB_ButtonNULL" Name="NewExterior_PetSoul_PetSoul_LeftCheckBtn">
+          <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,72.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,442.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_PetSoul_LeftCheckBtnActive">
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,72.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewExterior3 image:NewExterior_yeqian_08_Pushed"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="NewExterior_PetSoul_PetSoul_LeftBtn">
+            <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,56.000000},{0.500000,-23.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_PetSoul_Mask">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Disabled" Value="True"/>
+              <Property Name="Visible" Value="False"/>
+              <Property Name="Image" Value="set:CharHeadFrame1 image:CharHeadFrame1_DefaultPlayer"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_PetSoul_LockImg">
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_PetSoul_ActionImg">
+              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,33.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+            </Window>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="NewExterior_PetSoul_Frame_Client">
+        <Property Name="UnifiedSize" Value="{{1.000000,-112.000000},{1.000000,0.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,112.000000},{0.000000,0.000000}}"/>
+        <Window Type="DefaultWindow" Name="NewExterior_PetSoul_Frame_MiddleClient">
+          <Property Name="UnifiedSize" Value="{{0.000000,492.000000},{1.000000,0.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,18.000000},{0.000000,0.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_MeshWindowNewEx" Name="NewExterior_PetSoul_FakeObject">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-4.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,1.000000}}"/>
+            <Property name="BackgroundName" value="Common/MeshBackNewEx.dds" />
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Window Type="TLBB_ButtonNULL" Name="NewExterior_PetSoul_Model_TurnLeft">
+              <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,30.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.800000,0.000000}}"/>
+              <Property Name="PushedImage" Value="set:NewExterior3 image:NewExterior_jianyou_zuo_Pushed"/>
+              <Property Name="NormalImage" Value="set:NewExterior3 image:NewExterior_jianyou_zuo_Normal"/>
+              <Property Name="HoverImage" Value="set:NewExterior3 image:NewExterior_jianyou_zuo_Hover"/>
+              <Property Name="DisabledImage" Value="set:NewExterior3 image:NewExterior_jianyou_you_Disabled"/>
+              <Event Name="CaptureLost" Function="NewExterior_PetSoul_FakeObject_TurnLeft(0);" />
+              <Event Name="MouseButtonDown" Function="NewExterior_PetSoul_FakeObject_TurnLeft(1);" />
+              <Event Name="MouseButtonUp" Function="NewExterior_PetSoul_FakeObject_TurnLeft(0);" />
+            </Window>
+            <Window Type="TLBB_ButtonNULL" Name="NewExterior_PetSoul_Model_TurnRight">
+              <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,30.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-78.000000},{0.800000,0.000000}}"/>
+              <Property Name="PushedImage" Value="set:NewExterior3 image:NewExterior_jianyou_you_Pushed"/>
+              <Property Name="NormalImage" Value="set:NewExterior3 image:NewExterior_jianyou_you_Normal"/>
+              <Property Name="HoverImage" Value="set:NewExterior3 image:NewExterior_jianyou_you_Hover"/>
+              <Property Name="DisabledImage" Value="set:NewExterior3 image:NewExterior_jianyou_zuo_Disabled"/>
+              <Event Name="CaptureLost" Function="NewExterior_PetSoul_FakeObject_TurnRight(0);" />
+              <Event Name="MouseButtonDown" Function="NewExterior_PetSoul_FakeObject_TurnRight(1);" />
+              <Event Name="MouseButtonUp" Function="NewExterior_PetSoul_FakeObject_TurnRight(0);" />
+            </Window>
+            <Window Type="TLBB_ButtonNULL" Name="NewExterior_PetSoul_Model_Plus">
+              <Property Name="UnifiedSize" Value="{{0.000000,28.000000},{0.000000,29.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-72.000000},{0.500000,-30.000000}}"/>
+              <Property Name="DisabledImage" Value="set:NewExterior3 image:NewExterior_jiahao_Disabled"/>
+              <Property Name="PushedImage" Value="set:NewExterior3 image:NewExterior_AddPush"/>
+              <Property Name="NormalImage" Value="set:NewExterior3 image:NewExterior_AddNor"/>
+              <Property Name="HoverImage" Value="set:NewExterior3 image:NewExterior_AddHover"/>
+              <Event Name="Clicked" Function="NewExterior_PetSoul_ZoomIn();"/>
+            </Window>
+            <Window Type="TLBB_ButtonNULL" Name="NewExterior_PetSoul_Model_Subtract">
+              <Property Name="UnifiedSize" Value="{{0.000000,28.000000},{0.000000,29.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-72.000000},{0.500000,40.000000}}"/>
+              <Property Name="DisabledImage" Value="set:NewExterior3 image:NewExterior_jianhao_Disabled"/>
+              <Property Name="PushedImage" Value="set:NewExterior3 image:NewExterior_SubPush"/>
+              <Property Name="NormalImage" Value="set:NewExterior3 image:NewExterior_SubNor"/>
+              <Property Name="HoverImage" Value="set:NewExterior3 image:NewExterior_SubHover"/>
+              <Event Name="Clicked" Function="NewExterior_PetSoul_ZoomOut();"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="NewExterior_PetSoul_CollectBtn">
+            <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,50.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-50.000000},{0.000000,60.000000}}"/>
+            <Property Name="Tooltip" Value="#{WGTJ_201222_108}"/>
+            <Property Name="PushedImage" Value="set:NewExterior3 image:NewExterior_qianwang_Pushed"/>
+            <Property Name="NormalImage" Value="set:NewExterior3 image:NewExterior_qianwang_Normal"/>
+            <Property Name="HoverImage" Value="set:NewExterior3 image:NewExterior_qianwang_Hover"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="Clicked" Function="NewExterior_PetSoul_Goto();"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="NewExterior_PetSoul_RestoreBtn">
+            <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,50.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-50.000000},{1.000000,-70.000000}}"/>
+            <Property Name="PushedImage" Value="set:NewExterior3 image:NewExterior_huanyuan_Pushed"/>
+            <Property Name="NormalImage" Value="set:NewExterior3 image:NewExterior_huanyuan_Normal"/>
+            <Property Name="HoverImage" Value="set:NewExterior3 image:NewExterior_huanyuan_Hover"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Tooltip" Value="#{WGTJ_201222_102}"/>
+            <Event Name="Clicked" Function="NewExterior_PetSoul_RemovePreview();"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="NewExterior_PetSoul_DressChange_RightBtn">
+            <Property Name="UnifiedSize" Value="{{0.000000,127.000000},{0.000000,29.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-64.000000},{1.000000,-58.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Tooltip" Value="#{WGTJ_201222_101}"/>
+            <Property Name="PushedImage" Value="set:NewExterior3 image:NewExterior_baocun_Pushed"/>
+            <Property Name="NormalImage" Value="set:NewExterior3 image:NewExterior_baocun_Normal"/>
+            <Property Name="HoverImage" Value="set:NewExterior3 image:NewExterior_baocun_Hover"/>
+            <Event Name="Clicked" Function="NewExterior_PetSoul_TryExterior()"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="NewExterior_PetSoul_Frame_RightClient">
+          <Property Name="UnifiedSize" Value="{{0.000000,336.000000},{1.000000,-8.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,512.000000},{0.000000,4.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_SuperListTitle">
+            <Property Name="UnifiedSize" Value="{{0.000000,116.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,10.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:NewExterior3 image:NewExterior_yeqian_zi_01"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_Frame_RightClientBK">
+            <Property Name="UnifiedSize" Value="{{0.000000,296.000000},{0.000000,76.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,36.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewExterior3 image:NewExterior_BK2"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_Frame_RightClientBK2">
+            <Property Name="UnifiedSize" Value="{{0.000000,296.000000},{0.000000,76.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,36.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+          <Window Type="TLBB_ActionButton" Name="NewExterior_PetSoul_SuperListNow">
+            <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,10.000000}}"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="NewExterior_PetSoul_SuperListNowText1">
+            <Property Name="UnifiedSize" Value="{{0.000000,142.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,10.000000}}"/>
+            <Property Name="TextColor" Value="FFFFF263"/>
+            <Property Name="Text" Value="#{SHRH_20220427_01}"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="NewExterior_PetSoul_SuperListNowText2">
+            <Property Name="UnifiedSize" Value="{{0.000000,142.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,30.000000}}"/>
+            <Property Name="TextColor" Value="FFFFF263"/>
+            <Property Name="Text" Value="#{SHRH_20220427_02}"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="NewExterior_PetSoul_SuperListNowText3">
+            <Property Name="UnifiedSize" Value="{{0.000000,142.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,50.000000}}"/>
+            <Property Name="TextColor" Value="FFFFF263"/>
+            <Property Name="Text" Value="#{SHRH_20220427_03}"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_SuperListTitle2">
+            <Property Name="UnifiedSize" Value="{{0.000000,116.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,118.000000}}"/>
+            <Property Name="Image" Value="set:NewExterior3 image:NewExterior_yeqian_zi_03"/>
+            <Property Name="RiseOnClick" Value="False"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_SuperListTitle3">
+            <Property Name="UnifiedSize" Value="{{0.000000,116.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,464.000000}}"/>
+            <Property Name="Image" Value="set:NewExterior3 image:NewExterior_yeqian_zi_02"/>
+            <Property Name="RiseOnClick" Value="False"/>
+          </Window>
+          <Window Type="DefaultWindow" Name="NewExterior_PetSoul_SuperList">
+            <Property Name="UnifiedSize" Value="{{1.000000,-38.000000},{0.000000,312.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,18.000000},{0.000000,146.000000}}"/>
+            <Property Name="SelectMode" Value="Single" />
+            <Property Name="VScrollMode" Value="Auto"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="MultiColumn" Value="1" />
+            <Window Type="DefaultWindow" Name="NewExterior_PetSoul_SuperListItem1">
+              <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Window Type="TLBB_ActionButton" Name="NewExterior_PetSoul_SuperListItemAction1">
+				<Event Name="Clicked" Function="NewExterior_PetSoul_SetHuanSeSelected(1);" />
+                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}"/>
+                <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_SuperListItemActionLock1">
+                  <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:NewExterior image:NewExterior_jiaobiao_suo_di"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_SuperListItemActionTry1">
+                  <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,33.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                  <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_SuperListItemActionDef1">
+                  <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,33.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                  <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_zhuangebi"/>
+                </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_SuperListItemActionMark1">
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+                </Window>
+              </Window>
+            </Window>
+            <Window Type="DefaultWindow" Name="NewExterior_PetSoul_SuperListItem2">
+              <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,56.000000},{0.000000,0.000000}}"/>
+              <Window Type="TLBB_ActionButton" Name="NewExterior_PetSoul_SuperListItemAction2">
+                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+				<Event Name="Clicked" Function="NewExterior_PetSoul_SetHuanSeSelected(2);" />
+                <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}"/>
+                <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_SuperListItemActionLock2">
+                  <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:NewExterior image:NewExterior_jiaobiao_suo_di"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_SuperListItemActionTry2">
+                  <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,33.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                  <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_SuperListItemActionDef2">
+                  <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,33.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                  <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_zhuangebi"/>
+                </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_SuperListItemActionMark2">
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+                </Window>
+              </Window>
+            </Window>
+            <Window Type="DefaultWindow" Name="NewExterior_PetSoul_SuperListItem3">
+              <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,112.000000},{0.000000,0.000000}}"/>
+              <Window Type="TLBB_ActionButton" Name="NewExterior_PetSoul_SuperListItemAction3">
+                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+				<Event Name="Clicked" Function="NewExterior_PetSoul_SetHuanSeSelected(3);" />
+                <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}"/>
+                <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_SuperListItemActionLock3">
+                  <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:NewExterior image:NewExterior_jiaobiao_suo_di"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_SuperListItemActionTry3">
+                  <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,33.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                  <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_SuperListItemActionDef3">
+                  <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,33.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                  <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_zhuangebi"/>
+                </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_SuperListItemActionMark3">
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+                </Window>
+              </Window>
+            </Window>
+            <Window Type="DefaultWindow" Name="NewExterior_PetSoul_SuperListItem4">
+              <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,168.000000},{0.000000,0.000000}}"/>
+              <Window Type="TLBB_ActionButton" Name="NewExterior_PetSoul_SuperListItemAction4">
+                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+				<Event Name="Clicked" Function="NewExterior_PetSoul_SetHuanSeSelected(4);" />
+                <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}"/>
+                <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_SuperListItemActionLock4">
+                  <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:NewExterior image:NewExterior_jiaobiao_suo_di"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_SuperListItemActionTry4">
+                  <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,33.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                  <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_SuperListItemActionDef4">
+                  <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,33.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                  <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_zhuangebi"/>
+                </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_SuperListItemActionMark4">
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+                </Window>
+              </Window>
+            </Window>
+            <Window Type="DefaultWindow" Name="NewExterior_PetSoul_SuperListItem5">
+              <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,224.000000},{0.000000,0.000000}}"/>
+              <Window Type="TLBB_ActionButton" Name="NewExterior_PetSoul_SuperListItemAction5">
+                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+				<Event Name="Clicked" Function="NewExterior_PetSoul_SetHuanSeSelected(5);" />
+                <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}"/>
+                <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_SuperListItemActionLock5">
+                  <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:NewExterior image:NewExterior_jiaobiao_suo_di"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_SuperListItemActionTry5">
+                  <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,33.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                  <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_SuperListItemActionDef5">
+                  <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,33.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                  <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_zhuangebi"/>
+                </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_SuperListItemActionMark5">
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+                </Window>
+              </Window>
+            </Window>
+            <Window Type="DefaultWindow" Name="NewExterior_PetSoul_SuperListItem6">
+              <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,56.000000}}"/>
+              <Window Type="TLBB_ActionButton" Name="NewExterior_PetSoul_SuperListItemAction6">
+                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+				<Event Name="Clicked" Function="NewExterior_PetSoul_SetHuanSeSelected(6);" />
+                <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}"/>
+                <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_SuperListItemActionLock6">
+                  <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:NewExterior image:NewExterior_jiaobiao_suo_di"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_SuperListItemActionTry6">
+                  <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,33.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                  <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_SuperListItemActionDef6">
+                  <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,33.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                  <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_zhuangebi"/>
+                </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_SuperListItemActionMark6">
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+                </Window>
+              </Window>
+            </Window>
+            <Window Type="DefaultWindow" Name="NewExterior_PetSoul_SuperListItem7">
+              <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,56.000000},{0.000000,56.000000}}"/>
+              <Window Type="TLBB_ActionButton" Name="NewExterior_PetSoul_SuperListItemAction7">
+                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+				<Event Name="Clicked" Function="NewExterior_PetSoul_SetHuanSeSelected(7);" />
+                <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}"/>
+                <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_SuperListItemActionLock7">
+                  <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:NewExterior image:NewExterior_jiaobiao_suo_di"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_SuperListItemActionTry7">
+                  <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,33.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                  <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_SuperListItemActionDef7">
+                  <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,33.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                  <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_zhuangebi"/>
+                </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_SuperListItemActionMark7">
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+                </Window>
+              </Window>
+            </Window>
+            <Window Type="DefaultWindow" Name="NewExterior_PetSoul_SuperListItem8">
+              <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,112.000000},{0.000000,56.000000}}"/>
+              <Window Type="TLBB_ActionButton" Name="NewExterior_PetSoul_SuperListItemAction8">
+                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+				<Event Name="Clicked" Function="NewExterior_PetSoul_SetHuanSeSelected(8);" />
+                <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}"/>
+                <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_SuperListItemActionLock8">
+                  <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:NewExterior image:NewExterior_jiaobiao_suo_di"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_SuperListItemActionTry8">
+                  <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,33.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                  <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_SuperListItemActionDef8">
+                  <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,33.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                  <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_zhuangebi"/>
+                </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_SuperListItemActionMark8">
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+                </Window>
+              </Window>
+            </Window>
+            <Window Type="DefaultWindow" Name="NewExterior_PetSoul_SuperListItem9">
+              <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,168.000000},{0.000000,56.000000}}"/>
+              <Window Type="TLBB_ActionButton" Name="NewExterior_PetSoul_SuperListItemAction9">
+                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+				<Event Name="Clicked" Function="NewExterior_PetSoul_SetHuanSeSelected(9);" />
+                <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}"/>
+                <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_SuperListItemActionLock9">
+                  <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:NewExterior image:NewExterior_jiaobiao_suo_di"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_SuperListItemActionTry9">
+                  <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,33.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                  <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_SuperListItemActionDef9">
+                  <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,33.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                  <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_zhuangebi"/>
+                </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_SuperListItemActionMark9">
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+                </Window>
+              </Window>
+            </Window>
+            <Window Type="DefaultWindow" Name="NewExterior_PetSoul_SuperListItem10">
+              <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,224.000000},{0.000000,56.000000}}"/>
+              <Window Type="TLBB_ActionButton" Name="NewExterior_PetSoul_SuperListItemAction10">
+                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+				<Event Name="Clicked" Function="NewExterior_PetSoul_SetHuanSeSelected(10);" />
+                <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}"/>
+                <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_SuperListItemActionLock10">
+                  <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:NewExterior image:NewExterior_jiaobiao_suo_di"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_SuperListItemActionTry10">
+                  <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,33.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                  <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_SuperListItemActionDef10">
+                  <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,33.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                  <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_zhuangebi"/>
+                </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_SuperListItemActionMark10">
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+                </Window>
+              </Window>
+            </Window>
+            <Window Type="DefaultWindow" Name="NewExterior_PetSoul_SuperListItem11">
+              <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,112.000000}}"/>
+              <Window Type="TLBB_ActionButton" Name="NewExterior_PetSoul_SuperListItemAction11">
+                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+				<Event Name="Clicked" Function="NewExterior_PetSoul_SetHuanSeSelected(11);" />
+                <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}"/>
+                <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_SuperListItemActionLock11">
+                  <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:NewExterior image:NewExterior_jiaobiao_suo_di"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_SuperListItemActionTry11">
+                  <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,33.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                  <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_SuperListItemActionDef11">
+                  <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,33.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                  <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_zhuangebi"/>
+                </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_SuperListItemActionMark11">
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+                </Window>
+              </Window>
+            </Window>
+           <Window Type="DefaultWindow" Name="NewExterior_PetSoul_SuperListItem12">
+              <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,56.000000},{0.000000,112.000000}}"/>
+              <Window Type="TLBB_ActionButton" Name="NewExterior_PetSoul_SuperListItemAction12">
+                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+				<Event Name="Clicked" Function="NewExterior_PetSoul_SetHuanSeSelected(12);" />
+                <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}"/>
+                <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_SuperListItemActionLock12">
+                  <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:NewExterior image:NewExterior_jiaobiao_suo_di"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_SuperListItemActionTry12">
+                  <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,33.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                  <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_SuperListItemActionDef12">
+                  <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,33.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                  <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_zhuangebi"/>
+                </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_SuperListItemActionMark12">
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+                </Window>
+              </Window>
+            </Window>
+           <Window Type="DefaultWindow" Name="NewExterior_PetSoul_SuperListItem13">
+              <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,112.000000},{0.000000,112.000000}}"/>
+              <Window Type="TLBB_ActionButton" Name="NewExterior_PetSoul_SuperListItemAction13">
+                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+				<Event Name="Clicked" Function="NewExterior_PetSoul_SetHuanSeSelected(13);" />
+                <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}"/>
+                <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_SuperListItemActionLock13">
+                  <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:NewExterior image:NewExterior_jiaobiao_suo_di"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_SuperListItemActionTry13">
+                  <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,33.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                  <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_SuperListItemActionDef13">
+                  <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,33.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                  <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_zhuangebi"/>
+                </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_SuperListItemActionMark13">
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+                </Window>
+              </Window>
+            </Window>
+           <Window Type="DefaultWindow" Name="NewExterior_PetSoul_SuperListItem14">
+              <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,168.000000},{0.000000,112.000000}}"/>
+              <Window Type="TLBB_ActionButton" Name="NewExterior_PetSoul_SuperListItemAction14">
+                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+				<Event Name="Clicked" Function="NewExterior_PetSoul_SetHuanSeSelected(14);" />
+                <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}"/>
+                <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_SuperListItemActionLock14">
+                  <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:NewExterior image:NewExterior_jiaobiao_suo_di"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_SuperListItemActionTry14">
+                  <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,33.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                  <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_SuperListItemActionDef14">
+                  <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,33.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                  <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_zhuangebi"/>
+                </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_SuperListItemActionMark14">
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+                </Window>
+              </Window>
+            </Window>
+           <Window Type="DefaultWindow" Name="NewExterior_PetSoul_SuperListItem15">
+              <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,224.000000},{0.000000,112.000000}}"/>
+              <Window Type="TLBB_ActionButton" Name="NewExterior_PetSoul_SuperListItemAction15">
+                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+				<Event Name="Clicked" Function="NewExterior_PetSoul_SetHuanSeSelected(15);" />
+                <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}"/>
+                <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_SuperListItemActionLock15">
+                  <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:NewExterior image:NewExterior_jiaobiao_suo_di"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_SuperListItemActionTry15">
+                  <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,33.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                  <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_SuperListItemActionDef15">
+                  <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,33.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                  <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_zhuangebi"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PetSoul_SuperListItemActionMark15">
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+                </Window>
+               </Window>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ButtonCheckNULL" Name="NewExterior_PetSoul_Level1">
+            <Property Name="UnifiedSize" Value="{{0.000000,65.000000},{0.000000,19.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,494.000000}}"/>
+            <Property Name="PushedImage" Value="set:NewExterior3 image:NewExterior_1Push"/>
+            <Property Name="NormalImage" Value="set:NewExterior3 image:NewExterior_1Normal"/>
+            <Property Name="DisabledImage" Value="set:NewExterior3 image:NewExterior_1Normal"/>
+            <Property Name="HoverImage" Value="set:NewExterior3 image:NewExterior_1Push"/>
+            <Property Name="CheckMode" Value="2"/>
+            <Event Name="MouseLButtonDown" Function="NewExterior_PetSoul_RankClicked(1);" />
+          </Window>
+          <Window Type="TLBB_ButtonCheckNULL" Name="NewExterior_PetSoul_Level2">
+            <Property Name="UnifiedSize" Value="{{0.000000,65.000000},{0.000000,19.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,110.000000},{0.000000,494.000000}}"/>
+            <Property Name="PushedImage" Value="set:NewExterior3 image:NewExterior_2Push"/>
+            <Property Name="NormalImage" Value="set:NewExterior3 image:NewExterior_2Normal"/>
+            <Property Name="HoverImage" Value="set:NewExterior3 image:NewExterior_2Push"/>
+            <Property Name="DisabledImage" Value="set:NewExterior3 image:NewExterior_2Normal"/>
+            <Property Name="CheckMode" Value="2"/>
+            <Event Name="MouseLButtonDown" Function="NewExterior_PetSoul_RankClicked(2);" />
+          </Window>
+          <Window Type="TLBB_ButtonCheckNULL" Name="NewExterior_PetSoul_Level3">
+            <Property Name="UnifiedSize" Value="{{0.000000,65.000000},{0.000000,19.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,200.000000},{0.000000,494.000000}}"/>
+            <Property Name="PushedImage" Value="set:NewExterior3 image:NewExterior_3Push"/>
+            <Property Name="NormalImage" Value="set:NewExterior3 image:NewExterior_3Normal"/>
+            <Property Name="HoverImage" Value="set:NewExterior3 image:NewExterior_3Push"/>
+            <Property Name="DisabledImage" Value="set:NewExterior3 image:NewExterior_3Normal"/>
+            <Property Name="CheckMode" Value="2"/>
+            <Event Name="MouseLButtonDown" Function="NewExterior_PetSoul_RankClicked(3);" />
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

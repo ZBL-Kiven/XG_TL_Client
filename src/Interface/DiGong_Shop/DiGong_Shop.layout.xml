@@ -1,0 +1,421 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame0" Name="DiGong_Shop_Frame">
+    <Property Name="UnifiedPosition" Value="{{0.5,-175},{0.12,0}}" />
+    <Property Name="AbsoluteSize" Value="w:366 h:340" />
+    <Event Name="Hidden" Function="DiGong_Shop_CloseShop();" />
+    <Window Type="TLBB_DragTitle" Name="DiGong_Shop_DragTitle">
+      <Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+      <Property Name="DragTarget" Value="DiGong_Shop_Frame" />
+      <Property Name="Text" Value="#{MJXZ_210510_89}"/>
+      <Property Name="Font" Value="YouYuan11.25" />
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="DiGong_Shop_Help">
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+      <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+      <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*DiGong_Shop&quot;);' />
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="DiGong_Shop_Close">
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+      <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+      <Event Name="Clicked" Function="DiGong_Shop_CloseShop();" />
+    </Window>
+    <Window Type="DefaultWindow" Name="DiGong_Shop_Background_Frame1">
+      <Property Name="AbsolutePosition" Value="x:5.000000 y:36.000000" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,-55.000000}" />
+      <Window Type="TLBB_SimpleText" Name="DiGong_Shop_F5_Text">
+        <Property Name="UnifiedSize" Value="{{0.000000,224.000000},{0.000000,13.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,9.000000}}"/>
+        <Property Name="Text" Value="#{MJXZ_210510_90}"/>
+        <Property Name="HorzFormatting" Value="LeftAligned" />
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="DiGong_Shop_Num_Text">
+        <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,13.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-152.000000},{0.000000,9.000000}}"/>
+        <Property Name="Text" Value="#{MJXZ_210510_91}"/>
+        <Property Name="HorzFormatting" Value="RightAligned" />
+      </Window>
+      <Window Type="DefaultWindow" Name="DiGong_Shop_Action_Set">
+        <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,230.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,34.000000}}"/>
+        <Window Type="TLBB_ActionButton" Name="DiGong_Shop_Item1">
+          <Property Name="AbsolutePosition" Value="x:0.000000 y:1.000000" />
+          <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+          <Event Name="Clicked" Function="DiGong_Shop_ItemClicked(1);" />
+          <Window Type="TLBB_StaticImageNULL" Name="DiGong_Shop_ItemInfo1_Quota">
+            <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:CommonFrame20 image:Item_Limit"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="DiGong_Shop_Item2">
+          <Property Name="AbsolutePosition" Value="x:0.000000 y:39.000000" />
+          <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+          <Event Name="Clicked" Function="DiGong_Shop_ItemClicked(2);" />
+          <Window Type="TLBB_StaticImageNULL" Name="DiGong_Shop_ItemInfo2_Quota">
+            <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:CommonFrame20 image:Item_Limit"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="DiGong_Shop_Item3">
+          <Property Name="AbsolutePosition" Value="x:0.000000 y:77.000000" />
+          <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+          <Event Name="Clicked" Function="DiGong_Shop_ItemClicked(3);" />
+          <Window Type="TLBB_StaticImageNULL" Name="DiGong_Shop_ItemInfo3_Quota">
+            <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:CommonFrame20 image:Item_Limit"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="DiGong_Shop_Item4">
+          <Property Name="AbsolutePosition" Value="x:0.000000 y:115.000000" />
+          <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+          <Event Name="Clicked" Function="DiGong_Shop_ItemClicked(4);" />
+          <Window Type="TLBB_StaticImageNULL" Name="DiGong_Shop_ItemInfo4_Quota">
+            <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:CommonFrame20 image:Item_Limit"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="DiGong_Shop_Item5">
+          <Property Name="AbsolutePosition" Value="x:0.000000 y:153.000000" />
+          <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+          <Event Name="Clicked" Function="DiGong_Shop_ItemClicked(5);" />
+          <Window Type="TLBB_StaticImageNULL" Name="DiGong_Shop_ItemInfo5_Quota">
+            <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:CommonFrame20 image:Item_Limit"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="DiGong_Shop_Item6">
+          <Property Name="AbsolutePosition" Value="x:0.000000 y:191.000000" />
+          <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+          <Event Name="Clicked" Function="DiGong_Shop_ItemClicked(6);" />
+          <Window Type="TLBB_StaticImageNULL" Name="DiGong_Shop_ItemInfo6_Quota">
+            <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:CommonFrame20 image:Item_Limit"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="DiGong_Shop_Item7">
+          <Property Name="AbsolutePosition" Value="x:179.000000 y:1.000000" />
+          <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+          <Event Name="Clicked" Function="DiGong_Shop_ItemClicked(7);" />
+          <Window Type="TLBB_StaticImageNULL" Name="DiGong_Shop_ItemInfo7_Quota">
+            <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:CommonFrame20 image:Item_Limit"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="DiGong_Shop_Item8">
+          <Property Name="AbsolutePosition" Value="x:179.000000 y:39.000000" />
+          <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+          <Event Name="Clicked" Function="DiGong_Shop_ItemClicked(8);" />
+          <Window Type="TLBB_StaticImageNULL" Name="DiGong_Shop_ItemInfo8_Quota">
+            <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:CommonFrame20 image:Item_Limit"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="DiGong_Shop_Item9">
+          <Property Name="AbsolutePosition" Value="x:179.000000 y:77.000000" />
+          <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+          <Event Name="Clicked" Function="DiGong_Shop_ItemClicked(9);" />
+          <Window Type="TLBB_StaticImageNULL" Name="DiGong_Shop_ItemInfo9_Quota">
+            <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:CommonFrame20 image:Item_Limit"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="DiGong_Shop_Item10">
+          <Property Name="AbsolutePosition" Value="x:179.000000 y:115.000000" />
+          <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+          <Event Name="Clicked" Function="DiGong_Shop_ItemClicked(10);" />
+          <Window Type="TLBB_StaticImageNULL" Name="DiGong_Shop_ItemInfo10_Quota">
+            <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:CommonFrame20 image:Item_Limit"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="DiGong_Shop_Item11">
+          <Property Name="AbsolutePosition" Value="x:179.000000 y:153.000000" />
+          <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+          <Event Name="Clicked" Function="DiGong_Shop_ItemClicked(11);" />
+          <Window Type="TLBB_StaticImageNULL" Name="DiGong_Shop_ItemInfo11_Quota">
+            <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:CommonFrame20 image:Item_Limit"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="DiGong_Shop_Item12">
+          <Property Name="AbsolutePosition" Value="x:179.000000 y:191.000000" />
+          <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+          <Event Name="Clicked" Function="DiGong_Shop_ItemClicked(12);" />
+          <Window Type="TLBB_StaticImageNULL" Name="DiGong_Shop_ItemInfo12_Quota">
+            <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:CommonFrame20 image:Item_Limit"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="DiGong_Shop_ItemInfo1">
+          <Property Name="AbsolutePosition" Value="x:38.000000 y:0.000000" />
+          <Property Name="AbsoluteSize" Value="w:135.000000 h:36.000000" />
+          <Window Type="TLBB_SimpleText" Name="DiGong_Shop_ItemInfo1_Text">
+            <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+            <Property Name="AbsoluteSize" Value="w:135.000000 h:18.000000" />
+            <Property Name="Text" Value="#{INTERFACE_XML_909}" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DiGong_Shop_ItemInfo1_Price">
+            <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+            <Property Name="AbsoluteSize" Value="w:117.000000 h:16.000000" />
+            <Property Name="MoneyNumber" Value="0" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="DiGong_Shop_ItemInfo2">
+          <Property Name="AbsolutePosition" Value="x:38.000000 y:38.000000" />
+          <Property Name="AbsoluteSize" Value="w:135.000000 h:36.000000" />
+          <Window Type="TLBB_SimpleText" Name="DiGong_Shop_ItemInfo2_Text">
+            <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+            <Property Name="AbsoluteSize" Value="w:135.000000 h:18.000000" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DiGong_Shop_ItemInfo2_Price">
+            <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+            <Property Name="AbsoluteSize" Value="w:117.000000 h:16.000000" />
+            <Property Name="MoneyNumber" Value="" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+          </Window>
+
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="DiGong_Shop_ItemInfo3">
+          <Property Name="AbsolutePosition" Value="x:38.000000 y:76.000000" />
+          <Property Name="AbsoluteSize" Value="w:135.000000 h:36.000000" />
+          <Window Type="TLBB_SimpleText" Name="DiGong_Shop_ItemInfo3_Text">
+            <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+            <Property Name="AbsoluteSize" Value="w:135.000000 h:18.000000" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DiGong_Shop_ItemInfo3_Price">
+            <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+            <Property Name="AbsoluteSize" Value="w:117.000000 h:16.000000" />
+            <Property Name="MoneyNumber" Value="" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+          </Window>
+
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="DiGong_Shop_ItemInfo4">
+          <Property Name="AbsolutePosition" Value="x:38.000000 y:114.000000" />
+          <Property Name="AbsoluteSize" Value="w:135.000000 h:36.000000" />
+          <Window Type="TLBB_SimpleText" Name="DiGong_Shop_ItemInfo4_Text">
+            <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+            <Property Name="AbsoluteSize" Value="w:135.000000 h:18.000000" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DiGong_Shop_ItemInfo4_Price">
+            <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+            <Property Name="AbsoluteSize" Value="w:117.000000 h:16.000000" />
+            <Property Name="MoneyNumber" Value="" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+          </Window>
+
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="DiGong_Shop_ItemInfo5">
+          <Property Name="AbsolutePosition" Value="x:38.000000 y:152.000000" />
+          <Property Name="AbsoluteSize" Value="w:135.000000 h:36.000000" />
+          <Window Type="TLBB_SimpleText" Name="DiGong_Shop_ItemInfo5_Text">
+            <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+            <Property Name="AbsoluteSize" Value="w:135.000000 h:18.000000" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DiGong_Shop_ItemInfo5_Price">
+            <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+            <Property Name="AbsoluteSize" Value="w:117.000000 h:16.000000" />
+            <Property Name="MoneyNumber" Value="" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+          </Window>
+
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="DiGong_Shop_ItemInfo6">
+          <Property Name="AbsolutePosition" Value="x:38.000000 y:190.000000" />
+          <Property Name="AbsoluteSize" Value="w:135.000000 h:36.000000" />
+          <Window Type="TLBB_SimpleText" Name="DiGong_Shop_ItemInfo6_Text">
+            <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+            <Property Name="AbsoluteSize" Value="w:135.000000 h:18.000000" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DiGong_Shop_ItemInfo6_Price">
+            <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+            <Property Name="AbsoluteSize" Value="w:117.000000 h:16.000000" />
+            <Property Name="MoneyNumber" Value="" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+          </Window>
+
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="DiGong_Shop_ItemInfo7">
+          <Property Name="AbsolutePosition" Value="x:217.000000 y:0.000000" />
+          <Property Name="AbsoluteSize" Value="w:135.000000 h:36.000000" />
+          <Window Type="TLBB_SimpleText" Name="DiGong_Shop_ItemInfo7_Text">
+            <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+            <Property Name="AbsoluteSize" Value="w:135.000000 h:18.000000" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DiGong_Shop_ItemInfo7_Price">
+            <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+            <Property Name="AbsoluteSize" Value="w:117.000000 h:16.000000" />
+            <Property Name="MoneyNumber" Value="" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+          </Window>
+
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="DiGong_Shop_ItemInfo8">
+          <Property Name="AbsolutePosition" Value="x:217.000000 y:38.000000" />
+          <Property Name="AbsoluteSize" Value="w:135.000000 h:36.000000" />
+          <Window Type="TLBB_SimpleText" Name="DiGong_Shop_ItemInfo8_Text">
+            <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+            <Property Name="AbsoluteSize" Value="w:135.000000 h:18.000000" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DiGong_Shop_ItemInfo8_Price">
+            <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+            <Property Name="AbsoluteSize" Value="w:117.000000 h:16.000000" />
+            <Property Name="MoneyNumber" Value="" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+          </Window>
+
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="DiGong_Shop_ItemInfo9">
+          <Property Name="AbsolutePosition" Value="x:217.000000 y:76.000000" />
+          <Property Name="AbsoluteSize" Value="w:135.000000 h:36.000000" />
+          <Window Type="TLBB_SimpleText" Name="DiGong_Shop_ItemInfo9_Text">
+            <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+            <Property Name="AbsoluteSize" Value="w:135.000000 h:18.000000" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DiGong_Shop_ItemInfo9_Price">
+            <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+            <Property Name="AbsoluteSize" Value="w:117.000000 h:16.000000" />
+            <Property Name="MoneyNumber" Value="" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+          </Window>
+
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="DiGong_Shop_ItemInfo10">
+          <Property Name="AbsolutePosition" Value="x:217.000000 y:114.000000" />
+          <Property Name="AbsoluteSize" Value="w:135.000000 h:36.000000" />
+          <Window Type="TLBB_SimpleText" Name="DiGong_Shop_ItemInfo10_Text">
+            <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+            <Property Name="AbsoluteSize" Value="w:135.000000 h:18.000000" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DiGong_Shop_ItemInfo10_Price">
+            <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+            <Property Name="AbsoluteSize" Value="w:117.000000 h:16.000000" />
+            <Property Name="MoneyNumber" Value="" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+          </Window>
+
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="DiGong_Shop_ItemInfo11">
+          <Property Name="AbsolutePosition" Value="x:217.000000 y:152.000000" />
+          <Property Name="AbsoluteSize" Value="w:135.000000 h:36.000000" />
+          <Window Type="TLBB_SimpleText" Name="DiGong_Shop_ItemInfo11_Text">
+            <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+            <Property Name="AbsoluteSize" Value="w:135.000000 h:18.000000" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DiGong_Shop_ItemInfo11_Price">
+            <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+            <Property Name="AbsoluteSize" Value="w:117.000000 h:16.000000" />
+            <Property Name="MoneyNumber" Value="" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+          </Window>
+
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="DiGong_Shop_ItemInfo12">
+          <Property Name="AbsolutePosition" Value="x:217.000000 y:190.000000" />
+          <Property Name="AbsoluteSize" Value="w:135.000000 h:36.000000" />
+          <Window Type="TLBB_SimpleText" Name="DiGong_Shop_ItemInfo12_Text">
+            <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+            <Property Name="AbsoluteSize" Value="w:135.000000 h:18.000000" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DiGong_Shop_ItemInfo12_Price">
+            <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+            <Property Name="AbsoluteSize" Value="w:117.000000 h:16.000000" />
+            <Property Name="MoneyNumber" Value="99" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+          </Window>
+
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace5" Name="DiGong_Shop_Blank">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}}"/>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

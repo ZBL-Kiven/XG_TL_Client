@@ -1,0 +1,287 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="Valentine_Frame">
+		<Property Name="UnifiedSize" Value="{{0.000000,495.000000},{0.000000,226.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.500000,-247.000000},{1.000000,-425.000000}}"/>
+    <Window Type="TLBB_StaticImageNULL" Name="Valentine_Client">
+		  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+		  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+		  <Property Name="RiseOnClick" Value="False"/>
+      <Property Name="Image" Value="set:Valentine_bk1 image:Valentine_bk1_1"/>
+      <Window Type="TLBB_SimpleText" Name="Valentine_Explain">
+        <Property Name="UnifiedSize" Value="{{0.800000,0.000000},{0.000000,22.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.100000,0.000000},{0.170000,0.000000}}"/>
+        <Property Name="Text" Value="#{}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        <Property Name="VertFormatting" Value="VertCentred"/>
+      </Window>
+      <Window Type="DefaultWindow" Name="Valentine_Poem">
+        <Property Name="UnifiedSize" Value="{{0.800000,0.000000},{0.500000,0.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.100000,0.000000},{0.240000,0.000000}}"/>
+        <Window Type="DefaultWindow" Name="Valentine_Word1">
+          <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,45.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.125000,-22.000000},{0.280000,-22.000000}}"/>
+          <Property Name="FrameEnabled" Value="True" />
+          <Property Name="BackgroundEnabled" Value="True" />
+        <Window Type="TLBB_StaticImageNULL" Name="Valentine_Word1_Image">
+	      	<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+      		<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      		<Property Name="RiseOnClick" Value="False"/>
+		      <Property Name="Image" Value=""/>
+          <Window Type="TLBB_AnimateImage" Name="Valentine_Word1_AnimateImage">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="WarningAnimation" Value="" />
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+      </Window>
+        <Window Type="DefaultWindow" Name="Valentine_Word2">
+		      <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,45.000000}}"/>
+      		<Property Name="UnifiedPosition" Value="{{0.250000,-22.000000},{0.280000,-22.000000}}"/>
+          <Property Name="FrameEnabled" Value="True" />
+          <Property Name="BackgroundEnabled" Value="True" />
+          <Window Type="TLBB_StaticImageNULL" Name="Valentine_Word2_Image">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value=""/>
+            <Window Type="TLBB_AnimateImage" Name="Valentine_Word2_AnimateImage">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="WarningAnimation" Value="" />
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+          </Window>  
+        </Window>
+        <Window Type="DefaultWindow" Name="Valentine_Word3">
+		      <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,45.000000}}"/>
+      		<Property Name="UnifiedPosition" Value="{{0.375000,-22.000000},{0.280000,-22.000000}}"/>
+          <Property Name="FrameEnabled" Value="True" />
+          <Property Name="BackgroundEnabled" Value="True" />
+          <Window Type="TLBB_StaticImageNULL" Name="Valentine_Word3_Image">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value=""/>
+            <Window Type="TLBB_AnimateImage" Name="Valentine_Word3_AnimateImage">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="WarningAnimation" Value="" />
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Valentine_Word4">
+		      <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,45.000000}}"/>
+		      <Property Name="UnifiedPosition" Value="{{0.500000,-22.000000},{0.280000,-22.000000}}"/>
+          <Property Name="FrameEnabled" Value="True" />
+          <Property Name="BackgroundEnabled" Value="True" />
+          <Window Type="TLBB_StaticImageNULL" Name="Valentine_Word4_Image">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value=""/>
+            <Window Type="TLBB_AnimateImage" Name="Valentine_Word4_AnimateImage">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="WarningAnimation" Value="" />
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Valentine_Word5">
+          <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,45.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.625000,-22.000000},{0.280000,-22.000000}}"/>
+          <Property Name="FrameEnabled" Value="True" />
+          <Property Name="BackgroundEnabled" Value="True" />
+          <Window Type="TLBB_StaticImageNULL" Name="Valentine_Word5_Image">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value=""/>
+            <Window Type="TLBB_AnimateImage" Name="Valentine_Word5_AnimateImage">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="WarningAnimation" Value="" />
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Valentine_Word6">
+		      <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,45.000000}}"/>
+      		<Property Name="UnifiedPosition" Value="{{0.750000,-22.000000},{0.280000,-22.000000}}"/>
+          <Property Name="FrameEnabled" Value="True" />
+          <Property Name="BackgroundEnabled" Value="True" />
+          <Window Type="TLBB_StaticImageNULL" Name="Valentine_Word6_Image">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value=""/>
+            <Window Type="TLBB_AnimateImage" Name="Valentine_Word6_AnimateImage">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="WarningAnimation" Value="" />
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Valentine_Word7">
+		      <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,45.000000}}"/>
+      		<Property Name="UnifiedPosition" Value="{{0.875000,-22.000000},{0.280000,-22.000000}}"/>
+          <Property Name="FrameEnabled" Value="True" />
+          <Property Name="BackgroundEnabled" Value="True" />
+          <Window Type="TLBB_StaticImageNULL" Name="Valentine_Word7_Image">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value=""/>
+            <Window Type="TLBB_AnimateImage" Name="Valentine_Word7_AnimateImage">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="WarningAnimation" Value="" />
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Valentine_Word8">
+	      	<Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,45.000000}}"/>
+      		<Property Name="UnifiedPosition" Value="{{0.125000,-22.000000},{0.720000,-22.000000}}"/>
+          <Property Name="FrameEnabled" Value="True" />
+          <Property Name="BackgroundEnabled" Value="True" />
+          <Window Type="TLBB_StaticImageNULL" Name="Valentine_Word8_Image">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value=""/>
+            <Window Type="TLBB_AnimateImage" Name="Valentine_Word8_AnimateImage">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="WarningAnimation" Value="" />
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Valentine_Word9">
+	      	<Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,45.000000}}"/>
+      		<Property Name="UnifiedPosition" Value="{{0.250000,-22.000000},{0.720000,-22.000000}}"/>
+          <Property Name="FrameEnabled" Value="True" />
+          <Property Name="BackgroundEnabled" Value="True" />
+          <Window Type="TLBB_StaticImageNULL" Name="Valentine_Word9_Image">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value=""/>
+            <Window Type="TLBB_AnimateImage" Name="Valentine_Word9_AnimateImage">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="WarningAnimation" Value="" />
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Valentine_Word10">
+	      	<Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,45.000000}}"/>
+      		<Property Name="UnifiedPosition" Value="{{0.375000,-22.000000},{0.720000,-22.000000}}"/>
+          <Property Name="FrameEnabled" Value="True" />
+          <Property Name="BackgroundEnabled" Value="True" />
+          <Window Type="TLBB_StaticImageNULL" Name="Valentine_Word10_Image">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value=""/>
+            <Window Type="TLBB_AnimateImage" Name="Valentine_Word10_AnimateImage">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="WarningAnimation" Value="" />
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Valentine_Word11">
+	      	<Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,45.000000}}"/>
+      		<Property Name="UnifiedPosition" Value="{{0.500000,-22.000000},{0.720000,-22.000000}}"/>
+          <Property Name="FrameEnabled" Value="True" />
+          <Property Name="BackgroundEnabled" Value="True" />
+          <Window Type="TLBB_StaticImageNULL" Name="Valentine_Word11_Image">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value=""/>
+            <Window Type="TLBB_AnimateImage" Name="Valentine_Word11_AnimateImage">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="WarningAnimation" Value="" />
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Valentine_Word12">
+	      	<Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,45.000000}}"/>
+      		<Property Name="UnifiedPosition" Value="{{0.625000,-22.000000},{0.720000,-22.000000}}"/>
+          <Property Name="FrameEnabled" Value="True" />
+          <Property Name="BackgroundEnabled" Value="True" />
+          <Window Type="TLBB_StaticImageNULL" Name="Valentine_Word12_Image">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value=""/>
+            <Window Type="TLBB_AnimateImage" Name="Valentine_Word12_AnimateImage">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="WarningAnimation" Value="" />
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Valentine_Word13">
+	      	<Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,45.000000}}"/>
+      		<Property Name="UnifiedPosition" Value="{{0.750000,-22.000000},{0.720000,-22.000000}}"/>
+          <Property Name="FrameEnabled" Value="True" />
+          <Property Name="BackgroundEnabled" Value="True" />
+          <Window Type="TLBB_StaticImageNULL" Name="Valentine_Word13_Image">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value=""/>
+            <Window Type="TLBB_AnimateImage" Name="Valentine_Word13_AnimateImage">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="WarningAnimation" Value="" />
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Valentine_Word14">
+	      	<Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,45.000000}}"/>
+      		<Property Name="UnifiedPosition" Value="{{0.875000,-22.000000},{0.720000,-22.000000}}"/>
+          <Property Name="FrameEnabled" Value="True" />
+          <Property Name="BackgroundEnabled" Value="True" />
+          <Window Type="TLBB_StaticImageNULL" Name="Valentine_Word14_Image">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value=""/>
+            <Window Type="TLBB_AnimateImage" Name="Valentine_Word14_AnimateImage">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="WarningAnimation" Value="" />
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="TLBB_ButtonNULL" Name="Valentine_OK">
+      <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-130.000000},{1.000000,-58.000000}}"/>
+      <Property Name="PushedImage" Value="set:ValentinePoem1 image:ValentinePoem1_OK_Pushed"/>
+      <Property Name="NormalImage" Value="set:ValentinePoem1 image:ValentinePoem1_OK_Normal"/>
+      <Property Name="HoverImage" Value="set:ValentinePoem1 image:ValentinePoem1_OK_Hover"/>
+      <Property Name="DisabledImage" Value="set:ValentinePoem1 image:ValentinePoem1_OK_Disable"/>
+      <Property Name="Tooltip" Value="#{YDSS_15018_104}"/>
+      <Event Name="Clicked" Function="Valentine_OnOkClicked();"/>
+    </Window>
+  </Window>
+</GUILayout>

@@ -1,0 +1,205 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame1" Name="Gemcompose_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,276.000000},{0.000000,464.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.400000,0.000000},{0.150000,0.000000}}"/>
+    <Event Name="Hidden" Function="Gemcompose_Clear();" />
+    <Window Type="TLBB_DragTitle" Name="Gemcompose_DragTitle">
+      <Property Name="AbsolutePosition" Value="x:40.000000 y:11.000000" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}" />
+      <Property Name="DragTarget" Value="Gemcompose_Frame" />
+      <Property Name="Font" Value="YouYuan11.25" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="VertFormatting" Value="VertCentred" />
+      <Property Name="Text" Value="#{INTERFACE_XML_315}" />
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="Gemcompose_Close">
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+      <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+      <Event Name="Clicked" Function="Gemcompose_Cancel_Clicked();" />
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="Gemcompose_Help">
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+      <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+      <Event Name="Clicked" Function="Gemcompose_Help_Clicked()" />
+    </Window>
+    <Window Type="DefaultWindow" Name="Gemcompose_Frame_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-70.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,51.000000}}"/>
+      <Property Name="RiseOnClick" Value="False" />
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="Gemcompose_Info">
+        <Property Name="UnifiedSize" Value="{{1.000000,-5.000000},{0.000000,130.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Text" Value="#{BSQHB_120830_01}" />
+        <Property Name="TextColor" Value="FFFFF263" />
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="Gemcompose_Static1">
+        <Property Name="UnifiedSize" Value="{{0.500000,-18.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,135.000000}}"/>
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Text" Value="#{BSDJ_170811_01}" />
+        <Property Name="TextColor" Value="FFFFF263" />
+      </Window>
+      <Window Type="TLBB_ActionButton" Name="Gemcompose_Space1">
+        <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.220000,-18.000000},{0.000000,160.000000}}"/>
+        <Property Name="DragAcceptName" Value="G7" />
+        <Property Name="DraggingEnabled" Value="True" />
+        <Event Name="RBClicked" Function="Gemcompose_Remove(1);" />
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="Gemcompose_Icon">
+        <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-40.000000},{0.000000,168.000000}}"/>
+        <Property Name="Image" Value="set:MijiUI image:MijiUIarrow_hov"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="Gemcompose_Static">
+        <Property Name="UnifiedSize" Value="{{0.500000,-18.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,15.000000},{0.000000,135.000000}}"/>
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Text" Value="#{BSDJ_170811_02}" />
+        <Property Name="TextColor" Value="FFFFF263" />
+      </Window>
+      <Window Type="TLBB_ActionButton" Name="Gemcompose_Space2">
+        <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.780000,-18.000000},{0.000000,160.000000}}"/>
+        <Property Name="DragAcceptName" Value="G9" />
+        <Property Name="DraggingEnabled" Value="True" />
+      </Window>
+      <Window Type="DefaultWindow" Name="Gemcompose_Special1">
+        <Property Name="UnifiedSize" Value="{{0.900000,0.000000},{0.000000,30.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,14.000000},{0.500000,4.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="Gemcompose_ChoiceInfo">
+          <Property Name="UnifiedSize" Value="{{1.000000,-126.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,26.000000},{0.000000,8.000000}}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="Text" Value="#{BSDJ_170811_03}" />
+          <Property Name="TextColor" Value="FFFFF263" />
+          <Property Name="HorzFormatting" Value="LeftAligned" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+        </Window>
+        <Window Type="TLBB_ComboList" Name="Gemcompose_Special_Choice">
+          <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,140.000000},{0.000000,8.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+		  <Event Name="ListSelectionAccepted" Function="Gemcompose_Special_ChoiceChanged();"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="Gemcompose_SuccessValue">
+        <Property Name="UnifiedSize" Value="{{0.300000,0.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.150000,0.000000},{0.500000,40.000000}}"/>
+        <Property Name="HorzFormatting" Value="LeftAligned" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Text" Value="#{BSDJ_170811_36}" />
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="Gemcompose_SuccessValue_Text">
+        <Property Name="UnifiedSize" Value="{{0.300000,13.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.530000,-6.000000},{0.500000,40.000000}}"/>
+        <Property Name="HorzFormatting" Value="HorzCentred"/>
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Text" Value="#{}" />
+      </Window>
+      <Window Type="DefaultWindow" Name="Gemcompose_Special">
+        <Property Name="UnifiedSize" Value="{{0.900000,0.000000},{0.000000,45.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,14.000000},{0.500000,68.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="Gemcompose_Static2">
+          <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,26.000000},{0.000000,8.000000}}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="Text" Value="#{INTERFACE_XML_991}" />
+          <Property Name="TextColor" Value="FFFFF263" />
+          <Property Name="HorzFormatting" Value="LeftAligned" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Gemcompose_Special_Button">
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,35.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,173.000000},{0.000000,0.000000}}"/>
+          <Property Name="DragAcceptName" Value="G8" />
+          <Property Name="DraggingEnabled" Value="True" />
+          <Event Name="RBClicked" Function="Gemcompose_Remove(2);" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="Gemcompose_Static3">
+        <Property Name="UnifiedPosition" Value="{{0.05,0.000000},{1.000000,-89.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.9,0.000000},{0.000000,22.000000}" />
+        <Property Name="Text" Value="#{INTERFACE_XML_789}" />
+        <Property Name="TextColor" Value="FFFFF263" />
+        <Property Name="HorzFormatting" Value="LeftAligned" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Window Type="TLBB_Money" Name="Gemcompose_NeedMoney">
+          <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}" />
+          <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}" />
+          <Property Name="HorzFormatting" Value="RightAligned" />
+          <Property Name="MoneyNumber" Value="0" />
+          <Property Name="GoldIcon" Value = "set:Button6 image:Lace_JiaoziJin" />
+          <Property Name="SilverIcon" Value = "set:Button6 image:Lace_JiaoziYin" />
+          <Property Name="CopperIcon" Value = "set:Button6 image:Lace_JiaoziTong" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="Gemcompose_SelfJiaozi_Text">
+        <Property Name="UnifiedPosition" Value="{{0.05,0.000000},{1.000000,-67.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.9,0.000000},{0.000000,22.000000}" />
+        <Property Name="HorzFormatting" Value="LeftAligned" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="Text" Value="#{BDJB_051210_1}" />
+        <Property Name="TextColor" Value="FFFFF263" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Window Type="TLBB_Money" Name="Gemcompose_SelfJiaozi">
+          <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}" />
+          <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}" />
+          <Property Name="HorzFormatting" Value="RightAligned" />
+          <Property Name="MoneyNumber" Value="0" />
+          <Property Name="GoldIcon" Value = "set:Button6 image:Lace_JiaoziJin" />
+          <Property Name="SilverIcon" Value = "set:Button6 image:Lace_JiaoziYin" />
+          <Property Name="CopperIcon" Value = "set:Button6 image:Lace_JiaoziTong" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="Gemcompose_SelfMoney_Text">
+        <Property Name="UnifiedPosition" Value="{{0.05,0.000000},{1.000000,-45.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.9,0.000000},{0.000000,22.000000}" />
+        <Property Name="HorzFormatting" Value="LeftAligned" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="Text" Value="#{INTERFACE_XML_834}" />
+        <Property Name="TextColor" Value="FFFFF263" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Window Type="TLBB_Money" Name="Gemcompose_SelfMoney">
+          <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}" />
+          <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}" />
+          <Property Name="HorzFormatting" Value="RightAligned" />
+          <Property Name="MoneyNumber" Value="0" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_ButtonCheck" Name="Gemcompose_YuanBaoPay">
+        <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{1.000000,-16.000000}}"/>
+        <Property Name="CheckMode" Value="0"/>
+        <Property Name="Tooltip" Value="#{KXYH_170608_01}"/>
+        <Event Name="MouseLButtonDown" Function="Gemcompose_Yuanbao_Click();"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="Gemcompose_YuanBaoPay_TXT">
+        <Property Name="UnifiedSize" Value="{{0.000000,106.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,24.000000},{1.000000,-20.000000}}"/>
+        <Property Name="Text" Value="#{KXYH_170608_32}" />
+        <Property Name="Tooltip" Value="#{KXYH_170608_01}"/>
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="Gemcompose_OK">
+        <Property Name="UnifiedPosition" Value="{{1.000000,-123.000000},{1.000000,-20.000000}" />
+        <Property Name="AbsoluteSize" Value="w:60.000000 h:20.000000" />
+        <Property Name="Text" Value="#{INTERFACE_XML_314}" />
+        <Event Name="Clicked" Function="Gemcompose_OK_Clicked();" />
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="Gemcompose_Cancel">
+        <Property Name="UnifiedPosition" Value="{{1.000000,-63.000000},{1.000000,-20.000000}" />
+        <Property Name="AbsoluteSize" Value="w:60.000000 h:20.000000" />
+        <Property Name="Text" Value="#{INTERFACE_XML_539}" />
+        <Event Name="Clicked" Function="Gemcompose_Cancel_Clicked();" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

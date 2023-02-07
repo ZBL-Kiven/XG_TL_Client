@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<GUILayout>
+	<Window Type="DefaultWindow" Name="MsgBall_Connect_Msg_Frame">
+		<Property Name="AlwaysOnTop" Value="True"/>
+		<Window Type="TLBB_Frame3" Name="MsgBall_Connect_Msg_Frame_sub">
+			<Property Name="UnifiedSize" Value="{{0.000000,355.000000},{0.000000,100.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.500000,-173.000000},{0.500000,-100.000000}}"/>
+			<Window Type="TLBB_SimpleText" Name="MsgBall_Connect_Msg_Text">
+				<Property Name="UnifiedSize" Value="{{0.000000,337.000000},{0.000000,60.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,9.000000}}"/>
+				<Property Name="TextColor" Value="FFFFF263"/>
+				<Property Name="Text" Value="#{DXTS_100121_1}"/>
+				<Property Name="RiseOnClick" Value="False"/>
+				<Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+			</Window>
+			<Window Type="TLBB_ButtonCommon" Name="MsgBall_Connect_Msg_Button1">
+				<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{1.000000,-85.000000},{1.000000,-25.000000}}"/>
+				<Property Name="Text" Value="#{INTERFACE_XML_557}"/>
+				<Event Name="Clicked" Function="MsgBall_Connect_Msg_Bn1Click();"/>
+			</Window>
+			<Window Type="TLBB_ButtonCommon" Name="MsgBall_Connect_Msg_Button2">
+				<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{1.000000,-45.000000},{1.000000,-25.000000}}"/>
+				<Property Name="Text" Value="#{INTERFACE_XML_542}"/>
+				<Event Name="Clicked" Function="MsgBall_Connect_Msg_Bn2Click();"/>
+			</Window>
+		</Window>
+	</Window>
+</GUILayout>

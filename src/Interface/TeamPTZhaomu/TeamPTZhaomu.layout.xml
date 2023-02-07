@@ -1,0 +1,290 @@
+<?xml version="1.0" ?>
+<GUILayout>
+    <Window Type="TLBB_MainFrame1" Name="TeamPTZhaomu_Frame">
+        <Property Name="UnifiedSize" Value="{{0.00,400},{0.0,260}}" />
+        <Property Name="UnifiedPosition" Value="{{0.5,-200},{0.5,-140.0}}" />
+        <Property Name="AlwaysOnTop" Value="true" />
+        <Window Type="TLBB_DragTitle" Name="TeamPTZhaomu_DragTitle">
+            <Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
+            <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+            <Property Name="DragTarget" Value="TeamPTZhaomu_Frame" />
+            <Window Type="TLBB_SimpleText" Name="TeamPTZhaomu_PageHeader_Text">
+                <Property Name="Position" Value="x:0.0 y:0.0" />
+                <Property Name="Size" Value="w:1.0 h:1.0" />
+                <Property Name="Text" Value="#{ZDPT_XML_20}" />
+                <Property Name="Font" Value="YouYuan11.25" />
+                <Property Name="HorzFormatting" Value="HorzCentred" />
+                <Property Name="VertFormatting" Value="VertCentred" />
+            </Window>
+        </Window>
+        <Window Type="TLBB_ButtonHelp" Name="TeamPTZhaomu_Help">
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+            <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+            <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*TeamPTZhaomu&quot;);' />
+        </Window>
+        <Window Type="TLBB_ButtonClose" Name="TeamPTZhaomu_Close">
+            <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+            <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+            <Event Name="Clicked" Function="TeamPTZhaomu_Close_Clicked();" />
+        </Window>
+        <Window Type="DefaultWindow" Name="TeamPTZhaomu_Frame_Client">
+            <Property Name="AbsolutePosition" Value="x:7.000000 y:36.000000" />
+            <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-55.000000}" />
+          <Window Type="TLBB_SimpleText" Name="TeamPTZhaomu_Edit_Direction">
+            <Property Name="AbsolutePosition" Value="x:2.000000 y:2.000000" />
+            <Property Name="AbsoluteSize" Value="w:280.0 h:18.0" />
+            <Property Name="TextColor" Value="FFFFF263" />
+            <Property Name="Text" Value="#{ZDPT_XML_35}" />
+            <Property Name="HorzFormatting" Value="LeftAligned" />
+            <Property Name="VertFormatting" Value="VertCentred" />
+            <Property Name="RiseOnClick" Value="False" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="TeamPTZhaomu_BiaotiText">
+                <Property Name="AbsolutePosition" Value="x:2.000000 y:20.000000" />
+                <Property Name="AbsoluteSize" Value="w:80.000000 h:20.000000" />
+                <Property Name="TextColor" Value="FFFFF263" />
+                <Property Name="Text" Value="#{ZDPT_XML_11}" />
+                <Property Name="HorzFormatting" Value="LeftAligned" />
+                <Property Name="VertFormatting" Value="VertCentred" />
+                <Property Name="RiseOnClick" Value="False" />
+            </Window>
+          <Window Type="TLBB_SimpleText" Name="TeamPTZhaomu_MudiText">
+            <Property Name="AbsolutePosition" Value="x:2.000000 y:46.000000" />
+            <Property Name="AbsoluteSize" Value="w:80.000000 h:20.000000" />
+            <Property Name="TextColor" Value="FFFFF263" />
+            <Property Name="Text" Value="#{ZDPT_XML_12}" />
+            <Property Name="HorzFormatting" Value="LeftAligned" />
+            <Property Name="VertFormatting" Value="VertCentred" />
+            <Property Name="RiseOnClick" Value="False" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="TeamPTZhaomu_ZhiyeText">
+            <Property Name="AbsolutePosition" Value="x:2.000000 y:70.000000" />
+            <Property Name="AbsoluteSize" Value="w:80.000000 h:20.000000" />
+            <Property Name="TextColor" Value="FFFFF263" />
+            <Property Name="Text" Value="#{ZDPT_XML_13}" />
+            <Property Name="HorzFormatting" Value="LeftAligned" />
+            <Property Name="VertFormatting" Value="VertCentred" />
+            <Property Name="RiseOnClick" Value="False" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="TeamPTZhaomu_LvText">
+            <Property Name="AbsolutePosition" Value="x:2.000000 y:160.000000" />
+            <Property Name="AbsoluteSize" Value="w:80.000000 h:20.000000" />
+            <Property Name="TextColor" Value="FFFFF263" />
+            <Property Name="Text" Value="#{ZDPT_XML_14}" />
+            <Property Name="HorzFormatting" Value="LeftAligned" />
+            <Property Name="VertFormatting" Value="VertCentred" />
+            <Property Name="RiseOnClick" Value="False" />
+          </Window>
+          <Window Type="TLBB_EditBoxNormal" Name="TeamPTZhaomu_EditName">
+            <Property Name="AbsolutePosition" Value="x:85.000000 y:22.000000" />
+            <Property Name="UnifiedSize" Value="{{0.36,0.000000},{0.000000,20.000000}" />
+                <Property Name="MaxTextLength" Value="20" />
+                <Property Name="ValidationString" Value="^[^#@.*]*" />
+                <Property Name="Text" Value="#{INTERFACE_XML_885}" />
+            </Window>
+          <Window Type="TLBB_ComboList" Name="TeamPTZhaomu_Mudi" >
+            <Property Name="AbsolutePosition" Value="x:85.000000 y:46.000000" />
+						<Property Name="UnifiedSize" Value="{{0.35000,0.000000},{0.000000,20.000000}" />
+						<Property Nmae="ForceVertScrollbar" Value="True" />
+            <Event Name="ListSelectionAccepted" Function="TeamPTZhaomu_ComboListChanged();" />
+          </Window>
+          <Window Type="TLBB_SimpleMulitiTextFrame" Name="TeamPTZhaomu_Zhiye" >
+            <Property Name="AbsolutePosition" Value="x:85.000000 y:70.000000" />
+            <Property Name="UnifiedSize" Value="{{0.30000,0.000000},{0.000000,20.000000}" />
+          </Window>
+          <Window Type="DefaultWindow" Name="TeamPTZhaomu_Checkbox_Frame">
+                <Property Name="AbsolutePosition" Value="x:85.000000 y:95.000000" />
+                <Property Name="AbsoluteSize" Value="w:300.0 h:80.0" />
+                <Window Type="TLBB_ButtonCheck" Name="TeamPTZhaomu_RenyiInfo">
+                  <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,240.000000},{0.000000,34.000000}}"/>
+                    <Property Name="CheckMode" Value="0" />
+										<Event Name="MouseButtonDown" Function="TeamPTZhaomu_Renyi_Button_Down();" />
+                </Window>
+                <Window Type="TLBB_ButtonCheck" Name="TeamPTZhaomu_SlInfo">
+                    <Property Name="AbsolutePosition" Value="x:0.000000 y:4.000000" />
+                    <Property Name="AbsoluteSize" Value="w:12.0 h:12.0" />
+                    <Property Name="CheckMode" Value="0" />
+										<Event Name="MouseButtonDown" Function="TeamPTZhaomu_Other_Button_Down(2);" />
+                </Window>
+                <Window Type="TLBB_ButtonCheck" Name="TeamPTZhaomu_MjInfo">
+                    <Property Name="AbsolutePosition" Value="x:60.000000 y:4.000000" />
+                    <Property Name="AbsoluteSize" Value="w:12.0 h:12.0" />
+                    <Property Name="CheckMode" Value="0" />
+										<Event Name="MouseButtonDown" Function="TeamPTZhaomu_Other_Button_Down(3);" />
+                </Window>
+                <Window Type="TLBB_ButtonCheck" Name="TeamPTZhaomu_GbInfo">
+                    <Property Name="AbsolutePosition" Value="x:120.000000 y:4.000000" />
+                    <Property Name="AbsoluteSize" Value="w:12.0 h:12.0" />
+                    <Property Name="CheckMode" Value="0" />
+										<Event Name="MouseButtonDown" Function="TeamPTZhaomu_Other_Button_Down(4);" />
+                </Window>
+                <Window Type="TLBB_ButtonCheck" Name="TeamPTZhaomu_WdInfo">
+                    <Property Name="AbsolutePosition" Value="x:180.000000 y:4.000000" />
+                    <Property Name="AbsoluteSize" Value="w:12.0 h:12.0" />
+                    <Property Name="CheckMode" Value="0" />
+										<Event Name="MouseButtonDown" Function="TeamPTZhaomu_Other_Button_Down(5);" />
+                </Window>
+                <Window Type="TLBB_ButtonCheck" Name="TeamPTZhaomu_EmInfo">
+                    <Property Name="AbsolutePosition" Value="x:240.000000 y:4.000000" />
+                    <Property Name="AbsoluteSize" Value="w:12.0 h:12.0" />
+                    <Property Name="CheckMode" Value="0" />
+										<Event Name="MouseButtonDown" Function="TeamPTZhaomu_Other_Button_Down(6);" />
+                </Window>
+                <Window Type="TLBB_ButtonCheck" Name="TeamPTZhaomu_XxInfo">
+                    <Property Name="AbsolutePosition" Value="x:0.000000 y:34.000000" />
+                    <Property Name="AbsoluteSize" Value="w:12.0 h:12.0" />
+                    <Property Name="CheckMode" Value="0" />
+										<Event Name="MouseButtonDown" Function="TeamPTZhaomu_Other_Button_Down(7);" />
+                </Window>
+                <Window Type="TLBB_ButtonCheck" Name="TeamPTZhaomu_TlInfo">
+                    <Property Name="AbsolutePosition" Value="x:60.000000 y:34.000000" />
+                    <Property Name="AbsoluteSize" Value="w:12.0 h:12.0" />
+                    <Property Name="CheckMode" Value="0" />
+										<Event Name="MouseButtonDown" Function="TeamPTZhaomu_Other_Button_Down(8);" />
+                </Window>
+                <Window Type="TLBB_ButtonCheck" Name="TeamPTZhaomu_TsInfo">
+                    <Property Name="AbsolutePosition" Value="x:120.000000 y:34.000000" />
+                    <Property Name="AbsoluteSize" Value="w:12.0 h:12.0" />
+                    <Property Name="CheckMode" Value="0" />
+										<Event Name="MouseButtonDown" Function="TeamPTZhaomu_Other_Button_Down(9);" />
+                </Window>
+              <Window Type="TLBB_ButtonCheck" Name="TeamPTZhaomu_XyInfo">
+                    <Property Name="AbsolutePosition" Value="x:180.000000 y:34.000000" />
+                    <Property Name="AbsoluteSize" Value="w:12.0 h:12.0" />
+                    <Property Name="CheckMode" Value="0" />
+										<Event Name="MouseButtonDown" Function="TeamPTZhaomu_Other_Button_Down(10);" />
+              </Window>
+            <Window Type="TLBB_SimpleText" Name="TeamPTZhaomu_Renyi_Text">
+              <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,18.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,255.000000},{0.000000,30.000000}}"/>
+                  <Property Name="TextColor" Value="FFFFF263" />
+                  <Property Name="Text" Value="#{ZDPT_XML_31}" />
+                  <Property Name="HorzFormatting" Value="LeftAligned" />
+                  <Property Name="VertFormatting" Value="VertCentred" />
+                  <Property Name="RiseOnClick" Value="False" />
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="TeamPTZhaomu_Sl_Text">
+                  <Property Name="AbsolutePosition" Value="x:15.000000 y:2.000000" />
+                  <Property Name="AbsoluteSize" Value="w:40.0 h:18.0" />
+                    <Property Name="TextColor" Value="FFFFF263" />
+                    <Property Name="Text" Value="#{GMGameInterface_Script_DataPool_Info_ShaoLin}" />
+                    <Property Name="HorzFormatting" Value="LeftAligned" />
+                    <Property Name="VertFormatting" Value="VertCentred" />
+                    <Property Name="RiseOnClick" Value="False" />
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="TeamPTZhaomu_Mj_Text">
+                  <Property Name="AbsolutePosition" Value="x:75.000000 y:2.000000" />
+                  <Property Name="AbsoluteSize" Value="w:40.0 h:18.0" />
+                  <Property Name="TextColor" Value="FFFFF263" />
+                  <Property Name="Text" Value="#{GMGameInterface_Script_DataPool_Info_Mingjiao}" />
+                  <Property Name="HorzFormatting" Value="LeftAligned" />
+                  <Property Name="VertFormatting" Value="VertCentred" />
+                  <Property Name="RiseOnClick" Value="False" />
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="TeamPTZhaomu_Gb_Text">
+                  <Property Name="AbsolutePosition" Value="x:135.000000 y:2.000000" />
+                  <Property Name="AbsoluteSize" Value="w:40.0 h:18.0" />
+                  <Property Name="TextColor" Value="FFFFF263" />
+                  <Property Name="Text" Value="#{GMGameInterface_Script_DataPool_Info_GaiBang}" />
+                  <Property Name="HorzFormatting" Value="LeftAligned" />
+                  <Property Name="VertFormatting" Value="VertCentred" />
+                  <Property Name="RiseOnClick" Value="False" />
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="TeamPTZhaomu_Wd_Text">
+                  <Property Name="AbsolutePosition" Value="x:195.000000 y:2.000000" />
+                  <Property Name="AbsoluteSize" Value="w:40.0 h:18.0" />
+                    <Property Name="TextColor" Value="FFFFF263" />
+                    <Property Name="Text" Value="#{GMGameInterface_Script_DataPool_Info_WuDang}" />
+                    <Property Name="HorzFormatting" Value="LeftAligned" />
+                    <Property Name="VertFormatting" Value="VertCentred" />
+                    <Property Name="RiseOnClick" Value="False" />
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="TeamPTZhaomu_Em_Text">
+                  <Property Name="AbsolutePosition" Value="x:255.000000 y:2.000000" />
+                  <Property Name="AbsoluteSize" Value="w:40.0 h:18.0" />
+                  <Property Name="TextColor" Value="FFFFF263" />
+                  <Property Name="Text" Value="#{GMGameInterface_Script_DataPool_Info_EMei}" />
+                  <Property Name="HorzFormatting" Value="LeftAligned" />
+                  <Property Name="VertFormatting" Value="VertCentred" />
+                  <Property Name="RiseOnClick" Value="False" />
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="TeamPTZhaomu_Xx_Text">
+                  <Property Name="AbsolutePosition" Value="x:15.000000 y:30.000000" />
+                  <Property Name="AbsoluteSize" Value="w:40.0 h:18.0" />
+                <Property Name="TextColor" Value="FFFFF263" />
+                <Property Name="Text" Value="#{GMGameInterface_Script_DataPool_Info_XingXiu}" />
+                <Property Name="HorzFormatting" Value="LeftAligned" />
+                <Property Name="VertFormatting" Value="VertCentred" />
+                <Property Name="RiseOnClick" Value="False" />
+              </Window>
+                <Window Type="TLBB_SimpleText" Name="TeamPTZhaomu_Tl_Text">
+                  <Property Name="AbsolutePosition" Value="x:75.000000 y:30.000000" />
+                  <Property Name="AbsoluteSize" Value="w:40.0 h:18.0" />
+                  <Property Name="TextColor" Value="FFFFF263" />
+                  <Property Name="Text" Value="#{GMGameInterface_Script_DataPool_Info_DaLi}" />
+                  <Property Name="HorzFormatting" Value="LeftAligned" />
+                  <Property Name="VertFormatting" Value="VertCentred" />
+                  <Property Name="RiseOnClick" Value="False" />
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="TeamPTZhaomu_Ts_Text">
+                  <Property Name="AbsolutePosition" Value="x:135.000000 y:30.000000" />
+                  <Property Name="AbsoluteSize" Value="w:40.0 h:18.0" />
+                    <Property Name="TextColor" Value="FFFFF263" />
+                    <Property Name="Text" Value="#{GMGameInterface_Script_DataPool_Info_TianShan}" />
+                    <Property Name="HorzFormatting" Value="LeftAligned" />
+                    <Property Name="VertFormatting" Value="VertCentred" />
+                    <Property Name="RiseOnClick" Value="False" />
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="TeamPTZhaomu_Xy_Text">
+                  <Property Name="AbsolutePosition" Value="x:195.000000 y:30.000000" />
+                  <Property Name="AbsoluteSize" Value="w:40.0 h:18.0" />
+                    <Property Name="TextColor" Value="FFFFF263" />
+                    <Property Name="Text" Value="#{GMGameInterface_Script_DataPool_Info_XiaoYao}" />
+                    <Property Name="HorzFormatting" Value="LeftAligned" />
+                    <Property Name="VertFormatting" Value="VertCentred" />
+                    <Property Name="RiseOnClick" Value="False" />
+                </Window>
+          </Window>
+          <Window Type="TLBB_EditBoxNormal" Name="TeamPTZhaomu_NumericalValue1" >
+            <Property Name="AbsolutePosition" Value="x:85.000000 y:162.000000" />
+            <Property Name="AbsoluteSize" Value="w:40.0 h:18.0" />
+            <Property Name="MaxTextLength" Value="3" />
+            <Property Name="Text" Value="1" />
+            <Property Name="ValidationString" Value="[0-9]*" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="TeamPTZhaomu_Numerical_Text">
+            <Property Name="AbsolutePosition" Value="x:128.000000 y:162.000000" />
+            <Property Name="AbsoluteSize" Value="w:20.0 h:18.0" />
+            <Property Name="TextColor" Value="FFFFF263" />
+            <Property Name="Text" Value="-" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="VertFormatting" Value="VertCentred" />
+            <Property Name="RiseOnClick" Value="False" />
+          </Window>
+          <Window Type="TLBB_EditBoxNormal" Name="TeamPTZhaomu_NumericalValue2" >
+            <Property Name="AbsolutePosition" Value="x:151.000000 y:162.000000" />
+            <Property Name="AbsoluteSize" Value="w:40.0 h:18.0" />
+            <Property Name="MaxTextLength" Value="3" />
+            <Property Name="Text" Value="119" />
+            <Property Name="ValidationString" Value="[0-9]*" />
+          </Window>
+            <Window Type="TLBB_Frame_Lace5" Name="TeamPTZhaomu_Blank">
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}" />
+                <Property Name="UnifiedSize" Value="{{1.000000,-120.000000},{0.000000,20.000000}" />
+            </Window>
+            <Window Type="TLBB_ButtonCommon" Name="TeamPTZhaomu_Accept">
+                <Property Name="UnifiedPosition" Value="{{1.000000,-120.000000},{1.000000,-20.000000}" />
+                <Property Name="AbsoluteSize" Value="w:80.000000 h:20.000000" />
+                <Property Name="Text" Value="#{ZDPT_XML_22}" />
+                <Event Name="Clicked" Function="TeamPTZhaomu_Accept_Clicked();" />
+            </Window>
+            <Window Type="TLBB_ButtonCommon" Name="TeamPTZhaomu_Cancel">
+                <Property Name="UnifiedPosition" Value="{{1.000000,-40.000000},{1.000000,-20.000000}" />
+                <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+                <Property Name="Text" Value="#{ZDPT_XML_23}" />
+                <Event Name="Clicked" Function="TeamPTZhaomu_Cancel_Clicked();" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

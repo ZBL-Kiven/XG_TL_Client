@@ -1,0 +1,178 @@
+﻿<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="Zongzi_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,548.000000},{0.000000,288.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{1.000000,-610.000000},{1.000000,-340.000000}}"/>
+    <Event Name="Hidden" Function="Zongzi_OnHidden();" />
+    <Window Type="TLBB_StaticImageNULL" Name="Zongzi_Frame_BK1">
+      <Property Name="UnifiedSize" Value="{{0.000000,512.000000},{0.000000,288.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Property Name="Image" Value="set:Zongzi2 image:Zongzi_Ditu1"/>
+    </Window>
+    <Window Type="TLBB_StaticImageNULL" Name="Zongzi_Frame_BK2">
+      <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,288.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,512.000000},{0.000000,0.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Property Name="Image" Value="set:Zongzi1 image:Zongzi_Ditu2"/>
+    </Window>
+    <Window Type="TLBB_DragTitle" Name="Zongzi_DragTitle">
+      <Property Name="UnifiedSize" Value="{{0.000000,171.000000},{0.000000,64.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-210.000000},{0.000000,0.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Property Name="Visible" Value="False"/>
+      <Property Name="Font" Value="YouYuan11.25" />
+    </Window>
+    <Window Type="TLBB_ButtonNULL" Name="Zongzi_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,38.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-60.000000},{0.000000,25.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Property Name="PushedImage" Value="set:Zongzi1 image:Zongzi_Close_Pushed"/>
+      <Property Name="NormalImage" Value="set:Zongzi1 image:Zongzi_Close_Normal"/>
+      <Property Name="HoverImage" Value="set:Zongzi1 image:Zongzi_Close_Hover"/>
+      <Property Name="DisabledImage" Value="set:Zongzi1 image:Zongzi_Close_Pushed"/>
+      <Event Name="Clicked" Function="Zongzi_OnHidden();" />
+      <Window Type="TLBB_Animate" Name="Zongzi_CloseAnimate">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Animate" Value="Zongzi_CloseAnimate"/>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="Zongzi_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-92.000000},{1.000000,-96.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,67.000000},{0.000000,65.000000}}"/>
+      <Window Type="TLBB_SimpleText" Name="Zongzi_Info">
+        <Property Name="VertFormatting" Value="VertCentred"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,400.000000},{0.000000,50.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-200.000000},{0.000000,10.000000}}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        <Property Name="Text" Value="#{DWZZ_220420_48}"/>
+      </Window>
+      <Window Type="DefaultWindow" Name="Zongzi_Before">
+        <Property Name="UnifiedSize" Value="{{0.000000,350.000000},{0.000000,140.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-175.000000},{1.000000,-140.000000}}"/>
+        <Window Type="DefaultWindow" Name="Zongzi_Before1">
+          <Property Name="UnifiedSize" Value="{{0.000000,350.000000},{0.000000,140.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-175.000000},{0.500000,-60.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Zongzi_Before1_Watch_Text">
+            <Property Name="UnifiedSize" Value="{{0.000000,330.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.000000,10.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Zongzi1 image:Zongzi_Haisheng"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="Zongzi_Before1_Watch_Weikaishi">
+            <Property Name="UnifiedSize" Value="{{0.000000,76.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,205.000000},{0.000000,22.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Image" Value="set:Zongzi1 image:Zongzi_Shangweikaishi"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="Zongzi_Before1_Start_Button">
+            <Property Name="UnifiedSize" Value="{{0.000000,144.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-72.000000},{1.000000,-55.000000}}"/>
+            <Property Name="Tooltip" Value="#{DWZZ_220420_22}"/>
+            <Property Name="PushedImage" Value="set:Zongzi1 image:Zongzi_Button_Pushed"/>
+            <Property Name="NormalImage" Value="set:Zongzi1 image:Zongzi_Button_Normal"/>
+            <Property Name="HoverImage" Value="set:Zongzi1 image:Zongzi_Button_Hover"/>
+            <Property Name="DisabledImage" Value="set:Zongzi1 image:Zongzi_Button_Disabled"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="Clicked" Function="Zongzi_GotoStart();"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Zongzi_Before2">
+          <Property Name="UnifiedSize" Value="{{0.000000,350.000000},{0.000000,140.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-175.000000},{0.500000,-60.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Zongzi_Before2_Watch_Text">
+            <Property Name="UnifiedSize" Value="{{0.000000,330.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.000000,10.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Zongzi1 image:Zongzi_Haisheng"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="Zongzi_Before2_WatchBK">
+            <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,54.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,205.000000},{0.000000,5.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Image" Value="set:Zongzi1 image:Zongzi_Miao"/>
+            <Window Type="TLBB_StopWatch" Name="Zongzi_Before2_Watch">
+              <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,20.000000}}"/>
+              <Property Name="Text" Value="00:00"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="HorzFormatting" Value="LeftAligned"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Event Name="ReachedZero" Function="Zongzi_StopWatch_TimeOut();"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="Zongzi_Before2_Watch_Waiting">
+            <Property Name="UnifiedSize" Value="{{0.000000,158.000000},{0.000000,32.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-79.000000},{1.000000,-51.000000}}"/>
+            <Property Name="Image" Value="set:Zongzi1 image:Zongzi_Zhuzongzhong"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+
+      </Window>
+      <Window Type="DefaultWindow" Name="Zongzi_After">
+        <Property Name="UnifiedSize" Value="{{0.000000,350.000000},{0.000000,140.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-175.000000},{1.000000,-140.000000}}"/>
+        <Window Type="DefaultWindow" Name="Zongzi_After1">
+          <Property Name="UnifiedSize" Value="{{0.000000,350.000000},{0.000000,140.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-175.000000},{1.000000,-140.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Zongzi_After_Fail_Image">
+            <Property Name="UnifiedSize" Value="{{0.000000,350.000000},{0.000000,79.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-60.000000}}"/>
+            <Property Name="Image" Value="set:Zongzi1 image:Zongzi_Weizhushu"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Zongzi_After2">
+          <Property Name="UnifiedSize" Value="{{0.000000,350.000000},{0.000000,140.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-175.000000},{1.000000,-140.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Zongzi_After_Succeed_Image">
+            <Property Name="UnifiedSize" Value="{{0.000000,86.000000},{0.000000,114.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,60.000000},{0.500000,-70.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:Zongzi1 image:Zongzi_Zhuzongchenggong"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="Zongzi_After_Succeed_GetBK">
+            <Property Name="UnifiedSize" Value="{{0.000000,193.000000},{0.000000,98.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-96.000000},{0.500000,-70.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:Zongzi1 image:Zongzi_Faguang"/>
+            <Window Type="TLBB_StaticImageNULL" Name="Zongzi_After_Succeed_Get">
+              <Property Name="UnifiedSize" Value="{{0.000000,102.000000},{0.000000,100.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-51.000000},{0.500000,-50.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="Image" Value="set:Zongzi1 image:Zongzi_Rouzong"/>
+            </Window>
+          </Window>
+
+          <Window Type="TLBB_ButtonNULL" Name="Zongzi_After_Succeed_GetButton">
+            <Property Name="UnifiedSize" Value="{{0.000000,144.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-72.000000},{1.000000,-45.000000}}"/>
+            <Property Name="Tooltip" Value="#{DWZZ_220420_24}"/>
+            <Property Name="PushedImage" Value="set:Zongzi1 image:Zongzi_GetGift_Pushed"/>
+            <Property Name="NormalImage" Value="set:Zongzi1 image:Zongzi_GetGift_Normal"/>
+            <Property Name="HoverImage" Value="set:Zongzi1 image:Zongzi_GetGift_Hover"/>
+            <Property Name="DisabledImage" Value="set:Zongzi1 image:Zongzi_GetGift_Disabled"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="Clicked" Function="Zongzi_GetGift();"/>
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

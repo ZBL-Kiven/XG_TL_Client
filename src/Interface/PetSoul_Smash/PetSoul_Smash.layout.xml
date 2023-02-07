@@ -1,0 +1,141 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame1" Name="PetSoul_Smash_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,256.000000},{0.000000,292.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-128.000000},{0.500000,-178.000000}}"/>
+    <Event Name="Hidden" Function="PetSoul_Smash_OnHiden();" />
+    <Window Type="TLBB_DragTitle" Name="PetSoul_Smash_DragTitle">
+      <Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+      <Property Name="DragTarget" Value="PetSoul_Smash_Frame" />
+      <Window Type="TLBB_SimpleText" Name="PetSoul_Smash_Title">
+        <Property Name="Position" Value="x:0.0 y:0.0" />
+        <Property Name="Size" Value="w:1.0 h:1.0" />
+        <Property Name="Font" Value="YouYuan11.25" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Text" Value="#{SHXT_20211230_131}" />
+      </Window>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="PetSoul_Smash_Help">
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+      <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+      <Property Name="Text" Value="TLBB_ButtonHelp" />
+      <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*PetSoul_Smash&quot;);' />
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="PetSoul_Smash_Close">
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+      <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+      <Property Name="Text" Value="TLBB_ButtonClose" />
+      <Event Name="Clicked" Function="this:Hide();" />
+    </Window>
+    <Window Type="DefaultWindow" Name="PetSoul_Smash_Frame_Client">
+      <Property Name="AbsolutePosition" Value="x:7.000000 y:36.000000" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-55.000000}" />
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="PetSoul_Smash_Info">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,76.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Text" Value="#{SHXT_20211230_132}" />
+        <Property Name="TextColor" Value="FFFFF263" />
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="PetSoul_Smash_Info2">
+        <Property Name="UnifiedSize" Value="{{0.000000,136.000000},{0.000000,36.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,82.000000}}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Text" Value="#{SHXT_20211230_133}" />
+        <Property Name="TextColor" Value="FFFFF263" />
+      </Window>
+      <Window Type="TLBB_ActionButton" Name="PetSoul_Smash_Object">
+        <Property Name="UnifiedPosition" Value="{{0.000000,186.000000},{0.000000,82.000000}}"/>
+        <Property Name="AbsoluteSize" Value="w:36 h:36" />
+        <Property Name="DragAcceptName" Value="W31" />
+        <Property Name="DraggingEnabled" Value="True" />
+        <Event Name="RBClicked" Function="PetSoul_Smash_Resume_Equip();" />
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="PetSoul_Smash_Explain">
+        <Property Name="UnifiedPosition" Value="{{0.00,0.000000},{1.000000,-111.000000}" />
+        <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,22.000000}" />
+        <Property Name="TextColor" Value="FFFFF263" />
+        <Property Name="Text" Value="#{SHXT_20211230_134}" />
+        <Window Type="TLBB_SimpleText" Name="PetSoul_Smash_Explain_Text">
+          <Property Name="UnifiedPosition" Value="{{0.25,0.000000},{0.000000,0.000000}" />
+          <Property Name="UnifiedSize" Value="{{0.75,0.000000},{0.000000,18.000000}" />
+          <Property Name="HorzFormatting" Value="RightAligned" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="PetSoul_Smash_Demand_Jiaozi_Text">
+        <Property Name="UnifiedPosition" Value="{{0.00,0.000000},{1.000000,-89.000000}" />
+        <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,22.000000}" />
+        <Property Name="Text" Value="#{INTERFACE_XML_1249}" />
+        <Property Name="TextColor" Value="FFFFF263" />
+        <Property Name="HorzFormatting" Value="LeftAligned" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Window Type="TLBB_Money" Name="PetSoul_Smash_Demand_Jiaozi">
+          <Property Name="UnifiedPosition" Value="{{0.25,0.000000},{0.000000,0.000000}" />
+          <Property Name="UnifiedSize" Value="{{0.75,0.000000},{0.000000,18.000000}" />
+          <Property Name="MoneyNumber" Value="0" />
+          <Property Name="HorzFormatting" Value="RightAligned" />
+          <Property Name="GoldIcon" Value = "set:Button6 image:Lace_JiaoziJin" />
+          <Property Name="SilverIcon" Value = "set:Button6 image:Lace_JiaoziYin" />
+          <Property Name="CopperIcon" Value = "set:Button6 image:Lace_JiaoziTong" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="PetSoul_Smash_Currently_Jiaozi_Text">
+        <Property Name="UnifiedPosition" Value="{{0.00,0.000000},{1.000000,-67.000000}" />
+        <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,22.000000}" />
+        <Property Name="Text" Value="#{BDJB_051021_3}" />
+        <Property Name="TextColor" Value="FFFFF263" />
+        <Property Name="HorzFormatting" Value="LeftAligned" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Window Type="TLBB_Money" Name="PetSoul_Smash_Currently_Jiaozi">
+          <Property Name="UnifiedPosition" Value="{{0.25,0.000000},{0.000000,0.000000}" />
+          <Property Name="UnifiedSize" Value="{{0.75,0.000000},{0.000000,18.000000}" />
+          <Property Name="MoneyNumber" Value="0" />
+          <Property Name="HorzFormatting" Value="RightAligned" />
+          <Property Name="GoldIcon" Value = "set:Button6 image:Lace_JiaoziJin" />
+          <Property Name="SilverIcon" Value = "set:Button6 image:Lace_JiaoziYin" />
+          <Property Name="CopperIcon" Value = "set:Button6 image:Lace_JiaoziTong" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="PetSoul_Smash_Currently_Money_Text">
+        <Property Name="UnifiedPosition" Value="{{0.00,0.000000},{1.000000,-45.000000}" />
+        <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,22.000000}" />
+        <Property Name="Text" Value="#{INTERFACE_XML_833}" />
+        <Property Name="TextColor" Value="FFFFF263" />
+        <Property Name="HorzFormatting" Value="LeftAligned" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Window Type="TLBB_Money" Name="PetSoul_Smash_Currently_Money">
+          <Property Name="UnifiedPosition" Value="{{0.25,0.000000},{0.000000,0.000000}" />
+          <Property Name="UnifiedSize" Value="{{0.75,0.000000},{0.000000,18.000000}" />
+          <Property Name="MoneyNumber" Value="0" />
+          <Property Name="HorzFormatting" Value="RightAligned" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace5" Name="PetSoul_Smash_Blank">
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}" />
+        <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}" />
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="PetSoul_Smash_OK">
+        <Property Name="UnifiedPosition" Value="{{1.000000,-80.000000},{1.000000,-20.000000}" />
+        <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+        <Property Name="Text" Value="#{SHXT_20211230_61}" />
+        <Event Name="Clicked" Function="PetSoul_Smash_Buttons_Clicked();" />
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="PetSoul_Smash_Cancel">
+        <Property Name="UnifiedPosition" Value="{{1.000000,-40.000000},{1.000000,-20.000000}" />
+        <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+        <Property Name="Text" Value="#{SHXT_20211230_63}" />
+        <Event Name="Clicked" Function="this:Hide();" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

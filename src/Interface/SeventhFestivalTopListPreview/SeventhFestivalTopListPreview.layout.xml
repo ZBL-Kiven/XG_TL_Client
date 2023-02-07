@@ -1,0 +1,170 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_HeroFrame01" Name="SeventhFestivalTopListPreview_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,680.000000},{0.000000,490.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-340.000000},{0.500000,-240.000000}}"/>
+    <Window Type="TLBB_HeroTitle01" Name="SeventhFestivalTopListPreview_DragTitleBK">
+      <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,30.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-150.000000},{0.000000,-2.000000}}"/>
+    </Window>
+    <Window Type="TLBB_DragTitle" Name="SeventhFestivalTopListPreview_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,5.000000}}"/>
+      <Property Name="Text" Value="#{QXHB_20210701_164}"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="DragTarget" Value="SeventhFestivalTopListPreview_Frame"/>
+    </Window>
+    <Window Type="TLBB_ButtonClose2" Name="SeventhFestivalTopListPreview_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-32.000000},{0.000000,9.000000}}"/>
+      <Event Name="Clicked" Function="SeventhFestivalTopListPreview_Close_Click();" />
+    </Window>
+    <Window Type="TLBB_HeroLace01" Name="SeventhFestivalTopListPreview_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{1.000000,-32.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,28.000000}}"/>
+      <Window Type="TLBB_ButtonCheckNULL" Name="SeventhFestivalTopListPreview_PresentBtn">
+        <Property Name="UnifiedSize" Value="{{0.000000,96.000000},{0.000000,24.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,4.000000}}"/>
+        <Property Name="Text" Value="#{QXHB_20210701_133}"/>
+        <Property Name="PushedImage" Value="set:ZLHeroMeeting image:Button_Push"/>
+        <Property Name="NormalImage" Value="set:ZLHeroMeeting image:Button_Normal"/>
+        <Property Name="HoverImage" Value="set:ZLHeroMeeting image:Button_Hover"/>
+        <Property Name="DisabledImage" Value="set:ZLHeroMeeting image:Button_Disable"/>
+        <Event Name="Clicked" Function="SeventhFestivalTopListPreview_Present_Click();" />
+      </Window>
+      <Window Type="TLBB_ButtonCheckNULL" Name="SeventhFestivalTopListPreview_ReceiveBtn">
+        <Property Name="UnifiedSize" Value="{{0.000000,96.000000},{0.000000,24.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,120.000000},{0.000000,4.000000}}"/>
+        <Property Name="Text" Value="#{QXHB_20210701_139}"/>
+        <Property Name="PushedImage" Value="set:ZLHeroMeeting image:Button_Push"/>
+        <Property Name="NormalImage" Value="set:ZLHeroMeeting image:Button_Normal"/>
+        <Property Name="HoverImage" Value="set:ZLHeroMeeting image:Button_Hover"/>
+        <Property Name="DisabledImage" Value="set:ZLHeroMeeting image:Button_Disable"/>
+        <Event Name="Clicked" Function="SeventhFestivalTopListPreview_Receive_Click();" />
+      </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="SeventhFestivalTopListPreview_Pic">
+          <Property Name="UnifiedSize" Value="{{0.000000,656.000000},{0.000000,314.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-328.000000},{0.000000,30.000000}}"/>
+          <Property Name="Image" Value="set:QiXi_HuaBang2 image:QiXi_HuaBang2Image1"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="RiseOnClick" Value="False"/>
+        </Window>
+      <Window Type="DefaultWindow" Name="SeventhFestivalTopListPreview_AllAward">
+        <Property Name="UnifiedSize" Value="{{0.000000,640.000000},{0.000000,100.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-320.000000},{0.000000,350.000000}}"/>
+        <Window Type="TLBB_Frame_Lace02" Name="SeventhFestivalTopListPreview_Num1BK">
+          <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,100.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Window Type="TLBB_Frame_Lace01" Name="SeventhFestivalTopListPreview_Num1">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="SeventhFestivalTopListPreview_Num1Text">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.00000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            <Property Name="Text" Value="#{QXHB_20210701_134}"/>
+          </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="SeventhFestivalTopListPreview_Num1Award1">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-44.000000},{0.000000,34.000000}}"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="SeventhFestivalTopListPreview_Num1Award2">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,4.000000},{0.000000,34.000000}}"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_Frame_Lace02" Name="SeventhFestivalTopListPreview_Num2BK">
+          <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,100.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,130.000000},{0.000000,0.000000}}"/>
+          <Window Type="TLBB_Frame_Lace01" Name="SeventhFestivalTopListPreview_Num2">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Window Type="TLBB_SimpleText" Name="SeventhFestivalTopListPreview_Num2Text">
+              <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.00000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+              <Property Name="Text" Value="#{QXHB_20210701_135}"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="SeventhFestivalTopListPreview_Num2Award1">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-20.000000},{0.000000,34.000000}}"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_Frame_Lace02" Name="SeventhFestivalTopListPreview_Num3BK">
+          <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,100.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,260.000000},{0.000000,0.000000}}"/>
+          <Window Type="TLBB_Frame_Lace01" Name="SeventhFestivalTopListPreview_Num3">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Window Type="TLBB_SimpleText" Name="SeventhFestivalTopListPreview_Num3Text">
+              <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.00000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+              <Property Name="Text" Value="#{QXHB_20210701_136}"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="SeventhFestivalTopListPreview_Num3Award1">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-20.000000},{0.000000,34.000000}}"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_Frame_Lace02" Name="SeventhFestivalTopListPreview_Num4BK">
+          <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,100.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,390.000000},{0.000000,0.000000}}"/>
+          <Window Type="TLBB_Frame_Lace01" Name="SeventhFestivalTopListPreview_Num4">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Window Type="TLBB_SimpleText" Name="SeventhFestivalTopListPreview_Num4Text">
+              <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.00000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+              <Property Name="Text" Value="#{QXHB_20210701_137}"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="SeventhFestivalTopListPreview_Num4Award1">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-20.000000},{0.000000,34.000000}}"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_Frame_Lace02" Name="SeventhFestivalTopListPreview_Num5BK">
+          <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,100.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,520.000000},{0.000000,0.000000}}"/>
+          <Window Type="TLBB_Frame_Lace01" Name="SeventhFestivalTopListPreview_Num5">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Window Type="TLBB_SimpleText" Name="SeventhFestivalTopListPreview_Num5Text">
+              <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.00000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+              <Property Name="Text" Value="#{QXHB_20210701_138}"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="SeventhFestivalTopListPreview_Num5Award1">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-20.000000},{0.000000,34.000000}}"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_Frame_Lace02" Name="SeventhFestivalTopListPreview_Num6BK">
+          <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,100.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Window Type="TLBB_Frame_Lace01" Name="SeventhFestivalTopListPreview_Num6">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Window Type="TLBB_SimpleText" Name="SeventhFestivalTopListPreview_Num6Text">
+              <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.00000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+              <Property Name="Text" Value="#{QXHB_20210701_134}"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="SeventhFestivalTopListPreview_Num6Award1">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-20.000000},{0.000000,34.000000}}"/>
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

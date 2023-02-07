@@ -1,0 +1,139 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame1" Name="GemChange_Frame">
+    <Property Name="UnifiedPosition" Value="{{0.5,-155},{0.5,-260}}" />
+    <Property Name="AbsoluteSize" Value="w:310 h:410" />
+    <Event Name="Hidden" Function="GemChange_OnHidden();" />
+    <Window Type="TLBB_ButtonHelp" Name="GemChange_Help">
+      <Property Name="UnifiedPosition" Value="{{0.000000,29.000000},{0.000000,6.000000}" />
+      <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+      <Event Name="Clicked" Function="GemChange_Help_Clicked()" />
+    </Window>
+    <Window Type="TLBB_DragTitle" Name="GemChange_DragTitle">
+      <Property Name="UnifiedPosition" Value="{{0.000000,43.000000},{0.000000,3.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-86.000000},{0.000000,20.000000}}"/>
+      <Property Name="DragTarget" Value="GemChange_Frame" />
+      <Property Name="Font" Value="YouYuan11.25" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="Text" Value="#{BSZH_130220_05}" />
+      <Property Name="VertFormatting" Value="VertCentred" />
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="GemChange_Close">
+      <Property Name="UnifiedPosition" Value="{{1.000000,-43.000000},{0.000000,6.000000}" />
+      <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+      <Event Name="Clicked" Function="GemChange_Close();" />
+    </Window>
+    <Window Type="DefaultWindow" Name="GemChange_Client">
+      <Property Name="AbsolutePosition" Value="x:7.000000 y:30.000000" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{1.000000,-39.000000}" />
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="GemChange_Info">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,147.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="VertFormatting" Value="VertCentred"/>
+        <Property Name="Text" Value="#{BSZH_130220_04}" />
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="GemChange_InputText">
+        <Property Name="UnifiedPosition" Value="{{0.000000,31.000000},{0.000000,172.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.000000,160.000000},{0.000000,20.000000}" />
+        <Property Name="HorzFormatting" Value="LeftAligned" />
+        <Property Name="Text" Value="#{BSZH_130220_06}" />
+      </Window>
+      <Window Type="DefaultWindow" Name="GemChange_InputGem">
+        <Property Name="UnifiedPosition" Value="{{0.500000,63.000000},{0.000000,165.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}" />
+        <Window Type="TLBB_ActionButton" Name="GemChange_InputGemIcon">
+          <Property Name="AbsolutePosition" Value="x:0.000000 y:0.000000" />
+          <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+          <Property Name="DragAcceptName" Value="G130" />
+          <Property Name="DraggingEnabled" Value="True" />
+          <Event Name="RBClicked" Function="GemChange_Resume_Equip(1);" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="GemChange_SelectText">
+        <Property Name="UnifiedPosition" Value="{{0.000000,31.000000},{0.500000,32.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.000000,160.000000},{0.000000,20.000000}" />
+        <Property Name="HorzFormatting" Value="LeftAligned" />
+        <Property Name="Text" Value="#{BSZH_130220_07}" />
+      </Window>
+
+		<Window Type="TLBB_ComboList" Name="GemChange_SearchMode0">
+			<Property Name="UnifiedPosition" Value="{{0.000000,180.000000},{0.500000,32.000000}" />
+			<Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}" />
+		</Window>
+		<Window Type="TLBB_ComboList" Name="GemChange_SearchMode1">
+			<Property Name="UnifiedPosition" Value="{{0.000000,180.000000},{0.500000,32.000000}" />
+			<Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}" />
+                        <Event Name="ListSelectionAccepted" Function="GemChange_Open_DestGemList();"/>
+		</Window>
+		<Window Type="TLBB_ComboList" Name="GemChange_SearchMode2">
+			<Property Name="UnifiedPosition" Value="{{0.000000,180.000000},{0.500000,32.000000}" />
+			<Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}" />
+                        <Event Name="ListSelectionAccepted" Function="GemChange_Open_DestGemList();"/>
+		</Window>
+		<Window Type="TLBB_ComboList" Name="GemChange_SearchMode3">
+			<Property Name="UnifiedPosition" Value="{{0.000000,180.000000},{0.500000,32.000000}" />
+			<Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}" />
+                        <Event Name="ListSelectionAccepted" Function="GemChange_Open_DestGemList();"/>
+		</Window>
+		
+      <!--<Window Type="TLBB_ButtonCommon" Name="GemChange_Select">
+        <Property Name="UnifiedPosition" Value="{{0.500000,50.000000},{0.500000,42.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}" />
+        <Property Name="Text" Value="#{BSZH_130220_11}" />
+        <Event Name="Clicked" Function="GemChange_Open_DestGemList();" />
+      </Window>-->
+      <Window Type="TLBB_SimpleText" Name="GemChange_OutputText">
+        <Property Name="UnifiedPosition" Value="{{0.000000,31.000000},{1.000000,-108.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.000000,160.000000},{0.000000,20.000000}" />
+        <Property Name="HorzFormatting" Value="LeftAligned" />
+        <Property Name="Text" Value="#{BSZH_130220_08}" />
+      </Window>
+      <Window Type="DefaultWindow" Name="GemChange_OutputGem">
+        <Property Name="UnifiedPosition" Value="{{0.500000,63.000000},{1.000000,-115.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}" />
+        <Window Type="TLBB_ActionButton" Name="GemChange_OutputGemIcon">
+          <Property Name="AbsolutePosition" Value="x:0.000000 y:0.000000" />
+          <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+          <Property Name="DragAcceptName" Value="G131" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="GemChange_Want">
+        <Property Name="UnifiedPosition" Value="{{0.05,0.000000},{1.000000,-63.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.9,0.000000},{0.000000,20.000000}" />
+        <Property Name="Text" Value="#{BSZH_130220_09}" />
+        <Window Type="TLBB_SimpleText" Name="GemChange_WantNum">
+          <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}" />
+          <Property Name="UnifiedSize" Value="{{1.0,-6.000000},{1.000000,0.000000}" />
+          <Property Name="HorzFormatting" Value="RightAligned" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="GemChange_Have">
+        <Property Name="UnifiedPosition" Value="{{0.05,0.000000},{1.000000,-43.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.9,0.000000},{0.000000,20.000000}" />
+        <Property Name="Text" Value="#{BSZH_130220_10}" />
+        <Window Type="TLBB_SimpleText" Name="GemChange_HaveNum">
+          <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}" />
+          <Property Name="UnifiedSize" Value="{{1.0,-6.000000},{1.000000,0.000000}" />
+          <Property Name="HorzFormatting" Value="RightAligned" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace5" Name="GemChange_Blank">
+        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-20.000000}" />
+        <Property Name="UnifiedSize" Value="{{1.000000,-84.000000},{0.000000,20.000000}" />
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="GemChange_OK">
+        <Property Name="UnifiedPosition" Value="{{1.000000,-82.000000},{1.000000,-20.000000}" />
+        <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+        <Property Name="Text" Value="#{INTERFACE_XML_557}" />
+        <Event Name="Clicked" Function="GemChange_Buttons_Clicked();" />
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="GemChange_Cancel">
+        <Property Name="UnifiedPosition" Value="{{1.000000,-42.000000},{1.000000,-20.000000}" />
+        <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+        <Property Name="Text" Value="#{INTERFACE_XML_542}" />
+        <Event Name="Clicked" Function="GemChange_Cancel_Clicked();" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

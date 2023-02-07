@@ -1,0 +1,197 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame1" Name="RunHunShiCompoundFrame">
+    <Property Name="UnifiedSize" Value="{{0.000000,550.000000},{0.000000,480.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-275.000000},{0.500000,-240.000000}}"/>
+    <Event Name="Hidden" Function="RunHunShiCompound_Close()"/>
+    <Window Type="TLBB_DragTitle" Name="RunHunShiCompound_Title">
+      <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,11.000000}}"/>
+      <Property Name="DragTarget" Value="RunHunShiCompoundFrame" />
+      <Property Name="Font" Value="YouYuan11.25" />
+      <Property Name="Text" Value="#{RHSYH_161104_01}"/>
+      <Property Name="HorzFormatting" Value="HorzCentred"/>
+      <Property Name="VertFormatting" Value="VertCentred"/>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="RunHunShiCompound_Help">
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+            <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+            <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*Wuhun&quot;);' />
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="RunHunShiCompound_Close">
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+      <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+      <Event Name="Clicked" Function="RunHunShiCompound_Close();" />
+    </Window>
+    <Window Type="DefaultWindow" Name="RunHunShiCompound_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{1.000000,-38.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,31.000000}}"/>
+      <Window Type="TLBB_ButtonCheckForRMBShop" Name="RunHunShiCompound_YeQian01">
+        <Property Name="UnifiedSize" Value="{{0.000000,105.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,110.000000},{0.000000,5.000000}}"/>
+        <Property Name="CheckMode" Value="1"/>
+        <Property Name="Text" Value="#{RHSYH_161104_02}"/>
+        <Event Name="Clicked" Function="RunHunShiCompound_SwitchPage(1);" />
+      </Window>
+      <Window Type="TLBB_ButtonCheckForRMBShop" Name="RunHunShiCompound_YeQian02">
+        <Property Name="UnifiedSize" Value="{{0.000000,105.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}"/>
+        <Property Name="CheckMode" Value="1"/>
+        <Property Name="Text" Value="#{RHSYH_161104_03}"/>
+        <Event Name="Clicked" Function="RunHunShiCompound_SwitchPage(2);" />
+      </Window>
+      <Window Type="TLBB_Frame_Lace6" Name="RunHunShiCompound_Explain">
+        <Property Name="UnifiedSize" Value="{{1.000000,-6.000000},{0.000000,160.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,25.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="RunHunShiCompound_ExplainInfo">
+          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,150.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,5.000000}}"/>
+          <Property Name="Text" Value="#{RHSYH_161104_04}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace2" Name="RunHunShiCompound_ListContent">
+        <Property Name="UnifiedSize" Value="{{0.000000,170.000000},{0.000000,225.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,185.000000}}"/>
+        <Window Type="TLBB_Frame_Lace1" Name="RunHunShiCompound_ListContent_title_bk">
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,-2.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,0.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="RunHunShiCompound_ListContent_title">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="Text" Value="#{RHSYH_161104_05}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ListBoxCommon" Name="RunHunShiCompound_List">
+          <Property Name="UnifiedSize" Value="{{1.000000,-2.000000},{0.000000,195.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,30.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Event Name="ItemSelectionChanged" Function="RunHunShiCompound_ListBox_Selected();"/>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="RunHunShiCompound">
+        <Property Name="UnifiedSize" Value="{{1.000000,-173.000000},{0.000000,225.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,170.000000},{0.000000,185.000000}}"/>
+        <Window Type="DefaultWindow" Name="RunHunShiCompound_Lace">
+          <Property Name="UnifiedSize" Value="{{1.000000,-2.000000},{0.000000,100.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,2.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="RunHunShiCompound_ChoiceInfo">
+            <Property Name="UnifiedSize" Value="{{0.000000,240.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-120.000000},{0.000000,15.000000}}"/>
+            <Property Name="Text" Value="#{RHSYH_161104_39}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="RunHunShiCompound_Item">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-20.000000},{0.000000,40.000000}}"/>
+            <Property Name="RiseOnClick" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="RunHunShiCompound_Need">
+          <Property Name="UnifiedPosition" Value="{{0.05,0.000000},{1.000000,-91.000000}" />
+          <Property Name="UnifiedSize" Value="{{0.9,0.000000},{0.000000,22.000000}" />
+          <Window Type="TLBB_SimpleText" Name="RunHunShiCompound_Need_Info">
+            <Property Name="UnifiedPosition" Value="{{0.0,8.000000},{0.000000,2.000000}" />
+            <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}" />
+            <Property Name="Text" Value="#{RHSYH_161104_40}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="RunHunShiCompound_Need_Number">
+            <Property Name="UnifiedPosition" Value="{{1.0,-145.000000},{0.000000,2.000000}" />
+            <Property Name="UnifiedSize" Value="{{0.0,140.000000},{0.000000,20.000000}" />
+            <Property Name="HorzFormatting" Value="RightAligned"/>
+            <Property Name="Text" Value="#{}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="RunHunShiCompound_Have">
+          <Property Name="UnifiedPosition" Value="{{0.05,0.000000},{1.000000,-91.000000}" />
+          <Property Name="UnifiedSize" Value="{{0.0,0.000000},{0.000000,0.000000}" />
+          <Window Type="TLBB_SimpleText" Name="RunHunShiCompound_Have_Info">
+            <Property Name="UnifiedPosition" Value="{{0.0,8.000000},{0.000000,2.000000}" />
+            <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}" />
+            <Property Name="Text" Value="#{RHSYH_161104_41}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="RunHunShiCompound_Have_Number">
+            <Property Name="UnifiedPosition" Value="{{1.0,-145.000000},{0.000000,2.000000}" />
+            <Property Name="UnifiedSize" Value="{{0.0,140.000000},{0.000000,20.000000}" />
+            <Property Name="HorzFormatting" Value="RightAligned"/>
+            <Property Name="Text" Value="#{}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="RunHunShiCompound_DemandMoney_Text">
+          <Property Name="UnifiedPosition" Value="{{0.05,0.000000},{1.000000,-69.000000}" />
+          <Property Name="UnifiedSize" Value="{{0.9,0.000000},{0.000000,22.000000}" />
+          <Property Name="Text" Value="#{RHSYH_161104_43}" />
+          <Property Name="HorzFormatting" Value="LeftAligned" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Window Type="TLBB_Money" Name="RunHunShiCompound_DemandMoney">
+            <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}" />
+            <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}" />
+            <Property Name="MoneyNumber" Value="0" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+            <Property Name="AlignFix" Value="True" />
+            <Property Name="GoldIcon" Value = "set:Button6 image:Lace_JiaoziJin" />
+            <Property Name="SilverIcon" Value = "set:Button6 image:Lace_JiaoziYin" />
+            <Property Name="CopperIcon" Value = "set:Button6 image:Lace_JiaoziTong" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="RunHunShiCompound_CurrentlyJiaozi_Text">
+          <Property Name="UnifiedSize" Value="{{0.900000,0.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.050000,0.000000},{1.000000,-47.000000}}"/>
+          <Property Name="Text" Value="#{RHSYH_161104_44}" />
+          <Property Name="HorzFormatting" Value="LeftAligned" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Window Type="TLBB_Money" Name="RunHunShiCompound_CurrentlyJiaozi">
+            <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}" />
+            <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}" />
+            <Property Name="MoneyNumber" Value="0" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+            <Property Name="AlignFix" Value="True" />
+            <Property Name="GoldIcon" Value = "set:Button6 image:Lace_JiaoziJin" />
+            <Property Name="SilverIcon" Value = "set:Button6 image:Lace_JiaoziYin" />
+            <Property Name="CopperIcon" Value = "set:Button6 image:Lace_JiaoziTong" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="RunHunShiCompound_CurrentlyMoney_Text">
+          <Property Name="UnifiedPosition" Value="{{0.05,0.000000},{1.000000,-25.000000}" />
+          <Property Name="UnifiedSize" Value="{{0.9,0.000000},{0.000000,22.000000}" />
+          <Property Name="Text" Value="#{RHSYH_161104_45}" />
+          <Property Name="HorzFormatting" Value="LeftAligned" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Window Type="TLBB_Money" Name="RunHunShiCompound_CurrentlyMoney">
+            <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}" />
+            <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}" />
+            <Property Name="MoneyNumber" Value="0" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+            <Property Name="AlignFix" Value="True" />
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace2" Name="RunHunShiCompound_Blank">
+        <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,24.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-35.000000}}"/>
+        <Window Type="TLBB_ButtonCommon" Name="RunHunShiCompound_OK">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-123.000000},{1.000000,-22.000000}}"/>
+          <Property Name="Text" Value="#{RHSYH_161104_46}" />
+          <Event Name="Clicked" Function="RunHunShiCompound_HeCheng();" />
+        </Window>
+        <Window Type="TLBB_ButtonCommon" Name="RunHunShiCompound_Cancel">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{1.000000,-22.000000}}"/>
+          <Property Name="Text" Value="#{RHSYH_161104_47}" />
+          <Event Name="Clicked" Function="RunHunShiCompound_Close();" />
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

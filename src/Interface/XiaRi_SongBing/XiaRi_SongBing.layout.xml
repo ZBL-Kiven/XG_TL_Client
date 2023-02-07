@@ -1,0 +1,155 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="XiaRi_SongBing_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,680.000000},{0.000000,330.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-340.000000},{0.500000,-160.000000}}"/>
+    <Window Type="TLBB_HeroFrame01" Name="XiaRi_SongBing_MainFrame">
+      <Property Name="UnifiedSize" Value="{{0.000000,576.000000},{1.000000,-10.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      <Window Type="TLBB_HeroTitle01" Name="XiaRi_SongBing_DragTitleBK">
+        <Property Name="UnifiedSize" Value="{{0.000000,314.000000},{0.000000,30.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-157.500000},{0.000000,-2.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+      </Window>
+      <Window Type="TLBB_DragTitle" Name="XiaRi_SongBing_DragTitle">
+        <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,5.000000}}"/>
+        <Property Name="Font" Value="YouYuan11.25" />
+        <Property Name="HorzFormatting" Value="HorzCentred"/>
+        <Property Name="Text" Value="#{SBP_210623_01}" />
+        <Property Name="DragTarget" Value="XiaRi_SongBing_Frame"/>
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="XiaRi_SongBing_Close">
+        <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,14.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-32.000000},{0.000000,9.000000}}"/>
+        <Property Name="PushedImage" Value="set:ZLHeroMeeting image:Close_Push"/>
+        <Property Name="NormalImage" Value="set:ZLHeroMeeting image:Close_Normal"/>
+        <Property Name="HoverImage" Value="set:ZLHeroMeeting image:Close_Hover"/>
+        <Property Name="DisabledImage" Value="set:ZLHeroMeeting image:Close_Push"/>
+        <Event Name="Clicked" Function="XiaRi_SongBing_OnClosed()" />
+      </Window>
+      <Window Type="TLBB_HeroLace01" Name="XiaRi_SongBing_Frame_Client">
+        <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{1.000000,-32.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,28.000000}}"/>
+        <Property Name="RiseOnClick" Value="False" />
+        <Window Type="DefaultWindow" Name="XiaRi_SongBing_Explain1">
+          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,80.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Window Type="TLBB_SimpleText" Name="XiaRi_SongBing_Explain_text">
+            <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{1.000000,-8.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,4.000000}}"/>
+            <Property Name="Text" Value="#{SBP_210623_35}"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            <Property Name="VertFormatting" Value="TopAligned"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="XiaRi_SongBing_Explain2">
+          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{1.000000,-80.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,76.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="DefaultWindow" Name="XiaRi_SongBing_TakeOn">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Window Type="TLBB_StaticImageNULL" Name="XiaRi_SongBing_TakeOnIconBK">
+              <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,78.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-40.000000},{0.000000,70.000000}}"/>
+              <Property Name="Image" Value="set:XiaRi_SongBing image:XiaRiSongBingBK2"/>
+              <Window Type="TLBB_ActionButton" Name="XiaRi_SongBing_TakeOnIcon">
+                <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-28.000000},{0.500000,-28.000000}}"/>
+                <Event Name="Clicked" Function=""/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_ButtonCommon12" Name="XiaRi_SongBing_TakeOnBtn">
+              <Property Name="UnifiedSize" Value="{{0.000000,96.000000},{0.000000,24.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-48.000000},{1.000000,-30.000000}}"/>
+              <Property Name="Text" Value="#{SBP_210623_137}"/>
+              <Property Name="Tooltip" Value="#{SBP_210623_37}"/>
+              <Event Name="Clicked" Function="XiaRi_SongBing_AcceptClk()"/>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="XiaRi_SongBing_Finish">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Window Type="TLBB_StaticImageNULL" Name="XiaRi_SongBing_FinishIcon1BK">
+              <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,78.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-160.000000},{0.000000,70.000000}}"/>
+              <Property Name="Image" Value="set:XiaRi_SongBing image:XiaRiSongBingBK2"/>
+              <Window Type="TLBB_ActionButton" Name="XiaRi_SongBing_FinishIcon1">
+                <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-28.000000},{0.500000,-28.000000}}"/>
+                <Event Name="Clicked" Function=""/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="XiaRi_SongBing_FinishIcon2BK">
+              <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,78.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-40.000000},{0.000000,70.000000}}"/>
+              <Property Name="Image" Value="set:XiaRi_SongBing image:XiaRiSongBingBK2"/>
+              <Window Type="TLBB_ActionButton" Name="XiaRi_SongBing_FinishIcon2">
+                <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-28.000000},{0.500000,-28.000000}}"/>
+                <Event Name="Clicked" Function=""/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="XiaRi_SongBing_FinishIcon3BK">
+              <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,78.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,80.000000},{0.000000,70.000000}}"/>
+              <Property Name="Image" Value="set:XiaRi_SongBing image:XiaRiSongBingBK2"/>
+              <Window Type="TLBB_ActionButton" Name="XiaRi_SongBing_FinishIcon3">
+                <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-28.000000},{0.500000,-28.000000}}"/>
+                <Event Name="Clicked" Function=""/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="XiaRi_SongBing_FinishText">
+              <Property Name="VertFormatting" Value="TopAligned"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,160.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-80.000000},{0.000000,152.000000}}"/>
+              <Property Name="Text" Value="#{SBP_210623_40}"/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+            <Window Type="TLBB_ButtonCommon12" Name="XiaRi_SongBing_FinishBtn">
+              <Property Name="UnifiedSize" Value="{{0.000000,96.000000},{0.000000,24.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-48.000000},{1.000000,-30.000000}}"/>
+              <Property Name="Text" Value="#{SBP_210623_138}"/>
+              <Property Name="Tooltip" Value="#{SBP_210623_39}"/>
+              <Event Name="Clicked" Function="XiaRi_SongBing_FinishClk()"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="XiaRi_SongBing_ImageBK">
+          <Property Name="UnifiedSize" Value="{{0.000000,563.000000},{0.000000,192.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{1.000000,-194.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="XiaRi_SongBing_ImageBK1">
+            <Property Name="UnifiedSize" Value="{{0.000000,512.000000},{0.000000,192.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:XiaRi_SongBing image:XiaRiSongBingBK1"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="XiaRi_SongBing_ImageBK2">
+            <Property Name="UnifiedSize" Value="{{0.000000,51.000000},{0.000000,192.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,512.000000},{0.000000,0.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:XiaRi_SongBing image:XiaRiSongBingBK3"/>
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="TLBB_StaticImageNULL" Name="XiaRi_SongBing_Image">
+      <Property Name="UnifiedSize" Value="{{0.000000,156.000000},{0.000000,256.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,502.000000},{0.000000,72.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="Image" Value="set:XiaRi_SongBing image:XiaRiSongBingGeZi"/>
+    </Window>
+    <Window Type="TLBB_StaticImageNULL" Name="XiaRi_SongBing_Image2">
+      <Property Name="UnifiedSize" Value="{{0.000000,228.000000},{0.000000,246.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,448.000000},{0.000000,68.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="Image" Value="set:XiaRi_SongBing image:XiaRiSongBingRen"/>
+    </Window>
+  </Window>
+</GUILayout>

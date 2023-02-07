@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" ?>
+<GUILayout>
+    <Window Type="TLBB_MainFrame1" Name="PetLongzi_Frame">
+        <Property Name="UnifiedPosition" Value="{{0.500000,-228.000000},{0.500000,-118.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.000000,350.000000},{0.000000,140.000000}" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Event Name="Hidden" Function="PetLongzi_Close();" />
+        <Window Type="TLBB_DragTitle" Name="PetLongzi_DragTitle">
+            <Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
+            <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+            <Property Name="DragTarget" Value="PetLongzi_Frame" />
+            <Property Name="Font" Value="YouYuan11.25" />
+            <Property Name="Text" Value="#{ZSLZ_XML_1}" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="VertFormatting" Value="VertCentred" />
+        </Window>
+        <Window Type="TLBB_ButtonHelp" Name="PetLongzi_Help">
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+            <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+            <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*PetLongzi&quot;);' />
+        </Window>
+        <Window Type="TLBB_ButtonClose" Name="PetLongzi_Close">
+            <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+            <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+            <Event Name="Clicked" Function="PetLongzi_Close();" />
+        </Window>
+        <Window Type="DefaultWindow" Name="PetLongzi_Frame_Client">
+            <Property Name="AbsolutePosition" Value="x:7.000000 y:36.000000" />
+            <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-55.000000}" />
+            <Window Type="TLBB_SelfWindow" Name="PetLongzi_Text">
+                <Property Name="AbsolutePosition" Value="x:0.000000 y:0.000000" />
+                <Property Name="AbsoluteSize" Value="w:0.000000 h:0.000000" />
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+                <Property Name="VertFormatting" Value="VertCentred" />
+                <Property Name="RiseOnClick" Value="False" />
+                <Property Name="MaxWidth" Value="336" />
+                <Property Name="MinHeight" Value="60" />
+		            <Property Name="TextColor" Value="FFFFF263" />
+            </Window>
+            <Window Type="TLBB_ButtonCommon" Name="PetLongzi_OK1">
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}" />
+                <Property Name="AbsoluteSize" Value="w:80.000000 h:20.000000" />
+                <Property Name="Text" Value="" />
+                <Event Name="Clicked" Function="PetLongzi_Select(1);" />
+            </Window>
+          <Window Type="TLBB_ButtonCommon" Name="PetLongzi_OK2">
+            <Property Name="UnifiedPosition" Value="{{0.000000,85.000000},{1.000000,-20.000000}" />
+            <Property Name="AbsoluteSize" Value="w:80.000000 h:20.000000" />
+            <Property Name="Text" Value="" />
+            <Property Name="Visible" Value="False" />
+            <Event Name="Clicked" Function="PetLongzi_Select(2);" />
+          </Window>
+          <Window Type="TLBB_ButtonCommon" Name="PetLongzi_OK3">
+            <Property Name="UnifiedPosition" Value="{{0.000000,171.000000},{1.000000,-20.000000}" />
+            <Property Name="AbsoluteSize" Value="w:80.000000 h:20.000000" />
+            <Property Name="Text" Value="" />
+            <Property Name="Visible" Value="False" />
+            <Event Name="Clicked" Function="PetLongzi_Select(3);" />
+          </Window>
+          <Window Type="TLBB_ButtonCommon" Name="PetLongzi_OK4">
+                <Property Name="UnifiedPosition" Value="{{1.000000,-80.000000},{1.000000,-20.000000}" />
+                <Property Name="AbsoluteSize" Value="w:80.000000 h:20.000000" />
+                <Property Name="Text" Value="" />
+                <Event Name="Clicked" Function="PetLongzi_Select(4);" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

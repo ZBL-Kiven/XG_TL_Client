@@ -1,0 +1,352 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="TreasureBox_AwardPreview_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,520.000000},{0.000000,556.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-260.000000},{0.500000,-278.000000}}"/>
+    <Event Name="Hidden" Function="TreasureBox_AwardPreview_OnHiden();" />
+    <Window Type="TLBB_ButtonClose" Name="TreasureBox_AwardPreview_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-72.000000},{0.000000,24.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Event Name="Clicked" Function="TreasureBox_AwardPreview_OnClose();" />
+    </Window>
+    <Window Type="TLBB_DragTitle" Name="TreasureBox_AwardPreview_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-238.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,129.000000},{0.000000,19.000000}}"/>
+      <Property Name="DragTarget" Value="TreasureBox_AwardPreview_Frame" />
+      <Window Type="TLBB_SimpleText" Name="TreasureBox_AwardPreview_Title">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="Font" Value="YouYuan11.25" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="Text" Value="#gff0fa0CD-KEY抽奖"/>
+      </Window>
+    </Window>
+    <Window Type="TLBB_MainFrame16" Name="TreasureBox_AwardPreview_Client">
+      <Property Name="UnifiedSize" Value="{{0.000000,410.000000},{0.000000,480.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,19.000000}}"/>
+      <Window Type="TLBB_Frame_Lace36" Name="TreasureBox_AwardPreview_ClientBK">
+        <Property Name="UnifiedSize" Value="{{1.000000,-15.000000},{1.000000,-27.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,21.000000}}"/>
+        <Property Name="RiseOnClick" Value="False" />
+        <Window Type="TLBB_Lace_Q1_AwardsBK7" Name="TreasureBox_AwardPreview_BK">
+          <Property Name="UnifiedSize" Value="{{0.000000,66.000000},{1.000000,-44.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,18.000000},{0.000000,18.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+        </Window>
+        <!-- <Window Type="TLBB_Lace_Q1_AwardsBK2" Name="TreasureBox_AwardPreview_BK2"> -->
+          <!-- <Property Name="UnifiedSize" Value="{{1.000000,-106.000000},{0.000000,70.000000}}"/> -->
+          <!-- <Property Name="UnifiedPosition" Value="{{0.000000,84.000000},{0.000000,48.000000}}"/> -->
+          <!-- <Property Name="RiseOnClick" Value="False"/> -->
+        <!-- </Window> -->
+        <Window Type="TLBB_Lace_Q1_AwardsBK2" Name="TreasureBox_AwardPreview_BK3">
+          <Property Name="UnifiedSize" Value="{{1.000000,-40.000000},{0.000000,279.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,18.000000},{0.000000,146.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+        </Window>
+        <Window Type="TLBB_Frame_Lace31" Name="TreasureBox_AwardPreview_InfoBK">
+          <Property Name="UnifiedSize" Value="{{1.000000,-40.000000},{0.000000,28.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_SimpleText" Name="TreasureBox_AwardPreview_InfoText">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-2.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,2.000000}}"/>
+            <Property Name="Text" Value="#cFF0000输入CD—KEY即可参与抽奖"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="VertFormatting" Value="VertCentred" />
+          </Window>
+        </Window>
+            <Window Type="TLBB_EditBoxNormal" Name="TreasureBox_AwardPreview_Input">
+                <Property Name="UnifiedPosition" Value="{{0.500000,-100.000000},{0.000000,60.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,19.000000}" />
+                <Property Name="ValidationString" Value="[0-9a-zA-Z-]*" />
+                <Property Name="MaxTextLength" Value="14" />
+                <Property Name="Text" Value="" />
+            </Window>	
+			<Window Type="TLBB_ButtonCommon" Name="TreasureBox_AwardPreview_InputOK">
+                <Property Name="UnifiedPosition" Value="{{0.500000,-90.000000},{0.000000,90.000000}" />
+                <Property Name="AbsoluteSize" Value="w:80.000000 h:20.000000" />
+                <Property Name="Text" Value="使用CDK抽奖" />
+                <Event Name="Clicked" Function="TreasureBox_AwardPreview_InputOK()" />
+            </Window>	  		
+			<Window Type="TLBB_ButtonCommon" Name="TreasureBox_AwardPreview_InputOK1">
+                <Property Name="UnifiedPosition" Value="{{0.500000,10.000000},{0.000000,90.000000}" />
+                <Property Name="AbsoluteSize" Value="w:80.000000 h:20.000000" />
+                <Property Name="Text" Value="用抽奖券抽奖" />
+                <Event Name="Clicked" Function="TreasureBox_AwardPreview_InputOK_test()" />
+            </Window>	  		
+        <Window Type="TLBB_Frame_Lace31" Name="TreasureBox_AwardPreview_Info2BK">
+          <Property Name="UnifiedSize" Value="{{1.000000,-40.000000},{0.000000,28.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,118.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_SimpleText" Name="TreasureBox_AwardPreview_Info2Text">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-2.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,2.000000}}"/>
+            <Property Name="Text" Value="#G奖池部分物品展示预览（数字为一次奖励多少个）"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="VertFormatting" Value="VertCentred" />
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="TreasureBox_AwardPreview_Page2">
+          <Property Name="UnifiedSize" Value="{{1.000000,-40.000000},{1.000000,-166.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,146.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_Frame_Lace21" Name="TreasureBox_AwardPreview_Page2_Item1">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,70.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Window Type="TLBB_ActionButton" Name="TreasureBox_AwardPreview_Page2_Item1_Icon1">
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.500000,-23.000000}}"/>
+              <Property Name="Tooltip" Value=""/>
+          <Window Type="TLBB_SimpleText" Name="TreasureBox_AwardPreview_Page2_Item1_Icon1_txt">
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,26.000000},{0.000000,26.000000}}"/>
+            <Property Name="Text" Value=""/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+          </Window>				  
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="TreasureBox_AwardPreview_Page2_Item1_Icon2">
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,80.000000},{0.500000,-23.000000}}"/>
+              <Property Name="Tooltip" Value=""/>
+          <Window Type="TLBB_SimpleText" Name="TreasureBox_AwardPreview_Page2_Item1_Icon2_txt">
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,26.000000},{0.000000,26.000000}}"/>
+            <Property Name="Text" Value=""/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+          </Window>				  
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="TreasureBox_AwardPreview_Page2_Item1_Icon3">
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,150.000000},{0.500000,-23.000000}}"/>
+              <Property Name="Tooltip" Value=""/>
+          <Window Type="TLBB_SimpleText" Name="TreasureBox_AwardPreview_Page2_Item1_Icon3_txt">
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,26.000000},{0.000000,26.000000}}"/>
+            <Property Name="Text" Value=""/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+          </Window>				  
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="TreasureBox_AwardPreview_Page2_Item1_Icon4">
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,220.000000},{0.500000,-23.000000}}"/>
+              <Property Name="Tooltip" Value=""/>
+          <Window Type="TLBB_SimpleText" Name="TreasureBox_AwardPreview_Page2_Item1_Icon4_txt">
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,26.000000},{0.000000,26.000000}}"/>
+            <Property Name="Text" Value=""/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+          </Window>				  
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="TreasureBox_AwardPreview_Page2_Item1_Icon5">
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,290.000000},{0.500000,-23.000000}}"/>
+              <Property Name="Tooltip" Value=""/>
+          <Window Type="TLBB_SimpleText" Name="TreasureBox_AwardPreview_Page2_Item1_Icon5_txt">
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,26.000000},{0.000000,26.000000}}"/>
+            <Property Name="Text" Value=""/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+          </Window>				  
+            </Window>
+          </Window>
+          <Window Type="TLBB_Frame_Lace21" Name="TreasureBox_AwardPreview_Page2_Item2">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,70.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,70.000000}}"/>
+            <Window Type="TLBB_ActionButton" Name="TreasureBox_AwardPreview_Page2_Item2_Icon1">
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.500000,-23.000000}}"/>
+              <Property Name="Tooltip" Value=""/>
+          <Window Type="TLBB_SimpleText" Name="TreasureBox_AwardPreview_Page2_Item2_Icon1_txt">
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,26.000000},{0.000000,26.000000}}"/>
+            <Property Name="Text" Value=""/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+          </Window>			  
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="TreasureBox_AwardPreview_Page2_Item2_Icon2">
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,80.000000},{0.500000,-23.000000}}"/>
+              <Property Name="Tooltip" Value=""/>
+          <Window Type="TLBB_SimpleText" Name="TreasureBox_AwardPreview_Page2_Item2_Icon2_txt">
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,26.000000},{0.000000,26.000000}}"/>
+            <Property Name="Text" Value=""/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+          </Window>					  
+            </Window>            
+			<Window Type="TLBB_ActionButton" Name="TreasureBox_AwardPreview_Page2_Item2_Icon3">
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,150.000000},{0.500000,-23.000000}}"/>
+              <Property Name="Tooltip" Value=""/>
+          <Window Type="TLBB_SimpleText" Name="TreasureBox_AwardPreview_Page2_Item2_Icon3_txt">
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,26.000000},{0.000000,26.000000}}"/>
+            <Property Name="Text" Value=""/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+          </Window>					  
+            </Window>
+			<Window Type="TLBB_ActionButton" Name="TreasureBox_AwardPreview_Page2_Item2_Icon4">
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,220.000000},{0.500000,-23.000000}}"/>
+              <Property Name="Tooltip" Value=""/>
+          <Window Type="TLBB_SimpleText" Name="TreasureBox_AwardPreview_Page2_Item2_Icon4_txt">
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,26.000000},{0.000000,26.000000}}"/>
+            <Property Name="Text" Value=""/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+          </Window>					  
+            </Window>
+			<Window Type="TLBB_ActionButton" Name="TreasureBox_AwardPreview_Page2_Item2_Icon5">
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,290.000000},{0.500000,-23.000000}}"/>
+              <Property Name="Tooltip" Value=""/>
+          <Window Type="TLBB_SimpleText" Name="TreasureBox_AwardPreview_Page2_Item2_Icon5_txt">
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,26.000000},{0.000000,26.000000}}"/>
+            <Property Name="Text" Value=""/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+          </Window>					  
+            </Window>
+          </Window>
+          <Window Type="TLBB_Frame_Lace21" Name="TreasureBox_AwardPreview_Page2_Item3">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,70.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,140.000000}}"/>
+            <Window Type="TLBB_ActionButton" Name="TreasureBox_AwardPreview_Page2_Item3_Icon1">
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,12.000000}}"/>
+              <Property Name="Tooltip" Value=""/>
+          <Window Type="TLBB_SimpleText" Name="TreasureBox_AwardPreview_Page2_Item3_Icon1_txt">
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,26.000000},{0.000000,26.000000}}"/>
+            <Property Name="Text" Value=""/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+          </Window>			  
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="TreasureBox_AwardPreview_Page2_Item3_Icon2">
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,80.000000},{0.000000,12.000000}}"/>
+              <Property Name="Tooltip" Value=""/>
+          <Window Type="TLBB_SimpleText" Name="TreasureBox_AwardPreview_Page2_Item3_Icon2_txt">
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,26.000000},{0.000000,26.000000}}"/>
+            <Property Name="Text" Value=""/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+          </Window>				  
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="TreasureBox_AwardPreview_Page2_Item3_Icon3">
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,150.000000},{0.000000,12.000000}}"/>
+              <Property Name="Tooltip" Value=""/>
+          <Window Type="TLBB_SimpleText" Name="TreasureBox_AwardPreview_Page2_Item3_Icon3_txt">
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,26.000000},{0.000000,26.000000}}"/>
+            <Property Name="Text" Value=""/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+          </Window>				  
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="TreasureBox_AwardPreview_Page2_Item3_Icon4">
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,220.000000},{0.000000,12.000000}}"/>
+              <Property Name="Tooltip" Value=""/>
+          <Window Type="TLBB_SimpleText" Name="TreasureBox_AwardPreview_Page2_Item3_Icon4_txt">
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,26.000000},{0.000000,26.000000}}"/>
+            <Property Name="Text" Value=""/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+          </Window>				  
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="TreasureBox_AwardPreview_Page2_Item3_Icon5">
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,290.000000},{0.000000,12.000000}}"/>
+              <Property Name="Tooltip" Value=""/>
+          <Window Type="TLBB_SimpleText" Name="TreasureBox_AwardPreview_Page2_Item3_Icon5_txt">
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,26.000000},{0.000000,26.000000}}"/>
+            <Property Name="Text" Value=""/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+          </Window>				  
+            </Window>
+          </Window>
+          <Window Type="TLBB_Frame_Lace21" Name="TreasureBox_AwardPreview_Page2_Item4">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,70.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,210.000000}}"/>
+            <Window Type="TLBB_ActionButton" Name="TreasureBox_AwardPreview_Page2_Item4_Icon1">
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.500000,-23.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="TreasureBox_AwardPreview_Page2_Item4_Icon1_txt">
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,26.000000},{0.000000,26.000000}}"/>
+            <Property Name="Text" Value=""/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+          </Window>				  
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="TreasureBox_AwardPreview_Page2_Item4_Icon2">
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,80.000000},{0.500000,-23.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="TreasureBox_AwardPreview_Page2_Item4_Icon2_txt">
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,26.000000},{0.000000,26.000000}}"/>
+            <Property Name="Text" Value=""/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+          </Window>					  
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="TreasureBox_AwardPreview_Page2_Item4_Icon3">
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,150.000000},{0.500000,-23.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="TreasureBox_AwardPreview_Page2_Item4_Icon3_txt">
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,26.000000},{0.000000,26.000000}}"/>
+            <Property Name="Text" Value=""/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+          </Window>					  
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="TreasureBox_AwardPreview_Page2_Item4_Icon4">
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,220.000000},{0.500000,-23.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="TreasureBox_AwardPreview_Page2_Item4_Icon4_txt">
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,26.000000},{0.000000,26.000000}}"/>
+            <Property Name="Text" Value=""/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+          </Window>			  
+            </Window>	
+            <Window Type="TLBB_ActionButton" Name="TreasureBox_AwardPreview_Page2_Item4_Icon5">
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,290.000000},{0.500000,-23.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="TreasureBox_AwardPreview_Page2_Item4_Icon5_txt">
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,26.000000},{0.000000,26.000000}}"/>
+            <Property Name="Text" Value=""/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+          </Window>					  
+            </Window>			
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

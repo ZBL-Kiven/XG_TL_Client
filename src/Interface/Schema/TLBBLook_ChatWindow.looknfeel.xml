@@ -1,0 +1,828 @@
+<?xml version="1.0" ?>
+<Falagard>
+  <!--
+	  ***************************************************
+                  TLBB_Look_ChatWindow
+    ***************************************************
+    -->
+  <WidgetLook name="TLBB_Look_ChatWindow">
+	  <Property name="ClippedByParent" value="False" />
+	  <Property name="FrameEnabled" value="True" />
+	  <Property name="BackgroundEnabled" value="True" />
+	  <Property name="Visible" value="False" />
+	  <StateImagery name="Enabled" />
+	  <StateImagery name="Disabled" />
+    <StateImagery name="EnabledFrame">
+      <Layer>
+        <Section look="TLBB_Look_Common" section="Main_Frame_Type1" />
+      </Layer>
+	  </StateImagery>
+    <StateImagery name="DisabledFrame" >
+      <Layer>
+        <Section look="TLBB_Look_Common" section="Main_Frame_Type1" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="EnabledBackground">
+      <Layer>
+        <Section look="TLBB_Look_Common" section="Background_Type1" />
+        <Section look="TLBB_Look_Common" section="Main_Frame_Back_Type1" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="DisabledBackground" >
+      <Layer>
+        <Section look="TLBB_Look_Common" section="Background_Type1" />
+        <Section look="TLBB_Look_Common" section="Main_Frame_Back_Type1" />
+      </Layer>
+     </StateImagery>
+    <Child type="TLBB_DragTitle" nameSuffix="__auto_Dragtitle__">
+      <Property name="HorzFormatting" value="HorzCentred" />
+      <Property name="VertFormatting" value="VertCentred" />
+      <Property name="Text" value="#{LTQH_XML_89}" />
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="25" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="11" />
+        </Dim>
+        <Dim type="Width">
+          <UnifiedDim scale="1.0" type="Width" offset="-72" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="20" />
+        </Dim>
+      </Area>
+    </Child>
+	  <Child type="TLBB_ButtonHelp" nameSuffix="__auto_Help__">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="5" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="14" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="14" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="14" />
+        </Dim>
+      </Area>
+    </Child>
+
+    <Child type="TLBB_ButtonNULL" nameSuffix="__auto_Mini__">
+      <Property name="NormalImage" value="set:Button8 image:Minibtn_Normal" />
+      <Property name="HoverImage" value="set:Button8 image:Minibtn_Hover" />
+      <Property name="PushedImage" value="set:Button8 image:Minibtn_Pushed" />
+      <Property name="DisabledImage" value="set:Button8 image:Minibtn_Disabled" />
+      <Area>
+        <Dim type="LeftEdge">
+          <UnifiedDim scale="1.0" type="Width" offset="-40" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="12" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="18" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="18" />
+        </Dim>
+      </Area>
+    </Child>
+    
+    <Child type="TLBB_ButtonClose" nameSuffix="__auto_Close__">
+      <Area>
+        <Dim type="LeftEdge">
+          <UnifiedDim scale="1.0" type="Width" offset="-19" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="14" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="14" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="14" />
+        </Dim>
+      </Area>
+    </Child>
+    
+    <Child type="TLBB_StaticImageFrame" nameSuffix="__auto_Icon__">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="9" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="39" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="57" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="57" />
+        </Dim>
+      </Area>
+    </Child>
+    
+    <Child type="TLBB_SimpleMulitiTextFrame" nameSuffix="__auto_Name__">
+      <Property name="HorzFormatting" value="LeftAligned"/>
+      <Property name="VertFormatting" value="VertCentred"/>
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="72" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="37" />
+        </Dim>
+        <Dim type="Width">
+          <UnifiedDim scale="1.0" type="Width" offset="-79" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="20" />
+        </Dim>
+      </Area>
+    </Child>
+
+    <Child type="TLBB_SimpleMulitiTextFrame" nameSuffix="__auto_Feeling__">
+      <Property name="HorzFormatting" value="LeftAligned"/>
+      <Property name="VertFormatting" value="VertCentred"/>
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="72" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="58" />
+        </Dim>
+        <Dim type="Width">
+          <UnifiedDim scale="1.0" type="Width" offset="-79" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="20" />
+        </Dim>
+      </Area>
+    </Child>
+    
+    <Child type="TLBB_ButtonCommon" nameSuffix="__auto_JuBao__">
+      <!--<Property name="TextColor" value="#cff0000"/>-->
+      <Property name="Text" value="#{LTQH_XML_28}" />
+      <Property name="Disabled" value="True" />
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="72" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="79" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="55" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="20" />
+        </Dim>
+      </Area>
+    </Child>
+
+    <Child type="TLBB_ButtonCommon" nameSuffix="__auto_View__">
+      <Property name="Text" value="#{LTQH_XML_29}" />
+      <Area>
+        <Dim type="LeftEdge">
+          <UnifiedDim scale="1.0" type="Width" offset="-146" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="79" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="68" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="20" />
+        </Dim>
+      </Area>
+    </Child>
+
+    <Child type="TLBB_ButtonCommon" nameSuffix="__auto_History__">
+      <Property name="Text" value="#{LTQH_XML_30}" />
+      <Area>
+        <Dim type="LeftEdge">
+          <UnifiedDim scale="1.0" type="Width" offset="-75" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="79" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="68" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="20" />
+        </Dim>
+      </Area>
+    </Child>
+
+    <Child type="TLBB_Frame_Lace1" nameSuffix="__auto_ContentBK__">
+      <Property name="RiseOnClick" value="False"/>
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="7" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="101" />
+        </Dim>
+        <Dim type="Width">
+          <UnifiedDim scale="1.0" type="Width" offset="-14" />
+        </Dim>
+        <Dim type="Height">
+          <UnifiedDim scale="1.0" type="Height" offset="-260" />
+        </Dim>
+      </Area>
+    </Child>
+
+    <Child type="TLBB_IMChatHistory" nameSuffix="__auto_Content__">
+		<Property name="ChatBoardNumber" value="60" />
+        <Property name="BoardKillTimer" value="5" />
+		<Area>
+			<Dim type="LeftEdge">
+			  <AbsoluteDim value="12" />
+			</Dim>
+			<Dim type="TopEdge">
+			  <AbsoluteDim value="102" />
+			</Dim>
+			<Dim type="Width">
+			  <UnifiedDim scale="1.0" type="Width" offset="-20" />
+			</Dim>
+			<Dim type="Height">
+			  <UnifiedDim scale="1.0" type="Height" offset="-262" />
+			</Dim>
+		</Area>
+    </Child>
+    
+
+    <Child type="TLBB_MultiIMEEditBox" nameSuffix="__auto_EditArea__">
+      <Property name="VertScrollbar" value="True"/>
+	  <Property name="MaxTextLength" value="200"/>
+	  <Property name="DisableCopyPaste" value="True"/>
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="7" />
+        </Dim>
+        <Dim type="TopEdge">
+          <UnifiedDim scale="1.0" type="Height" offset="-159" />
+        </Dim>
+        <Dim type="Width">
+          <UnifiedDim scale="1.0" type="Width" offset="-15" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="118" />
+        </Dim>
+      </Area>
+    </Child>
+
+    <Child type="TLBB_ButtonCommon" nameSuffix="__auto_Clean__">
+      <Property name="Text" value="#{LTQH_XML_31}" />
+      <Area>
+        <Dim type="LeftEdge">
+          <UnifiedDim scale="1.0" type="Width" offset="-147" />
+        </Dim>
+        <Dim type="TopEdge">
+          <UnifiedDim scale="1.0" type="Height" offset="-39" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="68" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="20" />
+        </Dim>
+      </Area>
+    </Child>
+
+    <Child type="TLBB_ButtonCommon" nameSuffix="__auto_Send__">
+      <Property name="Text" value="#{LTQH_XML_32}" />
+      <Property name="Tooltip" value="#{LTQH_XML_106}" />
+      <Area>
+        <Dim type="LeftEdge">
+          <UnifiedDim scale="1.0" type="Width" offset="-77" />
+        </Dim>
+        <Dim type="TopEdge">
+          <UnifiedDim scale="1.0" type="Height" offset="-39" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="68" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="20" />
+        </Dim>
+      </Area>
+    </Child>
+
+    <Child type="TLBB_ButtonNULL" nameSuffix="__auto_Colour__">
+      <Property name="NormalImage" value="set:Button2 image:BtnA_Normal" />
+      <Property name="HoverImage" value="set:Button2 image:BtnA_Hover" />
+      <Property name="PushedImage" value="set:Button2 image:BtnA_Pushed" />
+      <Property name="DisabledImage" value="set:Button2 image:BtnA_Disable" />
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="10" />
+        </Dim>
+        <Dim type="TopEdge">
+          <UnifiedDim scale="1.0" type="Height" offset="-38" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="17" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="17" />
+        </Dim>
+      </Area>
+    </Child>
+
+    <Child type="TLBB_ButtonNULL" nameSuffix="__auto_Face__">
+      <Property name="NormalImage" value="set:Button2 image:BtnFace_Normal" />
+      <Property name="HoverImage" value="set:Button2 image:BtnFace_Hover" />
+      <Property name="PushedImage" value="set:Button2 image:BtnFace_Pushed" />
+      <Property name="DisabledImage" value="set:Button2 image:BtnFace_Disable" />
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="30" />
+        </Dim>
+        <Dim type="TopEdge">
+          <UnifiedDim scale="1.0" type="Height" offset="-38" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="17" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="17" />
+        </Dim>
+      </Area>
+    </Child>
+
+    <Child type="TLBB_Frame_Lace5" nameSuffix="__auto_LaceBK__">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="50" />
+        </Dim>
+        <Dim type="TopEdge">
+          <UnifiedDim scale="1.0" type="Height" offset="-39" />
+        </Dim>
+        <Dim type="Width">
+          <UnifiedDim scale="1.0" type="Width" offset="-199" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="20" />
+        </Dim>
+      </Area>
+    </Child>
+  </WidgetLook>
+
+  <!--
+  ***************************************************
+                   TLBB_Look_MultiChatWindow
+  ***************************************************
+    -->
+  <WidgetLook name="TLBB_Look_MultiChatWindow">
+         <Property name="ClippedByParent" value="False" />
+         <Property name="FrameEnabled" value="True" />
+         <Property name="BackgroundEnabled" value="True" />
+		 <Property name="Visible" value="False" />
+         <StateImagery name="Enabled" />
+         <StateImagery name="Disabled" />
+         <StateImagery name="EnabledFrame">
+           <Layer>
+             <Section look="TLBB_Look_Common" section="Main_Frame_Type1" />
+           </Layer>
+         </StateImagery>
+
+         <StateImagery name="DisabledFrame" >
+           <Layer>
+             <Section look="TLBB_Look_Common" section="Main_Frame_Type1" />
+           </Layer>
+         </StateImagery>
+         <StateImagery name="EnabledBackground">
+           <Layer>
+             <Section look="TLBB_Look_Common" section="Background_Type1" />
+             <Section look="TLBB_Look_Common" section="Main_Frame_Back_Type1" />
+           </Layer>
+         </StateImagery>
+         <StateImagery name="DisabledBackground" >
+           <Layer>
+             <Section look="TLBB_Look_Common" section="Background_Type1" />
+             <Section look="TLBB_Look_Common" section="Main_Frame_Back_Type1" />
+           </Layer>
+         </StateImagery>
+         <Child type="TLBB_DragTitle" nameSuffix="__auto_Dragtitle__">
+           <Property name="HorzFormatting" value="HorzCentred" />
+           <Property name="VertFormatting" value="VertCentred" />
+           <Area>
+             <Dim type="LeftEdge">
+               <AbsoluteDim value="25" />
+             </Dim>
+             <Dim type="TopEdge">
+               <AbsoluteDim value="11" />
+             </Dim>
+             <Dim type="Width">
+               <UnifiedDim scale="1.0" type="Width" offset="-72" />
+             </Dim>
+             <Dim type="Height">
+               <AbsoluteDim value="20" />
+             </Dim>
+           </Area>
+         </Child>
+         <Child type="TLBB_ButtonHelp" nameSuffix="__auto_Help__">
+           <Area>
+             <Dim type="LeftEdge">
+               <AbsoluteDim value="5" />
+             </Dim>
+             <Dim type="TopEdge">
+               <AbsoluteDim value="14" />
+             </Dim>
+             <Dim type="Width">
+               <AbsoluteDim value="14" />
+             </Dim>
+             <Dim type="Height">
+               <AbsoluteDim value="14" />
+             </Dim>
+           </Area>
+         </Child>
+
+      <Child type="TLBB_ButtonNULL" nameSuffix="__auto_Mini__">
+        <Property name="NormalImage" value="set:Button8 image:Minibtn_Normal" />
+        <Property name="HoverImage" value="set:Button8 image:Minibtn_Hover" />
+        <Property name="PushedImage" value="set:Button8 image:Minibtn_Pushed" />
+        <Property name="DisabledImage" value="set:Button8 image:Minibtn_Disabled" />
+        <Area>
+          <Dim type="LeftEdge">
+            <UnifiedDim scale="1.0" type="Width" offset="-40" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="12" />
+          </Dim>
+          <Dim type="Width">
+            <AbsoluteDim value="18" />
+          </Dim>
+          <Dim type="Height">
+            <AbsoluteDim value="18" />
+          </Dim>
+        </Area>
+      </Child>
+      
+      <Child type="TLBB_ButtonClose" nameSuffix="__auto_Close__">
+           <Area>
+             <Dim type="LeftEdge">
+               <UnifiedDim scale="1.0" type="Width" offset="-19" />
+             </Dim>
+             <Dim type="TopEdge">
+               <AbsoluteDim value="14" />
+             </Dim>
+             <Dim type="Width">
+               <AbsoluteDim value="14" />
+             </Dim>
+             <Dim type="Height">
+               <AbsoluteDim value="14" />
+             </Dim>
+           </Area>
+         </Child>
+      <Child type="TLBB_Frame_Lace1" nameSuffix="__auto_ContentBK__">
+        <Property name="RiseOnClick" value="False"/>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="6" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="36" />
+          </Dim>
+          <Dim type="Width">
+            <UnifiedDim scale="1.0" type="Width" offset="-187" />
+          </Dim>
+          <Dim type="Height">
+            <UnifiedDim scale="1.0" type="Height" offset="-218" />
+          </Dim>
+        </Area>
+      </Child>
+
+      <Child type="TLBB_IMChatHistory" nameSuffix="__auto_Content__">
+        <Property name="ChatBoardNumber" value="60" />
+        <Property name="BoardKillTimer" value="5" />
+        <Property name="MouseLButtonHollow" value="True" />
+		<Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="11" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="37" />
+          </Dim>
+          <Dim type="Width">
+            <UnifiedDim scale="1.0" type="Width" offset="-193" />
+          </Dim>
+          <Dim type="Height">
+            <UnifiedDim scale="1.0" type="Height" offset="-220" />
+          </Dim>
+        </Area>
+      </Child>
+      
+      <Child type="TLBB_SimpleMulitiTextFrame" nameSuffix="__auto_BK__">
+        <Property name="RiseOnClick" value="False"/>
+        <Area>
+          <Dim type="LeftEdge">
+            <UnifiedDim scale="1.0" type="Width" offset="-181" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="36" />
+          </Dim>
+          <Dim type="Width">
+            <AbsoluteDim value="176" />
+          </Dim>
+          <Dim type="Height">
+            <UnifiedDim scale="1.0" type="Height" offset="-54" />
+          </Dim>
+        </Area>
+      </Child>
+
+      <Child type="TLBB_ButtonCommon" nameSuffix="__auto_History__">
+        <Property name="Text" value="#{LTQH_XML_30}" />
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="6" />
+          </Dim>
+          <Dim type="TopEdge">
+            <UnifiedDim scale="1.0" type="Height" offset="-181" />
+          </Dim>
+          <Dim type="Width">
+            <AbsoluteDim value="68" />
+          </Dim>
+          <Dim type="Height">
+            <AbsoluteDim value="20" />
+          </Dim>
+        </Area>
+      </Child>
+
+      <Child type="TLBB_ButtonCommon" nameSuffix="__auto_Refuse__">
+        <Property name="Text" value="#{LTQH_XML_33}" />
+        <Area>
+          <Dim type="LeftEdge">
+            <UnifiedDim scale="1.0" type="Width" offset="-321" />
+          </Dim>
+          <Dim type="TopEdge">
+            <UnifiedDim scale="1.0" type="Height" offset="-181" />
+          </Dim>
+          <Dim type="Width">
+            <AbsoluteDim value="68" />
+          </Dim>
+          <Dim type="Height">
+            <AbsoluteDim value="20" />
+          </Dim>
+        </Area>
+      </Child>
+
+      <Child type="TLBB_ButtonCommon" nameSuffix="__auto_Invite__">
+        <Property name="Text" value="#{LTQH_XML_34}" />
+        <Area>
+          <Dim type="LeftEdge">
+            <UnifiedDim scale="1.0" type="Width" offset="-249" />
+          </Dim>
+          <Dim type="TopEdge">
+            <UnifiedDim scale="1.0" type="Height" offset="-181" />
+          </Dim>
+          <Dim type="Width">
+            <AbsoluteDim value="68" />
+          </Dim>
+          <Dim type="Height">
+            <AbsoluteDim value="20" />
+          </Dim>
+        </Area>
+      </Child>
+
+      <Child type="TLBB_MultiIMEEditBox" nameSuffix="__auto_EditArea__">
+        <Property name="VertScrollbar" value="True"/>
+        <Property name="MaxTextLength" value="200"/>
+		<Property name="DisableCopyPaste" value="True"/>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="6" />
+          </Dim>
+          <Dim type="TopEdge">
+            <UnifiedDim scale="1.0" type="Height" offset="-160" />
+          </Dim>
+          <Dim type="Width">
+            <UnifiedDim scale="1.0" type="Width" offset="-188" />
+          </Dim>
+          <Dim type="Height">
+            <AbsoluteDim value="118" />
+          </Dim>
+        </Area>
+      </Child>
+      
+      <Child type="TLBB_ButtonCommon" nameSuffix="__auto_Clean__">
+			<Property name="Text" value="#{LTQH_XML_31}"/>
+		  <Area>
+			<Dim type="LeftEdge">
+			  <UnifiedDim scale="1.0" type="Width" offset="-319" />
+			</Dim>
+			<Dim type="TopEdge">
+			  <UnifiedDim scale="1.0" type="Height" offset="-39" />
+			</Dim>
+			<Dim type="Width">
+			  <AbsoluteDim value="68" />
+			</Dim>
+			<Dim type="Height">
+			  <AbsoluteDim value="20" />
+			</Dim>
+		  </Area>
+		</Child>
+
+    <Child type="TLBB_ButtonCommon" nameSuffix="__auto_Send__">
+      <Property name="Text" value="#{LTQH_XML_32}" />
+      <Property name="Tooltip" value="#{LTQH_XML_106}" />
+      <Area>
+        <Dim type="LeftEdge">
+          <UnifiedDim scale="1.0" type="Width" offset="-249" />
+        </Dim>
+        <Dim type="TopEdge">
+          <UnifiedDim scale="1.0" type="Height" offset="-39" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="68" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="20" />
+        </Dim>
+      </Area>
+    </Child>
+
+    <Child type="TLBB_ButtonNULL" nameSuffix="__auto_Colour__">
+      <Property name="NormalImage" value="set:Button2 image:BtnA_Normal" />
+      <Property name="HoverImage" value="set:Button2 image:BtnA_Hover" />
+      <Property name="PushedImage" value="set:Button2 image:BtnA_Pushed" />
+      <Property name="DisabledImage" value="set:Button2 image:BtnA_Disable" />
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="10" />
+        </Dim>
+        <Dim type="TopEdge">
+          <UnifiedDim scale="1.0" type="Height" offset="-38" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="17" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="17" />
+        </Dim>
+      </Area>
+    </Child>
+
+    <Child type="TLBB_ButtonNULL" nameSuffix="__auto_Face__">
+      <Property name="NormalImage" value="set:Button2 image:BtnFace_Normal" />
+      <Property name="HoverImage" value="set:Button2 image:BtnFace_Hover" />
+      <Property name="PushedImage" value="set:Button2 image:BtnFace_Pushed" />
+      <Property name="DisabledImage" value="set:Button2 image:BtnFace_Disable" />
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="30" />
+        </Dim>
+        <Dim type="TopEdge">
+          <UnifiedDim scale="1.0" type="Height" offset="-38" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="17" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="17" />
+        </Dim>
+      </Area>
+    </Child>
+
+    <Child type="TLBB_Frame_Lace5" nameSuffix="__auto_LaceBK__">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="50" />
+        </Dim>
+        <Dim type="TopEdge">
+          <UnifiedDim scale="1.0" type="Height" offset="-39" />
+        </Dim>
+        <Dim type="Width">
+          <UnifiedDim scale="1.0" type="Width" offset="-371" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="20" />
+        </Dim>
+      </Area>
+    </Child>
+
+      <Child type="TLBB_SimpleText" nameSuffix="__auto_Explain__">
+        <Property name="HorzFormatting" value="LeftAligned" />
+        <Property name="VertFormatting" value="VertCentred" />
+        <Property name="Text" value="#{LTQH_XML_35}" />
+        <Property name="TextColor" value="FFFFF263" />
+        <Area>
+          <Dim type="LeftEdge">
+            <UnifiedDim scale="1.0" type="Width" offset="-172" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="45" />
+          </Dim>
+          <Dim type="Width">
+            <AbsoluteDim value="80" />
+          </Dim>
+          <Dim type="Height">
+            <AbsoluteDim value="20" />
+          </Dim>
+        </Area>
+      </Child>
+
+      <Child type="TLBB_ButtonCommon" nameSuffix="__auto_JuBao__">
+        <!--<Property name="TextColor" value="#cff0000"/>-->
+        <Property name="Disabled" value="True" />
+        <Property name="Text" value="#{LTQH_XML_28}" />
+        <Area>
+          <Dim type="LeftEdge">
+            <UnifiedDim scale="1.0" type="Width" offset="-82" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="45" />
+          </Dim>
+          <Dim type="Width">
+            <AbsoluteDim value="68" />
+          </Dim>
+          <Dim type="Height">
+            <AbsoluteDim value="20" />
+          </Dim>
+        </Area>
+      </Child>
+
+      <Child type="TLBB_Frame_Lace1" nameSuffix="__auto_BK2__">
+        <Property name="RiseOnClick" value="False"/>
+        <Area>
+          <Dim type="LeftEdge">
+            <UnifiedDim scale="1.0" type="Width" offset="-172" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="71" />
+          </Dim>
+          <Dim type="Width">
+            <AbsoluteDim value="160" />
+          </Dim>
+          <Dim type="Height">
+            <AbsoluteDim value="100" />
+          </Dim>
+        </Area>
+      </Child>
+
+      <Child type="TLBB_ComplexWindow" nameSuffix="__auto_Notice__">
+        <Property name="HorzFormatting" value="WordWrapLeftAligned" />
+        <Property name="VertFormatting" value="TopAligned" />
+        <Property name="TextColor" value="FFFFF263" />
+        <Area>
+          <Dim type="LeftEdge">
+            <UnifiedDim scale="1.0" type="Width" offset="-166" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="77" />
+          </Dim>
+          <Dim type="Width">
+            <AbsoluteDim value="148" />
+          </Dim>
+          <Dim type="Height">
+            <AbsoluteDim value="88" />
+          </Dim>
+        </Area>
+      </Child>
+
+      <Child type="TLBB_SimpleText" nameSuffix="__auto_Explain2__">
+        <Property name="HorzFormatting" value="LeftAligned" />
+        <Property name="VertFormatting" value="VertCentred" />
+        <Property name="TextColor" value="FFFFF263" />
+        <Area>
+          <Dim type="LeftEdge">
+            <UnifiedDim scale="1.0" type="Width" offset="-172" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="163" />
+          </Dim>
+          <Dim type="Width">
+            <AbsoluteDim value="80" />
+          </Dim>
+          <Dim type="Height">
+            <AbsoluteDim value="20" />
+          </Dim>
+        </Area>
+      </Child>
+
+      <Child type="TLBB_ListBoxCommon" nameSuffix="__auto_Members__">
+        <Property name="VertScrollbar" value="True"/>
+        <Area>
+          <Dim type="LeftEdge">
+            <UnifiedDim scale="1.0" type="Width" offset="-172" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="185" />
+          </Dim>
+          <Dim type="Width">
+            <AbsoluteDim value="160" />
+          </Dim>
+          <Dim type="Height">
+            <UnifiedDim scale="1.0" type="Height" offset="-210" />
+          </Dim>
+        </Area>
+      </Child>
+      
+    </WidgetLook>
+</Falagard>

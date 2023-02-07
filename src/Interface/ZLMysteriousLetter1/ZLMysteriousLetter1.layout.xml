@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<GUILayout>
+    <Window Type="DefaultWindow" Name="ZLMysteriousLetter1_Frame">
+      <Property Name="UnifiedSize" Value="{{0.000000,528.000000},{0.000000,368.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-264.000000},{0.500000,-184.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>     
+        <Event Name="Hidden" Function="ZLMysteriousLetter1_Frame_OnHiden();" />
+        <Window Type="TLBB_DragTitle" Name="ZLMysteriousLetter1_DragTitle">
+            <Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
+            <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+            <Property Name="DragTarget" Value="ZLMysteriousLetter1_Frame" />
+        </Window>
+        <Window Type="TLBB_ButtonClose" Name="ZLMysteriousLetter1_Close">
+          <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-28.000000},{0.000000,10.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="Clicked" Function="ZLMysteriousLetter1_Hide();" />
+        </Window>
+      <Window Type="DefaultWindow" Name="ZLMysteriousLetter1_background_Frame">
+        <Property Name="UnifiedSize" Value="{{0.000000,528.000000},{0.000000,368.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Window Type="TLBB_StaticImageNULL" Name="ZLMysteriousLetter1_background1">
+          <Property Name="UnifiedSize" Value="{{0.000000,512.000000},{0.000000,368.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:ZLLetter6 image:ZLLetter_mihan1_1"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="ZLMysteriousLetter1_background2">
+          <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,368.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,512.000000},{0.000000,0.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:ZLLetter2 image:ZLLetter_mihan1_2"/>
+        </Window>
+      </Window>
+        <Window Type="DefaultWindow" Name="ZLMysteriousLetter1_Function_Frame">
+            <Property Name="AbsolutePosition" Value="x:6.000000 y:36.000000" />
+            <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-55.000000}" />
+            <Window Type="TLBB_ButtonCommon" Name="ZLMysteriousLetter1_GotoBtn">
+              <Property Name="UnifiedSize" Value="{{0.000000,72.000000},{0.000000,26.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-86.000000},{1.000000,-32.000000}}"/>
+                <Property Name="Text" Value="已阅" />
+              <Property Name="AlwaysOnTop" Value="True"/>
+                <Event Name="Clicked" Function="ZLMysteriousLetter1_Clicked()" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

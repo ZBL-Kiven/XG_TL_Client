@@ -1,0 +1,158 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame1" Name="DWRonghe_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,322.000000},{0.000000,458.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-130.000000},{0.500000,-229.000000}}"/>
+    <Event Name="Hidden" Function="DWRonghe_OnHiden();" />
+    <Window Type="TLBB_DragTitle" Name="DWRonghe_DragTitle">
+      <Property Name="AbsolutePosition" Value="x:40.000000 y:4.000000" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}" />
+      <Property Name="DragTarget" Value="DWRonghe_Frame" />
+      <Window Type="TLBB_SimpleText" Name="DWRonghe_Title">
+        <Property Name="Position" Value="x:0.0 y:0.0" />
+        <Property Name="Size" Value="w:1.0 h:1.0" />
+        <Property Name="Font" Value="YouYuan11.25" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="Text" Value="#{SSXDW_140819_33}" />
+      </Window>
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="DWRonghe_Close">
+      <Property Name="UnifiedPosition" Value="{{1.000000,5.000000},{0.000000,14.000000}" />
+      <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+      <Property Name="Text" Value="TLBB_ButtonHelp" />
+      <Event Name="Clicked" Function="DWRonghe_Close();"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="DWRonghe_Frame_Client">
+      <Property Name="AbsolutePosition" Value="x:7.000000 y:32.000000" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{1.000000,-41.000000}" />
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="DWRonghe_Explain1">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-265.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="Text" Value="#{SSXDW_140819_34}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="DWRonghe_Explain2">
+        <Property Name="UnifiedSize" Value="{{0.650000,90.000000},{0.000000,40.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{1.000000,-252.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="DWRonghe_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,16.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{1.000000,-28.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="Text" Value="#{SSXDW_140819_35}" />
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="DWRonghe_Item">
+          <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,235.000000},{1.000000,-37.000000}}"/>
+          <Property Name="DraggingEnabled" Value="True" />
+          <Property Name="DragAcceptName" Value="G163" />
+          <Event Name="RBClicked" Function="DWRonghe_Resume_Equip(163);"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="DWRonghe_Explain3">
+        <Property Name="UnifiedSize" Value="{{0.650000,90.000000},{0.000000,40.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{1.000000,-198.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="DWRonghe_Text1">
+          <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,16.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{1.000000,-28.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="Text" Value="#{SSXDW_140819_36}" />
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="DWRonghe_Item1">
+          <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,235.000000},{1.000000,-37.000000}}"/>
+          <Property Name="DraggingEnabled" Value="True" />
+          <Property Name="DragAcceptName" Value="G164" />
+          <Event Name="RBClicked" Function="DWRonghe_Resume_Equip(164);"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="DWRonghe_Explain4">
+        <Property Name="UnifiedSize" Value="{{0.650000,90.000000},{0.000000,40.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{1.000000,-145.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="DWRonghe_Text2">
+          <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,16.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{1.000000,-28.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="Text" Value="#{SSXDW_140819_37}" />
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="DWRonghe_Item2">
+          <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,235.000000},{1.000000,-37.000000}}"/>
+          <Property Name="DraggingEnabled" Value="True" />
+          <Property Name="DragAcceptName" Value="G165" />
+          <Event Name="RBClicked" Function="DWRonghe_Resume_Equip(165);"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="DWRonghe_DemandMoney_Text">
+        <Property Name="UnifiedPosition" Value="{{0.05,0.000000},{1.000000,-89.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.9,0.000000},{0.000000,22.000000}" />
+        <Property Name="Text" Value="#{INTERFACE_XML_789}" />
+        <Property Name="HorzFormatting" Value="LeftAligned" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Window Type="TLBB_Money" Name="DWRonghe_DemandMoney">
+          <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}" />
+          <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}" />
+          <Property Name="MoneyNumber" Value="0" />
+          <Property Name="HorzFormatting" Value="RightAligned" />
+          <Property Name="AlignFix" Value="True" />
+          <Property Name="GoldIcon" Value = "set:Button6 image:Lace_JiaoziJin" />
+          <Property Name="SilverIcon" Value = "set:Button6 image:Lace_JiaoziYin" />
+          <Property Name="CopperIcon" Value = "set:Button6 image:Lace_JiaoziTong" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="DWRonghe_CurrentlyJiaozi_Text">
+        <Property Name="UnifiedPosition" Value="{{0.05,0.000000},{1.000000,-67.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.9,0.000000},{0.000000,22.000000}" />
+        <Property Name="Text" Value="#{BDJB_051210_1}" />
+        <Property Name="HorzFormatting" Value="LeftAligned" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Window Type="TLBB_Money" Name="DWRonghe_CurrentlyJiaozi">
+          <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}" />
+          <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}" />
+          <Property Name="MoneyNumber" Value="0" />
+          <Property Name="HorzFormatting" Value="RightAligned" />
+          <Property Name="AlignFix" Value="True" />
+          <Property Name="GoldIcon" Value = "set:Button6 image:Lace_JiaoziJin" />
+          <Property Name="SilverIcon" Value = "set:Button6 image:Lace_JiaoziYin" />
+          <Property Name="CopperIcon" Value = "set:Button6 image:Lace_JiaoziTong" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="DWRonghe_CurrentlyMoney_Text">
+        <Property Name="UnifiedPosition" Value="{{0.05,0.000000},{1.000000,-45.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.9,0.000000},{0.000000,22.000000}" />
+        <Property Name="Text" Value="#{INTERFACE_XML_834}" />
+        <Property Name="HorzFormatting" Value="LeftAligned" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Window Type="TLBB_Money" Name="DWRonghe_CurrentlyMoney">
+          <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}" />
+          <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}" />
+          <Property Name="MoneyNumber" Value="0" />
+          <Property Name="HorzFormatting" Value="RightAligned" />
+          <Property Name="AlignFix" Value="True" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="DWRonghe_OK">
+        <Property Name="UnifiedPosition" Value="{{1.000000,-82.000000},{1.000000,-20.000000}" />
+        <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+        <Property Name="Text" Value="#{SSXDW_140819_38}" />
+        <Event Name="Clicked" Function="DWRonghe_OK_Clicked();"/>
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="DWRonghe_Cancel">
+        <Property Name="UnifiedPosition" Value="{{1.000000,-42.000000},{1.000000,-20.000000}" />
+        <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+        <Property Name="Text" Value="#{SSXDW_140819_39}" />
+        <Event Name="Clicked" Function="DWRonghe_Close();"/>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame1" Name="BeiZhu_Frame">
+    <Property Name="UnifiedXPosition" Value="{0.5,-130}" />
+    <Property Name="UnifiedYPosition" Value="{0.4,-64}" />
+    <Property Name="AbsoluteSize" Value="w:260 h:180" />
+    <Window Type="TLBB_DragTitle" Name="BeiZhu_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+      <Property Name="DragTarget" Value="BeiZhu_Frame" />
+      <Window Type="TLBB_SimpleText" Name="BeiZhu_Text">
+        <Property Name="Position" Value="x:0.0 y:0.0" />
+        <Property Name="Size" Value="w:1.0 h:1.0" />
+        <Property Name="Font" Value="YouYuan11.25" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="Text" Value="#{BZXX_140915_14}" />
+      </Window>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="BeiZhu_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+      <Property Name="Text" Value="TLBB_ButtonHelp" />
+      <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*BeiZhu&quot;);' />
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="BeiZhu_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Property Name="Text" Value="TLBB_ButtonClose" />
+      <Event Name="Clicked" Function="this:Hide();" />
+    </Window>
+    <Window Type="DefaultWindow" Name="BeiZhu_Frame_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-55.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,36.000000}}"/>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="BeiZhu_Text1">
+        <Property Name="Position" Value="x:0.0 y:0.0" />
+        <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.470000,0.000000}" />
+        <Property Name="Text" Value="#{BZXX_140915_15}" />
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        <Property Name="VertFormatting" Value="VertCentred" />
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="BeiZhu_Text2">
+        <Property Name="UnifiedSize" Value="{{0.800000,0.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.050000,0.000000},{0.490000,0.000000}}"/>
+        <Property Name="Text" Value="#{BZXX_140915_16}" />
+        <Property Name="HorzFormatting" Value="LeftAlign" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+      </Window>
+      <Window Type="TLBB_EditBoxNormal" Name="BeiZhu_FeudalName">
+        <Property Name="UnifiedSize" Value="{{0.600000,0.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.200000,0.000000},{0.650000,0.000000}}"/>
+        <Property Name="MaxTextLength" Value="12" />
+        <Property Name="Text" Value="#{INTERFACE_XML_902}" />
+      </Window>
+      <Window Type="TLBB_Frame_Lace5" Name="BeiZhu_Blank">
+        <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}}"/>
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="BeiZhu_Release_Button">
+        <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-80.000000},{1.000000,-20.000000}}"/>
+        <Property Name="Text" Value="#{INTERFACE_XML_557}" />
+        <Event Name="Clicked" Function="BeiZhu_Release_Button_Clicked();" />
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="BeiZhu_Relive_Button">
+        <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-40.000000},{1.000000,-20.000000}}"/>
+        <Property Name="Text" Value="#{INTERFACE_XML_542}" />
+        <Event Name="Clicked" Function="this:Hide();" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

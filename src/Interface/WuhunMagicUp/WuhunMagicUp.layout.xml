@@ -1,0 +1,163 @@
+<?xml version="1.0" ?>
+<GUILayout>
+    <Window Type="TLBB_MainFrame1" Name="WuhunMagicUp_Frame">
+      <Property Name="UnifiedSize" Value="{{0.000000,256.000000},{0.000000,407.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-128.000000},{0.500000,-200.000000}}"/>
+        <Event Name="Hidden" Function="WuhunMagicUp_OnHiden();" />
+        <Window Type="TLBB_DragTitle" Name="WuhunMagicUp_DragTitle">
+          <Property Name="AbsolutePosition" Value="x:40.000000 y:11.000000" />
+          <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}" />
+            <Property Name="DragTarget" Value="WuhunMagicUp_Frame" />
+            <Window Type="TLBB_SimpleText" Name="WuhunMagicUp_Title">
+                <Property Name="Position" Value="x:0.0 y:0.0" />
+                <Property Name="Size" Value="w:1.0 h:1.0" />
+                <Property Name="Font" Value="YouYuan11.25" />
+                <Property Name="HorzFormatting" Value="HorzCentred" />
+                <Property Name="VertFormatting" Value="VertCentred" />
+                <Property Name="RiseOnClick" Value="False" />
+                <Property Name="Text" Value="" />
+            </Window>
+        </Window>
+        <Window Type="TLBB_ButtonHelp" Name="WuhunMagicUp_Help">
+          <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+          <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+            <Property Name="Text" Value="TLBB_ButtonHelp" />
+            <Event Name="Clicked" Function="WuhunMagicUp_Help_Clicked()" />
+        </Window>
+        <Window Type="TLBB_ButtonClose" Name="WuhunMagicUp_Close">
+          <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+          <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+            <Property Name="Text" Value="TLBB_ButtonClose" />
+            <Event Name="Clicked" Function="this:Hide();" />
+        </Window>
+        <Window Type="DefaultWindow" Name="WuhunMagicUp_Frame_Client">
+          <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-39.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,30.000000}}"/>
+          <Window Type="TLBB_SimpleMulitiTextFrame" Name="WuhunMagicUp_Info">
+                <Property Name="Position" Value="x:0.0 y:0.0" />
+                <Property Name="AbsoluteSize" Value="w:243.000000 h:160.000000" />
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+                <Property Name="RiseOnClick" Value="False" />
+                <Property Name="Text" Value="" />
+                <Property Name="TextColor" Value="FFFFF263" />
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="WuhunMagicUp_Info2">
+                <Property Name="AbsolutePosition" Value="x:14.000000 y:174.000000" />
+                <Property Name="UnifiedSize" Value="{{0.633745,0.000000},{0.000000,36.000000}" />
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+                <Property Name="RiseOnClick" Value="False" />
+                <Property Name="Text" Value="" />
+                <Property Name="TextColor" Value="FFFFF263" />
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="WuhunMagicUp_Object1">
+                <Property Name="AbsolutePosition" Value="x:180.000000 y:174.000000" />
+                <Property Name="AbsoluteSize" Value="w:36 h:36" />                
+                <Property Name="DragAcceptName" Value="G85" />
+                <Property Name="DraggingEnabled" Value="True" />
+                <Event Name="RBClicked" Function="WuhunMagicUp_Resume_Equip();" />
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="WuhunMagicUp_Info3">
+                <Property Name="AbsolutePosition" Value="x:18.000000 y:227.000000" />
+                <Property Name="UnifiedSize" Value="{{0.633745,0.000000},{0.000000,36.000000}" />
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+                <Property Name="RiseOnClick" Value="False" />
+                <Property Name="Text" Value="" />
+                <Property Name="TextColor" Value="FFFFF263" />
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="WuhunMagicUp_Object2">
+                <Property Name="AbsolutePosition" Value="x:180.000000 y:227.000000" />
+                <Property Name="AbsoluteSize" Value="w:36 h:36" />                
+                <Property Name="DragAcceptName" Value="G86" />
+                <Property Name="DraggingEnabled" Value="True" />
+                <Event Name="RBClicked" Function="WuhunMagicUp_Resume_Item();" />
+            </Window>
+            <Window Type="TLBB_SimpleMulitiTextFrame" Name="WuhunMagicUp_Money_Text">
+                <Property Name="UnifiedPosition" Value="{{0.0500,0.000000},{1.000000,-102.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.9,0.000000},{0.000000,22.000000}" />
+                <Property Name="TextColor" Value="FFFFF263" />
+                <Property Name="Text" Value="#{INTERFACE_XML_789}" />
+                <Property Name="HorzFormatting" Value="LeftAligned" />
+                <Property Name="VertFormatting" Value="VertCentred" />
+                <Property Name="RiseOnClick" Value="False" />
+                <Window Type="TLBB_Money" Name="WuhunMagicUp_DemandMoney">
+                    <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}" />
+                    <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}" />
+                    <Property Name="MoneyNumber" Value="0" />
+                    <Property Name="HorzFormatting" Value="RightAligned" />
+                    <Property Name="AlignFix" Value="True" />
+                    <Property Name="GoldIcon" Value = "set:Button6 image:Lace_JiaoziJin" />
+                    <Property Name="SilverIcon" Value = "set:Button6 image:Lace_JiaoziYin" />
+                    <Property Name="CopperIcon" Value = "set:Button6 image:Lace_JiaoziTong" />
+                </Window>
+            </Window>
+            <Window Type="TLBB_SimpleMulitiTextFrame" Name="WuhunMagicUp_Jiaozi_Text">
+                <Property Name="UnifiedPosition" Value="{{0.0500,0.000000},{1.000000,-80.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.9,0.000000},{0.000000,22.000000}" />
+                <Property Name="TextColor" Value="FFFFF263" />
+                <Property Name="Text" Value="#{BDJB_051210_1}" />
+                <Property Name="HorzFormatting" Value="LeftAligned" />
+                <Property Name="VertFormatting" Value="VertCentred" />
+                <Property Name="RiseOnClick" Value="False" />
+                <Window Type="TLBB_Money" Name="WuhunMagicUp_SelfJiaozi">
+                    <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}" />
+                    <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}" />
+                    <Property Name="MoneyNumber" Value="0" />
+                    <Property Name="HorzFormatting" Value="RightAligned" />
+                    <Property Name="AlignFix" Value="True" />
+                    <Property Name="GoldIcon" Value = "set:Button6 image:Lace_JiaoziJin" />
+                    <Property Name="SilverIcon" Value = "set:Button6 image:Lace_JiaoziYin" />
+                    <Property Name="CopperIcon" Value = "set:Button6 image:Lace_JiaoziTong" />
+                </Window>
+            </Window>
+            <Window Type="TLBB_SimpleMulitiTextFrame" Name="WuhunMagicUp_SelfMoney_Text">
+                <Property Name="UnifiedPosition" Value="{{0.0500,0.000000},{1.000000,-58.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.9,0.000000},{0.000000,22.000000}" />
+                <Property Name="TextColor" Value="FFFFF263" />
+                <Property Name="Text" Value="#{INTERFACE_XML_834}" />
+                <Property Name="HorzFormatting" Value="LeftAligned" />
+                <Property Name="VertFormatting" Value="VertCentred" />
+                <Property Name="RiseOnClick" Value="False" />
+                <Window Type="TLBB_Money" Name="WuhunMagicUp_SelfMoney">
+                    <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}" />
+                    <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}" />
+                    <Property Name="HorzFormatting" Value="RightAligned" />
+                    <Property Name="MoneyNumber" Value="0" />
+                </Window>
+            </Window>
+            <Window Type="TLBB_Frame_Lace5" Name="WuhunMagicUp_Blank">
+              <Property Name="UnifiedSize" Value="{{1.000000,-86.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{1.000000,-27.000000}}"/>
+              <Window Type="DefaultWindow" Name="WuhunMagicUp_Blank_QuerenLace">
+                <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+                <Window Type="TLBB_ButtonCheck" Name="WuhunMagicUp_Blank_Queren">
+                  <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,13.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,4.000000}}"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                  <Property Name="Selected" Value="True"/>
+                  <Event Name="Clicked" Function="WuhunMagicUp_Queren_Clicked();" />
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="WuhunMagicUp_Blank_Queren_Text">
+                  <Property Name="UnifiedSize" Value="{{0.000000,85.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,1.000000}}"/>
+                  <Property Name="Text" Value="#{WHYH_161121_6}"/>
+                  <Property Name="Tooltip" Value="#{WHYH_161121_85}"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+              </Window>
+            </Window>
+            <Window Type="TLBB_ButtonCommon" Name="WuhunMagicUp_OK">
+                <Property Name="UnifiedPosition" Value="{{1.000000,-83.000000},{1.000000,-29.000000}" />
+                <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+                <Property Name="Text" Value="#{INTERFACE_XML_557}" />
+                <Event Name="Clicked" Function="WuhunMagicUp_OK_Clicked();" />
+            </Window>
+            <Window Type="TLBB_ButtonCommon" Name="WuhunMagicUp_Cancel">
+                <Property Name="UnifiedPosition" Value="{{1.000000,-42.000000},{1.000000,-29.000000}" />
+                <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+                <Property Name="Text" Value="#{INTERFACE_XML_542}" />
+                <Event Name="Clicked" Function="this:Hide();" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

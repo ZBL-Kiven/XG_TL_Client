@@ -1,0 +1,149 @@
+<?xml version="1.0" ?>
+<GUILayout>
+	<Window Type="TLBB_MainFrame1" Name="PetPropagateSingle_Frame">
+		<Property Name="UnifiedPosition" Value="{{0.35,0},{0.10,0}}" />
+		<Property Name="AbsoluteSize" Value="w:265 h:406" />
+		<Event Name="Hidden" Function="PetPropagateSingle_OnHidden();" />
+		
+		<Window Type="TLBB_DragTitle" Name="PetPropagateSingle_DragTitle">
+			<Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
+			<Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+			<Property Name="DragTarget" Value="PetPropagateSingle_Frame" />
+			<Property Name="Font" Value="YouYuan11.25" />
+			<Property Name="HorzFormatting" Value="HorzCentred" />
+			<Property Name="VertFormatting" Value="VertCentred" />
+			<Property Name="Text" Value="#{DRFZZC_XML_04}" />
+		</Window>
+		<Window Type="TLBB_ButtonHelp" Name="PetPropagateSingle_Help">
+			<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+			<Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+			<Property Name="Text" Value="TLBB_ButtonHelp" />
+			<Event Name="Clicked" Function='Helper:GotoHelper(&quot;*PetPropagateSingle&quot;);' />
+		</Window>
+		<Window Type="TLBB_ButtonClose" Name="PetPropagateSingle_Close">
+			<Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+			<Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+			<Property Name="Text" Value="TLBB_ButtonClose" />
+			<Event Name="Clicked" Function="PetPropagateSingle_Close_Window();" />
+		</Window>
+		<Window Type="DefaultWindow" Name="PetPropagateSingle_Function_Frame">
+			<Property Name="AbsolutePosition" Value="x:7.000000 y:35.000000" />
+			<Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-55.000000}" />
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="PetPropagateSingle_Explain" >
+        <Property Name="AbsolutePosition" Value="x:0.000000 y:2.000000" />
+        <Property Name="AbsoluteSize" Value="w:251.000000 h:100.000000" />
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="Text" Value="#{DRFZZC_XML_08}" />
+        <Property Name="TextColor" Value="FFFFF263" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="PetPropagateSingle_PutPet1" >
+        <Property Name="AbsolutePosition" Value="x:10.000000 y:107.000000" />
+        <Property Name="AbsoluteSize" Value="w:200.000000 h:20.000000" />
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Text" Value="#{DRFZZC_XML_05}" />
+        <Property Name="TextColor" Value="FFFFF263" />
+        <Property Name="VertFormatting" Value="TopAligned" />
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="PetPropagateSingle_PetName1">
+        <Property Name="UnifiedPosition" Value="{{0.040724,0.000000},{0.000000,132.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.592760,0.000000},{0.000000,20.000000}" />
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="PetPropagateSingle_PetList_Select1">
+        <Property Name="UnifiedPosition" Value="{{0.656109,0.000000},{0.000000,132.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.307692,0.000000},{0.000000,20.000000}" />
+        <Property Name="Text" Value="#{INTERFACE_XML_959}" />
+        <Event Name="Clicked" Function='PetPropagateSingle_SelectPet_Clicked( &quot;first&quot; );' />
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="PetPropagateSingle_PutPet2" >
+        <Property Name="AbsolutePosition" Value="x:10.000000 y:159.000000" />
+        <Property Name="AbsoluteSize" Value="w:200.000000 h:20.000000" />
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Text" Value="#{DRFZZC_XML_06}" />
+        <Property Name="TextColor" Value="FFFFF263" />
+        <Property Name="VertFormatting" Value="TopAligned" />
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="PetPropagateSingle_PetName2">
+        <Property Name="UnifiedPosition" Value="{{0.040724,0.000000},{0.000000,183.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.592760,0.000000},{0.000000,20.000000}" />
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="PetPropagateSingle_PetList_Select2">
+        <Property Name="UnifiedPosition" Value="{{0.656109,0.000000},{0.000000,183.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.307692,0.000000},{0.000000,20.000000}" />
+        <Property Name="Text" Value="#{INTERFACE_XML_959}" />
+        <Event Name="Clicked" Function='PetPropagateSingle_SelectPet_Clicked( &quot;second&quot; );' />
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="PetPropagateSingle_Info" >
+        <Property Name="AbsolutePosition" Value="x:12.000000 y:214.000000" />
+        <Property Name="UnifiedSize" Value="{{0.0,170.000000},{0.000000,40.000000}" />
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Text" Value="#{DRFZZC_XML_07}" />
+        <Property Name="TextColor" Value="FFFFF263" />
+      </Window>
+      <Window Type="TLBB_ActionButton" Name="PetPropagateSingle_Object" >
+        <Property Name="AbsolutePosition" Value="x:197.000000 y:216.000000" />
+        <Property Name="AbsoluteSize" Value="w:36.000000 h:36.000000" />
+        <Property Name="DragAcceptName" Value="G95" />
+        <Property Name="DraggingEnabled" Value="False" />
+        <Event Name="RBClicked" Function="PetPropagateSingle_Resume_Object();" />
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="PetPropagateSingle_MoneyInfo" >
+        <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{1.000000,-89.000000}" />
+        <Property Name="AbsoluteSize" Value="w:251.000000 h:22.000000" />
+        <Property Name="Text" Value="#{INTERFACE_XML_789}" />
+        <Property Name="TextColor" Value="FFFFF263" />
+        <Window Type="TLBB_Money" Name="PetPropagateSingle_Money" >
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}" />
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}" />
+          <Property Name="CopperIcon" Value="set:Button6 image:Lace_JiaoziTong" />
+          <Property Name="GoldIcon" Value="set:Button6 image:Lace_JiaoziJin" />
+          <Property Name="HorzFormatting" Value="RightAligned" />
+          <Property Name="MoneyNumber" Value="0" />
+          <Property Name="SilverIcon" Value="set:Button6 image:Lace_JiaoziYin" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="PetPropagateSingle_SelfJiaozi_Info" >
+        <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{1.000000,-67.000000}" />
+        <Property Name="AbsoluteSize" Value="w:251.000000 h:22.000000" />
+        <Property Name="Text" Value="#{BDJB_051210_1}" />
+        <Property Name="TextColor" Value="FFFFF263" />
+        <Window Type="TLBB_Money" Name="PetPropagateSingle_SelfJiaozi" >
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}" />
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}" />
+          <Property Name="CopperIcon" Value="set:Button6 image:Lace_JiaoziTong" />
+          <Property Name="GoldIcon" Value="set:Button6 image:Lace_JiaoziJin" />
+          <Property Name="HorzFormatting" Value="RightAligned" />
+          <Property Name="MoneyNumber" Value="0" />
+          <Property Name="SilverIcon" Value="set:Button6 image:Lace_JiaoziYin" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="PetPropagateSingle_SelfMoney_Info" >
+        <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{1.000000,-45.000000}" />
+        <Property Name="AbsoluteSize" Value="w:251.000000 h:22.000000" />
+        <Property Name="Text" Value="#{INTERFACE_XML_834}" />
+        <Property Name="TextColor" Value="FFFFF263" />
+        <Window Type="TLBB_Money" Name="PetPropagateSingle_SelfMoney" >
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}" />
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}" />
+          <Property Name="HorzFormatting" Value="RightAligned" />
+          <Property Name="MoneyNumber" Value="0" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="PetPropagateSingle_OK">
+				<Property Name="UnifiedPosition" Value="{{1.000000,-80.000000},{1.000000,-20.000000}" />
+				<Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+				<Property Name="Text" Value="#{INTERFACE_XML_557}" />			
+				<Event Name="Clicked" Function="PetPropagateSingle_OK_Clicked();" />				
+			</Window>
+			<Window Type="TLBB_ButtonCommon" Name="PetPropagateSingle_Cancel">
+				<Property Name="UnifiedPosition" Value="{{1.000000,-40.000000},{1.000000,-20.000000}" />
+				<Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+				<Property Name="Text" Value="#{INTERFACE_XML_542}" />
+				<Event Name="Clicked" Function="PetPropagateSingle_Close_Window();" />
+			</Window>
+		</Window>
+	</Window>
+</GUILayout>

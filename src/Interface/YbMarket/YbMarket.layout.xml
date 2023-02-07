@@ -1,0 +1,1725 @@
+<?xml version="1.0" ?>
+<GUILayout>
+    <Window Type="TLBB_MainFrame1" Name="YbMarket_Frame">
+        <Property Name="UnifiedPosition" Value="{{0.5,-336.0},{0.12,0}}" />
+        <Property Name="AbsoluteSize" Value="w:692 h:496" />
+		<Event Name="Hidden" Function="YbMarket_OnHidden();" />
+        <Window Type="TLBB_DragTitle" Name="YbMarket_DragTitle">
+            <Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
+            <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+            <Property Name="DragTarget" Value="YbMarket_Frame" />
+            <Window Type="TLBB_SimpleText" Name="YbMarket_PageHeader">
+                <Property Name="Position" Value="x:0.0 y:0.0" />
+                <Property Name="Size" Value="w:1.0 h:1.0" />
+                <Property Name="Font" Value="YouYuan11.25" />
+                <Property Name="HorzFormatting" Value="HorzCentred" />
+                <Property Name="VertFormatting" Value="VertCentred" />
+                <Property Name="RiseOnClick" Value="False" />
+                <Property Name="Text" Value="#{YBSC_XML_06}" />
+            </Window>
+        </Window>
+        <Window Type="TLBB_ButtonHelp" Name="YbMarket_btnHelp">
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+            <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+            <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*YbMarket&quot;);' />
+        </Window>
+        <Window Type="TLBB_ButtonClose" Name="YbMarket_btnClose">
+            <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+            <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+            <Property Name="Text" Value="TLBB_ButtonClose" />
+            <Event Name="Clicked" Function="OnYbMarket_CloseClicked();" />
+        </Window>
+        <Window Type="DefaultWindow" Name="YbMarket_Function_Frame">
+            <Property Name="AbsolutePosition" Value="x:6.000000 y:36.000000" />
+            <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-55.000000}" />
+        <Window Type="DefaultWindow" Name="YbMarket_CheckBox_Frame" >
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}" />
+            <Property Name="UnifiedSize" Value="{{0.000000,210.000000},{0.000000,24.000000}" />
+            
+            <Window Type="TLBB_ButtonFenYe2" Name="YbMarket_tblItemMarket" >
+              <Property Name="AbsolutePosition" Value="x:0.000000 y:0.000000" />
+              <Property Name="AbsoluteSize" Value="w:75.000000 h:25.000000" />
+              <Property Name="CheckMode" Value="1" />
+              <Property Name="Selected" Value="True" />
+              <Property Name="Text" Value="#{YBSC_XML_12}" />
+              <Event Name="Clicked" Function="OnYbMarket_ChangeTabIndex(2);" />
+            </Window>
+            
+            <Window Type="TLBB_ButtonFenYe2" Name="YbMarket_tblPetMarket" >
+              <Property Name="AbsolutePosition" Value="x:70.000000 y:0.000000" />
+              <Property Name="AbsoluteSize" Value="w:75.000000 h:25.000000" />
+              <Property Name="CheckMode" Value="1" />
+              <Property Name="Selected" Value="False" />
+              <Property Name="Text" Value="#{YBSC_XML_22}" />
+              <Event Name="Clicked" Function="OnYbMarket_ChangeTabIndex(1);" />
+            </Window>
+			<Window Type="TLBB_ButtonFenYe2" Name="YbMarket_tblEquipMarket">
+				<Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,25.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,140.000000},{0.000000,0.000000}}"/>
+				<Property Name="Text" Value="#{YBSC_XML_82}"/>
+				<Property Name="CheckMode" Value="1"/>
+				<Event Name="Clicked" Function="OnYbMarket_ChangeTabIndex(3);"/>
+			</Window>
+
+		</Window>
+
+          <Window Type="TLBB_SimpleText" Name="YbMarket_lblPaixu" >
+            <Property Name="AbsolutePosition" Value="x:210.000000 y:3.000000" />
+            <Property Name="AbsoluteSize" Value="w:52.000000 h:17.000000" />
+            <Property Name="HorzFormatting" Value="LeftAligned" />
+            <Property Name="Text" Value="#{YBSC_XML_09}" />
+            <Property Name="TextColor" Value="FFFFF263" />
+            <Property Name="VertFormatting" Value="VertCentred" />
+          </Window>
+
+          <Window Type="TLBB_ComboList" Name="YbMarket_CboSearchMode" >
+						<Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,238.000000},{0.000000,2.000000}}"/>
+						<Event Name="ListSelectionAccepted" Function="YbMarket_SearchMode_Changed();" />	
+		  </Window>
+                      
+          
+          <Window Type="TLBB_SimpleText" Name="YbMarket_lblItemName" >
+            <Property Name="AbsolutePosition" Value="x:388.000000 y:3.000000" />
+            <Property Name="AbsoluteSize" Value="w:60.000000 h:17.000000" />
+            <Property Name="HorzFormatting" Value="LeftAligned" />
+            <Property Name="Text" Value="#{AUCTION_100108_19}" />
+            <Property Name="TextColor" Value="FFFFF263" />
+            <Property Name="VertFormatting" Value="VertCentred" />
+          </Window>
+          
+          <Window Type="TLBB_EditBoxNormal" Name="YbMarket_txtSearchItemName">
+						<Property Name="UnifiedSize" Value="{{0.000000,114.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,441.000000},{0.000000,2.000000}}"/>
+		        <Property Name="MaxTextLength" Value="64" />
+            <Property Name="Text" value="" />
+          </Window>
+          
+
+          
+					<Window Type="TLBB_ButtonCommon" Name="YbMarket_btnSearch">
+						<Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,558.000000},{0.000000,2.000000}}"/>
+						<Property Name="Text" Value="#{YBSC_XML_08}"/>
+						<Event Name="Clicked" Function="OnYbMarket_btnSearchClicked();"/>
+					</Window>
+
+          <Window Type="TLBB_ButtonCommon" Name="YbMarket_btnReset">
+            <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,620.000000},{0.000000,2.000000}}"/>
+            <Property Name="Text" Value="#{YBSC_XML_11}"/>
+            <Event Name="Clicked" Function="YbMarket_ResetBn_Clicked();"/>
+          </Window>
+          <Window Type="TLBB_Frame_Lace2" Name="YbMarket_Btn_FrameBK" >
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,25.000000}" />
+            <Property Name="UnifiedSize" Value="{{0.000000,101.000000},{0.000000,370.000000}" />   	          
+          <Window Type="DefaultWindow" Name="YbMarket_Btn_Frame" >
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}" />
+            <Property Name="UnifiedSize" Value="{{0.000000,101.000000},{0.000000,220.000000}" />           
+            <Window Type="TLBB_ButtonCheckForRMBShop" Name="YbMarket_btnSubType1" >
+              <Property Name="UnifiedPosition" Value="{{0.000000,13.000000},{0.000000,5.000000}" />
+              <Property Name="UnifiedSize" Value="{{0.000000,75.000000},{0.000000,20.000000}" />
+              <Property Name="CheckMode" Value="1" />
+              <Property Name="Text" Value="" />
+              <Event Name="Clicked" Function="OnYbMarket_btnSubTypeClicked(1);" />
+            </Window>
+
+            <Window Type="TLBB_ButtonCheckForRMBShop" Name="YbMarket_btnSubType2" >
+              <Property Name="UnifiedPosition" Value="{{0.000000,13.000000},{0.000000,30.000000}" />
+              <Property Name="UnifiedSize" Value="{{0.000000,75.000000},{0.000000,20.000000}" />
+              <Property Name="CheckMode" Value="1" />
+              <Property Name="Text" Value="" />
+              <Event Name="Clicked" Function="OnYbMarket_btnSubTypeClicked(2);" />
+            </Window>
+
+            <Window Type="TLBB_ButtonCheckForRMBShop" Name="YbMarket_btnSubType3" >
+              <Property Name="UnifiedPosition" Value="{{0.000000,13.000000},{0.000000,55.000000}" />
+              <Property Name="UnifiedSize" Value="{{0.000000,75.000000},{0.000000,20.000000}" />
+              <Property Name="CheckMode" Value="1" />
+              <Property Name="Text" Value="" />
+              <Event Name="Clicked" Function="OnYbMarket_btnSubTypeClicked(3);" />
+            </Window>
+
+            <Window Type="TLBB_ButtonCheckForRMBShop" Name="YbMarket_btnSubType4" >
+              <Property Name="UnifiedPosition" Value="{{0.000000,13.000000},{0.000000,80.000000}" />
+              <Property Name="UnifiedSize" Value="{{0.000000,75.000000},{0.000000,20.000000}" />
+              <Property Name="CheckMode" Value="1" />
+              <Property Name="Text" Value="" />
+              <Event Name="Clicked" Function="OnYbMarket_btnSubTypeClicked(4);" />
+            </Window>
+
+            <Window Type="TLBB_ButtonCheckForRMBShop" Name="YbMarket_btnSubType5" >
+              <Property Name="UnifiedPosition" Value="{{0.000000,13.000000},{0.000000,105.000000}" />
+              <Property Name="UnifiedSize" Value="{{0.000000,75.000000},{0.000000,20.000000}" />
+              <Property Name="CheckMode" Value="1" />
+              <Property Name="Text" Value="" />
+              <Event Name="Clicked" Function="OnYbMarket_btnSubTypeClicked(5);" />
+            </Window>
+
+            <Window Type="TLBB_ButtonCheckForRMBShop" Name="YbMarket_btnSubType6" >
+              <Property Name="UnifiedPosition" Value="{{0.000000,13.000000},{0.000000,130.000000}" />
+              <Property Name="UnifiedSize" Value="{{0.000000,75.000000},{0.000000,20.000000}" />
+              <Property Name="CheckMode" Value="1" />
+              <Property Name="Text" Value="" />
+              <Event Name="Clicked" Function="OnYbMarket_btnSubTypeClicked(6);" />
+            </Window>
+
+            <Window Type="TLBB_ButtonCheckForRMBShop" Name="YbMarket_btnSubType7" >
+              <Property Name="UnifiedPosition" Value="{{0.000000,13.000000},{0.000000,155.000000}" />
+              <Property Name="UnifiedSize" Value="{{0.000000,75.000000},{0.000000,20.000000}" />
+              <Property Name="CheckMode" Value="1" />
+              <Property Name="Text" Value="" />
+              <Event Name="Clicked" Function="OnYbMarket_btnSubTypeClicked(7);" />
+            </Window>
+
+            <Window Type="TLBB_ButtonCheckForRMBShop" Name="YbMarket_btnSubType8" >
+              <Property Name="UnifiedPosition" Value="{{0.000000,13.000000},{0.000000,180.000000}" />
+              <Property Name="UnifiedSize" Value="{{0.000000,75.000000},{0.000000,20.000000}" />
+              <Property Name="CheckMode" Value="1" />
+              <Property Name="Text" Value="" />
+              <Event Name="Clicked" Function="OnYbMarket_btnSubTypeClicked(8);" />
+            </Window>
+		</Window>
+        
+		<Window Type="DefaultWindow" Name="YbMarket_Btn_Frame2">
+				<Property Name="UnifiedSize" Value="{{0.000000,101.000000},{0.000000,220.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+			<Window Type="TLBB_SimpleText" Name="YbMarket_EquipType1_Text">
+				<Property Name="UnifiedSize" Value="{{0.000000,75.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,5.000000}}"/>
+				<Property Name="TextColor" Value="FFFFF263"/>
+				<Property Name="Text" Value="#{YBSC_XML_83}"/>
+			</Window>
+			<Window Type="TLBB_ComboList" Name="YbMarket_EquipType1">
+				<Property Name="UnifiedSize" Value="{{0.000000,95.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,25.000000}}"/>
+				<Event Name="ListSelectionAccepted" Function="YbMarket_EquipType_Changed();"/>
+			</Window>
+			<Window Type="TLBB_SimpleText" Name="YbMarket_EquipType2_Text">
+				<Property Name="UnifiedSize" Value="{{0.000000,75.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,55.000000}}"/>
+				<Property Name="TextColor" Value="FFFFF263"/>
+				<Property Name="Text" Value="#{YBSC_XML_84}"/>
+			</Window>
+			<Window Type="TLBB_ComboList" Name="YbMarket_EquipType2">
+				<Property Name="UnifiedSize" Value="{{0.000000,95.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,75.000000}}"/>
+				<Event Name="ListSelectionAccepted" Function="YbMarket_EquipType_Changed();"/>
+			</Window>
+			<Window Type="TLBB_SimpleText" Name="YbMarket_EquipType3_Text">
+				<Property Name="UnifiedSize" Value="{{0.000000,75.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,105.000000}}"/>
+				<Property Name="TextColor" Value="FFFFF263"/>
+				<Property Name="Text" Value="#{YBSC_XML_85}"/>
+			</Window>
+			<Window Type="TLBB_ComboList" Name="YbMarket_EquipType3">
+				<Property Name="UnifiedSize" Value="{{0.000000,95.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,125.000000}}"/>
+				<Event Name="ListSelectionAccepted" Function="YbMarket_EquipType_Changed();"/>
+			</Window>
+		</Window>
+			
+		<Window Type="DefaultWindow" Name="YbMarket_Btn_Frame3" >
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,269.000000}" />
+          <Property Name="UnifiedSize" Value="{{0.000000,101.000000},{0.000000,101.000000}" />
+          <Window Type="TLBB_ButtonCommon" Name="YbMarket_OnSale" >
+            <Property Name="UnifiedPosition" Value="{{0.000000,13.000000},{1.000000,-90.000000}" />
+            <Property Name="UnifiedSize" Value="{{0.000000,75.000000},{0.000000,20.000000}" />
+            <Property Name="Text" Value="#{YBSC_XML_61}" />
+            <Event Name="Clicked" Function="YbMarket_OnSale_Clicked();" />
+          </Window>
+          <Window Type="TLBB_ButtonCommon" Name="YbMarket_btnUpPet" >
+            <Property Name="UnifiedPosition" Value="{{0.000000,13.000000},{1.000000,-60.000000}" />
+            <Property Name="UnifiedSize" Value="{{0.000000,75.000000},{0.000000,20.000000}" />
+            <Property Name="Text" Value="#{YBSC_XML_31}" />
+            <Event Name="Clicked" Function="OnYbMarket_btnUpPetClieked();" />
+          </Window>
+          <Window Type="TLBB_ButtonCommon" Name="YbMarket_btnUpItem" >
+            <Property Name="UnifiedPosition" Value="{{0.000000,13.000000},{1.000000,-30.000000}" />
+            <Property Name="UnifiedSize" Value="{{0.000000,75.000000},{0.000000,20.000000}" />
+            <Property Name="Text" Value="#{YBSC_XML_32}" />
+            <Event Name="Clicked" Function="OnYbMarket_btnUpItemClicked();" />
+          </Window>
+        </Window>	
+        </Window>			
+			
+	
+		  
+          
+          
+          <Window Type="TLBB_MultiColumnList" Name="YbMarket_lvwItemTitle">
+            <Property Name="UnifiedPosition" Value="{{0.000000,102.000000},{0.000000,23.000000}" />
+            <Property Name="AbsoluteSize" Value="w:578 h:22" />
+            <Property Name="ForceHorzScrollbar" Value="False" />
+            <Property Name="ForceVertScrollbar" Value="True" />
+            <Property Name="SortSettingEnabled" Value="False" />
+            <Property Name="SelectionMode" Value="RowSingle" />
+			<Property Name="ColumnHeader" Value="text:#{YBSC_XML_17} width:0.336 id:0" />
+			<Property Name="ColumnHeader" Value="text:#{YBSC_XML_18} width:0.144 id:1" />
+			<Property Name="ColumnHeader" Value="text:#{YBSC_XML_19} width:0.12 id:2" />
+			<Property Name="ColumnHeader" Value="text:#{YBSC_XML_20} width:0.19 id:3" />
+			<Property Name="ColumnHeader" Value="text:#{YBSC_XML_21} width:0.21 id:4" />
+            <Property Name="ColumnsSizable" Value="False" />
+            <Property Name="ColumnsAdjust" Value="True" />
+			<Property Name="ColumnsMovable" Value="False" />
+            <Event Name="SelectionChanged" Function="YbMarket_ItemTitle_OnSelectionChanged();" />
+          </Window>
+          <Window Type="TLBB_MultiColumnList" Name="YbMarket_lvwPetTitle">
+            <Property Name="UnifiedPosition" Value="{{0.000000,102.000000},{0.000000,23.000000}" />
+            <Property Name="AbsoluteSize" Value="w:578 h:22" />
+            <Property Name="ForceHorzScrollbar" Value="False" />
+            <Property Name="ForceVertScrollbar" Value="True" />
+            <Property Name="SortSettingEnabled" Value="False" />
+            <Property Name="SelectionMode" Value="RowSingle" />
+            <Property Name="ColumnHeader" Value="text:#{YBSC_XML_30} width:0.424 id:0" />
+            <Property Name="ColumnHeader" Value="text:#{YBSC_XML_18} width:0.246 id:1" />
+            <Property Name="ColumnHeader" Value="text:#{YBSC_XML_20} width:0.33 id:2" />
+            <Property Name="ColumnsSizable" Value="False" />
+            <Property Name="ColumnsAdjust" Value="True" />
+            <Property Name="ColumnsMovable" Value="False" />
+            <Event Name="SelectionChanged" Function="YbMarket_PetTitle_OnSelectionChanged();" />
+		</Window>
+		<Window Type="TLBB_MultiColumnList" Name="YbMarket_lvwEquipTitle">
+		 <Property Name="UnifiedPosition" Value="{{0.000000,102.000000},{0.000000,23.000000}" />
+        <Property Name="AbsoluteSize" Value="w:578 h:22" />
+        <Property Name="ForceHorzScrollbar" Value="False" />
+        <Property Name="ForceVertScrollbar" Value="True" />
+        <Property Name="SortSettingEnabled" Value="False" />
+        <Property Name="SelectionMode" Value="RowSingle" />
+        <Property Name="ColumnHeader" Value="text:#{YBSC_XML_17} width:0.424 id:0" />
+        <Property Name="ColumnHeader" Value="text:#{YBSC_XML_18} width:0.246 id:1" />
+        <Property Name="ColumnHeader" Value="text:#{YBSC_XML_20} width:0.33 id:2" />
+        <Property Name="ColumnsSizable" Value="False" />
+        <Property Name="ColumnsAdjust" Value="True" />
+        <Property Name="ColumnsMovable" Value="False" />
+      </Window>
+          <Window Type="TLBB_Frame_Lace2" Name="YbMarket_ItemInfoBk" >
+            <Property Name="UnifiedPosition" Value="{{0.000000,102.000000},{0.000000,43.000000}" />
+            <Property Name="UnifiedSize" Value="{{0.000000,577.000000},{0.000000,352.000000}" />
+            
+            
+            
+            <Window Type="TLBB_ActionButton" Name="YbMarket_Item1" >
+            	<Property Name="AbsolutePosition" Value="x:2.000000 y:1.000000" />
+            	<Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+            	<Event Name="Clicked" Function="OnYbMarket_ActionItemClicked(1);" />
+          	</Window>
+	          <Window Type="TLBB_SimpleMulitiTextFrame" Name="YbMarket_Item1_Text" >
+	            <Property Name="UnifiedPosition" Value="{{0.000000,36.000000},{0.000000,1.000000}" />
+	            <Property Name="UnifiedSize" Value="{{0.000000,540.000000},{0.000000,35.000000}" />
+	            <Property Name="HorzFormatting" Value="HorzCentred" />
+	            <Property Name="TextColor" Value="FFFFF263" />
+	            <Property Name="VertFormatting" Value="VertCentred" />
+		          <Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Item1_Text_1" >
+		            <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,0.000000}" />
+		            <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,35.000000}" />
+		            <Property Name="HorzFormatting" Value="LeftAligned" />
+		            <Property Name="TextColor" Value="FFFFF263" />
+		            <Property Name="VertFormatting" Value="VertCentred" />
+		          </Window>
+		          <Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Item1_Text_2" >
+		            <Property Name="UnifiedPosition" Value="{{0.000000,160.000000},{0.000000,0.000000}" />
+		            <Property Name="UnifiedSize" Value="{{0.000000,77.000000},{0.000000,35.000000}" />
+		            <Property Name="HorzFormatting" Value="HorzCentred" />
+		            <Property Name="TextColor" Value="FFFFF263" />
+		            <Property Name="VertFormatting" Value="VertCentred" />
+		          </Window>
+		          <Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Item1_Text_3" >
+		            <Property Name="UnifiedPosition" Value="{{0.000000,252.000000},{0.000000,0.000000}" />
+		            <Property Name="UnifiedSize" Value="{{0.000000,49.000000},{0.000000,35.000000}" />
+		            <Property Name="HorzFormatting" Value="RightAligned" />
+		            <Property Name="TextColor" Value="FFFFF263" />
+		            <Property Name="VertFormatting" Value="VertCentred" />
+		          </Window>
+		          <Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Item1_Text_4" >
+		            <Property Name="UnifiedPosition" Value="{{0.000000,320.000000},{0.000000,0.000000}" />
+		            <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,35.000000}" />
+		            <Property Name="HorzFormatting" Value="RightAligned" />
+		            <Property Name="TextColor" Value="FFFFF263" />
+		            <Property Name="VertFormatting" Value="VertCentred" />
+		          </Window>
+		          <Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Item1_Text_5" >
+		            <Property Name="UnifiedPosition" Value="{{0.000000,425.000000},{0.000000,0.000000}" />
+		            <Property Name="UnifiedSize" Value="{{0.000000,89.000000},{0.000000,35.000000}" />
+		            <Property Name="HorzFormatting" Value="RightAligned" />
+		            <Property Name="TextColor" Value="FFFFF263" />
+		            <Property Name="VertFormatting" Value="VertCentred" />
+		          </Window>	
+	          </Window>          
+         
+	          
+
+	          <Window Type="TLBB_ActionButton" Name="YbMarket_Item2" >
+	            <Property Name="AbsolutePosition" Value="x:2.000000 y:36.000000" />
+	            <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+	            <Event Name="Clicked" Function="OnYbMarket_ActionItemClicked(2);" />
+	          </Window>
+	          <Window Type="TLBB_SimpleMulitiTextFrame" Name="YbMarket_Item2_Text" >
+	            <Property Name="UnifiedPosition" Value="{{0.000000,36.000000},{0.000000,36.000000}" />
+	            <Property Name="UnifiedSize" Value="{{0.000000,540.000000},{0.000000,35.000000}" />
+	            <Property Name="HorzFormatting" Value="HorzCentred" />
+	            <Property Name="TextColor" Value="FFFFF263" />
+	            <Property Name="VertFormatting" Value="VertCentred" />
+		          <Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Item2_Text_1" >
+		            <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,0.000000}" />
+		            <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,35.000000}" />
+		            <Property Name="HorzFormatting" Value="LeftAligned" />
+		            <Property Name="TextColor" Value="FFFFF263" />
+		            <Property Name="VertFormatting" Value="VertCentred" />
+		          </Window>
+		          <Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Item2_Text_2" >
+		            <Property Name="UnifiedPosition" Value="{{0.000000,160.000000},{0.000000,0.000000}" />
+		            <Property Name="UnifiedSize" Value="{{0.000000,77.000000},{0.000000,35.000000}" />
+		            <Property Name="HorzFormatting" Value="HorzCentred" />
+		            <Property Name="TextColor" Value="FFFFF263" />
+		            <Property Name="VertFormatting" Value="VertCentred" />
+		          </Window>
+		          <Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Item2_Text_3" >
+		            <Property Name="UnifiedPosition" Value="{{0.000000,252.000000},{0.000000,0.000000}" />
+		            <Property Name="UnifiedSize" Value="{{0.000000,49.000000},{0.000000,35.000000}" />
+		            <Property Name="HorzFormatting" Value="RightAligned" />
+		            <Property Name="TextColor" Value="FFFFF263" />
+		            <Property Name="VertFormatting" Value="VertCentred" />
+		          </Window>
+		          <Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Item2_Text_4" >
+		            <Property Name="UnifiedPosition" Value="{{0.000000,320.000000},{0.000000,0.000000}" />
+		            <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,35.000000}" />
+		            <Property Name="HorzFormatting" Value="RightAligned" />
+		            <Property Name="TextColor" Value="FFFFF263" />
+		            <Property Name="VertFormatting" Value="VertCentred" />
+		          </Window>
+		          <Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Item2_Text_5" >
+		            <Property Name="UnifiedPosition" Value="{{0.000000,425.000000},{0.000000,0.000000}" />
+		            <Property Name="UnifiedSize" Value="{{0.000000,89.000000},{0.000000,35.000000}" />
+		            <Property Name="HorzFormatting" Value="RightAligned" />
+		            <Property Name="TextColor" Value="FFFFF263" />
+		            <Property Name="VertFormatting" Value="VertCentred" />
+		          </Window>	
+	          </Window>
+
+                    
+          
+          
+	          <Window Type="TLBB_ActionButton" Name="YbMarket_Item3" >
+	            <Property Name="AbsolutePosition" Value="x:2.000000 y:71.000000" />
+	            <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+	            <Event Name="Clicked" Function="OnYbMarket_ActionItemClicked(3);" />
+	          </Window>
+	          <Window Type="TLBB_SimpleMulitiTextFrame" Name="YbMarket_Item3_Text" >
+	            <Property Name="UnifiedPosition" Value="{{0.000000,36.000000},{0.000000,71.000000}" />
+	            <Property Name="UnifiedSize" Value="{{0.000000,540.000000},{0.000000,35.000000}" />
+	            <Property Name="HorzFormatting" Value="HorzCentred" />
+	            <Property Name="TextColor" Value="FFFFF263" />
+	            <Property Name="VertFormatting" Value="VertCentred" />
+		          <Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Item3_Text_1" >
+		            <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,0.000000}" />
+		            <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,35.000000}" />
+		            <Property Name="HorzFormatting" Value="LeftAligned" />
+		            <Property Name="TextColor" Value="FFFFF263" />
+		            <Property Name="VertFormatting" Value="VertCentred" />
+		          </Window>
+		          <Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Item3_Text_2" >
+		            <Property Name="UnifiedPosition" Value="{{0.000000,160.000000},{0.000000,0.000000}" />
+		            <Property Name="UnifiedSize" Value="{{0.000000,77.000000},{0.000000,35.000000}" />
+		            <Property Name="HorzFormatting" Value="HorzCentred" />
+		            <Property Name="TextColor" Value="FFFFF263" />
+		            <Property Name="VertFormatting" Value="VertCentred" />
+		          </Window>
+		          <Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Item3_Text_3" >
+		            <Property Name="UnifiedPosition" Value="{{0.000000,252.000000},{0.000000,0.000000}" />
+		            <Property Name="UnifiedSize" Value="{{0.000000,49.000000},{0.000000,35.000000}" />
+		            <Property Name="HorzFormatting" Value="RightAligned" />
+		            <Property Name="TextColor" Value="FFFFF263" />
+		            <Property Name="VertFormatting" Value="VertCentred" />
+		          </Window>
+		          <Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Item3_Text_4" >
+		            <Property Name="UnifiedPosition" Value="{{0.000000,320.000000},{0.000000,0.000000}" />
+		            <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,35.000000}" />
+		            <Property Name="HorzFormatting" Value="RightAligned" />
+		            <Property Name="TextColor" Value="FFFFF263" />
+		            <Property Name="VertFormatting" Value="VertCentred" />
+		          </Window>
+		          <Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Item3_Text_5" >
+		            <Property Name="UnifiedPosition" Value="{{0.000000,425.000000},{0.000000,0.000000}" />
+		            <Property Name="UnifiedSize" Value="{{0.000000,89.000000},{0.000000,35.000000}" />
+		            <Property Name="HorzFormatting" Value="RightAligned" />
+		            <Property Name="TextColor" Value="FFFFF263" />
+		            <Property Name="VertFormatting" Value="VertCentred" />
+		          </Window>	
+	          </Window>
+
+                    
+          
+          
+	          <Window Type="TLBB_ActionButton" Name="YbMarket_Item4" >
+	            <Property Name="AbsolutePosition" Value="x:2.000000 y:106.000000" />
+	            <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+	            <Event Name="Clicked" Function="OnYbMarket_ActionItemClicked(4);" />
+	          </Window>
+	          <Window Type="TLBB_SimpleMulitiTextFrame" Name="YbMarket_Item4_Text" >
+	            <Property Name="UnifiedPosition" Value="{{0.000000,36.000000},{0.000000,106.000000}" />
+	            <Property Name="UnifiedSize" Value="{{0.000000,540.000000},{0.000000,35.000000}" />
+	            <Property Name="HorzFormatting" Value="HorzCentred" />
+	            <Property Name="TextColor" Value="FFFFF263" />
+	            <Property Name="VertFormatting" Value="VertCentred" />
+		          <Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Item4_Text_1" >
+		            <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,0.000000}" />
+		            <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,35.000000}" />
+		            <Property Name="HorzFormatting" Value="LeftAligned" />
+		            <Property Name="TextColor" Value="FFFFF263" />
+		            <Property Name="VertFormatting" Value="VertCentred" />
+		          </Window>
+		          <Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Item4_Text_2" >
+		            <Property Name="UnifiedPosition" Value="{{0.000000,160.000000},{0.000000,0.000000}" />
+		            <Property Name="UnifiedSize" Value="{{0.000000,77.000000},{0.000000,35.000000}" />
+		            <Property Name="HorzFormatting" Value="HorzCentred" />
+		            <Property Name="TextColor" Value="FFFFF263" />
+		            <Property Name="VertFormatting" Value="VertCentred" />
+		          </Window>
+		          <Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Item4_Text_3" >
+		            <Property Name="UnifiedPosition" Value="{{0.000000,252.000000},{0.000000,0.000000}" />
+		            <Property Name="UnifiedSize" Value="{{0.000000,49.000000},{0.000000,35.000000}" />
+		            <Property Name="HorzFormatting" Value="RightAligned" />
+		            <Property Name="TextColor" Value="FFFFF263" />
+		            <Property Name="VertFormatting" Value="VertCentred" />
+		          </Window>
+		          <Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Item4_Text_4" >
+		            <Property Name="UnifiedPosition" Value="{{0.000000,320.000000},{0.000000,0.000000}" />
+		            <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,35.000000}" />
+		            <Property Name="HorzFormatting" Value="RightAligned" />
+		            <Property Name="TextColor" Value="FFFFF263" />
+		            <Property Name="VertFormatting" Value="VertCentred" />
+		          </Window>
+		          <Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Item4_Text_5" >
+		            <Property Name="UnifiedPosition" Value="{{0.000000,425.000000},{0.000000,0.000000}" />
+		            <Property Name="UnifiedSize" Value="{{0.000000,89.000000},{0.000000,35.000000}" />
+		            <Property Name="HorzFormatting" Value="RightAligned" />
+		            <Property Name="TextColor" Value="FFFFF263" />
+		            <Property Name="VertFormatting" Value="VertCentred" />
+		          </Window>	
+	          </Window>
+
+          
+          
+	          <Window Type="TLBB_ActionButton" Name="YbMarket_Item5" >
+	            <Property Name="AbsolutePosition" Value="x:2.000000 y:141.000000" />
+	            <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+	            <Event Name="Clicked" Function="OnYbMarket_ActionItemClicked(5);" />
+	          </Window>
+	          <Window Type="TLBB_SimpleMulitiTextFrame" Name="YbMarket_Item5_Text" >
+	            <Property Name="UnifiedPosition" Value="{{0.000000,36.000000},{0.000000,141.000000}" />
+	            <Property Name="UnifiedSize" Value="{{0.000000,540.000000},{0.000000,35.000000}" />
+	            <Property Name="HorzFormatting" Value="HorzCentred" />
+	            <Property Name="TextColor" Value="FFFFF263" />
+	            <Property Name="VertFormatting" Value="VertCentred" />
+		          <Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Item5_Text_1" >
+		            <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,0.000000}" />
+		            <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,35.000000}" />
+		            <Property Name="HorzFormatting" Value="LeftAligned" />
+		            <Property Name="TextColor" Value="FFFFF263" />
+		            <Property Name="VertFormatting" Value="VertCentred" />
+		          </Window>
+		          <Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Item5_Text_2" >
+		            <Property Name="UnifiedPosition" Value="{{0.000000,160.000000},{0.000000,0.000000}" />
+		            <Property Name="UnifiedSize" Value="{{0.000000,77.000000},{0.000000,35.000000}" />
+		            <Property Name="HorzFormatting" Value="HorzCentred" />
+		            <Property Name="TextColor" Value="FFFFF263" />
+		            <Property Name="VertFormatting" Value="VertCentred" />
+		          </Window>
+		          <Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Item5_Text_3" >
+		            <Property Name="UnifiedPosition" Value="{{0.000000,252.000000},{0.000000,0.000000}" />
+		            <Property Name="UnifiedSize" Value="{{0.000000,49.000000},{0.000000,35.000000}" />
+		            <Property Name="HorzFormatting" Value="RightAligned" />
+		            <Property Name="TextColor" Value="FFFFF263" />
+		            <Property Name="VertFormatting" Value="VertCentred" />
+		          </Window>
+		          <Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Item5_Text_4" >
+		            <Property Name="UnifiedPosition" Value="{{0.000000,320.000000},{0.000000,0.000000}" />
+		            <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,35.000000}" />
+		            <Property Name="HorzFormatting" Value="RightAligned" />
+		            <Property Name="TextColor" Value="FFFFF263" />
+		            <Property Name="VertFormatting" Value="VertCentred" />
+		          </Window>
+		          <Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Item5_Text_5" >
+		            <Property Name="UnifiedPosition" Value="{{0.000000,425.000000},{0.000000,0.000000}" />
+		            <Property Name="UnifiedSize" Value="{{0.000000,89.000000},{0.000000,35.000000}" />
+		            <Property Name="HorzFormatting" Value="RightAligned" />
+		            <Property Name="TextColor" Value="FFFFF263" />
+		            <Property Name="VertFormatting" Value="VertCentred" />
+		          </Window>		            
+	          </Window>
+
+                    
+          
+	          <Window Type="TLBB_ActionButton" Name="YbMarket_Item6" >
+	            <Property Name="AbsolutePosition" Value="x:2.000000 y:176.000000" />
+	            <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+	            <Event Name="Clicked" Function="OnYbMarket_ActionItemClicked(6);" />
+	          </Window>
+	          <Window Type="TLBB_SimpleMulitiTextFrame" Name="YbMarket_Item6_Text" >
+	            <Property Name="UnifiedPosition" Value="{{0.000000,36.000000},{0.000000,176.000000}" />
+	            <Property Name="UnifiedSize" Value="{{0.000000,540.000000},{0.000000,35.000000}" />
+	            <Property Name="HorzFormatting" Value="HorzCentred" />
+	            <Property Name="TextColor" Value="FFFFF263" />
+	            <Property Name="VertFormatting" Value="VertCentred" />
+		          <Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Item6_Text_1" >
+		            <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,0.000000}" />
+		            <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,35.000000}" />
+		            <Property Name="HorzFormatting" Value="LeftAligned" />
+		            <Property Name="TextColor" Value="FFFFF263" />
+		            <Property Name="VertFormatting" Value="VertCentred" />
+		          </Window>
+		          <Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Item6_Text_2" >
+		            <Property Name="UnifiedPosition" Value="{{0.000000,160.000000},{0.000000,0.000000}" />
+		            <Property Name="UnifiedSize" Value="{{0.000000,77.000000},{0.000000,35.000000}" />
+		            <Property Name="HorzFormatting" Value="HorzCentred" />
+		            <Property Name="TextColor" Value="FFFFF263" />
+		            <Property Name="VertFormatting" Value="VertCentred" />
+		          </Window>
+		          <Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Item6_Text_3" >
+		            <Property Name="UnifiedPosition" Value="{{0.000000,252.000000},{0.000000,0.000000}" />
+		            <Property Name="UnifiedSize" Value="{{0.000000,49.000000},{0.000000,35.000000}" />
+		            <Property Name="HorzFormatting" Value="RightAligned" />
+		            <Property Name="TextColor" Value="FFFFF263" />
+		            <Property Name="VertFormatting" Value="VertCentred" />
+		          </Window>
+		          <Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Item6_Text_4" >
+		            <Property Name="UnifiedPosition" Value="{{0.000000,320.000000},{0.000000,0.000000}" />
+		            <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,35.000000}" />
+		            <Property Name="HorzFormatting" Value="RightAligned" />
+		            <Property Name="TextColor" Value="FFFFF263" />
+		            <Property Name="VertFormatting" Value="VertCentred" />
+		          </Window>
+		          <Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Item6_Text_5" >
+		            <Property Name="UnifiedPosition" Value="{{0.000000,425.000000},{0.000000,0.000000}" />
+		            <Property Name="UnifiedSize" Value="{{0.000000,89.000000},{0.000000,35.000000}" />
+		            <Property Name="HorzFormatting" Value="RightAligned" />
+		            <Property Name="TextColor" Value="FFFFF263" />
+		            <Property Name="VertFormatting" Value="VertCentred" />
+		          </Window>	
+	          </Window>
+
+                    
+          
+	          <Window Type="TLBB_ActionButton" Name="YbMarket_Item7" >
+	            <Property Name="AbsolutePosition" Value="x:2.000000 y:211.000000" />
+	            <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+	            <Event Name="Clicked" Function="OnYbMarket_ActionItemClicked(7);" />
+	          </Window>
+	          <Window Type="TLBB_SimpleMulitiTextFrame" Name="YbMarket_Item7_Text" >
+	            <Property Name="UnifiedPosition" Value="{{0.000000,36.000000},{0.000000,211.000000}" />
+	            <Property Name="UnifiedSize" Value="{{0.000000,540.000000},{0.000000,35.000000}" />
+	            <Property Name="HorzFormatting" Value="HorzCentred" />
+	            <Property Name="TextColor" Value="FFFFF263" />
+	            <Property Name="VertFormatting" Value="VertCentred" />
+		          <Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Item7_Text_1" >
+		            <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,0.000000}" />
+		            <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,35.000000}" />
+		            <Property Name="HorzFormatting" Value="LeftAligned" />
+		            <Property Name="TextColor" Value="FFFFF263" />
+		            <Property Name="VertFormatting" Value="VertCentred" />
+		          </Window>
+		          <Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Item7_Text_2" >
+		            <Property Name="UnifiedPosition" Value="{{0.000000,160.000000},{0.000000,0.000000}" />
+		            <Property Name="UnifiedSize" Value="{{0.000000,77.000000},{0.000000,35.000000}" />
+		            <Property Name="HorzFormatting" Value="HorzCentred" />
+		            <Property Name="TextColor" Value="FFFFF263" />
+		            <Property Name="VertFormatting" Value="VertCentred" />
+		          </Window>
+		          <Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Item7_Text_3" >
+		            <Property Name="UnifiedPosition" Value="{{0.000000,252.000000},{0.000000,0.000000}" />
+		            <Property Name="UnifiedSize" Value="{{0.000000,49.000000},{0.000000,35.000000}" />
+		            <Property Name="HorzFormatting" Value="RightAligned" />
+		            <Property Name="TextColor" Value="FFFFF263" />
+		            <Property Name="VertFormatting" Value="VertCentred" />
+		          </Window>
+		          <Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Item7_Text_4" >
+		            <Property Name="UnifiedPosition" Value="{{0.000000,320.000000},{0.000000,0.000000}" />
+		            <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,35.000000}" />
+		            <Property Name="HorzFormatting" Value="RightAligned" />
+		            <Property Name="TextColor" Value="FFFFF263" />
+		            <Property Name="VertFormatting" Value="VertCentred" />
+		          </Window>
+		          <Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Item7_Text_5" >
+		            <Property Name="UnifiedPosition" Value="{{0.000000,425.000000},{0.000000,0.000000}" />
+		            <Property Name="UnifiedSize" Value="{{0.000000,89.000000},{0.000000,35.000000}" />
+		            <Property Name="HorzFormatting" Value="RightAligned" />
+		            <Property Name="TextColor" Value="FFFFF263" />
+		            <Property Name="VertFormatting" Value="VertCentred" />
+		          </Window>	
+	          </Window>
+
+                    
+          
+          
+	          <Window Type="TLBB_ActionButton" Name="YbMarket_Item8" >
+	            <Property Name="AbsolutePosition" Value="x:2.000000 y:246.000000" />
+	            <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+	            <Event Name="Clicked" Function="OnYbMarket_ActionItemClicked(8);" />
+	          </Window>
+	          <Window Type="TLBB_SimpleMulitiTextFrame" Name="YbMarket_Item8_Text" >
+	            <Property Name="UnifiedPosition" Value="{{0.000000,36.000000},{0.000000,246.000000}" />
+	            <Property Name="UnifiedSize" Value="{{0.000000,540.000000},{0.000000,35.000000}" />
+	            <Property Name="HorzFormatting" Value="HorzCentred" />
+	            <Property Name="TextColor" Value="FFFFF263" />
+	            <Property Name="VertFormatting" Value="VertCentred" />
+		          <Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Item8_Text_1" >
+		            <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,0.000000}" />
+		            <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,35.000000}" />
+		            <Property Name="HorzFormatting" Value="LeftAligned" />
+		            <Property Name="TextColor" Value="FFFFF263" />
+		            <Property Name="VertFormatting" Value="VertCentred" />
+		          </Window>
+		          <Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Item8_Text_2" >
+		            <Property Name="UnifiedPosition" Value="{{0.000000,160.000000},{0.000000,0.000000}" />
+		            <Property Name="UnifiedSize" Value="{{0.000000,77.000000},{0.000000,35.000000}" />
+		            <Property Name="HorzFormatting" Value="HorzCentred" />
+		            <Property Name="TextColor" Value="FFFFF263" />
+		            <Property Name="VertFormatting" Value="VertCentred" />
+		          </Window>
+		          <Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Item8_Text_3" >
+		            <Property Name="UnifiedPosition" Value="{{0.000000,252.000000},{0.000000,0.000000}" />
+		            <Property Name="UnifiedSize" Value="{{0.000000,49.000000},{0.000000,35.000000}" />
+		            <Property Name="HorzFormatting" Value="RightAligned" />
+		            <Property Name="TextColor" Value="FFFFF263" />
+		            <Property Name="VertFormatting" Value="VertCentred" />
+		          </Window>
+		          <Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Item8_Text_4" >
+		            <Property Name="UnifiedPosition" Value="{{0.000000,320.000000},{0.000000,0.000000}" />
+		            <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,35.000000}" />
+		            <Property Name="HorzFormatting" Value="RightAligned" />
+		            <Property Name="TextColor" Value="FFFFF263" />
+		            <Property Name="VertFormatting" Value="VertCentred" />
+		          </Window>
+		          <Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Item8_Text_5" >
+		            <Property Name="UnifiedPosition" Value="{{0.000000,425.000000},{0.000000,0.000000}" />
+		            <Property Name="UnifiedSize" Value="{{0.000000,89.000000},{0.000000,35.000000}" />
+		            <Property Name="HorzFormatting" Value="RightAligned" />
+		            <Property Name="TextColor" Value="FFFFF263" />
+		            <Property Name="VertFormatting" Value="VertCentred" />
+		          </Window>	
+	          </Window>
+
+                    
+          
+	          <Window Type="TLBB_ActionButton" Name="YbMarket_Item9" >
+	            <Property Name="AbsolutePosition" Value="x:2.000000 y:281.000000" />
+	            <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+	            <Event Name="Clicked" Function="OnYbMarket_ActionItemClicked(9);" />
+	          </Window>
+	          <Window Type="TLBB_SimpleMulitiTextFrame" Name="YbMarket_Item9_Text" >
+	            <Property Name="UnifiedPosition" Value="{{0.000000,36.000000},{0.000000,281.000000}" />
+	            <Property Name="UnifiedSize" Value="{{0.000000,540.000000},{0.000000,35.000000}" />
+	            <Property Name="HorzFormatting" Value="HorzCentred" />
+	            <Property Name="TextColor" Value="FFFFF263" />
+	            <Property Name="VertFormatting" Value="VertCentred" />
+		          <Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Item9_Text_1" >
+		            <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,0.000000}" />
+		            <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,35.000000}" />
+		            <Property Name="HorzFormatting" Value="LeftAligned" />
+		            <Property Name="TextColor" Value="FFFFF263" />
+		            <Property Name="VertFormatting" Value="VertCentred" />
+		          </Window>
+		          <Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Item9_Text_2" >
+		            <Property Name="UnifiedPosition" Value="{{0.000000,160.000000},{0.000000,0.000000}" />
+		            <Property Name="UnifiedSize" Value="{{0.000000,77.000000},{0.000000,35.000000}" />
+		            <Property Name="HorzFormatting" Value="HorzCentred" />
+		            <Property Name="TextColor" Value="FFFFF263" />
+		            <Property Name="VertFormatting" Value="VertCentred" />
+		          </Window>
+		          <Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Item9_Text_3" >
+		            <Property Name="UnifiedPosition" Value="{{0.000000,252.000000},{0.000000,0.000000}" />
+		            <Property Name="UnifiedSize" Value="{{0.000000,49.000000},{0.000000,35.000000}" />
+		            <Property Name="HorzFormatting" Value="RightAligned" />
+		            <Property Name="TextColor" Value="FFFFF263" />
+		            <Property Name="VertFormatting" Value="VertCentred" />
+		          </Window>
+		          <Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Item9_Text_4" >
+		            <Property Name="UnifiedPosition" Value="{{0.000000,320.000000},{0.000000,0.000000}" />
+		            <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,35.000000}" />
+		            <Property Name="HorzFormatting" Value="RightAligned" />
+		            <Property Name="TextColor" Value="FFFFF263" />
+		            <Property Name="VertFormatting" Value="VertCentred" />
+		          </Window>
+		          <Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Item9_Text_5" >
+		            <Property Name="UnifiedPosition" Value="{{0.000000,425.000000},{0.000000,0.000000}" />
+		            <Property Name="UnifiedSize" Value="{{0.000000,89.000000},{0.000000,35.000000}" />
+		            <Property Name="HorzFormatting" Value="RightAligned" />
+		            <Property Name="TextColor" Value="FFFFF263" />
+		            <Property Name="VertFormatting" Value="VertCentred" />
+		          </Window>	
+	          </Window>
+
+	          
+                    
+          
+	          <Window Type="TLBB_ActionButton" Name="YbMarket_Item10" >
+	            <Property Name="AbsolutePosition" Value="x:2.000000 y:316.000000" />
+	            <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+	            <Event Name="Clicked" Function="OnYbMarket_ActionItemClicked(10);" />
+	          </Window>
+	          <Window Type="TLBB_SimpleMulitiTextFrame" Name="YbMarket_Item10_Text" >
+	            <Property Name="UnifiedPosition" Value="{{0.000000,36.000000},{0.000000,316.000000}" />
+	            <Property Name="UnifiedSize" Value="{{0.000000,540.000000},{0.000000,35.000000}" />
+	            <Property Name="HorzFormatting" Value="HorzCentred" />
+	            <Property Name="TextColor" Value="FFFFF263" />
+	            <Property Name="VertFormatting" Value="VertCentred" />
+		          <Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Item10_Text_1" >
+		            <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,0.000000}" />
+		            <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,35.000000}" />
+		            <Property Name="HorzFormatting" Value="LeftAligned" />
+		            <Property Name="TextColor" Value="FFFFF263" />
+		            <Property Name="VertFormatting" Value="VertCentred" />
+		          </Window>
+		          <Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Item10_Text_2" >
+		            <Property Name="UnifiedPosition" Value="{{0.000000,160.000000},{0.000000,0.000000}" />
+		            <Property Name="UnifiedSize" Value="{{0.000000,77.000000},{0.000000,35.000000}" />
+		            <Property Name="HorzFormatting" Value="HorzCentred" />
+		            <Property Name="TextColor" Value="FFFFF263" />
+		            <Property Name="VertFormatting" Value="VertCentred" />
+		          </Window>
+		          <Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Item10_Text_3" >
+		            <Property Name="UnifiedPosition" Value="{{0.000000,252.000000},{0.000000,0.000000}" />
+		            <Property Name="UnifiedSize" Value="{{0.000000,49.000000},{0.000000,35.000000}" />
+		            <Property Name="HorzFormatting" Value="RightAligned" />
+		            <Property Name="TextColor" Value="FFFFF263" />
+		            <Property Name="VertFormatting" Value="VertCentred" />
+		          </Window>
+		          <Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Item10_Text_4" >
+		            <Property Name="UnifiedPosition" Value="{{0.000000,320.000000},{0.000000,0.000000}" />
+		            <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,35.000000}" />
+		            <Property Name="HorzFormatting" Value="RightAligned" />
+		            <Property Name="TextColor" Value="FFFFF263" />
+		            <Property Name="VertFormatting" Value="VertCentred" />
+		          </Window>
+		          <Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Item10_Text_5" >
+		            <Property Name="UnifiedPosition" Value="{{0.000000,425.000000},{0.000000,0.000000}" />
+		            <Property Name="UnifiedSize" Value="{{0.000000,89.000000},{0.000000,35.000000}" />
+		            <Property Name="HorzFormatting" Value="RightAligned" />
+		            <Property Name="TextColor" Value="FFFFF263" />
+		            <Property Name="VertFormatting" Value="VertCentred" />
+		          </Window>		            
+	          </Window>
+
+          </Window>
+          
+          
+         <Window Type="TLBB_Frame_Lace2" Name="YbMarket_PetInfoBk" >
+            <Property Name="UnifiedPosition" Value="{{0.000000,102.000000},{0.000000,43.000000}" />
+            <Property Name="UnifiedSize" Value="{{0.000000,577.000000},{0.000000,352.000000}" />
+            
+            <Window Type="TLBB_ActionButton" Name="YbMarket_Pet1" >
+              <Property Name="AbsolutePosition" Value="x:2.000000 y:1.000000" />
+              <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+			  <Property Name="DraggingEnabled" Value="False" />
+			  <Property Name="Empty" Value="False" />
+              <Event Name="Clicked" Function="OnYbMarket_ActionPetClicked(1);" />
+            </Window>
+            <Window Type="TLBB_SimpleMulitiTextFrame" Name="YbMarket_Pet1_Text" >
+            	<Property Name="UnifiedPosition" Value="{{0.000000,36.000000},{0.000000,1.000000}" />
+            	<Property Name="UnifiedSize" Value="{{0.000000,540.000000},{0.000000,35.000000}" />
+            	<Property Name="HorzFormatting" Value="HorzCentred" />
+            	<Property Name="TextColor" Value="FFFFF263" />
+            	<Property Name="VertFormatting" Value="VertCentred" />
+		        	<Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Pet1_Text_1" >
+		            <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,0.000000}" />
+		            <Property Name="UnifiedSize" Value="{{0.000000,136.000000},{0.000000,35.000000}" />
+		            <Property Name="HorzFormatting" Value="LeftAligned" />
+		            <Property Name="TextColor" Value="FFFFF263" />
+		            <Property Name="VertFormatting" Value="VertCentred" />
+		        	</Window>
+	          	<Window Type="TLBB_ButtonCommon" Name="YbMarket_Pet1_btnDetail">
+	             <Property Name="UnifiedPosition" Value="{{0.000000,140.000000},{0.000000,7.000000}" />
+	             <Property Name="UnifiedSize" Value="{{0.0,60.000000},{0.000000,20.000000}" />
+	             <Property Name="Text" Value="#{YBSC_XML_60}" />
+	             <Event Name="Clicked" Function="OnYbMarket_btnDetailClicked(1);" />
+	          	</Window>
+		        	<Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Pet1_Text_2" >
+		            <Property Name="UnifiedPosition" Value="{{0.000000,212.000000},{0.000000,0.000000}" />
+		            <Property Name="UnifiedSize" Value="{{0.000000,135.000000},{0.000000,35.000000}" />
+		            <Property Name="HorzFormatting" Value="HorzCentred" />
+		            <Property Name="TextColor" Value="FFFFF263" />
+		            <Property Name="VertFormatting" Value="VertCentred" />
+		        	</Window>
+		        	<Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Pet1_Text_3" >
+		            <Property Name="UnifiedPosition" Value="{{0.000000,352.000000},{0.000000,0.000000}" />
+		            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,35.000000}" />
+		            <Property Name="HorzFormatting" Value="RightAligned" />
+		            <Property Name="TextColor" Value="FFFFF263" />
+		            <Property Name="VertFormatting" Value="VertCentred" />
+		        	</Window>
+            </Window>
+
+           <Window Type="TLBB_ActionButton" Name="YbMarket_Pet2" >
+              <Property Name="AbsolutePosition" Value="x:2.000000 y:36.000000" />
+              <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+			  <Property Name="DraggingEnabled" Value="False" />
+			  <Property Name="Empty" Value="False" />
+              <Event Name="Clicked" Function="OnYbMarket_ActionPetClicked(2);" />
+            </Window>
+            <Window Type="TLBB_SimpleMulitiTextFrame" Name="YbMarket_Pet2_Text" >
+              <Property Name="UnifiedPosition" Value="{{0.000000,36.000000},{0.000000,36.000000}" />
+              <Property Name="UnifiedSize" Value="{{0.000000,540.000000},{0.000000,35.000000}" />
+              <Property Name="HorzFormatting" Value="HorzCentred" />
+              <Property Name="TextColor" Value="FFFFF263" />
+              <Property Name="VertFormatting" Value="VertCentred" />
+		        	<Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Pet2_Text_1" >
+		            <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,0.000000}" />
+		            <Property Name="UnifiedSize" Value="{{0.000000,136.000000},{0.000000,35.000000}" />
+		            <Property Name="HorzFormatting" Value="LeftAligned" />
+		            <Property Name="TextColor" Value="FFFFF263" />
+		            <Property Name="VertFormatting" Value="VertCentred" />
+		        	</Window>
+	          	<Window Type="TLBB_ButtonCommon" Name="YbMarket_Pet2_btnDetail">
+	             <Property Name="UnifiedPosition" Value="{{0.000000,140.000000},{0.000000,7.000000}" />
+	             <Property Name="UnifiedSize" Value="{{0.0,60.000000},{0.000000,20.000000}" />
+	             <Property Name="Text" Value="#{YBSC_XML_60}" />
+	             <Event Name="Clicked" Function="OnYbMarket_btnDetailClicked(2);" />
+	          	</Window>
+		        	<Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Pet2_Text_2" >
+		            <Property Name="UnifiedPosition" Value="{{0.000000,212.000000},{0.000000,0.000000}" />
+		            <Property Name="UnifiedSize" Value="{{0.000000,135.000000},{0.000000,35.000000}" />
+		            <Property Name="HorzFormatting" Value="HorzCentred" />
+		            <Property Name="TextColor" Value="FFFFF263" />
+		            <Property Name="VertFormatting" Value="VertCentred" />
+		        	</Window>
+		        	<Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Pet2_Text_3" >
+		            <Property Name="UnifiedPosition" Value="{{0.000000,352.000000},{0.000000,0.000000}" />
+		            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,35.000000}" />
+		            <Property Name="HorzFormatting" Value="RightAligned" />
+		            <Property Name="TextColor" Value="FFFFF263" />
+		            <Property Name="VertFormatting" Value="VertCentred" />
+		        	</Window>              
+            </Window>
+           
+           <Window Type="TLBB_ActionButton" Name="YbMarket_Pet3" >
+              <Property Name="AbsolutePosition" Value="x:2.000000 y:71.000000" />
+              <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+			  <Property Name="DraggingEnabled" Value="False" />
+			  <Property Name="Empty" Value="False" />
+              <Event Name="Clicked" Function="OnYbMarket_ActionPetClicked(3);" />
+            </Window>
+            <Window Type="TLBB_SimpleMulitiTextFrame" Name="YbMarket_Pet3_Text" >
+              <Property Name="UnifiedPosition" Value="{{0.000000,36.000000},{0.000000,71.000000}" />
+              <Property Name="UnifiedSize" Value="{{0.000000,540.000000},{0.000000,35.000000}" />
+              <Property Name="HorzFormatting" Value="HorzCentred" />
+              <Property Name="TextColor" Value="FFFFF263" />
+              <Property Name="VertFormatting" Value="VertCentred" />
+		        	<Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Pet3_Text_1" >
+		            <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,0.000000}" />
+		            <Property Name="UnifiedSize" Value="{{0.000000,136.000000},{0.000000,35.000000}" />
+		            <Property Name="HorzFormatting" Value="LeftAligned" />
+		            <Property Name="TextColor" Value="FFFFF263" />
+		            <Property Name="VertFormatting" Value="VertCentred" />
+		        	</Window>
+	          	<Window Type="TLBB_ButtonCommon" Name="YbMarket_Pet3_btnDetail">
+	             <Property Name="UnifiedPosition" Value="{{0.000000,140.000000},{0.000000,7.000000}" />
+	             <Property Name="UnifiedSize" Value="{{0.0,60.000000},{0.000000,20.000000}" />
+	             <Property Name="Text" Value="#{YBSC_XML_60}" />
+	             <Event Name="Clicked" Function="OnYbMarket_btnDetailClicked(3);" />
+	          	</Window>
+		        	<Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Pet3_Text_2" >
+		            <Property Name="UnifiedPosition" Value="{{0.000000,212.000000},{0.000000,0.000000}" />
+		            <Property Name="UnifiedSize" Value="{{0.000000,135.000000},{0.000000,35.000000}" />
+		            <Property Name="HorzFormatting" Value="HorzCentred" />
+		            <Property Name="TextColor" Value="FFFFF263" />
+		            <Property Name="VertFormatting" Value="VertCentred" />
+		        	</Window>
+		        	<Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Pet3_Text_3" >
+		            <Property Name="UnifiedPosition" Value="{{0.000000,352.000000},{0.000000,0.000000}" />
+		            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,35.000000}" />
+		            <Property Name="HorzFormatting" Value="RightAligned" />
+		            <Property Name="TextColor" Value="FFFFF263" />
+		            <Property Name="VertFormatting" Value="VertCentred" />
+		        	</Window>
+            </Window>
+
+           <Window Type="TLBB_ActionButton" Name="YbMarket_Pet4" >
+              <Property Name="AbsolutePosition" Value="x:2.000000 y:106.000000" />
+              <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+			  <Property Name="DraggingEnabled" Value="False" />
+			  <Property Name="Empty" Value="False" />
+              <Event Name="Clicked" Function="OnYbMarket_ActionPetClicked(4);" />
+            </Window>
+            <Window Type="TLBB_SimpleMulitiTextFrame" Name="YbMarket_Pet4_Text" >
+              <Property Name="UnifiedPosition" Value="{{0.000000,36.000000},{0.000000,106.000000}" />
+              <Property Name="UnifiedSize" Value="{{0.000000,540.000000},{0.000000,35.000000}" />
+              <Property Name="HorzFormatting" Value="HorzCentred" />
+              <Property Name="TextColor" Value="FFFFF263" />
+              <Property Name="VertFormatting" Value="VertCentred" />
+		        	<Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Pet4_Text_1" >
+		            <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,0.000000}" />
+		            <Property Name="UnifiedSize" Value="{{0.000000,136.000000},{0.000000,35.000000}" />
+		            <Property Name="HorzFormatting" Value="LeftAligned" />
+		            <Property Name="TextColor" Value="FFFFF263" />
+		            <Property Name="VertFormatting" Value="VertCentred" />
+		        	</Window>
+	          	<Window Type="TLBB_ButtonCommon" Name="YbMarket_Pet4_btnDetail">
+	             <Property Name="UnifiedPosition" Value="{{0.000000,140.000000},{0.000000,7.000000}" />
+	             <Property Name="UnifiedSize" Value="{{0.0,60.000000},{0.000000,20.000000}" />
+	             <Property Name="Text" Value="#{YBSC_XML_60}" />
+	             <Event Name="Clicked" Function="OnYbMarket_btnDetailClicked(4);" />
+	          	</Window>
+		        	<Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Pet4_Text_2" >
+		            <Property Name="UnifiedPosition" Value="{{0.000000,212.000000},{0.000000,0.000000}" />
+		            <Property Name="UnifiedSize" Value="{{0.000000,135.000000},{0.000000,35.000000}" />
+		            <Property Name="HorzFormatting" Value="HorzCentred" />
+		            <Property Name="TextColor" Value="FFFFF263" />
+		            <Property Name="VertFormatting" Value="VertCentred" />
+		        	</Window>
+		        	<Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Pet4_Text_3" >
+		            <Property Name="UnifiedPosition" Value="{{0.000000,352.000000},{0.000000,0.000000}" />
+		            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,35.000000}" />
+		            <Property Name="HorzFormatting" Value="RightAligned" />
+		            <Property Name="TextColor" Value="FFFFF263" />
+		            <Property Name="VertFormatting" Value="VertCentred" />
+		        	</Window>
+            </Window>
+
+           <Window Type="TLBB_ActionButton" Name="YbMarket_Pet5" >
+              <Property Name="AbsolutePosition" Value="x:2.000000 y:141.000000" />
+              <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+			  <Property Name="DraggingEnabled" Value="False" />
+			  <Property Name="Empty" Value="False" />
+              <Event Name="Clicked" Function="OnYbMarket_ActionPetClicked(5);" />
+            </Window>
+            <Window Type="TLBB_SimpleMulitiTextFrame" Name="YbMarket_Pet5_Text" >
+              <Property Name="UnifiedPosition" Value="{{0.000000,36.000000},{0.000000,141.000000}" />
+              <Property Name="UnifiedSize" Value="{{0.000000,540.000000},{0.000000,35.000000}" />
+              <Property Name="HorzFormatting" Value="HorzCentred" />
+              <Property Name="TextColor" Value="FFFFF263" />
+              <Property Name="VertFormatting" Value="VertCentred" />
+		        	<Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Pet5_Text_1" >
+		            <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,0.000000}" />
+		            <Property Name="UnifiedSize" Value="{{0.000000,136.000000},{0.000000,35.000000}" />
+		            <Property Name="HorzFormatting" Value="LeftAligned" />
+		            <Property Name="TextColor" Value="FFFFF263" />
+		            <Property Name="VertFormatting" Value="VertCentred" />
+		        	</Window>
+	          	<Window Type="TLBB_ButtonCommon" Name="YbMarket_Pet5_btnDetail">
+	             <Property Name="UnifiedPosition" Value="{{0.000000,140.000000},{0.000000,7.000000}" />
+	             <Property Name="UnifiedSize" Value="{{0.0,60.000000},{0.000000,20.000000}" />
+	             <Property Name="Text" Value="#{YBSC_XML_60}" />
+	             <Event Name="Clicked" Function="OnYbMarket_btnDetailClicked(5);" />
+	          	</Window>
+		        	<Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Pet5_Text_2" >
+		            <Property Name="UnifiedPosition" Value="{{0.000000,212.000000},{0.000000,0.000000}" />
+		            <Property Name="UnifiedSize" Value="{{0.000000,135.000000},{0.000000,35.000000}" />
+		            <Property Name="HorzFormatting" Value="HorzCentred" />
+		            <Property Name="TextColor" Value="FFFFF263" />
+		            <Property Name="VertFormatting" Value="VertCentred" />
+		        	</Window>
+		        	<Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Pet5_Text_3" >
+		            <Property Name="UnifiedPosition" Value="{{0.000000,352.000000},{0.000000,0.000000}" />
+		            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,35.000000}" />
+		            <Property Name="HorzFormatting" Value="RightAligned" />
+		            <Property Name="TextColor" Value="FFFFF263" />
+		            <Property Name="VertFormatting" Value="VertCentred" />
+		        	</Window>
+            </Window>
+
+           <Window Type="TLBB_ActionButton" Name="YbMarket_Pet6" >
+              <Property Name="AbsolutePosition" Value="x:2.000000 y:176.000000" />
+              <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+			  <Property Name="DraggingEnabled" Value="False" />
+			  <Property Name="Empty" Value="False" />
+              <Event Name="Clicked" Function="OnYbMarket_ActionPetClicked(6);" />
+            </Window>
+            <Window Type="TLBB_SimpleMulitiTextFrame" Name="YbMarket_Pet6_Text" >
+              <Property Name="UnifiedPosition" Value="{{0.000000,36.000000},{0.000000,176.000000}" />
+              <Property Name="UnifiedSize" Value="{{0.000000,540.000000},{0.000000,35.000000}" />
+              <Property Name="HorzFormatting" Value="HorzCentred" />
+              <Property Name="TextColor" Value="FFFFF263" />
+              <Property Name="VertFormatting" Value="VertCentred" />
+		        	<Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Pet6_Text_1" >
+		            <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,0.000000}" />
+		            <Property Name="UnifiedSize" Value="{{0.000000,136.000000},{0.000000,35.000000}" />
+		            <Property Name="HorzFormatting" Value="LeftAligned" />
+		            <Property Name="TextColor" Value="FFFFF263" />
+		            <Property Name="VertFormatting" Value="VertCentred" />
+		        	</Window>
+	          	<Window Type="TLBB_ButtonCommon" Name="YbMarket_Pet6_btnDetail">
+	             <Property Name="UnifiedPosition" Value="{{0.000000,140.000000},{0.000000,7.000000}" />
+	             <Property Name="UnifiedSize" Value="{{0.0,60.000000},{0.000000,20.000000}" />
+	             <Property Name="Text" Value="#{YBSC_XML_60}" />
+	             <Event Name="Clicked" Function="OnYbMarket_btnDetailClicked(6);" />
+	          	</Window>
+		        	<Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Pet6_Text_2" >
+		            <Property Name="UnifiedPosition" Value="{{0.000000,212.000000},{0.000000,0.000000}" />
+		            <Property Name="UnifiedSize" Value="{{0.000000,135.000000},{0.000000,35.000000}" />
+		            <Property Name="HorzFormatting" Value="HorzCentred" />
+		            <Property Name="TextColor" Value="FFFFF263" />
+		            <Property Name="VertFormatting" Value="VertCentred" />
+		        	</Window>
+		        	<Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Pet6_Text_3" >
+		            <Property Name="UnifiedPosition" Value="{{0.000000,352.000000},{0.000000,0.000000}" />
+		            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,35.000000}" />
+		            <Property Name="HorzFormatting" Value="RightAligned" />
+		            <Property Name="TextColor" Value="FFFFF263" />
+		            <Property Name="VertFormatting" Value="VertCentred" />
+		        	</Window>
+            </Window>
+
+           <Window Type="TLBB_ActionButton" Name="YbMarket_Pet7" >
+              <Property Name="AbsolutePosition" Value="x:2.000000 y:211.000000" />
+              <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+			  <Property Name="DraggingEnabled" Value="False" />
+			  <Property Name="Empty" Value="False" />
+              <Event Name="Clicked" Function="OnYbMarket_ActionPetClicked(7);" />
+            </Window>
+            <Window Type="TLBB_SimpleMulitiTextFrame" Name="YbMarket_Pet7_Text" >
+              <Property Name="UnifiedPosition" Value="{{0.000000,36.000000},{0.000000,211.000000}" />
+              <Property Name="UnifiedSize" Value="{{0.000000,540.000000},{0.000000,35.000000}" />
+              <Property Name="HorzFormatting" Value="HorzCentred" />
+              <Property Name="TextColor" Value="FFFFF263" />
+              <Property Name="VertFormatting" Value="VertCentred" />
+		        	<Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Pet7_Text_1" >
+		            <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,0.000000}" />
+		            <Property Name="UnifiedSize" Value="{{0.000000,136.000000},{0.000000,35.000000}" />
+		            <Property Name="HorzFormatting" Value="LeftAligned" />
+		            <Property Name="TextColor" Value="FFFFF263" />
+		            <Property Name="VertFormatting" Value="VertCentred" />
+		        	</Window>
+	          	<Window Type="TLBB_ButtonCommon" Name="YbMarket_Pet7_btnDetail">
+	             <Property Name="UnifiedPosition" Value="{{0.000000,140.000000},{0.000000,7.000000}" />
+	             <Property Name="UnifiedSize" Value="{{0.0,60.000000},{0.000000,20.000000}" />
+	             <Property Name="Text" Value="#{YBSC_XML_60}" />
+	             <Event Name="Clicked" Function="OnYbMarket_btnDetailClicked(7);" />
+	          	</Window>
+		        	<Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Pet7_Text_2" >
+		            <Property Name="UnifiedPosition" Value="{{0.000000,212.000000},{0.000000,0.000000}" />
+		            <Property Name="UnifiedSize" Value="{{0.000000,135.000000},{0.000000,35.000000}" />
+		            <Property Name="HorzFormatting" Value="HorzCentred" />
+		            <Property Name="TextColor" Value="FFFFF263" />
+		            <Property Name="VertFormatting" Value="VertCentred" />
+		        	</Window>
+		        	<Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Pet7_Text_3" >
+		            <Property Name="UnifiedPosition" Value="{{0.000000,352.000000},{0.000000,0.000000}" />
+		            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,35.000000}" />
+		            <Property Name="HorzFormatting" Value="RightAligned" />
+		            <Property Name="TextColor" Value="FFFFF263" />
+		            <Property Name="VertFormatting" Value="VertCentred" />
+		        	</Window>
+            </Window>
+
+           <Window Type="TLBB_ActionButton" Name="YbMarket_Pet8" >
+              <Property Name="AbsolutePosition" Value="x:2.000000 y:246.000000" />
+              <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+			  <Property Name="DraggingEnabled" Value="False" />
+			  <Property Name="Empty" Value="False" />
+              <Event Name="Clicked" Function="OnYbMarket_ActionPetClicked(8);" />
+            </Window>
+            <Window Type="TLBB_SimpleMulitiTextFrame" Name="YbMarket_Pet8_Text" >
+              <Property Name="UnifiedPosition" Value="{{0.000000,36.000000},{0.000000,246.000000}" />
+              <Property Name="UnifiedSize" Value="{{0.000000,540.000000},{0.000000,35.000000}" />
+              <Property Name="HorzFormatting" Value="HorzCentred" />
+              <Property Name="TextColor" Value="FFFFF263" />
+              <Property Name="VertFormatting" Value="VertCentred" />
+		        	<Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Pet8_Text_1" >
+		            <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,0.000000}" />
+		            <Property Name="UnifiedSize" Value="{{0.000000,136.000000},{0.000000,35.000000}" />
+		            <Property Name="HorzFormatting" Value="LeftAligned" />
+		            <Property Name="TextColor" Value="FFFFF263" />
+		            <Property Name="VertFormatting" Value="VertCentred" />
+		        	</Window>
+	          	<Window Type="TLBB_ButtonCommon" Name="YbMarket_Pet8_btnDetail">
+	             <Property Name="UnifiedPosition" Value="{{0.000000,140.000000},{0.000000,7.000000}" />
+	             <Property Name="UnifiedSize" Value="{{0.0,60.000000},{0.000000,20.000000}" />
+	             <Property Name="Text" Value="#{YBSC_XML_60}" />
+	             <Event Name="Clicked" Function="OnYbMarket_btnDetailClicked(8);" />
+	          	</Window>
+		        	<Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Pet8_Text_2" >
+		            <Property Name="UnifiedPosition" Value="{{0.000000,212.000000},{0.000000,0.000000}" />
+		            <Property Name="UnifiedSize" Value="{{0.000000,135.000000},{0.000000,35.000000}" />
+		            <Property Name="HorzFormatting" Value="HorzCentred" />
+		            <Property Name="TextColor" Value="FFFFF263" />
+		            <Property Name="VertFormatting" Value="VertCentred" />
+		        	</Window>
+		        	<Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Pet8_Text_3" >
+		            <Property Name="UnifiedPosition" Value="{{0.000000,352.000000},{0.000000,0.000000}" />
+		            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,35.000000}" />
+		            <Property Name="HorzFormatting" Value="RightAligned" />
+		            <Property Name="TextColor" Value="FFFFF263" />
+		            <Property Name="VertFormatting" Value="VertCentred" />
+		        	</Window>
+            </Window>
+
+           <Window Type="TLBB_ActionButton" Name="YbMarket_Pet9" >
+              <Property Name="AbsolutePosition" Value="x:2.000000 y:281.000000" />
+              <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+			  <Property Name="DraggingEnabled" Value="False" />
+			  <Property Name="Empty" Value="False" />
+              <Event Name="Clicked" Function="OnYbMarket_ActionPetClicked(9);" />
+            </Window>
+            <Window Type="TLBB_SimpleMulitiTextFrame" Name="YbMarket_Pet9_Text" >
+              <Property Name="UnifiedPosition" Value="{{0.000000,36.000000},{0.000000,281.000000}" />
+              <Property Name="UnifiedSize" Value="{{0.000000,540.000000},{0.000000,35.000000}" />
+              <Property Name="HorzFormatting" Value="HorzCentred" />
+              <Property Name="TextColor" Value="FFFFF263" />
+              <Property Name="VertFormatting" Value="VertCentred" />
+		        	<Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Pet9_Text_1" >
+		            <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,0.000000}" />
+		            <Property Name="UnifiedSize" Value="{{0.000000,136.000000},{0.000000,35.000000}" />
+		            <Property Name="HorzFormatting" Value="LeftAligned" />
+		            <Property Name="TextColor" Value="FFFFF263" />
+		            <Property Name="VertFormatting" Value="VertCentred" />
+		        	</Window>
+	          	<Window Type="TLBB_ButtonCommon" Name="YbMarket_Pet9_btnDetail">
+	             <Property Name="UnifiedPosition" Value="{{0.000000,140.000000},{0.000000,7.000000}" />
+	             <Property Name="UnifiedSize" Value="{{0.0,60.000000},{0.000000,20.000000}" />
+	             <Property Name="Text" Value="#{YBSC_XML_60}" />
+	             <Event Name="Clicked" Function="OnYbMarket_btnDetailClicked(9);" />
+	          	</Window>
+		        	<Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Pet9_Text_2" >
+		            <Property Name="UnifiedPosition" Value="{{0.000000,212.000000},{0.000000,0.000000}" />
+		            <Property Name="UnifiedSize" Value="{{0.000000,135.000000},{0.000000,35.000000}" />
+		            <Property Name="HorzFormatting" Value="HorzCentred" />
+		            <Property Name="TextColor" Value="FFFFF263" />
+		            <Property Name="VertFormatting" Value="VertCentred" />
+		        	</Window>
+		        	<Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Pet9_Text_3" >
+		            <Property Name="UnifiedPosition" Value="{{0.000000,352.000000},{0.000000,0.000000}" />
+		            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,35.000000}" />
+		            <Property Name="HorzFormatting" Value="RightAligned" />
+		            <Property Name="TextColor" Value="FFFFF263" />
+		            <Property Name="VertFormatting" Value="VertCentred" />
+		        	</Window>
+            </Window>
+
+           <Window Type="TLBB_ActionButton" Name="YbMarket_Pet10" >
+              <Property Name="AbsolutePosition" Value="x:2.000000 y:316.000000" />
+              <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+			  <Property Name="DraggingEnabled" Value="False" />
+			  <Property Name="Empty" Value="False" />
+              <Event Name="Clicked" Function="OnYbMarket_ActionPetClicked(10);" />
+            </Window>
+            <Window Type="TLBB_SimpleMulitiTextFrame" Name="YbMarket_Pet10_Text" >
+              <Property Name="UnifiedPosition" Value="{{0.000000,36.000000},{0.000000,316.000000}" />
+              <Property Name="UnifiedSize" Value="{{0.000000,540.000000},{0.000000,35.000000}" />
+              <Property Name="HorzFormatting" Value="HorzCentred" />
+              <Property Name="TextColor" Value="FFFFF263" />
+              <Property Name="VertFormatting" Value="VertCentred" />
+		        	<Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Pet10_Text_1" >
+		            <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,0.000000}" />
+		            <Property Name="UnifiedSize" Value="{{0.000000,136.000000},{0.000000,35.000000}" />
+		            <Property Name="HorzFormatting" Value="LeftAligned" />
+		            <Property Name="TextColor" Value="FFFFF263" />
+		            <Property Name="VertFormatting" Value="VertCentred" />
+		        	</Window>
+	          	<Window Type="TLBB_ButtonCommon" Name="YbMarket_Pet10_btnDetail">
+	             <Property Name="UnifiedPosition" Value="{{0.000000,140.000000},{0.000000,7.000000}" />
+	             <Property Name="UnifiedSize" Value="{{0.0,60.000000},{0.000000,20.000000}" />
+	             <Property Name="Text" Value="#{YBSC_XML_60}" />
+	             <Event Name="Clicked" Function="OnYbMarket_btnDetailClicked(10);" />
+	          	</Window>
+		        	<Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Pet10_Text_2" >
+		            <Property Name="UnifiedPosition" Value="{{0.000000,212.000000},{0.000000,0.000000}" />
+		            <Property Name="UnifiedSize" Value="{{0.000000,135.000000},{0.000000,35.000000}" />
+		            <Property Name="HorzFormatting" Value="HorzCentred" />
+		            <Property Name="TextColor" Value="FFFFF263" />
+		            <Property Name="VertFormatting" Value="VertCentred" />
+		        	</Window>
+		        	<Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Pet10_Text_3" >
+		            <Property Name="UnifiedPosition" Value="{{0.000000,352.000000},{0.000000,0.000000}" />
+		            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,35.000000}" />
+		            <Property Name="HorzFormatting" Value="RightAligned" />
+		            <Property Name="TextColor" Value="FFFFF263" />
+		            <Property Name="VertFormatting" Value="VertCentred" />
+		        	</Window>
+            </Window>
+
+		</Window>
+		<Window Type="TLBB_Frame_Lace2" Name="YbMarket_EquipInfoBk" >
+        <Property Name="UnifiedPosition" Value="{{0.000000,102.000000},{0.000000,43.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.000000,577.000000},{0.000000,352.000000}" />
+        <Window Type="DefaultWindow" Name="YbMarket_Equip1_BK" >
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}" />
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,37.000000}" />
+          <Event Name="MouseLButtonDown" Function="OnYbMarket_AllBKClicked(1);"/>
+          <Window Type="TLBB_ActionButton" Name="YbMarket_Equip1" >
+            <Property Name="AbsolutePosition" Value="x:2.000000 y:1.000000" />
+            <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+            <Property Name="DraggingEnabled" Value="False" />
+            <Property Name="Empty" Value="False" />
+			<Event Name="Clicked" Function="OnYbMarket_ActionEquipClicked(1);" />
+          </Window>
+          <Window Type="TLBB_SimpleMulitiTextFrame" Name="YbMarket_Equip1_Text" >
+            <Property Name="UnifiedPosition" Value="{{0.000000,36.000000},{0.000000,1.000000}" />
+            <Property Name="UnifiedSize" Value="{{0.000000,540.000000},{0.000000,35.000000}" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="TextColor" Value="FFFFF263" />
+            <Property Name="VertFormatting" Value="VertCentred" />
+            <Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Equip1_Text_1" >
+              <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,0.000000}" />
+              <Property Name="UnifiedSize" Value="{{0.000000,136.000000},{0.000000,35.000000}" />
+              <Property Name="HorzFormatting" Value="LeftAligned" />
+              <Property Name="TextColor" Value="FFFFF263" />
+              <Property Name="VertFormatting" Value="VertCentred" />
+            </Window>
+            <Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Equip1_Text_2" >
+              <Property Name="UnifiedPosition" Value="{{0.000000,212.000000},{0.000000,0.000000}" />
+              <Property Name="UnifiedSize" Value="{{0.000000,135.000000},{0.000000,35.000000}" />
+              <Property Name="HorzFormatting" Value="HorzCentred" />
+              <Property Name="TextColor" Value="FFFFF263" />
+              <Property Name="VertFormatting" Value="VertCentred" />
+            </Window>
+            <Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Equip1_Text_3" >
+              <Property Name="UnifiedPosition" Value="{{0.000000,352.000000},{0.000000,0.000000}" />
+              <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,35.000000}" />
+              <Property Name="HorzFormatting" Value="RightAligned" />
+              <Property Name="TextColor" Value="FFFFF263" />
+              <Property Name="VertFormatting" Value="VertCentred" />
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="YbMarket_Equip2_BK" >
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,35.000000}" />
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,37.000000}" />
+          <Event Name="MouseLButtonDown" Function="OnYbMarket_AllBKClicked(2);"/>
+          <Window Type="TLBB_ActionButton" Name="YbMarket_Equip2" >
+            <Property Name="AbsolutePosition" Value="x:2.000000 y:1.000000" />
+            <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+            <Property Name="DraggingEnabled" Value="False" />
+
+            <Property Name="Empty" Value="False" />
+			<Event Name="Clicked" Function="OnYbMarket_ActionEquipClicked(2);" />
+          </Window>
+          <Window Type="TLBB_SimpleMulitiTextFrame" Name="YbMarket_Equip2_Text" >
+            <Property Name="UnifiedPosition" Value="{{0.000000,36.000000},{0.000000,1.000000}" />
+            <Property Name="UnifiedSize" Value="{{0.000000,540.000000},{0.000000,35.000000}" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="TextColor" Value="FFFFF263" />
+            <Property Name="VertFormatting" Value="VertCentred" />
+            <Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Equip2_Text_1" >
+              <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,0.000000}" />
+              <Property Name="UnifiedSize" Value="{{0.000000,136.000000},{0.000000,35.000000}" />
+              <Property Name="HorzFormatting" Value="LeftAligned" />
+              <Property Name="TextColor" Value="FFFFF263" />
+              <Property Name="VertFormatting" Value="VertCentred" />
+            </Window>
+            <Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Equip2_Text_2" >
+              <Property Name="UnifiedPosition" Value="{{0.000000,212.000000},{0.000000,0.000000}" />
+              <Property Name="UnifiedSize" Value="{{0.000000,135.000000},{0.000000,35.000000}" />
+              <Property Name="HorzFormatting" Value="HorzCentred" />
+              <Property Name="TextColor" Value="FFFFF263" />
+              <Property Name="VertFormatting" Value="VertCentred" />
+            </Window>
+            <Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Equip2_Text_3" >
+              <Property Name="UnifiedPosition" Value="{{0.000000,352.000000},{0.000000,0.000000}" />
+              <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,35.000000}" />
+              <Property Name="HorzFormatting" Value="RightAligned" />
+              <Property Name="TextColor" Value="FFFFF263" />
+              <Property Name="VertFormatting" Value="VertCentred" />
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="YbMarket_Equip3_BK" >
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,70.000000}" />
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,37.000000}" />
+          <Event Name="MouseLButtonDown" Function="OnYbMarket_AllBKClicked(3);"/>
+          <Window Type="TLBB_ActionButton" Name="YbMarket_Equip3" >
+            <Property Name="AbsolutePosition" Value="x:2.000000 y:1.000000" />
+            <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+            <Property Name="DraggingEnabled" Value="False" />
+            <Property Name="Empty" Value="False" />
+			<Event Name="Clicked" Function="OnYbMarket_ActionEquipClicked(3);" />
+          </Window>
+          <Window Type="TLBB_SimpleMulitiTextFrame" Name="YbMarket_Equip3_Text" >
+            <Property Name="UnifiedPosition" Value="{{0.000000,36.000000},{0.000000,1.000000}" />
+            <Property Name="UnifiedSize" Value="{{0.000000,540.000000},{0.000000,35.000000}" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="TextColor" Value="FFFFF263" />
+            <Property Name="VertFormatting" Value="VertCentred" />
+            <Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Equip3_Text_1" >
+              <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,0.000000}" />
+              <Property Name="UnifiedSize" Value="{{0.000000,136.000000},{0.000000,35.000000}" />
+              <Property Name="HorzFormatting" Value="LeftAligned" />
+              <Property Name="TextColor" Value="FFFFF263" />
+              <Property Name="VertFormatting" Value="VertCentred" />
+            </Window>
+            <Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Equip3_Text_2" >
+              <Property Name="UnifiedPosition" Value="{{0.000000,212.000000},{0.000000,0.000000}" />
+              <Property Name="UnifiedSize" Value="{{0.000000,135.000000},{0.000000,35.000000}" />
+              <Property Name="HorzFormatting" Value="HorzCentred" />
+              <Property Name="TextColor" Value="FFFFF263" />
+              <Property Name="VertFormatting" Value="VertCentred" />
+            </Window>
+            <Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Equip3_Text_3" >
+              <Property Name="UnifiedPosition" Value="{{0.000000,352.000000},{0.000000,0.000000}" />
+              <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,35.000000}" />
+              <Property Name="HorzFormatting" Value="RightAligned" />
+              <Property Name="TextColor" Value="FFFFF263" />
+              <Property Name="VertFormatting" Value="VertCentred" />
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="YbMarket_Equip4_BK" >
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,105.000000}" />
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,37.000000}" />
+          <Event Name="MouseLButtonDown" Function="OnYbMarket_AllBKClicked(4);"/>
+          <Window Type="TLBB_ActionButton" Name="YbMarket_Equip4" >
+            <Property Name="AbsolutePosition" Value="x:2.000000 y:1.000000" />
+            <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+            <Property Name="DraggingEnabled" Value="False" />
+            <Property Name="Empty" Value="False" />
+			<Event Name="Clicked" Function="OnYbMarket_ActionEquipClicked(4);" />
+          </Window>
+          <Window Type="TLBB_SimpleMulitiTextFrame" Name="YbMarket_Equip4_Text" >
+            <Property Name="UnifiedPosition" Value="{{0.000000,36.000000},{0.000000,1.000000}" />
+            <Property Name="UnifiedSize" Value="{{0.000000,540.000000},{0.000000,35.000000}" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="TextColor" Value="FFFFF263" />
+            <Property Name="VertFormatting" Value="VertCentred" />
+            <Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Equip4_Text_1" >
+              <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,0.000000}" />
+              <Property Name="UnifiedSize" Value="{{0.000000,136.000000},{0.000000,35.000000}" />
+              <Property Name="HorzFormatting" Value="LeftAligned" />
+              <Property Name="TextColor" Value="FFFFF263" />
+              <Property Name="VertFormatting" Value="VertCentred" />
+            </Window>
+            <Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Equip4_Text_2" >
+              <Property Name="UnifiedPosition" Value="{{0.000000,212.000000},{0.000000,0.000000}" />
+              <Property Name="UnifiedSize" Value="{{0.000000,135.000000},{0.000000,35.000000}" />
+              <Property Name="HorzFormatting" Value="HorzCentred" />
+              <Property Name="TextColor" Value="FFFFF263" />
+              <Property Name="VertFormatting" Value="VertCentred" />
+            </Window>
+            <Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Equip4_Text_3" >
+              <Property Name="UnifiedPosition" Value="{{0.000000,352.000000},{0.000000,0.000000}" />
+              <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,35.000000}" />
+              <Property Name="HorzFormatting" Value="RightAligned" />
+              <Property Name="TextColor" Value="FFFFF263" />
+              <Property Name="VertFormatting" Value="VertCentred" />
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="YbMarket_Equip5_BK" >
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,140.000000}" />
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,37.000000}" />
+          <Event Name="MouseLButtonDown" Function="OnYbMarket_AllBKClicked(5);"/>
+          <Window Type="TLBB_ActionButton" Name="YbMarket_Equip5" >
+            <Property Name="AbsolutePosition" Value="x:2.000000 y:1.000000" />
+            <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+            <Property Name="DraggingEnabled" Value="False" />
+            <Property Name="Empty" Value="False" />
+			<Event Name="Clicked" Function="OnYbMarket_ActionEquipClicked(5);" />
+          </Window>
+          <Window Type="TLBB_SimpleMulitiTextFrame" Name="YbMarket_Equip5_Text" >
+            <Property Name="UnifiedPosition" Value="{{0.000000,36.000000},{0.000000,1.000000}" />
+            <Property Name="UnifiedSize" Value="{{0.000000,540.000000},{0.000000,35.000000}" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="TextColor" Value="FFFFF263" />
+            <Property Name="VertFormatting" Value="VertCentred" />
+            <Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Equip5_Text_1" >
+              <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,0.000000}" />
+              <Property Name="UnifiedSize" Value="{{0.000000,136.000000},{0.000000,35.000000}" />
+              <Property Name="HorzFormatting" Value="LeftAligned" />
+              <Property Name="TextColor" Value="FFFFF263" />
+              <Property Name="VertFormatting" Value="VertCentred" />
+            </Window>
+            <Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Equip5_Text_2" >
+              <Property Name="UnifiedPosition" Value="{{0.000000,212.000000},{0.000000,0.000000}" />
+              <Property Name="UnifiedSize" Value="{{0.000000,135.000000},{0.000000,35.000000}" />
+              <Property Name="HorzFormatting" Value="HorzCentred" />
+              <Property Name="TextColor" Value="FFFFF263" />
+              <Property Name="VertFormatting" Value="VertCentred" />
+            </Window>
+            <Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Equip5_Text_3" >
+              <Property Name="UnifiedPosition" Value="{{0.000000,352.000000},{0.000000,0.000000}" />
+              <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,35.000000}" />
+              <Property Name="HorzFormatting" Value="RightAligned" />
+              <Property Name="TextColor" Value="FFFFF263" />
+              <Property Name="VertFormatting" Value="VertCentred" />
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="YbMarket_Equip6_BK" >
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,175.000000}" />
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,37.000000}" />
+          <Event Name="MouseLButtonDown" Function="OnYbMarket_AllBKClicked(6);"/>
+          <Window Type="TLBB_ActionButton" Name="YbMarket_Equip6" >
+            <Property Name="AbsolutePosition" Value="x:2.000000 y:1.000000" />
+            <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+            <Property Name="DraggingEnabled" Value="False" />
+            <Property Name="Empty" Value="False" />
+			<Event Name="Clicked" Function="OnYbMarket_ActionEquipClicked(6);" />
+          </Window>
+          <Window Type="TLBB_SimpleMulitiTextFrame" Name="YbMarket_Equip6_Text" >
+            <Property Name="UnifiedPosition" Value="{{0.000000,36.000000},{0.000000,1.000000}" />
+            <Property Name="UnifiedSize" Value="{{0.000000,540.000000},{0.000000,35.000000}" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="TextColor" Value="FFFFF263" />
+            <Property Name="VertFormatting" Value="VertCentred" />
+            <Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Equip6_Text_1" >
+              <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,0.000000}" />
+              <Property Name="UnifiedSize" Value="{{0.000000,136.000000},{0.000000,35.000000}" />
+              <Property Name="HorzFormatting" Value="LeftAligned" />
+              <Property Name="TextColor" Value="FFFFF263" />
+              <Property Name="VertFormatting" Value="VertCentred" />
+            </Window>
+            <Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Equip6_Text_2" >
+              <Property Name="UnifiedPosition" Value="{{0.000000,212.000000},{0.000000,0.000000}" />
+              <Property Name="UnifiedSize" Value="{{0.000000,135.000000},{0.000000,35.000000}" />
+              <Property Name="HorzFormatting" Value="HorzCentred" />
+              <Property Name="TextColor" Value="FFFFF263" />
+              <Property Name="VertFormatting" Value="VertCentred" />
+            </Window>
+            <Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Equip6_Text_3" >
+              <Property Name="UnifiedPosition" Value="{{0.000000,352.000000},{0.000000,0.000000}" />
+              <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,35.000000}" />
+              <Property Name="HorzFormatting" Value="RightAligned" />
+              <Property Name="TextColor" Value="FFFFF263" />
+              <Property Name="VertFormatting" Value="VertCentred" />
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="YbMarket_Equip7_BK" >
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,210.000000}" />
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,37.000000}" />
+          <Event Name="MouseLButtonDown" Function="OnYbMarket_AllBKClicked(7);"/>
+          <Window Type="TLBB_ActionButton" Name="YbMarket_Equip7" >
+            <Property Name="AbsolutePosition" Value="x:2.000000 y:1.000000" />
+            <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+            <Property Name="DraggingEnabled" Value="False" />
+            <Property Name="Empty" Value="False" />
+			<Event Name="Clicked" Function="OnYbMarket_ActionEquipClicked(7);" />
+          </Window>
+          <Window Type="TLBB_SimpleMulitiTextFrame" Name="YbMarket_Equip7_Text" >
+            <Property Name="UnifiedPosition" Value="{{0.000000,36.000000},{0.000000,1.000000}" />
+            <Property Name="UnifiedSize" Value="{{0.000000,540.000000},{0.000000,35.000000}" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="TextColor" Value="FFFFF263" />
+            <Property Name="VertFormatting" Value="VertCentred" />
+            <Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Equip7_Text_1" >
+              <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,0.000000}" />
+              <Property Name="UnifiedSize" Value="{{0.000000,136.000000},{0.000000,35.000000}" />
+              <Property Name="HorzFormatting" Value="LeftAligned" />
+              <Property Name="TextColor" Value="FFFFF263" />
+              <Property Name="VertFormatting" Value="VertCentred" />
+            </Window>
+            <Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Equip7_Text_2" >
+              <Property Name="UnifiedPosition" Value="{{0.000000,212.000000},{0.000000,0.000000}" />
+              <Property Name="UnifiedSize" Value="{{0.000000,135.000000},{0.000000,35.000000}" />
+              <Property Name="HorzFormatting" Value="HorzCentred" />
+              <Property Name="TextColor" Value="FFFFF263" />
+              <Property Name="VertFormatting" Value="VertCentred" />
+            </Window>
+            <Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Equip7_Text_3" >
+              <Property Name="UnifiedPosition" Value="{{0.000000,352.000000},{0.000000,0.000000}" />
+              <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,35.000000}" />
+              <Property Name="HorzFormatting" Value="RightAligned" />
+              <Property Name="TextColor" Value="FFFFF263" />
+              <Property Name="VertFormatting" Value="VertCentred" />
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="YbMarket_Equip8_BK" >
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,245.000000}" />
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,37.000000}" />
+          <Event Name="MouseLButtonDown" Function="OnYbMarket_AllBKClicked(8);"/>
+          <Window Type="TLBB_ActionButton" Name="YbMarket_Equip8" >
+            <Property Name="AbsolutePosition" Value="x:2.000000 y:1.000000" />
+            <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+            <Property Name="DraggingEnabled" Value="False" />
+            <Property Name="Empty" Value="False" />
+			<Event Name="Clicked" Function="OnYbMarket_ActionEquipClicked(8);" />
+          </Window>
+          <Window Type="TLBB_SimpleMulitiTextFrame" Name="YbMarket_Equip8_Text" >
+            <Property Name="UnifiedPosition" Value="{{0.000000,36.000000},{0.000000,1.000000}" />
+            <Property Name="UnifiedSize" Value="{{0.000000,540.000000},{0.000000,35.000000}" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="TextColor" Value="FFFFF263" />
+            <Property Name="VertFormatting" Value="VertCentred" />
+            <Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Equip8_Text_1" >
+              <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,0.000000}" />
+              <Property Name="UnifiedSize" Value="{{0.000000,136.000000},{0.000000,35.000000}" />
+              <Property Name="HorzFormatting" Value="LeftAligned" />
+              <Property Name="TextColor" Value="FFFFF263" />
+              <Property Name="VertFormatting" Value="VertCentred" />
+            </Window>
+            <Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Equip8_Text_2" >
+              <Property Name="UnifiedPosition" Value="{{0.000000,212.000000},{0.000000,0.000000}" />
+              <Property Name="UnifiedSize" Value="{{0.000000,135.000000},{0.000000,35.000000}" />
+              <Property Name="HorzFormatting" Value="HorzCentred" />
+              <Property Name="TextColor" Value="FFFFF263" />
+              <Property Name="VertFormatting" Value="VertCentred" />
+            </Window>
+            <Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Equip8_Text_3" >
+              <Property Name="UnifiedPosition" Value="{{0.000000,352.000000},{0.000000,0.000000}" />
+              <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,35.000000}" />
+              <Property Name="HorzFormatting" Value="RightAligned" />
+              <Property Name="TextColor" Value="FFFFF263" />
+              <Property Name="VertFormatting" Value="VertCentred" />
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="YbMarket_Equip9_BK" >
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,280.000000}" />
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,37.000000}" />
+          <Event Name="MouseLButtonDown" Function="OnYbMarket_AllBKClicked(9);"/>
+          <Window Type="TLBB_ActionButton" Name="YbMarket_Equip9" >
+            <Property Name="AbsolutePosition" Value="x:2.000000 y:1.000000" />
+            <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+            <Property Name="DraggingEnabled" Value="False" />
+            <Property Name="Empty" Value="False" />
+			<Event Name="Clicked" Function="OnYbMarket_ActionEquipClicked(9);" />
+          </Window>
+          <Window Type="TLBB_SimpleMulitiTextFrame" Name="YbMarket_Equip9_Text" >
+            <Property Name="UnifiedPosition" Value="{{0.000000,36.000000},{0.000000,1.000000}" />
+            <Property Name="UnifiedSize" Value="{{0.000000,540.000000},{0.000000,35.000000}" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="TextColor" Value="FFFFF263" />
+            <Property Name="VertFormatting" Value="VertCentred" />
+            <Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Equip9_Text_1" >
+              <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,0.000000}" />
+              <Property Name="UnifiedSize" Value="{{0.000000,136.000000},{0.000000,35.000000}" />
+              <Property Name="HorzFormatting" Value="LeftAligned" />
+              <Property Name="TextColor" Value="FFFFF263" />
+              <Property Name="VertFormatting" Value="VertCentred" />
+            </Window>
+            <Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Equip9_Text_2" >
+              <Property Name="UnifiedPosition" Value="{{0.000000,212.000000},{0.000000,0.000000}" />
+              <Property Name="UnifiedSize" Value="{{0.000000,135.000000},{0.000000,35.000000}" />
+              <Property Name="HorzFormatting" Value="HorzCentred" />
+              <Property Name="TextColor" Value="FFFFF263" />
+              <Property Name="VertFormatting" Value="VertCentred" />
+            </Window>
+            <Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Equip9_Text_3" >
+              <Property Name="UnifiedPosition" Value="{{0.000000,352.000000},{0.000000,0.000000}" />
+              <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,35.000000}" />
+              <Property Name="HorzFormatting" Value="RightAligned" />
+              <Property Name="TextColor" Value="FFFFF263" />
+              <Property Name="VertFormatting" Value="VertCentred" />
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="YbMarket_Equip10_BK" >
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,315.000000}" />
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,37.000000}" />
+          <Event Name="MouseLButtonDown" Function="OnYbMarket_AllBKClicked(10);"/>
+          <Window Type="TLBB_ActionButton" Name="YbMarket_Equip10" >
+            <Property Name="AbsolutePosition" Value="x:2.000000 y:1.000000" />
+            <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+            <Property Name="DraggingEnabled" Value="False" />
+            <Property Name="Empty" Value="False" />
+			<Event Name="Clicked" Function="OnYbMarket_ActionEquipClicked(10);" />
+          </Window>
+          <Window Type="TLBB_SimpleMulitiTextFrame" Name="YbMarket_Equip10_Text" >
+            <Property Name="UnifiedPosition" Value="{{0.000000,36.000000},{0.000000,1.000000}" />
+            <Property Name="UnifiedSize" Value="{{0.000000,540.000000},{0.000000,35.000000}" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="TextColor" Value="FFFFF263" />
+            <Property Name="VertFormatting" Value="VertCentred" />
+            <Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Equip10_Text_1" >
+              <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,0.000000}" />
+              <Property Name="UnifiedSize" Value="{{0.000000,136.000000},{0.000000,35.000000}" />
+              <Property Name="HorzFormatting" Value="LeftAligned" />
+              <Property Name="TextColor" Value="FFFFF263" />
+              <Property Name="VertFormatting" Value="VertCentred" />
+            </Window>
+            <Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Equip10_Text_2" >
+              <Property Name="UnifiedPosition" Value="{{0.000000,212.000000},{0.000000,0.000000}" />
+              <Property Name="UnifiedSize" Value="{{0.000000,135.000000},{0.000000,35.000000}" />
+              <Property Name="HorzFormatting" Value="HorzCentred" />
+              <Property Name="TextColor" Value="FFFFF263" />
+              <Property Name="VertFormatting" Value="VertCentred" />
+            </Window>
+            <Window Type="TLBB_SimpleTextFrame" Name="YbMarket_Equip10_Text_3" >
+              <Property Name="UnifiedPosition" Value="{{0.000000,352.000000},{0.000000,0.000000}" />
+              <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,35.000000}" />
+              <Property Name="HorzFormatting" Value="RightAligned" />
+              <Property Name="TextColor" Value="FFFFF263" />
+              <Property Name="VertFormatting" Value="VertCentred" />
+            </Window>
+          </Window>
+        </Window>
+      </Window>
+
+          <Window Type="TLBB_SimpleText" Name="YbMarket_lblGoto">
+						<Property Name="UnifiedSize" Value="{{0.000000,33.000000},{0.000000,22.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,107.000000},{0.000000,396.000000}}"/>
+						<Property Name="TextColor" Value="FFFFF263"/>
+						<Property Name="Text" Value="#{YBSC_XML_33}" />
+					</Window>
+
+					<Window Type="TLBB_EditBoxNormal" Name="YbMarket_txtPage">
+						<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,22.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,135.000000},{0.000000,396.000000}}"/>
+						<Property Name="MaxTextLength" Value="4" />
+						<Property Name="ValidationString" Value="[0-9]*" />
+						<Property Name="DefaultEditBox" Value="True"/>
+					</Window>
+					
+					<Window Type="TLBB_SimpleText" Name="YbMarket_lblPage">
+						<Property Name="UnifiedSize" Value="{{0.000000,33.000000},{0.000000,22.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,180.000000},{0.000000,396.000000}}"/>
+						<Property Name="TextColor" Value="FFFFF263"/>
+						<Property Name="Text" Value="#{YBSC_XML_34}" />
+					</Window>
+					
+					<Window Type="TLBB_ButtonCommon2" Name="YbMarket_btnGotoPage">
+						<Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,22.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,195.000000},{0.000000,396.000000}}"/>
+						<Property Name="Text" Value="#{YBSC_XML_33}" />
+						<Event Name="Clicked" Function="OnYbMarket_btnGotoPageClicked();"/>
+					</Window>
+
+					<Window Type="TLBB_ButtonCommon2" Name="YbMarket_btnUpPage">
+						<Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,22.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,250.000000},{0.000000,396.000000}}"/>
+						<Property Name="Text" Value="#{YBSC_XML_35}"/>
+						<Event Name="Clicked" Function="OnYbMarket_btnUpPageClicked();"/>
+					</Window>
+
+					<Window Type="TLBB_SimpleMulitiTextFrame" Name="YbMarket_lblSplitPage">
+						<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,22.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,305.000000},{0.000000,396.000000}}"/>
+						<Property Name="TextColor" Value="FFFFF263"/>
+						<Property Name="HorzFormatting" Value="HorzCentred" />
+					</Window>
+
+          <Window Type="TLBB_ButtonCommon2" Name="YbMarket_btnDownPage" >
+            <Property Name="AbsolutePosition" Value="x:390.000000 y:396.000000" />
+            <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,22.000000}" />
+            <Property Name="Text" Value="#{YBSC_XML_36}" />
+            <Event Name="Clicked" Function="OnYbMarket_btnDownPageClicked();" />
+          </Window>
+          
+          <Window Type="TLBB_ButtonCommon" Name="YbMarket_btnBuy">
+            <Property Name="UnifiedPosition" Value="{{1.000000,-60.000000},{1.000000,-44.000000}" />
+            <Property Name="UnifiedSize" Value="{{0.0,60.000000},{0.000000,20.000000}" />
+            <Property Name="Text" Value="#{YBSC_XML_37}" />
+            <Event Name="Clicked" Function="OnYbMarket_btnBuyClicked();" />
+          </Window>
+          
+          <Window Type="TLBB_SimpleText" Name="YbMarket_lblOwnerYB" >
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{1.000000,-19.000000}" />
+            <Property Name="AbsoluteSize" Value="w:160.000000 h:18.000000" />
+            <Property Name="HorzFormatting" Value="LeftAligned" />
+            <Property Name="Text" Value="#{YBSC_XML_64}" />
+            <Property Name="TextColor" Value="FFFFF263" />
+            <Property Name="VertFormatting" Value="VertCentred" />
+          </Window>
+          
+		<Window Type="TLBB_SimpleText" Name="YbMarket_lblOwnerYBCount">
+			<Property Name="UnifiedSize" Value="{{0.000000,91.000000},{0.000000,17.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,99.000000},{0.000000,422.000000}}"/>
+			<Property Name="Text" Value="0"/>
+		</Window>
+
+          <Window Type="TLBB_ButtonCommon" Name="YbMarket_btnWeb">
+            <Property Name="UnifiedPosition" Value="{{1.000000,-220.000000},{1.000000,-20.000000}" />
+            <Property Name="AbsoluteSize" Value="w:60.000000 h:21.000000"/>
+            <Property Name="Text" Value="#{YBSD_081225_069}"/>
+            <Event Name="Clicked" Function="OnYbMarket_btnWebClicked();"/>
+          </Window>
+          
+          <Window Type="TLBB_ButtonCommon" Name="YbMarket_btnUsage">
+                <Property Name="UnifiedPosition" Value="{{1.000000,-120.000000},{1.000000,-20.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,120.000000},{0.000000,20.000000}" />
+                <Property Name="Text" Value="#{YBSC_XML_38}" />
+                <Event Name="Clicked" Function="OnYbMarket_btnUsageClicked();" />
+          </Window>
+        </Window>
+    </Window>
+</GUILayout>

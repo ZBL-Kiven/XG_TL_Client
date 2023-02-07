@@ -1,0 +1,143 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame0" Name="FeelFeedBack600Gift_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,440.000000},{0.000000,277.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-220.000000},{0.500000,-140.000000}}"/>
+    <Window Type="TLBB_DragTitle" Name="FeelFeedBack600Gift_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="DragTarget" Value="FeelFeedBack600Gift_Frame"/>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="FeelFeedBack600Gift_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function=""/>
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="FeelFeedBack600Gift_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="FeelFeedBack600Gift_OnClose()" />
+    </Window>
+    <Window Type="DefaultWindow" Name="FeelFeedBack600Gift_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-55.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,36.000000}}"/>
+      <Window Type="DefaultWindow" Name="FeelFeedBack600GiftAllBK">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      <Window Type="TLBB_StaticImageNULL" Name="FeelFeedBack600GiftBK1">
+        <Property Name="UnifiedSize" Value="{{0.000000,428.000000},{0.000000,222.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="Image" Value="set:FeelFeedBack600_3 image:FeelFeedBack600_BK2"/>
+      </Window>
+      </Window>
+     
+      <Window Type="TLBB_SimpleText" Name="FeelFeedBack600Gift_Info">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,26.000000}}"/>
+        <Property Name="Text" Value="#{QRDL_20211229_32}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="HorzFormatting" Value="HorzCentred"/>
+      </Window>
+
+      <Window Type="DefaultWindow" Name="FeelFeedBack600Gift_Gift">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,110.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,60.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="TLBB_ActionButton" Name="FeelFeedBack600Gift_Gift1_Icon">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.250000,-24.000000},{0.500000,-40.000000}}"/>
+          <Event Name="Clicked" Function="FeelFeedBack600Gift_1_Select(1);"/>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="FeelFeedBack600Gift_Gift2_Icon">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-24.000000},{0.500000,-40.000000}}"/>
+          <Event Name="Clicked" Function="FeelFeedBack600Gift_1_Select(2);"/>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="FeelFeedBack600Gift_Gift3_Icon">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.750000,-24.000000},{0.500000,-40.000000}}"/>
+          <Event Name="Clicked" Function="FeelFeedBack600Gift_1_Select(3);"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="FeelFeedBack600Gift_Gift1_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,76.000000},{0.000000,16.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.250000,-38.000000},{1.000000,-36.000000}}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="Text" Value="#{QRDL_20211229_33}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="FeelFeedBack600Gift_Gift2_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,76.000000},{0.000000,16.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-38.000000},{1.000000,-36.000000}}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="Text" Value="#{QRDL_20211229_34}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="FeelFeedBack600Gift_Gift3_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,76.000000},{0.000000,16.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.750000,-38.000000},{1.000000,-36.000000}}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="Text" Value="#{QRDL_20211229_35}"/>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="FeelFeedBack600Gift_GiftT">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,110.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,60.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="TLBB_ActionButton" Name="FeelFeedBack600Gift_GiftT1_Icon">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.200000,-24.000000},{0.500000,-40.000000}}"/>
+          <Event Name="Clicked" Function="FeelFeedBack600Gift_2_Select(1);"/>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="FeelFeedBack600Gift_GiftT2_Icon">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.400000,-24.000000},{0.500000,-40.000000}}"/>
+          <Event Name="Clicked" Function="FeelFeedBack600Gift_2_Select(2);"/>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="FeelFeedBack600Gift_GiftT3_Icon">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.600000,-24.000000},{0.500000,-40.000000}}"/>
+          <Event Name="Clicked" Function="FeelFeedBack600Gift_2_Select(3);"/>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="FeelFeedBack600Gift_GiftT4_Icon">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.800000,-24.000000},{0.500000,-40.000000}}"/>
+          <Event Name="Clicked" Function="FeelFeedBack600Gift_2_Select(4);"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="FeelFeedBack600Gift_GiftT1_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,76.000000},{0.000000,16.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.200000,-38.000000},{1.000000,-36.000000}}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="Text" Value="#{QRDL_20211229_40}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="FeelFeedBack600Gift_GiftT2_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,76.000000},{0.000000,16.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.400000,-38.000000},{1.000000,-36.000000}}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="Text" Value="#{QRDL_20211229_41}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="FeelFeedBack600Gift_GiftT3_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,76.000000},{0.000000,16.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.600000,-38.000000},{1.000000,-36.000000}}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="Text" Value="#{QRDL_20211229_42}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="FeelFeedBack600Gift_GiftT4_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,76.000000},{0.000000,16.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.800000,-38.000000},{1.000000,-36.000000}}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="Text" Value="#{QRDL_20211229_43}"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="FeelFeedBack600Gift_Gift_Select">
+        <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,30.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-42.000000},{1.000000,-42.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="PushedImage" Value="set:Seven image:Seven_lingqupush"/>
+        <Property Name="NormalImage" Value="set:Seven image:Seven_lingquNormal"/>
+        <Property Name="HoverImage" Value="set:Seven image:Seven_lingquHover"/>
+        <Property Name="DisabledImage" Value="set:Seven image:Seven_lingquDis"/>
+        <Event Name="Clicked" Function="FeelFeedBack600Gift_Confirm()"/>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

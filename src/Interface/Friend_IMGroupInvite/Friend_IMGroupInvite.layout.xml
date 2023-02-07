@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" ?>
+<GUILayout>
+    <Window Type="TLBB_MainFrame1" Name="Friend_IMGroupInvite_Frame">
+      <Property Name="UnifiedSize" Value="{{0.000000,396.000000},{0.000000,379.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-198.000000},{0.500000,-190.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True" />
+        <Window Type="TLBB_DragTitle" Name="Friend_IMGroupInvite_DragTitle">
+            <Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
+            <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+            <Property Name="DragTarget" Value="Friend_IMGroupInvite_Frame" />
+            <Property Name="Font" Value="YouYuan11.25" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="VertFormatting" Value="VertCentred" />
+            <Property Name="Text" Value="#{LTQH_XML_22}" />
+        </Window>
+        <Window Type="TLBB_ButtonHelp" Name="Friend_IMGroupInvite_Help">
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+            <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+        </Window>
+        <Window Type="TLBB_ButtonClose" Name="Friend_IMGroupInvite_Close">
+            <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+            <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+			<Event Name="Clicked" Function="Friend_IMGroupInvite_Hide()" />
+        </Window>
+            <Window Type="TLBB_SimpleText" Name="Friend_IMGroupInvite_Text">
+              <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,40.000000}}"/>
+              <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+                <Property Name="VertFormatting" Value="VertCentred" />
+                <Property Name="Text" Value="#{LTQH_XML_23}" />
+                <Property Name="RiseOnClick" Value="False" />
+                <Property Name="TextColor" Value="FFFFF263" />
+            </Window>
+      <Window Type="TLBB_Frame_Lace1" Name="Friend_IMGroupInvite_FriendListBK">
+        <Property Name="UnifiedSize" Value="{{0.000000,176.000000},{0.000000,274.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,63.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Window Type="TLBB_IMListBoxCommon" Name="Friend_IMGroupInvite_FriendList">
+          <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{1.000000,-8.000000}}"/>
+		  <Event Name="ItemSelectionChanged" Function="Friend_IMGroupInvite_FriendList_SelectChanged();" />
+        </Window>
+	  </Window>
+      <Window Type="TLBB_SimpleText" Name="Friend_IMGroupInvite_Explain">
+        <Property Name="UnifiedPosition" Value="{{0.000000,214.000000},{0.000000,40.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}" />
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Text" Value="#{LTQH_XML_24}" />
+        <Property Name="TextColor" Value="FFFFF263" />
+      </Window>
+      <Window Type="TLBB_ListBoxCommon" Name="Friend_IMGroupInvite_InvitedList">
+        <Property Name="UnifiedSize" Value="{{0.000000,176.000000},{0.000000,274.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,213.000000},{0.000000,63.000000}}"/>
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="Friend_IMGroupInvite_Del">
+        <Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,190.000000},{0.000000,192.000000}}"/>
+        <Property Name="DisabledImage" Value="set:Button7 image:Friend_ChangeAgname_Disable"/>
+        <Property Name="HoverImage" Value="set:Button7 image:Friend_ChangeAgname_Hover"/>
+        <Property Name="NormalImage" Value="set:Button7 image:Friend_ChangeAgname_Normal"/>
+        <Property Name="PushedImage" Value="set:Button7 image:Friend_ChangeAgname_Pushed"/>
+        <Property Name="Tooltip" Value="#{LTQH_XML_25}"/>
+		<Event Name="Clicked" Function="Friend_IMGroupInvite_Del_One()" />
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="Friend_IMGroupInvite_Add">
+        <Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,190.000000},{0.000000,163.000000}}"/>
+        <Property Name="DisabledImage" Value="set:Button7 image:Friend_ChangeMood_Disable"/>
+        <Property Name="HoverImage" Value="set:Button7 image:Friend_ChangeMood_Hover"/>
+        <Property Name="NormalImage" Value="set:Button7 image:Friend_ChangeMood_Normal"/>
+        <Property Name="PushedImage" Value="set:Button7 image:Friend_ChangeMood_Pushed"/>
+        <Property Name="Tooltip" Value="#{LTQH_XML_26}"/>
+		<Event Name="Clicked" Function="Friend_IMGroupInvite_Add_One()" />
+      </Window>
+       <Window Type="TLBB_Frame_Lace5" Name="Friend_IMGroupInvite_Blank">
+        <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{1.000000,-39.000000}" />
+        <Property Name="UnifiedSize" Value="{{1.000000,-97.000000},{0.000000,20.000000}" />
+        <Property Name="RiseOnClick" Value="False" />
+       </Window>
+       <Window Type="TLBB_ButtonCommon" Name="Friend_IMGroupInvite_OK_Button">
+        <Property Name="UnifiedPosition" Value="{{1.000000,-87.000000},{1.000000,-39.000000}" />
+        <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+        <Property Name="Text" Value="#{SJB_XML_29}" />
+		<Event Name="Clicked" Function="Friend_IMGroupInvite_Invite()" />
+       </Window>
+       <Window Type="TLBB_ButtonCommon" Name="Friend_IMGroupInvite_Cancel_Button">
+        <Property Name="UnifiedPosition" Value="{{1.000000,-46.000000},{1.000000,-39.000000}" />
+        <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+        <Property Name="Text" Value="#{YXJJ_091118_05}" />
+		<Event Name="Clicked" Function="Friend_IMGroupInvite_Hide()" />
+      </Window>
+   </Window>
+</GUILayout>

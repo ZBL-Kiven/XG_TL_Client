@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame0" Name="QinHuangTime">
+		<Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,286.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{1.000000,-303.000000},{0.500000,70.000000}}"/>
+      <Window Type="TLBB_DragTitle" Name="QinHuangTime_DragTitle">
+		<Property Name="UnifiedSize" Value="{{1.000000,-64.000000},{0.000000,26.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,9.000000}}"/>
+        <Property Name="DragTarget" Value="QinHuangTime" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Font" Value="Title" />
+        <Property Name="Text" Value="#gFF0FA0伤害测试系统" />
+      </Window>
+      <Window Type="TLBB_ButtonHelp" Name="QinHuangTime_Help">
+		<Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,13.000000}}"/>
+      </Window>
+      <Window Type="TLBB_ButtonClose" Name="QinHuangTime_Close">
+		<Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,13.000000}}"/>
+		<Event Name="Clicked" Function="this:Hide();" />
+      </Window>
+    <Window Type="DefaultWindow" Name="QinHuangTime_Frame_Client">
+		<Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-50.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,33.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Window Type="TLBB_Frame_Lace1" Name="QinHuangTime_Up">
+		<Property Name="UnifiedSize" Value="{{1.000000,-1.000000},{1.000000,-165.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,4.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="QinHuangTime_Text">
+          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{1.000000,-20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+          <Property Name="Text" Value="#cFFF263    韶年天龙伤害测试系统，玩家攻击怪物后。可获得攻击时间内的伤害总量，方便玩家查看目前的伤害实力情况！" />
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+      </Window>
+			<Window Type="TLBB_ButtonCommon" Name="QinHuangTime_Int">
+				<Property Name="UnifiedPosition" Value="{{0.5,-38.000000},{1.000000,-150.000000}" />
+				<Property Name="AbsoluteSize" Value="w:76.000000 h:20.000000" />
+				<Property Name="Text" Value="面板初始化" />
+				<Event Name="Clicked" Function="QinHuangTime_TimeReach(2)" />
+				<Property Name="Tooltip" Value="可初始化面板，从而重新开始计时" />
+			</Window>		  
+      <Window Type="TLBB_Frame_Lace1" Name="QinHuangTime_Down">
+		<Property Name="UnifiedSize" Value="{{1.000000,-1.000000},{0.000000,107.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{1.000000,-110.000000}}"/>
+        <Window Type="DefaultWindow" Name="QinHuangTime_Pair_Title">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,25.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Window Type="TLBB_StaticImageNULL" Name="QinHuangTime_Pair_Title1BKL">
+            <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,10.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.500000,-5.000000}}" />
+            <Property Name="Image" Value="set:BaseInterface image:HJ_TitleMini01Left" />
+            <Property Name="AlwaysOnTop" Value="True" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="QinHuangTime_Pair_Title1">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{.000000,25.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="Text" Value="#cFFF263伤害信息" />
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="QinHuangTime_Pair_Title1BKR">
+            <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,10.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{1.000000,-120.000000},{0.500000,-5.000000}}" />
+            <Property Name="Image" Value="set:BaseInterface image:HJ_TitleMini01Right" />
+            <Property Name="AlwaysOnTop" Value="True" />
+          </Window>
+        </Window>	
+        <Window Type="DefaultWindow" Name="QinHuangTime_Pair">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,70.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,25.000000}}" />
+          <Property Name="RiseOnClick" Value="False" />		  
+          <Window Type="TLBB_SimpleText" Name="QinHuangTime_NumTitle">
+            <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,0.000000}}" />
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+            <Property Name="Text" Value="#cFFF263平均每秒伤害：" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="QinHuangTime_TimeTitle">
+            <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,25.000000}}" />
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+            <Property Name="Text" Value="#cFFF263输出伤害总量：" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="QinHuangTime_TimeTitle2">
+            <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,50.000000}}" />
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            <Property Name="Text" Value="#cFFF263剩余测试时间：" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="QinHuangTime_Num">
+            <Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{1.000000,-190.000000},{0.000000,0.000000}}" />
+            <Property Name="HorzFormatting" Value="WordWrapRightAligned" />
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Text" Value="已全部刷新" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="QinHuangTime_Time">
+            <Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{1.000000,-190.000000},{0.000000,25.000000}}" />
+            <Property Name="HorzFormatting" Value="WordWrapRightAligned" />
+            <Property Name="Text" Value="%s" />
+          </Window>
+          <Window Type="TLBB_StopWatch" Name="QinHuangTime_Time2">
+            <Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{1.000000,-190.000000},{0.000000,50.000000}}" />
+            <Property Name="HorzFormatting" Value="WordWrapRightAligned" />
+			<Event Name="ReachedZero" Function="QinHuangTime_TimeReach(1);" />
+            <Property Name="Text" Value="00:00" />
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

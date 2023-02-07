@@ -1,0 +1,539 @@
+<?xml version="1.0" ?>
+<GUILayout>
+    <Window Type="TLBB_MainFrame0" Name="BaiBaoShop_Frame">
+        <Property Name="UnifiedPosition" Value="{{0.500000,-175.000000},{0.500000,-172.500000}" />
+        <Property Name="AbsoluteSize" Value="w:350 h:345" />
+        <Event Name="Hidden" Function="Booth_Close();" />
+        <Window Type="TLBB_DragTitle" Name="BaiBaoShop_DragTitle">
+            <Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
+            <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+            <Property Name="DragTarget" Value="BaiBaoShop_Frame" />
+            <Window Type="TLBB_SimpleText" Name="BaiBaoShop_Text">
+                <Property Name="Position" Value="x:0 y:0" />
+                <Property Name="Size" Value="w:1 h:1" />
+                <Property Name="Text" Value="" />
+                <Property Name="Font" Value="YouYuan11.25" />
+                <Property Name="HorzFormatting" Value="HorzCentred" />
+                <Property Name="VertFormatting" Value="VertCentred" />
+                <Property Name="RiseOnClick" Value="False" />
+            </Window>
+        </Window>
+        <Window Type="TLBB_ButtonHelp" Name="BaiBaoShop_Help">
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+            <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+            <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*BaiBaoShop&quot;);' />
+        </Window>
+        <Window Type="TLBB_ButtonClose" Name="BaiBaoShop_Close">
+            <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+            <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+            <Event Name="Clicked" Function="Booth_Close();" />
+        </Window>
+        <Window Type="DefaultWindow" Name="BaiBaoShop_Background_Frame1">
+            <Property Name="AbsolutePosition" Value="x:5.000000 y:36.000000" />
+            <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,-5.000000}" />
+            <Window Type="TLBB_ButtonCheck" Name="BaiBaoShop_querengoumai" >
+                <Property Name="UnifiedPosition" Value="{{0.000000,222.000000},{0.000000,16.000000}" />
+                <Property Name="AbsoluteSize" Value="w:12.000000 h:13.000000" />
+                <Property Name="CheckMode" Value="0" />
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="BaiBaoShop_querengoumai_Text">
+				<Property Name="UnifiedPosition" Value="{{1.000000,-104.000000},{0.000000,13.000000}" />
+				<Property Name="UnifiedSize" Value="{{1.000000,-250.000000},{0.000000,18.000000}" />
+                <Property Name="Text" Value="#{INTERFACE_XML_BaiBaoShop_QUREN1}" />
+                <Property Name="HorzFormatting" Value="LeftAligned" />
+                <Property Name="Tooltip" Value="#{INTERFACE_XML_BaiBaoShop_QUREN2}" />
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="BaiBaoShop_Info_Text">
+				<Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,13.000000}" />
+				<Property Name="UnifiedSize" Value="{{.000000,200.000000},{0.000000,18.000000}" />
+                <Property Name="Text" Value="#W帮会等级越高#G折扣#W越高" />
+                <Property Name="HorzFormatting" Value="LeftAligned" />
+            </Window>
+            <Window Type="DefaultWindow" Name="BaiBaoShop_Action_Set">
+                <Property Name="Position" Value="x:0.026471 y:0.105556" />
+                <Property Name="UnifiedSize" Value="{{0.960000,-3.399993},{0.830000,-32.800007}" />
+                <Window Type="TLBB_ActionButton" Name="BaiBaoShop_Item1">
+                    <Property Name="AbsolutePosition" Value="x:0.000000 y:1.000000" />
+                    <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+                    <Event Name="Clicked" Function="BaiBaoShop_Clicked(1);" />
+            <Window Type="TLBB_SimpleText" Name="BaiBaoShop_Item1_Text">
+				<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}" />
+				<Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}" />
+                <Property Name="Text" Value="" />
+                <Property Name="HorzFormatting" Value="LeftAligned" />
+            </Window>					
+                <Window Type="TLBB_StaticImageNULL" Name="BaiBaoShop_Item1_Mask" >
+                  <Property Name="Position" Value="x:0.000000 y:0.000000" />
+                  <Property Name="Size" Value="w:1.000000 h:1.000000" />
+                  <Property Name="Image" Value="set:Face_04 image:Remind_Bak" />
+                  <Property Name="MouseLButtonHollow" Value="true" />
+                  <Property Name="MouseMoveHollow" Value="true" />
+                  <Property Name="MouseRButtonHollow" Value="true" />
+                </Window>					
+                </Window>
+                <Window Type="TLBB_ActionButton" Name="BaiBaoShop_Item2">
+                    <Property Name="AbsolutePosition" Value="x:0.000000 y:39.000000" />
+                    <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+                    <Event Name="Clicked" Function="BaiBaoShop_Clicked(2);" />
+            <Window Type="TLBB_SimpleText" Name="BaiBaoShop_Item2_Text">
+				<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}" />
+				<Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}" />
+                <Property Name="Text" Value="" />
+                <Property Name="HorzFormatting" Value="LeftAligned" />
+            </Window>					
+                <Window Type="TLBB_StaticImageNULL" Name="BaiBaoShop_Item2_Mask" >
+                  <Property Name="Position" Value="x:0.000000 y:0.000000" />
+                  <Property Name="Size" Value="w:1.000000 h:1.000000" />
+                  <Property Name="Image" Value="set:Face_04 image:Remind_Bak" />
+                  <Property Name="MouseLButtonHollow" Value="true" />
+                  <Property Name="MouseMoveHollow" Value="true" />
+                  <Property Name="MouseRButtonHollow" Value="true" />
+                </Window>					
+                </Window>
+                <Window Type="TLBB_ActionButton" Name="BaiBaoShop_Item3">
+                    <Property Name="AbsolutePosition" Value="x:0.000000 y:77.000000" />
+                    <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+                    <Event Name="Clicked" Function="BaiBaoShop_Clicked(3);" />
+            <Window Type="TLBB_SimpleText" Name="BaiBaoShop_Item3_Text">
+				<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}" />
+				<Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}" />
+                <Property Name="Text" Value="" />
+                <Property Name="HorzFormatting" Value="LeftAligned" />
+            </Window>					
+                <Window Type="TLBB_StaticImageNULL" Name="BaiBaoShop_Item3_Mask" >
+                  <Property Name="Position" Value="x:0.000000 y:0.000000" />
+                  <Property Name="Size" Value="w:1.000000 h:1.000000" />
+                  <Property Name="Image" Value="set:Face_04 image:Remind_Bak" />
+                  <Property Name="MouseLButtonHollow" Value="true" />
+                  <Property Name="MouseMoveHollow" Value="true" />
+                  <Property Name="MouseRButtonHollow" Value="true" />
+                </Window>					
+                </Window>
+                <Window Type="TLBB_ActionButton" Name="BaiBaoShop_Item4">
+                    <Property Name="AbsolutePosition" Value="x:0.000000 y:115.000000" />
+                    <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+                    <Event Name="Clicked" Function="BaiBaoShop_Clicked(4);" />
+            <Window Type="TLBB_SimpleText" Name="BaiBaoShop_Item4_Text">
+				<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}" />
+				<Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}" />
+                <Property Name="Text" Value="" />
+                <Property Name="HorzFormatting" Value="LeftAligned" />
+            </Window>					
+                <Window Type="TLBB_StaticImageNULL" Name="BaiBaoShop_Item4_Mask" >
+                  <Property Name="Position" Value="x:0.000000 y:0.000000" />
+                  <Property Name="Size" Value="w:1.000000 h:1.000000" />
+                  <Property Name="Image" Value="set:Face_04 image:Remind_Bak" />
+                  <Property Name="MouseLButtonHollow" Value="true" />
+                  <Property Name="MouseMoveHollow" Value="true" />
+                  <Property Name="MouseRButtonHollow" Value="true" />
+                </Window>					
+                </Window>
+                <Window Type="TLBB_ActionButton" Name="BaiBaoShop_Item5">
+                    <Property Name="AbsolutePosition" Value="x:0.000000 y:153.000000" />
+                    <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+                    <Event Name="Clicked" Function="BaiBaoShop_Clicked(5);" />
+            <Window Type="TLBB_SimpleText" Name="BaiBaoShop_Item5_Text">
+				<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}" />
+				<Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}" />
+                <Property Name="Text" Value="" />
+                <Property Name="HorzFormatting" Value="LeftAligned" />
+            </Window>					
+                <Window Type="TLBB_StaticImageNULL" Name="BaiBaoShop_Item5_Mask" >
+                  <Property Name="Position" Value="x:0.000000 y:0.000000" />
+                  <Property Name="Size" Value="w:1.000000 h:1.000000" />
+                  <Property Name="Image" Value="set:Face_04 image:Remind_Bak" />
+                  <Property Name="MouseLButtonHollow" Value="true" />
+                  <Property Name="MouseMoveHollow" Value="true" />
+                  <Property Name="MouseRButtonHollow" Value="true" />
+                </Window>					
+                </Window>
+                <Window Type="TLBB_ActionButton" Name="BaiBaoShop_Item6">
+                    <Property Name="AbsolutePosition" Value="x:0.000000 y:191.000000" />
+                    <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+                    <Event Name="Clicked" Function="BaiBaoShop_Clicked(6);" />
+            <Window Type="TLBB_SimpleText" Name="BaiBaoShop_Item6_Text">
+				<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}" />
+				<Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}" />
+                <Property Name="Text" Value="" />
+                <Property Name="HorzFormatting" Value="LeftAligned" />
+            </Window>					
+                <Window Type="TLBB_StaticImageNULL" Name="BaiBaoShop_Item6_Mask" >
+                  <Property Name="Position" Value="x:0.000000 y:0.000000" />
+                  <Property Name="Size" Value="w:1.000000 h:1.000000" />
+                  <Property Name="Image" Value="set:Face_04 image:Remind_Bak" />
+                  <Property Name="MouseLButtonHollow" Value="true" />
+                  <Property Name="MouseMoveHollow" Value="true" />
+                  <Property Name="MouseRButtonHollow" Value="true" />
+                </Window>					
+                </Window>
+                <Window Type="TLBB_ActionButton" Name="BaiBaoShop_Item7">
+                    <Property Name="AbsolutePosition" Value="x:164.000000 y:1.000000" />
+                    <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+                    <Event Name="Clicked" Function="BaiBaoShop_Clicked(7);" />
+            <Window Type="TLBB_SimpleText" Name="BaiBaoShop_Item7_Text">
+				<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}" />
+				<Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}" />
+                <Property Name="Text" Value="" />
+                <Property Name="HorzFormatting" Value="LeftAligned" />
+            </Window>					
+                <Window Type="TLBB_StaticImageNULL" Name="BaiBaoShop_Item7_Mask" >
+                  <Property Name="Position" Value="x:0.000000 y:0.000000" />
+                  <Property Name="Size" Value="w:1.000000 h:1.000000" />
+                  <Property Name="Image" Value="set:Face_04 image:Remind_Bak" />
+                  <Property Name="MouseLButtonHollow" Value="true" />
+                  <Property Name="MouseMoveHollow" Value="true" />
+                  <Property Name="MouseRButtonHollow" Value="true" />
+                </Window>					
+                </Window>
+                <Window Type="TLBB_ActionButton" Name="BaiBaoShop_Item8">
+                    <Property Name="AbsolutePosition" Value="x:164.000000 y:39.000000" />
+                    <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+                    <Event Name="Clicked" Function="BaiBaoShop_Clicked(8);" />
+            <Window Type="TLBB_SimpleText" Name="BaiBaoShop_Item8_Text">
+				<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}" />
+				<Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}" />
+                <Property Name="Text" Value="" />
+                <Property Name="HorzFormatting" Value="LeftAligned" />
+            </Window>					
+                <Window Type="TLBB_StaticImageNULL" Name="BaiBaoShop_Item8_Mask" >
+                  <Property Name="Position" Value="x:0.000000 y:0.000000" />
+                  <Property Name="Size" Value="w:1.000000 h:1.000000" />
+                  <Property Name="Image" Value="set:Face_04 image:Remind_Bak" />
+                  <Property Name="MouseLButtonHollow" Value="true" />
+                  <Property Name="MouseMoveHollow" Value="true" />
+                  <Property Name="MouseRButtonHollow" Value="true" />
+                </Window>					
+                </Window>
+                <Window Type="TLBB_ActionButton" Name="BaiBaoShop_Item9">
+                    <Property Name="AbsolutePosition" Value="x:164.000000 y:77.000000" />
+                    <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+                    <Event Name="Clicked" Function="BaiBaoShop_Clicked(9);" />
+            <Window Type="TLBB_SimpleText" Name="BaiBaoShop_Item9_Text">
+				<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}" />
+				<Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}" />
+                <Property Name="Text" Value="" />
+                <Property Name="HorzFormatting" Value="LeftAligned" />
+            </Window>					
+                <Window Type="TLBB_StaticImageNULL" Name="BaiBaoShop_Item9_Mask" >
+                  <Property Name="Position" Value="x:0.000000 y:0.000000" />
+                  <Property Name="Size" Value="w:1.000000 h:1.000000" />
+                  <Property Name="Image" Value="set:Face_04 image:Remind_Bak" />
+                  <Property Name="MouseLButtonHollow" Value="true" />
+                  <Property Name="MouseMoveHollow" Value="true" />
+                  <Property Name="MouseRButtonHollow" Value="true" />
+                </Window>					
+                </Window>
+                <Window Type="TLBB_ActionButton" Name="BaiBaoShop_Item10">
+                    <Property Name="AbsolutePosition" Value="x:164.000000 y:115.000000" />
+                    <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+                    <Event Name="Clicked" Function="BaiBaoShop_Clicked(10);" />
+            <Window Type="TLBB_SimpleText" Name="BaiBaoShop_Item10_Text">
+				<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}" />
+				<Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}" />
+                <Property Name="Text" Value="" />
+                <Property Name="HorzFormatting" Value="LeftAligned" />
+            </Window>					
+                <Window Type="TLBB_StaticImageNULL" Name="BaiBaoShop_Item10_Mask" >
+                  <Property Name="Position" Value="x:0.000000 y:0.000000" />
+                  <Property Name="Size" Value="w:1.000000 h:1.000000" />
+                  <Property Name="Image" Value="set:Face_04 image:Remind_Bak" />
+                  <Property Name="MouseLButtonHollow" Value="true" />
+                  <Property Name="MouseMoveHollow" Value="true" />
+                  <Property Name="MouseRButtonHollow" Value="true" />
+                </Window>					
+                </Window>
+                <Window Type="TLBB_ActionButton" Name="BaiBaoShop_Item11">
+                    <Property Name="AbsolutePosition" Value="x:164.000000 y:153.000000" />
+                    <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+                    <Event Name="Clicked" Function="BaiBaoShop_Clicked(11);" />
+            <Window Type="TLBB_SimpleText" Name="BaiBaoShop_Item11_Text">
+				<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}" />
+				<Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}" />
+                <Property Name="Text" Value="" />
+                <Property Name="HorzFormatting" Value="LeftAligned" />
+            </Window>					
+                <Window Type="TLBB_StaticImageNULL" Name="BaiBaoShop_Item11_Mask" >
+                  <Property Name="Position" Value="x:0.000000 y:0.000000" />
+                  <Property Name="Size" Value="w:1.000000 h:1.000000" />
+                  <Property Name="Image" Value="set:Face_04 image:Remind_Bak" />
+                  <Property Name="MouseLButtonHollow" Value="true" />
+                  <Property Name="MouseMoveHollow" Value="true" />
+                  <Property Name="MouseRButtonHollow" Value="true" />
+                </Window>					
+                </Window>
+                <Window Type="TLBB_ActionButton" Name="BaiBaoShop_Item12">
+                    <Property Name="AbsolutePosition" Value="x:164.000000 y:191.000000" />
+                    <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+                    <Event Name="Clicked" Function="BaiBaoShop_Clicked(12);" />
+            <Window Type="TLBB_SimpleText" Name="BaiBaoShop_Item12_Text">
+				<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}" />
+				<Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}" />
+                <Property Name="Text" Value="" />
+                <Property Name="HorzFormatting" Value="LeftAligned" />
+            </Window>					
+                <Window Type="TLBB_StaticImageNULL" Name="BaiBaoShop_Item12_Mask" >
+                  <Property Name="Position" Value="x:0.000000 y:0.000000" />
+                  <Property Name="Size" Value="w:1.000000 h:1.000000" />
+                  <Property Name="Image" Value="set:Face_04 image:Remind_Bak" />
+                  <Property Name="MouseLButtonHollow" Value="true" />
+                  <Property Name="MouseMoveHollow" Value="true" />
+                  <Property Name="MouseRButtonHollow" Value="true" />
+                </Window>					
+                </Window>
+                <Window Type="TLBB_SimpleMulitiTextFrame" Name="BaiBaoShop_ItemInfo1">
+                    <Property Name="AbsolutePosition" Value="x:38.000000 y:0.000000" />
+                    <Property Name="AbsoluteSize" Value="w:120.000000 h:36.000000" />
+                    <Window Type="TLBB_SimpleText" Name="BaiBaoShop_ItemInfo1_Text">
+                        <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+                        <Property Name="AbsoluteSize" Value="w:120.000000 h:18.000000" />
+                        <Property Name="Text" Value="#{INTERFACE_XML_909}" />
+                        <Property Name="TextColor" Value="FFFFF263" />
+                    </Window>
+                    <Window Type="TLBB_SimpleText" Name="BaiBaoShop_ItemInfo1_GB">
+                        <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+                        <Property Name="AbsoluteSize" Value="w:113.000000 h:18.000000" />
+                        <Property Name="HorzFormatting" Value="RightAligned" />
+                        <Property Name="TextColor" Value="FFFFF263" />
+                    </Window>
+                    <Window Type="TLBB_Money" Name="BaiBaoShop_ItemInfo1_Price">
+                        <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+                        <Property Name="AbsoluteSize" Value="w:117.000000 h:16.000000" />
+                        <Property Name="MoneyNumber" Value="0" />
+                        <Property Name="HorzFormatting" Value="RightAligned" />
+                    </Window>
+                </Window>
+                <Window Type="TLBB_SimpleMulitiTextFrame" Name="BaiBaoShop_ItemInfo2">
+                    <Property Name="AbsolutePosition" Value="x:38.000000 y:38.000000" />
+                    <Property Name="AbsoluteSize" Value="w:120.000000 h:36.000000" />
+                    <Window Type="TLBB_SimpleText" Name="BaiBaoShop_ItemInfo2_Text">
+                        <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+                        <Property Name="AbsoluteSize" Value="w:120.000000 h:18.000000" />
+                        <Property Name="TextColor" Value="FFFFF263" />
+                    </Window>
+                    <Window Type="TLBB_Money" Name="BaiBaoShop_ItemInfo2_Price">
+                        <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+                        <Property Name="AbsoluteSize" Value="w:117.000000 h:16.000000" />
+                        <Property Name="MoneyNumber" Value="" />
+                        <Property Name="HorzFormatting" Value="RightAligned" />
+                    </Window>
+                    <Window Type="TLBB_SimpleText" Name="BaiBaoShop_ItemInfo2_GB">
+                        <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+                        <Property Name="AbsoluteSize" Value="w:113.000000 h:18.000000" />
+                        <Property Name="HorzFormatting" Value="RightAligned" />
+                        <Property Name="TextColor" Value="FFFFF263" />
+                    </Window>
+                </Window>
+                <Window Type="TLBB_SimpleMulitiTextFrame" Name="BaiBaoShop_ItemInfo3">
+                    <Property Name="AbsolutePosition" Value="x:38.000000 y:76.000000" />
+                    <Property Name="AbsoluteSize" Value="w:120.000000 h:36.000000" />
+                    <Window Type="TLBB_SimpleText" Name="BaiBaoShop_ItemInfo3_Text">
+                        <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+                        <Property Name="AbsoluteSize" Value="w:120.000000 h:18.000000" />
+                        <Property Name="TextColor" Value="FFFFF263" />
+                    </Window>
+                    <Window Type="TLBB_Money" Name="BaiBaoShop_ItemInfo3_Price">
+                        <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+                        <Property Name="AbsoluteSize" Value="w:117.000000 h:16.000000" />
+                        <Property Name="MoneyNumber" Value="" />
+                        <Property Name="HorzFormatting" Value="RightAligned" />
+                    </Window>
+                    <Window Type="TLBB_SimpleText" Name="BaiBaoShop_ItemInfo3_GB">
+                        <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+                        <Property Name="AbsoluteSize" Value="w:113.000000 h:18.000000" />
+                        <Property Name="HorzFormatting" Value="RightAligned" />
+                        <Property Name="TextColor" Value="FFFFF263" />
+                    </Window>
+                </Window>
+                <Window Type="TLBB_SimpleMulitiTextFrame" Name="BaiBaoShop_ItemInfo4">
+                    <Property Name="AbsolutePosition" Value="x:38.000000 y:114.000000" />
+                    <Property Name="AbsoluteSize" Value="w:120.000000 h:36.000000" />
+                    <Window Type="TLBB_SimpleText" Name="BaiBaoShop_ItemInfo4_Text">
+                        <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+                        <Property Name="AbsoluteSize" Value="w:120.000000 h:18.000000" />
+                        <Property Name="TextColor" Value="FFFFF263" />
+                    </Window>
+                    <Window Type="TLBB_Money" Name="BaiBaoShop_ItemInfo4_Price">
+                        <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+                        <Property Name="AbsoluteSize" Value="w:117.000000 h:16.000000" />
+                        <Property Name="MoneyNumber" Value="" />
+                        <Property Name="HorzFormatting" Value="RightAligned" />
+                    </Window>
+                    <Window Type="TLBB_SimpleText" Name="BaiBaoShop_ItemInfo4_GB">
+                        <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+                        <Property Name="AbsoluteSize" Value="w:113.000000 h:18.000000" />
+                        <Property Name="HorzFormatting" Value="RightAligned" />
+                        <Property Name="TextColor" Value="FFFFF263" />
+                    </Window>
+                </Window>
+                <Window Type="TLBB_SimpleMulitiTextFrame" Name="BaiBaoShop_ItemInfo5">
+                    <Property Name="AbsolutePosition" Value="x:38.000000 y:152.000000" />
+                    <Property Name="AbsoluteSize" Value="w:120.000000 h:36.000000" />
+                    <Window Type="TLBB_SimpleText" Name="BaiBaoShop_ItemInfo5_Text">
+                        <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+                        <Property Name="AbsoluteSize" Value="w:120.000000 h:18.000000" />
+                        <Property Name="TextColor" Value="FFFFF263" />
+                    </Window>
+                    <Window Type="TLBB_Money" Name="BaiBaoShop_ItemInfo5_Price">
+                        <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+                        <Property Name="AbsoluteSize" Value="w:117.000000 h:16.000000" />
+                        <Property Name="MoneyNumber" Value="" />
+                        <Property Name="HorzFormatting" Value="RightAligned" />
+                    </Window>
+                    <Window Type="TLBB_SimpleText" Name="BaiBaoShop_ItemInfo5_GB">
+                        <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+                        <Property Name="AbsoluteSize" Value="w:113.000000 h:18.000000" />
+                        <Property Name="HorzFormatting" Value="RightAligned" />
+                        <Property Name="TextColor" Value="FFFFF263" />
+                    </Window>
+                </Window>
+                <Window Type="TLBB_SimpleMulitiTextFrame" Name="BaiBaoShop_ItemInfo6">
+                    <Property Name="AbsolutePosition" Value="x:38.000000 y:190.000000" />
+                    <Property Name="AbsoluteSize" Value="w:120.000000 h:36.000000" />
+                    <Window Type="TLBB_SimpleText" Name="BaiBaoShop_ItemInfo6_Text">
+                        <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+                        <Property Name="AbsoluteSize" Value="w:120.000000 h:18.000000" />
+                        <Property Name="TextColor" Value="FFFFF263" />
+                    </Window>
+                    <Window Type="TLBB_Money" Name="BaiBaoShop_ItemInfo6_Price">
+                        <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+                        <Property Name="AbsoluteSize" Value="w:117.000000 h:16.000000" />
+                        <Property Name="MoneyNumber" Value="" />
+                        <Property Name="HorzFormatting" Value="RightAligned" />
+                    </Window>
+                    <Window Type="TLBB_SimpleText" Name="BaiBaoShop_ItemInfo6_GB">
+                        <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+                        <Property Name="AbsoluteSize" Value="w:113.000000 h:18.000000" />
+                        <Property Name="HorzFormatting" Value="RightAligned" />
+                        <Property Name="TextColor" Value="FFFFF263" />
+                    </Window>
+                </Window>
+                <Window Type="TLBB_SimpleMulitiTextFrame" Name="BaiBaoShop_ItemInfo7">
+                    <Property Name="AbsolutePosition" Value="x:202.000000 y:0.000000" />
+                    <Property Name="AbsoluteSize" Value="w:120.000000 h:36.000000" />
+                    <Window Type="TLBB_SimpleText" Name="BaiBaoShop_ItemInfo7_Text">
+                        <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+                        <Property Name="AbsoluteSize" Value="w:120.000000 h:18.000000" />
+                        <Property Name="TextColor" Value="FFFFF263" />
+                    </Window>
+                    <Window Type="TLBB_Money" Name="BaiBaoShop_ItemInfo7_Price">
+                        <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+                        <Property Name="AbsoluteSize" Value="w:117.000000 h:16.000000" />
+                        <Property Name="MoneyNumber" Value="" />
+                        <Property Name="HorzFormatting" Value="RightAligned" />
+                    </Window>
+                    <Window Type="TLBB_SimpleText" Name="BaiBaoShop_ItemInfo7_GB">
+                        <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+                        <Property Name="AbsoluteSize" Value="w:113.000000 h:18.000000" />
+                        <Property Name="HorzFormatting" Value="RightAligned" />
+                        <Property Name="TextColor" Value="FFFFF263" />
+                    </Window>
+                </Window>
+                <Window Type="TLBB_SimpleMulitiTextFrame" Name="BaiBaoShop_ItemInfo8">
+                    <Property Name="AbsolutePosition" Value="x:202.000000 y:38.000000" />
+                    <Property Name="AbsoluteSize" Value="w:120.000000 h:36.000000" />
+                    <Window Type="TLBB_SimpleText" Name="BaiBaoShop_ItemInfo8_Text">
+                        <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+                        <Property Name="AbsoluteSize" Value="w:120.000000 h:18.000000" />
+                        <Property Name="TextColor" Value="FFFFF263" />
+                    </Window>
+                    <Window Type="TLBB_Money" Name="BaiBaoShop_ItemInfo8_Price">
+                        <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+                        <Property Name="AbsoluteSize" Value="w:117.000000 h:16.000000" />
+                        <Property Name="MoneyNumber" Value="" />
+                        <Property Name="HorzFormatting" Value="RightAligned" />
+                    </Window>
+                    <Window Type="TLBB_SimpleText" Name="BaiBaoShop_ItemInfo8_GB">
+                        <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+                        <Property Name="AbsoluteSize" Value="w:113.000000 h:18.000000" />
+                        <Property Name="HorzFormatting" Value="RightAligned" />
+                        <Property Name="TextColor" Value="FFFFF263" />
+                    </Window>
+                </Window>
+                <Window Type="TLBB_SimpleMulitiTextFrame" Name="BaiBaoShop_ItemInfo9">
+                    <Property Name="AbsolutePosition" Value="x:202.000000 y:76.000000" />
+                    <Property Name="AbsoluteSize" Value="w:120.000000 h:36.000000" />
+                    <Window Type="TLBB_SimpleText" Name="BaiBaoShop_ItemInfo9_Text">
+                        <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+                        <Property Name="AbsoluteSize" Value="w:120.000000 h:18.000000" />
+                        <Property Name="TextColor" Value="FFFFF263" />
+                    </Window>
+                    <Window Type="TLBB_Money" Name="BaiBaoShop_ItemInfo9_Price">
+                        <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+                        <Property Name="AbsoluteSize" Value="w:117.000000 h:16.000000" />
+                        <Property Name="MoneyNumber" Value="" />
+                        <Property Name="HorzFormatting" Value="RightAligned" />
+                    </Window>
+                    <Window Type="TLBB_SimpleText" Name="BaiBaoShop_ItemInfo9_GB">
+                        <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+                        <Property Name="AbsoluteSize" Value="w:113.000000 h:18.000000" />
+                        <Property Name="HorzFormatting" Value="RightAligned" />
+                        <Property Name="TextColor" Value="FFFFF263" />
+                    </Window>
+                </Window>
+                <Window Type="TLBB_SimpleMulitiTextFrame" Name="BaiBaoShop_ItemInfo10">
+                    <Property Name="AbsolutePosition" Value="x:202.000000 y:114.000000" />
+                    <Property Name="AbsoluteSize" Value="w:120.000000 h:36.000000" />
+                    <Window Type="TLBB_SimpleText" Name="BaiBaoShop_ItemInfo10_Text">
+                        <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+                        <Property Name="AbsoluteSize" Value="w:120.000000 h:18.000000" />
+                        <Property Name="TextColor" Value="FFFFF263" />
+                    </Window>
+                    <Window Type="TLBB_Money" Name="BaiBaoShop_ItemInfo10_Price">
+                        <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+                        <Property Name="AbsoluteSize" Value="w:117.000000 h:16.000000" />
+                        <Property Name="MoneyNumber" Value="" />
+                        <Property Name="HorzFormatting" Value="RightAligned" />
+                    </Window>
+                    <Window Type="TLBB_SimpleText" Name="BaiBaoShop_ItemInfo10_GB">
+                        <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+                        <Property Name="AbsoluteSize" Value="w:113.000000 h:18.000000" />
+                        <Property Name="HorzFormatting" Value="RightAligned" />
+                        <Property Name="TextColor" Value="FFFFF263" />
+                    </Window>
+                </Window>
+                <Window Type="TLBB_SimpleMulitiTextFrame" Name="BaiBaoShop_ItemInfo11">
+                    <Property Name="AbsolutePosition" Value="x:202.000000 y:152.000000" />
+                    <Property Name="AbsoluteSize" Value="w:120.000000 h:36.000000" />
+                    <Window Type="TLBB_SimpleText" Name="BaiBaoShop_ItemInfo11_Text">
+                        <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+                        <Property Name="AbsoluteSize" Value="w:120.000000 h:18.000000" />
+                        <Property Name="TextColor" Value="FFFFF263" />
+                    </Window>
+                    <Window Type="TLBB_Money" Name="BaiBaoShop_ItemInfo11_Price">
+                        <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+                        <Property Name="AbsoluteSize" Value="w:117.000000 h:16.000000" />
+                        <Property Name="MoneyNumber" Value="" />
+                        <Property Name="HorzFormatting" Value="RightAligned" />
+                    </Window>
+                    <Window Type="TLBB_SimpleText" Name="BaiBaoShop_ItemInfo11_GB">
+                        <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+                        <Property Name="AbsoluteSize" Value="w:113.000000 h:18.000000" />
+                        <Property Name="HorzFormatting" Value="RightAligned" />
+                        <Property Name="TextColor" Value="FFFFF263" />
+                    </Window>
+                </Window>
+                <Window Type="TLBB_SimpleMulitiTextFrame" Name="BaiBaoShop_ItemInfo12">
+                    <Property Name="AbsolutePosition" Value="x:202.000000 y:190.000000" />
+                    <Property Name="AbsoluteSize" Value="w:120.000000 h:36.000000" />
+                    <Window Type="TLBB_SimpleText" Name="BaiBaoShop_ItemInfo12_Text">
+                        <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+                        <Property Name="AbsoluteSize" Value="w:120.000000 h:18.000000" />
+                        <Property Name="TextColor" Value="FFFFF263" />
+                    </Window>
+                    <Window Type="TLBB_Money" Name="BaiBaoShop_ItemInfo12_Price">
+                        <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+                        <Property Name="AbsoluteSize" Value="w:117.000000 h:16.000000" />
+                        <Property Name="MoneyNumber" Value="99" />
+                        <Property Name="HorzFormatting" Value="RightAligned" />
+                    </Window>
+                    <Window Type="TLBB_SimpleText" Name="BaiBaoShop_ItemInfo12_GB">
+                        <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+                        <Property Name="AbsoluteSize" Value="w:113.000000 h:18.000000" />
+                        <Property Name="HorzFormatting" Value="RightAligned" />
+                        <Property Name="TextColor" Value="FFFFF263" />
+                    </Window>
+                </Window>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

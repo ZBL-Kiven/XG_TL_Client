@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="HuaShanLunJian_FightEnd2_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,528.000000},{0.000000,191.000000}}" />
+    <Property Name="UnifiedPosition" Value="{{0.500000,-264.000000},{0.500000,-100.000000}}" />
+    <Event Name="Hidden" Function="HuaShanLunJian_FightEnd2_Close();" />
+    <Window Type="TLBB_ButtonNULL" Name="HuaShanLunJian_FightEnd2_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,40.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-36.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="HuaShanLunJian_FightEnd2_Close()"/>
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="PushedImage" Value="set:JiCheShen image:Close3"/>
+      <Property Name="NormalImage" Value="set:JiCheShen image:Close1"/>
+      <Property Name="HoverImage" Value="set:JiCheShen image:Close2"/>
+      <Property Name="DisabledImage" Value="set:JiCheShen image:Close4"/>
+    </Window>
+    <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_FightEnd2_ImageBK">
+      <Property Name="UnifiedSize" Value="{{0.000000,528.000000},{0.000000,191.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+      <Property Name="Image" Value="set:HSLJ_01 image:HSLJ_Winer" />
+    </Window>
+    <Window Type="DefaultWindow" Name="HuaShanLunJian_FightEnd2_Client">
+      <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{1.000000,0.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-150.000000},{0.000000,0.000000}}" />
+      <Window Type="TLBB_SimpleText" Name="HuaShanLunJian_FightEnd2_TextShengChang">
+        <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,24.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{1.000000,-26.000000}}"/>
+        <Property Name="Text" Value="#{HSSC_191009_108}"/>
+        <Property Name="Font" Value="YouYuan9.75"/>
+        <Property Name="HorzFormatting" Value="HorzCentred"/>
+        <Property Name="VertFormatting" Value="TopAligned"/>
+      </Window>
+      <Window Type="TLBB_Animate" Name="HuaShanLunJian_FightEnd2_ImageShengChang">
+        <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,26.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,220.000000},{0.000000,164.000000}}"/>
+        <Property Name="Animate" Value="HSLJ_Up" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

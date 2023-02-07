@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame2" Name="ModifyMenPai_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,560.000000},{0.000000,375.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-280.000000},{0.500000,-188.000000}}"/>
+    <Event Name="Hidden" Function="ModifyMenPai_OnHiden();" />
+    <Window Type="TLBB_DragTitle" Name="ModifyMenPai_DragTitle">
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,4.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}" />
+      <Property Name="DragTarget" Value="ModifyMenPai_Frame"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="VertFormatting" Value="VertCentred"/>
+      <Property Name="HorzFormatting" Value="HorzCentred"/>
+      <Property Name="Text" Value="#{MPZH_180719_66}"/>
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="ModifyMenPai_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-39.000000},{0.000000,7.000000}" />
+      <Event Name="Clicked" Function="ModifyMenPai_OnClosed();"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="ModifyMenPai_BK">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-30.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,30.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Window Type="TLBB_Frame_Lace16" Name="ModifyMenPai_HowToFrameTitleFrame">
+        <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,130.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.00000,5.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="ModifyMenPai_HowTo_Title">
+          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.00000,3.00000}}"/>
+          <Property Name="Text" Value="#{MPZH_180719_67}"/>
+          <Property Name="Font" Value="YouYuan11.25"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="ModifyMenPai_HowToFrame">
+        <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,100.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.00000,35.000000}}"/>        
+        
+        <Window Type="TLBB_SimpleText" Name="ModifyMenPai_HowTo_Explain1">
+          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,130.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.50000,-65.00000}}"/>
+          <Property Name="Text" Value="#{MPZH_180719_68}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace16" Name="ModifyMenPai_TitleFrame">
+        <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,170.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{1.00000,-210.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="ModifyMenPai_Change_Title">
+          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.00000,3.00000}}"/>
+          <Property Name="Text" Value="#{MPZH_180719_69}"/>
+          <Property Name="Font" Value="YouYuan11.25"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="ModifyMenPai_ChangFrame">
+        <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,160.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{1.00000,-200.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="ModifyMenPai_HowTo_Explain2">
+          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{1.000000,-10.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.00000,5.00000}}"/>
+          <Property Name="Text" Value="#{MPZH_180719_70}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+      </Window>
+
+      <Window Type="TLBB_Frame_Lace3" Name="ModifyMenPai_ButtonFrame">
+        <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,30.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{1.00000,-40.000000}}"/>
+        <Window Type="TLBB_ButtonCommon" Name="ModifyMenPai_Button_Confirm">
+          <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-50.000000},{0.50000,-10.000000}}"/>
+          <Property Name="Text" Value="#{MPZH_180719_93}"/>
+          <Property Name="Tooltip" Value=""/>
+          <Event Name="Clicked" Function="ModifyMenPai_OK_Clicked();"/>
+        </Window>
+        <Window Type="TLBB_ButtonCommon" Name="ModifyMenPai_Button_Cancel">
+          <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.00000,-110.000000},{0.50000,-10.000000}}"/>
+          <Property Name="Text" Value="#{MPZH_180719_34}"/>
+          <Property Name="Tooltip" Value=""/>
+          <Event Name="Clicked" Function="ModifyMenPai_Cancel_Clicked();"/>
+        </Window>
+      </Window>
+    </Window>   
+  </Window>
+</GUILayout>

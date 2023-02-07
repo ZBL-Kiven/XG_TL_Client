@@ -1,0 +1,260 @@
+<?xml version="1.0" ?>
+<GUILayout>
+    <Window Type="TLBB_MainFrame0" Name="WuhunJian_Frame">
+        <Property Name="UnifiedPosition" Value="{{0.500000,-250.000000},{0.500000,-200.000000}}" />
+        <Property Name="UnifiedSize" Value="{{0.000000,500.000000},{0.000000,400.000000}" />
+        <Event Name="Hidden" Function="WuhunJian_OnHidden();" />
+        <Window Type="TLBB_DragTitle" Name="WuhunJian_DragTitle">
+            <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}" />
+            <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+            <Property Name="DragTarget" Value="WuhunJian_Frame" />
+            <Window Type="TLBB_SimpleText" Name="WuhunJian_Title">
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}" />
+                <Property Name="Font" Value="YouYuan11.25" />
+                <Property Name="HorzFormatting" Value="HorzCentred" />
+                <Property Name="VertFormatting" Value="VertCentred" />
+                <Property Name="RiseOnClick" Value="False" />
+                <Property Name="Text" Value="#gFF0FA0幻魂图鉴" />
+            </Window>
+        </Window>
+        <Window Type="TLBB_ButtonHelp" Name="WuhunJian_Help">
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+            <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}" />
+            <Property Name="Text" Value="TLBB_ButtonHelp" />
+            <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*Wuhun&quot;);' />
+        </Window>
+        <Window Type="TLBB_ButtonClose" Name="WuhunJian_Close">
+            <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+            <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}" />
+            <Property Name="Text" Value="TLBB_ButtonClose" />
+            <Event Name="Clicked" Function="WuhunJian_OnCloseClicked();" />
+        </Window>
+        <Window Type="DefaultWindow" Name="WuhunJian_Frame_Client">
+            <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,36.000000}}" />
+            <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-55.000000}" />
+            <Window Type="TLBB_FramePlayerOther" Name="WuhunJian_FakeObject_Frame">
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+                <Property Name="UnifiedSize" Value="{{0.500000,0.000000},{1.000000,0.000000}" />
+                <Property Name="RiseOnClick" Value="False" />
+                <Window Type="TLBB_MeshWindow" Name="WuhunJian_FakeObject">
+                    <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,10.000000}}" />
+                    <Property Name="UnifiedSize" Value="{{0.920000,0.000000},{0.920000,0.000000}" />
+                    <Property Name="RiseOnClick" Value="False" />
+                </Window>
+                <Window Type="TLBB_ButtonTurnLeft" Name="WuhunJian_Model_TurnLeft">
+                    <Property Name="UnifiedPosition" Value="{{0.100000,0.000000},{1.000000,-35.000000}}" />
+                    <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}" />
+                    <Event Name="MouseButtonDown" Function="WuhunJian_Model_TurnLeft(1);" />
+                    <Event Name="MouseButtonUp" Function="WuhunJian_Model_TurnLeft(0);" />
+                    <Event Name="CaptureLost" Function="WuhunJian_Model_TurnLeft(0);" />
+                </Window>
+                <Window Type="TLBB_ButtonTurnRight" Name="WuhunJian_Model_TurnRight">
+                    <Property Name="UnifiedPosition" Value="{{0.900000,-25.000000},{1.000000,-35.000000}}" />
+                    <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}" />
+                    <Event Name="MouseButtonDown" Function="WuhunJian_Model_TurnRight(1);" />
+                    <Event Name="MouseButtonUp" Function="WuhunJian_Model_TurnRight(0);" />
+                    <Event Name="CaptureLost" Function="WuhunJian_Model_TurnRight(0);" />
+                </Window>
+            </Window>
+            <Window Type="TLBB_SimpleMulitiTextFrame" Name="WuhunJian_Right_Frame">
+                <Property Name="UnifiedPosition" Value="{{0.500000,0.000000},{0.000000,0.000000}}" />
+                <Property Name="UnifiedSize" Value="{{0.500000,0.000000},{1.000000,0.000000}" />
+
+                <Window Type="TLBB_SimpleText" Name="WuhunJian_Right_Info1">
+                    <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,15.000000}}" />
+                    <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}" />
+                    <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+                    <Property Name="RiseOnClick" Value="False" />
+                    <Property Name="Text" Value="#cfff263幻魂选择：" />
+                    <Property Name="TextColor" Value="FFFFF263" />
+                </Window>
+                <Window Type="TLBB_Frame_Lace1" Name="WuhunJian_Right_Set1">
+                    <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.460000,0.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,40.000000}}"/>
+                    <Window Type="DefaultWindow" Name="WuhunJian_RightItem_Lace">
+                        <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{1.000000,-20.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+						<Window Type="TLBB_ActionButton" Name="WuhunJian_TupuItem_1">
+							<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+							<Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}" />
+							<Property Name="BackImage" Value="set:CommonFrame7 image:WuhunEquip" />
+							<Property Name="DraggingEnabled" Value="False" />
+							<Property Name="Empty" Value="True" />
+							<Property Name="Tooltip" Value="#{}" />
+							<Event Name="Clicked" Function="WuhunJian_ItemClicked(1)" />
+                            <Window Type="TLBB_ButtonNULL" Name="WuhunJian_Item_Mask_1">
+                                <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
+                                <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,-4.000000}" />
+								<Property Name="PushedImage" Value="set:Face_04 image:Remind_Bak"/>
+								<Property Name="NormalImage" Value="set:Face_04 image:Remind_Bak"/>
+								<Property Name="HoverImage" Value="set:Face_04 image:Remind_Bak"/>
+								<Property Name="DisabledImage" Value="set:Face_04 image:Remind_Bak"/>
+                                <Property Name="MouseMoveHollow" Value="true" />
+								<Event Name="Clicked" Function="WuhunJian_ItemClicked(1);" />
+                            </Window>
+						</Window>
+						<Window Type="TLBB_ActionButton" Name="WuhunJian_TupuItem_2">
+							<Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.000000,0.000000}}"/>
+							<Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}" />
+							<Property Name="BackImage" Value="set:CommonFrame7 image:WuhunEquip" />
+							<Property Name="DraggingEnabled" Value="False" />
+							<Property Name="Empty" Value="True" />
+							<Property Name="Tooltip" Value="#{}" />
+							<Event Name="Clicked" Function="WuhunJian_ItemClicked(2)" />
+                            <Window Type="TLBB_ButtonNULL" Name="WuhunJian_Item_Mask_2">
+                                <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
+                                <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,-4.000000}" />
+								<Property Name="PushedImage" Value="set:Face_04 image:Remind_Bak"/>
+								<Property Name="NormalImage" Value="set:Face_04 image:Remind_Bak"/>
+								<Property Name="HoverImage" Value="set:Face_04 image:Remind_Bak"/>
+								<Property Name="DisabledImage" Value="set:Face_04 image:Remind_Bak"/>
+                                <Property Name="MouseMoveHollow" Value="true" />
+								<Event Name="Clicked" Function="WuhunJian_ItemClicked(2);" />
+                            </Window>
+						</Window>
+						<Window Type="TLBB_ActionButton" Name="WuhunJian_TupuItem_3">
+							<Property Name="UnifiedPosition" Value="{{0.000000,139.000000},{0.000000,0.000000}}"/>
+							<Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}" />
+							<Property Name="BackImage" Value="set:CommonFrame7 image:WuhunEquip" />
+							<Property Name="DraggingEnabled" Value="False" />
+							<Property Name="Empty" Value="True" />
+							<Property Name="Tooltip" Value="#{}" />
+							<Event Name="Clicked" Function="WuhunJian_ItemClicked(3)" />
+                            <Window Type="TLBB_ButtonNULL" Name="WuhunJian_Item_Mask_3">
+                                <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
+                                <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,-4.000000}" />
+								<Property Name="PushedImage" Value="set:Face_04 image:Remind_Bak"/>
+								<Property Name="NormalImage" Value="set:Face_04 image:Remind_Bak"/>
+								<Property Name="HoverImage" Value="set:Face_04 image:Remind_Bak"/>
+								<Property Name="DisabledImage" Value="set:Face_04 image:Remind_Bak"/>
+                                <Property Name="MouseMoveHollow" Value="true" />
+								<Event Name="Clicked" Function="WuhunJian_ItemClicked(3);" />
+                            </Window>
+						</Window>
+						<Window Type="TLBB_ActionButton" Name="WuhunJian_TupuItem_4">
+							<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,74.000000}}"/>
+							<Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}" />
+							<Property Name="BackImage" Value="set:CommonFrame7 image:WuhunEquip" />
+							<Property Name="DraggingEnabled" Value="False" />
+							<Property Name="Empty" Value="True" />
+							<Property Name="Tooltip" Value="#{}" />
+							<Event Name="Clicked" Function="WuhunJian_ItemClicked(4)" />
+                            <Window Type="TLBB_ButtonNULL" Name="WuhunJian_Item_Mask_4">
+                                <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
+                                <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,-4.000000}" />
+								<Property Name="PushedImage" Value="set:Face_04 image:Remind_Bak"/>
+								<Property Name="NormalImage" Value="set:Face_04 image:Remind_Bak"/>
+								<Property Name="HoverImage" Value="set:Face_04 image:Remind_Bak"/>
+								<Property Name="DisabledImage" Value="set:Face_04 image:Remind_Bak"/>
+                                <Property Name="MouseMoveHollow" Value="true" />
+								<Event Name="Clicked" Function="WuhunJian_ItemClicked(4);" />
+                            </Window>
+						</Window>
+						<Window Type="TLBB_ActionButton" Name="WuhunJian_TupuItem_5">
+							<Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.000000,74.000000}}"/>
+							<Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}" />
+							<Property Name="BackImage" Value="set:CommonFrame7 image:WuhunEquip" />
+							<Property Name="DraggingEnabled" Value="False" />
+							<Property Name="Empty" Value="True" />
+							<Property Name="Tooltip" Value="#{}" />
+							<Event Name="Clicked" Function="WuhunJian_ItemClicked(5)" />
+                            <Window Type="TLBB_ButtonNULL" Name="WuhunJian_Item_Mask_5">
+                                <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
+                                <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,-4.000000}" />
+								<Property Name="PushedImage" Value="set:Face_04 image:Remind_Bak"/>
+								<Property Name="NormalImage" Value="set:Face_04 image:Remind_Bak"/>
+								<Property Name="HoverImage" Value="set:Face_04 image:Remind_Bak"/>
+								<Property Name="DisabledImage" Value="set:Face_04 image:Remind_Bak"/>
+                                <Property Name="MouseMoveHollow" Value="true" />
+								<Event Name="Clicked" Function="WuhunJian_ItemClicked(5);" />
+                            </Window>
+						</Window>
+						<Window Type="TLBB_ActionButton" Name="WuhunJian_TupuItem_6">
+							<Property Name="UnifiedPosition" Value="{{0.000000,139.000000},{0.000000,74.000000}}"/>
+							<Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}" />
+							<Property Name="BackImage" Value="set:CommonFrame7 image:WuhunEquip" />
+							<Property Name="DraggingEnabled" Value="False" />
+							<Property Name="Empty" Value="True" />
+							<Property Name="Tooltip" Value="#{}" />
+							<Event Name="Clicked" Function="WuhunJian_ItemClicked(6)" />
+	                            <Window Type="TLBB_ButtonNULL" Name="WuhunJian_Item_Mask_6">
+                                <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
+                                <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,-4.000000}" />
+								<Property Name="PushedImage" Value="set:Face_04 image:Remind_Bak"/>
+								<Property Name="NormalImage" Value="set:Face_04 image:Remind_Bak"/>
+								<Property Name="HoverImage" Value="set:Face_04 image:Remind_Bak"/>
+								<Property Name="DisabledImage" Value="set:Face_04 image:Remind_Bak"/>
+                                <Property Name="MouseMoveHollow" Value="true" />
+								<Event Name="Clicked" Function="WuhunJian_ItemClicked(6);" />
+                            </Window>
+						</Window>
+                    </Window>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="WuhunJian_Right_Info2">
+                    <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{1.000000,-125.000000}}" />
+                    <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}" />
+                    <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+                    <Property Name="RiseOnClick" Value="False" />
+                    <Property Name="Text" Value="乾位阶位预览：" />
+                    <Property Name="TextColor" Value="FFFFF263" />
+                </Window>
+
+                <Window Type="TLBB_ButtonCheckForRMBShop" Name="WuhunJian_Right_Set2_Button1">
+                    <Property Name="UnifiedPosition" Value="{{0.500000,-100.000000},{1.000000,-100.000000}" />
+                    <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}" />
+                    <Property Name="Text" Value="1-4阶" />
+                    <Property Name="CheckMode" Value="1"/>
+                    <Event Name="MouseLButtonDown" Function="WuhunJian_ChangeView(1, 1)" />
+                </Window>
+                <Window Type="TLBB_ButtonCheckForRMBShop" Name="WuhunJian_Right_Set2_Button2">
+                    <Property Name="UnifiedPosition" Value="{{0.500000,-30.000000},{1.000000,-100.000000}" />
+                    <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}" />
+                    <Property Name="Text" Value="5-7阶" />
+                    <Property Name="CheckMode" Value="1"/>
+                    <Event Name="MouseLButtonDown" Function="WuhunJian_ChangeView(1, 2)" />
+                </Window>
+                <Window Type="TLBB_ButtonCheckForRMBShop" Name="WuhunJian_Right_Set2_Button3">
+                    <Property Name="UnifiedPosition" Value="{{0.500000,40.000000},{1.000000,-100.000000}" />
+                    <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}" />
+                    <Property Name="Text" Value="8-10阶" />
+                    <Property Name="CheckMode" Value="1"/>
+                    <Event Name="MouseLButtonDown" Function="WuhunJian_ChangeView(1, 3)" />
+                </Window>
+
+                <Window Type="TLBB_SimpleText" Name="WuhunJian_Right_Info3">
+                    <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{1.000000,-65.000000}}" />
+                    <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}" />
+                    <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+                    <Property Name="RiseOnClick" Value="False" />
+                    <Property Name="Text" Value="#cfff263坤位阶位预览：" />
+                    <Property Name="TextColor" Value="FFFFF263" />
+                </Window>
+
+                <Window Type="TLBB_ButtonCheckForRMBShop" Name="WuhunJian_Right_Set3_Button1">
+                    <Property Name="UnifiedPosition" Value="{{0.500000,-100.000000},{1.000000,-40.000000}" />
+                    <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}" />
+                    <Property Name="Text" Value="1-4阶" />
+                    <Property Name="CheckMode" Value="1"/>
+                    <Event Name="MouseLButtonDown" Function="WuhunJian_ChangeView(2, 1)" />
+                </Window>
+                <Window Type="TLBB_ButtonCheckForRMBShop" Name="WuhunJian_Right_Set3_Button2">
+                    <Property Name="UnifiedPosition" Value="{{0.500000,-30.000000},{1.000000,-40.000000}" />
+                    <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}" />
+                    <Property Name="Text" Value="5-7阶" />
+                    <Property Name="CheckMode" Value="1"/>
+                    <Event Name="MouseLButtonDown" Function="WuhunJian_ChangeView(2, 2)" />
+                </Window>
+                <Window Type="TLBB_ButtonCheckForRMBShop" Name="WuhunJian_Right_Set3_Button3">
+                    <Property Name="UnifiedPosition" Value="{{0.500000,40.000000},{1.000000,-40.000000}" />
+                    <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}" />
+                    <Property Name="Text" Value="8-10阶" />
+                    <Property Name="CheckMode" Value="1"/>
+                    <Event Name="MouseLButtonDown" Function="WuhunJian_ChangeView(2, 3)" />
+                </Window>
+
+            </Window>
+
+        </Window>
+    </Window>
+</GUILayout>

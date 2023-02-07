@@ -1,0 +1,234 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="FangYanHua_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,564.000000},{0.000000,316.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-282.000000},{0.000000,120.000000}}"/>
+    <Window Type="DefaultWindow" Name="FangYanHua_BKFrame">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Window Type="TLBB_StaticImageNULL" Name="FangYanHua_BK">
+        <Property Name="UnifiedSize" Value="{{0.000000,564.000000},{0.000000,316.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="Image" Value="set:FangYanHua image:FangYanHua_BK"/>
+      </Window>
+    </Window>
+    <Window Type="TLBB_DragTitle" Name="FangYanHua_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-70.000000},{0.000000,40.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      <Property Name="DragTarget" Value="FangYanHua_Frame"/>
+    </Window>
+    <Window Type="TLBB_DragTitle" Name="FangYanHua_DragTitle2">
+      <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{1.000000,0.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      <Property Name="DragTarget" Value="FangYanHua_Frame"/>
+    </Window>
+    <Window Type="TLBB_ButtonNULL" Name="FangYanHua_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,26.000000},{0.000000,26.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-64.000000},{0.000000,28.000000}}"/>
+      <Property Name="PushedImage" Value="set:FangYanHua image:FangYanHua_ClosePush"/>
+      <Property Name="NormalImage" Value="set:FangYanHua image:FangYanHua_CloseNormal"/>
+      <Property Name="HoverImage" Value="set:FangYanHua image:FangYanHua_CloseHover"/>
+      <Event Name="Clicked" Function="FangYanHua_OnHiden()" />
+    </Window>
+    <Window Type="DefaultWindow" Name="FangYanHua_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-70.000000},{1.000000,-32.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,10.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="FangYanHua_Info">
+          <Property Name="UnifiedSize" Value="{{0.000000,360.000000},{0.000000,60.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,12.000000}}"/>
+          <Property Name="Text" Value="#{FYH_220407_108}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="FangYanHua_TimeImage">
+        <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,192.000000},{0.000000,238.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="Image" Value="set:FangYanHua image:FangYanHua_miniTime"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="FangYanHua_TimeText">
+        <Property Name="UnifiedSize" Value="{{0.000000,160.000000},{0.000000,18.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,208.000000},{0.000000,237.000000}}"/>
+        <Property Name="Text" Value="#{FYH_220407_56}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+      </Window>
+      <Window Type="TLBB_StopWatch" Name="FangYanHua_Time">
+        <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,18.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,278.000000},{0.000000,236.000000}}"/>
+        <Property Name="TextColor" Value="FFFFF263"/>
+        <Property Name="Text" Value="00:00"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="HorzFormatting" Value="HorzCentred"/>
+		<Event Name="ReachedZero" Function="FangYanHua_OnTimer();" />
+      </Window>
+      <Window Type="DefaultWindow" Name="FangYanHua_Icon1">
+          <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,53.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,78.000000},{0.000000,102.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:RosebangUI image:Rose_Normal"/>
+          <Window Type="TLBB_StaticImageNULL" Name="FangYanHua_Icon1_OK">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:FangYanHua image:FangYanHua_Get"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="FangYanHua_Icon2">
+          <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,53.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,146.000000},{0.000000,148.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:RosebangUI image:Rose_Normal"/>
+          <Window Type="TLBB_StaticImageNULL" Name="FangYanHua_Icon2_OK">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:FangYanHua image:FangYanHua_Get"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="FangYanHua_Icon3">
+          <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,53.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,210.000000},{0.000000,126.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:RosebangUI image:Rose_Normal"/>
+          <Window Type="TLBB_StaticImageNULL" Name="FangYanHua_Icon3_OK">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:FangYanHua image:FangYanHua_Get"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="FangYanHua_Icon4">
+          <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,53.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,274.000000},{0.000000,106.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:RosebangUI image:Rose_Normal"/>
+          <Window Type="TLBB_StaticImageNULL" Name="FangYanHua_Icon4_OK">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:FangYanHua image:FangYanHua_Get"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="FangYanHua_Icon5">
+          <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,53.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,340.000000},{0.000000,86.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:RosebangUI image:Rose_Normal"/>
+          <Window Type="TLBB_StaticImageNULL" Name="FangYanHua_Icon5_OK">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:FangYanHua image:FangYanHua_Get"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+      <Window Type="DefaultWindow" Name="FangYanHua_Icon6">
+        <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,53.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,404.000000},{0.000000,130.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="Image" Value="set:RosebangUI image:Rose_Normal"/>
+        <Window Type="TLBB_StaticImageNULL" Name="FangYanHua_Icon6_OK">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+          <Property Name="Image" Value="set:FangYanHua image:FangYanHua_Get"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="FangYanHua_BtnGo1">
+        <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,18.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,72.000000},{0.000000,182.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="PushedImage" Value="set:FangYanHua image:FangYanHua_GoPush"/>
+        <Property Name="NormalImage" Value="set:FangYanHua image:FangYanHua_GoNormal"/>
+        <Property Name="HoverImage" Value="set:FangYanHua image:FangYanHua_GoHover"/>
+        <Property Name="Tooltip" Value="#{FYH_220407_77}"/>
+        <Event Name="Clicked" Function="FangYanHua_BtnGo(1)"/>
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="FangYanHua_BtnGo2">
+        <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,18.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,138.000000},{0.000000,214.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="PushedImage" Value="set:FangYanHua image:FangYanHua_GoPush"/>
+        <Property Name="NormalImage" Value="set:FangYanHua image:FangYanHua_GoNormal"/>
+        <Property Name="HoverImage" Value="set:FangYanHua image:FangYanHua_GoHover"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="Tooltip" Value="#{FYH_220407_77}"/>
+        <Event Name="Clicked" Function="FangYanHua_BtnGo(2)"/>
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="FangYanHua_BtnGo3">
+        <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,18.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,208.000000},{0.000000,196.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="PushedImage" Value="set:FangYanHua image:FangYanHua_GoPush"/>
+        <Property Name="NormalImage" Value="set:FangYanHua image:FangYanHua_GoNormal"/>
+        <Property Name="HoverImage" Value="set:FangYanHua image:FangYanHua_GoHover"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="Tooltip" Value="#{FYH_220407_77}"/>
+        <Event Name="Clicked" Function="FangYanHua_BtnGo(3)"/>
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="FangYanHua_BtnGo4">
+        <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,18.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,270.000000},{0.000000,176.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="PushedImage" Value="set:FangYanHua image:FangYanHua_GoPush"/>
+        <Property Name="NormalImage" Value="set:FangYanHua image:FangYanHua_GoNormal"/>
+        <Property Name="HoverImage" Value="set:FangYanHua image:FangYanHua_GoHover"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="Tooltip" Value="#{FYH_220407_77}"/>
+        <Event Name="Clicked" Function="FangYanHua_BtnGo(4)"/>
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="FangYanHua_BtnGo5">
+        <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,18.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,338.000000},{0.000000,158.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="PushedImage" Value="set:FangYanHua image:FangYanHua_GoPush"/>
+        <Property Name="NormalImage" Value="set:FangYanHua image:FangYanHua_GoNormal"/>
+        <Property Name="HoverImage" Value="set:FangYanHua image:FangYanHua_GoHover"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="Tooltip" Value="#{FYH_220407_77}"/>
+        <Event Name="Clicked" Function="FangYanHua_BtnGo(5)"/>
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="FangYanHua_BtnGo6">
+        <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,18.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,402.000000},{0.000000,200.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="PushedImage" Value="set:FangYanHua image:FangYanHua_GoPush"/>
+        <Property Name="NormalImage" Value="set:FangYanHua image:FangYanHua_GoNormal"/>
+        <Property Name="HoverImage" Value="set:FangYanHua image:FangYanHua_GoHover"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="Tooltip" Value="#{FYH_220407_77}"/>
+        <Event Name="Clicked" Function="FangYanHua_BtnGo(6)"/>
+      </Window>
+    </Window>
+    <Window Type="TLBB_StaticImageNULL" Name="FangYanHua_Image">
+      <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,108.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-100.000000},{1.000000,-108.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Property Name="Image" Value="set:FangYanHua image:FangYanHua_OK"/>
+    </Window>
+    <Window Type="TLBB_StaticImageNULL" Name="FangYanHua_Image2">
+      <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,108.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-100.000000},{1.000000,-108.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Property Name="Image" Value="set:FangYanHua image:FangYanHua_OK2"/>
+    </Window>
+    </Window>
+</GUILayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame2" Name="ModifyMenPai_Confirm_FrameNULL">
+    <Property Name="UnifiedSize" Value="{{0.000000,600.000000},{0.000000,450.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-300.000000},{0.500000,-225.000000}}"/>
+    <Window Type="TLBB_ButtonClose" Name="ModifyMenPai_Confirm_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-39.000000},{0.000000,7.000000}" />
+      <Event Name="Clicked" Function="ModifyMenPai_ConfirmFrame_CloseWindow();"/>
+    </Window>
+    <Window Type="TLBB_DragTitle" Name="ModifyMenPai_Confirm_DragTitle">
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,4.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}" />
+      <Property Name="Font" Value="YouYuan11.25" />
+      <Property Name="Text" Value="#{MPZH_180719_94}"/>
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="DragTarget" Value="ModifyMenPai_Confirm_FrameNULL" />
+    </Window>
+    <Window Type="DefaultWindow" Name="ModifyMenPai_Confirm_FrameBK">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-30.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,30.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+              
+      <Window Type="TLBB_Frame_Lace3" Name="ModifyMenPai_Confirm_MiddleFrame">
+        <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,345.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.00000,5.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="ModifyMenPai_Confirm_Current">
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.2500000,-50.000000},{0.00000,5.00000}}"/>
+          <Property Name="Text" Value="#{MPZH_180719_138}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          <Property Name="VertFormatting" Value="BottomAligned"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="ModifyMenPai_Confirm_Change">
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.7500000,-30.000000},{0.00000,5.00000}}"/>
+          <Property Name="Text" Value="#{MPZH_180719_139}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          <Property Name="VertFormatting" Value="BottomAligned"/>
+        </Window>
+        <Window Type="DefaultWindow" Name="ModifyMenPai_Confirm_PicFrame">
+          <Property Name="UnifiedSize" Value="{{0.000000,156.000000},{0.000000,303.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.2500000,-88.000000},{0.50000,-146.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="ModifyMenPai_Confirm_Button1_BK">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.00000,0.000000},{0.00000,0.000000}}"/>
+            <Property Name="Image" Value="set:ModifyMenPai image:Modify_Emei"/>
+            <Window Type="TLBB_Frame_Lace50" Name="ModifyMenPai_Confirm_TextFrame1">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,60.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.00000,-60.000000}}"/>
+              <Window Type="TLBB_SimpleText" Name="ModifyMenPai_Confirm_CurrentAttribute1">
+                <Property Name="UnifiedSize" Value="{{0.500000,-2.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.00000,2.000000},{0.5000,-20.00000}}"/>
+                <Property Name="Text" Value="#{MPZH_180719_134}"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="ModifyMenPai_Confirm_CurrentAttribute2">
+                <Property Name="UnifiedSize" Value="{{0.500000,-2.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.50000,0.000000},{0.5000,-20.00000}}"/>
+                <Property Name="Text" Value="#{MPZH_180719_135}"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="ModifyMenPai_Confirm_CurrentAttribute3">
+                <Property Name="UnifiedSize" Value="{{0.500000,-2.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.00000,2.000000},{0.50000,0.00000}}"/>
+                <Property Name="Text" Value="#{MPZH_180719_136}"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="ModifyMenPai_Confirm_CurrentAttribute4">
+                <Property Name="UnifiedSize" Value="{{0.500000,-2.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.50000,0.000000},{0.50000,0.00000}}"/>
+                <Property Name="Text" Value="#{MPZH_180719_137}"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+              </Window>
+            </Window>
+          </Window>
+          
+        </Window>
+        <Window Type="DefaultWindow" Name="ModifyMenPai_Confirm_PicFrame2">
+          <Property Name="UnifiedSize" Value="{{0.000000,156.000000},{0.000000,303.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.7500000,-68.000000},{0.50000,-146.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="ModifyMenPai_Confirm_Button1_BK2">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.00000,0.000000},{0.00000,0.000000}}"/>
+            <Property Name="Image" Value="set:ModifyMenPai image:Modify_GaiBang"/>
+            <Window Type="TLBB_Frame_Lace50" Name="ModifyMenPai_Confirm_TextFrame2">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,60.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.00000,-60.000000}}"/>
+              <Window Type="TLBB_SimpleText" Name="ModifyMenPai_Confirm_ChangeAttribute">
+                <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,60.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.50000,-70.000000},{0.50000,-30.00000}}"/>
+                <Property Name="Text" Value="#{MPZH_180719_122}"/>
+                <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+              </Window>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="ModifyMenPai_Confirm_Arrow">
+          <Property Name="UnifiedSize" Value="{{0.000000,77.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-39.000000},{0.500000,-1.000000}}"/>
+          <Property Name="Image" Value="set:Button13 image:Btn_Right_Long"/>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="ModifyMenPai_Confirm_UpFrame">
+        <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,30.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.00000,320.000000}}"/>
+        
+      </Window>
+      <Window Type="TLBB_Frame_Lace3" Name="ModifyMenPai_Confirm_ButtonFrame">
+        <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,60.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.00000,350.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="ModifyMenPai_Confirm_ConfirmText">
+          <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.00000,5.00000}}"/>
+          <Property Name="Text" Value="#{MPZH_180719_121}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+        <Window Type="TLBB_ButtonCommon" Name="ModifyMenPai_Confirm_CancelButton">
+          <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.3300000,-70.000000},{1.00000,-30.00000}}"/>
+          <Property Name="Text" Value="#{MPZH_180719_33}"/>
+          <Event Name="Clicked" Function="ModifyMenPai_Confirm_OK_Clicked()"/>
+        </Window>
+        <Window Type="TLBB_ButtonCommon" Name="ModifyMenPai_Confirm_ConfirmButton">
+          <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.660000,-30.000000},{1.00000,-30.00000}}"/>
+          <Property Name="Text" Value="#{MPZH_180719_132}"/>
+          <Event Name="Clicked" Function="ModifyMenPai_Confirm_Close_Clicked()"/>
+        </Window>
+      </Window>
+    </Window>  
+  </Window>
+</GUILayout>

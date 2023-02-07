@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="StoryBustTips_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,456.000000},{0.000000,110.000000}}" />
+    <Property Name="UnifiedPosition" Value="{{0.500000,-253.000000},{0.500000,100.000000}}" />
+	<Property Name="MouseMoveHollow" Value="True" />
+	<Property Name="MouseHollow" Value="true" />							
+      <Window Type="TLBB_StaticImageNULL" Name="StoryBustTips_Bust">
+        <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,102.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="MouseRButtonHollow" Value="True" />
+        <Property Name="MouseMoveHollow" Value="True" />
+        <Property Name="MouseLButtonHollow" Value="True" />
+        <Property Name="MouseHollow" Value="True" />
+        <Property Name="Image" Value="set:NPCHead01 image:NPCHead01_1"/>
+      </Window>
+    <Window Type="TLBB_StaticImageNULL" Name="StoryBustTips_InfoBK">
+      <Property Name="UnifiedSize" Value="{{0.000000,450.000000},{0.000000,80.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,26.000000}}" />
+      <Property Name="Image" Value="set:NPCtalk image:NPCtalkBK"/>
+      <Window Type="TLBB_SimpleText" Name="StoryBustTips_Name">
+        <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,22.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,86.000000},{0.000000,0.000000}}" />
+        <Property Name="Text" Value="NameName" />
+        <Property Name="Font" Value="YouYuan9.75"/>
+        <Property Name="ColorTrans" Value="True" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="HorzFormatting" Value="LeftAligned" />
+      </Window>
+      <Window Type="TLBB_ButtonClose" Name="StoryBustTips_Close">
+        <Property Name="UnifiedPosition" Value="{{1.000000,-16.000000},{0.000000,2.000000}}" />
+        <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}" />
+        <Event Name="Clicked" Function="StoryBustTips_OnCloseClicked();" />
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="StoryBustTips_Info">
+        <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{0.000000,56.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,86.000000},{0.000000,24.000000}}" />
+        <Property Name="Text" Value="ABCDEFGHIJKLMN" />
+        <Property Name="VertFormatting" Value="TopAligned" />
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

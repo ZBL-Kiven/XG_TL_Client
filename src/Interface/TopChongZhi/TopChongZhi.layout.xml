@@ -1,0 +1,456 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame2" Name="TopChongZhi_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,639.000000},{0.000000,600.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-320.000000},{0.500000,-310.000000}}"/>
+    <Event Name="Hidden" Function="TopChongZhi_Close();"/> 
+    <Window Type="TLBB_DragTitle" Name="TopChongZhi_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-52.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,26.000000},{0.000000,2.000000}}"/>
+      <Property Name="DragTarget" Value="TopChongZhi_Frame" />
+      <Window Type="TLBB_SimpleText" Name="TopChongZhi_Title">
+        <Property Name="Position" Value="x:0.0 y:0.0" />
+        <Property Name="Size" Value="w:1.0 h:1.0" />
+        <Property Name="Font" Value="YouYuan11.25" />
+        <Property Name="HorzFormatting" Value="HorzCentred"/>
+        <Property Name="Text" Value="#gFF0FA0充值送豪礼" />
+      </Window>
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="TopChongZhi_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,5.000000}}"/>
+	  <Property Name="Text" Value="TLBB_ButtonClose" />
+      <Event Name="Clicked" Function="TopChongZhi_Close();" />
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="TopChongZhi_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}"/>
+      <Event Name="Clicked" Function=""/>
+    </Window>
+    <Window Type="DefaultWindow" Name="TopChongZhi_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-30.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,25.000000}}"/>
+      <Window Type="TLBB_Frame_Lace3" Name="TopChongZhi_Supe_ValueFrame">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Window Type="DefaultWindow" Name="TopChongZhi_Supe_TopImage">
+          <Property Name="UnifiedSize" Value="{{0.000000,620.000000},{0.000000,130.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="TopChongZhi_Supe_TopImage01">
+            <Property Name="UnifiedSize" Value="{{0.000000,512.000000},{0.000000,130.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:XinShouNewBK image:XinShouNew_BK1"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TopChongZhi_Supe_TopImage02">
+            <Property Name="UnifiedSize" Value="{{0.000000,108.000000},{0.000000,130.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,512.000000},{0.000000,0.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:XinShouNewBK image:XinShouNew_BK2"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="TopChongZhi_Supe_TopInfo">
+            <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-20.000000}}"/>
+            <Property Name="Text" Value="    #cfff263玩家充值达到一定#G金额后#cfff263，可在这里领取丰厚的奖励。"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="TopChongZhi_Supe_MianBK">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,434.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,135.000000}}"/>
+            <Window Type="TLBB_Frame_Lace3" Name="TopChongZhi_BaiBao_Frame3_Bk1">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,62.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Window Type="TLBB_ActionButton" Name="TopChongZhi_BaiBao_Frame3_Bk1_Icon1">
+                <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,78.000000},{0.000000,9.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+              </Window>
+              <Window Type="TLBB_ActionButton" Name="TopChongZhi_BaiBao_Frame3_Bk1_Icon2">
+                <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,129.000000},{0.000000,9.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+              </Window>
+              <Window Type="TLBB_ActionButton" Name="TopChongZhi_BaiBao_Frame3_Bk1_Icon3">
+                <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,180.000000},{0.000000,9.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+              </Window>
+              <Window Type="TLBB_ActionButton" Name="TopChongZhi_BaiBao_Frame3_Bk1_Icon4">
+                <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,232.000000},{0.000000,9.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+              </Window>
+              <Window Type="DefaultWindow" Name="TopChongZhi_BaiBao_Frame3_Bk1_Info1">
+                <Property Name="UnifiedSize" Value="{{0.000000,240.000000},{0.000000,60.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,280.000000},{0.000000,0.000000}}"/>
+                <Window Type="TLBB_SimpleText" Name="TopChongZhi_BaiBao_Frame3_Bk1_Text1_1">
+                  <Property Name="UnifiedSize" Value="{{0.000000,209.000000},{0.000000,18.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,20.000000}}"/>
+                  <Property Name="Text" Value="#G达到%s级可购买"/>
+                  <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="TopChongZhi_BaiBao_Frame3_Bk1_Text1_2">
+                  <Property Name="UnifiedSize" Value="{{1.000000,-5.000000},{0.000000,18.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,37.000000}}"/>
+                  <Property Name="Text" Value="#{}"/>
+                  <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+                </Window>
+              </Window>
+              <Window Type="TLBB_ButtonNULL" Name="TopChongZhi_BaiBao_Frame3_Bk1_Button1">
+                <Property Name="UnifiedSize" Value="{{0.000000,92.000000},{0.000000,36.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-101.000000},{0.000000,15.000000}}"/>
+                <Property Name="PushedImage" Value="set:XinShouNewBK image:XinShouNew_LQPUSH"/>
+                <Property Name="NormalImage" Value="set:XinShouNewBK image:XinShouNew_LQNORMAL"/>
+                <Property Name="HoverImage" Value="set:XinShouNewBK image:XinShouNew_LQHOVER"/>
+                <Property Name="DisabledImage" Value="set:XinShouNewBK image:XinShouNew_LQDIS"/>
+                <Event Name="Clicked" Function="TopChongZhi_BaiBao_Frame3_GetGift(1);"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="TopChongZhi_BaiBao_Frame3_Bk1_Info2">
+                <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,3.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="Image" Value="set:XinShouNewBK image:XinShouNew_HL1"/>
+              </Window>>
+            </Window>
+            <Window Type="TLBB_Frame_Lace3" Name="TopChongZhi_BaiBao_Frame3_Bk2">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,62.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,62.000000}}"/>
+              <Window Type="TLBB_ActionButton" Name="TopChongZhi_BaiBao_Frame3_Bk2_Icon1">
+                <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,78.000000},{0.000000,9.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+              </Window>
+              <Window Type="TLBB_ActionButton" Name="TopChongZhi_BaiBao_Frame3_Bk2_Icon2">
+                <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,129.000000},{0.000000,9.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+              </Window>
+              <Window Type="TLBB_ActionButton" Name="TopChongZhi_BaiBao_Frame3_Bk2_Icon3">
+                <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,180.000000},{0.000000,9.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+              </Window>
+              <Window Type="TLBB_ActionButton" Name="TopChongZhi_BaiBao_Frame3_Bk2_Icon4">
+                <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,232.000000},{0.000000,9.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+              </Window>
+              <Window Type="DefaultWindow" Name="TopChongZhi_BaiBao_Frame3_Bk2_Info1">
+                <Property Name="UnifiedSize" Value="{{0.000000,240.000000},{0.000000,60.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,280.000000},{0.000000,0.000000}}"/>
+                <Window Type="TLBB_SimpleText" Name="TopChongZhi_BaiBao_Frame3_Bk2_Text1_1">
+                  <Property Name="UnifiedSize" Value="{{0.000000,209.000000},{0.000000,18.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,20.000000}}"/>
+                  <Property Name="VertFormatting" Value="BottomAligned"/>
+                  <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+                  <Property Name="Text" Value="#{XSJNH_180111_141}"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="TopChongZhi_BaiBao_Frame3_Bk2_Text1_2">
+                  <Property Name="UnifiedSize" Value="{{1.000000,-5.000000},{0.000000,18.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,37.000000}}"/>
+                  <Property Name="Text" Value="#{}"/>
+                  <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+                </Window>
+              </Window>
+              <Window Type="TLBB_ButtonNULL" Name="TopChongZhi_BaiBao_Frame3_Bk2_Button1">
+                <Property Name="UnifiedSize" Value="{{0.000000,92.000000},{0.000000,36.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-101.000000},{0.000000,15.000000}}"/>
+                <Property Name="PushedImage" Value="set:XinShouNewBK image:XinShouNew_LQPUSH"/>
+                <Property Name="NormalImage" Value="set:XinShouNewBK image:XinShouNew_LQNORMAL"/>
+                <Property Name="HoverImage" Value="set:XinShouNewBK image:XinShouNew_LQHOVER"/>
+                <Property Name="DisabledImage" Value="set:XinShouNewBK image:XinShouNew_LQDIS"/>
+                <Event Name="Clicked" Function="TopChongZhi_BaiBao_Frame3_GetGift(2);"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="TopChongZhi_BaiBao_Frame3_Bk2_Info2">
+                <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,3.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="Image" Value="set:XinShouNewBK image:XinShouNew_HL2"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_Frame_Lace3" Name="TopChongZhi_BaiBao_Frame3_Bk3">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,62.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,124.000000}}"/>
+              <Window Type="TLBB_ActionButton" Name="TopChongZhi_BaiBao_Frame3_Bk3_Icon1">
+                <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,78.000000},{0.000000,9.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+              </Window>
+              <Window Type="TLBB_ActionButton" Name="TopChongZhi_BaiBao_Frame3_Bk3_Icon2">
+                <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,129.000000},{0.000000,9.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+              </Window>
+              <Window Type="TLBB_ActionButton" Name="TopChongZhi_BaiBao_Frame3_Bk3_Icon3">
+                <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,180.000000},{0.000000,9.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+              </Window>
+              <Window Type="TLBB_ActionButton" Name="TopChongZhi_BaiBao_Frame3_Bk3_Icon4">
+                <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,232.000000},{0.000000,9.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+              </Window>
+              <Window Type="DefaultWindow" Name="TopChongZhi_BaiBao_Frame3_Bk3_Info1">
+                <Property Name="UnifiedSize" Value="{{0.000000,240.000000},{0.000000,60.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,280.000000},{0.000000,0.000000}}"/>
+                <Window Type="TLBB_SimpleText" Name="TopChongZhi_BaiBao_Frame3_Bk3_Text1_1">
+                  <Property Name="UnifiedSize" Value="{{0.000000,209.000000},{0.000000,18.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,20.000000}}"/>
+                  <Property Name="VertFormatting" Value="BottomAligned"/>
+                  <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+                  <Property Name="Text" Value="#{XSJNH_180111_141}"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="TopChongZhi_BaiBao_Frame3_Bk3_Text1_2">
+                  <Property Name="UnifiedSize" Value="{{1.000000,-5.000000},{0.000000,18.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,37.000000}}"/>
+                  <Property Name="Text" Value="#{}"/>
+                  <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+                </Window>
+              </Window>
+              <Window Type="TLBB_ButtonNULL" Name="TopChongZhi_BaiBao_Frame3_Bk3_Button1">
+                <Property Name="UnifiedSize" Value="{{0.000000,92.000000},{0.000000,36.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-101.000000},{0.000000,15.000000}}"/>
+                <Property Name="PushedImage" Value="set:XinShouNewBK image:XinShouNew_LQPUSH"/>
+                <Property Name="NormalImage" Value="set:XinShouNewBK image:XinShouNew_LQNORMAL"/>
+                <Property Name="HoverImage" Value="set:XinShouNewBK image:XinShouNew_LQHOVER"/>
+                <Property Name="DisabledImage" Value="set:XinShouNewBK image:XinShouNew_LQDIS"/>
+                <Event Name="Clicked" Function="TopChongZhi_BaiBao_Frame3_GetGift(3);"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="TopChongZhi_BaiBao_Frame3_Bk3_Info2">
+                <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,3.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="Image" Value="set:XinShouNewBK image:XinShouNew_HL3"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_Frame_Lace3" Name="TopChongZhi_BaiBao_Frame3_Bk4">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,62.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,186.000000}}"/>
+              <Window Type="TLBB_ActionButton" Name="TopChongZhi_BaiBao_Frame3_Bk4_Icon1">
+                <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,78.000000},{0.000000,9.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+              </Window>
+              <Window Type="TLBB_ActionButton" Name="TopChongZhi_BaiBao_Frame3_Bk4_Icon2">
+                <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,129.000000},{0.000000,9.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+              </Window>
+              <Window Type="TLBB_ActionButton" Name="TopChongZhi_BaiBao_Frame3_Bk4_Icon3">
+                <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,180.000000},{0.000000,9.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+              </Window>
+              <Window Type="TLBB_ActionButton" Name="TopChongZhi_BaiBao_Frame3_Bk4_Icon4">
+                <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,232.000000},{0.000000,9.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+              </Window>
+              <Window Type="DefaultWindow" Name="TopChongZhi_BaiBao_Frame3_Bk4_Info1">
+                <Property Name="UnifiedSize" Value="{{0.000000,240.000000},{0.000000,60.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,280.000000},{0.000000,0.000000}}"/>
+                <Window Type="TLBB_SimpleText" Name="TopChongZhi_BaiBao_Frame3_Bk4_Text1_1">
+                  <Property Name="UnifiedSize" Value="{{0.000000,209.000000},{0.000000,18.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,20.000000}}"/>
+                  <Property Name="VertFormatting" Value="BottomAligned"/>
+                  <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+                  <Property Name="Text" Value="#G达到%s级可购买"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="TopChongZhi_BaiBao_Frame3_Bk4_Text1_2">
+                  <Property Name="UnifiedSize" Value="{{1.000000,-5.000000},{0.000000,18.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,37.000000}}"/>
+                  <Property Name="Text" Value="#{}"/>
+                  <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+                </Window>
+              </Window>
+              <Window Type="TLBB_ButtonNULL" Name="TopChongZhi_BaiBao_Frame3_Bk4_Button1">
+                <Property Name="UnifiedSize" Value="{{0.000000,92.000000},{0.000000,36.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-101.000000},{0.000000,15.000000}}"/>
+                <Property Name="PushedImage" Value="set:XinShouNewBK image:XinShouNew_LQPUSH"/>
+                <Property Name="NormalImage" Value="set:XinShouNewBK image:XinShouNew_LQNORMAL"/>
+                <Property Name="HoverImage" Value="set:XinShouNewBK image:XinShouNew_LQHOVER"/>
+                <Property Name="DisabledImage" Value="set:XinShouNewBK image:XinShouNew_LQDIS"/>
+                <Event Name="Clicked" Function="TopChongZhi_BaiBao_Frame3_GetGift(4);"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="TopChongZhi_BaiBao_Frame3_Bk4_Info2">
+                <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,3.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="Image" Value="set:XinShouNewBK image:XinShouNew_HL4"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_Frame_Lace3" Name="TopChongZhi_BaiBao_Frame3_Bk5">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,62.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,248.000000}}"/>
+              <Window Type="TLBB_ActionButton" Name="TopChongZhi_BaiBao_Frame3_Bk5_Icon1">
+                <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,78.000000},{0.000000,9.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+              </Window>
+              <Window Type="TLBB_ActionButton" Name="TopChongZhi_BaiBao_Frame3_Bk5_Icon2">
+                <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,129.000000},{0.000000,9.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+              </Window>
+              <Window Type="TLBB_ActionButton" Name="TopChongZhi_BaiBao_Frame3_Bk5_Icon3">
+                <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,180.000000},{0.000000,9.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+              </Window>
+              <Window Type="TLBB_ActionButton" Name="TopChongZhi_BaiBao_Frame3_Bk5_Icon4">
+                <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,232.000000},{0.000000,9.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+              </Window>
+              <Window Type="DefaultWindow" Name="TopChongZhi_BaiBao_Frame3_Bk5_Info1">
+                <Property Name="UnifiedSize" Value="{{0.000000,240.000000},{0.000000,60.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,280.000000},{0.000000,0.000000}}"/>
+                <Window Type="TLBB_SimpleText" Name="TopChongZhi_BaiBao_Frame3_Bk5_Text1_1">
+                  <Property Name="UnifiedSize" Value="{{0.000000,209.000000},{0.000000,18.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,20.000000}}"/>
+                  <Property Name="VertFormatting" Value="BottomAligned"/>
+                  <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+                  <Property Name="Text" Value="#{XSJNH_180111_141}"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="TopChongZhi_BaiBao_Frame3_Bk5_Text1_2">
+                  <Property Name="UnifiedSize" Value="{{1.000000,-5.000000},{0.000000,18.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,37.000000}}"/>
+                  <Property Name="Text" Value="#{}"/>
+                  <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+                </Window>
+              </Window>
+              <Window Type="TLBB_ButtonNULL" Name="TopChongZhi_BaiBao_Frame3_Bk5_Button1">
+                <Property Name="UnifiedSize" Value="{{0.000000,92.000000},{0.000000,36.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-101.000000},{0.000000,15.000000}}"/>
+                <Property Name="PushedImage" Value="set:XinShouNewBK image:XinShouNew_LQPUSH"/>
+                <Property Name="NormalImage" Value="set:XinShouNewBK image:XinShouNew_LQNORMAL"/>
+                <Property Name="HoverImage" Value="set:XinShouNewBK image:XinShouNew_LQHOVER"/>
+                <Property Name="DisabledImage" Value="set:XinShouNewBK image:XinShouNew_LQDIS"/>
+                <Event Name="Clicked" Function="TopChongZhi_BaiBao_Frame3_GetGift(5);"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="TopChongZhi_BaiBao_Frame3_Bk5_Info2">
+                <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,3.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="Image" Value="set:XinShouNewBK image:XinShouNew_HL5"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_Frame_Lace3" Name="TopChongZhi_BaiBao_Frame3_Bk6">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,62.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,310.000000}}"/>
+              <Window Type="TLBB_ActionButton" Name="TopChongZhi_BaiBao_Frame3_Bk6_Icon1">
+                <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,78.000000},{0.000000,9.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+              </Window>
+              <Window Type="TLBB_ActionButton" Name="TopChongZhi_BaiBao_Frame3_Bk6_Icon2">
+                <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,129.000000},{0.000000,9.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+              </Window>
+              <Window Type="TLBB_ActionButton" Name="TopChongZhi_BaiBao_Frame3_Bk6_Icon3">
+                <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,180.000000},{0.000000,9.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+              </Window>
+              <Window Type="TLBB_ActionButton" Name="TopChongZhi_BaiBao_Frame3_Bk6_Icon4">
+                <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,232.000000},{0.000000,9.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+              </Window>
+              <Window Type="DefaultWindow" Name="TopChongZhi_BaiBao_Frame3_Bk6_Info1">
+                <Property Name="UnifiedSize" Value="{{0.000000,240.000000},{0.000000,60.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,280.000000},{0.000000,2.000000}}"/>
+                <Window Type="TLBB_SimpleText" Name="TopChongZhi_BaiBao_Frame3_Bk6_Text1_1">
+                  <Property Name="UnifiedSize" Value="{{0.000000,209.000000},{0.000000,18.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,20.000000}}"/>
+                  <Property Name="VertFormatting" Value="BottomAligned"/>
+                  <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+                  <Property Name="Text" Value="#{XSJNH_180111_141}"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="TopChongZhi_BaiBao_Frame3_Bk6_Text1_2">
+                  <Property Name="UnifiedSize" Value="{{1.000000,-5.000000},{0.000000,18.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,37.000000}}"/>
+                  <Property Name="Text" Value="#{}"/>
+                  <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+                </Window>
+              </Window>
+              <Window Type="TLBB_ButtonNULL" Name="TopChongZhi_BaiBao_Frame3_Bk6_Button1">
+                <Property Name="UnifiedSize" Value="{{0.000000,92.000000},{0.000000,36.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-101.000000},{0.000000,15.000000}}"/>
+                <Property Name="PushedImage" Value="set:XinShouNewBK image:XinShouNew_LQPUSH"/>
+                <Property Name="NormalImage" Value="set:XinShouNewBK image:XinShouNew_LQNORMAL"/>
+                <Property Name="HoverImage" Value="set:XinShouNewBK image:XinShouNew_LQHOVER"/>
+                <Property Name="DisabledImage" Value="set:XinShouNewBK image:XinShouNew_LQDIS"/>
+                <Event Name="Clicked" Function="TopChongZhi_BaiBao_Frame3_GetGift(6);"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="TopChongZhi_BaiBao_Frame3_Bk6_Info2">
+                <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,3.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="Image" Value="set:XinShouNewBK image:XinShouNew_HL6"/>
+              </Window>
+            </Window>
+          <Window Type="TLBB_Frame_Lace3" Name="TopChongZhi_BaiBao_Frame3_Bk7">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,62.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,372.000000}}"/>
+            <Window Type="TLBB_ActionButton" Name="TopChongZhi_BaiBao_Frame3_Bk7_Icon1">
+              <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,78.000000},{0.000000,9.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="TopChongZhi_BaiBao_Frame3_Bk7_Icon2">
+              <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,129.000000},{0.000000,9.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="TopChongZhi_BaiBao_Frame3_Bk7_Icon3">
+              <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,180.000000},{0.000000,9.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="TopChongZhi_BaiBao_Frame3_Bk7_Icon4">
+              <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,232.000000},{0.000000,9.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+            </Window>
+            <Window Type="DefaultWindow" Name="TopChongZhi_BaiBao_Frame3_Bk7_Info1">
+              <Property Name="UnifiedSize" Value="{{0.000000,240.000000},{0.000000,60.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,280.000000},{0.000000,2.000000}}"/>
+              <Window Type="TLBB_SimpleText" Name="TopChongZhi_BaiBao_Frame3_Bk7_Text1_1">
+                <Property Name="UnifiedSize" Value="{{0.000000,209.000000},{0.000000,18.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,20.000000}}"/>
+                <Property Name="VertFormatting" Value="BottomAligned"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+                <Property Name="Text" Value="#{XSJNH_180111_141}"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="TopChongZhi_BaiBao_Frame3_Bk7_Text1_2">
+                <Property Name="UnifiedSize" Value="{{1.000000,-5.000000},{0.000000,18.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,37.000000}}"/>
+                <Property Name="Text" Value="#{}"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_ButtonNULL" Name="TopChongZhi_BaiBao_Frame3_Bk7_Button1">
+              <Property Name="UnifiedSize" Value="{{0.000000,92.000000},{0.000000,36.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-101.000000},{0.000000,15.000000}}"/>
+              <Property Name="PushedImage" Value="set:XinShouNewBK image:XinShouNew_LQPUSH"/>
+              <Property Name="NormalImage" Value="set:XinShouNewBK image:XinShouNew_LQNORMAL"/>
+              <Property Name="HoverImage" Value="set:XinShouNewBK image:XinShouNew_LQHOVER"/>
+              <Property Name="DisabledImage" Value="set:XinShouNewBK image:XinShouNew_LQDIS"/>
+              <Event Name="Clicked" Function="TopChongZhi_BaiBao_Frame3_GetGift(7);"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="TopChongZhi_BaiBao_Frame3_Bk7_Info2">
+              <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,3.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="Image" Value="set:XinShouNewBK image:XinShouNew_HL7"/>
+            </Window>
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

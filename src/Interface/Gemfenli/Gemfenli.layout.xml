@@ -1,0 +1,219 @@
+<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame1" Name="Gemfenli_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,285.000000},{0.000000,431.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-142.000000},{0.500000,-202.000000}}"/>
+    <Event Name="Hidden" Function="Gemfenli_OnHiden();" />
+    <Window Type="TLBB_DragTitle" Name="Gemfenli_DragTitle">
+      <Property Name="AbsolutePosition" Value="x:40.000000 y:11.000000" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}}" />
+      <Property Name="DragTarget" Value="Gemfenli_Frame" />
+      <Window Type="TLBB_SimpleText" Name="Gemfenli_Title">
+        <Property Name="RelativePosition" Value="x:0.000000 y:0.000000" />
+        <Property Name="RelativeSize" Value="w:1.000000 h:1.000000" />
+        <Property Name="Font" Value="YouYuan11.25" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Text" Value="#{BSZK_121012_48}" />
+        <Property Name="TextColor" Value="FFFFF263"/>
+        <Property Name="VertFormatting" Value="VertCentred" />
+      </Window>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="Gemfenli_Help">
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}" />
+      <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+      <Property Name="Text" Value="TLBB_ButtonHelp" />
+      <Event Name="Clicked" Function='Helper:GotoHelper(&quot;Gemfenli&quot;);' />
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="Gemfenli_Close">
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}" />
+      <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+      <Property Name="Text" Value="TLBB_ButtonClose" />
+      <Event Name="Clicked" Function="Gemfenli_Close_Click();" />
+    </Window>
+    <Window Type="TLBB_ButtonFenYe2" Name="Gemfenli_FenYe1">
+      <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,22.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,31.000000}}"/>
+      <Property Name="Text" Value="#{BSLCYH_130529_125}"/>
+      <Property Name="Selected" Value="False"/>
+      <Property Name="CheckMode" Value="1"/>
+      <Event Name="MouseLButtonDown" Function="Gemfenli_ChangeTabIndex(1);"/>
+    </Window>
+    <Window Type="TLBB_ButtonFenYe2" Name="Gemfenli_FenYe2">
+      <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,22.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,94.000000},{0.000000,31.000000}}"/>
+      <Property Name="Text" Value="#{BSLCYH_130529_126}"/>
+      <Property Name="Selected" Value="False"/>
+      <Property Name="CheckMode" Value="1"/>
+      <Event Name="MouseLButtonDown" Function="Gemfenli_ChangeTabIndex(2);"/>
+    </Window>
+    <Window Type="TLBB_ButtonFenYe2" Name="Gemfenli_FenYe3">
+      <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,22.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,137.000000},{0.000000,31.000000}}"/>
+      <Property Name="Text" Value="#{BSLCYH_130529_127}"/>
+      <Property Name="Selected" Value="False"/>
+      <Property Name="CheckMode" Value="1"/>
+      <Event Name="MouseLButtonDown" Function="Gemfenli_ChangeTabIndex(3);"/>
+    </Window>
+    <Window Type="TLBB_ButtonFenYe2" Name="Gemfenli_FenYe4">
+      <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,22.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,180.000000},{0.000000,31.000000}}"/>
+      <Property Name="Text" Value="#{BSLCYH_130529_128}"/>
+      <Property Name="Selected" Value="False"/>
+      <Property Name="CheckMode" Value="1"/>
+      <Event Name="MouseLButtonDown" Function="Gemfenli_ChangeTabIndex(4);"/>
+    </Window>
+    <Window Type="TLBB_ButtonFenYe2" Name="Gemfenli_FenYe5">
+      <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,22.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,223.000000},{0.000000,31.000000}}"/>
+      <Property Name="Text" Value="#{BSLCYH_130529_129}"/>
+      <Property Name="Selected" Value="True"/>
+      <Property Name="CheckMode" Value="1"/>
+      <Event Name="MouseLButtonDown" Function="Gemfenli_ChangeTabIndex(5);"/>
+    </Window>
+    <Window Type="TLBB_ButtonFenYe2" Name="Gemfenli_FenYe6">
+      <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,22.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,51.000000},{0.000000,31.000000}}"/>
+      <Property Name="Text" Value="#{BSSJ_140816_14}"/>
+      <Property Name="Selected" Value="True"/>
+      <Property Name="CheckMode" Value="1"/>
+      <Event Name="MouseLButtonDown" Function="Gemfenli_ChangeTabIndex(6);"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="Gemfenli_Frame_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{1.000000,-59.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,50.000000}}"/>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="Gemfenli_Info">
+        <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,2.000000}}"/>
+        <Property Name="AbsoluteSize" Value="w:265.000000 h:97.000000" />
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Text" Value="#{BSZK_121012_34}" />
+        <Property Name="TextColor" Value="FFFFF263" />
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="Gemfenli_Info2">
+        <Property Name="AbsolutePosition" Value="x:16.000000 y:112.000000" />
+        <Property Name="UnifiedSize" Value="{{0.695473,0.000000},{0.000000,40.000000}}" />
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Text" Value="#{BSZK_121012_06}" />
+        <Property Name="TextColor" Value="FFFFF263" />
+      </Window>
+      <Window Type="TLBB_ActionButton" Name="Gemfenli_Object">
+        <Property Name="AbsolutePosition" Value="x:164.000000 y:113.000000" />
+        <Property Name="AbsoluteSize" Value="w:36.000000 h:36.000000" />
+        <Property Name="DraggingEnabled" Value="True" />
+        <Property Name="DragAcceptName" Value="G126" />
+        <Event Name="RBClicked" Function="Gemfenli_Resume_Equip(1);" />
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="Gemfenli_info3">
+        <Property Name="UnifiedSize" Value="{{0.000000,148.000000},{0.000000,56.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,108.000000},{0.000000,222.000000}}"/>
+        <Property Name="Text" Value="#{BSZK_121012_35}"/>
+        <Property Name="VertFormatting" Value="TopAligned"/>
+        <Property Name="TextColor" Value="FFFFF263"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="Gemfenli_info4">
+        <Property Name="UnifiedSize" Value="{{0.000000,91.000000},{0.000000,37.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,16.000000},{0.000000,222.000000}}"/>
+        <Property Name="Text" Value="#{BSZK_121012_49}"/>
+        <Property Name="VertFormatting" Value="TopAligned"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="Gemfenli_Info5">
+        <Property Name="AbsolutePosition" Value="x:16.000000 y:167.000000" />
+        <Property Name="UnifiedSize" Value="{{0.695473,0.000000},{0.000000,40.000000}}" />
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Text" Value="#{BSZK_121012_56}" />
+        <Property Name="TextColor" Value="FFFFF263" />
+      </Window>
+      <Window Type="TLBB_ActionButton" Name="Gemfenli_Object2">
+        <Property Name="AbsolutePosition" Value="x:164.000000 y:168.000000" />
+        <Property Name="AbsoluteSize" Value="w:36.000000 h:36.000000" />
+        <Property Name="DraggingEnabled" Value="True" />
+        <Property Name="DragAcceptName" Value="G127" />
+        <Event Name="RBClicked" Function="Gemfenli_Resume_Equip(2);" />
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="Gemfenli_Money_Text">
+        <Property Name="UnifiedPosition" Value="{{0.050000,0.000000},{1.000000,-99.000000}}" />
+        <Property Name="UnifiedSize" Value="{{0.900000,0.000000},{0.000000,22.000000}}" />
+        <Property Name="HorzFormatting" Value="LeftAligned" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Text" Value="#{BSZK_121012_10}" />
+        <Property Name="TextColor" Value="FFFFF263" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Window Type="TLBB_Money" Name="Gemfenli_DemandMoney">
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}" />
+          <Property Name="AlignFix" Value="True" />
+          <Property Name="CopperIcon" Value="set:Button6 image:Lace_JiaoziTong" />
+          <Property Name="GoldIcon" Value="set:Button6 image:Lace_JiaoziJin" />
+          <Property Name="HorzFormatting" Value="RightAligned" />
+          <Property Name="MoneyNumber" Value="0" />
+          <Property Name="SilverIcon" Value="set:Button6 image:Lace_JiaoziYin" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="Gemfenli_Jiaozi_Text">
+        <Property Name="UnifiedPosition" Value="{{0.050000,0.000000},{1.000000,-77.000000}}" />
+        <Property Name="UnifiedSize" Value="{{0.900000,0.000000},{0.000000,22.000000}}" />
+        <Property Name="HorzFormatting" Value="LeftAligned" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Text" Value="#{BSZK_121012_11}" />
+        <Property Name="TextColor" Value="FFFFF263" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Window Type="TLBB_Money" Name="Gemfenli_SelfJiaozi">
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}" />
+          <Property Name="AlignFix" Value="True" />
+          <Property Name="CopperIcon" Value="set:Button6 image:Lace_JiaoziTong" />
+          <Property Name="GoldIcon" Value="set:Button6 image:Lace_JiaoziJin" />
+          <Property Name="HorzFormatting" Value="RightAligned" />
+          <Property Name="MoneyNumber" Value="0" />
+          <Property Name="SilverIcon" Value="set:Button6 image:Lace_JiaoziYin" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="Gemfenli_SelfMoney_Text">
+        <Property Name="UnifiedPosition" Value="{{0.050000,0.000000},{1.000000,-55.000000}}" />
+        <Property Name="UnifiedSize" Value="{{0.900000,0.000000},{0.000000,22.000000}}" />
+        <Property Name="HorzFormatting" Value="LeftAligned" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Text" Value="#{BSZK_121012_12}" />
+        <Property Name="TextColor" Value="FFFFF263" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Window Type="TLBB_Money" Name="Gemfenli_SelfMoney">
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}" />
+          <Property Name="HorzFormatting" Value="RightAligned" />
+          <Property Name="MoneyNumber" Value="0" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_ButtonCheck" Name="Gemfenli_YuanBaoPay">
+        <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{1.000000,-26.000000}}"/>
+        <Property Name="CheckMode" Value="0"/>
+        <Property Name="Tooltip" Value="#{KXYH_170608_15}"/>
+        <Event Name="MouseLButtonDown" Function="Gemfenli_Yuanbao_Click();"/>
+        <Property Name="Visible" Value="False"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="Gemfenli_YuanBaoPay_TXT">
+        <Property Name="UnifiedSize" Value="{{0.000000,106.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,24.000000},{1.000000,-30.000000}}"/>
+        <Property Name="Text" Value="#{BSLCYH_130529_18}" />
+        <Property Name="Tooltip" Value="#{KXYH_170608_15}"/>
+        <Property Name="Visible" Value="False"/>
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="Gemfenli_OK">
+        <Property Name="UnifiedPosition" Value="{{1.000000,-82.000000},{1.000000,-30.000000}}" />
+        <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+        <Property Name="Text" Value="#{BSZK_121012_36}" />
+        <Event Name="Clicked" Function="Gemfenli_OK_Clicked();" />
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="Gemfenli_Cancel">
+        <Property Name="UnifiedPosition" Value="{{1.000000,-42.000000},{1.000000,-30.000000}}" />
+        <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+        <Property Name="Text" Value="#{BSZK_121012_14}" />
+        <Event Name="Clicked" Function="Gemfenli_Close_Click();" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

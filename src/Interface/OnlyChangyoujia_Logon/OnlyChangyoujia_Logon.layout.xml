@@ -1,0 +1,57 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="DefaultWindow" Name="OnlyChangyoujia_Logon_Frame">
+		<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+		<Property Name="AlwaysOnTop" Value="True"/>
+		<Property Name="AlwaysOnTop" Value="True" />
+		<Window Type="DefaultWindow" Name="OnlyChangyoujia_Logon_Frame_2">
+			<Property Name="UnifiedSize" Value="{{0.000000,310.000000},{0.000000,186.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.500000,-155.000000},{0.200000,30.000000}}"/>
+		<Window Type="TLBB_Frame3" Name="OnlyChangyoujia_Logon_Frame_3">
+			<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+			<Window Type="TLBB_Frame_Lace2" Name="OnlyChangyoujia_Logon_Text_Lace">
+				<Property Name="UnifiedSize" Value="{{1.000000,-15.000000},{0.000000,78.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,14.000000}}"/>
+				<Window Type="TLBB_SimpleText" Name="OnlyChangyoujia_Logon_Text">
+					<Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{1.000000,-8.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}"/>
+					<Property Name="Text" Value="#{DLLC_170814_27}"/>
+					<Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+				</Window>
+			</Window>
+
+			<Window Type="TLBB_SimpleText" Name="OnlyChangyoujia_Logon_Changyoujia_Text">
+				<Property Name="UnifiedSize" Value="{{0.000000,126.000000},{0.000000,22.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,114.000000}}"/>
+				<Property Name="Text" Value="#{DLLC_170814_28}"/>
+				<Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+			</Window>
+
+			<Window Type="TLBB_EditBoxNormal" Name="OnlyChangyoujia_Logon_ChangyoujiaBox">
+				<Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,161.000000},{0.000000,114.600006}}"/>
+				<Property Name="MaskText" Value="True"/>
+				<Property Name="DefaultEditBox" Value="True"/>
+				<Property Name="MaxTextLength" Value="6"/>
+				<Property Name="MaskText" Value="True"/>
+				<Property Name="DefaultEditBox" Value="True"/>
+				<Property Name="ValidationString" Value="[0-9]*"/>
+				<Event Name="TextAccepted" Function="OnlyChangyoujia_Logon_OnAccepted();" />
+			</Window>
+		<Window Type="TLBB_ButtonCommon" Name="OnlyChangyoujia_Logon_CheckButton">
+			<Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,161.000000},{1.000000,-38.000000}}"/>
+			<Property Name="Text" Value="验证"/>
+			<Event Name="Clicked" Function="OnlyChangyoujia_Logon_CheckButton_Clicked();"/>
+		</Window>
+		<Window Type="TLBB_ButtonCommon" Name="OnlyChangyoujia_Logon_CloseButton">
+			<Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,228.000000},{1.000000,-38.000000}}"/>
+			<Property Name="Text" Value="取消"/>
+			<Event Name="Clicked" Function="OnlyChangyoujia_Logon_CloseButton_Clicked();"/>
+		</Window>
+		</Window>
+		</Window>
+  </Window>
+</GUILayout>

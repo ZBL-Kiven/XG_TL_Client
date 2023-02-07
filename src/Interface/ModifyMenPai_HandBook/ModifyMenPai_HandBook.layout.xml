@@ -1,0 +1,216 @@
+<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="ModifyMenPai_HandBook_FrameNULL">
+    <Property Name="UnifiedSize" Value="{{0.000000,710.000000},{0.000000,445.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-352.000000},{0.500000,-214.000000}}"/>
+    <Event Name="Hidden" Function="ModifyMenPai_HandBook_OnHiden();" />
+    <Window Type="TLBB_StaticImageNULL" Name="ModifyMenPai_HandBook_FrameNULL_Left">
+      <Property Name="UnifiedSize" Value="{{0.000000,134.000000},{0.000000,102.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Property Name="MouseRButtonHollow" Value="True"/>
+      <Property Name="MouseMoveHollow" Value="True"/>
+      <Property Name="MouseLButtonHollow" Value="True"/>
+      <Property Name="MouseHollow" Value="True"/>
+      <Property Name="Image" Value="set:TXHW2 image:TXHW_MainFrameL"/>
+    </Window>
+    <Window Type="TLBB_StaticImageNULL" Name="ModifyMenPai_HandBook_FrameNULL_Right1">
+      <Property Name="UnifiedSize" Value="{{0.000000,106.000000},{0.000000,102.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-106.000000},{0.000000,0.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Property Name="MouseRButtonHollow" Value="True"/>
+      <Property Name="MouseMoveHollow" Value="True"/>
+      <Property Name="MouseLButtonHollow" Value="True"/>
+      <Property Name="MouseHollow" Value="True"/>
+      <Property Name="Image" Value="set:CommonFrame36 image:Anniversary_LaceRT"/>
+    </Window>
+    <Window Type="TLBB_StaticImageNULL" Name="ModifyMenPai_HandBook_FrameNULL_Right2">
+      <Property Name="UnifiedSize" Value="{{0.000000,54.000000},{0.000000,240.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-52.000000},{0.000000,11.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Property Name="MouseRButtonHollow" Value="True"/>
+      <Property Name="MouseMoveHollow" Value="True"/>
+      <Property Name="MouseLButtonHollow" Value="True"/>
+      <Property Name="MouseHollow" Value="True"/>
+      <Property Name="Image" Value="set:TXHW2 image:TXHW_MainFrameR"/>
+      <Window Type="TLBB_ButtonClose" Name="ModifyMenPai_HandBook_Close">
+        <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-34.000000},{0.000000,13.000000}}"/>
+        <Event Name="Clicked" Function="ModifyMenPai_HandBook_CloseWindow();"/>
+      </Window>
+    </Window>
+    <Window Type="TLBB_Frame_Lace37" Name="ModifyMenPai_HandBook_DragTitleBK">
+      <Property Name="UnifiedSize" Value="{{0.000000,400.000000},{0.000000,25.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-200.000000},{0.000000,15.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Property Name="MouseRButtonHollow" Value="True"/>
+      <Property Name="MouseMoveHollow" Value="True"/>
+      <Property Name="MouseLButtonHollow" Value="True"/>
+      <Property Name="MouseHollow" Value="True"/>
+    </Window>
+    <Window Type="TLBB_DragTitle" Name="ModifyMenPai_HandBook_DragTitle">
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-99.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,56.000000},{0.000000,19.000000}}"/>
+      <Property Name="DragTarget" Value="ModifyMenPai_HandBook_FrameNULL"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="VertFormatting" Value="VertCentred"/>
+      <Property Name="HorzFormatting" Value="HorzCentred"/>
+      <Property Name="Text" Value="#{YDS_180907_05}"/>
+    </Window>
+    <Window Type="TLBB_MainFrame16" Name="ModifyMenPai_HandBook_Frame">
+      <Property Name="UnifiedSize" Value="{{0.000000,630.000000},{0.000000,428.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,53.000000},{1.000000,-428.000000}}"/>
+      <Property Name="AttachEnabled" Value="True"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Window Type="TLBB_Frame_Lace36" Name="ModifyMenPai_HandBook_ZhiYin1">
+        <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-31.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,25.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Window Type="TLBB_Frame_Lace55" Name="ModifyMenPai_HandBook_ZhiYin1_1">
+          <Property Name="UnifiedSize" Value="{{1.000000,-61.000000},{0.000000,300.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,31.000000},{0.000000,47.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="ModifyMenPai_HandBook_ZhiYin1_1_Explain">
+            <Property Name="VertFormatting" Value="TopAligned"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,-17.000000},{0.000000,320.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,3.000000}}"/>
+            <Property Name="Text" Value="#{YDS_180907_30}"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          </Window>
+          <Window Type="TLBB_HLine2" Name="ModifyMenPai_HandBook_ZhiYin1_1_HLine">
+            <Property Name="UnifiedSize" Value="{{0.000000,275.000000},{0.000000,1.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,295.000000}}"/>
+          </Window>
+          <Window Type="TLBB_HLine2" Name="ModifyMenPai_HandBook_ZhiYin1_1_HLine1">
+            <Property Name="UnifiedSize" Value="{{0.000000,270.000000},{0.000000,1.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,285.000000},{0.000000,295.000000}}"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="ModifyMenPai_HandBook_Image4">
+            <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,5.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,278.000000},{0.000000,290.000000}}"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:ModifyMenPai_HandBook_SanJiao"/>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace36" Name="ModifyMenPai_HandBook_ZhiYin2">
+        <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-31.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,25.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+          <Window Type="TLBB_Frame_Lace55" Name="ModifyMenPai_HandBook_ZhiYin2_TextLace">
+            <Property Name="UnifiedSize" Value="{{1.000000,-61.000000},{0.000000,300.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,31.000000},{0.000000,47.000000}}"/>
+            <Property Name="Text" Value=""/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            <Window Type="TLBB_HLine2" Name="ModifyMenPai_HandBook_ZhiYin2_HLine">
+              <Property Name="UnifiedSize" Value="{{0.000000,275.000000},{0.000000,1.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,295.000000}}"/>
+            </Window>
+            <Window Type="TLBB_HLine2" Name="ModifyMenPai_HandBook_ZhiYin2_HLine1">
+              <Property Name="UnifiedSize" Value="{{0.000000,270.000000},{0.000000,1.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,285.000000},{0.000000,295.000000}}"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="ModifyMenPai_ZhiYin2_Image">
+              <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,5.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,278.000000},{0.000000,290.000000}}"/>
+              <Property Name="Image" Value="set:CommonFrame37 image:ModifyMenPai_HandBook_SanJiao"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="ModifyMenPai_HandBook_ZhiYin2_Text">
+              <Property Name="VertFormatting" Value="TopAligned"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,-17.000000},{0.000000,320.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,3.000000}}"/>
+              <Property Name="Text" Value="#{YDS_180907_31}"/>
+              <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            </Window>
+          </Window>
+        </Window>
+      <Window Type="TLBB_Frame_Lace36" Name="ModifyMenPai_HandBook_ZhiYin3">
+        <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-31.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,25.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+          <Window Type="TLBB_Frame_Lace55" Name="ModifyMenPai_HandBook_ZhiYin3_TextLace">
+            <Property Name="UnifiedSize" Value="{{1.000000,-61.000000},{0.000000,300.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,31.000000},{0.000000,47.000000}}"/>
+            <Property Name="Text" Value=""/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            <Window Type="TLBB_HLine2" Name="ModifyMenPai_HandBook_ZhiYin3_HLine">
+              <Property Name="UnifiedSize" Value="{{0.000000,275.000000},{0.000000,1.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,295.000000}}"/>
+            </Window>
+            <Window Type="TLBB_HLine2" Name="ModifyMenPai_HandBook_ZhiYin3_HLine1">
+              <Property Name="UnifiedSize" Value="{{0.000000,270.000000},{0.000000,1.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,285.000000},{0.000000,295.000000}}"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="ModifyMenPai_ZhiYin3_Image">
+              <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,5.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,278.000000},{0.000000,290.000000}}"/>
+              <Property Name="Image" Value="set:CommonFrame37 image:ModifyMenPai_HandBook_SanJiao"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="ModifyMenPai_HandBook_ZhiYin3_Text">
+              <Property Name="VertFormatting" Value="TopAligned"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,-17.000000},{0.000000,298.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,2.000000}}"/>
+              <Property Name="Text" Value="#{YDS_180907_32}"/>
+              <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            </Window>
+          </Window>
+        </Window>
+      <Window Type="TLBB_Frame_Lace36" Name="ModifyMenPai_HandBook_ZhiYin4">
+        <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-31.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,25.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Window Type="TLBB_Frame_Lace55" Name="ModifyMenPai_HandBook_ZhiYin4_TextLace">
+          <Property Name="UnifiedSize" Value="{{1.000000,-61.000000},{0.000000,300.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,31.000000},{0.000000,47.000000}}"/>
+          <Property Name="Text" Value=""/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          <Window Type="TLBB_HLine2" Name="ModifyMenPai_HandBook_ZhiYin4_HLine">
+            <Property Name="UnifiedSize" Value="{{0.000000,275.000000},{0.000000,1.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,295.000000}}"/>
+          </Window>
+          <Window Type="TLBB_HLine2" Name="ModifyMenPai_HandBook_ZhiYin4_HLine1">
+            <Property Name="UnifiedSize" Value="{{0.000000,270.000000},{0.000000,1.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,285.000000},{0.000000,295.000000}}"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="ModifyMenPai_ZhiYin4_Image">
+            <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,5.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,278.000000},{0.000000,290.000000}}"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:ModifyMenPai_HandBook_SanJiao"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="ModifyMenPai_HandBook_ZhiYin4_Text">
+            <Property Name="VertFormatting" Value="TopAligned"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,-17.000000},{0.000000,305.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,2.000000}}"/>
+            <Property Name="Text" Value="#{YDS_180907_33}"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="ModifyMenPai_HandBook_Button">
+        <Property Name="UnifiedSize" Value="{{1.000000,-15.000000},{0.000000,30.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{1.000000,-45.000000}}"/>
+        <Window Type="TLBB_ButtonNULL" Name="ModifyMenPai_HandBook_UpPage">
+          <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,250.000000},{0.500000,-15.000000}}"/>
+          <Property Name="PushedImage" Value="set:TXHW2 image:TXHWButtonL_Pushed"/>
+          <Property Name="NormalImage" Value="set:TXHW2 image:TXHWButtonL_Normal"/>
+          <Property Name="HoverImage" Value="set:TXHW2 image:TXHWButtonL_Hover"/>
+          <Property Name="DisabledImage" Value="set:TXHW2 image:TXHWButtonL_Disable"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Event Name="Clicked" Function="ModifyMenPai_HandBook_Pre_Click(1)" />
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="ModifyMenPai_HandBook_DownPage">
+          <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-270.000000},{0.500000,-15.000000}}"/>
+          <Property Name="PushedImage" Value="set:TXHW2 image:TXHWButtonR_Pushed"/>
+          <Property Name="NormalImage" Value="set:TXHW2 image:TXHWButtonR_Normal"/>
+          <Property Name="HoverImage" Value="set:TXHW2 image:TXHWButtonR_Hover"/>
+          <Property Name="DisabledImage" Value="set:TXHW2 image:TXHWButtonR_Disable"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Event Name="Clicked" Function="ModifyMenPai_HandBook_Next_Click(1)" />
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

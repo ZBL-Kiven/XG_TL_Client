@@ -1,0 +1,102 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame1" Name="PetSoul_BloodLevelUp_Frame">
+    <Property Name="UnifiedPosition" Value="{{0.5,-128},{0.5,-178}}" />
+    <Property Name="AbsoluteSize" Value="w:256 h:312" />
+    <Event Name="Hidden" Function="PetSoul_BloodLevelUp_OnHiden();" />
+    <Window Type="TLBB_DragTitle" Name="PetSoul_BloodLevelUp_DragTitle">
+      <Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+      <Property Name="DragTarget" Value="PetSoul_BloodLevelUp_Frame" />
+      <Window Type="TLBB_SimpleText" Name="PetSoul_BloodLevelUp_Title">
+        <Property Name="Position" Value="x:0.0 y:0.0" />
+        <Property Name="Size" Value="w:1.0 h:1.0" />
+        <Property Name="Font" Value="YouYuan11.25" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Text" Value="#{SHXT_20211230_72}" />
+      </Window>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="PetSoul_BloodLevelUp_Help">
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+      <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+      <Property Name="Text" Value="TLBB_ButtonHelp" />
+      <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*PetEquipSuitDepart&quot;);' />
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="PetSoul_BloodLevelUp_Close">
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+      <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+      <Property Name="Text" Value="TLBB_ButtonClose" />
+      <Event Name="Clicked" Function="this:Hide();" />
+    </Window>
+    <Window Type="DefaultWindow" Name="PetSoul_BloodLevelUp_Frame_Client">
+      <Property Name="AbsolutePosition" Value="x:7.000000 y:36.000000" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-55.000000}" />
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="PetSoul_BloodLevelUp_Info">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,116.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000000,0.000000},{0.0000000,0.000000}}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Text" Value="#{SHXT_20211230_73}"/>
+        <Property Name="TextColor" Value="FFFFF263" />
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="PetSoul_BloodLevelUp_Info2">
+        <Property Name="UnifiedSize" Value="{{0.000000,170.000000},{0.000000,36.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.0000000,10.000000},{0.000000,118.000000}}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Text" Value="#{SHXT_20211230_74}"/>
+        <Property Name="TextColor" Value="FFFFF263" />
+      </Window>
+      <Window Type="TLBB_ActionButton" Name="PetSoul_BloodLevelUp_Object">
+        <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.0000000,184.000000},{0.000000,118.000000}}"/>
+        <Property Name="DragAcceptName" Value="W13" />
+        <Property Name="DraggingEnabled" Value="True" />
+        <Event Name="RBClicked" Function="PetSoul_BloodLevelUp_Resume_PetSoul();" />
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="PetSoul_BloodLevelUp_Explain">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,22.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.0000000,0.00000},{1.000000,-44.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="PetSoul_BloodLevelUp_Explain_Text1">
+          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.0000000,10.00000},{0.000000,2.000000}}"/>
+          <Property Name="TextColor" Value="FFFFF263" />
+          <Property Name="Text" Value="#{SHXT_20211230_76}" />  
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="PetSoul_BloodLevelUp_Explain_Text2">
+        <Property Name="UnifiedSize" Value="{{0.000000,170.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,170.000000}}"/>
+        <Property Name="TextColor" Value="FFFFF263" />
+        <Property Name="Text" Value="#{SHXT_20211230_75}" />
+        <Property Name="RiseOnClick" Value="False" />
+      </Window>
+      <Window Type="TLBB_ActionButton" Name="PetSoul_BloodLevelUp_Piece1">
+        <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.0000000,184.000000},{0.000000,164.000000}}"/>
+        <Property Name="DragAcceptName" Value="W14" />
+        <Property Name="DraggingEnabled" Value="True" />
+        <Event Name="RBClicked" Function="PetSoul_BloodLevelUp_Resume_Piece(1);" />
+      </Window>
+      <Window Type="TLBB_Frame_Lace5" Name="PetSoul_BloodLevelUp_Blank">
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}" />
+        <Property Name="UnifiedSize" Value="{{1.000000,-120.000000},{0.000000,20.000000}" />
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="PetSoul_BloodLevelUp_OK">
+        <Property Name="UnifiedPosition" Value="{{1.000000,-120.000000},{1.000000,-20.000000}" />
+        <Property Name="AbsoluteSize" Value="w:80.000000 h:20.000000" />
+        <Property Name="Text" Value="#{SHXT_20211230_61}" />
+        <Event Name="Clicked" Function="PetSoul_BloodLevelUp_Buttons_Clicked();" />
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="PetSoul_BloodLevelUp_Cancel">
+        <Property Name="UnifiedPosition" Value="{{1.000000,-40.000000},{1.000000,-20.000000}" />
+        <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+        <Property Name="Text" Value="#{INTERFACE_XML_542}" />
+        <Event Name="Clicked" Function="this:Hide();" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

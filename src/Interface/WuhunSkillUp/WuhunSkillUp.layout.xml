@@ -1,0 +1,197 @@
+<?xml version="1.0" ?>
+<GUILayout>
+    <Window Type="TLBB_MainFrame1" Name="WuhunSkillUp_Frame">
+		<Property Name="UnifiedSize" Value="{{0.000000,368.000000},{0.000000,403.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.500000,-195.000000},{0.500000,-227.000000}}"/>
+        <Event Name="Hidden" Function="WuhunSkillUp_OnHiden();" />
+        <Window Type="TLBB_DragTitle" Name="WuhunSkillUp_DragTitle">
+          <Property Name="AbsolutePosition" Value="x:40.000000 y:11.000000" />
+          <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}" />
+            <Property Name="DragTarget" Value="WuhunSkillUp_Frame" />
+            <Window Type="TLBB_SimpleText" Name="WuhunSkillUp_Title">
+                <Property Name="Position" Value="x:0.0 y:0.0" />
+                <Property Name="Size" Value="w:1.0 h:1.0" />
+                <Property Name="Font" Value="YouYuan11.25" />
+                <Property Name="HorzFormatting" Value="HorzCentred" />
+                <Property Name="VertFormatting" Value="VertCentred" />
+                <Property Name="RiseOnClick" Value="False" />
+                <Property Name="Text" Value="#{WH_xml_XX(29)}" />
+            </Window>
+        </Window>
+         <Window Type="TLBB_ButtonHelp" Name="WuhunSkillUp_Help">
+          <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+          <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+            <Property Name="Text" Value="TLBB_ButtonHelp" />
+            <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*WuhunSkillUp&quot;);' />
+        </Window>
+        <Window Type="TLBB_ButtonClose" Name="WuhunSkillUp_Close">
+          <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+          <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+            <Property Name="Text" Value="TLBB_ButtonClose" />
+            <Event Name="Clicked" Function="this:Hide();" />
+        </Window>
+        <Window Type="DefaultWindow" Name="WuhunSkillUp_Frame_Client">
+          <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-39.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,30.000000}}"/>
+          <Window Type="TLBB_SimpleMulitiTextFrame" Name="WuhunSkillUp_Info">
+            <Property Name="UnifiedSize" Value="{{1.0,-2.000000},{0.000000,70.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,0.000000}}"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+                <Property Name="RiseOnClick" Value="False" />
+                <Property Name="Text" Value="#{WH_xml_XX(30)}" />
+                <Property Name="TextColor" Value="FFFFF263" />
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="WuhunSkillUp_Info2">
+              <Property Name="UnifiedSize" Value="{{0.0,180.0},{0.000000,22.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,18.000000},{0.000000,88.000000}}"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+                <Property Name="RiseOnClick" Value="False" />
+                <Property Name="Text" Value="#{WHYH_161121_56}" />
+                <Property Name="TextColor" Value="FFFFF263" />
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="WuhunSkillUp_Object1">
+              <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,300.000000},{0.000000,82.000000}}"/>            
+                <Property Name="DragAcceptName" Value="G88" />
+                <Property Name="DraggingEnabled" Value="True" />
+                <Event Name="RBClicked" Function="WuhunSkillUp_Resume_Equip();" />
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="WuhunSkillUp_Info3">
+              <Property Name="UnifiedSize" Value="{{0.000000,160.000000},{0.000000,44.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,18.000000},{0.000000,128.000000}}"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+                <Property Name="RiseOnClick" Value="False" />
+                <Property Name="Text" Value="#{WHYH_161121_58}" />
+                <Property Name="TextColor" Value="FFFFF263" />
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="WuhunSkillUp_Object2">
+              <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,180.000000},{0.000000,130.000000}}"/>
+              <Event Name="Clicked" Function="WuhunSkillUp_Select_Skill(0);" />
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="WuhunSkillUp_Object3">
+              <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,240.000000},{0.000000,130.000000}}"/>
+			         <Event Name="Clicked" Function="WuhunSkillUp_Select_Skill(1);" />
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="WuhunSkillUp_Object4">
+              <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,300.000000},{0.000000,130.000000}}"/>
+				      <Event Name="Clicked" Function="WuhunSkillUp_Select_Skill(2);" />
+            </Window>
+          <Window Type="TLBB_SimpleText" Name="WuhunSkillUp_Info4">
+            <Property Name="UnifiedSize" Value="{{0.0,160.0},{0.000000,22.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,18.000000},{0.000000,190.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+            <Property Name="RiseOnClick" Value="False" />
+            <Property Name="Text" Value="#{WHYH_161121_57}" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+
+          <Window Type="TLBB_ActionButton" Name="WuhunSkillUp_Object5">
+            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,300.000000},{0.000000,178.000000}}"/>
+
+          </Window>
+
+          <Window Type="TLBB_SimpleText" Name="WuhunSkillUp_Info5">
+            <Property Name="UnifiedSize" Value="{{0.0,160.0},{0.000000,22.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,18.000000},{0.000000,238.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+            <Property Name="RiseOnClick" Value="False" />
+            <Property Name="Text" Value="#{WHYH_161121_59}" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="WuhunSkillUp_Object6">
+            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,300.000000},{0.000000,226.000000}}"/>
+            <Property Name="DragAcceptName" Value="G89" />
+            <Property Name="DraggingEnabled" Value="True" />
+                <Event Name="RBClicked" Function="WuhunSkillUp_Resume_Item();" />
+          </Window>
+
+          <Window Type="TLBB_SimpleMulitiTextFrame" Name="WuhunSkillUp_Money_Text">
+                <Property Name="UnifiedPosition" Value="{{0.0500,0.000000},{1.000000,-102.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.9,0.000000},{0.000000,22.000000}" />
+                <Property Name="TextColor" Value="FFFFF263" />
+                <Property Name="Text" Value="#{INTERFACE_XML_789}" />
+                <Property Name="HorzFormatting" Value="LeftAligned" />
+                <Property Name="VertFormatting" Value="VertCentred" />
+                <Property Name="RiseOnClick" Value="False" />
+                <Window Type="TLBB_Money" Name="WuhunSkillUp_DemandMoney">
+                    <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}" />
+                    <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}" />
+                    <Property Name="MoneyNumber" Value="0" />
+                    <Property Name="HorzFormatting" Value="RightAligned" />
+                    <Property Name="AlignFix" Value="True" />
+                    <Property Name="GoldIcon" Value = "set:Button6 image:Lace_JiaoziJin" />
+                    <Property Name="SilverIcon" Value = "set:Button6 image:Lace_JiaoziYin" />
+                    <Property Name="CopperIcon" Value = "set:Button6 image:Lace_JiaoziTong" />
+                </Window>
+            </Window>
+            <Window Type="TLBB_SimpleMulitiTextFrame" Name="WuhunSkillUp_Jiaozi_Text">
+                <Property Name="UnifiedPosition" Value="{{0.0500,0.000000},{1.000000,-80.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.9,0.000000},{0.000000,22.000000}" />
+                <Property Name="TextColor" Value="FFFFF263" />
+                <Property Name="Text" Value="#{BDJB_051210_1}" />
+                <Property Name="HorzFormatting" Value="LeftAligned" />
+                <Property Name="VertFormatting" Value="VertCentred" />
+                <Property Name="RiseOnClick" Value="False" />
+                <Window Type="TLBB_Money" Name="WuhunSkillUp_SelfJiaozi">
+                    <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}" />
+                    <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}" />
+                    <Property Name="MoneyNumber" Value="0" />
+                    <Property Name="HorzFormatting" Value="RightAligned" />
+                    <Property Name="AlignFix" Value="True" />
+                    <Property Name="GoldIcon" Value = "set:Button6 image:Lace_JiaoziJin" />
+                    <Property Name="SilverIcon" Value = "set:Button6 image:Lace_JiaoziYin" />
+                    <Property Name="CopperIcon" Value = "set:Button6 image:Lace_JiaoziTong" />
+                </Window>
+            </Window>
+            <Window Type="TLBB_SimpleMulitiTextFrame" Name="WuhunSkillUp_SelfMoney_Text">
+                <Property Name="UnifiedPosition" Value="{{0.0500,0.000000},{1.000000,-58.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.9,0.000000},{0.000000,22.000000}" />
+                <Property Name="TextColor" Value="FFFFF263" />
+                <Property Name="Text" Value="#{INTERFACE_XML_834}" />
+                <Property Name="HorzFormatting" Value="LeftAligned" />
+                <Property Name="VertFormatting" Value="VertCentred" />
+                <Property Name="RiseOnClick" Value="False" />
+                <Window Type="TLBB_Money" Name="WuhunSkillUp_SelfMoney">
+                    <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}" />
+                    <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}" />
+                    <Property Name="HorzFormatting" Value="RightAligned" />
+                    <Property Name="MoneyNumber" Value="0" />
+                </Window>
+            </Window>
+
+          <Window Type="TLBB_ButtonCommon" Name="WuhunSkillUp_QuicklyUp">
+            <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{1.000000,-29.000000}" />
+            <Property Name="AbsoluteSize" Value="w:65.000000 h:20.000000" />
+            <Property Name="Text" Value="#{WHYH_161121_31}" />
+            <Property Name="Tooltip" Value="#{WHYH_161121_60}" />
+            <Window Type="TLBB_Animate" Name="WuhunSkillUp_QuicklyUp_Animate">
+              <Property Name="UnifiedSize" Value="{{0.000000,65.000000},{0.000000,20.000000}}"/>
+              <Property Name="Animate" Value="YBNotice_65" />
+              <Property Name="Tooltip" Value="#{WHYH_161121_60}" />
+              <Event Name="Clicked" Function="WuhunSkillUp_Quick_OK_Clicked();" />
+            </Window>
+          </Window>
+            <Window Type="TLBB_Frame_Lace5" Name="WuhunSkillUp_Blank">
+              <Property Name="UnifiedSize" Value="{{1.000000,-154.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,71.000000},{1.000000,-20.000000}}"/>
+            </Window>
+            <Window Type="TLBB_ButtonCommon" Name="WuhunSkillUp_OK">
+                <Property Name="UnifiedPosition" Value="{{1.000000,-83.000000},{1.000000,-29.000000}" />
+                <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+                <Property Name="Text" Value="#{INTERFACE_XML_557}" />
+                <Event Name="Clicked" Function="WuhunSkillUp_OK_Clicked();" />
+            </Window>
+            <Window Type="TLBB_ButtonCommon" Name="WuhunSkillUp_Cancel">
+                <Property Name="UnifiedPosition" Value="{{1.000000,-43.000000},{1.000000,-29.000000}" />
+                <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+                <Property Name="Text" Value="#{INTERFACE_XML_542}" />
+                <Event Name="Clicked" Function="this:Hide();" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

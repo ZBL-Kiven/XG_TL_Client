@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<GUILayout>
+<Window Type="TLBB_MainFrame0" Name="QuicklyEnterGame_Frame">
+    <Property Name="UnifiedPosition" Value="{{0.5,-125},{0.5,-65}}" />
+    <Property Name="AbsoluteSize" Value="w:250 h:160" />
+	<Property Name="AlwaysOnTop" Value="True"/>
+    <Window Type="TLBB_DragTitle" Name="QuicklyEnterGame_DragTitle">
+        <Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
+        <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+        <Property Name="DragTarget" Value="QuicklyEnterGame_Frame" />
+        <Window Type="TLBB_SimpleText" Name="QuicklyEnterGame_Text">
+            <Property Name="Position" Value="x:0 y:0" />
+            <Property Name="Size" Value="w:1 h:1" />
+            <Property Name="Text" Value="#gff0fa0快捷登录" />
+            <Property Name="Font" Value="YouYuan11.25" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="VertFormatting" Value="VertCentred" />
+            <Property Name="RiseOnClick" Value="False" />
+        </Window>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="QuicklyEnterGame_Help">
+		<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+		<Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+		<Property Name="Text" Value="TLBB_ButtonHelp" />
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="QuicklyEnterGame_Close">
+		<Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+		<Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+		<Property Name="Text" Value="TLBB_ButtonClose" />
+		<Event Name="Clicked" Function="this:Hide()" />
+    </Window>	
+    <Window Type="TLBB_Frame_Lace1" Name="QuicklyEnterGame_LeftMenu">
+        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,30.000000}" />
+        <Property Name="UnifiedSize" Value="{{1.000000,-5.000000},{0.000000,90.000000}" />
+        <Window Type="TLBB_MultiColumnListNew" Name="QuicklyEnterGame_Menu">
+			<Property Name="UnifiedPosition" Value="{{0.000000,-3.000000},{0.000000,4.000000}" />
+			<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-5.000000}" />
+			<Property Name="ColumnHeader" Value="text: width:1 id:0" />
+			<Property Name="CreateButtonType" Value="TLBB_ButtonNULL" />
+			<Event Name="SelectionChanged" Function="QuicklyEnterGame_ItemSelectChanged()"  />
+        </Window>
+    </Window>
+	<Window Type="TLBB_ButtonCommon" Name="QuicklyEnterGame_ok">
+        <Property Name="UnifiedPosition" Value="{{0.500000,20.000000},{1.000000,-40.000000}" />
+        <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+        <Property Name="Text" Value="确定" />
+        <Event Name="Clicked" Function="QuicklyEnterGame_Enter()" />
+    </Window>	
+	<Window Type="TLBB_ButtonCommon" Name="QuicklyEnterGame_del">
+        <Property Name="UnifiedPosition" Value="{{0.500000,-50.000000},{1.000000,-40.000000}" />
+        <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+        <Property Name="Text" Value="删除" />
+        <Event Name="Clicked" Function="QuicklyEnterGame_Del()" />
+    </Window>	
+</Window>
+</GUILayout>

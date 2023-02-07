@@ -1,0 +1,483 @@
+<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame0" Name="ShaXing_TopList_MainFrame">
+    <Property Name="UnifiedSize" Value="{{0.000000,652.000000},{0.000000,480.000000}}" />
+    <Property Name="UnifiedPosition" Value="{{0.500000,-330.000000},{0.500000,-250.000000}}" />
+    <Window Type="TLBB_DragTitle" Name="ShaXing_TopList_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{0.000000,20.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,11.000000}}" />
+      <Property Name="Text" Value="#{XSX_220705_167}"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="DragTarget" Value="ShaXing_TopList_MainFrame" />
+      <Property Name="AlwaysOnTop" Value="True" />
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="ShaXing_TopList_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function=""/>
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="ShaXing_TopList_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}" />
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Event Name="Clicked" Function="ShaXing_TopList_Close();" />
+    </Window>
+    <Window Type="DefaultWindow" Name="ShaXing_TopList_Frame_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-55.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,36.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Window Type="TLBB_Frame_Lace3" Name="ShaXing_TopList_InfoBK">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,70.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+        <Window Type="TLBB_SimpleText" Name="ShaXing_TopList_Info">
+          <Property Name="UnifiedSize" Value="{{1.000000,-32.000000},{1.000000,-10.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,16.000000},{0.000000,5.000000}}"/>
+          <Property Name="Text" Value="#{XSX_220705_168}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+        <Window Type="TLBB_ButtonHelp" Name="ShaXing_TopList_Info_Help">
+          <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-100.000000},{1.000000,-20.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Event Name="MouseLButtonDown" Function="ShaXing_TopList_Help_Click()"/>
+        </Window>
+        <Window Type="TLBB_ButtonCommon" Name="ShaXing_TopList_Info_Award">
+          <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-80.000000},{1.000000,-25.000000}}"/>
+          <Property Name="Text" Value="#{XSX_220705_169}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Event Name="MouseLButtonDown" Function="ShaXing_TopList_Preview_Click()"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_MultiColumnList" Name="ShaXing_TopList_ListTitle">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,22.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,70.000000}}" />
+        <Property Name="ForceHorzScrollbar" Value="False" />
+        <Property Name="SortSettingEnabled" Value="False" />
+        <Property Name="SelectionMode" Value="RowSingle" />
+        <Property Name="ColumnHeader" Value="text: width:0.1 id:0" />
+        <Property Name="ColumnHeader" Value="text: width:0.75 id:1" />
+        <Property Name="ColumnHeader" Value="text: width:0.15 id:2" />
+        <Property Name="ColumnsSizable" Value="False" />
+        <Property Name="ColumnsMovable" Value="False" />
+        <Property Name="ColumnsAdjust" Value="True" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Window Type="TLBB_SimpleText" Name="ShaXing_TopList_ListTitle_Number">
+          <Property Name="UnifiedSize" Value="{{0.100000,0.000000},{1.000000,0.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,1.000000}}" />
+          <Property Name="Text" Value="#{XSX_220705_171}" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="ShaXing_TopList_ListTitle_Team">
+          <Property Name="UnifiedSize" Value="{{0.750000,0.000000},{1.000000,0.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.100000,0.000000},{0.000000,0.000000}}" />
+          <Property Name="Text" Value="#{XSX_220705_172}" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="ShaXing_TopList_ListTitle_Time">
+          <Property Name="UnifiedSize" Value="{{0.150000,0.000000},{1.000000,0.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.850000,0.000000},{0.000000,0.000000}}" />
+          <Property Name="Text" Value="#{XSX_220705_173}" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="ShaXing_TopList_List">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-162.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,90.000000}}" />
+        <Window Type="TLBB_NotSuperList" Name="ShaXing_TopList">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-2.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,.000000},{0.000000,2.000000}}" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="MouseRButtonHollow" Value="True" />
+          <Event Name="ElementLClick" Function="" />
+          <Property Name="SelectMode" Value="Single" />
+          <Window Type="TLBB_NotSuperListItemCommon3" Name="ShaXing_TopList_Item">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,62.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+            <Window Type="TLBB_Frame_Lace1" Name="ShaXing_TopList_ItemBK">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+              <Window Type="TLBB_StaticImageNULL" Name="ShaXing_TopList_ItemBKImage">
+                <Property Name="UnifiedSize" Value="{{0.000000,624.000000},{0.000000,62.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:MenPaiWar_TopList image:MenPaiWar_TopListBK1"/>
+            <Window Type="TLBB_SimpleText" Name="ShaXing_TopList_Number">
+              <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,22.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.500000,-11.000000}}" />
+              <Property Name="Text" Value="#{XSX_220705_174}" />
+              <Property Name="AlwaysOnTop" Value="True" />
+              <Property Name="HorzFormatting" Value="HorzCentred" />
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="ShaXing_TopList_NumberImage">
+              <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,62.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+              <Property Name="RiseOnClick" Value="False" />
+              <Property Name="HorzFormatting" Value="HorzCentred" />
+              <Property Name="Image" Value="set:ShaXing_TopList image:ShaXing_TopListTop1" />
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="ShaXing_TopList_TeamNull">
+              <Property Name="UnifiedSize" Value="{{0.000000,480.000000},{0.000000,62.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,78.000000},{0.000000,0.000000}}"/>
+              <Property Name="Text" Value="#{XSX_220705_177}" />
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+            <Window Type="DefaultWindow" Name="ShaXing_TopList_Team">
+              <Property Name="UnifiedSize" Value="{{0.000000,458.000000},{0.000000,62.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,66.000000},{0.000000,0.000000}}"/>
+              <Window Type="DefaultWindow" Name="ShaXing_TopList_TeamMember1">
+                <Property Name="UnifiedSize" Value="{{0.000000,230.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,2.000000}}"/>
+                <Window Type="TLBB_StaticImageNULL" Name="ShaXing_TopList_LeaderIcon">
+              <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.0000000,6.000000},{0.0000000,4.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="Image" Value="set:UIIcons image:LeaderOpening"/>
+            </Window>
+                <Window Type="TLBB_SimpleText" Name="ShaXing_TopList_Name1">
+                  <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,0.000000}}"/>
+                  <Property Name="Text" Value="名字名字名字" />
+                  <Property Name="RiseOnClick" Value="False" />
+                  <Property Name="HorzFormatting" Value="HorzCentred" />
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="ShaXing_TopList_School1">
+                  <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.000000,120.000000},{0.000000,0.000000}}" />
+                  <Property Name="Text" Value="曼陀" />
+                  <Property Name="RiseOnClick" Value="False" />
+                  <Property Name="HorzFormatting" Value="HorzCentred" />
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="ShaXing_TopList_Level1">
+                  <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.000000,180.000000},{0.000000,0.000000}}" />
+                  <Property Name="Text" Value="119级" />
+                  <Property Name="RiseOnClick" Value="False" />
+                  <Property Name="HorzFormatting" Value="HorzCentred" />
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                </Window>
+              </Window>
+              <Window Type="DefaultWindow" Name="ShaXing_TopList_TeamMember2">
+                <Property Name="UnifiedSize" Value="{{0.000000,230.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,22.000000}}"/>
+                <Window Type="TLBB_SimpleText" Name="ShaXing_TopList_Name2">
+                  <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,0.000000}}"/>
+                  <Property Name="Text" Value="名字名字名字" />
+                  <Property Name="RiseOnClick" Value="False" />
+                  <Property Name="HorzFormatting" Value="HorzCentred" />
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="ShaXing_TopList_School2">
+                  <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.000000,120.000000},{0.000000,0.000000}}" />
+                  <Property Name="Text" Value="曼陀" />
+                  <Property Name="RiseOnClick" Value="False" />
+                  <Property Name="HorzFormatting" Value="HorzCentred" />
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="ShaXing_TopList_Level2">
+                  <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.000000,180.000000},{0.000000,0.000000}}" />
+                  <Property Name="Text" Value="119级" />
+                  <Property Name="RiseOnClick" Value="False" />
+                  <Property Name="HorzFormatting" Value="HorzCentred" />
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                </Window>
+              </Window>
+              <Window Type="DefaultWindow" Name="ShaXing_TopList_TeamMember3">
+                <Property Name="UnifiedSize" Value="{{0.000000,230.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,42.000000}}"/>
+                <Window Type="TLBB_SimpleText" Name="ShaXing_TopList_Name3">
+                  <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,0.000000}}"/>
+                  <Property Name="Text" Value="名字名字名字" />
+                  <Property Name="RiseOnClick" Value="False" />
+                  <Property Name="HorzFormatting" Value="HorzCentred" />
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="ShaXing_TopList_School3">
+                  <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.000000,120.000000},{0.000000,0.000000}}" />
+                  <Property Name="Text" Value="曼陀" />
+                  <Property Name="RiseOnClick" Value="False" />
+                  <Property Name="HorzFormatting" Value="HorzCentred" />
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="ShaXing_TopList_Level3">
+                  <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.000000,180.000000},{0.000000,0.000000}}" />
+                  <Property Name="Text" Value="119级" />
+                  <Property Name="RiseOnClick" Value="False" />
+                  <Property Name="HorzFormatting" Value="HorzCentred" />
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                </Window>
+              </Window>
+              <Window Type="DefaultWindow" Name="ShaXing_TopList_TeamMember4">
+                <Property Name="UnifiedSize" Value="{{0.000000,230.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,230.000000},{0.000000,2.000000}}"/>
+                <Window Type="TLBB_SimpleText" Name="ShaXing_TopList_Name4">
+                  <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,0.000000}}"/>
+                  <Property Name="Text" Value="名字名字名字" />
+                  <Property Name="RiseOnClick" Value="False" />
+                  <Property Name="HorzFormatting" Value="HorzCentred" />
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="ShaXing_TopList_School4">
+                  <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.000000,120.000000},{0.000000,0.000000}}" />
+                  <Property Name="Text" Value="曼陀" />
+                  <Property Name="RiseOnClick" Value="False" />
+                  <Property Name="HorzFormatting" Value="HorzCentred" />
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="ShaXing_TopList_Level4">
+                  <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.000000,180.000000},{0.000000,0.000000}}" />
+                  <Property Name="Text" Value="119级" />
+                  <Property Name="RiseOnClick" Value="False" />
+                  <Property Name="HorzFormatting" Value="HorzCentred" />
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                </Window>
+              </Window>
+              <Window Type="DefaultWindow" Name="ShaXing_TopList_TeamMember5">
+                <Property Name="UnifiedSize" Value="{{0.000000,230.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,230.000000},{0.000000,22.000000}}"/>
+                <Window Type="TLBB_SimpleText" Name="ShaXing_TopList_Name5">
+                  <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,0.000000}}"/>
+                  <Property Name="Text" Value="名字名字名字" />
+                  <Property Name="RiseOnClick" Value="False" />
+                  <Property Name="HorzFormatting" Value="HorzCentred" />
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="ShaXing_TopList_School5">
+                  <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.000000,120.000000},{0.000000,0.000000}}" />
+                  <Property Name="Text" Value="曼陀" />
+                  <Property Name="RiseOnClick" Value="False" />
+                  <Property Name="HorzFormatting" Value="HorzCentred" />
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="ShaXing_TopList_Level5">
+                  <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.000000,180.000000},{0.000000,0.000000}}" />
+                  <Property Name="Text" Value="119级" />
+                  <Property Name="RiseOnClick" Value="False" />
+                  <Property Name="HorzFormatting" Value="HorzCentred" />
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                </Window>
+              </Window>
+              <Window Type="DefaultWindow" Name="ShaXing_TopList_TeamMember6">
+                <Property Name="UnifiedSize" Value="{{0.000000,230.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,230.000000},{0.000000,42.000000}}"/>
+                <Window Type="TLBB_SimpleText" Name="ShaXing_TopList_Name6">
+                  <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,0.000000}}"/>
+                  <Property Name="Text" Value="名字名字名字" />
+                  <Property Name="RiseOnClick" Value="False" />
+                  <Property Name="HorzFormatting" Value="HorzCentred" />
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="ShaXing_TopList_School6">
+                  <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.000000,120.000000},{0.000000,0.000000}}" />
+                  <Property Name="Text" Value="曼陀" />
+                  <Property Name="RiseOnClick" Value="False" />
+                  <Property Name="HorzFormatting" Value="HorzCentred" />
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="ShaXing_TopList_Level6">
+                  <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.000000,180.000000},{0.000000,0.000000}}" />
+                  <Property Name="Text" Value="119级" />
+                  <Property Name="RiseOnClick" Value="False" />
+                  <Property Name="HorzFormatting" Value="HorzCentred" />
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                </Window>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="ShaXing_TopList_TeamNull2">
+                <Property Name="UnifiedSize" Value="{{0.000000,230.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,22.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Text" Value="#{XSX_220705_176}" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="ShaXing_TopList_TeamNull3">
+                <Property Name="UnifiedSize" Value="{{0.000000,230.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,42.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Text" Value="#{XSX_220705_176}" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+            <Window Type="TLBB_SimpleText" Name="ShaXing_TopList_TeamNull4">
+              <Property Name="UnifiedSize" Value="{{0.000000,230.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,230.000000},{0.000000,2.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Text" Value="#{XSX_220705_176}" />
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="ShaXing_TopList_TeamNull5">
+              <Property Name="UnifiedSize" Value="{{0.000000,230.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,230.000000},{0.000000,22.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Text" Value="#{XSX_220705_176}" />
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="ShaXing_TopList_TeamNull6">
+              <Property Name="UnifiedSize" Value="{{0.000000,230.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,230.000000},{0.000000,42.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Text" Value="#{XSX_220705_176}" />
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+            </Window>
+                <Window Type="TLBB_SimpleText" Name="ShaXing_TopList_Num">
+                  <Property Name="UnifiedSize" Value="{{0.100000,0.000000},{0.000000,20.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.850000,18.000000},{0.500000,-20.000000}}" />
+                  <Property Name="Text" Value="#{XSX_220705_175}" />
+                  <Property Name="RiseOnClick" Value="False" />
+                  <Property Name="HorzFormatting" Value="WordWrapRightAligned" />
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                </Window>  
+            <Window Type="TLBB_SimpleText" Name="ShaXing_TopList_Time">
+              <Property Name="UnifiedSize" Value="{{0.100000,0.000000},{0.000000,20.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.850000,18.000000},{0.500000,0.000000}}" />
+              <Property Name="Text" Value="#{XSX_220705_176}" />
+              <Property Name="RiseOnClick" Value="False" />
+              <Property Name="HorzFormatting" Value="WordWrapRightAligned" />
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+            </Window>
+              </Window>
+            </Window>
+          </Window>
+        </Window>
+        </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="ShaXing_TopList_ReachInfo">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-70.000000}}" />
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="ShaXing_TopList_ReachNum">
+          <Property Name="UnifiedSize" Value="{{0.500000,0.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-10.000000}}" />
+          <Property Name="Text" Value="#{当前完成积分}"/>
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="ShaXing_TopList_ReachTop">
+          <Property Name="UnifiedSize" Value="{{0.500000,0.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.500000,0.000000},{0.500000,-10.000000}}" />
+          <Property Name="Text" Value="#{MPCG_191029_360}"/>
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="ShaXing_TopList_My">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,48.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-50.000000}}" />
+        <Window Type="TLBB_SimpleText" Name="ShaXing_TopList_MyNumber">
+          <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{0.000000,22.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-11.000000}}" />
+          <Property Name="Text" Value="#{MPCG_191029_340}" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+        </Window>
+        <Window Type="TLBB_ButtonCommon" Name="ShaXing_TopList_Btn">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-180.000000},{0.500000,-10.000000}}"/>
+          <Property Name="Text" Value="#{MPCG_191029_366}"/>
+          <Event Name="Clicked" Function="ShaXing_TopList_Prize_Click()"/>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

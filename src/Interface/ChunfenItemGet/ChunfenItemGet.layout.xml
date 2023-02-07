@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" ?>
+<GUILayout>
+	<Window Type="TLBB_MainFrame0" Name="ChunfenItemGet_Frame">
+		<Property Name="UnifiedSize" Value="{{0.000000,364.000000},{0.000000,271.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.500000,-178.000000},{0.500000,-265.000000}}"/>
+		<Window Type="TLBB_DragTitle" Name="ChunfenItemGet_DragTitle">
+			<Property Name="UnifiedSize" Value="{{1.000000,-86.000000},{0.000000,20.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,43.000000},{0.000000,11.000000}}"/>
+			<Property Name="Text" Value="#{YNZJ_210127_26}"/>
+			<Property Name="Font" Value="YouYuan11.25"/>
+			<Property Name="DragTarget" Value="ChunfenItemGet_Frame"/>
+		</Window>
+		<Window Type="DefaultWindow" Name="ChunfenItemGet_Client">
+			<Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,-55.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,35.000000}}"/>
+			<Window Type="TLBB_Frame_Lace3" Name="ChunfenItemGet_TextBk">
+				<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,54.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,1.000000}}"/>
+				<Window Type="TLBB_SimpleText" Name="ChunfenItemGet_Info">
+					<Property Name="UnifiedSize" Value="{{1.000000,-90.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,44.000000},{0.000000,8.000000}}"/>
+					<Property Name="Text" Value="#{YNZJ_210127_05}"/>
+					<Property Name="HorzFormatting" Value="HorzCentred"/>
+				</Window>	
+				<Window Type="TLBB_SimpleText" Name="ChunfenItemGet_InfoText">
+					<Property Name="UnifiedSize" Value="{{1.000000,-192.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,47.000000},{0.000000,28.000000}}"/>
+					<Property Name="Text" Value="#{YNZJ_210127_06}"/>
+					<Property Name="HorzFormatting" Value="LeftAligned"/>
+				</Window>							
+			</Window>
+
+			<Window Type="TLBB_Frame_Lace3" Name="ChunfenItemGet_Bk1">
+				<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,54.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,55.000000}}"/>
+				<Window Type="TLBB_ActionButton" Name="ChunfenItemGet_4_1">
+					<Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,120.000000},{0.000000,9.000000}}"/>
+					<Property Name="Tooltip" Value="#{}"/>
+					<Window Type="TLBB_AnimateButton" Name="ChunfenItemGet_Image7">
+						<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+						<Property Name="WarningAnimation" Value="Equip_Zhizun" />
+						<Property Name="AlwaysOnTop" Value="True"/>
+						<Property Name="MouseHollow" Value="True"/>
+						<Property Name="MouseLButtonHollow" Value="True"/>
+						<Property Name="MouseMoveHollow" Value="True"/>
+						<Property Name="MouseRButtonHollow" Value="True"/>
+					</Window>
+					<Window Type="TLBB_StaticImageNULL" Name="ChunfenItemGet_Mark4_1">
+						<Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,25.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{1.000000,-30.000000}}"/>
+						<Property Name="Visible" Value="False"/>
+						<Property Name="MouseRButtonHollow" Value="True"/>
+						<Property Name="MouseMoveHollow" Value="True"/>
+						<Property Name="MouseLButtonHollow" Value="True"/>
+						<Property Name="MouseHollow" Value="True"/>
+						<Property Name="Image" Value="set:Seven image:Seven_ke"/>
+						<Property Name="AlwaysOnTop" Value="True"/>
+					</Window>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="ChunfenItemGet_BottomText4">
+					<Property Name="VerticalAlignment" Value="Centre"/>
+					<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,17.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,17.000000},{0.000000,0.000000}}"/>
+					<Property Name="Text" Value="#{YNZJ_210127_02}"/>
+					<Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+				</Window>
+				<Window Type="TLBB_ButtonNULL" Name="ChunfenItemGet_Get">
+					<Property Name="UnifiedSize" Value="{{0.000000,94.000000},{0.000000,31.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.500000,72.000000},{0.500000,-15.500000}}"/>
+					<Property Name="PushedImage" Value="set:PlayReturn image:PlayReturn_Lingqu_Pushed"/>
+					<Property Name="NormalImage" Value="set:PlayReturn image:PlayReturn_Lingqu_Normal"/>
+					<Property Name="HoverImage" Value="set:PlayReturn image:PlayReturn_Lingqu_Hover"/>
+					<Property Name="DisabledImage" Value="set:PlayReturn image:PlayReturn_Yilingqu_Disable"/>
+					<Property Name="AlwaysOnTop" Value="True"/>
+					<Event Name="Clicked" Function="FunChunfenItemGet_Get()"/>
+				</Window>
+				<Window Type="TLBB_StaticImageNULL" Name="ChunfenItemGet_Getted">
+					<Property Name="UnifiedSize" Value="{{0.000000,94.000000},{0.000000,31.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.500000,72.000000},{0.500000,-15.500000}}"/>
+					<Property Name="Image" Value="set:PlayReturn image:PlayReturn_Yilingqu_Disable"/>
+					<Property Name="Visible" Value="False"/>
+					<Property Name="AlwaysOnTop" Value="True"/>
+				</Window>				
+			</Window>
+			<Window Type="TLBB_Frame_Lace3" Name="ChunfenItemGet_Bk2">
+				<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,54.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,109.000000}}"/>
+				<Window Type="TLBB_ActionButton" Name="ChunfenItemGet_8_1">
+					<Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,120.000000},{0.000000,9.000000}}"/>
+					<Property Name="Tooltip" Value="#{}"/>
+					<Window Type="TLBB_AnimateButton" Name="ChunfenItemGet_Image8">
+						<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+						<Property Name="WarningAnimation" Value="Equip_Zhizun" />
+						<Property Name="AlwaysOnTop" Value="True"/>
+						<Property Name="MouseHollow" Value="True"/>
+						<Property Name="MouseLButtonHollow" Value="True"/>
+						<Property Name="MouseMoveHollow" Value="True"/>
+						<Property Name="MouseRButtonHollow" Value="True"/>
+					</Window>
+					<Window Type="TLBB_StaticImageNULL" Name="ChunfenItemGet_Mark8_1">
+						<Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,25.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{1.000000,-30.000000}}"/>
+						<Property Name="Visible" Value="False"/>
+						<Property Name="MouseRButtonHollow" Value="True"/>
+						<Property Name="MouseMoveHollow" Value="True"/>
+						<Property Name="MouseLButtonHollow" Value="True"/>
+						<Property Name="MouseHollow" Value="True"/>
+						<Property Name="Image" Value="set:Seven image:Seven_ke"/>
+						<Property Name="AlwaysOnTop" Value="True"/>
+					</Window>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="ChunfenItemGet_BottomText8">
+					<Property Name="VerticalAlignment" Value="Centre"/>
+					<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,17.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,17.000000},{0.000000,0.000000}}"/>
+					<Property Name="Text" Value="#{YNZJ_210127_03}"/>
+					<Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+				</Window>
+				<Window Type="TLBB_ButtonNULL" Name="ChunfenItemGet_Get1">
+					<Property Name="UnifiedSize" Value="{{0.000000,94.000000},{0.000000,31.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.500000,72.000000},{0.500000,-15.500000}}"/>
+					<Property Name="PushedImage" Value="set:PlayReturn image:PlayReturn_Lingqu_Pushed"/>
+					<Property Name="NormalImage" Value="set:PlayReturn image:PlayReturn_Lingqu_Normal"/>
+					<Property Name="HoverImage" Value="set:PlayReturn image:PlayReturn_Lingqu_Hover"/>
+					<Property Name="DisabledImage" Value="set:PlayReturn image:PlayReturn_Yilingqu_Disable"/>
+					<Property Name="AlwaysOnTop" Value="True"/>
+					<Event Name="Clicked" Function="FunChunfenItemGet_Get1()"/>
+				</Window>
+				<Window Type="TLBB_StaticImageNULL" Name="ChunfenItemGet_Getted1">
+					<Property Name="UnifiedSize" Value="{{0.000000,94.000000},{0.000000,31.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.500000,72.000000},{0.500000,-15.500000}}"/>
+					<Property Name="Image" Value="set:PlayReturn image:PlayReturn_Yilingqu_Disable"/>
+					<Property Name="Visible" Value="False"/>
+					<Property Name="AlwaysOnTop" Value="True"/>
+				</Window>				
+			</Window>
+			<Window Type="TLBB_Frame_Lace3" Name="ChunfenItemGet_Bk3">
+				<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,54.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,163.000000}}"/>
+				<Window Type="TLBB_ActionButton" Name="ChunfenItemGet_12_1">
+					<Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,120.000000},{0.000000,9.000000}}"/>
+					<Property Name="Tooltip" Value="#{}"/>
+					<Window Type="TLBB_AnimateButton" Name="ChunfenItemGet_Image2">
+						<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+						<Property Name="WarningAnimation" Value="Equip_Zhizun" />
+						<Property Name="AlwaysOnTop" Value="True"/>
+						<Property Name="MouseHollow" Value="True"/>
+						<Property Name="MouseLButtonHollow" Value="True"/>
+						<Property Name="MouseMoveHollow" Value="True"/>
+						<Property Name="MouseRButtonHollow" Value="True"/>
+					</Window>
+					<Window Type="TLBB_StaticImageNULL" Name="ChunfenItemGet_Mark12_1">
+						<Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,25.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{1.000000,-30.000000}}"/>
+						<Property Name="Visible" Value="False"/>
+						<Property Name="MouseRButtonHollow" Value="True"/>
+						<Property Name="MouseMoveHollow" Value="True"/>
+						<Property Name="MouseLButtonHollow" Value="True"/>
+						<Property Name="MouseHollow" Value="True"/>
+						<Property Name="Image" Value="set:Seven image:Seven_ke"/>
+						<Property Name="AlwaysOnTop" Value="True"/>
+					</Window>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="ChunfenItemGet_BottomText12">
+					<Property Name="VerticalAlignment" Value="Centre"/>
+					<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,17.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,17.000000},{0.000000,0.000000}}"/>
+					<Property Name="Text" Value="#{YNZJ_210127_04}"/>
+					<Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+				</Window>
+				<Window Type="TLBB_ButtonNULL" Name="ChunfenItemGet_Get2">
+					<Property Name="UnifiedSize" Value="{{0.000000,94.000000},{0.000000,31.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.500000,72.000000},{0.500000,-15.500000}}"/>
+					<Property Name="PushedImage" Value="set:PlayReturn image:PlayReturn_Lingqu_Pushed"/>
+					<Property Name="NormalImage" Value="set:PlayReturn image:PlayReturn_Lingqu_Normal"/>
+					<Property Name="HoverImage" Value="set:PlayReturn image:PlayReturn_Lingqu_Hover"/>
+					<Property Name="DisabledImage" Value="set:PlayReturn image:PlayReturn_Yilingqu_Disable"/>
+					<Property Name="AlwaysOnTop" Value="True"/>
+					<Event Name="Clicked" Function="FunChunfenItemGet_Get2()"/>
+				</Window>
+				<Window Type="TLBB_StaticImageNULL" Name="ChunfenItemGet_Getted2">
+					<Property Name="UnifiedSize" Value="{{0.000000,94.000000},{0.000000,31.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.500000,72.000000},{0.500000,-15.500000}}"/>
+					<Property Name="Image" Value="set:PlayReturn image:PlayReturn_Yilingqu_Disable"/>
+					<Property Name="Visible" Value="False"/>
+					<Property Name="AlwaysOnTop" Value="True"/>
+				</Window>				
+			</Window>
+		</Window>
+
+		<Window Type="TLBB_ButtonClose" Name="ChunfenItemGet_Close">
+		<Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,14.000000}}"/>
+			<Property Name="AlwaysOnTop" Value="True"/>
+			<Event Name="Clicked" Function="ChunfenItemGet_OnClosed();"/>
+		</Window>
+	<Window Type="TLBB_ButtonHelp" Name="ChunfenItemGet_Help">
+		<Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{1.000000,-359.000000},{0.000000,14.000000}}"/>
+					<Property Name="AlwaysOnTop" Value="True"/>
+	</Window>
+	</Window>
+</GUILayout>

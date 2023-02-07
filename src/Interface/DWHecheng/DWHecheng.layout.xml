@@ -1,0 +1,160 @@
+<?xml version="1.0"?>
+<GUILayout>
+	<Window Type="TLBB_MainFrame1" Name="DWHecheng_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,270.000000},{0.000000,330.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-128.000000},{0.500000,-178.000000}}"/>
+		<Event Name="Hidden" Function="DWHecheng_OnHiden();" />
+		<Window Type="TLBB_DragTitle" Name="DWHecheng_DragTitle">
+			<Property Name="AbsolutePosition" Value="x:40.000000 y:11.000000" />
+			<Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}}" />
+			<Property Name="DragTarget" Value="DWHecheng_Frame" />
+			<Window Type="TLBB_SimpleText" Name="DWHecheng_Title">
+				<Property Name="RelativePosition" Value="x:0.000000 y:0.000000" />
+				<Property Name="RelativeSize" Value="w:1.000000 h:1.000000" />
+				<Property Name="Font" Value="YouYuan11.25" />
+				<Property Name="HorzFormatting" Value="HorzCentred" />
+				<Property Name="RiseOnClick" Value="False" />
+				<Property Name="Text" Value="#{ZBDW_XML_7}" />
+				<Property Name="VertFormatting" Value="VertCentred" />
+			</Window>
+		</Window>
+		<Window Type="TLBB_ButtonHelp" Name="DWHecheng_Help">
+			<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}" />
+			<Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+			<Property Name="Text" Value="TLBB_ButtonHelp" />
+			<Event Name="Clicked" Function='Helper:GotoHelper(&quot;DWHecheng&quot;);' />
+		</Window>
+		<Window Type="TLBB_ButtonClose" Name="DWHecheng_Close">
+			<Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}" />
+			<Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+			<Property Name="Text" Value="TLBB_ButtonClose" />
+			<Event Name="Clicked" Function="this:Hide();" />
+		</Window>
+		<Window Type="DefaultWindow" Name="DWHecheng_Frame_Client">
+			<Property Name="AbsolutePosition" Value="x:7.000000 y:30.000000" />
+			<Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{1.000000,-39.000000}}" />
+			<Window Type="TLBB_SimpleMulitiTextFrame" Name="DWHecheng_Info">
+				<Property Name="RelativePosition" Value="x:0.000000 y:0.000000" />
+				<Property Name="AbsoluteSize" Value="w:255.000000 h:110.000000" />
+				<Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+				<Property Name="RiseOnClick" Value="False" />
+				<Property Name="Text" Value="#{ZBDW_XML_8}" />
+				<Property Name="TextColor" Value="FFFFF263" />
+			</Window>
+			<Window Type="TLBB_SimpleText" Name="DWHecheng_Info2">
+				<Property Name="AbsolutePosition" Value="x:12.000000 y:124.000000" />
+				<Property Name="UnifiedSize" Value="{{0.695473,0.000000},{0.000000,40.000000}}" />
+				<Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+				<Property Name="RiseOnClick" Value="False" />
+				<Property Name="Text" Value="#{ZBDW_XML_9}" />
+				<Property Name="TextColor" Value="FFFFF263" />
+			</Window>
+			<Window Type="TLBB_ActionButton" Name="DWHecheng_Object">
+				<Property Name="AbsolutePosition" Value="x:190.000000 y:126.000000" />
+				<Property Name="AbsoluteSize" Value="w:36.000000 h:36.000000" />
+				<Property Name="DragAcceptName" Value="G96" />
+				<Property Name="DraggingEnabled" Value="True" />
+				<Event Name="RBClicked" Function="DWHecheng_Resume_Equip();" />
+			</Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="DWHecheng_Cailiao_Text">
+				<Property Name="UnifiedPosition" Value="{{0.050000,0.000000},{1.000000,-111.000000}}" />
+				<Property Name="UnifiedSize" Value="{{0.900000,0.000000},{0.000000,22.000000}}" />
+				<Property Name="HorzFormatting" Value="LeftAligned" />
+				<Property Name="RiseOnClick" Value="False" />
+				<Property Name="Text" Value="#{CZDYH_161128_18}" />
+				<Property Name="TextColor" Value="FFFFF263" />
+				<Property Name="VertFormatting" Value="VertCentred" />
+				<Window Type="TLBB_SimpleText" Name="DWHecheng_Cailiao_des">
+					<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}" />
+					<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,20.000000}}" />
+					<Property Name="HorzFormatting" Value="RightAligned" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+				<Property Name="Text" Value="#{CZDYH_161128_15}" />
+				</Window>
+			</Window>
+			<Window Type="TLBB_SimpleMulitiTextFrame" Name="DWHecheng_Money_Text">
+				<Property Name="UnifiedPosition" Value="{{0.050000,0.000000},{1.000000,-89.000000}}" />
+				<Property Name="UnifiedSize" Value="{{0.900000,0.000000},{0.000000,22.000000}}" />
+				<Property Name="HorzFormatting" Value="LeftAligned" />
+				<Property Name="RiseOnClick" Value="False" />
+				<Property Name="Text" Value="#{INTERFACE_XML_789}" />
+				<Property Name="TextColor" Value="FFFFF263" />
+				<Property Name="VertFormatting" Value="VertCentred" />
+				<Window Type="TLBB_Money" Name="DWHecheng_DemandMoney">
+					<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+					<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}" />
+					<Property Name="AlignFix" Value="True" />
+					<Property Name="CopperIcon" Value="set:Button6 image:Lace_JiaoziTong" />
+					<Property Name="GoldIcon" Value="set:Button6 image:Lace_JiaoziJin" />
+					<Property Name="HorzFormatting" Value="RightAligned" />
+					<Property Name="MoneyNumber" Value="0" />
+					<Property Name="SilverIcon" Value="set:Button6 image:Lace_JiaoziYin" />
+				</Window>
+			</Window>
+<!-- 			<Window Type="TLBB_SimpleMulitiTextFrame" Name="DWHecheng_Jiaozi_Text">
+				<Property Name="UnifiedPosition" Value="{{0.050000,0.000000},{1.000000,-67.000000}}" />
+				<Property Name="UnifiedSize" Value="{{0.900000,0.000000},{0.000000,22.000000}}" />
+				<Property Name="HorzFormatting" Value="LeftAligned" />
+				<Property Name="RiseOnClick" Value="False" />
+				<Property Name="Text" Value="#{BDJB_051210_1}" />
+				<Property Name="TextColor" Value="FFFFF263" />
+				<Property Name="VertFormatting" Value="VertCentred" />
+				<Window Type="TLBB_Money" Name="DWHecheng_SelfJiaozi">
+					<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+					<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}" />
+					<Property Name="AlignFix" Value="True" />
+					<Property Name="CopperIcon" Value="set:Button6 image:Lace_JiaoziTong" />
+					<Property Name="GoldIcon" Value="set:Button6 image:Lace_JiaoziJin" />
+					<Property Name="HorzFormatting" Value="RightAligned" />
+					<Property Name="MoneyNumber" Value="0" />
+					<Property Name="SilverIcon" Value="set:Button6 image:Lace_JiaoziYin" />
+				</Window>
+			</Window> -->
+			<Window Type="TLBB_SimpleMulitiTextFrame" Name="DWHecheng_SelfMoney_Text">
+				<Property Name="UnifiedPosition" Value="{{0.050000,0.000000},{1.000000,-67.000000}}" />
+				<Property Name="UnifiedSize" Value="{{0.900000,0.000000},{0.000000,22.000000}}" />
+				<Property Name="HorzFormatting" Value="LeftAligned" />
+				<Property Name="RiseOnClick" Value="False" />
+				<Property Name="Text" Value="#{INTERFACE_XML_834}" />
+				<Property Name="TextColor" Value="FFFFF263" />
+				<Property Name="VertFormatting" Value="VertCentred" />
+				<Window Type="TLBB_Money" Name="DWHecheng_SelfMoney">
+					<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+					<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}" />
+					<Property Name="HorzFormatting" Value="RightAligned" />
+					<Property Name="MoneyNumber" Value="0" />
+				</Window>
+			</Window>
+<!-- 			<Window Type="TLBB_Frame_Lace5" Name="DWHecheng_Blank">
+				<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-20.000000}}" />
+				<Property Name="UnifiedSize" Value="{{1.000000,-84.000000},{0.000000,20.000000}}" />
+        <Window Type="TLBB_ButtonCheck" Name="DWHecheng_Blank_Queren">
+          <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,13.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,4.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="Selected" Value="True"/>
+		  <Event Name="Clicked" Function="DWHecheng_Blank_Queren_Clicked()"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DWHecheng_Blank_Queren_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,24.000000},{0.000000,1.000000}}"/>
+          <Property Name="Text" Value="#{DWYH_161110_1}"/>
+          <Property Name="Tooltip" Value="#{DWYH_161110_2}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+			</Window> -->
+			<Window Type="TLBB_ButtonCommon" Name="DWHecheng_OK">
+				<Property Name="UnifiedPosition" Value="{{1.000000,-82.000000},{1.000000,-29.000000}}" />
+				<Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+				<Property Name="Text" Value="#{INTERFACE_XML_557}" />
+				<Event Name="Clicked" Function="DWHecheng_OK_Clicked();" />
+			</Window>
+			<Window Type="TLBB_ButtonCommon" Name="DWHecheng_Cancel">
+				<Property Name="UnifiedPosition" Value="{{1.000000,-42.000000},{1.000000,-29.000000}}" />
+				<Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+				<Property Name="Text" Value="#{INTERFACE_XML_542}" />
+				<Event Name="Clicked" Function="this:Hide();" />
+			</Window>
+		</Window>
+	</Window>
+</GUILayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" ?>
+<GUILayout>
+    <Window Type="TLBB_MainFrame0" Name="Zongzi_ThreeChoice_Frame">
+        <Property Name="UnifiedSize" Value="{{0.000000,440.000000},{0.000000,277.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-220.000000},{0.500000,-140.000000}}"/>
+        <Window Type="TLBB_DragTitle" Name="Zongzi_ThreeChoice_DragTitle">
+            <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+            <Property Name="Font" Value="YouYuan11.25"/>
+            <Property Name="Text" Value="#{DWZZ_220420_12}"/>
+            <Property Name="DragTarget" Value="Zongzi_ThreeChoice_Frame"/>
+        </Window>
+        <Window Type="TLBB_ButtonHelp" Name="Zongzi_ThreeChoice_Help">
+            <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+            <Event Name="Clicked" Function="Zongzi_ThreeChoice_OnHelp()"/>
+        </Window>
+        <Window Type="TLBB_ButtonClose" Name="Zongzi_ThreeChoice_Close">
+            <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+            <Event Name="Clicked" Function="Zongzi_ThreeChoice_OnClose()" />
+        </Window>
+        <Window Type="DefaultWindow" Name="Zongzi_ThreeChoice_Client">
+            <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-55.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,36.000000}}"/>
+            <Window Type="DefaultWindow" Name="Zongzi_ThreeChoiceAllBK">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Window Type="TLBB_StaticImageNULL" Name="Zongzi_ThreeChoiceBK1">
+                    <Property Name="UnifiedSize" Value="{{0.000000,428.000000},{0.000000,222.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                    <Property Name="RiseOnClick" Value="False"/>
+                    <Property Name="Image" Value="set:Thanks6 image:ThanksMiniBK"/>
+                </Window>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Zongzi_ThreeChoice_Info">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,40.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,24.000000}}"/>
+                <Property Name="Text" Value="#{DWZZ_220420_13}"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+            <Window Type="DefaultWindow" Name="Zongzi_ThreeChoice_Gift">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,110.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,60.000000}}"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Window Type="TLBB_ActionButton" Name="Zongzi_ThreeChoice_Gift1_Icon">
+                    <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.250000,-24.000000},{0.500000,-40.000000}}"/>
+                    <Property Name="BackImage" Value="set:Buff27 image:Buff27_2"/>
+                    <Event Name="Clicked" Function="Zongzi_ThreeChoice_Select(1);"/>
+                    <Window Type="TLBB_StaticImageNULL" Name="Zongzi_ThreeChoice_Gift1_Icon_Mask">
+                        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                        <Property Name="MouseRButtonHollow" Value="True"/>
+                        <Property Name="MouseMoveHollow" Value="True"/>
+                        <Property Name="MouseLButtonHollow" Value="True"/>
+                        <Property Name="MouseHollow" Value="True"/>
+                        <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+                        <Property Name="AlwaysOnTop" Value="True"/>
+                    </Window>
+                </Window>
+                <Window Type="TLBB_ActionButton" Name="Zongzi_ThreeChoice_Gift2_Icon">
+                    <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.500000,-24.000000},{0.500000,-40.000000}}"/>
+                    <Property Name="BackImage" Value="set:Buff27 image:Buff27_3"/>
+                    <Event Name="Clicked" Function="Zongzi_ThreeChoice_Select(2);"/>
+                    <Window Type="TLBB_StaticImageNULL" Name="Zongzi_ThreeChoice_Gift2_Icon_Mask">
+                        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                        <Property Name="MouseRButtonHollow" Value="True"/>
+                        <Property Name="MouseMoveHollow" Value="True"/>
+                        <Property Name="MouseLButtonHollow" Value="True"/>
+                        <Property Name="MouseHollow" Value="True"/>
+                        <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+                        <Property Name="AlwaysOnTop" Value="True"/>
+                    </Window>
+                </Window>
+                <Window Type="TLBB_ActionButton" Name="Zongzi_ThreeChoice_Gift3_Icon">
+                    <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.750000,-24.000000},{0.500000,-40.000000}}"/>
+                    <Property Name="BackImage" Value="set:Buff27 image:Buff27_1"/>
+                    <Event Name="Clicked" Function="Zongzi_ThreeChoice_Select(3);"/>
+                    <Window Type="TLBB_StaticImageNULL" Name="Zongzi_ThreeChoice_Gift3_Icon_Mask">
+                        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                        <Property Name="MouseRButtonHollow" Value="True"/>
+                        <Property Name="MouseMoveHollow" Value="True"/>
+                        <Property Name="MouseLButtonHollow" Value="True"/>
+                        <Property Name="MouseHollow" Value="True"/>
+                        <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+                        <Property Name="AlwaysOnTop" Value="True"/>
+                    </Window>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="Zongzi_ThreeChoice_Gift1_Text">
+                    <Property Name="UnifiedSize" Value="{{0.000000,76.000000},{0.000000,16.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.250000,-38.000000},{1.000000,-36.000000}}"/>
+                    <Property Name="HorzFormatting" Value="HorzCentred"/>
+                    <Property Name="Text" Value="#{DWZZ_220420_14}"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="Zongzi_ThreeChoice_Gift2_Text">
+                    <Property Name="UnifiedSize" Value="{{0.000000,76.000000},{0.000000,16.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.500000,-38.000000},{1.000000,-36.000000}}"/>
+                    <Property Name="HorzFormatting" Value="HorzCentred"/>
+                    <Property Name="Text" Value="#{DWZZ_220420_15}"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="Zongzi_ThreeChoice_Gift3_Text">
+                    <Property Name="UnifiedSize" Value="{{0.000000,76.000000},{0.000000,16.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.750000,-38.000000},{1.000000,-36.000000}}"/>
+                    <Property Name="HorzFormatting" Value="HorzCentred"/>
+                    <Property Name="Text" Value="#{DWZZ_220420_16}"/>
+                </Window>
+            </Window>
+            <Window Type="TLBB_ButtonNULL" Name="Zongzi_ThreeChoice_Gift_Select">
+                <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,30.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-42.000000},{1.000000,-42.000000}}"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="PushedImage" Value="set:HerosMemory image:BS_Pushed"/>
+                <Property Name="NormalImage" Value="set:HerosMemory image:BS_Normal"/>
+                <Property Name="HoverImage" Value="set:HerosMemory image:BS_Hover"/>
+                <Property Name="DisabledImage" Value="set:HerosMemory image:BS_Disabled"/>
+                <Event Name="Clicked" Function="Zongzi_ThreeChoice_Confirm()"/>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

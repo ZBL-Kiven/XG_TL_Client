@@ -1,0 +1,518 @@
+﻿<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="MonopolyGame_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,632.000000},{0.000000,690.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-310.000000},{0.500000,-340.000000}}"/>
+    <Window Type="TLBB_DragTitle" Name="MonopolyGame_DragTitle">
+      <Property Name="AbsolutePosition" Value="x:0.000000 y:20.000000" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,50.000000}" />
+      <Property Name="DragTarget" Value="MonopolyGame_Frame" />
+      <Property Name="AlwaysOnTop" Value="True"/>
+    </Window>
+    <Window Type="TLBB_DragTitle" Name="MonopolyGame_DragTitle2">
+      <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,386.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,240.000000}}"/>
+      <Property Name="DragTarget" Value="MonopolyGame_Frame" />
+      <Property Name="AlwaysOnTop" Value="True"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="MonopolyGame_Function_Frame">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      <Window Type="TLBB_StaticImageNULL" Name="MonopolyGame_Function_FrameBK">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="Image" Value="set:JiCheShen image:ShuiCheBK"/>
+      </Window>
+      <Window Type="DefaultWindow" Name="MonopolyGame_List">
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{1.0,0.000000},{1.000000,0.000000}" />
+        <Window Type="TLBB_ButtonNULL" Name="MonopolyGame_Close">
+          <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,40.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-94.000000},{0.000000,76.000000}}"/>
+          <Property Name="PushedImage" Value="set:JiCheShen image:Close4"/>
+          <Property Name="NormalImage" Value="set:JiCheShen image:Close3"/>
+          <Property Name="HoverImage" Value="set:JiCheShen image:Close2"/>
+          <Property Name="DisabledImage" Value="set:JiCheShen image:Close1"/>
+          <Event Name="Clicked" Function="this:Hide();"/>
+        </Window>
+        <Window Type="DefaultWindow" Name="MonopolyGame_List1">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,44.000000},{0.000000,188.000000}}"/>
+          <Window Type="TLBB_Animate" Name="MonopolyGame_Image1">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Animate" Value="JiCheShen_Xia" />
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Event Name="AnimateEnd" Function="MonopolyGame_StepNext()" />
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="MonopolyGame_Icon1">
+            <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseHollow" Value="true" />
+            <Property Name="MouseMoveHollow" Value="true" />
+            <Property Name="MouseLButtonHollow" Value="true" />
+            <Property Name="MouseRButtonHollow" Value="true" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="Image" Value="set:JiCheShen image:Xia8"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="MonopolyGame_List2">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,166.000000},{0.000000,212.000000}}"/>
+          <Window Type="TLBB_Animate" Name="MonopolyGame_Image2">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Animate" Value="JiCheShen_Xia" />
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Event Name="AnimateEnd" Function="MonopolyGame_StepNext()" />
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="MonopolyGame_Icon2">
+            <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseHollow" Value="true" />
+            <Property Name="MouseMoveHollow" Value="true" />
+            <Property Name="MouseLButtonHollow" Value="true" />
+            <Property Name="MouseRButtonHollow" Value="true" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="Image" Value="set:JiCheShen image:Xia8"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="MonopolyGame_List3">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,212.000000},{0.000000,160.000000}}"/>
+          <Window Type="TLBB_Animate" Name="MonopolyGame_Image3">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Animate" Value="JiCheShen_Xia" />
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Event Name="AnimateEnd" Function="MonopolyGame_StepNext()" />
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="MonopolyGame_Icon3">
+            <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseHollow" Value="true" />
+            <Property Name="MouseMoveHollow" Value="true" />
+            <Property Name="MouseLButtonHollow" Value="true" />
+            <Property Name="MouseRButtonHollow" Value="true" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="Image" Value="set:JiCheShen image:Xia8"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="MonopolyGame_List4">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,274.000000},{0.000000,138.000000}}"/>
+          <Window Type="TLBB_Animate" Name="MonopolyGame_Image4">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Animate" Value="JiCheShen_Xia" />
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Event Name="AnimateEnd" Function="MonopolyGame_StepNext()" />
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="MonopolyGame_Icon4">
+            <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseHollow" Value="true" />
+            <Property Name="MouseMoveHollow" Value="true" />
+            <Property Name="MouseLButtonHollow" Value="true" />
+            <Property Name="MouseRButtonHollow" Value="true" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="Image" Value="set:JiCheShen image:Xia8"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="MonopolyGame_List5">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,340.000000},{0.000000,138.000000}}"/>
+          <Window Type="TLBB_Animate" Name="MonopolyGame_Image5">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Animate" Value="JiCheShen_Xia" />
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Event Name="AnimateEnd" Function="MonopolyGame_StepNext()" />
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="MonopolyGame_Icon5">
+            <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseHollow" Value="true" />
+            <Property Name="MouseMoveHollow" Value="true" />
+            <Property Name="MouseLButtonHollow" Value="true" />
+            <Property Name="MouseRButtonHollow" Value="true" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="Image" Value="set:JiCheShen image:Xia8"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="MonopolyGame_List6">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,400.000000},{0.000000,160.000000}}"/>
+          <Window Type="TLBB_Animate" Name="MonopolyGame_Image6">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Animate" Value="JiCheShen_Xia" />
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Event Name="AnimateEnd" Function="MonopolyGame_StepNext()" />
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="MonopolyGame_Icon6">
+            <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseHollow" Value="true" />
+            <Property Name="MouseMoveHollow" Value="true" />
+            <Property Name="MouseLButtonHollow" Value="true" />
+            <Property Name="MouseRButtonHollow" Value="true" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="Image" Value="set:JiCheShen image:Xia8"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="MonopolyGame_List7">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,454.000000},{0.000000,212.000000}}"/>
+          <Window Type="TLBB_Animate" Name="MonopolyGame_Image7">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Animate" Value="JiCheShen_Xia" />
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Event Name="AnimateEnd" Function="MonopolyGame_StepNext()" />
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="MonopolyGame_Icon7">
+            <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseHollow" Value="true" />
+            <Property Name="MouseMoveHollow" Value="true" />
+            <Property Name="MouseLButtonHollow" Value="true" />
+            <Property Name="MouseRButtonHollow" Value="true" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="Image" Value="set:JiCheShen image:Xia8"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="MonopolyGame_List8">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,476.000000},{0.000000,274.000000}}"/>
+          <Window Type="TLBB_Animate" Name="MonopolyGame_Image8">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Animate" Value="JiCheShen_Xia" />
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Event Name="AnimateEnd" Function="MonopolyGame_StepNext()" />
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="MonopolyGame_Icon8">
+            <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseHollow" Value="true" />
+            <Property Name="MouseMoveHollow" Value="true" />
+            <Property Name="MouseLButtonHollow" Value="true" />
+            <Property Name="MouseRButtonHollow" Value="true" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="Image" Value="set:JiCheShen image:Xia8"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="MonopolyGame_List9">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,476.000000},{0.000000,338.000000}}"/>
+          <Window Type="TLBB_Animate" Name="MonopolyGame_Image9">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Animate" Value="JiCheShen_Xia" />
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Event Name="AnimateEnd" Function="MonopolyGame_StepNext()" />
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="MonopolyGame_Icon9">
+            <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseHollow" Value="true" />
+            <Property Name="MouseMoveHollow" Value="true" />
+            <Property Name="MouseLButtonHollow" Value="true" />
+            <Property Name="MouseRButtonHollow" Value="true" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="Image" Value="set:JiCheShen image:Xia8"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="MonopolyGame_List10">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,450.000000},{0.000000,398.000000}}"/>
+          <Window Type="TLBB_Animate" Name="MonopolyGame_Image10">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Animate" Value="JiCheShen_Xia" />
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Event Name="AnimateEnd" Function="MonopolyGame_StepNext()" />
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="MonopolyGame_Icon10">
+            <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseHollow" Value="true" />
+            <Property Name="MouseMoveHollow" Value="true" />
+            <Property Name="MouseLButtonHollow" Value="true" />
+            <Property Name="MouseRButtonHollow" Value="true" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="Image" Value="set:JiCheShen image:Xia8"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="MonopolyGame_List11">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,400.000000},{0.000000,446.000000}}"/>
+          <Window Type="TLBB_Animate" Name="MonopolyGame_Image11">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Animate" Value="JiCheShen_Xia" />
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Event Name="AnimateEnd" Function="MonopolyGame_StepNext()" />
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="MonopolyGame_Icon11">
+            <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseHollow" Value="true" />
+            <Property Name="MouseMoveHollow" Value="true" />
+            <Property Name="MouseLButtonHollow" Value="true" />
+            <Property Name="MouseRButtonHollow" Value="true" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="Image" Value="set:JiCheShen image:Xia8"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="MonopolyGame_List12">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,340.000000},{0.000000,474.000000}}"/>
+          <Window Type="TLBB_Animate" Name="MonopolyGame_Image12">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Animate" Value="JiCheShen_Xia" />
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Event Name="AnimateEnd" Function="MonopolyGame_StepNext()" />
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="MonopolyGame_Icon12">
+            <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseHollow" Value="true" />
+            <Property Name="MouseMoveHollow" Value="true" />
+            <Property Name="MouseLButtonHollow" Value="true" />
+            <Property Name="MouseRButtonHollow" Value="true" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="Image" Value="set:JiCheShen image:Xia8"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="MonopolyGame_List13">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,274.000000},{0.000000,474.000000}}"/>
+          <Window Type="TLBB_Animate" Name="MonopolyGame_Image13">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Animate" Value="JiCheShen_Xia" />
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Event Name="AnimateEnd" Function="MonopolyGame_StepNext()" />
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="MonopolyGame_Icon13">
+            <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseHollow" Value="true" />
+            <Property Name="MouseMoveHollow" Value="true" />
+            <Property Name="MouseLButtonHollow" Value="true" />
+            <Property Name="MouseRButtonHollow" Value="true" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="Image" Value="set:JiCheShen image:Xia8"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="MonopolyGame_List14">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,210.000000},{0.000000,452.000000}}"/>
+          <Window Type="TLBB_Animate" Name="MonopolyGame_Image14">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Animate" Value="JiCheShen_Xia" />
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Event Name="AnimateEnd" Function="MonopolyGame_StepNext()" />
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="MonopolyGame_Icon14">
+            <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseHollow" Value="true" />
+            <Property Name="MouseMoveHollow" Value="true" />
+            <Property Name="MouseLButtonHollow" Value="true" />
+            <Property Name="MouseRButtonHollow" Value="true" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="Image" Value="set:JiCheShen image:Xia8"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="MonopolyGame_List15">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,160.000000},{0.000000,400.000000}}"/>
+          <Window Type="TLBB_Animate" Name="MonopolyGame_Image15">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Animate" Value="JiCheShen_Xia" />
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Event Name="AnimateEnd" Function="MonopolyGame_StepNext()" />
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="MonopolyGame_Icon15">
+            <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseHollow" Value="true" />
+            <Property Name="MouseMoveHollow" Value="true" />
+            <Property Name="MouseLButtonHollow" Value="true" />
+            <Property Name="MouseRButtonHollow" Value="true" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="Image" Value="set:JiCheShen image:Xia8"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="MonopolyGame_List16">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,140.000000},{0.000000,336.000000}}"/>
+          <Window Type="TLBB_Animate" Name="MonopolyGame_Image16">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Animate" Value="JiCheShen_Xia" />
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Event Name="AnimateEnd" Function="MonopolyGame_StepNext()" />
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="MonopolyGame_Icon16">
+            <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseHollow" Value="true" />
+            <Property Name="MouseMoveHollow" Value="true" />
+            <Property Name="MouseLButtonHollow" Value="true" />
+            <Property Name="MouseRButtonHollow" Value="true" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="Image" Value="set:JiCheShen image:Xia8"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="MonopolyGame_List17">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,140.000000},{0.000000,274.000000}}"/>
+          <Window Type="TLBB_Animate" Name="MonopolyGame_Image17">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Animate" Value="JiCheShen_Xia" />
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Event Name="AnimateEnd" Function="MonopolyGame_StepNext()" />
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="MonopolyGame_Icon17">
+            <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseHollow" Value="true" />
+            <Property Name="MouseMoveHollow" Value="true" />
+            <Property Name="MouseLButtonHollow" Value="true" />
+            <Property Name="MouseRButtonHollow" Value="true" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="Image" Value="set:JiCheShen image:Xia8"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="MonopolyGame_OverImage">
+          <Property Name="UnifiedSize" Value="{{0.000000,22.000000},{0.000000,65.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,112.000000},{0.000000,260.000000}}"/>
+          <Property Name="MouseHollow" Value="true" />
+          <Property Name="MouseMoveHollow" Value="true" />
+          <Property Name="MouseLButtonHollow" Value="true" />
+          <Property Name="MouseRButtonHollow" Value="true" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="Image" Value="set:JiCheShen image:XinCheng"/>
+        </Window>
+        <Window Type="TLBB_Animate" Name="MonopolyGame_Animate">
+          <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,122.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,302.000000},{0.000000,242.000000}}"/>
+          <Property Name="Animate" Value="JiCheShen_Chou" />
+          <Property Name="MouseHollow" Value="true" />
+          <Property Name="MouseMoveHollow" Value="true" />
+          <Property Name="MouseLButtonHollow" Value="true" />
+          <Property Name="MouseRButtonHollow" Value="true" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Event Name="AnimateEnd" Function="MonopolyGame_OnDiceStop()" />
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="MonopolyGame_Image">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,174.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,302.000000},{0.000000,228.000000}}"/>
+          <Property Name="MouseHollow" Value="true" />
+          <Property Name="MouseMoveHollow" Value="true" />
+          <Property Name="MouseLButtonHollow" Value="true" />
+          <Property Name="MouseRButtonHollow" Value="true" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="Image" Value="set:JiCheShen image:Qian6"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="MonopolyGame_ImageBK">
+          <Property Name="UnifiedSize" Value="{{0.000000,236.000000},{0.000000,236.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,210.000000},{0.000000,210.000000}}"/>
+          <Property Name="MouseHollow" Value="true" />
+          <Property Name="MouseMoveHollow" Value="true" />
+          <Property Name="MouseLButtonHollow" Value="true" />
+          <Property Name="MouseRButtonHollow" Value="true" />
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:JiCheShen image:XingXiangBK"/>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="MonopolyGame_OKButton">
+          <Property Name="UnifiedSize" Value="{{0.000000,83.000000},{0.000000,31.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,288.000000},{0.000000,404.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="PushedImage" Value="set:JiCheShen image:ZhuDao1"/>
+          <Property Name="NormalImage" Value="set:JiCheShen image:ZhuDao2"/>
+          <Property Name="HoverImage" Value="set:JiCheShen image:ZhuDao3"/>
+          <Property Name="DisabledImage" Value="set:JiCheShen image:ZhuDao4"/>
+          <Event Name="Clicked" Function="MonopolyGame_RollDice()"/>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

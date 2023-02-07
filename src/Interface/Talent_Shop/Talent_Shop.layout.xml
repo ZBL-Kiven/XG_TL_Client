@@ -1,0 +1,504 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame0" Name="Talent_Shop_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,390.000000},{0.000000,370.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-184.000000},{0.120000,0.000000}}"/>
+    <Event Name="Hidden" Function="Talent_Shop_Close();" />
+    <Window Type="TLBB_DragTitle" Name="Talent_Shop_DragTitle">
+      <Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+      <Property Name="DragTarget" Value="Talent_Shop_Frame" />
+      <Window Type="TLBB_SimpleText" Name="Talent_Shop_Text">
+        <Property Name="Position" Value="x:0 y:0" />
+        <Property Name="Size" Value="w:1 h:1" />
+        <Property Name="Text" Value="#{XLRW_210725_504}" />
+        <Property Name="Font" Value="YouYuan11.25" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="RiseOnClick" Value="False" />
+      </Window>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="Talent_Shop_Help">
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+      <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+      <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*Talent_Shop&quot;);' />
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="Talent_Shop_Close">
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+      <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+      <Event Name="Clicked" Function="Booth_Close();" />
+    </Window>
+    <Window Type="DefaultWindow" Name="Talent_Shop_Background_Frame1">
+      <Property Name="AbsolutePosition" Value="x:5.000000 y:36.000000" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,-55.000000}" />
+      <Window Type="TLBB_SimpleText" Name="Talent_Shop_Text2">
+        <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,40.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,4.000000}}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        <Property Name="Text" Value="#{XLRW_210725_113}"/>
+      </Window>
+      <Window Type="DefaultWindow" Name="Talent_Shop_Action_Set">
+        <Property Name="UnifiedSize" Value="{{0.000000,374.000000},{0.730000,-1.950012}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.5000000,-186.000000},{0.105556,10.000000}}"/>
+        <Window Type="TLBB_ActionButton" Name="Talent_Shop_Item1">
+          <Property Name="AbsolutePosition" Value="x:0.000000 y:1.000000" />
+          <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+          <Event Name="Clicked" Function="Talent_Shop_GoodButton_Clicked(1);" />
+          <Window Type="TLBB_Animate" Name="Talent_Shop_Item1Animate">
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Animate" Value="Equip_Zhizun"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Talent_Shop_Item2">
+          <Property Name="AbsolutePosition" Value="x:0.000000 y:39.000000" />
+          <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+          <Event Name="Clicked" Function="Talent_Shop_GoodButton_Clicked(2);" />
+          <Window Type="TLBB_Animate" Name="Talent_Shop_Item2Animate">
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Animate" Value="Equip_Zhizun"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Talent_Shop_Item3">
+          <Property Name="AbsolutePosition" Value="x:0.000000 y:77.000000" />
+          <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+          <Event Name="Clicked" Function="Talent_Shop_GoodButton_Clicked(3);" />
+          <Window Type="TLBB_Animate" Name="Talent_Shop_Item3Animate">
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Animate" Value="Equip_Zhizun"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Talent_Shop_Item4">
+          <Property Name="AbsolutePosition" Value="x:0.000000 y:115.000000" />
+          <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+          <Event Name="Clicked" Function="Talent_Shop_GoodButton_Clicked(4);" />
+          <Window Type="TLBB_Animate" Name="Talent_Shop_Item4Animate">
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Animate" Value="Equip_Zhizun"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Talent_Shop_Item5">
+          <Property Name="AbsolutePosition" Value="x:0.000000 y:153.000000" />
+          <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+          <Event Name="Clicked" Function="Talent_Shop_GoodButton_Clicked(5);" />
+          <Window Type="TLBB_Animate" Name="Talent_Shop_Item5Animate">
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Animate" Value="Equip_Zhizun"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Talent_Shop_Item6">
+          <Property Name="AbsolutePosition" Value="x:0.000000 y:191.000000" />
+          <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+          <Event Name="Clicked" Function="Talent_Shop_GoodButton_Clicked(6);" />
+          <Window Type="TLBB_Animate" Name="Talent_Shop_Item6Animate">
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Animate" Value="Equip_Zhizun"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Talent_Shop_Item7">
+          <Property Name="AbsolutePosition" Value="x:188.000000 y:1.000000" />
+          <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+          <Event Name="Clicked" Function="Talent_Shop_GoodButton_Clicked(7);" />
+          <Window Type="TLBB_Animate" Name="Talent_Shop_Item7Animate">
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Animate" Value="Equip_Zhizun"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Talent_Shop_Item8">
+          <Property Name="AbsolutePosition" Value="x:188.000000 y:39.000000" />
+          <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+          <Event Name="Clicked" Function="Talent_Shop_GoodButton_Clicked(8);" />
+          <Window Type="TLBB_Animate" Name="Talent_Shop_Item8Animate">
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Animate" Value="Equip_Zhizun"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Talent_Shop_Item9">
+          <Property Name="AbsolutePosition" Value="x:188.000000 y:77.000000" />
+          <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+          <Event Name="Clicked" Function="Talent_Shop_GoodButton_Clicked(9);" />
+          <Window Type="TLBB_Animate" Name="Talent_Shop_Item9Animate">
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Animate" Value="Equip_Zhizun"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Talent_Shop_Item10">
+          <Property Name="AbsolutePosition" Value="x:188.000000 y:115.000000" />
+          <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+          <Event Name="Clicked" Function="Talent_Shop_GoodButton_Clicked(10);" />
+          <Window Type="TLBB_Animate" Name="Talent_Shop_Item10Animate">
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Animate" Value="Equip_Zhizun"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Talent_Shop_Item11">
+          <Property Name="AbsolutePosition" Value="x:188.000000 y:153.000000" />
+          <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+          <Event Name="Clicked" Function="Talent_Shop_GoodButton_Clicked(11);" />
+          <Window Type="TLBB_Animate" Name="Talent_Shop_Item11Animate">
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Animate" Value="Equip_Zhizun"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Talent_Shop_Item12">
+          <Property Name="AbsolutePosition" Value="x:188.000000 y:191.000000" />
+          <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+          <Event Name="Clicked" Function="Talent_Shop_GoodButton_Clicked(12);" />
+          <Window Type="TLBB_Animate" Name="Talent_Shop_Item12Animate">
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Animate" Value="Equip_Zhizun"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="Talent_Shop_ItemInfo1">
+          <Property Name="AbsolutePosition" Value="x:38.000000 y:0.000000" />
+          <Property Name="AbsoluteSize" Value="w:148.000000 h:36.000000" />
+          <Window Type="TLBB_SimpleText" Name="Talent_Shop_ItemInfo1_Text">
+            <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+            <Property Name="AbsoluteSize" Value="w:134.000000 h:18.000000" />
+            <Property Name="Text" Value="#{INTERFACE_XML_909}" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Talent_Shop_ItemInfo1_GB">
+            <Property Name="AbsolutePosition" Value="x:28.000000 y:18.000000" />
+            <Property Name="AbsoluteSize" Value="w:113.000000 h:18.000000" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+          <Window Type="TLBB_Money" Name="Talent_Shop_ItemInfo1_Price">
+            <Property Name="AbsolutePosition" Value="x:28.000000 y:18.000000" />
+            <Property Name="AbsoluteSize" Value="w:117.000000 h:16.000000" />
+            <Property Name="MoneyNumber" Value="0" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="Talent_Shop_ItemInfo2">
+          <Property Name="AbsolutePosition" Value="x:38.000000 y:38.000000" />
+          <Property Name="AbsoluteSize" Value="w:148.000000 h:36.000000" />
+          <Window Type="TLBB_SimpleText" Name="Talent_Shop_ItemInfo2_Text">
+            <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+            <Property Name="AbsoluteSize" Value="w:134.000000 h:18.000000" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+          <Window Type="TLBB_Money" Name="Talent_Shop_ItemInfo2_Price">
+            <Property Name="AbsolutePosition" Value="x:28.000000 y:18.000000" />
+            <Property Name="AbsoluteSize" Value="w:117.000000 h:16.000000" />
+            <Property Name="MoneyNumber" Value="" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Talent_Shop_ItemInfo2_GB">
+            <Property Name="AbsolutePosition" Value="x:28.000000 y:18.000000" />
+            <Property Name="AbsoluteSize" Value="w:113.000000 h:18.000000" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="Talent_Shop_ItemInfo3">
+          <Property Name="AbsolutePosition" Value="x:38.000000 y:76.000000" />
+          <Property Name="AbsoluteSize" Value="w:148.000000 h:36.000000" />
+          <Window Type="TLBB_SimpleText" Name="Talent_Shop_ItemInfo3_Text">
+            <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+            <Property Name="AbsoluteSize" Value="w:134.000000 h:18.000000" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+          <Window Type="TLBB_Money" Name="Talent_Shop_ItemInfo3_Price">
+            <Property Name="AbsolutePosition" Value="x:28.000000 y:18.000000" />
+            <Property Name="AbsoluteSize" Value="w:117.000000 h:16.000000" />
+            <Property Name="MoneyNumber" Value="" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Talent_Shop_ItemInfo3_GB">
+            <Property Name="AbsolutePosition" Value="x:28.000000 y:18.000000" />
+            <Property Name="AbsoluteSize" Value="w:113.000000 h:18.000000" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="Talent_Shop_ItemInfo4">
+          <Property Name="AbsolutePosition" Value="x:38.000000 y:114.000000" />
+          <Property Name="AbsoluteSize" Value="w:148.000000 h:36.000000" />
+          <Window Type="TLBB_SimpleText" Name="Talent_Shop_ItemInfo4_Text">
+            <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+            <Property Name="AbsoluteSize" Value="w:134.000000 h:18.000000" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+          <Window Type="TLBB_Money" Name="Talent_Shop_ItemInfo4_Price">
+            <Property Name="AbsolutePosition" Value="x:28.000000 y:18.000000" />
+            <Property Name="AbsoluteSize" Value="w:117.000000 h:16.000000" />
+            <Property Name="MoneyNumber" Value="" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Talent_Shop_ItemInfo4_GB">
+            <Property Name="AbsolutePosition" Value="x:28.000000 y:18.000000" />
+            <Property Name="AbsoluteSize" Value="w:113.000000 h:18.000000" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="Talent_Shop_ItemInfo5">
+          <Property Name="AbsolutePosition" Value="x:38.000000 y:152.000000" />
+          <Property Name="AbsoluteSize" Value="w:148.000000 h:36.000000" />
+          <Window Type="TLBB_SimpleText" Name="Talent_Shop_ItemInfo5_Text">
+            <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+            <Property Name="AbsoluteSize" Value="w:134.000000 h:18.000000" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+          <Window Type="TLBB_Money" Name="Talent_Shop_ItemInfo5_Price">
+            <Property Name="AbsolutePosition" Value="x:28.000000 y:18.000000" />
+            <Property Name="AbsoluteSize" Value="w:117.000000 h:16.000000" />
+            <Property Name="MoneyNumber" Value="" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Talent_Shop_ItemInfo5_GB">
+            <Property Name="AbsolutePosition" Value="x:28.000000 y:18.000000" />
+            <Property Name="AbsoluteSize" Value="w:113.000000 h:18.000000" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="Talent_Shop_ItemInfo6">
+          <Property Name="AbsolutePosition" Value="x:38.000000 y:190.000000" />
+          <Property Name="AbsoluteSize" Value="w:148.000000 h:36.000000" />
+          <Window Type="TLBB_SimpleText" Name="Talent_Shop_ItemInfo6_Text">
+            <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+            <Property Name="AbsoluteSize" Value="w:134.000000 h:18.000000" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+          <Window Type="TLBB_Money" Name="Talent_Shop_ItemInfo6_Price">
+            <Property Name="AbsolutePosition" Value="x:28.000000 y:18.000000" />
+            <Property Name="AbsoluteSize" Value="w:117.000000 h:16.000000" />
+            <Property Name="MoneyNumber" Value="" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Talent_Shop_ItemInfo6_GB">
+            <Property Name="AbsolutePosition" Value="x:28.000000 y:18.000000" />
+            <Property Name="AbsoluteSize" Value="w:113.000000 h:18.000000" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="Talent_Shop_ItemInfo7">
+          <Property Name="AbsolutePosition" Value="x:224.000000 y:0.000000" />
+          <Property Name="AbsoluteSize" Value="w:148.000000 h:36.000000" />
+          <Window Type="TLBB_SimpleText" Name="Talent_Shop_ItemInfo7_Text">
+            <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+            <Property Name="AbsoluteSize" Value="w:134.000000 h:18.000000" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+          <Window Type="TLBB_Money" Name="Talent_Shop_ItemInfo7_Price">
+            <Property Name="AbsolutePosition" Value="x:28.000000 y:18.000000" />
+            <Property Name="AbsoluteSize" Value="w:117.000000 h:16.000000" />
+            <Property Name="MoneyNumber" Value="" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Talent_Shop_ItemInfo7_GB">
+            <Property Name="AbsolutePosition" Value="x:28.000000 y:18.000000" />
+            <Property Name="AbsoluteSize" Value="w:113.000000 h:18.000000" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="Talent_Shop_ItemInfo8">
+          <Property Name="AbsolutePosition" Value="x:224.000000 y:38.000000" />
+          <Property Name="AbsoluteSize" Value="w:148.000000 h:36.000000" />
+          <Window Type="TLBB_SimpleText" Name="Talent_Shop_ItemInfo8_Text">
+            <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+            <Property Name="AbsoluteSize" Value="w:134.000000 h:18.000000" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+          <Window Type="TLBB_Money" Name="Talent_Shop_ItemInfo8_Price">
+            <Property Name="AbsolutePosition" Value="x:28.000000 y:18.000000" />
+            <Property Name="AbsoluteSize" Value="w:117.000000 h:16.000000" />
+            <Property Name="MoneyNumber" Value="" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Talent_Shop_ItemInfo8_GB">
+            <Property Name="AbsolutePosition" Value="x:28.000000 y:18.000000" />
+            <Property Name="AbsoluteSize" Value="w:113.000000 h:18.000000" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="Talent_Shop_ItemInfo9">
+          <Property Name="AbsolutePosition" Value="x:224.000000 y:76.000000" />
+          <Property Name="AbsoluteSize" Value="w:148.000000 h:36.000000" />
+          <Window Type="TLBB_SimpleText" Name="Talent_Shop_ItemInfo9_Text">
+            <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+            <Property Name="AbsoluteSize" Value="w:134.000000 h:18.000000" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+          <Window Type="TLBB_Money" Name="Talent_Shop_ItemInfo9_Price">
+            <Property Name="AbsolutePosition" Value="x:28.000000 y:18.000000" />
+            <Property Name="AbsoluteSize" Value="w:117.000000 h:16.000000" />
+            <Property Name="MoneyNumber" Value="" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Talent_Shop_ItemInfo9_GB">
+            <Property Name="AbsolutePosition" Value="x:28.000000 y:18.000000" />
+            <Property Name="AbsoluteSize" Value="w:113.000000 h:18.000000" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="Talent_Shop_ItemInfo10">
+          <Property Name="AbsolutePosition" Value="x:224.000000 y:114.000000" />
+          <Property Name="AbsoluteSize" Value="w:148.000000 h:36.000000" />
+          <Window Type="TLBB_SimpleText" Name="Talent_Shop_ItemInfo10_Text">
+            <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+            <Property Name="AbsoluteSize" Value="w:134.000000 h:18.000000" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+          <Window Type="TLBB_Money" Name="Talent_Shop_ItemInfo10_Price">
+            <Property Name="AbsolutePosition" Value="x:28.000000 y:18.000000" />
+            <Property Name="AbsoluteSize" Value="w:117.000000 h:16.000000" />
+            <Property Name="MoneyNumber" Value="" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Talent_Shop_ItemInfo10_GB">
+            <Property Name="AbsolutePosition" Value="x:28.000000 y:18.000000" />
+            <Property Name="AbsoluteSize" Value="w:113.000000 h:18.000000" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="Talent_Shop_ItemInfo11">
+          <Property Name="AbsolutePosition" Value="x:224.000000 y:152.000000" />
+          <Property Name="AbsoluteSize" Value="w:148.000000 h:36.000000" />
+          <Window Type="TLBB_SimpleText" Name="Talent_Shop_ItemInfo11_Text">
+            <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+            <Property Name="AbsoluteSize" Value="w:134.000000 h:18.000000" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+          <Window Type="TLBB_Money" Name="Talent_Shop_ItemInfo11_Price">
+            <Property Name="AbsolutePosition" Value="x:28.000000 y:18.000000" />
+            <Property Name="AbsoluteSize" Value="w:117.000000 h:16.000000" />
+            <Property Name="MoneyNumber" Value="" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Talent_Shop_ItemInfo11_GB">
+            <Property Name="AbsolutePosition" Value="x:28.000000 y:18.000000" />
+            <Property Name="AbsoluteSize" Value="w:113.000000 h:18.000000" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="Talent_Shop_ItemInfo12">
+          <Property Name="AbsolutePosition" Value="x:224.000000 y:190.000000" />
+          <Property Name="AbsoluteSize" Value="w:148.000000 h:36.000000" />
+          <Window Type="TLBB_SimpleText" Name="Talent_Shop_ItemInfo12_Text">
+            <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+            <Property Name="AbsoluteSize" Value="w:134.000000 h:18.000000" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+          <Window Type="TLBB_Money" Name="Talent_Shop_ItemInfo12_Price">
+            <Property Name="AbsolutePosition" Value="x:28.000000 y:18.000000" />
+            <Property Name="AbsoluteSize" Value="w:117.000000 h:16.000000" />
+            <Property Name="MoneyNumber" Value="99" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Talent_Shop_ItemInfo12_GB">
+            <Property Name="AbsolutePosition" Value="x:28.000000 y:18.000000" />
+            <Property Name="AbsoluteSize" Value="w:113.000000 h:18.000000" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace2" Name="Talent_Shop_Bk">
+        <Property Name="UnifiedPosition" Value="{{0.02,0.000000},{1.0,-40.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.96000,0.000000},{0.000000,38.000000}" />
+        <Window Type="TLBB_ButtonCommon2" Name="Talent_Shop_UpPage">
+          <Property Name="AbsolutePosition" Value="x:100.000000 y:10.000000" />
+          <Property Name="UnifiedSize" Value="{{0.0,50.000000},{0.000000,22.000000}" />
+          <Property Name="Text" Value="#{INTERFACE_XML_499}" />
+          <Event Name="Clicked" Function="Talent_Shop_PageUp();" />
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="Talent_Shop_CurrentlyPage">
+          <Property Name="AbsolutePosition" Value="x:150.000000 y:10.000000" />
+          <Property Name="UnifiedSize" Value="{{0.0,60.000000},{0.000000,22.000000}" />
+          <Property Name="Text" Value="999/999" />
+          <Property Name="TextColor" Value="FFFFF263" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+        <Window Type="TLBB_ButtonCommon2" Name="Talent_Shop_DownPage">
+          <Property Name="AbsolutePosition" Value="x:210.000000 y:10.000000" />
+          <Property Name="UnifiedSize" Value="{{0.0,50.000000},{0.000000,22.000000}" />
+          <Property Name="Text" Value="#{INTERFACE_XML_325}" />
+          <Event Name="Clicked" Function="Talent_Shop_PageDown();" />
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

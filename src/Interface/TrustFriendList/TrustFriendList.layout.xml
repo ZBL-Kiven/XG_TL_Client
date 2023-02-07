@@ -1,0 +1,92 @@
+<?xml version="1.0" ?>
+<GUILayout>
+       <Window Type="TLBB_MainFrame1" Name="TrustFriendList_Frame">
+         <Property Name="UnifiedPosition" Value="{{1.00000,-295.000000},{1.0000,-455.000000}"/>
+         <Property Name="UnifiedSize" Value="{{0.000000,144.000000},{0.000000,272.000000}}"/>
+            <Window Type="TLBB_DragTitle" Name="TrustFriendListList_DragTitle">
+	             <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+	             <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+	             <Property Name="DragTarget" Value="TrustFriendList_Frame"/>
+                   <Window Type="TLBB_SimpleText" Name="TrustFriendList_PageHeader_Name">
+	                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+	                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+	                  <Property Name="Font" Value="YouYuan11.25"/>
+	                  <Property Name="HorzFormatting" Value="HorzCentred"/>
+	                  <Property Name="Text" Value="#{XRHB_09515_01}"/>
+                  </Window>
+            </Window>
+            <Window Type="TLBB_ButtonHelp" Name="TrustFriendList_Help">
+	             <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+	             <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+	             <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*TrustFriendList&quot;);'/>
+            </Window>
+            <Window Type="TLBB_ButtonClose" Name="TrustFriendList_Close">
+	             <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+	             <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+	             <Event Name="Clicked" Function="TrustFriendList_Close();"/>
+            </Window>
+            <Window Type="DefaultWindow" Name="TrustFriendList_Frame_Client">
+	            <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,22.000000}}"/>
+	            <Property Name="UnifiedSize" Value="{{0.000000,133.000000},{0.000000,208.000000}}"/>
+               <Window Type="TLBB_ListBoxCommon" Name="TrustFriendList_List">
+	                 <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000,14.00000}}"/>
+	                 <Property Name="UnifiedSize" Value="{{0.000000,132.0000},{0.0000,176.000000}}"/>
+	                 <Event Name="ItemSelectionByRButton" Function="TrustFriendList_OpenMenu();"/>
+                   <Property Name="Text" Value="#{INTERFACE_XML_1171}"/>
+                </Window>
+              <Window Type="TLBB_SimpleText" Name="TrustFriendList_FriendID_Text">
+                <Property Name="UnifiedPosition" Value="{{0.000000,29.000000},{0.000000,190.000000}" />
+                <Property Name="AbsoluteSize" Value="w:23.000000 h:20.000000" />
+                <Property Name="Text" Value="#{XRHB_09515_07}" />
+                <Property Name="Tooltip" Value="#{XRHB_09515_08}" />
+                <Property Name="TextColor" Value="FFFFF263" />
+                <Property Name="HorzFormatting" Value="HorzCentred" />
+                <Property Name="VertFormatting" Value="VertCentred" />
+                <Property Name="RiseOnClick" Value="False" />
+              </Window>
+              <Window Type="TLBB_EditBoxNormal" Name="TrustFriendList_FriendID">
+                <Property Name="UnifiedPosition" Value="{{0.000000,56.000000},{0.000000,189.000000}" />
+                <Property Name="AbsoluteSize" Value="w:75.000000 h:20.000000" />
+                <Property Name="MaxTextLength" Value="8" />
+                <Property Name="ValidationString" Value="[0-9a-fA-F]*" />
+                <Property Name="Text" Value="" />
+              </Window>
+            </Window>
+            <Window Type="DefaultWindow" Name="TrustFriendList_Frame_Client1">
+              <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,232.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,132.000000},{0.000000,22.000000}}"/>
+              <Property Name="AlwaysOnTop" Value="True" />
+              <Window Type="TLBB_ButtonCommon" Name="TrustFriendList_Del">
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,22.000000}}"/>
+                <Property Name="Text" Value="#{XRHB_09515_03}"/>
+                <Event Name="MouseLButtonDown" Function="TrustFriendList_Del( )"/>
+                <Property Name="Tooltip" Value="#{XRHB_09515_04}" />
+			         	<Property Name="CheckMode" Value="1" />
+		         		<Property Name="AlwaysOnTop" Value="True" />
+              </Window>
+              <Window Type="TLBB_ButtonCommon" Name="TrustFriendList_Add">
+                <Property Name="UnifiedPosition" Value="{{0.00000,96.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.0000,36.000000},{0.000000,22.000000}}"/>
+                <Property Name="Text" Value="#{XRHB_09515_05}"/>
+                <Event Name="MouseLButtonDown" Function="TrustFriendList_Add( )"/>
+                <Property Name="Tooltip" Value="#{XRHB_09515_06}" />
+			         	<Property Name="CheckMode" Value="1" />
+			        	<Property Name="AlwaysOnTop" Value="True" />
+              </Window>
+              <Window Type="TLBB_ButtonCommon" Name="TrustFriendList_SpecialHelp">
+                <Property Name="UnifiedPosition" Value="{{0.00000,48.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.0000,36.000000},{0.000000,22.000000}}"/>
+                <Property Name="Text" Value="#{INTERFACE_XML_135}"/>
+                <Property Name="Tooltip" Value="#{XRHB_090612_1}" />
+			         	<Property Name="CheckMode" Value="1" />
+			        	<Property Name="AlwaysOnTop" Value="True" />
+	              <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*TrustFriendList&quot;);'/>
+              </Window>
+              <Window Type="TLBB_Frame_Lace5" Name="TrustFriendList_Blank">
+                <Property Name="UnifiedPosition" Value="{{0.0,50.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,20.000000}" />
+              </Window>
+            </Window>              
+        </Window>
+</GUILayout>

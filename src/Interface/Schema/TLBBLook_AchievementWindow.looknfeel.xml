@@ -1,0 +1,1340 @@
+<?xml version="1.0" ?>
+<Falagard>
+  <!--
+    ***************************************************
+        WoWLook/TLBB_Look_AchievementCatalog_Button
+    ***************************************************
+    -->
+  <WidgetLook name="TLBB_Look_AchievementCatalog_Button">
+    <NamedArea name="AchievementCatalog">
+      <Property name="Visible" value="True"/>
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="145" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="20" />
+        </Dim>
+      </Area>
+    </NamedArea>
+    <Child type="TLBB_StaticImageNULL" nameSuffix="__auto_AchievementCatalogImage__">
+      <Property name="HorzLabelFormatting" value="LeftAligned" />
+      <Property name="MouseHollow" value="True"/>
+      <Property name="MouseMoveHollow" value="True"/>
+      <Property name="Visible" value="True"/>
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="6" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="4" />
+        </Dim>
+        <!--将大小设置为0，不显示奖杯图标-->
+        <Dim type="Width">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="0" />
+        </Dim>
+      </Area>
+    </Child>
+    <Child type="TLBB_SimpleText" nameSuffix="__auto_AchievementCatalogName__">
+      <Property name="Visible" value="True"/>
+      <Property name="MouseHollow" value="True"/>
+      <Property name="MouseMoveHollow" value="True"/>
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="20" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="130" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="20" />
+        </Dim>
+      </Area>
+    </Child>
+    <ImagerySection name="background">
+      <FrameComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="Width">
+            <AbsoluteDim value="145" />
+          </Dim>
+          <Dim type="Height">
+            <AbsoluteDim value="20" />
+          </Dim>
+        </Area>
+        <Image type="LeftEdge" imageset="Ach" image="Ach_AchButton_Left" />
+        <Image type="RightEdge" imageset="Ach" image="Ach_AchButton_Right" />
+        <Image type="Background" imageset="Ach" image="Ach_AchButton_Mid" />
+      </FrameComponent>
+    </ImagerySection>
+    <StateImagery name="EnabledBackground">
+      <Layer>
+        <Section section="background" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="DisabledBackground">
+    </StateImagery>
+    <ImagerySection name="AchievementHoverSection">
+      <FrameComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="Width">
+            <AbsoluteDim value="145" />
+          </Dim>
+          <Dim type="Height">
+            <AbsoluteDim value="20" />
+          </Dim>
+        </Area>
+        <Image imageset="Ach" image="Ach_AchButton_Hov" />
+      </FrameComponent>
+    </ImagerySection>
+
+
+  </WidgetLook>
+  <!--
+    ***************************************************
+        WoWLook/TLBB_Look_AchievementText_Button
+    ***************************************************
+    -->
+  <WidgetLook name="TLBB_Look_AchievementText_Button">
+    <NamedArea name="AchievementText">
+      <Property name="Visible" value="True"/>
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="120" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="20" />
+        </Dim>
+      </Area>
+    </NamedArea>
+    <Child type="TLBB_SimpleText" nameSuffix="__auto_AchievementTextName__">
+      <Property name="HorzLabelFormatting" value="LeftAligned" />
+      <Property name="Visible" value="True"/>
+      <Property name="MouseHollow" value="True"/>
+      <Property name="MouseMoveHollow" value="True"/>
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="23" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="120" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="20" />
+        </Dim>
+      </Area>
+    </Child>
+    <Child type="TLBB_StaticImageNULL" nameSuffix="__auto_AchievementTextLine__">
+      <Property name="Visible" value="True"/>
+      <Property name="MouseHollow" value="True"/>
+      <Property name="MouseMoveHollow" value="True"/>
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="2" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="120" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="2" />
+        </Dim>
+      </Area>
+    </Child>
+    <ImagerySection name="background">
+      <FrameComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="Width">
+            <AbsoluteDim value="120" />
+          </Dim>
+          <Dim type="Height">
+            <AbsoluteDim value="20" />
+          </Dim>
+        </Area>
+        <Image type="LeftEdge" imageset="Ach" image="Ach_AchButton_Left" />
+        <Image type="RightEdge" imageset="Ach" image="Ach_AchButton_Right" />
+        <Image type="Background" imageset="Ach" image="Ach_AchButton_Mid" />
+      </FrameComponent>
+    </ImagerySection>
+    <StateImagery name="EnabledBackground">
+      <Layer>
+        <Section section="background" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="DisabledBackground">
+    </StateImagery>
+    <ImagerySection name="AchievementHoverSection">
+      <FrameComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="Width">
+            <AbsoluteDim value="120" />
+          </Dim>
+          <Dim type="Height">
+            <AbsoluteDim value="20" />
+          </Dim>
+        </Area>
+        <Image imageset="Ach" image="Ach_AchButton_Hov" />
+      </FrameComponent>
+    </ImagerySection>
+  </WidgetLook>
+  <!--
+    ***************************************************
+        WoWLook/TLBB_Look_AchievementBar_Button
+    ***************************************************
+    -->
+  <WidgetLook name="TLBB_Look_AchievementBar_Button">
+    <NamedArea name="AchievementBar">
+      <Property name="Visible" value="True"/>
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="2" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="398" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="69" />
+        </Dim>
+      </Area>
+    </NamedArea>
+    <Child type="TLBB_StaticImageNULL" nameSuffix="__auto_AchievementBarIconDis__">
+      <Property name="HorzLabelFormatting" value="LeftAligned" />
+      <Property name="Image" value="set:Ach image:Ach_AchIconBack"/>
+      <Property name="MouseHollow" value="True"/>
+      <Property name="MouseMoveHollow" value="True"/>
+      <Property name="Visible" value="True"/>
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="10" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="13" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="46" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="46" />
+        </Dim>
+      </Area>
+    </Child>
+    <Child type="TLBB_StaticImageNULL" nameSuffix="__auto_AchievementBarIcon__">
+      <Property name="HorzLabelFormatting" value="LeftAligned" />
+      <Property name="MouseHollow" value="True"/>
+      <Property name="MouseMoveHollow" value="True"/>
+      <Property name="Visible" value="True"/>
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="14" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="17" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="36" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="36" />
+        </Dim>
+      </Area>
+    </Child>
+    <Child type="TLBB_StaticImageNULL" nameSuffix="__auto_AchievementBarPointDis__">
+      <Property name="HorzLabelFormatting" value="LeftAligned" />
+      <Property name="Image" value="set:Ach image:Ach_Frame3_BK"/>
+      <Property name="MouseHollow" value="True"/>
+      <Property name="MouseMoveHollow" value="True"/>
+      <Property name="Visible" value="True"/>
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="-10" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="428" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="69" />
+        </Dim>
+      </Area>
+    </Child>
+    <Child type="TLBB_StaticImageNULL" nameSuffix="__auto_AchievementBarPoint__">
+      <Property name="HorzLabelFormatting" value="LeftAligned" />
+      <Property name="MouseHollow" value="True"/>
+      <Property name="MouseMoveHollow" value="True"/>
+      <Property name="Visible" value="True"/>
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="335" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="5" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="60" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="60" />
+        </Dim>
+      </Area>
+    </Child>
+    <Child type="TLBB_StaticImageNULL" nameSuffix="__auto_AchievementBarGeted__">
+      <Property name="Image" value="set:Ach image:Ach_Geted"/>
+      <Property name="MouseHollow" value="True"/>
+      <Property name="MouseMoveHollow" value="True"/>
+      <Property name="Visible" value="True"/>
+      <Area>
+        <Dim type="LeftEdge">
+          <UnifiedDim scale="0.5" offset="0" type="LeftEdge"/>
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="8" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="44" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="45" />
+        </Dim>
+      </Area>
+    </Child>
+    <Child type="TLBB_SimpleText" nameSuffix="__auto_AchievementBarName__">
+      <Property name="HorzFormatting" value="WordWrapCentred"/>
+      <Property name="Visible" value="True"/>
+      <Property name="MouseHollow" value="True"/>
+      <Property name="MouseMoveHollow" value="True"/>
+      <Area>
+        <Dim type="LeftEdge">
+          <UnifiedDim scale="0.5" offset="-150" type="LeftEdge" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="15" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="200" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="20" />
+        </Dim>
+      </Area>
+    </Child>
+    <Child type="TLBB_SimpleText" nameSuffix="__auto_AchievementBarProgressName__">
+      <Property name="HorzFormatting" value="WordWrapCentred"/>
+      <Property name="Visible" value="True"/>
+      <Property name="MouseHollow" value="True"/>
+      <Property name="MouseMoveHollow" value="True"/>
+      <Area>
+        <Dim type="LeftEdge">
+          <UnifiedDim scale="0.5" offset="-145" type="LeftEdge"/>
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="39" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="200" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="20" />
+        </Dim>
+      </Area>
+    </Child>
+    <Child type="TLBB_AchievementPro" nameSuffix="__auto_AchievementBarProgress__">
+      <Property name="Visible" value="True"/>
+      <Property name="MouseHollow" value="True"/>
+      <Property name="MouseMoveHollow" value="True"/>
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="84" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="45" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="238" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="10" />
+        </Dim>
+      </Area>
+    </Child>
+    <Child type="TLBB_SimpleText" nameSuffix="__auto_AchievementBarDate__">
+      <Property name="Visible" value="True"/>
+      <Property name="MouseHollow" value="True"/>
+      <Property name="MouseMoveHollow" value="True"/>
+      <Property name="HorzFormatting" value="WordWrapCentred"/>
+      <Area>
+        <Dim type="LeftEdge">
+          <UnifiedDim scale="0.5" offset="-180" type="LeftEdge" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="47" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="260" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="15" />
+        </Dim>
+      </Area>
+    </Child>
+    <Child type="TLBB_StaticImageNULL" nameSuffix="__auto_AchievementBarProgressBkImage__">
+      <Property name="Visible" value="True"/>
+      <Property name="MouseHollow" value="True"/>
+      <Property name="MouseMoveHollow" value="True"/>
+      <Property name="Image" value="set:Ach image:Ach_SceneTran_Frame"/>
+      <Area>
+        <Dim type="LeftEdge">
+          <UnifiedDim scale="0.5" offset="-173" type="LeftEdge"/>
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="44" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="247" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="11" />
+        </Dim>
+      </Area>
+    </Child>
+    <Child type="TLBB_SimpleText" nameSuffix="__auto_AchievementBarContent__">
+      <Property name="HorzFormatting" value="WordWrapCentred"/>
+      <Property name="VertFormatting" value="TopAligned"/>
+      <Property name="Font" value="YouYuan9.75"/>
+      <Property name="Visible" value="True"/>
+      <Property name="MouseHollow" value="True"/>
+      <Property name="MouseMoveHollow" value="True"/>
+      <Area>
+        <Dim type="LeftEdge">
+          <UnifiedDim scale="0.5" offset="-180" type="LeftEdge" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="20" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="30" />
+        </Dim>
+      </Area>
+    </Child>
+    <ImagerySection name="background">
+      <FrameComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="Width">
+            <AbsoluteDim value="400" />
+          </Dim>
+          <Dim type="Height">
+            <AbsoluteDim value="68" />
+          </Dim>
+        </Area>
+        <Image type="TopLeftCorner" imageset="Ach1" image="Ach_Frame_Left" />
+        <Image type="TopRightCorner" imageset="Ach1" image="Ach_Frame_Right" />
+      </FrameComponent>
+    </ImagerySection>
+    <StateImagery name="EnabledBackground">
+      <Layer>
+        <Section section="background" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="DisabledBackground">
+    </StateImagery>
+    <ImagerySection name="AchievementHoverSection">
+      <FrameComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="RightEdge">
+            <UnifiedDim scale="1" offset="3" type="RightEdge">
+            </UnifiedDim>
+          </Dim>
+          <Dim type="BottomEdge">
+            <UnifiedDim scale="1" offset="-1" type="BottomEdge">
+            </UnifiedDim>
+          </Dim>
+        </Area>
+        <Image type="LeftEdge" imageset="Ach" image="Ach_AchHovFrame_Left" />
+        <Image type="RightEdge" imageset="Ach" image="Ach_AchHovFrame_Right" />
+        <Image type="Background" imageset="Ach" image="Ach_AchHovFrame_Mid" />
+      </FrameComponent>
+    </ImagerySection>
+
+
+  </WidgetLook>
+  <!--
+    ***************************************************
+        WoWLook/TLBB_Look_AchievementIntegrationBar_Button
+    ***************************************************
+    -->
+  <WidgetLook name="TLBB_Look_AchievementIntegrationBar_Button">
+    <NamedArea name="AchievementBar">
+      <Property name="Visible" value="True"/>
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="300" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="69" />
+        </Dim>
+      </Area>
+    </NamedArea>
+    <Child type="TLBB_StaticImageNULL" nameSuffix="__auto_AchievementBarIconDis__">
+      <Property name="HorzLabelFormatting" value="LeftAligned" />
+      <Property name="Image" value="set:Ach image:Ach_AchIconBack"/>
+      <Property name="MouseHollow" value="True"/>
+      <Property name="MouseMoveHollow" value="True"/>
+      <Property name="Visible" value="True"/>
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="9" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="9" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="46" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="46" />
+        </Dim>
+      </Area>
+    </Child>
+    <Child type="TLBB_StaticImageNULL" nameSuffix="__auto_AchievementBarIcon__">
+      <Property name="HorzLabelFormatting" value="LeftAligned" />
+      <Property name="MouseHollow" value="True"/>
+      <Property name="MouseMoveHollow" value="True"/>
+      <Property name="Visible" value="True"/>
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="13" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="13" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="36" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="36" />
+        </Dim>
+      </Area>
+    </Child>
+    <Child type="TLBB_StaticImageNULL" nameSuffix="__auto_AchievementBarPoint__">
+      <Property name="HorzLabelFormatting" value="LeftAligned" />
+      <Property name="MouseHollow" value="True"/>
+      <Property name="MouseMoveHollow" value="True"/>
+      <Property name="Visible" value="False"/>
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="240" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="10" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="36" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="34" />
+        </Dim>
+      </Area>
+    </Child>
+    <Child type="TLBB_StaticImageNULL" nameSuffix="__auto_AchievementBarPointDis__">
+      <Property name="HorzLabelFormatting" value="LeftAligned" />
+      <Property name="Image" value="set:Ach image:Ach_Frame3_BK"/>
+      <Property name="MouseHollow" value="True"/>
+      <Property name="MouseMoveHollow" value="True"/>
+      <Property name="Visible" value="True"/>
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="Width">
+          <UnifiedDim scale="1.0" offset="0" type="Width"/>
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="69" />
+        </Dim>
+      </Area>
+    </Child>
+    <Child type="TLBB_SimpleText" nameSuffix="__auto_AchievementBarName__">
+      <Property name="Visible" value="True"/>
+      <Property name="MouseHollow" value="True"/>
+      <Property name="MouseMoveHollow" value="True"/>
+      <Property name="HorzFormatting" value="WordWrapCentred"/>
+      <Area>
+        <Dim type="LeftEdge">
+          <UnifiedDim scale="0.5" offset="-80" type="LeftEdge"/>
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="11" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="200" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="20" />
+        </Dim>
+      </Area>
+    </Child>
+    <Child type="TLBB_StaticImageNULL" nameSuffix="__auto_AchievementBarGeted__">
+      <Property name="Image" value="set:Ach image:Ach_Geted"/>
+      <Property name="MouseHollow" value="True"/>
+      <Property name="MouseMoveHollow" value="True"/>
+      <Property name="Visible" value="True"/>
+      <Area>
+        <Dim type="LeftEdge">
+          <UnifiedDim scale="0.5" offset="58" type="LeftEdge"/>
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="8" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="44" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="45" />
+        </Dim>
+      </Area>
+    </Child>    
+    <Child type="TLBB_SimpleText" nameSuffix="__auto_AchievementBarProgressName__">
+      <Property name="Visible" value="True"/>
+      <Property name="MouseHollow" value="True"/>
+      <Property name="MouseMoveHollow" value="True"/>
+      <Property name="HorzFormatting" value="WordWrapCentred"/>
+      <Area>
+        <Dim type="LeftEdge">
+          <UnifiedDim scale="0.5" offset="0" type="LeftEdge" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="38" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="70" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="20" />
+        </Dim>
+      </Area>
+    </Child>
+    <Child type="TLBB_AchievementPro" nameSuffix="__auto_AchievementBarProgress__">
+      <Property name="Visible" value="True"/>
+      <Property name="MouseHollow" value="True"/>
+      <Property name="MouseMoveHollow" value="True"/>
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="70" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="42" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="220" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="11" />
+        </Dim>
+      </Area>
+    </Child>
+    <Child type="TLBB_SimpleText" nameSuffix="__auto_AchievementBarDate__">
+      <Property name="Visible" value="True"/>
+      <Property name="MouseHollow" value="True"/>
+      <Property name="MouseMoveHollow" value="True"/>
+      <Property name="HorzFormatting" value="WordWrapCentred"/>
+      <Area>
+        <Dim type="LeftEdge">
+          <UnifiedDim scale="0.5" offset="-68" type="LeftEdge" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="32" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="180" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="15" />
+        </Dim>
+      </Area>
+    </Child>
+    <Child type="TLBB_StaticImageNULL" nameSuffix="__auto_AchievementBarProgressBkImage__">
+      <Property name="Visible" value="True"/>
+      <Property name="MouseHollow" value="True"/>
+      <Property name="MouseMoveHollow" value="True"/>
+      <Property name="Image" value="set:Ach image:Ach_SceneTran_Frame"/>
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="68" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="40" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="227" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="16" />
+        </Dim>
+      </Area>
+    </Child>
+    <Child type="TLBB_SimpleText" nameSuffix="__auto_AchievementBarContent__">
+      <Property name="HorzFormatting" value="WordWrapCentred"/>
+      <Property name="VertFormatting" value="TopAligned"/>
+      <Property name="Font" value="YouYuan9.75"/>
+      <Property name="Visible" value="True"/>
+      <Property name="MouseHollow" value="True"/>
+      <Property name="MouseMoveHollow" value="True"/>
+
+      <Area>
+        <Dim type="LeftEdge">
+          <UnifiedDim scale="0.5" offset="-90" type="LeftEdge"/>
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="18" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="27" />
+        </Dim>
+      </Area>
+    </Child>
+    <ImagerySection name="background">
+      <FrameComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="Width">
+            <AbsoluteDim value="320" />
+          </Dim>
+          <Dim type="Height">
+            <AbsoluteDim value="69" />
+          </Dim>
+        </Area>
+        <Image type="TopLeftCorner" imageset="Ach1" image="Ach_Frame_Left" />
+        <Image type="TopRightCorner" imageset="Ach1" image="Ach_Frame_Right" />
+      </FrameComponent>
+    </ImagerySection>
+    <StateImagery name="EnabledBackground">
+      <Layer>
+        <Section section="background" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="DisabledBackground">
+    </StateImagery>
+    <ImagerySection name="AchievementHoverSection">
+      <FrameComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="1" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="1" />
+          </Dim>
+          <Dim type="RightEdge">
+            <UnifiedDim scale="1" offset="-1" type="RightEdge">
+            </UnifiedDim>
+          </Dim>
+          <Dim type="BottomEdge">
+            <UnifiedDim scale="1" offset="1" type="BottomEdge">
+            </UnifiedDim>
+          </Dim>
+        </Area>
+        <Image type="LeftEdge" imageset="Ach" image="Ach_AchHovFrame_Left" />
+        <Image type="RightEdge" imageset="Ach" image="Ach_AchHovFrame_Right" />
+        <Image type="Background" imageset="Ach" image="Ach_AchHovFrame_Mid" />
+      </FrameComponent>
+    </ImagerySection>
+
+
+  </WidgetLook>
+  <!--
+    ***************************************************
+        WoWLook/TLBB_Look_AchievementIntegrationBarCompare_Button
+    ***************************************************
+    -->
+  <WidgetLook name="TLBB_Look_AchievementIntegrationBarCompare_Button">
+    <NamedArea name="AchievementBarCompare">
+      <Property name="Visible" value="True"/>
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="2" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="160" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="69" />
+        </Dim>
+      </Area>
+    </NamedArea>
+    <Child type="TLBB_StaticImageNULL" nameSuffix="__auto_AchievementBarCompareIcon__">
+      <Property name="HorzLabelFormatting" value="LeftAligned" />
+      <Property name="Image" value="set:Ach image:Ach_AchIconBack"/>
+      <Property name="MouseHollow" value="True"/>
+      <Property name="MouseMoveHollow" value="True"/>
+      <Property name="Visible" value="True"/>
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="9" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="9" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="46" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="46" />
+        </Dim>
+      </Area>
+    </Child>
+    <Child type="TLBB_StaticImageNULL" nameSuffix="__auto_AchievementBarCompareIconDis__">
+      <Property name="HorzLabelFormatting" value="LeftAligned" />
+      <Property name="Image" value="set:Ach image:Ach_Frame3_BK"/>
+      <Property name="MouseHollow" value="True"/>
+      <Property name="MouseMoveHollow" value="True"/>
+      <Property name="Visible" value="True"/>
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="2" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="Width">
+          <UnifiedDim scale="1.0" offset="-2" type="Width"/>
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="69" />
+        </Dim>
+      </Area>
+    </Child>
+    <Child type="TLBB_StaticImageNULL" nameSuffix="__auto_AchievementBarComparePoint__">
+      <Property name="HorzLabelFormatting" value="LeftAligned" />
+      <Property name="MouseHollow" value="True"/>
+      <Property name="MouseMoveHollow" value="True"/>
+      <Property name="Visible" value="True"/>
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="13" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="13" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="36" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="36" />
+        </Dim>
+      </Area>
+    </Child>
+    <Child type="TLBB_SimpleText" nameSuffix="__auto_AchievementBarCompareName__">
+      <Property name="Visible" value="True"/>
+      <Property name="MouseHollow" value="True"/>
+      <Property name="MouseMoveHollow" value="True"/>
+      <Property name="HorzFormatting" value="WordWrapCentred"/>
+      <Area>
+        <Dim type="LeftEdge">
+          <UnifiedDim scale="0.5" offset="-40" type="LeftEdge"/>
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="20" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="80" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="20" />
+        </Dim>
+      </Area>
+    </Child>
+    <Child type="TLBB_SimpleText" nameSuffix="__auto_AchievementBarContent__">
+      <Property name="Visible" value="True"/>
+      <Property name="MouseHollow" value="True"/>
+      <Property name="MouseMoveHollow" value="True"/>
+      <Property name="HorzFormatting" value="WordWrapCentred"/>
+      <Area>
+        <Dim type="LeftEdge">
+          <UnifiedDim scale="0.5" offset="-120" type="LeftEdge"/>
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="25" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="240" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="15" />
+        </Dim>
+      </Area>
+    </Child>
+    <Child type="TLBB_AchievementPro" nameSuffix="__auto_AchievementBarCompareProgress__">
+      <Property name="Visible" value="True"/>
+      <Property name="MouseHollow" value="True"/>
+      <Property name="MouseMoveHollow" value="True"/>
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="60" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="47" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="60" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="10" />
+        </Dim>
+      </Area>
+    </Child>
+    <Child type="TLBB_SimpleText" nameSuffix="__auto_AchievementBarCompareFinishName__">
+      <Property name="Visible" value="True"/>
+      <Property name="MouseHollow" value="True"/>
+      <Property name="MouseMoveHollow" value="True"/>
+      <Property name="HorzFormatting" value="WordWrapCentred"/>
+      <Area>
+        <Dim type="LeftEdge">
+          <UnifiedDim scale="0.5" offset="-45" type="LeftEdge"/>
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="2" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="90" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="20" />
+        </Dim>
+      </Area>
+    </Child>
+    <Child type="TLBB_SimpleText" nameSuffix="__auto_AchievementBarCompareProgressName__">
+      <Property name="Visible" value="True"/>
+      <Property name="MouseHollow" value="True"/>
+      <Property name="MouseMoveHollow" value="True"/>
+      <Property name="HorzFormatting" value="WordWrapCentred"/>
+      <Area>
+        <Dim type="LeftEdge">
+          <UnifiedDim scale="0.5" offset="-15" type="LeftEdge"/>
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="25" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="30" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="20" />
+        </Dim>
+      </Area>
+    </Child>
+    <ImagerySection name="background">
+      <FrameComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="Width">
+            <AbsoluteDim value="400" />
+          </Dim>
+          <Dim type="Height">
+            <AbsoluteDim value="69" />
+          </Dim>
+        </Area>
+        <Image type="TopLeftCorner" imageset="Ach1" image="Ach_Frame_Left" />
+        <Image type="TopRightCorner" imageset="Ach1" image="Ach_Frame_Right" />
+      </FrameComponent>
+    </ImagerySection>
+    <StateImagery name="EnabledBackground">
+      <Layer>
+        <Section section="background" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="DisabledBackground">
+    </StateImagery>
+    <ImagerySection name="AchievementHoverSection">
+      <FrameComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="1" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="1" />
+          </Dim>
+          <Dim type="RightEdge">
+            <UnifiedDim scale="1" offset="-1" type="RightEdge">
+            </UnifiedDim>
+          </Dim>
+          <Dim type="BottomEdge">
+            <UnifiedDim scale="1" offset="1" type="BottomEdge">
+            </UnifiedDim>
+          </Dim>
+        </Area>
+        <Image type="LeftEdge" imageset="Ach" image="Ach_AchHovFrame_Left" />
+        <Image type="RightEdge" imageset="Ach" image="Ach_AchHovFrame_Right" />
+        <Image type="Background" imageset="Ach" image="Ach_AchHovFrame_Mid" />
+      </FrameComponent>
+    </ImagerySection>
+
+
+  </WidgetLook>
+  <!--
+    ***************************************************
+        WoWLook/TLBB_Look_AchievementBarCompareIntegration_Button
+    ***************************************************
+    -->
+  <WidgetLook name="TLBB_Look_AchievementBarCompareIntegration_Button">
+    <NamedArea name="AchievementBarCompareIntegration">
+      <Property name="Visible" value="True"/>
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="500" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="69" />
+        </Dim>
+      </Area>
+    </NamedArea>
+    <Child type="TLBB_AchievementIntegrationBar_Button" nameSuffix="__auto_AchievementBarWindowButton__">
+      <Property name="HorzLabelFormatting" value="LeftAligned" />
+      <Property name="MouseHollow" value="True"/>
+      <Property name="MouseMoveHollow" value="True"/>
+      <Property name="Visible" value="True"/>
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="290" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="69" />
+        </Dim>
+      </Area>
+    </Child>
+    <Child type="TLBB_AchievementIntegrationBarCompare_Button" nameSuffix="__auto_AchievementBarCompareWindowButton__">
+      <Property name="HorzLabelFormatting" value="LeftAligned" />
+      <Property name="MouseHollow" value="True"/>
+      <Property name="MouseMoveHollow" value="True"/>
+      <Property name="Visible" value="True"/>
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="270" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="210" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="69" />
+        </Dim>
+      </Area>
+    </Child>
+    <ImagerySection name="background">
+      <FrameComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="Width">
+            <AbsoluteDim value="500" />
+          </Dim>
+          <Dim type="Height">
+            <AbsoluteDim value="69" />
+          </Dim>
+        </Area>
+        <Image type="TopLeftCorner" imageset="Ach1" image="Ach_Frame_Left" />
+        <Image type="TopRightCorner" imageset="Ach1" image="Ach_Frame_Right" />
+      </FrameComponent>
+    </ImagerySection>
+    <StateImagery name="EnabledBackground">
+      <Layer>
+        <Section section="background" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="DisabledBackground">
+    </StateImagery>
+    <ImagerySection name="AchievementHoverSection">
+      <FrameComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="1" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="1" />
+          </Dim>
+          <Dim type="RightEdge">
+            <UnifiedDim scale="1" offset="-1" type="RightEdge">
+            </UnifiedDim>
+          </Dim>
+          <Dim type="BottomEdge">
+            <UnifiedDim scale="1" offset="1" type="BottomEdge">
+            </UnifiedDim>
+          </Dim>
+        </Area>
+        <Image type="LeftEdge" imageset="Ach" image="Ach_AchHovFrame_Left" />
+        <Image type="RightEdge" imageset="Ach" image="Ach_AchHovFrame_Right" />
+        <Image type="Background" imageset="Ach" image="Ach_AchHovFrame_Mid" />
+      </FrameComponent>
+    </ImagerySection>
+
+
+  </WidgetLook>
+
+  <!--
+    ***************************************************
+        WoWLook/TLBB_Look_AchievementWindow
+    ***************************************************
+    -->
+  <WidgetLook name="TLBB_Look_AchievementWindow">
+    <Property name="ChildItem" value="key:AchievementCatalog name:TLBB_AchievementCatalog_Button" />
+    <Property name="ChildItem" value="key:AchievementText name:TLBB_AchievementText_Button" />
+    <Property name="ChildItem" value="key:AchievementBar name:TLBB_AchievementBar_Button" />
+    <Property name="ChildItem" value="key:AchievementBarIntegrationCompare name:TLBB_AchievementBarCompareIntegration_Button" />
+    <NamedArea name="Text">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="2" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="3" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="4" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="8000" />
+        </Dim>
+      </Area>
+    </NamedArea>
+    <NamedArea name="AchievementCatalog">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="158" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="20" />
+        </Dim>
+      </Area>
+    </NamedArea>
+    <NamedArea name="AchievementText">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="10" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="120" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="20" />
+        </Dim>
+      </Area>
+    </NamedArea>
+    <NamedArea name="AchievementBar">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="1" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="501" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="69" />
+        </Dim>
+      </Area>
+    </NamedArea>
+   <NamedArea name="AchievementBarIntegrationCompare">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="1" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="500" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="69" />
+        </Dim>
+      </Area>
+    </NamedArea>
+
+    <NamedArea name="ClientRect">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="RightEdge">
+          <UnifiedDim scale="1" offset ="0" type="RightEdge"/>
+        </Dim>
+        <Dim type="BottomEdge">
+          <UnifiedDim scale="1" offset ="0" type="BottomEdge"/>
+        </Dim>
+      </Area>
+    </NamedArea>
+    <NamedArea name="ClientRectVScroll">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="RightEdge">
+          <UnifiedDim scale="1" offset="0" type="RightEdge">
+            <DimOperator op="Subtract">
+              <WidgetDim widget="__auto_vscrollbar__" dimension="Width" />
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+        <Dim type="BottomEdge">
+          <UnifiedDim scale="1" offset ="-0" type="BottomEdge"/>
+        </Dim>
+      </Area>
+    </NamedArea>
+    <Child type="DefaultWindow" nameSuffix="__auto_parent__">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="RightEdge">
+          <UnifiedDim scale="1.0" offset="0" type="RightEdge" />
+        </Dim>
+        <Dim type="BottomEdge">
+          <UnifiedDim scale="1.0" offset="0" type="BottomEdge" />
+        </Dim>
+      </Area>
+    </Child>
+    <Child type="TLBB_Scrollbar_Common" nameSuffix="__auto_vscrollbar__">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="15" />
+        </Dim>
+        <Dim type="Height">
+          <UnifiedDim scale="1.0" offset="0" type="Height" />
+        </Dim>
+      </Area>
+      <HorzAlignment type="RightAligned" />
+    </Child>
+  </WidgetLook>
+</Falagard>

@@ -1,0 +1,670 @@
+<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="TreasureBox_AwardChoices_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,660.000000},{0.000000,380.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-330.000000},{0.500000,-190.000000}}"/>
+    <Window Type="TLBB_StaticImageNULL" Name="TreasureBox_AwardChoices_FrameNULL_Left">
+      <Property Name="UnifiedSize" Value="{{0.000000,134.000000},{0.000000,102.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Property Name="MouseRButtonHollow" Value="True"/>
+      <Property Name="MouseMoveHollow" Value="True"/>
+      <Property Name="MouseLButtonHollow" Value="True"/>
+      <Property Name="MouseHollow" Value="True"/>
+      <Property Name="Image" Value="set:CommonFrame36 image:Anniversary_LaceLT"/>
+    </Window>
+    <Window Type="TLBB_StaticImageNULL" Name="TreasureBox_AwardChoices_FrameNULL_Right1">
+      <Property Name="UnifiedSize" Value="{{0.000000,106.000000},{0.000000,102.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-108.000000},{0.000000,0.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Property Name="MouseRButtonHollow" Value="True"/>
+      <Property Name="MouseMoveHollow" Value="True"/>
+      <Property Name="MouseLButtonHollow" Value="True"/>
+      <Property Name="MouseHollow" Value="True"/>
+      <Property Name="Image" Value="set:CommonFrame36 image:Anniversary_LaceRT"/>
+    </Window>
+    <Window Type="TLBB_StaticImageNULL" Name="TreasureBox_AwardChoices_CloseBK">
+      <Property Name="UnifiedSize" Value="{{0.000000,54.000000},{0.000000,240.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-54.000000},{0.000000,10.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Property Name="MouseRButtonHollow" Value="True"/>
+      <Property Name="MouseMoveHollow" Value="True"/>
+      <Property Name="MouseLButtonHollow" Value="True"/>
+      <Property Name="MouseHollow" Value="True"/>
+      <Property Name="Image" Value="set:TXHW2 image:TXHW_MainFrameR"/>
+      <Window Type="TLBB_ButtonClose" Name="TreasureBox_AwardChoices_Close">
+        <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-34.000000},{0.000000,11.000000}}"/>
+        <Event Name="Clicked" Function="TreasureBox_AwardChoices_Close();"/>
+      </Window>
+    </Window>
+    <Window Type="TLBB_DragTitle" Name="TreasureBox_AwardChoices_DragTitle">
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-120.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.000000,18.000000}}"/>
+      <Property Name="Font" Value="YouYuan11.25" />
+      <Property Name="Text" Value="#{RCLS_200731_21}"/>
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="DragTarget" Value="TreasureBox_AwardChoices_Frame" />
+    </Window>
+    <Window Type="TLBB_MainFrame16" Name="TreasureBox_AwardChoices_BK">
+      <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{1.000000,-20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Property Name="AttachEnabled" Value="True"/>
+      <Window Type="TLBB_Frame_Lace36" Name="TreasureBox_AwardChoices_BKClient">
+        <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-30.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,24.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="TreasureBox_AwardChoices_Page_Info">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,26.000000}}"/>
+          <Property Name="Text" Value="#{MHSD_191203_63}"/>
+          <Property Name="Font" Value="YouYuan11.25"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+        <Window Type="TLBB_Frame_Lace58" Name="TreasureBox_AwardChoices_Page2_Client">
+          <Property Name="UnifiedSize" Value="{{0.000000,400.000000},{0.000000,170.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-200.000000},{0.500000,-90.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_ActionButton" Name="TreasureBox_AwardChoices_Page2_Lace1Item">
+            <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.400000,-80.000000},{0.00000,44.000000}}"/>
+            <Event Name="Clicked" Function="TreasureBox_AwardChoices_Choice(101)"/>
+            <Window Type="TLBB_StaticImageNULL" Name="TreasureBox_AwardChoices_Page2_Lace1Item_Mask">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="TreasureBox_AwardChoices_Page2_Lace1Item_Tip">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.400000,-108.000000},{0.00000,120.000000}}"/>
+            <Property Name="Text" Value="%s0"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="TreasureBox_AwardChoices_Page2_Lace2Item">
+            <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.600000,10.000000},{0.00000,44.000000}}"/>
+            <Event Name="Clicked" Function="TreasureBox_AwardChoices_Choice(102)"/>
+            <Window Type="TLBB_StaticImageNULL" Name="TreasureBox_AwardChoices_Page2_Lace2Item_Mask">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="TreasureBox_AwardChoices_Page2_Lace2Item_Tip">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.600000,-18.000000},{0.00000,120.000000}}"/>
+            <Property Name="Text" Value="%s1"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_Frame_Lace58" Name="TreasureBox_AwardChoices_Page3_Client">
+          <Property Name="UnifiedSize" Value="{{0.000000,460.000000},{0.000000,196.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-230.000000},{0.500000,-98.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_ActionButton" Name="TreasureBox_AwardChoices_Page3_Lace1Item">
+            <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.200000,-32.000000},{0.00000,16.000000}}"/>
+            <Event Name="Clicked" Function="TreasureBox_AwardChoices_Choice(201)"/>
+            <Window Type="TLBB_StaticImageNULL" Name="TreasureBox_AwardChoices_Page3_Lace1Item_Mask">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="TreasureBox_AwardChoices_Page3_Lace1Item_Tip">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.200000,-60.000000},{0.00000,80.000000}}"/>
+            <Property Name="Text" Value="%s0"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="TreasureBox_AwardChoices_Page3_Lace2Item">
+            <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.400000,-32.000000},{0.00000,16.000000}}"/>
+            <Event Name="Clicked" Function="TreasureBox_AwardChoices_Choice(202)"/>
+            <Window Type="TLBB_StaticImageNULL" Name="TreasureBox_AwardChoices_Page3_Lace2Item_Mask">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="TreasureBox_AwardChoices_Page3_Lace2Item_Tip">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,16.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.400000,-60.000000},{0.00000,80.000000}}"/>
+            <Property Name="Text" Value="%s0"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="TreasureBox_AwardChoices_Page3_Lace3Item">
+            <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.600000,-32.000000},{0.00000,16.000000}}"/>
+            <Event Name="Clicked" Function="TreasureBox_AwardChoices_Choice(203)"/>
+            <Window Type="TLBB_StaticImageNULL" Name="TreasureBox_AwardChoices_Page3_Lace3Item_Mask">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="TreasureBox_AwardChoices_Page3_Lace3Item_Tip">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.600000,-60.000000},{0.00000,80.000000}}"/>
+            <Property Name="Text" Value="%s0"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="TreasureBox_AwardChoices_Page3_Lace4Item">
+            <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.800000,-32.000000},{0.00000,16.000000}}"/>
+            <Event Name="Clicked" Function="TreasureBox_AwardChoices_Choice(204)"/>
+            <Window Type="TLBB_StaticImageNULL" Name="TreasureBox_AwardChoices_Page3_Lace4Item_Mask">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="TreasureBox_AwardChoices_Page3_Lace4Item_Tip">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.800000,-60.000000},{0.00000,80.000000}}"/>
+            <Property Name="Text" Value="%s0"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="TreasureBox_AwardChoices_Page3_Lace5Item">
+            <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.100000,-32.000000},{0.00000,104.000000}}"/>
+            <Event Name="Clicked" Function="TreasureBox_AwardChoices_Choice(205)"/>
+            <Window Type="TLBB_StaticImageNULL" Name="TreasureBox_AwardChoices_Page3_Lace5Item_Mask">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="TreasureBox_AwardChoices_Page3_Lace5Item_Tip">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.100000,-60.000000},{0.00000,168.000000}}"/>
+            <Property Name="Text" Value="%s0"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="TreasureBox_AwardChoices_Page3_Lace6Item">
+            <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.300000,-32.000000},{0.00000,104.000000}}"/>
+            <Event Name="Clicked" Function="TreasureBox_AwardChoices_Choice(206)"/>
+            <Window Type="TLBB_StaticImageNULL" Name="TreasureBox_AwardChoices_Page3_Lace6Item_Mask">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="TreasureBox_AwardChoices_Page3_Lace6Item_Tip">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.300000,-60.000000},{0.00000,168.000000}}"/>
+            <Property Name="Text" Value="%s0"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="TreasureBox_AwardChoices_Page3_Lace7Item">
+            <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-32.000000},{0.00000,104.000000}}"/>
+            <Event Name="Clicked" Function="TreasureBox_AwardChoices_Choice(207)"/>
+            <Window Type="TLBB_StaticImageNULL" Name="TreasureBox_AwardChoices_Page3_Lace7Item_Mask">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="TreasureBox_AwardChoices_Page3_Lace7Item_Tip">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-60.000000},{0.00000,168.000000}}"/>
+            <Property Name="Text" Value="%s0"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="TreasureBox_AwardChoices_Page3_Lace8Item">
+            <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.700000,-32.000000},{0.00000,104.000000}}"/>
+            <Event Name="Clicked" Function="TreasureBox_AwardChoices_Choice(208)"/>
+            <Window Type="TLBB_StaticImageNULL" Name="TreasureBox_AwardChoices_Page3_Lace8Item_Mask">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="TreasureBox_AwardChoices_Page3_Lace8Item_Tip">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.700000,-60.000000},{0.00000,168.000000}}"/>
+            <Property Name="Text" Value="%s0"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="TreasureBox_AwardChoices_Page3_Lace9Item">
+            <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.900000,-32.000000},{0.00000,104.000000}}"/>
+            <Event Name="Clicked" Function="TreasureBox_AwardChoices_Choice(209)"/>
+            <Window Type="TLBB_StaticImageNULL" Name="TreasureBox_AwardChoices_Page3_Lace9Item_Mask">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="TreasureBox_AwardChoices_Page3_Lace9Item_Tip">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.900000,-60.000000},{0.00000,168.000000}}"/>
+            <Property Name="Text" Value="%s0"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_Frame_Lace58" Name="TreasureBox_AwardChoices_Page4_Client">
+          <Property Name="UnifiedSize" Value="{{0.000000,420.000000},{0.000000,196.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-210.000000},{0.500000,-98.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_ActionButton" Name="TreasureBox_AwardChoices_Page4_Lace1Item">
+            <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.200000,-32.000000},{0.00000,16.000000}}"/>
+            <Event Name="Clicked" Function="TreasureBox_AwardChoices_Choice(301)"/>
+            <Window Type="TLBB_StaticImageNULL" Name="TreasureBox_AwardChoices_Page4_Lace1Item_Mask">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="TreasureBox_AwardChoices_Page4_Lace1Item_Tip">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.200000,-60.000000},{0.00000,80.000000}}"/>
+            <Property Name="Text" Value="%s0"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="TreasureBox_AwardChoices_Page4_Lace2Item">
+            <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.400000,-32.000000},{0.00000,16.000000}}"/>
+            <Event Name="Clicked" Function="TreasureBox_AwardChoices_Choice(302)"/>
+            <Window Type="TLBB_StaticImageNULL" Name="TreasureBox_AwardChoices_Page4_Lace2Item_Mask">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="TreasureBox_AwardChoices_Page4_Lace2Item_Tip">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,16.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.400000,-60.000000},{0.00000,80.000000}}"/>
+            <Property Name="Text" Value="%s0"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="TreasureBox_AwardChoices_Page4_Lace3Item">
+            <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.600000,-32.000000},{0.00000,16.000000}}"/>
+            <Event Name="Clicked" Function="TreasureBox_AwardChoices_Choice(303)"/>
+            <Window Type="TLBB_StaticImageNULL" Name="TreasureBox_AwardChoices_Page4_Lace3Item_Mask">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="TreasureBox_AwardChoices_Page4_Lace3Item_Tip">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.600000,-60.000000},{0.00000,80.000000}}"/>
+            <Property Name="Text" Value="%s0"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="TreasureBox_AwardChoices_Page4_Lace4Item">
+            <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.800000,-32.000000},{0.00000,16.000000}}"/>
+            <Event Name="Clicked" Function="TreasureBox_AwardChoices_Choice(304)"/>
+            <Window Type="TLBB_StaticImageNULL" Name="TreasureBox_AwardChoices_Page4_Lace4Item_Mask">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="TreasureBox_AwardChoices_Page4_Lace4Item_Tip">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.800000,-60.000000},{0.00000,80.000000}}"/>
+            <Property Name="Text" Value="%s0"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="TreasureBox_AwardChoices_Page4_Lace5Item">
+            <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.200000,-32.000000},{0.00000,104.000000}}"/>
+            <Event Name="Clicked" Function="TreasureBox_AwardChoices_Choice(305)"/>
+            <Window Type="TLBB_StaticImageNULL" Name="TreasureBox_AwardChoices_Page4_Lace5Item_Mask">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="TreasureBox_AwardChoices_Page4_Lace5Item_Tip">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.200000,-60.000000},{0.00000,168.000000}}"/>
+            <Property Name="Text" Value="%s0"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="TreasureBox_AwardChoices_Page4_Lace6Item">
+            <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.400000,-32.000000},{0.00000,104.000000}}"/>
+            <Event Name="Clicked" Function="TreasureBox_AwardChoices_Choice(306)"/>
+            <Window Type="TLBB_StaticImageNULL" Name="TreasureBox_AwardChoices_Page4_Lace6Item_Mask">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="TreasureBox_AwardChoices_Page4_Lace6Item_Tip">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,16.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.400000,-60.000000},{0.00000,168.000000}}"/>
+            <Property Name="Text" Value="%s0"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="TreasureBox_AwardChoices_Page4_Lace7Item">
+            <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.600000,-32.000000},{0.00000,104.000000}}"/>
+            <Event Name="Clicked" Function="TreasureBox_AwardChoices_Choice(307)"/>
+            <Window Type="TLBB_StaticImageNULL" Name="TreasureBox_AwardChoices_Page4_Lace7Item_Mask">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="TreasureBox_AwardChoices_Page4_Lace7Item_Tip">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.600000,-60.000000},{0.00000,168.000000}}"/>
+            <Property Name="Text" Value="%s0"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="TreasureBox_AwardChoices_Page4_Lace8Item">
+            <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.800000,-32.000000},{0.00000,104.000000}}"/>
+            <Event Name="Clicked" Function="TreasureBox_AwardChoices_Choice(308)"/>
+            <Window Type="TLBB_StaticImageNULL" Name="TreasureBox_AwardChoices_Page4_Lace8Item_Mask">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="TreasureBox_AwardChoices_Page4_Lace8Item_Tip">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.800000,-60.000000},{0.00000,168.000000}}"/>
+            <Property Name="Text" Value="%s0"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_Frame_Lace58" Name="TreasureBox_AwardChoices_Page5_Client">
+          <Property Name="UnifiedSize" Value="{{0.000000,520.000000},{0.000000,210.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-260.000000},{0.500000,-105.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_ActionButton" Name="TreasureBox_AwardChoices_Page5_Lace1Item">
+            <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.100000,-32.000000},{0.00000,16.000000}}"/>
+            <Event Name="Clicked" Function="TreasureBox_AwardChoices_Choice(401)"/>
+            <Window Type="TLBB_StaticImageNULL" Name="TreasureBox_AwardChoices_Page5_Lace1Item_Mask">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="TreasureBox_AwardChoices_Page5_Lace1Item_Tip">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.100000,-60.000000},{0.00000,80.000000}}"/>
+            <Property Name="Text" Value="%s0"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="TreasureBox_AwardChoices_Page5_Lace2Item">
+            <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.300000,-32.000000},{0.00000,16.000000}}"/>
+            <Event Name="Clicked" Function="TreasureBox_AwardChoices_Choice(402)"/>
+            <Window Type="TLBB_StaticImageNULL" Name="TreasureBox_AwardChoices_Page5_Lace2Item_Mask">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="TreasureBox_AwardChoices_Page5_Lace2Item_Tip">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.300000,-60.000000},{0.00000,80.000000}}"/>
+            <Property Name="Text" Value="%s0"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="TreasureBox_AwardChoices_Page5_Lace3Item">
+            <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-32.000000},{0.00000,16.000000}}"/>
+            <Event Name="Clicked" Function="TreasureBox_AwardChoices_Choice(403)"/>
+            <Window Type="TLBB_StaticImageNULL" Name="TreasureBox_AwardChoices_Page5_Lace3Item_Mask">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="TreasureBox_AwardChoices_Page5_Lace3Item_Tip">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-60.000000},{0.00000,80.000000}}"/>
+            <Property Name="Text" Value="%s0"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="TreasureBox_AwardChoices_Page5_Lace4Item">
+            <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.700000,-32.000000},{0.00000,16.000000}}"/>
+            <Event Name="Clicked" Function="TreasureBox_AwardChoices_Choice(404)"/>
+            <Window Type="TLBB_StaticImageNULL" Name="TreasureBox_AwardChoices_Page5_Lace4Item_Mask">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="TreasureBox_AwardChoices_Page5_Lace4Item_Tip">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.700000,-60.000000},{0.00000,80.000000}}"/>
+            <Property Name="Text" Value="%s0"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="TreasureBox_AwardChoices_Page5_Lace5Item">
+            <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.900000,-32.000000},{0.00000,16.000000}}"/>
+            <Event Name="Clicked" Function="TreasureBox_AwardChoices_Choice(405)"/>
+            <Window Type="TLBB_StaticImageNULL" Name="TreasureBox_AwardChoices_Page5_Lace5Item_Mask">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="TreasureBox_AwardChoices_Page5_Lace5Item_Tip">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.900000,-60.000000},{0.00000,80.000000}}"/>
+            <Property Name="Text" Value="%s0"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="TreasureBox_AwardChoices_Page5_Lace6Item">
+            <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,18.000000},{0.00000,104.000000}}"/>
+            <Event Name="Clicked" Function="TreasureBox_AwardChoices_Choice(406)"/>
+            <Window Type="TLBB_StaticImageNULL" Name="TreasureBox_AwardChoices_Page5_Lace6Item_Mask">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="TreasureBox_AwardChoices_Page5_Lace6Item_Tip">
+            <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.00000,168.000000}}"/>
+            <Property Name="Text" Value="%s0"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="TreasureBox_AwardChoices_Page5_Lace7Item">
+            <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,102.000000},{0.00000,104.000000}}"/>
+            <Event Name="Clicked" Function="TreasureBox_AwardChoices_Choice(407)"/>
+            <Window Type="TLBB_StaticImageNULL" Name="TreasureBox_AwardChoices_Page5_Lace7Item_Mask">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="TreasureBox_AwardChoices_Page5_Lace7Item_Tip">
+            <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,84.000000},{0.00000,168.000000}}"/>
+            <Property Name="Text" Value="%s0"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="TreasureBox_AwardChoices_Page5_Lace8Item">
+            <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,186.000000},{0.00000,104.000000}}"/>
+            <Event Name="Clicked" Function="TreasureBox_AwardChoices_Choice(408)"/>
+            <Window Type="TLBB_StaticImageNULL" Name="TreasureBox_AwardChoices_Page5_Lace8Item_Mask">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="TreasureBox_AwardChoices_Page5_Lace8Item_Tip">
+            <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,168.000000},{0.00000,168.000000}}"/>
+            <Property Name="Text" Value="%s0"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="TreasureBox_AwardChoices_Page5_Lace9Item">
+            <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,270.000000},{0.00000,104.000000}}"/>
+            <Event Name="Clicked" Function="TreasureBox_AwardChoices_Choice(409)"/>
+            <Window Type="TLBB_StaticImageNULL" Name="TreasureBox_AwardChoices_Page5_Lace9Item_Mask">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="TreasureBox_AwardChoices_Page5_Lace9Item_Tip">
+            <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,252.000000},{0.00000,168.000000}}"/>
+            <Property Name="Text" Value="%s0"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="TreasureBox_AwardChoices_Page5_Lace10Item">
+            <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,354.000000},{0.00000,104.000000}}"/>
+            <Event Name="Clicked" Function="TreasureBox_AwardChoices_Choice(410)"/>
+            <Window Type="TLBB_StaticImageNULL" Name="TreasureBox_AwardChoices_Page5_Lace10Item_Mask">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="TreasureBox_AwardChoices_Page5_Lace10Item_Tip">
+            <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,336.000000},{0.00000,168.000000}}"/>
+            <Property Name="Text" Value="%s0"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="TreasureBox_AwardChoices_Page5_Lace11Item">
+            <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,438.000000},{0.00000,104.000000}}"/>
+            <Event Name="Clicked" Function="TreasureBox_AwardChoices_Choice(411)"/>
+            <Window Type="TLBB_StaticImageNULL" Name="TreasureBox_AwardChoices_Page5_Lace11Item_Mask">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="TreasureBox_AwardChoices_Page5_Lace11Item_Tip">
+            <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,420.000000},{0.00000,168.000000}}"/>
+            <Property Name="Text" Value="%s0"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+        </Window>
+      </Window>
+      </Window>
+        <Window Type="TLBB_ButtonNULL" Name="TreasureBox_AwardChoices_GetButton">
+          <Property Name="UnifiedSize" Value="{{0.000000,79.000000},{0.000000,26.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-39.500000},{1.000000,-54.000000}}"/>
+          <Property Name="Tooltip" Value=""/>
+          <Property Name="PushedImage" Value="set:Spring24 image:Get_Pushed"/>
+          <Property Name="NormalImage" Value="set:Spring24 image:Get_Normal"/>
+          <Property Name="HoverImage" Value="set:Spring24 image:Get_Hover"/>
+          <Property Name="DisabledImage" Value="set:Spring24 image:Get_Disabled"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Event Name="Clicked" Function="TreasureBox_AwardChoices_GetClick()"/>
+        </Window>
+        </Window>
+</GUILayout>

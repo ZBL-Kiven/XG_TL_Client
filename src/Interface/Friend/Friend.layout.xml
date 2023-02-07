@@ -1,0 +1,167 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame1" Name="Friend_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,210.000000},{0.000000,420.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{1.000000,-210.000000},{1.000000,-450.000000}}"/>
+    <Event Name="Hidden" Function="Friend_OnHidden();"/>
+    <Window Type="TLBB_DragTitle" Name="Friend_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+      <Property Name="DragTarget" Value="Friend_Frame"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="Text" Value="#{INTERFACE_XML_36}"/>
+      <Property Name="HorzFormatting" Value="HorzCentred"/>
+      <Property Name="VertFormatting" Value="VertCentred" />
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="Friend_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="Friend_OnHelp();"/>
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="Friend_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="Friend_OnCloseClick()"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="Friend_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-55.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,36.000000}}"/>
+      <Window Type="TLBB_ButtonCommon" Name="Friend_Agname">
+        <Property Name="UnifiedSize" Value="{{0.000000,66.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,40.000000}}"/>
+        <Property Name="Tooltip" Value="#{KDHYYH_20211025_2}"/>
+        <Property Name="Text" Value="#{INTERFACE_XML_173}"/>
+        <Event Name="Clicked" Function="Friend_OpenTitleList()"/>
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="Friend_Edit">
+        <Property Name="UnifiedSize" Value="{{0.000000,66.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,126.000000},{0.000000,40.000000}}"/>
+        <Property Name="Tooltip" Value="#Y修改心情"/>
+        <Property Name="Text" Value="心情"/>
+        <Event Name="Clicked" Function="Friend_EditMood()"/>
+      </Window>
+      <Window Type="TLBB_Frame_Lace1" Name="Friend_ListBK">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-104.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,82.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Window Type="TLBB_IMListBoxCommon" Name="Friend_List">
+          <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,64.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{1.000000,-66.000000}}"/>
+          <Event Name="ItemSelectionByRButton" Function="Friend_OpenMenu();"/>
+          <Event Name="MouseDoubleClick" Function="Friend_FriendSelect();"/>
+          <Event Name="ItemSelectionChanged" Function="Friend_List_SelectChanged();" />
+          <Event Name="ButtonClickedForSns" Function="Friend_ButtonClickedForSns();" />
+          <Event Name="ButtonClickedForSjsl" Function="Friend_ButtonClickedForSjsl();" />
+        </Window>
+        <Window Type="TLBB_ButtonCommon" Name="Friend_List_Page1">
+          <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{0.000000,20.000000}}"/>
+          <Property Name="Text" Value="#{KDHYYH_20211025_6}"/>
+          <Event Name="Clicked" Function="Friend_SwitchPage(1);"/>
+        </Window>
+        <Window Type="TLBB_ButtonCommon" Name="Friend_List_Page2">
+          <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,24.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{0.000000,20.000000}}"/>
+          <Property Name="Text" Value="最近联系人"/>
+          <Event Name="Clicked" Function="Friend_SwitchPage(2);"/>
+        </Window>
+        <Window Type="TLBB_ButtonCommon" Name="Friend_List_Page3">
+          <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,44.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{0.000000,20.000000}}"/>
+          <Property Name="Text" Value="搜索结果"/>
+          <Event Name="Clicked" Function="Friend_SwitchPage(3);"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="Friend_SystemInfo">
+        <Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,46.000000},{1.000000,-18.000000}}"/>
+        <Property Name="DisabledImage" Value="set:Button7 image:Friend_SystemInfo_Disable"/>
+        <Property Name="HoverImage" Value="set:Button7 image:Friend_SystemInfo_Hover"/>
+        <Property Name="NormalImage" Value="set:Button7 image:Friend_SystemInfo_Normal"/>
+        <Property Name="PushedImage" Value="set:Button7 image:Friend_SystemInfo_Pushed"/>
+        <Property Name="Tooltip" Value="#{INTERFACE_XML_737}"/>
+        <Event Name="Clicked" Function="Friend_SystemInfo();"/>
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="Friend_NewMsgBallHistory">
+        <Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,83.000000},{1.000000,-18.000000}}"/>
+        <Property Name="DisabledImage" Value="set:MessageBall image:MsgBall_History_Disable"/>
+        <Property Name="HoverImage" Value="set:MessageBall image:MsgBall_History_Hover"/>
+        <Property Name="NormalImage" Value="set:MessageBall image:MsgBall_History_Normal"/>
+        <Property Name="PushedImage" Value="set:MessageBall image:MsgBall_History_Pushed"/>
+        <Property Name="Tooltip" Value="#{CKWJ_Tips_09514_3}"/>
+        <Event Name="Clicked" Function="Friend_NewMsgBallHistory_Clicked();"/>
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="Friend_Lookup">
+        <Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{1.000000,-18.000000}}"/>
+        <Property Name="DisabledImage" Value="set:Button7 image:Friend_Serach_Disable"/>
+        <Property Name="HoverImage" Value="set:Button7 image:Friend_Serach_Hover"/>
+        <Property Name="NormalImage" Value="set:Button7 image:Friend_Serach_Normal"/>
+        <Property Name="PushedImage" Value="set:Button7 image:Friend_Serach_Pushed"/>
+        <Property Name="Tooltip" Value="#{KDHYYH_211025_41}"/>
+        <Event Name="Clicked" Function="Friend_Search();"/>
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="Friend_TrustFriendList_Agname">
+        <Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,64.000000},{1.000000,-18.000000}}"/>
+        <Property Name="DisabledImage" Value="set:Button7 image:TrustFriendList_Disable"/>
+        <Property Name="HoverImage" Value="set:Button7 image:TrustFriendList_Hover"/>
+        <Property Name="NormalImage" Value="set:Button7 image:TrustFriendList_Normal"/>
+        <Property Name="PushedImage" Value="set:Button7 image:TrustFriendList_Pushed"/>
+        <Property Name="Tooltip" Value="添加、解除、查看信任伙伴。每位玩家最多可有10位信任伙伴。"/>
+        <Event Name="Clicked" Function="Friend_TrustFriendBtn_OnClicked();"/>
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="Friend_ViewHistoryMsg">
+        <Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,28.000000},{1.000000,-18.000000}}"/>
+        <Property Name="DisabledImage" Value="set:Button7 image:IM_MsgManager_Dis"/>
+        <Property Name="HoverImage" Value="set:Button7 image:IM_MsgManager_Hov"/>
+        <Property Name="NormalImage" Value="set:Button7 image:IM_MsgManager_Nor"/>
+        <Property Name="PushedImage" Value="set:Button7 image:IM_MsgManager_Pus"/>
+        <Property Name="Tooltip" Value="消息管理器"/>
+        <Event Name="Clicked" Function="Friend_ViewHistory();"/>
+      </Window>
+      <Window Type="TLBB_StaticImageFrame" Name="Friend_SelfHead">
+        <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,6.000000}}"/>
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Image" Value="set:ManProtagonist image:ManProtagonist_1" />
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="Friend_SelfHeadFrame">
+        <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,60.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="MouseHollow" Value="True" />
+        <Property Name="MouseLButtonHollow" Value="True" />
+        <Property Name="MouseMoveHollow" Value="True" />
+        <Property Name="MouseRButtonHollow" Value="True" />
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="Friend_SelfName">
+        <Property Name="UnifiedSize" Value="{{1.000000,-120.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,10.000000}}"/>
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="HorzFormatting" Value="LeftLigned" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="Text" Value=""/>
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="Friend_IMSet">
+        <Property Name="UnifiedSize" Value="{{0.000000,65.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-71.000000},{1.000000,-20.000000}}"/>
+        <Property Name="Text" Value="设置"/>
+        <Event Name="Clicked" Function="Friend_IMSet_Clicked();"/>
+      </Window>
+      <Window Type="TLBB_EditBoxNormal" Name="Friend_SearchEdit">
+        <Property Name="UnifiedSize" Value="{{1.000000,-46.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,60.000000}}"/>
+        <Property Name="MaxTextLength" Value="12" />
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="Friend_SearchBtn">
+        <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-46.000000},{0.000000,60.000000}}"/>
+        <Property Name="Text" Value="搜索"/>
+        <Property Name="Tooltip" Value="#{LTQH_20100810_01}"/>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

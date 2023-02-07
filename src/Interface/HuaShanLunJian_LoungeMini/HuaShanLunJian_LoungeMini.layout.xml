@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="HuaShanLunJian_LoungeMini_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,111.000000},{0.000000,32.000000}}" />
+    <Property Name="UnifiedPosition" Value="{{1.000000,-160.000000},{0.500000,80.000000}}"/>
+      <Window Type="TLBB_SimpleText" Name="HuaShanLunJian_LoungeMini_PageHeader">
+        <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,20.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.500000,-50.000000},{0.500000,-10.000000}}" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="Font" Value="YouYuan9.75"/>
+        <Property Name="Text" Value="#{HSLJ_190919_334}" />
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="HuaShanLunJian_LoungeMini_Big">
+        <Property Name="UnifiedSize" Value="{{0.000000,111.000000},{0.000000,32.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+        <Event Name="Clicked" Function="HuaShanLunJian_LoungeMini_OnShowNormalUI()" />
+        <Property Name="PushedImage" Value="set:HSLJ_01 image:HSLJ_Fight1"/>
+        <Property Name="NormalImage" Value="set:HSLJ_01 image:HSLJ_Fight4"/>
+        <Property Name="HoverImage" Value="set:HSLJ_01 image:HSLJ_Fight3"/>
+        <Property Name="DisabledImage" Value="set:HSLJ_01 image:HSLJ_Fight2"/>
+      </Window>
+    </Window>
+</GUILayout>

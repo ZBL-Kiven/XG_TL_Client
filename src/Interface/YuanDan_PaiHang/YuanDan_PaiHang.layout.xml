@@ -1,0 +1,326 @@
+<?xml version="1.0" ?>
+<GUILayout>
+    <Window Type="TLBB_HeroFrame01" Name="YuanDan_PaiHang_Frame">
+        <Property Name="UnifiedSize" Value="{{0.000000,728.000000},{0.000000,486.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-361.000000},{0.500000,-243.000000}}"/>
+        <Event Name="Hidden" Function="YuanDan_PaiHang_Clear()" />
+        <Window Type="TLBB_HeroTitle01" Name="YuanDan_PaiHang_DragTitle_BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,280.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-140.000000},{0.000000,-2.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+        </Window>
+        <Window Type="TLBB_DragTitle" Name="YuanDan_PaiHang_DragTitle">
+            <Property Name="UnifiedSize" Value="{{1.000000,-70.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,35.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#{YDPHB_20211111_50}"/>
+            <Property Name="Font" Value="YouYuan11.25"/>
+            <Property Name="DragTarget" Value="YuanDan_PaiHang_Frame"/>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="YuanDan_PaiHang_Close">
+            <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.000000,9.000000}}"/>
+            <Property Name="PushedImage" Value="set:ZLHeroMeeting image:Close_Push"/>
+            <Property Name="NormalImage" Value="set:ZLHeroMeeting image:Close_Normal"/>
+            <Property Name="HoverImage" Value="set:ZLHeroMeeting image:Close_Hover"/>
+            <Property Name="DisabledImage" Value="set:ZLHeroMeeting image:Close_Push"/>
+            <Event Name="Clicked" Function="YuanDan_PaiHang_OnClose()" />
+        </Window>
+        <Window Type="DefaultWindow" Name="YuanDan_PaiHang_Client">
+            <Property Name="UnifiedSize" Value="{{0.000000,728.000000},{0.000000,450.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,30.000000}}"/>
+            <Window Type="TLBB_StaticImageNULL" Name="YuanDan_PaiHang_BK">
+                <Property Name="UnifiedSize" Value="{{0.000000,711.000000},{0.000000,448.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,0.000000}}"/>
+                <Property Name="Image" Value="set:YuanDan_PaiHang image:YuanDan_PaiHang_BK"/>
+                <Window Type="TLBB_SimpleText" Name="YuanDan_PaiHang_Info">
+                    <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{1.000000,-376.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+                    <Property Name="Text" Value="#{YDPHB_20211111_44}"/>
+                    <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+                </Window>
+
+                <Window Type="DefaultWindow" Name="YuanDan_PaiHang_VS">
+                    <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,330.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,70.000000}}"/>
+                    <Window Type="TLBB_ButtonNULL" Name="YuanDan_PaiHang_Niu_Btn">
+                        <Property Name="UnifiedSize" Value="{{0.000000,82.000000},{0.000000,72.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.500000,-115.000000},{0.500000,55.000000}}"/>
+                        <Property Name="PushedImage" Value="set:YuanDan_PaiHang image:YuanDan_PaiHang_R_Btn_Pushed"/>
+                        <Property Name="NormalImage" Value="set:YuanDan_PaiHang image:YuanDan_PaiHang_R_Btn_Normal"/>
+                        <Property Name="HoverImage" Value="set:YuanDan_PaiHang image:YuanDan_PaiHang_R_Btn_Hover"/>
+                        <Property Name="DisabledImage" Value="set:YuanDan_PaiHang image:YuanDan_PaiHang_N_Btn_Disable"/>
+                        <Property Name="Tooltip" Value="#{YDPHB_20211111_12}"/>
+                        <Event Name="Clicked" Function="YuanDan_PaiHang_VoteClicked(1);"/>
+                    </Window>
+                    <Window Type="TLBB_Animate" Name="YuanDan_PaiHang_R_Animate">
+                        <Property Name="UnifiedSize" Value="{{0.000000,116.000000},{0.000000,86.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,90.000000}}"/>
+                        <Property Name="MouseRButtonHollow" Value="True"/>
+                        <Property Name="MouseMoveHollow" Value="True"/>
+                        <Property Name="MouseLButtonHollow" Value="True"/>
+                        <Property Name="MouseHollow" Value="True"/>
+                        <Property Name="Animate" Value="YuanDan_PaiHang_R_Animate"/>
+                        <Property Name="AlwaysOnTop" Value="True"/>
+                    </Window>
+                    <Window Type="TLBB_SimpleText" Name="YuanDan_PaiHang_Btn_R">
+                        <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,30.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,280.000000}}"/>
+                        <Property Name="Text" Value="#{YDPHB_20211111_49}"/>
+                        <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+                    </Window>
+
+                    <Window Type="TLBB_StaticImageNULL" Name="YuanDan_PaiHang_Niu_Win">
+                        <Property Name="UnifiedSize" Value="{{0.000000,217.000000},{0.000000,182.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,45.000000},{0.000000,35.000000}}"/>
+                        <Property Name="RiseOnClick" Value="False"/>
+                        <Property Name="MouseRButtonHollow" Value="True"/>
+                        <Property Name="MouseMoveHollow" Value="True"/>
+                        <Property Name="MouseLButtonHollow" Value="True"/>
+                        <Property Name="MouseHollow" Value="True"/>
+                        <Property Name="Image" Value="set:YuanDan_PaiHang image:YuanDan_PaiHang_Win"/>
+                        <Property Name="AlwaysOnTop" Value="True"/>
+                    </Window>
+
+
+                    <Window Type="DefaultWindow" Name="YuanDan_PaiHang_Number_L">
+                        <Property Name="UnifiedSize" Value="{{0.000000,170.000000},{0.000000,50.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,235.000000}}"/>
+                        <Window Type="TLBB_StaticImageNULL" Name="YuanDan_PaiHang_No1_L">
+                            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,50.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.500000,-95.000000},{0.500000,-26.000000}}"/>
+                            <Property Name="Image" Value="set:YuanDan_PaiHang image:YuanDan_PaiHang_R_8"/>
+                            <Property Name="AlwaysOnTop" Value="True"/>
+                        </Window>
+                        <Window Type="TLBB_StaticImageNULL" Name="YuanDan_PaiHang_No2_L">
+                            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,50.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.500000,-70.000000},{0.500000,-26.000000}}"/>
+                            <Property Name="Image" Value="set:YuanDan_PaiHang image:YuanDan_PaiHang_R_8"/>
+                            <Property Name="AlwaysOnTop" Value="True"/>
+                        </Window>
+                        <Window Type="TLBB_StaticImageNULL" Name="YuanDan_PaiHang_No3_L">
+                            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,50.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.500000,-45.000000},{0.500000,-26.000000}}"/>
+                            <Property Name="Image" Value="set:YuanDan_PaiHang image:YuanDan_PaiHang_R_8"/>
+                            <Property Name="AlwaysOnTop" Value="True"/>
+                        </Window>
+                        <Window Type="TLBB_StaticImageNULL" Name="YuanDan_PaiHang_No4_L">
+                            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,50.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.500000,-20.000000},{0.500000,-26.000000}}"/>
+                            <Property Name="Image" Value="set:YuanDan_PaiHang image:YuanDan_PaiHang_R_8"/>
+                            <Property Name="AlwaysOnTop" Value="True"/>
+                        </Window>
+                        <Window Type="TLBB_StaticImageNULL" Name="YuanDan_PaiHang_No5_L">
+                            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,50.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.500000,5.000000},{0.500000,-26.000000}}"/>
+                            <Property Name="Image" Value="set:YuanDan_PaiHang image:YuanDan_PaiHang_R_9"/>
+                            <Property Name="AlwaysOnTop" Value="True"/>
+                        </Window>
+                        <Window Type="TLBB_StaticImageNULL" Name="YuanDan_PaiHang_No6_L">
+                            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,50.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.500000,30.000000},{0.500000,-26.000000}}"/>
+                            <Property Name="Image" Value="set:YuanDan_PaiHang image:YuanDan_PaiHang_R_9"/>
+                            <Property Name="AlwaysOnTop" Value="True"/>
+                        </Window>
+                        <Window Type="TLBB_StaticImageNULL" Name="YuanDan_PaiHang_No7_L">
+                            <Property Name="UnifiedSize" Value="{{0.000000,21.000000},{0.000000,18.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.500000,65.000000},{0.500000,-10.000000}}"/>
+                            <Property Name="Image" Value="set:YuanDan_PaiHang image:YuanDan_PaiHang_R_Piao"/>
+                            <Property Name="AlwaysOnTop" Value="True"/>
+                        </Window>
+                    </Window>
+
+                    <Window Type="DefaultWindow" Name="YuanDan_PaiHang_Number_R">
+                        <Property Name="UnifiedSize" Value="{{0.000000,170.000000},{0.000000,50.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,440.000000},{0.000000,20.000000}}"/>
+                        <Window Type="TLBB_StaticImageNULL" Name="YuanDan_PaiHang_No1_R">
+                            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,50.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.500000,-95.000000},{0.500000,-26.000000}}"/>
+                            <Property Name="Image" Value="set:YuanDan_PaiHang image:YuanDan_PaiHang_B_1"/>
+                            <Property Name="AlwaysOnTop" Value="True"/>
+                        </Window>
+                        <Window Type="TLBB_StaticImageNULL" Name="YuanDan_PaiHang_No2_R">
+                            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,50.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.500000,-70.000000},{0.500000,-26.000000}}"/>
+                            <Property Name="Image" Value="set:YuanDan_PaiHang image:YuanDan_PaiHang_B_2"/>
+                            <Property Name="AlwaysOnTop" Value="True"/>
+                        </Window>
+                        <Window Type="TLBB_StaticImageNULL" Name="YuanDan_PaiHang_No3_R">
+                            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,50.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.500000,-45.000000},{0.500000,-26.000000}}"/>
+                            <Property Name="Image" Value="set:YuanDan_PaiHang image:YuanDan_PaiHang_B_3"/>
+                            <Property Name="AlwaysOnTop" Value="True"/>
+                        </Window>
+                        <Window Type="TLBB_StaticImageNULL" Name="YuanDan_PaiHang_No4_R">
+                            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,50.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.500000,-20.000000},{0.500000,-26.000000}}"/>
+                            <Property Name="Image" Value="set:YuanDan_PaiHang image:YuanDan_PaiHang_B_4"/>
+                            <Property Name="AlwaysOnTop" Value="True"/>
+                        </Window>
+                        <Window Type="TLBB_StaticImageNULL" Name="YuanDan_PaiHang_No5_R">
+                            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,50.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.500000,5.000000},{0.500000,-26.000000}}"/>
+                            <Property Name="Image" Value="set:YuanDan_PaiHang image:YuanDan_PaiHang_B_5"/>
+                            <Property Name="AlwaysOnTop" Value="True"/>
+                        </Window>
+                        <Window Type="TLBB_StaticImageNULL" Name="YuanDan_PaiHang_No6_R">
+                            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,50.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.500000,30.000000},{0.500000,-26.000000}}"/>
+                            <Property Name="Image" Value="set:YuanDan_PaiHang image:YuanDan_PaiHang_B_6"/>
+                            <Property Name="AlwaysOnTop" Value="True"/>
+                        </Window>
+                        <Window Type="TLBB_StaticImageNULL" Name="YuanDan_PaiHang_No7_R">
+                            <Property Name="UnifiedSize" Value="{{0.000000,21.000000},{0.000000,18.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.500000,60.000000},{0.500000,-10.000000}}"/>
+                            <Property Name="Image" Value="set:YuanDan_PaiHang image:YuanDan_PaiHang_B_Piao"/>
+                            <Property Name="AlwaysOnTop" Value="True"/>
+                        </Window>
+                    </Window>
+                    <Window Type="TLBB_ButtonNULL" Name="YuanDan_PaiHang_Ji_Btn">
+                        <Property Name="UnifiedSize" Value="{{0.000000,82.000000},{0.000000,72.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.500000,260.000000},{0.500000,-165.000000}}"/>
+                        <Property Name="PushedImage" Value="set:YuanDan_PaiHang image:YuanDan_PaiHang_B_Btn_Pushed"/>
+                        <Property Name="NormalImage" Value="set:YuanDan_PaiHang image:YuanDan_PaiHang_B_Btn_Normal"/>
+                        <Property Name="HoverImage" Value="set:YuanDan_PaiHang image:YuanDan_PaiHang_B_Btn_Hover"/>
+                        <Property Name="DisabledImage" Value="set:YuanDan_PaiHang image:YuanDan_PaiHang_J_Btn_Disable"/>
+                        <Property Name="Tooltip" Value="#{YDPHB_20211111_46}"/>
+                        <Event Name="Clicked" Function="YuanDan_PaiHang_VoteClicked(2);"/>
+                    </Window>
+                    <Window Type="TLBB_Animate" Name="YuanDan_PaiHang_B_Animate">
+                        <Property Name="UnifiedSize" Value="{{0.000000,116.000000},{0.000000,86.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,480.000000},{0.000000,160.000000}}"/>
+                        <Property Name="MouseRButtonHollow" Value="True"/>
+                        <Property Name="MouseMoveHollow" Value="True"/>
+                        <Property Name="MouseLButtonHollow" Value="True"/>
+                        <Property Name="MouseHollow" Value="True"/>
+                        <Property Name="Animate" Value="YuanDan_PaiHang_B_Animate"/>
+                        <Property Name="AlwaysOnTop" Value="True"/>
+                    </Window>
+                    <Window Type="TLBB_SimpleText" Name="YuanDan_PaiHang_Btn_B">
+                        <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,30.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,442.000000},{0.000000,66.000000}}"/>
+                        <Property Name="Text" Value="#{YDPHB_20211111_49}"/>
+                        <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+                    </Window>
+
+                    <Window Type="TLBB_StaticImageNULL" Name="YuanDan_PaiHang_Ji_Win">
+                        <Property Name="UnifiedSize" Value="{{0.000000,217.000000},{0.000000,182.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{1.000000,-300.000000},{0.000000,110.000000}}"/>
+                        <Property Name="RiseOnClick" Value="False"/>
+                        <Property Name="MouseRButtonHollow" Value="True"/>
+                        <Property Name="MouseMoveHollow" Value="True"/>
+                        <Property Name="MouseLButtonHollow" Value="True"/>
+                        <Property Name="MouseHollow" Value="True"/>
+                        <Property Name="Image" Value="set:YuanDan_PaiHang image:YuanDan_PaiHang_Win"/>
+                        <Property Name="AlwaysOnTop" Value="True"/>
+                    </Window>
+
+
+                </Window>
+
+                <Window Type="DefaultWindow" Name="YuanDan_PaiHang_JiangLi">
+                    <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-386.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,387.000000}}"/>
+                    <Window Type="DefaultWindow" Name="YuanDan_PaiHang_Select1">
+                        <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,45.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,260.000000},{0.000000,10.000000}}"/>
+                        <Window Type="TLBB_SimpleText" Name="YuanDan_PaiHang_Info1">
+                            <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,3.000000}}"/>
+                            <Property Name="Text" Value="#{YDPHB_20211111_45}"/>
+                            <Property Name="HorzFormatting" Value="LeftAligned"/>
+                        </Window>
+                        <Window Type="TLBB_ActionButton" Name="YuanDan_PaiHang_Item1">
+                            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-18.000000}}"/>
+                            <Property Name="AlwaysOnTop" Value="True"/>
+                            <Window Type="TLBB_StaticImageNULL" Name="YuanDan_PaiHang_ItemOK1">
+                                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                                <Property Name="MouseRButtonHollow" Value="True"/>
+                                <Property Name="MouseMoveHollow" Value="True"/>
+                                <Property Name="MouseLButtonHollow" Value="True"/>
+                                <Property Name="MouseHollow" Value="True"/>
+                                <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+                            </Window>
+                        </Window>
+                        <Window Type="TLBB_ButtonCommon12" Name="YuanDan_PaiHang_OK">
+                            <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.500000,-20.000000},{0.500000,-2.000000}}"/>
+                            <Property Name="Text" Value="#{YDPHB_20211111_18}"/>
+                            <Property Name="Tooltip" Value="#{YDPHB_20211111_19}"/>
+                            <Event Name="Clicked" Function="YuanDan_PaiHang_PrizeClicked(1);"/>
+                        </Window>
+                    </Window>
+
+                    <Window Type="DefaultWindow" Name="YuanDan_PaiHang_Select2">
+                        <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,45.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,425.000000},{0.000000,10.000000}}"/>
+                        <Window Type="TLBB_SimpleText" Name="YuanDan_PaiHang_Info2">
+                            <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,3.000000}}"/>
+                            <Property Name="Text" Value="#{YDPHB_20211111_47}"/>
+                            <Property Name="HorzFormatting" Value="LeftAligned"/>
+                        </Window>
+                        <Window Type="TLBB_ActionButton" Name="YuanDan_PaiHang_Item2">
+                            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-18.000000}}"/>
+                            <Property Name="AlwaysOnTop" Value="True"/>
+                            <Window Type="TLBB_StaticImageNULL" Name="YuanDan_PaiHang_ItemOK2">
+                                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                                <Property Name="MouseRButtonHollow" Value="True"/>
+                                <Property Name="MouseMoveHollow" Value="True"/>
+                                <Property Name="MouseLButtonHollow" Value="True"/>
+                                <Property Name="MouseHollow" Value="True"/>
+                                <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+                            </Window>
+                        </Window>
+                        <Window Type="TLBB_ButtonCommon12" Name="YuanDan_PaiHang_OK2">
+                            <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.500000,-20.000000},{0.500000,-2.000000}}"/>
+                            <Property Name="Text" Value="#{YDPHB_20211111_18}"/>
+                            <Property Name="Tooltip" Value="#{YDPHB_20211111_19}"/>
+                            <Event Name="Clicked" Function="YuanDan_PaiHang_PrizeClicked(2);"/>
+                        </Window>
+                    </Window>
+
+                    <Window Type="DefaultWindow" Name="YuanDan_PaiHang_Select3">
+                        <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,45.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,555.000000},{0.000000,10.000000}}"/>
+                        <Window Type="TLBB_SimpleText" Name="YuanDan_PaiHang_Info3">
+                            <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,3.000000}}"/>
+                            <Property Name="Text" Value="#{YDPHB_20211111_48}"/>
+                        </Window>
+                        <Window Type="TLBB_ActionButton" Name="YuanDan_PaiHang_Item3">
+                            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-18.000000}}"/>
+                            <Property Name="AlwaysOnTop" Value="True"/>
+                            <Window Type="TLBB_StaticImageNULL" Name="YuanDan_PaiHang_ItemOK3">
+                                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                                <Property Name="MouseRButtonHollow" Value="True"/>
+                                <Property Name="MouseMoveHollow" Value="True"/>
+                                <Property Name="MouseLButtonHollow" Value="True"/>
+                                <Property Name="MouseHollow" Value="True"/>
+                                <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+                            </Window>
+                        </Window>
+                        <Window Type="TLBB_ButtonCommon12" Name="YuanDan_PaiHang_OK3">
+                            <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.500000,-20.000000},{0.500000,-2.000000}}"/>
+                            <Property Name="Text" Value="#{YDPHB_20211111_18}"/>
+                            <Property Name="Tooltip" Value="#{YDPHB_20211111_19}"/>
+                            <Event Name="Clicked" Function="YuanDan_PaiHang_PrizeClicked(3);"/>
+                        </Window>
+                    </Window>
+                    <Window Type="TLBB_SimpleText" Name="YuanDan_PaiHang_LeiJiCiShu">
+                        <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,25.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.000000,35.000000}}"/>
+                        <Property Name="Text" Value="#{YDPHB_20211111_08}"/>
+                        <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+                    </Window>
+                </Window>
+            </Window>
+        </Window>
+    </Window>
+
+
+</GUILayout>

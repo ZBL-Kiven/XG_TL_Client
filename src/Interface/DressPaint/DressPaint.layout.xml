@@ -1,0 +1,230 @@
+<?xml version="1.0" ?>
+<GUILayout>
+
+  <Window Type="TLBB_MainFrame1" Name="DressPaint_Frame">
+    <Property Name="UnifiedPosition" Value="{{0.500000,-250.000000},{0.500000,-200.000000}" />
+    <Property Name="AbsoluteSize" Value="w:500 h:365" />
+    <Event Name="Hidden" Function="DressPaint_OnHiden();" />
+    <Window Type="TLBB_DragTitle" Name="DressPaint_DragTitle">
+      <Property Name="AbsolutePosition" Value="x:40.000000 y:12.000000" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}" />
+      <Property Name="DragTarget" Value="DressPaint_Frame" />
+      <Window Type="TLBB_SimpleText" Name="DressPaint_Title">
+        <Property Name="Position" Value="x:0.0 y:0.0" />
+        <Property Name="Size" Value="w:1.0 h:1.0" />
+        <Property Name="Font" Value="YouYuan11.25" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Text" Value="#{SZPR_XML_13}" />
+      </Window>
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="DressPaint_Close">
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+      <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+      <Property Name="Text" Value="TLBB_ButtonClose" />
+      <Event Name="Clicked" Function="DressPaint_OnHiden();" />
+    </Window>
+<!--     <Window Type="DefaultWindow" Name="DressPaint_YeQian_BK">
+      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,32.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{0.000000,22.000000}" />
+      <Window Type="TLBB_ButtonFenYe2" Name="DressPaint_FenYe1">
+        <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,22.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="Text" Value="#{SZZH_170111_16}"/>
+        <Property Name="Selected" Value="True"/>
+        <Property Name="CheckMode" Value="1"/>
+      </Window>
+      <Window Type="TLBB_ButtonFenYe2" Name="DressPaint_FenYe2">
+        <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,22.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,97.000000},{0.000000,0.000000}}"/>
+        <Property Name="Text" Value="#{SZZH_170111_17}"/>
+        <Property Name="CheckMode" Value="1"/>
+		<Event Name="Clicked" Function="DressPaint_OpenDressWash_Clicked();" />
+      </Window>
+    </Window> -->
+    <Window Type="DefaultWindow" Name="DressPaint_ClientBK">
+      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,40.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{1.000000,-85.000000}" />
+    <Window Type="TLBB_FramePlayerOther" Name="DressPaint_Fitting_Frame_Client">
+      <Property Name="AbsolutePosition" Value="x:8.000000 y:0.000000" />
+      <Property Name="UnifiedSize" Value="{{0.000000,208.000000},{1.000000,-3.000000}" />
+      <Window Type="TLBB_MeshWindow" Name="DressPaint_Fitting_FakeObject">
+        <Property Name="UnifiedSize" Value="{{0.918919,0.000000},{0.876405,0.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.043243,0.000000},{0.041199,0.000000}}"/>
+        <Property Name="MouseHollow" Value="True" />
+      </Window>
+      <Window Type="TLBB_ButtonTurnLeft" Name="DressPaint_Fitting_Model_TurnLeft">
+        <Property Name="UnifiedPosition" Value="{{0.000000,11.000000},{1.000000,-42.000000}}"/>
+        <Property Name="AbsoluteSize" Value="w:25.000000 h:25.000000" />
+        <Event Name="MouseButtonDown" Function="DressPaint_Fitting_TurnLeft(1);" />
+        <Event Name="MouseButtonUp" Function="DressPaint_Fitting_TurnLeft(0);" />
+      </Window>
+      <Window Type="TLBB_ButtonTurnRight" Name="DressPaint_Fitting_Model_TurnRight">
+        <Property Name="UnifiedPosition" Value="{{0.000000,174.000000},{1.000000,-42.000000}}"/>
+        <Property Name="AbsoluteSize" Value="w:25.000000 h:25.000000" />
+        <Event Name="MouseButtonDown" Function="DressPaint_Fitting_TurnRight(1);" />
+        <Event Name="MouseButtonUp" Function="DressPaint_Fitting_TurnRight(0);" />
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="Dress_Jian">
+        <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-32.000000},{0.000000,10.000000}}"/>
+        <Property Name="Tooltip" Value="#{SZRSYH_120912_19}"/>
+        <Property Name="PushedImage" Value="set:CommonFrame6 image:TuJian_Pushed"/>
+        <Property Name="NormalImage" Value="set:CommonFrame6 image:TuJian_Normal"/>
+        <Property Name="HoverImage" Value="set:CommonFrame6 image:TuJian_Hover"/>
+        <Event Name="MouseLClick" Function="Dress_Jian_Clicked();"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="DressPaint_Text">
+        <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,18.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{1.000000,-20.000000}}"/>
+        <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        <Property Name="Text" Value=""/>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="DressPaint_Frame_Client">
+      <Property Name="UnifiedPosition" Value="{{0.000000,218.000000},{0.000000,0.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-225.000000},{1.000000,-3.000000}" />
+      <Window Type="DefaultWindow" Name="DressPaint_Frame1_Client_Part1">
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,206.000000}" />
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="DressPaint_Info">
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,160.000000}" />
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="Text" Value="#{YJRS_140613_01}" />
+          <Property Name="TextColor" Value="FFFFF263" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DressPaint_Info2">
+          <Property Name="UnifiedPosition" Value="{{0.000,15.000000},{1.0000,-39.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.00,155.000000},{0.000000,36.000000}" />
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="Text" Value="#{SZPR_XML_15}" />
+          <Property Name="TextColor" Value="FFFFF263" />
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="DressPaint_Object">
+          <Property Name="UnifiedPosition" Value="{{1.0,-68.000000},{1.00,-39.000000}}"/>
+          <Property Name="AbsoluteSize" Value="w:36 h:36" />
+          <Property Name="DragAcceptName" Value="D96" />
+          <Property Name="DraggingEnabled" Value="True" />
+          <Event Name="RBClicked" Function="DressPaint_Resume_Equip();" />
+        </Window>
+      </Window>
+
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="DressPaint_Money_Text">
+        <Property Name="UnifiedPosition" Value="{{0.0000,0.000000},{1.000000,-66.000000}" />
+        <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,22.000000}" />
+        <Property Name="TextColor" Value="FFFFF263" />
+        <Property Name="Text" Value="#{INTERFACE_XML_789}" />
+        <Property Name="HorzFormatting" Value="LeftAligned" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Window Type="TLBB_Money" Name="DressPaint_DemandMoney">
+          <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}" />
+          <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}" />
+          <Property Name="MoneyNumber" Value="0" />
+          <Property Name="HorzFormatting" Value="RightAligned" />
+          <Property Name="AlignFix" Value="True" />
+          <Property Name="GoldIcon" Value = "set:Button6 image:Lace_JiaoziJin" />
+          <Property Name="SilverIcon" Value = "set:Button6 image:Lace_JiaoziYin" />
+          <Property Name="CopperIcon" Value = "set:Button6 image:Lace_JiaoziTong" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="DressPaint_Jiaozi_Text">
+        <Property Name="UnifiedPosition" Value="{{00.0000,0.000000},{1.000000,-44.000000}" />
+        <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,22.000000}" />
+        <Property Name="TextColor" Value="FFFFF263" />
+        <Property Name="Text" Value="#{BDJB_051210_1}" />
+        <Property Name="HorzFormatting" Value="LeftAligned" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Window Type="TLBB_Money" Name="DressPaint_SelfJiaozi">
+          <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}" />
+          <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}" />
+          <Property Name="MoneyNumber" Value="0" />
+          <Property Name="HorzFormatting" Value="RightAligned" />
+          <Property Name="AlignFix" Value="True" />
+          <Property Name="GoldIcon" Value = "set:Button6 image:Lace_JiaoziJin" />
+          <Property Name="SilverIcon" Value = "set:Button6 image:Lace_JiaoziYin" />
+          <Property Name="CopperIcon" Value = "set:Button6 image:Lace_JiaoziTong" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="DressPaint_SelfMoney_Text">
+        <Property Name="UnifiedPosition" Value="{{0.0000,0.000000},{1.000000,-22.000000}" />
+        <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,22.000000}" />
+        <Property Name="TextColor" Value="FFFFF263" />
+        <Property Name="Text" Value="#{INTERFACE_XML_834}" />
+        <Property Name="HorzFormatting" Value="LeftAligned" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Window Type="TLBB_Money" Name="DressPaint_SelfMoney">
+          <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}" />
+          <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}" />
+          <Property Name="HorzFormatting" Value="RightAligned" />
+          <Property Name="MoneyNumber" Value="0" />
+        </Window>
+      </Window>
+    </Window>
+    </Window>
+    <Window Type="TLBB_Frame_Lace5" Name="DressPaint_Blank">
+      <Property Name="UnifiedSize" Value="{{1.000000,-339.000000},{0.000000,22.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,216.000000},{1.000000,-39.000000}}"/>
+      <!-- <Window Type="TLBB_ButtonCheck" Name="DressPaint_Blank_Queren"> -->
+        <!-- <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,13.000000}}"/> -->
+        <!-- <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,4.000000}}"/> -->
+        <!-- <Property Name="AlwaysOnTop" Value="True"/> -->
+        <!-- <Event Name="Clicked" Function="DressPaint_Blank_Queren_Clicked();" /> -->
+      <!-- </Window> -->
+      <!-- <Window Type="TLBB_SimpleText" Name="DressPaint_Blank_Queren_Text"> -->
+        <!-- <Property Name="UnifiedSize" Value="{{0.000000,85.000000},{0.000000,20.000000}}"/> -->
+        <!-- <Property Name="UnifiedPosition" Value="{{0.000000,24.000000},{0.000000,1.000000}}"/> -->
+        <!-- <Property Name="Text" Value="#{KJXF_161121_01}"/> -->
+        <!-- <Property Name="Tooltip" Value="#{KJXF_161121_03}"/> -->
+        <!-- <Property Name="AlwaysOnTop" Value="True"/> -->
+      <!-- </Window> -->
+    </Window>
+    <Window Type="TLBB_ComboList" Name="DressPaint_Zidong_ALLChoice">
+      <Property Name="UnifiedSize" Value="{{0.000000,141.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{1.000000,-39.000000}}"/>
+      <Property Name="Text" Value="#{YJRS_140613_03}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Event Name="ListSelectionAccepted" Function="DressPaint_DestMode_Changed()" />
+    </Window>
+    <Window Type="TLBB_StaticImageNULL" Name="DressPaint_Zidong_ALLChoice_Pic">
+      <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,131.000000},{1.000000,-39.000000}}"/>
+      <Property Name="Image" Value="set:Button3 image:ComboListButton_Normal"/>
+      <Property Name="Tooltip" Value="#{YJRS_140613_22}"/>
+    </Window>
+    <Window Type="TLBB_ButtonCommon" Name="DressPaint_OK">
+      <Property Name="UnifiedPosition" Value="{{1.000000,-123.000000},{1.000000,-39.000000}" />
+      <Property Name="AbsoluteSize" Value="w:73.000000 h:20.000000" />
+      <Property Name="Text" Value="#{YJRS_140613_02}" />
+      <Event Name="Clicked" Function="DressPaint_OK_Clicked();" />
+    </Window>
+    <Window Type="TLBB_ButtonCommon" Name="DressPaint_Cancel">
+      <Property Name="UnifiedPosition" Value="{{1.000000,-50.000000},{1.000000,-39.000000}" />
+      <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+      <Property Name="Text" Value="#{SZRSYH_120912_03}" />
+      <Event Name="Clicked" Function="DressPaint_OnHiden();" />
+    </Window>
+    <Window Type="TLBB_ButtonCommon" Name="DressPaint_Zidong">
+      <Property Name="UnifiedSize" Value="{{0.000000,65.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,151.000000},{1.000000,-39.000000}}"/>
+      <Property Name="Text" Value="#{YJRS_140613_04}" />
+      <Window Type="TLBB_Animate" Name="DressPaint_Zidong_Animate">
+        <Property Name="UnifiedSize" Value="{{0.000000,65.000000},{0.000000,20.000000}}"/>
+        <Property Name="Animate" Value="YBNotice_65" />
+        <Event Name="Clicked" Function="DressPaint_Zidong_Clicked();" />
+      </Window>
+    </Window>
+    <Window Type="TLBB_SimpleText" Name="DressPaint_Protect">
+      <Property Name="Visible" Value="False"/>
+      <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,227.000000},{1.000000,-39.000000}}"/>
+      <Property Name="Text" Value="#{YJRS_140613_06}"/>
+    </Window>
+  </Window>
+</GUILayout>

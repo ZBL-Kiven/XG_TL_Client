@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame0" Name="ShaXingDaojishi">
+    <Property Name="UnifiedSize" Value="{{0.000000,280.000000},{0.000000,162.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{1.000000,-283.000000},{0.500000,70.000000}}"/>
+    <Window Type="TLBB_DragTitle" Name="ShaXingDaojishi_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-64.000000},{0.000000,26.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,9.000000}}"/>
+      <Property Name="DragTarget" Value="ShaXingDaojishi" />
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="Font" Value="Title" />
+      <Property Name="Text" Value="#{XSX_220705_111}" />
+    </Window>
+    <Window Type="TLBB_ButtonNULL" Name="ShaXingDaojishi_Image">
+      <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,13.000000}}"/>
+      <Property Name="PushedImage" Value="set:SongLiao02 image:Down_Pushed"/>
+      <Property Name="NormalImage" Value="set:SongLiao02 image:Down_Normal"/>
+      <Property Name="HoverImage" Value="set:SongLiao02 image:Down_Hover"/>
+      <Property Name="DisabledImage" Value="set:SongLiao02 image:Down_Disabled"/>
+      <Event Name="Clicked" Function="ShaXingDaojishi_OpenMini()" />
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="ShaXingDaojishi_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-276.000000},{0.000000,13.000000}}"/>
+      <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*ShaXingDaojishi&quot;);'/>
+    </Window>
+    <Window Type="DefaultWindow" Name="ShaXingDaojishi_Frame_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-50.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,33.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Window Type="TLBB_Frame_Lace1" Name="ShaXingDaojishi_Up">
+        <Property Name="UnifiedSize" Value="{{1.000000,-1.000000},{0.000000,70.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,2.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="ShaXingDaojishi_Title">
+            <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,4.000000}}" />
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+            <Property Name="Text" Value="#{XSX_220705_205}" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="ShaXingDaojishi_Title2">
+            <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,26.000000}}" />
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+            <Property Name="Text" Value="#{XSX_220705_116}" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="ShaXingDaojishi_Title3">
+            <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,48.000000}}" />
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            <Property Name="Text" Value="#{XSX_220705_195}" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="ShaXingDaojishi_Text">
+            <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{1.000000,-210.000000},{0.000000,4.000000}}" />
+            <Property Name="HorzFormatting" Value="WordWrapRightAligned" />
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Text" Value="#{XSX_220705_112}" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="ShaXingDaojishi_Text2">
+            <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{1.000000,-110.000000},{0.000000,26.000000}}" />
+            <Property Name="HorzFormatting" Value="WordWrapRightAligned" />
+            <Property Name="Text" Value="#{XSX_220705_117}" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="ShaXingDaojishi_Text4">
+            <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{1.000000,-210.000000},{0.000000,48.000000}}" />
+            <Property Name="HorzFormatting" Value="WordWrapRightAligned" />
+            <Property Name="Text" Value="#{XSX_220705_196}" />
+          </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace1" Name="ShaXingDaojishi_Down">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,40.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,72.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="ShaXingDaojishi_Score">
+          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{1.000000,-20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+          <Property Name="Text" Value="#{XSX_220705_119}" />
+          <Property Name="Font" Value="YouYuan9.75"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

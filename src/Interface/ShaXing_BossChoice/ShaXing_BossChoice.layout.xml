@@ -1,0 +1,749 @@
+﻿<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame0" Name="ShaXing_BossChoice_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,766.000000},{0.000000,510.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-380.000000},{0.500000,-250.000000}}"/>
+    <Window Type="TLBB_DragTitle" Name="ShaXing_BossChoice_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+      <Property Name="Text" Value="#{XSX_220705_225}"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="DragTarget" Value="ShaXing_BossChoice_Frame"/>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="ShaXing_BossChoice_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="Helper:GotoHelper('*ShaXing_BossChoice');"/>
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="ShaXing_BossChoice_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="ShaXing_BossChoice_OnClose()"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="ShaXing_BossChoice_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-55.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,36.000000}}"/>
+      <Window Type="DefaultWindow" Name="ShaXing_BossChoice_AllBtn">
+        <Property Name="UnifiedSize" Value="{{1.000000,-6.000000},{0.000000,34.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,0.000000}}"/>
+        <Window Type="TLBB_StaticImageNULL" Name="ShaXing_BossChoice_Boss1_Abandon">
+          <Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,34.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,66.000000},{0.000000,0.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:ShaXing1 image:ShaXing_fq"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="ShaXing_BossChoice_Boss1_Ok">
+          <Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,34.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,66.000000},{0.000000,0.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:ShaXing1 image:ShaXing_tg"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="ShaXing_BossChoice_Boss2_Abandon">
+          <Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,34.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,156.000000},{0.000000,0.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:ShaXing1 image:ShaXing_fq"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="ShaXing_BossChoice_Boss2_Ok">
+          <Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,34.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,156.000000},{0.000000,0.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:ShaXing1 image:ShaXing_tg"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="ShaXing_BossChoice_Boss3_Abandon">
+          <Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,34.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,246.000000},{0.000000,0.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:ShaXing1 image:ShaXing_fq"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="ShaXing_BossChoice_Boss3_Ok">
+          <Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,34.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,246.000000},{0.000000,0.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:ShaXing1 image:ShaXing_tg"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="ShaXing_BossChoice_Boss4_Abandon">
+          <Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,34.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,336.000000},{0.000000,0.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:ShaXing1 image:ShaXing_fq"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="ShaXing_BossChoice_Boss4_Ok">
+          <Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,34.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,336.000000},{0.000000,0.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:ShaXing1 image:ShaXing_tg"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_ButtonFenYe2" Name="ShaXing_BossChoice_Boss1">
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,24.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,-2.000000},{0.000000,10.000000}}"/>
+          <Property Name="Text" Value="#{XSX_220705_282}"/>
+          <Property Name="CheckMode" Value="1"/>
+          <Event Name="Clicked" Function="ShaXing_BossChoice_FenyeClicked(1);"/>
+        </Window>
+        <Window Type="TLBB_ButtonFenYe2" Name="ShaXing_BossChoice_Boss2">
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,24.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,90.000000},{0.000000,10.000000}}"/>
+          <Property Name="Text" Value="#{XSX_220705_283}"/>
+          <Property Name="CheckMode" Value="1"/>
+          <Event Name="Clicked" Function="ShaXing_BossChoice_FenyeClicked(2);"/>
+        </Window>
+        <Window Type="TLBB_ButtonFenYe2" Name="ShaXing_BossChoice_Boss3">
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,24.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,180.000000},{0.000000,10.000000}}"/>
+          <Property Name="Text" Value="#{XSX_220705_284}"/>
+          <Property Name="CheckMode" Value="1"/>
+          <Event Name="Clicked" Function="ShaXing_BossChoice_FenyeClicked(3);"/>
+        </Window>
+        <Window Type="TLBB_ButtonFenYe2" Name="ShaXing_BossChoice_Boss4">
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,24.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,270.000000},{0.000000,10.000000}}"/>
+          <Property Name="Text" Value="#{XSX_220705_285}"/>
+          <Property Name="CheckMode" Value="1"/>
+          <Event Name="Clicked" Function="ShaXing_BossChoice_FenyeClicked(4);"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="ShaXing_BossChoice_ClientFrame">
+        <Property Name="UnifiedSize" Value="{{0.000000,754.000000},{0.000000,418.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,34.000000}}"/>
+        <Property Name="Image" Value="set:ShaXing1 image:ShaXing_BK"/>
+        <Window Type="DefaultWindow" Name="ShaXing_BossChoice_Left">
+          <Property Name="UnifiedSize" Value="{{0.000000,351.000000},{0.000000,418.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="ShaXing_BossChoice_Num1BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,274.000000},{.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-137.000000},{0.000000,370.000000}}"/>
+            <Property Name="Image" Value="set:ShaXing1 image:ShaXing_LightBk"/>
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Window Type="TLBB_SimpleText" Name="ShaXing_BossChoice_Num1">
+              <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-100.000000},{1.000000,-23.000000}}"/>
+              <Property Name="AlwaysOnTop" Value="True" />
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="Text" Value="#{XSX_220705_277}"/>
+            </Window>            
+            <Window Type="TLBB_ButtonHelp" Name="ShaXing_BossChoice_Help2">
+              <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-22.000000},{0.500000,-7.000000}}"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Event Name="Clicked" Function="ShaXing_BossChoice_Help2Clicked();"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="ShaXing_BossChoiceFakeObject">
+            <Property Name="UnifiedSize" Value="{{0.000000,351.000000},{0.000000,418.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:ShaXing1 image:ShaXing_gs1"/>
+          </Window>
+          <Window Type="TLBB_ButtonCheckNULL" Name="ShaXing_BossChoiceModel_Bind">
+            <Property Name="UnifiedSize" Value="{{0.000000,43.000000},{0.000000,66.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-43.000000},{0.000000,10.000000}}"/>
+            <Property Name="PushedImage" Value="set:ShaXing1 image:ShaXing_Btn1Hover"/>
+            <Property Name="NormalImage" Value="set:ShaXing1 image:ShaXing_Btn1Nor"/>
+            <Property Name="HoverImage" Value="set:ShaXing1 image:ShaXing_Btn1Hover"/>
+            <Property Name="DisabledImage" Value="set:ShaXing1 image:ShaXing_Btn1Dis"/>
+            <Property Name="CheckMode" Value="1"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="MouseLButtonDown" Function="ShaXing_BossChoiceModel_ModeClicked(1);"/>
+          </Window>
+          <Window Type="TLBB_ButtonCheckNULL" Name="ShaXing_BossChoiceModel_Bind2">
+            <Property Name="UnifiedSize" Value="{{0.000000,43.000000},{0.000000,66.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-43.000000},{0.000000,86.000000}}"/>
+            <Property Name="PushedImage" Value="set:ShaXing1 image:ShaXing_Btn2Hover"/>
+            <Property Name="NormalImage" Value="set:ShaXing1 image:ShaXing_Btn2Nor"/>
+            <Property Name="HoverImage" Value="set:ShaXing1 image:ShaXing_Btn2Hover"/>
+            <Property Name="DisabledImage" Value="set:ShaXing1 image:ShaXing_Btn2Dis"/>
+            <Property Name="CheckMode" Value="1"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="MouseLButtonDown" Function="ShaXing_BossChoiceModel_ModeClicked(2);"/>
+          </Window>
+          <Window Type="TLBB_ButtonCheckNULL" Name="ShaXing_BossChoiceModel_Bind3">
+            <Property Name="UnifiedSize" Value="{{0.000000,43.000000},{0.000000,66.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-43.000000},{0.000000,162.000000}}"/>
+            <Property Name="PushedImage" Value="set:ShaXing1 image:ShaXing_Btn3Hover"/>
+            <Property Name="NormalImage" Value="set:ShaXing1 image:ShaXing_Btn3Nor"/>
+            <Property Name="HoverImage" Value="set:ShaXing1 image:ShaXing_Btn3Hover"/>
+            <Property Name="DisabledImage" Value="set:ShaXing1 image:ShaXing_Btn3Dis"/>
+            <Property Name="CheckMode" Value="1"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="MouseLButtonDown" Function="ShaXing_BossChoiceModel_ModeClicked(3);"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="ShaXing_BossChoice_Right1">
+          <Property Name="UnifiedSize" Value="{{0.000000,400.000000},{0.000000,142.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,352.000000},{0.000000,4.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="ShaXing_BossChoice_Right1_TitleBK">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,21.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,1.000000}}"/>
+            <Window Type="TLBB_SimpleText" Name="ShaXing_BossChoice_Title2">
+              <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,0.000000}}"/>
+            </Window>
+            <Window Type="TLBB_ButtonHelp" Name="ShaXing_BossChoice_Help3">
+              <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-22.000000},{0.500000,-7.000000}}"/>
+              <Event Name="Clicked" Function="ShaXing_BossChoice_Help3Clicked();"/>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="ShaXing_BossChoice_Add1Frame">
+            <Property Name="UnifiedSize" Value="{{0.000000,87.000000},{0.000000,107.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,11.000000},{0.000000,27.000000}}"/>
+            <Window Type="TLBB_ButtonCheckNULL" Name="ShaXing_BossChoice_Add1">
+              <Property Name="UnifiedSize" Value="{{0.000000,87.000000},{0.000000,107.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="PushedImage" Value="set:ShaXing1 image:ShaXing_BtnHover"/>
+              <Property Name="NormalImage" Value="set:ShaXing1 image:ShaXing_BtnNor"/>
+              <Property Name="HoverImage" Value="set:ShaXing1 image:ShaXing_BtnHover"/>
+              <Property Name="DisabledImage" Value="set:ShaXing1 image:ShaXing_BtnDis"/>
+              <Property Name="Tooltip" Value="#{XSX_220705_256}"/>
+              <Event Name="Clicked" Function="ShaXing_BossChoice_BossClicked(1);"/>
+            <Window Type="DefaultWindow" Name="ShaXing_BossChoice_Add1TextBK">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,10.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Window Type="TLBB_SimpleText" Name="ShaXing_BossChoice_Add1Text">
+                <Property Name="UnifiedSize" Value="{{0.000000,58.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-29.000000},{0.000000,0.000000}}"/>
+                <Property Name="Text" Value="#{XSX_220705_289}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="ShaXing_BossChoice_Add1Image">
+              <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-24.000000},{0.000000,34.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:FBSkill_2 image:FBSkill_2_1"/>
+              <Window Type="TLBB_StaticImageNULL" Name="ShaXing_BossChoice_Add1_Mask">
+                <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+              </Window>
+
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="ShaXing_BossChoice_Add1Num">
+              <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,18.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-32.000000},{1.00000,-24.000000}}"/>
+              <Property Name="Text" Value="#{XSX_220705_293}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+            </Window>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="ShaXing_BossChoice_Add2Frame">
+            <Property Name="UnifiedSize" Value="{{0.000000,87.000000},{0.000000,107.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,108.000000},{0.000000,27.000000}}"/>
+            <Window Type="TLBB_ButtonCheckNULL" Name="ShaXing_BossChoice_Add2">
+              <Property Name="UnifiedSize" Value="{{0.000000,87.000000},{0.000000,107.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="PushedImage" Value="set:ShaXing1 image:ShaXing_BtnHover"/>
+              <Property Name="NormalImage" Value="set:ShaXing1 image:ShaXing_BtnNor"/>
+              <Property Name="HoverImage" Value="set:ShaXing1 image:ShaXing_BtnHover"/>
+              <Property Name="DisabledImage" Value="set:ShaXing1 image:ShaXing_BtnDis"/>
+              <Event Name="Clicked" Function="ShaXing_BossChoice_BossClicked(2);"/>
+              <Property Name="Tooltip" Value="#{XSX_220705_257}"/>
+            <Window Type="DefaultWindow" Name="ShaXing_BossChoice_Add2TextBK">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,10.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Window Type="TLBB_SimpleText" Name="ShaXing_BossChoice_Add2Text">
+                <Property Name="UnifiedSize" Value="{{0.000000,58.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-29.000000},{0.000000,0.000000}}"/>
+                <Property Name="Text" Value="#{XSX_220705_290}"/>
+				  <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="ShaXing_BossChoice_Add2Image">
+              <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-24.000000},{0.000000,34.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:FBSkill_2 image:FBSkill_2_3"/>
+              <Window Type="TLBB_StaticImageNULL" Name="ShaXing_BossChoice_Add2_Mask">
+                <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="ShaXing_BossChoice_Add2Num">
+              <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,18.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-32.000000},{1.00000,-24.000000}}"/>
+              <Property Name="Text" Value="#{XSX_220705_295}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+            </Window>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="ShaXing_BossChoice_Add3Frame">
+            <Property Name="UnifiedSize" Value="{{0.000000,87.000000},{0.000000,107.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,205.000000},{0.000000,27.000000}}"/>
+            <Window Type="TLBB_ButtonCheckNULL" Name="ShaXing_BossChoice_Add3">
+              <Property Name="UnifiedSize" Value="{{0.000000,87.000000},{0.000000,107.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="PushedImage" Value="set:ShaXing1 image:ShaXing_BtnHover"/>
+              <Property Name="NormalImage" Value="set:ShaXing1 image:ShaXing_BtnNor"/>
+              <Property Name="HoverImage" Value="set:ShaXing1 image:ShaXing_BtnHover"/>
+              <Property Name="DisabledImage" Value="set:ShaXing1 image:ShaXing_BtnDis"/>
+              <Event Name="Clicked" Function="ShaXing_BossChoice_BossClicked(3);"/>
+              <Property Name="Tooltip" Value="#{XSX_220705_258}"/>
+            <Window Type="DefaultWindow" Name="ShaXing_BossChoice_Add3TextBK">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,10.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Window Type="TLBB_SimpleText" Name="ShaXing_BossChoice_Add3Text">
+                <Property Name="UnifiedSize" Value="{{0.000000,58.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-29.000000},{0.000000,0.000000}}"/>
+                <Property Name="Text" Value="#{XSX_220705_291}"/>
+				  <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="ShaXing_BossChoice_Add3Image">
+              <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-24.000000},{0.000000,34.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:FBSkill_2 image:FBSkill_2_2"/>
+              <Window Type="TLBB_StaticImageNULL" Name="ShaXing_BossChoice_Add3_Mask">
+                <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="ShaXing_BossChoice_Add3Num">
+              <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,18.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-32.000000},{1.00000,-24.000000}}"/>
+              <Property Name="Text" Value="#{XSX_220705_297}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+            </Window>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="ShaXing_BossChoice_Add4Frame">
+            <Property Name="UnifiedSize" Value="{{0.000000,87.000000},{0.000000,107.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,302.000000},{0.000000,27.000000}}"/>
+            <Window Type="TLBB_ButtonCheckNULL" Name="ShaXing_BossChoice_Add4">
+              <Property Name="UnifiedSize" Value="{{0.000000,87.000000},{0.000000,107.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="PushedImage" Value="set:ShaXing1 image:ShaXing_BtnHover"/>
+              <Property Name="NormalImage" Value="set:ShaXing1 image:ShaXing_BtnNor"/>
+              <Property Name="HoverImage" Value="set:ShaXing1 image:ShaXing_BtnHover"/>
+              <Property Name="DisabledImage" Value="set:ShaXing1 image:ShaXing_BtnDis"/>
+              <Event Name="Clicked" Function="ShaXing_BossChoice_BossClicked(4);"/>
+              <Property Name="Tooltip" Value="#{XSX_220705_259}"/>
+            <Window Type="DefaultWindow" Name="ShaXing_BossChoice_Add4TextBK">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,10.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Window Type="TLBB_SimpleText" Name="ShaXing_BossChoice_Add4Text">
+                <Property Name="UnifiedSize" Value="{{0.000000,58.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-29.000000},{0.000000,0.000000}}"/>
+                <Property Name="Text" Value="#{XSX_220705_292}"/>
+				  <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="ShaXing_BossChoice_Add4Image">
+              <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-24.000000},{0.000000,34.000000}}"/>
+              <Property Name="Image" Value="set:FBSkill_2 image:FBSkill_2_4"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Window Type="TLBB_StaticImageNULL" Name="ShaXing_BossChoice_Add4_Mask">
+                <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="ShaXing_BossChoice_Add4Num">
+              <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,18.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-32.000000},{1.00000,-24.000000}}"/>
+              <Property Name="Text" Value="#{XSX_220705_299}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="ShaXing_BossChoice_Right2">
+          <Property Name="UnifiedSize" Value="{{0.000000,400.000000},{0.000000,134.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,352.000000},{0.000000,146.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="ShaXing_BossChoice_Right2_TitleBK">
+            <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{0.000000,21.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,1.000000}}"/>
+            <Window Type="TLBB_SimpleText" Name="ShaXing_BossChoice_Title3">
+              <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,0.000000}}"/>
+            </Window>
+            <Window Type="TLBB_ButtonHelp" Name="ShaXing_BossChoice_Help4">
+              <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-22.000000},{0.500000,-7.000000}}"/>
+              <Event Name="Clicked" Function="ShaXing_BossChoice_Help4Clicked();"/>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="ShaXing_BossChoice_Place1Frame">
+            <Property Name="UnifiedSize" Value="{{0.000000,87.000000},{0.000000,107.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,11.000000},{0.000000,27.000000}}"/>
+            <Window Type="TLBB_ButtonCheckNULL" Name="ShaXing_BossChoice_Place1">
+              <Property Name="UnifiedSize" Value="{{0.000000,87.000000},{0.000000,107.000000}}"/>
+              <Property Name="Tooltip" Value="#{XSX_220705_267}"/>
+              <Property Name="PushedImage" Value="set:ShaXing1 image:ShaXing_BtnHover"/>
+              <Property Name="NormalImage" Value="set:ShaXing1 image:ShaXing_BtnNor"/>
+              <Property Name="HoverImage" Value="set:ShaXing1 image:ShaXing_BtnHover"/>
+              <Property Name="DisabledImage" Value="set:ShaXing1 image:ShaXing_BtnDis"/>
+              <Event Name="Clicked" Function="ShaXing_BossChoice_RandomClicked(1);"/>
+            <Window Type="DefaultWindow" Name="ShaXing_BossChoice_Place1TextBK">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,10.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Window Type="TLBB_SimpleText" Name="ShaXing_BossChoice_Place1Text">
+                <Property Name="UnifiedSize" Value="{{0.000000,58.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-29.000000},{0.000000,0.000000}}"/>
+                <Property Name="Text" Value="#{XSX_220705_262}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="ShaXing_BossChoice_Place1Image">
+              <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-24.000000},{0.000000,34.000000}}"/>
+              <Property Name="Image" Value="set:FBSkill_2 image:FBSkill_2_6"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Window Type="TLBB_StaticImageNULL" Name="ShaXing_BossChoice_Place1_Mask">
+                <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="ShaXing_BossChoice_Place1Num">
+              <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,18.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-32.000000},{1.00000,-24.000000}}"/>
+              <Property Name="Text" Value="#{XSX_220705_254}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="ShaXing_BossChoice_Place2Frame">
+            <Property Name="UnifiedSize" Value="{{0.000000,87.000000},{0.000000,107.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,108.000000},{0.000000,27.000000}}"/>
+            <Window Type="TLBB_ButtonCheckNULL" Name="ShaXing_BossChoice_Place2">
+              <Property Name="UnifiedSize" Value="{{0.000000,87.000000},{0.000000,107.000000}}"/>
+              <Property Name="Tooltip" Value="#{XSX_220705_268}"/>
+              <Property Name="PushedImage" Value="set:ShaXing1 image:ShaXing_BtnHover"/>
+              <Property Name="NormalImage" Value="set:ShaXing1 image:ShaXing_BtnNor"/>
+              <Property Name="HoverImage" Value="set:ShaXing1 image:ShaXing_BtnHover"/>
+              <Property Name="DisabledImage" Value="set:ShaXing1 image:ShaXing_BtnDis"/>
+              <Event Name="Clicked" Function="ShaXing_BossChoice_RandomClicked(2);"/>
+            <Window Type="DefaultWindow" Name="ShaXing_BossChoice_Place2TextBK">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,10.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Window Type="TLBB_SimpleText" Name="ShaXing_BossChoice_Place2Text">
+                <Property Name="UnifiedSize" Value="{{0.000000,58.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-29.000000},{0.000000,0.000000}}"/>
+                <Property Name="Text" Value="#{XSX_220705_263}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="ShaXing_BossChoice_Place2Image">
+              <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-24.000000},{0.000000,34.000000}}"/>
+              <Property Name="Image" Value="set:Gem3_2 image:Gem3_2_2"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Window Type="TLBB_StaticImageNULL" Name="ShaXing_BossChoice_Place2_Mask">
+                <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="ShaXing_BossChoice_Place2Num">
+              <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,18.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-32.000000},{1.00000,-24.000000}}"/>
+              <Property Name="Text" Value="#{XSX_220705_254}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="ShaXing_BossChoice_Place3Frame">
+            <Property Name="UnifiedSize" Value="{{0.000000,87.000000},{0.000000,107.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,205.000000},{0.000000,27.000000}}"/>
+            <Window Type="TLBB_ButtonCheckNULL" Name="ShaXing_BossChoice_Place3">
+              <Property Name="UnifiedSize" Value="{{0.000000,87.000000},{0.000000,107.000000}}"/>
+              <Property Name="Tooltip" Value="#{XSX_220705_269}"/>
+              <Property Name="PushedImage" Value="set:ShaXing1 image:ShaXing_BtnHover"/>
+              <Property Name="NormalImage" Value="set:ShaXing1 image:ShaXing_BtnNor"/>
+              <Property Name="HoverImage" Value="set:ShaXing1 image:ShaXing_BtnHover"/>
+              <Property Name="DisabledImage" Value="set:ShaXing1 image:ShaXing_BtnDis"/>
+              <Event Name="Clicked" Function="ShaXing_BossChoice_RandomClicked(3);"/>
+            <Window Type="DefaultWindow" Name="ShaXing_BossChoice_Place3TextBK">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,10.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Window Type="TLBB_SimpleText" Name="ShaXing_BossChoice_Place3Text">
+                <Property Name="UnifiedSize" Value="{{0.000000,58.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-29.000000},{0.000000,0.000000}}"/>
+                <Property Name="Text" Value="#{XSX_220705_264}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="ShaXing_BossChoice_Place3Image">
+              <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-24.000000},{0.000000,34.000000}}"/>
+              <Property Name="Image" Value="set:Gem3_2 image:Gem3_2_2"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Window Type="TLBB_StaticImageNULL" Name="ShaXing_BossChoice_Place3_Mask">
+                <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="ShaXing_BossChoice_Place3Num">
+              <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,18.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-32.000000},{1.00000,-24.000000}}"/>
+              <Property Name="Text" Value="#{XSX_220705_254}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+            </Window>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="ShaXing_BossChoice_Place4Frame">
+            <Property Name="UnifiedSize" Value="{{0.000000,87.000000},{0.000000,107.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,302.000000},{0.000000,27.000000}}"/>
+            <Window Type="TLBB_ButtonCheckNULL" Name="ShaXing_BossChoice_Place4">
+              <Property Name="UnifiedSize" Value="{{0.000000,87.000000},{0.000000,107.000000}}"/>
+              <Property Name="Tooltip" Value="#{XSX_220705_270}"/>
+              <Property Name="PushedImage" Value="set:ShaXing1 image:ShaXing_BtnHover"/>
+              <Property Name="NormalImage" Value="set:ShaXing1 image:ShaXing_BtnNor"/>
+              <Property Name="HoverImage" Value="set:ShaXing1 image:ShaXing_BtnHover"/>
+              <Property Name="DisabledImage" Value="set:ShaXing1 image:ShaXing_BtnDis"/>
+              <Event Name="Clicked" Function="ShaXing_BossChoice_RandomClicked(4);"/>
+            <Window Type="DefaultWindow" Name="ShaXing_BossChoice_Place4TextBK">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,10.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Window Type="TLBB_SimpleText" Name="ShaXing_BossChoice_Place4Text">
+                <Property Name="UnifiedSize" Value="{{0.000000,58.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-29.000000},{0.000000,0.000000}}"/>
+                <Property Name="Text" Value="#{XSX_220705_265}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="ShaXing_BossChoice_Place4Image">
+              <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-24.000000},{0.000000,34.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:Gem3_2 image:Gem3_2_2"/>
+              <Window Type="TLBB_StaticImageNULL" Name="ShaXing_BossChoice_Place4_Mask">
+                <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="ShaXing_BossChoice_Place4Num">
+              <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,18.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-32.000000},{1.00000,-24.000000}}"/>
+              <Property Name="Text" Value="#{XSX_220705_254}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="ShaXing_BossChoice_AllNumFrame">
+          <Property Name="UnifiedSize" Value="{{0.000000,430.000000},{0.000000,85.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-434.000000},{0.000000,260.000000}}"/>
+          <Property Name="Image" Value="set:ShaXing1 image:ShaXing_TextBk3"/>
+          <Window Type="TLBB_StaticImageNULL" Name="ShaXing_BossChoice_AllNumText">
+            <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,19.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,148.000000},{0.000000,58.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:ShaXing1 image:ShaXing_Text"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="ShaXing_BossChoice_AllNum">
+            <Property Name="UnifiedSize" Value="{{0.000000,54.000000},{0.000000,22.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,246.000000},{0.000000,56.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="true" />
+            <Property Name="Text" Value="#{XSX_220705_272}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+            <Property Name="Font" Value="YouYuan18"/>
+            <Property Name="VertFormatting" Value="VertCentred" />
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="ShaXing_BossChoice_ActionFrame">
+          <Property Name="UnifiedSize" Value="{{0.000000,400.000000},{0.000000,40.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,352.000000},{1.000000,-50.000000}}"/>
+          <Window Type="TLBB_ButtonNULL" Name="ShaXing_BossChoice_Ok">
+            <Property Name="UnifiedSize" Value="{{0.000000,109.000000},{0.000000,31.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,120.000000},{1.000000,-40.000000}}"/>
+            <Property Name="PushedImage" Value="set:ShaXing1 image:ShaXing_BtnksPush"/>
+            <Property Name="NormalImage" Value="set:ShaXing1 image:ShaXing_BtnksNor"/>
+            <Property Name="HoverImage" Value="set:ShaXing1 image:ShaXing_BtnksHover"/>
+            <Property Name="DisabledImage" Value="set:ShaXing1 image:ShaXing_BtnksDis"/>
+            <Event Name="Clicked" Function="ShaXing_BossChoice_Confirm()"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="ShaXing_BossChoice_Cancel">
+            <Property Name="UnifiedSize" Value="{{0.000000,77.000000},{0.000000,31.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,260.000000},{1.000000,-40.000000}}"/>
+            <Property Name="PushedImage" Value="set:ShaXing1 image:ShaXing_BtnfqPush"/>
+            <Property Name="NormalImage" Value="set:ShaXing1 image:ShaXing_BtnfqNor"/>
+            <Property Name="HoverImage" Value="set:ShaXing1 image:ShaXing_BtnfqHover"/>
+            <Property Name="DisabledImage" Value="set:ShaXing1 image:ShaXing_BtnfqDis"/>
+            <Event Name="Clicked" Function="ShaXing_BossChoice_GiveUp()"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="ShaXing_BossChoice_ActionFrame2">
+          <Property Name="UnifiedSize" Value="{{0.000000,400.000000},{0.000000,66.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,352.000000},{1.000000,-70.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="ShaXing_BossChoice_ActionFrame2_Text">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-10.000000}}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+            <Property Name="Font" Value="YouYuan9.75"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

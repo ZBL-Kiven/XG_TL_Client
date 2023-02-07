@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="DefaultWindow" Name="HuaShanLunJian_Kill">
+    <Property Name="UnifiedSize" Value="{{0.000000,538.000000},{0.000000,99.000000}}" />
+    <Property Name="UnifiedPosition" Value="{{0.500000,-270.000000},{0.000000,140.000000}}" />
+    <Property Name="AlwaysOnTop" Value="True" />
+        <Window Type="TLBB_StaticUVImage" Name="HuaShanLunJian_Kill_Left_HeadIcon">
+          <Property Name="UnifiedPosition" Value="{{0.000000,31.000000},{0.000000,23.000000}}" />
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}" />
+          <Property Name="Image" Value="set:CommonNPCHeader3 image:CommonNPCHeader3_1" />
+          <Property Name="Visible" Value="False"/>
+          <Property Name="Disabled" Value="True"/>
+          <Property Name="MirrorFormatting" Value="LeftRight"/>
+        </Window>
+    <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_Kill_Middle">
+      <Property Name="UnifiedSize" Value="{{0.000000,538.000000},{0.000000,99.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+      <Property Name="RiseOnClick" Value="False"/>
+      <Property Name="Image" Value="set:HSLJ_01 image:HSLJ_Kill1" />
+      <Property Name="MirrorFormatting" Value="LeftRight" />
+    </Window>
+    <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_Kill_FirstKill">
+      <Property Name="UnifiedSize" Value="{{0.000000,538.000000},{0.000000,99.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+      <Property Name="Image" Value="set:HSLJ_01 image:HSLJ_Kill2" />
+      <Property Name="RiseOnClick" Value="False"/>
+    </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_Kill_Right_HeadIcon">
+          <Property Name="UnifiedPosition" Value="{{1.000000,-81.000000},{0.000000,23.000000}}" />
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}" />
+          <Property Name="Image" Value="set:CommonNPCHeader3 image:CommonNPCHeader3_1" />
+          <Property Name="Visible" Value="False"/>
+          <Property Name="Disabled" Value="True"/>
+        </Window>
+    <Window Type="TLBB_SimpleText" Name="HuaShanLunJian_Kill_Left_Text">
+      <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,22.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,24.000000},{0.500000,-14.000000}}" />
+      <Property Name="Text" Value="名字最长八个字" />
+      <Property Name="VertFormatting" Value="TopAligned"/>
+      <Property Name="HorzFormatting" Value="LeftAligned"/>
+      <Property Name="Font" Value="YouYuan9.75" />
+    </Window>
+    <Window Type="TLBB_SimpleText" Name="HuaShanLunJian_Kill_Right_Text">
+      <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,22.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{1.000000,-164.000000},{0.500000,-14.000000}}" />
+      <Property Name="Text" Value="名字最长八个字" />
+      <Property Name="VertFormatting" Value="TopAligned"/>
+      <Property Name="Font" Value="YouYuan9.75" />
+      <Property Name="HorzFormatting" Value="RightAligned"/>
+    </Window>
+  </Window>
+</GUILayout>

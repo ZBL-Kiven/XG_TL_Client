@@ -1,0 +1,248 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame0" Name="SpringFestival_Dedusting_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,563.000000},{0.000000,364.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-358.000000},{0.500000,-226.000000}}"/>
+    <Window Type="TLBB_DragTitle" Name="SpringFestival_Dedusting_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="DragTarget" Value="SpringFestival_Dedusting_Frame"/>
+      <Window Type="TLBB_SimpleText" Name="SpringFestival_Dedusting_Title">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+        <Property Name="Text" Value="#{CCYXN_20211202_32}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="HorzFormatting" Value="HorzCentred"/>
+        <Property Name="Font" Value="YouYuan11.25"/>
+      </Window>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="SpringFestival_Dedusting_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function=""/>
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="SpringFestival_Dedusting_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="SpringFestival_Dedusting_OnClose()" />
+    </Window>
+    <Window Type="DefaultWindow" Name="SpringFestival_Dedusting_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-55.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,36.000000}}"/>
+      <Window Type="DefaultWindow" Name="SpringFestival_DedustingAllBK">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Window Type="TLBB_StaticImageNULL" Name="SpringFestival_DedustingBKL">
+        <Property Name="UnifiedSize" Value="{{0.000000,512.000000},{0.000000,308.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="Image" Value="set:SpringFestival_Dedusting image:SpringFestival_DedustBK_L"/>
+      </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="SpringFestival_DedustingBKRT">
+          <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,154.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,512.000000},{0.000000,0.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:SpringFestival_Dedusting image:SpringFestival_DedustBK_RT"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="SpringFestival_DedustingBKRB">
+          <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,154.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,512.000000},{0.000000,154.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:SpringFestival_Dedusting image:SpringFestival_DedustBK_RB"/>
+        </Window>
+      </Window>
+        <Window Type="TLBB_SimpleText" Name="SpringFestival_Dedusting_Info1">
+          <Property Name="UnifiedSize" Value="{{0.000000,430.000000},{0.000000,40.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,27.000000}}"/>
+          <Property Name="Text" Value="#{CCYXN_20211202_28}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+      <Window Type="TLBB_SimpleText" Name="SpringFestival_Dedusting_Info2">
+        <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,182.000000},{0.000000,60.000000}}"/>
+        <Property Name="Text" Value="#{CCYXN_20211202_33}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
+      </Window>
+      
+      <Window Type="DefaultWindow" Name="SpringFestival_Dedusting_GiftT">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,110.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,115.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="TLBB_ActionButton" Name="SpringFestival_Dedusting_GiftT1_Icon">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.200000,-24.000000},{0.500000,-40.000000}}"/>
+          <Property Name="Image" Value="set:Tattoo image:Tattoo_1"/>
+          <Window Type="TLBB_StaticImageNULL" Name="SpringFestival_Dedusting_GiftT1_OKBtnOK">
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,28.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{0.500000,-14.000000}}"/>
+            <Property Name="Visible" Value="False"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Seven image:Seven_ke"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="SpringFestival_Dedusting_GiftT2_Icon">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.400000,-24.000000},{0.500000,-40.000000}}"/>
+          <Property Name="Image" Value="set:Tattoo image:Tattoo_2"/>
+          <Window Type="TLBB_StaticImageNULL" Name="SpringFestival_Dedusting_GiftT2_OKBtnOK">
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,28.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{0.500000,-14.000000}}"/>
+            <Property Name="Visible" Value="False"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Seven image:Seven_ke"/>
+          </Window>          
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="SpringFestival_Dedusting_GiftT3_Icon">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.600000,-24.000000},{0.500000,-40.000000}}"/>
+          <Property Name="Image" Value="set:Tattoo image:Tattoo_3"/>
+          <Window Type="TLBB_StaticImageNULL" Name="SpringFestival_Dedusting_GiftT3_OKBtnOK">
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,28.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{0.500000,-14.000000}}"/>
+            <Property Name="Visible" Value="False"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Seven image:Seven_ke"/>
+          </Window>            
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="SpringFestival_Dedusting_GiftT4_Icon">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.800000,-24.000000},{0.500000,-40.000000}}"/>
+          <Property Name="Image" Value="set:Tattoo image:Tattoo_4"/>
+          <Window Type="TLBB_StaticImageNULL" Name="SpringFestival_Dedusting_GiftT4_OKBtnOK">
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,28.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{0.500000,-14.000000}}"/>
+            <Property Name="Visible" Value="False"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Seven image:Seven_ke"/>
+          </Window>            
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="SpringFestival_Dedusting_GiftT1_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,76.000000},{0.000000,16.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.200000,-38.000000},{1.000000,-36.000000}}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="Text" Value="#{CCYXN_20211202_34}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="SpringFestival_Dedusting_GiftT2_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,76.000000},{0.000000,16.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.400000,-38.000000},{1.000000,-36.000000}}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="Text" Value="#{CCYXN_20211202_34}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="SpringFestival_Dedusting_GiftT3_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,76.000000},{0.000000,16.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.600000,-38.000000},{1.000000,-36.000000}}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="Text" Value="#{CCYXN_20211202_34}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="SpringFestival_Dedusting_GiftT4_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,76.000000},{0.000000,16.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.800000,-38.000000},{1.000000,-36.000000}}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="Text" Value="#{CCYXN_20211202_34}"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="SpringFestival_Dedusting_GiftGet1">
+        <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,30.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.5000000,-206.000000},{1.000000,-85.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="Tooltip" Value="#{CCYXN_20211202_36}"/>
+        <Property Name="PushedImage" Value="set:Seven image:Seven_lingqupush"/>
+        <Property Name="NormalImage" Value="set:Seven image:Seven_lingquNormal"/>
+        <Property Name="HoverImage" Value="set:Seven image:Seven_lingquHover"/>
+        <Property Name="DisabledImage" Value="set:Seven image:Seven_lingquDis"/>
+        <Event Name="Clicked" Function="SpringFestival_Dedusting_Confirm(1)"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="SpringFestival_Dedusting_Received1">
+        <Property Name="UnifiedSize" Value="{{0.000000,66.000000},{0.000000,36.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.5000000,-196.000000},{1.000000,-90.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Image" Value="set:HSLJ_Match17 image:HSLJ_AwardsYiLing"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="SpringFestival_Dedusting_GiftGet2">
+        <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,30.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.5000000,-98.000000},{1.000000,-85.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="Tooltip" Value="#{CCYXN_20211202_36}"/>
+        <Property Name="PushedImage" Value="set:Seven image:Seven_lingqupush"/>
+        <Property Name="NormalImage" Value="set:Seven image:Seven_lingquNormal"/>
+        <Property Name="HoverImage" Value="set:Seven image:Seven_lingquHover"/>
+        <Property Name="DisabledImage" Value="set:Seven image:Seven_lingquDis"/>
+        <Event Name="Clicked" Function="SpringFestival_Dedusting_Confirm(2)"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="SpringFestival_Dedusting_Received2">
+        <Property Name="UnifiedSize" Value="{{0.000000,66.000000},{0.000000,36.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.5000000,-90.000000},{1.000000,-90.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Image" Value="set:HSLJ_Match17 image:HSLJ_AwardsYiLing"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="SpringFestival_Dedusting_GiftGet3">
+        <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,30.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.5000000,14.000000},{1.000000,-85.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="Tooltip" Value="#{CCYXN_20211202_36}"/>
+        <Property Name="PushedImage" Value="set:Seven image:Seven_lingqupush"/>
+        <Property Name="NormalImage" Value="set:Seven image:Seven_lingquNormal"/>
+        <Property Name="HoverImage" Value="set:Seven image:Seven_lingquHover"/>
+        <Property Name="DisabledImage" Value="set:Seven image:Seven_lingquDis"/>
+        <Event Name="Clicked" Function="SpringFestival_Dedusting_Confirm(3)"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="SpringFestival_Dedusting_Received3">
+        <Property Name="UnifiedSize" Value="{{0.000000,66.000000},{0.000000,36.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.5000000,24.000000},{1.000000,-90.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Image" Value="set:HSLJ_Match17 image:HSLJ_AwardsYiLing"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="SpringFestival_Dedusting_GiftGet4">
+        <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,30.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.5000000,124.000000},{1.000000,-85.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="Tooltip" Value="#{CCYXN_20211202_36}"/>
+        <Property Name="PushedImage" Value="set:Seven image:Seven_lingqupush"/>
+        <Property Name="NormalImage" Value="set:Seven image:Seven_lingquNormal"/>
+        <Property Name="HoverImage" Value="set:Seven image:Seven_lingquHover"/>
+        <Property Name="DisabledImage" Value="set:Seven image:Seven_lingquDis"/>
+        <Event Name="Clicked" Function="SpringFestival_Dedusting_Confirm(4)"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="SpringFestival_Dedusting_Received4">
+        <Property Name="UnifiedSize" Value="{{0.000000,66.000000},{0.000000,36.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.5000000,134.000000},{1.000000,-90.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Image" Value="set:HSLJ_Match17 image:HSLJ_AwardsYiLing"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

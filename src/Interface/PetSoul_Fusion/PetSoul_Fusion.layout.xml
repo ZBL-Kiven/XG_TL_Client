@@ -1,0 +1,112 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame1" Name="PetSoul_Fusion_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,258.000000},{0.000000,288.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-128.000000},{0.500000,-178.000000}}"/>
+    <Event Name="Hidden" Function="PetSoul_Fusion_OnHiden();" />
+    <Window Type="TLBB_DragTitle" Name="PetSoul_Fusion_DragTitle">
+      <Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+      <Property Name="DragTarget" Value="PetSoul_Fusion_Frame" />
+      <Window Type="TLBB_SimpleText" Name="PetSoul_Fusion_Title">
+        <Property Name="Position" Value="x:0.0 y:0.0" />
+        <Property Name="Size" Value="w:1.0 h:1.0" />
+        <Property Name="Font" Value="YouYuan11.25" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Text" Value="#{SHXT_20211230_107}" />
+      </Window>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="PetSoul_Fusion_Help">
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+      <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+      <Property Name="Text" Value="TLBB_ButtonHelp" />
+      <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*PetSoul_Fusion&quot;);' />
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="PetSoul_Fusion_Close">
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+      <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+      <Property Name="Text" Value="TLBB_ButtonClose" />
+      <Event Name="Clicked" Function="this:Hide();" />
+    </Window>
+    <Window Type="DefaultWindow" Name="PetSoul_Fusion_Frame_Client">
+      <Property Name="AbsolutePosition" Value="x:7.000000 y:36.000000" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-55.000000}" />
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="PetSoul_Fusion_Info">
+        <Property Name="Position" Value="x:0.0 y:0.0" />
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,126.000000}}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Text" Value="#{SHXT_20211230_108}" />
+        <Property Name="TextColor" Value="FFFFF263" />
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="PetSoul_Fusion_Info2">
+        <Property Name="UnifiedSize" Value="{{0.0000000,80.000000},{0.000000,22.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.00000,20.000000},{0.000000,126.000000}}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Text" Value="#{SHXT_20211230_109}" />
+        <Property Name="TextColor" Value="FFFFF263" />
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="PetSoul_Fusion_Info3">
+        <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,22.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,150.000000},{0.000000,126.000000}}"/>
+        <Property Name="TextColor" Value="FFFFF263"/>
+        <Property Name="Text" Value="#{SHXT_20211230_199}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="PetSoul_Fusion_Info4">
+        <Property Name="UnifiedSize" Value="{{0.000000,240.000000},{0.000000,22.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,190.000000}}"/>
+        <Property Name="TextColor" Value="FFFFF263"/>
+        <Property Name="Text" Value="#{SHXT_20211230_199}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+      </Window>
+      <Window Type="TLBB_ActionButton" Name="PetSoul_Fusion_Object">
+        <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.00000,20.000000},{0.000000,150.000000}}"/>
+        <Property Name="DragAcceptName" Value="W27" />
+        <Property Name="DraggingEnabled" Value="True" />
+        <Event Name="RBClicked" Function="PetSoul_Fusion_Resume_Equip();" />
+      </Window>
+      <Window Type="TLBB_ActionButton" Name="PetSoul_Fusion_Object2">
+        <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.00000,70.000000},{0.000000,150.000000}}"/>
+        <Property Name="DragAcceptName" Value="W28" />
+        <Property Name="DraggingEnabled" Value="True" />
+        <Event Name="RBClicked" Function="PetSoul_Fusion_Resume_Equip2();" />
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="PetSoul_Fusion_Image">
+        <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,32.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,118.000000},{0.000000,152.000000}}"/>
+        <Property Name="Image" Value="set:Buttons image:SceneMap_Right_Normal"/>
+      </Window>
+      <Window Type="TLBB_ActionButton" Name="PetSoul_Fusion_Object3">
+        <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.00000,170.000000},{0.000000,150.000000}}"/>
+        <Property Name="DragAcceptName" Value="W28" />
+        <Property Name="DraggingEnabled" Value="True" />
+        <Event Name="RBClicked" Function="" />
+      </Window>
+      <Window Type="TLBB_Frame_Lace5" Name="PetSoul_Fusion_Blank">
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}" />
+        <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}" />
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="PetSoul_Fusion_OK">
+        <Property Name="UnifiedPosition" Value="{{1.000000,-80.000000},{1.000000,-20.000000}" />
+        <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+        <Property Name="Text" Value="#{SHXT_20211230_110}" />
+        <Event Name="Clicked" Function="PetSoul_Fusion_Buttons_Clicked();" />
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="PetSoul_Fusion_Cancel">
+        <Property Name="UnifiedPosition" Value="{{1.000000,-40.000000},{1.000000,-20.000000}" />
+        <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+        <Property Name="Text" Value="#{INTERFACE_XML_542}" />
+        <Event Name="Clicked" Function="this:Hide();" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

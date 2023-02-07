@@ -1,0 +1,246 @@
+<?xml version="1.0" ?>
+<GUILayout>
+    <Window Type="TLBB_MainFrame1" Name="ChannelSetFenping_Frame">
+        <Property Name="UnifiedSize" Value="{{0.0,270},{0.0,210}}" />
+        <Property Name="UnifiedPosition" Value="{{0.0,151},{1.0,-360.0}}" />
+        <Property Name="AlwaysOnTop" Value="true" />
+        <Window Type="TLBB_DragTitle" Name="ChannelSetFenping_DragTitle">
+            <Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
+            <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+            <Property Name="DragTarget" Value="ChannelSetFenping_Frame" />
+            <Window Type="TLBB_SimpleText" Name="ChannelSetFenping_PageHeader_Text">
+                <Property Name="Position" Value="x:0.0 y:0.0" />
+                <Property Name="Size" Value="w:1.0 h:1.0" />
+                <Property Name="Text" Value="#{LTFP_XML_1}" />
+                <Property Name="Font" Value="YouYuan11.25" />
+                <Property Name="HorzFormatting" Value="HorzCentred" />
+                <Property Name="VertFormatting" Value="VertCentred" />
+            </Window>
+        </Window>
+        <Window Type="TLBB_ButtonHelp" Name="ChannelSetFenping_Help">
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+            <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+            <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*ChannelSetFenping&quot;);' />
+        </Window>
+        <Window Type="TLBB_ButtonClose" Name="ChannelSetFenping_Close">
+            <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+            <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+            <Event Name="Clicked" Function="ChannelSetFenping_Close_Clicked();" />
+        </Window>
+        <Window Type="DefaultWindow" Name="ChannelSetFenping_Frame_Client">
+            <Property Name="AbsolutePosition" Value="x:7.000000 y:36.000000" />
+            <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-55.000000}" />
+            <Window Type="DefaultWindow" Name="ChannelSetFenping_Checkbox_Frame">
+                <Property Name="Position" Value="x:0.0 y:0.0" />
+                <Property Name="AbsoluteSize" Value="w:257.000000 h:128.000000" />
+                <Window Type="TLBB_ButtonCheck" Name="ChannelSetFenping_WorldInfo">
+                    <Property Name="AbsolutePosition" Value="x:5.000000 y:9.000000" />
+                    <Property Name="AbsoluteSize" Value="w:12.0 h:12.0" />
+                    <Property Name="CheckMode" Value="0" />
+                </Window>
+                <Window Type="TLBB_ButtonCheck" Name="ChannelSetFenping_VicinityInfo">
+                  <Property Name="AbsolutePosition" Value="x:5.000000 y:33.000000" />
+                  <Property Name="AbsoluteSize" Value="w:12.0 h:12.0" />
+                    <Property Name="CheckMode" Value="0" />
+                </Window>
+                <Window Type="TLBB_ButtonCheck" Name="ChannelSetFenping_PersonalInfo">
+                  <Property Name="AbsolutePosition" Value="x:5.000000 y:58.000000" />
+                  <Property Name="AbsoluteSize" Value="w:12.0 h:12.0" />
+                  <Property Name="CheckMode" Value="0" />
+                </Window>
+                <Window Type="TLBB_ButtonCheck" Name="ChannelSetFenping_MenpaiInfo">
+                    <Property Name="AbsolutePosition" Value="x:90.000000 y:9.000000" />
+                    <Property Name="AbsoluteSize" Value="w:12.0 h:12.0" />
+                    <Property Name="CheckMode" Value="0" />
+                </Window>
+                <Window Type="TLBB_ButtonCheck" Name="ChannelSetFenping_CorporateInfo">
+                  <Property Name="AbsolutePosition" Value="x:90.000000 y:33.000000" />
+                  <Property Name="AbsoluteSize" Value="w:12.0 h:12.0" />
+                  <Property Name="CheckMode" Value="0" />
+                </Window>
+                <Window Type="TLBB_ButtonCheck" Name="ChannelSetFenping_SelfInfo">
+                  <Property Name="AbsolutePosition" Value="x:90.000000 y:58.000000" />
+                  <Property Name="AbsoluteSize" Value="w:12.0 h:12.0" />
+                    <Property Name="CheckMode" Value="0" />
+                </Window>
+                <Window Type="TLBB_ButtonCheck" Name="ChannelSetFenping_TeamInfo">
+                  <Property Name="AbsolutePosition" Value="x:175.000000 y:9.000000" />
+                  <Property Name="AbsoluteSize" Value="w:12.0 h:12.0" />
+                    <Property Name="CheckMode" Value="0" />
+                </Window>
+                <Window Type="TLBB_ButtonCheck" Name="ChannelSetFenping_HelpInfo">
+                  <Property Name="AbsolutePosition" Value="x:175.000000 y:33.000000" />
+                  <Property Name="AbsoluteSize" Value="w:12.0 h:12.0" />
+                  <Property Name="CheckMode" Value="0" />
+                </Window>
+                <Window Type="TLBB_ButtonCheck" Name="ChannelSetFenping_SystemInfo">
+                  <Property Name="AbsolutePosition" Value="x:175.000000 y:58.000000" />
+                  <Property Name="AbsoluteSize" Value="w:12.0 h:12.0" />
+                    <Property Name="CheckMode" Value="0" />
+                </Window>
+              <Window Type="TLBB_ButtonCheck" Name="ChannelSetFenping_GuildLeagueInfo">
+                <Property Name="AbsolutePosition" Value="x:5.000000 y:83.000000" />
+                <Property Name="AbsoluteSize" Value="w:12.0 h:12.0" />
+                <Property Name="CheckMode" Value="0" />
+              </Window>
+              <Window Type="TLBB_ButtonCheck" Name="ChannelSetFenping_Speaker">
+                <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,90.000000},{0.000000,83.000000}}"/>
+                <Property Name="CheckMode" Value="0" />
+              </Window>
+              <Window Type="TLBB_ButtonCheck" Name="ChannelSetFenping_City">
+                <Property Name="AbsolutePosition" Value="x:5.000000 y:108.000000" />
+                <Property Name="AbsoluteSize" Value="w:12.0 h:12.0" />
+                <Property Name="CheckMode" Value="0" />
+					      <Event Name="Clicked" Function="ChannelSetFenping_City_Click();" />
+              </Window>
+                <Window Type="TLBB_SimpleText" Name="ChannelSetFenping_WorldInfo_Text">
+                  <Property Name="AbsolutePosition" Value="x:18.000000 y:5.000000" />
+                  <Property Name="AbsoluteSize" Value="w:60.0 h:18.0" />
+                  <Property Name="TextColor" Value="FFFFF263" />
+                  <Property Name="Text" Value="#{INTERFACE_XML_646}" />
+                  <Property Name="HorzFormatting" Value="HorzCentred" />
+                  <Property Name="VertFormatting" Value="VertCentred" />
+                  <Property Name="RiseOnClick" Value="False" />
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="ChannelSetFenping_VicinityInfo_Text">
+                  <Property Name="AbsolutePosition" Value="x:18.000000 y:30.000000" />
+                  <Property Name="AbsoluteSize" Value="w:60.0 h:18.0" />
+                    <Property Name="TextColor" Value="FFFFF263" />
+                    <Property Name="Text" Value="#{INTERFACE_XML_273}" />
+                    <Property Name="HorzFormatting" Value="HorzCentred" />
+                    <Property Name="VertFormatting" Value="VertCentred" />
+                    <Property Name="RiseOnClick" Value="False" />
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="ChannelSetFenping_PersonalInfo_Text">
+                  <Property Name="AbsolutePosition" Value="x:18.000000 y:55.000000" />
+                  <Property Name="AbsoluteSize" Value="w:60.0 h:18.0" />
+                  <Property Name="TextColor" Value="FFFFF263" />
+                  <Property Name="Text" Value="#{INTERFACE_XML_667}" />
+                  <Property Name="HorzFormatting" Value="HorzCentred" />
+                  <Property Name="VertFormatting" Value="VertCentred" />
+                  <Property Name="RiseOnClick" Value="False" />
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="ChannelSetFenping_MenpaiInfo_Text">
+                  <Property Name="AbsolutePosition" Value="x:103.000000 y:5.000000" />
+                  <Property Name="AbsoluteSize" Value="w:60.0 h:18.0" />
+                    <Property Name="TextColor" Value="FFFFF263" />
+                    <Property Name="Text" Value="#{INTERFACE_XML_453}" />
+                    <Property Name="HorzFormatting" Value="HorzCentred" />
+                    <Property Name="VertFormatting" Value="VertCentred" />
+                    <Property Name="RiseOnClick" Value="False" />
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="ChannelSetFenping_CorporateInfo_Text">
+                  <Property Name="AbsolutePosition" Value="x:103.000000 y:30.000000" />
+                  <Property Name="AbsoluteSize" Value="w:60.0 h:18.0" />
+                  <Property Name="TextColor" Value="FFFFF263" />
+                  <Property Name="Text" Value="#{INTERFACE_XML_129}" />
+                  <Property Name="HorzFormatting" Value="HorzCentred" />
+                  <Property Name="VertFormatting" Value="VertCentred" />
+                  <Property Name="RiseOnClick" Value="False" />
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="ChannelSetFenping_SelfInfo_Text">
+                  <Property Name="AbsolutePosition" Value="x:103.000000 y:55.000000" />
+                  <Property Name="AbsoluteSize" Value="w:60.0 h:18.0" />
+                    <Property Name="TextColor" Value="FFFFF263" />
+                    <Property Name="Text" Value="#{INTERFACE_XML_283}" />
+                    <Property Name="HorzFormatting" Value="HorzCentred" />
+                    <Property Name="VertFormatting" Value="VertCentred" />
+                    <Property Name="RiseOnClick" Value="False" />
+                </Window>
+              <Window Type="TLBB_SimpleText" Name="ChannelSetFenping_GuildLeagueInfo_Text">
+                <Property Name="AbsolutePosition" Value="x:19.000000 y:80.000000" />
+                <Property Name="AbsoluteSize" Value="w:60.0 h:18.0" />
+                <Property Name="TextColor" Value="FFFFF263" />
+                <Property Name="Text" Value="#{TM_20080320_01}" />
+                <Property Name="HorzFormatting" Value="HorzCentred" />
+                <Property Name="VertFormatting" Value="VertCentred" />
+                <Property Name="RiseOnClick" Value="False" />
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="ChannelSetFenping_Speaker_Text">
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,18.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,103.000000},{0.000000,80.000000}}"/>
+                <Property Name="TextColor" Value="FFFFF263"/>
+                <Property Name="Text" Value="#{FPXS_210324_01}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="ChannelSetFenping_TeamInfo_Text">
+                <Property Name="AbsolutePosition" Value="x:188.000000 y:5.000000" />
+                <Property Name="AbsoluteSize" Value="w:60.0 h:18.0" />
+                    <Property Name="TextColor" Value="FFFFF263" />
+                    <Property Name="Text" Value="#{INTERFACE_XML_257}" />
+                    <Property Name="HorzFormatting" Value="HorzCentred" />
+                    <Property Name="VertFormatting" Value="VertCentred" />
+                    <Property Name="RiseOnClick" Value="False" />
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="ChannelSetFenping_HelpInfo_Text">
+                  <Property Name="AbsolutePosition" Value="x:188.000000 y:30.000000" />
+                  <Property Name="AbsoluteSize" Value="w:60.0 h:18.0" />
+                  <Property Name="TextColor" Value="FFFFF263" />
+                  <Property Name="Text" Value="#{INTERFACE_XML_136}" />
+                  <Property Name="HorzFormatting" Value="HorzCentred" />
+                  <Property Name="VertFormatting" Value="VertCentred" />
+                  <Property Name="RiseOnClick" Value="False" />
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="ChannelSetFenping_SystemInfo_Text">
+                  <Property Name="AbsolutePosition" Value="x:188.000000 y:55.000000" />
+                  <Property Name="AbsoluteSize" Value="w:60.0 h:18.0" />
+                    <Property Name="TextColor" Value="FFFFF263" />
+                    <Property Name="Text" Value="#{INTERFACE_XML_736}" />
+                    <Property Name="HorzFormatting" Value="HorzCentred" />
+                    <Property Name="VertFormatting" Value="VertCentred" />
+                    <Property Name="RiseOnClick" Value="False" />
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="ChannelSetFenping_City_Text">
+                  <Property Name="AbsolutePosition" Value="x:19.000000 y:105.000000" />
+                  <Property Name="AbsoluteSize" Value="w:60.0 h:18.0" />
+                  <Property Name="TextColor" Value="FFFFF263" />
+                  <Property Name="Text" Value="#{face_ChannelCustomization_City_Text}" />
+                  <Property Name="HorzFormatting" Value="HorzCentred" />
+                  <Property Name="VertFormatting" Value="VertCentred" />
+                  <Property Name="RiseOnClick" Value="False" />
+                </Window>
+                <Window Type="TLBB_ComboList" Name="ChannelSetFenping_ProvinceCity" >
+                  <Property Name="AbsolutePosition" Value="x:167.000000 y:104.000000" />
+                  <Property Name="UnifiedSize" Value="{{0.35000,0.000000},{0.000000,20.000000}" />
+				          <Event Name="ListSelectionAccepted" Function="ChannelSetFenping_ComboListProvinceCityChanged();" />
+              </Window>
+              <Window Type="TLBB_ComboList" Name="ChannelSetFenping_Province" >
+                <Property Name="AbsolutePosition" Value="x:85.000000 y:104.000000" />
+                <Property Name="UnifiedSize" Value="{{0.30000,0.000000},{0.000000,20.000000}" />
+				<Event Name="ListSelectionAccepted" Function="ChannelSetFenping_ComboListProvinceChanged(-1);" />
+              </Window>
+            </Window>
+            <Window Type="TLBB_ButtonCommon" Name="ChannelSetFenping_Cancel">
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}" />
+                <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+                <Property Name="Text" Value="#{INTERFACE_XML_542}" />
+                <Event Name="Clicked" Function="ChannelSetFenping_Cancel_Clicked();" />
+            </Window>
+            <Window Type="TLBB_Frame_Lace5" Name="ChannelSetFenping_Blank">
+                <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{1.000000,-20.000000}" />
+                <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}" />
+            </Window>
+          <Window Type="TLBB_ButtonCommon" Name="ChannelSetFenping_Destory">
+            <Property Name="UnifiedPosition" Value="{{0.500000,-60.000000},{1.000000,-20.000000}" />
+            <Property Name="AbsoluteSize" Value="w:120.000000 h:20.000000" />
+            <Property Name="Text" Value="#{LTFP_XML_2}" />
+            <Event Name="Clicked" Function="ChannelSetFenping_Destory_Clicked();" />
+          </Window>
+          <Window Type="TLBB_ButtonCommon" Name="ChannelSetFenping_Create">
+                <Property Name="UnifiedPosition" Value="{{1.000000,-40.000000},{1.000000,-20.000000}" />
+                <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+                <Property Name="Text" Value="#{LTFP_091016_2}" />
+                <Event Name="Clicked" Function="ChannelSetFenping_Create_Clicked();" />
+            </Window>
+          <Window Type="TLBB_ButtonCommon" Name="ChannelSetFenping_Accept">
+            <Property Name="UnifiedPosition" Value="{{1.000000,-40.000000},{1.000000,-20.000000}" />
+            <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+            <Property Name="Text" Value="#{INTERFACE_XML_557}" />
+            <Property Name="Visible" Value="False" />
+            <Event Name="Clicked" Function="ChannelSetFenping_Accept_Clicked();" />
+          </Window>
+        </Window>
+    </Window>
+</GUILayout>

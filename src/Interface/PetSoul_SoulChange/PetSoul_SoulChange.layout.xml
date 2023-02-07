@@ -1,0 +1,139 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame1" Name="PetSoul_SoulChange_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,256.000000},{0.000000,290.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-128.000000},{0.500000,-178.000000}}"/>
+    <Event Name="Hidden" Function="PetSoul_SoulChange_OnHiden();" />
+    <Window Type="TLBB_DragTitle" Name="PetSoul_SoulChange_DragTitle">
+      <Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+      <Property Name="DragTarget" Value="PetSoul_SoulChange_Frame" />
+      <Window Type="TLBB_SimpleText" Name="PetSoul_SoulChange_Title">
+        <Property Name="Position" Value="x:0.0 y:0.0" />
+        <Property Name="Size" Value="w:1.0 h:1.0" />
+        <Property Name="Font" Value="YouYuan11.25" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Text" Value="#{ZSPVP_211231_29}" />
+      </Window>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="PetSoul_SoulChange_Help">
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+      <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+      <Property Name="Text" Value="TLBB_ButtonHelp" />
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="PetSoul_SoulChange_Close">
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+      <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+      <Property Name="Text" Value="TLBB_ButtonClose" />
+      <Event Name="Clicked" Function="this:Hide();" />
+    </Window>
+    <Window Type="DefaultWindow" Name="PetSoul_SoulChange_Frame_Client">
+      <Property Name="AbsolutePosition" Value="x:7.000000 y:36.000000" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-55.000000}" />
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="PetSoul_SoulChange_Info">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,78.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000000,0.000000},{0.0000000,0.000000}}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Text" Value="#{ZSPVP_211231_30}" />
+        <Property Name="TextColor" Value="FFFFF263" />
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="PetSoul_SoulChange_Explain">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.0000000,0.00000},{1.000000,-62.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="PetSoul_SoulChange_Explain_Text">
+          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.0000000,10.00000},{0.000000,2.000000}}"/>
+          <Property Name="TextColor" Value="FFFFF263" />
+          <Property Name="Text" Value="#{ZSPVP_211231_31}" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="PetSoul_SoulChange_Have">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.0000000,0.00000},{1.000000,-42.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="PetSoul_SoulChange_Explain_HaveText">
+          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.0000000,10.00000},{0.000000,2.000000}}"/>
+          <Property Name="TextColor" Value="FFFFF263" />
+          <Property Name="Text" Value="#{ZSPVP_211231_53}" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_ActionButton" Name="PetSoul_SoulChange_Piece1">
+        <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.0000000,26.000000},{0.000000,84.000000}}"/>
+        <Property Name="DragAcceptName" Value="W5" />
+        <Property Name="DraggingEnabled" Value="False" />
+        <Event Name="RBClicked" Function="PetSoul_SoulChange_ACBRemove(1);" />
+      </Window>
+      <Window Type="TLBB_ActionButton" Name="PetSoul_SoulChange_Piece2">
+        <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.0000000,80.000000},{0.000000,84.000000}}"/>
+        <Property Name="DragAcceptName" Value="W6" />
+        <Property Name="DraggingEnabled" Value="False" />
+        <Event Name="RBClicked" Function="PetSoul_SoulChange_ACBRemove(2);" />
+      </Window>
+      <Window Type="TLBB_ActionButton" Name="PetSoul_SoulChange_Piece3">
+        <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.0000000,134.000000},{0.000000,84.000000}}"/>
+        <Property Name="DragAcceptName" Value="W7" />
+        <Property Name="DraggingEnabled" Value="False" />
+        <Event Name="RBClicked" Function="PetSoul_SoulChange_ACBRemove(3);" />
+      </Window>
+      <Window Type="TLBB_ActionButton" Name="PetSoul_SoulChange_Piece4">
+        <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.0000000,188.000000},{0.000000,84.000000}}"/>
+        <Property Name="DragAcceptName" Value="W8" />
+        <Property Name="DraggingEnabled" Value="False" />
+        <Event Name="RBClicked" Function="PetSoul_SoulChange_ACBRemove(4);" />
+      </Window>
+      <Window Type="TLBB_ActionButton" Name="PetSoul_SoulChange_Piece5">
+        <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.0000000,26.000000},{0.000000,128.000000}}"/>
+        <Property Name="DragAcceptName" Value="W9" />
+        <Property Name="DraggingEnabled" Value="False" />
+        <Event Name="RBClicked" Function="PetSoul_SoulChange_ACBRemove(5);" />
+      </Window>
+      <Window Type="TLBB_ActionButton" Name="PetSoul_SoulChange_Piece6">
+        <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.0000000,80.000000},{0.000000,128.000000}}"/>
+        <Property Name="DragAcceptName" Value="W10" />
+        <Property Name="DraggingEnabled" Value="False" />
+        <Event Name="RBClicked" Function="PetSoul_SoulChange_ACBRemove(6);" />
+      </Window>
+      <Window Type="TLBB_ActionButton" Name="PetSoul_SoulChange_Piece7">
+        <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.0000000,134.000000},{0.000000,128.000000}}"/>
+        <Property Name="DragAcceptName" Value="W11" />
+        <Property Name="DraggingEnabled" Value="False" />
+        <Event Name="RBClicked" Function="PetSoul_SoulChange_ACBRemove(7);" />
+      </Window>
+      <Window Type="TLBB_ActionButton" Name="PetSoul_SoulChange_Piece8">
+        <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.0000000,188.000000},{0.000000,128.000000}}"/>
+        <Property Name="DragAcceptName" Value="W12" />
+        <Property Name="DraggingEnabled" Value="False" />
+        <Event Name="RBClicked" Function="PetSoul_SoulChange_ACBRemove(8);" />
+      </Window>
+      <Window Type="TLBB_Frame_Lace5" Name="PetSoul_SoulChange_Blank">
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}" />
+        <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}" />
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="PetSoul_SoulChange_OK">
+        <Property Name="UnifiedPosition" Value="{{1.000000,-80.000000},{1.000000,-20.000000}" />
+        <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+        <Property Name="Text" Value="#{ZSPVP_211231_35}" />
+        <Event Name="Clicked" Function="PetSoul_SoulChange_Buttons_Clicked();" />
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="PetSoul_SoulChange_Cancel">
+        <Property Name="UnifiedPosition" Value="{{1.000000,-40.000000},{1.000000,-20.000000}" />
+        <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+        <Property Name="Text" Value="#{ZSPVP_211231_36}" />
+        <Event Name="Clicked" Function="this:Hide();" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

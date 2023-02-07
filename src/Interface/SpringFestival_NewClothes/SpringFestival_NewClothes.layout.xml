@@ -1,0 +1,221 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_HeroFrame01" Name="SpringFestival_NewClothes_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,639.000000},{0.000000,456.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-320.000000},{0.500000,-289.000000}}"/>
+    <Event Name="Hidden" Function="SpringFestival_NewClothes_Close();"/> 
+    <Window Type="TLBB_DragTitle" Name="SpringFestival_NewClothes_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,24.000000},{0.000000,5.000000}}"/>
+      <Property Name="DragTarget" Value="SpringFestival_NewClothes_Frame" />
+      <Property Name="Font" Value="YouYuan11.25" />
+      <Property Name="HorzFormatting" Value="HorzCentred"/>
+      <Property Name="Text" Value="#{ZYJX_211124_01}" />
+    </Window>
+    <Window Type="TLBB_HeroTitle01" Name="SpringFestival_NewClothes_DragTitleBK">
+      <Property Name="UnifiedSize" Value="{{0.000000,330.000000},{0.000000,30.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-170.000000},{0.000000,0.000000}}"/>
+      <Property Name="MouseRButtonHollow" Value="True"/>
+      <Property Name="MouseMoveHollow" Value="True"/>
+      <Property Name="MouseLButtonHollow" Value="True"/>
+      <Property Name="MouseHollow" Value="True"/>
+      <Property Name="RiseOnClick" Value="False"/>
+    </Window>
+    <Window Type="TLBB_ButtonClose2" Name="SpringFestival_NewClothes_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-24.000000},{0.000000,9.000000}}"/>
+      <Event Name="Clicked" Function="SpringFestival_NewClothes_Close();" />
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="SpringFestival_NewClothes_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,605.000000},{0.000000,84.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Property Name="Visible" Value="False"/>
+      <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*SpringFestival_NewClothes&quot;);' />
+    </Window>
+    <Window Type="TLBB_SimpleText" Name="SpringFestival_NewClothes_Info">
+      <Property Name="UnifiedSize" Value="{{1.000000,-28.000000},{0.000000,70.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,36.000000}}"/>
+      <Property Name="Text" Value="#{ZYJX_211124_07}"/>
+      <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="SpringFestival_NewClothes_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{1.000000,-36.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,32.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Window Type="TLBB_StaticImageNULL" Name="SpringFestival_NewClothes_BKL">
+        <Property Name="UnifiedSize" Value="{{0.000000,512.000000},{0.000000,420.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="Image" Value="set:SpringFestival_NewClothes02 image:NewClothes_BK_L"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="SpringFestival_NewClothes_BKRT">
+        <Property Name="UnifiedSize" Value="{{0.000000,138.000000},{0.000000,210.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,512.000000},{0.000000,0.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="Image" Value="set:SpringFestival_NewClothes01 image:NewClothes_BK_RT"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="SpringFestival_NewClothes_BKRB">
+        <Property Name="UnifiedSize" Value="{{0.000000,138.000000},{0.000000,210.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,512.000000},{0.000000,210.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="Image" Value="set:SpringFestival_NewClothes01 image:NewClothes_BK_RB"/>
+      </Window>
+      <Window Type="DefaultWindow" Name="SpringFestival_NewClothes_ClintFrame">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-56.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,44.000000}}"/>
+        <Window Type="DefaultWindow" Name="SpringFestival_NewClothes_ImageBK">
+          <Property Name="UnifiedSize" Value="{{0.00000,390.000000},{0.00000,354.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,12.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="SpringFestival_NewClothes_Image1">
+            <Property Name="UnifiedSize" Value="{{0.000000,258.000000},{0.000000,318.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,42.000000},{0.000000,27.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:SpringFestival_NewClothes01 image:NewClothes_01"/>
+          </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="SpringFestival_NewClothes_Image2">
+              <Property Name="UnifiedSize" Value="{{0.000000,258.000000},{0.000000,318.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,42.000000},{0.000000,27.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="Image" Value="set:SpringFestival_NewClothes01 image:NewClothes_02"/>
+              <Window Type="TLBB_Animate" Name="SpringFestival_NewClothes_Animation2">
+                <Property Name="UnifiedSize" Value="{{0.000000,108.000000},{0.000000,108.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,135.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Animate" Value="SpringFestival_NewClothes_Animate"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+            </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="SpringFestival_NewClothes_Image3">
+            <Property Name="UnifiedSize" Value="{{0.000000,258.000000},{0.000000,318.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,42.000000},{0.000000,27.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:SpringFestival_NewClothes01 image:NewClothes_03"/>
+            <Window Type="TLBB_Animate" Name="SpringFestival_NewClothes_Animation3">
+              <Property Name="UnifiedSize" Value="{{0.000000,108.000000},{0.000000,108.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,75.000000},{0.000000,20.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Animate" Value="SpringFestival_NewClothes_Animate"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="SpringFestival_NewClothes_Image4">
+            <Property Name="UnifiedSize" Value="{{0.000000,258.000000},{0.000000,318.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,42.000000},{0.000000,27.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:SpringFestival_NewClothes01 image:NewClothes_04"/>
+            <Window Type="TLBB_Animate" Name="SpringFestival_NewClothes_Animation4">
+              <Property Name="UnifiedSize" Value="{{0.000000,108.000000},{0.000000,108.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,134.000000},{0.000000,77.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Animate" Value="SpringFestival_NewClothes_Animate"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="SpringFestival_NewClothes_Image5">
+            <Property Name="UnifiedSize" Value="{{0.000000,258.000000},{0.000000,318.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,42.000000},{0.000000,27.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:SpringFestival_NewClothes01 image:NewClothes_05"/>
+            <Window Type="TLBB_Animate" Name="SpringFestival_NewClothes_Animation5">
+              <Property Name="UnifiedSize" Value="{{0.000000,108.000000},{0.000000,108.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,78.000000},{0.000000,140.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Animate" Value="SpringFestival_NewClothes_Animate"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="SpringFestival_NewClothes_Image6">
+            <Property Name="UnifiedSize" Value="{{0.000000,258.000000},{0.000000,318.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,42.000000},{0.000000,27.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:SpringFestival_NewClothes01 image:NewClothes_06"/>
+            <Window Type="TLBB_Animate" Name="SpringFestival_NewClothes_Animation6">
+              <Property Name="UnifiedSize" Value="{{0.000000,108.000000},{0.000000,108.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,140.000000},{0.000000,206.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Animate" Value="SpringFestival_NewClothes_Animate"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="SpringFestival_NewClothes_RightClient">
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="UnifiedSize" Value="{{0.00000,240.000000},{0.000000,412.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.00000,376.000000},{0.0000,2.000000}}"/>
+          <Window Type="TLBB_ActionButton" Name="SpringFestival_NewClothes_Right_Item1">
+            <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,50.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,10.000000},{0.500000,-86.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="SpringFestival_NewClothes_Text1">
+            <Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,69.000000},{.000000,180.000000}}"/>
+            <Property Name="Text" Value="#{ZYJX_211124_11}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+            <Property Name="Font" Value="SongTiBmp12"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="SpringFestival_NewClothes_Text2">
+            <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,56.000000},{0.000000,263.000000}}"/>
+            <Property Name="Text" Value="#{ZYJX_211124_12}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+            <Property Name="Font" Value="SongTiBmp12"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="SpringFestival_NewClothes_Button1">
+            <Property Name="UnifiedSize" Value="{{0.000000,138.000000},{0.000000,34.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-34.000000},{0.500000,8.000000}}"/>
+            <Property Name="PushedImage" Value="set:SpringFestival_NewClothes01 image:NewClothes_Weave_Pushed"/>
+            <Property Name="NormalImage" Value="set:SpringFestival_NewClothes01 image:NewClothes_Weave_Normal"/>
+            <Property Name="HoverImage" Value="set:SpringFestival_NewClothes01 image:NewClothes_Weave_Hover"/>
+            <Property Name="DisabledImage" Value="set:SpringFestival_NewClothes01 image:NewClothes_Weave_Disable"/>
+            <Property Name="Tooltip" Value="#{ZYJX_211124_13}"/>
+            <Event Name="Clicked" Function="SpringFestival_NewClothes_Click(1);"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="SpringFestival_NewClothes_Button2">
+            <Property Name="UnifiedSize" Value="{{0.000000,138.000000},{0.000000,34.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-34.000000},{0.500000,8.000000}}"/>
+            <Property Name="PushedImage" Value="set:SpringFestival_NewClothes01 image:NewClothes_Get_Pushed"/>
+            <Property Name="NormalImage" Value="set:SpringFestival_NewClothes01 image:NewClothes_Get_Normal"/>
+            <Property Name="HoverImage" Value="set:SpringFestival_NewClothes01 image:NewClothes_Get_Hover"/>
+            <Property Name="DisabledImage" Value="set:SpringFestival_NewClothes01 image:NewClothes_Get_Disable"/>
+            <Event Name="Clicked" Function="SpringFestival_NewClothes_Click(2);"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="SpringFestival_NewClothes_Received">
+            <Property Name="UnifiedSize" Value="{{0.000000,134.000000},{0.000000,28.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-32.000000},{0.500000,11.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:SpringFestival_NewClothes01 image:NewClothes_Received"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

@@ -1,0 +1,341 @@
+<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="HuaShanLunJian_FightEnd_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,338.000000},{0.000000,262.000000}}" />
+    <Property Name="UnifiedPosition" Value="{{0.500000,-169.000000},{0.500000,-131.000000}}" />
+    <Event Name="Hidden" Function="HuaShanLunJian_FightEnd_Close();" />
+    <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_FightEnd_Client">
+      <Property Name="UnifiedSize" Value="{{0.000000,338.000000},{0.000000,262.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+      <Property Name="Image" Value="set:HSLJ_02 image:HSLJ_LevelUp" />
+      <Window Type="TLBB_DragTitle" Name="HuaShanLunJian_FightEnd">
+        <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,10.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-50.000000},{0.000000,0.000000}}"/>
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="HuaShanLunJian_FightEnd_Close">
+        <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,30.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-60.000000},{0.000000,8.000000}}"/>
+        <Property Name="PushedImage" Value="set:HSLJ_02 image:HSLJ02Close_Pushed"/>
+        <Property Name="NormalImage" Value="set:HSLJ_02 image:HSLJ02Close_Normal"/>
+        <Property Name="HoverImage" Value="set:HSLJ_02 image:HSLJ02Close_Hover"/>
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Event Name="Clicked" Function="HuaShanLunJian_FightEnd_Close()"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_FightEnd_Client_Frame_Victory">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="UnifiedSize" Value="{{0.000000,66.000000},{0.000000,116.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+        <Property Name="Image" Value="set:HSLJ_02 image:HSLJ02_Win" />
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_FightEnd_Image">
+        <Property Name="UnifiedSize" Value="{{0.000000,158.000000},{0.000000,178.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.500000,-79.000000},{0.000000,5.000000}}" />
+        <Property Name="Image" Value="set:HSLJ_01 image:HSLJ_Dragon6"/>
+        <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_FightEnd_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,28.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.500000,-19.000000},{1.000000,-38.000000}}" />
+          <Property Name="Image" Value="set:HSLJ_Match1 image:Number1" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_Animate" Name="HuaShanLunJian_FightEnd_ImageAnimate">
+        <Property Name="UnifiedSize" Value="{{0.000000,220.000000},{0.000000,70.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.500000,-110.000000},{1.000000,-70.000000}}" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Animate" Value="HSLJ_LightUpFlash" />
+      </Window>
+      <Window Type="DefaultWindow" Name="HuaShanLunJian_FightEnd_StageBK_Image1">
+        <Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,20.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.500000,-90.000000},{1.000000,-70.000000}}" />
+        <Window Type="TLBB_SimpleText" Name="HuaShanLunJian_FightEnd_StageBK_Text2">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-10.000000}}" />
+          <Property Name="Text" Value="#{HSLJ_190919_23}" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="HuaShanLunJian_FightEnd_StarSet">
+        <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,30.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-45.000000},{1.000000,-55.000000}}"/>
+        <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_FightEnd_Star1">
+          <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.500000,-10.000000}}" />
+          <Property Name="Image" Value="set:HSLJ_01 image:HSLJ_Star" />
+        </Window>
+        <Window Type="TLBB_Animate" Name="HuaShanLunJian_FightEnd_Star1Animate">
+          <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.00000,0.000000}}" />
+          <Property Name="Animate" Value="HSLJ_LevelupStrars" />
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_FightEnd_Star2">
+          <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-10.000000},{0.5000000,-10.000000}}"/>
+          <Property Name="Image" Value="set:HSLJ_01 image:HSLJ_Star" />
+        </Window>
+        <Window Type="TLBB_Animate" Name="HuaShanLunJian_FightEnd_Star2Animate">
+          <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,0.000000}}"/>
+
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_FightEnd_Star3">
+          <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.500000,-10.000000}}"/>
+          <Property Name="Image" Value="set:HSLJ_01 image:HSLJ_Star" />
+        </Window>
+        <Window Type="TLBB_Animate" Name="HuaShanLunJian_FightEnd_Star3Animate">
+          <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.000000,0.000000}}"/>
+          <Property Name="Animate" Value="HSLJ_LevelupStrars"/>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="HuaShanLunJian_FightEnd_StarSet1">
+        <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,30.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-60.000000},{1.000000,-55.000000}}"/>
+        <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_FightEnd_Star1_1">
+          <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.500000,-10.000000}}" />
+          <Property Name="Image" Value="set:HSLJ_01 image:HSLJ_Star" />
+        </Window>
+        <Window Type="TLBB_Animate" Name="HuaShanLunJian_FightEnd_Star1_1Animate">
+          <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_FightEnd_Star1_2">
+          <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,35.000000},{0.500000,-10.000000}}" />
+          <Property Name="Image" Value="set:HSLJ_01 image:HSLJ_Star" />
+        </Window>
+        <Window Type="TLBB_Animate" Name="HuaShanLunJian_FightEnd_Star1_2Animate">
+          <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,0.000000}}"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_FightEnd_Star1_3">
+          <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,65.000000},{0.500000,-10.000000}}" />
+          <Property Name="Image" Value="set:HSLJ_01 image:HSLJ_Star" />
+        </Window>
+        <Window Type="TLBB_Animate" Name="HuaShanLunJian_FightEnd_Star1_3Animate">
+          <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,0.000000}}"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_FightEnd_Star1_4">
+          <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.500000,-10.000000}}" />
+          <Property Name="Image" Value="set:HSLJ_01 image:HSLJ_Star" />
+        </Window>
+        <Window Type="TLBB_Animate" Name="HuaShanLunJian_FightEnd_Star1_4Animate">
+          <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.000000,0.000000}}"/>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="HuaShanLunJian_FightEnd_StarSet2">
+        <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,30.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-75.000000},{1.000000,-55.000000}}"/>
+        <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_FightEnd_Star2_1">
+          <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.500000,-10.000000}}" />
+          <Property Name="Image" Value="set:HSLJ_01 image:HSLJ_Star" />
+        </Window>
+        <Window Type="TLBB_Animate" Name="HuaShanLunJian_FightEnd_Star2_1Animate">
+          <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,30.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_FightEnd_Star2_2">
+          <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,35.000000},{0.500000,-10.000000}}" />
+          <Property Name="Image" Value="set:HSLJ_01 image:HSLJ_Star" />
+        </Window>
+        <Window Type="TLBB_Animate" Name="HuaShanLunJian_FightEnd_Star2_2Animate">
+          <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,0.000000}}"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_FightEnd_Star2_3">
+          <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,65.000000},{0.500000,-10.000000}}" />
+          <Property Name="Image" Value="set:HSLJ_01 image:HSLJ_Star" />
+        </Window>
+        <Window Type="TLBB_Animate" Name="HuaShanLunJian_FightEnd_Star2_3Animate">
+          <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,0.000000}}"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_FightEnd_Star2_4">
+          <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,95.000000},{0.500000,-10.000000}}" />
+          <Property Name="Image" Value="set:HSLJ_01 image:HSLJ_Star" />
+        </Window>
+        <Window Type="TLBB_Animate" Name="HuaShanLunJian_FightEnd_Star2_4Animate">
+          <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,90.000000},{0.000000,0.000000}}"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_FightEnd_Star2_5">
+          <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,125.000000},{0.500000,-10.000000}}" />
+          <Property Name="Image" Value="set:HSLJ_01 image:HSLJ_Star" />
+        </Window>
+        <Window Type="TLBB_Animate" Name="HuaShanLunJian_FightEnd_Star2_5Animate">
+          <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,120.000000},{0.000000,0.000000}}"/>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="HuaShanLunJian_FightEnd_StarSet3">
+        <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,30.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-48.000000},{1.000000,-55.000000}}"/>
+        <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_FightEnd_Star3_1">
+          <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,14.000000},{0.500000,-10.000000}}" />
+          <Property Name="Image" Value="set:HSLJ_01 image:HSLJ_Star" />
+        </Window>
+        <Window Type="TLBB_Animate" Name="HuaShanLunJian_FightEnd_Star3_1Animate">
+          <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,30.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,0.000000}}" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="HuaShanLunJian_FightEnd_Star3Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-60.000000},{0.500000,-7.000000}}"/>
+          <Property Name="Text" Value="#{HSSC_191009_73}" />
+          <Property Name="Font" Value="YouYuan13" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="HuaShanLunJian_FightEnd_StarSet4">
+        <Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,30.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-90.000000},{1.000000,-55.000000}}"/>
+        <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_FightEnd_Star4_1">
+          <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.500000,-10.000000}}" />
+          <Property Name="Image" Value="set:HSLJ_01 image:HSLJ_Star" />
+        </Window>
+        <Window Type="TLBB_Animate" Name="HuaShanLunJian_FightEnd_Star4_1Animate">
+          <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,30.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_FightEnd_Star4_2">
+          <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,35.000000},{0.500000,-10.000000}}" />
+          <Property Name="Image" Value="set:HSLJ_01 image:HSLJ_Star" />
+        </Window>
+        <Window Type="TLBB_Animate" Name="HuaShanLunJian_FightEnd_Star4_2Animate">
+          <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,30.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,0.000000}}"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_FightEnd_Star4_3">
+          <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,65.000000},{0.500000,-10.000000}}" />
+          <Property Name="Image" Value="set:HSLJ_01 image:HSLJ_Star" />
+        </Window>
+        <Window Type="TLBB_Animate" Name="HuaShanLunJian_FightEnd_Star4_3Animate">
+          <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,30.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,0.000000}}"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_FightEnd_Star4_4">
+          <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,95.000000},{0.500000,-10.000000}}" />
+          <Property Name="Image" Value="set:HSLJ_01 image:HSLJ_Star" />
+        </Window>
+        <Window Type="TLBB_Animate" Name="HuaShanLunJian_FightEnd_Star4_4Animate">
+          <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,30.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,90.000000},{0.000000,0.000000}}"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_FightEnd_Star4_5">
+          <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,125.000000},{0.500000,-10.000000}}" />
+          <Property Name="Image" Value="set:HSLJ_01 image:HSLJ_Star" />
+        </Window>
+        <Window Type="TLBB_Animate" Name="HuaShanLunJian_FightEnd_Star4_5Animate">
+          <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,30.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,120.000000},{0.000000,0.000000}}"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_FightEnd_Star4_6">
+          <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,155.000000},{0.500000,-10.000000}}" />
+          <Property Name="Image" Value="set:HSLJ_01 image:HSLJ_Star" />
+        </Window>
+        <Window Type="TLBB_Animate" Name="HuaShanLunJian_FightEnd_Star4_6Animate">
+          <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,30.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,150.000000},{0.000000,0.000000}}"/>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="HuaShanLunJian_FightEnd_StarSet5">
+        <Property Name="UnifiedSize" Value="{{0.000000,212.000000},{0.000000,30.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-106.000000},{1.000000,-55.000000}}"/>
+        <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_FightEnd_Star5_1">
+          <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.500000,-10.000000}}" />
+          <Property Name="Image" Value="set:HSLJ_01 image:HSLJ_Star" />
+        </Window>
+        <Window Type="TLBB_Animate" Name="HuaShanLunJian_FightEnd_Star5_1Animate">
+          <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,30.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_FightEnd_Star5_2">
+          <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,31.000000},{0.500000,-10.000000}}" />
+          <Property Name="Image" Value="set:HSLJ_01 image:HSLJ_Star" />
+        </Window>
+        <Window Type="TLBB_Animate" Name="HuaShanLunJian_FightEnd_Star5_2Animate">
+          <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,30.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,26.000000},{0.000000,0.000000}}"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_FightEnd_Star5_3">
+          <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,57.000000},{0.500000,-10.000000}}" />
+          <Property Name="Image" Value="set:HSLJ_01 image:HSLJ_Star" />
+        </Window>
+        <Window Type="TLBB_Animate" Name="HuaShanLunJian_FightEnd_Star5_3Animate">
+          <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,30.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,52.000000},{0.000000,0.000000}}"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_FightEnd_Star5_4">
+          <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,83.000000},{0.500000,-10.000000}}" />
+          <Property Name="Image" Value="set:HSLJ_01 image:HSLJ_Star" />
+        </Window>
+        <Window Type="TLBB_Animate" Name="HuaShanLunJian_FightEnd_Star5_4Animate">
+          <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,30.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,78.000000},{0.000000,0.000000}}"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_FightEnd_Star5_5">
+          <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,109.000000},{0.500000,-10.000000}}" />
+          <Property Name="Image" Value="set:HSLJ_01 image:HSLJ_Star" />
+        </Window>
+        <Window Type="TLBB_Animate" Name="HuaShanLunJian_FightEnd_Star5_5Animate">
+          <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,30.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,104.000000},{0.000000,0.000000}}"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_FightEnd_Star5_6">
+          <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,135.000000},{0.500000,-10.000000}}" />
+          <Property Name="Image" Value="set:HSLJ_01 image:HSLJ_Star" />
+        </Window>
+        <Window Type="TLBB_Animate" Name="HuaShanLunJian_FightEnd_Star5_6Animate">
+          <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,30.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,130.000000},{0.000000,0.000000}}"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_FightEnd_Star5_7">
+          <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,161.000000},{0.500000,-10.000000}}" />
+          <Property Name="Image" Value="set:HSLJ_01 image:HSLJ_Star" />
+        </Window>
+        <Window Type="TLBB_Animate" Name="HuaShanLunJian_FightEnd_Star5_7Animate">
+          <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,30.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,156.000000},{0.000000,0.000000}}"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_FightEnd_Star5_8">
+          <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,187.000000},{0.500000,-10.000000}}" />
+          <Property Name="Image" Value="set:HSLJ_01 image:HSLJ_Star" />
+        </Window>
+        <Window Type="TLBB_Animate" Name="HuaShanLunJian_FightEnd_Star5_8Animate">
+          <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,30.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,182.000000},{0.000000,0.000000}}"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_Animate" Name="HuaShanLunJian_FightEnd_GoupAnimate">
+        <Property Name="UnifiedSize" Value="{{0.000000,256.000000},{0.000000,256.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.500000,-128.000000},{0.000000,0.000000}}" />
+        <Property Name="Animate" Value="HSLJ_GoupFlash" />
+        <Property Name="AlwaysOnTop" Value="True" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" ?>
+<GUILayout>
+    <Window Type="TLBB_MainFrame1" Name="YB_Modify_Frame">
+        <Property Name="UnifiedPosition" Value="{{0.5,-128},{0.5,-85}}" />
+        <Property Name="AbsoluteSize" Value="w:256 h:169" />
+		<Event Name="Hidden" Function="YB_Modify_Cancel_Clicked();" />
+        <Window Type="TLBB_ButtonHelp" Name="YB_Modify_Help">
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+            <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+        </Window>
+        <Window Type="TLBB_ButtonClose" Name="YB_Modify_Close">
+            <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+            <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+			<Event Name="Clicked" Function="YB_Modify_Cancel_Clicked();" />
+        </Window>
+        <Window Type="TLBB_DragTitle" Name="YB_Modify_DragTitle">
+            <Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
+            <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+            <Property Name="DragTarget" Value="YB_Modify_Frame" />
+            <Property Name="Font" Value="YouYuan11.25" />
+            <Property Name="Text" Value="#{YBSC_XML_56}" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="VertFormatting" Value="VertCentred" />
+        </Window>
+        <Window Type="DefaultWindow" Name="YB_Modify_Function_Frame">
+            <Property Name="AbsolutePosition" Value="x:7.000000 y:36.000000" />
+            <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-55.000000}" />
+          <Window Type="TLBB_SimpleText" Name="YB_Modify_Explain1" >
+            <Property Name="UnifiedPosition" Value="{{0.010000,1.570000},{0.000000,31.000000}" />
+            <Property Name="UnifiedSize" Value="{{0.980000,-112.140005},{0.000000,18.000000}" />
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+            <Property Name="RiseOnClick" Value="False" />
+            <Property Name="Text" Value="#{YBSC_XML_57}" />
+            <Property Name="TextColor" Value="FFFFF263" />
+            <Property Name="VertFormatting" Value="VertCentred" />
+          </Window>
+	    <Window Type="TLBB_SimpleText" Name="YB_Modify_Explain2" >
+		<Property Name="UnifiedPosition" Value="{{0.000000,205.000000},{0.000000,31.000000}" />
+		<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,18.000000}" />
+		<Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+		<Property Name="RiseOnClick" Value="False" />
+		<Property Name="Text" Value="#{YBSC_XML_48}" />
+		<Property Name="TextColor" Value="FFFFF263" />
+		<Property Name="VertFormatting" Value="VertCentred" />
+	    </Window>
+          <Window Type="TLBB_EditBoxNormal" Name="YB_Modify_Edit">
+            <Property Name="UnifiedSize" Value="{{0.00000,70.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,130.570000},{0.000000,31.000000}}"/>
+            <Property Name="MaxTextLength" Value="6"/>
+            <Property Name="DisableCopyPaste" Value="True"/>
+            <Property Name="DefaultEditBox" Value="True"/>
+		      	<Property Name="ValidationString" Value="[0-9]*" />
+            <Event Name="TextChanged" Function="YB_Modify_Edit_Change();" />
+          </Window>
+            <Window Type="TLBB_SimpleMulitiTextFrame" Name="YB_Modify_Money_Text">
+                <Property Name="UnifiedPosition" Value="{{0.05,0.000000},{1.000000,-48.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.9,0.000000},{0.000000,22.000000}" />
+                <Property Name="Text" Value="#{YBSC_XML_58}" />
+                <Property Name="TextColor" Value="FFFFF263" />
+                <Property Name="HorzFormatting" Value="LeftAligned" />
+                <Property Name="VertFormatting" Value="VertCentred" />
+                <Property Name="RiseOnClick" Value="False" />
+                <Window Type="TLBB_Money" Name="YB_Modify_Money">
+                    <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}" />
+                    <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}" />
+                    <Property Name="MoneyNumber" Value="0" />
+                    <Property Name="HorzFormatting" Value="RightAligned" />
+                    <Property Name="GoldIcon" Value = "set:Button6 image:Lace_JiaoziJin" />
+                    <Property Name="SilverIcon" Value = "set:Button6 image:Lace_JiaoziYin" />
+                    <Property Name="CopperIcon" Value = "set:Button6 image:Lace_JiaoziTong" />
+                </Window>
+            </Window>
+            <Window Type="TLBB_Frame_Lace5" Name="YB_Modify_Blank">
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}" />
+                <Property Name="UnifiedSize" Value="{{1.000000,-120.000000},{0.000000,20.000000}" />
+            </Window>
+            <Window Type="TLBB_ButtonCommon" Name="YB_Modify_Accept">
+                <Property Name="UnifiedPosition" Value="{{1.000000,-120.000000},{1.000000,-20.000000}" />
+                <Property Name="AbsoluteSize" Value="w:60.000000 h:20.000000" />
+                <Property Name="Text" Value="#{INTERFACE_XML_557}" />
+				<Event Name="Clicked" Function="YB_Modify_Accept_Clicked();" />
+            </Window>
+            <Window Type="TLBB_ButtonCommon" Name="YB_Modify_Cancel">
+                <Property Name="UnifiedPosition" Value="{{1.000000,-60.000000},{1.000000,-20.000000}" />
+                <Property Name="AbsoluteSize" Value="w:60.000000 h:20.000000" />
+                <Property Name="Text" Value="#{Agreement_Info_No}" />
+				<Event Name="Clicked" Function="YB_Modify_Cancel_Clicked();" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

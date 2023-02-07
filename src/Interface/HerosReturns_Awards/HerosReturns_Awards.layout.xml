@@ -1,0 +1,544 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="HerosReturns_Awards_FrameFull">
+    <Property Name="UnifiedSize" Value="{{0.000000,704.000000},{0.000000,576.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-352.000000},{0.500000,-288.000000}}"/>
+    <Event Name="Hidden" Function="HerosReturns_Awards_OnHidden()"/>
+    <Window Type="DefaultWindow" Name="HerosReturns_Awards_ButtonLeft">
+      <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,330.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,10.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Window Type="TLBB_StaticImageNULL" Name="HerosReturns_Awards_ButtonLeft_Image1">
+        <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,44.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-8.000000},{0.000000,0.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Image" Value="set:SpecialFrame image:SpecialFrame01ImageL1"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="TLBB_ButtonCheckNULL" Name="HerosReturns_Awards_Buttontab01">
+        <Property Name="UnifiedSize" Value="{{0.000000,33.000000},{0.000000,82.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,38.000000}}"/>
+        <Property Name="PushedImage" Value="set:HerosReturns01 image:HerosReturnsPage1_Hover"/>
+        <Property Name="NormalImage" Value="set:HerosReturns01 image:HerosReturnsPage1_Normal"/>
+        <Property Name="HoverImage" Value="set:HerosReturns01 image:HerosReturnsPage1_Hover"/>
+        <Property Name="DisabledImage" Value="set:HerosReturns01 image:HerosReturnsPage1_Normal"/>
+        <Property Name="CheckMode" Value="1"/>
+        <Event Name="Clicked" Function="HerosReturns_Awards_FenYe_Clicked(1)"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="HerosReturns_Awards_Buttontab01_tips">
+        <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,28.000000},{0.000000,36.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="HerosReturns_Awards_ButtonLeft_Image2">
+        <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,14.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-8.000000},{0.000000,116.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Image" Value="set:SpecialFrame image:SpecialFrame01ImageL2"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="TLBB_ButtonCheckNULL" Name="HerosReturns_Awards_Buttontab02">
+        <Property Name="UnifiedSize" Value="{{0.000000,33.000000},{0.000000,82.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,120.000000}}"/>
+        <Property Name="PushedImage" Value="set:HerosReturns01 image:HerosReturnsPage2_Hover"/>
+        <Property Name="NormalImage" Value="set:HerosReturns01 image:HerosReturnsPage2_Normal"/>
+        <Property Name="HoverImage" Value="set:HerosReturns01 image:HerosReturnsPage2_Hover"/>
+        <Property Name="DisabledImage" Value="set:HerosReturns01 image:HerosReturnsPage2_Normal"/>
+        <Property Name="CheckMode" Value="1"/>
+        <Event Name="Clicked" Function="HerosReturns_Awards_FenYe_Clicked(2)"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="HerosReturns_Awards_Buttontab02_tips">
+        <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,28.000000},{0.000000,118.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="HerosReturns_Awards_ButtonLeft_Image3">
+        <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,14.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-8.000000},{0.000000,198.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Image" Value="set:SpecialFrame image:SpecialFrame01ImageL2"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="TLBB_ButtonCheckNULL" Name="HerosReturns_Awards_Buttontab03">
+        <Property Name="UnifiedSize" Value="{{0.000000,33.000000},{0.000000,82.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,202.000000}}"/>
+        <Property Name="PushedImage" Value="set:HerosReturns01 image:HerosReturnsPage3_Hover"/>
+        <Property Name="NormalImage" Value="set:HerosReturns01 image:HerosReturnsPage3_Normal"/>
+        <Property Name="HoverImage" Value="set:HerosReturns01 image:HerosReturnsPage3_Hover"/>
+        <Property Name="DisabledImage" Value="set:HerosReturns01 image:HerosReturnsPage3_Normal"/>
+        <Property Name="CheckMode" Value="1"/>
+        <Event Name="Clicked" Function="HerosReturns_Awards_FenYe_Clicked(3)"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="HerosReturns_Awards_Buttontab03_tips">
+        <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,28.000000},{0.000000,200.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="HerosReturns_Awards_ButtonLeft_Image4">
+        <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,46.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-8.000000},{0.000000,280.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Image" Value="set:SpecialFrame image:SpecialFrame01ImageL3"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+    </Window>
+    <Window Type="TLBB_SpecialFrame01" Name="HerosReturns_Awards_Frame">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      <Window Type="TLBB_SpecialTitle01" Name="HerosReturns_Awards_DragTitleBK">
+        <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,27.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-100.000000},{0.000000,0.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+      </Window>
+      <Window Type="TLBB_DragTitle" Name="HerosReturns_Awards_DragTitle">
+        <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,3.000000}}"/>
+        <Property Name="DragTarget" Value="HerosReturns_Awards_FrameFull" />
+        <Property Name="Font" Value="YouYuan11.25" />
+        <Property Name="HorzFormatting" Value="HorzCentred"/>
+        <Property Name="Text" Value="#{HJHL_201224_04}" />
+      </Window>
+      <Window Type="TLBB_SpecialClose" Name="HerosReturns_Awards_Close">
+        <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,45.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-46.000000},{0.000000,0.000000}}"/>
+        <Event Name="Clicked" Function="HerosReturns_Awards_Close();" />
+      </Window>
+      <Window Type="DefaultWindow" Name="HerosReturns_Awards_Client">
+        <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{1.000000,-50.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,30.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Window Type="TLBB_Frame_Lace3" Name="HerosReturns_Awards_Seven_DayFrame">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-2.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Window Type="TLBB_Frame_Lace1" Name="HerosReturns_Awards_SevenDay_TopBK">
+            <Property Name="UnifiedSize" Value="{{1.00000,0.000000},{0.00000,120.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Window Type="DefaultWindow" Name="HerosReturns_Awards_SevenDay_Top_day1Client">
+              <Property Name="UnifiedSize" Value="{{0.000000,82.000000},{0.000000,109.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-298.500000},{0.500000,-55.000000}}"/>
+              <Window Type="TLBB_StaticImageNULL" Name="HerosReturns_Awards_SevenDay_Top_day1_bk">
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-33.000000},{0.500000,-38.500000}}"/>
+                <Property Name="Image" Value="set:NewCloth4 image:NewCloth4_10"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="HerosReturns_Awards_SevenDay_Top_day1_done">
+                <Property Name="Visible" Value="False"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,51.000000},{0.000000,36.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-25.500000},{0.500000,-26.000000}}"/>
+                <Property Name="Image" Value="set:Seven image:Seven_ke"/>
+              </Window>
+              <Window Type="TLBB_ButtonCheckNULL" Name="HerosReturns_Awards_SevenDay_Top_day1_Button1">
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,82.000000},{0.000000,109.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.00000,0.00000},{0.00000,0.000000}}"/>
+                <Property Name="PushedImage" Value="set:Seven2 image:Seven2_BtnPush"/>
+                <Property Name="NormalImage" Value="set:Seven2 image:Seven2_BtnNormal"/>
+                <Property Name="HoverImage" Value="set:Seven2 image:Seven2_BtnHover"/>
+                <Property Name="DisabledImage" Value="set:Seven2 image:Seven2_BtnDis"/>
+                <Property Name="CheckMode" Value="1"/>
+                <Event Name="Clicked" Function="HerosReturns_Awards_SevenDay_Click(1);"/>
+                <Window Type="TLBB_SimpleText" Name="HerosReturns_Awards_SevenDay_Top_day1_Button1_text">
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{1.000000,-25.000000}}"/>
+                  <Property Name="Text" Value="#{HJHL_201224_05}"/>
+                  <Property Name="HorzFormatting" Value="HorzCentred"/>
+                  <Property Name="Font" Value="YouYuan13"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                </Window>
+              </Window>
+            </Window>
+            <Window Type="DefaultWindow" Name="HerosReturns_Awards_SevenDay_Top_day2Client">
+              <Property Name="UnifiedSize" Value="{{0.000000,82.000000},{0.000000,109.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-212.500000},{0.500000,-55.000000}}"/>
+              <Window Type="TLBB_StaticImageNULL" Name="HerosReturns_Awards_SevenDay_Top_day2_bk">
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,54.000000},{0.000000,54.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-27.000000},{0.500000,-36.000000}}"/>
+                <Property Name="Image" Value="set:Cloth3 image:Cloth3_1"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="HerosReturns_Awards_SevenDay_Top_day2_done">
+                <Property Name="Visible" Value="False"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,51.000000},{0.000000,36.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-25.500000},{0.500000,-26.000000}}"/>
+                <Property Name="Image" Value="set:Seven image:Seven_ke"/>
+              </Window>
+              <Window Type="TLBB_ButtonCheckNULL" Name="HerosReturns_Awards_SevenDay_Top_day2_Button1">
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,82.000000},{0.000000,109.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.00000,0.00000},{0.00000,0.000000}}"/>
+                <Property Name="PushedImage" Value="set:Seven2 image:Seven2_BtnPush"/>
+                <Property Name="NormalImage" Value="set:Seven2 image:Seven2_BtnNormal"/>
+                <Property Name="HoverImage" Value="set:Seven2 image:Seven2_BtnHover"/>
+                <Property Name="DisabledImage" Value="set:Seven2 image:Seven2_BtnDis"/>
+                <Property Name="CheckMode" Value="1"/>
+                <Event Name="Clicked" Function="HerosReturns_Awards_SevenDay_Click(2);"/>
+                <Window Type="TLBB_SimpleText" Name="HerosReturns_Awards_SevenDay_Top_day2_Button1_text">
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{1.000000,-25.000000}}"/>
+                  <Property Name="Text" Value="#{HJHL_201224_06}"/>
+                  <Property Name="HorzFormatting" Value="HorzCentred"/>
+                  <Property Name="Font" Value="YouYuan13"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                </Window>
+              </Window>
+            </Window>
+            <Window Type="DefaultWindow" Name="HerosReturns_Awards_SevenDay_Top_day3Client">
+              <Property Name="UnifiedSize" Value="{{0.000000,82.000000},{0.000000,109.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-126.500000},{0.500000,-55.000000}}"/>
+              <Window Type="TLBB_StaticImageNULL" Name="HerosReturns_Awards_SevenDay_Top_day3_bk">
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-33.000000},{0.500000,-38.500000}}"/>
+                <Property Name="Image" Value="set:Ride2 image:Ride2_16"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="HerosReturns_Awards_SevenDay_Top_day3_done">
+                <Property Name="Visible" Value="False"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,51.000000},{0.000000,36.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-25.500000},{0.500000,-26.000000}}"/>
+                <Property Name="Image" Value="set:Seven image:Seven_ke"/>
+              </Window>
+              <Window Type="TLBB_ButtonCheckNULL" Name="HerosReturns_Awards_SevenDay_Top_day3_Button1">
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,82.000000},{0.000000,109.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.00000,0.00000},{0.00000,0.000000}}"/>
+                <Property Name="PushedImage" Value="set:Seven2 image:Seven2_BtnPush"/>
+                <Property Name="NormalImage" Value="set:Seven2 image:Seven2_BtnNormal"/>
+                <Property Name="HoverImage" Value="set:Seven2 image:Seven2_BtnHover"/>
+                <Property Name="DisabledImage" Value="set:Seven2 image:Seven2_BtnDis"/>
+                <Property Name="CheckMode" Value="1"/>
+                <Event Name="Clicked" Function="HerosReturns_Awards_SevenDay_Click(3);"/>
+                <Window Type="TLBB_SimpleText" Name="HerosReturns_Awards_SevenDay_Top_day3_Button1_text">
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{1.000000,-25.000000}}"/>
+                  <Property Name="Text" Value="#{HJHL_201224_07}"/>
+                  <Property Name="HorzFormatting" Value="HorzCentred"/>
+                  <Property Name="Font" Value="YouYuan13"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                </Window>
+              </Window>
+            </Window>
+            <Window Type="DefaultWindow" Name="HerosReturns_Awards_SevenDay_Top_day4Client">
+              <Property Name="UnifiedSize" Value="{{0.000000,82.000000},{0.000000,109.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-40.500000},{0.500000,-55.000000}}"/>
+              <Window Type="TLBB_StaticImageNULL" Name="HerosReturns_Awards_SevenDay_Top_day4_bk">
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-33.000000},{0.500000,-38.500000}}"/>
+                <Property Name="Image" Value="set:CircularTaskTool8 image:CircularTaskTool8_6"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="HerosReturns_Awards_SevenDay_Top_day4_done">
+                <Property Name="Visible" Value="False"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,51.000000},{0.000000,36.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-25.500000},{0.500000,-26.000000}}"/>
+                <Property Name="Image" Value="set:Seven image:Seven_ke"/>
+              </Window>
+              <Window Type="TLBB_ButtonCheckNULL" Name="HerosReturns_Awards_SevenDay_Top_day4_Button1">
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,82.000000},{0.000000,109.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.00000,0.00000},{0.00000,0.000000}}"/>
+                <Property Name="PushedImage" Value="set:Seven2 image:Seven2_BtnPush"/>
+                <Property Name="NormalImage" Value="set:Seven2 image:Seven2_BtnNormal"/>
+                <Property Name="HoverImage" Value="set:Seven2 image:Seven2_BtnHover"/>
+                <Property Name="DisabledImage" Value="set:Seven2 image:Seven2_BtnDis"/>
+                <Property Name="CheckMode" Value="1"/>
+                <Event Name="Clicked" Function="HerosReturns_Awards_SevenDay_Click(4);"/>
+                <Window Type="TLBB_SimpleText" Name="HerosReturns_Awards_SevenDay_Top_day4_Button1_text">
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{1.000000,-25.000000}}"/>
+                  <Property Name="Text" Value="#{HJHL_201224_08}"/>
+                  <Property Name="HorzFormatting" Value="HorzCentred"/>
+                  <Property Name="Font" Value="YouYuan13"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                </Window>
+              </Window>
+            </Window>
+            <Window Type="DefaultWindow" Name="HerosReturns_Awards_SevenDay_Top_day5Client">
+              <Property Name="UnifiedSize" Value="{{0.000000,82.000000},{0.000000,109.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,45.500000},{0.500000,-55.000000}}"/>
+              <Window Type="TLBB_StaticImageNULL" Name="HerosReturns_Awards_SevenDay_Top_day5_bk">
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-33.000000},{0.500000,-38.500000}}"/>
+                <Property Name="Image" Value="set:Tattoo image:Tattoo_1"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="HerosReturns_Awards_SevenDay_Top_day5_done">
+                <Property Name="Visible" Value="False"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,51.000000},{0.000000,36.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-25.500000},{0.500000,-26.000000}}"/>
+                <Property Name="Image" Value="set:Seven image:Seven_ke"/>
+              </Window>
+              <Window Type="TLBB_ButtonCheckNULL" Name="HerosReturns_Awards_SevenDay_Top_day5_Button1">
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,82.000000},{0.000000,109.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.00000,0.00000},{0.00000,0.000000}}"/>
+                <Property Name="PushedImage" Value="set:Seven2 image:Seven2_BtnPush"/>
+                <Property Name="NormalImage" Value="set:Seven2 image:Seven2_BtnNormal"/>
+                <Property Name="HoverImage" Value="set:Seven2 image:Seven2_BtnHover"/>
+                <Property Name="DisabledImage" Value="set:Seven2 image:Seven2_BtnDis"/>
+                <Property Name="CheckMode" Value="1"/>
+                <Event Name="Clicked" Function="HerosReturns_Awards_SevenDay_Click(5);"/>
+                <Window Type="TLBB_SimpleText" Name="HerosReturns_Awards_SevenDay_Top_day5_Button1_text">
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{1.000000,-25.000000}}"/>
+                  <Property Name="Text" Value="#{HJHL_201224_09}"/>
+                  <Property Name="HorzFormatting" Value="HorzCentred"/>
+                  <Property Name="Font" Value="YouYuan13"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                </Window>
+              </Window>
+            </Window>
+            <Window Type="DefaultWindow" Name="HerosReturns_Awards_SevenDay_Top_day6Client">
+              <Property Name="UnifiedSize" Value="{{0.000000,82.000000},{0.000000,109.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,131.500000},{0.500000,-55.000000}}"/>
+              <Window Type="TLBB_StaticImageNULL" Name="HerosReturns_Awards_SevenDay_Top_day6_bk">
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-33.000000},{0.500000,-38.500000}}"/>
+                <Property Name="Image" Value="set:Treasure image:Treasure_16"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="HerosReturns_Awards_SevenDay_Top_day6_done">
+                <Property Name="Visible" Value="False"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,51.000000},{0.000000,36.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-25.500000},{0.500000,-26.000000}}"/>
+                <Property Name="Image" Value="set:Seven image:Seven_ke"/>
+              </Window>
+              <Window Type="TLBB_ButtonCheckNULL" Name="HerosReturns_Awards_SevenDay_Top_day6_Button1">
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,82.000000},{0.000000,109.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.00000,0.00000},{0.00000,0.000000}}"/>
+                <Property Name="PushedImage" Value="set:Seven2 image:Seven2_BtnPush"/>
+                <Property Name="NormalImage" Value="set:Seven2 image:Seven2_BtnNormal"/>
+                <Property Name="HoverImage" Value="set:Seven2 image:Seven2_BtnHover"/>
+                <Property Name="DisabledImage" Value="set:Seven2 image:Seven2_BtnDis"/>
+                <Property Name="CheckMode" Value="1"/>
+                <Event Name="Clicked" Function="HerosReturns_Awards_SevenDay_Click(6);"/>
+                <Window Type="TLBB_SimpleText" Name="HerosReturns_Awards_SevenDay_Top_day6_Button1_text">
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{1.000000,-25.000000}}"/>
+                  <Property Name="Text" Value="#{HJHL_201224_10}"/>
+                  <Property Name="HorzFormatting" Value="HorzCentred"/>
+                  <Property Name="Font" Value="YouYuan13"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                </Window>
+              </Window>
+            </Window>
+            <Window Type="DefaultWindow" Name="HerosReturns_Awards_SevenDay_Top_day7Client">
+              <Property Name="UnifiedSize" Value="{{0.000000,82.000000},{0.000000,109.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,217.500000},{0.500000,-55.000000}}"/>
+              <Window Type="TLBB_StaticImageNULL" Name="HerosReturns_Awards_SevenDay_Top_day7_bk">
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-33.000000},{0.500000,-38.500000}}"/>
+                <Property Name="Image" Value="set:Gem3_2 image:Gem3_2_2"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="HerosReturns_Awards_SevenDay_Top_day7_done">
+                <Property Name="Visible" Value="False"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,51.000000},{0.000000,36.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-25.500000},{0.500000,-26.000000}}"/>
+                <Property Name="Image" Value="set:Seven image:Seven_ke"/>
+              </Window>
+              <Window Type="TLBB_ButtonCheckNULL" Name="HerosReturns_Awards_SevenDay_Top_day7_Button1">
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,82.000000},{0.000000,109.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.00000,0.00000},{0.00000,0.000000}}"/>
+                <Property Name="PushedImage" Value="set:Seven2 image:Seven2_BtnPush"/>
+                <Property Name="NormalImage" Value="set:Seven2 image:Seven2_BtnNormal"/>
+                <Property Name="HoverImage" Value="set:Seven2 image:Seven2_BtnHover"/>
+                <Property Name="DisabledImage" Value="set:Seven2 image:Seven2_BtnDis"/>
+                <Property Name="CheckMode" Value="1"/>
+                <Event Name="Clicked" Function="HerosReturns_Awards_SevenDay_Click(7);"/>
+                <Window Type="TLBB_SimpleText" Name="HerosReturns_Awards_SevenDay_Top_day7_Button1_text">
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{1.000000,-25.000000}}"/>
+                  <Property Name="Text" Value="#{HJHL_201224_11}"/>
+                  <Property Name="HorzFormatting" Value="HorzCentred"/>
+                  <Property Name="Font" Value="YouYuan13"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                </Window>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="HerosReturns_Awards_SevenDay_MianBK">
+            <Property Name="UnifiedSize" Value="{{1.00000,-10.000000},{1.00000,-145.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,118.000000}}"/>
+            <Window Type="TLBB_StaticImageNULL" Name="HerosReturns_Awards_SevenDay_MianBK_L">
+              <Property Name="UnifiedSize" Value="{{0.000000,512.000000},{0.000000,401.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="Image" Value="set:HerosReturns02 image:HerosReturnsBK1"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="HerosReturns_Awards_SevenDay_MianBK_R">
+              <Property Name="UnifiedSize" Value="{{0.000000,102.000000},{0.000000,110.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,512.000000},{0.000000,0.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="Image" Value="set:HerosReturns02 image:HerosReturnsBK2"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="HerosReturns_Awards_SevenDay_MianBK_R2">
+              <Property Name="UnifiedSize" Value="{{0.000000,102.000000},{0.000000,110.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,512.000000},{0.000000,110.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="Image" Value="set:HerosReturns02 image:HerosReturnsBK3"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="HerosReturns_Awards_SevenDay_MianBK_R3">
+              <Property Name="UnifiedSize" Value="{{0.000000,102.000000},{0.000000,110.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,512.000000},{0.000000,220.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="Image" Value="set:HerosReturns02 image:HerosReturnsBK4"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="HerosReturns_Awards_SevenDay_MianBK_R4">
+              <Property Name="UnifiedSize" Value="{{0.000000,102.000000},{0.000000,71.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,512.000000},{0.000000,330.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="Image" Value="set:HerosReturns02 image:HerosReturnsBK5"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="HerosReturns_Awards_SevenDay_Left_image">
+              <Property Name="UnifiedSize" Value="{{0.00000,228.000000},{0.00000,401.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.00000,0.000000},{0.00000,0.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="Image" Value="set:HerosReturns03 image:HerosReturns_D1Image"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="HerosReturns_Awards_SevenDay_Right_imageBK">
+              <Property Name="UnifiedSize" Value="{{0.000000,335.000000},{0.000000,85.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-415.000000},{0.000000,60.000000}}"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="Image" Value="set:Seven image:Seven_leiji"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="HerosReturns_Awards_SevenDay_Right_imageDay">
+              <Property Name="UnifiedSize" Value="{{0.00000,62.000000},{0.00000,72.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-250.000000},{0.000000,25.000000}}"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="Image" Value="set:Seven image:Seven_1"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="HerosReturns_Awards_SevenDay_Right_imageDayItem">
+              <Property Name="UnifiedSize" Value="{{0.00000,214.000000},{0.00000,56.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-214.000000},{0.000000,110.000000}}"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="Image" Value="set:HerosReturns03 image:HerosReturns_D1Name"/>
+            </Window>
+            <Window Type="DefaultWindow" Name="HerosReturns_Awards_SevenDay_RightClient">
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="UnifiedSize" Value="{{0.00000,340.000000},{0.000000,200.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.00000,245.000000},{0.000000,215.000000}}"/>
+              <Window Type="TLBB_ActionButton" Name="HerosReturns_Awards_SevenDay_Right_ShowA">
+                <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-134.000000},{0.000000,15.00000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+              </Window>
+              <Window Type="TLBB_ActionButton" Name="HerosReturns_Awards_SevenDay_Right_ShowB">
+                <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-32.000000},{0.000000,15.00000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+              </Window>
+              <Window Type="TLBB_ActionButton" Name="HerosReturns_Awards_SevenDay_Right_ShowC">
+                <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,70.000000},{0.000000,15.00000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+              </Window>
+              <Window Type="TLBB_ActionButton" Name="HerosReturns_Awards_SevenDay_Right_ShowD">
+                <Property Name="Visible" Value="False"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,70.000000},{0.000000,15.00000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+              </Window>
+              <Window Type="TLBB_ButtonNULL" Name="HerosReturns_Awards_SevenDay_Right_Button1">
+                <Property Name="UnifiedSize" Value="{{0.000000,136.000000},{0.000000,48.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-67.500000},{0.000000,100.000000}}"/>
+                <Property Name="PushedImage" Value="set:Seven image:Seven_lingqupush"/>
+                <Property Name="NormalImage" Value="set:Seven image:Seven_lingquNormal"/>
+                <Property Name="HoverImage" Value="set:Seven image:Seven_lingquHover"/>
+                <Property Name="DisabledImage" Value="set:Seven image:Seven_lingquDis"/>
+                <Event Name="Clicked" Function="HerosReturns_Awards_SevenDay_GetPrize();"/>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="TLBB_Frame_Lace3" Name="HerosReturns_AwardsTextBK">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,28.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-28.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Window Type="TLBB_SimpleText" Name="HerosReturns_AwardsText">
+              <Property Name="UnifiedSize" Value="{{0.000000,118.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{1.000000,-24.000000}}"/>
+              <Property Name="Text" Value="#{HJHL_201224_28}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="HerosReturns_AwardsText2">
+              <Property Name="UnifiedSize" Value="{{0.000000,190.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,132.000000},{1.000000,-24.000000}}"/>
+              <Property Name="Text" Value="#{HJHL_201224_29}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            </Window>
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

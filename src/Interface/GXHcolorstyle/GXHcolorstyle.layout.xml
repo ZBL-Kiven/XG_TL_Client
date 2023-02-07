@@ -1,0 +1,296 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="DefaultWindow" Name="GXHcolorstyle_BackGround">
+    <Property Name="Position" Value="x:0 y:0" />
+    <Property Name="Size" Value="w:1 h:1" />
+	<Event Name="Hidden" Function="GXHcolorstyle_OnHidden();"/>
+    <Window Type="TLBB_MainFrame1" Name="GXHcolorstyle_Frame">
+      <Property Name="UnifiedSize" Value="{{0.000000,337.000000},{0.000000,332.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-267.000000},{0.200000,-27.600006}}"/>      
+      <Window Type="TLBB_DragTitle" Name="GXHcolorstyle_Frame_Title">
+        <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,10.000000}"/>
+        <Property Name="Font" Value="YouYuan11.25"/>
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="Text" Value="#{GXHDZ_141121_14}"/>
+        <Property Name="DragTarget" Value="GXHcolorstyle_Frame" />
+      </Window>
+      <Window Type="TLBB_ButtonClose" Name="GXHcolorstyle_Close">
+        <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+        <Event Name="Clicked" Function="GXHcolorstyle_OnClose();"/>
+      </Window>
+      <Window Type="TLBB_ButtonHelp" Name="GXHcolorstyle_Help">
+        <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+      </Window>
+      <Window Type="DefaultWindow" Name="GXHcolorstyle_Client">
+        <Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{1.000000,-45.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,30.000000}}"/>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="GXHcolorstyle_Text">
+          <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,80.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,8.000000}}"/>
+          <Property Name="Text" Value="#{GXHDZ_141121_15}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+        <Window Type="DefaultWindow" Name="GXHcolorstyle_List">
+          <Property Name="UnifiedSize" Value="{{0.000000,210.000000},{0.000000,168.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-106.500000},{0.000000,90.600006}}"/>
+          <Window Type="TLBB_ActionButtonNULL" Name="GXHcolorstyle_Item1">
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Empty" Value="False"/>
+            <Window Type="TLBB_StaticImageTextColor" Name="GXHcolorstyle_BKG1">
+              <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,32.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="ImageColours" Value="tl:00FFFFFF tr:00FFFFFF bl:00FFFFFF br:00FFFFFF"/>
+              <Property Name="UseDefaultTooltip" Value="True" />
+              <Event Name="MouseLButtonDown" Function="GXHcolorstyle_Clicked(1)"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButtonNULL" Name="GXHcolorstyle_Item2">
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,44.000000},{0.000000,0.000000}}"/>
+            <Property Name="Empty" Value="False"/>
+            <Window Type="TLBB_StaticImageTextColor" Name="GXHcolorstyle_BKG2">
+              <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,32.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="ImageColours" Value="tl:00FFFFFF tr:00FFFFFF bl:00FFFFFF br:00FFFFFF"/>
+              <Property Name="UseDefaultTooltip" Value="True" />
+              <Event Name="MouseLButtonDown" Function="GXHcolorstyle_Clicked(2)"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButtonNULL" Name="GXHcolorstyle_Item3">
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,88.000000},{0.000000,0.000000}}"/>
+            <Property Name="Empty" Value="False"/>
+            <Window Type="TLBB_StaticImageTextColor" Name="GXHcolorstyle_BKG3">
+              <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,32.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="ImageColours" Value="tl:00FFFFFF tr:00FFFFFF bl:00FFFFFF br:00FFFFFF"/>
+              <Property Name="UseDefaultTooltip" Value="True" />
+              <Event Name="MouseLButtonDown" Function="GXHcolorstyle_Clicked(3)"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButtonNULL" Name="GXHcolorstyle_Item4">
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,132.000000},{0.000000,0.000000}}"/>
+            <Property Name="Empty" Value="False"/>
+            <Window Type="TLBB_StaticImageTextColor" Name="GXHcolorstyle_BKG4">
+              <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,32.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="ImageColours" Value="tl:00FFFFFF tr:00FFFFFF bl:00FFFFFF br:00FFFFFF"/>
+              <Property Name="UseDefaultTooltip" Value="True" />
+              <Event Name="MouseLButtonDown" Function="GXHcolorstyle_Clicked(4)"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButtonNULL" Name="GXHcolorstyle_Item5">
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,176.000000},{0.000000,0.000000}}"/>
+            <Property Name="Empty" Value="False"/>
+            <Window Type="TLBB_StaticImageTextColor" Name="GXHcolorstyle_BKG5">
+              <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,32.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="ImageColours" Value="tl:00FFFFFF tr:00FFFFFF bl:00FFFFFF br:00FFFFFF"/>
+              <Property Name="UseDefaultTooltip" Value="True" />
+              <Event Name="MouseLButtonDown" Function="GXHcolorstyle_Clicked(5)"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButtonNULL" Name="GXHcolorstyle_Item6">
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,44.000000}}"/>
+            <Property Name="Empty" Value="False"/>
+            <Window Type="TLBB_StaticImageTextColor" Name="GXHcolorstyle_BKG6">
+              <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,32.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="ImageColours" Value="tl:00FFFFFF tr:00FFFFFF bl:00FFFFFF br:00FFFFFF"/>
+              <Property Name="UseDefaultTooltip" Value="True" />
+              <Event Name="MouseLButtonDown" Function="GXHcolorstyle_Clicked(6)"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButtonNULL" Name="GXHcolorstyle_Item7">
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
+            <Property Name="Empty" Value="False"/>
+            <Window Type="TLBB_StaticImageTextColor" Name="GXHcolorstyle_BKG7">
+              <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,32.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="ImageColours" Value="tl:00FFFFFF tr:00FFFFFF bl:00FFFFFF br:00FFFFFF"/>
+              <Property Name="UseDefaultTooltip" Value="True" />
+              <Event Name="MouseLButtonDown" Function="GXHcolorstyle_Clicked(7)"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButtonNULL" Name="GXHcolorstyle_Item8">
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,88.000000},{0.000000,44.000000}}"/>
+            <Property Name="Empty" Value="False"/>
+            <Window Type="TLBB_StaticImageTextColor" Name="GXHcolorstyle_BKG8">
+              <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,32.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="ImageColours" Value="tl:00FFFFFF tr:00FFFFFF bl:00FFFFFF br:00FFFFFF"/>
+              <Property Name="UseDefaultTooltip" Value="True" />
+              <Event Name="MouseLButtonDown" Function="GXHcolorstyle_Clicked(8)"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButtonNULL" Name="GXHcolorstyle_Item9">
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,132.000000},{0.000000,44.000000}}"/>
+            <Property Name="Empty" Value="False"/>
+            <Window Type="TLBB_StaticImageTextColor" Name="GXHcolorstyle_BKG9">
+              <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,32.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="ImageColours" Value="tl:00FFFFFF tr:00FFFFFF bl:00FFFFFF br:00FFFFFF"/>
+              <Property Name="UseDefaultTooltip" Value="True" />
+              <Event Name="MouseLButtonDown" Function="GXHcolorstyle_Clicked(9)"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButtonNULL" Name="GXHcolorstyle_Item10">
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,176.000000},{0.000000,44.000000}}"/>
+            <Property Name="Empty" Value="False"/>
+            <Window Type="TLBB_StaticImageTextColor" Name="GXHcolorstyle_BKG10">
+              <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,32.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="ImageColours" Value="tl:00FFFFFF tr:00FFFFFF bl:00FFFFFF br:00FFFFFF"/>
+              <Property Name="UseDefaultTooltip" Value="True" />
+              <Event Name="MouseLButtonDown" Function="GXHcolorstyle_Clicked(10)"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButtonNULL" Name="GXHcolorstyle_Item11">
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,88.000000}}"/>
+            <Property Name="Empty" Value="False"/>
+            <Window Type="TLBB_StaticImageTextColor" Name="GXHcolorstyle_BKG11">
+              <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,32.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="ImageColours" Value="tl:00FFFFFF tr:00FFFFFF bl:00FFFFFF br:00FFFFFF"/>
+              <Property Name="UseDefaultTooltip" Value="True" />
+              <Event Name="MouseLButtonDown" Function="GXHcolorstyle_Clicked(11)"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButtonNULL" Name="GXHcolorstyle_Item12">
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,44.000000},{0.000000,88.000000}}"/>
+            <Property Name="Empty" Value="False"/>
+            <Window Type="TLBB_StaticImageTextColor" Name="GXHcolorstyle_BKG12">
+              <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,32.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="ImageColours" Value="tl:00FFFFFF tr:00FFFFFF bl:00FFFFFF br:00FFFFFF"/>
+              <Property Name="UseDefaultTooltip" Value="True" />
+              <Event Name="MouseLButtonDown" Function="GXHcolorstyle_Clicked(12)"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButtonNULL" Name="GXHcolorstyle_Item13">
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,88.000000},{0.000000,88.000000}}"/>
+            <Property Name="Empty" Value="False"/>
+            <Window Type="TLBB_StaticImageTextColor" Name="GXHcolorstyle_BKG13">
+              <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,32.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="ImageColours" Value="tl:00FFFFFF tr:00FFFFFF bl:00FFFFFF br:00FFFFFF"/>
+              <Property Name="UseDefaultTooltip" Value="True" />
+              <Event Name="MouseLButtonDown" Function="GXHcolorstyle_Clicked(13)"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButtonNULL" Name="GXHcolorstyle_Item14">
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,132.000000},{0.000000,88.000000}}"/>
+            <Property Name="Empty" Value="False"/>
+            <Window Type="TLBB_StaticImageTextColor" Name="GXHcolorstyle_BKG14">
+              <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,32.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="ImageColours" Value="tl:00FFFFFF tr:00FFFFFF bl:00FFFFFF br:00FFFFFF"/>
+              <Property Name="UseDefaultTooltip" Value="True" />
+              <Event Name="MouseLButtonDown" Function="GXHcolorstyle_Clicked(14)"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButtonNULL" Name="GXHcolorstyle_Item15">
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,176.000000},{0.000000,88.000000}}"/>
+            <Property Name="Empty" Value="False"/>
+            <Window Type="TLBB_StaticImageTextColor" Name="GXHcolorstyle_BKG15">
+              <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,32.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="ImageColours" Value="tl:00FFFFFF tr:00FFFFFF bl:00FFFFFF br:00FFFFFF"/>
+              <Property Name="UseDefaultTooltip" Value="True" />
+              <Event Name="MouseLButtonDown" Function="GXHcolorstyle_Clicked(15)"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButtonNULL" Name="GXHcolorstyle_Item16">
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,132.000000}}"/>
+            <Property Name="Empty" Value="False"/>
+            <Window Type="TLBB_StaticImageTextColor" Name="GXHcolorstyle_BKG16">
+              <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,32.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="ImageColours" Value="tl:00FFFFFF tr:00FFFFFF bl:00FFFFFF br:00FFFFFF"/>
+              <Property Name="UseDefaultTooltip" Value="True" />
+              <Event Name="MouseLButtonDown" Function="GXHcolorstyle_Clicked(16)"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButtonNULL" Name="GXHcolorstyle_Item17">
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,44.000000},{0.000000,132.000000}}"/>
+            <Property Name="Empty" Value="False"/>
+            <Window Type="TLBB_StaticImageTextColor" Name="GXHcolorstyle_BKG17">
+              <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,32.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="ImageColours" Value="tl:00FFFFFF tr:00FFFFFF bl:00FFFFFF br:00FFFFFF"/>
+              <Property Name="UseDefaultTooltip" Value="True" />
+              <Event Name="MouseLButtonDown" Function="GXHcolorstyle_Clicked(17)"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButtonNULL" Name="GXHcolorstyle_Item18">
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,88.000000},{0.000000,132.000000}}"/>
+            <Property Name="Empty" Value="False"/>
+            <Window Type="TLBB_StaticImageTextColor" Name="GXHcolorstyle_BKG18">
+              <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,32.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="ImageColours" Value="tl:00FFFFFF tr:00FFFFFF bl:00FFFFFF br:00FFFFFF"/>
+              <Property Name="UseDefaultTooltip" Value="True" />
+              <Event Name="MouseLButtonDown" Function="GXHcolorstyle_Clicked(18)"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButtonNULL" Name="GXHcolorstyle_Item19">
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,132.000000},{0.000000,132.000000}}"/>
+            <Property Name="Empty" Value="False"/>
+            <Window Type="TLBB_StaticImageTextColor" Name="GXHcolorstyle_BKG19">
+              <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,32.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="ImageColours" Value="tl:00FFFFFF tr:00FFFFFF bl:00FFFFFF br:00FFFFFF"/>
+              <Property Name="UseDefaultTooltip" Value="True" />
+              <Event Name="MouseLButtonDown" Function="GXHcolorstyle_Clicked(19)"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButtonNULL" Name="GXHcolorstyle_Item20">
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,176.000000},{0.000000,132.000000}}"/>
+            <Property Name="Empty" Value="False"/>
+            <Window Type="TLBB_StaticImageTextColor" Name="GXHcolorstyle_BKG20">
+              <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,32.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="ImageColours" Value="tl:00FFFFFF tr:00FFFFFF bl:00FFFFFF br:00FFFFFF"/>
+              <Property Name="UseDefaultTooltip" Value="True" />
+              <Event Name="MouseLButtonDown" Function="GXHcolorstyle_Clicked(20)"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonCommon" Name="GXHcolorstyle_OK_Button">
+          <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-90.000000},{1.000000,-24.000000}}"/>
+          <Property Name="Text" Value="#{GXHDZ_141121_10}"/>
+          <Event Name="Clicked" Function="GXHcolorstyle_OK_Clicked();"/>
+        </Window>
+        <Window Type="TLBB_ButtonCommon" Name="GXHcolorstyle_Cancel_Button">
+          <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-50.000000},{1.000000,-24.000000}}"/>
+          <Property Name="Text" Value="#{GXHDZ_141121_11}"/>
+          <Event Name="Clicked" Function="GXHcolorstyle_Cancel_Clicked();"/>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

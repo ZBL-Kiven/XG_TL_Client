@@ -1,0 +1,84 @@
+<?xml version="1.0" ?>
+<GUILayout>
+    <Window Type="TLBB_MainFrame1" Name="NewMsgBallHistory_Frame">
+        <Property Name="UnifiedPosition" Value="{{0.0,145},{0.12,68}}" />
+        <Property Name="AbsoluteSize" Value="w:400 h:300" />
+        <Window Type="TLBB_DragTitle" Name="NewMsgBallHistory_DragTitle">
+            <Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
+            <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+            <Property Name="DragTarget" Value="NewMsgBallHistory_Frame" />
+            <Window Type="TLBB_SimpleText" Name="NewMsgBallHistory_PageHeader">
+                <Property Name="Position" Value="x:0.0 y:0.0" />
+                <Property Name="Size" Value="w:1.0 h:1.0" />
+                <Property Name="Font" Value="YouYuan11.25" />
+                <Property Name="HorzFormatting" Value="HorzCentred" />
+                <Property Name="VertFormatting" Value="VertCentred" />
+                <Property Name="RiseOnClick" Value="False" />
+                <Property Name="Text" Value="#{CKWJ_09514_2}" />
+            </Window>
+        </Window>
+        <Window Type="TLBB_ButtonHelp" Name="NewMsgBallHistory_Help">
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+            <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+            <Property Name="Text" Value="TLBB_ButtonHelp" />
+            <Event Name="Clicked" Function="NewMsgBallHistory_OnHelp();" />
+        </Window>
+        <Window Type="TLBB_ButtonClose" Name="NewMsgBallHistory_Close">
+            <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+            <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+            <Property Name="Text" Value="TLBB_ButtonClose" />
+            <Event Name="Clicked" Function="NewMsgBallHistory_Quit_Clicked()" />
+        </Window>
+        <Window Type="DefaultWindow" Name="NewMsgBallHistory_Function_Frame">
+            <Property Name="AbsolutePosition" Value="x:6.000000 y:36.000000" />
+            <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-55.000000}" />
+            <Window Type="TLBB_MultiColumnList" Name="NewMsgBallHistory_MsgList">
+                <Property Name="UnifiedPosition" Value="{{0.0000000,0.000000},{0.000000,0.000000}" />
+                <Property Name="Size" Value="w:0.396907 h:0.905" />
+		        		<Property Name="ForceHorzScrollbar" Value="False" />
+	        			<Property Name="ForceVertScrollbar" Value="True" />
+	        			<Property Name="SortSettingEnabled" Value="False" />
+	        			<Property Name="SelectionMode" Value="RowSingle" />
+                <Event Name="SelectionChanged" Function="NewMsgBallHistory_OnSelectionChanged()" />
+            </Window>
+            <Window Type="TLBB_Frame_Lace1" Name="NewMsgBallHistory_Content">
+                <Property Name="UnifiedPosition" Value="{{0.181250,87.674998},{0.000000,3.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.585052,0.000000},{1.000000,-30.000000}" />
+                <Property Name="RiseOnClick" Value="False" />
+                <Window Type="TLBB_ComplexWindow" Name="NewMsgBallHistory_Desc" >
+                    <Property Name="AbsolutePosition" Value="x:13.000000 y:12.000000" />
+                    <Property Name="AbsoluteSize" Value="w:209.000000 h:194.000000" />
+                </Window>
+            </Window>
+            <Window Type="TLBB_ButtonCommon" Name="NewMsgBallHistory_PersonInfo">
+                <Property Name="UnifiedPosition" Value="{{1.000000,-388.000000},{1.000000,-20.000000}" />
+                <Property Name="AbsoluteSize" Value="w:88.000000 h:20.000000" />
+                <Event Name="Clicked" Function="NewMsgBallHistory_PersonInfo_Clicked()" />
+                <Property Name="Text" Value="#{CKWJ_09514_1}" />
+            </Window>
+            <Window Type="TLBB_ButtonCommon" Name="NewMsgBallHistory_GuildInfo">
+                <Property Name="UnifiedPosition" Value="{{1.000000,-300.000000},{1.000000,-20.000000}" />
+                <Property Name="AbsoluteSize" Value="w:88.000000 h:20.000000" />
+                <Property Name="Text" Value="#{INTERFACE_XML_155}" />
+                <Event Name="Clicked" Function="NewMsgBallHistory_GuildInfo_Clicked()" />
+            </Window>
+          <Window Type="TLBB_ButtonCommon" Name="NewMsgBallHistory_AddFriend">
+            <Property Name="UnifiedSize" Value="{{0.000000,88.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-212.000000},{1.000000,-20.000000}}"/>
+            <Property Name="Text" Value="#{INTERFACE_XML_356}"/>
+            <Event Name="Clicked" Function="NewMsgBallHistory_AddFriend_Clicked()"/>
+          </Window>
+          <Window Type="TLBB_ButtonCommon" Name="NewMsgBallHistory_Quit">
+                <Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{1.000000,-20.000000}" />
+                <Property Name="AbsoluteSize" Value="w:43.000000 h:20.000000" />
+                <Event Name="Clicked" Function="NewMsgBallHistory_Quit_Clicked()" />
+                <Property Name="Text" Value="#{INTERFACE_XML_302}" />
+            </Window>
+            <Window Type="TLBB_Frame_Lace5" Name="NewNsgBallHistory_Blank1" >
+	<Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,20.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{1.000000,-126.000000},{1.000000,-20.000000}}"/>
+                <Property Name="RiseOnClick" Value="False" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

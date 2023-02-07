@@ -1,0 +1,396 @@
+<?xml version="1.0" ?>
+<Falagard>
+  <!--
+	  ***************************************************
+                  TLBB_Look_UnionDragTarget
+    ***************************************************
+   -->
+  <WidgetLook name="TLBB_Look_UnionDragTarget">
+    <PropertyDefinition name="VertLabelFormatting" initialValue="CentreAligned" />
+    <PropertyDefinition name="HorzLabelFormatting" initialValue="CentreAligned" />
+    <ImagerySection name="label">
+      <TextComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="1" />
+          </Dim>
+          <Dim type="Width">
+            <UnifiedDim scale="1" type="Width" />
+          </Dim>
+          <Dim type="Height">
+            <UnifiedDim scale="1" type="Height" />
+          </Dim>
+        </Area>
+        <VertFormatProperty name="VertLabelFormatting" />
+        <HorzFormatProperty name="HorzLabelFormatting" />
+      </TextComponent>
+    </ImagerySection>
+    <ImagerySection name="normal">
+      <FrameComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="Width">
+            <UnifiedDim scale="1" type="Width" />
+          </Dim>
+          <Dim type="Height">
+            <UnifiedDim scale="1" type="Height" />
+          </Dim>
+        </Area>
+        <Image imageset="Union1" image="Union_MemberFrame" />
+        <VertFormat type="Stretched" />
+        <HorzFormat type="Stretched" />
+      </FrameComponent>
+    </ImagerySection>
+    <ImagerySection name="hover">
+      <FrameComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="Width">
+            <UnifiedDim scale="1" type="Width" />
+          </Dim>
+          <Dim type="Height">
+            <UnifiedDim scale="1" type="Height" />
+          </Dim>
+        </Area>
+        <Image imageset="Union2" image="Union_MemberFrame_hover" />
+        <VertFormat type="Stretched" />
+        <HorzFormat type="Stretched" />
+      </FrameComponent>
+    </ImagerySection>
+    <ImagerySection name="disabled">
+      <FrameComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="Width">
+            <UnifiedDim scale="1" type="Width" />
+          </Dim>
+          <Dim type="Height">
+            <UnifiedDim scale="1" type="Height" />
+          </Dim>
+        </Area>
+        <Image imageset="Union1" image="Union_MemberFrame" />
+        <VertFormat type="Stretched" />
+        <HorzFormat type="Stretched" />
+      </FrameComponent>
+    </ImagerySection>
+    <StateImagery name="Normal">
+      <Layer>
+        <Section section="normal" />
+        <Section section="label">
+          <Colours topLeft="FFFDEB78" topRight="FFFDEB78" bottomLeft="FFFDEB78" bottomRight="FFFDEB78" />
+        </Section>
+      </Layer>
+    </StateImagery>
+    <StateImagery name="Hover">
+      <Layer>
+        <Section section="hover" />
+        <Section section="label">
+          <Colours topLeft="FFFFFF00" topRight="FFFFFF00" bottomLeft="FFFFFF00" bottomRight="FFFFFF00" />
+        </Section>
+      </Layer>
+    </StateImagery>
+    <StateImagery name="Disabled">
+      <Layer>
+        <Section section="disabled" />
+        <Section section="label">
+          <Colours topLeft="FFBBBBBB" topRight="FFBBBBBB" bottomLeft="FFBBBBBB" bottomRight="FFBBBBBB" />
+        </Section>
+      </Layer>
+    </StateImagery>
+  </WidgetLook>
+  
+  <!--
+	  ***************************************************
+                  TLBB_Look_UnionPlayer
+    ***************************************************
+    -->
+  <WidgetLook name="TLBB_Look_UnionPlayer">
+    <Property name="FrameEnabled" value="True" />
+    <Property name="BackgroundEnabled" value="True" />
+    <ImagerySection name="BloodBK">
+      <FrameComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="7" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="21" />
+          </Dim>
+          <Dim type="Width">
+            <AbsoluteDim value="76" />
+          </Dim>
+          <Dim type="Height">
+            <AbsoluteDim value="7" />
+          </Dim>
+        </Area>
+        <Image imageset="CommonFrame11" image="Union_Blood" />
+        <VertFormat type="Stretched" />
+        <HorzFormat type="Stretched" />
+      </FrameComponent>
+    </ImagerySection>
+    <StateImagery name="Enabled" />
+    <StateImagery name="Disabled" />
+    <StateImagery name="EnabledFrame">
+      <Layer>
+        <Section look="TLBB_Look_Common" section="Frame_Type_Lace1" />
+        <Section section="BloodBK" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="DisabledFrame" >
+      <Layer>
+        <Section look="TLBB_Look_Common" section="Frame_Type_Lace1" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="EnabledBackground">
+      <Layer>
+        <Section look="TLBB_Look_Common" section="Background_Common1" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="DisabledBackground" >
+      <Layer>
+        <Section look="TLBB_Look_Common" section="Background_Common1" />
+      </Layer>
+    </StateImagery>
+    <Child type="TLBB_DragTitle" nameSuffix="__auto_drag__">
+      <Property name="HorzFormatting" value="HorzCentred" />
+      <Property name="VertFormatting" value="VertCentred" />
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="90" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="22" />
+        </Dim>
+      </Area>
+    </Child>
+    <Child type="TLBB_SimpleText" nameSuffix="__auto_text__">
+      <Property name="HorzFormatting" value="HorzCentred" />
+      <Property name="VertFormatting" value="VertCentred" />
+      <Property name="MouseHollow" value="True" />
+      <Property name="MouseMoveHollow" value="True" />
+      <Property name="Text" value="TestName" />
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="5" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="3" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="80" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="20" />
+        </Dim>
+      </Area>
+    </Child>
+    <Child type="TLBB_ProgressPropertyRed" nameSuffix="__auto_prog__">
+      <Property name="Tooltip" value="#{GMDP_Struct_Relation_1}" />
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="8" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="22" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="74" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="5" />
+        </Dim>
+      </Area>
+    </Child>
+  </WidgetLook>
+
+  <!--
+	  ***************************************************
+                  TLBB_Look_UnionTeam
+    ***************************************************
+    -->
+  <WidgetLook name="TLBB_Look_UnionTeam">
+    <Property name="FrameEnabled" value="True" />
+    <Property name="BackgroundEnabled" value="True" />
+    <StateImagery name="Enabled" />
+    <StateImagery name="Disabled" />
+    <StateImagery name="EnabledFrame">
+      <Layer>
+        <Section look="TLBB_Look_Common" section="Frame_Type_Lace1" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="DisabledFrame" >
+      <Layer>
+        <Section look="TLBB_Look_Common" section="Frame_Type_Lace1" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="EnabledBackground">
+      <Layer>
+        <Section look="TLBB_Look_Common" section="Background_Common1" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="DisabledBackground" >
+      <Layer>
+        <Section look="TLBB_Look_Common" section="Background_Common1" />
+      </Layer>
+    </StateImagery>
+    <Child type="TLBB_DragTitle" nameSuffix="__auto_drag__">
+      <Property name="HorzFormatting" value="HorzCentred" />
+      <Property name="VertFormatting" value="VertCentred" />
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="90" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="19" />
+        </Dim>
+      </Area>
+    </Child>
+    <Child type="TLBB_ButtonCommon" nameSuffix="__auto_name__">
+      <Property name="Text" value="TestName" />
+      <Property name="MouseHollow" value="True" />
+      <Property name="MouseMoveHollow" value="True" />
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="90" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="20" />
+        </Dim>
+      </Area>
+    </Child>
+    <Child type="TLBB_UnionPlayer" nameSuffix="__auto_m0__">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="19" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="90" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="35" />
+        </Dim>
+      </Area>
+    </Child>
+    <Child type="TLBB_UnionPlayer" nameSuffix="__auto_m1__">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="53" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="90" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="35" />
+        </Dim>
+      </Area>
+    </Child>
+    <Child type="TLBB_UnionPlayer" nameSuffix="__auto_m2__">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="87" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="90" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="35" />
+        </Dim>
+      </Area>
+    </Child>
+    <Child type="TLBB_UnionPlayer" nameSuffix="__auto_m3__">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="121" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="90" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="35" />
+        </Dim>
+      </Area>
+    </Child>
+    <Child type="TLBB_UnionPlayer" nameSuffix="__auto_m4__">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="155" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="90" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="35" />
+        </Dim>
+      </Area>
+    </Child>
+    <Child type="TLBB_UnionPlayer" nameSuffix="__auto_m5__">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="189" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="90" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="35" />
+        </Dim>
+      </Area>
+    </Child>
+  </WidgetLook>
+</Falagard>
+
+

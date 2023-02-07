@@ -1,0 +1,252 @@
+<?xml version="1.0"?>
+<!-- Q546528533 -->
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="HJTopList_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,870.000000},{0.000000,530.000000}}" />
+    <Property Name="UnifiedPosition" Value="{{0.500000,-407.000000},{0.500000,-295.000000}}" />
+    <Event Name="Hidden" Function="HJTopList_On_Hide()" />
+    <Window Type="DefaultWindow" Name="HJTopList_FrameBK">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+      <Window Type="HJTLBB_MainFrame1" Name="HJTopList_MainFrame">
+        <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{1.000000,-56.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,56.000000}}" />
+        <Property Name="RiseOnClick" Value="False" />
+      </Window>
+      <Window Type="HJTLBB_MainPageLace1" Name="HJTopList_PageImage">
+        <Property Name="UnifiedSize" Value="{{0.000000,122.000000},{1.000000,0.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Window Type="TLBB_StaticImageNULL" Name="HJTopList_PagelineTitle">
+          <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,88.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{0.000000,73.000000}}" />
+          <Property Name="Image" Value="set:TopList image:TopListTitle" />
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="HJTopList_Pageline01">
+          <Property Name="UnifiedSize" Value="{{0.000000,72.000000},{0.000000,2.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,14.000000},{0.000000,90.000000}}" />
+          <Property Name="Image" Value="set:BaseInterface image:HJ_Frame01PageLine" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="Visible" Value="False" />
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="HJTopList_Pageline02">
+          <Property Name="UnifiedSize" Value="{{0.000000,72.000000},{0.000000,2.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,14.000000},{0.000000,154.000000}}" />
+          <Property Name="Image" Value="set:BaseInterface image:HJ_Frame01PageLine" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="Visible" Value="False" />
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="HJTopList_Pageline03">
+          <Property Name="Visible" Value="False" />
+          <Property Name="UnifiedSize" Value="{{0.000000,72.000000},{0.000000,2.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,14.000000},{0.000000,218.000000}}" />
+          <Property Name="Image" Value="set:BaseInterface image:HJ_Frame01PageLine" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="HJTopList_PageImageBK">
+          <Property Name="UnifiedSize" Value="{{0.000000,86.000000},{0.000000,136.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,14.000000},{1.000000,-136.000000}}" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="Image" Value="set:BaseInterface image:HJ_Frame01Pagedragon" />
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="HJTopList_AllBK">
+        <Property Name="UnifiedSize" Value="{{1.000000,-120.000000},{1.000000,-64.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,102.000000},{0.000000,60.000000}}" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Window Type="HJTLBB_FrameDownBK1" Name="HJTopList_DownBK">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,194.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-194.000000}}" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="HJTopList_DownRB">
+          <Property Name="UnifiedSize" Value="{{0.000000,342.000000},{0.000000,206.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{1.000000,-342.000000},{1.000000,-206.000000}}" />
+          <Property Name="Image" Value="set:BaseInterface image:HJ_FrameRB" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="HJTLBB_MainPageLight1" Name="HJTopList_PageLight">
+        <Property Name="UnifiedSize" Value="{{0.000000,2.000000},{1.000000,-56.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,104.000000},{0.000000,56.000000}}" />
+        <Property Name="RiseOnClick" Value="False" />
+      </Window>
+      <Window Type="TLBB_DragTitle" Name="HJTopList_DragTitle">
+        <Property Name="UnifiedSize" Value="{{0.000000,122.000000},{0.000000,180.000000}}" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="DragTarget" Value="HJTopList_Frame" />
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="HJTopList_CloseBK">
+        <Property Name="UnifiedSize" Value="{{0.000000,66.000000},{0.000000,24.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{1.000000,-70.000000},{0.000000,45.000000}}" />
+        <Property Name="Image" Value="set:BaseInterface image:HJ_ButtonCloseBK" />
+      </Window>
+      <Window Type="HJTLBB_ButtonClose" Name="HJTopList_Close">
+        <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{1.000000,-50.000000},{0.000000,26.000000}}" />
+        <Event Name="Clicked" Function="HJTopList_Close_Click();" />
+        <Property Name="AlwaysOnTop" Value="True" />
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="HJTopList_Checkbox_Frame">
+      <Property Name="UnifiedSize" Value="{{0.000000,88.000000},{0.000000,322.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,14.000000},{0.000000,220.000000}}" />
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Window Type="HJTLBB_CheckButtonPage" Name="HJTopList_Renwu">
+        <Property Name="UnifiedSize" Value="{{0.000000,88.000000},{0.000000,46.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+        <Property Name="Selected" Value="True" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Text" Value="等级" />
+        <Property Name="Font" Value="Title" />
+        <Property Name="CheckMode" Value="1" />
+        <Event Name="Clicked" Function="HJTopList_GetServerData(1)" />
+      </Window>
+      <Window Type="HJTLBB_CheckButtonPage" Name="HJTopList_Banghui">
+        <!-- <Property Name="UnifiedSize" Value="{{0.000000,88.000000},{0.000000,46.000000}}" /> -->
+        <!-- <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,46.000000}}" /> -->
+        <Property Name="Selected" Value="True" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Text" Value="" />
+        <Property Name="Font" Value="Title" />
+        <Property Name="CheckMode" Value="1" />
+        <Event Name="Clicked" Function="HJTopList_GetServerData(1)" />
+      </Window>
+      <Window Type="HJTLBB_CheckButtonPage" Name="HJTopList_Huodong">
+        <!-- <Property Name="UnifiedSize" Value="{{0.000000,88.000000},{0.000000,46.000000}}" /> -->
+        <!-- <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,92.000000}}" /> -->
+        <Property Name="Selected" Value="True" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Text" Value="" />
+        <Property Name="Font" Value="Title" />
+        <Property Name="CheckMode" Value="1" />
+        <Event Name="Clicked" Function="HJTopList_GetServerData(1)" />
+      </Window>
+      <Window Type="HJTLBB_CheckButtonPage" Name="HJTopList_BangHui">
+        <!-- <Property Name="UnifiedSize" Value="{{0.000000,88.000000},{0.000000,46.000000}}" /> -->
+        <!-- <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,138.000000}}" /> -->
+        <Property Name="Selected" Value="True" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Text" Value="" />
+        <Property Name="Font" Value="Title" />
+        <Property Name="CheckMode" Value="1" />
+        <Event Name="Clicked" Function="HJTopList_GetServerData(1)" />
+      </Window>
+      <Window Type="HJTLBB_CheckButtonPage" Name="HJTopList_JiSha">
+        <!-- <Property Name="UnifiedSize" Value="{{0.000000,88.000000},{0.000000,46.000000}}" /> -->
+        <!-- <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,184.000000}}" /> -->
+        <Property Name="Selected" Value="True" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Text" Value="" />
+        <Property Name="Font" Value="Title" />
+        <Property Name="CheckMode" Value="1" />
+        <Event Name="Clicked" Function="HJTopList_GetServerData(1)" />
+      </Window>
+      <Window Type="HJTLBB_CheckButtonPage" Name="HJTopList_ShenBing">
+        <!-- <Property Name="UnifiedSize" Value="{{0.000000,88.000000},{0.000000,46.000000}}" /> -->
+        <!-- <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,230.000000}}" /> -->
+        <Property Name="Selected" Value="True" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Text" Value="" />
+        <Property Name="Font" Value="Title" />
+        <Property Name="CheckMode" Value="1" />
+        <Event Name="Clicked" Function="HJTopList_GetServerData(1)" />
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="HJTopList_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-126.000000},{1.000000,-80.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,108.000000},{0.000000,70.000000}}" />
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Window Type="TLBB_DragTitle" Name="HJTopList_DragTitle2">
+        <Property Name="UnifiedSize" Value="{{1.000000,-60.000000},{0.000000,22.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+        <Property Name="DragTarget" Value="HJTopList_Frame" />
+        <Property Name="AlwaysOnTop" Value="True" />
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="HJTopList_RightContent_Info">
+        <Property Name="UnifiedSize" Value="{{1.000000,-30.000000},{0.000000,52.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{1.000000,-51.000000}}" />
+	    <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Text" Value="" />
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+      </Window>
+        <Window Type="DefaultWindow" Name="HJTopList_RightContent_ListClient">
+          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{1.000000,-177.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,176.000000}}" />
+		  <Property Name="AlwaysOnTop" Value="True" />
+          <Window Type="TLBB_MultiColumnListHJ" Name="HJTopList_RightContent_Title">
+			<Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,200.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,20.000000}}" />
+            <Property Name="ForceHorzScrollbar" Value="False" />
+            <Property Name="ForceVertScrollbar" Value="True" />
+            <Property Name="SortSettingEnabled" Value="False" />
+            <Property Name="SelectionMode" Value="RowSingle" />
+            <Property Name="ColumnsSizable" Value="False" />
+            <Property Name="ColumnsAdjust" Value="True" />
+            <Property Name="ColumnsMovable" Value="False" />
+			<Property Name="ColumnHeader" Value="text:排名 width:0.2 id:0" />
+			<Property Name="ColumnHeader" Value="text:门派 width:0.2 id:1" />
+			<Property Name="ColumnHeader" Value="text:姓名 width:0.2 id:2" />
+			<Property Name="ColumnHeader" Value="text:帮会 width:0.2 id:3" />
+			<Property Name="ColumnHeader" Value="text:详情 width:0.2 id:4" />
+          </Window>	  
+      </Window>	  
+      <Window Type="HJTLBB_Frame_Lace1" Name="HJTopList_Lace">
+        <Property Name="UnifiedSize" Value="{{0.000000,730.000000},{1.000000,-2.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,-2.000000}}" />
+      <Window Type="DefaultWindow" Name="HJTopList_RightContent">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Window Type="DefaultWindow" Name="HJTopList_RightContent_TopBanghui">
+          <Property Name="UnifiedSize" Value="{{1.000000,-6.000000},{0.000000,205.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,-30.000000}}" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Window Type="TLBB_StaticImageNULL" Name="HJTopList_RightContent_Banghui_Top1">
+            <Property Name="UnifiedSize" Value="{{0.000000,172.000000},{0.000000,178.000000}}" />	
+			<Property Name="UnifiedPosition" Value="{{0.500000,-90.000000},{0.500000,-75.000000}}" />
+			<Property Name="Image" Value="set:TopList image:Toplist_BangHuiHigh" />
+            <Window Type="TLBB_SimpleText" Name="HJTopList_RightContent_Banghui_Top1_Text1">
+              <Property Name="UnifiedSize" Value="{{1.000000,-30.000000},{0.000000,28.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,16.000000},{1.000000,-67.000000}}" />
+              <Property Name="ColorTrans" Value="True"/>
+              <Property Name="Text" Value="" />
+			  <Property Name="Font" Value="YouYuan11.25" />
+              <Property Name="HorzFormatting" Value="HorzCentred" />
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="HJTopList_RightContent_Banghui_Top2">
+            <Property Name="UnifiedSize" Value="{{0.000000,172.000000},{0.000000,178.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.500000,-265.000000},{0.500000,-75.000000}}" />
+			<Property Name="Image" Value="set:TopList image:Toplist_BangHuiMid" />	
+			<Event Name="Clicked" Function="HJTopList_RightContent(2)" />
+            <Window Type="TLBB_SimpleText" Name="HJTopList_RightContent_Banghui_Top2_Text1">
+              <Property Name="UnifiedSize" Value="{{1.000000,-30.000000},{0.000000,28.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,16.000000},{1.000000,-67.000000}}" />
+              <Property Name="ColorTrans" Value="True"/>
+              <Property Name="Text" Value="" />
+			  <Property Name="Font" Value="YouYuan11.25" />
+              <Property Name="HorzFormatting" Value="HorzCentred" />
+            </Window>		
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="HJTopList_RightContent_Banghui_Top3">
+            <Property Name="UnifiedSize" Value="{{0.000000,172.000000},{0.000000,178.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.500000,85.000000},{0.500000,-75.000000}}" />
+			<Property Name="Image" Value="set:TopList image:Toplist_BangHuiLow" />
+			<Event Name="Clicked" Function="HJTopList_RightContent(3)" />
+            <Window Type="TLBB_SimpleText" Name="HJTopList_RightContent_Banghui_Top3_Text1">
+              <Property Name="UnifiedSize" Value="{{1.000000,-30.000000},{0.000000,28.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,16.000000},{1.000000,-67.000000}}" />
+              <Property Name="ColorTrans" Value="True"/>
+              <Property Name="Text" Value="" />
+			  <Property Name="Font" Value="YouYuan11.25" />
+              <Property Name="HorzFormatting" Value="HorzCentred" />
+            </Window>			
+          </Window>
+        </Window>		
+    </Window>		
+   </Window>
+    </Window>
+  </Window>
+</GUILayout>

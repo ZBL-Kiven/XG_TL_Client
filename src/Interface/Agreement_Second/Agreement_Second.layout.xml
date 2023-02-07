@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<GUILayout>
+
+
+      <Window Type="TLBB_MainFrame0" Name="Agreement_Second_Frame">
+        <Property Name="UnifiedSize" Value="{{0.000000,360.000000},{0.000000,370.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-180.000000},{0.500000,-185.000000}}"/>
+        <Window Type="TLBB_DragTitle" Name="Agreement_Second_Title">
+          <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,10.000000}}"/>
+          <Property Name="Text" Value="#{ZDZD_200724_09}"/>
+          <Property Name="Font" Value="YouYuan11.25"/>
+          <Property Name="DragTarget" Value="Agreement_Second_Frame"/>
+        </Window>
+
+        <Window Type="TLBB_ButtonClose" Name="Agreement_Second_Close">
+          <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+          <Property Name="Text" Value="TLBB_ButtonClose"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Event Name="Clicked" Function="Agreement_Second_Close();"/>
+        </Window>
+
+        <Window Type="TLBB_ButtonHelp" Name="Agreement_Second_Help">
+          <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+          <Property Name="Text" Value="TLBB_ButtonHelp"/>
+          <Event Name="Clicked" Function=""/>
+        </Window>
+
+        <Window Type="TLBB_Frame_Lace4" Name="Agreement_Second_Bk">
+          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{1.000000,-54.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,34.000000}}"/>
+          <Window Type="TLBB_StaticText" Name="Agreement_Second_Text">
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,12.000000}" />
+            <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{1.000000,-24.000000}" />
+            <Property Name="VertScrollbar" Value="true" />
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+            <Property Name="VertFormatting" Value="TopAligned" />
+            <Property Name="Text" Value="" />
+          </Window>
+    </Window>
+  </Window>
+</GUILayout>

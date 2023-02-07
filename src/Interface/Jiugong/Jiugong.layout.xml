@@ -1,0 +1,368 @@
+﻿<?xml version="1.0" ?>
+<GUILayout>
+	<Window Type="TLBB_MainFrame1" Name="Jiugong_Frame">
+		<Property Name="UnifiedPosition" Value="{{0.500000,-151.000000},{0.150000,0.0}" />
+		<Property Name="UnifiedSize" Value="{{0.000000,302.000000},{0.0000,436.0}" />
+
+    <Window Type="TLBB_HLine" Name="Jiugong_Line" >
+      <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.00000,325.0}" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-11.000000},{0.0000,5.0}" />
+    </Window>
+	
+    <Window Type="TLBB_DragTitle" Name="Jiugong_DragTitle">
+      <Property Name="UnifiedPosition" Value="{{0.500000,-100.000000},{0.00000,12.0}" />
+      <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.0000,20.0}" />
+			<Property Name="Font" Value="YouYuan11.25" />
+			<Property Name="HorzFormatting" Value="HorzCentred" />
+			<Property Name="VertFormatting" Value="VertCentred" />
+			<Property Name="Text" Value="#{TJRW_100511_72}" />
+			<Property Name="DragTarget" Value="Jiugong_Frame" />
+		</Window>
+    
+		<Window Type="TLBB_ButtonClose" Name="Jiugong_Close">
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+			<Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+			<Event Name="Clicked" Function="Jiugong_Close();" />
+		</Window>
+    
+		<Window Type="TLBB_ButtonHelp" Name="Jiugong_Help">
+			<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+			<Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+      <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*Jiugong&quot;);' />
+		</Window>
+    
+		<Window Type="DefaultWindow" Name="Jiugong_Background_Frame">
+      <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.00000,40.0}" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-18.000000},{0.0000,285.0}" />
+
+			<Window Type="DefaultWindow" Name="Jiugong_01">
+				<Property Name="UnifiedPosition" Value="{{0,0},{0,0}}" />
+				<Property Name="UnifiedSize" Value="{{0.0,54.000000},{0.000000,54.000000}" />
+					<Window Type="TLBB_StaticImageNULL" Name="Jiugong_Image01">
+            <Property Name="AbsolutePosition" Value="x:0.000000 y:0.000000" />
+            <Property Name="AbsoluteSize" Value="w:54.000000 h:54.000000" />
+            <Property Name="Image" Value="set:Tianji image:Tianji_0" />
+            <Event Name="MouseLButtonDown" Function="Jiugong_Add(1);" />
+            <Property Name="Tooltip" Value="#{TJRW_100511_73}" />
+					</Window>
+			</Window>
+
+      <Window Type="DefaultWindow" Name="Jiugong_02">
+        <Property Name="UnifiedPosition" Value="{{0,57},{0,0}}" />
+        <Property Name="UnifiedSize" Value="{{0.0,54.000000},{0.000000,54.000000}" />
+        <Window Type="TLBB_StaticImageNULL" Name="Jiugong_Image02">
+          <Property Name="AbsolutePosition" Value="x:0.000000 y:0.000000" />
+          <Property Name="AbsoluteSize" Value="w:54.000000 h:54.000000" />
+          <Property Name="Image" Value="set:Tianji image:Tianji_0" />
+          <Event Name="MouseLButtonDown" Function="Jiugong_Add(2);" />
+          <Property Name="Tooltip" Value="#{TJRW_100511_73}" />
+        </Window>
+      </Window>
+
+      <Window Type="DefaultWindow" Name="Jiugong_03">
+        <Property Name="UnifiedPosition" Value="{{0,114},{0,0}}" />
+        <Property Name="UnifiedSize" Value="{{0.0,54.000000},{0.000000,54.000000}" />
+        <Window Type="TLBB_StaticImageNULL" Name="Jiugong_Image03">
+          <Property Name="AbsolutePosition" Value="x:0.000000 y:0.000000" />
+          <Property Name="AbsoluteSize" Value="w:54.000000 h:54.000000" />
+          <Property Name="Image" Value="set:Tianji image:Tianji_0" />
+          <Event Name="MouseLButtonDown" Function="Jiugong_Add(3);" />
+          <Property Name="Tooltip" Value="#{TJRW_100511_73}" />
+        </Window>
+      </Window>
+
+      <Window Type="DefaultWindow" Name="Jiugong_04">
+        <Property Name="UnifiedPosition" Value="{{0,171},{0,0}}" />
+        <Property Name="UnifiedSize" Value="{{0.0,54.000000},{0.000000,54.000000}" />
+        <Window Type="TLBB_StaticImageNULL" Name="Jiugong_Image04">
+          <Property Name="AbsolutePosition" Value="x:0.000000 y:0.000000" />
+          <Property Name="AbsoluteSize" Value="w:54.000000 h:54.000000" />
+          <Property Name="Image" Value="set:Tianji image:Tianji_0" />
+          <Event Name="MouseLButtonDown" Function="Jiugong_Add(4);" />
+          <Property Name="Tooltip" Value="#{TJRW_100511_73}" />
+        </Window>
+      </Window>
+
+      <Window Type="DefaultWindow" Name="Jiugong_05">
+        <Property Name="UnifiedPosition" Value="{{0,228},{0,0}}" />
+        <Property Name="UnifiedSize" Value="{{0.0,54.000000},{0.000000,54.000000}" />
+        <Window Type="TLBB_StaticImageNULL" Name="Jiugong_Image05">
+          <Property Name="AbsolutePosition" Value="x:0.000000 y:0.000000" />
+          <Property Name="AbsoluteSize" Value="w:54.000000 h:54.000000" />
+          <Property Name="Image" Value="set:Tianji image:Tianji_0" />
+          <Event Name="MouseLButtonDown" Function="Jiugong_Add(5);" />
+          <Property Name="Tooltip" Value="#{TJRW_100511_73}" />
+        </Window>
+      </Window>
+
+      <Window Type="DefaultWindow" Name="Jiugong_06">
+        <Property Name="UnifiedPosition" Value="{{0,0},{0,57}}" />
+        <Property Name="UnifiedSize" Value="{{0.0,54.000000},{0.000000,54.000000}" />
+        <Window Type="TLBB_StaticImageNULL" Name="Jiugong_Image06">
+          <Property Name="AbsolutePosition" Value="x:0.000000 y:0.000000" />
+          <Property Name="AbsoluteSize" Value="w:54.000000 h:54.000000" />
+          <Property Name="Image" Value="set:Tianji image:Tianji_0" />
+          <Event Name="MouseLButtonDown" Function="Jiugong_Add(6);" />
+          <Property Name="Tooltip" Value="#{TJRW_100511_73}" />
+        </Window>
+      </Window>
+
+      <Window Type="DefaultWindow" Name="Jiugong_07">
+        <Property Name="UnifiedPosition" Value="{{0,57},{0,57}}" />
+        <Property Name="UnifiedSize" Value="{{0.0,54.000000},{0.000000,54.000000}" />
+        <Window Type="TLBB_StaticImageNULL" Name="Jiugong_Image07">
+          <Property Name="AbsolutePosition" Value="x:0.000000 y:0.000000" />
+          <Property Name="AbsoluteSize" Value="w:54.000000 h:54.000000" />
+          <Property Name="Image" Value="set:Tianji image:Tianji_0" />
+          <Event Name="MouseLButtonDown" Function="Jiugong_Add(7);" />
+          <Property Name="Tooltip" Value="#{TJRW_100511_73}" />
+        </Window>
+      </Window>
+
+      <Window Type="DefaultWindow" Name="Jiugong_08">
+        <Property Name="UnifiedPosition" Value="{{0,114},{0,57}}" />
+        <Property Name="UnifiedSize" Value="{{0.0,54.000000},{0.000000,54.000000}" />
+        <Window Type="TLBB_StaticImageNULL" Name="Jiugong_Image08">
+          <Property Name="AbsolutePosition" Value="x:0.000000 y:0.000000" />
+          <Property Name="AbsoluteSize" Value="w:54.000000 h:54.000000" />
+          <Property Name="Image" Value="set:Tianji image:Tianji_0" />
+          <Event Name="MouseLButtonDown" Function="Jiugong_Add(8);" />
+          <Property Name="Tooltip" Value="#{TJRW_100511_73}" />
+        </Window>
+      </Window>
+
+      <Window Type="DefaultWindow" Name="Jiugong_09">
+        <Property Name="UnifiedPosition" Value="{{0,171},{0,57}}" />
+        <Property Name="UnifiedSize" Value="{{0.0,54.000000},{0.000000,54.000000}" />
+        <Window Type="TLBB_StaticImageNULL" Name="Jiugong_Image09">
+          <Property Name="AbsolutePosition" Value="x:0.000000 y:0.000000" />
+          <Property Name="AbsoluteSize" Value="w:54.000000 h:54.000000" />
+          <Property Name="Image" Value="set:Tianji image:Tianji_0" />
+          <Event Name="MouseLButtonDown" Function="Jiugong_Add(9);" />
+          <Property Name="Tooltip" Value="#{TJRW_100511_73}" />
+        </Window>
+      </Window>
+
+      <Window Type="DefaultWindow" Name="Jiugong_10">
+        <Property Name="UnifiedPosition" Value="{{0,228},{0,57}}" />
+        <Property Name="UnifiedSize" Value="{{0.0,54.000000},{0.000000,54.000000}" />
+        <Window Type="TLBB_StaticImageNULL" Name="Jiugong_Image10">
+          <Property Name="AbsolutePosition" Value="x:0.000000 y:0.000000" />
+          <Property Name="AbsoluteSize" Value="w:54.000000 h:54.000000" />
+          <Property Name="Image" Value="set:Tianji image:Tianji_0" />
+          <Event Name="MouseLButtonDown" Function="Jiugong_Add(10);" />
+          <Property Name="Tooltip" Value="#{TJRW_100511_73}" />
+        </Window>
+      </Window>
+
+      <Window Type="DefaultWindow" Name="Jiugong_11">
+        <Property Name="UnifiedPosition" Value="{{0,0},{0,114}}" />
+        <Property Name="UnifiedSize" Value="{{0.0,54.000000},{0.000000,54.000000}" />
+        <Window Type="TLBB_StaticImageNULL" Name="Jiugong_Image11">
+          <Property Name="AbsolutePosition" Value="x:0.000000 y:0.000000" />
+          <Property Name="AbsoluteSize" Value="w:54.000000 h:54.000000" />
+          <Property Name="Image" Value="set:Tianji image:Tianji_0" />
+          <Event Name="MouseLButtonDown" Function="Jiugong_Add(11);" />
+          <Property Name="Tooltip" Value="#{TJRW_100511_73}" />
+        </Window>
+      </Window>
+
+      <Window Type="DefaultWindow" Name="Jiugong_12">
+        <Property Name="UnifiedPosition" Value="{{0,57},{0,114}}" />
+        <Property Name="UnifiedSize" Value="{{0.0,54.000000},{0.000000,54.000000}" />
+        <Window Type="TLBB_StaticImageNULL" Name="Jiugong_Image12">
+          <Property Name="AbsolutePosition" Value="x:0.000000 y:0.000000" />
+          <Property Name="AbsoluteSize" Value="w:54.000000 h:54.000000" />
+          <Property Name="Image" Value="set:Tianji image:Tianji_0" />
+          <Event Name="MouseLButtonDown" Function="Jiugong_Add(12);" />
+          <Property Name="Tooltip" Value="#{TJRW_100511_73}" />
+        </Window>
+      </Window>
+
+      <Window Type="DefaultWindow" Name="Jiugong_13">
+        <Property Name="UnifiedPosition" Value="{{0,114},{0,114}}" />
+        <Property Name="UnifiedSize" Value="{{0.0,54.000000},{0.000000,54.000000}" />
+        <Window Type="TLBB_StaticImageNULL" Name="Jiugong_Image13">
+          <Property Name="AbsolutePosition" Value="x:0.000000 y:0.000000" />
+          <Property Name="AbsoluteSize" Value="w:54.000000 h:54.000000" />
+          <Property Name="Image" Value="set:Tianji image:Tianji_0" />
+          <Event Name="MouseLButtonDown" Function="Jiugong_Add(13);" />
+          <Property Name="Tooltip" Value="#{TJRW_100511_73}" />
+        </Window>
+      </Window>
+
+      <Window Type="DefaultWindow" Name="Jiugong_14">
+        <Property Name="UnifiedPosition" Value="{{0,171},{0,114}}" />
+        <Property Name="UnifiedSize" Value="{{0.0,54.000000},{0.000000,54.000000}" />
+        <Window Type="TLBB_StaticImageNULL" Name="Jiugong_Image14">
+          <Property Name="AbsolutePosition" Value="x:0.000000 y:0.000000" />
+          <Property Name="AbsoluteSize" Value="w:54.000000 h:54.000000" />
+          <Property Name="Image" Value="set:Tianji image:Tianji_0" />
+          <Event Name="MouseLButtonDown" Function="Jiugong_Add(14);" />
+          <Property Name="Tooltip" Value="#{TJRW_100511_73}" />
+        </Window>
+      </Window>
+
+      <Window Type="DefaultWindow" Name="Jiugong_15">
+        <Property Name="UnifiedPosition" Value="{{0,228},{0,114}}" />
+        <Property Name="UnifiedSize" Value="{{0.0,54.000000},{0.000000,54.000000}" />
+        <Window Type="TLBB_StaticImageNULL" Name="Jiugong_Image15">
+          <Property Name="AbsolutePosition" Value="x:0.000000 y:0.000000" />
+          <Property Name="AbsoluteSize" Value="w:54.000000 h:54.000000" />
+          <Property Name="Image" Value="set:Tianji image:Tianji_0" />
+          <Event Name="MouseLButtonDown" Function="Jiugong_Add(15);" />
+          <Property Name="Tooltip" Value="#{TJRW_100511_73}" />
+        </Window>
+      </Window>
+
+      <Window Type="DefaultWindow" Name="Jiugong_16">
+        <Property Name="UnifiedPosition" Value="{{0,0},{0,171}}" />
+        <Property Name="UnifiedSize" Value="{{0.0,54.000000},{0.000000,54.000000}" />
+        <Window Type="TLBB_StaticImageNULL" Name="Jiugong_Image16">
+          <Property Name="AbsolutePosition" Value="x:0.000000 y:0.000000" />
+          <Property Name="AbsoluteSize" Value="w:54.000000 h:54.000000" />
+          <Property Name="Image" Value="set:Tianji image:Tianji_0" />
+          <Event Name="MouseLButtonDown" Function="Jiugong_Add(16);" />
+          <Property Name="Tooltip" Value="#{TJRW_100511_73}" />
+        </Window>
+      </Window>
+
+      <Window Type="DefaultWindow" Name="Jiugong_17">
+        <Property Name="UnifiedPosition" Value="{{0,57},{0,171}}" />
+        <Property Name="UnifiedSize" Value="{{0.0,54.000000},{0.000000,54.000000}" />
+        <Window Type="TLBB_StaticImageNULL" Name="Jiugong_Image17">
+          <Property Name="AbsolutePosition" Value="x:0.000000 y:0.000000" />
+          <Property Name="AbsoluteSize" Value="w:54.000000 h:54.000000" />
+          <Property Name="Image" Value="set:Tianji image:Tianji_0" />
+          <Event Name="MouseLButtonDown" Function="Jiugong_Add(17);" />
+          <Property Name="Tooltip" Value="#{TJRW_100511_73}" />
+        </Window>
+      </Window>
+
+      <Window Type="DefaultWindow" Name="Jiugong_18">
+        <Property Name="UnifiedPosition" Value="{{0,114},{0,171}}" />
+        <Property Name="UnifiedSize" Value="{{0.0,54.000000},{0.000000,54.000000}" />
+        <Window Type="TLBB_StaticImageNULL" Name="Jiugong_Image18">
+          <Property Name="AbsolutePosition" Value="x:0.000000 y:0.000000" />
+          <Property Name="AbsoluteSize" Value="w:54.000000 h:54.000000" />
+          <Property Name="Image" Value="set:Tianji image:Tianji_0" />
+          <Event Name="MouseLButtonDown" Function="Jiugong_Add(18);" />
+          <Property Name="Tooltip" Value="#{TJRW_100511_73}" />
+        </Window>
+      </Window>
+
+      <Window Type="DefaultWindow" Name="Jiugong_19">
+        <Property Name="UnifiedPosition" Value="{{0,171},{0,171}}" />
+        <Property Name="UnifiedSize" Value="{{0.0,54.000000},{0.000000,54.000000}" />
+        <Window Type="TLBB_StaticImageNULL" Name="Jiugong_Image19">
+          <Property Name="AbsolutePosition" Value="x:0.000000 y:0.000000" />
+          <Property Name="AbsoluteSize" Value="w:54.000000 h:54.000000" />
+          <Property Name="Image" Value="set:Tianji image:Tianji_0" />
+          <Event Name="MouseLButtonDown" Function="Jiugong_Add(19);" />
+          <Property Name="Tooltip" Value="#{TJRW_100511_73}" />
+        </Window>
+      </Window>
+
+      <Window Type="DefaultWindow" Name="Jiugong_20">
+        <Property Name="UnifiedPosition" Value="{{0,228},{0,171}}" />
+        <Property Name="UnifiedSize" Value="{{0.0,54.000000},{0.000000,54.000000}" />
+        <Window Type="TLBB_StaticImageNULL" Name="Jiugong_Image20">
+          <Property Name="AbsolutePosition" Value="x:0.000000 y:0.000000" />
+          <Property Name="AbsoluteSize" Value="w:54.000000 h:54.000000" />
+          <Property Name="Image" Value="set:Tianji image:Tianji_0" />
+          <Event Name="MouseLButtonDown" Function="Jiugong_Add(20);" />
+          <Property Name="Tooltip" Value="#{TJRW_100511_73}" />
+        </Window>
+      </Window>
+
+      <Window Type="DefaultWindow" Name="Jiugong_21">
+        <Property Name="UnifiedPosition" Value="{{0,0},{0,228}}" />
+        <Property Name="UnifiedSize" Value="{{0.0,54.000000},{0.000000,54.000000}" />
+        <Window Type="TLBB_StaticImageNULL" Name="Jiugong_Image21">
+          <Property Name="AbsolutePosition" Value="x:0.000000 y:0.000000" />
+          <Property Name="AbsoluteSize" Value="w:54.000000 h:54.000000" />
+          <Property Name="Image" Value="set:Tianji image:Tianji_0" />
+          <Event Name="MouseLButtonDown" Function="Jiugong_Add(21);" />
+          <Property Name="Tooltip" Value="#{TJRW_100511_73}" />
+        </Window>
+      </Window>
+
+      <Window Type="DefaultWindow" Name="Jiugong_22">
+        <Property Name="UnifiedPosition" Value="{{0,57},{0,228}}" />
+        <Property Name="UnifiedSize" Value="{{0.0,54.000000},{0.000000,54.000000}" />
+        <Window Type="TLBB_StaticImageNULL" Name="Jiugong_Image22">
+          <Property Name="AbsolutePosition" Value="x:0.000000 y:0.000000" />
+          <Property Name="AbsoluteSize" Value="w:54.000000 h:54.000000" />
+          <Property Name="Image" Value="set:Tianji image:Tianji_0" />
+          <Event Name="MouseLButtonDown" Function="Jiugong_Add(22);" />
+          <Property Name="Tooltip" Value="#{TJRW_100511_73}" />
+        </Window>
+      </Window>
+
+      <Window Type="DefaultWindow" Name="Jiugong_23">
+        <Property Name="UnifiedPosition" Value="{{0,114},{0,228}}" />
+        <Property Name="UnifiedSize" Value="{{0.0,54.000000},{0.000000,54.000000}" />
+        <Window Type="TLBB_StaticImageNULL" Name="Jiugong_Image23">
+          <Property Name="AbsolutePosition" Value="x:0.000000 y:0.000000" />
+          <Property Name="AbsoluteSize" Value="w:54.000000 h:54.000000" />
+          <Property Name="Image" Value="set:Tianji image:Tianji_0" />
+          <Event Name="MouseLButtonDown" Function="Jiugong_Add(23);" />
+          <Property Name="Tooltip" Value="#{TJRW_100511_73}" />
+        </Window>
+      </Window>
+
+      <Window Type="DefaultWindow" Name="Jiugong_24">
+        <Property Name="UnifiedPosition" Value="{{0,171},{0,228}}" />
+        <Property Name="UnifiedSize" Value="{{0.0,54.000000},{0.000000,54.000000}" />
+        <Window Type="TLBB_StaticImageNULL" Name="Jiugong_Image24">
+          <Property Name="AbsolutePosition" Value="x:0.000000 y:0.000000" />
+          <Property Name="AbsoluteSize" Value="w:54.000000 h:54.000000" />
+          <Property Name="Image" Value="set:Tianji image:Tianji_0" />
+          <Event Name="MouseLButtonDown" Function="Jiugong_Add(24);" />
+          <Property Name="Tooltip" Value="#{TJRW_100511_73}" />
+        </Window>
+      </Window>
+
+      <Window Type="DefaultWindow" Name="Jiugong_25">
+        <Property Name="UnifiedPosition" Value="{{0,228},{0,228}}" />
+        <Property Name="UnifiedSize" Value="{{0.0,54.000000},{0.000000,54.000000}" />
+        <Window Type="TLBB_StaticImageNULL" Name="Jiugong_Image25">
+          <Property Name="AbsolutePosition" Value="x:0.000000 y:0.000000" />
+          <Property Name="AbsoluteSize" Value="w:54.000000 h:54.000000" />
+          <Property Name="Image" Value="set:Tianji image:Tianji_0" />
+          <Event Name="MouseLButtonDown" Function="Jiugong_Add(25);" />
+          <Property Name="Tooltip" Value="#{TJRW_100511_73}" />
+        </Window>
+      </Window>
+		</Window>
+    
+    <Window Type="TLBB_Frame_Lace2" Name="Jiugong_Text_Lace" >
+      <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.00000,334.0}" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-21.000000},{0.0000,55.0}" />
+      <Property Name="RiseOnClick" Value="False" />
+      <Window Type="TLBB_SimpleText" Name="Jiugong_Text" >
+        <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.00000,3.0}" />
+        <Property Name="UnifiedSize" Value="{{1.000000,-6.000000},{1.0000,-6.0}" />
+      <Property Name="Text" Value="#{TJRW_100511_29}" />
+      <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+      <Property Name="VertFormatting" Value="TopAligned" />
+    </Window>
+    </Window>
+    <Window Type="TLBB_Frame_Lace5" Name="Jiugong_Blank">
+      <Property Name="UnifiedPosition" Value="{{0.000000,52.000000},{1.000000,-39.000000}" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-104.000000},{0.000000,20.000000}" />
+    </Window>
+    <Window Type="TLBB_ButtonCommon" Name="Jiugong_OK_Button">
+      <Property Name="UnifiedPosition" Value="{{1.000000,-50.000000},{1.000000,-39.000000}" />
+      <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+      <Property Name="Text" Value="#{INTERFACE_XML_557}" />
+      <Event Name="Clicked" Function="Jiugong_Confirm();" />
+    </Window>
+    <Window Type="TLBB_ButtonCommon" Name="Jiugong_Reset_Button">
+      <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{1.000000,-39.000000}" />
+      <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+      <Property Name="Text" Value="#{YBSC_XML_11}" />
+      <Event Name="Clicked" Function="Jiugong_Reset();" />
+    </Window>
+	</Window>
+</GUILayout>

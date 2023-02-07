@@ -1,0 +1,288 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame2" Name="Fuli_NewSalaryTask_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,600.000000},{0.000000,540.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-300.000000},{0.500000,-275.000000}}"/>
+    <Window Type="TLBB_ButtonClose" Name="Fuli_NewSalaryTask_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,7.000000}}"/>
+      <Event Name="Clicked" Function="Fuli_NewSalaryTask_OnClosed();"/>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="Fuli_NewSalaryTask_Bk_Help">
+        <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,7.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Event Name="Clicked" Function="Fuli_NewSalaryTask_Bk_Help_Click()"/>
+    </Window>	
+    <Window Type="TLBB_DragTitle" Name="Fuli_NewSalaryTask_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,3.000000}}"/>
+      <Property Name="Text" Value="#{MYQD_170721_01}"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="DragTarget" Value="Fuli_NewSalaryTask_Frame"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="Fuli_NewSalaryTask_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,-33.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,25.000000}}"/>
+      <Window Type="DefaultWindow" Name="Fuli_NewSalaryTask_RightBK">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,2.000000}}"/>
+        <Window Type="DefaultWindow" Name="Fuli_NewSalaryTask_Content">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,-1.000000}}"/>
+          <Window Type="TLBB_ListBoxCommon" Name="Fuli_NewSalaryTask_ListCtl">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,297.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,1.000000}}"/>
+            <Window Type="TLBB_SimpleText" Name="Fuli_NewSalaryTask_thelevel">
+              <Property Name="UnifiedSize" Value="{{0.000000,500.000000},{0.000000,25.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,24.000000},{0.000000,16.000000}}"/>
+              <Property Name="Text" Value="#{GZGZ_120514_05}"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Fuli_NewSalaryTask_ContentList1">
+              <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,85.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{1.000000,-240.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="Font" Value="YouYuan11.25"/>
+              <Window Type="TLBB_SimpleMulitiTextFrame" Name="Fuli_NewSalaryTask_ItemName1">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{1.000000,-20.000000}}"/>
+                <Property Name="Text" Value="一千零一个愿望"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+              </Window>
+              <Window Type="TLBB_SimpleMulitiTextFrame" Name="Fuli_NewSalaryTask_completedinfo1">
+                <Property Name="UnifiedSize" Value="{{0.000000,55.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-54.000000},{1.000000,-45.000000}}"/>
+                <Property Name="Text" Value="50/50"/>
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+              <Window Type="TLBB_StaticImageFrame" Name="Fuli_NewSalaryTask_StaticImageFrame1" >
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,60.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Window Type="TLBB_ActionButtonNULL" Name="Fuli_NewSalaryTask_ButtonNULL1" >
+                  <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
+                </Window>
+              </Window>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Fuli_NewSalaryTask_ContentList2">
+              <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,85.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-130.000000},{1.000000,-240.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="Font" Value="YouYuan11.25"/>
+              <Window Type="TLBB_SimpleMulitiTextFrame" Name="Fuli_NewSalaryTask_ItemName2">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{1.000000,-20.000000}}"/>
+                <Property Name="Text" Value="一千零一个愿望"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+              </Window>
+              <Window Type="TLBB_SimpleMulitiTextFrame" Name="Fuli_NewSalaryTask_completedinfo2">
+                <Property Name="UnifiedSize" Value="{{0.000000,55.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-54.000000},{1.000000,-45.000000}}"/>
+                <Property Name="Text" Value="0/5"/>
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+              <Window Type="TLBB_StaticImageFrame" Name="Fuli_NewSalaryTask_StaticImageFrame2" >
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,60.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Window Type="TLBB_ActionButtonNULL" Name="Fuli_NewSalaryTask_ButtonNULL2" >
+                  <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.00}" />
+                  <Property Name="AbsoluteSize" Value="w:56.000000 h:56.000000" />
+                </Window>
+              </Window>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Fuli_NewSalaryTask_ContentList3">
+              <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,85.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,10.000000},{1.000000,-240.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="Font" Value="YouYuan11.25"/>
+              <Window Type="TLBB_SimpleMulitiTextFrame" Name="Fuli_NewSalaryTask_ItemName3">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{1.000000,-20.000000}}"/>
+                <Property Name="Text" Value="一千零一个愿望"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+              </Window>
+              <Window Type="TLBB_SimpleMulitiTextFrame" Name="Fuli_NewSalaryTask_completedinfo3">
+                <Property Name="UnifiedSize" Value="{{0.000000,55.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-54.000000},{1.000000,-45.000000}}"/>
+                <Property Name="Text" Value="0/5"/>
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+              <Window Type="TLBB_StaticImageFrame" Name="Fuli_NewSalaryTask_StaticImageFrame3" >
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,60.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Window Type="TLBB_ActionButtonNULL" Name="Fuli_NewSalaryTask_ButtonNULL3" >
+                  <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.00}" />
+                  <Property Name="AbsoluteSize" Value="w:56.000000 h:56.000000" />
+                </Window>
+              </Window>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Fuli_NewSalaryTask_ContentList4">
+              <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,85.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-145.000000},{1.000000,-240.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="Font" Value="YouYuan11.25"/>
+              <Window Type="TLBB_SimpleMulitiTextFrame" Name="Fuli_NewSalaryTask_ItemName4">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{1.000000,-20.000000}}"/>
+                <Property Name="Text" Value="一千零一个愿望"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+              </Window>
+              <Window Type="TLBB_SimpleMulitiTextFrame" Name="Fuli_NewSalaryTask_completedinfo4">
+                <Property Name="UnifiedSize" Value="{{0.000000,55.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-54.000000},{1.000000,-45.000000}}"/>
+                <Property Name="Text" Value="0/5"/>
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+              <Window Type="TLBB_StaticImageFrame" Name="Fuli_NewSalaryTask_StaticImageFrame4" >
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,60.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Window Type="TLBB_ActionButtonNULL" Name="Fuli_NewSalaryTask_ButtonNULL4" >
+                  <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.00}" />
+                  <Property Name="AbsoluteSize" Value="w:56.000000 h:56.000000" />
+                </Window>
+              </Window>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Fuli_NewSalaryTask_ContentList5">
+              <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,85.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{1.000000,-120.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="Font" Value="YouYuan11.25"/>
+              <Window Type="TLBB_SimpleMulitiTextFrame" Name="Fuli_NewSalaryTask_ItemName5">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{1.000000,-20.000000}}"/>
+                <Property Name="Text" Value="一千零一个愿望"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+              </Window>
+              <Window Type="TLBB_SimpleMulitiTextFrame" Name="Fuli_NewSalaryTask_completedinfo5">
+                <Property Name="UnifiedSize" Value="{{0.000000,55.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-54.000000},{1.000000,-45.000000}}"/>
+                <Property Name="Text" Value="0/5"/>
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+              <Window Type="TLBB_StaticImageFrame" Name="Fuli_NewSalaryTask_StaticImageFrame5" >
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,60.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Window Type="TLBB_ActionButtonNULL" Name="Fuli_NewSalaryTask_ButtonNULL5" >
+                  <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.00}" />
+                  <Property Name="AbsoluteSize" Value="w:56.000000 h:56.000000" />
+                </Window>
+              </Window>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Fuli_NewSalaryTask_ContentList6">
+              <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,85.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-130.000000},{1.000000,-120.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="Font" value="YouYuan11.25"/>
+              <Window Type="TLBB_SimpleMulitiTextFrame" Name="Fuli_NewSalaryTask_ItemName6">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{1.000000,-20.000000}}"/>
+                <Property Name="Text" Value="一千零一个愿望"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+              </Window>
+              <Window Type="TLBB_SimpleMulitiTextFrame" Name="Fuli_NewSalaryTask_completedinfo6">
+                <Property Name="UnifiedSize" Value="{{0.000000,55.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-54.000000},{1.000000,-45.000000}}"/>
+                <Property Name="Text" Value="0/5"/>
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+              <Window Type="TLBB_StaticImageFrame" Name="Fuli_NewSalaryTask_StaticImageFrame6" >
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,60.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Window Type="TLBB_ActionButtonNULL" Name="Fuli_NewSalaryTask_ButtonNULL6" >
+                  <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.00}" />
+                  <Property Name="AbsoluteSize" Value="w:56.000000 h:56.000000" />
+                </Window>
+              </Window>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Fuli_NewSalaryTask_ContentList7">
+              <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,85.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,10.000000},{1.000000,-120.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="Font" Value="YouYuan11.25"/>
+              <Window Type="TLBB_SimpleMulitiTextFrame" Name="Fuli_NewSalaryTask_ItemName7">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{1.000000,-20.000000}}"/>
+                <Property Name="Text" Value="一千零一个愿望"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+              </Window>
+              <Window Type="TLBB_SimpleMulitiTextFrame" Name="Fuli_NewSalaryTask_completedinfo7">
+                <Property Name="UnifiedSize" Value="{{0.000000,55.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-54.000000},{1.000000,-45.000000}}"/>
+                <Property Name="Text" Value="0/5"/>
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+              <Window Type="TLBB_StaticImageFrame" Name="Fuli_NewSalaryTask_StaticImageFrame7" >
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,60.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Window Type="TLBB_ActionButtonNULL" Name="Fuli_NewSalaryTask_ButtonNULL7" >
+                  <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.00}" />
+                  <Property Name="AbsoluteSize" Value="w:56.000000 h:56.000000" />
+                </Window>
+              </Window>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Fuli_NewSalaryTask_ContentList8">
+              <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,85.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-145.000000},{1.000000,-120.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="Font" Value="YouYuan11.25"/>
+              <Window Type="TLBB_SimpleMulitiTextFrame" Name="Fuli_NewSalaryTask_ItemName8">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{1.000000,-20.000000}}"/>
+                <Property Name="Text" Value="一千零一个愿望"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+              </Window>
+              <Window Type="TLBB_SimpleMulitiTextFrame" Name="Fuli_NewSalaryTask_completedinfo8">
+                <Property Name="UnifiedSize" Value="{{0.000000,55.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-54.000000},{1.000000,-45.000000}}"/>
+                <Property Name="Text" Value="0/5"/>
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+              <Window Type="TLBB_StaticImageFrame" Name="Fuli_NewSalaryTask_StaticImageFrame8" >
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,60.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Window Type="TLBB_ActionButtonNULL" Name="Fuli_NewSalaryTask_ButtonNULL8" >
+                  <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.00}" />
+                  <Property Name="AbsoluteSize" Value="w:56.000000 h:56.000000" />
+                </Window>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="TLBB_Frame_Lace4" Name="Fuli_NewSalaryTask_Bk" >
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,180.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-208.000000}}"/>
+            <Window Type="TLBB_SimpleText" Name="Fuli_NewSalaryTask_DetailDesc" >
+              <Property Name="UnifiedSize" Value="{{0.911877,20.000000},{0.000000,140.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{0.000000,19.000000}}"/>
+              <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+              <Property Name="Text" Value="#{GZGZ_120514_08}"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_Frame_Lace2" Name="Fuli_NewSalaryTask_Window">
+            <Property Name="UnifiedSize" Value="{{1.000000,-1.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-30.000000}}"/>
+            <Window Type="TLBB_SimpleText" Name="Fuli_NewSalaryTask_Text">
+              <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{1.000000,-25.000000}}"/>
+              <Property Name="Text" Value="#{FLJM_170527_06}"/>
+              <Property Name="HorzFormatting" Value="LeftAligned"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Fuli_NewSalaryTask_Text2">
+              <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-305.000000},{1.000000,-25.000000}}"/>
+              <Property Name="Text" Value="#{FLJM_170527_08}"/>
+              <Property Name="HorzFormatting" Value="RightAligned"/>
+            </Window>
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

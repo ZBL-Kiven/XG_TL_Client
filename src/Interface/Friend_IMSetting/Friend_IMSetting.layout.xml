@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame0" Name="Friend_IMSetting_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,391.000000},{0.000000,317.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-196.000000},{0.500000,-159.000000}}"/>
+    <Property Name="AlwaysOnTop" Value="True" />
+    <Event Name="Hidden" Function="Friend_IMSetting_OnHidden();" />
+    <Window Type="TLBB_DragTitle" Name="Friend_IMSetting_DragTitle">
+      <Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+      <Property Name="DragTarget" Value="Friend_IMSetting_Frame" />
+      <Property Name="Font" Value="YouYuan11.25" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="VertFormatting" Value="VertCentred" />
+      <Property Name="Text" Value="#{KDHYYH_20211025_17}" />
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="Friend_IMSetting_Help">
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+      <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+      <Event Name="Clicked" Function='Helper:GotoHelper("");' />
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="Friend_IMSetting_Close">
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+      <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+      <Event Name="Clicked" Function="this:Hide();" />
+    </Window>
+    <Window Type="TLBB_Frame_Lace2" Name="Friend_IMSetting_LeftBK">
+      <Property Name="UnifiedSize" Value="{{0.000000,86.000000},{0.000000,263.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,35.000000}}"/>
+      <Property Name="RiseOnClick" Value="False" />
+      <Window Type="TLBB_ButtonCheckForRMBShop" Name="Friend_IMSetting_BasicSetting">
+        <Property Name="UnifiedSize" Value="{{0.000000,68.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,11.000000}}"/>
+        <Property Name="Text" Value="#{KDHYYH_20211025_20}" />
+        <Property Name="CheckMode" Value="1"/>
+        <Event Name="Clicked" Function="Friend_IMSetting_Tag_Clicked(1);" />
+        <Event Name="MouseButtonUp" Function="Friend_IMSetting_Tag_Restore()"/>
+      </Window>
+      <Window Type="TLBB_ButtonCheckForRMBShop" Name="Friend_IMSetting_GroupSetting">
+        <Property Name="UnifiedSize" Value="{{0.000000,68.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,39.000000}}"/>
+        <Property Name="Text" Value="#{KDHYYH_20211025_21}" />
+        <Property Name="CheckMode" Value="1"/>
+        <Event Name="Clicked" Function="Friend_IMSetting_Tag_Clicked(2);" />
+        <Event Name="MouseButtonUp" Function="Friend_IMSetting_Tag_Restore()"/>
+      </Window>
+    </Window>
+    <Window Type="TLBB_Frame_Lace2" Name="Friend_IMSetting_RightBK">
+      <Property Name="UnifiedSize" Value="{{0.000000,292.000000},{0.000000,263.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,92.000000},{0.000000,35.000000}}"/>
+      <Property Name="RiseOnClick" Value="False" />
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="Friend_IMSetting_Explain">
+        <Property Name="UnifiedSize" Value="{{0.000000,293.000000},{0.000000,26.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="HorzFormatting" Value="LeftAligned" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="TextColor" Value="FFFFF263" />
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="Friend_IMSetting_OK_Button">
+        <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,204.000000},{0.000000,240.000000}}"/>
+        <Property Name="Text" Value="#{KDHYYH_20211025_25}" />
+        <Event Name="Clicked" Function="Friend_IMSetting_Accept_Clicked();" />
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="Friend_IMSetting_Cancel_Button">
+        <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-46.000000},{1.000000,-23.000000}}"/>
+        <Property Name="Text" Value="#{KDHYYH_20211025_26}" />
+        <Event Name="Clicked" Function="Friend_IMSetting_Cancel_Clicked();" />
+      </Window>
+      <Window Type="DefaultWindow" Name="Friend_IMSetting_BasicContent">
+        <Property Name="UnifiedSize" Value="{{0.000000,283.000000},{0.000000,206.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,28.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Window Type="TLBB_ButtonCheck" Name="Friend_IMSetting_Basic1">
+          <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,13.000000},{0.000000,23.000000}}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Friend_IMSetting_BasicText1">
+          <Property Name="UnifiedSize" Value="{{0.400000,0.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,33.000000},{0.000000,19.000000}}"/>
+          <Property Name="TextColor" Value="FFFFF263" />
+          <Property Name="Text" Value="#{KDHYYH_20211025_22}" />
+          <Property Name="HorzFormatting" Value="LeftAligned" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+        <Window Type="TLBB_ButtonCheck" Name="Friend_IMSetting_Basic2">
+          <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,13.000000},{0.000000,54.000000}}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Friend_IMSetting_BasicText2">
+          <Property Name="UnifiedSize" Value="{{0.400000,0.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,33.000000},{0.000000,50.000000}}"/>
+          <Property Name="TextColor" Value="FFFFF263" />
+          <Property Name="Text" Value="#{KDHYYH_20211025_23}" />
+          <Property Name="HorzFormatting" Value="LeftAligned" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+        <Window Type="TLBB_ButtonCheck" Name="Friend_IMSetting_Basic3">
+          <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,13.000000},{0.000000,86.000000}}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Friend_IMSetting_BasicText3">
+          <Property Name="UnifiedSize" Value="{{0.400000,0.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,33.000000},{0.000000,81.000000}}"/>
+          <Property Name="TextColor" Value="FFFFF263" />
+          <Property Name="Text" Value="#{KDHYYH_20211025_24}" />
+          <Property Name="HorzFormatting" Value="LeftAligned" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+        <Window Type="TLBB_ButtonCheck" Name="Friend_IMSetting_Basic4">
+          <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,13.000000},{0.000000,119.000000}}"/>
+          <Property Name="Visible" Value="False"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Friend_IMSetting_BasicText4">
+          <Property Name="UnifiedSize" Value="{{0.000000,175.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,33.000000},{0.000000,114.000000}}"/>
+          <Property Name="TextColor" Value="FFFFF263" />
+          <Property Name="Text" Value="#{LTQH_XML_50}" />
+          <Property Name="HorzFormatting" Value="LeftAligned" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="Visible" Value="False"/>
+        </Window>
+        <Window Type="TLBB_ButtonCheck" Name="Friend_IMSetting_Basic5">
+          <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,13.000000},{0.000000,152.000000}}"/>
+          <Property Name="Visible" Value="False"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Friend_IMSetting_BasicText5">
+          <Property Name="UnifiedSize" Value="{{0.000000,175.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,33.000000},{0.000000,147.000000}}"/>
+          <Property Name="TextColor" Value="FFFFF263" />
+          <Property Name="Text" Value="#{LTQH_XML_51}" />
+          <Property Name="HorzFormatting" Value="LeftAligned" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="Visible" Value="False"/>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="Friend_IMSetting_GroupContent">
+        <Property Name="UnifiedSize" Value="{{0.000000,283.000000},{0.000000,206.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,28.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Window Type="TLBB_SimpleText" Name="Friend_IMSetting_GroupExplain1">
+          <Property Name="UnifiedSize" Value="{{0.000000,105.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,5.000000}}"/>
+          <Property Name="TextColor" Value="FFFFF263" />
+          <Property Name="Text" Value="#{KDHYYH_20211025_27}" />
+          <Property Name="HorzFormatting" Value="LeftAligned" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Friend_IMSetting_GroupExplain2">
+          <Property Name="UnifiedSize" Value="{{0.000000,58.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,13.000000},{0.000000,40.000000}}"/>
+          <Property Name="TextColor" Value="FFFFF263" />
+          <Property Name="Text" Value="#{KDHYYH_20211025_28}" />
+          <Property Name="HorzFormatting" Value="LeftAligned" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Friend_IMSetting_GroupExplain3">
+          <Property Name="UnifiedSize" Value="{{0.000000,71.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,13.000000},{0.000000,69.000000}}"/>
+          <Property Name="TextColor" Value="FFFFF263" />
+          <Property Name="Text" Value="#{KDHYYH_20211025_29}" />
+          <Property Name="HorzFormatting" Value="LeftAligned" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+        <Window Type="TLBB_ComboList" Name="Friend_IMSetting_GroupName">
+          <Property Name="UnifiedSize" Value="{{0.000000,145.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,87.000000},{0.000000,40.000000}}"/>
+        </Window>
+        <Window Type="TLBB_EditBoxNormal" Name="Friend_IMSetting_GroupNameNew">
+          <Property Name="UnifiedSize" Value="{{0.000000,125.000000},{0.000000,21.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,87.000000},{0.000000,68.000000}}"/>
+          <Property Name="MaxTextLength" Value="18" />
+        </Window>
+        <Window Type="TLBB_ButtonCommon" Name="Friend_IMSetting_Modify_Button">
+          <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,238.000000},{0.000000,68.000000}}"/>
+          <Property Name="Text" Value="#{KDHYYH_20211025_30}" />
+          <Event Name="Clicked" Function="Friend_IMSetting_Modify_Clicked();" />
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

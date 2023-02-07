@@ -1,0 +1,309 @@
+<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame0" Name="QinHuangTime3">
+    <Property Name="UnifiedSize" Value="{{0.000000,306.000000},{0.000000,450.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{1.000000,-309.000000},{0.500000,70.000000}}"/>
+    <Window Type="TLBB_DragTitle" Name="QinHuangTime3_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-64.000000},{0.000000,26.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,9.000000}}"/>
+      <Property Name="DragTarget" Value="QinHuangTime3" />
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="Font" Value="Title" />
+      <Property Name="Text" Value="#{MJXZ_210510_09}" />
+    </Window>
+    <Window Type="TLBB_ButtonNULL" Name="QinHuangTime3_Image">
+      <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,13.000000}}"/>
+      <Property Name="PushedImage" Value="set:SongLiao02 image:Down_Pushed"/>
+      <Property Name="NormalImage" Value="set:SongLiao02 image:Down_Normal"/>
+      <Property Name="HoverImage" Value="set:SongLiao02 image:Down_Hover"/>
+      <Property Name="DisabledImage" Value="set:SongLiao02 image:Down_Disabled"/>
+      <Event Name="Clicked" Function="QinHuangTime3_OpenMini()" />
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="QinHuangTime3_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,13.000000}}"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="QinHuangTime3_Frame_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-50.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,33.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Window Type="TLBB_Frame_Lace1" Name="QinHuangTime3_Up">
+        <Property Name="UnifiedSize" Value="{{1.000000,-1.000000},{0.000000,102.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,4.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="QinHuangTime3_Text">
+          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{1.000000,-20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+          <Property Name="Text" Value="#{MJXZ_210510_27}" />
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace1" Name="QinHuangTime3_Down">
+        <Property Name="UnifiedSize" Value="{{1.000000,-1.000000},{0.000000,288.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{1.000000,-294.000000}}"/>
+        <Window Type="DefaultWindow" Name="QinHuangTime3_Pair_Title">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,25.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Window Type="TLBB_StaticImageNULL" Name="QinHuangTime3_Pair_Title1BKL">
+            <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,10.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.500000,-5.000000}}" />
+            <Property Name="Image" Value="set:BaseInterface image:HJ_TitleMini01Left" />
+            <Property Name="AlwaysOnTop" Value="True" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="QinHuangTime3_Pair_Title1">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{.000000,25.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="Text" Value="#{MJXZ_210510_11}" />
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="QinHuangTime3_Pair_Title1BKR">
+            <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,10.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{1.000000,-120.000000},{0.500000,-5.000000}}" />
+            <Property Name="Image" Value="set:BaseInterface image:HJ_TitleMini01Right" />
+            <Property Name="AlwaysOnTop" Value="True" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="QinHuangTime3_DiHunEnt">
+          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,28.000000}}" />
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+          <Property Name="Text" Value="#{MJXZ_210510_29}" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="QinHuangTime3_DiHunEnt2">
+          <Property Name="UnifiedSize" Value="{{1.000000,-52.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,28.000000}}" />
+          <Property Name="HorzFormatting" Value="WordWrapRightAligned" />
+          <Property Name="Text" Value="#{MJXZ_210510_31}" />
+        </Window>
+        <Window Type="TLBB_ButtonCheckNULL" Name="QinHuangTime3_DiHunEntBtn">
+          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,26.000000}}" />
+          <Property Name="PushedImage" Value="set:CommonFrame image:CommonEditBoxBK"/>
+          <Property Name="CheckMode" Value="1" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Event Name="Clicked" Function="QinHuangTime3_Goto()" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="QinHuangTime3_DiJiang1Ent">
+          <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,46.000000}}" />
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+          <Property Name="Text" Value="#{MJXZ_210510_34}" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="QinHuangTime3_DiJiang1Ent2">
+          <Property Name="UnifiedSize" Value="{{1.000000,-52.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,46.000000}}" />
+          <Property Name="HorzFormatting" Value="WordWrapRightAligned" />
+          <Property Name="Text" Value="#{MJXZ_210510_36}" />
+        </Window>
+        <Window Type="TLBB_ButtonCheckNULL" Name="QinHuangTime3_DiJiang1EntBtn">
+          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,46.000000}}" />
+          <Property Name="PushedImage" Value="set:CommonFrame image:CommonEditBoxBK"/>
+          <Property Name="CheckMode" Value="1" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Event Name="Clicked" Function="QinHuangTime3_Click(1)" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="QinHuangTime3_DiJiang2Ent">
+          <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,66.000000}}" />
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+          <Property Name="Text" Value="#{MJXZ_210510_34}" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="QinHuangTime3_DiJiang2Ent2">
+          <Property Name="UnifiedSize" Value="{{1.000000,-52.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,66.000000}}" />
+          <Property Name="HorzFormatting" Value="WordWrapRightAligned" />
+          <Property Name="Text" Value="#{MJXZ_210510_36}" />
+        </Window>
+        <Window Type="TLBB_ButtonCheckNULL" Name="QinHuangTime3_DiJiang2EntBtn">
+          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,66.000000}}" />
+          <Property Name="PushedImage" Value="set:CommonFrame image:CommonEditBoxBK"/>
+          <Property Name="CheckMode" Value="1" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Event Name="Clicked" Function="QinHuangTime3_Click(2)" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="QinHuangTime3_DiJiang3Ent">
+          <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,86.000000}}" />
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+          <Property Name="Text" Value="#{MJXZ_210510_34}" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="QinHuangTime3_DiJiang3Ent2">
+          <Property Name="UnifiedSize" Value="{{1.000000,-52.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,86.000000}}" />
+          <Property Name="HorzFormatting" Value="WordWrapRightAligned" />
+          <Property Name="Text" Value="#{MJXZ_210510_36}" />
+        </Window>
+        <Window Type="TLBB_ButtonCheckNULL" Name="QinHuangTime3_DiJiang3EntBtn">
+          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,86.000000}}" />
+          <Property Name="PushedImage" Value="set:CommonFrame image:CommonEditBoxBK"/>
+          <Property Name="CheckMode" Value="1" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Event Name="Clicked" Function="QinHuangTime3_Click(3)" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="QinHuangTime3_DiJiang4Ent">
+          <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,106.000000}}" />
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+          <Property Name="Text" Value="#{MJXZ_210510_34}" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="QinHuangTime3_DiJiang4Ent2">
+          <Property Name="UnifiedSize" Value="{{1.000000,-52.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,106.000000}}" />
+          <Property Name="HorzFormatting" Value="WordWrapRightAligned" />
+          <Property Name="Text" Value="#{MJXZ_210510_36}" />
+        </Window>
+        <Window Type="TLBB_ButtonCheckNULL" Name="QinHuangTime3_DiJiang4EntBtn">
+          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,106.000000}}" />
+          <Property Name="PushedImage" Value="set:CommonFrame image:CommonEditBoxBK"/>
+          <Property Name="CheckMode" Value="1" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Event Name="Clicked" Function="QinHuangTime3_Click(4)" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="QinHuangTime3_DiJiang5Ent">
+          <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,126.000000}}" />
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+          <Property Name="Text" Value="#{MJXZ_210510_34}" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="QinHuangTime3_DiJiang5Ent2">
+          <Property Name="UnifiedSize" Value="{{1.000000,-52.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,126.000000}}" />
+          <Property Name="HorzFormatting" Value="WordWrapRightAligned" />
+          <Property Name="Text" Value="#{MJXZ_210510_36}" />
+        </Window>
+        <Window Type="TLBB_ButtonCheckNULL" Name="QinHuangTime3_DiJiang5EntBtn">
+          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,126.000000}}" />
+          <Property Name="PushedImage" Value="set:CommonFrame image:CommonEditBoxBK"/>
+          <Property Name="CheckMode" Value="1" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Event Name="Clicked" Function="QinHuangTime3_Click(5)" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="QinHuangTime3_DiJiang6Ent">
+          <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,146.000000}}" />
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+          <Property Name="Text" Value="#{MJXZ_210510_34}" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="QinHuangTime3_DiJiang6Ent2">
+          <Property Name="UnifiedSize" Value="{{1.000000,-52.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,146.000000}}" />
+          <Property Name="HorzFormatting" Value="WordWrapRightAligned" />
+          <Property Name="Text" Value="#{MJXZ_210510_36}" />
+        </Window>
+        <Window Type="TLBB_ButtonCheckNULL" Name="QinHuangTime3_DiJiang6EntBtn">
+          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,146.000000}}" />
+          <Property Name="PushedImage" Value="set:CommonFrame image:CommonEditBoxBK"/>
+          <Property Name="CheckMode" Value="1" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Event Name="Clicked" Function="QinHuangTime3_Click(6)" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="QinHuangTime3_DiJiang7Ent">
+          <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,166.000000}}" />
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+          <Property Name="Text" Value="#{MJXZ_210510_34}" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="QinHuangTime3_DiJiang7Ent2">
+          <Property Name="UnifiedSize" Value="{{1.000000,-52.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,166.000000}}" />
+          <Property Name="HorzFormatting" Value="WordWrapRightAligned" />
+          <Property Name="Text" Value="#{MJXZ_210510_36}" />
+        </Window>
+        <Window Type="TLBB_ButtonCheckNULL" Name="QinHuangTime3_DiJiang7EntBtn">
+          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,166.000000}}" />
+          <Property Name="PushedImage" Value="set:CommonFrame image:CommonEditBoxBK"/>
+          <Property Name="CheckMode" Value="1" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Event Name="Clicked" Function="QinHuangTime3_Click(7)" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="QinHuangTime3_DiJiang8Ent">
+          <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,186.000000}}" />
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+          <Property Name="Text" Value="#{MJXZ_210510_34}" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="QinHuangTime3_DiJiang8Ent2">
+          <Property Name="UnifiedSize" Value="{{1.000000,-52.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,186.000000}}" />
+          <Property Name="HorzFormatting" Value="WordWrapRightAligned" />
+          <Property Name="Text" Value="#{MJXZ_210510_36}" />
+        </Window>
+        <Window Type="TLBB_ButtonCheckNULL" Name="QinHuangTime3_DiJiang8EntBtn">
+          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,186.000000}}" />
+          <Property Name="PushedImage" Value="set:CommonFrame image:CommonEditBoxBK"/>
+          <Property Name="CheckMode" Value="1" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Event Name="Clicked" Function="QinHuangTime3_Click(8)" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="QinHuangTime3_DiJiang9Ent">
+          <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,206.000000}}" />
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+          <Property Name="Text" Value="#{MJXZ_210510_34}" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="QinHuangTime3_DiJiang9Ent2">
+          <Property Name="UnifiedSize" Value="{{1.000000,-52.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,206.000000}}" />
+          <Property Name="HorzFormatting" Value="WordWrapRightAligned" />
+          <Property Name="Text" Value="#{MJXZ_210510_36}" />
+        </Window>
+        <Window Type="TLBB_ButtonCheckNULL" Name="QinHuangTime3_DiJiang9EntBtn">
+          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,206.000000}}" />
+          <Property Name="PushedImage" Value="set:CommonFrame image:CommonEditBoxBK"/>
+          <Property Name="CheckMode" Value="1" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Event Name="Clicked" Function="QinHuangTime3_Click(9)" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="QinHuangTime3_DiJiang10Ent">
+          <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,226.000000}}" />
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+          <Property Name="Text" Value="#{MJXZ_210510_34}" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="QinHuangTime3_DiJiang10Ent2">
+          <Property Name="UnifiedSize" Value="{{1.000000,-52.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,226.000000}}" />
+          <Property Name="HorzFormatting" Value="WordWrapRightAligned" />
+          <Property Name="Text" Value="#{MJXZ_210510_36}" />
+        </Window>
+        <Window Type="TLBB_ButtonCheckNULL" Name="QinHuangTime3_DiJiang10EntBtn">
+          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,226.000000}}" />
+          <Property Name="PushedImage" Value="set:CommonFrame image:CommonEditBoxBK"/>
+          <Property Name="CheckMode" Value="1" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Event Name="Clicked" Function="QinHuangTime3_Click(10)" />
+        </Window>
+        <Window Type="TLBB_ButtonCommon" Name="QinHuangTime3_DiJiangALLEntBtn">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.500000,-30.000000},{0.000000,246.000000}}" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="Text" Value="#{MJXZ_210510_25}" />
+          <Event Name="Clicked" Function="QinHuangTime3_GotoJitan()" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="QinHuangTime3_TimeTitle">
+          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{1.000000,-22.000000}}" />
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          <Property Name="Text" Value="#{MJXZ_210510_17}" />
+        </Window>
+        <Window Type="TLBB_StopWatch" Name="QinHuangTime3_Time">
+          <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{1.000000,-80.000000},{1.000000,-22.000000}}" />
+          <Property Name="HorzFormatting" Value="WordWrapRightAligned" />
+          <Property Name="Text" Value="00:00" />
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

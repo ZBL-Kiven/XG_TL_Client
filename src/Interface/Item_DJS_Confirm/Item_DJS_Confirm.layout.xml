@@ -1,0 +1,77 @@
+<?xml version="1.0" ?>
+<GUILayout>
+    <Window Type="TLBB_MainFrameNULL" Name="Item_DJS_Confirm_Frame">
+      <Property Name="UnifiedSize" Value="{{0.000000,250.000000},{0.000000,200.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-125.000000},{0.500000,-100.000000}}"/>
+      <Window Type="TLBB_DragTitle" Name="Item_DJS_Confirm_DragTitle">
+        <Property Name="UnifiedSize" Value="{{1.000000,-53.000000},{0.000000,50.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,3.000000}}"/>
+        <Property Name="DragTarget" Value="Item_DJS_Confirm_Frame" />
+        <Window Type="TLBB_StaticImageNULL" Name="Item_DJS_Confirm_Title">
+          <Property Name="UnifiedSize" Value="{{0.000000,128.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,37.000000},{0.000000,16.000000}}"/>
+          <Property Name="Image" Value="set:Menpaishuxing image:DunJiaShu_Title_Index"/>
+          <Property Name="Image" Value="set:Menpaishuxing image:DunJiaShu_Title_Monster"/>
+          <Property Name="RiseOnClick" Value="False"/>
+        </Window>
+  		</Window>   
+      <Window Type="TLBB_StaticImageNULL" Name="Item_DJS_Confirm_BKG_0_0" >
+        <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.0,0}" />
+        <Property Name="UnifiedSize" Value="{{0.00000,250.000000},{0.00000,200}" />
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="Image" Value="set:DunJiaShu5 image:DJS_Confirm_BKG_0_0" />
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="Item_DJS_Confirm_Help">
+        <Property Name="UnifiedPosition" Value="{{0,10.0},{0.0,12}" />
+        <Property Name="UnifiedSize" Value="{{0.00000,23.000000},{0.00000,24}" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="HoverImage" Value="set:Handbook1 image:HandCard_Help_Hover" />
+        <Property Name="NormalImage" Value="set:Handbook1 image:HandCard_Help_Normal" />
+        <Property Name="PushedImage" Value="set:Handbook1 image:HandCard_Help_Pushed" />
+        <Property Name="DisabledImage" Value="set:Handbook1 image:HandCard_Help_Disabled" />
+        <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*Item_DJS_Confirm&quot;);' />
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="Item_DJS_Confirm_Close">
+        <Property Name="UnifiedPosition" Value="{{1.0,-35.00},{0.0,12.00}}"/>
+        <Property Name="UnifiedSize" Value="{{0.00000,23.000000},{0.00000,24}" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="HoverImage" Value="set:Handbook1 image:HandCard_Close_Hover" />
+        <Property Name="NormalImage" Value="set:Handbook1 image:HandCard_Close_Normal" />
+        <Property Name="PushedImage" Value="set:Handbook1 image:HandCard_Close_Pushed" />
+        <Property Name="DisabledImage" Value="set:Handbook1 image:HandCard_Close_Disabled" />
+        <Event Name="Clicked" Function="this:Hide();" />
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="Item_DJS_Confirm_Quxiao">
+        <Property Name="UnifiedSize" Value="{{0.000000,61.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,178.000000},{1.000000,-37.000000}}"/>
+        <Property Name="NormalImage" Value="set:TattooShow image:DJS_Confirm_Quxiao_Normal"/>
+        <Property Name="HoverImage" Value="set:TattooShow image:DJS_Confirm_Quxiao_Hover"/>
+        <Property Name="PushedImage" Value="set:TattooShow image:DJS_Confirm_Quxiao_Pushed"/>
+        <Property Name="DisabledImage" Value="set:TattooShow image:DJS_Confirm_Quxiao_Disabled"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Event Name="Clicked" Function="this:Hide();" />
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="Item_DJS_Confirm_Queding">
+        <Property Name="UnifiedSize" Value="{{0.000000,61.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-142.000000},{1.000000,-37.000000}}"/>
+        <Property Name="NormalImage" Value="set:TattooShow image:DJS_Confirm_Queding_Normal"/>
+        <Property Name="HoverImage" Value="set:TattooShow image:DJS_Confirm_Queding_Hover"/>
+        <Property Name="PushedImage" Value="set:TattooShow image:DJS_Confirm_Queding_Pushed"/>
+        <Property Name="DisabledImage" Value="set:TattooShow image:DJS_Confirm_Queding_Disabled"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Event Name="Clicked" Function="Item_DJS_Confirm_Queding_Clicked();" />
+      </Window>
+      <Window Type="DefaultWindow" Name="Item_DJS_Confirm_Frame_Client">
+        <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-107.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,54.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="Item_DJS_Confirm_Info">
+          <Property Name="UnifiedSize" Value="{{0.000000,215.000000},{0.000000,83.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,5.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+          <Property Name="VertFormatting" Value="VertCentred"/>
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="Text" Value="" />
+        </Window>
+        </Window>
+    </Window>
+</GUILayout>

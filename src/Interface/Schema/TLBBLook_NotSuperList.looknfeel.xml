@@ -1,0 +1,698 @@
+<?xml version="1.0" ?>
+<Falagard>
+	<!--
+	NotSuperList是一个可视化的组合列表控件,与之前的Achievement窗口类似， 对应的注册类型 TargetType="Falagard/NotSuperList"
+	此控件的一些注意事项：
+	1.以下使用NotSuperList代指所有TargetType="Falagard/NotSuperList"的控件，ListItem代指NotSuperList下第一级的子控件
+	2.制作时可以直接在layout.xml的NotSuperList控件下添加子控件，无需在Looknfeel描述文件里添加，并支持所有类型的子控件，且在编辑器里就可以直接看到列表子控件的样式，例如：
+		<Window Type="TLBB_HJ_NotSuperList" Name="ZiDongZhanDou_RightList">
+			<Window Type="TLBB_HJ_NotSuperListItemCommon" Name="ZiDongZhanDou_RightItem1">
+			    <Window Type="HJTLBB_ActionButtonBig" Name="ZiDongZhanDou_HuiFu_Action1">
+					<Window Type="TLBB_SimpleText" Name="ZiDongZhanDou_Huifu_ItemNumber1_1"/>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="ZiDongZhanDou_Huifu_Text1"/>
+			</Window>
+			<Window Type="TLBB_HJ_NotSuperListItemCommon" Name="ZiDongZhanDou_RightItem2">
+				<Window Type="TLBB_ButtonCheckMulti" Name="ZiDongZhanDou_Huifu_Check1"/>
+				<Window Type="HJTLBB_Slider" Name="ZiDongZhanDou_Huifu_Control1"/>
+			</Window>
+		</Window>
+	2.在NotSuperList下添加子控件，在实际游戏中并不会显示，而是用来注册ListItem的类型
+	3.因为在layout.xml中，NotSuperList的子控件只是用来注册子窗口类型的，所以每种ListItem控件只需要一个就行，程序运行时列表内容会以注册的结构为模板动态添加
+	4.在实际游戏中，ListItem并不是直接挂在NotSuperList下，而是挂在NotSuperList的一个子控件下，结构类似下图
+		<NotSuperList>
+			<Container>
+				<ChildItem1/>
+				<ChildItem2/>
+				<ChildItem3/>
+			</Container>
+			<ScrollBar/>
+		</NotSuperList>
+	5.NotSuperList下所有子控件的事件属性无效，需要程序自行处理
+	6.ListItem建议使用TargetType="Falagard/NotSuperListItem"类型，不过其他类型也是支持的
+	7.需要UIEditor版本在20181123以上
+	8.NotSuperList的WidgetLook中需要配置两个NamedArea，两个子控件
+		1) ClientRectVScroll是显示垂直滚动条时放置子控件容器的大小
+		2) ClientRect是不显示垂直滚动条时子控件容器的大小
+		3) __auto_parent__是用于放置子控件的容器
+		4) __auto_vscrollbar__是垂直滚动条
+	9.NotSuperList和NotSuperListItem都支持背景，通过WidgetLook中的StateImagery控制，控件可用和不可用时的背景分别为EnabledBackground和DisabledBackground
+	10.NotSuperList有4个特有属性
+		1) SelectMode, 对应的值为"None"不可选择，"Single"单选，"Multi"多选，默认为不可选择
+		2) VScrollMode, 对应的值为"Hide"隐藏，"Show"显示，"Auto"自动，默认为显示
+		3) MultiColumn，对应的值为"0"单列显示，"1"多列显示，默认为单列
+		4) ChildrenHoverSection，子控件被选择或hover时的图片，默认为DefaultHoverSection
+	-->
+  <WidgetLook name="TLBB_Look_NotSuperList">
+    <NamedArea name="ClientRectVScroll">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="RightEdge">
+          <UnifiedDim scale="1" offset="0" type="RightEdge">
+            <DimOperator op="Subtract">
+              <WidgetDim widget="__auto_vscrollbar__" dimension="Width" />
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+        <Dim type="BottomEdge">
+          <UnifiedDim scale="1" offset ="0" type="BottomEdge"/>
+        </Dim>
+      </Area>
+    </NamedArea>
+    <NamedArea name="ClientRect">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="RightEdge">
+          <UnifiedDim scale="1" offset ="0" type="RightEdge"/>
+        </Dim>
+        <Dim type="BottomEdge">
+          <UnifiedDim scale="1" offset ="0" type="BottomEdge"/>
+        </Dim>
+      </Area>
+    </NamedArea>
+    <Child type="DefaultWindow" nameSuffix="__auto_parent__">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="RightEdge">
+          <UnifiedDim scale="1.0" offset="0" type="RightEdge" />
+        </Dim>
+        <Dim type="BottomEdge">
+          <UnifiedDim scale="1.0" offset="0" type="BottomEdge" />
+        </Dim>
+      </Area>
+    </Child>
+    <Child type="TLBB_Scrollbar_Common" nameSuffix="__auto_vscrollbar__">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="16" />
+        </Dim>
+        <Dim type="Height">
+          <UnifiedDim scale="1.0" offset="0" type="Height" />
+        </Dim>
+      </Area>
+      <HorzAlignment type="RightAligned" />
+    </Child>
+  </WidgetLook>
+
+  
+  
+  <WidgetLook name="TLBB_Look_NotSuperList1">
+    <NamedArea name="ClientRectVScroll">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="RightEdge">
+          <UnifiedDim scale="1" offset="0" type="RightEdge">
+            <DimOperator op="Subtract">
+              <WidgetDim widget="__auto_vscrollbar__" dimension="Width" />
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+        <Dim type="BottomEdge">
+          <UnifiedDim scale="1" offset ="0" type="BottomEdge"/>
+        </Dim>
+      </Area>
+    </NamedArea>
+    <NamedArea name="ClientRect">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="RightEdge">
+          <UnifiedDim scale="1" offset ="0" type="RightEdge"/>
+        </Dim>
+        <Dim type="BottomEdge">
+          <UnifiedDim scale="1" offset ="0" type="BottomEdge"/>
+        </Dim>
+      </Area>
+    </NamedArea>
+    <Child type="DefaultWindow" nameSuffix="__auto_parent__">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="RightEdge">
+          <UnifiedDim scale="1.0" offset="0" type="RightEdge" />
+        </Dim>
+        <Dim type="BottomEdge">
+          <UnifiedDim scale="1.0" offset="0" type="BottomEdge" />
+        </Dim>
+      </Area>
+    </Child>
+    <Child type="TLBB_Scrollbar_Common1" nameSuffix="__auto_vscrollbar__">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="16" />
+        </Dim>
+        <Dim type="Height">
+          <UnifiedDim scale="1.0" offset="0" type="Height" />
+        </Dim>
+      </Area>
+      <HorzAlignment type="RightAligned" />
+    </Child>
+  </WidgetLook>
+
+
+
+
+
+
+  <!--单列-->
+  <WidgetLook name="TLBB_NotSuperListItemCommon">
+    <ImagerySection name="background">
+      <FrameComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="Width">
+            <UnifiedDim scale="1.0" offset="0" type="Width" />
+          </Dim>
+          <Dim type="Height">
+            <UnifiedDim scale="1.0" offset="0" type="Height" />
+          </Dim>
+        </Area>
+        <Image type="TopLeftCorner" imageset="SpecialFrame" image="SpecialListBK_LT" />
+        <Image type="TopRightCorner" imageset="SpecialFrame" image="SpecialListBK_RT" />
+        <Image type="BottomLeftCorner" imageset="SpecialFrame" image="SpecialListBK_LB" />
+        <Image type="BottomRightCorner" imageset="SpecialFrame" image="SpecialListBK_RB" />
+        <Image type="LeftEdge" imageset="SpecialFrame" image="SpecialListBK_L" />
+        <Image type="RightEdge" imageset="SpecialFrame" image="SpecialListBK_R" />
+        <Image type="TopEdge" imageset="SpecialFrame" image="SpecialListBK_T" />
+        <Image type="BottomEdge" imageset="SpecialFrame" image="SpecialListBK_B" />
+        <Image type="Background" imageset="SpecialFrame" image="SpecialListBK_M" />
+      </FrameComponent>
+    </ImagerySection>
+    <ImagerySection name="DefaultHoverSection">
+      <FrameComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="Width">
+            <UnifiedDim scale="1.0" offset="0" type="Width" />
+          </Dim>
+          <Dim type="Height">
+            <UnifiedDim scale="1.0" offset="0" type="Height" />
+          </Dim>
+        </Area>
+        <Image type="TopLeftCorner" imageset="SpecialFrame" image="SpecialListBK_LT" />
+        <Image type="TopRightCorner" imageset="SpecialFrame" image="SpecialListBK_RT" />
+        <Image type="BottomLeftCorner" imageset="SpecialFrame" image="SpecialListBK_LB" />
+        <Image type="BottomRightCorner" imageset="SpecialFrame" image="SpecialListBK_RB" />
+        <Image type="LeftEdge" imageset="SpecialFrame" image="SpecialListBK_L" />
+        <Image type="RightEdge" imageset="SpecialFrame" image="SpecialListBK_R" />
+        <Image type="TopEdge" imageset="SpecialFrame" image="SpecialListBK_T" />
+        <Image type="BottomEdge" imageset="SpecialFrame" image="SpecialListBK_B" />
+        <Image type="Background" imageset="SpecialFrame" image="SpecialListBK_M" />
+      </FrameComponent>
+    </ImagerySection>
+    <StateImagery name="EnabledBackground">
+      <Layer>
+        <Section section="background" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="DisabledBackground">
+    </StateImagery>
+  </WidgetLook>
+
+<!--单列带选中状态版-->
+  <WidgetLook name="TLBB_NotSuperListItemCommon1">
+    <ImagerySection name="background">
+      <FrameComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="Width">
+            <UnifiedDim scale="1.0" offset="0" type="Width" />
+          </Dim>
+          <Dim type="Height">
+            <UnifiedDim scale="1.0" offset="0" type="Height" />
+          </Dim>
+        </Area>
+        <Image type="TopLeftCorner" imageset="3v3TopList" image="SpecialListBK_Normal_LT" />
+        <Image type="TopRightCorner" imageset="3v3TopList" image="SpecialListBK_Normal_RT" />
+        <Image type="BottomLeftCorner" imageset="3v3TopList" image="SpecialListBK_Normal_LB" />
+        <Image type="BottomRightCorner" imageset="3v3TopList" image="SpecialListBK_Normal_RB" />
+        <Image type="LeftEdge" imageset="3v3TopList" image="SpecialListBK_Normal_L" />
+        <Image type="RightEdge" imageset="3v3TopList" image="SpecialListBK_Normal_R" />
+        <Image type="TopEdge" imageset="3v3TopList" image="SpecialListBK_Normal_T" />
+        <Image type="BottomEdge" imageset="3v3TopList" image="SpecialListBK_Normal_B" />
+        <Image type="Background" imageset="3v3TopList" image="SpecialListBK_Normal_M" />
+      </FrameComponent>
+    </ImagerySection>
+    <ImagerySection name="DefaultHoverSection">
+      <FrameComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="Width">
+            <UnifiedDim scale="1.0" offset="0" type="Width" />
+          </Dim>
+          <Dim type="Height">
+            <UnifiedDim scale="1.0" offset="0" type="Height" />
+          </Dim>
+        </Area>
+        <Image type="TopLeftCorner" imageset="3v3TopList" image="SpecialListBK_Hover_LT" />
+        <Image type="TopRightCorner" imageset="3v3TopList" image="SpecialListBK_Hover_RT" />
+        <Image type="BottomLeftCorner" imageset="3v3TopList" image="SpecialListBK_Hover_LB" />
+        <Image type="BottomRightCorner" imageset="3v3TopList" image="SpecialListBK_Hover_RB" />
+        <Image type="LeftEdge" imageset="3v3TopList" image="SpecialListBK_Hover_L" />
+        <Image type="RightEdge" imageset="3v3TopList" image="SpecialListBK_Hover_R" />
+        <Image type="TopEdge" imageset="3v3TopList" image="SpecialListBK_Hover_T" />
+        <Image type="BottomEdge" imageset="3v3TopList" image="SpecialListBK_Hover_B" />
+        <Image type="Background" imageset="3v3TopList" image="SpecialListBK_Hover_M" />
+      </FrameComponent>
+    </ImagerySection>
+    <StateImagery name="EnabledBackground">
+      <Layer>
+        <Section section="background" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="DisabledBackground">
+    </StateImagery>
+  </WidgetLook>
+  
+  <!--双列-->
+  <WidgetLook name="TLBB_NotSuperListItemCommon2">
+    <ImagerySection name="background">
+      <FrameComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="3" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="3" />
+          </Dim>
+          <Dim type="Width">
+            <UnifiedDim scale="1.0" offset="-6" type="Width" />
+          </Dim>
+          <Dim type="Height">
+            <UnifiedDim scale="1.0" offset="-6" type="Height" />
+          </Dim>
+        </Area>
+        <Image type="TopLeftCorner" imageset="SpecialFrame" image="SpecialListBK_LT" />
+        <Image type="TopRightCorner" imageset="SpecialFrame" image="SpecialListBK_RT" />
+        <Image type="BottomLeftCorner" imageset="SpecialFrame" image="SpecialListBK_LB" />
+        <Image type="BottomRightCorner" imageset="SpecialFrame" image="SpecialListBK_RB" />
+        <Image type="LeftEdge" imageset="SpecialFrame" image="SpecialListBK_L" />
+        <Image type="RightEdge" imageset="SpecialFrame" image="SpecialListBK_R" />
+        <Image type="TopEdge" imageset="SpecialFrame" image="SpecialListBK_T" />
+        <Image type="BottomEdge" imageset="SpecialFrame" image="SpecialListBK_B" />
+        <Image type="Background" imageset="SpecialFrame" image="SpecialListBK_M" />
+      </FrameComponent>
+    </ImagerySection>
+    <ImagerySection name="DefaultHoverSection">
+      <FrameComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="3" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="3" />
+          </Dim>
+          <Dim type="Width">
+            <UnifiedDim scale="1.0" offset="-6" type="Width" />
+          </Dim>
+          <Dim type="Height">
+            <UnifiedDim scale="1.0" offset="-6" type="Height" />
+          </Dim>
+        </Area>
+        <Image type="TopLeftCorner" imageset="SpecialFrame" image="SpecialListBK_LT" />
+        <Image type="TopRightCorner" imageset="SpecialFrame" image="SpecialListBK_RT" />
+        <Image type="BottomLeftCorner" imageset="SpecialFrame" image="SpecialListBK_LB" />
+        <Image type="BottomRightCorner" imageset="SpecialFrame" image="SpecialListBK_RB" />
+        <Image type="LeftEdge" imageset="SpecialFrame" image="SpecialListBK_L" />
+        <Image type="RightEdge" imageset="SpecialFrame" image="SpecialListBK_R" />
+        <Image type="TopEdge" imageset="SpecialFrame" image="SpecialListBK_T" />
+        <Image type="BottomEdge" imageset="SpecialFrame" image="SpecialListBK_B" />
+        <Image type="Background" imageset="SpecialFrame" image="SpecialListBK_M" />
+      </FrameComponent>
+    </ImagerySection>
+    <StateImagery name="EnabledBackground">
+      <Layer>
+        <Section section="background" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="DisabledBackground">
+    </StateImagery>
+  </WidgetLook>
+  <!--单列背景为空-->
+  <WidgetLook name="TLBB_NotSuperListItemCommon3">
+    <ImagerySection name="background">
+      <FrameComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="Width">
+            <UnifiedDim scale="1.0" offset="0" type="Width" />
+          </Dim>
+          <Dim type="Height">
+            <UnifiedDim scale="1.0" offset="0" type="Height" />
+          </Dim>
+        </Area>
+        <Image type="TopLeftCorner" imageset="Button23" image="" />
+        <Image type="TopRightCorner" imageset="Button23" image="" />
+        <Image type="BottomLeftCorner" imageset="Button23" image="" />
+        <Image type="BottomRightCorner" imageset="Button23" image="" />
+        <Image type="LeftEdge" imageset="Button23" image="" />
+        <Image type="RightEdge" imageset="Button23" image="" />
+        <Image type="TopEdge" imageset="Button23" image="" />
+        <Image type="BottomEdge" imageset="Button23" image="" />
+        <Image type="Background" imageset="Button23" image="" />
+      </FrameComponent>
+    </ImagerySection>
+    <ImagerySection name="DefaultHoverSection">
+      <FrameComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="Width">
+            <UnifiedDim scale="1.0" offset="0" type="Width" />
+          </Dim>
+          <Dim type="Height">
+            <UnifiedDim scale="1.0" offset="0" type="Height" />
+          </Dim>
+        </Area>
+        <Image type="TopLeftCorner" imageset="Button23" image="" />
+        <Image type="TopRightCorner" imageset="Button23" image="" />
+        <Image type="BottomLeftCorner" imageset="Button23" image="" />
+        <Image type="BottomRightCorner" imageset="Button23" image="" />
+        <Image type="LeftEdge" imageset="Button23" image="" />
+        <Image type="RightEdge" imageset="Button23" image="" />
+        <Image type="TopEdge" imageset="Button23" image="" />
+        <Image type="BottomEdge" imageset="Button23" image="" />
+        <Image type="Background" imageset="Button23" image="" />
+      </FrameComponent>
+    </ImagerySection>
+    <StateImagery name="EnabledBackground">
+      <Layer>
+        <Section section="background" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="DisabledBackground">
+    </StateImagery>
+  </WidgetLook>
+
+
+  
+  
+    <!--单列有背景-->
+  <WidgetLook name="TLBB_NotSuperListItemCommon4">
+    <ImagerySection name="background">
+      <FrameComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="Width">
+            <UnifiedDim scale="1.0" offset="0" type="Width" />
+          </Dim>
+          <Dim type="Height">
+            <UnifiedDim scale="1.0" offset="0" type="Height" />
+          </Dim>
+        </Area>
+        <Image type="TopLeftCorner" imageset="ZLHeroMeeting" image="DarkBK_LT" />
+        <Image type="TopRightCorner" imageset="ZLHeroMeeting" image="DarkBK_RT" />
+        <Image type="BottomLeftCorner" imageset="ZLHeroMeeting" image="DarkBK_LB" />
+        <Image type="BottomRightCorner" imageset="ZLHeroMeeting" image="DarkBK_RB" />
+        <Image type="LeftEdge" imageset="ZLHeroMeeting" image="DarkBK_L" />
+        <Image type="RightEdge" imageset="ZLHeroMeeting" image="DarkBK_R" />
+        <Image type="TopEdge" imageset="ZLHeroMeeting" image="DarkBK_T" />
+        <Image type="BottomEdge" imageset="ZLHeroMeeting" image="DarkBK_B" />
+        <Image type="Background" imageset="ZLHeroMeeting" image="DarkBK_M" />
+      </FrameComponent>
+    </ImagerySection>
+    <ImagerySection name="DefaultHoverSection">
+      <FrameComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="Width">
+            <UnifiedDim scale="1.0" offset="0" type="Width" />
+          </Dim>
+          <Dim type="Height">
+            <UnifiedDim scale="1.0" offset="0" type="Height" />
+          </Dim>
+        </Area>
+        <Image type="TopLeftCorner" imageset="ZLHeroMeeting" image="DarkBK_LT" />
+        <Image type="TopRightCorner" imageset="ZLHeroMeeting" image="DarkBK_RT" />
+        <Image type="BottomLeftCorner" imageset="ZLHeroMeeting" image="DarkBK_LB" />
+        <Image type="BottomRightCorner" imageset="ZLHeroMeeting" image="DarkBK_RB" />
+        <Image type="LeftEdge" imageset="ZLHeroMeeting" image="DarkBK_L" />
+        <Image type="RightEdge" imageset="ZLHeroMeeting" image="DarkBK_R" />
+        <Image type="TopEdge" imageset="ZLHeroMeeting" image="DarkBK_T" />
+        <Image type="BottomEdge" imageset="ZLHeroMeeting" image="DarkBK_B" />
+        <Image type="Background" imageset="ZLHeroMeeting" image="DarkBK_M" />
+      </FrameComponent>
+    </ImagerySection>
+    <StateImagery name="EnabledBackground">
+      <Layer>
+        <Section section="background" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="DisabledBackground">
+    </StateImagery>
+  </WidgetLook>
+
+  <!--单列有背景_称号系统-->
+  <WidgetLook name="TLBB_NotSuperListItemCommon5">
+    <ImagerySection name="background">
+      <FrameComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="Width">
+            <UnifiedDim scale="1.0" offset="0" type="Width" />
+          </Dim>
+          <Dim type="Height">
+            <UnifiedDim scale="1.0" offset="0" type="Height" />
+          </Dim>
+        </Area>
+        <Image type="TopLeftCorner" imageset="AgnameLayout" image="" />
+        <Image type="TopRightCorner" imageset="AgnameLayout" image="" />
+        <Image type="BottomLeftCorner" imageset="AgnameLayout" image="" />
+        <Image type="BottomRightCorner" imageset="AgnameLayout" image="" />
+        <Image type="LeftEdge" imageset="AgnameLayout" image="" />
+        <Image type="RightEdge" imageset="AgnameLayout" image="" />
+        <Image type="TopEdge" imageset="AgnameLayout" image="" />
+        <Image type="BottomEdge" imageset="AgnameLayout" image="" />
+        <Image type="Background" imageset="AgnameLayout" image="" />
+      </FrameComponent>
+    </ImagerySection>
+    <ImagerySection name="DefaultHoverSection">
+      <FrameComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="Width">
+            <UnifiedDim scale="1.0" offset="0" type="Width" />
+          </Dim>
+          <Dim type="Height">
+            <UnifiedDim scale="1.0" offset="0" type="Height" />
+          </Dim>
+        </Area>
+        <Image type="TopLeftCorner" imageset="AgnameLayout" image="AgnameLayout_BK_LT" />
+        <Image type="TopRightCorner" imageset="AgnameLayout" image="AgnameLayout_BK_RT" />
+        <Image type="BottomLeftCorner" imageset="AgnameLayout" image="AgnameLayout_BK_LB" />
+        <Image type="BottomRightCorner" imageset="AgnameLayout" image="AgnameLayout_BK_RB" />
+        <Image type="LeftEdge" imageset="AgnameLayout" image="AgnameLayout_BK_L" />
+        <Image type="RightEdge" imageset="AgnameLayout" image="AgnameLayout_BK_R" />
+        <Image type="TopEdge" imageset="AgnameLayout" image="AgnameLayout_BK_T" />
+        <Image type="BottomEdge" imageset="AgnameLayout" image="AgnameLayout_BK_B" />
+        <Image type="Background" imageset="AgnameLayout" image="AgnameLayout_BK_M" />
+      </FrameComponent>
+    </ImagerySection>
+    <StateImagery name="EnabledBackground">
+      <Layer>
+        <Section section="background" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="DisabledBackground">
+    </StateImagery>
+  </WidgetLook>
+
+
+  <!--单列有背景_情人节-->
+  <WidgetLook name="TLBB_NotSuperListItemCommon6">
+    <ImagerySection name="background">
+      <FrameComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="Width">
+            <UnifiedDim scale="1.0" offset="0" type="Width" />
+          </Dim>
+          <Dim type="Height">
+            <UnifiedDim scale="1.0" offset="0" type="Height" />
+          </Dim>
+        </Area>
+        <Image type="LeftEdge" imageset="LoverTime01" image="LoverTime_Lan1_L" />
+        <Image type="RightEdge" imageset="LoverTime01" image="LoverTime_Lan1_R" />
+        <Image type="Background" imageset="LoverTime01" image="LoverTime_Lan1_M" />
+      </FrameComponent>
+    </ImagerySection>
+    <ImagerySection name="DefaultHoverSection">
+      <FrameComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="Width">
+            <UnifiedDim scale="1.0" offset="0" type="Width" />
+          </Dim>
+          <Dim type="Height">
+            <UnifiedDim scale="1.0" offset="0" type="Height" />
+          </Dim>
+        </Area>
+        <Image type="LeftEdge" imageset="LoverTime01" image="LoverTime_Lan2_L" />
+        <Image type="RightEdge" imageset="LoverTime01" image="LoverTime_Lan2_R" />
+        <Image type="Background" imageset="LoverTime01" image="LoverTime_Lan2_M" />
+      </FrameComponent>
+    </ImagerySection>
+    <StateImagery name="EnabledBackground">
+      <Layer>
+        <Section section="background" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="DisabledBackground">
+    </StateImagery>
+  </WidgetLook>
+
+  <WidgetLook name="TLBB_NotSuperListItemCommon7">
+    <ImagerySection name="background">
+      <FrameComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="Width">
+            <UnifiedDim scale="1.0" offset="0" type="Width" />
+          </Dim>
+          <Dim type="Height">
+            <UnifiedDim scale="1.0" offset="0" type="Height" />
+          </Dim>
+        </Area>
+        <Image type="LeftEdge" imageset="LoverTime01" image="LoverTime_Fen1_L" />
+        <Image type="RightEdge" imageset="LoverTime01" image="LoverTime_Fen1_R" />
+        <Image type="Background" imageset="LoverTime01" image="LoverTime_Fen1_M" />
+      </FrameComponent>
+    </ImagerySection>
+    <ImagerySection name="DefaultHoverSection">
+      <FrameComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="Width">
+            <UnifiedDim scale="1.0" offset="0" type="Width" />
+          </Dim>
+          <Dim type="Height">
+            <UnifiedDim scale="1.0" offset="0" type="Height" />
+          </Dim>
+        </Area>
+        <Image type="LeftEdge" imageset="LoverTime01" image="LoverTime_Fen2_L" />
+        <Image type="RightEdge" imageset="LoverTime01" image="LoverTime_Fen2_R" />
+        <Image type="Background" imageset="LoverTime01" image="LoverTime_Fen2_M" />
+      </FrameComponent>
+    </ImagerySection>
+    <StateImagery name="EnabledBackground">
+      <Layer>
+        <Section section="background" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="DisabledBackground">
+    </StateImagery>
+  </WidgetLook>
+  
+  
+  
+  
+</Falagard>

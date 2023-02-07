@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" ?>
+<GUILayout>
+    <Window Type="TLBB_MainFrame1" Name="PetBankList_Frame">
+        <Property Name="UnifiedPosition" Value="{{0.6,0},{0.3,0}}" />	
+        <Property Name="AbsoluteSize" Value="w:164 h:262" />
+        <Window Type="TLBB_DragTitle" Name="PetBankList_DragTitle">
+            <Property Name="AbsolutePosition" Value="x:40.000000 y:10.000000" />
+            <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}" />
+            <Property Name="Font" Value="YouYuan11.25" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="VertFormatting" Value="VertCentred" />
+            <Property Name="Text" Value="#{ZSYH_120503_20}" />
+            <Property Name="DragTarget" Value="PetBankList_Frame" />
+        </Window>
+        <Window Type="TLBB_ButtonHelp" Name="PetBankList_Help">
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+            <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+            <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*PetBankList&quot;);' />
+        </Window>
+        <Window Type="TLBB_ButtonClose" Name="PetBankList_Close">
+            <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+            <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+            <Event Name="Clicked" Function="PetBankList_Close_Click();" />
+        </Window>
+        <Window Type="DefaultWindow" Name="PetBankList_Frame_Client">
+            <Property Name="AbsolutePosition" Value="x:6.000000 y:32.000000" />
+            <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-41.000000}" />
+           <Window Type="TLBB_SimpleMulitiTextFrame" Name="PetBankList_TheHaveList">
+           				<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,25.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,2.000},{0.000000,3.000000}}"/>
+								<Property Name="Text" Value="可携带珍兽：0/2" />
+								<Property Name="HorzFormatting" Value="HorzCentred" />
+								<Property Name="VertFormatting" Value="VertCentred" />
+								 <Property Name="Tooltip" Value="#{ZSYH_120503_29}" />
+            </Window>
+            <Window Type="TLBB_ListBoxCommon" Name="PetBankList_List">
+           		<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,-60.00000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,28.000000}}"/>
+                <Event Name="ItemSelectionChanged" Function="PetBankList_List_Selected();" />
+                <Event Name="MouseRClick" Function="PetBankList_ShowTargetPet();" />
+            </Window>
+            <Window Type="TLBB_Frame_Lace5" Name="PetBankList_Choose_Blank">
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{1.000000,-30.000000}" />
+                <Property Name="UnifiedSize" Value="{{1.000000,-103.000000},{0.000000,20.000000}" />
+            </Window>
+            <Window Type="TLBB_ButtonCommon" Name="PetBankList_Choose_Button">
+                <Property Name="UnifiedPosition" Value="{{1.000000,-103.000000},{1.000000,-30.000000}" />
+                <Property Name="AbsoluteSize" Value="w:60.000000 h:20.000000" />
+                <Property Name="Text" Value="#{ZSYH_120503_21}" />
+                 <Property Name="Tooltip" Value="#{ZSYH_120503_32}" />
+                <Event Name="Clicked" Function="PetBankList_Choose_Click();" />
+            </Window>
+            <Window Type="TLBB_ButtonCommon" Name="PetBankList_Refuse_Button">
+                <Property Name="UnifiedPosition" Value="{{1.000000,-42.000000},{1.000000,-30.000000}" />
+                <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+                <Property Name="Text" Value="#{ZSYH_120503_22}" />
+                 <Property Name="Tooltip" Value="#{ZSYH_120503_31}" />
+                <Event Name="Clicked" Function="PetBankList_Refuse_Click();" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

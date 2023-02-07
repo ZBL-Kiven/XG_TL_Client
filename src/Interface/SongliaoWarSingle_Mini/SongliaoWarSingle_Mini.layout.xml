@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_Frame_Lace4" Name="SongliaoWarSingle_Mini_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,170.000000},{0.000000,35.000000}}" />
+    <Property Name="UnifiedPosition" Value="{{1.000000,-173.000000},{0.000000,570.000000}}" />
+    <Window Type="TLBB_ButtonNULL" Name="SongliaoWarSingle_Mini">
+      <Property Name="UnifiedSize" Value="{{1.0,0.000000},{1.0,0.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.0,0.000000}}" />
+      <Window Type="TLBB_SimpleText" Name="SongliaoWarSingle_Mini_PageHeader">
+        <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,22.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.500000,-45.000000},{0.500000,-11.000000}}" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Text" Value="#{XSLDZ_180521_236}" />
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="SongliaoWarSingle_Mini_Small">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+        <Event Name="Clicked" Function="SongliaoWarSingle_Mini_Open()" />
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="SongliaoWarSingle_Mini_Image">
+        <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.500000,-9.000000}}" />
+        <Property Name="MouseRButtonHollow" Value="True" />
+        <Property Name="MouseMoveHollow" Value="True" />
+        <Property Name="MouseLButtonHollow" Value="True" />
+        <Property Name="MouseHollow" Value="True" />
+        <Property Name="PushedImage" Value="set:SongLiao02 image:Up_Pushed"/>
+        <Property Name="NormalImage" Value="set:SongLiao02 image:Up_Normal"/>
+        <Property Name="HoverImage" Value="set:SongLiao02 image:Up_Hover"/>
+        <Property Name="DisabledImage" Value="set:SongLiao02 image:Up_Disabled"/>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

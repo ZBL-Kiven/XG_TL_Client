@@ -1,0 +1,606 @@
+<?xml version="1.0"?>
+<GUILayout>
+	<Window Type="TLBB_MainFrame1" Name="DuiHuanUI_Frame">
+		<Property Name="UnifiedSize" Value="{{0.000000,480.000000},{0.000000,390.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.500000,-142.000000},{0.500000,-202.000000}}"/>
+		<Window Type="TLBB_DragTitle" Name="DuiHuanUI_DragTitle">
+  <Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
+  <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+			<Property Name="Text" Value="#gFF0FA0测试UI"/>
+			<Property Name="Font" Value="YouYuan11.25"/>
+			<Property Name="DragTarget" Value="DuiHuanUI_Frame"/>
+		</Window>
+		<Window Type="TLBB_ButtonHelp" Name="DuiHuanUI_Help">
+   <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+   <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+		<Property Name="Text" Value="TLBB_ButtonHelp"/>
+			<Event Name="Clicked" Function="Helper:GotoHelper(&quot;DuiHuanUI&quot;);"/>
+		</Window>
+		<Window Type="TLBB_ButtonClose" Name="DuiHuanUI_Close">
+ <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+ <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+			<Property Name="Text" Value="TLBB_ButtonClose"/>
+			<Event Name="Clicked" Function="this:Hide();"/>
+		</Window>
+		<Window Type="DefaultWindow" Name="DuiHuanUI_Frame_Client">
+			<Property Name="AbsolutePosition" Value="x:7.000000 y:30.000000"/>
+			<Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{1.000000,-39.000000}}"/>
+			<!-- 选项1 -->
+			<Window Type="TLBB_SimpleText" Name="DuiHuanUI_Frame1">
+				<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,45.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+				<!-- 显示物品 -->
+				<Window Type="TLBB_ActionButton" Name="DuiHuanUI_Bk_Icon1">
+					<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}"/>
+					<Property Name="Image" Value=""/>
+					<Event Name="Clicked" Function="DuiHuanUI_Clicked(1);"/>
+				</Window>
+				<!-- 显示物品 -->
+				<Window Type="TLBB_ActionButton" Name="DuiHuanUI_Bk_Icon2">
+					<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,45.000000},{0.000000,0.000000}"/>
+					<Property Name="Image" Value=""/>
+					<Event Name="Clicked" Function="DuiHuanUI_Clicked(2);"/>
+				</Window>
+				<!-- 显示物品 -->
+				<Window Type="TLBB_ActionButton" Name="DuiHuanUI_Bk_Icon3">
+					<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,90.000000},{0.000000,0.000000}"/>
+					<Property Name="Image" Value=""/>
+					<Event Name="Clicked" Function="DuiHuanUI_Clicked(3);"/>
+				</Window>
+				<!-- 显示物品 -->
+				<Window Type="TLBB_ActionButton" Name="DuiHuanUI_Bk_Icon4">
+					<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,135.000000},{0.000000,0.000000}"/>
+					<Property Name="Image" Value=""/>
+					<Event Name="Clicked" Function="DuiHuanUI_Clicked(4);"/>
+				</Window>
+				<!-- 显示物品 -->
+				<Window Type="TLBB_ActionButton" Name="DuiHuanUI_Bk_Icon5">
+					<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,180.000000},{0.000000,0.000000}"/>
+					<Property Name="Image" Value=""/>
+					<Event Name="Clicked" Function="DuiHuanUI_Clicked(5);"/>
+				</Window>
+				<!-- 显示物品 -->
+				<Window Type="TLBB_ActionButton" Name="DuiHuanUI_Bk_Icon6">
+					<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,225.000000},{0.000000,0.000000}"/>
+					<Property Name="Image" Value=""/>
+					<Event Name="Clicked" Function="DuiHuanUI_Clicked(6);"/>
+				</Window>
+				<!-- 显示物品 -->
+				<Window Type="TLBB_ActionButton" Name="DuiHuanUI_Bk_Icon7">
+					<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,270.000000},{0.000000,0.000000}"/>
+					<Property Name="Image" Value=""/>
+					<Event Name="Clicked" Function="DuiHuanUI_Clicked(7);"/>
+				</Window>
+				<!-- 显示物品 -->
+				<Window Type="TLBB_ActionButton" Name="DuiHuanUI_Bk_Icon8">
+					<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,315.000000},{0.000000,0.000000}"/>
+					<Property Name="Image" Value=""/>
+					<Event Name="Clicked" Function="DuiHuanUI_Clicked(8);"/>
+				</Window>
+				<!-- 显示物品 -->
+				<Window Type="TLBB_ActionButton" Name="DuiHuanUI_Bk_Icon9">
+					<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,360.000000},{0.000000,0.000000}"/>
+					<Property Name="Image" Value=""/>
+					<Event Name="Clicked" Function="DuiHuanUI_Clicked(9);"/>
+				</Window>
+				<!-- 显示物品 -->
+				<Window Type="TLBB_ActionButton" Name="DuiHuanUI_Bk_Icon10">
+					<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,405.000000},{0.000000,0.000000}"/>
+					<Property Name="Image" Value=""/>
+					<Event Name="Clicked" Function="DuiHuanUI_Clicked(10);"/>
+				</Window>
+			</Window>
+			<!-- 选项2 -->
+			<Window Type="TLBB_SimpleText" Name="DuiHuanUI_Frame2">
+				<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,45.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,55.000000}}"/>
+				<!-- 显示物品 -->
+				<Window Type="TLBB_ActionButton" Name="DuiHuanUI_Bk_Icon11">
+					<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}"/>
+					<Property Name="Image" Value=""/>
+					<Event Name="Clicked" Function="DuiHuanUI_Clicked(11);"/>
+				</Window>
+				<!-- 显示物品 -->
+				<Window Type="TLBB_ActionButton" Name="DuiHuanUI_Bk_Icon12">
+					<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,45.000000},{0.000000,0.000000}"/>
+					<Property Name="Image" Value=""/>
+					<Event Name="Clicked" Function="DuiHuanUI_Clicked(12);"/>
+				</Window>
+				<!-- 显示物品 -->
+				<Window Type="TLBB_ActionButton" Name="DuiHuanUI_Bk_Icon13">
+					<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,90.000000},{0.000000,0.000000}"/>
+					<Property Name="Image" Value=""/>
+					<Event Name="Clicked" Function="DuiHuanUI_Clicked(13);"/>
+				</Window>
+				<!-- 显示物品 -->
+				<Window Type="TLBB_ActionButton" Name="DuiHuanUI_Bk_Icon14">
+					<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,135.000000},{0.000000,0.000000}"/>
+					<Property Name="Image" Value=""/>
+					<Event Name="Clicked" Function="DuiHuanUI_Clicked(14);"/>
+				</Window>
+				<!-- 显示物品 -->
+				<Window Type="TLBB_ActionButton" Name="DuiHuanUI_Bk_Icon15">
+					<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,180.000000},{0.000000,0.000000}"/>
+					<Property Name="Image" Value=""/>
+					<Event Name="Clicked" Function="DuiHuanUI_Clicked(15);"/>
+				</Window>
+				<!-- 显示物品 -->
+				<Window Type="TLBB_ActionButton" Name="DuiHuanUI_Bk_Icon16">
+					<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,225.000000},{0.000000,0.000000}"/>
+					<Property Name="Image" Value=""/>
+					<Event Name="Clicked" Function="DuiHuanUI_Clicked(16);"/>
+				</Window>
+				<!-- 显示物品 -->
+				<Window Type="TLBB_ActionButton" Name="DuiHuanUI_Bk_Icon17">
+					<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,270.000000},{0.000000,0.000000}"/>
+					<Property Name="Image" Value=""/>
+					<Event Name="Clicked" Function="DuiHuanUI_Clicked(17);"/>
+				</Window>
+				<!-- 显示物品 -->
+				<Window Type="TLBB_ActionButton" Name="DuiHuanUI_Bk_Icon18">
+					<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,315.000000},{0.000000,0.000000}"/>
+					<Property Name="Image" Value=""/>
+					<Event Name="Clicked" Function="DuiHuanUI_Clicked(18);"/>
+				</Window>
+				<!-- 显示物品 -->
+				<Window Type="TLBB_ActionButton" Name="DuiHuanUI_Bk_Icon19">
+					<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,360.000000},{0.000000,0.000000}"/>
+					<Property Name="Image" Value=""/>
+					<Event Name="Clicked" Function="DuiHuanUI_Clicked(19);"/>
+				</Window>
+				<!-- 显示物品 -->
+				<Window Type="TLBB_ActionButton" Name="DuiHuanUI_Bk_Icon20">
+					<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,405.000000},{0.000000,0.000000}"/>
+					<Property Name="Image" Value=""/>
+					<Event Name="Clicked" Function="DuiHuanUI_Clicked(20);"/>
+				</Window>
+			</Window>
+			
+			<!-- 选项3 -->
+			<Window Type="TLBB_SimpleText" Name="DuiHuanUI_Frame3">
+				<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,45.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,100.000000}}"/>
+				<!-- 显示物品 -->
+				<Window Type="TLBB_ActionButton" Name="DuiHuanUI_Bk_Icon21">
+					<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}"/>
+					<Property Name="Image" Value=""/>
+					<Event Name="Clicked" Function="DuiHuanUI_Clicked(21);"/>
+				</Window>
+				<!-- 显示物品 -->
+				<Window Type="TLBB_ActionButton" Name="DuiHuanUI_Bk_Icon22">
+					<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,45.000000},{0.000000,0.000000}"/>
+					<Property Name="Image" Value=""/>
+					<Event Name="Clicked" Function="DuiHuanUI_Clicked(22);"/>
+				</Window>
+				<!-- 显示物品 -->
+				<Window Type="TLBB_ActionButton" Name="DuiHuanUI_Bk_Icon23">
+					<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,90.000000},{0.000000,0.000000}"/>
+					<Property Name="Image" Value=""/>
+					<Event Name="Clicked" Function="DuiHuanUI_Clicked(23);"/>
+				</Window>
+				<!-- 显示物品 -->
+				<Window Type="TLBB_ActionButton" Name="DuiHuanUI_Bk_Icon24">
+					<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,135.000000},{0.000000,0.000000}"/>
+					<Property Name="Image" Value=""/>
+					<Event Name="Clicked" Function="DuiHuanUI_Clicked(24);"/>
+				</Window>
+				<!-- 显示物品 -->
+				<Window Type="TLBB_ActionButton" Name="DuiHuanUI_Bk_Icon25">
+					<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,180.000000},{0.000000,0.000000}"/>
+					<Property Name="Image" Value=""/>
+					<Event Name="Clicked" Function="DuiHuanUI_Clicked(25);"/>
+				</Window>
+				<!-- 显示物品 -->
+				<Window Type="TLBB_ActionButton" Name="DuiHuanUI_Bk_Icon26">
+					<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,225.000000},{0.000000,0.000000}"/>
+					<Property Name="Image" Value=""/>
+					<Event Name="Clicked" Function="DuiHuanUI_Clicked(26);"/>
+				</Window>
+				<!-- 显示物品 -->
+				<Window Type="TLBB_ActionButton" Name="DuiHuanUI_Bk_Icon27">
+					<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,270.000000},{0.000000,0.000000}"/>
+					<Property Name="Image" Value=""/>
+					<Event Name="Clicked" Function="DuiHuanUI_Clicked(27);"/>
+				</Window>
+				<!-- 显示物品 -->
+				<Window Type="TLBB_ActionButton" Name="DuiHuanUI_Bk_Icon28">
+					<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,315.000000},{0.000000,0.000000}"/>
+					<Property Name="Image" Value=""/>
+					<Event Name="Clicked" Function="DuiHuanUI_Clicked(28);"/>
+				</Window>
+				<!-- 显示物品 -->
+				<Window Type="TLBB_ActionButton" Name="DuiHuanUI_Bk_Icon29">
+					<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,360.000000},{0.000000,0.000000}"/>
+					<Property Name="Image" Value=""/>
+					<Event Name="Clicked" Function="DuiHuanUI_Clicked(29);"/>
+				</Window>
+				<!-- 显示物品 -->
+				<Window Type="TLBB_ActionButton" Name="DuiHuanUI_Bk_Icon30">
+					<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,405.000000},{0.000000,0.000000}"/>
+					<Property Name="Image" Value=""/>
+					<Event Name="Clicked" Function="DuiHuanUI_Clicked(30);"/>
+				</Window>
+			</Window>
+			
+			<!-- 选项4 -->
+			<Window Type="TLBB_SimpleText" Name="DuiHuanUI_Frame4">
+				<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,45.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,145.000000}}"/>
+				<!-- 显示物品 -->
+				<Window Type="TLBB_ActionButton" Name="DuiHuanUI_Bk_Icon31">
+					<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}"/>
+					<Property Name="Image" Value=""/>
+					<Event Name="Clicked" Function="DuiHuanUI_Clicked(31);"/>
+				</Window>
+				<!-- 显示物品 -->
+				<Window Type="TLBB_ActionButton" Name="DuiHuanUI_Bk_Icon32">
+					<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,45.000000},{0.000000,0.000000}"/>
+					<Property Name="Image" Value=""/>
+					<Event Name="Clicked" Function="DuiHuanUI_Clicked(32);"/>
+				</Window>
+				<!-- 显示物品 -->
+				<Window Type="TLBB_ActionButton" Name="DuiHuanUI_Bk_Icon33">
+					<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,90.000000},{0.000000,0.000000}"/>
+					<Property Name="Image" Value=""/>
+					<Event Name="Clicked" Function="DuiHuanUI_Clicked(33);"/>
+				</Window>
+				<!-- 显示物品 -->
+				<Window Type="TLBB_ActionButton" Name="DuiHuanUI_Bk_Icon34">
+					<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,135.000000},{0.000000,0.000000}"/>
+					<Property Name="Image" Value=""/>
+					<Event Name="Clicked" Function="DuiHuanUI_Clicked(34);"/>
+				</Window>
+				<!-- 显示物品 -->
+				<Window Type="TLBB_ActionButton" Name="DuiHuanUI_Bk_Icon35">
+					<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,180.000000},{0.000000,0.000000}"/>
+					<Property Name="Image" Value=""/>
+					<Event Name="Clicked" Function="DuiHuanUI_Clicked(35);"/>
+				</Window>
+				<!-- 显示物品 -->
+				<Window Type="TLBB_ActionButton" Name="DuiHuanUI_Bk_Icon36">
+					<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,225.000000},{0.000000,0.000000}"/>
+					<Property Name="Image" Value=""/>
+					<Event Name="Clicked" Function="DuiHuanUI_Clicked(36);"/>
+				</Window>
+				<!-- 显示物品 -->
+				<Window Type="TLBB_ActionButton" Name="DuiHuanUI_Bk_Icon37">
+					<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,270.000000},{0.000000,0.000000}"/>
+					<Property Name="Image" Value=""/>
+					<Event Name="Clicked" Function="DuiHuanUI_Clicked(37);"/>
+				</Window>
+				<!-- 显示物品 -->
+				<Window Type="TLBB_ActionButton" Name="DuiHuanUI_Bk_Icon38">
+					<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,315.000000},{0.000000,0.000000}"/>
+					<Property Name="Image" Value=""/>
+					<Event Name="Clicked" Function="DuiHuanUI_Clicked(38);"/>
+				</Window>
+				<!-- 显示物品 -->
+				<Window Type="TLBB_ActionButton" Name="DuiHuanUI_Bk_Icon39">
+					<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,360.000000},{0.000000,0.000000}"/>
+					<Property Name="Image" Value=""/>
+					<Event Name="Clicked" Function="DuiHuanUI_Clicked(39);"/>
+				</Window>
+				<!-- 显示物品 -->
+				<Window Type="TLBB_ActionButton" Name="DuiHuanUI_Bk_Icon40">
+					<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,405.000000},{0.000000,0.000000}"/>
+					<Property Name="Image" Value=""/>
+					<Event Name="Clicked" Function="DuiHuanUI_Clicked(40);"/>
+				</Window>
+			</Window>
+			
+			<!-- 选项5 -->
+			<Window Type="TLBB_SimpleText" Name="DuiHuanUI_Frame5">
+				<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,45.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,190.000000}}"/>
+				<!-- 显示物品 -->
+				<Window Type="TLBB_ActionButton" Name="DuiHuanUI_Bk_Icon41">
+					<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}"/>
+					<Property Name="Image" Value=""/>
+					<Event Name="Clicked" Function="DuiHuanUI_Clicked(41);"/>
+				</Window>
+				<!-- 显示物品 -->
+				<Window Type="TLBB_ActionButton" Name="DuiHuanUI_Bk_Icon42">
+					<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,45.000000},{0.000000,0.000000}"/>
+					<Property Name="Image" Value=""/>
+					<Event Name="Clicked" Function="DuiHuanUI_Clicked(42);"/>
+				</Window>
+				<!-- 显示物品 -->
+				<Window Type="TLBB_ActionButton" Name="DuiHuanUI_Bk_Icon43">
+					<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,90.000000},{0.000000,0.000000}"/>
+					<Property Name="Image" Value=""/>
+					<Event Name="Clicked" Function="DuiHuanUI_Clicked(43);"/>
+				</Window>
+				<!-- 显示物品 -->
+				<Window Type="TLBB_ActionButton" Name="DuiHuanUI_Bk_Icon44">
+					<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,135.000000},{0.000000,0.000000}"/>
+					<Property Name="Image" Value=""/>
+					<Event Name="Clicked" Function="DuiHuanUI_Clicked(44);"/>
+				</Window>
+				<!-- 显示物品 -->
+				<Window Type="TLBB_ActionButton" Name="DuiHuanUI_Bk_Icon45">
+					<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,180.000000},{0.000000,0.000000}"/>
+					<Property Name="Image" Value=""/>
+					<Event Name="Clicked" Function="DuiHuanUI_Clicked(45);"/>
+				</Window>
+				<!-- 显示物品 -->
+				<Window Type="TLBB_ActionButton" Name="DuiHuanUI_Bk_Icon46">
+					<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,225.000000},{0.000000,0.000000}"/>
+					<Property Name="Image" Value=""/>
+					<Event Name="Clicked" Function="DuiHuanUI_Clicked(46);"/>
+				</Window>
+				<!-- 显示物品 -->
+				<Window Type="TLBB_ActionButton" Name="DuiHuanUI_Bk_Icon47">
+					<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,270.000000},{0.000000,0.000000}"/>
+					<Property Name="Image" Value=""/>
+					<Event Name="Clicked" Function="DuiHuanUI_Clicked(47);"/>
+				</Window>
+				<!-- 显示物品 -->
+				<Window Type="TLBB_ActionButton" Name="DuiHuanUI_Bk_Icon48">
+					<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,315.000000},{0.000000,0.000000}"/>
+					<Property Name="Image" Value=""/>
+					<Event Name="Clicked" Function="DuiHuanUI_Clicked(48);"/>
+				</Window>
+				<!-- 显示物品 -->
+				<Window Type="TLBB_ActionButton" Name="DuiHuanUI_Bk_Icon49">
+					<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,360.000000},{0.000000,0.000000}"/>
+					<Property Name="Image" Value=""/>
+					<Event Name="Clicked" Function="DuiHuanUI_Clicked(49);"/>
+				</Window>
+				<!-- 显示物品 -->
+				<Window Type="TLBB_ActionButton" Name="DuiHuanUI_Bk_Icon50">
+					<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,405.000000},{0.000000,0.000000}"/>
+					<Property Name="Image" Value=""/>
+					<Event Name="Clicked" Function="DuiHuanUI_Clicked(50);"/>
+				</Window>
+			</Window>			
+			
+			
+			<Window Type="TLBB_SimpleText" Name="DuiHuanUI_Frame6">
+				<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,45.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,235.000000}}"/>
+				<!-- 显示物品 -->
+				<Window Type="TLBB_ActionButton" Name="DuiHuanUI_Bk_Icon51">
+					<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}"/>
+					<Property Name="Image" Value=""/>
+					<Event Name="Clicked" Function="DuiHuanUI_Clicked(51);"/>
+				</Window>
+				<!-- 显示物品 -->
+				<Window Type="TLBB_ActionButton" Name="DuiHuanUI_Bk_Icon52">
+					<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,45.000000},{0.000000,0.000000}"/>
+					<Property Name="Image" Value=""/>
+					<Event Name="Clicked" Function="DuiHuanUI_Clicked(52);"/>
+				</Window>
+				<!-- 显示物品 -->
+				<Window Type="TLBB_ActionButton" Name="DuiHuanUI_Bk_Icon53">
+					<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,90.000000},{0.000000,0.000000}"/>
+					<Property Name="Image" Value=""/>
+					<Event Name="Clicked" Function="DuiHuanUI_Clicked(53);"/>
+				</Window>
+				<!-- 显示物品 -->
+				<Window Type="TLBB_ActionButton" Name="DuiHuanUI_Bk_Icon54">
+					<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,135.000000},{0.000000,0.000000}"/>
+					<Property Name="Image" Value=""/>
+					<Event Name="Clicked" Function="DuiHuanUI_Clicked(54);"/>
+				</Window>
+				<!-- 显示物品 -->
+				<Window Type="TLBB_ActionButton" Name="DuiHuanUI_Bk_Icon55">
+					<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,180.000000},{0.000000,0.000000}"/>
+					<Property Name="Image" Value=""/>
+					<Event Name="Clicked" Function="DuiHuanUI_Clicked(55);"/>
+				</Window>
+				<!-- 显示物品 -->
+				<Window Type="TLBB_ActionButton" Name="DuiHuanUI_Bk_Icon56">
+					<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,225.000000},{0.000000,0.000000}"/>
+					<Property Name="Image" Value=""/>
+					<Event Name="Clicked" Function="DuiHuanUI_Clicked(56);"/>
+				</Window>
+				<!-- 显示物品 -->
+				<Window Type="TLBB_ActionButton" Name="DuiHuanUI_Bk_Icon57">
+					<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,270.000000},{0.000000,0.000000}"/>
+					<Property Name="Image" Value=""/>
+					<Event Name="Clicked" Function="DuiHuanUI_Clicked(57);"/>
+				</Window>
+				<!-- 显示物品 -->
+				<Window Type="TLBB_ActionButton" Name="DuiHuanUI_Bk_Icon58">
+					<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,315.000000},{0.000000,0.000000}"/>
+					<Property Name="Image" Value=""/>
+					<Event Name="Clicked" Function="DuiHuanUI_Clicked(58);"/>
+				</Window>
+				<!-- 显示物品 -->
+				<Window Type="TLBB_ActionButton" Name="DuiHuanUI_Bk_Icon59">
+					<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,360.000000},{0.000000,0.000000}"/>
+					<Property Name="Image" Value=""/>
+					<Event Name="Clicked" Function="DuiHuanUI_Clicked(59);"/>
+				</Window>
+				<!-- 显示物品 -->
+				<Window Type="TLBB_ActionButton" Name="DuiHuanUI_Bk_Icon60">
+					<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,405.000000},{0.000000,0.000000}"/>
+					<Property Name="Image" Value=""/>
+					<Event Name="Clicked" Function="DuiHuanUI_Clicked(60);"/>
+				</Window>
+			</Window>						
+			
+			<Window Type="TLBB_SimpleText" Name="DuiHuanUI_Frame7">
+				<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,45.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,280.000000}}"/>
+				<!-- 显示物品 -->
+				<Window Type="TLBB_ActionButton" Name="DuiHuanUI_Bk_Icon61">
+					<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}"/>
+					<Property Name="Image" Value=""/>
+					<Event Name="Clicked" Function="DuiHuanUI_Clicked(61);"/>
+				</Window>
+				<!-- 显示物品 -->
+				<Window Type="TLBB_ActionButton" Name="DuiHuanUI_Bk_Icon62">
+					<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,45.000000},{0.000000,0.000000}"/>
+					<Property Name="Image" Value=""/>
+					<Event Name="Clicked" Function="DuiHuanUI_Clicked(62);"/>
+				</Window>
+				<!-- 显示物品 -->
+				<Window Type="TLBB_ActionButton" Name="DuiHuanUI_Bk_Icon63">
+					<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,90.000000},{0.000000,0.000000}"/>
+					<Property Name="Image" Value=""/>
+					<Event Name="Clicked" Function="DuiHuanUI_Clicked(63);"/>
+				</Window>
+				<!-- 显示物品 -->
+				<Window Type="TLBB_ActionButton" Name="DuiHuanUI_Bk_Icon64">
+					<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,135.000000},{0.000000,0.000000}"/>
+					<Property Name="Image" Value=""/>
+					<Event Name="Clicked" Function="DuiHuanUI_Clicked(64);"/>
+				</Window>
+				<!-- 显示物品 -->
+				<Window Type="TLBB_ActionButton" Name="DuiHuanUI_Bk_Icon65">
+					<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,180.000000},{0.000000,0.000000}"/>
+					<Property Name="Image" Value=""/>
+					<Event Name="Clicked" Function="DuiHuanUI_Clicked(65);"/>
+				</Window>
+				<!-- 显示物品 -->
+				<Window Type="TLBB_ActionButton" Name="DuiHuanUI_Bk_Icon66">
+					<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,225.000000},{0.000000,0.000000}"/>
+					<Property Name="Image" Value=""/>
+					<Event Name="Clicked" Function="DuiHuanUI_Clicked(66);"/>
+				</Window>
+				<!-- 显示物品 -->
+				<Window Type="TLBB_ActionButton" Name="DuiHuanUI_Bk_Icon67">
+					<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,270.000000},{0.000000,0.000000}"/>
+					<Property Name="Image" Value=""/>
+					<Event Name="Clicked" Function="DuiHuanUI_Clicked(67);"/>
+				</Window>
+				<!-- 显示物品 -->
+				<Window Type="TLBB_ActionButton" Name="DuiHuanUI_Bk_Icon68">
+					<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,315.000000},{0.000000,0.000000}"/>
+					<Property Name="Image" Value=""/>
+					<Event Name="Clicked" Function="DuiHuanUI_Clicked(68);"/>
+				</Window>
+				<!-- 显示物品 -->
+				<Window Type="TLBB_ActionButton" Name="DuiHuanUI_Bk_Icon69">
+					<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,360.000000},{0.000000,0.000000}"/>
+					<Property Name="Image" Value=""/>
+					<Event Name="Clicked" Function="DuiHuanUI_Clicked(69);"/>
+				</Window>
+				<!-- 显示物品 -->
+				<Window Type="TLBB_ActionButton" Name="DuiHuanUI_Bk_Icon70">
+					<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,405.000000},{0.000000,0.000000}"/>
+					<Property Name="Image" Value=""/>
+					<Event Name="Clicked" Function="DuiHuanUI_Clicked(70);"/>
+				</Window>
+			</Window>						
+			
+			
+			
+		<!-- <Window Type="DefaultWindow" Name="DuiHuanUI_PresentTop" >  -->
+		<!-- <Property Name="Visible" Value="False"/> -->
+<!-- 		<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,362.000000}}"/>
+		<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,30.000000}}"/> -->
+	<!-- 	<Property Name="RiseOnClick" Value="True" /> -->
+			<Window Type="TLBB_Frame_Lace5" Name="DuiHuanUI_Blank">
+				<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-30.000000}}"/>
+				<Property Name="UnifiedSize" Value="{{1.000000,-84.000000},{0.000000,20.000000}}"/>
+				<Property Name="AlwaysOnTop" Value="true" />
+			</Window>
+			<!-- 道具名 -->
+			<Window Type="TLBB_SimpleText" Name="DuiHuanUI_Frame_Texta1">
+				<Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{1.000000,-30.000000}}"/>
+				<Property Name="AbsoluteSize" Value="w:140.000000 h:20.000000"/>
+				<Property Name="Text" Value="您已选择兑换：新时装"/>
+			</Window>
+			<!-- 介绍行1（价值多少钱） -->
+			<Window Type="TLBB_SimpleText" Name="DuiHuanUI_Frame_Texta2">
+				<Property Name="UnifiedPosition" Value="{{0.000000,160.000000},{1.000000,-30.000000}}"/>
+				<Property Name="AbsoluteSize" Value="w:215.000000 h:20.000000"/>
+				<Property Name="Text" Value="兑换所需材料：时装碎片"/>
+			</Window>
+			<!-- 介绍行1（价值多少钱） -->
+			<Window Type="TLBB_SimpleText" Name="DuiHuanUI_Frame_Texta3">
+				<Property Name="UnifiedPosition" Value="{{0.000000,320.000000},{1.000000,-30.000000}}"/>
+				<Property Name="AbsoluteSize" Value="w:120.000000 h:20.000000"/>
+				<Property Name="Text" Value="消耗材料数量：1000"/>
+			</Window>
+			<Window Type="TLBB_ButtonCommon" Name="DuiHuanUI_OK">
+				<Property Name="UnifiedPosition" Value="{{1.000000,-82.000000},{1.000000,-30.000000}}"/>
+				<Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000"/>
+				<Property Name="AlwaysOnTop" Value="true" />
+				<Property Name="Text" Value="兑换"/>
+				<Event Name="Clicked" Function="DuiHuanUI_OK_Clicked();"/>
+			</Window>
+			<Window Type="TLBB_ButtonCommon" Name="DuiHuanUI_Cancel">
+				<Property Name="UnifiedPosition" Value="{{1.000000,-42.000000},{1.000000,-30.000000}}"/>
+				<Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000"/>
+				<Property Name="AlwaysOnTop" Value="true" />
+				<Property Name="Text" Value="取消"/>
+				<Event Name="Clicked" Function="this:Hide();"/>
+			</Window>
+		 <!-- </Window> -->
+			
+		</Window>
+	</Window>
+</GUILayout>

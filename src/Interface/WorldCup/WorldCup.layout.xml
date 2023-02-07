@@ -1,0 +1,1152 @@
+﻿<?xml version="1.0" ?>
+<GUILayout>
+    <Window Type="TLBB_MainFrame0" Name="WorldCup_Frame">
+        <Property Name="UnifiedPosition" Value="{{0.5,-380},{0.5,-258}}" />
+	    	<Property Name="AbsoluteSize" Value="w:760 h:518" />
+        <Window Type="TLBB_DragTitle" Name="WorldCup_DragTitle">
+            <Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
+            <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+            <Property Name="Font" Value="YouYuan11.25" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="VertFormatting" Value="VertCentred" />
+            <Property Name="Text" Value="#{SJB_XML_1}" />
+            <Property Name="DragTarget" Value="WorldCup_Frame" />
+        </Window>
+        <Window Type="TLBB_ButtonHelp" Name="WorldCup_Frame_Help">
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+            <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+        </Window>
+        <Window Type="TLBB_ButtonClose" Name="WorldCup_Frame_Close">
+            <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+            <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+            <Event Name="Clicked" Function="this:Hide();" />
+        </Window>
+      <Window Type="TLBB_ButtonCheckForRMBShop" Name="WorldCup_Frame_BtnDate">
+        <Property Name="UnifiedSize" Value="{{0.000000,112.000000},{0.000000,21.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,42.000000}}"/>
+        <Property Name="Text" Value="#{SJB_XML_2}" />
+        <Property Name="CheckMode" Value="1" />
+        <Event Name="MouseLButtonDown" Function="WorldCup_DateFrame_Show();" />
+      </Window>
+      <Window Type="TLBB_ButtonCheckForRMBShop" Name="WorldCup_Frame_DateView">
+        <Property Name="UnifiedPosition" Value="{{0.000000,130.000000},{0.000000,42.000000}" />
+        <Property Name="AbsoluteSize" Value="w:90.000000 h:21.000000" />
+        <Property Name="Text" Value="#{SJB_XML_3}" />
+        <Property Name="CheckMode" Value="1" />
+        <Property Name="Tooltip" Value="#{SJB_XML_124}"/>
+        <Event Name="MouseLButtonDown" Function="WorldCup_ViewFrame_Show();" />
+      </Window>
+      <Window Type="TLBB_ButtonCheckForRMBShop" Name="WorldCup_Frame_BtnBet">
+        <Property Name="UnifiedPosition" Value="{{0.500000,-60.000000},{0.000000,42.000000}" />
+        <Property Name="AbsoluteSize" Value="w:120.000000 h:21.000000" />
+        <Property Name="Text" Value="#{SJB_XML_4}" />
+        <Property Name="CheckMode" Value="1" />
+        <Property Name="Tooltip" Value="#{SJB_XML_125}"/>
+        <Event Name="MouseLButtonDown" Function="WorldCup_BetFrame_Show();" />
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="WorldCup_Frame_Score">
+        <Property Name="UnifiedPosition" Value="{{1.000000,-274.000000},{0.000000,42.000000}" />
+        <Property Name="AbsoluteSize" Value="w:160.000000 h:20.000000" />
+        <Property Name="TextColor" Value="FFFFF263" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Tooltip" Value="#{SJB_XML_45}" />
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="WorldCup_Frame_Reload">
+        <Property Name="UnifiedPosition" Value="{{1.000000,-84.000000},{0.000000,42.000000}" />
+        <Property Name="AbsoluteSize" Value="w:60.000000 h:20.000000" />
+        <Property Name="Text" Value="#{ZYPT_081128_7}" />
+        <Event Name="Clicked" Function="WorldCup_AskData();" />
+      </Window>
+      <Window Type="TLBB_HLine" Name="WorldCup_Frame_Line">
+        <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,67.000000}" />
+        <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,5.000000}" />
+        <Property Name="RiseOnClick" Value="False" />
+      </Window>
+      <Window Type="DefaultWindow" Name="WorldCup_Frame_DateFrame">
+        <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,72.000000}" />
+        <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-91.000000}" />
+        <!-- <Property Name="Visible" Value="False" /> -->
+        <Window Type="TLBB_StaticImageNULL" Name="WorldCup_Frame_DateFrame_Cup">
+          <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,60.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,354.000000},{0.000000,185.000000}}"/>
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="Image" Value="set:CommonFrame10 image:Cup_Icon" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="WorldCup_Frame_DateFrame_TeamName1">
+          <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,58.000000}" />
+          <Property Name="AbsoluteSize" Value="w:20.000000 h:20.000000" />
+          <Property Name="Text" Value="#{SJB_XML_6}" />
+          <Property Name="TextColor" Value="FFFFF263" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="WorldCup_Frame_DateFrame_TeamName2">
+          <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,158.000000}" />
+          <Property Name="AbsoluteSize" Value="w:20.000000 h:20.000000" />
+          <Property Name="Text" Value="#{SJB_XML_7}" />
+          <Property Name="TextColor" Value="FFFFF263" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="WorldCup_Frame_DateFrame_TeamName3">
+          <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,258.000000}" />
+          <Property Name="AbsoluteSize" Value="w:20.000000 h:20.000000" />
+          <Property Name="Text" Value="#{SJB_XML_8}" />
+          <Property Name="TextColor" Value="FFFFF263" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="WorldCup_Frame_DateFrame_TeamName4">
+          <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,358.000000}" />
+          <Property Name="AbsoluteSize" Value="w:20.000000 h:20.000000" />
+          <Property Name="Text" Value="#{SJB_XML_9}" />
+          <Property Name="TextColor" Value="FFFFF263" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="WorldCup_Frame_DateFrame_TeamName5">
+          <Property Name="UnifiedPosition" Value="{{0.000000,721.000000},{0.000000,58.000000}" />
+          <Property Name="AbsoluteSize" Value="w:20.000000 h:20.000000" />
+          <Property Name="Text" Value="#{SJB_XML_10}" />
+          <Property Name="TextColor" Value="FFFFF263" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="WorldCup_Frame_DateFrame_TeamName6">
+          <Property Name="UnifiedPosition" Value="{{0.000000,721.000000},{0.000000,158.000000}" />
+          <Property Name="AbsoluteSize" Value="w:20.000000 h:20.000000" />
+          <Property Name="Text" Value="#{SJB_XML_11}" />
+          <Property Name="TextColor" Value="FFFFF263" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="WorldCup_Frame_DateFrame_TeamName7">
+          <Property Name="UnifiedPosition" Value="{{0.000000,721.000000},{0.000000,258.000000}" />
+          <Property Name="AbsoluteSize" Value="w:20.000000 h:20.000000" />
+          <Property Name="Text" Value="#{SJB_XML_12}" />
+          <Property Name="TextColor" Value="FFFFF263" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="WorldCup_Frame_DateFrame_TeamName8">
+          <Property Name="UnifiedPosition" Value="{{0.000000,721.000000},{0.000000,358.000000}" />
+          <Property Name="AbsoluteSize" Value="w:20.000000 h:20.000000" />
+          <Property Name="Text" Value="#{SJB_XML_13}" />
+          <Property Name="TextColor" Value="FFFFF263" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+        <Window Type="TLBB_ListBoxCommon" Name="WorldCup_Frame_DateFrame_Team1">
+          <Property Name="UnifiedPosition" Value="{{0.000000,35.000000},{0.000000,29.000000}}"/>
+          <Property Name="AbsoluteSize" Value="w:90.000000 h:75.000000" />
+          <Property Name="SelectionMode" Value="False" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+        <Window Type="TLBB_ListBoxCommon" Name="WorldCup_Frame_DateFrame_Team2">
+          <Property Name="UnifiedPosition" Value="{{0.000000,35.000000},{0.000000,129.000000}}"/>
+          <Property Name="AbsoluteSize" Value="w:90.000000 h:75.000000" />
+          <Property Name="SelectionMode" Value="False" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+        <Window Type="TLBB_ListBoxCommon" Name="WorldCup_Frame_DateFrame_Team3">
+          <Property Name="UnifiedPosition" Value="{{0.000000,35.000000},{0.000000,229.000000}}"/>
+          <Property Name="AbsoluteSize" Value="w:90.000000 h:75.000000" />
+          <Property Name="SelectionMode" Value="False" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+        <Window Type="TLBB_ListBoxCommon" Name="WorldCup_Frame_DateFrame_Team4">
+          <Property Name="UnifiedPosition" Value="{{0.000000,35.000000},{0.000000,329.000000}}"/>
+          <Property Name="AbsoluteSize" Value="w:90.000000 h:75.000000" />
+          <Property Name="SelectionMode" Value="False" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+        <Window Type="TLBB_ListBoxCommon" Name="WorldCup_Frame_DateFrame_Team5">
+          <Property Name="UnifiedPosition" Value="{{0.000000,621.000000},{0.000000,29.000000}}"/>
+          <Property Name="AbsoluteSize" Value="w:90.000000 h:75.000000" />
+          <Property Name="SelectionMode" Value="False" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+        <Window Type="TLBB_ListBoxCommon" Name="WorldCup_Frame_DateFrame_Team6">
+          <Property Name="UnifiedPosition" Value="{{0.000000,621.000000},{0.000000,129.000000}}"/>
+          <Property Name="AbsoluteSize" Value="w:90.000000 h:75.000000" />
+          <Property Name="SelectionMode" Value="False" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+        <Window Type="TLBB_ListBoxCommon" Name="WorldCup_Frame_DateFrame_Team7">
+          <Property Name="UnifiedPosition" Value="{{0.000000,621.000000},{0.000000,229.000000}}"/>
+          <Property Name="AbsoluteSize" Value="w:90.000000 h:75.000000" />
+          <Property Name="SelectionMode" Value="False" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+        <Window Type="TLBB_ListBoxCommon" Name="WorldCup_Frame_DateFrame_Team8">
+          <Property Name="UnifiedPosition" Value="{{0.000000,621.000000},{0.000000,329.000000}}"/>
+          <Property Name="AbsoluteSize" Value="w:90.000000 h:75.000000" />
+          <Property Name="SelectionMode" Value="False" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="WorldCup_Frame_DateFrame_Explain1">
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,131.000000},{0.000000,58.000000}}"/>
+          <Property Name="Text" Value="#{SJB_XML_14}" />
+          <Property Name="TextColor" Value="FFFFF263" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="WorldCup_Frame_DateFrame_Explain2">
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,131.000000},{0.000000,158.000000}}"/>
+          <Property Name="Text" Value="#{SJB_XML_14}" />
+          <Property Name="TextColor" Value="FFFFF263" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="WorldCup_Frame_DateFrame_Explain3">
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,131.000000},{0.000000,258.000000}}"/>
+          <Property Name="Text" Value="#{SJB_XML_14}" />
+          <Property Name="TextColor" Value="FFFFF263" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="WorldCup_Frame_DateFrame_Explain4">
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,131.000000},{0.000000,358.000000}}"/>
+          <Property Name="Text" Value="#{SJB_XML_14}" />
+          <Property Name="TextColor" Value="FFFFF263" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="WorldCup_Frame_DateFrame_Explain5">
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,535.000000},{0.000000,58.000000}}"/>
+          <Property Name="Text" Value="#{SJB_XML_14}" />
+          <Property Name="TextColor" Value="FFFFF263" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="WorldCup_Frame_DateFrame_Explain6">
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,535.000000},{0.000000,158.000000}}"/>
+          <Property Name="Text" Value="#{SJB_XML_14}" />
+          <Property Name="TextColor" Value="FFFFF263" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="WorldCup_Frame_DateFrame_Explain7">
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,535.000000},{0.000000,258.000000}}"/>
+          <Property Name="Text" Value="#{SJB_XML_14}" />
+          <Property Name="TextColor" Value="FFFFF263" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="WorldCup_Frame_DateFrame_Explain8">
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,535.000000},{0.000000,358.000000}}"/>
+          <Property Name="Text" Value="#{SJB_XML_14}" />
+          <Property Name="TextColor" Value="FFFFF263" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="WorldCup_Frame_DateFrame_Explain9">
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,199.000000},{0.000000,108.000000}}"/>
+          <Property Name="Text" Value="#{SJB_XML_15}" />
+          <Property Name="TextColor" Value="FFFFF263" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="WorldCup_Frame_DateFrame_Explain10">
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,199.000000},{0.000000,308.000000}}"/>
+          <Property Name="Text" Value="#{SJB_XML_15}" />
+          <Property Name="TextColor" Value="FFFFF263" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="WorldCup_Frame_DateFrame_Explain11">
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,468.000000},{0.000000,108.000000}}"/>
+          <Property Name="Text" Value="#{SJB_XML_15}" />
+          <Property Name="TextColor" Value="FFFFF263" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="WorldCup_Frame_DateFrame_Explain12">
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,468.000000},{0.000000,308.000000}}"/>
+          <Property Name="Text" Value="#{SJB_XML_15}" />
+          <Property Name="TextColor" Value="FFFFF263" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="WorldCup_Frame_DateFrame_Explain13">
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,267.000000},{0.000000,208.000000}}"/>
+          <Property Name="Text" Value="#{SJB_XML_16}" />
+          <Property Name="TextColor" Value="FFFFF263" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="WorldCup_Frame_DateFrame_Explain14">
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,400.000000},{0.000000,208.000000}}"/>
+          <Property Name="Text" Value="#{SJB_XML_16}" />
+          <Property Name="TextColor" Value="FFFFF263" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="WorldCup_Frame_DateFrame_Winner">
+          <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,40.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,315.000000},{0.000000,29.000000}}"/>
+          <Property Name="Text" Value="#{SJB_XML_18}" />
+          <Property Name="TextColor" Value="FFFFF263" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="WorldCup_Frame_DateFrame_Line1">
+          <Property Name="UnifiedPosition" Value="{{0.000000,210.000000},{0.000000,68.000000}}"/>
+          <Property Name="AbsoluteSize" Value="w:35 h:40" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="Image" Value="set:CommonFrame10 image:GLine_S1" />
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="WorldCup_Frame_DateFrame_Line2">
+          <Property Name="UnifiedPosition" Value="{{0.000000,210.000000},{0.000000,128.000000}}"/>
+          <Property Name="AbsoluteSize" Value="w:35 h:40" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="Image" Value="set:CommonFrame10 image:GLine_S3" />
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="WorldCup_Frame_DateFrame_Line3">
+          <Property Name="UnifiedPosition" Value="{{0.000000,210.000000},{0.000000,268.000000}}"/>
+          <Property Name="AbsoluteSize" Value="w:35 h:40" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="Image" Value="set:CommonFrame10 image:GLine_S1" />
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="WorldCup_Frame_DateFrame_Line4">
+          <Property Name="UnifiedPosition" Value="{{0.000000,210.000000},{0.000000,328.000000}}"/>
+          <Property Name="AbsoluteSize" Value="w:35 h:40" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="Image" Value="set:CommonFrame10 image:GLine_S3" />
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="WorldCup_Frame_DateFrame_Line5">
+          <Property Name="UnifiedPosition" Value="{{0.000000,278.000000},{0.000000,118.000000}}"/>
+          <Property Name="AbsoluteSize" Value="w:35 h:90" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="Image" Value="set:CommonFrame10 image:GLine_L1" />
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="WorldCup_Frame_DateFrame_Line6">
+          <Property Name="UnifiedPosition" Value="{{0.000000,278.000000},{0.000000,228.000000}}"/>
+          <Property Name="AbsoluteSize" Value="w:35 h:90" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="Image" Value="set:CommonFrame10 image:GLine_L3" />
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="WorldCup_Frame_DateFrame_Line7">
+          <Property Name="UnifiedPosition" Value="{{0.000000,434.000000},{0.000000,118.000000}}"/>
+          <Property Name="AbsoluteSize" Value="w:35 h:90" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="Image" Value="set:CommonFrame10 image:GLine_L2" />
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="WorldCup_Frame_DateFrame_Line8">
+          <Property Name="UnifiedPosition" Value="{{0.000000,434.000000},{0.000000,227.000000}}"/>
+          <Property Name="AbsoluteSize" Value="w:35 h:90" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="Image" Value="set:CommonFrame10 image:GLine_L4" />
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="WorldCup_Frame_DateFrame_Line9">
+          <Property Name="UnifiedPosition" Value="{{0.000000,500.000000},{0.000000,68.000000}}"/>
+          <Property Name="AbsoluteSize" Value="w:35 h:40" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="Image" Value="set:CommonFrame10 image:GLine_S2" />
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="WorldCup_Frame_DateFrame_Line10">
+          <Property Name="UnifiedPosition" Value="{{0.000000,501.000000},{0.000000,127.000000}}"/>
+          <Property Name="AbsoluteSize" Value="w:35 h:40" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="Image" Value="set:CommonFrame10 image:GLine_S4" />
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="WorldCup_Frame_DateFrame_Line11">
+          <Property Name="UnifiedPosition" Value="{{0.000000,501.000000},{0.000000,269.000000}}"/>
+          <Property Name="AbsoluteSize" Value="w:35 h:40" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="Image" Value="set:CommonFrame10 image:GLine_S2" />
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="WorldCup_Frame_DateFrame_Line12">
+          <Property Name="UnifiedPosition" Value="{{0.000000,501.000000},{0.000000,327.000000}}"/>
+          <Property Name="AbsoluteSize" Value="w:35 h:40" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="Image" Value="set:CommonFrame10 image:GLine_S4" />
+        </Window>
+
+        <Window Type="TLBB_SimpleText" Name="WorldCup_Frame_DateFrame_VTeam1">
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,131.000000},{0.000000,35.000000}}"/>
+          <Property Name="Text" Value="#{SJB_XML_82}" />
+          <Property Name="TextColor" Value="FFFFF263" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="WorldCup_Frame_DateFrame_VTeam2">
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,131.000000},{0.000000,81.000000}}"/>
+          <Property Name="Text" Value="#{SJB_XML_85}" />
+          <Property Name="TextColor" Value="FFFFF263" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="WorldCup_Frame_DateFrame_VTeam3">
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,131.000000},{0.000000,135.000000}}"/>
+          <Property Name="Text" Value="#{SJB_XML_86}" />
+          <Property Name="TextColor" Value="FFFFF263" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="WorldCup_Frame_DateFrame_VTeam4">
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,131.000000},{0.000000,181.000000}}"/>
+          <Property Name="Text" Value="#{SJB_XML_89}" />
+          <Property Name="TextColor" Value="FFFFF263" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="WorldCup_Frame_DateFrame_VTeam5">
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,131.000000},{0.000000,235.000000}}"/>
+          <Property Name="Text" Value="#{SJB_XML_90}" />
+          <Property Name="TextColor" Value="FFFFF263" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="WorldCup_Frame_DateFrame_VTeam6">
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,131.000000},{0.000000,281.000000}}"/>
+          <Property Name="Text" Value="#{SJB_XML_93}" />
+          <Property Name="TextColor" Value="FFFFF263" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="WorldCup_Frame_DateFrame_VTeam7">
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,131.000000},{0.000000,335.000000}}"/>
+          <Property Name="Text" Value="#{SJB_XML_94}" />
+          <Property Name="TextColor" Value="FFFFF263" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="WorldCup_Frame_DateFrame_VTeam8">
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,131.000000},{0.000000,381.000000}}"/>
+          <Property Name="Text" Value="#{SJB_XML_97}" />
+          <Property Name="TextColor" Value="FFFFF263" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="WorldCup_Frame_DateFrame_VTeam9">
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,535.000000},{0.000000,35.000000}}"/>
+          <Property Name="Text" Value="#{SJB_XML_84}" />
+          <Property Name="TextColor" Value="FFFFF263" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="WorldCup_Frame_DateFrame_VTeam10">
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,535.000000},{0.000000,81.000000}}"/>
+          <Property Name="Text" Value="#{SJB_XML_83}" />
+          <Property Name="TextColor" Value="FFFFF263" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="WorldCup_Frame_DateFrame_VTeam11">
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,535.000000},{0.000000,135.000000}}"/>
+          <Property Name="Text" Value="#{SJB_XML_88}" />
+          <Property Name="TextColor" Value="FFFFF263" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="WorldCup_Frame_DateFrame_VTeam12">
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,535.000000},{0.000000,181.000000}}"/>
+          <Property Name="Text" Value="#{SJB_XML_87}" />
+          <Property Name="TextColor" Value="FFFFF263" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="WorldCup_Frame_DateFrame_VTeam13">
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,535.000000},{0.000000,235.000000}}"/>
+          <Property Name="Text" Value="#{SJB_XML_92}" />
+          <Property Name="TextColor" Value="FFFFF263" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="WorldCup_Frame_DateFrame_VTeam14">
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,535.000000},{0.000000,281.000000}}"/>
+          <Property Name="Text" Value="#{SJB_XML_91}" />
+          <Property Name="TextColor" Value="FFFFF263" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="WorldCup_Frame_DateFrame_VTeam15">
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,535.000000},{0.000000,335.000000}}"/>
+          <Property Name="Text" Value="#{SJB_XML_96}" />
+          <Property Name="TextColor" Value="FFFFF263" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="WorldCup_Frame_DateFrame_VTeam16">
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,535.000000},{0.000000,381.000000}}"/>
+          <Property Name="Text" Value="#{SJB_XML_95}" />
+          <Property Name="TextColor" Value="FFFFF263" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="WorldCup_Frame_BetFrame">
+        <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,72.000000}" />
+        <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-91.000000}" />
+
+        <Window Type="TLBB_SimpleText" Name="WorldCup_Frame_BetFrame_Explain1">
+          <Property Name="UnifiedSize" Value="{{0.000000,112.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,7.000000}}"/>
+          <Property Name="Text" Value="#{SJB_XML_19}" />
+          <Property Name="TextColor" Value="FFFFF263" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+        <Window Type="TLBB_Frame_Lace1" Name="WorldCup_Frame_BetFrame_BetLace">
+          <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,30.000000}" />
+          <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{0.000000,184.000000}" />
+          <Property Name="RiseOnClick" Value="False"/>
+          <Window Type="TLBB_MultiColumnListNoScroll" Name="WorldCup_Frame_BetFrame_BetTitle">
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}" />
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}" />
+            <Property Name="ForceHorzScrollbar" Value="False" />
+            <Property Name="ForceVertScrollbar" Value="False" />
+            <Property Name="SortSettingEnabled" Value="False" />
+            <Property Name="SelectionMode" Value="RowSingle" />
+            <Property Name="ColumnHeader" Value="text:#{SJB_XML_20} width:0.1 id:0" />
+            <Property Name="ColumnHeader" Value="text:#{SJB_XML_21} width:0.1 id:1" />
+            <Property Name="ColumnHeader" Value="text:#{SJB_XML_22} width:0.25 id:2" />
+            <Property Name="ColumnHeader" Value="text:#{SJB_XML_23} width:0.05 id:3" />
+            <Property Name="ColumnHeader" Value="text:#{SJB_XML_24} width:0.25 id:4" />
+            <Property Name="ColumnHeader" Value="text:#{SJB_XML_25} width:0.25 id:5" />
+            <Property Name="ColumnsSizable" Value="False" />
+            <Property Name="ColumnsAdjust" Value="True" />
+            <Property Name="ColumnsMovable" Value="False" />
+            <Property Name="LineDrawOffset" Value="1" />
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="WorldCup_Frame_BetSet1">
+          <Property Name="UnifiedSize" Value="{{0.000000,725.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,11.000000},{0.000000,52.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Window Type="TLBB_SimpleText" Name="WorldCup_Frame_BetSet1_DateText">
+            <Property Name="UnifiedSize" Value="{{0.000000,55.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+            <Property Name="TextColor" Value="FFFFF263" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="VertFormatting" Value="VertCentred" />
+            <Property Name="RiseOnClick" Value="False" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="WorldCup_Frame_BetSet1_TimeText">
+            <Property Name="UnifiedSize" Value="{{0.000000,53.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,77.000000},{0.000000,0.000000}}"/>
+            <Property Name="TextColor" Value="FFFFF263" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="VertFormatting" Value="VertCentred" />
+            <Property Name="RiseOnClick" Value="False" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="WorldCup_Frame_BetSet1_TeamText">
+            <Property Name="UnifiedSize" Value="{{0.000000,179.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,145.000000},{0.000000,0.000000}}"/>
+            <Property Name="TextColor" Value="FFFFF263" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="VertFormatting" Value="VertCentred" />
+            <Property Name="RiseOnClick" Value="False" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="WorldCup_Frame_BetSet1_SessionText">
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,335.000000},{0.000000,0.000000}}"/>
+            <Property Name="TextColor" Value="FFFFF263" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="VertFormatting" Value="VertCentred" />
+            <Property Name="RiseOnClick" Value="False" />
+          </Window>
+          <Window Type="TLBB_ButtonCheck" Name="WorldCup_Frame_BetSet1_Check1">
+            <Property Name="UnifiedPosition" Value="{{0.0,376.000000},{0.000000,4.000000}" />
+            <Property Name="UnifiedSize" Value="{{0.0,12.000000},{0.000000,12.000000}" />
+            <Property Name="CheckMode" Value="1" />
+            <Event Name="MouseLButtonDown" Function="WorldCup_BetFrame_BetCheckBox_Click(1, 1);" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="WorldCup_Frame_BetSet1_Text1">
+            <Property Name="UnifiedPosition" Value="{{0.0,391.000000},{0.000000,0.000000}" />
+            <Property Name="UnifiedSize" Value="{{0.0,40.000000},{0.000000,20.000000}" />
+            <Property Name="TextColor" Value="FFFFF263" />
+            <Property Name="Text" Value="#{SJB_XML_26}" />
+            <Property Name="HorzFormatting" Value="LeftAligned" />
+            <Property Name="VertFormatting" Value="VertCentred" />
+            <Property Name="RiseOnClick" Value="False" />
+          </Window>
+          <Window Type="TLBB_ButtonCheck" Name="WorldCup_Frame_BetSet1_Check2">
+            <Property Name="UnifiedPosition" Value="{{0.0,434.000000},{0.000000,4.000000}" />
+            <Property Name="UnifiedSize" Value="{{0.0,12.000000},{0.000000,12.000000}" />
+            <Property Name="CheckMode" Value="1" />
+            <Event Name="MouseLButtonDown" Function="WorldCup_BetFrame_BetCheckBox_Click(1, 2);" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="WorldCup_Frame_BetSet1_Text">
+            <Property Name="UnifiedPosition" Value="{{0.0,449.000000},{0.000000,0.000000}" />
+            <Property Name="UnifiedSize" Value="{{0.0,40.000000},{0.000000,20.000000}" />
+            <Property Name="TextColor" Value="FFFFF263" />
+            <Property Name="Text" Value="#{SJB_XML_28}" />
+            <Property Name="HorzFormatting" Value="LeftAligned" />
+            <Property Name="VertFormatting" Value="VertCentred" />
+            <Property Name="RiseOnClick" Value="False" />
+          </Window>
+          <Window Type="TLBB_ButtonCheck" Name="WorldCup_Frame_BetSet1_Check3">
+            <Property Name="UnifiedPosition" Value="{{0.0,493.000000},{0.000000,4.000000}" />
+            <Property Name="UnifiedSize" Value="{{0.0,12.000000},{0.000000,12.000000}" />
+            <Property Name="CheckMode" Value="1" />
+            <Event Name="MouseLButtonDown" Function="WorldCup_BetFrame_BetCheckBox_Click(1, 3);" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="WorldCup_Frame_BetSet1_Text3">
+            <Property Name="UnifiedPosition" Value="{{0.0,506.000000},{0.000000,0.000000}" />
+            <Property Name="UnifiedSize" Value="{{0.0,30.000000},{0.000000,20.000000}" />
+            <Property Name="TextColor" Value="FFFFF263" />
+            <Property Name="Text" Value="#{SJB_XML_27}" />
+            <Property Name="HorzFormatting" Value="LeftAligned" />
+            <Property Name="VertFormatting" Value="VertCentred" />
+            <Property Name="RiseOnClick" Value="False" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="WorldCup_Frame_BetSet1_Text4">
+            <Property Name="UnifiedPosition" Value="{{0.0,434.000000},{0.000000,0.000000}" />
+            <Property Name="UnifiedSize" Value="{{0.0,40.000000},{0.000000,20.000000}" />
+            <Property Name="TextColor" Value="FFFFF263" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="VertFormatting" Value="VertCentred" />
+            <Property Name="RiseOnClick" Value="False" />
+          </Window>
+          <Window Type="TLBB_EditBoxNormal" Name="WorldCup_Frame_BetSet1_EditBox">
+            <Property Name="UnifiedSize" Value="{{0.000000,47.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,569.000000},{0.000000,0.000000}}"/>
+            <Property Name="MaxTextLength" Value="4" />
+            <Property Name="ValidationString" Value="[0-9]*" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="WorldCup_Frame_BetSet1_Explain">
+            <Property Name="UnifiedSize" Value="{{0.000000,33.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,621.000000},{0.000000,0.000000}}"/>
+            <Property Name="TextColor" Value="FFFFF263" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="VertFormatting" Value="VertCentred" />
+            <Property Name="RiseOnClick" Value="False" />
+          </Window>
+          <Window Type="TLBB_ButtonCommon" Name="WorldCup_Frame_BetSet1_OK">
+            <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,662.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#{INTERFACE_XML_557}"/>
+            <Event Name="Clicked" Function="WorldCup_BetFrame_SubmitButton_Click(1);" />
+          </Window>
+        </Window>
+
+        <Window Type="DefaultWindow" Name="WorldCup_Frame_BetSet2">
+          <Property Name="UnifiedSize" Value="{{0.000000,725.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,11.000000},{0.000000,73.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Window Type="TLBB_SimpleText" Name="WorldCup_Frame_BetSet2_DateText">
+            <Property Name="UnifiedSize" Value="{{0.000000,55.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+            <Property Name="TextColor" Value="FFFFF263" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="VertFormatting" Value="VertCentred" />
+            <Property Name="RiseOnClick" Value="False" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="WorldCup_Frame_BetSet2_TimeText">
+            <Property Name="UnifiedSize" Value="{{0.000000,53.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,77.000000},{0.000000,0.000000}}"/>
+            <Property Name="TextColor" Value="FFFFF263" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="VertFormatting" Value="VertCentred" />
+            <Property Name="RiseOnClick" Value="False" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="WorldCup_Frame_BetSet2_TeamText">
+            <Property Name="UnifiedSize" Value="{{0.000000,179.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,145.000000},{0.000000,0.000000}}"/>
+            <Property Name="TextColor" Value="FFFFF263" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="VertFormatting" Value="VertCentred" />
+            <Property Name="RiseOnClick" Value="False" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="WorldCup_Frame_BetSet2_SessionText">
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,335.000000},{0.000000,0.000000}}"/>
+            <Property Name="TextColor" Value="FFFFF263" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="VertFormatting" Value="VertCentred" />
+            <Property Name="RiseOnClick" Value="False" />
+          </Window>
+          <Window Type="TLBB_ButtonCheck" Name="WorldCup_Frame_BetSet2_Check1">
+            <Property Name="UnifiedPosition" Value="{{0.0,376.000000},{0.000000,4.000000}" />
+            <Property Name="UnifiedSize" Value="{{0.0,12.000000},{0.000000,12.000000}" />
+            <Property Name="CheckMode" Value="1" />
+            <Event Name="MouseLButtonDown" Function="WorldCup_BetFrame_BetCheckBox_Click(2, 1);" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="WorldCup_Frame_BetSet2_Text1">
+            <Property Name="UnifiedPosition" Value="{{0.0,391.000000},{0.000000,0.000000}" />
+            <Property Name="UnifiedSize" Value="{{0.0,40.000000},{0.000000,20.000000}" />
+            <Property Name="TextColor" Value="FFFFF263" />
+            <Property Name="Text" Value="#{SJB_XML_26}" />
+            <Property Name="HorzFormatting" Value="LeftAligned" />
+            <Property Name="VertFormatting" Value="VertCentred" />
+            <Property Name="RiseOnClick" Value="False" />
+          </Window>
+          <Window Type="TLBB_ButtonCheck" Name="WorldCup_Frame_BetSet2_Check2">
+            <Property Name="UnifiedPosition" Value="{{0.0,434.000000},{0.000000,4.000000}" />
+            <Property Name="UnifiedSize" Value="{{0.0,12.000000},{0.000000,12.000000}" />
+            <Property Name="CheckMode" Value="1" />
+            <Event Name="MouseLButtonDown" Function="WorldCup_BetFrame_BetCheckBox_Click(2, 2);" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="WorldCup_Frame_BetSet2_Text">
+            <Property Name="UnifiedPosition" Value="{{0.0,449.000000},{0.000000,0.000000}" />
+            <Property Name="UnifiedSize" Value="{{0.0,40.000000},{0.000000,20.000000}" />
+            <Property Name="TextColor" Value="FFFFF263" />
+            <Property Name="Text" Value="#{SJB_XML_28}" />
+            <Property Name="HorzFormatting" Value="LeftAligned" />
+            <Property Name="VertFormatting" Value="VertCentred" />
+            <Property Name="RiseOnClick" Value="False" />
+          </Window>
+          <Window Type="TLBB_ButtonCheck" Name="WorldCup_Frame_BetSet2_Check3">
+            <Property Name="UnifiedPosition" Value="{{0.0,493.000000},{0.000000,4.000000}" />
+            <Property Name="UnifiedSize" Value="{{0.0,12.000000},{0.000000,12.000000}" />
+            <Property Name="CheckMode" Value="1" />
+            <Event Name="MouseLButtonDown" Function="WorldCup_BetFrame_BetCheckBox_Click(2, 3);" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="WorldCup_Frame_BetSet2_Text3">
+            <Property Name="UnifiedPosition" Value="{{0.0,506.000000},{0.000000,0.000000}" />
+            <Property Name="UnifiedSize" Value="{{0.0,30.000000},{0.000000,20.000000}" />
+            <Property Name="TextColor" Value="FFFFF263" />
+            <Property Name="Text" Value="#{SJB_XML_27}" />
+            <Property Name="HorzFormatting" Value="LeftAligned" />
+            <Property Name="VertFormatting" Value="VertCentred" />
+            <Property Name="RiseOnClick" Value="False" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="WorldCup_Frame_BetSet2_Text4">
+            <Property Name="UnifiedPosition" Value="{{0.0,434.000000},{0.000000,0.000000}" />
+            <Property Name="UnifiedSize" Value="{{0.0,40.000000},{0.000000,20.000000}" />
+            <Property Name="TextColor" Value="FFFFF263" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="VertFormatting" Value="VertCentred" />
+            <Property Name="RiseOnClick" Value="False" />
+          </Window>
+          <Window Type="TLBB_EditBoxNormal" Name="WorldCup_Frame_BetSet2_EditBox">
+            <Property Name="UnifiedSize" Value="{{0.000000,47.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,569.000000},{0.000000,0.000000}}"/>
+            <Property Name="MaxTextLength" Value="4" />
+            <Property Name="ValidationString" Value="[0-9]*" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="WorldCup_Frame_BetSet2_Explain">
+            <Property Name="UnifiedSize" Value="{{0.000000,33.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,621.000000},{0.000000,0.000000}}"/>
+            <Property Name="TextColor" Value="FFFFF263" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="VertFormatting" Value="VertCentred" />
+            <Property Name="RiseOnClick" Value="False" />
+          </Window>
+          <Window Type="TLBB_ButtonCommon" Name="WorldCup_Frame_BetSet2_OK">
+            <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,662.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#{INTERFACE_XML_557}"/>
+            <Event Name="Clicked" Function="WorldCup_BetFrame_SubmitButton_Click(2);" />
+          </Window>
+        </Window>
+
+        <Window Type="DefaultWindow" Name="WorldCup_Frame_BetSet3">
+          <Property Name="UnifiedSize" Value="{{0.000000,725.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,11.000000},{0.000000,94.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Window Type="TLBB_SimpleText" Name="WorldCup_Frame_BetSet3_DateText">
+            <Property Name="UnifiedSize" Value="{{0.000000,55.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+            <Property Name="TextColor" Value="FFFFF263" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="VertFormatting" Value="VertCentred" />
+            <Property Name="RiseOnClick" Value="False" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="WorldCup_Frame_BetSet3_TimeText">
+            <Property Name="UnifiedSize" Value="{{0.000000,53.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,77.000000},{0.000000,0.000000}}"/>
+            <Property Name="TextColor" Value="FFFFF263" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="VertFormatting" Value="VertCentred" />
+            <Property Name="RiseOnClick" Value="False" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="WorldCup_Frame_BetSet3_TeamText">
+            <Property Name="UnifiedSize" Value="{{0.000000,179.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,145.000000},{0.000000,0.000000}}"/>
+            <Property Name="TextColor" Value="FFFFF263" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="VertFormatting" Value="VertCentred" />
+            <Property Name="RiseOnClick" Value="False" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="WorldCup_Frame_BetSet3_SessionText">
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,335.000000},{0.000000,0.000000}}"/>
+            <Property Name="TextColor" Value="FFFFF263" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="VertFormatting" Value="VertCentred" />
+            <Property Name="RiseOnClick" Value="False" />
+          </Window>
+          <Window Type="TLBB_ButtonCheck" Name="WorldCup_Frame_BetSet3_Check1">
+            <Property Name="UnifiedPosition" Value="{{0.0,376.000000},{0.000000,4.000000}" />
+            <Property Name="UnifiedSize" Value="{{0.0,12.000000},{0.000000,12.000000}" />
+            <Property Name="CheckMode" Value="1" />
+            <Event Name="MouseLButtonDown" Function="WorldCup_BetFrame_BetCheckBox_Click(3, 1);" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="WorldCup_Frame_BetSet3_Text1">
+            <Property Name="UnifiedPosition" Value="{{0.0,391.000000},{0.000000,0.000000}" />
+            <Property Name="UnifiedSize" Value="{{0.0,40.000000},{0.000000,20.000000}" />
+            <Property Name="TextColor" Value="FFFFF263" />
+            <Property Name="Text" Value="#{SJB_XML_26}" />
+            <Property Name="HorzFormatting" Value="LeftAligned" />
+            <Property Name="VertFormatting" Value="VertCentred" />
+            <Property Name="RiseOnClick" Value="False" />
+          </Window>
+          <Window Type="TLBB_ButtonCheck" Name="WorldCup_Frame_BetSet3_Check2">
+            <Property Name="UnifiedPosition" Value="{{0.0,434.000000},{0.000000,4.000000}" />
+            <Property Name="UnifiedSize" Value="{{0.0,12.000000},{0.000000,12.000000}" />
+            <Property Name="CheckMode" Value="1" />
+            <Event Name="MouseLButtonDown" Function="WorldCup_BetFrame_BetCheckBox_Click(3, 2);" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="WorldCup_Frame_BetSet3_Text">
+            <Property Name="UnifiedPosition" Value="{{0.0,449.000000},{0.000000,0.000000}" />
+            <Property Name="UnifiedSize" Value="{{0.0,40.000000},{0.000000,20.000000}" />
+            <Property Name="TextColor" Value="FFFFF263" />
+            <Property Name="Text" Value="#{SJB_XML_28}" />
+            <Property Name="HorzFormatting" Value="LeftAligned" />
+            <Property Name="VertFormatting" Value="VertCentred" />
+            <Property Name="RiseOnClick" Value="False" />
+          </Window>
+          <Window Type="TLBB_ButtonCheck" Name="WorldCup_Frame_BetSet3_Check3">
+            <Property Name="UnifiedPosition" Value="{{0.0,493.000000},{0.000000,4.000000}" />
+            <Property Name="UnifiedSize" Value="{{0.0,12.000000},{0.000000,12.000000}" />
+            <Property Name="CheckMode" Value="1" />
+            <Event Name="MouseLButtonDown" Function="WorldCup_BetFrame_BetCheckBox_Click(3, 3);" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="WorldCup_Frame_BetSet3_Text3">
+            <Property Name="UnifiedPosition" Value="{{0.0,506.000000},{0.000000,0.000000}" />
+            <Property Name="UnifiedSize" Value="{{0.0,30.000000},{0.000000,20.000000}" />
+            <Property Name="TextColor" Value="FFFFF263" />
+            <Property Name="Text" Value="#{SJB_XML_27}" />
+            <Property Name="HorzFormatting" Value="LeftAligned" />
+            <Property Name="VertFormatting" Value="VertCentred" />
+            <Property Name="RiseOnClick" Value="False" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="WorldCup_Frame_BetSet3_Text4">
+            <Property Name="UnifiedPosition" Value="{{0.0,434.000000},{0.000000,0.000000}" />
+            <Property Name="UnifiedSize" Value="{{0.0,40.000000},{0.000000,20.000000}" />
+            <Property Name="TextColor" Value="FFFFF263" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="VertFormatting" Value="VertCentred" />
+            <Property Name="RiseOnClick" Value="False" />
+          </Window>
+          <Window Type="TLBB_EditBoxNormal" Name="WorldCup_Frame_BetSet3_EditBox">
+            <Property Name="UnifiedSize" Value="{{0.000000,47.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,569.000000},{0.000000,0.000000}}"/>
+            <Property Name="MaxTextLength" Value="4" />
+            <Property Name="ValidationString" Value="[0-9]*" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="WorldCup_Frame_BetSet3_Explain">
+            <Property Name="UnifiedSize" Value="{{0.000000,33.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,621.000000},{0.000000,0.000000}}"/>
+            <Property Name="TextColor" Value="FFFFF263" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="VertFormatting" Value="VertCentred" />
+            <Property Name="RiseOnClick" Value="False" />
+          </Window>
+          <Window Type="TLBB_ButtonCommon" Name="WorldCup_Frame_BetSet3_OK">
+            <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,662.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#{INTERFACE_XML_557}"/>
+            <Event Name="Clicked" Function="WorldCup_BetFrame_SubmitButton_Click(3);" />
+          </Window>
+        </Window>
+
+        <Window Type="DefaultWindow" Name="WorldCup_Frame_BetSet4">
+          <Property Name="UnifiedSize" Value="{{0.000000,725.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,11.000000},{0.000000,115.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Window Type="TLBB_SimpleText" Name="WorldCup_Frame_BetSet4_DateText">
+            <Property Name="UnifiedSize" Value="{{0.000000,55.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+            <Property Name="TextColor" Value="FFFFF263" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="VertFormatting" Value="VertCentred" />
+            <Property Name="RiseOnClick" Value="False" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="WorldCup_Frame_BetSet4_TimeText">
+            <Property Name="UnifiedSize" Value="{{0.000000,53.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,77.000000},{0.000000,0.000000}}"/>
+            <Property Name="TextColor" Value="FFFFF263" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="VertFormatting" Value="VertCentred" />
+            <Property Name="RiseOnClick" Value="False" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="WorldCup_Frame_BetSet4_TeamText">
+            <Property Name="UnifiedSize" Value="{{0.000000,179.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,145.000000},{0.000000,0.000000}}"/>
+            <Property Name="TextColor" Value="FFFFF263" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="VertFormatting" Value="VertCentred" />
+            <Property Name="RiseOnClick" Value="False" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="WorldCup_Frame_BetSet4_SessionText">
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,335.000000},{0.000000,0.000000}}"/>
+            <Property Name="TextColor" Value="FFFFF263" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="VertFormatting" Value="VertCentred" />
+            <Property Name="RiseOnClick" Value="False" />
+          </Window>
+          <Window Type="TLBB_ButtonCheck" Name="WorldCup_Frame_BetSet4_Check1">
+            <Property Name="UnifiedPosition" Value="{{0.0,376.000000},{0.000000,4.000000}" />
+            <Property Name="UnifiedSize" Value="{{0.0,12.000000},{0.000000,12.000000}" />
+            <Property Name="CheckMode" Value="1" />
+            <Event Name="MouseLButtonDown" Function="WorldCup_BetFrame_BetCheckBox_Click(4, 1);" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="WorldCup_Frame_BetSet4_Text1">
+            <Property Name="UnifiedPosition" Value="{{0.0,391.000000},{0.000000,0.000000}" />
+            <Property Name="UnifiedSize" Value="{{0.0,40.000000},{0.000000,20.000000}" />
+            <Property Name="TextColor" Value="FFFFF263" />
+            <Property Name="Text" Value="#{SJB_XML_26}" />
+            <Property Name="HorzFormatting" Value="LeftAligned" />
+            <Property Name="VertFormatting" Value="VertCentred" />
+            <Property Name="RiseOnClick" Value="False" />
+          </Window>
+          <Window Type="TLBB_ButtonCheck" Name="WorldCup_Frame_BetSet4_Check2">
+            <Property Name="UnifiedPosition" Value="{{0.0,434.000000},{0.000000,4.000000}" />
+            <Property Name="UnifiedSize" Value="{{0.0,12.000000},{0.000000,12.000000}" />
+            <Property Name="CheckMode" Value="1" />
+            <Event Name="MouseLButtonDown" Function="WorldCup_BetFrame_BetCheckBox_Click(4, 2);" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="WorldCup_Frame_BetSet4_Text">
+            <Property Name="UnifiedPosition" Value="{{0.0,449.000000},{0.000000,0.000000}" />
+            <Property Name="UnifiedSize" Value="{{0.0,40.000000},{0.000000,20.000000}" />
+            <Property Name="TextColor" Value="FFFFF263" />
+            <Property Name="Text" Value="#{SJB_XML_28}" />
+            <Property Name="HorzFormatting" Value="LeftAligned" />
+            <Property Name="VertFormatting" Value="VertCentred" />
+            <Property Name="RiseOnClick" Value="False" />
+          </Window>
+          <Window Type="TLBB_ButtonCheck" Name="WorldCup_Frame_BetSet4_Check3">
+            <Property Name="UnifiedPosition" Value="{{0.0,493.000000},{0.000000,4.000000}" />
+            <Property Name="UnifiedSize" Value="{{0.0,12.000000},{0.000000,12.000000}" />
+            <Property Name="CheckMode" Value="1" />
+            <Event Name="MouseLButtonDown" Function="WorldCup_BetFrame_BetCheckBox_Click(4, 3);" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="WorldCup_Frame_BetSet4_Text3">
+            <Property Name="UnifiedPosition" Value="{{0.0,506.000000},{0.000000,0.000000}" />
+            <Property Name="UnifiedSize" Value="{{0.0,30.000000},{0.000000,20.000000}" />
+            <Property Name="TextColor" Value="FFFFF263" />
+            <Property Name="Text" Value="#{SJB_XML_27}" />
+            <Property Name="HorzFormatting" Value="LeftAligned" />
+            <Property Name="VertFormatting" Value="VertCentred" />
+            <Property Name="RiseOnClick" Value="False" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="WorldCup_Frame_BetSet4_Text4">
+            <Property Name="UnifiedPosition" Value="{{0.0,434.000000},{0.000000,0.000000}" />
+            <Property Name="UnifiedSize" Value="{{0.0,40.000000},{0.000000,20.000000}" />
+            <Property Name="TextColor" Value="FFFFF263" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="VertFormatting" Value="VertCentred" />
+            <Property Name="RiseOnClick" Value="False" />
+          </Window>
+          <Window Type="TLBB_EditBoxNormal" Name="WorldCup_Frame_BetSet4_EditBox">
+            <Property Name="UnifiedSize" Value="{{0.000000,47.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,569.000000},{0.000000,0.000000}}"/>
+            <Property Name="MaxTextLength" Value="4" />
+            <Property Name="ValidationString" Value="[0-9]*" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="WorldCup_Frame_BetSet4_Explain">
+            <Property Name="UnifiedSize" Value="{{0.000000,33.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,621.000000},{0.000000,0.000000}}"/>
+            <Property Name="TextColor" Value="FFFFF263" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="VertFormatting" Value="VertCentred" />
+            <Property Name="RiseOnClick" Value="False" />
+          </Window>
+          <Window Type="TLBB_ButtonCommon" Name="WorldCup_Frame_BetSet4_OK">
+            <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,662.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#{INTERFACE_XML_557}"/>
+            <Event Name="Clicked" Function="WorldCup_BetFrame_SubmitButton_Click(4);" />
+          </Window>
+        </Window>
+
+        <Window Type="TLBB_SimpleText" Name="WorldCup_Frame_BetFrame_Explain2">
+          <Property Name="UnifiedSize" Value="{{0.000000,112.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,220.000000}}"/>
+          <Property Name="Text" Value="#{SJB_XML_30}" />
+          <Property Name="TextColor" Value="FFFFF263" />
+          <Property Name="HorzFormatting" Value="LeftAligned" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+        <Window Type="TLBB_MultiColumnListNoScroll" Name="WorldCup_Frame_BetFrame_ResultTitle">
+          <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,242.000000}" />
+          <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{0.000000,184.000000}" />
+          <Property Name="ForceHorzScrollbar" Value="False" />
+          <Property Name="ForceVertScrollbar" Value="False" />
+          <Property Name="SortSettingEnabled" Value="False" />
+          <Property Name="SelectionMode" Value="RowSingle" />
+          <Property Name="ColumnHeader" Value="text:#{SJB_XML_20} width:0.1 id:0" />
+          <Property Name="ColumnHeader" Value="text:#{SJB_XML_21} width:0.1 id:1" />
+          <Property Name="ColumnHeader" Value="text:#{SJB_XML_22} width:0.3 id:2" />
+          <Property Name="ColumnHeader" Value="text:#{SJB_XML_23} width:0.05 id:3" />
+          <Property Name="ColumnHeader" Value="text:#{SJB_XML_120} width:0.1 id:4" />
+          <Property Name="ColumnHeader" Value="text:#{SJB_XML_31} width:0.1 id:5" />
+          <Property Name="ColumnHeader" Value="text:#{SJB_XML_119} width:0.1 id:6" />
+          <Property Name="ColumnHeader" Value="text:#{SJB_XML_118} width:0.148 id:7" />
+          <Property Name="ColumnsSizable" Value="False" />
+          <Property Name="ColumnsAdjust" Value="False" />
+          <Property Name="ColumnsMovable" Value="False" />
+          <Property Name="LineDrawOffset" Value="1" />
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="WorldCup_Frame_ViewFrame">
+        <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,72.000000}" />
+        <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-91.000000}" />
+        <!-- <Property Name="Visible" Value="False" /> -->
+        <Window Type="TLBB_MultiColumnList" Name="WorldCup_Frame_ViewFrame_ResultSet">
+          <Property Name="UnifiedSize" Value="{{0.000000,447.000000},{0.000000,428.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,300.000000},{0.000000,0.000000}}"/>
+          <Property Name="ForceHorzScrollbar" Value="False" />
+          <Property Name="ForceVertScrollbar" Value="False" />
+          <Property Name="SortSettingEnabled" Value="False" />
+          <Property Name="SelectionMode" Value="False" />
+          <Property Name="ColumnHeader" Value="text:#{SJB_XML_20} width:0.13 id:0" />
+          <Property Name="ColumnHeader" Value="text:#{SJB_XML_21} width:0.1 id:1" />
+          <Property Name="ColumnHeader" Value="text:#{SJB_XML_22} width:0.39 id:2" />
+          <Property Name="ColumnHeader" Value="text:#{SJB_XML_121} width:0.12 id:3" />
+          <Property Name="ColumnHeader" Value="text:#{SJB_XML_23} width:0.09 id:4" />
+          <Property Name="ColumnHeader" Value="text:#{SJB_XML_122} width:0.17 id:5" />
+          <Property Name="ColumnsSizable" Value="False" />
+          <Property Name="ColumnsAdjust" Value="True" />
+          <Property Name="ColumnsMovable" Value="False" />
+          <Property Name="LineDrawOffset" Value="0" />
+        </Window>
+        <Window Type="TLBB_Frame_Lace1" Name="WorldCup_Frame_ViewFrame_LeftBK">
+          <Property Name="UnifiedSize" Value="{{0.000000,298.000000},{0.000000,428.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,0.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="WorldCup_Frame_ViewFrame_Explain">
+            <Property Name="UnifiedSize" Value="{{0.000000,105.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,102.000000},{0.000000,8.000000}}"/>
+            <Property Name="TextColor" Value="FFFFF263" />
+            <Property Name="Text" Value="#{SJB_XML_32}" />
+            <Property Name="Font" Value="YouYuan11.25"/>
+            <Property Name="HorzFormatting" Value="LeftAligned" />
+            <Property Name="VertFormatting" Value="VertCentred" />
+            <Property Name="RiseOnClick" Value="False" />
+          </Window>
+          <Window Type="TLBB_ButtonCheckForRMBShop" Name="WorldCup_Frame_ViewFrame_A">
+            <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,21.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,34.000000},{0.000000,43.000000}}"/>
+            <Property Name="Text" Value="#{SJB_XML_33}"/>
+            <Property Name="CheckMode" Value="1" />
+            <Event Name="MouseLButtonDown" Function="WorldCup_ViewFrame_GroupButton_Click(1);" />
+          </Window>
+          <Window Type="TLBB_ButtonCheckForRMBShop" Name="WorldCup_Frame_ViewFrame_B">
+            <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,21.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,34.000000},{0.000000,74.000000}}"/>
+            <Property Name="Text" Value="#{SJB_XML_34}"/>
+            <Property Name="CheckMode" Value="1" />
+            <Event Name="MouseLButtonDown" Function="WorldCup_ViewFrame_GroupButton_Click(2);" />
+          </Window>
+          <Window Type="TLBB_ButtonCheckForRMBShop" Name="WorldCup_Frame_ViewFrame_C">
+            <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,21.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,34.000000},{0.000000,105.000000}}"/>
+            <Property Name="Text" Value="#{SJB_XML_35}"/>
+            <Property Name="CheckMode" Value="1" />
+            <Event Name="MouseLButtonDown" Function="WorldCup_ViewFrame_GroupButton_Click(3);" />
+          </Window>
+          <Window Type="TLBB_ButtonCheckForRMBShop" Name="WorldCup_Frame_ViewFrame_D">
+            <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,21.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,34.000000},{0.000000,136.000000}}"/>
+            <Property Name="Text" Value="#{SJB_XML_36}"/>
+            <Property Name="CheckMode" Value="1" />
+            <Event Name="MouseLButtonDown" Function="WorldCup_ViewFrame_GroupButton_Click(4);" />
+          </Window>
+          <Window Type="TLBB_ButtonCheckForRMBShop" Name="WorldCup_Frame_ViewFrame_E">
+            <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,21.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,172.000000},{0.000000,43.000000}}"/>
+            <Property Name="Text" Value="#{SJB_XML_37}"/>
+            <Property Name="CheckMode" Value="1" />
+            <Event Name="MouseLButtonDown" Function="WorldCup_ViewFrame_GroupButton_Click(5);" />
+          </Window>
+          <Window Type="TLBB_ButtonCheckForRMBShop" Name="WorldCup_Frame_ViewFrame_F">
+            <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,21.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,172.000000},{0.000000,74.000000}}"/>
+            <Property Name="Text" Value="#{SJB_XML_38}"/>
+            <Property Name="CheckMode" Value="1" />
+            <Event Name="MouseLButtonDown" Function="WorldCup_ViewFrame_GroupButton_Click(6);" />
+          </Window>
+          <Window Type="TLBB_ButtonCheckForRMBShop" Name="WorldCup_Frame_ViewFrame_G">
+            <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,21.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,172.000000},{0.000000,105.000000}}"/>
+            <Property Name="Text" Value="#{SJB_XML_39}"/>
+            <Property Name="CheckMode" Value="1" />
+            <Event Name="MouseLButtonDown" Function="WorldCup_ViewFrame_GroupButton_Click(7);" />
+          </Window>
+          <Window Type="TLBB_ButtonCheckForRMBShop" Name="WorldCup_Frame_ViewFrame_H">
+            <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,21.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,172.000000},{0.000000,136.000000}}"/>
+            <Property Name="Text" Value="#{SJB_XML_40}"/>
+            <Property Name="CheckMode" Value="1" />
+            <Event Name="MouseLButtonDown" Function="WorldCup_ViewFrame_GroupButton_Click(8);" />
+          </Window>
+          <Window Type="TLBB_MultiColumnListNoScroll" Name="WorldCup_Frame_ViewFrame_TeamScore">
+            <Property Name="UnifiedSize" Value="{{0.000000,296.000000},{0.000000,239.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,188.000000}}"/>
+            <Property Name="ForceHorzScrollbar" Value="False" />
+            <Property Name="ForceVertScrollbar" Value="False" />
+            <Property Name="SortSettingEnabled" Value="False" />
+            <Property Name="SelectionMode" Value="RowSingle" />
+            <Property Name="ColumnHeader" Value="text:#{SJB_XML_42} width:0.35 id:0" />
+            <Property Name="ColumnHeader" Value="text:#{SJB_XML_123} width:0.25 id:1" />
+            <Property Name="ColumnHeader" Value="text:#{SJB_XML_43} width:0.2 id:2" />
+            <Property Name="ColumnHeader" Value="text:#{SJB_XML_44} width:0.2 id:3" />
+            <Property Name="ColumnsSizable" Value="False" />
+            <Property Name="ColumnsAdjust" Value="True" />
+            <Property Name="ColumnsMovable" Value="False" />
+            <Property Name="LineDrawOffset" Value="1" />
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+</GUILayout>

@@ -1,0 +1,339 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_HeroFrame01" Name="Shanhebaojian_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,975.000000},{0.000000,576.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-485.000000},{0.500000,-285.000000}}"/>
+    <Event Name="Hidden" Function="Shanhebaojian_Close_Click()"/>
+    <Window Type="TLBB_HeroTitle01" Name="Shanhebaojian_DragTitleBK">
+      <Property Name="UnifiedSize" Value="{{0.000000,280.000000},{0.000000,30.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-140.000000},{0.000000,-2.000000}}"/>
+      <Property Name="DragTarget" Value="Shanhebaojian_Frame"/>
+    </Window>
+    <Window Type="TLBB_DragTitle" Name="Shanhebaojian_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,5.000000}}"/>
+      <Property Name="Text" Value="#{SHYBJ_20210805_06}"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="DragTarget" Value="Shanhebaojian_Frame"/>
+    </Window>
+    <Window Type="TLBB_ButtonNULL" Name="Shanhebaojian_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-32.000000},{0.000000,9.000000}}"/>
+      <Event Name="Clicked" Function="Shanhebaojian_Close_Click();" />
+      <Property Name="PushedImage" Value="set:ZLHeroMeeting image:Close_Push"/>
+      <Property Name="NormalImage" Value="set:ZLHeroMeeting image:Close_Normal"/>
+      <Property Name="HoverImage" Value="set:ZLHeroMeeting image:Close_Hover"/>
+      <Property Name="DisabledImage" Value="set:ZLHeroMeeting image:Close_Push"/>
+    </Window>
+    <Window Type="TLBB_StaticImageNULL" Name="Shanhebaojian_ClientBK">
+      <Property Name="UnifiedSize" Value="{{0.000000,967.000000},{0.000000,542.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,30.000000}}"/>
+      <Property Name="Image" Value="set:Shanhebaojian image:SHBJ_BackGround"/>
+      <Window Type="TLBB_SimpleText" Name="Shanhebaojian_Text">
+        <Property Name="UnifiedSize" Value="{{1.000000,-160.000000},{0.000000,70.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+        <Property Name="Text" Value="#{SHYBJ_20210805_07}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+      </Window>
+      <Window Type="DefaultWindow" Name="Shanhebaojian_MianBK">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,440.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-440.000000}}"/>
+        <Window Type="TLBB_StaticImageNULL" Name="Shanhebaojian_Frame1_Bk">
+          <Property Name="UnifiedSize" Value="{{0.000000,172.000000},{0.000000,441.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,14.000000},{0.000000,48.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:Shanhebaojian image:SHBJ_Frame3"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Shanhebaojian_Frame1_Wind">
+            <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,148.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,24.000000}}"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Shanhebaojian image:SHBJ_Wind"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="DefaultWindow" Name="Shanhebaojian_Frame1_Icon">
+            <Property Name="UnifiedSize" Value="{{0.000000,144.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-72.000000},{0.000000,256.000000}}"/>
+            <Window Type="TLBB_ActionButton" Name="Shanhebaojian_Frame1_Icon1">
+              <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="Shanhebaojian_Frame1_Icon2">
+              <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,36.000000},{0.000000,0.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="Shanhebaojian_Frame1_Icon3">
+              <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,72.000000},{0.000000,0.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="Shanhebaojian_Frame1_Icon4">
+              <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,108.000000},{0.000000,0.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ButtonCommon14" Name="Shanhebaojian_Frame1_Button">
+            <Property Name="UnifiedSize" Value="{{0.000000,66.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-33.000000},{1.000000,-140.000000}}"/>
+            <Event Name="Clicked" Function="Shanhebaojian_GetGift(1);"/>
+            <Window Type="TLBB_SimpleText" Name="Shanhebaojian_Frame1_BtnText">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-4.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.00000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Text" Value="#{SHYBJ_20210805_08}"/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+              <Property Name="Font" Value="YouYuan9.75"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Shanhebaojian_Frame1_Info">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.50000,-60.000000},{1.000000,-115.000000}}"/>
+            <Property Name="Text" Value="#{SHYBJ_20210805_11}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="Shanhebaojian_Frame2_Bk">
+          <Property Name="UnifiedSize" Value="{{0.000000,176.000000},{0.000000,441.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.00000,204.000000},{0.000000,8.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:Shanhebaojian image:SHBJ_Frame1"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Shanhebaojian_Frame2_Flower">
+            <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,148.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,24.000000}}"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Shanhebaojian image:SHBJ_Flower"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="DefaultWindow" Name="Shanhebaojian_Frame2_Icon">
+            <Property Name="UnifiedSize" Value="{{0.000000,144.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-72.000000},{0.000000,256.000000}}"/>
+            <Window Type="TLBB_ActionButton" Name="Shanhebaojian_Frame2_Icon1">
+              <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="Shanhebaojian_Frame2_Icon2">
+              <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,36.000000},{0.000000,0.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="Shanhebaojian_Frame2_Icon3">
+              <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,72.000000},{0.000000,0.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="Shanhebaojian_Frame2_Icon4">
+              <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,108.000000},{0.000000,0.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ButtonCommon14" Name="Shanhebaojian_Frame2_Button">
+            <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-35.000000},{1.000000,-140.000000}}"/>
+            <Event Name="Clicked" Function="Shanhebaojian_GetGift(2);"/>
+            <Window Type="TLBB_SimpleText" Name="Shanhebaojian_Frame2_BtnText">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-4.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.00000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Text" Value="#{SHYBJ_20210805_08}"/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+              <Property Name="Font" Value="YouYuan9.75"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Shanhebaojian_Frame2_Info">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.50000,-60.000000},{1.000000,-115.000000}}"/>
+            <Property Name="Text" Value="#{SHYBJ_20210805_11}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="Shanhebaojian_Frame3_Bk">
+          <Property Name="UnifiedSize" Value="{{0.000000,172.000000},{0.000000,441.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-86.000000},{0.000000,49.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:Shanhebaojian image:SHBJ_Frame1"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Shanhebaojian_Frame3_Snow">
+            <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,148.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,24.000000}}"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Shanhebaojian image:SHBJ_Snow"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="DefaultWindow" Name="Shanhebaojian_Frame3_Icon">
+            <Property Name="UnifiedSize" Value="{{0.000000,144.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-72.000000},{0.000000,256.000000}}"/>
+            <Window Type="TLBB_ActionButton" Name="Shanhebaojian_Frame3_Icon1">
+              <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="Shanhebaojian_Frame3_Icon2">
+              <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,36.000000},{0.000000,0.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="Shanhebaojian_Frame3_Icon3">
+              <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,72.000000},{0.000000,0.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="Shanhebaojian_Frame3_Icon4">
+              <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,108.000000},{0.000000,0.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ButtonCommon14" Name="Shanhebaojian_Frame3_Button">
+            <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-35.000000},{1.000000,-140.000000}}"/>
+            <Event Name="Clicked" Function="Shanhebaojian_GetGift(3);"/>
+            <Window Type="TLBB_SimpleText" Name="Shanhebaojian_Frame3_BtnText">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-4.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.00000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Text" Value="#{SHYBJ_20210805_08}"/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+              <Property Name="Font" Value="YouYuan9.75"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Shanhebaojian_Frame3_Info">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.50000,-60.000000},{1.000000,-115.000000}}"/>
+            <Property Name="Text" Value="#{SHYBJ_20210805_11}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="Shanhebaojian_Frame4_Bk">
+          <Property Name="UnifiedSize" Value="{{0.000000,172.000000},{0.000000,441.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.00000,-378.000000},{0.000000,8.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:Shanhebaojian image:SHBJ_Frame2"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Shanhebaojian_Frame4_Moon">
+            <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,148.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,24.000000}}"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Shanhebaojian image:SHBJ_Moon"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="DefaultWindow" Name="Shanhebaojian_Frame4_Icon">
+            <Property Name="UnifiedSize" Value="{{0.000000,144.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-72.000000},{0.000000,256.000000}}"/>
+            <Window Type="TLBB_ActionButton" Name="Shanhebaojian_Frame4_Icon1">
+              <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="Shanhebaojian_Frame4_Icon2">
+              <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,36.000000},{0.000000,0.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="Shanhebaojian_Frame4_Icon3">
+              <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,72.000000},{0.000000,0.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="Shanhebaojian_Frame4_Icon4">
+              <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,108.000000},{0.000000,0.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ButtonCommon14" Name="Shanhebaojian_Frame4_Button">
+            <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-35.000000},{1.000000,-140.000000}}"/>
+            <Event Name="Clicked" Function="Shanhebaojian_GetGift(4);"/>
+            <Window Type="TLBB_SimpleText" Name="Shanhebaojian_Frame4_BtnText">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-4.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.00000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Text" Value="#{SHYBJ_20210805_08}"/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+              <Property Name="Font" Value="YouYuan9.75"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Shanhebaojian_Frame4_Info">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.50000,-60.000000},{1.000000,-115.000000}}"/>
+            <Property Name="Text" Value="#{SHYBJ_20210805_11}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="Shanhebaojian_Frame5_Bk">
+          <Property Name="UnifiedSize" Value="{{0.000000,172.000000},{0.000000,441.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-189.000000},{0.000000,48.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:Shanhebaojian image:SHBJ_Frame2"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Shanhebaojian_Frame5_Poem">
+            <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,148.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,24.000000}}"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Shanhebaojian image:SHBJ_Poem"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="DefaultWindow" Name="Shanhebaojian_Frame5_Icon">
+            <Property Name="UnifiedSize" Value="{{0.000000,144.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-72.000000},{0.000000,256.000000}}"/>
+            <Window Type="TLBB_ActionButton" Name="Shanhebaojian_Frame5_Icon1">
+              <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="Shanhebaojian_Frame5_Icon2">
+              <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,36.000000},{0.000000,0.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="Shanhebaojian_Frame5_Icon3">
+              <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,72.000000},{0.000000,0.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="Shanhebaojian_Frame5_Icon4">
+              <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,108.000000},{0.000000,0.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ButtonCommon14" Name="Shanhebaojian_Frame5_Button">
+            <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-35.000000},{1.000000,-140.000000}}"/>
+            <Event Name="Clicked" Function="Shanhebaojian_GetGift(5);"/>
+            <Window Type="TLBB_SimpleText" Name="Shanhebaojian_Frame5_BtnText">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-4.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.00000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Text" Value="#{SHYBJ_20210805_08}"/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+              <Property Name="Font" Value="YouYuan9.75"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Shanhebaojian_Frame5_Info">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.50000,-60.000000},{1.000000,-115.000000}}"/>
+            <Property Name="Text" Value="#{SHYBJ_20210805_11}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

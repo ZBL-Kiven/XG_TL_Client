@@ -1,0 +1,113 @@
+<?xml version="1.0"?>
+<GUILayout>
+	<Window Type="TLBB_MainFrame0" Name="FreshManIntro_Frame">
+		<Property Name="UnifiedPosition" Value="{{0.400000,-200.000000},{0.120000,0.000000}}"/>
+		<Property Name="AbsoluteSize" Value="w:640.000000 h:480.000000"/>
+		<Event Name="Hidden" Function="FreshManIntro_Close();"/>
+		<Window Type="TLBB_DragTitle" Name="FreshManIntro_DragTitle">
+			<Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000"/>
+			<Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+			<Property Name="DragTarget" Value="FreshManIntro_Frame"/>
+			<Window Type="TLBB_SimpleText" Name="FreshManIntro_Text">
+				<Property Name="RelativePosition" Value="x:0.000000 y:0.000000"/>
+				<Property Name="RelativeSize" Value="w:1.000000 h:1.000000"/>
+				<Property Name="Font" Value="YouYuan11.25"/>
+				<Property Name="HorzFormatting" Value="HorzCentred"/>
+				<Property Name="RiseOnClick" Value="False"/>
+				<Property Name="Text" Value="#{XSRW_XML_1}"/>
+				<Property Name="VertFormatting" Value="VertCentred"/>
+			</Window>
+		</Window>
+		<Window Type="TLBB_ButtonHelp" Name="FreshManIntro_Help">
+			<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+			<Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000"/>
+			<Event Name="Clicked" Function="Helper:GotoHelper(&quot;*FreshManIntro&quot;);"/>
+		</Window>
+		<Window Type="TLBB_ButtonClose" Name="FreshManIntro_Close">
+			<Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+			<Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000"/>
+			<Event Name="Clicked" Function="FreshManIntro_Close();"/>
+		</Window>
+		<Window Type="DefaultWindow" Name="FreshManIntro_Background_Frame1">
+			<Property Name="AbsolutePosition" Value="x:5.000000 y:36.000000"/>
+			<Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,-55.000000}}"/>
+      <Window Type="TLBB_Frame_Lace3" Name="FreshManIntro_ImageFrame">
+        <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,9.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,610.000000},{0.000000,378.000000}}"/>
+        <Window Type="TLBB_StaticImageNULL" Name="FreshManIntro_Image1">
+          <Property Name="AbsolutePosition" Value="x:2.0 y:2.0" />
+          <Property Name="AbsoluteSize" Value="w:256.0 h:256.0" />
+          <Property Name="Image" Value="" />
+          <Property Name="MouseHollow" Value="False" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="FreshManIntro_Image2">
+          <Property Name="AbsolutePosition" Value="x:258.0 y:2.0" />
+          <Property Name="AbsoluteSize" Value="w:256.0 h:256.0" />
+          <Property Name="Image" Value="" />
+          <Property Name="MouseHollow" Value="False" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="FreshManIntro_Image3">
+          <Property Name="AbsolutePosition" Value="x:2.0 y:258.0" />
+          <Property Name="AbsoluteSize" Value="w:256.0 h:118.0" />
+          <Property Name="Image" Value="" />
+          <Property Name="MouseHollow" Value="False" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="FreshManIntro_Image4">
+          <Property Name="AbsolutePosition" Value="x:258.0 y:258.0" />
+          <Property Name="AbsoluteSize" Value="w:256.0 h:118.0" />
+          <Property Name="Image" Value="" />
+          <Property Name="MouseHollow" Value="False" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="FreshManIntro_Image5">
+          <Property Name="AbsolutePosition" Value="x:514.0 y:2.0" />
+          <Property Name="AbsoluteSize" Value="w:94.0 h:256.0" />
+          <Property Name="Image" Value="" />
+          <Property Name="MouseHollow" Value="False" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="FreshManIntro_Image6">
+          <Property Name="AbsolutePosition" Value="x:514.0 y:258.0" />
+          <Property Name="AbsoluteSize" Value="w:94.0 h:118.0" />
+          <Property Name="Image" Value="" />
+          <Property Name="MouseHollow" Value="False" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace2" Name="FreshManIntro_Bk">
+				<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-27.000000}}"/>
+				<Property Name="UnifiedSize" Value="{{0.998413,0.000000},{0.000000,27.000000}}"/>
+				<Window Type="TLBB_ButtonCommon2" Name="FreshManIntro_UpPage">
+          <Property Name="UnifiedPosition" Value="{{0.500000,-80.000000},{1.000000,-24.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,22.000000}}"/>
+					<Property Name="Text" Value="#{YBSD_081225_078}"/>
+					<Event Name="Clicked" Function="FreshManIntro_PageUp();"/>
+				</Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="FreshManIntro_CurrentlyPage">
+          <Property Name="UnifiedPosition" Value="{{0.500000,-30.000000},{1.000000,-24.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,22.000000}}"/>
+					<Property Name="HorzFormatting" Value="HorzCentred"/>
+					<Property Name="RiseOnClick" Value="False"/>
+					<Property Name="Text" Value=""/>
+					<Property Name="TextColor" Value="FFFFF263"/>
+					<Property Name="VertFormatting" Value="VertCentred"/>
+				</Window>
+				<Window Type="TLBB_ButtonCommon2" Name="FreshManIntro_DownPage">
+          <Property Name="UnifiedPosition" Value="{{0.500000,30.000000},{1.000000,-24.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,22.000000}}"/>
+					<Property Name="Text" Value="#{YBSD_081225_079}"/>
+					<Event Name="Clicked" Function="FreshManIntro_PageDown();"/>
+				</Window>
+        <Window Type="TLBB_ButtonCommon" Name="FreshManIntro_Quit">
+          <Property Name="AbsolutePosition" Value="x:567.000000 y:3.000000"/>
+          <Property Name="AbsoluteSize" Value="w:60.000000 h:22.000000"/>
+          <Property Name="Text" Value="#{INTERFACE_XML_302}"/>
+          <Event Name="Clicked" Function="FreshManIntro_Quit_Clicked();"/>
+        </Window>
+      </Window>
+		</Window>
+	</Window>
+</GUILayout>

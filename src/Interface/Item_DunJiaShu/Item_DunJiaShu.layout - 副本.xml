@@ -1,0 +1,223 @@
+<?xml version="1.0" ?>
+<GUILayout>
+    <Window Type="TLBB_MainFrameNULL" Name="Item_DunJiaShu_Frame">
+      <Property Name="UnifiedSize" Value="{{0.000000,382.000000},{0.000000,470.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-191.000000},{0.500000,-235.000000}}"/>     
+      <Window Type="TLBB_DragTitle" Name="Item_DunJiaShu_DragTitle">
+        <Property Name="UnifiedSize" Value="{{1.000000,-53.000000},{0.000000,42.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,6.000000}}"/>
+        <Property Name="DragTarget" Value="Item_DunJiaShu_Frame" />
+        <Window Type="TLBB_StaticImageNULL" Name="Item_DunJiaShu_Title">
+          <Property Name="UnifiedSize" Value="{{0.000000,128.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,105.000000},{0.000000,13.000000}}"/>
+          <Property Name="Image" Value="set:Menpaishuxing image:DunJiaShu_Title_Index"/>
+          <Property Name="Image" Value="set:Menpaishuxing image:DunJiaShu_Title_Monster"/>
+          <Property Name="RiseOnClick" Value="False"/>
+        </Window>
+  		</Window>   
+      <Window Type="TLBB_StaticImageNULL" Name="Item_DunJiaShu_BKG_0_0" >
+        <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.0,0}" />
+        <Property Name="UnifiedSize" Value="{{0.00000,256.000000},{0.00000,256}" />
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="Image" Value="set:DunJiaShu1 image:DunJiaShu_BKG_0_0" />
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="Item_DunJiaShu_BKG_1_0" >
+        <Property Name="UnifiedPosition" Value="{{0.0,256.000000},{0.0,0}" />
+        <Property Name="UnifiedSize" Value="{{0.00000,125.000000},{0.00000,256}" />
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="Image" Value="set:DunJiaShu2 image:DunJiaShu_BKG_1_0" />
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="Item_DunJiaShu_BKG_0_1" >
+        <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.0,256}" />
+        <Property Name="UnifiedSize" Value="{{0.00000,256.000000},{0.00000,210}" />
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="Image" Value="set:DunJiaShu3 image:DunJiaShu_BKG_0_1" />
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="Item_DunJiaShu_BKG_1_1" >
+        <Property Name="UnifiedPosition" Value="{{0.0,256.000000},{0.0,256}" />
+        <Property Name="UnifiedSize" Value="{{0.00000,125.000000},{0.00000,210}" />
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="Image" Value="set:DunJiaShu2 image:DunJiaShu_BKG_1_1" />
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="Item_DunJiaShu_Help">
+        <Property Name="UnifiedPosition" Value="{{0,10.0},{0.0,10}" />
+        <Property Name="UnifiedSize" Value="{{0.00000,23.000000},{0.00000,24}" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="HoverImage" Value="set:Handbook1 image:HandCard_Help_Hover" />
+        <Property Name="NormalImage" Value="set:Handbook1 image:HandCard_Help_Normal" />
+        <Property Name="PushedImage" Value="set:Handbook1 image:HandCard_Help_Pushed" />
+        <Property Name="DisabledImage" Value="set:Handbook1 image:HandCard_Help_Disabled" />
+        <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*Item_DunJiaShu&quot;);' />
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="Item_DunJiaShu_Close">
+        <Property Name="UnifiedPosition" Value="{{1.0,-35.00},{0.0,10.00}}"/>
+        <Property Name="UnifiedSize" Value="{{0.00000,23.000000},{0.00000,24}" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="HoverImage" Value="set:Handbook1 image:HandCard_Close_Hover" />
+        <Property Name="NormalImage" Value="set:Handbook1 image:HandCard_Close_Normal" />
+        <Property Name="PushedImage" Value="set:Handbook1 image:HandCard_Close_Pushed" />
+        <Property Name="DisabledImage" Value="set:Handbook1 image:HandCard_Close_Disabled" />
+        <Event Name="Clicked" Function="this:Hide();" />
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="Item_DunJiaShu_BuChong">
+        <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,19.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,130.000000},{1.000000,-42.000000}}"/>
+        <Property Name="NormalImage" Value="set:DunJiaShu4 image:DunJiaShu_Buchong_Normal"/>
+        <Property Name="HoverImage" Value="set:DunJiaShu4 image:DunJiaShu_Buchong_Hover"/>
+        <Property Name="PushedImage" Value="set:DunJiaShu4 image:DunJiaShu_Buchong_Pushed"/>
+        <Property Name="DisabledImage" Value="set:DunJiaShu4 image:DunJiaShu_Buchong_Disabled"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Event Name="Clicked" Function="Item_DunJiaShu_BuChong_Clicked();" />
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="Item_DunJiaShu_DingWei">
+        <Property Name="UnifiedSize" Value="{{0.000000,61.000000},{0.000000,19.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,225.000000},{1.000000,-42.000000}}"/>
+        <Property Name="NormalImage" Value="set:DunJiaShu4 image:DunJiaShu_Dingwei_Normal"/>
+        <Property Name="HoverImage" Value="set:DunJiaShu4 image:DunJiaShu_Dingwei_Hover"/>
+        <Property Name="PushedImage" Value="set:DunJiaShu4 image:DunJiaShu_Dingwei_Pushed"/>
+        <Property Name="DisabledImage" Value="set:DunJiaShu4 image:DunJiaShu_Dingwei_Disabled"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Event Name="Clicked" Function="Item_DunJiaShu_DingWei_Clicked();" />
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="Item_DunJiaShu_ChuanSong">
+        <Property Name="UnifiedSize" Value="{{0.000000,61.000000},{0.000000,19.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-81.000000},{1.000000,-42.000000}}"/>
+        <Property Name="NormalImage" Value="set:DunJiaShu4 image:DunJiaShu_Chuansong_Normal"/>
+        <Property Name="HoverImage" Value="set:DunJiaShu4 image:DunJiaShu_Chuansong_Hover"/>
+        <Property Name="PushedImage" Value="set:DunJiaShu4 image:DunJiaShu_Chuansong_Pushed"/>
+        <Property Name="DisabledImage" Value="set:DunJiaShu4 image:DunJiaShu_Chuansong_Disabled"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Event Name="Clicked" Function="Item_DunJiaShu_ChuanSong_Clicked();" />
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="Item_DunJiaShu_ShengYu">
+        <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,22.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,24.000000},{1.000000,-42.000000}}"/>
+        <Property Name="Text" Value="#{DJTS_110509_03}" />
+      </Window>
+      <Window Type="DefaultWindow" Name="Item_DunJiaShu_Frame_Client">
+        <Property Name="AbsolutePosition" Value="x:7.000000 y:50.000000" />
+        <Property Name="UnifiedSize" Value="{{1.000000,-17.000000},{1.000000,-106.000000}" />
+        <Window Type="TLBB_SimpleText" Name="Item_DunJiaShu_Info">
+          <Property Name="UnifiedSize" Value="{{0.000000,348.000000},{0.000000,161.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.000000,-1.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="Text" Value="#{DJTS_110509_02}" />
+        </Window>
+        <Window Type="DefaultWindow" Name="Item_DunJiaShu_Frame_Client1">
+          <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{0.000000,194.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{1.000000,-198.000000}}"/>      
+          <Window Type="TLBB_ButtonCheckNULL" Name="Item_DunJiaShu_Btn01">
+            <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,0.000000}" />
+            <Property Name="AbsoluteSize" Value="w:166.000000 h:40.000000" />
+            <Property Name="Text" Value="#{DJTS_110509_05}" />
+            <Property Name="NormalImage" Value="set:DunJiaShu4 image:DunJiaShu_Anniu_Normal"/>
+            <Property Name="HoverImage" Value="set:DunJiaShu4 image:DunJiaShu_Anniu_Hover"/>
+            <Property Name="PushedImage" Value="set:DunJiaShu4 image:DunJiaShu_Anniu_Pushed"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="Clicked" Function="Item_DunJiaShu_Btn_Clicked(1);" />
+            <Event Name="MouseLeave" Function="Item_DunJiaShu_Btn_MouseLeave();" />
+          </Window>
+          <Window Type="TLBB_ButtonCheckNULL" Name="Item_DunJiaShu_Btn03">
+            <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,39.000000}" />
+            <Property Name="AbsoluteSize" Value="w:166.000000 h:40.000000" />
+            <Property Name="Text" Value="#{DJTS_110509_05}" />
+            <Property Name="NormalImage" Value="set:DunJiaShu4 image:DunJiaShu_Anniu_Normal"/>
+            <Property Name="HoverImage" Value="set:DunJiaShu4 image:DunJiaShu_Anniu_Hover"/>
+            <Property Name="PushedImage" Value="set:DunJiaShu4 image:DunJiaShu_Anniu_Pushed"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="Clicked" Function="Item_DunJiaShu_Btn_Clicked(3);" />
+            <Event Name="MouseLeave" Function="Item_DunJiaShu_Btn_MouseLeave();" />
+          </Window>
+          <Window Type="TLBB_ButtonCheckNULL" Name="Item_DunJiaShu_Btn05">
+            <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,78.000000}" />
+            <Property Name="AbsoluteSize" Value="w:166.000000 h:40.000000" />
+            <Property Name="Text" Value="#{DJTS_110509_05}" />
+            <Property Name="NormalImage" Value="set:DunJiaShu4 image:DunJiaShu_Anniu_Normal"/>
+            <Property Name="HoverImage" Value="set:DunJiaShu4 image:DunJiaShu_Anniu_Hover"/>
+            <Property Name="PushedImage" Value="set:DunJiaShu4 image:DunJiaShu_Anniu_Pushed"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="Clicked" Function="Item_DunJiaShu_Btn_Clicked(5);" />
+            <Event Name="MouseLeave" Function="Item_DunJiaShu_Btn_MouseLeave();" />
+          </Window>
+          <Window Type="TLBB_ButtonCheckNULL" Name="Item_DunJiaShu_Btn07">
+            <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,117.000000}" />
+            <Property Name="AbsoluteSize" Value="w:166.000000 h:40.000000" />
+            <Property Name="Text" Value="#{DJTS_110509_05}" />
+            <Property Name="NormalImage" Value="set:DunJiaShu4 image:DunJiaShu_Anniu_Normal"/>
+            <Property Name="HoverImage" Value="set:DunJiaShu4 image:DunJiaShu_Anniu_Hover"/>
+            <Property Name="PushedImage" Value="set:DunJiaShu4 image:DunJiaShu_Anniu_Pushed"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="Clicked" Function="Item_DunJiaShu_Btn_Clicked(7);" />
+            <Event Name="MouseLeave" Function="Item_DunJiaShu_Btn_MouseLeave();" />
+          </Window>
+          <Window Type="TLBB_ButtonCheckNULL" Name="Item_DunJiaShu_Btn09">
+            <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,156.000000}" />
+            <Property Name="AbsoluteSize" Value="w:166.000000 h:40.000000" />
+            <Property Name="Text" Value="#{DJTS_110509_05}" />
+            <Property Name="NormalImage" Value="set:DunJiaShu4 image:DunJiaShu_Anniu_Normal"/>
+            <Property Name="HoverImage" Value="set:DunJiaShu4 image:DunJiaShu_Anniu_Hover"/>
+            <Property Name="PushedImage" Value="set:DunJiaShu4 image:DunJiaShu_Anniu_Pushed"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="Clicked" Function="Item_DunJiaShu_Btn_Clicked(9);" />
+            <Event Name="MouseLeave" Function="Item_DunJiaShu_Btn_MouseLeave();" />
+          </Window>
+          <Window Type="TLBB_ButtonCheckNULL" Name="Item_DunJiaShu_Btn02">
+            <Property Name="UnifiedPosition" Value="{{0.000000,184.000000},{0.000000,0.000000}" />
+            <Property Name="AbsoluteSize" Value="w:166.000000 h:40.000000" />
+            <Property Name="Text" Value="#{DJTS_110509_05}" />
+            <Property Name="NormalImage" Value="set:DunJiaShu4 image:DunJiaShu_Anniu_Normal"/>
+            <Property Name="HoverImage" Value="set:DunJiaShu4 image:DunJiaShu_Anniu_Hover"/>
+            <Property Name="PushedImage" Value="set:DunJiaShu4 image:DunJiaShu_Anniu_Pushed"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="Clicked" Function="Item_DunJiaShu_Btn_Clicked(2);" />
+            <Event Name="MouseLeave" Function="Item_DunJiaShu_Btn_MouseLeave();" />
+          </Window>
+          <Window Type="TLBB_ButtonCheckNULL" Name="Item_DunJiaShu_Btn04">
+            <Property Name="UnifiedPosition" Value="{{0.000000,184.000000},{0.000000,39.000000}" />
+            <Property Name="AbsoluteSize" Value="w:166.000000 h:40.000000" />
+            <Property Name="Text" Value="#{DJTS_110509_05}" />
+            <Property Name="NormalImage" Value="set:DunJiaShu4 image:DunJiaShu_Anniu_Normal"/>
+            <Property Name="HoverImage" Value="set:DunJiaShu4 image:DunJiaShu_Anniu_Hover"/>
+            <Property Name="PushedImage" Value="set:DunJiaShu4 image:DunJiaShu_Anniu_Pushed"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="Clicked" Function="Item_DunJiaShu_Btn_Clicked(4);" />
+            <Event Name="MouseLeave" Function="Item_DunJiaShu_Btn_MouseLeave();" />
+          </Window>
+          <Window Type="TLBB_ButtonCheckNULL" Name="Item_DunJiaShu_Btn06">
+            <Property Name="UnifiedPosition" Value="{{0.000000,184.000000},{0.000000,78.000000}" />
+            <Property Name="AbsoluteSize" Value="w:166.000000 h:40.000000" />
+            <Property Name="Text" Value="#{DJTS_110509_05}" />
+            <Property Name="NormalImage" Value="set:DunJiaShu4 image:DunJiaShu_Anniu_Normal"/>
+            <Property Name="HoverImage" Value="set:DunJiaShu4 image:DunJiaShu_Anniu_Hover"/>
+            <Property Name="PushedImage" Value="set:DunJiaShu4 image:DunJiaShu_Anniu_Pushed"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="Clicked" Function="Item_DunJiaShu_Btn_Clicked(6);" />
+            <Event Name="MouseLeave" Function="Item_DunJiaShu_Btn_MouseLeave();" />
+          </Window>
+          <Window Type="TLBB_ButtonCheckNULL" Name="Item_DunJiaShu_Btn08">
+            <Property Name="UnifiedPosition" Value="{{0.000000,184.000000},{0.000000,117.000000}" />
+            <Property Name="AbsoluteSize" Value="w:166.000000 h:40.000000" />
+            <Property Name="Text" Value="#{DJTS_110509_05}" />
+            <Property Name="NormalImage" Value="set:DunJiaShu4 image:DunJiaShu_Anniu_Normal"/>
+            <Property Name="HoverImage" Value="set:DunJiaShu4 image:DunJiaShu_Anniu_Hover"/>
+            <Property Name="PushedImage" Value="set:DunJiaShu4 image:DunJiaShu_Anniu_Pushed"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="Clicked" Function="Item_DunJiaShu_Btn_Clicked(8);" />
+            <Event Name="MouseLeave" Function="Item_DunJiaShu_Btn_MouseLeave();" />
+          </Window>
+          <Window Type="TLBB_ButtonCheckNULL" Name="Item_DunJiaShu_Btn10">
+            <Property Name="UnifiedPosition" Value="{{0.000000,184.000000},{0.000000,156.000000}" />
+            <Property Name="AbsoluteSize" Value="w:166.000000 h:40.000000" />
+            <Property Name="Text" Value="#{DJTS_110509_05}" />
+            <Property Name="NormalImage" Value="set:DunJiaShu4 image:DunJiaShu_Anniu_Normal"/>
+            <Property Name="HoverImage" Value="set:DunJiaShu4 image:DunJiaShu_Anniu_Hover"/>
+            <Property Name="PushedImage" Value="set:DunJiaShu4 image:DunJiaShu_Anniu_Pushed"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="Clicked" Function="Item_DunJiaShu_Btn_Clicked(10);" />
+            <Event Name="MouseLeave" Function="Item_DunJiaShu_Btn_MouseLeave();" />
+          </Window>
+        </Window>
+        </Window>
+    </Window>
+</GUILayout>

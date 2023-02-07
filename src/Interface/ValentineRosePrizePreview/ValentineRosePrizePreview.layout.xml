@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame0" Name="ValentineRosePrizePreview_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,288.000000},{0.000000,319.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-100.000000},{0.500000,-220.000000}}"/>
+    <Window Type="TLBB_DragTitle" Name="ValentineRosePrizePreview_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-86.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,43.000000},{0.000000,2.000000}}"/>
+      <Property Name="DragTarget" Value="ValentineRosePrizePreview_Frame"/>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="ValentineRosePrizePreview_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="ValentineRosePrizePreview_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="ValentineRosePrizePreview_OnHiden()" />
+    </Window>
+    <Window Type="TLBB_Frame_Lace6" Name="ValentineRosePrizePreview_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-15.000000},{1.000000,-46.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,29.000000}}"/>
+      <Window Type="TLBB_StaticImageNULL" Name="ValentineRosePrizePreview_Pic">
+        <Property Name="UnifiedSize" Value="{{0.000000,256.000000},{0.000000,256.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,9.000000}}"/>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

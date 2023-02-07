@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<GUILayout>
+	<Window Type="DefaultWindow" Name="NewMessageBall_Frame">
+    <Property Name="UnifiedPosition" Value="{{0.500000,-50.000000},{1.000000,-158.000000}" />
+    <Property Name="AbsoluteSize" Value="w:86.000000 h:28.000000" />
+	<Property Name="MouseHollow" Value="True" />
+		<Window Type="TLBB_Animate" Name="NewMessageBall_Button_Action1_Mask">
+			<Property Name="Position" Value="x:0.0 y:0.0" />
+			<Property Name="Size" Value="w:0.32 h:1.0" />
+			<Property Name="Animate" Value="CoolDownEnd2" />
+			<Property Name="AlwaysOnTop" Value="True" />
+			<Event Name="MouseLClick" Function="NewMessageBall_Button_Action1_Mask_Click();" />
+		</Window>
+		<Window Type="TLBB_Animate" Name="NewMessageBall_Button_Action2_Mask">
+			<Property Name="Position" Value="x:0.337 y:0.0" />
+			<Property Name="Size" Value="w:0.32 h:1.0" />
+			<Property Name="Animate" Value="CoolDownEnd2" />
+			<Property Name="AlwaysOnTop" Value="True" />
+			<Event Name="MouseLClick" Function="NewMessageBall_Button_Action2_Mask_Click();" />
+		</Window>
+		<Window Type="TLBB_Animate" Name="NewMessageBall_Button_Action3_Mask">
+			<Property Name="Position" Value="x:0.674 y:0.0" />
+			<Property Name="Size" Value="w:0.32 h:1.0" />
+			<Property Name="Animate" Value="CoolDownEnd2" />
+			<Property Name="AlwaysOnTop" Value="True" />
+			<Event Name="MouseLClick" Function="NewMessageBall_Button_Action3_Mask_Click();" />
+		</Window>
+	</Window>
+</GUILayout>

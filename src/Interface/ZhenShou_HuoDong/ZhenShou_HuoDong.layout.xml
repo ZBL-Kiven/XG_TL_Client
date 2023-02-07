@@ -1,0 +1,276 @@
+<?xml version="1.0" ?>
+<GUILayout>
+    <Window Type="TLBB_MainFrameNULL" Name="ZhenShou_HuoDong_Frame">
+        <Property Name="UnifiedSize" Value="{{0.000000,710.000000},{0.000000,504.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-355.000000},{0.500000,-252.000000}}"/>
+        <Event Name="Hidden" Function="ZhenShou_HuoDong_OnHiden();" />
+        <Window Type="TLBB_HeroFrame01" Name="ZhenShou_HuoDong_FrameBK">
+            <Property Name="UnifiedSize" Value="{{0.000000,710.000000},{0.000000,504.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Window Type="TLBB_HeroTitle01" Name="ZhenShou_HuoDong_DragTitleBK">
+                <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,30.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-150.000000},{0.000000,-2.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+            </Window>
+            <Window Type="TLBB_DragTitle" Name="ZhenShou_HuoDong_DragTitle">
+                <Property Name="UnifiedSize" Value="{{1.000000,-70.000000},{0.000000,22.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,35.000000},{0.000000,2.000000}}"/>
+                <Property Name="Text" Value="#{ZSYR_211227_14}"/>
+                <Property Name="Font" Value="YouYuan9.75"/>
+                <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+                <Property Name="DragTarget" Value="ZhenShou_HuoDong_Frame" />
+            </Window>
+            <Window Type="TLBB_ButtonClose2" Name="ZhenShou_HuoDong_Close">
+                <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,14.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-28.000000},{0.000000,8.000000}}"/>
+                <Event Name="Clicked" Function="ZhenShou_HuoDong_Close();" />
+            </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="ZhenShou_HuoDong_Frame_Client">
+            <Property Name="UnifiedSize" Value="{{0.000000,710.000000},{0.000000,474.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,30.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:ZhenShou_HuoDong image:ZhenShou_HuoDong_BK"/>
+            <Window Type="TLBB_SimpleText" Name="ZhenShou_HuoDong_Info">
+                <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,90.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,12.000000}}"/>
+                <Property Name="Text" Value="#{ZSYR_211227_302}"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="ZhenShou_HuoDong_Info_Day">
+                <Property Name="UnifiedSize" Value="{{1.000000,-512.000000},{0.000000,150.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,480.000000},{0.000000,150.000000}}"/>
+                <Property Name="Text" Value="#{ZSYR_211227_15}"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            </Window>
+            <Window Type="TLBB_ButtonNULL" Name="ZhenShou_HuoDong_Info_Btn">
+                <Property Name="UnifiedSize" Value="{{0.000000,148.000000},{0.000000,36.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,515.000000},{0.000000,355.000000}}"/>
+                <Property Name="Tooltip" Value="#{}"/>
+                <Property Name="PushedImage" Value="set:ZhenShou_HuoDong image:ZhenShou_HuoDong_Btn_P"/>
+                <Property Name="NormalImage" Value="set:ZhenShou_HuoDong image:ZhenShou_HuoDong_Btn_N"/>
+                <Property Name="HoverImage" Value="set:ZhenShou_HuoDong image:ZhenShou_HuoDong_Btn_H"/>
+                <Event Name="Clicked" Function="ZhenShou_HuoDong_BtnClicked();"/>
+            </Window>
+            <Window Type="DefaultWindow" Name="ZhenShou_HuoDong_1BK">
+                <Property Name="UnifiedSize" Value="{{1.000000,-322.000000},{0.000000,90.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,52.000000},{0.000000,135.000000}}"/>
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+
+                <Window Type="TLBB_StaticImageNULL" Name="ZhenShou_HuoDong_1BK_1">
+                    <Property Name="UnifiedSize" Value="{{0.000000,388.000000},{0.000000,85.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                    <Property Name="RiseOnClick" Value="False"/>
+                    <Property Name="Image" Value="set: image:"/>
+                    <Window Type="TLBB_ButtonCommon" Name="ZhenShou_HuoDong_1BK_Btn">
+                        <Property Name="UnifiedSize" Value="{{0.000000,74.000000},{0.000000,26.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,305.000000},{0.000000,32.000000}}"/>
+                        <Property Name="Tooltip" Value="#{}"/>
+                        <Property Name="Text" Value="#{ZSYR_211227_22}"/>
+                        <Property Name="PushedImage" Value="set:ZLHeroMeeting image:Button_Push"/>
+                        <Property Name="NormalImage" Value="set:ZLHeroMeeting image:Button_Normal"/>
+                        <Property Name="HoverImage" Value="set:ZLHeroMeeting image:Button_Hover"/>
+                        <Property Name="DisabledImage" Value="set:ZhenShou_HuoDong image:ZhenShou_HuoDong_Btn_D"/>
+                        <Property Name="AlwaysOnTop" Value="True"/>
+                        <Event Name="Clicked" Function="ZhenShou_HuoDong_Clicked(1);"/>
+                    </Window>
+                    <Window Type="TLBB_StaticImageNULL" Name="ZhenShou_HuoDong_1BK_Btn_D">
+                        <Property Name="UnifiedSize" Value="{{0.000000,74.000000},{0.000000,26.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,305.000000},{0.000000,32.000000}}"/>
+                        <Property Name="RiseOnClick" Value="False"/>
+                        <Property Name="Image" Value="set:ZhenShou_HuoDong image:ZhenShou_HuoDong_Btn_D"/>
+                    </Window>
+                    <Window Type="DefaultWindow" Name="ZhenShou_HuoDong_1Text">
+                        <Property Name="UnifiedSize" Value="{{0.000000,242.000000},{0.000000,60.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,25.000000}}"/>
+                        <Property Name="RiseOnClick" Value="False"/>
+                        <Property Name="MouseRButtonHollow" Value="True"/>
+                        <Property Name="MouseMoveHollow" Value="True"/>
+                        <Property Name="MouseLButtonHollow" Value="True"/>
+                        <Property Name="MouseHollow" Value="True"/>
+                        <Window Type="TLBB_SimpleText" Name="ZhenShou_HuoDong_Text1">
+                            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                            <Property Name="Text" Value="#{ZSYR_211227_19}"/>
+                            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+                        </Window>
+                    </Window>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="ZhenShou_HuoDong_1BK_2">
+                    <Property Name="UnifiedSize" Value="{{0.000000,390.000000},{0.000000,85.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                    <Property Name="RiseOnClick" Value="False"/>
+                    <Property Name="Image" Value="set: image:"/>
+                    <Window Type="TLBB_SimpleText" Name="ZhenShou_HuoDong_1BK_2_Text">
+                        <Property Name="UnifiedSize" Value="{{1.000000,-145.000000},{1.000000,-8.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,8.000000}}"/>
+                        <Property Name="Text" Value="#{ZSYR_211227_304}"/>
+                        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+                    </Window>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="ZhenShou_HuoDong_Item1BK">
+                    <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,250.000000},{0.000000,25.000000}}"/>
+                    <Property Name="Image" Value="set:ZhenShou_HuoDong image:ZhenShou_HuoDong_Item_BK"/>
+                    <Window Type="TLBB_ActionButton" Name="ZhenShou_HuoDong_Item1">
+                        <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.500000,-18.000000},{0.500000,-18.000000}}"/>
+                    </Window>
+                </Window>
+            </Window>
+            <Window Type="DefaultWindow" Name="ZhenShou_HuoDong_2BK">
+                <Property Name="UnifiedSize" Value="{{1.000000,-322.000000},{0.000000,85.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,52.000000},{0.000000,220.000000}}"/>
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+                <Window Type="TLBB_StaticImageNULL" Name="ZhenShou_HuoDong_2BK_1">
+                    <Property Name="UnifiedSize" Value="{{0.000000,388.000000},{0.000000,85.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                    <Property Name="RiseOnClick" Value="False"/>
+                    <Property Name="Image" Value="set: image:"/>
+                    <Window Type="TLBB_ButtonCommon" Name="ZhenShou_HuoDong_2BK_Btn">
+                        <Property Name="UnifiedSize" Value="{{0.000000,74.000000},{0.000000,26.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,305.000000},{0.000000,32.000000}}"/>
+                        <Property Name="Tooltip" Value="#{}"/>
+                        <Property Name="Text" Value="#{ZSYR_211227_22}"/>
+                        <Property Name="PushedImage" Value="set:ZLHeroMeeting image:Button_Push"/>
+                        <Property Name="NormalImage" Value="set:ZLHeroMeeting image:Button_Normal"/>
+                        <Property Name="HoverImage" Value="set:ZLHeroMeeting image:Button_Hover"/>
+                        <Property Name="DisabledImage" Value="set:ZhenShou_HuoDong image:ZhenShou_HuoDong_Btn_D"/>
+                        <Property Name="AlwaysOnTop" Value="True"/>
+                        <Event Name="Clicked" Function="ZhenShou_HuoDong_Clicked(2);"/>
+                    </Window>
+                    <Window Type="TLBB_StaticImageNULL" Name="ZhenShou_HuoDong_2BK_Btn_D">
+                        <Property Name="UnifiedSize" Value="{{0.000000,74.000000},{0.000000,26.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,305.000000},{0.000000,32.000000}}"/>
+                        <Property Name="RiseOnClick" Value="False"/>
+                        <Property Name="Image" Value="set:ZhenShou_HuoDong image:ZhenShou_HuoDong_Btn_D"/>
+                    </Window>
+                    <Window Type="DefaultWindow" Name="ZhenShou_HuoDong_2Text">
+                        <Property Name="UnifiedSize" Value="{{0.000000,242.000000},{0.000000,60.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,30.000000}}"/>
+                        <Property Name="RiseOnClick" Value="False"/>
+                        <Property Name="MouseRButtonHollow" Value="True"/>
+                        <Property Name="MouseMoveHollow" Value="True"/>
+                        <Property Name="MouseLButtonHollow" Value="True"/>
+                        <Property Name="MouseHollow" Value="True"/>
+                        <Window Type="TLBB_SimpleText" Name="ZhenShou_HuoDong_Text2">
+                            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                            <Property Name="Text" Value="#{ZSYR_211227_20}"/>
+                            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+                        </Window>
+                    </Window>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="ZhenShou_HuoDong_2BK_2">
+                    <Property Name="UnifiedSize" Value="{{0.000000,388.000000},{0.000000,85.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                    <Property Name="RiseOnClick" Value="False"/>
+                    <Property Name="Image" Value="set: image:"/>
+                    <Window Type="TLBB_SimpleText" Name="ZhenShou_HuoDong_2BK_2_Text">
+                        <Property Name="UnifiedSize" Value="{{1.000000,-130.000000},{1.000000,-20.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,20.000000}}"/>
+                        <Property Name="Text" Value="#{ZSYR_211227_305}"/>
+                        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+                    </Window>
+                </Window>
+
+                <Window Type="DefaultWindow" Name="ZhenShou_HuoDong_Item2BK">
+                    <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,250.000000},{0.000000,25.000000}}"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                    <Window Type="TLBB_ActionButton" Name="ZhenShou_HuoDong_Item2">
+                        <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.500000,-18.000000},{0.500000,-18.000000}}"/>
+                    </Window>
+                </Window>
+            </Window>
+
+            <Window Type="DefaultWindow" Name="ZhenShou_HuoDong_3BK">
+                <Property Name="UnifiedSize" Value="{{1.000000,-322.000000},{0.000000,85.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,52.000000},{0.000000,310.000000}}"/>
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+                <Window Type="TLBB_StaticImageNULL" Name="ZhenShou_HuoDong_3BK_1">
+                    <Property Name="UnifiedSize" Value="{{0.000000,388.000000},{0.000000,85.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                    <Property Name="RiseOnClick" Value="False"/>
+                    <Property Name="Image" Value="set: image:"/>
+                    <Window Type="TLBB_ButtonCommon" Name="ZhenShou_HuoDong_3BK_Btn">
+                        <Property Name="UnifiedSize" Value="{{0.000000,74.000000},{0.000000,26.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,305.000000},{0.000000,32.000000}}"/>
+                        <Property Name="Tooltip" Value="#{}"/>
+                        <Property Name="Text" Value="#{ZSYR_211227_22}"/>
+                        <Property Name="PushedImage" Value="set:ZLHeroMeeting image:Button_Push"/>
+                        <Property Name="NormalImage" Value="set:ZLHeroMeeting image:Button_Normal"/>
+                        <Property Name="HoverImage" Value="set:ZLHeroMeeting image:Button_Hover"/>
+                        <Property Name="AlwaysOnTop" Value="True"/>
+                        <Event Name="Clicked" Function="ZhenShou_HuoDong_Clicked(3);"/>
+                    </Window>
+                    <Window Type="TLBB_StaticImageNULL" Name="ZhenShou_HuoDong_3BK_Btn_D">
+                        <Property Name="UnifiedSize" Value="{{0.000000,74.000000},{0.000000,26.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,305.000000},{0.000000,32.000000}}"/>
+                        <Property Name="RiseOnClick" Value="False"/>
+                        <Property Name="Image" Value="set:ZhenShou_HuoDong image:ZhenShou_HuoDong_Btn_D"/>
+                    </Window>
+                    <Window Type="DefaultWindow" Name="ZhenShou_HuoDong_3Text">
+                        <Property Name="UnifiedSize" Value="{{0.000000,242.000000},{0.000000,60.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,25.000000}}"/>
+                        <Property Name="RiseOnClick" Value="False"/>
+                        <Property Name="MouseRButtonHollow" Value="True"/>
+                        <Property Name="MouseMoveHollow" Value="True"/>
+                        <Property Name="MouseLButtonHollow" Value="True"/>
+                        <Property Name="MouseHollow" Value="True"/>
+                        <Window Type="TLBB_SimpleText" Name="ZhenShou_HuoDong_Text3">
+                            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                            <Property Name="Text" Value="#{ZSYR_211227_21}"/>
+                            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+                        </Window>
+                    </Window>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="ZhenShou_HuoDong_3BK_2">
+                    <Property Name="UnifiedSize" Value="{{0.000000,388.000000},{0.000000,85.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                    <Property Name="RiseOnClick" Value="False"/>
+                    <Property Name="Image" Value="set: image:"/>
+                    <Window Type="TLBB_SimpleText" Name="ZhenShou_HuoDong_3BK_2_Text">
+                        <Property Name="UnifiedSize" Value="{{1.000000,-130.000000},{1.000000,-20.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,20.000000}}"/>
+                        <Property Name="Text" Value="#{ZSYR_211227_306}"/>
+                        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+                    </Window>
+                </Window>
+
+
+                <Window Type="TLBB_StaticImageNULL" Name="ZhenShou_HuoDong_Item3BK">
+                    <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,250.000000},{0.000000,25.000000}}"/>
+                    <Property Name="Image" Value="set:ZhenShou_HuoDong image:ZhenShou_HuoDong_Item_BK"/>
+                    <Window Type="TLBB_ActionButton" Name="ZhenShou_HuoDong_Item3">
+                        <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.500000,-18.000000},{0.500000,-18.000000}}"/>
+                    </Window>
+                </Window>
+            </Window>
+
+            <Window Type="TLBB_StaticImageNULL" Name="ZhenShou_HuoDong_NumBK">
+                <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,315.000000},{1.000000,-365.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="Image" Value="set:ZhenShou_HuoDong image:ZhenShou_HuoDong_TextBK"/>
+                <Window Type="TLBB_SimpleText" Name="ZhenShou_HuoDong_NumText">
+                    <Property Name="UnifiedSize" Value="{{1.000000,-45.000000},{1.000000,0.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,35.000000},{0.000000,0.000000}}"/>
+                    <Property Name="Text" Value="#{ZSYR_211227_24}"/>
+                    <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="ZhenShou_HuoDong_Num">
+                    <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{1.000000,0.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,90.000000},{0.000000,0.000000}}"/>
+                    <Property Name="Text" Value="#{ZSYR_211227_25}"/>
+                    <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+                </Window>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

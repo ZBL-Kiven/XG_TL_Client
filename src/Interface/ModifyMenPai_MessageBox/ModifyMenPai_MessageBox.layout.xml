@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_Frame3" Name="ModifyMenPai_MessageBox_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,480.000000},{0.000000,310.000000}" />
+    <Property Name="UnifiedPosition" Value="{{0.500000,-240.000000},{0.500000,-155.000000}" />
+    <Window Type="TLBB_SimpleText" Name="ModifyMenPai_MessageBox_Title">
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,10.000000}" />
+      <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+      <Property Name="VertFormatting" Value="VertCentred" />
+      <Property Name="RiseOnClick" Value="False" />
+      <Property Name="Text" Value="#{MPZH_180719_133}"/>
+    </Window>
+    <Window Type="TLBB_SimpleText" Name="ModifyMenPai_MessageBox_Info">
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,35.000000}" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{1.000000,-70.000000}" />
+      <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+      <Property Name="VertFormatting" Value="VertCentred" />
+      <Property Name="RiseOnClick" Value="False" />
+      <Property Name="Text" Value="#{MPZH_180719_120}"/>
+    </Window>
+    <Window Type="TLBB_ButtonCommon" Name="ModifyMenPai_MessageBox_Confirm">
+      <Property Name="UnifiedPosition" Value="{{0.500000,-90.000000},{1.000000,-25.000000}" />
+      <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}" />
+      <Property Name="Text" Value="#{MPZH_180719_33}" />
+      <Event Name="Clicked" Function="ModifyMenPai_MessageBox_OK_Clicked();" />
+    </Window>
+    <Window Type="TLBB_ButtonCommon" Name="ModifyMenPai_MessageBox_Cancel">
+      <Property Name="UnifiedPosition" Value="{{0.500000,10.000000},{1.000000,-25.000000}" />
+      <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}" />
+      <Property Name="Text" Value="#{MPZH_180719_132}" />
+      <Event Name="Clicked" Function="ModifyMenPai_MessageBox_Cancel_Clicked();" />
+    </Window>
+  </Window>
+</GUILayout>

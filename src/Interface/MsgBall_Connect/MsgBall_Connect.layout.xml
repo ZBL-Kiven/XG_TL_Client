@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<GUILayout>
+	<Window Type="DefaultWindow" Name="MsgBall_Connect_Frame">
+		<Property Name="UnifiedSize" Value="{{0.000000,28.000000},{0.000000,28.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.500000,15.000000},{1.000000,-245.000000}}"/>
+		<Property Name="MouseRButtonHollow" Value="True"/>
+		<Property Name="MouseLButtonHollow" Value="True"/>
+		<Property Name="MouseHollow" Value="True"/>
+		<Window Type="TLBB_Animate" Name="MsgBall_Connect_Action">
+			<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+			<Property Name="Animate" Value="MsgBall_Connect"/>
+			<Property Name="AlwaysOnTop" Value="True"/>
+			<Event Name="MouseLClick" Function="MsgBall_Connect_Action_Click();"/>
+		</Window>
+	</Window>
+</GUILayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<GUILayout>
+	<Window Type="TLBB_MainFrame4" Name="HuaShanGRMatchMulti_BKFrame">
+		<Property Name="UnifiedPosition" Value="{{0.500000,-336.000000},{0.300000,0.000000}}"/>
+		<Property Name="AbsoluteSize" Value="w:673.000000 h:254.000000"/>
+		<Event Name="Hidden" Function="HuaShanGRMatchMulti_Close();"/>
+
+    <Window Type="TLBB_DragTitle" Name="HuaShanGRMatchMulti_DragTitle">
+      <Property Name="AbsolutePosition" Value="x:65.000000 y:21.000000"/>
+      <Property Name="UnifiedSize" Value="{{0.000000,515.000000},{0.000000,20.000000}}"/>
+      <Property Name="DragTarget" Value="HuaShanGRMatchMulti_BKFrame"/>
+      <Window Type="TLBB_SimpleText" Name="HuaShanGRMatchMulti_Text">
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+        <Property Name="Font" Value="YouYuan11.25"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="Text" Value="#{XHSLJ_XML_5}"/>
+        <Property Name="HorzFormatting" Value="HorzCentred"/>
+        <Property Name="VertFormatting" Value="VertCentred"/>
+      </Window>
+    </Window>
+    
+			<Window Type="TLBB_StaticImageNULL" Name="HuaShanGRMatchMulti_Help_Bk" >
+				<Property Name="AbsolutePosition" Value="x:635.000000 y:18.000000" />
+				<Property Name="AbsoluteSize" Value="w:24.000000 h:24.000000" />
+				<Property Name="Image" Value="set:CommonFrame image:BtnHelp_BK2" />
+				<Property Name="MouseHollow" Value="true" />
+				<Window Type="TLBB_ButtonNULL" Name="HuaShanGRMatchMulti_Close">
+					<Property Name="AbsolutePosition" Value="x:5.000000 y:5.000000" />
+					<Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+          <Property Name="ToolTip" Value="#{FHZD_XML_31}" />
+          <Property Name="HoverImage" Value="set:CommonStaticImage image:MinimapZoomIn_Hover" />
+					<Property Name="NormalImage" Value="set:CommonStaticImage image:MinimapZoomIn_Normal" />
+					<Property Name="PushedImage" Value="set:CommonStaticImage image:MinimapZoomIn_Pushed" />
+					<Event Name="Clicked" Function="HuaShanGRMatchMulti_Close();"/>
+				</Window>
+			</Window>
+    
+    	<Window Type="TLBB_MultiColumnList" Name="HuaShanGRMatchMulti_List" >
+				<Property Name="UnifiedPosition" Value="{{0.000000,11.000000},{0.000000,44.000000}" />
+				<Property Name="AbsoluteSize" Value="w:652.000000 h:193.000000"/>
+				<Property Name="ColumnHeader" Value="text:#{XHSLJ_XML_6} width:0.1 id:0" />
+				<Property Name="ColumnHeader" Value="text:#{XHSLJ_XML_7} width:0.1 id:1" />
+				<Property Name="ColumnHeader" Value="text:#{XHSLJ_XML_8} width:0.1 id:2" />
+				<Property Name="ColumnHeader" Value="text:#{XHSLJ_XML_9} width:0.4 id:3" />
+				<Property Name="ColumnHeader" Value="text:#{XHSLJ_XML_10} width:0.1 id:4" />
+				<Property Name="ColumnHeader" Value="text:#{XHSLJ_XML_11} width:0.1 id:5" />
+        <Property Name="ColumnHeader" Value="text:#{XHSLJ_XML_12} width:0.1 id:6" />
+        <Property Name="ForceHorzScrollbar" Value="False" />
+				<Property Name="ForceVertScrollbar" Value="False" />
+				<Property Name="SortSettingEnabled" Value="False" />
+				<Property Name="SelectionMode" Value="RowSingle" />
+			</Window>
+		</Window>
+</GUILayout>

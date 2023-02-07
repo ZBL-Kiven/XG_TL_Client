@@ -1,0 +1,234 @@
+<?xml version="1.0" ?>
+<GUILayout>
+    <Window Type="TLBB_MainFrame1" Name="EquipBaoshiyi_Frame">
+      <Property Name="UnifiedSize" Value="{{0.000000,318.000000},{0.000000,410.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.300000,40.000000},{0.150000,50.000000}}"/>
+      <Event Name="Hidden" Function="EquipBaoshiyi_OnHidden();" />
+        <Window Type="TLBB_DragTitle" Name="EquipBaoshiyi_DragTitle">
+          <Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
+          <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+            <Property Name="DragTarget" Value="EquipBaoshiyi_Frame" />
+            <Property Name="Font" Value="YouYuan11.25" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="VertFormatting" Value="VertCentred" />
+            <Property Name="Text" Value="#{BSQKY_20110506_01}" />
+        </Window>
+        <Window Type="TLBB_ButtonClose" Name="EquipBaoshiyi_Close">
+          <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+          <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+            <Event Name="Clicked" Function="EquipBaoshiyi_Cancel_Clicked();" />
+        </Window>
+        <Window Type="TLBB_ButtonHelp" Name="EquipBaoshiyi_Help">
+          <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+          <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+        </Window>
+        <Window Type="DefaultWindow" Name="EquipBaoshiyi_Frame_Client">
+          <Property Name="AbsolutePosition" Value="x:7.000000 y:36.000000" />
+          <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-55.000000}" />
+            <Property Name="RiseOnClick" Value="False" />
+            <Window Type="TLBB_SimpleMulitiTextFrame" Name="EquipBaoshiyi_Frame_Info">
+                <Property Name="Position" Value="x:0.0 y:0.0" />
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,94.000000}}"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+                <Property Name="RiseOnClick" Value="False" />
+                <Property Name="Text" Value="#{BSQKY_20110506_02}" />
+                <Property Name="TextColor" Value="FFFFF263" />
+            </Window>
+            <Window Type="DefaultWindow" Name="EquipBaoshiyi_yuanzhuangbei">
+              <Property Name="UnifiedSize" Value="{{0.000000,269.000000},{0.000000,93.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,85.000000}}"/>
+              <Window Type="TLBB_SimpleText" Name="EquipBaoshiyi_Static2">
+                <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{0.000000,20.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,67.000000}}"/>
+                <Property Name="HorzFormatting" Value="HorzCentred" />
+                    <Property Name="RiseOnClick" Value="False" />
+                    <Property Name="Text" Value="#{BSQKY_20110506_04}" />
+                    <Property Name="TextColor" Value="FFFFF263" />
+                    <Property Name="HorzFormatting" Value="LeftAligned" />
+                    <Property Name="VertFormatting" Value="VertCentred" />
+                </Window>
+              <Window Type="TLBB_SimpleText" Name="EquipBaoshiyi_shuoming">
+                <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,95.000000},{0.000000,12.000000}}"/>
+                <Property Name="HorzFormatting" Value="HorzCentred" />
+                <Property Name="RiseOnClick" Value="False" />
+                <Property Name="Text" Value="#{BSQKY_20110506_03}" />
+                <Property Name="TextColor" Value="FFFFF263" />
+                <Property Name="HorzFormatting" Value="LeftAligned" />
+                <Property Name="VertFormatting" Value="VertCentred" />
+              </Window>
+                <Window Type="TLBB_ActionButton" Name="EquipBaoshiyi_Special_Button">
+                  <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,35.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,23.000000},{0.000000,31.000000}}"/>
+                  <Property Name="DragAcceptName" Value="G104" />
+                    <Property Name="DraggingEnabled" Value="True" />
+                    <Event Name="RBClicked" Function="EquipBaoshiyi_Resume_Equip(1);" />
+                </Window>
+              <Window Type="TLBB_ActionButton" Name="EquipBaoshiyi_Special_Button1">
+                <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,35.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,97.000000},{0.000000,32.000000}}"/>
+                <Property Name="DragAcceptName" Value="G12" />
+                <Property Name="DraggingEnabled" Value="False" />
+              </Window>
+              <Window Type="TLBB_ActionButton" Name="EquipBaoshiyi_Special_Button2">
+                <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,35.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,134.000000},{0.000000,32.000000}}"/>
+                <Property Name="DragAcceptName" Value="G12" />
+                <Property Name="DraggingEnabled" Value="False" />
+              </Window>
+              <Window Type="TLBB_ActionButton" Name="EquipBaoshiyi_Special_Button3">
+                <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,35.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,171.000000},{0.000000,32.000000}}"/>
+                <Property Name="DragAcceptName" Value="G12" />
+                <Property Name="DraggingEnabled" Value="False" />
+              </Window>
+              <Window Type="TLBB_ActionButton" Name="EquipBaoshiyi_Special_Button4">
+                <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,35.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,208.000000},{0.000000,32.000000}}"/>
+                <Property Name="DragAcceptName" Value="G12" />
+                <Property Name="DraggingEnabled" Value="False" />
+              </Window>
+            </Window>
+          <Window Type="DefaultWindow" Name="EquipBaoshiyi_mubiaozhuangbei">
+            <Property Name="UnifiedSize" Value="{{0.000000,267.000000},{0.000000,108.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,153.000000}}"/>
+            <Window Type="TLBB_SimpleText" Name="EquipBaoshiyi_Static99">
+              <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{0.000000,20.000000}}"/>
+		          <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,66.000000}}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred" />
+              <Property Name="RiseOnClick" Value="False" />
+              <Property Name="Text" Value="#{BSQKY_20110506_08}" />
+              <Property Name="TextColor" Value="FFFFF263" />
+              <Property Name="HorzFormatting" Value="LeftAligned" />
+              <Property Name="VertFormatting" Value="VertCentred" />
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="EquipBaoshiyi_shuoming1">
+              <Property Name="UnifiedSize" Value="{{0.000000,176.000000},{0.000000,34.000000}}"/>
+	      <Property Name="UnifiedPosition" Value="{{0.000000,95.000000},{0.000000,69.000000}}"/>
+              <Property Name="RiseOnClick" Value="False" />
+              <Property Name="Text" Value="#{BSQKY_20110506_07}" />
+              <Property Name="TextColor" Value="FFFFF263" />
+              <Property Name="HorzFormatting" Value="LeftAligned" />
+              <Property Name="VertFormatting" Value="VertCentred" />
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="EquipBaoshiyi_Special_Button5">
+              <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,35.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,23.000000},{0.000000,31.000000}}"/>
+              <Property Name="DragAcceptName" Value="G105" />
+              <Property Name="DraggingEnabled" Value="True" />
+              <Event Name="RBClicked" Function="EquipBaoshiyi_Resume_Equip(2);" />
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="EquipBaoshiyi_Special_Button6">
+              <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,35.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,97.000000},{0.000000,32.000000}}"/>
+              <Property Name="DragAcceptName" Value="G12" />
+              <Property Name="DraggingEnabled" Value="False" />
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="EquipBaoshiyi_Special_Button7">
+              <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,35.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,134.000000},{0.000000,32.000000}}"/>
+              <Property Name="DragAcceptName" Value="G12" />
+              <Property Name="DraggingEnabled" Value="False" />
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="EquipBaoshiyi_Special_Button8">
+              <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,35.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,171.000000},{0.000000,32.000000}}"/>
+              <Property Name="DragAcceptName" Value="G12" />
+              <Property Name="DraggingEnabled" Value="False" />
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="EquipBaoshiyi_Special_Button9">
+              <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,35.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,208.000000},{0.000000,32.000000}}"/>
+              <Property Name="DragAcceptName" Value="G12" />
+              <Property Name="DraggingEnabled" Value="False" /> 
+            </Window>
+          </Window>
+            <Window Type="TLBB_SimpleMulitiTextFrame" Name="EquipBaoshiyi_Static3">
+                <Property Name="UnifiedPosition" Value="{{0,0.000000},{1.000000,-89.000000}" />
+                <Property Name="UnifiedSize" Value="{{1,0.000000},{0.000000,22.000000}" />
+                <Property Name="Text" Value="#{INTERFACE_XML_789}" />
+                <Property Name="TextColor" Value="FFFFF263" />
+                <Property Name="HorzFormatting" Value="LeftAligned" />
+                <Property Name="VertFormatting" Value="VertCentred" />
+                <Property Name="RiseOnClick" Value="False" />
+                <Window Type="TLBB_Money" Name="EquipBaoshiyi_NeedMoney">
+                    <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}" />
+                    <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}" />
+                    <Property Name="HorzFormatting" Value="RightAligned" />
+                    <Property Name="MoneyNumber" Value="0" />
+                    <Property Name="GoldIcon" Value = "set:Button6 image:Lace_JiaoziJin" />
+                    <Property Name="SilverIcon" Value = "set:Button6 image:Lace_JiaoziYin" />
+                    <Property Name="CopperIcon" Value = "set:Button6 image:Lace_JiaoziTong" />
+                </Window>
+            </Window>
+            <Window Type="TLBB_SimpleMulitiTextFrame" Name="EquipBaoshiyi_SelfJiaozi_Text">
+                <Property Name="UnifiedPosition" Value="{{0,0.000000},{1.000000,-67.000000}" />
+                <Property Name="UnifiedSize" Value="{{1,0.000000},{0.000000,22.000000}" />
+                <Property Name="HorzFormatting" Value="LeftAligned" />
+                <Property Name="VertFormatting" Value="VertCentred" />
+                <Property Name="Text" Value="#{BDJB_051210_1}" />
+                <Property Name="TextColor" Value="FFFFF263" />
+                <Property Name="RiseOnClick" Value="False" />
+                <Window Type="TLBB_Money" Name="EquipBaoshiyi_SelfJiaozi">
+                    <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}" />
+                    <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}" />
+                    <Property Name="HorzFormatting" Value="RightAligned" />
+                    <Property Name="MoneyNumber" Value="0" />
+                    <Property Name="GoldIcon" Value = "set:Button6 image:Lace_JiaoziJin" />
+                    <Property Name="SilverIcon" Value = "set:Button6 image:Lace_JiaoziYin" />
+                    <Property Name="CopperIcon" Value = "set:Button6 image:Lace_JiaoziTong" />
+                </Window>
+            </Window>
+            <Window Type="TLBB_SimpleMulitiTextFrame" Name="EquipBaoshiyi_SelfMoney_Text">
+                <Property Name="UnifiedPosition" Value="{{0,0.000000},{1.000000,-45.000000}" />
+                <Property Name="UnifiedSize" Value="{{1,0.000000},{0.000000,22.000000}" />
+                <Property Name="HorzFormatting" Value="LeftAligned" />
+                <Property Name="VertFormatting" Value="VertCentred" />
+                <Property Name="Text" Value="#{INTERFACE_XML_834}" />
+                <Property Name="TextColor" Value="FFFFF263" />
+                <Property Name="RiseOnClick" Value="False" />
+                <Window Type="TLBB_Money" Name="EquipBaoshiyi_SelfMoney">
+                    <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}" />
+                    <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}" />
+                    <Property Name="HorzFormatting" Value="RightAligned" />
+                    <Property Name="MoneyNumber" Value="0" />
+                </Window>
+            </Window>
+            
+            <Window Type="TLBB_ButtonCommon" Name="EquipBaoshiyi_OK">
+                <Property Name="UnifiedPosition" Value="{{1.000000,-122.000000},{1.000000,-20.000000}" />
+                <Property Name="AbsoluteSize" Value="w:60.000000 h:20.000000" />
+                <Property Name="Text" Value="#{INTERFACE_XML_556}" />
+                <Event Name="Clicked" Function="EquipBaoshiyi_Buttons_Clicked();" />
+              
+            </Window>
+            <Window Type="TLBB_ButtonCommon" Name="EquipBaoshiyi_Cancel">
+                <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{1.000000,-20.000000}" />
+                <Property Name="AbsoluteSize" Value="w:60.000000 h:20.000000" />
+                <Property Name="Text" Value="#{INTERFACE_XML_539}" />
+                <Event Name="Clicked" Function="EquipBaoshiyi_Cancel_Clicked();" />
+            
+            </Window>
+          <Window Type="TLBB_ButtonCommon" Name="EquipBaoshiyi_zhuanyi">
+            <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,252.000000},{0.000000,158.000000}}"/>
+            <Property Name="Text" Value="#{BSQKY_20110506_05}" />
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="Clicked" Function="EquipBaoshiyi_Zhuanyi_Clicked();" />
+          
+          </Window>
+          <Window Type="TLBB_ButtonCommon" Name="EquipBaoshiyi_huifu">
+            <Property Name="Visible" Value="False"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,252.000000},{0.000000,158.000000}}"/>
+            <Property Name="Text" Value="#{BSQKY_20110506_06}" />
+            <Property Name="AlwaysOnTop" Value="True"/>
+      			<Event Name="Clicked" Function="EquipBaoshiyi_Huifu_Clicked();" />
+          </Window>
+          <Window Type="TLBB_Frame_Lace5" Name="EquipBaoshiyi_Blank">
+            <Property Name="UnifiedSize" Value="{{1.000000,-122.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-20.000000}}"/>
+          </Window>
+        </Window>
+    </Window>
+</GUILayout>

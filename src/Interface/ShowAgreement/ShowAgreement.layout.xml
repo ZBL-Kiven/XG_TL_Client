@@ -1,0 +1,54 @@
+<?xml version="1.0" ?>
+<GUILayout>
+    <Window Type="TLBB_MainFrame1" Name="ShowAgreement_Frame">
+      <Property Name="UnifiedPosition" Value="{{0.500000,-255.000000},{0.500000,-250.000000}" />
+      <Property Name="AbsoluteSize" Value="w:510 h:400" />
+      <Window Type="TLBB_DragTitle" Name="ShowAgreement_Frame_Title">
+        <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+        <Property Name="DragTarget" Value="ShowAgreement_Frame" />
+        <Property Name="Font" Value="YouYuan11.25" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="Text" Value="#{XCZB_160105_71}" />
+      </Window>
+      <Window Type="TLBB_ButtonHelp" Name="ShowAgreement_Help">
+        <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+        <Event Name="Clicked" Function=""/>
+      </Window>
+      <Window Type="TLBB_ButtonClose" Name="ShowAgreement_Close">
+        <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="ture" />
+        <Event Name="Clicked" Function="ShowAgreement_Close()" />
+      </Window>
+      <Window Type="DefaultWindow" Name="ShowAgreement_Bk">
+        <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-55.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,36.000000}}"/>
+        <Window Type="TLBB_StaticText" Name="ShowAgreement_Context">
+          <Property Name="VertScrollbar" Value="True"/>
+          <Property Name="VertFormatting" Value="TopAligned"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-24.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+        <Window Type="TLBB_Frame_Lace5" Name="ShowAgreement_Blank">
+          <Property Name="UnifiedSize" Value="{{1.000000,-120.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}}"/>
+        </Window>
+        <Window Type="TLBB_ButtonCommon" Name="ShowAgreement_Ok">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-120.000000},{1.000000,-20.000000}}"/>
+          <Property Name="Text" Value="#{XCZB_160105_73}" />
+          <Event Name="Clicked" Function="ShowAgreement_Agree()" />
+        </Window>
+        <Window Type="TLBB_ButtonCommon" Name="ShowAgreement_Cancel">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-60.000000},{1.000000,-20.000000}}"/>
+          <Property Name="Text" Value="#{XCZB_160105_72}" />
+          <Event Name="Clicked" Function="ShowAgreement_DisAgree()" />
+        </Window>
+    </Window>
+    </Window>
+</GUILayout>

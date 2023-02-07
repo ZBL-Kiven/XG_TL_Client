@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="DefaultWindow" Name="LoverTimeEnter_Frame">
+    <Property Name="UnifiedPosition" Value="{{1.0,-166},{0.0,240}}" />
+    <Property Name="AbsoluteSize" Value="w:64 h:64" />
+    <Window Type="TLBB_AnimateButton" Name="LoverTimeEnter_Icon">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="PushedImage" Value="set:LoverTime01 image:LoverTime_Rukou2"/>
+      <Property Name="NormalImage" Value="set:LoverTime01 image:LoverTime_Rukou1"/>
+      <Property Name="HoverImage" Value="set:LoverTime01 image:LoverTime_Rukou3"/>
+      <Property Name="DisabledImage" Value="set:LoverTime01 image:LoverTime_Rukou4"/>
+      <Property Name="WarningAnimation" Value="LoverTimeAnimate" />
+      <Event Name="Clicked" Function="LoverTimeEnter_OnClick()" />
+    </Window>
+  </Window>
+</GUILayout>

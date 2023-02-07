@@ -1,0 +1,267 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="DiWangQi_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,651.000000},{0.000000,442.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-326.000000},{0.500000,-221.000000}}"/>
+    <Event Name="Hidden" Function="DiWangQi_OnHiden()"/>
+    <Window Type="TLBB_HeroFrame01" Name="DiWangQi_MainFrame">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      <Window Type="TLBB_HeroTitle01" Name="DiWangQi_DragTitleBK">
+        <Property Name="UnifiedSize" Value="{{0.000000,314.000000},{0.000000,30.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-157.500000},{0.000000,-2.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+      </Window>
+      <Window Type="TLBB_DragTitle" Name="DiWangQi_DragTitle">
+        <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,5.000000}}"/>
+        <Property Name="Font" Value="YouYuan11.25" />
+        <Property Name="HorzFormatting" Value="HorzCentred"/>
+        <Property Name="Text" Value="#{DWQ_210428_01}" />
+        <Property Name="DragTarget" Value="DiWangQi_Frame"/>
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="DiWangQi_Close">
+        <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,14.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-32.000000},{0.000000,9.000000}}"/>
+        <Property Name="PushedImage" Value="set:ZLHeroMeeting image:Close_Push"/>
+        <Property Name="NormalImage" Value="set:ZLHeroMeeting image:Close_Normal"/>
+        <Property Name="HoverImage" Value="set:ZLHeroMeeting image:Close_Hover"/>
+        <Property Name="DisabledImage" Value="set:ZLHeroMeeting image:Close_Push"/>
+        <Event Name="Clicked" Function="DiWangQi_Close();" />
+      </Window>
+      <Window Type="TLBB_HeroLace01" Name="DiWangQi_Frame_Client">
+        <Property Name="UnifiedSize" Value="{{0.000000,639.000000},{0.000000,405.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,30.000000}}"/>
+        <Property Name="RiseOnClick" Value="False" />
+        <Window Type="TLBB_StaticImageNULL" Name="DiWangQi_Frame_Bk">
+          <Property Name="UnifiedSize" Value="{{0.000000,635.000000},{0.000000,401.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
+          <Property Name="Image" Value="set:DiWangQi image:BK"/>
+          <Property Name="RiseOnClick" Value="False" /> 
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DiWangQi_Frame_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,613.000000},{0.000000,60.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,13.000000},{0.000000,2.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          <Property Name="Text" Value="#{DWQ_210428_37}"/>
+        </Window>
+        <Window Type="DefaultWindow" Name="DiWangQi_Frame_Bk1">
+          <Property Name="UnifiedSize" Value="{{1.000000,-427.000000},{1.000000,-7.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_StaticImageNULL" Name="DiWangQi_Frame_Bk1_ImageTitle">
+            <Property Name="UnifiedSize" Value="{{0.000000,27.000000},{0.000000,114.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,16.000000},{0.000000,65.000000}}"/>
+            <Property Name="Image" Value="set:DiWangQi image:Title_JianCu"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="DiWangQi_Frame_Bk1_ImageLow">
+            <Property Name="UnifiedSize" Value="{{0.000000,104.000000},{0.000000,135.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,52.000000},{0.000000,103.000000}}"/>
+            <Property Name="Image" Value="set:DiWangQi image:JianCu_Low"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="DiWangQi_Frame_Bk1_ImageMid">
+            <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,191.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,80.000000},{0.000000,67.000000}}"/>
+            <Property Name="Image" Value="set:DiWangQi image:JianCu_Mid"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="DiWangQi_Frame_Bk1_ImageDone">
+            <Property Name="UnifiedSize" Value="{{0.000000,133.000000},{0.000000,187.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,43.000000},{0.000000,81.000000}}"/>
+            <Property Name="Image" Value="set:DiWangQi image:JianCu_High"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="DiWangQi_Frame_Bk1_EXPBK">
+            <Property Name="UnifiedSize" Value="{{0.000000,185.000000},{0.000000,16.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-92.000000},{0.000000,325.00000}}"/>
+            <Property Name="Image" Value="set:DiWangQi image:EXP_BK"/>
+          </Window>
+          <Window Type="TLBB_ProgressPropertyZhouHuoYue" Name="DiWangQi_Frame_Bk1_EXP">
+            <Property Name="UnifiedSize" Value="{{0.000000,161.000000},{0.000000,10.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-81.000000},{0.500000,129.000000}}"/>
+            <Property Name="CurrentProgress" Value="1.000000"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="DiWangQi_Frame_Bk1_GiftImage">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,163.000000},{0.000000,316.000000}}"/>
+            <Property Name="Tooltip" Value="#{DWQ_210428_38}"/>
+            <Property Name="Image" Value="set:DiWangQi image:Btn1_Open"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="DiWangQi_Frame_Bk1_GiftBtn">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,163.000000},{0.000000,316.000000}}"/>
+            <Property Name="Tooltip" Value="#{DWQ_210428_38}"/>
+            <Property Name="NormalImage" Value="set:DiWangQi image:Btn1_Normal"/>
+            <Property Name="HoverImage" Value="set:DiWangQi image:Btn1_Hover"/>
+            <Property Name="DisabledImage" Value="set:DiWangQi image:Btn1_Normal"/>
+            <Property Name="PushedImage" Value="set:DiWangQi image:Btn1_Pushed"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="Clicked" Function="DiWangQi_GetReward(1);" />
+          </Window>
+          <Window Type="TLBB_ButtonCommon" Name="DiWangQi_Frame_Bk1_Btn">
+            <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,25.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,355.000000}}"/>
+            <Property Name="Text" Value="#{DWQ_210428_15}" />
+            <Property Name="Tooltip" Value="#{DWQ_210428_16}"/>
+            <Property Name="NormalImage" Value="set:ZLHeroMeeting image:Button_Normal"/>
+            <Property Name="HoverImage" Value="set:ZLHeroMeeting image:Button_Hover"/>
+            <Property Name="DisabledImage" Value="set:ZLHeroMeeting image:Button_Disable"/>
+            <Property Name="PushedImage" Value="set:ZLHeroMeeting image:Button_Push"/>
+            <Event Name="Clicked" Function="DiWangQi_XiuFu(1);" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DiWangQi_Frame_Bk1_text">
+            <Property Name="UnifiedSize" Value="{{0.000000,58.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.5000000,-29.000000},{0.000000,310.000000}}" />
+            <Property Name="Text" Value="11/111"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="DiWangQi_Frame_Bk2">
+          <Property Name="UnifiedSize" Value="{{1.000000,-425.000000},{1.000000,-7.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,213.000000},{0.000000,0.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_StaticImageNULL" Name="DiWangQi_Frame_Bk2_ImageTitle">
+            <Property Name="UnifiedSize" Value="{{0.000000,27.000000},{0.000000,114.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,16.000000},{0.000000,65.000000}}"/>
+            <Property Name="Image" Value="set:DiWangQi image:Title_TongJian"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="DiWangQi_Frame_Bk2_ImageLow">
+            <Property Name="UnifiedSize" Value="{{0.000000,47.000000},{0.000000,173.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,96.000000},{0.000000,80.000000}}"/>
+            <Property Name="Image" Value="set:DiWangQi image:TongJian_Low"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="DiWangQi_Frame_Bk2_ImageMid">
+            <Property Name="UnifiedSize" Value="{{0.000000,112.000000},{0.000000,166.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,59.000000},{0.000000,86.000000}}"/>
+            <Property Name="Image" Value="set:DiWangQi image:TongJian_Mid"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="DiWangQi_Frame_Bk2_ImageDone">
+            <Property Name="UnifiedSize" Value="{{0.000000,113.000000},{0.000000,173.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,58.000000},{0.000000,80.000000}}"/>
+            <Property Name="Image" Value="set:DiWangQi image:TongJian_High"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="DiWangQi_Frame_Bk2_EXPBK">
+            <Property Name="UnifiedSize" Value="{{0.000000,185.000000},{0.000000,16.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-92.000000},{0.000000,325.00000}}"/>
+            <Property Name="Image" Value="set:DiWangQi image:EXP_BK"/>
+          </Window>
+          <Window Type="TLBB_ProgressPropertyZhouHuoYue" Name="DiWangQi_Frame_Bk2_EXP">
+            <Property Name="UnifiedSize" Value="{{0.000000,161.000000},{0.000000,10.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-81.000000},{0.500000,129.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="CurrentProgress" Value="1.000000"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="DiWangQi_Frame_Bk2_GiftImage">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,163.000000},{0.000000,316.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Tooltip" Value="#{DWQ_210428_39}"/>
+            <Property Name="Image" Value="set:DiWangQi image:Btn2_Open"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="DiWangQi_Frame_Bk2_GiftBtn">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,163.000000},{0.000000,316.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Tooltip" Value="#{DWQ_210428_39}"/>
+            <Property Name="NormalImage" Value="set:DiWangQi image:Btn2_Normal"/>
+            <Property Name="HoverImage" Value="set:DiWangQi image:Btn2_Hover"/>
+            <Property Name="DisabledImage" Value="set:DiWangQi image:Btn2_Normal"/>
+            <Property Name="PushedImage" Value="set:DiWangQi image:Btn2_Pushed"/>
+            <Event Name="Clicked" Function="DiWangQi_GetReward(2);" />
+          </Window>
+          <Window Type="TLBB_ButtonCommon" Name="DiWangQi_Frame_Bk2_Btn">
+            <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,25.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,355.000000}}"/>
+            <Property Name="Text" Value="#{DWQ_210428_15}" />
+            <Property Name="Tooltip" Value="#{DWQ_210428_17}"/>
+            <Property Name="NormalImage" Value="set:ZLHeroMeeting image:Button_Normal"/>
+            <Property Name="HoverImage" Value="set:ZLHeroMeeting image:Button_Hover"/>
+            <Property Name="DisabledImage" Value="set:ZLHeroMeeting image:Button_Disable"/>
+            <Property Name="PushedImage" Value="set:ZLHeroMeeting image:Button_Push"/>
+            <Event Name="Clicked" Function="DiWangQi_XiuFu(2);" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DiWangQi_Frame_Bk2_text">
+            <Property Name="UnifiedSize" Value="{{0.000000,58.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.5000000,-29.000000},{0.000000,310.000000}}" />
+            <Property Name="Text" Value="11/111"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="DiWangQi_Frame_Bk3">
+          <Property Name="UnifiedSize" Value="{{1.000000,-433.000000},{1.000000,-7.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,429.000000},{0.000000,0.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_StaticImageNULL" Name="DiWangQi_Frame_Bk3_ImageTitle">
+            <Property Name="UnifiedSize" Value="{{0.000000,27.000000},{0.000000,114.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,16.000000},{0.000000,65.000000}}"/>
+            <Property Name="Image" Value="set:DiWangQi image:Title_NuJi"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="DiWangQi_Frame_Bk3_ImageLow">
+            <Property Name="UnifiedSize" Value="{{0.000000,117.000000},{0.000000,126.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,45.000000},{0.000000,109.000000}}"/>
+            <Property Name="Image" Value="set:DiWangQi image:NuJi_Low"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="DiWangQi_Frame_Bk3_ImageMid">
+            <Property Name="UnifiedSize" Value="{{0.000000,166.000000},{0.000000,110.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,115.000000}}"/>
+            <Property Name="Image" Value="set:DiWangQi image:NuJi_Mid"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="DiWangQi_Frame_Bk3_ImageDone">
+            <Property Name="UnifiedSize" Value="{{0.000000,195.000000},{0.000000,69.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,11.000000},{0.000000,146.000000}}"/>
+            <Property Name="Image" Value="set:DiWangQi image:NuJi_High"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="DiWangQi_Frame_Bk3_EXPBK">
+            <Property Name="UnifiedSize" Value="{{0.000000,185.000000},{0.000000,16.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-92.000000},{0.000000,325.00000}}"/>
+            <Property Name="Image" Value="set:DiWangQi image:EXP_BK"/>
+          </Window>
+          <Window Type="TLBB_ProgressPropertyZhouHuoYue" Name="DiWangQi_Frame_Bk3_EXP">
+            <Property Name="UnifiedSize" Value="{{0.000000,161.000000},{0.000000,10.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-81.000000},{0.500000,129.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="CurrentProgress" Value="1.000000"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="DiWangQi_Frame_Bk3_GiftImage">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,163.000000},{0.000000,316.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Tooltip" Value="#{DWQ_210428_40}"/>
+            <Property Name="Image" Value="set:DiWangQi image:Btn3_Open"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="DiWangQi_Frame_Bk3_GiftBtn">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,163.000000},{0.000000,316.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Tooltip" Value="#{DWQ_210428_40}"/>
+            <Property Name="NormalImage" Value="set:DiWangQi image:Btn3_Normal"/>
+            <Property Name="HoverImage" Value="set:DiWangQi image:Btn3_Hover"/>
+            <Property Name="DisabledImage" Value="set:DiWangQi image:Btn3_Normal"/>
+            <Property Name="PushedImage" Value="set:DiWangQi image:Btn3_Pushed"/>
+            <Event Name="Clicked" Function="DiWangQi_GetReward(3);" />
+          </Window>
+          <Window Type="TLBB_ButtonCommon" Name="DiWangQi_Frame_Bk3_Btn">
+            <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,25.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,355.000000}}"/>
+            <Property Name="Text" Value="#{DWQ_210428_15}" />
+            <Property Name="Tooltip" Value="#{DWQ_210428_18}"/>
+            <Property Name="NormalImage" Value="set:ZLHeroMeeting image:Button_Normal"/>
+            <Property Name="HoverImage" Value="set:ZLHeroMeeting image:Button_Hover"/>
+            <Property Name="DisabledImage" Value="set:ZLHeroMeeting image:Button_Disable"/>
+            <Property Name="PushedImage" Value="set:ZLHeroMeeting image:Button_Push"/>
+            <Event Name="Clicked" Function="DiWangQi_XiuFu(3);" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DiWangQi_Frame_Bk3_text">
+            <Property Name="UnifiedSize" Value="{{0.000000,58.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.5000000,-29.000000},{0.000000,310.000000}}" />
+            <Property Name="Text" Value="11/111"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

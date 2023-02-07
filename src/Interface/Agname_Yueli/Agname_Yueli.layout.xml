@@ -1,0 +1,52 @@
+<?xml version="1.0" ?>
+<GUILayout>
+    <Window Type="TLBB_MainFrame1" Name="Agname_Yueli_Frame">
+        <Property Name="UnifiedPosition" Value="{{0.5,157},{0.15,0}}" />
+        <Property Name="AbsoluteSize" Value="w:260 h:303" />
+        <Window Type="TLBB_DragTitle" Name="Agname_Yueli_Frame_Title">
+            <Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
+            <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+            <Property Name="Font" Value="YouYuan11.25" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="TextColor" Value="FFFFF263" />
+            <Property Name="Text" Value="#{CHGZ_XML_12}" />
+            <Property Name="DragTarget" Value="Agname_Yueli_Frame" />
+        </Window>
+        <Window Type="TLBB_ButtonHelp" Name="Agname_Yueli_Frame_Help">
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+            <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+            <Property Name="Text" Value="TLBB_ButtonHelp" />
+            <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*Agname&quot;);' />
+        </Window>
+        <Window Type="TLBB_ButtonClose" Name="Agname_Yueli_Frame_Close">
+            <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+            <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+            <Property Name="Text" Value="TLBB_ButtonClose" />
+            <Event Name="Clicked" Function="this:Hide();" />
+        </Window>
+        <Window Type="TLBB_ButtonCommon" Name="Agname_Yueli_Button_Close">
+            <Property Name="UnifiedPosition" Value="{{1.000000,-58.000000},{1.000000,-39.000000}" />
+            <Property Name="AbsoluteSize" Value="w:50.000000 h:20.000000" />
+            <Property Name="Text" Value="#{INTERFACE_XML_302}" />
+            <Event Name="Clicked" Function="this:Hide();" />
+        </Window>
+        <Window Type="TLBB_MultiColumnList" Name="Agname_Yueli_List">
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,32.000000}" />
+            <Property Name="UnifiedSize" Value="{{1.0,-10.000000},{1.000000,-73.000000}" />
+          <Property Name="ForceHorzScrollbar" Value="False" />
+          <Property Name="ForceVertScrollbar" Value="True" />
+          <Property Name="SortSettingEnabled" Value="False" />
+          <Property Name="SelectionMode" Value="RowSingle" />
+          <Property Name="ColumnHeader" Value="text:#{CHGZ_XML_13} width:0.215 id:0" />
+          <Property Name="ColumnHeader" Value="text:#{CHGZ_XML_14} width:0.785 id:1" />
+
+
+        </Window>
+      <Window Type="TLBB_Frame_Lace5" Name="Agname_Yueli_Blank">
+        <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{1.000000,-39.000000}" />
+        <Property Name="UnifiedSize" Value="{{1.000000,-65.000000},{0.000000,20.000000}" />
+        <Property Name="RiseOnClick" Value="False" />
+      </Window>
+    </Window>
+</GUILayout>

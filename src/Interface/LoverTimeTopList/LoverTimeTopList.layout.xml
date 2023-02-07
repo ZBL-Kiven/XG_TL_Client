@@ -1,0 +1,548 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_HeroFrame01" Name="LoverTimeTopList_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,842.000000},{0.000000,550.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-420.000000},{0.500000,-260.000000}}"/>
+    <Event Name="Hidden" Function="LoverTimeTopList_Close_Click()"/>
+
+    <Window Type="TLBB_HeroTitle01" Name="LoverTimeTopList_DragTitleBK">
+      <Property Name="UnifiedSize" Value="{{0.000000,314.000000},{0.000000,30.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-157.500000},{0.000000,-2.000000}}"/>
+      <Property Name="DragTarget" Value="LoverTimeTopList_Frame"/>
+    </Window>
+    <Window Type="TLBB_DragTitle" Name="LoverTimeTopList_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,5.000000}}"/>
+      <Property Name="Text" Value="#{QRZM_211119_77}"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="DragTarget" Value="LoverTimeTopList_Frame"/>
+    </Window>
+    <Window Type="TLBB_ButtonClose2" Name="LoverTimeTopList_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-28.000000},{0.000000,8.000000}}"/>
+      <Event Name="Clicked" Function="LoverTimeTopList_Close_Click();" />
+    </Window>
+    <Window Type="DefaultWindow" Name="LoverTimeTopList_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{1.000000,-32.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,28.000000}}"/>
+      <Window Type="DefaultWindow" Name="LoverTimeTopList_ClientBK">
+        <Property Name="UnifiedSize" Value="{{0.000000,840.000000},{0.000000,260.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="Visible" Value="False"/>
+        <Window Type="TLBB_StaticImageNULL" Name="LoverTimeTopList_ClientBK1">
+          <Property Name="UnifiedSize" Value="{{0.000000,840.000000},{0.000000,256.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,260.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:QiXi_HuaBang image:LoverTime_MeiGuiLuDown"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="LoverTimeTopList_ClientBK2">
+          <Property Name="UnifiedSize" Value="{{0.000000,840.000000},{0.000000,256.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,260.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:QiXi_HuaBang image:LoverTime_TianQinLeiDown"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="LoverTimeTopList_ClientBK3">
+          <Property Name="UnifiedSize" Value="{{0.000000,840.000000},{0.000000,256.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,260.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:QiXi_HuaBang image:LoverTime_ShangChangDown"/>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="LoverTimeTopList_BK1">
+        <Property Name="UnifiedSize" Value="{{0.000000,840.000000},{0.000000,516.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Window Type="TLBB_StaticImageNULL" Name="LoverTimeTopList_BK1Up">
+          <Property Name="UnifiedSize" Value="{{0.000000,840.000000},{0.000000,260.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:LoverTime01 image:LoverTime_MeiGuiLuUp"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="LoverTimeTopList_BK1Down">
+          <Property Name="UnifiedSize" Value="{{0.000000,840.000000},{0.000000,256.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,260.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:LoverTime02 image:LoverTime_ZhongXiaMengDown"/>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="LoverTimeTopList_BK2">
+        <Property Name="UnifiedSize" Value="{{0.000000,840.000000},{0.000000,516.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Window Type="TLBB_StaticImageNULL" Name="LoverTimeTopList_BK2Up">
+          <Property Name="UnifiedSize" Value="{{0.000000,840.000000},{0.000000,260.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:LoverTime02 image:LoverTime_ShangChangUp"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="LoverTimeTopList_BK3Down">
+          <Property Name="UnifiedSize" Value="{{0.000000,840.000000},{0.000000,256.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,260.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:LoverTime01 image:LoverTime_ShangChangDown"/>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="LoverTimeTopList_Explain">
+        <Property Name="UnifiedSize" Value="{{0.000000,610.000000},{0.000000,64.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,116.000000},{0.000000,74.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="TLBB_StaticImageNULL" Name="LoverTimeTopList_Explain_TextTitle">
+          <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,16.000000},{0.000000,6.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:QiXi_HuaBang image:QiXi_HuaBangDian"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="LoverTimeTopList_Explain_Text">
+          <Property Name="VertFormatting" Value="TopAligned"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{1.000000,-8.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,4.000000}}"/>
+          <Property Name="Text" Value="#{QRZM_211119_94}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          <Window Type="TLBB_ButtonHelp" Name="LoverTimeTopList_Help">
+            <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,34.000000}}"/>
+            <Event Name="Clicked" Function="LoverTimeTopList_HelpClicked()"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="LoverTimeTopList_Explain_links">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-146.000000},{1.000000,-24.000000}}"/>
+            <Property Name="Text" Value="#{QRZM_211119_266}"/>
+            <Event Name="Clicked" Function="LoverTimeTopList_BuyRose()"/>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="LoverTimeTopList_Top_Frame">
+        <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,296.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,72.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="TLBB_ButtonCheckNULL" Name="LoverTimeTopList_Top_TopList1">
+          <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,62.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="Tooltip" Value="#{QRZM_211119_216}"/>
+          <Property Name="PushedImage" Value="set:LoverTime01 image:LoverTime_MeiGuiLu1"/>
+          <Property Name="NormalImage" Value="set:LoverTime01 image:LoverTime_MeiGuiLu2"/>
+          <Property Name="HoverImage" Value="set:LoverTime01 image:LoverTime_MeiGuiLu3"/>
+          <Property Name="DisabledImage" Value="set:LoverTime01 image:LoverTime_MeiGuiLu1"/>
+          <Property Name="CheckMode" Value="1"/>
+          <Event Name="Clicked" Function="LoverTimeTopList_Page_Click(1)"/>
+        </Window>
+        <Window Type="TLBB_ButtonCheckNULL" Name="LoverTimeTopList_Top_TopList2">
+          <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,62.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,62.000000}}"/>
+          <Property Name="PushedImage" Value="set:LoverTime01 image:LoverTime_ZhongXiaMeng1"/>
+          <Property Name="NormalImage" Value="set:LoverTime01 image:LoverTime_ZhongXiaMeng2"/>
+          <Property Name="HoverImage" Value="set:LoverTime01 image:LoverTime_ZhongXiaMeng3"/>
+          <Property Name="DisabledImage" Value="set:LoverTime01 image:LoverTime_ZhongXiaMeng1"/>
+          <Property Name="Tooltip" Value="#{QRZM_211119_217}"/>
+          <Property Name="CheckMode" Value="1"/>
+          <Event Name="Clicked" Function="LoverTimeTopList_Page_Click(3)"/>
+        </Window>
+        <Window Type="TLBB_ButtonCheckNULL" Name="LoverTimeTopList_Top_TopList3">
+          <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,62.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,124.000000}}"/>
+          <Property Name="PushedImage" Value="set:LoverTime01 image:LoverTime_TianQinLei1"/>
+          <Property Name="NormalImage" Value="set:LoverTime01 image:LoverTime_TianQinLei2"/>
+          <Property Name="HoverImage" Value="set:LoverTime01 image:LoverTime_TianQinLei3"/>
+          <Property Name="DisabledImage" Value="set:LoverTime01 image:LoverTime_TianQinLei1"/>
+          <Property Name="Tooltip" Value="#{QRZM_211119_218}"/>
+          <Property Name="CheckMode" Value="1"/>
+          <Event Name="Clicked" Function="LoverTimeTopList_Page_Click(2)"/>
+        </Window>
+        <Window Type="TLBB_ButtonCheckNULL" Name="LoverTimeTopList_Top_TopList4">
+          <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,62.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,186.000000}}"/>
+          <Property Name="PushedImage" Value="set:LoverTime01 image:LoverTime_FanYin1"/>
+          <Property Name="NormalImage" Value="set:LoverTime01 image:LoverTime_FanYin2"/>
+          <Property Name="HoverImage" Value="set:LoverTime01 image:LoverTime_FanYin3"/>
+          <Property Name="DisabledImage" Value="set:LoverTime01 image:LoverTime_FanYin3"/>
+          <Property Name="CheckMode" Value="1"/>
+          <Event Name="Clicked" Function="LoverTimeTopList_Page_Click(4)"/>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="LoverTimeTopList_Ranking_Frame">
+        <Property Name="UnifiedSize" Value="{{0.000000,640.000000},{0.000000,342.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,106.000000},{0.000000,130.000000}}"/>
+        <Window Type="DefaultWindow" Name="LoverTimeTopList_CountDownbk">
+          <Property Name="UnifiedSize" Value="{{0.000000,424.000000},{0.000000,28.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,0.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:QiXi_HuaBang image:QiXi_HuaBangTimeBK"/>
+          <Window Type="TLBB_SimpleText" Name="LoverTimeTopList_CountDown">
+            <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.500000,-10.000000}}"/>
+            <Property Name="Text" Value="#{QRZM_211119_206}"/>
+            <Property Name="Font" Value="YouYuan11.25"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="LoverTimeTopList_AwardPreview">
+          <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,24.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-114.000000},{0.000000,2.000000}}"/>
+          <Property Name="PushedImage" Value="set:LoverTime01 image:LoverTime_JiangLiYuLan3"/>
+          <Property Name="NormalImage" Value="set:LoverTime01 image:LoverTime_JiangLiYuLan1"/>
+          <Property Name="HoverImage" Value="set:LoverTime01 image:LoverTime_JiangLiYuLan2"/>
+          <Property Name="DisabledImage" Value="set:LoverTime01 image:LoverTime_JiangLiYuLan4"/>
+          <Event Name="Clicked" Function="LoverTimeTopList_RankClick_Award();"/>
+        </Window>
+        <Window Type="DefaultWindow" Name="LoverTimeTopList_Ranking_Present_Frame">
+          <Property Name="UnifiedSize" Value="{{0.000000,288.000000},{0.000000,222.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,18.000000},{0.000000,66.000000}}"/>
+
+          <Window Type="TLBB_SimpleText" Name="LoverTimeTopList_Ranking_Present_TitleNum">
+            <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,28.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#{QRZM_211119_262}"/>
+            <Property Name="Font" Value="YouYuan9.75"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="LoverTimeTopList_Ranking_Present_TitleName">
+            <Property Name="UnifiedSize" Value="{{0.000000,122.000000},{0.000000,28.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#{QRZM_211119_263}"/>
+            <Property Name="Font" Value="YouYuan9.75"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="LoverTimeTopList_Ranking_Present_TitleNum2">
+            <Property Name="UnifiedSize" Value="{{0.000000,82.000000},{0.000000,28.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,182.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#{QRZM_211119_264}"/>
+            <Property Name="Font" Value="YouYuan9.75"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_NotSuperList1" Name="LoverTimeTopList_Ranking_Present_ListContent">
+            <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,-60.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,30.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="SelectMode" Value="Single"/>
+            <Window Type="TLBB_NotSuperListItemCommon7" Name="LoverTimeTopList_Ranking_Present_List_CoinAItem">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,34.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Window Type="TLBB_SimpleText" Name="LoverTimeTopList_Ranking_Present_List_NumText">
+                  <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.50000,-10.000000}}"/>
+                  <Property Name="Text" Value="#{QRZM_211119_97}"/>
+                  <Property Name="TextColor" Value="FFFFFF00"/>
+                  <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="LoverTimeTopList_Ranking_Present_List_NameText">
+                  <Property Name="UnifiedSize" Value="{{0.000000,122.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,62.000000},{0.500000,-10.000000}}"/>
+                  <Property Name="Text" Value="#{QRZM_211119_98}"/>
+                  <Property Name="TextColor" Value="FFFFFF00"/>
+                  <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="LoverTimeTopList_Ranking_Present_List_Num">
+                  <Property Name="UnifiedSize" Value="{{0.000000,66.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,184.000000},{0.500000,-10.000000}}"/>
+                  <Property Name="Text" Value="#{QRZM_211119_101}"/>
+                  <Property Name="TextColor" Value="FFFFFF00"/>
+                  <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+                </Window>
+              </Window>
+            </Window>
+          <Window Type="DefaultWindow" Name="LoverTimeTopList_Ranking_PresentMe">
+            <Property Name="UnifiedSize" Value="{{0.000000,284.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-30.000000}}"/>
+            <Window Type="TLBB_SimpleText" Name="LoverTimeTopList_Ranking_Present_Me">
+              <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.500000,-6.000000}}"/>
+              <Property Name="Text" Value="#{QRZM_211119_102}"/>
+              <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="LoverTimeTopList_Ranking_Present_MeNum">
+              <Property Name="UnifiedSize" Value="{{0.000000,130.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,38.000000},{0.500000,-6.000000}}"/>
+              <Property Name="Text" Value="#{QRZM_211119_103}"/>
+              <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="LoverTimeTopList_Ranking_Present_Rose">
+              <Property Name="UnifiedSize" Value="{{0.000000,130.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,120.000000},{0.500000,-6.000000}}"/>
+              <Property Name="Text" Value="#{QRZM_211119_105}"/>
+              <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="LoverTimeTopList_Ranking_Present_AwardBtn">
+          <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,24.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,434.000000},{0.000000,294.000000}}"/>
+          <Property Name="PushedImage" Value="set:LoverTime01 image:LoverTime_LingQu3"/>
+          <Property Name="NormalImage" Value="set:LoverTime01 image:LoverTime_LingQu1"/>
+          <Property Name="HoverImage" Value="set:LoverTime01 image:LoverTime_LingQu2"/>
+          <Property Name="DisabledImage" Value="set:LoverTime01 image:LoverTime_LingQu4"/>
+          <Event Name="Clicked" Function="LoverTimeTopList_Prize_Present()"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="DefaultWindow" Name="LoverTimeTopList_Ranking_Receive_Frame">
+          <Property Name="UnifiedSize" Value="{{0.000000,288.000000},{0.000000,222.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-296.000000},{0.000000,66.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="LoverTimeTopList_Ranking_Receive_TitleNum">
+            <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,28.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#{QRZM_211119_262}"/>
+            <Property Name="Font" Value="YouYuan9.75"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="LoverTimeTopList_Ranking_Receive_TitleName">
+            <Property Name="UnifiedSize" Value="{{0.000000,122.000000},{0.000000,28.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#{QRZM_211119_263}"/>
+            <Property Name="Font" Value="YouYuan9.75"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="LoverTimeTopList_Ranking_Receive_TitleNum2">
+            <Property Name="UnifiedSize" Value="{{0.000000,82.000000},{0.000000,28.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,182.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#{QRZM_211119_264}"/>
+            <Property Name="Font" Value="YouYuan9.75"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_NotSuperList1" Name="LoverTimeTopList_Ranking_Receive_ListContent">
+            <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,-60.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,30.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="SelectMode" Value="Single"/>
+            <Window Type="TLBB_NotSuperListItemCommon6" Name="LoverTimeTopList_Ranking_Receive_List_CoinAItem">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,34.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Window Type="TLBB_SimpleText" Name="LoverTimeTopList_Ranking_Receive_List_NumText">
+                  <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.500000,-10.000000}}"/>
+                  <Property Name="Text" Value="#{QRZM_211119_116}"/>
+                  <Property Name="TextColor" Value="FFFFFF00"/>
+                  <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="LoverTimeTopList_Ranking_Receive_List_NameText">
+                  <Property Name="UnifiedSize" Value="{{0.000000,122.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,62.000000},{0.500000,-10.000000}}"/>
+                  <Property Name="Text" Value="#{QRZM_211119_117}"/>
+                  <Property Name="TextColor" Value="FFFFFF00"/>
+                  <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="LoverTimeTopList_Ranking_Receive_List_Num">
+                  <Property Name="UnifiedSize" Value="{{0.000000,66.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,184.000000},{0.500000,-10.000000}}"/>
+                  <Property Name="Text" Value="#{QRZM_211119_120}"/>
+                  <Property Name="TextColor" Value="FFFFFF00"/>
+                  <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+                </Window>
+              </Window>
+            </Window>
+          <Window Type="DefaultWindow" Name="LoverTimeTopList_Ranking_ReceiveMe">
+            <Property Name="UnifiedSize" Value="{{0.000000,284.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-30.000000}}"/>
+            <Property Name="Image" Value="set:QiXi_HuaBang image:QiXi_HuaBangBluemeBK"/>
+            <Window Type="TLBB_SimpleText" Name="LoverTimeTopList_Ranking_Receive_Me">
+              <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.500000,-6.000000}}"/>
+              <Property Name="Text" Value="#{QRZM_211119_102}"/>
+              <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="LoverTimeTopList_Ranking_Receive_MeNum">
+              <Property Name="UnifiedSize" Value="{{0.000000,130.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,38.000000},{0.500000,-6.000000}}"/>
+              <Property Name="Text" Value="#{QRZM_211119_103}"/>
+              <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="LoverTimeTopList_Ranking_Receive_Rose">
+              <Property Name="UnifiedSize" Value="{{0.000000,130.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,120.000000},{0.500000,-6.000000}}"/>
+              <Property Name="Text" Value="#{QRZM_211119_255}"/>
+              <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="LoverTimeTopList_Ranking_Receive_AwardBtn">
+          <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,24.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,114.000000},{0.000000,294.000000}}"/>
+          <Property Name="PushedImage" Value="set:LoverTime01 image:LoverTime_LingQu3"/>
+          <Property Name="NormalImage" Value="set:LoverTime01 image:LoverTime_LingQu1"/>
+          <Property Name="HoverImage" Value="set:LoverTime01 image:LoverTime_LingQu2"/>
+          <Property Name="DisabledImage" Value="set:LoverTime01 image:LoverTime_LingQu4"/>
+          <Event Name="Clicked" Function="LoverTimeTopList_Prize_Receive()"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="LoverTimeTopList_Ranking_Present_F5">
+          <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,24.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-105.000000},{0.000000,316.000000}}"/>
+          <Property Name="PushedImage" Value="set:LoverTime01 image:LoverTime_ShuaXin3"/>
+          <Property Name="NormalImage" Value="set:LoverTime01 image:LoverTime_ShuaXin1"/>
+          <Property Name="HoverImage" Value="set:LoverTime01 image:LoverTime_ShuaXin2"/>
+          <Property Name="DisabledImage" Value="set:LoverTime01 image:LoverTime_ShuaXin4"/>
+          <Event Name="Clicked" Function="LoverTimeTopList_RankClick_Refresh();"/>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="LoverTimeTopList_Exchange_Frame">
+        <Property Name="UnifiedSize" Value="{{0.000000,654.000000},{0.000000,288.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-326.000000},{0.000000,130.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Window Type="TLBB_StaticImageNULL" Name="LoverTimeTopList_Exchange_Item6">
+          <Property Name="UnifiedSize" Value="{{0.000000,134.000000},{0.000000,154.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-298.000000},{0.000000,0.000000}}"/>
+          <Property Name="Image" Value="set:QiXi_HuaBang image:QiXi_HuaBangBK4"/>
+          <Property Name="Visible" Value="False"/>
+          <Window Type="TLBB_ActionButton" Name="LoverTimeTopList_Exchange_Item6_Icon">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-20.000000},{0.000000,52.000000}}"/>
+          </Window>
+          <Window Type="TLBB_ButtonCommon10" Name="LoverTimeTopList_Exchange_Item6_Get">
+            <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-26.000000},{0.000000,126.000000}}"/>
+            <Property Name="Text" Value="#{QRZM_211119_265}"/>
+            <Event Name="Clicked" Function="LoverTimeTopList_Exchange_Click(6)" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="LoverTimeTopList_Exchange_Item6_Text">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,104.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="LoverTimeTopList_Exchange_Item7">
+          <Property Name="UnifiedSize" Value="{{0.000000,134.000000},{0.000000,154.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-144.000000},{0.000000,0.000000}}"/>
+          <Property Name="Image" Value="set:QiXi_HuaBang image:QiXi_HuaBangBK4"/>
+          <Property Name="Visible" Value="False"/>
+          <Window Type="TLBB_ActionButton" Name="LoverTimeTopList_Exchange_Item7_Icon">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-20.000000},{0.000000,52.000000}}"/>
+          </Window>
+          <Window Type="TLBB_ButtonCommon10" Name="LoverTimeTopList_Exchange_Item7_Get">
+            <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-26.000000},{0.000000,126.000000}}"/>
+            <Property Name="Text" Value="#{QRZM_211119_265}"/>
+            <Event Name="Clicked" Function="LoverTimeTopList_Exchange_Click(7)" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="LoverTimeTopList_Exchange_Item7_Text">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,104.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="LoverTimeTopList_Exchange_Item1">
+          <Property Name="UnifiedSize" Value="{{0.000000,128.000000},{0.000000,132.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-222.000000},{0.000000,0.000000}}"/>
+          <Property Name="Image" Value="set:LoverTime01 image:LoverTime_ShangChangBK"/>
+          <Window Type="TLBB_ActionButton" Name="LoverTimeTopList_Exchange_Item1_Icon">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-20.000000},{0.000000,42.000000}}"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="LoverTimeTopList_Exchange_Item1_Get">
+            <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-42.000000},{0.000000,100.000000}}"/>
+            <Property Name="PushedImage" Value="set:LoverTime01 image:LoverTime_DuiHuan3"/>
+            <Property Name="NormalImage" Value="set:LoverTime01 image:LoverTime_DuiHuan1"/>
+            <Property Name="HoverImage" Value="set:LoverTime01 image:LoverTime_DuiHuan2"/>
+            <Property Name="DisabledImage" Value="set:LoverTime01 image:LoverTime_DuiHuan4"/>
+            <Event Name="Clicked" Function="LoverTimeTopList_Exchange_Click(1)" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="LoverTimeTopList_Exchange_Item1_Text">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,10.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="LoverTimeTopList_Exchange_Item2">
+          <Property Name="UnifiedSize" Value="{{0.000000,128.000000},{0.000000,132.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-67.000000},{0.000000,0.000000}}"/>
+          <Property Name="Image" Value="set:LoverTime01 image:LoverTime_ShangChangBK"/>
+          <Window Type="TLBB_ActionButton" Name="LoverTimeTopList_Exchange_Item2_Icon">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-20.000000},{0.000000,42.000000}}"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="LoverTimeTopList_Exchange_Item2_Get">
+            <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-42.000000},{0.000000,100.000000}}"/>
+            <Property Name="PushedImage" Value="set:LoverTime01 image:LoverTime_DuiHuan3"/>
+            <Property Name="NormalImage" Value="set:LoverTime01 image:LoverTime_DuiHuan1"/>
+            <Property Name="HoverImage" Value="set:LoverTime01 image:LoverTime_DuiHuan2"/>
+            <Property Name="DisabledImage" Value="set:LoverTime01 image:LoverTime_DuiHuan4"/>
+            <Event Name="Clicked" Function="LoverTimeTopList_Exchange_Click(2)" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="LoverTimeTopList_Exchange_Item2_Text">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,10.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="LoverTimeTopList_Exchange_Item2_Text2">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,82.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            <Property Name="Text" Value="#{限购}"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="LoverTimeTopList_Exchange_Item3">
+          <Property Name="UnifiedSize" Value="{{0.000000,128.000000},{0.000000,132.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,86.000000},{0.000000,0.000000}}"/>
+          <Property Name="Image" Value="set:LoverTime01 image:LoverTime_ShangChangBK"/>
+          <Window Type="TLBB_ActionButton" Name="LoverTimeTopList_Exchange_Item3_Icon">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-20.000000},{0.000000,42.000000}}"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="LoverTimeTopList_Exchange_Item3_Get">
+            <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-42.000000},{0.000000,100.000000}}"/>
+            <Property Name="PushedImage" Value="set:LoverTime01 image:LoverTime_DuiHuan3"/>
+            <Property Name="NormalImage" Value="set:LoverTime01 image:LoverTime_DuiHuan1"/>
+            <Property Name="HoverImage" Value="set:LoverTime01 image:LoverTime_DuiHuan2"/>
+            <Property Name="DisabledImage" Value="set:LoverTime01 image:LoverTime_DuiHuan4"/>
+            <Event Name="Clicked" Function="LoverTimeTopList_Exchange_Click(3)" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="LoverTimeTopList_Exchange_Item3_Text">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,10.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="LoverTimeTopList_Exchange_Item4">
+          <Property Name="UnifiedSize" Value="{{0.000000,128.000000},{0.000000,132.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-145.000000},{0.000000,144.000000}}"/>
+          <Property Name="Image" Value="set:LoverTime01 image:LoverTime_ShangChangBK"/>
+          <Window Type="TLBB_ActionButton" Name="LoverTimeTopList_Exchange_Item4_Icon">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-20.000000},{0.000000,42.000000}}"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="LoverTimeTopList_Exchange_Item4_Get">
+            <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-42.000000},{0.000000,100.000000}}"/>
+            <Property Name="PushedImage" Value="set:LoverTime01 image:LoverTime_DuiHuan3"/>
+            <Property Name="NormalImage" Value="set:LoverTime01 image:LoverTime_DuiHuan1"/>
+            <Property Name="HoverImage" Value="set:LoverTime01 image:LoverTime_DuiHuan2"/>
+            <Property Name="DisabledImage" Value="set:LoverTime01 image:LoverTime_DuiHuan4"/>
+            <Event Name="Clicked" Function="LoverTimeTopList_Exchange_Click(4)" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="LoverTimeTopList_Exchange_Item4_Text">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,10.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="LoverTimeTopList_Exchange_Item5">
+          <Property Name="UnifiedSize" Value="{{0.000000,128.000000},{0.000000,132.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,10.000000},{0.000000,144.000000}}"/>
+          <Property Name="Image" Value="set:LoverTime01 image:LoverTime_ShangChangBK"/>
+          <Window Type="TLBB_ActionButton" Name="LoverTimeTopList_Exchange_Item5_Icon">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-20.000000},{0.000000,42.000000}}"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="LoverTimeTopList_Exchange_Item5_Get">
+            <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-42.000000},{0.000000,100.000000}}"/>
+            <Property Name="PushedImage" Value="set:LoverTime01 image:LoverTime_DuiHuan3"/>
+            <Property Name="NormalImage" Value="set:LoverTime01 image:LoverTime_DuiHuan1"/>
+            <Property Name="HoverImage" Value="set:LoverTime01 image:LoverTime_DuiHuan2"/>
+            <Property Name="DisabledImage" Value="set:LoverTime01 image:LoverTime_DuiHuan4"/>
+            <Event Name="Clicked" Function="LoverTimeTopList_Exchange_Click(5)" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="LoverTimeTopList_Exchange_Item5_Text">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,10.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

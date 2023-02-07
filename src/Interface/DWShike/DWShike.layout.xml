@@ -1,0 +1,174 @@
+<?xml version="1.0"?>
+<GUILayout>
+	<Window Type="TLBB_MainFrame1" Name="DWShike_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,270.000000},{0.000000,380.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-128.000000},{0.500000,-178.000000}}"/>
+		<Event Name="Hidden" Function="DWShike_OnHiden();" />
+		<Window Type="TLBB_DragTitle" Name="DWShike_DragTitle">
+			<Property Name="AbsolutePosition" Value="x:40.000000 y:11.000000" />
+			<Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}}" />
+			<Property Name="DragTarget" Value="DWShike_Frame" />
+			<Window Type="TLBB_SimpleText" Name="DWShike_Title">
+				<Property Name="RelativePosition" Value="x:0.000000 y:0.000000" />
+				<Property Name="RelativeSize" Value="w:1.000000 h:1.000000" />
+				<Property Name="Font" Value="YouYuan11.25" />
+				<Property Name="HorzFormatting" Value="HorzCentred" />
+				<Property Name="RiseOnClick" Value="False" />
+				<Property Name="Text" Value="#{ZBDW_XML_15}" />
+				<Property Name="VertFormatting" Value="VertCentred" />
+			</Window>
+		</Window>
+		<Window Type="TLBB_ButtonHelp" Name="DWShike_Help">
+			<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}" />
+			<Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+			<Property Name="Text" Value="TLBB_ButtonHelp" />
+            <Event Name="Clicked" Function='Helper:GotoHelper(&quot;DWShike&quot;);' />
+		</Window>
+		<Window Type="TLBB_ButtonClose" Name="DWShike_Close">
+			<Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}" />
+			<Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+			<Property Name="Text" Value="TLBB_ButtonClose" />
+			<Event Name="Clicked" Function="this:Hide();" />
+		</Window>
+		<Window Type="DefaultWindow" Name="DWShike_Frame_Client">
+			<Property Name="AbsolutePosition" Value="x:7.000000 y:30.000000" />
+			<Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{1.000000,-39.000000}}" />
+			<Window Type="TLBB_SimpleMulitiTextFrame" Name="DWShike_Info">
+				<Property Name="RelativePosition" Value="x:0.000000 y:0.000000" />
+				<Property Name="AbsoluteSize" Value="w:255.000000 h:84.000000" />
+				<Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+				<Property Name="RiseOnClick" Value="False" />
+				<Property Name="Text" Value="#{ZBDW_XML_16}" />
+				<Property Name="TextColor" Value="FFFFF263" />
+			</Window>
+			<Window Type="TLBB_SimpleText" Name="DWShike_Info2">
+				<Property Name="AbsolutePosition" Value="x:12.000000 y:91.000000" />
+				<Property Name="UnifiedSize" Value="{{0.695473,0.000000},{0.000000,40.000000}}" />
+				<Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+				<Property Name="RiseOnClick" Value="False" />
+				<Property Name="Text" Value="#{ZBDW_XML_17}" />
+				<Property Name="TextColor" Value="FFFFF263" />
+			</Window>
+			<Window Type="TLBB_ActionButton" Name="DWShike_Object">
+				<Property Name="AbsolutePosition" Value="x:190.000000 y:92.000000" />
+				<Property Name="AbsoluteSize" Value="w:36.000000 h:36.000000" />
+				<Property Name="DragAcceptName" Value="G98" />
+				<Property Name="DraggingEnabled" Value="True" />
+				<Event Name="RBClicked" Function="DWShike_Resume_Equip(98);" />
+			</Window>
+			<Window Type="TLBB_SimpleText" Name="DWShike_Info3">
+				<Property Name="AbsolutePosition" Value="x:12.000000 y:141.000000" />
+				<Property Name="UnifiedSize" Value="{{0.695473,0.000000},{0.000000,40.000000}}" />
+				<Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+				<Property Name="RiseOnClick" Value="False" />
+				<Property Name="Text" Value="#{ZBDW_XML_18}" />
+				<Property Name="TextColor" Value="FFFFF263" />
+			</Window>
+			<Window Type="TLBB_ActionButton" Name="DWShike_Object2">
+				<Property Name="AbsolutePosition" Value="x:190.000000 y:142.000000" />
+				<Property Name="AbsoluteSize" Value="w:36.000000 h:36.000000" />
+				<Property Name="DragAcceptName" Value="G99" />
+				<Property Name="DraggingEnabled" Value="True" />
+				<Event Name="RBClicked" Function="DWShike_Resume_Equip(99);" />
+			</Window>
+			<Window Type="TLBB_SimpleText" Name="DWShike_Info4">
+				<Property Name="AbsolutePosition" Value="x:12.000000 y:191.000000" />
+				<Property Name="UnifiedSize" Value="{{0.695473,0.000000},{0.000000,40.000000}}" />
+				<Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+				<Property Name="RiseOnClick" Value="False" />
+				<Property Name="Text" Value="#{ZBDW_XML_19}" />
+				<Property Name="TextColor" Value="FFFFF263" />
+			</Window>
+			<Window Type="TLBB_ActionButton" Name="DWShike_Object3">
+				<Property Name="AbsolutePosition" Value="x:190.000000 y:192.000000" />
+				<Property Name="AbsoluteSize" Value="w:36.000000 h:36.000000" />
+				<Property Name="DragAcceptName" Value="G100" />
+				<Property Name="DraggingEnabled" Value="True" />
+				<Event Name="RBClicked" Function="DWShike_Resume_Equip(100);" />
+			</Window>
+			<Window Type="TLBB_SimpleMulitiTextFrame" Name="DWShike_Money_Text">
+				<Property Name="UnifiedPosition" Value="{{0.050000,0.000000},{1.000000,-102.000000}}" />
+				<Property Name="UnifiedSize" Value="{{0.900000,0.000000},{0.000000,22.000000}}" />
+				<Property Name="HorzFormatting" Value="LeftAligned" />
+				<Property Name="RiseOnClick" Value="False" />
+				<Property Name="Text" Value="#{INTERFACE_XML_789}" />
+				<Property Name="TextColor" Value="FFFFF263" />
+				<Property Name="VertFormatting" Value="VertCentred" />
+				<Window Type="TLBB_Money" Name="DWShike_DemandMoney">
+					<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+					<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}" />
+					<Property Name="AlignFix" Value="True" />
+					<Property Name="CopperIcon" Value="set:Button6 image:Lace_JiaoziTong" />
+					<Property Name="GoldIcon" Value="set:Button6 image:Lace_JiaoziJin" />
+					<Property Name="HorzFormatting" Value="RightAligned" />
+					<Property Name="MoneyNumber" Value="0" />
+					<Property Name="SilverIcon" Value="set:Button6 image:Lace_JiaoziYin" />
+				</Window>
+			</Window>
+			<Window Type="TLBB_SimpleMulitiTextFrame" Name="DWShike_Jiaozi_Text">
+				<Property Name="UnifiedPosition" Value="{{0.050000,0.000000},{1.000000,-80.000000}}" />
+				<Property Name="UnifiedSize" Value="{{0.900000,0.000000},{0.000000,22.000000}}" />
+				<Property Name="HorzFormatting" Value="LeftAligned" />
+				<Property Name="RiseOnClick" Value="False" />
+				<Property Name="Text" Value="#{BDJB_051210_1}" />
+				<Property Name="TextColor" Value="FFFFF263" />
+				<Property Name="VertFormatting" Value="VertCentred" />
+				<Window Type="TLBB_Money" Name="DWShike_SelfJiaozi">
+					<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+					<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}" />
+					<Property Name="AlignFix" Value="True" />
+					<Property Name="CopperIcon" Value="set:Button6 image:Lace_JiaoziTong" />
+					<Property Name="GoldIcon" Value="set:Button6 image:Lace_JiaoziJin" />
+					<Property Name="HorzFormatting" Value="RightAligned" />
+					<Property Name="MoneyNumber" Value="0" />
+					<Property Name="SilverIcon" Value="set:Button6 image:Lace_JiaoziYin" />
+				</Window>
+			</Window>
+			<Window Type="TLBB_SimpleMulitiTextFrame" Name="DWShike_SelfMoney_Text">
+				<Property Name="UnifiedPosition" Value="{{0.050000,0.000000},{1.000000,-58.000000}}" />
+				<Property Name="UnifiedSize" Value="{{0.900000,0.000000},{0.000000,22.000000}}" />
+				<Property Name="HorzFormatting" Value="LeftAligned" />
+				<Property Name="RiseOnClick" Value="False" />
+				<Property Name="Text" Value="#{INTERFACE_XML_834}" />
+				<Property Name="TextColor" Value="FFFFF263" />
+				<Property Name="VertFormatting" Value="VertCentred" />
+				<Window Type="TLBB_Money" Name="DWShike_SelfMoney">
+					<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+					<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}" />
+					<Property Name="HorzFormatting" Value="RightAligned" />
+					<Property Name="MoneyNumber" Value="0" />
+				</Window>
+			</Window>
+			<!-- <Window Type="TLBB_Frame_Lace5" Name="DWShike_Blank"> -->
+				<!-- <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-20.000000}}" /> -->
+				<!-- <Property Name="UnifiedSize" Value="{{1.000000,-84.000000},{0.000000,20.000000}}" /> -->
+        <!-- <Window Type="TLBB_ButtonCheck" Name="DWShike_Blank_Queren"> -->
+          <!-- <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,13.000000}}"/> -->
+          <!-- <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,4.000000}}"/> -->
+          <!-- <Property Name="AlwaysOnTop" Value="True"/> -->
+          <!-- <Property Name="Selected" Value="True"/> -->
+		   <!-- <Event Name="Clicked" Function="DWShike_Blank_Queren_Clicked()"/> -->
+        <!-- </Window> -->
+        <!-- <Window Type="TLBB_SimpleText" Name="DWShike_Blank_Queren_Text"> -->
+          <!-- <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,20.000000}}"/> -->
+          <!-- <Property Name="UnifiedPosition" Value="{{0.000000,24.000000},{0.000000,1.000000}}"/> -->
+          <!-- <Property Name="Text" Value="#{DWYH_161110_1}"/> -->
+          <!-- <Property Name="Tooltip" Value="#{DWYH_161110_8}"/> -->
+          <!-- <Property Name="AlwaysOnTop" Value="True"/> -->
+        <!-- </Window> -->
+			<!-- </Window> -->
+			<Window Type="TLBB_ButtonCommon" Name="DWShike_OK">
+				<Property Name="UnifiedPosition" Value="{{1.000000,-82.000000},{1.000000,-29.000000}}" />
+				<Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+				<Property Name="Text" Value="#{INTERFACE_XML_557}" />
+				<Event Name="Clicked" Function="DWShike_OK_Clicked();" />
+			</Window>
+			<Window Type="TLBB_ButtonCommon" Name="DWShike_Cancel">
+				<Property Name="UnifiedPosition" Value="{{1.000000,-42.000000},{1.000000,-29.000000}}" />
+				<Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+				<Property Name="Text" Value="#{INTERFACE_XML_542}" />
+				<Event Name="Clicked" Function="this:Hide();" />
+			</Window>
+		</Window>
+	</Window>
+</GUILayout>

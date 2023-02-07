@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<GUILayout>
+	<Window Type="DefaultWindow" Name="NewMessageBall22_Frame">
+    <Property Name="UnifiedPosition" Value="{{0.500000,-16.000000},{0.500000,-158.000000}" />
+    <Property Name="AbsoluteSize" Value="w:32.000000 h:32.000000" />
+	<Property Name="MouseHollow" Value="True" />
+		<Window Type="TLBB_Animate" Name="NewMessageBall22_Button_Action1_Mask">
+			<Property Name="Position" Value="x:0.0 y:0.0" />
+			<Property Name="Size" Value="w:1.0 h:1.0" />
+			<Property Name="Animate" Value="CoolDownEnd2" />
+			<Property Name="AlwaysOnTop" Value="True" />
+			<Event Name="MouseLClick" Function="NewMessageBall22_Button_Action1_Mask_Click();" />
+		</Window>
+	</Window>
+</GUILayout>

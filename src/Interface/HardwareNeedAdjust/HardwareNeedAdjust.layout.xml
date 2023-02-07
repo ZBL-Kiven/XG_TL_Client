@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<GUILayout>
+    <Window Type="DefaultWindow" Name="HardwareNeedAdjust_Frame">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Position" Value="x:0.0 y:0.0" />
+        <Property Name="Size" Value="w:1.0 h:1.0" />
+        <Window Type="TLBB_Frame2" Name="HardwareNeedAdjust_Frame_sub">
+            <Property Name="UnifiedPosition" Value="{{0.500000,-173.000000},{0.500000,-118.000000}" />
+            <Property Name="UnifiedSize" Value="{{0.000000,346.000000},{0.000000,90.000000}" />
+            <Window Type="TLBB_SelfWindow" Name="HardwareNeedAdjust_InfoWindow">
+                <Property Name="AbsolutePosition" Value="x:12.000000 y:12.000000" />
+                <Property Name="AbsoluteSize" Value="w:0.000000 h:0.000000" />
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+                <Property Name="VertFormatting" Value="VertCentred" />
+                <Property Name="RiseOnClick" Value="False" />
+                <Property Name="MaxWidth" Value="326" />
+                <Property Name="MinHeight" Value="25" />
+            </Window>
+            <Window Type="TLBB_ButtonGreen" Name="HardwareNeedAdjust_Button1">
+                <Property Name="UnifiedPosition" Value="{{1.000000,-99.000000},{1.000000,-27.000000}" />
+                <Property Name="AbsoluteSize" Value="w:92.000000 h:20.000000" />
+                <Property Name="Text" Value="#{YJMB_090116_009}" />
+                <Event Name="Clicked" Function="HardwareNeedAdjust_Bn2Click();" />
+            </Window>
+            <Window Type="TLBB_StopWatch" Name="HardwareNeedAdjust_Time_Text">
+                <Property Name="UnifiedPosition" Value="{{0.000000,110.000000},{1.000000,-25.000000}" />
+                <Property Name="AbsoluteSize" Value="w:60.000000 h:20.000000" />
+                <Property Name="HorzFormatting" Value="HorzCentred" />
+                <Property Name="VertFormatting" Value="VertCentred" />
+                <Event Name="ReachedZero" Function="HardwareNeedAdjust_TimeOut();" />
+                <Property Name="Text" Value="00:00" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

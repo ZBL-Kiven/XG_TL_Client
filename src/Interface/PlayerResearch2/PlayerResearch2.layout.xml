@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="DefaultWindow" Name="PlayerResearch2_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,50.000000}}" />
+    <Property Name="UnifiedPosition" Value="{{1.0000,-160.000000},{0.000000,258.000000}}" />
+    <Property Name="MouseHollow" Value="True" />
+    <Property Name="MouseMoveHollow" Value="True" />
+      <Window Type="TLBB_ButtonNULL" Name="PlayerResearch2_ResearchButton">
+        <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.500000,-23.000000}}" />
+        <Property Name="HoverImage" Value="set:Logon01 image:wenjuan2" />
+        <Property Name="NormalImage" Value="set:Logon01 image:wenjuan3" />
+        <Property Name="PushedImage" Value="set:Logon01 image:wenjuan1" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Tooltip" Value="#{DCWJ_20201103_01}" />
+        <Event Name="Clicked" Function="PlayerResearch2_ResearchButton_Click()" />
+      </Window>
+    </Window>
+</GUILayout>

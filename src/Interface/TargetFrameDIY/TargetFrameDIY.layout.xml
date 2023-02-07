@@ -1,0 +1,134 @@
+<?xml version="1.0" ?>
+<GUILayout>
+	<Window Type="DefaultWindow" Name="TargetFrameDIY">
+		<Property Name="UnifiedPosition" Value="{{0.0,220.0},{0.0,0.0}}" />
+		<Property Name="UnifiedSize" Value="{{0.000000,252.000000},{0.000000,95.000000}}" />
+		<Property Name="MouseHollow" Value="True" />
+		<Property Name="MouseLButtonHollow" Value="True" />
+		<Property Name="MouseMoveHollow" Value="True" />
+		<Property Name="MouseRButtonHollow" Value="True" />
+		<Event Name="Shown" Function="TargetFrameDIY_OnShow();"/>
+		<Window Type="TLBB_StaticImageNULL" Name="TargetFrameDIY2">
+			<Property Name="AbsolutePosition" Value="x:0.000000 y:0.000000" />
+			<Property Name="AbsoluteSize" Value="w:235.000000 h:95.000000" />
+			<Property Name="RiseOnClick" Value="False" />
+			<Property Name="Image" Value="set:CharStyleFrame1 image:MainFrame1" />
+		</Window>
+		<Window Type="TLBB_StaticImageNULL" Name="TargetFrameDIY_Icon">
+			<Property Name="AbsolutePosition" Value="x:23.000000 y:35.000000" />
+			<Property Name="AbsoluteSize" Value="w:48.000000 h:48.000000" />
+			<Property Name="Image" Value="set:ManProtagonist image:ManProtagonist_1" />
+			<Event Name="MouseRClick" Function="TargetFrameDIY_Show_Menu_Func();" />
+		</Window>
+		<Window Type="TLBB_StaticImageNULL" Name="TargetFrameDIY_LevelFrame">
+			<Property Name="AbsolutePosition" Value="x:96.000000 y:58.000000" />
+			<Property Name="AbsoluteSize" Value="w:30.000000 h:14.000000" />
+			<Property Name="Image" Value="set:CharStyleFrame1 image:LevelFrame1" />
+			<Window Type="TLBB_SimpleText" Name="TargetFrameDIY_LevelText">
+				<Property Name="AbsolutePosition" Value="x:0.000000 y:0.000000" />
+				<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+				<Property Name="HorzFormatting" Value="HorzCentred" />
+				<Property Name="VertFormatting" Value="VertCentred" />
+				<Property Name="RiseOnClick" Value="False" />
+				<Property Name="Text" Value="1" />
+			</Window>
+		</Window>
+		<Window Type="TLBB_StaticImageNULL" Name="TargetFrameDIY_NameBar">
+			<Property Name="AbsolutePosition" Value="x:96.000000 y:22.000000" />
+			<Property Name="AbsoluteSize" Value="w:98.000000 h:18.000000" />
+			<Property Name="RiseOnClick" Value="False" />
+			<Property Name="Image" Value="set:CharStyleFrame1 image:NameBar1" />
+			<Window Type="TLBB_SimpleText" Name="TargetFrameDIY_Name">
+				<Property Name="Position" Value="x:0 y:0" />
+				<Property Name="Size" Value="w:1 h:1" />
+				<Property Name="HorzFormatting" Value="HorzCentred" />
+				<Property Name="VertFormatting" Value="VertCentred" />
+			</Window>
+		</Window>
+		<Window Type="TLBB_StaticImageNULL" Name="TargetFrameDIY_TypeIcon">
+			<Property Name="ZOrderChangeEnabled" Value="False" />
+			<Property Name="AbsolutePosition" Value="x:99.000000 y:72.000000" />
+			<Property Name="AbsoluteSize" Value="w:23.000000 h:21.000000" />
+			<Property Name="Image" Value="set:CharStyleFrame1 image:TypeIcon1" />
+		</Window>
+		<Window Type="TLBB_StaticImageNULL" Name="TargetFrameDIY_DataBack">
+			<Property Name="AbsolutePosition" Value="x:96.000000 y:38.000000" />
+			<Property Name="AbsoluteSize" Value="w:98.000000 h:18.000000" />
+			<Property Name="Image" Value="set:CharStyleFrame1 image:DataBack1" />
+			<Window Type="TLBB_ProgressPropertyRed" Name="TargetFrameDIY_HP">
+				<Property Name="AbsolutePosition" Value="x:1.000000 y:0.000000" />
+				<Property Name="UnifiedSize" Value="{{1.000000,-2.000000},{0.000000,5.000000}}" />
+				<Property Name="CurrentProgress" Value="1.0" />
+				<Property Name="EffectColor" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+				<Property Name="EffectColorLevel" Value="index:0 tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+				<Property Name="MoveSpeed" Value="5000" />
+			</Window>
+			<Window Type="TLBB_ProgressPropertyBlue" Name="TargetFrameDIY_MP">
+				<Property Name="AbsolutePosition" Value="x:1.000000 y:6.000000" />
+				<Property Name="UnifiedSize" Value="{{1.000000,-2.000000},{0.000000,5.000000}}" />
+				<Property Name="CurrentProgress" Value="1.0" />
+				<Property Name="ProgressImage" Value="set:PlayerFrame image:10PX_Bar_Blue" />
+				<Property Name="EffectColor" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+				<Property Name="EffectColorLevel" Value="index:0 tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+				<Property Name="MoveSpeed" Value="5000" />
+			</Window>
+			<Window Type="TLBB_ProgressPropertyYellow" Name="TargetFrameDIY_SP">
+				<Property Name="AbsolutePosition" Value="x:1.000000 y:12.000000" />
+				<Property Name="UnifiedSize" Value="{{1.000000,-2.000000},{0.000000,5.000000}}" />
+				<Property Name="CurrentProgress" Value="1.0" />
+				<Property Name="ProgressImage" Value="set:PlayerFrame image:10PX_Bar_Yellow" />
+				<Property Name="EffectColor" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+				<Property Name="EffectColorLevel" Value="index:0 tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+				<Property Name="MoveSpeed" Value="5000" />
+			</Window>			
+			<Window Type="TLBB_StaticImageNULL" Name="TargetFrameDIY_DataFront">
+				<Property Name="AbsolutePosition" Value="x:0.000000 y:0.000000" />
+				<Property Name="UnifiedSize" Value="{{1.000000,.000000},{1.000000,0.000000}}" />
+				<Property Name="Image" Value="set:CharStyleFrame1 image:DataBack1" />
+			</Window>
+		</Window>
+	    <Window Type="TLBB_MapImage" Name="TargetFrameDIY_CampFrame">
+			<Property Name="ZOrderChangeEnabled" Value="False" />
+			<Property Name="AbsolutePosition" Value="x:194.000000 y:8.000000" />
+			<Property Name="AbsoluteSize" Value="w:25.000000 h:87.000000" />
+			<Property Name="ChildImage" Value="name:Reputation0 set:CharStyleFrame1 image:TragetCamp1_ShaoLin" />
+			<Property Name="ChildImage" Value="name:Reputation1 set:CharStyleFrame1 image:TragetCamp1_MingJiao" />
+			<Property Name="ChildImage" Value="name:Reputation2 set:CharStyleFrame1 image:TragetCamp1_GaiBang" />
+			<Property Name="ChildImage" Value="name:Reputation3 set:CharStyleFrame1 image:TragetCamp1_WuDang" />
+			<Property Name="ChildImage" Value="name:Reputation4 set:CharStyleFrame1 image:TragetCamp1_EMei" />
+			<Property Name="ChildImage" Value="name:Reputation5 set:CharStyleFrame1 image:TragetCamp1_XinXiu" />
+			<Property Name="ChildImage" Value="name:Reputation6 set:CharStyleFrame1 image:TragetCamp1_TianLong" />
+			<Property Name="ChildImage" Value="name:Reputation7 set:CharStyleFrame1 image:TragetCamp1_TianShan" />
+			<Property Name="ChildImage" Value="name:Reputation8 set:CharStyleFrame1 image:TragetCamp1_XiaoYao" />
+			<Property Name="ChildImage" Value="name:Reputation9 set:CharStyleFrame1 image:TragetCamp1_XinShou" />     
+	    </Window>
+		<Window Type="TLBB_StaticImageNULL" Name="TargetFrameDIY_TypeFrame">
+			<Property Name="AbsolutePosition" Value="x:17.000000 y:25.000000" />
+			<Property Name="AbsoluteSize" Value="w:63.000000 h:83.000000" />
+			<Property Name="MouseHollow" Value="True" />
+			<Property Name="MouseLButtonHollow" Value="True" />
+			<Property Name="MouseMoveHollow" Value="True" />
+			<Property Name="MouseRButtonHollow" Value="True" />
+			<Property Name="Image" Value="set:CharStyleFrame2 image:TypeFrame1" />
+		</Window>
+		<Window Type="TLBB_ButtonNULL" Name="TargetFrameDIY_Xiezhugongji_Icon">
+			<Property Name="AbsolutePosition" Value="x:162.000000 y:63.000000" />
+			<Property Name="AbsoluteSize" Value="w:32.000000 h:32.000000" />
+			<Property Name="Tooltip" Value="#{XZGJ_090507_1}" />
+			<Property Name="HoverImage" Value="set:CharStyleFrame1 image:Xiezhu1_Hover" />
+			<Property Name="NormalImage" Value="set:CharStyleFrame1 image:Xiezhu1_Normal" />
+			<Property Name="PushedImage" Value="set:CharStyleFrame1 image:Xiezhu1_Pushed" />
+			<Event Name="Clicked" Function="TargetFrameDIY_Select_TargetOfTarget_Func();" />
+		</Window>
+		<Window Type="TLBB_StaticImageNULL" Name="TargetFrameDIY_TopFrame">
+			<Property Name="AlwaysOnTop" Value="True" />
+			<Property Name="AbsolutePosition" Value="x:0.000000 y:0.000000" />
+			<Property Name="AbsoluteSize" Value="w:1.000000 h:1.000000" />
+			<Property Name="Image" Value="set:CharStyleFrame2 image:TypeFrame1" />
+			<Property Name="MouseHollow" Value="True" />
+			<Property Name="MouseLButtonHollow" Value="True" />
+			<Property Name="MouseMoveHollow" Value="True" />
+			<Property Name="MouseRButtonHollow" Value="True" />
+		</Window>
+	</Window>
+</GUILayout>

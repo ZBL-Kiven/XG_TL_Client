@@ -1,0 +1,357 @@
+<?xml version="1.0" ?>
+<GUILayout>
+	<Window Type="TLBB_MainFrame1" Name="YbMarketSale_Frame">
+		<Property Name="UnifiedSize" Value="{{0.000000,360.000000},{0.000000,324.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.500000,-180.000000},{0.500000,-163.000000}}"/>
+		<Event Name="Hidden" Function="YbMarketSale_Close_Clicked();"/>
+		<Window Type="TLBB_ButtonHelp" Name="YbMarketSale_Help">
+			<Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+			<Event Name="Clicked" Function="Helper:GotoHelper('*YbMarketSale');"/>
+		</Window>
+		<Window Type="TLBB_ButtonClose" Name="YbMarketSale_Close">
+			<Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+			<Event Name="Clicked" Function="YbMarketSale_Close_Clicked();"/>
+		</Window>
+		<Window Type="TLBB_DragTitle" Name="YbMarketSale_DragTitle">
+			<Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+			<Property Name="Text" Value="#{YBSC_XML_78}"/>
+			<Property Name="Font" Value="YouYuan11.25"/>
+			<Property Name="DragTarget" Value="YbMarketSale_Frame"/>
+		</Window>
+		<Window Type="DefaultWindow" Name="YbMarketSale_Client">
+			<Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-78.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,36.000000}}"/>
+			<Window Type="DefaultWindow" Name="YbMarketSale_Checkbox_Frame">
+				<Property Name="UnifiedSize" Value="{{0.000000,194.000000},{0.000000,24.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}"/>
+				<Window Type="TLBB_ButtonPageUp" Name="YbMarketSale_Check_Item">
+					<Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,24.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+					<Property Name="Text" Value="#{INTERFACE_XML_724}"/>
+					<Property Name="CheckMode" Value="1"/>
+					<Event Name="Clicked" Function="YbMarketSale_ChangeTabIndex(2);"/>
+				</Window>
+				<Window Type="TLBB_ButtonPageUp" Name="YbMarketSale_Check_Pet">
+					<Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,24.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,44.000000},{0.000000,0.000000}}"/>
+					<Property Name="Text" Value="#{INTERFACE_XML_854}"/>
+					<Property Name="CheckMode" Value="1"/>
+					<Event Name="Clicked" Function="YbMarketSale_ChangeTabIndex(1);"/>
+				</Window>
+			</Window>
+			<Window Type="TLBB_Frame_Lace2" Name="YbMarketSale_Action_Set">
+				<Property Name="UnifiedSize" Value="{{0.000000,348.000000},{0.000000,219.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.00000,27.000000}}"/>
+				<Window Type="TLBB_ActionButton" Name="YbMarketSale_Item1">
+					<Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,16.000000}}"/>
+					<Event Name="Clicked" Function="YbMarketSale_Item_Click(1);"/>
+				</Window>
+				<Window Type="TLBB_ActionButton" Name="YbMarketSale_Item2">
+					<Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,54.000000}}"/>
+					<Event Name="Clicked" Function="YbMarketSale_Item_Click(2);"/>
+				</Window>
+				<Window Type="TLBB_ActionButton" Name="YbMarketSale_Item3">
+					<Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,92.000000}}"/>
+					<Event Name="Clicked" Function="YbMarketSale_Item_Click(3);"/>
+				</Window>
+				<Window Type="TLBB_ActionButton" Name="YbMarketSale_Item4">
+					<Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,130.000000}}"/>
+					<Event Name="Clicked" Function="YbMarketSale_Item_Click(4);"/>
+				</Window>
+				<Window Type="TLBB_ActionButton" Name="YbMarketSale_Item5">
+					<Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,168.000000}}"/>
+					<Event Name="Clicked" Function="YbMarketSale_Item_Click(5);"/>
+				</Window>
+				<Window Type="TLBB_ActionButton" Name="YbMarketSale_Item6">
+					<Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,176.000000},{0.000000,16.000000}}"/>
+					<Event Name="Clicked" Function="YbMarketSale_Item_Click(6);"/>
+				</Window>
+				<Window Type="TLBB_ActionButton" Name="YbMarketSale_Item7">
+					<Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,176.000000},{0.000000,54.000000}}"/>
+					<Event Name="Clicked" Function="YbMarketSale_Item_Click(7);"/>
+				</Window>
+				<Window Type="TLBB_ActionButton" Name="YbMarketSale_Item8">
+					<Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,176.000000},{0.000000,92.000000}}"/>
+					<Event Name="Clicked" Function="YbMarketSale_Item_Click(8);"/>
+				</Window>
+				<Window Type="TLBB_ActionButton" Name="YbMarketSale_Item9">
+					<Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,176.000000},{0.000000,130.000000}}"/>
+					<Event Name="Clicked" Function="YbMarketSale_Item_Click(9);"/>
+				</Window>
+				<Window Type="TLBB_ActionButton" Name="YbMarketSale_Item10">
+					<Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,176.000000},{0.000000,168.000000}}"/>
+					<Event Name="Clicked" Function="YbMarketSale_Item_Click(10);"/>
+				</Window>
+				<Window Type="TLBB_SimpleMulitiTextFrame" Name="YbMarketSale_ItemInfo1">
+					<Property Name="UnifiedSize" Value="{{0.000000,126.000000},{0.000000,36.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,47.000000},{0.000000,15.000000}}"/>
+					<Window Type="TLBB_SimpleText" Name="YbMarketSale_ItemInfo1_Text">
+						<Property Name="UnifiedSize" Value="{{0.000000,121.000000},{0.000000,18.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+						<Property Name="TextColor" Value="FFFFF263"/>
+					</Window>
+					<Window Type="TLBB_SimpleText" Name="YbMarketSale_ItemInfo1_GB">
+						<Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,18.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,18.000000}}"/>
+						<Property Name="TextColor" Value="FFFFF263"/>
+						<Property Name="HorzFormatting" Value="RightAligned"/>
+					</Window>
+					<Window Type="TLBB_SimpleText" Name="YbMarketSale_ItemInfo1_Zhuangtai">
+						<Property Name="UnifiedSize" Value="{{0.000000,57.000000},{0.000000,18.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,67.000000},{0.000000,18.000000}}"/>
+						<Property Name="TextColor" Value="FFFFF263"/>
+						<Property Name="HorzFormatting" Value="RightAligned"/>
+					</Window>
+				</Window>
+				<Window Type="TLBB_SimpleMulitiTextFrame" Name="YbMarketSale_ItemInfo2">
+					<Property Name="UnifiedSize" Value="{{0.000000,126.000000},{0.000000,36.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,47.000000},{0.000000,53.000000}}"/>
+					<Window Type="TLBB_SimpleText" Name="YbMarketSale_ItemInfo2_Text">
+						<Property Name="UnifiedSize" Value="{{0.000000,121.000000},{0.000000,18.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+						<Property Name="TextColor" Value="FFFFF263"/>
+					</Window>
+					<Window Type="TLBB_SimpleText" Name="YbMarketSale_ItemInfo2_GB">
+						<Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,18.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,18.000000}}"/>
+						<Property Name="TextColor" Value="FFFFF263"/>
+						<Property Name="HorzFormatting" Value="RightAligned"/>
+					</Window>
+					<Window Type="TLBB_SimpleText" Name="YbMarketSale_ItemInfo2_Zhuangtai">
+						<Property Name="UnifiedSize" Value="{{0.000000,57.000000},{0.000000,18.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,67.000000},{0.000000,18.000000}}"/>
+						<Property Name="TextColor" Value="FFFFF263"/>
+						<Property Name="HorzFormatting" Value="RightAligned"/>
+					</Window>
+				</Window>
+				<Window Type="TLBB_SimpleMulitiTextFrame" Name="YbMarketSale_ItemInfo3">
+					<Property Name="UnifiedSize" Value="{{0.000000,126.000000},{0.000000,36.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,47.000000},{0.000000,91.000000}}"/>
+					<Window Type="TLBB_SimpleText" Name="YbMarketSale_ItemInfo3_Text">
+						<Property Name="UnifiedSize" Value="{{0.000000,121.000000},{0.000000,18.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+						<Property Name="TextColor" Value="FFFFF263"/>
+					</Window>
+					<Window Type="TLBB_SimpleText" Name="YbMarketSale_ItemInfo3_GB">
+						<Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,18.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,18.000000}}"/>
+						<Property Name="TextColor" Value="FFFFF263"/>
+						<Property Name="HorzFormatting" Value="RightAligned"/>
+					</Window>
+					<Window Type="TLBB_SimpleText" Name="YbMarketSale_ItemInfo3_Zhuangtai">
+						<Property Name="UnifiedSize" Value="{{0.000000,57.000000},{0.000000,18.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,67.000000},{0.000000,18.000000}}"/>
+						<Property Name="TextColor" Value="FFFFF263"/>
+						<Property Name="HorzFormatting" Value="RightAligned"/>
+					</Window>
+				</Window>
+				<Window Type="TLBB_SimpleMulitiTextFrame" Name="YbMarketSale_ItemInfo4">
+					<Property Name="UnifiedSize" Value="{{0.000000,126.000000},{0.000000,36.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,47.000000},{0.000000,129.000000}}"/>
+					<Window Type="TLBB_SimpleText" Name="YbMarketSale_ItemInfo4_Text">
+						<Property Name="UnifiedSize" Value="{{0.000000,121.000000},{0.000000,18.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+						<Property Name="TextColor" Value="FFFFF263"/>
+					</Window>
+					<Window Type="TLBB_SimpleText" Name="YbMarketSale_ItemInfo4_GB">
+						<Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,18.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,18.000000}}"/>
+						<Property Name="TextColor" Value="FFFFF263"/>
+						<Property Name="HorzFormatting" Value="RightAligned"/>
+					</Window>
+					<Window Type="TLBB_SimpleText" Name="YbMarketSale_ItemInfo4_Zhuangtai">
+						<Property Name="UnifiedSize" Value="{{0.000000,57.000000},{0.000000,18.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,67.000000},{0.000000,18.000000}}"/>
+						<Property Name="TextColor" Value="FFFFF263"/>
+						<Property Name="HorzFormatting" Value="RightAligned"/>
+					</Window>
+				</Window>
+				<Window Type="TLBB_SimpleMulitiTextFrame" Name="YbMarketSale_ItemInfo5">
+					<Property Name="UnifiedSize" Value="{{0.000000,126.000000},{0.000000,36.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,47.000000},{0.000000,167.000000}}"/>
+					<Window Type="TLBB_SimpleText" Name="YbMarketSale_ItemInfo5_Text">
+						<Property Name="UnifiedSize" Value="{{0.000000,121.000000},{0.000000,18.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+						<Property Name="TextColor" Value="FFFFF263"/>
+					</Window>
+					<Window Type="TLBB_SimpleText" Name="YbMarketSale_ItemInfo5_GB">
+						<Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,18.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,18.000000}}"/>
+						<Property Name="TextColor" Value="FFFFF263"/>
+						<Property Name="HorzFormatting" Value="RightAligned"/>
+					</Window>
+					<Window Type="TLBB_SimpleText" Name="YbMarketSale_ItemInfo5_Zhuangtai">
+						<Property Name="UnifiedSize" Value="{{0.000000,57.000000},{0.000000,18.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,67.000000},{0.000000,18.000000}}"/>
+						<Property Name="TextColor" Value="FFFFF263"/>
+						<Property Name="HorzFormatting" Value="RightAligned"/>
+					</Window>
+				</Window>
+				<Window Type="TLBB_SimpleMulitiTextFrame" Name="YbMarketSale_ItemInfo6">
+					<Property Name="UnifiedSize" Value="{{0.000000,126.000000},{0.000000,36.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,213.000000},{0.000000,15.000000}}"/>
+					<Window Type="TLBB_SimpleText" Name="YbMarketSale_ItemInfo6_Text">
+						<Property Name="UnifiedSize" Value="{{0.000000,121.000000},{0.000000,18.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+						<Property Name="TextColor" Value="FFFFF263"/>
+					</Window>
+					<Window Type="TLBB_SimpleText" Name="YbMarketSale_ItemInfo6_GB">
+						<Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,18.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,18.000000}}"/>
+						<Property Name="TextColor" Value="FFFFF263"/>
+						<Property Name="HorzFormatting" Value="RightAligned"/>
+					</Window>
+					<Window Type="TLBB_SimpleText" Name="YbMarketSale_ItemInfo6_Zhuangtai">
+						<Property Name="UnifiedSize" Value="{{0.000000,57.000000},{0.000000,18.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,67.000000},{0.000000,18.000000}}"/>
+						<Property Name="TextColor" Value="FFFFF263"/>
+						<Property Name="HorzFormatting" Value="RightAligned"/>
+					</Window>
+				</Window>
+				<Window Type="TLBB_SimpleMulitiTextFrame" Name="YbMarketSale_ItemInfo7">
+					<Property Name="UnifiedSize" Value="{{0.000000,126.000000},{0.000000,36.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,213.000000},{0.000000,53.000000}}"/>
+					<Window Type="TLBB_SimpleText" Name="YbMarketSale_ItemInfo7_Text">
+						<Property Name="UnifiedSize" Value="{{0.000000,121.000000},{0.000000,18.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+						<Property Name="TextColor" Value="FFFFF263"/>
+					</Window>
+					<Window Type="TLBB_SimpleText" Name="YbMarketSale_ItemInfo7_GB">
+						<Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,18.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,18.000000}}"/>
+						<Property Name="TextColor" Value="FFFFF263"/>
+						<Property Name="HorzFormatting" Value="RightAligned"/>
+					</Window>
+					<Window Type="TLBB_SimpleText" Name="YbMarketSale_ItemInfo7_Zhuangtai">
+						<Property Name="UnifiedSize" Value="{{0.000000,57.000000},{0.000000,18.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,67.000000},{0.000000,18.000000}}"/>
+						<Property Name="TextColor" Value="FFFFF263"/>
+						<Property Name="HorzFormatting" Value="RightAligned"/>
+					</Window>
+				</Window>
+				<Window Type="TLBB_SimpleMulitiTextFrame" Name="YbMarketSale_ItemInfo8">
+					<Property Name="UnifiedSize" Value="{{0.000000,126.000000},{0.000000,36.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,213.000000},{0.000000,91.000000}}"/>
+					<Window Type="TLBB_SimpleText" Name="YbMarketSale_ItemInfo8_Text">
+						<Property Name="UnifiedSize" Value="{{0.000000,121.000000},{0.000000,18.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+						<Property Name="TextColor" Value="FFFFF263"/>
+					</Window>
+					<Window Type="TLBB_SimpleText" Name="YbMarketSale_ItemInfo8_GB">
+						<Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,18.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,18.000000}}"/>
+						<Property Name="TextColor" Value="FFFFF263"/>
+						<Property Name="HorzFormatting" Value="RightAligned"/>
+					</Window>
+					<Window Type="TLBB_SimpleText" Name="YbMarketSale_ItemInfo8_Zhuangtai">
+						<Property Name="UnifiedSize" Value="{{0.000000,57.000000},{0.000000,18.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,67.000000},{0.000000,18.000000}}"/>
+						<Property Name="TextColor" Value="FFFFF263"/>
+						<Property Name="HorzFormatting" Value="RightAligned"/>
+					</Window>
+				</Window>
+				<Window Type="TLBB_SimpleMulitiTextFrame" Name="YbMarketSale_ItemInfo9">
+					<Property Name="UnifiedSize" Value="{{0.000000,126.000000},{0.000000,36.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,213.000000},{0.000000,129.000000}}"/>
+					<Window Type="TLBB_SimpleText" Name="YbMarketSale_ItemInfo9_Text">
+						<Property Name="UnifiedSize" Value="{{0.000000,121.000000},{0.000000,18.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+						<Property Name="TextColor" Value="FFFFF263"/>
+					</Window>
+					<Window Type="TLBB_SimpleText" Name="YbMarketSale_ItemInfo9_GB">
+						<Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,18.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,18.000000}}"/>
+						<Property Name="TextColor" Value="FFFFF263"/>
+						<Property Name="HorzFormatting" Value="RightAligned"/>
+					</Window>
+					<Window Type="TLBB_SimpleText" Name="YbMarketSale_ItemInfo9_Zhuangtai">
+						<Property Name="UnifiedSize" Value="{{0.000000,57.000000},{0.000000,18.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,67.000000},{0.000000,18.000000}}"/>
+						<Property Name="TextColor" Value="FFFFF263"/>
+						<Property Name="HorzFormatting" Value="RightAligned"/>
+					</Window>
+				</Window>
+				<Window Type="TLBB_SimpleMulitiTextFrame" Name="YbMarketSale_ItemInfo10">
+					<Property Name="UnifiedSize" Value="{{0.000000,126.000000},{0.000000,36.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,213.000000},{0.000000,167.000000}}"/>
+					<Window Type="TLBB_SimpleText" Name="YbMarketSale_ItemInfo10_Text">
+						<Property Name="UnifiedSize" Value="{{0.000000,121.000000},{0.000000,18.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+						<Property Name="TextColor" Value="FFFFF263"/>
+					</Window>
+					<Window Type="TLBB_SimpleText" Name="YbMarketSale_ItemInfo10_GB">
+						<Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,18.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,18.000000}}"/>
+						<Property Name="TextColor" Value="FFFFF263"/>
+						<Property Name="HorzFormatting" Value="RightAligned"/>
+					</Window>
+					<Window Type="TLBB_SimpleText" Name="YbMarketSale_ItemInfo10_Zhuangtai">
+						<Property Name="UnifiedSize" Value="{{0.000000,57.000000},{0.000000,18.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,67.000000},{0.000000,18.000000}}"/>
+						<Property Name="TextColor" Value="FFFFF263"/>
+						<Property Name="HorzFormatting" Value="RightAligned"/>
+					</Window>
+				</Window>
+				<Window Type="TLBB_ButtonCommon" Name="YbMarketSale_BtnPet1">
+					<Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,210.000000},{0.000000,23.000000}}"/>
+					<Property Name="Text" Value="#{YBSC_XML_60}"/>
+					<Event Name="Clicked" Function="YbMarketSale_BtnPet_Clicked(1);"/>
+				</Window>
+				<Window Type="TLBB_ButtonCommon" Name="YbMarketSale_BtnPet2">
+					<Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,210.000000},{0.000000,61.000000}}"/>
+					<Property Name="Text" Value="#{YBSC_XML_60}"/>
+					<Event Name="Clicked" Function="YbMarketSale_BtnPet_Clicked(2);"/>
+				</Window>
+				<Window Type="TLBB_ButtonCommon" Name="YbMarketSale_BtnPet3">
+					<Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,210.000000},{0.000000,99.000000}}"/>
+					<Property Name="Text" Value="#{YBSC_XML_60}"/>
+					<Event Name="Clicked" Function="YbMarketSale_BtnPet_Clicked(3);"/>
+				</Window>
+				<Window Type="TLBB_ButtonCommon" Name="YbMarketSale_BtnPet4">
+					<Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,210.000000},{0.000000,137.000000}}"/>
+					<Property Name="Text" Value="#{YBSC_XML_60}"/>
+					<Event Name="Clicked" Function="YbMarketSale_BtnPet_Clicked(4);"/>
+				</Window>
+				<Window Type="TLBB_ButtonCommon" Name="YbMarketSale_BtnPet5">
+					<Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,210.000000},{0.000000,175.000000}}"/>
+					<Property Name="Text" Value="#{YBSC_XML_60}"/>
+					<Event Name="Clicked" Function="YbMarketSale_BtnPet_Clicked(5);"/>
+				</Window>
+			</Window>
+		</Window>
+		<Window Type="DefaultWindow" Name="YbMarketSale_Buttons_Set">
+			<Property Name="UnifiedSize" Value="{{1.000000,-2.000000},{0.000000,20.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{1.000000,-40.000000}}"/>
+			<Window Type="TLBB_ButtonCommon" Name="YbMarketSale_Reprice">
+				<Property Name="UnifiedSize" Value="{{0.220000,0.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,190.000000},{0.000000,0.000000}}"/>
+				<Property Name="Text" Value="#{YBSC_100111_47}"/>
+				<Event Name="Clicked" Function="YbMarketSaleReprice_Clicked();"/>
+			</Window>
+			<Window Type="TLBB_ButtonCommon" Name="YbMarketSale_PutUpTheShutters">
+				<Property Name="UnifiedSize" Value="{{0.220000,0.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.780000,-10.000000},{0.000000,0.000000}}"/>
+				<Property Name="Text" Value="#{YBSC_100111_51}"/>
+				<Event Name="Clicked" Function="YbMarketSalePutUpTheShutters_Clicked();"/>
+			</Window>
+		</Window>
+	</Window>
+</GUILayout>

@@ -1,0 +1,465 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame1" Name="Jiaochang_PK_List_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,500.000000},{0.000000,442.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-250.000000},{0.500000,-220.000000}}"/>
+    <Window Type="TLBB_DragTitle" Name="Jiaochang_PK_List_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+      <Property Name="DragTarget" Value="Jiaochang_PK_List_Frame" />
+      <Window Type="TLBB_SimpleText" Name="Jiaochang_PK_List_PageHeader">
+        <Property Name="Position" Value="x:0.0 y:0.0" />
+        <Property Name="Size" Value="w:1.0 h:1.0" />
+        <Property Name="Font" Value="YouYuan11.25" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Text" Value="校场挑战列表" />
+        <Property Name="TextColor" Value="FFFFFF00"/>
+      </Window>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="Jiaochang_PK_List_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+      <Property Name="Text" Value="TLBB_ButtonHelp" />
+      <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*ShiLi_ZhanMeng&quot;);' />
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="Jiaochang_PK_List_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Property Name="Text" Value="TLBB_ButtonClose" />
+      <Event Name="Clicked" Function="Jiaochang_PK_List_CloseClicked();" />
+    </Window>
+    <Window Type="DefaultWindow" Name="Jiaochang_PK_List_Function_Frame">
+      <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-55.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,36.000000}}"/>
+      <Window Type="DefaultWindow" Name="Jiaochang_PK_List_Window">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,363.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Window Type="TLBB_MultiColumnList" Name="Jiaochang_PK_List_Title">
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,485.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="SelectionMode" Value="RowSingle" />
+          <Property Name="VScrollMode" Value="Hide" />
+          <Property Name="ColumnHeader" Value="text:     挑战者的名称 width:0.25 id:0" />
+          <Property Name="ColumnHeader" Value="text:门派 width:0.10 id:1" />
+          <Property Name="ColumnHeader" Value="text:等级 width:0.12 id:2" />
+          <Property Name="ColumnHeader" Value="text: width:0.06 id:3" />
+          <Property Name="ColumnHeader" Value="text:     挑战者的名称 width:0.25 id:4" />
+          <Property Name="ColumnHeader" Value="text:门派width:0.10 id:5" />
+          <Property Name="ColumnHeader" Value="text:等级 width:0.12 id:6" />
+          <Property Name="ColumnsSizable" Value="False" />
+          <Property Name="ColumnsMovable" Value="False" />
+          <Property Name="ColumnsAdjust" Value="True" />
+        </Window>
+        <Window Type="TLBB_MultiColumnList" Name="Jiaochang_PK_List_PkList">
+          <Property Name="UnifiedSize" Value="{{0.000000,486.000000},{0.000000,370.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="VScrollMode" Value="Hide" />
+          <Property Name="ColumnHeader" Value="text: width:0.05 id:0" />
+          <!--图片-->
+          <Property Name="ColumnHeader" Value="text: width:0.20 id:1" />
+          <Property Name="ColumnHeader" Value="text: width:0.10 id:2" />
+          <Property Name="ColumnHeader" Value="text: width:0.12 id:3" />
+          <Property Name="ColumnHeader" Value="text: width:0.06 id:4" />
+          <Property Name="ColumnHeader" Value="text: width:0.05 id:5" />
+          <!--图片-->
+          <Property Name="ColumnHeader" Value="text: width:0.20 id:6" />
+          <Property Name="ColumnHeader" Value="text: width:0.10 id:7" />
+          <Property Name="ColumnHeader" Value="text: width:0.12 id:8" />
+        </Window>
+        <Window Type="DefaultWindow" Name="Jiaochang_TeamImage_Window1">
+          <Property Name="UnifiedSize" Value="{{0.000000,21.000000},{0.000000,336.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,20.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <!--1-->
+          <Window Type="TLBB_StaticImageNULL" Name="Jiaochang_TeamImage1_1">
+            <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.020000,-3.000000}}"/>
+            <Property Name="Image" Value="set:UIIcons image:LeaderOpening"/>
+            <Property Name="Tooltip" Value="#{SJBW_130823_27}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <!--2-->
+          <Window Type="TLBB_StaticImageNULL" Name="Jiaochang_TeamImage2_1">
+            <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.070000,-3.000000}}"/>
+            <Property Name="Image" Value="set:UIIcons image:LeaderOpening"/>
+            <Property Name="Tooltip" Value="#{SJBW_130823_27}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+
+          <!--3-->
+          <Window Type="TLBB_StaticImageNULL" Name="Jiaochang_TeamImage3_1">
+            <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.120000,-3.000000}}"/>
+            <Property Name="Image" Value="set:UIIcons image:LeaderOpening"/>
+            <Property Name="Tooltip" Value="#{SJBW_130823_27}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+
+          <!--4-->
+          <Window Type="TLBB_StaticImageNULL" Name="Jiaochang_TeamImage4_1">
+            <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.170000,-3.000000}}"/>
+            <Property Name="Image" Value="set:UIIcons image:LeaderOpening"/>
+            <Property Name="Tooltip" Value="#{SJBW_130823_27}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+
+          <!--5-->
+          <Window Type="TLBB_StaticImageNULL" Name="Jiaochang_TeamImage5_1">
+            <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.220000,-3.000000}}"/>
+            <Property Name="Image" Value="set:UIIcons image:LeaderOpening"/>
+            <Property Name="Tooltip" Value="#{SJBW_130823_27}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+
+          <!--6-->
+          <Window Type="TLBB_StaticImageNULL" Name="Jiaochang_TeamImage6_1">
+            <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.270000,-3.000000}}"/>
+            <Property Name="Image" Value="set:UIIcons image:LeaderOpening"/>
+            <Property Name="Tooltip" Value="#{SJBW_130823_27}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+
+          <!--7-->
+          <Window Type="TLBB_StaticImageNULL" Name="Jiaochang_TeamImage7_1">
+            <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.320000,-3.000000}}"/>
+            <Property Name="Image" Value="set:UIIcons image:LeaderOpening"/>
+            <Property Name="Tooltip" Value="#{SJBW_130823_27}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+
+          <!--8-->
+          <Window Type="TLBB_StaticImageNULL" Name="Jiaochang_TeamImage8_1">
+            <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.370000,-3.000000}}"/>
+            <Property Name="Image" Value="set:UIIcons image:LeaderOpening"/>
+            <Property Name="Tooltip" Value="#{SJBW_130823_27}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+
+          <!--9-->
+          <Window Type="TLBB_StaticImageNULL" Name="Jiaochang_TeamImage9_1">
+            <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.420000,-3.000000}}"/>
+            <Property Name="Image" Value="set:UIIcons image:LeaderOpening"/>
+            <Property Name="Tooltip" Value="#{SJBW_130823_27}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+
+          <!--10-->
+          <Window Type="TLBB_StaticImageNULL" Name="Jiaochang_TeamImage10_1">
+            <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.470000,-3.000000}}"/>
+            <Property Name="Image" Value="set:UIIcons image:LeaderOpening"/>
+            <Property Name="Tooltip" Value="#{SJBW_130823_27}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+
+          <!--11-->
+          <Window Type="TLBB_StaticImageNULL" Name="Jiaochang_TeamImage11_1">
+            <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.520000,-3.000000}}"/>
+            <Property Name="Image" Value="set:UIIcons image:LeaderOpening"/>
+            <Property Name="Tooltip" Value="#{SJBW_130823_27}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+
+          <!--12-->
+          <Window Type="TLBB_StaticImageNULL" Name="Jiaochang_TeamImage12_1">
+            <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.570000,-3.000000}}"/>
+            <Property Name="Image" Value="set:UIIcons image:LeaderOpening"/>
+            <Property Name="Tooltip" Value="#{SJBW_130823_27}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+
+          <!--13-->
+          <Window Type="TLBB_StaticImageNULL" Name="Jiaochang_TeamImage13_1">
+            <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.620000,-3.000000}}"/>
+            <Property Name="Image" Value="set:UIIcons image:LeaderOpening"/>
+            <Property Name="Tooltip" Value="#{SJBW_130823_27}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+
+          <!--14-->
+          <Window Type="TLBB_StaticImageNULL" Name="Jiaochang_TeamImage14_1">
+            <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.670000,-3.000000}}"/>
+            <Property Name="Image" Value="set:UIIcons image:LeaderOpening"/>
+            <Property Name="Tooltip" Value="#{SJBW_130823_27}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+
+
+          <!--15-->
+          <Window Type="TLBB_StaticImageNULL" Name="Jiaochang_TeamImage15_1">
+            <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.720000,-3.000000}}"/>
+            <Property Name="Image" Value="set:UIIcons image:LeaderOpening"/>
+            <Property Name="Tooltip" Value="#{SJBW_130823_27}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+
+          <!--16-->
+          <Window Type="TLBB_StaticImageNULL" Name="Jiaochang_TeamImage16_1">
+            <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.770000,-3.000000}}"/>
+            <Property Name="Image" Value="set:UIIcons image:LeaderOpening"/>
+            <Property Name="Tooltip" Value="#{SJBW_130823_27}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+
+          <!--17-->
+          <Window Type="TLBB_StaticImageNULL" Name="Jiaochang_TeamImage17_1">
+            <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.820000,-3.000000}}"/>
+            <Property Name="Image" Value="set:UIIcons image:LeaderOpening"/>
+            <Property Name="Tooltip" Value="#{SJBW_130823_27}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+
+          <!--18-->
+          <Window Type="TLBB_StaticImageNULL" Name="Jiaochang_TeamImage18_1">
+            <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.870000,-3.000000}}"/>
+            <Property Name="Image" Value="set:UIIcons image:LeaderOpening"/>
+            <Property Name="Tooltip" Value="#{SJBW_130823_27}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+
+          <!--19-->
+          <Window Type="TLBB_StaticImageNULL" Name="Jiaochang_TeamImage19_1">
+            <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.920000,-3.000000}}"/>
+            <Property Name="Image" Value="set:UIIcons image:LeaderOpening"/>
+            <Property Name="Tooltip" Value="#{SJBW_130823_27}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+
+          <!--20-->
+          <Window Type="TLBB_StaticImageNULL" Name="Jiaochang_TeamImage20_1">
+            <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.970000,-3.000000}}"/>
+            <Property Name="Image" Value="set:UIIcons image:LeaderOpening"/>
+            <Property Name="Tooltip" Value="#{SJBW_130823_27}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Jiaochang_TeamImage_Window2">
+          <Property Name="UnifiedSize" Value="{{0.000000,21.000000},{0.000000,336.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,258.000000},{0.000000,20.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <!--1-->
+          <Window Type="TLBB_StaticImageNULL" Name="Jiaochang_TeamImage1_2">
+            <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.020000,-3.000000}}"/>
+            <Property Name="Image" Value="set:UIIcons image:LeaderOpening"/>
+            <Property Name="Tooltip" Value="#{SJBW_130823_27}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+
+          <!--2-->
+          <Window Type="TLBB_StaticImageNULL" Name="Jiaochang_TeamImage2_2">
+            <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.070000,-3.000000}}"/>
+            <Property Name="Image" Value="set:UIIcons image:LeaderOpening"/>
+            <Property Name="Tooltip" Value="#{SJBW_130823_27}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+
+          <!--3-->
+          <Window Type="TLBB_StaticImageNULL" Name="Jiaochang_TeamImage3_2">
+            <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.120000,-3.000000}}"/>
+            <Property Name="Image" Value="set:UIIcons image:LeaderOpening"/>
+            <Property Name="Tooltip" Value="#{SJBW_130823_27}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+
+          <!--4-->
+          <Window Type="TLBB_StaticImageNULL" Name="Jiaochang_TeamImage4_2">
+            <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.170000,-3.000000}}"/>
+            <Property Name="Image" Value="set:UIIcons image:LeaderOpening"/>
+            <Property Name="Tooltip" Value="#{SJBW_130823_27}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+
+          <!--5-->
+          <Window Type="TLBB_StaticImageNULL" Name="Jiaochang_TeamImage5_2">
+            <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.220000,-3.000000}}"/>
+            <Property Name="Image" Value="set:UIIcons image:LeaderOpening"/>
+            <Property Name="Tooltip" Value="#{SJBW_130823_27}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+
+          <!--6-->
+          <Window Type="TLBB_StaticImageNULL" Name="Jiaochang_TeamImage6_2">
+            <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.270000,-3.000000}}"/>
+            <Property Name="Image" Value="set:UIIcons image:LeaderOpening"/>
+            <Property Name="Tooltip" Value="#{SJBW_130823_27}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+
+          <!--7-->
+          <Window Type="TLBB_StaticImageNULL" Name="Jiaochang_TeamImage7_2">
+            <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.320000,-3.000000}}"/>
+            <Property Name="Image" Value="set:UIIcons image:LeaderOpening"/>
+            <Property Name="Tooltip" Value="#{SJBW_130823_27}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+
+          <!--8-->
+          <Window Type="TLBB_StaticImageNULL" Name="Jiaochang_TeamImage8_2">
+            <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.370000,-3.000000}}"/>
+            <Property Name="Image" Value="set:UIIcons image:LeaderOpening"/>
+            <Property Name="Tooltip" Value="#{SJBW_130823_27}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+
+          <!--9-->
+          <Window Type="TLBB_StaticImageNULL" Name="Jiaochang_TeamImage9_2">
+            <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.420000,-3.000000}}"/>
+            <Property Name="Image" Value="set:UIIcons image:LeaderOpening"/>
+            <Property Name="Tooltip" Value="#{SJBW_130823_27}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+
+          <!--10-->
+          <Window Type="TLBB_StaticImageNULL" Name="Jiaochang_TeamImage10_2">
+            <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.470000,-3.000000}}"/>
+            <Property Name="Image" Value="set:UIIcons image:LeaderOpening"/>
+            <Property Name="Tooltip" Value="#{SJBW_130823_27}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+
+          <!--11-->
+          <Window Type="TLBB_StaticImageNULL" Name="Jiaochang_TeamImage11_2">
+            <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.520000,-3.000000}}"/>
+            <Property Name="Image" Value="set:UIIcons image:LeaderOpening"/>
+            <Property Name="Tooltip" Value="#{SJBW_130823_27}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+
+          <!--12-->
+          <Window Type="TLBB_StaticImageNULL" Name="Jiaochang_TeamImage12_2">
+            <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.570000,-3.000000}}"/>
+            <Property Name="Image" Value="set:UIIcons image:LeaderOpening"/>
+            <Property Name="Tooltip" Value="#{SJBW_130823_27}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <!--13-->
+          <Window Type="TLBB_StaticImageNULL" Name="Jiaochang_TeamImage13_2">
+            <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.620000,-3.000000}}"/>
+            <Property Name="Image" Value="set:UIIcons image:LeaderOpening"/>
+            <Property Name="Tooltip" Value="#{SJBW_130823_27}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <!--14-->
+          <Window Type="TLBB_StaticImageNULL" Name="Jiaochang_TeamImage14_2">
+            <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.670000,-3.000000}}"/>
+            <Property Name="Image" Value="set:UIIcons image:LeaderOpening"/>
+            <Property Name="Tooltip" Value="#{SJBW_130823_27}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <!--15-->
+          <Window Type="TLBB_StaticImageNULL" Name="Jiaochang_TeamImage15_2">
+            <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.720000,-3.000000}}"/>
+            <Property Name="Image" Value="set:UIIcons image:LeaderOpening"/>
+            <Property Name="Tooltip" Value="#{SJBW_130823_27}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <!--16-->
+          <Window Type="TLBB_StaticImageNULL" Name="Jiaochang_TeamImage16_2">
+            <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.770000,-3.000000}}"/>
+            <Property Name="Image" Value="set:UIIcons image:LeaderOpening"/>
+            <Property Name="Tooltip" Value="#{SJBW_130823_27}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <!--17-->
+          <Window Type="TLBB_StaticImageNULL" Name="Jiaochang_TeamImage17_2">
+            <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.820000,-3.000000}}"/>
+            <Property Name="Image" Value="set:UIIcons image:LeaderOpening"/>
+            <Property Name="Tooltip" Value="#{SJBW_130823_27}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <!--18-->
+          <Window Type="TLBB_StaticImageNULL" Name="Jiaochang_TeamImage18_2">
+            <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.870000,-3.000000}}"/>
+            <Property Name="Image" Value="set:UIIcons image:LeaderOpening"/>
+            <Property Name="Tooltip" Value="#{SJBW_130823_27}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <!--19-->
+          <Window Type="TLBB_StaticImageNULL" Name="Jiaochang_TeamImage19_2">
+            <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.920000,-3.000000}}"/>
+            <Property Name="Image" Value="set:UIIcons image:LeaderOpening"/>
+            <Property Name="Tooltip" Value="#{SJBW_130823_27}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <!--20-->
+          <Window Type="TLBB_StaticImageNULL" Name="Jiaochang_TeamImage20_2">
+            <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.970000,-3.000000}}"/>
+            <Property Name="Image" Value="set:UIIcons image:LeaderOpening"/>
+            <Property Name="Tooltip" Value="#{SJBW_130823_27}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="Jiaochang_PK_List_RefreshButton" >
+        <Property Name="UnifiedSize" Value="{{0.000000,96.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{1.000000,-20.000000}}"/>
+        <Property Name="Text" Value="刷新信息" />
+        <Event Name="Clicked" Function="Jiaochang_PK_List_RefreshButtonClicked();" />
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="Jiaochang_PK_List_WatchButton" >
+        <Property Name="UnifiedSize" Value="{{0.000000,96.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-98.000000},{1.000000,-20.000000}}"/>
+        <Property Name="Text" Value="观战" />
+        <Event Name="Clicked" Function="Jiaochang_PK_List_WatchButtonClicked();" />
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="Jiaochang_PK_List_UpButton">
+        <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-100.000000},{1.000000,-20.000000}}"/>
+        <Property Name="Text" Value="上一页"/>
+        <Event Name="Clicked" Function="Jiaochang_PK_List_PrePage();" />
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="Jiaochang_PK_List_CountFenye">
+        <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-30.000000},{1.000000,-20.000000}}"/>
+        <Property Name="Text" Value="100/100"/>
+        <Property Name="HorzFormatting" Value="HorzCentred"/>
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="Jiaochang_PK_List_DownButton">
+        <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,40.000000},{1.000000,-20.000000}}"/>
+        <Property Name="Text" Value="下一页"/>
+        <Event Name="Clicked" Function="Jiaochang_PK_List_NextPage();" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

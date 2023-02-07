@@ -1,0 +1,365 @@
+<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="SongliaoWarSingle">
+		<Property Name="UnifiedSize" Value="{{0.000000,357.000000},{0.000000,288.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{1.000000,-360.000000},{1.000000,-373.000000}}"/>
+        <Window Type="TLBB_ButtonNULL" Name="SongliaoWarSingle_Close">
+		<Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{1.000000,-23.000000},{0.000000,14.000000}}"/>
+        <Property Name="PushedImage" Value="set:SongLiao02 image:Up_Pushed"/>
+        <Property Name="NormalImage" Value="set:SongLiao02 image:Up_Normal"/>
+        <Property Name="HoverImage" Value="set:SongLiao02 image:Up_Hover"/>
+        <Property Name="DisabledImage" Value="set:SongLiao02 image:Up_Disabled"/>
+          <Event Name="Clicked" Function="SongliaoWarSingle_MiNiOpen()" />
+		<Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+      <Window Type="TLBB_ButtonHelp" Name="SongliaoWarSingle_Help0">
+		<Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{1.000000,-353.000000},{0.000000,13.000000}}"/>
+		<Property Name="AlwaysOnTop" Value="True"/>
+		<Event Name="Clicked" Function=''/>
+      </Window>
+      <Window Type="TLBB_ButtonHelp" Name="SongliaoWarSingle_Help1">
+		<Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{1.000000,-50.000000},{0.000000,178.000000}}"/>
+		<Property Name="AlwaysOnTop" Value="True"/>
+		<Event Name="Clicked" Function="SongliaoWarSingle_Help1_Click()"/>
+      </Window>
+      <Window Type="TLBB_ButtonHelp" Name="SongliaoWarSingle_Help2">
+		<Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{1.000000,-50.000000},{0.000000,211.000000}}"/>
+		<Property Name="AlwaysOnTop" Value="True"/>
+		<Event Name="Clicked" Function="SongliaoWarSingle_Help2_Click()"/>
+      </Window>
+    <Window Type="TLBB_MainFrame0" Name="SongliaoWarSingle_Frame">
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+		<Property Name="UnifiedSize" Value="{{1.000000,-3.000000},{1.000000,0.000000}}"/>
+      <Event Name="Hidden" Function="" />
+
+      <Window Type="DefaultWindow" Name="SongliaoWarSingle_Client">
+		<Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,-37.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,30.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Window Type="TLBB_Frame_Lace1" Name="SongliaoWarSingle_UpBK">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,130.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,10.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="SongliaoWarSingle_QLImage">
+            <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,74.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,3.000000}}" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="Image" Value="set:SongLiao02 image:SL_QL_Big2_Dis" />
+            <Window Type="TLBB_StaticImageNULL" Name="SongliaoWarSingle_QLHold">
+              <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,22.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.00000,0.000000}}" />
+              <Property Name="AlwaysOnTop" Value="True" />
+              <Property Name="Image" Value="set:SongLiao01 image:SL_Liao" />
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="SongliaoWarSingle_QLText1BK">
+              <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,20.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.500000,-31.000000},{0.500000,-20.000000}}" />
+			  	<Property Name="Image" Value="set:SongLiao02 image:HJ_Wenzidi"/>
+              <Window Type="TLBB_SimpleText" Name="SongliaoWarSingle_QLText1">
+                <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.500000,-31.000000},{0.00000,0.000000}}" />
+                <Property Name="Text" Value="#{XSLDZ_180521_302}" />
+                <Property Name="HorzFormatting" Value="HorzCentred" />
+                <Property Name="AlwaysOnTop" Value="True" />
+              </Window>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="SongliaoWarSingle_QLText2BK">
+              <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,20.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.500000,-31.000000},{0.500000,-10.000000}}" />
+			  <Property Name="Image" Value="set:SongLiao02 image:HJ_Wenzidi"/>
+              <Window Type="TLBB_SimpleText" Name="SongliaoWarSingle_QLText2">
+                <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.500000,-31.000000},{0.00000,0.000000}}" />
+                <Property Name="Text" Value="#{XSLDZ_180521_304}" />
+                <Property Name="HorzFormatting" Value="HorzCentred" />
+                <Property Name="AlwaysOnTop" Value="True" />
+              </Window>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="SongliaoWarSingle_QLTimeBK">
+              <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,20.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.500000,-31.000000},{0.500000,0.000000}}" />
+			  <Property Name="Image" Value="set:SongLiao02 image:HJ_Wenzidi"/>
+              <Window Type="TLBB_StopWatch" Name="SongliaoWarSingle_QLTime">
+                <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,16.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.500000,-31.000000},{0.50000,-10.000000}}" />
+                <Property Name="HorzFormatting" Value="HorzCentred" />
+                <Property Name="VertFormatting" Value="VertCentred" />
+                <Property Name="RiseOnClick" Value="False" />
+                <Property Name="Text" Value="00:00" />
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="SongliaoWarSingle_BHImage">
+            <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,74.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.3300000,-21.000000},{0.00000,3.000000}}" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="Image" Value="set:SongLiao02 image:SL_BH_Big2_Dis" />
+            <Window Type="TLBB_StaticImageNULL" Name="SongliaoWarSingle_BHHold">
+              <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,22.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.00000,0.000000}}" />
+              <Property Name="AlwaysOnTop" Value="True" />
+              <Property Name="Image" Value="set:SongLiao01 image:SL_Ping" />
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="SongliaoWarSingle_BHText1BK">
+              <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-31.000000},{0.500000,-20.000000}}"/>
+			  <Property Name="Image" Value="set:SongLiao02 image:HJ_Wenzidi"/>
+              <Window Type="TLBB_SimpleText" Name="SongliaoWarSingle_BHText1">
+                <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.500000,-31.000000},{0.000000,0.000000}}" />
+                <Property Name="Text" Value="#{XSLDZ_180521_302}"/>
+                <Property Name="HorzFormatting" Value="HorzCentred" />
+                <Property Name="AlwaysOnTop" Value="True" />
+              </Window>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="SongliaoWarSingle_BHText2BK">
+              <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-31.000000},{0.500000,-10.000000}}"/>
+			  <Property Name="Image" Value="set:SongLiao02 image:HJ_Wenzidi"/>
+              <Window Type="TLBB_SimpleText" Name="SongliaoWarSingle_BHText2">
+                <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.500000,-31.000000},{0.000000,0.000000}}" />
+                <Property Name="Text" Value="#{XSLDZ_180521_304}"/>
+                <Property Name="HorzFormatting" Value="HorzCentred" />
+                <Property Name="AlwaysOnTop" Value="True" />
+              </Window>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="SongliaoWarSingle_BHTimeBK">
+              <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,20.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.500000,-31.000000},{0.500000,0.000000}}" />
+			  <Property Name="Image" Value="set:SongLiao02 image:HJ_Wenzidi"/>
+              <Window Type="TLBB_StopWatch" Name="SongliaoWarSingle_BHTime">
+                <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,16.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.500000,-31.000000},{0.50000,-10.000000}}" />
+                <Property Name="HorzFormatting" Value="HorzCentred" />
+                <Property Name="VertFormatting" Value="VertCentred" />
+                <Property Name="RiseOnClick" Value="False" />
+                <Property Name="Text" Value="00:00" />
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="SongliaoWarSingle_XWImage">
+            <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,74.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.660000,-41.000000},{0.000000,3.000000}}" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="Image" Value="set:SongLiao02 image:SL_XW_Big2_Dis" />
+            <Window Type="TLBB_StaticImageNULL" Name="SongliaoWarSingle_XWHold">
+              <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,22.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.00000,0.000000}}" />
+              <Property Name="AlwaysOnTop" Value="True" />
+              <Property Name="Image" Value="set:SongLiao01 image:SL_Song" />
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="SongliaoWarSingle_XWText1BK">
+              <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-31.000000},{0.500000,-20.000000}}"/>
+			  <Property Name="Image" Value="set:SongLiao02 image:HJ_Wenzidi"/>
+              <Window Type="TLBB_SimpleText" Name="SongliaoWarSingle_XWText1">
+                <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.500000,-31.000000},{0.00000,0.000000}}" />
+                <Property Name="Text" Value="#{XSLDZ_180521_302}"/>
+                <Property Name="HorzFormatting" Value="HorzCentred" />
+                <Property Name="AlwaysOnTop" Value="True" />
+              </Window>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="SongliaoWarSingle_XWText2BK">
+              <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-31.000000},{0.500000,-10.000000}}"/>
+			  <Property Name="Image" Value="set:SongLiao02 image:HJ_Wenzidi"/>
+              <Window Type="TLBB_SimpleText" Name="SongliaoWarSingle_XWText2">
+                <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.500000,-31.000000},{0.00000,0.000000}}" />
+                <Property Name="Text" Value="#{XSLDZ_180521_304}"/>
+                <Property Name="HorzFormatting" Value="HorzCentred" />
+                <Property Name="AlwaysOnTop" Value="True" />
+              </Window>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="SongliaoWarSingle_XWTimeBK">
+              <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,20.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.500000,-31.000000},{0.500000,0.000000}}" />
+			  <Property Name="Image" Value="set:SongLiao02 image:HJ_Wenzidi"/>
+              <Window Type="TLBB_StopWatch" Name="SongliaoWarSingle_XWTime">
+                <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,16.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.500000,-31.000000},{0.50000,-10.000000}}" />
+                <Property Name="HorzFormatting" Value="HorzCentred" />
+                <Property Name="VertFormatting" Value="VertCentred" />
+                <Property Name="RiseOnClick" Value="False" />
+                <Property Name="Text" Value="00:00" />
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="SongliaoWarSingle_ZQImage">
+            <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,74.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{1.000000,-72.000000},{0.000000,3.000000}}" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="Image" Value="set:SongLiao02 image:SL_ZQ_Big2_Dis" />
+            <Window Type="TLBB_StaticImageNULL" Name="SongliaoWarSingle_ZQHold">
+              <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,22.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.00000,0.000000}}" />
+              <Property Name="AlwaysOnTop" Value="True" />
+              <Property Name="Image" Value="set:SongLiao01 image:SL_Song" />
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="SongliaoWarSingle_ZQText1BK">
+              <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-31.000000},{0.500000,-20.000000}}"/>
+			  <Property Name="Image" Value="set:SongLiao02 image:HJ_Wenzidi"/>
+              <Window Type="TLBB_SimpleText" Name="SongliaoWarSingle_ZQText1">
+                <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.500000,-31.000000},{0.00000,0.000000}}" />
+                <Property Name="Text" Value="#{XSLDZ_180521_302}" />
+                <Property Name="HorzFormatting" Value="HorzCentred" />
+                <Property Name="AlwaysOnTop" Value="True" />
+              </Window>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="SongliaoWarSingle_ZQText2BK">
+              <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-31.000000},{0.500000,-10.000000}}"/>
+			  <Property Name="Image" Value="set:SongLiao02 image:HJ_Wenzidi"/>
+              <Window Type="TLBB_SimpleText" Name="SongliaoWarSingle_ZQText2">
+                <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.500000,-31.000000},{0.00000,0.000000}}" />
+                <Property Name="Text" Value="#{XSLDZ_180521_304}"/>
+                <Property Name="HorzFormatting" Value="HorzCentred" />
+                <Property Name="AlwaysOnTop" Value="True" />
+              </Window>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="SongliaoWarSingle_ZQTimeBK">
+              <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,20.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.500000,-31.000000},{0.500000,0.000000}}" />
+			  <Property Name="Image" Value="set:SongLiao02 image:HJ_Wenzidi"/>
+              <Window Type="TLBB_StopWatch" Name="SongliaoWarSingle_ZQTime">
+                <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,16.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.500000,-31.000000},{0.50000,-10.000000}}" />
+                <Property Name="HorzFormatting" Value="HorzCentred" />
+                <Property Name="VertFormatting" Value="VertCentred" />
+                <Property Name="RiseOnClick" Value="False" />
+                <Property Name="Text" Value="00:00" />
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="TLBB_Frame_Lace1" Name="SongliaoWarSingle_Client_ProgressBK">
+            <Property Name="UnifiedSize" Value="{{0.000000,320.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.500000,-160.000000},{1.000000,-55.000000}}" />
+            <Window Type="TLBB_ProgressPropertyRed" Name="SongliaoWarSingle_Client_Progress2">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.0000000},{0.000000,0.000000}}" />
+              <Property Name="CurrentProgress" Value="1.0" />
+              <Property Name="EffectColor" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+              <Property Name="EffectColorLevel" Value="index:0 tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+              <Property Name="MoveSpeed" Value="1" />
+            </Window>
+            <Window Type="TLBB_ProgressPropertyZhanjianghu" Name="SongliaoWarSingle_Client_Progress">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.0000000},{0.000000,0.000000}}" />
+              <Property Name="CurrentProgress" Value="1.0" />
+              <Property Name="EffectColor" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+              <Property Name="EffectColorLevel" Value="index:0 tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+              <Property Name="MoveSpeed" Value="1" />
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="SongliaoWarSingle_Song">
+              <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,22.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-11.000000}}" />
+              <Property Name="HorzFormatting" Value="HorzCentred" />
+              <Property Name="AlwaysOnTop" Value="True" />
+              <Property Name="Image" Value="set:SongLiao01 image:SL_Song" />
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="SongliaoWarSingle_Liao">
+              <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,22.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.500000,-11.000000}}" />
+              <Property Name="HorzFormatting" Value="HorzCentred" />
+              <Property Name="AlwaysOnTop" Value="True" />
+              <Property Name="Image" Value="set:SongLiao01 image:SL_Liao" />
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="SongliaoWarSingle_SongNum">
+              <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.500000,-10.000000}}" />
+              <Property Name="Text" Value="44444" />
+              <Property Name="HorzFormatting" Value="HorzCentred" />
+              <Property Name="AlwaysOnTop" Value="True" />
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="SongliaoWarSingle_LiaoNum">
+              <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{1.000000,-70.000000},{0.500000,-10.000000}}" />
+              <Property Name="Text" Value="44444" />
+              <Property Name="HorzFormatting" Value="HorzCentred" />
+              <Property Name="AlwaysOnTop" Value="True" />
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="SongliaoWarSingle_Text02">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-25.000000}}" />
+            <Property Name="RiseOnClick" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+            <Property Name="Text" Value="#{XSLDZ_180521_237}" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_Frame_Lace1" Name="SongliaoWarSingle_Text2BK">
+		<Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,30.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,142.000000}}"/>
+          <Property Name="RiseOnClick" Value="False" />
+          <Window Type="TLBB_SimpleText" Name="SongliaoWarSingle_Text2">
+            <Property Name="UnifiedSize" Value="{{0.000000,130.000000},{1.000000,0.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,0.000000}}" />
+            <Property Name="Text" Value="#{XSLDZ_180521_249}" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="SongliaoWarSingle_Text3">
+            <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{1.000000,0.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.700000,0.000000},{0.000000,0.000000}}" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="VertFormatting" Value="VertCentred" />
+            <Property Name="RiseOnClick" Value="False" />
+            <Property Name="Text" Value="#{XSLDZ_180521_305}" />
+          </Window>
+        </Window>
+
+        <Window Type="TLBB_Frame_Lace1" Name="SongliaoWarSingle_TextBK">
+		<Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,30.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,175.000000}}"/>
+          <Property Name="RiseOnClick" Value="False" />
+          <Window Type="TLBB_SimpleText" Name="SongliaoWarSingle_Text">
+            <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{1.000000,0.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,0.000000}}" />
+            <Property Name="Text" Value="#{XSLDZ_180521_306}" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="SongliaoWarSingle_Time">
+            <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{1.000000,0.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.700000,0.000000},{0.000000,0.000000}}" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="VertFormatting" Value="VertCentred" />
+            <Property Name="RiseOnClick" Value="False" />
+            <Property Name="Text" Value="#{XSLDZ_180521_307}" />
+          </Window>
+        </Window>
+
+        <Window Type="TLBB_ButtonCommon" Name="SongliaoWarSingle_Go_Button">
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,25.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.250000,-40.000000},{1.000000,-40.000000}}" />
+          <Property Name="Text" Value="#{XSLDZ_180521_176}" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Event Name="Clicked" Function="SongliaoWarSingle_Goto();" />
+        </Window>
+        <Window Type="TLBB_ButtonCommon" Name="SongliaoWarSingle_Button">
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,25.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.750000,-40.000000},{1.000000,-40.000000}}" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="Text" Value="#{XSLDZ_180521_156}" />
+          <Property Name="Tooltip" Value="#{XSLDZ_180424_25}" />
+          <Event Name="Clicked" Function="SongliaoWarSingle_Open();" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="TLBB_DragTitle" Name="SongliaoWarSingle_Title">
+      <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,26.000000}}" />
+		<Property Name="UnifiedPosition" Value="{{0.500000,-55.000000},{0.000000,7.000000}}"/>
+      <Property Name="Text" Value="#{XSLDZ_180521_236}" />
+      <Property Name="Font" Value="Title" />
+      <Property Name="DragTarget" Value="SongliaoWarSingle" />
+      <Property Name="AlwaysOnTop" Value="True" />
+    </Window>
+  </Window>
+</GUILayout>

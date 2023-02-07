@@ -1,0 +1,197 @@
+<?xml version="1.0" ?>
+<GUILayout>
+    <Window Type="TLBB_MainFrame1" Name="TeamPT_Frame">
+        <Property Name="UnifiedPosition" Value="{{0.5,-336.0},{0.12,0}}" />
+        <Property Name="AbsoluteSize" Value="w:672 h:419" />
+        <Window Type="TLBB_DragTitle" Name="TeamPT_DragTitle">
+            <Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
+            <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+            <Property Name="DragTarget" Value="TeamPT_Frame" />
+            <Window Type="TLBB_SimpleText" Name="TeamPT_PageHeader">
+                <Property Name="Position" Value="x:0.0 y:0.0" />
+                <Property Name="Size" Value="w:1.0 h:1.0" />
+                <Property Name="Font" Value="YouYuan11.25" />
+                <Property Name="HorzFormatting" Value="HorzCentred" />
+                <Property Name="VertFormatting" Value="VertCentred" />
+                <Property Name="RiseOnClick" Value="False" />
+                <Property Name="Text" Value="#{ZDPT_XML_2}" />
+            </Window>
+        </Window>
+        <Window Type="TLBB_ButtonHelp" Name="TeamPT_Help">
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+            <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+            <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*TeamPT&quot;);' />
+        </Window>
+        <Window Type="TLBB_ButtonClose" Name="TeamPT_Close">
+            <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+            <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+            <Property Name="Text" Value="TLBB_ButtonClose" />
+            <Event Name="Clicked" Function="OnTeamPT_CloseClicked();" />
+        </Window>
+        <Window Type="DefaultWindow" Name="TeamPT_Function_Frame">
+            <Property Name="AbsolutePosition" Value="x:6.000000 y:36.000000" />
+            <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-55.000000}" />
+          <Window Type="TLBB_Frame_Lace2" Name="TeamPT_BK1" >
+            <Property Name="AbsolutePosition" Value="x:0.000000 y:0.000000" />
+            <Property Name="AbsoluteSize" Value="w:106.000000 h:22.000000" />
+            <Window Type="TLBB_ButtonCheck" Name="TeamPT_Mode" >
+                <Property Name="AbsolutePosition" Value="x:6.000000 y:4.000000" />
+                <Property Name="AbsoluteSize" Value="w:12.000000 h:12.000000" />
+                <Property Name="CheckMode" Value="0" />
+                <Property Name="Tooltip" Value="#{ZDPT_XML_32}" />
+                <Event Name="Clicked" Function="TeamPT_Filter_Clicked();" />
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="TeamPT_MsgShaixuan" >
+                <Property Name="AbsolutePosition" Value="x:22.000000 y:0.000000" />
+                <Property Name="AbsoluteSize" Value="w:80.000000 h:20.000000" />
+                <Property Name="HorzFormatting" Value="LeftAligned" />
+                <Property Name="Text" Value="#{ZDPT_XML_3}" />
+                <Property Name="TextColor" Value="FFFFF263" />
+                <Property Name="VertFormatting" Value="VertCentred" />
+            </Window>
+          </Window>
+          <Window Type="TLBB_ButtonCommon" Name="TeamPT_Shuaxin" >
+            <Property Name="AbsolutePosition" Value="x:164.000000 y:25.000000" />
+            <Property Name="AbsoluteSize" Value="w:80.000000 h:20.000000" />
+            <Property Name="Text" Value="#{ZDPT_XML_6}" />
+            <Event Name="Clicked" Function="OnTeamPT_ShuaxinClicked();" />
+          </Window>
+          <Window Type="TLBB_ButtonCommon" Name="TeamPT_Zhaomu" >
+            <Property Name="AbsolutePosition" Value="x:500.000000 y:24.000000" />
+            <Property Name="AbsoluteSize" Value="w:80.000000 h:20.000000" />
+            <Property Name="Text" Value="#{ZDPT_XML_7}" />
+            <Event Name="Clicked" Function="OnTeamPT_ZhaomuClicked();" />
+          </Window>
+          <Window Type="TLBB_ButtonCommon" Name="TeamPT_Xunqiu" >
+            <Property Name="AbsolutePosition" Value="x:580.000000 y:24.000000" />
+            <Property Name="AbsoluteSize" Value="w:80.000000 h:20.000000" />
+            <Property Name="Text" Value="#{ZDPT_XML_8}" />
+            <Event Name="Clicked" Function="OnTeamPT_XunqiuClicked();" />
+          </Window>
+          <Window Type="TLBB_ButtonPageUp" Name="TeamPT_Team" >
+                <Property Name="AbsolutePosition" Value="x:0.000000 y:22.000000" />
+                <Property Name="AbsoluteSize" Value="w:75.000000 h:24.000000" />
+                <Property Name="CheckMode" Value="1" />
+                <Property Name="Text" Value="#{ZDPT_XML_4}" />
+                <Event Name="Clicked" Function="TeamPT_ChannelChange(1);" />
+                <Property Name="Tooltip" Value="#{ZDPT_XML_33}" />
+            </Window>
+            <Window Type="TLBB_ButtonPageUp" Name="TeamPT_User" >
+                <Property Name="AbsolutePosition" Value="x:73.000000 y:22.000000" />
+                <Property Name="AbsoluteSize" Value="w:75.000000 h:24.000000" />
+                <Property Name="CheckMode" Value="1" />
+                <Property Name="Text" Value="#{ZDPT_XML_5}" />
+                <Event Name="Clicked" Function="TeamPT_ChannelChange(0);" />
+                <Property Name="Tooltip" Value="#{ZDPT_XML_34}" />
+            </Window>
+            <Window Type="TLBB_MultiColumnListNoScroll" Name="TeamPT_List">
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,45.000000}" />
+                <Property Name="AbsoluteSize" Value="w:660 h:296" />
+                <Property Name="ForceHorzScrollbar" Value="False" />
+                <Property Name="ForceVertScrollbar" Value="True" />
+                <Property Name="SortSettingEnabled" Value="False" />
+                <Property Name="SelectionMode" Value="RowSingle" />
+								<Property Name="ColumnHeader" Value="text:#{ZDPT_XML_9} width:0.0667 id:0" />
+								<Property Name="ColumnHeader" Value="text:#{ZDPT_XML_10} width:0.1333 id:1" />
+								<Property Name="ColumnHeader" Value="text:#{ZDPT_XML_11} width:0.2221 id:2" />
+								<Property Name="ColumnHeader" Value="text:#{ZDPT_XML_12} width:0.1777 id:3" />
+								<Property Name="ColumnHeader" Value="text:#{ZDPT_XML_13} width:0.1777 id:4" />
+								<Property Name="ColumnHeader" Value="text:#{ZDPT_XML_14} width:0.0888 id:5" />
+								<Property Name="ColumnHeader" Value="text:#{ZDPT_XML_15} width:0.0667 id:6" />
+								<Property Name="ColumnHeader" Value="text:#{ZDPT_XML_16} width:0.0667 id:7" />
+                <Property Name="ColumnsSizable" Value="False" />
+                <Property Name="ColumnsAdjust" Value="True" />
+                <Property Name="ColumnsMovable" Value="False" />
+								<Property Name="LineDrawOffset" Value="1" />
+                <Event Name="SelectionChanged" Function="TeamPT_List_OnSelectionChanged();" />
+            </Window>
+          <Window Type="TLBB_MultiColumnListNoScroll" Name="TeamPT_List_Player">
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,45.000000}" />
+            <Property Name="AbsoluteSize" Value="w:660 h:296" />
+            <Property Name="ForceHorzScrollbar" Value="False" />
+            <Property Name="ForceVertScrollbar" Value="True" />
+            <Property Name="SortSettingEnabled" Value="False" />
+            <Property Name="SelectionMode" Value="RowSingle" />
+						<Property Name="ColumnHeader" Value="text:#{ZDPT_XML_9} width:0.0667 id:0" />
+						<Property Name="ColumnHeader" Value="text:#{ZDPT_XML_10} width:0.1333 id:1" />
+						<Property Name="ColumnHeader" Value="text:#{ZDPT_XML_11} width:0.2221 id:2" />
+						<Property Name="ColumnHeader" Value="text:#{ZDPT_XML_12} width:0.2668 id:3" />
+						<Property Name="ColumnHeader" Value="text:#{ZDPT_XML_28} width:0.1777 id:4" />
+						<Property Name="ColumnHeader" Value="text:#{ZDPT_XML_29} width:0.0667 id:5" />
+						<Property Name="ColumnHeader" Value="text:#{ZDPT_XML_16} width:0.0667 id:6" />
+            <Property Name="ColumnsSizable" Value="False" />
+            <Property Name="ColumnsAdjust" Value="True" />
+						<Property Name="ColumnsMovable" Value="False" />
+						<Property Name="LineDrawOffset" Value="1" />
+            <Event Name="SelectionChanged" Function="TeamPT_List_OnSelectionChanged();" />
+          </Window>
+          <Window Type="TLBB_Frame_Lace5" Name="TeamPT_Blank">
+              <Property Name="UnifiedPosition" Value="{{0.370000,-82.830002},{1.000000,-20.000000}" />
+              <Property Name="UnifiedSize" Value="{{0.400000,64.000000},{0.000000,20.000000}" />
+              <Property Name="RiseOnClick" Value="False" />
+            </Window>
+            <Window Type="TLBB_ButtonCommon" Name="TeamPT_FirstPage">
+                <Property Name="UnifiedPosition" Value="{{1.000000,-200.000000},{1.000000,-20.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,45.000000},{0.000000,20.000000}" />
+                <Event Name="Clicked" Function="OnTeamPT_FirstPageClicked();" />
+                <Property Name="Text" Value="#{ZYPT_081128_5}" />
+            </Window>
+            <Window Type="TLBB_ButtonCommon" Name="TeamPT_PageUp">
+                <Property Name="UnifiedPosition" Value="{{1.000000,-155.000000},{1.000000,-20.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,55.000000},{0.000000,20.000000}" />
+                <Event Name="Clicked" Function="OnTeamPT_PageUpClicked();" />
+                <Property Name="Text" Value="#{ZYPT_081103_017}" />
+            </Window>
+            <Window Type="TLBB_ButtonCommon" Name="TeamPT_PageDown">
+                <Property Name="UnifiedPosition" Value="{{1.000000,-100.000000},{1.000000,-20.00000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,55.000000},{0.000000,20.000000}" />
+                <Event Name="Clicked" Function="OnTeamPT_PageDownClicked();" />
+                <Property Name="Text" Value="#{ZYPT_081103_018}" />
+            </Window>
+            <Window Type="TLBB_ButtonCommon" Name="TeamPT_LastPage">
+                <Property Name="UnifiedPosition" Value="{{1.000000,-45.000000},{1.000000,-20.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,45.000000},{0.000000,20.000000}" />
+                <Event Name="Clicked" Function="OnTeamPT_LastPageClicked();" />
+                <Property Name="Text" Value="#{ZYPT_081128_6}" />
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="TeamPT_Goto">
+                <Property Name="UnifiedPosition" Value="{{0.245000,-120.500000},{1.000000,-20.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0400000,0.000000},{0.00000,20.000000}" />
+                <Property Name="TextColor" Value="FFFFF263" />
+                <Property Name="Visible" Value="False" />
+                <Property Name="Text" Value="#{ZYPT_081128_2}" />
+                <Property Name="HorzFormatting" Value="LeftAligned" />
+                <Property Name="VertFormatting" Value="VertCentred" />
+            </Window>
+            <Window Type="TLBB_EditBoxNormal" Name="TeamPT_GotoEditBox">
+              <Property Name="UnifiedPosition" Value="{{0.250000,-88.000000},{1.000000,-20.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.035,0.000000},{0.000000,20.000000}" />
+                <Property Name="MaxTextLength" Value="2" />
+                <Property Name="ValidationString" Value="[0-9]*" />
+                <Property Name="Text" value="" />
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="TeamPT_GotoyText">
+                <Property Name="UnifiedPosition" Value="{{0.250000,-56.000000},{1.000000,-20.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0200000,0.000000},{0.00000,20.000000}" />
+                <Property Name="TextColor" Value="FFFFF263" />
+                <Property Name="Text" Value="#{ZYPT_081128_3}" />
+                <Property Name="HorzFormatting" Value="LeftAligned" />
+                <Property Name="VertFormatting" Value="VertCentred" />
+            </Window>
+            <Window Type="TLBB_ButtonCommon" Name="TeamPT_Go">
+                <Property Name="UnifiedPosition" Value="{{0.250000,-33.500000},{1.000000,-20.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,45.000000},{0.000000,20.000000}" />
+                <Property Name="Text" Value="#{ZYPT_081128_4}" />
+                <Event Name="Clicked" Function="OnTeamPT_GotoClicked();" />
+            </Window>
+            <Window Type="TLBB_SimpleMulitiTextFrame" Name="TeamPT_Amount">
+                <Property Name="UnifiedPosition" Value="{{0.0,2.000000},{1.000000,-20.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.000000,66.000000},{0.000000,22.000000}" />
+                <Property Name="Text" Value="" />
+                <Property Name="TextColor" Value="FFFFF263" />
+                <Property Name="HorzFormatting" Value="HorzCentred" />
+                <Property Name="VertFormatting" Value="VertCentred" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

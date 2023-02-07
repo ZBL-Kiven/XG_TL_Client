@@ -1,0 +1,172 @@
+<?xml version="1.0" ?>
+<GUILayout>
+    <Window Type="TLBB_MainFrame1" Name="Dress_Materalcompose_Frame">
+        <Property Name="UnifiedPosition" Value="{{0.4,0},{0.15,0}}" />
+        <Property Name="AbsoluteSize" Value="w:256 h:340" />
+        <Event Name="Hidden" Function="Dress_Materalcompose_Clear();" />
+        <Window Type="TLBB_DragTitle" Name="Dress_Materalcompose_DragTitle">
+            <Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
+            <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+            <Property Name="DragTarget" Value="Dress_Materalcompose_Frame" />
+            <Property Name="Font" Value="YouYuan11.25" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="VertFormatting" Value="VertCentred" />
+            <Property Name="Text" Value="#{SZPR_XML_53}" />
+        </Window>
+        <Window Type="TLBB_ButtonClose" Name="Dress_Materalcompose_Close">
+            <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+            <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+            <Event Name="Clicked" Function="Dress_Materalcompose_Cancel_Clicked();" />
+        </Window>
+        <Window Type="TLBB_ButtonHelp" Name="Dress_Materalcompose_Help">
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+            <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+            <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*MaterialCompound&quot;);' />
+        </Window>
+        <Window Type="DefaultWindow" Name="Dress_Materalcompose_Frame_Client">
+            <Property Name="AbsolutePosition" Value="x:7.000000 y:36.000000" />
+            <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-55.000000}" />
+            <Property Name="RiseOnClick" Value="False" />
+            <Window Type="TLBB_SimpleMulitiTextFrame" Name="Dress_MaterialCompose_Info">
+                <Property Name="Position" Value="x:0.0 y:0.0" />
+                <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,60.000000}" />
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+                <Property Name="RiseOnClick" Value="False" />
+                <Property Name="Text" Value="#{SZPR_XML_54}" />
+                <Property Name="TextColor" Value="FFFFF263" />
+            </Window>
+            <Window Type="TLBB_SimpleMulitiTextFrame" Name="Dress_Materalcompose_SuccessValue">
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,60.000000}" />
+                <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}" />
+                <Property Name="HorzFormatting" Value="HorzCentred" />
+                <Property Name="RiseOnClick" Value="False" />
+                <Property Name="TextColor" Value="FFFFF263" />
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Dress_Materalcompose_Static1">
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,80.000000}" />
+                <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}" />
+                <Property Name="HorzFormatting" Value="HorzCentred" />
+                <Property Name="RiseOnClick" Value="False" />
+                <Property Name="Text" Value="#{SZPR_XML_58}" />
+                <Property Name="TextColor" Value="FFFFF263" />
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="Dress_Materalcompose_Space1">
+                <Property Name="UnifiedPosition" Value="{{0.1,0.000000},{0.000000,100.000000}" />
+                <Property Name="AbsoluteSize" Value="w:36.000000 h:36.000000" />
+                <Property Name="DragAcceptName" Value="D11" />
+                <Property Name="DraggingEnabled" Value="True" />
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="Dress_Materalcompose_Space2">
+                <Property Name="UnifiedPosition" Value="{{0.1,38.000000},{0.000000,100.000000}" />
+                <Property Name="AbsoluteSize" Value="w:36.000000 h:36.000000" />
+                <Property Name="DragAcceptName" Value="D13" />
+                <Property Name="DraggingEnabled" Value="True" />
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="Dress_Materalcompose_Space3">
+                <Property Name="UnifiedPosition" Value="{{0.1,76.000000},{0.000000,100.000000}" />
+                <Property Name="AbsoluteSize" Value="w:36.000000 h:36.000000" />
+                <Property Name="DragAcceptName" Value="D15" />
+                <Property Name="DraggingEnabled" Value="True" />
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="Dress_Materalcompose_Space4">
+                <Property Name="UnifiedPosition" Value="{{0.1,114.000000},{0.000000,100.000000}" />
+                <Property Name="AbsoluteSize" Value="w:36.000000 h:36.000000" />
+                <Property Name="DragAcceptName" Value="D17" />
+                <Property Name="DraggingEnabled" Value="True" />
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="Dress_Materalcompose_Space5">
+                <Property Name="UnifiedPosition" Value="{{0.1,152.000000},{0.000000,100.000000}" />
+                <Property Name="AbsoluteSize" Value="w:36.000000 h:36.000000" />
+                <Property Name="DragAcceptName" Value="D19" />
+                <Property Name="DraggingEnabled" Value="True" />
+            </Window>
+            <Window Type="DefaultWindow" Name="Dress_Materalcompose_Special">
+                <Property Name="UnifiedPosition" Value="{{0.000000,14.000000},{0.550000,-10.500000}" />
+                <Property Name="UnifiedSize" Value="{{0.000000,209.000000},{0.000000,45.000000}" />
+                <Window Type="TLBB_SimpleText" Name="Dress_Materalcompose_Static2">
+                    <Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{0.000000,8.000000}" />
+                    <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{0.000000,20.000000}" />
+                    <Property Name="HorzFormatting" Value="HorzCentred" />
+                    <Property Name="RiseOnClick" Value="False" />
+                    <Property Name="Text" Value="#{SZPR_XML_59}" />
+                    <Property Name="TextColor" Value="FFFFF263" />
+                    <Property Name="HorzFormatting" Value="LeftAligned" />
+                    <Property Name="VertFormatting" Value="VertCentred" />
+                </Window>
+                <Window Type="TLBB_ActionButton" Name="Dress_Materalcompose_Special_Button">
+                    <Property Name="AbsolutePosition" Value="x:135.000000 y:0.000000" />
+                    <Property Name="AbsoluteSize" Value="w:36.000000 h:35.000000" />
+                    <Property Name="DragAcceptName" Value="D21" />
+                    <Property Name="DraggingEnabled" Value="True" />
+                </Window>
+            </Window>
+            <Window Type="TLBB_SimpleMulitiTextFrame" Name="Dress_Materalcompose_Static3">
+                <Property Name="UnifiedPosition" Value="{{0.05,0.000000},{1.000000,-89.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.9,0.000000},{0.000000,22.000000}" />
+                <Property Name="Text" Value="#{INTERFACE_XML_789}" />
+                <Property Name="TextColor" Value="FFFFF263" />
+                <Property Name="HorzFormatting" Value="LeftAligned" />
+                <Property Name="VertFormatting" Value="VertCentred" />
+                <Property Name="RiseOnClick" Value="False" />
+                <Window Type="TLBB_Money" Name="Dress_Materalcompose_NeedMoney">
+                    <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}" />
+                    <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}" />
+                    <Property Name="HorzFormatting" Value="RightAligned" />
+                    <Property Name="MoneyNumber" Value="0" />
+                    <Property Name="GoldIcon" Value = "set:Button6 image:Lace_JiaoziJin" />
+                    <Property Name="SilverIcon" Value = "set:Button6 image:Lace_JiaoziYin" />
+                    <Property Name="CopperIcon" Value = "set:Button6 image:Lace_JiaoziTong" />
+                </Window>
+            </Window>
+            <Window Type="TLBB_SimpleMulitiTextFrame" Name="Dress_Materalcompose_SelfJiaozi_Text">
+                <Property Name="UnifiedPosition" Value="{{0.05,0.000000},{1.000000,-67.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.9,0.000000},{0.000000,22.000000}" />
+                <Property Name="HorzFormatting" Value="LeftAligned" />
+                <Property Name="VertFormatting" Value="VertCentred" />
+                <Property Name="Text" Value="#{BDJB_051210_1}" />
+                <Property Name="TextColor" Value="FFFFF263" />
+                <Property Name="RiseOnClick" Value="False" />
+                <Window Type="TLBB_Money" Name="Dress_Materalcompose_SelfJiaozi">
+                    <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}" />
+                    <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}" />
+                    <Property Name="HorzFormatting" Value="RightAligned" />
+                    <Property Name="MoneyNumber" Value="0" />
+                    <Property Name="GoldIcon" Value = "set:Button6 image:Lace_JiaoziJin" />
+                    <Property Name="SilverIcon" Value = "set:Button6 image:Lace_JiaoziYin" />
+                    <Property Name="CopperIcon" Value = "set:Button6 image:Lace_JiaoziTong" />
+                </Window>
+            </Window>
+            <Window Type="TLBB_SimpleMulitiTextFrame" Name="Dress_Materalcompose_SelfMoney_Text">
+                <Property Name="UnifiedPosition" Value="{{0.05,0.000000},{1.000000,-45.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.9,0.000000},{0.000000,22.000000}" />
+                <Property Name="HorzFormatting" Value="LeftAligned" />
+                <Property Name="VertFormatting" Value="VertCentred" />
+                <Property Name="Text" Value="#{INTERFACE_XML_834}" />
+                <Property Name="TextColor" Value="FFFFF263" />
+                <Property Name="RiseOnClick" Value="False" />
+                <Window Type="TLBB_Money" Name="Dress_Materalcompose_SelfMoney">
+                    <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}" />
+                    <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}" />
+                    <Property Name="HorzFormatting" Value="RightAligned" />
+                    <Property Name="MoneyNumber" Value="0" />
+                </Window>
+            </Window>
+            <Window Type="TLBB_Frame_Lace5" Name="Dress_Materalcompose_Blank">
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}" />
+                <Property Name="UnifiedSize" Value="{{1.000000,-120.000000},{0.000000,20.000000}" />
+            </Window>
+            <Window Type="TLBB_ButtonCommon" Name="Dress_Materalcompose_OK">
+                <Property Name="UnifiedPosition" Value="{{1.000000,-120.000000},{1.000000,-20.000000}" />
+                <Property Name="AbsoluteSize" Value="w:60.000000 h:20.000000" />
+                <Property Name="Text" Value="#{SZPR_XML_90}" />
+                <Event Name="Clicked" Function="Dress_Materalcompose_OK_Clicked();" />
+            </Window>
+            <Window Type="TLBB_ButtonCommon" Name="Dress_Materalcompose_Cancel">
+                <Property Name="UnifiedPosition" Value="{{1.000000,-60.000000},{1.000000,-20.000000}" />
+                <Property Name="AbsoluteSize" Value="w:60.000000 h:20.000000" />
+                <Property Name="Text" Value="#{INTERFACE_XML_539}" />
+                <Event Name="Clicked" Function="Dress_Materalcompose_Cancel_Clicked();" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

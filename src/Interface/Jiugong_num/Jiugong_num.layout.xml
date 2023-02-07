@@ -1,0 +1,112 @@
+<?xml version="1.0" ?>
+<GUILayout>
+	<Window Type="TLBB_MainFrame0" Name="Jiugong_num_Frame">
+    <Property Name="UnifiedPosition" Value="{{0.500000,151.000000},{0.150000,0.0}" />
+    <Property Name="UnifiedSize" Value="{{0.000000,136.000000},{0.0000,179.0}" />
+    <Window Type="TLBB_DragTitle" Name="Jiugong_num_DragTitle">
+      <Property Name="UnifiedPosition" Value="{{0.500000,-49.000000},{0.00000,12.0}" />
+      <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.0000,20.0}" />
+      <Property Name="DragTarget" Value="Jiugong_num_Frame" />
+    </Window>
+
+    <Window Type="TLBB_ButtonClose" Name="Jiugong_num_Close">
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+      <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+      <Event Name="Clicked" Function="Jiugong_Close();" />
+    </Window>
+
+    <Window Type="TLBB_ButtonHelp" Name="Jiugong_num_Help">
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+      <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+      <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*Jiugong&quot;);' />
+    </Window> 
+    
+    <Window Type="DefaultWindow" Name="Jiugong_num_01">
+      <Property Name="UnifiedPosition" Value="{{0,5},{0,35}}" />
+      <Property Name="UnifiedSize" Value="{{0.0,40.000000},{0.000000,40.000000}" />
+      <Window Type="TLBB_ButtonNULL" Name="Jiugong_num_Button01">
+        <Property Name="AbsolutePosition" Value="x:0.000000 y:0.000000" />
+        <Property Name="AbsoluteSize" Value="w:40.000000 h:40.000000" />
+        <Property Name="NormalImage" Value="set:Tianji image:Tianji_1_Normal" />
+        <Property Name="HoverImage" Value="set:Tianji image:Tianji_1_Hover" />
+        <Property Name="PushedImage" Value="set:Tianji image:Tianji_1_Normal" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Event Name="Clicked" Function="Jiugong_num_Add(1);" />
+      </Window>
+    </Window>
+
+    <Window Type="DefaultWindow" Name="Jiugong_num_02">
+      <Property Name="UnifiedPosition" Value="{{0,91},{0,35}}" />
+      <Property Name="UnifiedSize" Value="{{0.0,40.000000},{0.000000,40.000000}" />
+      <Window Type="TLBB_ButtonNULL" Name="Jiugong_num_Button02">
+        <Property Name="AbsolutePosition" Value="x:0.000000 y:0.000000" />
+        <Property Name="AbsoluteSize" Value="w:40.000000 h:40.000000" />
+        <Property Name="NormalImage" Value="set:Tianji image:Tianji_2_Normal" />
+        <Property Name="HoverImage" Value="set:Tianji image:Tianji_2_Hover" />
+        <Property Name="PushedImage" Value="set:Tianji image:Tianji_2_Normal" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Event Name="Clicked" Function="Jiugong_num_Add(2);" />
+      </Window>
+    </Window>
+
+    <Window Type="DefaultWindow" Name="Jiugong_num_03">
+      <Property Name="UnifiedPosition" Value="{{0,48},{0,78}}" />
+      <Property Name="UnifiedSize" Value="{{0.0,40.000000},{0.000000,40.000000}" />
+      <Window Type="TLBB_ButtonNULL" Name="Jiugong_num_Button03">
+        <Property Name="AbsolutePosition" Value="x:0.000000 y:0.000000" />
+        <Property Name="AbsoluteSize" Value="w:40.000000 h:40.000000" />
+        <Property Name="NormalImage" Value="set:Tianji image:Tianji_3_Normal" />
+        <Property Name="HoverImage" Value="set:Tianji image:Tianji_3_Hover" />
+        <Property Name="PushedImage" Value="set:Tianji image:Tianji_3_Normal" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Event Name="Clicked" Function="Jiugong_num_Add(3);" />
+      </Window>
+    </Window>
+
+    <Window Type="DefaultWindow" Name="Jiugong_num_04">
+      <Property Name="UnifiedPosition" Value="{{0,5},{0,121}}" />
+      <Property Name="UnifiedSize" Value="{{0.0,40.000000},{0.000000,40.000000}" />
+      <Window Type="TLBB_ButtonNULL" Name="Jiugong_num_Button04">
+        <Property Name="AbsolutePosition" Value="x:0.000000 y:0.000000" />
+        <Property Name="AbsoluteSize" Value="w:40.000000 h:40.000000" />
+        <Property Name="NormalImage" Value="set:Tianji image:Tianji_4_Normal" />
+        <Property Name="HoverImage" Value="set:Tianji image:Tianji_4_Hover" />
+        <Property Name="PushedImage" Value="set:Tianji image:Tianji_4_Normal" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Event Name="Clicked" Function="Jiugong_num_Add(4);" />
+      </Window>
+    </Window>
+
+    <Window Type="DefaultWindow" Name="Jiugong_num_05">
+      <Property Name="UnifiedPosition" Value="{{0,91},{0,121}}" />
+      <Property Name="UnifiedSize" Value="{{0.0,40.000000},{0.000000,40.000000}" />
+      <Window Type="TLBB_ButtonNULL" Name="Jiugong_num_Button05">
+        <Property Name="AbsolutePosition" Value="x:0.000000 y:0.000000" />
+        <Property Name="AbsoluteSize" Value="w:40.000000 h:40.000000" />
+        <Property Name="NormalImage" Value="set:Tianji image:Tianji_5_Normal" />
+        <Property Name="HoverImage" Value="set:Tianji image:Tianji_5_Hover" />
+        <Property Name="PushedImage" Value="set:Tianji image:Tianji_5_Normal" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Event Name="Clicked" Function="Jiugong_num_Add(5);" />
+      </Window>
+    </Window>
+    <Window Type="TLBB_HLine" Name="Jiugong_Num_Line1" >
+      <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.00000,74.0}" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-11.000000},{0.0000,4.0}" />
+    </Window>
+    <Window Type="TLBB_HLine" Name="Jiugong_Num_Line2" >
+      <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.00000,117.0}" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-11.000000},{0.0000,4.0}" />
+    </Window>
+    <Window Type="TLBB_VLine" Name="Jiugong_Num_Line3" >
+      <Property Name="UnifiedPosition" Value="{{0.000000,44.000000},{0.00000,36.0}" />
+      <Property Name="UnifiedSize" Value="{{0.000000,4.000000},{0.0000,125.0}" />
+      <Property Name="AlwaysOnTop" Value="True" />
+    </Window>
+    <Window Type="TLBB_VLine" Name="Jiugong_Num_Line4" >
+      <Property Name="UnifiedPosition" Value="{{0.000000,87.000000},{0.00000,36.0}" />
+      <Property Name="UnifiedSize" Value="{{0.000000,4.000000},{0.0000,125.0}" />
+      <Property Name="AlwaysOnTop" Value="True" />
+    </Window>
+	</Window>
+</GUILayout>

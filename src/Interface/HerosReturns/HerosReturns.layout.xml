@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="DefaultWindow" Name="HerosReturns_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{1.000000,-390.000000},{0.000000,0.000000}}"/>
+    <Property Name="AlwaysOnTop" Value="True" />
+    <Window Type="TLBB_ButtonNULL" Name="HerosReturns_Image">
+      <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      <Property Name="PushedImage" Value="set:KJRK_1 image:YXGL_Pushed"/>
+      <Property Name="NormalImage" Value="set:KJRK_1 image:YXGL_Normal"/>
+      <Property Name="HoverImage" Value="set:KJRK_1 image:YXGL_Hover"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Property Name="Tooltip" Value="#{HJHL_201224_74}"/>
+      <Event Name="Clicked" Function="HerosReturns_Clicked(1)"/>
+      <Window Type="TLBB_StaticImageNULL" Name="HerosReturns_Image_tips">
+        <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-10.000000},{0.000000,0.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="WMTLBB_CommonFrame3" Name="Packet_PiLiang_Frame">
+    <Property Name="UnifiedPosition" Value="{{0.500000,-135.000000},{0.500000,-130.000000}}" />
+    <Property Name="AbsoluteSize" Value="w:270.000000 h:190.000000" />
+    <Property Name="AlwaysOnTop" Value="True" />
+    <Window Type="TLBB_StaticImageNULL" Name="Packet_PiLiang_Frame_LeftBK">
+      <Property Name="UnifiedSize" Value="{{0.000000,63.000000},{0.000000,70.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      <Property Name="Image" Value="set:WM_MainFrame06 image:Fram_L"/>
+    </Window>
+    <Window Type="TLBB_StaticImageNULL" Name="Packet_PiLiang_Frame_RightBK">
+      <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,57.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-56.000000},{0.000000,7.000000}}"/>
+      <Property Name="Image" Value="set:WM_MainFrame06 image:Fram_R"/>
+    </Window>
+    <Window Type="WMTLBB_ButtonHelp" Name="Packet_PiLiang_Help">
+      <Property Name="UnifiedPosition" Value="{{0.000000,18.000000},{0.000000,15.000000}" />
+      <Property Name="AbsoluteSize" Value="w:17.000000 h:18.000000" />
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Event Name="Clicked" Function="Helper:GotoHelper('*Packet_PiLiang');"/>
+    </Window>
+    <Window Type="TLBB_DragTitle" Name="Packet_PiLiang_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-65.000000},{0.000000,27.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,35.000000},{0.000000,21.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="DragTarget" Value="Packet_PiLiang_Frame"/>
+      <Window Type="TLBB_SimpleText" Name="Packet_PiLiang_PageHeader">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+        <Property Name="Text" Value="#gFF0FA0批量取出"/>
+        <Property Name="HorzFormatting" Value="HorzCentred"/>
+        <Property Name="Font" Value="YouYuan11.25"/>
+        <Property Name="TextColor" Value="FFFFF263"/>
+      </Window>
+    </Window>
+    <Window Type="WMTLBB_ButtonClose" Name="Packet_PiLiang_Close">
+      <Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.000000,15.000000}" />
+      <Property Name="AbsoluteSize" Value="w:17.000000 h:18.000000" />
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Event Name="Clicked" Function="Packet_PiLiang_Close_Clicked();"/>
+    </Window>
+    <Window Type="WMTLBB_Frame_Lace1" Name="Packet_PiLiang_Function_Frame">
+      <Property Name="UnifiedSize" Value="{{1.000000,-40.000000},{1.000000,-80.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,23.000000},{0.000000,54.000000}}"/>
+	  <Window Type="TLBB_StaticImageNULL" Name="Packet_PiLiang_ItemBKG">
+			<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}" />
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}" />
+			<Property Name="Image" Value="set:WM_MainFrame07 image:Fram_BK" />		
+		  <Window Type="WMTLBB_ActionButtonNULL" Name="Packet_PiLiang_Item">
+			<Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}" />
+			<Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,32.000000}}" />
+			<Event Name="MouseEnter" Function="Packet_PiLiang_MouseEnter();" />
+			<Event Name="MouseLeave" Function="Packet_PiLiang_MouseLeave();" />				
+		  </Window>
+	  </Window>
+      <Window Type="WMTLBB_SimpleMulitiTextFrame" Name="Packet_PiLiang_ItemInfo">
+        <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,39.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,45.000000},{0.000000,5.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="Packet_PiLiang_ItemInfo_Text">
+          <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,16.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,3.000000}}"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="Packet_PiLiang_BuyNum_Text">
+        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,45.000000}}" />
+        <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}" />
+        <Property Name="Text" Value="#cfff263取出数量："/>
+      </Window>
+      <Window Type="WMTLBB_EditBoxNormal" Name="Packet_PiLiang_InputNum">
+        <Property Name="ValidationString" Value="[0-9]*"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.000000,47.000000}}" />
+        <Property Name="UnifiedSize" Value="{{1.000000,-120.000000},{0.000000,15.000000}}" />
+        <Property Name="Text" Value="1"/>
+        <Property Name="MaxTextLength" Value="6"/>
+        <!-- <Event Name="TextChanged" Function="Packet_PiLiang_TextChanged();"/> -->
+      </Window>
+      <Window Type="WMTLBB_ButtonCommon3" Name="Packet_PiLiang_MAX">
+        <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,18.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-45.000000},{0.000000,47.000000}}"/>
+        <Property Name="Text" Value="#{INTERFACE_XML_903}"/>
+        <Event Name="Clicked" Function="Packet_PiLiang_CalMax();"/>
+      </Window>
+    </Window>
+
+
+    <Window Type="WMTLBB_ButtonCommon3" Name="Packet_PiLiang_Buy">
+      <Property Name="UnifiedPosition" Value="{{1.000000,-97.000000},{1.000000,-24.000000}}" />
+      <Property Name="AbsoluteSize" Value="w:40.000000 h:18.000000" />
+      <Property Name="Text" Value="#{INTERFACE_XML_1058}"/>
+      <Event Name="Clicked" Function="Packet_PiLiang_BuyMulti_Clicked();"/>
+    </Window>
+    <Window Type="WMTLBB_ButtonCommon3" Name="Packet_PiLiang_Cancel">
+      <Property Name="UnifiedPosition" Value="{{1.0,-57.000000},{1.000000,-24.000000}" />
+      <Property Name="UnifiedSize" Value="{{0.0,40.000000},{0.000000,18.000000}" />
+      <Property Name="Text" Value="#{INTERFACE_XML_1059}"/>
+      <Event Name="Clicked" Function="Packet_PiLiang_Close_Clicked();"/>
+    </Window>
+  </Window>
+</GUILayout>

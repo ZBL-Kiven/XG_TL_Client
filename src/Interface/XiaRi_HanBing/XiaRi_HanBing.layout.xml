@@ -1,0 +1,210 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="XiaRi_HanBing_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,772.000000},{0.000000,392.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-360.000000},{0.500000,-180.000000}}"/>
+    <Event Name="Hidden" Function="XiaRi_HanBing_OnHiden()"/>
+    <Window Type="DefaultWindow" Name="XiaRi_HanBing_BKFrame">
+      <Property Name="RiseOnClick" Value="False"/>
+      <Window Type="TLBB_StaticImageNULL" Name="XiaRi_HanBing_BK">
+        <Property Name="UnifiedSize" Value="{{0.000000,772.000000},{0.000000,391.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="Image" Value="set:XiaRi_HanBing image:XiaRi_HanBingBK"/>
+      </Window>
+    </Window>
+    <Window Type="TLBB_DragTitle" Name="XiaRi_HanBing_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{0.000000,34.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,84.000000}}"/>
+      <Property Name="DragTarget" Value="XiaRi_HanBing_Frame"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="XiaRi_HanBing_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-24.000000},{0.000000,88.000000}}"/>
+      <Event Name="Clicked" Function="XiaRi_HanBing_OnHiden()" />
+      <Property Name="AlwaysOnTop" Value="True"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="XiaRi_HanBing_Frame_Client">
+      <Property Name="UnifiedSize" Value="{{0.000000,452.000000},{0.000000,272.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,314.000000},{0.000000,106.000000}}"/>
+        <Window Type="TLBB_StaticImageNULL" Name="XiaRi_HanBing_Explain1">
+          <Property Name="UnifiedSize" Value="{{0.000000,363.000000},{0.000000,60.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,54.000000},{0.000000,16.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="Image" Value="set:XiaRi_HanBing image:XiaRi_HanBingBK3"/>
+          <Window Type="TLBB_SimpleText" Name="XiaRi_HanBing_Explain_text">
+            <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{1.000000,-8.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,4.000000}}"/>
+            <Property Name="Text" Value="#{HBS_20210621_36}"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            <Property Name="VertFormatting" Value="TopAligned"/>
+            <Window Type="TLBB_ButtonHelp" Name="XiaRi_HanBing_Help">
+              <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-14.000000},{1.000000,-14.000000}}"/>
+              <Event Name="Clicked" Function="XiaRi_HanBing_ShowHelp()"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="XiaRi_HanBing_Explain2">
+          <Property Name="UnifiedSize" Value="{{0.000000,446.000000},{1.000000,-80.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,78.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_StaticImageNULL" Name="XiaRi_HanBing_FeelGoodAllBK">
+            <Property Name="UnifiedSize" Value="{{0.000000,106.000000},{0.000000,26.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,96.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:XiaRi_HanBing image:XiaRi_HanBingBK2"/>
+            <Window Type="TLBB_SimpleText" Name="XiaRi_HanBing_FeelGoodAll">
+              <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{1.000000,-8.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}"/>
+              <Property Name="Text" Value="#{HBS_20210621_39}"/>
+              <Property Name="VertFormatting" Value="TopAligned"/>
+              <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="XiaRi_HanBing_FeelGoodProgressbk">
+            <Property Name="UnifiedSize" Value="{{0.000000,275.000000},{0.000000,6.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,128.0000000},{0.000000,106.000000}}" />
+            <Property Name="Image" Value="set:XiaRi_HanBing image:XiaRi_HanBingBK3"/>
+            <Window Type="TLBB_ProgressPropertyBrown" Name="XiaRi_HanBing_FeelGoodProgress">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.0000000},{0.000000,0.000000}}" />
+              <Property Name="CurrentProgress" Value="1.0" />
+              <Property Name="EffectColor" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+              <Property Name="EffectColorLevel" Value="index:0 tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+              <Property Name="MoveSpeed" Value="1" />
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="XiaRi_HanBing_FeelGood1">
+            <Property Name="UnifiedSize" Value="{{0.000000,72.000000},{0.000000,100.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.00000,160.00000},{0.000000,45.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Window Type="TLBB_ActionButton" Name="XiaRi_HanBing_FeelGood1Btn">
+              <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-24.000000},{0.000000,0.000000}}"/>
+              <Event Name="Clicked" Function="XiaRi_HanBing_OnRewardClick(1)"/>
+              <Window Type="TLBB_Animate" Name="XiaRi_HanBing_FeelGood1BtnAnimate">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Animate" Value="Equip_Zhizun"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="XiaRi_HanBing_FeelGood1BtnOK">
+                <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,28.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{0.500000,-14.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:Seven image:Seven_ke"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="XiaRi_HanBing_FeelGood1OK">
+              <Property Name="UnifiedSize" Value="{{0.000000,11.000000},{0.000000,11.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-6.000000},{0.000000,48.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="Image" Value="set:XiaRi_HanBing image:XiaRi_HanBingJianTou"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="XiaRi_HanBing_FeelGood1Text">
+              <Property Name="UnifiedSize" Value="{{1.000000,4.000000},{0.000000,32.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,68.000000}}"/>
+              <Property Name="Text" Value="#{HBS_20210621_38}"/>
+              <Property Name="VertFormatting" Value="TopAligned"/>
+              <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="XiaRi_HanBing_FeelGood2">
+            <Property Name="UnifiedSize" Value="{{0.000000,72.000000},{0.000000,100.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.00000,231.00000},{0.000000,45.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Window Type="TLBB_ActionButton" Name="XiaRi_HanBing_FeelGood2Btn">
+              <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-24.000000},{0.000000,0.000000}}"/>
+              <Event Name="Clicked" Function="XiaRi_HanBing_OnRewardClick(2)"/>
+              <Window Type="TLBB_Animate" Name="XiaRi_HanBing_FeelGood2BtnAnimate">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Animate" Value="Equip_Zhizun"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="XiaRi_HanBing_FeelGood2BtnOK">
+                <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,28.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{0.500000,-14.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:Seven image:Seven_ke"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="XiaRi_HanBing_FeelGood2OK">
+              <Property Name="UnifiedSize" Value="{{0.000000,11.000000},{0.000000,11.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-6.000000},{0.000000,48.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="Image" Value="set:XiaRi_HanBing image:XiaRi_HanBingJianTou"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="XiaRi_HanBing_FeelGood2Text">
+              <Property Name="UnifiedSize" Value="{{1.000000,4.000000},{0.000000,32.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,68.000000}}"/>
+              <Property Name="Text" Value="#{HBS_20210621_38}"/>
+              <Property Name="VertFormatting" Value="TopAligned"/>
+              <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="XiaRi_HanBing_FeelGood3">
+            <Property Name="UnifiedSize" Value="{{0.000000,72.000000},{0.000000,100.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.00000,368.00000},{0.000000,45.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Window Type="TLBB_ActionButton" Name="XiaRi_HanBing_FeelGood3Btn">
+              <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-24.000000},{0.000000,0.000000}}"/>
+              <Event Name="Clicked" Function="XiaRi_HanBing_OnRewardClick(3)"/>
+              <Window Type="TLBB_Animate" Name="XiaRi_HanBing_FeelGood3BtnAnimate">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Animate" Value="Equip_Zhizun"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="XiaRi_HanBing_FeelGood3BtnOK">
+                <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,28.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{0.500000,-14.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:Seven image:Seven_ke"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="XiaRi_HanBing_FeelGood3OK">
+              <Property Name="UnifiedSize" Value="{{0.000000,11.000000},{0.000000,11.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-6.000000},{0.000000,48.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="Image" Value="set:XiaRi_HanBing image:XiaRi_HanBingJianTou"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="XiaRi_HanBing_FeelGood3Text">
+              <Property Name="UnifiedSize" Value="{{1.000000,4.000000},{0.000000,32.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,68.000000}}"/>
+              <Property Name="Text" Value="#{HBS_20210621_38}"/>
+              <Property Name="VertFormatting" Value="TopAligned"/>
+              <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            </Window>
+          </Window>
+        </Window>
+    </Window>
+  </Window>
+</GUILayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="DefaultWindow" Name="SongliaoWarCountDown">
+    <Property Name="UnifiedSize" Value="{{0.000000,270.000000},{0.000000,188.000000}}" />
+    <Property Name="UnifiedPosition" Value="{{0.500000,-135.000000},{0.000000,50.000000}}" />
+		<Property Name="MouseRButtonHollow" Value="True"/>
+		<Property Name="MouseMoveHollow" Value="True"/>
+		<Property Name="MouseLButtonHollow" Value="True"/>
+		<Property Name="MouseHollow" Value="True"/>
+    <Property Name="AlwaysOnTop" Value="True" />
+    <Window Type="TLBB_StaticImageNULL" Name="SongliaoWarCountDown_Image">
+      <Property Name="UnifiedSize" Value="{{0.000000,270.000000},{0.000000,188.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+		<Property Name="MouseRButtonHollow" Value="True"/>
+		<Property Name="MouseMoveHollow" Value="True"/>
+		<Property Name="MouseLButtonHollow" Value="True"/>
+		<Property Name="MouseHollow" Value="True"/>
+      <Property Name="Image" Value="set:SongLiao01 image:SL_Fight_BK" />
+      <Property Name="RiseOnClick" Value="False" />
+    </Window>
+    <Window Type="TLBB_Animate" Name="SongliaoWarCountDown_Animate">
+      <Property Name="UnifiedSize" Value="{{0.000000,136.000000},{0.000000,80.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.500000,-68.000000},{0.500000,-40.000000}}" />
+      <Property Name="MouseRButtonHollow" Value="True" />
+      <Property Name="MouseMoveHollow" Value="True" />
+      <Property Name="MouseLButtonHollow" Value="True" />
+      <Property Name="MouseHollow" Value="True" />
+      <Property Name="Animate" Value="SongLiao_Time" />
+      <Property Name="AlwaysOnTop" Value="True" />
+    </Window>
+  </Window>
+</GUILayout>

@@ -1,0 +1,751 @@
+<?xml version="1.0" ?>
+	<Window Type="TLBB_MainFrame0" Name="HuaShanLunJian_Frame">
+		<Property Name="UnifiedSize" Value="{{0.000000,800.000000},{0.000000,480.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.500000,-400.000000},{0.500000,-240.000000}}"/>
+    <Window Type="TLBB_DragTitle" Name="HuaShanLunJian_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+      <Property Name="Text" Value="#{HSLJ_190919_19}"/>
+      <Property Name="Font" Value="Title"/>
+      <Property Name="DragTarget" Value="HuaShanLunJian_Frame"/>
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="HuaShanLunJian_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="HuaShanLunJian_CloseWindow()"/>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="HuaShanLunJian_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="HuaShanLunJian_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-55.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,36.000000}}"/>
+			<Property Name="AlwaysOnTop" Value="True"/>
+			<Window Type="DefaultWindow" Name="HuaShanLunJian_Up">
+				<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.500000,0.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+					<Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_Dan_Image">
+						<Property Name="UnifiedSize" Value="{{0.000000,176.000000},{0.000000,198.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,2.000000}}"/>
+						<Property Name="Image" Value="set:HSLJ_01 image:HSLJ_Dragon6"/>
+						<Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_Dan_Text">
+							<Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,28.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.500000,-19.000000},{1.000000,-40.000000}}"/>
+							<Property Name="Image" Value="set:HSLJ_Match1 image:Number1"/>
+						</Window>
+					</Window>
+        <Window Type="DefaultWindow" Name="HuaShanLunJian_ALLStar">
+          <Property Name="UnifiedSize" Value="{{0.000000,220.000000},{0.000000,200.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.500000,-92.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="HuaShanLunJian_Stage_StarSet">
+            <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-40.000000},{1.000000,-24.000000}}"/>
+            <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_Stage_Star1">
+              <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="Image" Value="set:HSLJ_01 image:HSLJ_Star"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_Stage_Star2">
+              <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-10.000000},{0.000000,0.000000}}"/>
+              <Property Name="Image" Value="set:HSLJ_01 image:HSLJ_Star"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_Stage_Star3">
+              <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,0.000000}}"/>
+              <Property Name="Image" Value="set:HSLJ_01 image:HSLJ_Star"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="HuaShanLunJian_Stage_StarSet1">
+            <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-55.000000},{1.000000,-24.000000}}"/>
+            <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_Stage_Star1_1">
+              <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="Image" Value="set:HSLJ_01 image:HSLJ_Star"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_Stage_Star1_2">
+              <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,0.000000}}"/>
+              <Property Name="Image" Value="set:HSLJ_01 image:HSLJ_Star"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_Stage_Star1_3">
+              <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,0.000000}}"/>
+              <Property Name="Image" Value="set:HSLJ_01 image:HSLJ_Star"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_Stage_Star1_4">
+              <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,0.000000}}"/>
+              <Property Name="Image" Value="set:HSLJ_01 image:HSLJ_Star"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="HuaShanLunJian_Stage_StarSet2">
+            <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-70.000000},{1.000000,-24.000000}}"/>
+            <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_Stage_Star2_1">
+              <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="Image" Value="set:HSLJ_01 image:HSLJ_Star"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_Stage_Star2_2">
+              <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,0.000000}}"/>
+              <Property Name="Image" Value="set:HSLJ_01 image:HSLJ_Star"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_Stage_Star2_3">
+              <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,0.000000}}"/>
+              <Property Name="Image" Value="set:HSLJ_01 image:HSLJ_Star"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_Stage_Star2_4">
+              <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,90.000000},{0.000000,0.000000}}"/>
+              <Property Name="Image" Value="set:HSLJ_01 image:HSLJ_Star"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_Stage_Star2_5">
+              <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,120.000000},{0.000000,0.000000}}"/>
+              <Property Name="Image" Value="set:HSLJ_01 image:HSLJ_Star"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="HuaShanLunJian_Stage_StarSet3">
+            <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-45.000000},{1.000000,-24.000000}}"/>
+            <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_Stage_Star3_1">
+              <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,16.000000},{0.000000,0.000000}}"/>
+              <Property Name="Tooltip" Value="#{HSLJ_190919_26}"/>
+              <Property Name="Image" Value="set:HSLJ_01 image:HSLJ_Star"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="HuaShanLunJian_Stage_Star3Text">
+              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-70.000000},{0.500000,-7.000000}}"/>
+              <Property Name="Text" Value="#{HSLJ_190919_25}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="Font" Value="Text"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="HuaShanLunJian_Stage_StarSet4">
+            <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-75.000000},{1.000000,-24.000000}}"/>
+            <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_Stage_Star4_1">
+              <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="Image" Value="set:HSLJ_01 image:HSLJ_Star"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_Stage_Star4_2">
+              <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,26.000000},{0.000000,0.000000}}"/>
+              <Property Name="Image" Value="set:HSLJ_01 image:HSLJ_Star"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_Stage_Star4_3">
+              <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,52.000000},{0.000000,0.000000}}"/>
+              <Property Name="Image" Value="set:HSLJ_01 image:HSLJ_Star"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_Stage_Star4_4">
+              <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,78.000000},{0.000000,0.000000}}"/>
+              <Property Name="Image" Value="set:HSLJ_01 image:HSLJ_Star"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_Stage_Star4_5">
+              <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,104.000000},{0.000000,0.000000}}"/>
+              <Property Name="Image" Value="set:HSLJ_01 image:HSLJ_Star"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_Stage_Star4_6">
+              <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,130.000000},{0.000000,0.000000}}"/>
+              <Property Name="Image" Value="set:HSLJ_01 image:HSLJ_Star"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="HuaShanLunJian_Stage_StarSet5">
+            <Property Name="UnifiedSize" Value="{{0.000000,202.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.5000000,-101.000000},{1.000000,-24.000000}}"/>
+            <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_Stage_Star5_1">
+              <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="Image" Value="set:HSLJ_01 image:HSLJ_Star"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_Stage_Star5_2">
+              <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,26.000000},{0.000000,0.000000}}"/>
+              <Property Name="Image" Value="set:HSLJ_01 image:HSLJ_Star"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_Stage_Star5_3">
+              <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,52.000000},{0.000000,0.000000}}"/>
+              <Property Name="Image" Value="set:HSLJ_01 image:HSLJ_Star"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_Stage_Star5_4">
+              <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,78.000000},{0.000000,0.000000}}"/>
+              <Property Name="Image" Value="set:HSLJ_01 image:HSLJ_Star"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_Stage_Star5_5">
+              <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,104.000000},{0.000000,0.000000}}"/>
+              <Property Name="Image" Value="set:HSLJ_01 image:HSLJ_Star"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_Stage_Star5_6">
+              <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,130.000000},{0.000000,0.000000}}"/>
+              <Property Name="Image" Value="set:HSLJ_01 image:HSLJ_Star"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_Stage_Star5_7">
+              <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,156.000000},{0.000000,0.000000}}"/>
+              <Property Name="Image" Value="set:HSLJ_01 image:HSLJ_Star"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_Stage_Star5_8">
+              <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,182.000000},{0.000000,0.000000}}"/>
+              <Property Name="Image" Value="set:HSLJ_01 image:HSLJ_Star"/>
+            </Window>
+          </Window>
+        </Window>
+					<Window Type="DefaultWindow" Name="HuaShanLunJian_UpRight">
+						<Property Name="UnifiedSize" Value="{{0.000000,540.000000},{0.000000,200.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,234.000000},{0.500000,-100.000000}}"/>
+						<Property Name="AlwaysOnTop" Value="True"/>
+						<Window Type="DefaultWindow" Name="HuaShanLunJian_UpRight_Frame">
+							<Property Name="UnifiedSize" Value="{{0.000000,260.000000},{0.000000,20.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.500000,-130.000000},{0.000000,18.000000}}"/>
+							<Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_UpRight_BKL">
+								<Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,7.000000}}"/>
+								<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-4.000000}}"/>
+								<Property Name="Image" Value="set:HSLJ_01 image:HSLJ_TitleL"/>
+								<Property Name="AlwaysOnTop" Value="True"/>
+							</Window>
+							<Window Type="TLBB_SimpleText" Name="HuaShanLunJian_UpRight_Title">
+								<Property Name="UnifiedSize" Value="{{0.000000,160.000000},{0.000000,22.000000}}"/>
+								<Property Name="UnifiedPosition" Value="{{0.500000,-80.000000},{0.500000,-11.000000}}"/>
+								<Property Name="Text" Value="#{HSLJ_190919_27}"/>
+								<Property Name="RiseOnClick" Value="False"/>
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+								<Property Name="Font" Value="Text"/>
+								<Property Name="AlwaysOnTop" Value="True"/>
+							</Window>
+							<Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_UpRight_BKR">
+								<Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,7.000000}}"/>
+								<Property Name="UnifiedPosition" Value="{{1.000000,-48.000000},{0.500000,-4.000000}}"/>
+								<Property Name="Image" Value="set:HSLJ_01 image:HSLJ_TitleR"/>
+								<Property Name="AlwaysOnTop" Value="True"/>
+							</Window>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_UpRightTextBK">
+              <Property Name="UnifiedSize" Value="{{0.000000,540.000000},{0.000000,120.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,60.000000}}"/>
+              <Property Name="Image" Value="set:HSLJ_Match17 image:HSLJ_UpTextBK"/>
+						<Window Type="TLBB_SimpleMulitiTextFrame" Name="HuaShanLunJian_Text1_BK">
+							<Property Name="UnifiedSize" Value="{{0.000000,270.000000},{0.000000,24.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+							<Window Type="TLBB_SimpleText" Name="HuaShanLunJian_Text1">
+								<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+								<Property Name="UnifiedPosition" Value="{{0.000000,16.000000},{0.500000,-10.000000}}"/>
+								<Property Name="Text" Value="#{HSLJ_190919_258}"/>
+								<Property Name="RiseOnClick" Value="False"/>
+								<Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+							</Window>
+              <Window Type="TLBB_SimpleText" Name="HuaShanLunJian_Text1Info">
+                <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.500000,-10.000000}}"/>
+                <Property Name="Text" Value="#{HSLJ_190919_23}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+              </Window>
+              <Window Type="TLBB_ButtonHelp" Name="HuaShanLunJian_Text1_Help">
+                <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.500000,-7.000000}}"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Event Name="Clicked" Function="HuaShanLunJian_DuanWeiHelp()"/>
+              </Window>
+						</Window>
+						<Window Type="TLBB_SimpleMulitiTextFrame" Name="HuaShanLunJian_Text2_BK">
+							<Property Name="UnifiedSize" Value="{{0.000000,270.000000},{0.000000,24.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{1.000000,-270.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+							<Window Type="TLBB_SimpleText" Name="HuaShanLunJian_Text2">
+                <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,16.000000},{0.500000,-10.000000}}"/>
+								<Property Name="Text" Value="#{HSLJ_190919_209}"/>
+								<Property Name="RiseOnClick" Value="False"/>
+								<Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+							</Window>
+              <Window Type="TLBB_SimpleText" Name="HuaShanLunJian_Text2Info">
+                <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.500000,-10.000000}}"/>
+                <Property Name="Text" Value="#{HSLJ_190919_210}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+              </Window>
+              <Window Type="TLBB_ButtonHelp" Name="HuaShanLunJian_Text2_Help">
+                <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.500000,-7.000000}}"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Event Name="Clicked" Function="HuaShanLunJian_RankHelp()"/>
+              </Window>
+						</Window>
+						<Window Type="TLBB_SimpleMulitiTextFrame" Name="HuaShanLunJian_Text3_BK">
+							<Property Name="UnifiedSize" Value="{{0.000000,270.000000},{0.000000,24.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,30.000000}}"/>
+							<Window Type="TLBB_SimpleText" Name="HuaShanLunJian_Text3">
+                <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,16.000000},{0.500000,-10.000000}}"/>
+								<Property Name="Text" Value="#{HSLJ_190919_29}"/>
+								<Property Name="RiseOnClick" Value="False"/>
+								<Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+							</Window>
+              <Window Type="TLBB_SimpleText" Name="HuaShanLunJian_Text3Info">
+                <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.500000,-10.000000}}"/>
+                <Property Name="Text" Value="#{HSLJ_190919_207}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+              </Window>
+						</Window>
+						<Window Type="TLBB_SimpleMulitiTextFrame" Name="HuaShanLunJian_Text4_BK">
+							<Property Name="UnifiedSize" Value="{{0.000000,270.000000},{0.000000,24.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{1.000000,-270.000000},{0.000000,30.000000}}"/>
+							<Window Type="TLBB_SimpleText" Name="HuaShanLunJian_Text4">
+                <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,16.000000},{0.500000,-10.000000}}"/>
+								<Property Name="Text" Value="#{HSLJ_190919_259}"/>
+								<Property Name="RiseOnClick" Value="False"/>
+								<Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+							</Window>
+              <Window Type="TLBB_SimpleText" Name="HuaShanLunJian_Text4Info">
+                <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.500000,-10.000000}}"/>
+                <Property Name="Text" Value="#{HSLJ_190919_207}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+              </Window>
+						</Window>
+            <Window Type="TLBB_SimpleMulitiTextFrame" Name="HuaShanLunJian_Text5_BK">
+              <Property Name="UnifiedSize" Value="{{0.000000,270.000000},{0.000000,24.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,60.000000}}"/>
+              <Window Type="TLBB_SimpleText" Name="HuaShanLunJian_Text5">
+                <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,16.000000},{0.500000,-10.000000}}"/>
+                <Property Name="Text" Value="#{HSLJ_190919_30}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="HuaShanLunJian_Text5Info">
+                <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.500000,-10.000000}}"/>
+                <Property Name="Text" Value="#{HSLJ_190919_208}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_SimpleMulitiTextFrame" Name="HuaShanLunJian_Text6_BK">
+              <Property Name="UnifiedSize" Value="{{0.000000,270.000000},{0.000000,24.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-270.000000},{0.000000,60.000000}}"/>
+              <Window Type="TLBB_SimpleText" Name="HuaShanLunJian_Text6">
+                <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,16.000000},{0.500000,-10.000000}}"/>
+                <Property Name="Text" Value="#{HSLJ_190919_28}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="HuaShanLunJian_Text6Info">
+                <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.500000,-10.000000}}"/>
+                <Property Name="Text" Value="X"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_SimpleMulitiTextFrame" Name="HuaShanLunJian_Text7_BK">
+              <Property Name="UnifiedSize" Value="{{0.000000,270.000000},{0.000000,24.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,90.000000}}"/>
+              <Window Type="TLBB_SimpleText" Name="HuaShanLunJian_Text7">
+                <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,16.000000},{0.500000,-10.000000}}"/>
+                <Property Name="Text" Value="#{HSLJ_190919_32}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="HuaShanLunJian_Text7Info">
+                <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.500000,-10.000000}}"/>
+                <Property Name="Text" Value="#{HSLJ_190919_207}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_SimpleMulitiTextFrame" Name="HuaShanLunJian_Text8_BK">
+              <Property Name="UnifiedSize" Value="{{0.000000,270.000000},{0.000000,24.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-270.000000},{0.000000,90.000000}}"/>
+              <Window Type="TLBB_SimpleText" Name="HuaShanLunJian_Text8">
+                <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,16.000000},{0.500000,-10.000000}}"/>
+                <Property Name="Text" Value="#{HSLJ_190919_214}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="HuaShanLunJian_Text8Info">
+                <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.500000,-10.000000}}"/>
+                <Property Name="Text" Value="#{HSLJ_190919_215}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+              </Window>
+            </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_TextLine1">
+                <Property Name="UnifiedSize" Value="{{0.000000,400.000000},{0.000000,1.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-200.000000},{0.000000,29.500000}}"/>
+                <Property Name="Image" Value="set:HSLJ_Match17 image:HSLJ_UpTextLine"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_TextLine2">
+                <Property Name="UnifiedSize" Value="{{0.000000,400.000000},{0.000000,1.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-200.000000},{0.000000,59.500000}}"/>
+                <Property Name="Image" Value="set:HSLJ_Match17 image:HSLJ_UpTextLine"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_TextLine3">
+                <Property Name="UnifiedSize" Value="{{0.000000,400.000000},{0.000000,1.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-200.000000},{0.000000,89.500000}}"/>
+                <Property Name="Image" Value="set:HSLJ_Match17 image:HSLJ_UpTextLine"/>
+              </Window>
+            </Window>
+          </Window>
+			</Window>
+			<Window Type="DefaultWindow" Name="HuaShanLunJian_Down">
+				<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.500000,0.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,0.000000}}"/>
+					<Window Type="DefaultWindow" Name="HuaShanLunJian_DanAward_Lift">
+						<Property Name="UnifiedSize" Value="{{0.500000,-8.000000},{1.000000,0.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+						<Property Name="AlwaysOnTop" Value="True"/>
+            <Window Type="TLBB_Frame_Lace1" Name="HuaShanLunJian_DanAward_LiftAlltitle">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,30.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_DanAward_LiftTitleBk">
+              <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,11.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,18.000000},{0.500000,-6.000000}}"/>
+              <Property Name="Image" Value="set:HSLJ_01 image:HSLJ_DownTitle"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="HuaShanLunJian_DanAward_LiftTitle">
+              <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,36.000000},{0.500000,-10.000000}}"/>
+              <Property Name="Text" Value="#{HSLJ_190919_216}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="HorzFormatting" Value="LeftAligned"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="HuaShanLunJian_DanAward_LiftText1">
+              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,200.000000},{0.500000,-10.000000}}"/>
+              <Property Name="Text" Value="#{HSLJ_190919_217}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+            <Window Type="TLBB_ComboList" Name="HuaShanLunJian_DanAward_LiftList">
+              <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-98.000000},{0.500000,-10.000000}}"/>
+              <Event Name="ListSelectionAccepted" Function="HuaShanLunJian_DanAward_LineChanged();"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_DanAward_LiftList_Tips">
+              <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,370.000000},{0.000000,2.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+          </Window>
+            <Window Type="TLBB_Frame_Lace1" Name="HuaShanLunJian_DanAward_LiftInfo">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,182.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,30.000000}}"/>
+							<Window Type="TLBB_ButtonFenYe7" Name="HuaShanLunJian_DanAward_LiftOne">
+                <Property Name="UnifiedSize" Value="{{0.000000,66.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.800000,-30.000000},{0.00000,10.000000}}"/>
+								<Property Name="Text" Value="#{HSLJ_190919_218}"/>
+                <Property Name="CheckMode" Value="1" />
+								<Event Name="Clicked" Function="HuaShanLunJian_DanAward_ButtonChanged(1)"/>
+                <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_DanAward_LiftOne_Tips">
+                  <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-10.000000},{0.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+							</Window>
+              <Window Type="TLBB_ButtonFenYe7" Name="HuaShanLunJian_DanAward_LiftTwo">
+                <Property Name="UnifiedSize" Value="{{0.000000,66.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.600000,-30.000000},{0.000000,10.000000}}"/>
+                <Property Name="Text" Value="#{HSLJ_190919_219}"/>
+                <Property Name="CheckMode" Value="1" />
+                <Event Name="Clicked" Function="HuaShanLunJian_DanAward_ButtonChanged(2)"/>
+                <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_DanAward_LiftTwo_Tips">
+                  <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-10.000000},{0.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+              </Window>
+              <Window Type="TLBB_ButtonFenYe7" Name="HuaShanLunJian_DanAward_LiftThree">
+           
+                <Property Name="UnifiedSize" Value="{{0.000000,66.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.400000,-30.000000},{0.000000,10.000000}}"/>
+                <Property Name="Text" Value="#{HSLJ_190919_220}"/>
+                <Property Name="CheckMode" Value="1" />
+                <Event Name="Clicked" Function="HuaShanLunJian_DanAward_ButtonChanged(3)"/>
+                <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_DanAward_LiftThree_Tips">
+                  <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-10.000000},{0.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+              </Window>
+              <Window Type="TLBB_ButtonFenYe7" Name="HuaShanLunJian_DanAward_LiftFour">
+                <Property Name="UnifiedSize" Value="{{0.000000,66.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.200000,-30.000000},{0.000000,10.000000}}"/>
+                <Property Name="Text" Value="#{HSLJ_190919_221}"/>
+                <Property Name="CheckMode" Value="1" />
+                <Event Name="Clicked" Function="HuaShanLunJian_DanAward_ButtonChanged(4)"/>
+                <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_DanAward_LiftFour_Tips">
+                  <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-10.000000},{0.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_DanAward_LiftBtnBK">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,1.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.00000,0.000000},{0.000000,36.000000}}"/>
+                <Property Name="Image" Value="set:HSLJ_Match17 image:HSLJ_UpTextLine"/>
+              </Window>
+              <Window Type="TLBB_Frame_Lace1" Name="HuaShanLunJian_DanAward_LiftText">
+                <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{0.000000,148.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,30.000000}}"/>
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+                <Window Type="TLBB_ActionButton" Name="HuaShanLunJian_LiftBtn01">
+                  <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.500000,-68.000000},{0.500000,-40.000000}}"/>
+                  <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_LiftBtn01YiLing">
+                    <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,32.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                    <Property Name="Image" Value="set:Cornermark image:Anniversary_YiLingQu"/>
+                    <Property Name="Visible" Value="False"/>
+                    <Property Name="RiseOnClick" Value="False"/>
+                    <Property Name="MouseRButtonHollow" Value="True" />
+                    <Property Name="MouseMoveHollow" Value="True" />
+                    <Property Name="MouseLButtonHollow" Value="True" />
+                    <Property Name="MouseHollow" Value="True" />
+                  </Window>
+                </Window>
+                <Window Type="TLBB_ActionButton" Name="HuaShanLunJian_LiftBtn02">
+                  <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.500000,20.000000},{0.500000,-40.000000}}"/>
+                  <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_LiftBtn02YiLing">
+                    <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,32.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                    <Property Name="Image" Value="set:Anniversary01 image:Cornermark_YiLing"/>
+                    <Property Name="Visible" Value="False"/>
+                    <Property Name="RiseOnClick" Value="False"/>
+                    <Property Name="MouseRButtonHollow" Value="True" />
+                    <Property Name="MouseMoveHollow" Value="True" />
+                    <Property Name="MouseLButtonHollow" Value="True" />
+                    <Property Name="MouseHollow" Value="True" />
+                  </Window>
+                </Window>
+                <Window Type="TLBB_ActionButton" Name="HuaShanLunJian_LiftBtn03">
+                  <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.750000,-24.000000},{0.500000,-40.000000}}"/>
+                  <Property Name="Visible" Value="False"/>
+                  <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_LiftBtn03YiLing">
+                    <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,32.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                    <Property Name="Image" Value="set:Cornermark image:Cornermark_YiLing"/>
+                    <Property Name="RiseOnClick" Value="False"/>
+                    <Property Name="MouseRButtonHollow" Value="True" />
+                    <Property Name="MouseMoveHollow" Value="True" />
+                    <Property Name="MouseLButtonHollow" Value="True" />
+                    <Property Name="MouseHollow" Value="True" />
+                  </Window>
+                </Window>
+                <Window Type="TLBB_ButtonCommon" Name="HuaShanLunJian_GetAward">
+                  <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.500000,-30.000000},{0.000000,96.000000}}"/>
+                  <Property Name="Text" Value="#{HSLJ_190919_15}"/>
+                  <Event Name="Clicked" Function="HuaShanLunJian_GetAward_Clicked(1)"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_GetAward_Tips">
+                  <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,210.000000},{0.000000,92.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+              </Window>
+            </Window>
+					</Window>
+          <Window Type="DefaultWindow" Name="HuaShanLunJian_DanAward_Right">
+            <Property Name="UnifiedSize" Value="{{0.500000,-8.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,4.000000},{0.000000,0.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Window Type="TLBB_Frame_Lace1" Name="HuaShanLunJian_DanAward_RightAlltitle">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,30.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_DanAward_RightTitleBk">
+              <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,11.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,18.000000},{0.500000,-6.000000}}"/>
+              <Property Name="Image" Value="set:HSLJ_01 image:HSLJ_DownTitle"/>
+            </Window>
+              <Window Type="TLBB_SimpleText" Name="HuaShanLunJian_DanAward_RightTitle">
+                <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,36.000000},{0.500000,-10.000000}}"/>
+                <Property Name="Text" Value="#{HSLJ_190919_223}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="HuaShanLunJian_DanAward_RightText1">
+              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,200.000000},{0.500000,-10.000000}}"/>
+              <Property Name="Text" Value="#{HSLJ_190919_224}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+            <Window Type="TLBB_ComboList" Name="HuaShanLunJian_DanAward_RightList">
+              <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-98.000000},{0.500000,-10.000000}}"/>
+              <Event Name="ListSelectionAccepted" Function="HuaShanLunJian_Rank_LineChanged();"/>
+            </Window>
+            </Window>
+            <Window Type="TLBB_Frame_Lace1" Name="HuaShanLunJian_DanAward_RightInfo">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,182.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,30.000000}}"/>
+              <Window Type="TLBB_ButtonFenYe7" Name="HuaShanLunJian_DanAward_RightOne">
+                <Property Name="UnifiedSize" Value="{{0.000000,66.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.200000,-30.000000},{0.000000,10.000000}}"/>
+                <Property Name="Text" Value="#{HSLJ_190919_225}"/>
+                <Event Name="Clicked" Function="HuaShanLunJian_Rank_ButtonChange(1)"/>
+                <Property Name="CheckMode" Value="1"/>
+              </Window>
+              <Window Type="TLBB_ButtonFenYe7" Name="HuaShanLunJian_DanAward_RightTwo">
+                <Property Name="UnifiedSize" Value="{{0.000000,66.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.400000,-30.000000},{0.000000,10.000000}}"/>
+                <Property Name="Text" Value="#{HSLJ_190919_226}"/>
+                <Event Name="Clicked" Function="HuaShanLunJian_Rank_ButtonChange(2)"/>
+                <Property Name="CheckMode" Value="1"/>
+              </Window>
+              <Window Type="TLBB_ButtonFenYe7" Name="HuaShanLunJian_DanAward_RightThree">
+                <Property Name="UnifiedSize" Value="{{0.000000,66.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.600000,-30.000000},{0.000000,10.000000}}"/>
+                <Property Name="Text" Value="#{HSLJ_190919_227}"/>
+                <Event Name="Clicked" Function="HuaShanLunJian_Rank_ButtonChange(3)"/>
+                <Property Name="CheckMode" Value="1"/>
+              </Window>
+              <Window Type="TLBB_ButtonFenYe7" Name="HuaShanLunJian_DanAward_RightFour">
+                <Property Name="UnifiedSize" Value="{{0.000000,66.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.800000,-30.000000},{0.000000,10.000000}}"/>
+                <Property Name="Text" Value="#{HSLJ_190919_228}"/>
+                <Event Name="Clicked" Function="HuaShanLunJian_Rank_ButtonChange(4)"/>
+                <Property Name="CheckMode" Value="1"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_DanAward_RightBtnBK">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,1.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,36.000000}}"/>
+                <Property Name="Image" Value="set:HSLJ_Match17 image:HSLJ_UpTextLine"/>
+              </Window>
+              <Window Type="TLBB_Frame_Lace1" Name="HuaShanLunJian_DanAward_RightText">
+                <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{0.000000,148.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,30.000000}}"/>
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+                <Window Type="TLBB_ActionButton" Name="HuaShanLunJian_RightBtn01">
+                  <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.250000,-24.000000},{0.500000,-40.000000}}"/>
+                  <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_RightBtn01YiLing">
+                    <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,32.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                    <Property Name="Image" Value="set:Cornermark image:Cornermark_YiLing"/>
+                    <Property Name="RiseOnClick" Value="False"/>
+                    <Property Name="MouseRButtonHollow" Value="True" />
+                    <Property Name="MouseMoveHollow" Value="True" />
+                    <Property Name="MouseLButtonHollow" Value="True" />
+                    <Property Name="MouseHollow" Value="True" />
+                  </Window>
+                </Window>
+                <Window Type="TLBB_ActionButton" Name="HuaShanLunJian_RightBtn02">
+                  <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.500000,-24.000000},{0.500000,-40.000000}}"/>
+                  <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_RightBtn02YiLing">
+                    <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,32.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                    <Property Name="Image" Value="set:Cornermark image:Cornermark_YiLing"/>
+                    <Property Name="RiseOnClick" Value="False"/>
+                    <Property Name="MouseRButtonHollow" Value="True" />
+                    <Property Name="MouseMoveHollow" Value="True" />
+                    <Property Name="MouseLButtonHollow" Value="True" />
+                    <Property Name="MouseHollow" Value="True" />
+                  </Window>
+                </Window>
+                <Window Type="TLBB_ActionButton" Name="HuaShanLunJian_RightBtn03">
+                  <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.750000,-24.000000},{0.500000,-40.000000}}"/>
+                  <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_RightBtn03YiLing">
+                    <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,32.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                    <Property Name="Image" Value="set:Cornermark image:Cornermark_YiLing"/>
+                    <Property Name="RiseOnClick" Value="False"/>
+                    <Property Name="MouseRButtonHollow" Value="True" />
+                    <Property Name="MouseMoveHollow" Value="True" />
+                    <Property Name="MouseLButtonHollow" Value="True" />
+                    <Property Name="MouseHollow" Value="True" />
+                  </Window>
+                </Window>
+                <Window Type="TLBB_ButtonCommon" Name="HuaShanLunJian_GetAward2">
+                  <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.500000,-30.000000},{0.000000,96.000000}}"/>
+                  <Property Name="Text" Value="#{HSLJ_190919_15}"/>
+                  <Event Name="Clicked" Function="HuaShanLunJian_GetAward_Clicked(2)"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_RightText2_Image">
+                  <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,19.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,118.000000}}"/>
+                  <Property Name="Image" Value="set:HSLJ_01 image:HSLJ_TanHao3"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="HuaShanLunJian_RightText2">
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-30.000000}}"/>
+                  <Property Name="Text" Value="#{HSLJ_190919_229}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="HorzFormatting" Value="HorzCentred"/>
+                </Window>
+              </Window>
+            </Window>
+          </Window>
+				</Window>
+		</Window>
+	</Window>

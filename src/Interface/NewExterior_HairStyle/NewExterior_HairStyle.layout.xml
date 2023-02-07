@@ -1,0 +1,2206 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="NewExterior_HairStyle_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,966.000000},{0.000000,574.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-480.000000},{0.500000,-290.000000}" />
+    <Event Name="Hidden" Function="NewExterior_HairStyle_OnHidden();" />
+    <Window Type="TLBB_DragTitle" Name="NewExterior_HairStyle_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-60.000000},{0.000000,30.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,2.000000}}"/>
+      <Property Name="Text" Value="#{WGTJ_201222_175}"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Property Name="DragTarget" Value="NewExterior_HairStyle_Frame" />
+    </Window>
+    <Window Type="TLBB_ButtonNULL" Name="NewExterior_HairStyle_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,11.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-26.000000},{0.000000,14.000000}}"/>
+      <Property Name="PushedImage" Value="set:NewExterior3 image:NewExterior_guanbi_Pushed"/>
+      <Property Name="NormalImage" Value="set:NewExterior3 image:NewExterior_guanbi_Normal"/>
+      <Property Name="HoverImage" Value="set:NewExterior3 image:NewExterior_guanbi_Hover"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Event Name="Clicked" Function="NewExterior_HairStyle_CloseClick();" />
+    </Window>
+    <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_BK">
+      <Property Name="UnifiedSize" Value="{{0.000000,966.000000},{0.000000,574.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      <Property Name="MouseRButtonHollow" Value="True"/>
+      <Property Name="MouseMoveHollow" Value="True"/>
+      <Property Name="MouseLButtonHollow" Value="True"/>
+      <Property Name="MouseHollow" Value="True"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Property Name="Image" Value="set:NewExterior3 image:NewExterior_BK"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="NewExterior_HairStyle_Function_Frame">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-32.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,32.000000}}"/>
+      <Window Type="DefaultWindow" Name="NewExterior_HairStyle_Frame_LeftClient">
+        <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{1.000000,0.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+        <Window Type="TLBB_ButtonNULL" Name="NewExterior_HairStyle_Dress_LeftCheckBtn">
+          <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,72.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,10.000000}}"/>
+          <Event Name="Clicked" Function="NewExterior_HairStyle_OpenFashion()"/>
+          <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_Dress_LeftCheckBtnActive">
+            <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,72.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewExterior3 image:NewExterior_yeqian_02_Normal"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="NewExterior_HairStyle_Dress_LeftBtn">
+            <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,56.000000},{0.500000,-23.000000}}"/>
+            <Property Name="Tooltip" Value=""/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="MouseLButtonDown" Function="NewExterior_HairStyle_OpenFashion()"/>
+            <Event Name="MouseRClick" Function="NewExterior_HairStyle_ActionToDressBox();" />
+            <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_Dress_LockImg">
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_Dress_ActionImg">
+              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,33.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="NewExterior_HairStyle_Ride_LeftCheckBtn">
+          <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,72.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,82.000000}}"/>
+          <Event Name="Clicked" Function="NewExterior_HairStyle_OpenRide()"/>
+          <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_Ride_LeftCheckBtnActive">
+            <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,72.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewExterior3 image:NewExterior_yeqian_07_Normal"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="NewExterior_HairStyle_Ride_LeftBtn">
+            <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,56.000000},{0.500000,-23.000000}}"/>
+            <Property Name="Tooltip" Value=""/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="MouseLButtonDown" Function="NewExterior_HairStyle_OpenRide()"/>
+            <Event Name="MouseRClick" Function="NewExterior_HairStyle_TakeOffRide();" />
+            <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_Ride_LockImg">
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_Ride_ActionImg">
+              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,33.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+            </Window>
+         </Window>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="NewExterior_HairStyle_FaceStyle_LeftCheckBtn">
+          <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,72.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,154.000000}}"/>
+          <Event Name="Clicked" Function="NewExterior_HairStyle_OpenFace()"/>
+          <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_FaceStyle_LeftCheckBtnActive">
+            <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,72.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewExterior3 image:NewExterior_yeqian_03_Normal"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="NewExterior_HairStyle_FaceStyle_LeftBtn">
+            <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,56.000000},{0.500000,-23.000000}}"/>
+            <Property Name="Tooltip" Value=""/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="MouseLButtonDown" Function="NewExterior_HairStyle_OpenFace()"/>
+            <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_FaceStyle_LockImg">
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_FaceStyle_ActionImg">
+              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,33.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="NewExterior_HairStyle_HairStyle_LeftCheckBtn">
+          <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,72.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,226.000000}}"/>
+          <Event Name="Clicked" Function="NewExterior_HairStyle_OpenHair()"/>
+          <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_HairStyle_LeftCheckBtnActive">
+            <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,72.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewExterior3 image:NewExterior_yeqian_04_Pushed"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="NewExterior_HairStyle_HairStyle_LeftBtn">
+            <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,56.000000},{0.500000,-23.000000}}"/>
+            <Property Name="Tooltip" Value=""/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="MouseLButtonDown" Function="NewExterior_HairStyle_OpenHair()"/>
+            <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_HairStyle_LockImg">
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_HairStyle_ActionImg">
+              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,33.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="NewExterior_HairStyle_PlayerFrame_LeftFrame">
+          <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,72.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,298.000000}}"/>
+          <Event Name="Clicked" Function="NewExterior_HairStyle_OpenPortrait()"/>
+          <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_PlayerFrame_LeftCheckBtnActive">
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,72.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewExterior3 image:NewExterior_yeqian_06_Normal"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="NewExterior_HairStyle_PlayerFrame_LeftBtn">
+            <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,56.000000},{0.500000,-23.000000}}"/>
+            <Property Name="Tooltip" Value=""/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="MouseLButtonDown" Function="NewExterior_HairStyle_OpenPortrait()"/>
+            <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_PlayerFrame_LockImg">
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_PlayerFrame_ActionImg">
+              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,33.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="NewExterior_HairStyle_Weapon_LeftCheckBtn">
+          <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,72.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,370.000000}}"/>        
+          <Event Name="Clicked" Function="NewExterior_HairStyle_OpenWeapon()"/>
+          <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_Weapon_LeftCheckBtnActive">
+            <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,72.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Weapon image:Weapon_Page_Normal"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="NewExterior_HairStyle_Weapon_LeftBtn">
+            <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,56.000000},{0.500000,-23.000000}}"/>
+            <Property Name="Tooltip" Value=""/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="MouseLButtonDown" Function="NewExterior_HairStyle_OpenWeapon()"/>
+			<Event Name="MouseRClick" Function="NewExterior_HairStyle_TakeOffWeapon()" />
+            <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_Weapon_LockImg">
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_Weapon_ActionImg">
+              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,33.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+            </Window>
+          </Window>
+        </Window>        
+        <Window Type="TLBB_ButtonNULL" Name="NewExterior_HairStyle_PetSoul_LeftCheckBtn">
+          <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,72.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,442.000000}}"/>
+		  <Event Name="Clicked" Function="NewExterior_HairStyle_OpenFuti()"/>
+          <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_PetSoul_LeftCheckBtnActive">
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,72.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewExterior3 image:NewExterior_yeqian_08_Normal"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="NewExterior_HairStyle_PetSoul_LeftBtn">
+            <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,56.000000},{0.500000,-23.000000}}"/>
+            <Property Name="Tooltip" Value=""/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+			<Event Name="Clicked" Function="NewExterior_HairStyle_OpenFuti()"/>
+            <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_PetSoul_LockImg">
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_PetSoul_ActionImg">
+              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,33.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+            </Window>
+           </Window>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="NewExterior_HairStyle_Frame_Client">
+        <Property Name="UnifiedSize" Value="{{1.000000,-112.000000},{1.000000,0.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,112.000000},{0.000000,0.000000}}"/>
+        <Window Type="DefaultWindow" Name="NewExterior_HairStyle_Frame_MiddleClient">
+          <Property Name="UnifiedSize" Value="{{0.000000,492.000000},{1.000000,0.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,18.000000},{0.000000,0.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_MeshWindowNewEx" Name="NewExterior_HairStyle_FakeObject">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-4.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,1.000000}}"/>
+            <Property name="BackgroundName" value="Common/MeshBackNewEx.dds" />
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Window Type="TLBB_ButtonNULL" Name="NewExterior_HairStyle_Model_TurnLeft">
+              <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,30.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.800000,0.000000}}"/>
+              <Property Name="PushedImage" Value="set:NewExterior3 image:NewExterior_jianyou_zuo_Pushed"/>
+              <Property Name="NormalImage" Value="set:NewExterior3 image:NewExterior_jianyou_zuo_Normal"/>
+              <Property Name="HoverImage" Value="set:NewExterior3 image:NewExterior_jianyou_zuo_Hover"/>
+              <Property Name="DisabledImage" Value="set:NewExterior3 image:NewExterior_jianyou_you_Disabled"/>
+              <Event Name="CaptureLost" Function="NewExterior_HairStyle_FakeObject_TurnLeft(0);" />
+              <Event Name="MouseButtonDown" Function="NewExterior_HairStyle_FakeObject_TurnLeft(1);" />
+              <Event Name="MouseButtonUp" Function="NewExterior_HairStyle_FakeObject_TurnLeft(0);" />
+            </Window>
+            <Window Type="TLBB_ButtonNULL" Name="NewExterior_HairStyle_Model_TurnRight">
+              <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,30.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-78.000000},{0.800000,0.000000}}"/>
+              <Property Name="PushedImage" Value="set:NewExterior3 image:NewExterior_jianyou_you_Pushed"/>
+              <Property Name="NormalImage" Value="set:NewExterior3 image:NewExterior_jianyou_you_Normal"/>
+              <Property Name="HoverImage" Value="set:NewExterior3 image:NewExterior_jianyou_you_Hover"/>
+              <Property Name="DisabledImage" Value="set:NewExterior3 image:NewExterior_jianyou_zuo_Disabled"/>
+              <Event Name="CaptureLost" Function="NewExterior_HairStyle_FakeObject_TurnRight(0);" />
+              <Event Name="MouseButtonDown" Function="NewExterior_HairStyle_FakeObject_TurnRight(1);" />
+              <Event Name="MouseButtonUp" Function="NewExterior_HairStyle_FakeObject_TurnRight(0);" />
+            </Window>
+            <Window Type="TLBB_ButtonNULL" Name="NewExterior_HairStyle_Model_Plus">
+              <Property Name="UnifiedSize" Value="{{0.000000,28.000000},{0.000000,29.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-72.000000},{0.500000,-30.000000}}"/>
+              <Property Name="DisabledImage" Value="set:NewExterior3 image:NewExterior_jiahao_Disabled"/>
+              <Property Name="PushedImage" Value="set:NewExterior3 image:NewExterior_AddPush"/>
+              <Property Name="NormalImage" Value="set:NewExterior3 image:NewExterior_AddNor"/>
+              <Property Name="HoverImage" Value="set:NewExterior3 image:NewExterior_AddHover"/>
+              <Event Name="Clicked" Function="NewExterior_HairStyle_ZoomIn();"/>
+            </Window>
+            <Window Type="TLBB_ButtonNULL" Name="NewExterior_HairStyle_Model_Subtract">
+              <Property Name="UnifiedSize" Value="{{0.000000,28.000000},{0.000000,29.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-72.000000},{0.500000,40.000000}}"/>
+              <Property Name="DisabledImage" Value="set:NewExterior3 image:NewExterior_jianhao_Disabled"/>
+              <Property Name="PushedImage" Value="set:NewExterior3 image:NewExterior_SubPush"/>
+              <Property Name="NormalImage" Value="set:NewExterior3 image:NewExterior_SubNor"/>
+              <Property Name="HoverImage" Value="set:NewExterior3 image:NewExterior_SubHover"/>
+              <Event Name="Clicked" Function="NewExterior_HairStyle_ZoomOut();"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="NewExterior_HairStyle_CollectBtn">
+            <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,50.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-50.000000},{0.000000,60.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Tooltip" Value="#{WGTJ_201222_108}"/>
+            <Property Name="PushedImage" Value="set:NewExterior3 image:NewExterior_qianwang_Pushed"/>
+            <Property Name="NormalImage" Value="set:NewExterior3 image:NewExterior_qianwang_Normal"/>
+            <Property Name="HoverImage" Value="set:NewExterior3 image:NewExterior_qianwang_Hover"/>
+            <Event Name="Clicked" Function="NewExterior_HairStyle_Goto();"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="NewExterior_HairStyle_RestoreBtn">
+            <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,50.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-50.000000},{1.000000,-70.000000}}"/>
+            <Property Name="PushedImage" Value="set:NewExterior3 image:NewExterior_huanyuan_Pushed"/>
+            <Property Name="NormalImage" Value="set:NewExterior3 image:NewExterior_huanyuan_Normal"/>
+            <Property Name="HoverImage" Value="set:NewExterior3 image:NewExterior_huanyuan_Hover"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Tooltip" Value="#{WGTJ_201222_102}"/>
+            <Event Name="Clicked" Function="NewExterior_HairStyle_RemovePreview();"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="NewExterior_HairStyle_DressChange_RightBtn">
+            <Property Name="UnifiedSize" Value="{{0.000000,127.000000},{0.000000,29.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-64.000000},{1.000000,-58.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Tooltip" Value="#{WGTJ_201222_101}"/>
+            <Property Name="PushedImage" Value="set:NewExterior3 image:NewExterior_baocun_Pushed"/>
+            <Property Name="NormalImage" Value="set:NewExterior3 image:NewExterior_baocun_Normal"/>
+            <Property Name="HoverImage" Value="set:NewExterior3 image:NewExterior_baocun_Hover"/>
+            <Event Name="Clicked" Function="NewExterior_HairStyle_TryExterior()"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="NewExterior_HairStyle_Frame_RightClient">
+          <Property Name="UnifiedSize" Value="{{0.000000,336.000000},{1.000000,-8.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,512.000000},{0.000000,4.000000}}"/>
+         <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_SuperListTitle">
+            <Property Name="UnifiedSize" Value="{{0.000000,116.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,10.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:NewExterior3 image:NewExterior_yeqian_zi_09"/>
+          </Window>
+        <Window Type="DefaultWindow" Name="NewExterior_HairStyle_SuperList">
+            <Property Name="UnifiedSize" Value="{{1.000000,-38.000000},{0.000000,312.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,18.000000},{0.000000,40.000000}}"/>
+          <Window Type="DefaultWindow" Name="NewExterior_HairStyle_SuperListItem1">
+            <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,62.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Window Type="TLBB_ActionButton" Name="NewExterior_HairStyle_SuperListItemAction1">
+              <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,52.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-26.000000},{0.500000,-26.000000}}"/>
+			  <Property Name="Empty" Value="False" />
+              <Property Name="UseDefaultTooltip" Value="True" />
+			  <Event Name="Clicked" Function="NewExterior_HairStyle_Clicked(1);" />
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_SuperListItemActionDef1">
+                <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+              </Window>
+             <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_SuperListItemActionLock1">
+                <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,52.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_SuperListItemActionTry1">
+                <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+              </Window>		  
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="NewExterior_HairStyle_SuperListItem2">
+            <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,62.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.2500000,-16.000000},{0.000000,0.000000}}"/>
+            <Window Type="TLBB_ActionButton" Name="NewExterior_HairStyle_SuperListItemAction2">
+              <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,52.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-26.000000},{0.500000,-26.000000}}"/>
+			  <Property Name="Empty" Value="False" />
+              <Property Name="UseDefaultTooltip" Value="True" />
+  			  <Event Name="Clicked" Function="NewExterior_HairStyle_Clicked(2);" />
+            <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_SuperListItemActionDef2">
+                <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+              </Window>
+             <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_SuperListItemActionLock2">
+                <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,52.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_SuperListItemActionTry2">
+                <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="NewExterior_HairStyle_SuperListItem3">
+            <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,62.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-31.000000},{0.000000,0.000000}}"/>
+            <Window Type="TLBB_ActionButton" Name="NewExterior_HairStyle_SuperListItemAction3">
+              <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,52.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-26.000000},{0.500000,-26.000000}}"/>
+			  <Property Name="Empty" Value="False" />
+              <Property Name="UseDefaultTooltip" Value="True" />
+ 			  <Event Name="Clicked" Function="NewExterior_HairStyle_Clicked(3);" />
+             <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_SuperListItemActionDef3">
+                <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+              </Window>
+             <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_SuperListItemActionLock3">
+                <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,52.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_SuperListItemActionTry3">
+                <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="NewExterior_HairStyle_SuperListItem4">
+            <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,62.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.7500000,-46.000000},{0.000000,0.000000}}"/>
+            <Window Type="TLBB_ActionButton" Name="NewExterior_HairStyle_SuperListItemAction4">
+              <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,52.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-26.000000},{0.500000,-26.000000}}"/>
+			  <Property Name="Empty" Value="False" />
+              <Property Name="UseDefaultTooltip" Value="True" />
+  			  <Event Name="Clicked" Function="NewExterior_HairStyle_Clicked(4);" />
+            <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_SuperListItemActionDef4">
+                <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+              </Window>
+             <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_SuperListItemActionLock4">
+                <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,52.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_SuperListItemActionTry4">
+                <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="NewExterior_HairStyle_SuperListItem5">
+            <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,62.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.000000,0.000000}}"/>
+            <Window Type="TLBB_ActionButton" Name="NewExterior_HairStyle_SuperListItemAction5">
+              <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,52.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-26.000000},{0.500000,-26.000000}}"/>
+			  <Property Name="Empty" Value="False" />
+              <Property Name="UseDefaultTooltip" Value="True" />
+			  <Event Name="Clicked" Function="NewExterior_HairStyle_Clicked(5);" />
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_SuperListItemActionDef5">
+                <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+              </Window>
+             <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_SuperListItemActionLock5">
+                <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,52.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_SuperListItemActionTry5">
+                <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="NewExterior_HairStyle_SuperListItem6">
+            <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,62.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.240000,0.310000}}"/>
+            <Window Type="TLBB_ActionButton" Name="NewExterior_HairStyle_SuperListItemAction6">
+              <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,52.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-26.000000},{0.500000,-26.000000}}"/>
+ 			  <Property Name="Empty" Value="False" />
+              <Property Name="UseDefaultTooltip" Value="True" />
+ 			  <Event Name="Clicked" Function="NewExterior_HairStyle_Clicked(6);" />
+            <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_SuperListItemActionDef6">
+                <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+              </Window>
+             <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_SuperListItemActionLock6">
+                <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,52.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_SuperListItemActionTry6">
+                <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="NewExterior_HairStyle_SuperListItem7">
+            <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,62.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.2500000,-16.000000},{0.240000,0.310000}}"/>
+            <Window Type="TLBB_ActionButton" Name="NewExterior_HairStyle_SuperListItemAction7">
+              <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,52.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-26.000000},{0.500000,-26.000000}}"/>
+ 			  <Property Name="Empty" Value="False" />
+              <Property Name="UseDefaultTooltip" Value="True" />
+ 			  <Event Name="Clicked" Function="NewExterior_HairStyle_Clicked(7);" />
+            <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_SuperListItemActionDef7">
+                <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+              </Window>
+             <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_SuperListItemActionLock7">
+                <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,52.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_SuperListItemActionTry7">
+                <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="NewExterior_HairStyle_SuperListItem8">
+            <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,62.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-31.000000},{0.240000,0.310000}}"/>
+            <Window Type="TLBB_ActionButton" Name="NewExterior_HairStyle_SuperListItemAction8">
+              <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,52.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-26.000000},{0.500000,-26.000000}}"/>
+			  <Property Name="Empty" Value="False" />
+              <Property Name="UseDefaultTooltip" Value="True" />
+ 			  <Event Name="Clicked" Function="NewExterior_HairStyle_Clicked(8);" />
+             <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_SuperListItemActionDef8">
+                <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+              </Window>
+             <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_SuperListItemActionLock8">
+                <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,52.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_SuperListItemActionTry8">
+                <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="NewExterior_HairStyle_SuperListItem9">
+            <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,62.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.7500000,-46.000000},{0.240000,0.310000}}"/>
+            <Window Type="TLBB_ActionButton" Name="NewExterior_HairStyle_SuperListItemAction9">
+              <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,52.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-26.000000},{0.500000,-26.000000}}"/>
+ 			  <Property Name="Empty" Value="False" />
+              <Property Name="UseDefaultTooltip" Value="True" />
+ 			  <Event Name="Clicked" Function="NewExterior_HairStyle_Clicked(9);" />
+            <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_SuperListItemActionDef9">
+                <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+              </Window>
+             <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_SuperListItemActionLock9">
+                <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,52.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_SuperListItemActionTry9">
+                <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="NewExterior_HairStyle_SuperListItem10">
+            <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,62.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.240000,0.310000}}"/>
+            <Window Type="TLBB_ActionButton" Name="NewExterior_HairStyle_SuperListItemAction10">
+              <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,52.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-26.000000},{0.500000,-26.000000}}"/>
+			  <Property Name="Empty" Value="False" />
+              <Property Name="UseDefaultTooltip" Value="True" />
+ 			  <Event Name="Clicked" Function="NewExterior_HairStyle_Clicked(10);" />
+             <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_SuperListItemActionDef10">
+                <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+              </Window>
+             <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_SuperListItemActionLock10">
+                <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,52.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_SuperListItemActionTry10">
+                <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+              </Window>
+            </Window>
+          </Window>		  
+          <Window Type="DefaultWindow" Name="NewExterior_HairStyle_SuperListItem11">
+            <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,62.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.0000000,0.000000},{0.480000,0.310000}}"/>
+            <Window Type="TLBB_ActionButton" Name="NewExterior_HairStyle_SuperListItemAction11">
+              <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,52.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-26.000000},{0.500000,-26.000000}}"/>
+ 			  <Property Name="Empty" Value="False" />
+              <Property Name="UseDefaultTooltip" Value="True" />
+ 			  <Event Name="Clicked" Function="NewExterior_HairStyle_Clicked(11);" />
+            <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_SuperListItemActionDef11">
+                <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+              </Window>
+             <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_SuperListItemActionLock11">
+                <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,52.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_SuperListItemActionTry11">
+                <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+              </Window>
+            </Window>
+          </Window>	
+          <Window Type="DefaultWindow" Name="NewExterior_HairStyle_SuperListItem12">
+            <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,62.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.2500000,-16.000000},{0.480000,0.310000}}"/>
+            <Window Type="TLBB_ActionButton" Name="NewExterior_HairStyle_SuperListItemAction12">
+              <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,52.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-26.000000},{0.500000,-26.000000}}"/>
+			  <Property Name="Empty" Value="False" />
+              <Property Name="UseDefaultTooltip" Value="True" />
+ 			  <Event Name="Clicked" Function="NewExterior_HairStyle_Clicked(12);" />
+             <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_SuperListItemActionDef12">
+                <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+              </Window>
+             <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_SuperListItemActionLock12">
+                <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,52.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_SuperListItemActionTry12">
+                <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="NewExterior_HairStyle_SuperListItem13">
+            <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,62.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-31.000000},{0.480000,0.310000}}"/>
+            <Window Type="TLBB_ActionButton" Name="NewExterior_HairStyle_SuperListItemAction13">
+              <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,52.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-26.000000},{0.500000,-26.000000}}"/>
+ 			  <Property Name="Empty" Value="False" />
+              <Property Name="UseDefaultTooltip" Value="True" />
+ 			  <Event Name="Clicked" Function="NewExterior_HairStyle_Clicked(13);" />
+            <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_SuperListItemActionDef13">
+                <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+              </Window>
+             <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_SuperListItemActionLock13">
+                <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,52.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_SuperListItemActionTry13">
+                <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="NewExterior_HairStyle_SuperListItem14">
+            <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,62.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.7500000,-46.000000},{0.480000,0.310000}}"/>
+            <Window Type="TLBB_ActionButton" Name="NewExterior_HairStyle_SuperListItemAction14">
+              <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,52.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-26.000000},{0.500000,-26.000000}}"/>
+ 			  <Property Name="Empty" Value="False" />
+              <Property Name="UseDefaultTooltip" Value="True" />
+			  <Event Name="Clicked" Function="NewExterior_HairStyle_Clicked(14);" />
+             <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_SuperListItemActionDef14">
+                <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+              </Window>
+             <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_SuperListItemActionLock14">
+                <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,52.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_SuperListItemActionTry14">
+                <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="NewExterior_HairStyle_SuperListItem15">
+            <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,62.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.480000,0.310000}}"/>
+            <Window Type="TLBB_ActionButton" Name="NewExterior_HairStyle_SuperListItemAction15">
+              <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,52.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-26.000000},{0.500000,-26.000000}}"/>
+ 			  <Property Name="Empty" Value="False" />
+              <Property Name="UseDefaultTooltip" Value="True" />
+ 			  <Event Name="Clicked" Function="NewExterior_HairStyle_Clicked(15);" />
+            <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_SuperListItemActionDef15">
+                <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+              </Window>
+             <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_SuperListItemActionLock15">
+                <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,52.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_SuperListItemActionTry15">
+                <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+              </Window>
+            </Window>
+          </Window>		  		  
+          <Window Type="DefaultWindow" Name="NewExterior_HairStyle_SuperListItem16">
+            <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,62.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.720000,0.310000}}"/>
+            <Window Type="TLBB_ActionButton" Name="NewExterior_HairStyle_SuperListItemAction16">
+              <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,52.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-26.000000},{0.500000,-26.000000}}"/>
+ 			  <Property Name="Empty" Value="False" />
+              <Property Name="UseDefaultTooltip" Value="True" />
+			  <Event Name="Clicked" Function="NewExterior_HairStyle_Clicked(16);" />
+             <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_SuperListItemActionDef16">
+                <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+              </Window>
+             <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_SuperListItemActionLock16">
+                <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,52.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_SuperListItemActionTry16">
+                <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="NewExterior_HairStyle_SuperListItem17">
+            <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,62.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.2500000,-16.000000},{0.720000,0.310000}}"/>
+            <Window Type="TLBB_ActionButton" Name="NewExterior_HairStyle_SuperListItemAction17">
+              <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,52.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-26.000000},{0.500000,-26.000000}}"/>
+			  <Property Name="Empty" Value="False" />
+              <Property Name="UseDefaultTooltip" Value="True" />
+ 			  <Event Name="Clicked" Function="NewExterior_HairStyle_Clicked(17);" />
+             <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_SuperListItemActionDef17">
+                <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+              </Window>
+             <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_SuperListItemActionLock17">
+                <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,52.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_SuperListItemActionTry17">
+                <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="NewExterior_HairStyle_SuperListItem18">
+            <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,62.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-31.000000},{0.720000,0.310000}}"/>
+            <Window Type="TLBB_ActionButton" Name="NewExterior_HairStyle_SuperListItemAction18">
+              <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,52.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-26.000000},{0.500000,-26.000000}}"/>
+			  <Property Name="Empty" Value="False" />
+              <Property Name="UseDefaultTooltip" Value="True" />
+			  <Event Name="Clicked" Function="NewExterior_HairStyle_Clicked(18);" />
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_SuperListItemActionDef18">
+                <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+              </Window>
+             <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_SuperListItemActionLock18">
+                <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,52.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_SuperListItemActionTry18">
+                <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="NewExterior_HairStyle_SuperListItem19">
+            <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,62.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.7500000,-46.000000},{0.720000,0.310000}}"/>
+            <Window Type="TLBB_ActionButton" Name="NewExterior_HairStyle_SuperListItemAction19">
+              <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,52.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-26.000000},{0.500000,-26.000000}}"/>
+ 			  <Property Name="Empty" Value="False" />
+              <Property Name="UseDefaultTooltip" Value="True" />
+			  <Event Name="Clicked" Function="NewExterior_HairStyle_Clicked(19);" />
+             <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_SuperListItemActionDef19">
+                <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_SuperListItemActionLock19">
+                <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,52.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_SuperListItemActionTry19">
+                <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+              </Window>
+           </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="NewExterior_HairStyle_SuperListItem20">
+            <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,62.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.720000,0.310000}}"/>
+            <Window Type="TLBB_ActionButton" Name="NewExterior_HairStyle_SuperListItemAction20">
+              <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,52.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-26.000000},{0.500000,-26.000000}}"/>
+			  <Property Name="Empty" Value="False" />
+              <Property Name="UseDefaultTooltip" Value="True" />
+			  <Event Name="Clicked" Function="NewExterior_HairStyle_Clicked(20);" />
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_SuperListItemActionDef20">
+                <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+              </Window>
+             <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_SuperListItemActionLock20">
+                <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,52.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_SuperListItemActionTry20">
+                <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+              </Window>
+            </Window>
+          </Window>
+        <Window Type="TLBB_ButtonFenYe77" Name="NewExterior_HairStyle_SuperListItemLast">
+          <Property Name="UnifiedSize" Value="{{0.000000,74.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-100.000000},{1.000000,-20.000000}}"/>
+		  <Property Name="Text" Value="上一页"/>
+		  <Property Name="AlwaysOnTop" Value="True"/>
+		  <Event Name="MouseLButtonDown" Function="NewExterior_HairStyle_Page(-1);" />			  
+        </Window>					
+        <Window Type="TLBB_ButtonFenYe77" Name="NewExterior_HairStyle_SuperListItemNext">
+          <Property Name="UnifiedSize" Value="{{0.000000,74.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,40.000000},{1.000000,-20.000000}}"/>
+		  <Property Name="Text" Value="下一页"/>
+		  <Property Name="AlwaysOnTop" Value="True"/>
+		  <Event Name="MouseLButtonDown" Function="NewExterior_HairStyle_Page(1);" />			  
+        </Window>			  
+        </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_SuperListTitle2">
+            <Property Name="UnifiedSize" Value="{{0.000000,116.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,358.000000}}"/>
+            <Property Name="Image" Value="set:NewExterior3 image:NewExterior_yeqian_zi_12"/>
+            <Property Name="RiseOnClick" Value="False"/>
+          </Window>
+          <Window Type="DefaultWindow" Name="NewExterior_HairStyle_ColorList">
+            <Property Name="UnifiedSize" Value="{{1.000000,-38.000000},{0.000000,122.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,18.000000},{0.000000,392.000000}}"/>
+          <Property Name="MultiColumn" Value="1" />
+          <Property Name="VScrollMode" Value="Hide" />
+          <Window Type="DefaultWindow" Name="NewExterior_HairStyle_ColorListItem_1">
+            <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Window Type="TLBB_ActionButtonNULL" Name="NewExterior_HairStyle_ColorListItemAction_1">
+              <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+			<Event Name="Clicked" Function="NewExterior_HairStyle_ChangeColour(1);" />
+              <Property Name="UnifiedPosition" Value="{{0.500000,-18.000000},{0.500000,-18.000000}}"/>
+              <Window Type="TLBB_StaticImageTextColor" Name="NewExterior_HairStyle_ColorListColor_1">
+                <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="ImageColours" Value="tl:00FFFFFF tr:00FFFFFF bl:00FFFFFF br:00FFFFFF"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_ColorListItemActionLock_1">
+                <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Visible" Value="False"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_ColorListItemActionDef_1">
+                <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,24.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_zhuangebi"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_ColorListItemActionTry_1">
+                <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,24.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="NewExterior_HairStyle_ColorListItem_2">
+            <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.1350000,0.000000},{0.000000,0.000000}}"/>
+            <Window Type="TLBB_ActionButtonNULL" Name="NewExterior_HairStyle_ColorListItemAction_2">
+              <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+ 			<Event Name="Clicked" Function="NewExterior_HairStyle_ChangeColour(2);" />
+             <Property Name="UnifiedPosition" Value="{{0.500000,-18.000000},{0.500000,-18.000000}}"/>
+              <Window Type="TLBB_StaticImageTextColor" Name="NewExterior_HairStyle_ColorListColor_2">
+                <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="ImageColours" Value="tl:00FFFFFF tr:00FFFFFF bl:00FFFFFF br:00FFFFFF"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_ColorListItemActionLock_2">
+                <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Visible" Value="False"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_ColorListItemActionDef_2">
+                <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,24.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_zhuangebi"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_ColorListItemActionTry_2">
+                <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,24.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="NewExterior_HairStyle_ColorListItem_3">
+            <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.27500,0.000000},{0.000000,0.000000}}"/>
+            <Window Type="TLBB_ActionButtonNULL" Name="NewExterior_HairStyle_ColorListItemAction_3">
+              <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+			<Event Name="Clicked" Function="NewExterior_HairStyle_ChangeColour(3);" />
+              <Property Name="UnifiedPosition" Value="{{0.500000,-18.000000},{0.500000,-18.000000}}"/>
+              <Window Type="TLBB_StaticImageTextColor" Name="NewExterior_HairStyle_ColorListColor_3">
+                <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="ImageColours" Value="tl:00FFFFFF tr:00FFFFFF bl:00FFFFFF br:00FFFFFF"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_ColorListItemActionLock_3">
+                <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Visible" Value="False"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_ColorListItemActionDef_3">
+                <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,24.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_zhuangebi"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_ColorListItemActionTry_3">
+                <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,24.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="NewExterior_HairStyle_ColorListItem_4">
+            <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.42500,0.000000},{0.000000,0.000000}}"/>
+            <Window Type="TLBB_ActionButtonNULL" Name="NewExterior_HairStyle_ColorListItemAction_4">
+              <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+			<Event Name="Clicked" Function="NewExterior_HairStyle_ChangeColour(4);" />
+              <Property Name="UnifiedPosition" Value="{{0.500000,-18.000000},{0.500000,-18.000000}}"/>
+              <Window Type="TLBB_StaticImageTextColor" Name="NewExterior_HairStyle_ColorListColor_4">
+                <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="ImageColours" Value="tl:00FFFFFF tr:00FFFFFF bl:00FFFFFF br:00FFFFFF"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_ColorListItemActionLock_4">
+                <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Visible" Value="False"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_ColorListItemActionDef_4">
+                <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,24.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_zhuangebi"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_ColorListItemActionTry_4">
+                <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,24.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="NewExterior_HairStyle_ColorListItem_5">
+            <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.57500,0.000000},{0.000000,0.000000}}"/>
+            <Window Type="TLBB_ActionButtonNULL" Name="NewExterior_HairStyle_ColorListItemAction_5">
+              <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+			<Event Name="Clicked" Function="NewExterior_HairStyle_ChangeColour(5);" />
+              <Property Name="UnifiedPosition" Value="{{0.500000,-18.000000},{0.500000,-18.000000}}"/>
+              <Window Type="TLBB_StaticImageTextColor" Name="NewExterior_HairStyle_ColorListColor_5">
+                <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="ImageColours" Value="tl:00FFFFFF tr:00FFFFFF bl:00FFFFFF br:00FFFFFF"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_ColorListItemActionLock_5">
+                <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Visible" Value="False"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_ColorListItemActionDef_5">
+                <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,24.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_zhuangebi"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_ColorListItemActionTry_5">
+                <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,24.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="NewExterior_HairStyle_ColorListItem_6">
+            <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.72500,0.000000},{0.000000,0.000000}}"/>
+            <Window Type="TLBB_ActionButtonNULL" Name="NewExterior_HairStyle_ColorListItemAction_6">
+              <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+			<Event Name="Clicked" Function="NewExterior_HairStyle_ChangeColour(6);" />
+              <Property Name="UnifiedPosition" Value="{{0.500000,-18.000000},{0.500000,-18.000000}}"/>
+              <Window Type="TLBB_StaticImageTextColor" Name="NewExterior_HairStyle_ColorListColor_6">
+                <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="ImageColours" Value="tl:00FFFFFF tr:00FFFFFF bl:00FFFFFF br:00FFFFFF"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_ColorListItemActionLock_6">
+                <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Visible" Value="False"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_ColorListItemActionDef_6">
+                <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,24.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_zhuangebi"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_ColorListItemActionTry_6">
+                <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,24.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="NewExterior_HairStyle_ColorListItem_7">
+            <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.875000,0.000000},{0.000000,0.000000}}"/>
+            <Window Type="TLBB_ActionButtonNULL" Name="NewExterior_HairStyle_ColorListItemAction_7">
+              <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+ 			<Event Name="Clicked" Function="NewExterior_HairStyle_ChangeColour(7);" />
+             <Property Name="UnifiedPosition" Value="{{0.500000,-18.000000},{0.500000,-18.000000}}"/>
+              <Window Type="TLBB_StaticImageTextColor" Name="NewExterior_HairStyle_ColorListColor_7">
+                <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="ImageColours" Value="tl:00FFFFFF tr:00FFFFFF bl:00FFFFFF br:00FFFFFF"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_ColorListItemActionLock_7">
+                <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Visible" Value="False"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_ColorListItemActionDef_7">
+                <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,24.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_zhuangebi"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_ColorListItemActionTry_7">
+                <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,24.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="NewExterior_HairStyle_ColorListItem_8">
+            <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,44.000000}}"/>
+            <Window Type="TLBB_ActionButtonNULL" Name="NewExterior_HairStyle_ColorListItemAction_8">
+              <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+   			<Event Name="Clicked" Function="NewExterior_HairStyle_ChangeColour(8);" />
+           <Property Name="UnifiedPosition" Value="{{0.500000,-18.000000},{0.500000,-18.000000}}"/>
+              <Window Type="TLBB_StaticImageTextColor" Name="NewExterior_HairStyle_ColorListColor_8">
+                <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="ImageColours" Value="tl:00FFFFFF tr:00FFFFFF bl:00FFFFFF br:00FFFFFF"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_ColorListItemActionLock_8">
+                <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Visible" Value="False"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_ColorListItemActionDef_8">
+                <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,24.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_zhuangebi"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_ColorListItemActionTry_8">
+                <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,24.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="NewExterior_HairStyle_ColorListItem_9">
+            <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.1350000,0.000000},{0.000000,44.000000}}"/>
+            <Window Type="TLBB_ActionButtonNULL" Name="NewExterior_HairStyle_ColorListItemAction_9">
+              <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+    			<Event Name="Clicked" Function="NewExterior_HairStyle_ChangeColour(9);" />
+          <Property Name="UnifiedPosition" Value="{{0.500000,-18.000000},{0.500000,-18.000000}}"/>
+              <Window Type="TLBB_StaticImageTextColor" Name="NewExterior_HairStyle_ColorListColor_9">
+                <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="ImageColours" Value="tl:00FFFFFF tr:00FFFFFF bl:00FFFFFF br:00FFFFFF"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_ColorListItemActionLock_9">
+                <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Visible" Value="False"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_ColorListItemActionDef_9">
+                <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,24.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_zhuangebi"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_ColorListItemActionTry_9">
+                <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,24.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="NewExterior_HairStyle_ColorListItem_10">
+            <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.27500,0.000000},{0.000000,44.000000}}"/>
+            <Window Type="TLBB_ActionButtonNULL" Name="NewExterior_HairStyle_ColorListItemAction_10">
+			<Event Name="Clicked" Function="NewExterior_HairStyle_ChangeColour(10);" />
+              <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-18.000000},{0.500000,-18.000000}}"/>
+              <Window Type="TLBB_StaticImageTextColor" Name="NewExterior_HairStyle_ColorListColor_10">
+                <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="ImageColours" Value="tl:00FFFFFF tr:00FFFFFF bl:00FFFFFF br:00FFFFFF"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_ColorListItemActionLock_10">
+                <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Visible" Value="False"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_ColorListItemActionDef_10">
+                <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,24.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_zhuangebi"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_ColorListItemActionTry_10">
+                <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,24.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="NewExterior_HairStyle_ColorListItem_11">
+            <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.42500,0.000000},{0.000000,44.000000}}"/>
+            <Window Type="TLBB_ActionButtonNULL" Name="NewExterior_HairStyle_ColorListItemAction_11">
+ 			<Event Name="Clicked" Function="NewExterior_HairStyle_ChangeColour(11);" />
+             <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-18.000000},{0.500000,-18.000000}}"/>
+              <Window Type="TLBB_StaticImageTextColor" Name="NewExterior_HairStyle_ColorListColor_11">
+                <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="ImageColours" Value="tl:00FFFFFF tr:00FFFFFF bl:00FFFFFF br:00FFFFFF"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_ColorListItemActionLock_11">
+                <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Visible" Value="False"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_ColorListItemActionDef_11">
+                <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,24.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_zhuangebi"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_ColorListItemActionTry_11">
+                <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,24.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="NewExterior_HairStyle_ColorListItem_12">
+            <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.57500,0.000000},{0.000000,44.000000}}"/>
+            <Window Type="TLBB_ActionButtonNULL" Name="NewExterior_HairStyle_ColorListItemAction_12">
+              <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+			<Event Name="Clicked" Function="NewExterior_HairStyle_ChangeColour(12);" />
+              <Property Name="UnifiedPosition" Value="{{0.500000,-18.000000},{0.500000,-18.000000}}"/>
+              <Window Type="TLBB_StaticImageTextColor" Name="NewExterior_HairStyle_ColorListColor_12">
+                <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="ImageColours" Value="tl:00FFFFFF tr:00FFFFFF bl:00FFFFFF br:00FFFFFF"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_ColorListItemActionLock_12">
+                <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Visible" Value="False"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_ColorListItemActionDef_12">
+                <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,24.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_zhuangebi"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_ColorListItemActionTry_12">
+                <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,24.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="NewExterior_HairStyle_ColorListItem_13">
+            <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.72500,0.000000},{0.000000,44.000000}}"/>
+            <Window Type="TLBB_ActionButtonNULL" Name="NewExterior_HairStyle_ColorListItemAction_13">
+              <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+			<Event Name="Clicked" Function="NewExterior_HairStyle_ChangeColour(13);" />
+              <Property Name="UnifiedPosition" Value="{{0.500000,-18.000000},{0.500000,-18.000000}}"/>
+              <Window Type="TLBB_StaticImageTextColor" Name="NewExterior_HairStyle_ColorListColor_13">
+                <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="ImageColours" Value="tl:00FFFFFF tr:00FFFFFF bl:00FFFFFF br:00FFFFFF"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_ColorListItemActionLock_13">
+                <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Visible" Value="False"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_ColorListItemActionDef_13">
+                <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,24.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_zhuangebi"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_ColorListItemActionTry_13">
+                <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,24.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="NewExterior_HairStyle_ColorListItem_14">
+            <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.875000,0.000000},{0.000000,44.000000}}"/>
+            <Window Type="TLBB_ActionButtonNULL" Name="NewExterior_HairStyle_ColorListItemAction_14">
+    			<Event Name="Clicked" Function="NewExterior_HairStyle_ChangeColour(14);" />
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-18.000000},{0.500000,-18.000000}}"/>
+              <Window Type="TLBB_StaticImageTextColor" Name="NewExterior_HairStyle_ColorListColor_14">
+                <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="ImageColours" Value="tl:00FFFFFF tr:00FFFFFF bl:00FFFFFF br:00FFFFFF"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_ColorListItemActionLock_14">
+                <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Visible" Value="False"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_ColorListItemActionDef_14">
+                <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,24.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_zhuangebi"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_ColorListItemActionTry_14">
+                <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,24.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="NewExterior_HairStyle_ColorListItem_15">
+            <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,88.000000}}"/>
+            <Window Type="TLBB_ActionButtonNULL" Name="NewExterior_HairStyle_ColorListItemAction_15">
+    			<Event Name="Clicked" Function="NewExterior_HairStyle_ChangeColour(15);" />
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-18.000000},{0.500000,-18.000000}}"/>
+              <Window Type="TLBB_StaticImageTextColor" Name="NewExterior_HairStyle_ColorListColor_15">
+                <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="ImageColours" Value="tl:00FFFFFF tr:00FFFFFF bl:00FFFFFF br:00FFFFFF"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_ColorListItemActionLock_15">
+                <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Visible" Value="False"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_ColorListItemActionDef_15">
+                <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,24.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_zhuangebi"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_ColorListItemActionTry_15">
+                <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,24.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="NewExterior_HairStyle_ColorListItem_16">
+            <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.1350000,0.000000},{0.000000,88.000000}}"/>
+            <Window Type="TLBB_ActionButtonNULL" Name="NewExterior_HairStyle_ColorListItemAction_16">
+              <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+  			<Event Name="Clicked" Function="NewExterior_HairStyle_ChangeColour(16);" />
+            <Property Name="UnifiedPosition" Value="{{0.500000,-18.000000},{0.500000,-18.000000}}"/>
+              <Window Type="TLBB_StaticImageTextColor" Name="NewExterior_HairStyle_ColorListColor_16">
+                <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="ImageColours" Value="tl:00FFFFFF tr:00FFFFFF bl:00FFFFFF br:00FFFFFF"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_ColorListItemActionLock_16">
+                <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Visible" Value="False"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_ColorListItemActionDef_16">
+                <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,24.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_zhuangebi"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_ColorListItemActionTry_16">
+                <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,24.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="NewExterior_HairStyle_ColorListItem_17">
+            <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.27500,0.000000},{0.000000,88.000000}}"/>
+            <Window Type="TLBB_ActionButtonNULL" Name="NewExterior_HairStyle_ColorListItemAction_17">
+              <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-18.000000},{0.500000,-18.000000}}"/>
+ 			<Event Name="Clicked" Function="NewExterior_HairStyle_ChangeColour(17);" />
+             <Window Type="TLBB_StaticImageTextColor" Name="NewExterior_HairStyle_ColorListColor_17">
+                <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="ImageColours" Value="tl:00FFFFFF tr:00FFFFFF bl:00FFFFFF br:00FFFFFF"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_ColorListItemActionLock_17">
+                <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Visible" Value="False"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_ColorListItemActionDef_17">
+                <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,24.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_zhuangebi"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_ColorListItemActionTry_17">
+                <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,24.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="NewExterior_HairStyle_ColorListItem_18">
+            <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.42500,0.000000},{0.000000,88.000000}}"/>
+            <Window Type="TLBB_ActionButtonNULL" Name="NewExterior_HairStyle_ColorListItemAction_18">
+              <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-18.000000},{0.500000,-18.000000}}"/>
+			<Event Name="Clicked" Function="NewExterior_HairStyle_ChangeColour(18);" />
+              <Window Type="TLBB_StaticImageTextColor" Name="NewExterior_HairStyle_ColorListColor_18">
+                <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="ImageColours" Value="tl:00FFFFFF tr:00FFFFFF bl:00FFFFFF br:00FFFFFF"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_ColorListItemActionLock_18">
+                <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Visible" Value="False"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_ColorListItemActionDef_18">
+                <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,24.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_zhuangebi"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_ColorListItemActionTry_18">
+                <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,24.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="NewExterior_HairStyle_ColorListItem_19">
+            <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.57500,0.000000},{0.000000,88.000000}}"/>
+            <Window Type="TLBB_ActionButtonNULL" Name="NewExterior_HairStyle_ColorListItemAction_19">
+              <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-18.000000},{0.500000,-18.000000}}"/>
+			<Event Name="Clicked" Function="NewExterior_HairStyle_ChangeColour(19);" />
+              <Window Type="TLBB_StaticImageTextColor" Name="NewExterior_HairStyle_ColorListColor_19">
+                <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="ImageColours" Value="tl:00FFFFFF tr:00FFFFFF bl:00FFFFFF br:00FFFFFF"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_ColorListItemActionLock_19">
+                <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Visible" Value="False"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_ColorListItemActionDef_19">
+                <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,24.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_zhuangebi"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_ColorListItemActionTry_19">
+                <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,24.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="NewExterior_HairStyle_ColorListItem_20">
+            <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.72500,0.000000},{0.000000,88.000000}}"/>
+            <Window Type="TLBB_ActionButtonNULL" Name="NewExterior_HairStyle_ColorListItemAction_20">
+              <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-18.000000},{0.500000,-18.000000}}"/>
+			<Event Name="Clicked" Function="NewExterior_HairStyle_ChangeColour(20);" />
+              <Window Type="TLBB_StaticImageTextColor" Name="NewExterior_HairStyle_ColorListColor_20">
+                <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="ImageColours" Value="tl:00FFFFFF tr:00FFFFFF bl:00FFFFFF br:00FFFFFF"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_ColorListItemActionLock_20">
+                <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Visible" Value="False"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_ColorListItemActionDef_20">
+                <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,24.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_zhuangebi"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_HairStyle_ColorListItemActionTry_20">
+                <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,24.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+              </Window>
+            </Window>
+          </Window>	  
+        </Window>
+      </Window>
+    </Window>
+    </Window>
+  </Window>
+</GUILayout>

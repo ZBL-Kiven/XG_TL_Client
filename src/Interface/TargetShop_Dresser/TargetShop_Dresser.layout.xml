@@ -1,0 +1,178 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame2" Name="TargetShop_Dresser_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,425.000000},{0.000000,350.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-205.000000},{0.500000,-180.000000}}"/>
+    <Event Name="Hidden" Function="TargetShop_Dresser_OnHiden();" />
+    <Window Type="TLBB_DragTitle" Name="TargetShop_Dresser_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-52.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,26.000000},{0.000000,2.000000}}"/>
+      <Property Name="Text" Value="#{DECOW_160126_123}"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="DragTarget" Value="TargetShop_Dresser_Frame"/>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="TargetShop_Dresser_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}"/>
+      <Event Name="Clicked" Function=""/>
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="TargetShop_Dresser_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,5.000000}}"/>
+      <Event Name="Clicked" Function="TargetShop_Dresser_OnClose();" />
+    </Window>
+    <Window Type="DefaultWindow" Name="TargetShop_Dresser_Function_Frame">
+      <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-28.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,25.000000}}"/>
+      <Window Type="TLBB_FramePlayerOther" Name="TargetShop_Dresser_Client_Frame">
+        <Property Name="UnifiedSize" Value="{{0.000000,235.000000},{1.000000,-8.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,5.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="TLBB_MeshWindow" Name="TargetShop_Dresser_FakeObject">
+          <Property Name="UnifiedSize" Value="{{0.900000,0.000000},{0.900000,0.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.050000,0.000000},{0.050000,0.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+        </Window>
+        <Window Type="TLBB_ButtonTurnLeft" Name="TargetShop_Dresser_Model_TurnLeft">
+          <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.050000,1.000000},{0.950000,-26.000000}}"/>
+          <Event Name="CaptureLost" Function="TargetShop_Dresser_TurnLeft(0);" />
+          <Event Name="MouseButtonDown" Function="TargetShop_Dresser_TurnLeft(1);" />
+          <Event Name="MouseButtonUp" Function="TargetShop_Dresser_TurnLeft(0);" />
+        </Window>
+        <Window Type="TLBB_ButtonTurnRight" Name="TargetShop_Dresser_Model_TurnRight">
+          <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.950000,-26.000000},{0.950000,-26.000000}}"/>
+          <Event Name="CaptureLost" Function="TargetShop_Dresser_TurnRight(0);" />
+          <Event Name="MouseButtonDown" Function="TargetShop_Dresser_TurnRight(1);" />
+          <Event Name="MouseButtonUp" Function="TargetShop_Dresser_TurnRight(0);" />
+        </Window>
+        <Window Type="TLBB_ButtonAdd" Name="TargetShop_Dresser_Model_Plus">
+          <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,19.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,90.000000},{0.000000,230.000000}}"/>
+          <Property Name="PushedImage" Value="set:CreateRole1 image:BtnAdd_Pushed"/>
+          <Property Name="NormalImage" Value="set:CreateRole1 image:BtnAdd_Normal"/>
+          <Property Name="HoverImage" Value="set:CreateRole1 image:BtnAdd_Hover"/>
+          <Event Name="Clicked" Function="TargetShop_Dresser_ZoomIn();" />
+        </Window>
+        <Window Type="TLBB_ButtonSub" Name="TargetShop_Dresser_Model_Subtract">
+          <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,19.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,122.000000},{0.000000,230.000000}}"/>
+          <Property Name="PushedImage" Value="set:CreateRole1 image:BtnSub_Pushed"/>
+          <Property Name="NormalImage" Value="set:CreateRole1 image:BtnSub_Normal"/>
+          <Property Name="HoverImage" Value="set:CreateRole1 image:BtnSub_Hover"/>
+          <Event Name="Clicked" Function="TargetShop_Dresser_ZoomOut();" />
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="TargetShop_Dresser_Action_Frame">
+        <Property Name="UnifiedSize" Value="{{1.000000,-244.000000},{1.000000,-10.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,243.000000},{0.000000,6.000000}}"/>
+        <Window Type="TLBB_Frame_Lace1" Name="TargetShop_Dresser_DecorateCloth">
+          <Property Name="UnifiedSize" Value="{{1.000000,-3.000000},{0.000000,50.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,0.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="TargetShop_Dresser_DecorateCloth_Text">
+            <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.500000,-10.000000}}"/>
+            <Property Name="HorzFormatting" Value="LeftAligned"/>
+            <Property Name="Text" Value="#{DECOW_160126_124}"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="TargetShop_Dresser_DecorateCloth_Item">
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.500000,-17.000000}}"/>
+            <Property Name="BackImage" Value="set:UIIcons image:Equip_Cloth" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="TargetShop_Dresser_DecorateCloth_Null">
+            <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-70.000000},{0.500000,-10.000000}}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+            <Property Name="Text" Value="#{WGTJ_201222_53}"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_Frame_Lace1" Name="TargetShop_Dresser_Ride">
+          <Property Name="UnifiedSize" Value="{{1.000000,-3.000000},{0.000000,50.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,50.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="TargetShop_Dresser_Ride_Text">
+            <Property Name="UnifiedSize" Value="{{0.000000,94.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.500000,-10.000000}}"/>
+            <Property Name="HorzFormatting" Value="LeftAligned"/>
+            <Property Name="Text" Value="#{WGTJ_201222_51}"/>
+          </Window>
+          <Window Type="TLBB_StaticImageFrame" Name="TargetShop_Dresser_Ride_Item">
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.500000,-17.000000}}"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_Frame_Lace1" Name="TargetShop_Dresser_Face">
+          <Property Name="UnifiedSize" Value="{{1.000000,-3.000000},{0.000000,50.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,100.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="TargetShop_Dresser_Face_Text">
+            <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.500000,-10.000000}}"/>
+            <Property Name="HorzFormatting" Value="LeftAligned"/>
+            <Property Name="Text" Value="#{DECOW_160126_128}"/>
+          </Window>
+          <Window Type="TLBB_SimpleMulitiTextFrame" Name="TargetShop_Dresser_Face_Name">
+            <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-70.000000},{0.500000,-10.000000}}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_Frame_Lace1" Name="TargetShop_Dresser_Hair">
+          <Property Name="UnifiedSize" Value="{{1.000000,-3.000000},{0.000000,50.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,150.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="TargetShop_Dresser_Hair_Text">
+            <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.500000,-10.000000}}"/>
+            <Property Name="HorzFormatting" Value="LeftAligned"/>
+            <Property Name="Text" Value="#{DECOW_160126_129}"/>
+          </Window>
+          <Window Type="TLBB_SimpleMulitiTextFrame" Name="TargetShop_Dresser_Hair_Name">
+            <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-70.000000},{0.500000,-10.000000}}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_Frame_Lace1" Name="TargetShop_Dresser_ColorHair">
+          <Property Name="UnifiedSize" Value="{{1.000000,-3.000000},{0.000000,50.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,200.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="TargetShop_Dresser_ColorHair_Text">
+            <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.500000,-10.000000}}"/>
+            <Property Name="HorzFormatting" Value="LeftAligned"/>
+            <Property Name="Text" Value="#{DECOW_160126_130}"/>
+          </Window>
+          <Window Type="TLBB_ActionButtonNULL" Name="TargetShop_Dresser_ColorHair_Item">
+            <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,32.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-42.000000},{0.000000,9.000000}}"/>
+            <Property Name="Empty" Value="False" />
+            <Window Type="TLBB_StaticImageTextColor" Name="TargetShop_Dresser_ColorHair_ItemMask">
+              <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,30.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="ImageColours" Value="tl:00FFFFFF tr:00FFFFFF bl:00FFFFFF br:00FFFFFF"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TLBB_Frame_Lace1" Name="TargetShop_Dresser_Head">
+          <Property Name="UnifiedSize" Value="{{1.000000,-3.000000},{0.000000,50.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,250.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="TargetShop_Dresser_Head_Text">
+            <Property Name="UnifiedSize" Value="{{0.000000,94.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.500000,-10.000000}}"/>
+            <Property Name="HorzFormatting" Value="LeftAligned"/>
+            <Property Name="Text" Value="#{YRGYH_150706_30}"/>
+          </Window>
+          <Window Type="TLBB_StaticImageFrame" Name="TargetShop_Dresser_Head_Item">
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.500000,-17.000000}}"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TargetShop_Dresser_Head_Item_HeadFrame">
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.500000,-17.000000}}"/>
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

@@ -1,0 +1,494 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="ZLHeroMeeting_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,669.000000},{0.000000,448.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-352.000000},{0.500000,-288.000000}}"/>
+    <Event Name="Hidden" Function="ZLHeroMeeting_OnHiden()"/>
+    <Window Type="TLBB_SpecialFrame01" Name="ZLHeroMeeting_MainFrame">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      <Window Type="TLBB_SpecialTitle01" Name="ZLHeroMeeting_DragTitleBK">
+        <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,27.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-100.000000},{0.000000,0.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+      </Window>
+      <Window Type="TLBB_DragTitle" Name="ZLHeroMeeting_DragTitle">
+        <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,5.000000}}"/>
+        <Property Name="Font" Value="YouYuan11.25" />
+        <Property Name="HorzFormatting" Value="HorzCentred"/>
+        <Property Name="Text" Value="#{YXDHGN_210222_07}" />
+		<Property Name="DragTarget" Value="ZLHeroMeeting_Frame"/>
+      </Window>
+      <Window Type="TLBB_SpecialClose" Name="ZLHeroMeeting_Close">
+        <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,45.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-46.000000},{0.000000,0.000000}}"/>
+        <Event Name="Clicked" Function="ZLHeroMeeting_Close();" />
+      </Window>
+      <Window Type="DefaultWindow" Name="ZLHeroMeeting_Frame_Client">
+        <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{1.000000,-50.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,30.000000}}"/>
+        <Property Name="RiseOnClick" Value="False" />
+       
+        <Window Type="DefaultWindow" Name="ZLHeroMeeting_Frame_Detail">
+          <Property Name="UnifiedSize" Value="{{1.000000,-6.000000},{1.000000,-3.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,1.000000}}"/>
+            <Window Type="TLBB_SimpleText" Name="ZLHeroMeeting_Text1">
+		<Property Name="UnifiedSize" Value="{{0.000000,555.000000},{0.000000,153.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.500000,-276.500000},{1.000000,-386.000000}}"/>
+              <Property Name="Text" Value="#{YXDHGN_210222_08}"/>
+		<Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+		<Property Name="VertFormatting" Value="TopAligned"/>
+            </Window>
+          <Window Type="DefaultWindow" Name="ZLHeroMeeting_Frame_Center1">
+		<Property Name="UnifiedSize" Value="{{1.000000,-7.000000},{0.000000,159.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,209.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+			<Window Type="TLBB_StaticImageNULL" Name="ZLHeroMeeting_Hline">
+		<Property Name="UnifiedSize" Value="{{0.000000,512.000000},{0.000000,4.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.000000,33.000000},{0.000000,37.000000}}"/>
+		<Property Name="Visible" Value="False"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:HeXinChun1 image:Line"/>
+            </Window>
+			<Window Type="TLBB_StaticImageNULL" Name="ZLHeroMeeting_Vline1">
+		<Property Name="UnifiedSize" Value="{{0.000000,8.000000},{0.000000,52.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.000000,34.000000},{0.000000,-20.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+			  <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="Image" Value="set:HeXinChun1 image:Line1"/>
+            </Window>
+			<Window Type="TLBB_StaticImageNULL" Name="ZLHeroMeeting_Vline2">
+		<Property Name="UnifiedSize" Value="{{0.000000,8.000000},{0.000000,52.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.000000,543.000000},{0.000000,-20.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+			  <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="Image" Value="set:HeXinChun1 image:Line1"/>
+            </Window>
+
+         <Window Type="DefaultWindow" Name="ZLHeroMeeting_Page1_Icon1">
+		<Property Name="UnifiedSize" Value="{{0.000000,68.000000},{0.000000,142.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.11111000,-55.0000},{0.000000,0.000000}}"/>
+
+            <Window Type="TLBB_ButtonNULL" Name="ZLHeroMeeting_Page1_one_Button">
+		<Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,98.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.500000,-25.000000},{1.000000,-104.000000}}"/>
+              <Property Name="PushedImage" Value="set:HeXinChun2 image:DenglongDark"/>
+              <Property Name="NormalImage" Value="set:HeXinChun2 image:DenglongHover"/>
+              <Property Name="HoverImage" Value="set:HeXinChun2 image:DenglongHover"/>
+              <Property Name="DisabledImage" Value="set:HeXinChun2 image:DenglongDark"/>
+
+              <Window Type="TLBB_ActionButton" Name="ZLHeroMeeting_Page1_one">
+		<Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.500000,-17.250000},{1.000000,-63.000000}}"/>
+                <Event Name="Clicked" Function="ZLHeroMeeting_OnClick(1)"/>
+                <Window Type="TLBB_StaticImageNULL" Name="ZLHeroMeeting_Page1_oneMark">
+ 		<Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,25.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{1.000000,-30.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                  <Property Name="Image" Value="set:Seven image:Seven_ke"/>
+                </Window>
+              </Window>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="ZLHeroMeeting_oneText">
+		<Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,17.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.500000,-30.000000},{1.000000,-143.000000}}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="VertFormatting" Value="BottomAligned"/>
+              <Property Name="Text" Value="#{}"/>
+            </Window>
+			<Window Type="TLBB_StaticImageNULL" Name="ZLHeroMeeting_oneTips">
+		<Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.000000,45.000000},{0.000000,73.000000}}"/>
+				<Property Name="MouseRButtonHollow" Value="True"/>
+				<Property Name="MouseMoveHollow" Value="True"/>
+				<Property Name="MouseLButtonHollow" Value="True"/>
+				<Property Name="MouseHollow" Value="True"/>
+				<Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+				<Property Name="AlwaysOnTop" Value="True"/>
+	      </Window>
+         </Window>
+		  <Window Type="DefaultWindow" Name="ZLHeroMeeting_Page1_Icon2">
+		<Property Name="UnifiedSize" Value="{{0.000000,68.000000},{0.000000,142.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.222220000,-55.00000},{0.000000,0.000000}}"/>
+            
+            <Window Type="TLBB_ButtonNULL" Name="ZLHeroMeeting_Page1_two_Button">
+		<Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,98.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-25.000000},{1.000000,-104.000000}}"/>
+              <Property Name="PushedImage" Value="set:HeXinChun2 image:DenglongDark"/>
+              <Property Name="NormalImage" Value="set:HeXinChun2 image:DenglongHover"/>
+              <Property Name="HoverImage" Value="set:HeXinChun2 image:DenglongHover"/>
+              <Property Name="DisabledImage" Value="set:HeXinChun2 image:DenglongDark"/>
+
+              <Window Type="TLBB_ActionButton" Name="ZLHeroMeeting_Page1_two">
+                <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-17.250000},{1.000000,-63.000000}}"/>
+                <Event Name="Clicked" Function="ZLHeroMeeting_OnClick(2)"/>
+                <Window Type="TLBB_StaticImageNULL" Name="ZLHeroMeeting_Page1_twoMark">
+                  <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,25.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{1.000000,-30.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                  <Property Name="Image" Value="set:Seven image:Seven_ke"/>
+                </Window>
+              </Window>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="ZLHeroMeeting_twoText">
+              <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,17.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-30.000000},{1.000000,-143.000000}}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="VertFormatting" Value="BottomAligned"/>
+              <Property Name="Text" Value="#{}"/>
+            </Window>
+			<Window Type="TLBB_StaticImageNULL" Name="ZLHeroMeeting_twoTips">
+				<Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,45.000000},{0.000000,73.000000}}"/>
+				<Property Name="MouseRButtonHollow" Value="True"/>
+				<Property Name="MouseMoveHollow" Value="True"/>
+				<Property Name="MouseLButtonHollow" Value="True"/>
+				<Property Name="MouseHollow" Value="True"/>
+				<Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+				<Property Name="AlwaysOnTop" Value="True"/>
+	      </Window>
+          </Window>
+		  <Window Type="DefaultWindow" Name="ZLHeroMeeting_Page1_Icon3">
+		<Property Name="UnifiedSize" Value="{{0.000000,68.000000},{0.000000,142.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.33333000,-55.0000},{0.000000,0.000000}}"/>
+            
+            <Window Type="TLBB_ButtonNULL" Name="ZLHeroMeeting_Page1_three_Button">
+		<Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,98.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.500000,-25.000000},{1.000000,-104.000000}}"/>
+              <Property Name="PushedImage" Value="set:HeXinChun2 image:DenglongDark"/>
+              <Property Name="NormalImage" Value="set:HeXinChun2 image:DenglongHover"/>
+              <Property Name="HoverImage" Value="set:HeXinChun2 image:DenglongHover"/>
+              <Property Name="DisabledImage" Value="set:HeXinChun2 image:DenglongDark"/>
+
+              <Window Type="TLBB_ActionButton" Name="ZLHeroMeeting_Page1_three">
+                <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-17.250000},{1.000000,-63.000000}}"/>
+                <Event Name="Clicked" Function="ZLHeroMeeting_OnClick(3)"/>
+                <Window Type="TLBB_StaticImageNULL" Name="ZLHeroMeeting_Page1_threeMark">
+                  <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,25.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{1.000000,-30.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                  <Property Name="Image" Value="set:Seven image:Seven_ke"/>
+                </Window>
+              </Window>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="ZLHeroMeeting_threeText">
+              <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,17.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-30.000000},{1.000000,-143.000000}}"/>
+              <Property Name="Text" Value="#{}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="VertFormatting" Value="BottomAligned"/>
+            </Window>
+			<Window Type="TLBB_StaticImageNULL" Name="ZLHeroMeeting_threeTips">
+				<Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,45.000000},{0.000000,73.000000}}"/>
+				<Property Name="MouseRButtonHollow" Value="True"/>
+				<Property Name="MouseMoveHollow" Value="True"/>
+				<Property Name="MouseLButtonHollow" Value="True"/>
+				<Property Name="MouseHollow" Value="True"/>
+				<Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+				<Property Name="AlwaysOnTop" Value="True"/>
+	      </Window>
+          </Window>
+		  <Window Type="DefaultWindow" Name="ZLHeroMeeting_Page1_Icon4">
+            <Property Name="UnifiedSize" Value="{{0.000000,68.000000},{0.000000,142.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.4444400000,-55.000000},{0.000000,0.000000}}"/>
+          
+            <Window Type="TLBB_ButtonNULL" Name="ZLHeroMeeting_Page1_four_Button">
+		<Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,98.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-25.000000},{1.000000,-104.000000}}"/>
+              <Property Name="PushedImage" Value="set:HeXinChun2 image:DenglongDark"/>
+              <Property Name="NormalImage" Value="set:HeXinChun2 image:DenglongHover"/>
+              <Property Name="HoverImage" Value="set:HeXinChun2 image:DenglongHover"/>
+              <Property Name="DisabledImage" Value="set:HeXinChun2 image:DenglongDark"/>
+
+              <Window Type="TLBB_ActionButton" Name="ZLHeroMeeting_Page1_four">
+                <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-17.250000},{1.000000,-63.000000}}"/>
+                <Event Name="Clicked" Function="ZLHeroMeeting_OnClick(4)"/>
+                <Window Type="TLBB_StaticImageNULL" Name="ZLHeroMeeting_Page1_fourMark">
+                  <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,25.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{1.000000,-30.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                  <Property Name="Image" Value="set:Seven image:Seven_ke"/>
+                </Window>
+              </Window>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="ZLHeroMeeting_fourText">
+              <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,17.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-30.000000},{1.000000,-143.000000}}"/>
+              <Property Name="Text" Value="#{}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="VertFormatting" Value="BottomAligned"/>
+            </Window>
+			<Window Type="TLBB_StaticImageNULL" Name="ZLHeroMeeting_fourTips">
+				<Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,45.000000},{0.000000,73.000000}}"/>
+				<Property Name="MouseRButtonHollow" Value="True"/>
+				<Property Name="MouseMoveHollow" Value="True"/>
+				<Property Name="MouseLButtonHollow" Value="True"/>
+				<Property Name="MouseHollow" Value="True"/>
+				<Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+				<Property Name="AlwaysOnTop" Value="True"/>
+	      </Window>
+          </Window>
+		  <Window Type="DefaultWindow" Name="ZLHeroMeeting_Page1_Icon5">
+            <Property Name="UnifiedSize" Value="{{0.000000,68.000000},{0.000000,142.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.55555000,-30.0000},{0.000000,0.000000}}"/>
+            
+            <Window Type="TLBB_ButtonNULL" Name="ZLHeroMeeting_Page1_five_Button">
+              <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,98.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-25.000000},{1.000000,-104.000000}}"/>
+              <Property Name="PushedImage" Value="set:HeXinChun2 image:DenglongDark"/>
+              <Property Name="NormalImage" Value="set:HeXinChun2 image:DenglongHover"/>
+              <Property Name="HoverImage" Value="set:HeXinChun2 image:DenglongHover"/>
+              <Property Name="DisabledImage" Value="set:HeXinChun2 image:DenglongDark"/>
+
+              <Window Type="TLBB_ActionButton" Name="ZLHeroMeeting_Page1_five">
+                <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-17.250000},{1.000000,-63.000000}}"/>
+                <Event Name="Clicked" Function="ZLHeroMeeting_OnClick(5)"/>
+                <Window Type="TLBB_StaticImageNULL" Name="ZLHeroMeeting_Page1_fiveMark">
+                  <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,25.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{1.000000,-30.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                  <Property Name="Image" Value="set:Seven image:Seven_ke"/>
+                </Window>
+              </Window>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="ZLHeroMeeting_fiveText">
+              <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,17.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-30.000000},{1.000000,-143.000000}}"/>
+              <Property Name="Text" Value="#{}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="VertFormatting" Value="BottomAligned"/>
+            </Window>
+			<Window Type="TLBB_StaticImageNULL" Name="ZLHeroMeeting_fiveTips">
+				<Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,45.000000},{0.000000,73.000000}}"/>
+				<Property Name="MouseRButtonHollow" Value="True"/>
+				<Property Name="MouseMoveHollow" Value="True"/>
+				<Property Name="MouseLButtonHollow" Value="True"/>
+				<Property Name="MouseHollow" Value="True"/>
+				<Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+				<Property Name="AlwaysOnTop" Value="True"/>
+	      </Window>
+          </Window>
+		  <Window Type="DefaultWindow" Name="ZLHeroMeeting_Page1_Icon6">
+            <Property Name="UnifiedSize" Value="{{0.000000,68.000000},{0.000000,142.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.666660000,-30.0000},{0.000000,0.000000}}"/>
+            
+            <Window Type="TLBB_ButtonNULL" Name="ZLHeroMeeting_Page1_six_Button">
+              <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,98.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-25.000000},{1.000000,-104.000000}}"/>
+              <Property Name="PushedImage" Value="set:HeXinChun2 image:DenglongDark"/>
+              <Property Name="NormalImage" Value="set:HeXinChun2 image:DenglongHover"/>
+              <Property Name="HoverImage" Value="set:HeXinChun2 image:DenglongHover"/>
+              <Property Name="DisabledImage" Value="set:HeXinChun2 image:DenglongDark"/>
+
+              <Window Type="TLBB_ActionButton" Name="ZLHeroMeeting_Page1_six">
+                <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-17.250000},{1.000000,-63.000000}}"/>
+                <Event Name="Clicked" Function="ZLHeroMeeting_OnClick(6)"/>
+                <Window Type="TLBB_StaticImageNULL" Name="ZLHeroMeeting_Page1_sixMark">
+                  <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,25.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{1.000000,-30.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                  <Property Name="Image" Value="set:Seven image:Seven_ke"/>
+                </Window>
+              </Window>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="ZLHeroMeeting_sixText">
+              <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,17.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-30.000000},{1.000000,-143.000000}}"/>
+              <Property Name="Text" Value="#{}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="VertFormatting" Value="BottomAligned"/>
+            </Window>
+			<Window Type="TLBB_StaticImageNULL" Name="ZLHeroMeeting_sixTips">
+				<Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,45.000000},{0.000000,73.000000}}"/>
+				<Property Name="MouseRButtonHollow" Value="True"/>
+				<Property Name="MouseMoveHollow" Value="True"/>
+				<Property Name="MouseLButtonHollow" Value="True"/>
+				<Property Name="MouseHollow" Value="True"/>
+				<Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+				<Property Name="AlwaysOnTop" Value="True"/>
+	      </Window>
+          </Window>
+		  <Window Type="DefaultWindow" Name="ZLHeroMeeting_Page1_Icon7">
+            <Property Name="UnifiedSize" Value="{{0.000000,68.000000},{0.000000,142.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.777770000,-30.0000},{0.000000,0.000000}}"/>
+            
+            <Window Type="TLBB_ButtonNULL" Name="ZLHeroMeeting_Page1_seven_Button">
+              <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,98.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-25.000000},{1.000000,-104.000000}}"/>
+              <Property Name="PushedImage" Value="set:HeXinChun2 image:DenglongDark"/>
+              <Property Name="NormalImage" Value="set:HeXinChun2 image:DenglongHover"/>
+              <Property Name="HoverImage" Value="set:HeXinChun2 image:DenglongHover"/>
+              <Property Name="DisabledImage" Value="set:HeXinChun2 image:DenglongDark"/>
+
+              <Window Type="TLBB_ActionButton" Name="ZLHeroMeeting_Page1_seven">
+                <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-17.250000},{1.000000,-63.000000}}"/>
+                <Event Name="Clicked" Function="ZLHeroMeeting_OnClick(7)"/>
+                <Window Type="TLBB_StaticImageNULL" Name="ZLHeroMeeting_Page1_sevenMark">
+                  <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,25.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{1.000000,-30.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                  <Property Name="Image" Value="set:Seven image:Seven_ke"/>
+                </Window>
+              </Window>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="ZLHeroMeeting_sevenText">
+              <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,17.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-30.000000},{1.000000,-143.000000}}"/>
+              <Property Name="Text" Value="#{}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="VertFormatting" Value="BottomAligned"/>
+            </Window>
+			<Window Type="TLBB_StaticImageNULL" Name="ZLHeroMeeting_sevenTips">
+				<Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,45.000000},{0.000000,73.000000}}"/>
+				<Property Name="MouseRButtonHollow" Value="True"/>
+				<Property Name="MouseMoveHollow" Value="True"/>
+				<Property Name="MouseLButtonHollow" Value="True"/>
+				<Property Name="MouseHollow" Value="True"/>
+				<Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+				<Property Name="AlwaysOnTop" Value="True"/>
+	      </Window>
+          </Window>
+		  <Window Type="DefaultWindow" Name="ZLHeroMeeting_Page1_Icon8">
+            <Property Name="UnifiedSize" Value="{{0.000000,68.000000},{0.000000,142.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.888880000,-30.0000},{0.000000,0.000000}}"/>
+            
+            <Window Type="TLBB_ButtonNULL" Name="ZLHeroMeeting_Page1_eight_Button">
+              <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,98.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-25.000000},{1.000000,-104.000000}}"/>
+              <Property Name="PushedImage" Value="set:HeXinChun2 image:DenglongDark"/>
+              <Property Name="NormalImage" Value="set:HeXinChun2 image:DenglongHover"/>
+              <Property Name="HoverImage" Value="set:HeXinChun2 image:DenglongHover"/>
+              <Property Name="DisabledImage" Value="set:HeXinChun2 image:DenglongDark"/>
+
+              <Window Type="TLBB_ActionButton" Name="ZLHeroMeeting_Page1_eight">
+                <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-17.250000},{1.000000,-63.000000}}"/>
+                <Event Name="Clicked" Function="ZLHeroMeeting_OnClick(8)"/>
+                <Window Type="TLBB_StaticImageNULL" Name="ZLHeroMeeting_Page1_eightMark">
+                  <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,25.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{1.000000,-30.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                  <Property Name="Image" Value="set:Seven image:Seven_ke"/>
+                </Window>
+              </Window>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="ZLHeroMeeting_eightText">
+              <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,17.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-30.000000},{1.000000,-143.000000}}"/>
+              <Property Name="Text" Value="#{}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="VertFormatting" Value="BottomAligned"/>
+            </Window>
+			<Window Type="TLBB_StaticImageNULL" Name="ZLHeroMeeting_eightTips">
+				<Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,45.000000},{0.000000,73.000000}}"/>
+				<Property Name="MouseRButtonHollow" Value="True"/>
+				<Property Name="MouseMoveHollow" Value="True"/>
+				<Property Name="MouseLButtonHollow" Value="True"/>
+				<Property Name="MouseHollow" Value="True"/>
+				<Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+				<Property Name="AlwaysOnTop" Value="True"/>
+	      </Window>
+          </Window>
+
+            <Window Type="TLBB_SimpleText" Name="ZLHeroMeeting_BottomText">
+              <Property Name="VerticalAlignment" Value="Centre"/>
+		<Property Name="UnifiedSize" Value="{{0.000000,108.000000},{0.000000,17.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,-70.000000}}"/>
+              <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+			  <Property Name="Text" Value="#{YXDHGN_210222_10}"/>
+            </Window>
+	<Window Type="DefaultWindow" Name="ZLHeroMeeting_EXPBK">
+		<Property Name="UnifiedSize" Value="{{0.000000,575.000000},{0.000000,35.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,7.000000}}"/>
+		<Property Name="RiseOnClick" Value="False"/>
+
+			<Window Type="TLBB_StaticImageNULL" Name="ZLHeroMeeting_EXPLeft">
+		<Property Name="UnifiedSize" Value="{{0.000000,515.000000},{0.000000,41.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.000000,37.000000},{0.000000,-4.000000}}"/>
+		<Property Name="RiseOnClick" Value="False"/>
+		<Property Name="Image" Value="set:HeXinChun1 image:QiXi_ProgressBK"/>
+			</Window>
+
+			<Window Type="TLBB_StaticImageNULL" Name="ZLHeroMeeting_EXPRight">
+		<Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,21.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.000000,513.000000},{0.000000,1.000000}}"/>
+		<Property Name="RiseOnClick" Value="False"/>
+		<Property Name="Visible" Value="False"/>
+		<Property Name="Image" Value="set:HeXinChun2 image:EXP2"/>
+			</Window>
+
+	 <Window Type="TLBB_ProgressPropertyZhanjianghu" Name="ZLHeroMeeting_EXP">
+		<Property Name="UnifiedSize" Value="{{0.000000,492.000000},{0.000000,9.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.000000,45.000000},{0.000000,19.000000}}"/>
+		<Property Name="ProgressImage" Value="set:HeXinChun2 image:EXPGreen"/>
+		<Property Name="MoveSpeed" Value="1.0"/>
+		<Property Name="EffectColor" Value="1"/>
+		<Property Name="CurrentProgress" Value="1.000000"/>
+		<Property Name="AlwaysOnTop" Value="True"/>
+	 </Window>
+	</Window>
+
+          </Window>
+
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

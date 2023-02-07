@@ -1,0 +1,403 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame0" Name="MysteryShop_Frame">
+    <Property Name="UnifiedPosition" Value="{{0.5,-175},{0.12,0}}" />
+    <Property Name="AbsoluteSize" Value="w:350 h:348" />
+    <Event Name="Hidden" Function="MysteryShop_OnHidden();" />
+    <Window Type="TLBB_DragTitle" Name="MysteryShop_DragTitle">
+      <Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+      <Property Name="DragTarget" Value="MysteryShop_Frame" />
+      <Window Type="TLBB_SimpleText" Name="MysteryShop_Text">
+        <Property Name="Position" Value="x:0 y:0" />
+        <Property Name="Size" Value="w:1 h:1" />
+        <Property Name="Text" Value="" />
+        <Property Name="Font" Value="YouYuan11.25" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="RiseOnClick" Value="False" />
+      </Window>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="MysteryShop_Help">
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+      <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+      <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*Shop&quot;);' />
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="MysteryShop_Close">
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+      <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+      <Event Name="Clicked" Function="MysteryShop_Close();" />
+    </Window>
+    <Window Type="DefaultWindow" Name="MysteryShop_Background_Frame1">
+      <Property Name="AbsolutePosition" Value="x:5.000000 y:36.000000" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,-55.000000}" />
+      <Window Type="TLBB_ButtonCheck" Name="MysteryShop_querengoumai">
+        <Property Name="UnifiedPosition" Value="{{0.000000,222.000000},{0.000000,16.000000}" />
+        <Property Name="AbsoluteSize" Value="w:12.000000 h:13.000000" />
+        <Property Name="CheckMode" Value="0" />
+        <Event Name="Clicked" Function="MysteryShop_querengoumai_Clicked();" />
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="MysteryShop_querengoumai_Text">
+        <Property Name="UnifiedPosition" Value="{{1.000000,-104.000000},{0.000000,13.000000}" />
+        <Property Name="UnifiedSize" Value="{{1.000000,-250.000000},{0.000000,18.000000}" />
+        <Property Name="Text" Value="#{INTERFACE_XML_SHOP_QUREN1}" />
+        <Property Name="HorzFormatting" Value="LeftAligned" />
+        <Property Name="Tooltip" Value="#{INTERFACE_XML_SHOP_QUREN2}" />
+        <Event Name="Clicked" Function="MysteryShop_querengoumai_Clicked();" />
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="MysteryShop_querengoumai_Text2">
+        <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,13.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,18.000000}" />
+        <Property Name="Text" Value="#{SMYBSD_091102_13}" />
+        <Property Name="HorzFormatting" Value="LeftAligned" />
+      </Window>
+      <Window Type="DefaultWindow" Name="MysteryShop_Action_Set">
+        <Property Name="UnifiedSize" Value="{{0.960000,-3.399994},{0.000000,230.0000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.026471,0.000000},{0.000000,34.000000}}"/>
+        <Window Type="TLBB_ActionButton" Name="MysteryShop_Item1">
+          <Property Name="AbsolutePosition" Value="x:0.000000 y:1.000000" />
+          <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+          <Event Name="Clicked" Function="MysteryShop_GoodButton_Clicked(1);" />
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="MysteryShop_Item2">
+          <Property Name="AbsolutePosition" Value="x:0.000000 y:39.000000" />
+          <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+          <Event Name="Clicked" Function="MysteryShop_GoodButton_Clicked(2);" />
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="MysteryShop_Item3">
+          <Property Name="AbsolutePosition" Value="x:0.000000 y:77.000000" />
+          <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+          <Event Name="Clicked" Function="MysteryShop_GoodButton_Clicked(3);" />
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="MysteryShop_Item4">
+          <Property Name="AbsolutePosition" Value="x:0.000000 y:115.000000" />
+          <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+          <Event Name="Clicked" Function="MysteryShop_GoodButton_Clicked(4);" />
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="MysteryShop_Item5">
+          <Property Name="AbsolutePosition" Value="x:0.000000 y:153.000000" />
+          <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+          <Event Name="Clicked" Function="MysteryShop_GoodButton_Clicked(5);" />
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="MysteryShop_Item6">
+          <Property Name="AbsolutePosition" Value="x:0.000000 y:191.000000" />
+          <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+          <Event Name="Clicked" Function="MysteryShop_GoodButton_Clicked(6);" />
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="MysteryShop_Item7">
+          <Property Name="AbsolutePosition" Value="x:164.000000 y:1.000000" />
+          <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+          <Event Name="Clicked" Function="MysteryShop_GoodButton_Clicked(7);" />
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="MysteryShop_Item8">
+          <Property Name="AbsolutePosition" Value="x:164.000000 y:39.000000" />
+          <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+          <Event Name="Clicked" Function="MysteryShop_GoodButton_Clicked(8);" />
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="MysteryShop_Item9">
+          <Property Name="AbsolutePosition" Value="x:164.000000 y:77.000000" />
+          <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+          <Event Name="Clicked" Function="MysteryShop_GoodButton_Clicked(9);" />
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="MysteryShop_Item10">
+          <Property Name="AbsolutePosition" Value="x:164.000000 y:115.000000" />
+          <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+          <Event Name="Clicked" Function="MysteryShop_GoodButton_Clicked(10);" />
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="MysteryShop_Item11">
+          <Property Name="AbsolutePosition" Value="x:164.000000 y:153.000000" />
+          <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+          <Event Name="Clicked" Function="MysteryShop_GoodButton_Clicked(11);" />
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="MysteryShop_Item12">
+          <Property Name="AbsolutePosition" Value="x:164.000000 y:191.000000" />
+          <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+          <Event Name="Clicked" Function="MysteryShop_GoodButton_Clicked(12);" />
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="MysteryShop_ItemInfo1">
+          <Property Name="AbsolutePosition" Value="x:38.000000 y:0.000000" />
+          <Property Name="AbsoluteSize" Value="w:120.000000 h:36.000000" />
+          <Window Type="TLBB_SimpleText" Name="MysteryShop_ItemInfo1_Text">
+            <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+            <Property Name="AbsoluteSize" Value="w:120.000000 h:18.000000" />
+            <Property Name="Text" Value="#{INTERFACE_XML_909}" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="MysteryShop_ItemInfo1_GB">
+            <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+            <Property Name="AbsoluteSize" Value="w:113.000000 h:18.000000" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+          <Window Type="TLBB_Money" Name="MysteryShop_ItemInfo1_Price">
+            <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+            <Property Name="AbsoluteSize" Value="w:117.000000 h:16.000000" />
+            <Property Name="MoneyNumber" Value="0" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="MysteryShop_ItemInfo2">
+          <Property Name="AbsolutePosition" Value="x:38.000000 y:38.000000" />
+          <Property Name="AbsoluteSize" Value="w:120.000000 h:36.000000" />
+          <Window Type="TLBB_SimpleText" Name="MysteryShop_ItemInfo2_Text">
+            <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+            <Property Name="AbsoluteSize" Value="w:120.000000 h:18.000000" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+          <Window Type="TLBB_Money" Name="MysteryShop_ItemInfo2_Price">
+            <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+            <Property Name="AbsoluteSize" Value="w:117.000000 h:16.000000" />
+            <Property Name="MoneyNumber" Value="" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="MysteryShop_ItemInfo2_GB">
+            <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+            <Property Name="AbsoluteSize" Value="w:113.000000 h:18.000000" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="MysteryShop_ItemInfo3">
+          <Property Name="AbsolutePosition" Value="x:38.000000 y:76.000000" />
+          <Property Name="AbsoluteSize" Value="w:120.000000 h:36.000000" />
+          <Window Type="TLBB_SimpleText" Name="MysteryShop_ItemInfo3_Text">
+            <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+            <Property Name="AbsoluteSize" Value="w:120.000000 h:18.000000" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+          <Window Type="TLBB_Money" Name="MysteryShop_ItemInfo3_Price">
+            <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+            <Property Name="AbsoluteSize" Value="w:117.000000 h:16.000000" />
+            <Property Name="MoneyNumber" Value="" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="MysteryShop_ItemInfo3_GB">
+            <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+            <Property Name="AbsoluteSize" Value="w:113.000000 h:18.000000" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="MysteryShop_ItemInfo4">
+          <Property Name="AbsolutePosition" Value="x:38.000000 y:114.000000" />
+          <Property Name="AbsoluteSize" Value="w:120.000000 h:36.000000" />
+          <Window Type="TLBB_SimpleText" Name="MysteryShop_ItemInfo4_Text">
+            <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+            <Property Name="AbsoluteSize" Value="w:120.000000 h:18.000000" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+          <Window Type="TLBB_Money" Name="MysteryShop_ItemInfo4_Price">
+            <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+            <Property Name="AbsoluteSize" Value="w:117.000000 h:16.000000" />
+            <Property Name="MoneyNumber" Value="" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="MysteryShop_ItemInfo4_GB">
+            <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+            <Property Name="AbsoluteSize" Value="w:113.000000 h:18.000000" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="MysteryShop_ItemInfo5">
+          <Property Name="AbsolutePosition" Value="x:38.000000 y:152.000000" />
+          <Property Name="AbsoluteSize" Value="w:120.000000 h:36.000000" />
+          <Window Type="TLBB_SimpleText" Name="MysteryShop_ItemInfo5_Text">
+            <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+            <Property Name="AbsoluteSize" Value="w:120.000000 h:18.000000" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+          <Window Type="TLBB_Money" Name="MysteryShop_ItemInfo5_Price">
+            <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+            <Property Name="AbsoluteSize" Value="w:117.000000 h:16.000000" />
+            <Property Name="MoneyNumber" Value="" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="MysteryShop_ItemInfo5_GB">
+            <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+            <Property Name="AbsoluteSize" Value="w:113.000000 h:18.000000" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="MysteryShop_ItemInfo6">
+          <Property Name="AbsolutePosition" Value="x:38.000000 y:190.000000" />
+          <Property Name="AbsoluteSize" Value="w:120.000000 h:36.000000" />
+          <Window Type="TLBB_SimpleText" Name="MysteryShop_ItemInfo6_Text">
+            <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+            <Property Name="AbsoluteSize" Value="w:120.000000 h:18.000000" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+          <Window Type="TLBB_Money" Name="MysteryShop_ItemInfo6_Price">
+            <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+            <Property Name="AbsoluteSize" Value="w:117.000000 h:16.000000" />
+            <Property Name="MoneyNumber" Value="" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="MysteryShop_ItemInfo6_GB">
+            <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+            <Property Name="AbsoluteSize" Value="w:113.000000 h:18.000000" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="MysteryShop_ItemInfo7">
+          <Property Name="AbsolutePosition" Value="x:202.000000 y:0.000000" />
+          <Property Name="AbsoluteSize" Value="w:120.000000 h:36.000000" />
+          <Window Type="TLBB_SimpleText" Name="MysteryShop_ItemInfo7_Text">
+            <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+            <Property Name="AbsoluteSize" Value="w:120.000000 h:18.000000" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+          <Window Type="TLBB_Money" Name="MysteryShop_ItemInfo7_Price">
+            <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+            <Property Name="AbsoluteSize" Value="w:117.000000 h:16.000000" />
+            <Property Name="MoneyNumber" Value="" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="MysteryShop_ItemInfo7_GB">
+            <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+            <Property Name="AbsoluteSize" Value="w:113.000000 h:18.000000" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="MysteryShop_ItemInfo8">
+          <Property Name="AbsolutePosition" Value="x:202.000000 y:38.000000" />
+          <Property Name="AbsoluteSize" Value="w:120.000000 h:36.000000" />
+          <Window Type="TLBB_SimpleText" Name="MysteryShop_ItemInfo8_Text">
+            <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+            <Property Name="AbsoluteSize" Value="w:120.000000 h:18.000000" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+          <Window Type="TLBB_Money" Name="MysteryShop_ItemInfo8_Price">
+            <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+            <Property Name="AbsoluteSize" Value="w:117.000000 h:16.000000" />
+            <Property Name="MoneyNumber" Value="" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="MysteryShop_ItemInfo8_GB">
+            <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+            <Property Name="AbsoluteSize" Value="w:113.000000 h:18.000000" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="MysteryShop_ItemInfo9">
+          <Property Name="AbsolutePosition" Value="x:202.000000 y:76.000000" />
+          <Property Name="AbsoluteSize" Value="w:120.000000 h:36.000000" />
+          <Window Type="TLBB_SimpleText" Name="MysteryShop_ItemInfo9_Text">
+            <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+            <Property Name="AbsoluteSize" Value="w:120.000000 h:18.000000" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+          <Window Type="TLBB_Money" Name="MysteryShop_ItemInfo9_Price">
+            <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+            <Property Name="AbsoluteSize" Value="w:117.000000 h:16.000000" />
+            <Property Name="MoneyNumber" Value="" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="MysteryShop_ItemInfo9_GB">
+            <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+            <Property Name="AbsoluteSize" Value="w:113.000000 h:18.000000" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="MysteryShop_ItemInfo10">
+          <Property Name="AbsolutePosition" Value="x:202.000000 y:114.000000" />
+          <Property Name="AbsoluteSize" Value="w:120.000000 h:36.000000" />
+          <Window Type="TLBB_SimpleText" Name="MysteryShop_ItemInfo10_Text">
+            <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+            <Property Name="AbsoluteSize" Value="w:120.000000 h:18.000000" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+          <Window Type="TLBB_Money" Name="MysteryShop_ItemInfo10_Price">
+            <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+            <Property Name="AbsoluteSize" Value="w:117.000000 h:16.000000" />
+            <Property Name="MoneyNumber" Value="" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="MysteryShop_ItemInfo10_GB">
+            <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+            <Property Name="AbsoluteSize" Value="w:113.000000 h:18.000000" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="MysteryShop_ItemInfo11">
+          <Property Name="AbsolutePosition" Value="x:202.000000 y:152.000000" />
+          <Property Name="AbsoluteSize" Value="w:120.000000 h:36.000000" />
+          <Window Type="TLBB_SimpleText" Name="MysteryShop_ItemInfo11_Text">
+            <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+            <Property Name="AbsoluteSize" Value="w:120.000000 h:18.000000" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+          <Window Type="TLBB_Money" Name="MysteryShop_ItemInfo11_Price">
+            <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+            <Property Name="AbsoluteSize" Value="w:117.000000 h:16.000000" />
+            <Property Name="MoneyNumber" Value="" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="MysteryShop_ItemInfo11_GB">
+            <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+            <Property Name="AbsoluteSize" Value="w:113.000000 h:18.000000" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="MysteryShop_ItemInfo12">
+          <Property Name="AbsolutePosition" Value="x:202.000000 y:190.000000" />
+          <Property Name="AbsoluteSize" Value="w:120.000000 h:36.000000" />
+          <Window Type="TLBB_SimpleText" Name="MysteryShop_ItemInfo12_Text">
+            <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+            <Property Name="AbsoluteSize" Value="w:120.000000 h:18.000000" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+          <Window Type="TLBB_Money" Name="MysteryShop_ItemInfo12_Price">
+            <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+            <Property Name="AbsoluteSize" Value="w:117.000000 h:16.000000" />
+            <Property Name="MoneyNumber" Value="99" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="MysteryShop_ItemInfo12_GB">
+            <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+            <Property Name="AbsoluteSize" Value="w:113.000000 h:18.000000" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="MysteryShop_BK">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-24.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="TLBB_ButtonCommon2" Name="MysteryShop_UpPage">
+          <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-80.000000},{0.000000,0.000000}}"/>
+          <Property Name="Text" Value="#{INTERFACE_XML_499}" />
+          <Event Name="Clicked" Function="MysteryShop_PageUp();" />
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="MysteryShop_CurrentlyPage">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-30.000000},{0.000000,0.000000}}"/>
+          <Property Name="Text" Value="999/999" />
+          <Property Name="TextColor" Value="FFFFF263" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+        <Window Type="TLBB_ButtonCommon2" Name="MysteryShop_DownPage">
+          <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,30.000000},{0.000000,0.000000}}"/>
+          <Property Name="Text" Value="#{INTERFACE_XML_325}" />
+          <Event Name="Clicked" Function="MysteryShop_PageDown();" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace5" Name="MysteryShop_Blank">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}}"/>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

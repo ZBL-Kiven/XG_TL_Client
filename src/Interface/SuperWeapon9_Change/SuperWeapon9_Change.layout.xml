@@ -1,0 +1,184 @@
+<?xml version="1.0" ?>
+<GUILayout>
+
+  <Window Type="TLBB_MainFrame1" Name="SuperWeapon9_Change_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,500.000000},{0.000000,377.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-258.000000},{0.500000,-218.000000}}"/>
+    <Event Name="Hidden" Function="SuperWeapon9_Change_CancleEvent();" />
+    <Window Type="TLBB_DragTitle" Name="SuperWeapon9_Change_DragTitle">
+      <Property Name="AbsolutePosition" Value="x:40.000000 y:12.000000" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}" />
+      <Property Name="DragTarget" Value="SuperWeapon9_Change_Frame" />
+      <Window Type="TLBB_SimpleText" Name="SuperWeapon9_Change_Title">
+        <Property Name="Position" Value="x:0.0 y:0.0" />
+        <Property Name="Size" Value="w:1.0 h:1.0" />
+        <Property Name="Font" Value="YouYuan11.25" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Text" Value="#{JXSQ_170810_155}" />
+      </Window>
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="SuperWeapon9_Change_Close">
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+      <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+      <Property Name="Text" Value="TLBB_ButtonClose" />
+      <Event Name="Clicked" Function="SuperWeapon9_Change_CancleEvent();" />
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="SuperWeapon9_Change_Help">
+		<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+		<Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+      <Property Name="Text" Value="TLBB_ButtonClose" />
+      <Event Name="Clicked" Function="" />
+    </Window>
+    <Window Type="DefaultWindow" Name="SuperWeapon9_Change_ClientBK">
+      <Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{1.000000,-71.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,31.000000}}"/>
+    <Window Type="TLBB_FramePlayerOther" Name="SuperWeapon9_Change_Fitting_Frame_Client">
+      <Property Name="AbsolutePosition" Value="x:8.000000 y:0.000000" />
+      <Property Name="UnifiedSize" Value="{{0.000000,208.000000},{1.000000,-3.000000}" />
+      <Window Type="TLBB_MeshWindow" Name="SuperWeapon9_Change_Fitting_FakeObject">
+        <Property Name="UnifiedSize" Value="{{0.918919,0.000000},{0.876405,0.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.043243,0.000000},{0.041199,0.000000}}"/>
+        <Property Name="MouseHollow" Value="True" />
+      </Window>
+      <Window Type="TLBB_ButtonTurnLeft" Name="SuperWeapon9_Change_Fitting_Model_TurnLeft">
+        <Property Name="UnifiedPosition" Value="{{0.000000,11.000000},{1.000000,-42.000000}}"/>
+        <Property Name="AbsoluteSize" Value="w:25.000000 h:25.000000" />
+        <Event Name="MouseButtonDown" Function="SuperWeapon9_Change_Fitting_TurnLeft(1);" />
+        <Event Name="MouseButtonUp" Function="SuperWeapon9_Change_Fitting_TurnLeft(0);" />
+      </Window>
+      <Window Type="TLBB_ButtonTurnRight" Name="SuperWeapon9_Change_Fitting_Model_TurnRight">
+        <Property Name="UnifiedPosition" Value="{{0.000000,174.000000},{1.000000,-42.000000}}"/>
+        <Property Name="AbsoluteSize" Value="w:25.000000 h:25.000000" />
+        <Event Name="MouseButtonDown" Function="SuperWeapon9_Change_Fitting_TurnRight(1);" />
+        <Event Name="MouseButtonUp" Function="SuperWeapon9_Change_Fitting_TurnRight(0);" />
+      </Window>
+      
+    </Window>
+    <Window Type="DefaultWindow" Name="SuperWeapon9_Change_Frame_Client">
+      <Property Name="UnifiedPosition" Value="{{0.000000,218.000000},{0.000000,0.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-225.000000},{1.000000,-3.000000}" />
+      <Window Type="DefaultWindow" Name="SuperWeapon9_Change_Frame1_Client_Part1">
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,206.000000}" />
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="SuperWeapon9_Change_Info">
+          <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,5.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,160.000000}" />
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="Text" Value="#{JXSQ_170810_156}" />
+          <Property Name="TextColor" Value="FFFFF263" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="SuperWeapon9_Change_Info2">
+          <Property Name="UnifiedPosition" Value="{{0.000,15.000000},{1.0000,-39.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.00,155.000000},{0.000000,36.000000}" />
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="Text" Value="#{JXSQ_170810_157}" />
+          <Property Name="TextColor" Value="FFFFF263" />
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="SuperWeapon9_Change_Object">
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-65.000000},{1.000000,-39.000000}}"/>
+          <Property Name="DragAcceptName" Value="I19" />
+          <Property Name="DraggingEnabled" Value="True" />
+          <Event Name="RBClicked" Function="SuperWeapon9_Change_ResetSlot();" />
+        </Window>
+      </Window>
+      <!-- <Window Type="DefaultWindow" Name="SuperWeapon9_Change_Frame1_Client_Part2"> -->
+        <!-- <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,210.000000}}"/> -->
+        <!-- <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,30.000000}" /> -->
+        <!-- <Window Type="TLBB_SimpleText" Name="SuperWeapon9_Change_Info3"> -->
+          <!-- <Property Name="UnifiedPosition" Value="{{0.000,15.000000},{0.0000,5.000000}}"/> -->
+          <!-- <Property Name="UnifiedSize" Value="{{0.00,100.000000},{0.000000,20.000000}" /> -->
+          <!-- <Property Name="HorzFormatting" Value="WordWrapLeftAligned" /> -->
+          <!-- <Property Name="RiseOnClick" Value="False" /> -->
+          <!-- <Property Name="Text" Value="#{JXSQ_170810_159}" /> -->
+          <!-- <Property Name="TextColor" Value="FFFFF263" /> -->
+        <!-- </Window> -->
+        <!-- <Window Type="TLBB_ComboList" Name="SuperWeapon9_Change_Choice"> -->
+          <!-- <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,20.000000}}"/> -->
+          <!-- <Property Name="UnifiedPosition" Value="{{0.000000,115.000000},{0.000000,5.000000}}"/> -->
+          <!-- <Property Name="Text" Value="#{JXSQ_170810_160}"/> -->
+          <!-- <Property Name="AlwaysOnTop" Value="True"/> -->
+		  <!-- <Event Name="ListSelectionAccepted" Function="SuperWeapon9_Change_SelChanged();"/> -->
+        <!-- </Window> -->
+        <!-- <Window Type="TLBB_StaticImageNULL" Name="SuperWeapon9_Change_Choice_Pic"> -->
+          <!-- <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/> -->
+          <!-- <Property Name="UnifiedPosition" Value="{{0.000000,235.000000},{0.000000,5.000000}}"/> -->
+          <!-- <Property Name="Image" Value="set:Button3 image:ComboListButton_Normal"/> -->
+          <!-- <Property Name="Tooltip" Value="#{JXSQ_170810_161}"/> -->
+        <!-- </Window> -->
+        
+      <!-- </Window> -->
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="SuperWeapon9_Change_Money_Text">
+        <Property Name="UnifiedPosition" Value="{{0.0000,0.000000},{1.000000,-66.000000}" />
+        <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,22.000000}" />
+        <Property Name="TextColor" Value="FFFFF263" />
+        <Property Name="Text" Value="#{INTERFACE_XML_789}" />
+        <Property Name="HorzFormatting" Value="LeftAligned" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Window Type="TLBB_Money" Name="SuperWeapon9_Change_DemandMoney">
+          <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}" />
+          <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}" />
+          <Property Name="MoneyNumber" Value="0" />
+          <Property Name="HorzFormatting" Value="RightAligned" />
+          <Property Name="AlignFix" Value="True" />
+          <Property Name="GoldIcon" Value = "set:Button6 image:Lace_JiaoziJin" />
+          <Property Name="SilverIcon" Value = "set:Button6 image:Lace_JiaoziYin" />
+          <Property Name="CopperIcon" Value = "set:Button6 image:Lace_JiaoziTong" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="SuperWeapon9_Change_Jiaozi_Text">
+        <Property Name="UnifiedPosition" Value="{{00.0000,0.000000},{1.000000,-44.000000}" />
+        <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,22.000000}" />
+        <Property Name="TextColor" Value="FFFFF263" />
+        <Property Name="Text" Value="#{BDJB_051210_1}" />
+        <Property Name="HorzFormatting" Value="LeftAligned" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Window Type="TLBB_Money" Name="SuperWeapon9_Change_SelfJiaozi">
+          <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}" />
+          <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}" />
+          <Property Name="MoneyNumber" Value="0" />
+          <Property Name="HorzFormatting" Value="RightAligned" />
+          <Property Name="AlignFix" Value="True" />
+          <Property Name="GoldIcon" Value = "set:Button6 image:Lace_JiaoziJin" />
+          <Property Name="SilverIcon" Value = "set:Button6 image:Lace_JiaoziYin" />
+          <Property Name="CopperIcon" Value = "set:Button6 image:Lace_JiaoziTong" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="SuperWeapon9_Change_SelfMoney_Text">
+        <Property Name="UnifiedPosition" Value="{{0.0000,0.000000},{1.000000,-22.000000}" />
+        <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,22.000000}" />
+        <Property Name="TextColor" Value="FFFFF263" />
+        <Property Name="Text" Value="#{INTERFACE_XML_834}" />
+        <Property Name="HorzFormatting" Value="LeftAligned" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Window Type="TLBB_Money" Name="SuperWeapon9_Change_SelfMoney">
+          <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}" />
+          <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}" />
+          <Property Name="HorzFormatting" Value="RightAligned" />
+          <Property Name="MoneyNumber" Value="0" />
+        </Window>
+      </Window>
+    </Window>
+    </Window>
+
+    <Window Type="TLBB_ButtonCommon" Name="SuperWeapon9_Change_OK">
+      <Property Name="UnifiedPosition" Value="{{1.000000,-130.000000},{1.000000,-39.000000}" />
+      <Property Name="AbsoluteSize" Value="w:60.000000 h:20.000000" />
+      <Property Name="Text" Value="#{JXSQ_170804_28}" />
+			<Event Name="Clicked" Function="SuperWeapon9_Change_OKEvent();" />
+    </Window>
+    <Window Type="TLBB_ButtonCommon" Name="SuperWeapon9_Change_Cancel">
+      <Property Name="UnifiedPosition" Value="{{1.000000,-70.000000},{1.000000,-39.000000}" />
+      <Property Name="AbsoluteSize" Value="w:60.000000 h:20.000000" />
+      <Property Name="Text" Value="#{JXSQ_170804_16}" />
+			<Event Name="Clicked" Function="SuperWeapon9_Change_CancleEvent();" />
+    </Window>
+  </Window>
+</GUILayout>
