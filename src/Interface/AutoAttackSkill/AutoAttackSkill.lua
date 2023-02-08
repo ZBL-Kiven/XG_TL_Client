@@ -800,7 +800,7 @@ end
 
 --================= 药品设置 =====================
 function AutoAttackSkill_MakeRecoverInfo(i)
-    local texts = { "#cfff263人物血量低于#G%s%#cfff263时使用", "#cfff263人物气量低于#G%s%#cfff263时使用", "#cfff263珍兽血量低于#G%s%#cfff263时使用" }
+    local texts = { "#cfff263人物血量低于#G%s#cfff263时使用", "#cfff263人物气量低于#G%s#cfff263时使用", "#cfff263珍兽血量低于#G%s#cfff263时使用" }
     local potions = Farm_GetPotionIds(i)
     local delegate = {
         ["updatecombo"] = function(self, select)
@@ -824,7 +824,7 @@ function AutoAttackSkill_MakeRecoverInfo(i)
         end,
         ["updatetext"] = function(self)
             local btnidx, rate = getmodifyvalue(g_configdata.usepotionc[i])
-            g_uiskilloptions[i].name:SetText(string.format(texts[i], rate))
+            g_uiskilloptions[i].name:SetText(string.format(texts[i], rate .. "%"))
         end,
         ["update"] = function(self)
             -- 获取当前我使用的道具
@@ -841,7 +841,7 @@ function AutoAttackSkill_MakeRecoverInfo(i)
             self:updatecombo(cur)
             -- 开始处理按钮选中
             local btnidx, rate = getmodifyvalue(g_configdata.usepotionc[i])
-            g_uiskilloptions[i].name:SetText(string.format(texts[i], rate))
+            g_uiskilloptions[i].name:SetText(string.format(texts[i], rate .. "%"))
             -- 进行按钮内容选中
             uibtnoptionupdate(btnidx, i)
         end,

@@ -41,9 +41,9 @@ function FreshmanWatch_OnEvent(event)
             FreshmanWatch_Max()
             FreshmanWatch_Time_Text1:SetProperty("Timer", tostring(countDownMinute * 60));
             FreshmanWatch_Time_Text:SetProperty("Timer", tostring(countDownMinute * 60));
-            FreshmanWatch_Time_Text:SetProperty("Flash", tostring(0));--停止闪烁
             FreshmanWatch_Time_Text:SetProperty("TextColor", "ff00ffff");--颜色改回蓝色
             FreshmanWatch_Time_Text1:SetProperty("TextColor", "ff00ffff");--颜色改回蓝色
+            SetTimer("FreshmanWatch", "OnTimer10Sec()", countDownMinute * 60000 - 10000)
             --弹出新手指引以及背包闪烁，只能在领奖后才发生
             if state == 3 and isPlayerJustLogin ~= 1 then
                 --第二次领到坐骑后，需要弹出新手指引界面
@@ -58,22 +58,17 @@ function FreshmanWatch_OnEvent(event)
         this:Hide()
     elseif (event == "OPEN_NORMAL_WATCH") then
         this:Show()
-    elseif (event == "COUNTDOWN_10SEC") then
-        --倒数最后十秒变色、闪烁
-        if this:IsVisible() then
-            FreshmanWatch_Time_Text1:SetProperty("TextColor", "ffff0000");
-            FreshmanWatch_Time_Text:SetProperty("TextColor", "ffff0000");
-            FreshmanWatch_Time_Text:SetProperty("Flash", tostring(1));
-        end
     end
 end
 
 function FreshmanWatch_TimeOut()
+    local textInfo = ""
     if g_State >= 1 and g_State <= 9 then
-        FreshmanWatch_Info:SetText(g_Notes[g_State])
+        textInfo = g_Notes[g_State]
     else
-        FreshmanWatch_Info:SetText("#{XRLJ_100104_4}")
+        textInfo = "#{XRLJ_100104_4}"
     end
+    FreshmanWatch_Info:SetText(textInfo)
     FreshmanWatch_Time_Text:SetProperty("Timer", tostring(0));
     FreshmanWatch_Time_Text1:SetProperty("Timer", tostring(0));
     FreshmanWatch_Receive:Show();
@@ -82,8 +77,7 @@ function FreshmanWatch_TimeOut()
     FreshmanWatch_Mini:Hide()
     FreshmanWatch_Maxi:Hide()
     FreshmanWatch_Text:Show()
-    PushDebugMessage("#{XRLJ_100104_13}")
-    PushDebugMessage("#{XRLJ_100104_14}")
+    PushDebugMessage(textInfo)
     Sound:PlayUISound(38);
 end
 
@@ -97,7 +91,7 @@ function FreshmanWatch_Bn2Click()
 end
 
 function FreshmanWatch_Min()
-    FreshmanWatch_Frame_sub:SetProperty("UnifiedPosition", "{{0.500000,-75.000000},{1.000000,-147.000000}}");
+    FreshmanWatch_Frame_sub:SetProperty("UnifiedPosition", "{{0.500000,-75.000000},{1.000000,-197.000000}}");
     FreshmanWatch_Frame_sub:SetProperty("UnifiedSize", "{{0.000000,208.000000},{0.000000,38.000000}}");
     FreshmanWatch_Info:Hide()
     FreshmanWatch_Mini:Hide()
@@ -105,16 +99,17 @@ function FreshmanWatch_Min()
 end
 
 function FreshmanWatch_Max()
-    FreshmanWatch_Frame_sub:SetProperty("UnifiedPosition", "{{0.500000,-75.000000},{1.000000,-203.000000}}");
+    FreshmanWatch_Frame_sub:SetProperty("UnifiedPosition", "{{0.500000,-75.000000},{1.000000,-253.000000}}");
     FreshmanWatch_Frame_sub:SetProperty("UnifiedSize", "{{0.000000,208.000000},{0.000000,94.000000}}");
     FreshmanWatch_Info:Show()
     FreshmanWatch_Mini:Show()
     FreshmanWatch_Maxi:Hide()
 end
 
-function FreshmanWatch_TimeOut1()
-    --倒数最后十秒变色、闪烁
-    FreshmanWatch_Time_Text1:SetProperty("TextColor", "ffff0000");
-    FreshmanWatch_Time_Text:SetProperty("TextColor", "ffff0000");
-    FreshmanWatch_Time_Text:SetProperty("Flash", tostring(1));
+function OnTimer10Sec()
+    if this:IsVisible() then
+        FreshmanWatch_Time_Text1:SetProperty("TextColor", "ffff0000");
+        FreshmanWatch_Time_Text:SetProperty("TextColor", "ffff0000");
+    end
+    KillTimer("OnTimer10Sec()")
 end
