@@ -67,7 +67,19 @@
 						<Property Name="Text" Value="#{INTERFACE_XML_570}" />
 						<Property Name="CheckMode" Value="1" />
 						<Event Name="MouseLButtonDown" Function="Packet_ChangeTabIndex(2);" />
-					</Window>				
+					</Window>
+					<Window Type="TLBB_ButtonCommon" Name="Packet_WareHouse">
+						<Property Name="AbsolutePosition" Value="x:132.000000 y:0.000000" />
+						<Property Name="AbsoluteSize" Value="w:42.000000 h:24.000000" />
+						<Property Name="Text" Value="仓库" />
+						<Event Name="Clicked" Function="Packet_ClickWareHouse();" />
+					</Window>
+					<Window Type="TLBB_ButtonCommon" Name="Packet_Shop">
+						<Property Name="AbsolutePosition" Value="x:176.000000 y:0.000000" />
+						<Property Name="AbsoluteSize" Value="w:72.000000 h:24.000000" />
+						<Property Name="Text" Value="特权商店" />
+						<Event Name="Clicked" Function="Packet_ClickPacketShop();" />
+					</Window>
 				</Window>
 				<Window Type="DefaultWindow" Name="Packet_Space_Frame">
 					<Property Name="AbsolutePosition" Value="x:0.000000 y:25.000000" />

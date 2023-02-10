@@ -1415,7 +1415,7 @@ function WuHun_OnAndOffMode()
 	local a = Wuhun_Mode:GetCheck();
 	Clear_XSCRIPT()
 		Set_XSCRIPT_Function_Name( "WuHunModel" );
-		Set_XSCRIPT_ScriptID(889383);
+		Set_XSCRIPT_ScriptID(900004);
 		Set_XSCRIPT_Parameter(0,a);
 		Set_XSCRIPT_ParamCount(1);
 	Send_XSCRIPT()	
