@@ -193,7 +193,7 @@ function PlayerFrame_OnEvent(event)
 end
 function PlayerFrame_YueKaBtnOnClicked()
 	Clear_XSCRIPT()
-	Set_XSCRIPT_Function_Name("XiaoXiang_YuLongTieCl")
+	Set_XSCRIPT_Function_Name("XG_YueKa")
 	Set_XSCRIPT_ScriptID(916527) 
 	Set_XSCRIPT_Parameter( 0, 100);		
 	Set_XSCRIPT_ParamCount(1)

@@ -494,7 +494,7 @@ end
 
 function Packet_ClickWareHouse()
     Clear_XSCRIPT()
-    Set_XSCRIPT_Function_Name("XiaoXiang_YuLongTieCl")
+    Set_XSCRIPT_Function_Name("XG_YueKa")
     Set_XSCRIPT_ScriptID(916527)
     Set_XSCRIPT_Parameter(0, 9);                    -- 参数一
     Set_XSCRIPT_ParamCount(1)
@@ -503,7 +503,7 @@ end
 
 function Packet_ClickPacketShop()
     Clear_XSCRIPT()
-    Set_XSCRIPT_Function_Name("XiaoXiang_YuLongTieCl")
+    Set_XSCRIPT_Function_Name("XG_YueKa")
     Set_XSCRIPT_ScriptID(916527)
     Set_XSCRIPT_Parameter(0, 10);                    -- 参数一
     Set_XSCRIPT_ParamCount(1)

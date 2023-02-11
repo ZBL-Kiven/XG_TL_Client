@@ -56,7 +56,7 @@ end
 
 function YueKa_Btn_Clicked(index)
 	Clear_XSCRIPT()
-	Set_XSCRIPT_Function_Name("XiaoXiang_YuLongTieCl")
+	Set_XSCRIPT_Function_Name("XG_YueKa")
 	Set_XSCRIPT_ScriptID(916527)
 	Set_XSCRIPT_Parameter( 0, index );					-- ²ÎÊýÒ»
 	Set_XSCRIPT_ParamCount(1)
