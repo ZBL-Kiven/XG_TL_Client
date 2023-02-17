@@ -119,7 +119,6 @@ end
 --===============================================
 function Operation_QuitGame_Clicked()
 	 EnterQuitWait(0);
-	--PushEvent("UI_COMMAND",20200517,1)
 end
 
 --===============================================

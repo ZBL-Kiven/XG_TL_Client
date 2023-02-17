@@ -71,14 +71,6 @@ function QinHuangTime_TimeReach(nIndex)
 	end
 end
 
-function QinHuangTime_ToMsg()
-	Clear_XSCRIPT()
-		Set_XSCRIPT_Function_Name( "acme_spendworldmsg" );
-		Set_XSCRIPT_ScriptID(810114);
-		Set_XSCRIPT_ParamCount(0);
-	Send_XSCRIPT()
-end
-
 function QinHuangTimeUpdata()
 	if g_QinHuangTime_Scene == 1 then
 		return

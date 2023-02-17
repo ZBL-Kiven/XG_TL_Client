@@ -1,371 +1,368 @@
 ﻿<?xml version="1.0" ?>
 <GUILayout>
-  <Window Type="TLBB_MainFrameNULL" Name="Agname_Kong">
-    <Property Name="UnifiedSize" Value="{{0.000000,720.000000},{0.000000,480.000000}}"/>
-    <Property Name="UnifiedPosition" Value="{{0.500000,-340.000000},{0.500000,-270.000000}}"/>
-    <Event Name="Hidden" Function="Agname_Kong_Close();" />
-    <Window Type="TLBB_StaticImageNULL" Name="Agname_Kong_FrameNULL_Left">
-      <Property Name="UnifiedSize" Value="{{0.000000,134.000000},{0.000000,102.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
-      <Property Name="AlwaysOnTop" Value="True"/>
-      <Property Name="MouseRButtonHollow" Value="True"/>
-      <Property Name="MouseMoveHollow" Value="True"/>
-      <Property Name="MouseLButtonHollow" Value="True"/>
-      <Property Name="MouseHollow" Value="True"/>
-      <Property Name="Image" Value="set:CommonFrame36 image:Anniversary_LaceLT"/>
-    </Window>
-    <Window Type="TLBB_StaticImageNULL" Name="Agname_Kong_FrameNULL_Right1">
-      <Property Name="UnifiedSize" Value="{{0.000000,106.000000},{0.000000,102.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{1.000000,-108.000000},{0.000000,0.000000}}"/>
-      <Property Name="AlwaysOnTop" Value="True"/>
-      <Property Name="RiseOnClick" Value="False"/>
-      <Property Name="MouseRButtonHollow" Value="True"/>
-      <Property Name="MouseMoveHollow" Value="True"/>
-      <Property Name="MouseLButtonHollow" Value="True"/>
-      <Property Name="MouseHollow" Value="True"/>
-      <Property Name="Image" Value="set:CommonFrame36 image:Anniversary_LaceRT"/>
-    </Window>
-    <Window Type="TLBB_StaticImageNULL" Name="Agname_Kong_FrameNULL_Right2">
-      <Property Name="UnifiedSize" Value="{{0.000000,54.000000},{0.000000,240.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{1.000000,-54.000000},{0.000000,10.000000}}"/>
-      <Property Name="AlwaysOnTop" Value="True"/>
-      <Property Name="MouseRButtonHollow" Value="True"/>
-      <Property Name="MouseMoveHollow" Value="True"/>
-      <Property Name="MouseLButtonHollow" Value="True"/>
-      <Property Name="MouseHollow" Value="True"/>
-      <Property Name="Image" Value="set:TXHW2 image:TXHW_MainFrameR"/>
-      <Window Type="TLBB_ButtonClose" Name="Agname_Kong_Close">
-        <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{1.000000,-34.000000},{0.000000,11.000000}}"/>
-        <Event Name="Clicked" Function="Agname_Kong_Close();" />
-      </Window>
-    </Window>
-    <Window Type="TLBB_Frame_Lace37" Name="Agname_Kong_DragTitleBK">
-      <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,25.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.500000,-140.000000},{0.000000,15.000000}}"/>
-      <Property Name="AlwaysOnTop" Value="True"/>
-      <Property Name="RiseOnClick" Value="False"/>
-      <Property Name="MouseRButtonHollow" Value="True"/>
-      <Property Name="MouseMoveHollow" Value="True"/>
-      <Property Name="MouseLButtonHollow" Value="True"/>
-      <Property Name="MouseHollow" Value="True"/>
-    </Window>
-    <Window Type="TLBB_DragTitle" Name="Agname_Kong_DragTitle">
-      <Property Name="AlwaysOnTop" Value="True"/>
-      <Property Name="UnifiedSize" Value="{{1.000000,-120.000000},{0.000000,20.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.000000,18.000000}}"/>
-      <Property Name="Font" Value="YouYuan11.25" />
-      <Property Name="Text" Value="#gFF0FA0世界地图传送"/>
-      <Property Name="HorzFormatting" Value="HorzCentred" />
-      <Property Name="DragTarget" Value="Agname_Kong" />
-    </Window>    
-    <Window Type="TLBB_MainFrame16" Name="Agname_Kong_Frame">
-      <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{1.000000,-20.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
-      <Property Name="AttachEnabled" Value="True"/>
-      <Property Name="RiseOnClick" Value="False"/>
-      <Window Type="TLBB_Frame_Lace36" Name="Agname_Kong_FrameBK">
-        <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-30.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,24.000000}}"/>
-        <Property Name="RiseOnClick" Value="False"/>
-        <Window Type="TLBB_StaticImageNULL" Name="Agname_Kong_BKDragon">
-          <Property Name="UnifiedSize" Value="{{0.000000,480.000000},{0.000000,440.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.500000,-240.000000},{0.000000,20.000000}}"/>
-          <Property Name="Image" Value="set:BKLight image:BKDragon"/>
+    <Window Type="TLBB_MainFrameNULL" Name="Agname_Kong">
+        <Property Name="UnifiedSize" Value="{{0.000000,720.000000},{0.000000,480.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-340.000000},{0.500000,-270.000000}}"/>
+        <Event Name="Hidden" Function="Agname_Kong_Close();"/>
+        <Window Type="TLBB_StaticImageNULL" Name="Agname_Kong_FrameNULL_Left">
+            <Property Name="UnifiedSize" Value="{{0.000000,134.000000},{0.000000,102.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame36 image:Anniversary_LaceLT"/>
         </Window>
-        <Window Type="TLBB_StaticImageNULL" Name="Agname_Kong_BKCloundLeft">
-          <Property Name="UnifiedSize" Value="{{0.000000,96.000000},{0.000000,48.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,20.000000}}"/>
-          <Property Name="Image" Value="set:BKLight image:BKCloundLeft"/>
+        <Window Type="TLBB_StaticImageNULL" Name="Agname_Kong_FrameNULL_Right1">
+            <Property Name="UnifiedSize" Value="{{0.000000,106.000000},{0.000000,102.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-108.000000},{0.000000,0.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame36 image:Anniversary_LaceRT"/>
         </Window>
-        <Window Type="TLBB_StaticImageNULL" Name="Agname_Kong_BKCloundRight">
-          <Property Name="UnifiedSize" Value="{{0.000000,96.000000},{0.000000,48.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{1.000000,-115.000000},{1.000000,-88.000000}}"/>
-          <Property Name="Image" Value="set:BKLight image:BKCloundRight"/>
-        </Window>
-      </Window>
-      </Window>
-	  
-      <Window Type="DefaultWindow" Name="Agname_Kong_Client1">
-        <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,80.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,95.000000},{0.000000,75.000000}}"/>
-	<Window Type="TLBB_ButtonCommon14" Name="Agname_Kong_Yeqian2">
-	  <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,25.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,0.000000}}"/>
-	  <Property Name="Text" Value="主城门派"/>
-	  <Property Name="Selected" Value="True"/>
-	  <Property Name="CheckMode" Value="1"/>
-      <Event Name="Clicked" Function="Agname_Kong_Clickea(1);" />
-	</Window>
-	<Window Type="TLBB_ButtonCommon14" Name="Agname_Kong_Yeqian3">
-	  <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,25.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,460.000000},{0.000000,0.000000}}"/>
-	  <Property Name="Text" Value="逞凶打图"/>
-	  <Property Name="Selected" Value="True"/>
-	  <Property Name="CheckMode" Value="1"/>
-      <Event Name="Clicked" Function="Agname_Kong_Clickea(2);" />
-	</Window>
-	<Window Type="TLBB_ButtonCommon14" Name="Agname_Kong_Yeqian4">
-	  <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,25.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,350.000000},{0.000000,0.000000}}"/>
-	  <Property Name="Text" Value="活动BOSS"/>
-	  <Property Name="Selected" Value="True"/>
-	  <Property Name="CheckMode" Value="1"/>
-      <Event Name="Clicked" Function="Agname_Kong_Clickea(3);" />
-	</Window>
-	<Window Type="TLBB_ButtonCommon14" Name="Agname_Kong_Yeqian5">
-	  <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,25.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,240.000000},{0.000000,0.000000}}"/>
-	  <Property Name="Text" Value="日常副本"/>
-	  <Property Name="Selected" Value="True"/>
-	  <Property Name="CheckMode" Value="1"/>
-      <Event Name="Clicked" Function="Agname_Kong_Clickea(4);" />
-	</Window>
-	<Window Type="TLBB_ButtonCommon14" Name="Agname_Kong_Yeqian6">
-	  <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,25.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,230.000000},{0.000000,0.000000}}"/>
-	  	  <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,25.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,120.000000},{0.000000,0.000000}}"/>
-	  <Property Name="Text" Value="日常BOSS"/>
-	  <Property Name="Selected" Value="True"/>
-	  <Property Name="CheckMode" Value="1"/>
-      <Event Name="Clicked" Function="Agname_Kong_Clickea(5);" />
-	</Window>
-	<Window Type="TLBB_ButtonCommon14" Name="Agname_Kong_Yeqian7">
-	  <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,25.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,460.000000},{0.000000,0.000000}}"/>
-	  <Property Name="Text" Value="爆率·说明"/>
-	  <Property Name="Selected" Value="True"/>
-	  <Property Name="CheckMode" Value="1"/>
-      <Event Name="Clicked" Function="Agname_Kong_Clickea(6);" />
-	</Window>
-        <Window Type="TLBB_StaticImageNULL" Name="Agname_Kong_Yeqian7_Tips">
-          <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,532.000000},{0.000000,0.000000}}"/>
-          <Property Name="Image" Value="set:CommonFrame14 image:Tips"/>
-          <Property Name="MouseRButtonHollow" Value="True"/>
-          <Property Name="MouseMoveHollow" Value="True"/>
-          <Property Name="MouseLButtonHollow" Value="True"/>
-          <Property Name="MouseHollow" Value="True"/>
-          <Property Name="AlwaysOnTop" Value="True"/>
-        </Window>
-	
-      </Window>
-	
-
-	<Window Type="TLBB_Frame_Lace44" Name="Agname_Kong_Client">
-        <Property Name="UnifiedSize" Value="{{0.000000,570.000000},{0.000000,315.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,85.000000},{0.000000,120.000000}}"/>
-        <Property Name="RiseOnClick" Value="False"/>
-		
-        <Window Type="TLBB_ButtonCommon8" Name="Agname_Kong_goto1">
-          <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,30.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,30.000000}}"/>
-          <Event Name="Clicked" Function="Agname_Kong_Clicked(1);" />
-		</Window>
-        <Window Type="TLBB_ButtonCommon8" Name="Agname_Kong_goto2">
-          <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,30.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,120.000000},{0.000000,30.000000}}"/>
-          <Event Name="Clicked" Function="Agname_Kong_Clicked(2);" />
-		</Window>
-        <Window Type="TLBB_ButtonCommon8" Name="Agname_Kong_goto3">
-          <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,30.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,230.000000},{0.000000,30.000000}}"/>
-          <Event Name="Clicked" Function="Agname_Kong_Clicked(3);" />
-		</Window>
-        <Window Type="TLBB_ButtonCommon8" Name="Agname_Kong_goto4">
-          <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,30.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,340.000000},{0.000000,30.000000}}"/>
-          <Event Name="Clicked" Function="Agname_Kong_Clicked(4);" />
-		</Window>
-        <Window Type="TLBB_ButtonCommon8" Name="Agname_Kong_goto5">
-          <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,30.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,450.000000},{0.000000,30.000000}}"/>
-          <Event Name="Clicked" Function="Agname_Kong_Clicked(5);" />
-		</Window>
-		
-        <Window Type="TLBB_ButtonCommon8" Name="Agname_Kong_goto6">
-          <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,30.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,80.000000}}"/>
-          <Event Name="Clicked" Function="Agname_Kong_Clicked(6);" />
-		</Window>
-        <Window Type="TLBB_ButtonCommon8" Name="Agname_Kong_goto7">
-          <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,30.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,120.000000},{0.000000,80.000000}}"/>
-          <Event Name="Clicked" Function="Agname_Kong_Clicked(7);" />
-		</Window>
-        <Window Type="TLBB_ButtonCommon8" Name="Agname_Kong_goto8">
-          <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,30.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,230.000000},{0.000000,80.000000}}"/>
-          <Event Name="Clicked" Function="Agname_Kong_Clicked(8);" />
-		</Window>
-        <Window Type="TLBB_ButtonCommon8" Name="Agname_Kong_goto9">
-          <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,30.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,340.000000},{0.000000,80.000000}}"/>
-          <Event Name="Clicked" Function="Agname_Kong_Clicked(9);" />
-		</Window>
-        <Window Type="TLBB_ButtonCommon8" Name="Agname_Kong_goto10">
-          <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,30.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,450.000000},{0.000000,80.000000}}"/>
-          <Event Name="Clicked" Function="Agname_Kong_Clicked(10);" />
-		</Window>
-		
-        <Window Type="TLBB_ButtonCommon8" Name="Agname_Kong_goto11">
-          <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,30.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,130.000000}}"/>
-          <Event Name="Clicked" Function="Agname_Kong_Clicked(11);" />
-		</Window>
-        <Window Type="TLBB_ButtonCommon8" Name="Agname_Kong_goto12">
-          <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,30.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,120.000000},{0.000000,130.000000}}"/>
-          <Event Name="Clicked" Function="Agname_Kong_Clicked(12);" />
-		</Window>
-        <Window Type="TLBB_ButtonCommon8" Name="Agname_Kong_goto13">
-          <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,30.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,230.000000},{0.000000,130.000000}}"/>
-          <Event Name="Clicked" Function="Agname_Kong_Clicked(13);" />
-		</Window>
-        <Window Type="TLBB_ButtonCommon8" Name="Agname_Kong_goto14">
-          <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,30.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,340.000000},{0.000000,130.000000}}"/>
-          <Event Name="Clicked" Function="Agname_Kong_Clicked(14);" />
-		</Window>
-        <Window Type="TLBB_ButtonCommon8" Name="Agname_Kong_goto15">
-          <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,30.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,450.000000},{0.000000,130.000000}}"/>
-          <Event Name="Clicked" Function="Agname_Kong_Clicked(15);" />
-		</Window>
-		
-        <Window Type="TLBB_ButtonCommon8" Name="Agname_Kong_goto16">
-          <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,30.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,180.000000}}"/>
-          <Event Name="Clicked" Function="Agname_Kong_Clicked(16);" />
-		</Window>
-        <Window Type="TLBB_ButtonCommon8" Name="Agname_Kong_goto17">
-          <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,30.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,120.000000},{0.000000,180.000000}}"/>
-          <Event Name="Clicked" Function="Agname_Kong_Clicked(17);" />
-		</Window>
-        <Window Type="TLBB_ButtonCommon8" Name="Agname_Kong_goto18">
-          <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,30.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,230.000000},{0.000000,180.000000}}"/>
-          <Event Name="Clicked" Function="Agname_Kong_Clicked(18);" />
-		</Window>
-        <Window Type="TLBB_ButtonCommon8" Name="Agname_Kong_goto19">
-          <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,30.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,340.000000},{0.000000,180.000000}}"/>
-          <Event Name="Clicked" Function="Agname_Kong_Clicked(19);" />
-		</Window>
-        <Window Type="TLBB_ButtonCommon8" Name="Agname_Kong_goto20">
-          <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,30.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,450.000000},{0.000000,180.000000}}"/>
-          <Event Name="Clicked" Function="Agname_Kong_Clicked(20);" />
-		</Window>
-		
-		
-        <Window Type="TLBB_ButtonCommon16" Name="Agname_Kong_goto21">
-          <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,25.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,230.000000}}"/>
-          <Event Name="Clicked" Function="Agname_Kong_Clicked(21);" />
-		</Window>
-        <Window Type="TLBB_ButtonCommon16" Name="Agname_Kong_goto22">
-          <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,25.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,130.000000},{0.000000,230.000000}}"/>
-          <Event Name="Clicked" Function="Agname_Kong_Clicked(22);" />
-		</Window>
-        <Window Type="TLBB_ButtonCommon16" Name="Agname_Kong_goto23">
-          <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,25.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,240.000000},{0.000000,230.000000}}"/>
-          <Event Name="Clicked" Function="Agname_Kong_Clicked(23);" />
-		</Window>
-        <Window Type="TLBB_ButtonCommon16" Name="Agname_Kong_goto24">
-          <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,25.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,350.000000},{0.000000,230.000000}}"/>
-          <Event Name="Clicked" Function="Agname_Kong_Clicked(24);" />
-		</Window>
-        <Window Type="TLBB_ButtonCommon16" Name="Agname_Kong_goto25">
-          <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,25.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,460.000000},{0.000000,230.000000}}"/>
-          <Event Name="Clicked" Function="Agname_Kong_Clicked(25);" />
-		</Window>	
-		
-        <Window Type="TLBB_ButtonCommon16" Name="Agname_Kong_goto26">
-          <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,25.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,270.000000}}"/>
-          <Event Name="Clicked" Function="Agname_Kong_Clicked(26);" />
-		</Window>
-        <Window Type="TLBB_ButtonCommon16" Name="Agname_Kong_goto27">
-          <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,25.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,130.000000},{0.000000,270.000000}}"/>
-          <Event Name="Clicked" Function="Agname_Kong_Clicked(27);" />
-		</Window>
-        <Window Type="TLBB_ButtonCommon16" Name="Agname_Kong_goto28">
-          <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,25.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,240.000000},{0.000000,270.000000}}"/>
-          <Event Name="Clicked" Function="Agname_Kong_Clicked(28);" />
-		</Window>
-        <Window Type="TLBB_ButtonCommon16" Name="Agname_Kong_goto29">
-          <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,25.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,350.000000},{0.000000,270.000000}}"/>
-          <Event Name="Clicked" Function="Agname_Kong_Clicked(29);" />
-		</Window>
-        <Window Type="TLBB_ButtonCommon16" Name="Agname_Kong_goto30">
-          <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,25.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,460.000000},{0.000000,270.000000}}"/>
-          <Event Name="Clicked" Function="Agname_Kong_Clicked(30);" />
-		</Window>		  
-</Window>
-
-
-	<Window Type="TLBB_Frame_Lace44" Name="Agname_Kong_Client2">
-        <Property Name="UnifiedSize" Value="{{0.000000,570.000000},{0.000000,315.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,85.000000},{0.000000,120.000000}}"/>
-        <Property Name="RiseOnClick" Value="False"/>
-		
-         <Window Type="TLBB_ListBoxCommon" Name="Agname_Kong_List">
-          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
-          <Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,300.000000}}"/>
-         <Event Name="ItemSelectionChanged" Function="Agname_Kong_List_Selected();" />
-          </Window>
-		  
-
-		
-      <Window Type="TLBB_Frame_Lace24" Name="Agname_Kong_TextBK">
-          <Property Name="UnifiedPosition" Value="{{0.000000,195.000000},{0.000000,10.000000}}"/>
-          <Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,300.000000}}"/>
-        <Property Name="RiseOnClick" Value="False"/>
-        <Window Type="TLBB_MeshWindow" Name="Agname_Kong_MeshW">
-          <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
-          <Property Name="UnifiedSize" Value="{{0.000000,176.000000},{0.000000,296.000000}}"/>
-          <Property Name="MouseHollow" Value="True" />
-          <Property Name="AlwaysOnTop" value="True"/>
-        </Window>
-        </Window>
-		
-      <Window Type="TLBB_Frame_Lace24" Name="Agname_Kong_TextBK1">
-          <Property Name="UnifiedPosition" Value="{{0.000000,380.000000},{0.000000,10.000000}}"/>
-          <Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,300.000000}}"/>
-        <Property Name="RiseOnClick" Value="False"/>
-            <Window Type="TLBB_SimpleText" Name="Agname_Kong_Item">
-              <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,36.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,5.000000}}"/>
-              <Property Name="HorzFormatting" Value="LeftAligned"/>
-              <Property Name="Font" Value="YouYuan11.25"/>
-              <Property Name="Text" Value="#K详细介绍"/>
-            </Window>
-            <Window Type="TLBB_SimpleText" Name="Agname_Kong_Item1">
-              <Property Name="UnifiedSize" Value="{{0.000000,160.000000},{0.000000,250.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
-          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
-          <Property Name="VertFormatting" Value="VertCentred"/>
-              <Property Name="Text" Value="#K点击相应的BOSS或者副本即可显示难度、掉落物品、刷新时间"/>
+        <Window Type="TLBB_StaticImageNULL" Name="Agname_Kong_FrameNULL_Right2">
+            <Property Name="UnifiedSize" Value="{{0.000000,54.000000},{0.000000,240.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-54.000000},{0.000000,10.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:TXHW2 image:TXHW_MainFrameR"/>
+            <Window Type="TLBB_ButtonClose" Name="Agname_Kong_Close">
+                <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-34.000000},{0.000000,11.000000}}"/>
+                <Event Name="Clicked" Function="Agname_Kong_Close();"/>
             </Window>
         </Window>
-	
-		
-		</Window>
-		
+        <Window Type="TLBB_Frame_Lace37" Name="Agname_Kong_DragTitleBK">
+            <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,25.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-140.000000},{0.000000,15.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+        </Window>
+        <Window Type="TLBB_DragTitle" Name="Agname_Kong_DragTitle">
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,-120.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.000000,18.000000}}"/>
+            <Property Name="Font" Value="YouYuan11.25"/>
+            <Property Name="Text" Value="#gFF0FA0世界地图传送"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+            <Property Name="DragTarget" Value="Agname_Kong"/>
+        </Window>
+        <Window Type="TLBB_MainFrame16" Name="Agname_Kong_Frame">
+            <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{1.000000,-20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+            <Property Name="AttachEnabled" Value="True"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Window Type="TLBB_Frame_Lace36" Name="Agname_Kong_FrameBK">
+                <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-30.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,24.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Window Type="TLBB_StaticImageNULL" Name="Agname_Kong_BKDragon">
+                    <Property Name="UnifiedSize" Value="{{0.000000,480.000000},{0.000000,440.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.500000,-240.000000},{0.000000,20.000000}}"/>
+                    <Property Name="Image" Value="set:BKLight image:BKDragon"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="Agname_Kong_BKCloundLeft">
+                    <Property Name="UnifiedSize" Value="{{0.000000,96.000000},{0.000000,48.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,20.000000}}"/>
+                    <Property Name="Image" Value="set:BKLight image:BKCloundLeft"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="Agname_Kong_BKCloundRight">
+                    <Property Name="UnifiedSize" Value="{{0.000000,96.000000},{0.000000,48.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{1.000000,-115.000000},{1.000000,-88.000000}}"/>
+                    <Property Name="Image" Value="set:BKLight image:BKCloundRight"/>
+                </Window>
+            </Window>
+        </Window>
 
-</Window>
+        <Window Type="DefaultWindow" Name="Agname_Kong_Client1">
+            <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,80.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,95.000000},{0.000000,75.000000}}"/>
+            <Window Type="TLBB_ButtonCommon14" Name="Agname_Kong_Yeqian2">
+                <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,25.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,0.000000}}"/>
+                <Property Name="Text" Value="主城门派"/>
+                <Property Name="Selected" Value="True"/>
+                <Property Name="CheckMode" Value="1"/>
+                <Event Name="Clicked" Function="Agname_Kong_Clickea(1);"/>
+            </Window>
+            <Window Type="TLBB_ButtonCommon14" Name="Agname_Kong_Yeqian3">
+                <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,25.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,460.000000},{0.000000,0.000000}}"/>
+                <Property Name="Text" Value="逞凶打图"/>
+                <Property Name="Selected" Value="True"/>
+                <Property Name="CheckMode" Value="1"/>
+                <Event Name="Clicked" Function="Agname_Kong_Clickea(2);"/>
+            </Window>
+            <Window Type="TLBB_ButtonCommon14" Name="Agname_Kong_Yeqian4">
+                <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,25.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,350.000000},{0.000000,0.000000}}"/>
+                <Property Name="Text" Value="活动BOSS"/>
+                <Property Name="Selected" Value="True"/>
+                <Property Name="CheckMode" Value="1"/>
+                <Event Name="Clicked" Function="Agname_Kong_Clickea(3);"/>
+            </Window>
+            <Window Type="TLBB_ButtonCommon14" Name="Agname_Kong_Yeqian5">
+                <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,25.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,240.000000},{0.000000,0.000000}}"/>
+                <Property Name="Text" Value="日常副本"/>
+                <Property Name="Selected" Value="True"/>
+                <Property Name="CheckMode" Value="1"/>
+                <Event Name="Clicked" Function="Agname_Kong_Clickea(4);"/>
+            </Window>
+            <Window Type="TLBB_ButtonCommon14" Name="Agname_Kong_Yeqian6">
+                <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,25.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,230.000000},{0.000000,0.000000}}"/>
+                <Property Name="Text" Value="日常BOSS"/>
+                <Property Name="Selected" Value="True"/>
+                <Property Name="CheckMode" Value="1"/>
+                <Event Name="Clicked" Function="Agname_Kong_Clickea(5);"/>
+            </Window>
+            <Window Type="TLBB_ButtonCommon14" Name="Agname_Kong_Yeqian7">
+                <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,25.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,460.000000},{0.000000,0.000000}}"/>
+                <Property Name="Text" Value="爆率·说明"/>
+                <Property Name="Selected" Value="True"/>
+                <Property Name="CheckMode" Value="1"/>
+                <Event Name="Clicked" Function="Agname_Kong_Clickea(6);"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="Agname_Kong_Yeqian7_Tips">
+                <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,532.000000},{0.000000,0.000000}}"/>
+                <Property Name="Image" Value="set:CommonFrame14 image:Tips"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+
+        </Window>
+
+
+        <Window Type="TLBB_Frame_Lace44" Name="Agname_Kong_Client">
+            <Property Name="UnifiedSize" Value="{{0.000000,570.000000},{0.000000,315.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,85.000000},{0.000000,120.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+
+            <Window Type="TLBB_ButtonCommon8" Name="Agname_Kong_goto1">
+                <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,30.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,30.000000}}"/>
+                <Event Name="Clicked" Function="Agname_Kong_Clicked(1);"/>
+            </Window>
+            <Window Type="TLBB_ButtonCommon8" Name="Agname_Kong_goto2">
+                <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,30.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,120.000000},{0.000000,30.000000}}"/>
+                <Event Name="Clicked" Function="Agname_Kong_Clicked(2);"/>
+            </Window>
+            <Window Type="TLBB_ButtonCommon8" Name="Agname_Kong_goto3">
+                <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,30.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,230.000000},{0.000000,30.000000}}"/>
+                <Event Name="Clicked" Function="Agname_Kong_Clicked(3);"/>
+            </Window>
+            <Window Type="TLBB_ButtonCommon8" Name="Agname_Kong_goto4">
+                <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,30.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,340.000000},{0.000000,30.000000}}"/>
+                <Event Name="Clicked" Function="Agname_Kong_Clicked(4);"/>
+            </Window>
+            <Window Type="TLBB_ButtonCommon8" Name="Agname_Kong_goto5">
+                <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,30.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,450.000000},{0.000000,30.000000}}"/>
+                <Event Name="Clicked" Function="Agname_Kong_Clicked(5);"/>
+            </Window>
+
+            <Window Type="TLBB_ButtonCommon8" Name="Agname_Kong_goto6">
+                <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,30.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,80.000000}}"/>
+                <Event Name="Clicked" Function="Agname_Kong_Clicked(6);"/>
+            </Window>
+            <Window Type="TLBB_ButtonCommon8" Name="Agname_Kong_goto7">
+                <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,30.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,120.000000},{0.000000,80.000000}}"/>
+                <Event Name="Clicked" Function="Agname_Kong_Clicked(7);"/>
+            </Window>
+            <Window Type="TLBB_ButtonCommon8" Name="Agname_Kong_goto8">
+                <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,30.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,230.000000},{0.000000,80.000000}}"/>
+                <Event Name="Clicked" Function="Agname_Kong_Clicked(8);"/>
+            </Window>
+            <Window Type="TLBB_ButtonCommon8" Name="Agname_Kong_goto9">
+                <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,30.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,340.000000},{0.000000,80.000000}}"/>
+                <Event Name="Clicked" Function="Agname_Kong_Clicked(9);"/>
+            </Window>
+            <Window Type="TLBB_ButtonCommon8" Name="Agname_Kong_goto10">
+                <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,30.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,450.000000},{0.000000,80.000000}}"/>
+                <Event Name="Clicked" Function="Agname_Kong_Clicked(10);"/>
+            </Window>
+
+            <Window Type="TLBB_ButtonCommon8" Name="Agname_Kong_goto11">
+                <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,30.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,130.000000}}"/>
+                <Event Name="Clicked" Function="Agname_Kong_Clicked(11);"/>
+            </Window>
+            <Window Type="TLBB_ButtonCommon8" Name="Agname_Kong_goto12">
+                <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,30.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,120.000000},{0.000000,130.000000}}"/>
+                <Event Name="Clicked" Function="Agname_Kong_Clicked(12);"/>
+            </Window>
+            <Window Type="TLBB_ButtonCommon8" Name="Agname_Kong_goto13">
+                <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,30.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,230.000000},{0.000000,130.000000}}"/>
+                <Event Name="Clicked" Function="Agname_Kong_Clicked(13);"/>
+            </Window>
+            <Window Type="TLBB_ButtonCommon8" Name="Agname_Kong_goto14">
+                <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,30.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,340.000000},{0.000000,130.000000}}"/>
+                <Event Name="Clicked" Function="Agname_Kong_Clicked(14);"/>
+            </Window>
+            <Window Type="TLBB_ButtonCommon8" Name="Agname_Kong_goto15">
+                <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,30.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,450.000000},{0.000000,130.000000}}"/>
+                <Event Name="Clicked" Function="Agname_Kong_Clicked(15);"/>
+            </Window>
+
+            <Window Type="TLBB_ButtonCommon8" Name="Agname_Kong_goto16">
+                <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,30.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,180.000000}}"/>
+                <Event Name="Clicked" Function="Agname_Kong_Clicked(16);"/>
+            </Window>
+            <Window Type="TLBB_ButtonCommon8" Name="Agname_Kong_goto17">
+                <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,30.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,120.000000},{0.000000,180.000000}}"/>
+                <Event Name="Clicked" Function="Agname_Kong_Clicked(17);"/>
+            </Window>
+            <Window Type="TLBB_ButtonCommon8" Name="Agname_Kong_goto18">
+                <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,30.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,230.000000},{0.000000,180.000000}}"/>
+                <Event Name="Clicked" Function="Agname_Kong_Clicked(18);"/>
+            </Window>
+            <Window Type="TLBB_ButtonCommon8" Name="Agname_Kong_goto19">
+                <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,30.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,340.000000},{0.000000,180.000000}}"/>
+                <Event Name="Clicked" Function="Agname_Kong_Clicked(19);"/>
+            </Window>
+            <Window Type="TLBB_ButtonCommon8" Name="Agname_Kong_goto20">
+                <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,30.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,450.000000},{0.000000,180.000000}}"/>
+                <Event Name="Clicked" Function="Agname_Kong_Clicked(20);"/>
+            </Window>
+
+
+            <Window Type="TLBB_ButtonCommon16" Name="Agname_Kong_goto21">
+                <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,25.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,230.000000}}"/>
+                <Event Name="Clicked" Function="Agname_Kong_Clicked(21);"/>
+            </Window>
+            <Window Type="TLBB_ButtonCommon16" Name="Agname_Kong_goto22">
+                <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,25.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,130.000000},{0.000000,230.000000}}"/>
+                <Event Name="Clicked" Function="Agname_Kong_Clicked(22);"/>
+            </Window>
+            <Window Type="TLBB_ButtonCommon16" Name="Agname_Kong_goto23">
+                <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,25.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,240.000000},{0.000000,230.000000}}"/>
+                <Event Name="Clicked" Function="Agname_Kong_Clicked(23);"/>
+            </Window>
+            <Window Type="TLBB_ButtonCommon16" Name="Agname_Kong_goto24">
+                <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,25.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,350.000000},{0.000000,230.000000}}"/>
+                <Event Name="Clicked" Function="Agname_Kong_Clicked(24);"/>
+            </Window>
+            <Window Type="TLBB_ButtonCommon16" Name="Agname_Kong_goto25">
+                <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,25.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,460.000000},{0.000000,230.000000}}"/>
+                <Event Name="Clicked" Function="Agname_Kong_Clicked(25);"/>
+            </Window>
+
+            <Window Type="TLBB_ButtonCommon16" Name="Agname_Kong_goto26">
+                <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,25.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,270.000000}}"/>
+                <Event Name="Clicked" Function="Agname_Kong_Clicked(26);"/>
+            </Window>
+            <Window Type="TLBB_ButtonCommon16" Name="Agname_Kong_goto27">
+                <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,25.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,130.000000},{0.000000,270.000000}}"/>
+                <Event Name="Clicked" Function="Agname_Kong_Clicked(27);"/>
+            </Window>
+            <Window Type="TLBB_ButtonCommon16" Name="Agname_Kong_goto28">
+                <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,25.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,240.000000},{0.000000,270.000000}}"/>
+                <Event Name="Clicked" Function="Agname_Kong_Clicked(28);"/>
+            </Window>
+            <Window Type="TLBB_ButtonCommon16" Name="Agname_Kong_goto29">
+                <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,25.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,350.000000},{0.000000,270.000000}}"/>
+                <Event Name="Clicked" Function="Agname_Kong_Clicked(29);"/>
+            </Window>
+            <Window Type="TLBB_ButtonCommon16" Name="Agname_Kong_goto30">
+                <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,25.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,460.000000},{0.000000,270.000000}}"/>
+                <Event Name="Clicked" Function="Agname_Kong_Clicked(30);"/>
+            </Window>
+        </Window>
+
+
+        <Window Type="TLBB_Frame_Lace44" Name="Agname_Kong_Client2">
+            <Property Name="UnifiedSize" Value="{{0.000000,570.000000},{0.000000,315.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,85.000000},{0.000000,120.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+
+            <Window Type="TLBB_ListBoxCommon" Name="Agname_Kong_List">
+                <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,300.000000}}"/>
+                <Event Name="ItemSelectionChanged" Function="Agname_Kong_List_Selected();"/>
+            </Window>
+
+
+            <Window Type="TLBB_Frame_Lace24" Name="Agname_Kong_TextBK">
+                <Property Name="UnifiedPosition" Value="{{0.000000,195.000000},{0.000000,10.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,300.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Window Type="TLBB_MeshWindow" Name="Agname_Kong_MeshW">
+                    <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
+                    <Property Name="UnifiedSize" Value="{{0.000000,176.000000},{0.000000,296.000000}}"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="AlwaysOnTop" value="True"/>
+                </Window>
+            </Window>
+
+            <Window Type="TLBB_Frame_Lace24" Name="Agname_Kong_TextBK1">
+                <Property Name="UnifiedPosition" Value="{{0.000000,380.000000},{0.000000,10.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,300.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Window Type="TLBB_SimpleText" Name="Agname_Kong_Item">
+                    <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,36.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,5.000000}}"/>
+                    <Property Name="HorzFormatting" Value="LeftAligned"/>
+                    <Property Name="Font" Value="YouYuan11.25"/>
+                    <Property Name="Text" Value="#K详细介绍"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="Agname_Kong_Item1">
+                    <Property Name="UnifiedSize" Value="{{0.000000,160.000000},{0.000000,250.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+                    <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+                    <Property Name="VertFormatting" Value="VertCentred"/>
+                    <Property Name="Text" Value="#K点击相应的BOSS或者副本即可显示难度、掉落物品、刷新时间"/>
+                </Window>
+            </Window>
+
+
+        </Window>
+
+
+    </Window>
 
 </GUILayout>

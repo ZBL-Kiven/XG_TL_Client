@@ -69,14 +69,6 @@ function BossTopList_TimeReach(nIndex)
 	end
 end
 
-function BossTopList_ToMsg()
-	Clear_XSCRIPT()
-		Set_XSCRIPT_Function_Name( "acme_spendworldmsg" );
-		Set_XSCRIPT_ScriptID(810114);
-		Set_XSCRIPT_ParamCount(0);
-	Send_XSCRIPT()
-end
-
 function BossTopListUpdata()
 	if g_BossTopList_Scene == 1 then
 		return
@@ -105,18 +97,6 @@ function BossTopList_InitFrame()
 			BossTopList_List:AddNewItem(g_BossTopList_Data[i][3], 3, i-1);
 		end
 	end
-	-- if strInfo then
-		-- BossTopList_DragTitle:SetText(strInfo.title)
-		-- BossTopList_Text:SetText(strInfo.board)
-		-- BossTopList_Pair_Title1:SetText(strInfo.msg)
-		-- BossTopList_TimeTitle:SetText("#{MJXZ_210510_15}")
-		-- BossTopList_Time:SetText("#G"..count)
-		-- showstate(state)
-		
-		-- local sec = Lua_GetDiffTime_InSecond_ServerTime(23,59,0)
-		-- BossTopList_Time2:SetProperty("TextColor","FB00FF00")
-		-- BossTopList_Time2:SetProperty("Timer",sec)
-	-- end
 end
 
 function BossTopList_OpenMini()

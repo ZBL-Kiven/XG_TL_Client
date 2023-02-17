@@ -1,4 +1,4 @@
-local g_YueKa_Frame_UnifiedYPosition;
+local g_YueKa_Frame_UnifiedXPosition;
 local g_YueKa_Frame_UnifiedYPosition;
 
 function YueKa_PreLoad()
@@ -21,8 +21,8 @@ function YueKa_OnEvent(event)
 		YueKa_Close()
 	elseif event == "PLAYER_LEAVE_WORLD" then
 		YueKa_Close()
-	elseif (event == "UI_COMMAND" and tonumber( arg0 ) == 2021040101) then
-		if ( IsWindowShow( "YueKa" ) == false) then
+	elseif (event == "UI_COMMAND" and tonumber(arg0) == 2021040101) then
+		if (IsWindowShow("YueKa") == false) then
 			YueKa_OnShown()
 		else
 			YueKa_OnShown()
@@ -32,13 +32,13 @@ end
 
 function YueKa_OnLoad()
 	-- 保存界面的默认相对位置
-	g_YueKa_Frame_UnifiedXPosition	= YueKa_Frame:GetProperty("UnifiedXPosition");
-	g_YueKa_Frame_UnifiedYPosition	= YueKa_Frame:GetProperty("UnifiedYPosition");
+	g_YueKa_Frame_UnifiedXPosition = YueKa_Frame:GetProperty("UnifiedXPosition");
+	g_YueKa_Frame_UnifiedYPosition = YueKa_Frame:GetProperty("UnifiedYPosition");
 end
 
 function YueKa_OnShown()
 	YueKa_Text1:SetText(Get_XParam_STR(0))
-	YueKa_Text3:SetProperty("Timer",tostring(Get_XParam_STR(1)))
+	YueKa_Text3:SetProperty("Timer", tostring(Get_XParam_STR(1)))
 	this:Show();
 end
 
@@ -46,7 +46,7 @@ end
 -- 界面的默认相对位置
 --================================================
 function YueKa_ResetPos()
-	YueKa_Frame:SetProperty("UnifiedXPosition", g_YueKaFrame_UnifiedXPosition);
+	YueKa_Frame:SetProperty("UnifiedXPosition", g_YueKa_Frame_UnifiedXPosition);
 	YueKa_Frame:SetProperty("UnifiedYPosition", g_YueKa_Frame_UnifiedYPosition);
 end
 
@@ -58,7 +58,10 @@ function YueKa_Btn_Clicked(index)
 	Clear_XSCRIPT()
 	Set_XSCRIPT_Function_Name("XG_YueKa")
 	Set_XSCRIPT_ScriptID(916527)
-	Set_XSCRIPT_Parameter( 0, index );					-- 参数一
+	Set_XSCRIPT_Parameter(0, index);                    -- 参数一
 	Set_XSCRIPT_ParamCount(1)
 	Send_XSCRIPT()
+	if index ~= 1 or index ~= 5 then
+		YueKa_Close()
+	end
 end
