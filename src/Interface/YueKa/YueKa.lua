@@ -61,7 +61,7 @@ function YueKa_Btn_Clicked(index)
 	Set_XSCRIPT_Parameter(0, index);                    -- ²ÎÊýÒ»
 	Set_XSCRIPT_ParamCount(1)
 	Send_XSCRIPT()
-	if index ~= 1 or index ~= 5 then
+	if index ~= 1 and index ~= 5 then
 		YueKa_Close()
 	end
 end

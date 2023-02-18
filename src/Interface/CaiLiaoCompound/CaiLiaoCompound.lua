@@ -454,13 +454,6 @@ function CaiLiaoCompound_ShowDetail(bInit)
 	if needItemId == nil or needItemId <= 0 then
 		return
 	end
---    Clear_XSCRIPT();
---		Set_XSCRIPT_Function_Name("UICommand");
---		Set_XSCRIPT_ScriptID(999998);
---		Set_XSCRIPT_Parameter(0,tonumber(needItemId));
---		Set_XSCRIPT_Parameter(1,tonumber(201812032));
---		Set_XSCRIPT_ParamCount(2);
---	Send_XSCRIPT();	
 	local newLevel = tSubData.newlevel
 	if newLevel == nil or newLevel <= 0 then
 		return

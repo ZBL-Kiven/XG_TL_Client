@@ -110,20 +110,13 @@ function TreasureBox_AwardPreview_InputOK()
 		PushDebugMessage("请输入狩猎码。");
 		return
 	end
-	--判断CDK长度
-	if string.len(cardNum) ~= 14 then
-		PushDebugMessage("请输入正确的狩猎码。");
-		return
-	end
-	--清空
-	TreasureBox_AwardPreview_Input:SetText("");
-	NewUserCard(cardNum);
+	NewUserCard(cardNum)
 end
 
 function TreasureBox_AwardPreview_InputOK_test()
 	Clear_XSCRIPT()
-	Set_XSCRIPT_Function_Name("ChackeCDKforItem");
-	Set_XSCRIPT_ScriptID(002057);
+	Set_XSCRIPT_Function_Name("CheckExchangeItem");
+	Set_XSCRIPT_ScriptID(2302121);
 	Set_XSCRIPT_ParamCount(0);
 	Send_XSCRIPT()
 end

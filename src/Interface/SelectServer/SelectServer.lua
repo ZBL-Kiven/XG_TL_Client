@@ -1356,7 +1356,7 @@ end
 
 --帐号充值
 function SelectServer_AccountChongZhi()
-			PushDebugMessage("联系代理充值！")
+			PushDebugMessage("无充值渠道，请通过狩猎券兑换点数！")
 end
 
 function SelectServer_shangyibu_click()
