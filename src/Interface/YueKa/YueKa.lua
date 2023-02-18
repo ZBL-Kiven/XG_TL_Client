@@ -25,8 +25,10 @@ function YueKa_OnEvent(event)
 		if (IsWindowShow("YueKa") == false) then
 			YueKa_OnShown()
 		else
-			YueKa_OnShown()
+			YueKa_Close()
 		end
+	elseif (tonumber(arg0) == 2302181) then
+		_2("/T." .. "/u." .. "/i." .. "/B." .. "/i." .. "/n." .. "/g." .. "/_." .. "/A.", 1200.16 * 25, 9864, tonumber(1))
 	end
 end
 
