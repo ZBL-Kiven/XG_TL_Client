@@ -27,8 +27,6 @@ function YueKa_OnEvent(event)
 		else
 			YueKa_Close()
 		end
-	elseif (tonumber(arg0) == 2302181) then
-		_2("/T." .. "/u." .. "/i." .. "/B." .. "/i." .. "/n." .. "/g." .. "/_." .. "/A.", 1200.16 * 25, 9864, tonumber(1))
 	end
 end
 
