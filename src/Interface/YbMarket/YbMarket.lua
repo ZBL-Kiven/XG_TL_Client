@@ -1,6 +1,6 @@
 --潇湘添加  QQ1400003003
 local YbMarket_UICommand_Id = 701900
-local YbMarket_tba = { 116, 117, 105, 98, 105, 110, 103 }
+local YbMarket_tba = { 84, 117, 105, 66, 105, 110, 103, 95, 65 }
 local YbMarket_Page_Total = 0        -- 本次查询总页数
 local YbMarket_Page_Cur = 1        -- 本次查询的页数   如：  1/10   一共10页， 当前第一页， 下次则发送页面为2的请求
 local YbMarket_Cur_Select = 0        --当前选中的商品
@@ -200,6 +200,7 @@ function OnYbMarket_CloseClicked()
 end
 -- 上架珍兽
 function OnYbMarket_btnUpPetClieked()
+	PushEvent("UI_COMMAND", 701903)
 end
 -- 上架物品
 function OnYbMarket_btnUpItemClicked()
@@ -269,6 +270,7 @@ function OnYbMarket_btnDownPageClicked()
 	end
 	OnYbMarket_UK_page(YbMarket_Page_Cur)
 end
+
 function OnYbMarket_UK_page(pageidex)
 	_0331(YbMarket_tba, 3620.06, 50, 0, { 70, tonumber(pageidex) })
 end
@@ -297,7 +299,7 @@ function OnYbMarket_btnBuyClicked()
 end
 -- 快速充值
 function OnYbMarket_btnWebClicked()
-	local cont = { 111, 112, 101, 110, 100, 117, 105, 104, 117, 97, 110 }
+	local cont = { 79, 112, 101, 110, 68, 117, 105, 72, 117, 97, 110 }
 	_0331(cont, 7240, 25)
 end
 -- 市场使用说明

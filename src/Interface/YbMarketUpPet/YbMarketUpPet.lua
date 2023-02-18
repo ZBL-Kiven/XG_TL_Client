@@ -16,7 +16,7 @@ function YbMarketUpPet_OnLoad()
 end
 
 function YbMarketUpPet_OnEvent(event)
-	if event == "OPEN_UP_PET" then
+	if event == "UI_COMMAND" and tonumber(arg0) == 701903 then
 		if this:IsVisible() then
 			return
 		end
@@ -24,9 +24,7 @@ function YbMarketUpPet_OnEvent(event)
 		this:Show()
 		Pet:ShowPetList(1)
 	elseif event == "REPLY_MISSION_PET" and this:IsVisible() then
-		
 		YbMarketUpPet_OnSelectPet(tonumber(arg0))
-	
 	elseif event == "UPDATE_PET_PAGE" and this:IsVisible() then
 		YbMarketUpPet_CleanUp()
 	elseif event == "CLOSE_UP_PET" and this:IsVisible() then

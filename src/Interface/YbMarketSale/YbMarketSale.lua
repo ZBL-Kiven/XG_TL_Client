@@ -11,7 +11,7 @@ local YbMarketSale_g_nContentButton = {}
 local YbMarketSale_Now_page = 1
 local YbMarketSale_Dowbtn_page = 0
 local xiaoxiang_sskjhhe = {}
-local YbMarket_tba = { 116, 117, 105, 98, 105, 110, 103 }
+local YbMarket_tba = { 84, 117, 105, 66, 105, 110, 103, 95, 65 }
 -----------------------------------------------------------------------
 -- OnGameEvent
 -----------------------------------------------------------------------
@@ -83,17 +83,7 @@ function YbMarketSale_OnLoad()
 	}
 end
 function YbMarketSale_OnEvent(event)
-	if event == "OPEN_ONSALE000" then
-		if this:IsVisible() then
-			return
-		end
-		YbMarketSale_ClearFrame()
-		YbMarketSale_Check_Item:SetCheck(1)
-		YbMarketSale_Check_Pet:SetCheck(0)
-		m_CurTab = 2
-		this:Show()
-		Auction:AskAuctionBoxList()
-	elseif event == "UI_COMMAND" and tonumber(arg0) == YbMarketSale_UICommand_Id then
+	if event == "UI_COMMAND" and tonumber(arg0) == YbMarketSale_UICommand_Id then
 		if Get_XParam_STR(0) ~= nil then
 			g_YB_stringR = Get_XParam_STR(0)
 		else

@@ -1,6 +1,6 @@
 --潇湘添加 qq1400003003
 local m_Item_Idx = -1
-local YbMarket_tba = { 116, 117, 105, 98, 105, 110, 103 }
+local YbMarket_tba = { 84, 117, 105, 66, 105, 110, 103, 95, 65 }
 --	KVK拍卖行上架限制
 local g_KvkMarketLimitBeginDate = 20140403
 local g_KvkMarketLimitEndDate = 20140417
