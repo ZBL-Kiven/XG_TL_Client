@@ -13,36 +13,46 @@ x001230_g_msg = {
 x001230_g_nActivityId = 9
 x001230_g_nScnenId = 125
 x001230_g_bHuashaning = 0
-x001230_g_nMenpaikills = { { id = 0, kill = 0 },
-						   { id = 1, kill = 0 },
-						   { id = 2, kill = 0 },
-						   { id = 3, kill = 0 },
-						   { id = 4, kill = 0 },
-						   { id = 5, kill = 0 },
-						   { id = 6, kill = 0 },
-						   { id = 7, kill = 0 },
-						   { id = 8, kill = 0 }, }
-x001230_g_nMenpaiQiansan = { { id = 0, player01 = "", player02 = "", player03 = "", playerid01 = 0, playerid02 = 0, playerid03 = 0 },
-							 { id = 1, player01 = "", player02 = "", player03 = "", playerid01 = 0, playerid02 = 0, playerid03 = 0 },
-							 { id = 2, player01 = "", player02 = "", player03 = "", playerid01 = 0, playerid02 = 0, playerid03 = 0 },
-							 { id = 3, player01 = "", player02 = "", player03 = "", playerid01 = 0, playerid02 = 0, playerid03 = 0 },
-							 { id = 4, player01 = "", player02 = "", player03 = "", playerid01 = 0, playerid02 = 0, playerid03 = 0 },
-							 { id = 5, player01 = "", player02 = "", player03 = "", playerid01 = 0, playerid02 = 0, playerid03 = 0 },
-							 { id = 6, player01 = "", player02 = "", player03 = "", playerid01 = 0, playerid02 = 0, playerid03 = 0 },
-							 { id = 7, player01 = "", player02 = "", player03 = "", playerid01 = 0, playerid02 = 0, playerid03 = 0 },
-							 { id = 8, player01 = "", player02 = "", player03 = "", playerid01 = 0, playerid02 = 0, playerid03 = 0 }, }
-x001230_g_nMenpaiShiZhuang = { { id = 10124009, name = "空色" },
-							   { id = 10124010, name = "圣火" },
-							   { id = 10124011, name = "碧陌" },
-							   { id = 10124013, name = "鹤雪" },
-							   { id = 10124012, name = "泣影" },
-							   { id = 10124014, name = "凶落" },
-							   { id = 10124017, name = "阳潇" },
-							   { id = 10124015, name = "月漫" },
-							   { id = 10124016, name = "幻殇" }, }
-x001230_g_nCailiaoJiangli = { { id = 20500000, name = "精铁碎片" },
-							  { id = 20501000, name = "棉布碎片" },
-							  { id = 20502000, name = "秘银碎片" }, }
+x001230_g_nMenpaikills = {
+	{ id = 0, kill = 0 },
+	{ id = 1, kill = 0 },
+	{ id = 2, kill = 0 },
+	{ id = 3, kill = 0 },
+	{ id = 4, kill = 0 },
+	{ id = 5, kill = 0 },
+	{ id = 6, kill = 0 },
+	{ id = 7, kill = 0 },
+	{ id = 8, kill = 0 },
+	{ id = 9, kill = 0 },
+}
+x001230_g_nMenpaiQiansan = {
+	{ id = 0, player01 = "", player02 = "", player03 = "", playerid01 = 0, playerid02 = 0, playerid03 = 0 },
+	{ id = 1, player01 = "", player02 = "", player03 = "", playerid01 = 0, playerid02 = 0, playerid03 = 0 },
+	{ id = 2, player01 = "", player02 = "", player03 = "", playerid01 = 0, playerid02 = 0, playerid03 = 0 },
+	{ id = 3, player01 = "", player02 = "", player03 = "", playerid01 = 0, playerid02 = 0, playerid03 = 0 },
+	{ id = 4, player01 = "", player02 = "", player03 = "", playerid01 = 0, playerid02 = 0, playerid03 = 0 },
+	{ id = 5, player01 = "", player02 = "", player03 = "", playerid01 = 0, playerid02 = 0, playerid03 = 0 },
+	{ id = 6, player01 = "", player02 = "", player03 = "", playerid01 = 0, playerid02 = 0, playerid03 = 0 },
+	{ id = 7, player01 = "", player02 = "", player03 = "", playerid01 = 0, playerid02 = 0, playerid03 = 0 },
+	{ id = 8, player01 = "", player02 = "", player03 = "", playerid01 = 0, playerid02 = 0, playerid03 = 0 },
+	{ id = 9, player01 = "", player02 = "", player03 = "", playerid01 = 0, playerid02 = 0, playerid03 = 0 },
+}
+x001230_g_nMenpaiShiZhuang = {
+	{ id = 10124009, name = "空色" },
+	{ id = 10124010, name = "圣火" },
+	{ id = 10124011, name = "碧陌" },
+	{ id = 10124013, name = "鹤雪" },
+	{ id = 10124012, name = "泣影" },
+	{ id = 10124014, name = "凶落" },
+	{ id = 10124017, name = "阳潇" },
+	{ id = 10124015, name = "月漫" },
+	{ id = 10124016, name = "幻殇" },
+	{ id = 10124074, name = "玉茗" },
+}
+x001230_g_nCailiaoJiangli = {
+	{ id = 20500000, name = "精铁碎片" },
+	{ id = 20501000, name = "棉布碎片" },
+	{ id = 20502000, name = "秘银碎片" }, }
 x001230_g_bEndTime = 0
 x001230_g_bMenpai = ""
 x001230_g_WorldGlobal = 21
@@ -63,7 +73,8 @@ x001230_g_MJPosB = {
 	{ x = 125, y = 107, rand = -1 },
 	{ x = 120, y = 111, rand = -1 },
 	{ x = 122, y = 132, rand = -1 },
-	{ x = 131, y = 138, rand = -1 }
+	{ x = 131, y = 138, rand = -1 },
+	{ x = 119, y = 128, rand = -1 }
 }
 x001230_g_MJTblA = {
 	5009, 5010
@@ -192,6 +203,9 @@ function x001230_OnDefaultEvent(sceneId, selfId, targetId)
 		elseif nMenpai == 9 then
 			nPos_X = 100
 			nPos_Z = 100
+		elseif nMenpai == 10 then
+			nPos_X = 130
+			nPos_Z = 210
 		end
 		SetMissionFlag(sceneId, selfId, MF_LunjianJiangli01, 0)
 		SetMissionFlag(sceneId, selfId, MF_LunjianJiangli02, 0)
@@ -799,7 +813,7 @@ function x001230_OnHuashanSceneTimer(sceneId, selfId)
 				x001230_g_PlayerId[i] = 0
 			end
 			x001230_g_PlayerNum = 0
-			for i = 1, 9 do
+			for i = 1, 10 do
 				x001230_g_nMenpaiQiansan[i].id = (i - 1)
 				x001230_g_nMenpaiQiansan[i].player01 = ""
 				x001230_g_nMenpaiQiansan[i].player02 = ""
@@ -823,7 +837,7 @@ function x001230_OnHuashanSceneTimer(sceneId, selfId)
 			if nNowTime > x001230_g_PreTime + 300 then
 				x001230_g_PreTime = nNowTime
 				x001230_GiveMJ(sceneId)
-				for i = 1, 9 do
+				for i = 1, 10 do
 					for j = 1, i do
 						if x001230_g_nMenpaikills[i].kill > x001230_g_nMenpaikills[j].kill then
 							local nTempMenpai = x001230_g_nMenpaikills[j].id
@@ -848,7 +862,7 @@ function x001230_OnHuashanSceneTimer(sceneId, selfId)
 		if x001230_g_bHuashaning == 1 then
 			x001230_g_bHuashaning = 0
 			x001230_g_bEndTime = LuaFnGetCurrentTime()
-			for i = 1, 9 do
+			for i = 1, 10 do
 				for j = 1, i do
 					if x001230_g_nMenpaikills[i].kill > x001230_g_nMenpaikills[j].kill then
 						local nTempMenpai = x001230_g_nMenpaikills[j].id
@@ -861,7 +875,7 @@ function x001230_OnHuashanSceneTimer(sceneId, selfId)
 				end
 			end
 			local nMax = 0
-			for i = 1, 9 do
+			for i = 1, 10 do
 				if x001230_g_nMenpaikills[i].kill == x001230_g_nMenpaikills[1].kill then
 					nMax = nMax + 1
 				end
@@ -890,13 +904,15 @@ function x001230_OnHuashanSceneTimer(sceneId, selfId)
 				szMenpai = "天山派"
 			elseif x001230_g_nMenpaikills[nVMenpai].id == 8 then
 				szMenpai = "逍遥派"
+			elseif x001230_g_nMenpaikills[nVMenpai].id == 9 then
+				szMenpai = "曼陀山庄"
 			end
 			x001230_g_bMenpai = szMenpai
-			for i = 1, 9 do
+			for i = 1, 10 do
 				local strLog = "[huashan end]: menpai=" .. tostring(x001230_g_nMenpaikills[i].id) .. "   KillNum=" .. tostring(x001230_g_nMenpaikills[i].kill)
 				MissionLog(sceneId, strLog)
 			end
-			for i = 1, 9 do
+			for i = 1, 10 do
 				x001230_g_nMenpaikills[i].id = i - 1
 				x001230_g_nMenpaikills[i].kill = 0
 			end
@@ -947,7 +963,7 @@ function x001230_OnHuashanSceneTimer(sceneId, selfId)
 					LuaFnGetGUID(sceneId, x001230_g_PlayerId[3]), x001230_g_PlayerName[3]
 			)
 			LuaFnLogCheck(strLogCheck)
-			for i = 1, 9 do
+			for i = 1, 10 do
 				strLogCheck = format("HuaShanLunJian_Rank_MenPai(%s)    no.1=(id=%X, name=%s), no.2=(id=%X, name=%s), no.3=(id=%X, name=%s), ",
 						x001230_Id2Menpai(x001230_g_nMenpaiQiansan[i].id),
 						LuaFnGetGUID(sceneId, x001230_g_nMenpaiQiansan[i].playerid01), x001230_g_nMenpaiQiansan[i].player01,
@@ -1026,7 +1042,7 @@ function x001230_OnHuashanSceneTimer(sceneId, selfId)
 					end
 				end
 			end
-			for i = 1, 9 do
+			for i = 1, 10 do
 				str = "#P本次华山论剑已经结束，各位同门为振兴门派前仆后继，在战斗中表现神勇，他们中积分最高的是：#W"
 				if x001230_g_nMenpaiQiansan[i].playerid01 ~= 0 and x001230_g_nMenpaiQiansan[i].player01 ~= "" then
 					BroadMsgByChatPipe(sceneId, x001230_g_nMenpaiQiansan[i].playerid01, str, 7)
@@ -1094,7 +1110,6 @@ function x001230_OnHuashanSceneTimer(sceneId, selfId)
 				x001230_g_PlayerKc[i] = 0
 			end
 		end
-		local i
 		for i = 0, nHumanNum - 1 do
 			local nHumanId = LuaFnGetCopyScene_HumanObjId(sceneId, i)
 			if LuaFnIsObjValid(sceneId, nHumanId) == 1 and LuaFnIsCanDoScriptLogic(sceneId, nHumanId) == 1 then
@@ -1146,6 +1161,10 @@ function x001230_OnHuashanSceneTimer(sceneId, selfId)
 					nMenpaiScene = 1
 					nPos_X = 191
 					nPos_Z = 138
+				elseif nMempai == 10 then
+					nMenpaiScene = 184
+					nPos_X = 152
+					nPos_Z = 113
 				end
 				CallScriptFunction((400900), "TransferFunc", sceneId, nHumanId, nMenpaiScene, nPos_X, nPos_Z)
 			end
@@ -1175,7 +1194,7 @@ function x001230_KillPlayer(sceneId, killerId, diedId)
 	SetHumanMenpaiPoint(sceneId, killerId, nMenpaiPoint + 1)        --门派贡献度+1
 	local nKillerMenpai = GetMenPai(sceneId, killerId)
 	local nKillCount = 0
-	for i = 1, 9 do
+	for i = 1, 10 do
 		if x001230_g_nMenpaikills[i].id == nKillerMenpai then
 			x001230_g_nMenpaikills[i].kill = x001230_g_nMenpaikills[i].kill + 1
 			nKillCount = x001230_g_nMenpaikills[i].kill

@@ -883,24 +883,6 @@ end
 
 --生成珍兽门派技能相关的action，并和ui上的button关联上
 function PetSkillStudy_GenMenPaiSkill()
-	--if(2 == g_uitype) then
-	--	--生成action
-	--	for i=2,4 do
-	--		PETSKILLSTUDY_ACCBTN[i-1][2] = "menpai";
-	--		PETSKILLSTUDY_ACCBTN[i-1][3] = Get_XParam_INT(i);
-	--	end
-	--	
-	--	Pet:SkillStudy_MenPaiSkill_Created(PETSKILLSTUDY_ACCBTN[1][3],PETSKILLSTUDY_ACCBTN[2][3],PETSKILLSTUDY_ACCBTN[3][3]);
-	--	
-	--	--配置action
-	--	for k=1,3 do
-	--		local action = Pet:EnumPetSkill(-4444, k-1, "petskill");
-	--		if(action:GetID() ~= 0) then
-	--			PETSKILLSTUDY_ACCBTN[k][1]:SetActionItem(action:GetID());
-	--		end		
-	--	end
-	--	
-	--end
 end
 
 function PetSkillStudy_Frame_OnHiden()

@@ -13,7 +13,7 @@ local MENPAI_NAME = {
 	"#{GMGameInterface_Script_DataPool_Info_DaLi}",
 	"#{GMGameInterface_Script_DataPool_Info_TianShan}",
 	"#{GMGameInterface_Script_DataPool_Info_XiaoYao}",
-	"#{GMGameInterface_Script_DataPool_Info_GuSu}",
+	"#{GMGameInterface_Script_DataPool_Info_ManTuoShanZhuang}",
 }
 local g_Menpai = {
 	"#{GMGameInterface_Script_DataPool_Info_ShaoLin}",
@@ -26,7 +26,7 @@ local g_Menpai = {
 	"#{GMGameInterface_Script_DataPool_Info_TianShan}",
 	"#{GMGameInterface_Script_DataPool_Info_XiaoYao}",
 	"#{GMGameInterface_Script_DataPool_Info_WuMenPai}",
-	"#{GMGameInterface_Script_DataPool_Info_GuSu}",
+	"#{GMGameInterface_Script_DataPool_Info_ManTuoShanZhuang}",
 }
 -- 稍等点击的提示
 local g_strWaitClickTipText = "#{ZYPT_081127_2}"; --"不可连续点击，请稍等片刻后再点击。";

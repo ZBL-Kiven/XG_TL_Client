@@ -308,6 +308,7 @@ function YbMarketSalePutUpTheShutters_Clicked()
 	_0331(YbMarket_tba, 724.012, 250, 20, { 30, cont - 9 })
 	this:Hide()
 	YbMarketSale_PutUpTheShutters:Disable()
+	_0331(YbMarket_tba, 3620.06, 50, -10, { 50, 11 })
 end
 -----------------------------------------------------------------------
 --private function
