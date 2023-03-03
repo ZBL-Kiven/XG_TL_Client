@@ -53,6 +53,10 @@ function CountrySelect_Confirm_Click()
 end
 
 function CountrySelect_Cancel_Click()
+	for i = 1, table.getn(g_Country_Ctrl) do
+		g_Country_Ctrl[i]:SetProperty("Disabled", "False")
+	end
+	g_Country_selected = -1
 	this:CareObject(objCared, 0, "Country")
 	this:Hide()
 end
@@ -73,7 +77,7 @@ function CountrySelect_Changed()
 	local name = Player:GetName()
 	local hasSharpName = string.find(name, "#", 1)
 	if (hasSharpName or -1) > 0 then
-		name = Split(name, "#")
+		name = Split(name, "#")[1]
 	end
 	Target:SendCharRnameMsg(name .. countryName)
 	CountrySelect_Cancel_Click()
