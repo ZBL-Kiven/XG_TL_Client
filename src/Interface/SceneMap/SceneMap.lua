@@ -202,14 +202,14 @@ function GetUserCountryName(colorParse, symbolParse)
 	local countryName = DataPool:GetPlayerMission_DataRound(213)
 	local name, color;
 	if countryName == 10001 then
-		color = "#c7f074f"
-		name = "ËÎ"
+		color = "#Y"
+		name = "ËÎ#W"
 	elseif countryName == 10002 then
-		color = "#c984009"
-		name = "ÁÉ"
+		color = "#B"
+		name = "ÁÉ#W"
 	elseif countryName == 10003 then
-		color = "#c124b5a"
-		name = "Ñà"
+		color = "#R"
+		name = "Ñà#W"
 	else
 		return 0, "Á÷Ãñ"
 	end

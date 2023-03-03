@@ -70,6 +70,11 @@ end
 
 function CountrySelect_Changed()
 	local _, countryName = GetUserCountryName(1, 1)
-	Target:SendCharRnameMsg(g_arg_chrc .. countryName)
+	local name = Player:GetName()
+	local hasSharpName = string.find(name, "#", 1)
+	if (hasSharpName or -1) > 0 then
+		name = Split(name, "#")
+	end
+	Target:SendCharRnameMsg(name .. countryName)
 	CountrySelect_Cancel_Click()
 end
