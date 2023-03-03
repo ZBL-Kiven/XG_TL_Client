@@ -1,8 +1,7 @@
-
 --×î¶àÏÔÊ¾µÄÐ§¹ûÊýÁ¿
 local IMPACT_NUM = 60;
-mypet_buff = {0,   0,0,0,0,  0,0,0,0,  0,0}
-mypet_str = {"ÑªÉÏÏÞ +", "±ù¹¥»÷ +","»ð¹¥»÷ +","Ðþ¹¥»÷ +","¶¾¹¥»÷ +","±ù¿¹ÐÔ +","»ð¿¹ÐÔ +","Ðþ¿¹ÐÔ +","¶¾¿¹ÐÔ +" ,"ÃüÖÐ +","ÉÁ±Ü +"   }
+mypet_buff = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 }
+mypet_str = { "ÑªÉÏÏÞ +", "±ù¹¥»÷ +", "»ð¹¥»÷ +", "Ðþ¹¥»÷ +", "¶¾¹¥»÷ +", "±ù¿¹ÐÔ +", "»ð¿¹ÐÔ +", "Ðþ¿¹ÐÔ +", "¶¾¿¹ÐÔ +", "ÃüÖÐ +", "ÉÁ±Ü +" }
 
 local IMPACT_DESC = {};
 IMPACT_DESC[1] = 0;
@@ -65,9 +64,6 @@ IMPACT_DESC[57] = 0;
 IMPACT_DESC[58] = 0;
 IMPACT_DESC[59] = 0;
 IMPACT_DESC[60] = 0;
-
-
-
 
 local PlayerImpactFrame_TimeCtrl = {};
 PlayerImpactFrame_TimeCtrl[1] = 0;
@@ -196,14 +192,14 @@ buffIndex[59] = 0;
 buffIndex[60] = 0;
 
 function PlayerImpactFrame_PreLoad()
-	this:RegisterEvent( "UI_COMMAND" )
-
+	this:RegisterEvent("UI_COMMAND")
+	
 	this:RegisterEvent("IMPACT_SELF_UPDATE");
 	this:RegisterEvent("IMPACT_SELF_UPDATE_TIME");
 end
 
 function PlayerImpactFrame_OnLoad()
-
+	
 	IMPACT_BUTTONS[1] = PlayerImpact_Image1;
 	IMPACT_BUTTONS[2] = PlayerImpact_Image2;
 	IMPACT_BUTTONS[3] = PlayerImpact_Image3;
@@ -328,366 +324,364 @@ function PlayerImpactFrame_OnLoad()
 end
 
 function PlayerImpactFrame_OnEvent(event)
-	if ( event == "IMPACT_SELF_UPDATE" or (event == "UI_COMMAND" and arg0 == "1000000106")) then
-		PlayerImpactFrame_Update( 1, 1 );
-		return;
+	if (event == "IMPACT_SELF_UPDATE" or (event == "UI_COMMAND" and arg0 == "1000000106")) then
+		PlayerImpactFrame_Update(1, 1);
+		return ;
 	end
-	if ( event == "IMPACT_SELF_UPDATE" ) then
-		PlayerImpactFrame_Update( 1, 1 );
-		return;
-	end
-
-	if ( event == "IMPACT_SELF_UPDATE_TIME" ) then
-		PlayerImpactFrame_Update( 0, 1 );
-		return;
+	if (event == "IMPACT_SELF_UPDATE") then
+		PlayerImpactFrame_Update(1, 1);
+		return ;
 	end
 	
+	if (event == "IMPACT_SELF_UPDATE_TIME") then
+		PlayerImpactFrame_Update(0, 1);
+		return ;
+	end
+
 
 end
 
-function PlayerImpactFrame_Update( bUpdateImage, bUpdateTime )
-
+function PlayerImpactFrame_Update(bUpdateImage, bUpdateTime)
+	
 	local buff_num = Player:GetBuffNumber();
-	if ( buff_num > IMPACT_NUM ) then
+	if (buff_num > IMPACT_NUM) then
 		buff_num = IMPACT_NUM;
 	end
-
-	if( buff_num == 0) then 
+	
+	if (buff_num == 0) then
 		this:Hide();
-		return;
+		return ;
 	end
-
+	
 	this:Show();
-	if ( bUpdateImage > 0 ) then
+	if (bUpdateImage > 0) then
 		initbuffIndex()
 		local szIconName, szToolTips;
-		local i,j;
-		
+		local i, j;
 		i = 0;
 		j = 0;
-		while i<buff_num do			
+		while i < buff_num do
 			szIconName = Player:GetBuffIconNameByIndex(i);
 			szToolTips = Player:GetBuffToolTipsByIndex(i);
-			if szToolTips=="MyMenpaiId=15" or szToolTips=="MyMenpaiId=16" or szToolTips=="999" then 
-				i=i+1;
-				continue;
-			end			
-			--ÊÞ»ê¸½ÌåÏÔÊ¾Õ¼ÓÃ
-			if szToolTips ~= nil and string.find(szToolTips,"ÊÞ»ê¸½Ìå") ~= nil then
-				local nExShow = "#cffcc00"
-				local nExShowStr = {
-					"equip_attr_attack_cold",
-					"equip_attr_attack_fire",
-					"equip_attr_attack_light",
-					"equip_attr_attack_poison",
-					"equip_attr_resist_cold",
-					"equip_attr_resist_fire",
-					"equip_attr_resist_light",
-					"equip_attr_resist_poison",
-					"equip_attr_attack_p",
-					"equip_attr_attack_m",
-					"equip_attr_maxhp",
-					"equip_attr_hit",
-					"equip_attr_miss",
-				}
-				local nExShowData = {56,57,58,59,60,61,62,63,64,65,66,67,68}
-				local nExShowDataEx = {69,70,71,72,73,74,75,76,77,78,79,80,81}
-				for i = 1,table.getn(nExShowData) do
-					local nCommonAdd = DataPool:GetXYJServerData(nExShowData[i]);
-					if nCommonAdd > 0 then
-						nExShow = nExShow.."#cffcc00#{"..nExShowStr[i].."} +"..nCommonAdd
-						local nCommonAddEx = DataPool:GetXYJServerData(nExShowDataEx[i]);
-						if nCommonAddEx > 0 then
-							nExShow = nExShow.."#H  +"..nCommonAddEx.."#r"
-						else
-							nExShow = nExShow.."#r"
+			if szToolTips == "MyMenpaiId=15" or szToolTips == "MyMenpaiId=16" or szToolTips == "999" then
+				i = i + 1;
+			else
+				--ÊÞ»ê¸½ÌåÏÔÊ¾Õ¼ÓÃ
+				if szToolTips ~= nil and string.find(szToolTips, "ÊÞ»ê¸½Ìå") ~= nil then
+					local nExShow = "#cffcc00"
+					local nExShowStr = {
+						"equip_attr_attack_cold",
+						"equip_attr_attack_fire",
+						"equip_attr_attack_light",
+						"equip_attr_attack_poison",
+						"equip_attr_resist_cold",
+						"equip_attr_resist_fire",
+						"equip_attr_resist_light",
+						"equip_attr_resist_poison",
+						"equip_attr_attack_p",
+						"equip_attr_attack_m",
+						"equip_attr_maxhp",
+						"equip_attr_hit",
+						"equip_attr_miss",
+					}
+					local nExShowData = { 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68 }
+					local nExShowDataEx = { 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81 }
+					for n = 1, table.getn(nExShowData) do
+						local nCommonAdd = DataPool:GetXYJServerData(nExShowData[n]);
+						if nCommonAdd > 0 then
+							nExShow = nExShow .. "#cffcc00#{" .. nExShowStr[n] .. "} +" .. nCommonAdd
+							local nCommonAddEx = DataPool:GetXYJServerData(nExShowDataEx[n]);
+							if nCommonAddEx > 0 then
+								nExShow = nExShow .. "#H  +" .. nCommonAddEx .. "#r"
+							else
+								nExShow = nExShow .. "#r"
+							end
 						end
 					end
+					szToolTips = szToolTips .. "#r" .. nExShow
 				end
-				szToolTips = szToolTips.."#r"..nExShow
+				buffIndex[j + 1] = i;
+				IMPACT_BUTTONS[j + 1]:SetProperty("ShortImage", szIconName);
+				IMPACT_BUTTONS[j + 1]:SetProperty("MouseHollow", "False");
+				IMPACT_BUTTONS[j + 1]:SetToolTip(szToolTips);
+				IMPACT_BUTTONS[j + 1]:Show();
+				i = i + 1;
+				j = j + 1;
 			end
-			buffIndex[j+1]=i;
-			IMPACT_BUTTONS[j+1]:SetProperty("ShortImage", szIconName);
-			IMPACT_BUTTONS[j+1]:SetProperty("MouseHollow","False");
-			IMPACT_BUTTONS[j+1]:SetToolTip(szToolTips);
-			IMPACT_BUTTONS[j+1]:Show();
-			i = i+1;
-			j = j+1;
-		end		
-
-		while j<IMPACT_NUM do
-			IMPACT_BUTTONS[j+1]:SetProperty("MouseHollow","True");
-			IMPACT_BUTTONS[j+1]:Hide();
-			j = j+1;
+		end
+		
+		while j < IMPACT_NUM do
+			IMPACT_BUTTONS[j + 1]:SetProperty("MouseHollow", "True");
+			IMPACT_BUTTONS[j + 1]:Hide();
+			j = j + 1;
 		end
 	end
 	
-	if ( bUpdateTime > 0 ) then
+	if (bUpdateTime > 0) then
 		local szTimeText, szToolTips;
-		local i,j;
-
+		local i, j;
+		
 		i = 0;
 		j = 0;
-		while i<buff_num do
+		while i < buff_num do
 			szTimeText = Player:GetBuffTimeTextByIndex(i);
 			szToolTips = Player:GetBuffToolTipsByIndex(i);
-			if szToolTips=="MyMenpaiId=15" or szToolTips=="MyMenpaiId=16" or szToolTips=="999" then 
-				i=i+1;
-				continue;
+			if szToolTips == "MyMenpaiId=15" or szToolTips == "MyMenpaiId=16" or szToolTips == "999" then
+				i = i + 1;
+			else
+				--PlayerImpactFrame_TimeCtrl[i+1]:SetText(szTimeText);
+				PlayerImpactFrame_TimeCtrl[j + 1]:SetProperty("Timer", tostring(szTimeText));
+				PlayerImpactFrame_TimeCtrl[j + 1]:Show();
+				i = i + 1;
+				j = j + 1;
 			end
---			PlayerImpactFrame_TimeCtrl[i+1]:SetText(szTimeText);
-			PlayerImpactFrame_TimeCtrl[j+1]:SetProperty("Timer",tostring(szTimeText));
-			PlayerImpactFrame_TimeCtrl[j+1]:Show();
-			i = i+1;
-			j = j+1;
 		end
-
-		while j<IMPACT_NUM do
-			PlayerImpactFrame_TimeCtrl[j+1]:SetProperty("Timer","-2");
-			PlayerImpactFrame_TimeCtrl[j+1]:Hide();
-			j = j+1;
+		while j < IMPACT_NUM do
+			PlayerImpactFrame_TimeCtrl[j + 1]:SetProperty("Timer", "-2");
+			PlayerImpactFrame_TimeCtrl[j + 1]:Hide();
+			j = j + 1;
 		end
 	end
 end
 
 function PlayerImpactFrame_Image1_Click()
-	Player:DispelBuffByIndex( buffIndex[1] );
+	Player:DispelBuffByIndex(buffIndex[1]);
 end
 
 function PlayerImpactFrame_Image2_Click()
-	Player:DispelBuffByIndex( buffIndex[2] );
+	Player:DispelBuffByIndex(buffIndex[2]);
 end
 
 function PlayerImpactFrame_Image3_Click()
-	Player:DispelBuffByIndex( buffIndex[3] );
+	Player:DispelBuffByIndex(buffIndex[3]);
 end
 
 function PlayerImpactFrame_Image4_Click()
-	Player:DispelBuffByIndex( buffIndex[4] );
+	Player:DispelBuffByIndex(buffIndex[4]);
 end
 
 function PlayerImpactFrame_Image5_Click()
-	Player:DispelBuffByIndex( buffIndex[5] );
+	Player:DispelBuffByIndex(buffIndex[5]);
 end
 
 function PlayerImpactFrame_Image6_Click()
-	Player:DispelBuffByIndex( buffIndex[6] );
+	Player:DispelBuffByIndex(buffIndex[6]);
 end
 
 function PlayerImpactFrame_Image7_Click()
-	Player:DispelBuffByIndex( buffIndex[7] );
+	Player:DispelBuffByIndex(buffIndex[7]);
 end
 
 function PlayerImpactFrame_Image8_Click()
-	Player:DispelBuffByIndex( buffIndex[8] );
+	Player:DispelBuffByIndex(buffIndex[8]);
 end
 
 function PlayerImpactFrame_Image9_Click()
-	Player:DispelBuffByIndex( buffIndex[9] );
+	Player:DispelBuffByIndex(buffIndex[9]);
 end
 
 function PlayerImpactFrame_Image10_Click()
-	Player:DispelBuffByIndex( buffIndex[10] );
+	Player:DispelBuffByIndex(buffIndex[10]);
 end
 
 function PlayerImpactFrame_Image11_Click()
-	Player:DispelBuffByIndex( buffIndex[11] );
+	Player:DispelBuffByIndex(buffIndex[11]);
 end
 
 function PlayerImpactFrame_Image12_Click()
-	Player:DispelBuffByIndex( buffIndex[12] );
+	Player:DispelBuffByIndex(buffIndex[12]);
 end
 
 function PlayerImpactFrame_Image13_Click()
-	Player:DispelBuffByIndex( buffIndex[13] );
+	Player:DispelBuffByIndex(buffIndex[13]);
 end
 
 function PlayerImpactFrame_Image14_Click()
-	Player:DispelBuffByIndex( buffIndex[14] );
+	Player:DispelBuffByIndex(buffIndex[14]);
 end
 
 function PlayerImpactFrame_Image15_Click()
-	Player:DispelBuffByIndex( buffIndex[15] );
+	Player:DispelBuffByIndex(buffIndex[15]);
 end
 
 function PlayerImpactFrame_Image16_Click()
-	Player:DispelBuffByIndex( buffIndex[16] );
+	Player:DispelBuffByIndex(buffIndex[16]);
 end
 
 function PlayerImpactFrame_Image17_Click()
-	Player:DispelBuffByIndex( buffIndex[17] );
+	Player:DispelBuffByIndex(buffIndex[17]);
 end
 
 function PlayerImpactFrame_Image18_Click()
-	Player:DispelBuffByIndex( buffIndex[18] );
+	Player:DispelBuffByIndex(buffIndex[18]);
 end
 
 function PlayerImpactFrame_Image19_Click()
-	Player:DispelBuffByIndex( buffIndex[19] );
+	Player:DispelBuffByIndex(buffIndex[19]);
 end
 
 function PlayerImpactFrame_Image20_Click()
-	Player:DispelBuffByIndex( buffIndex[20] );
+	Player:DispelBuffByIndex(buffIndex[20]);
 end
 
 function PlayerImpactFrame_Image21_Click()
-	Player:DispelBuffByIndex( buffIndex[21] );
+	Player:DispelBuffByIndex(buffIndex[21]);
 end
 
 function PlayerImpactFrame_Image22_Click()
-	Player:DispelBuffByIndex( buffIndex[22] );
+	Player:DispelBuffByIndex(buffIndex[22]);
 end
 
 function PlayerImpactFrame_Image23_Click()
-	Player:DispelBuffByIndex( buffIndex[23] );
+	Player:DispelBuffByIndex(buffIndex[23]);
 end
 
 function PlayerImpactFrame_Image24_Click()
-	Player:DispelBuffByIndex( buffIndex[24] );
+	Player:DispelBuffByIndex(buffIndex[24]);
 end
 
 function PlayerImpactFrame_Image25_Click()
-	Player:DispelBuffByIndex( buffIndex[25] );
+	Player:DispelBuffByIndex(buffIndex[25]);
 end
 
 function PlayerImpactFrame_Image26_Click()
-	Player:DispelBuffByIndex( buffIndex[26] );
+	Player:DispelBuffByIndex(buffIndex[26]);
 end
 
 function PlayerImpactFrame_Image27_Click()
-	Player:DispelBuffByIndex( buffIndex[27] );
+	Player:DispelBuffByIndex(buffIndex[27]);
 end
 
 function PlayerImpactFrame_Image28_Click()
-	Player:DispelBuffByIndex( buffIndex[28] );
+	Player:DispelBuffByIndex(buffIndex[28]);
 end
 
 function PlayerImpactFrame_Image29_Click()
-	Player:DispelBuffByIndex( buffIndex[29] );
+	Player:DispelBuffByIndex(buffIndex[29]);
 end
 
 function PlayerImpactFrame_Image30_Click()
-	Player:DispelBuffByIndex( buffIndex[30] );
+	Player:DispelBuffByIndex(buffIndex[30]);
 end
 
 function PlayerImpactFrame_Image31_Click()
-	Player:DispelBuffByIndex( buffIndex[31] );
+	Player:DispelBuffByIndex(buffIndex[31]);
 end
 
 function PlayerImpactFrame_Image32_Click()
-	Player:DispelBuffByIndex( buffIndex[32] );
+	Player:DispelBuffByIndex(buffIndex[32]);
 end
 
 function PlayerImpactFrame_Image33_Click()
-	Player:DispelBuffByIndex( buffIndex[33] );
+	Player:DispelBuffByIndex(buffIndex[33]);
 end
 
 function PlayerImpactFrame_Image34_Click()
-	Player:DispelBuffByIndex( buffIndex[34] );
+	Player:DispelBuffByIndex(buffIndex[34]);
 end
 
 function PlayerImpactFrame_Image35_Click()
-	Player:DispelBuffByIndex( buffIndex[35] );
+	Player:DispelBuffByIndex(buffIndex[35]);
 end
 
 function PlayerImpactFrame_Image36_Click()
-	Player:DispelBuffByIndex( buffIndex[36] );
+	Player:DispelBuffByIndex(buffIndex[36]);
 end
 
 function PlayerImpactFrame_Image37_Click()
-	Player:DispelBuffByIndex( buffIndex[37] );
+	Player:DispelBuffByIndex(buffIndex[37]);
 end
 
 function PlayerImpactFrame_Image38_Click()
-	Player:DispelBuffByIndex( buffIndex[38] );
+	Player:DispelBuffByIndex(buffIndex[38]);
 end
 
 function PlayerImpactFrame_Image39_Click()
-	Player:DispelBuffByIndex( buffIndex[39] );
+	Player:DispelBuffByIndex(buffIndex[39]);
 end
 
 function PlayerImpactFrame_Image40_Click()
-	Player:DispelBuffByIndex( buffIndex[40] );
+	Player:DispelBuffByIndex(buffIndex[40]);
 end
 
 function PlayerImpactFrame_Image41_Click()
-	Player:DispelBuffByIndex( buffIndex[41] );
+	Player:DispelBuffByIndex(buffIndex[41]);
 end
 
 function PlayerImpactFrame_Image42_Click()
-	Player:DispelBuffByIndex( buffIndex[42] );
+	Player:DispelBuffByIndex(buffIndex[42]);
 end
 
 function PlayerImpactFrame_Image43_Click()
-	Player:DispelBuffByIndex( buffIndex[43] );
+	Player:DispelBuffByIndex(buffIndex[43]);
 end
 
 function PlayerImpactFrame_Image44_Click()
-	Player:DispelBuffByIndex( buffIndex[44] );
+	Player:DispelBuffByIndex(buffIndex[44]);
 end
 
 function PlayerImpactFrame_Image45_Click()
-	Player:DispelBuffByIndex( buffIndex[45] );
+	Player:DispelBuffByIndex(buffIndex[45]);
 end
 
 function PlayerImpactFrame_Image46_Click()
-	Player:DispelBuffByIndex( buffIndex[46] );
+	Player:DispelBuffByIndex(buffIndex[46]);
 end
 
 function PlayerImpactFrame_Image47_Click()
-	Player:DispelBuffByIndex( buffIndex[47] );
+	Player:DispelBuffByIndex(buffIndex[47]);
 end
 
 function PlayerImpactFrame_Image48_Click()
-	Player:DispelBuffByIndex( buffIndex[48] );
+	Player:DispelBuffByIndex(buffIndex[48]);
 end
 
 function PlayerImpactFrame_Image49_Click()
-	Player:DispelBuffByIndex( buffIndex[49] );
+	Player:DispelBuffByIndex(buffIndex[49]);
 end
 
 function PlayerImpactFrame_Image50_Click()
-	Player:DispelBuffByIndex( buffIndex[50] );
+	Player:DispelBuffByIndex(buffIndex[50]);
 end
 
 function PlayerImpactFrame_Image51_Click()
-	Player:DispelBuffByIndex( buffIndex[51] );
+	Player:DispelBuffByIndex(buffIndex[51]);
 end
 
 function PlayerImpactFrame_Image52_Click()
-	Player:DispelBuffByIndex( buffIndex[52] );
+	Player:DispelBuffByIndex(buffIndex[52]);
 end
 
 function PlayerImpactFrame_Image53_Click()
-	Player:DispelBuffByIndex( buffIndex[53] );
+	Player:DispelBuffByIndex(buffIndex[53]);
 end
 
 function PlayerImpactFrame_Image54_Click()
-	Player:DispelBuffByIndex( buffIndex[54] );
+	Player:DispelBuffByIndex(buffIndex[54]);
 end
 
 function PlayerImpactFrame_Image55_Click()
-	Player:DispelBuffByIndex( buffIndex[55] );
+	Player:DispelBuffByIndex(buffIndex[55]);
 end
 
 function PlayerImpactFrame_Image56_Click()
-	Player:DispelBuffByIndex( buffIndex[56] );
+	Player:DispelBuffByIndex(buffIndex[56]);
 end
 
 function PlayerImpactFrame_Image57_Click()
-	Player:DispelBuffByIndex( buffIndex[57] );
+	Player:DispelBuffByIndex(buffIndex[57]);
 end
 
 function PlayerImpactFrame_Image58_Click()
-	Player:DispelBuffByIndex( buffIndex[58] );
+	Player:DispelBuffByIndex(buffIndex[58]);
 end
 
 function PlayerImpactFrame_Image59_Click()
-	Player:DispelBuffByIndex( buffIndex[59] );
+	Player:DispelBuffByIndex(buffIndex[59]);
 end
 
 function PlayerImpactFrame_Image60_Click()
-	Player:DispelBuffByIndex( buffIndex[60] );
+	Player:DispelBuffByIndex(buffIndex[60]);
 end
 
 function initbuffIndex()

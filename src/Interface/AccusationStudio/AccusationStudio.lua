@@ -119,7 +119,7 @@ function AccusationStudio_GetMenPai( menpai )
 		strName = "ÎŞÃÅÅÉ";
 
 	elseif(10== menpai) then
-		strName = "Ä½Èİ";
+		strName = "ÂüÍÓ";
 		
 	end
 		

@@ -823,6 +823,11 @@
                 <Property Name="Tooltip" Value="#{INTERFACE_XML_845}" />
                 <Event Name="Clicked" Function="ContexMenu_PVP_Peace_Clicked();" />
             </Window>
+            <Window Type="TLBB_MenuItem" Name="PVP_Country">
+                <Property Name="Text" Value="#R国家" />
+                <Property Name="Tooltip" Value="#R此模式下不可攻击本国玩家，但可随意击杀敌国玩家！" />
+                <Event Name="Clicked" Function="ContexMenu_PVP_Country_Clicked();" />
+            </Window>
             <Window Type="TLBB_MenuItem" Name="PVP_Moral">
                 <Property Name="Text" Value="#{INTERFACE_XML_588}" />
                 <Property Name="Tooltip" Value="#{INTERFACE_XML_846}" />

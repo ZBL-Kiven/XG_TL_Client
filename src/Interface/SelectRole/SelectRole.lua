@@ -72,11 +72,6 @@ end
 -- 注册onLoad事件
 function LoginSelectRole_OnLoad()
 	
-	-- 角色名字
-	--g_RoleName[1] = SelectRole_Role1_Name;
-	--g_RoleName[2] = SelectRole_Role2_Name;
-	--g_RoleName[3] = SelectRole_Role3_Name;
-	
 	g_RoleName[1] = ""
 	g_RoleName[2] = ""
 	g_RoleName[3] = ""
@@ -99,28 +94,6 @@ function LoginSelectRole_OnLoad()
 	g_FaceImg[1] = ""
 	g_FaceImg[2] = ""
 	g_FaceImg[3] = ""
-	
-	-- 角色选择按钮
-	--g_BnSelCheck[1] = SelectRole_Role1;
-	--g_BnSelCheck[2] = SelectRole_Role2;
-	--g_BnSelCheck[3] = SelectRole_Role3;
-	
-	-- 选择按钮
-	--g_BnSelCheck[1]:SetProperty("CheckMode", "1");	
-	--g_BnSelCheck[2]:SetProperty("CheckMode", "1");	
-	--g_BnSelCheck[3]:SetProperty("CheckMode", "1");	
-	
-	--g_BnSelCheck[1]:SetCheck( 0 );	
-	--g_BnSelCheck[2]:SetCheck( 0 );	
-	--g_BnSelCheck[3]:SetCheck( 0 );	
-	-- ui模型名字
-	--g_UIModel[1] = SelectRole_Role1_Model;
-	--g_UIModel[2] = SelectRole_Role2_Model;
-	--g_UIModel[3] = SelectRole_Role3_Model;
-	
-	--SelectRole_Role1_Model:SetProperty("MouseHollow", "True");	
-	--SelectRole_Role2_Model:SetProperty("MouseHollow", "True");	
-	--SelectRole_Role3_Model:SetProperty("MouseHollow", "True");	
 	
 	g_RolName_Text[1] = SelectRole_TargetInfo_Name_Text;
 	g_RolName_Text[2] = SelectRole_TargetInfo_Name_Text2;
@@ -168,12 +141,9 @@ function LoginSelectRole_OnEvent(event)
 		MAINMENUBAR_COOLDOWN = {}
 		MAINMENUBAR_SKILLID = {}
 		local CurSelIndex = GameProduceLogin:GetCurSelectRole();
-		
 		-- 默认选择第一个人物。
 		g_iCurSelRole = CurSelIndex + 1  --1;
-		
 		AxTrace(1, 0, g_iCurSelRole)
-		
 		SelectRole_ClearInfo();
 		SelectRole_RefreshRoleInfo();
 		this:Show();
@@ -188,7 +158,6 @@ function LoginSelectRole_OnEvent(event)
 		return ;
 	end
 	
-	
 	-- 刷新角色
 	if (event == "GAMELOGIN_REFRESH_ROLE_SELECT_CHARACTOR") then
 		
@@ -196,10 +165,8 @@ function LoginSelectRole_OnEvent(event)
 		return ;
 	end
 	
-	
 	-- 创建角色成功。
 	if (event == "GAMELOGIN_CREATE_ROLE_OK") then
-		
 		g_bCreateSuccess = 1;
 		return ;
 	end
@@ -226,9 +193,7 @@ function LoginSelectRole_OnEvent(event)
 	
 	end
 	SelectRole_HighLight();
-
 end
-
 
 
 ---------------------------------------------------------------------------------------------
@@ -236,7 +201,6 @@ end
 -- 进入游戏
 --
 function SelectRole_EnterGame()
-	
 	-- 发送进入游戏消息
 	GameProduceLogin:SendEnterGameMsg(g_iCurSelRole - 1);
 end
@@ -645,7 +609,6 @@ function SelectRole_Modle_ZoomIn(start)
 	else
 		GameProduceLogin:ModelZoom(0.0)
 	end
-
 end
 
 function SelectRole_DoubleClicked(index)
