@@ -1,57 +1,57 @@
 <?xml version="1.0" ?>
 <GUILayout>
   <Window Type="TLBB_MainFrame1" Name="FeelFeedBack400_Frame">
-    <Property Name="UnifiedSize" Value="{{0.000000,627.000000},{0.000000,576.000000}}"/>
-    <Property Name="UnifiedPosition" Value="{{0.500000,-316.000000},{0.500000,-288.000000}}"/>
+    <Property Name="UnifiedSize" Value="{{0.000000,627.000000},{0.000000,576.000000}}" />
+    <Property Name="UnifiedPosition" Value="{{0.500000,-316.000000},{0.500000,-288.000000}}" />
     <Event Name="Hidden" Function="FeelFeedBack400_Close();"/>
     <Window Type="TLBB_DragTitle" Name="FeelFeedBack400_DragTitle">
-      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}" />
       <Property Name="DragTarget" Value="FeelFeedBack400_Frame" />
       <Property Name="Font" Value="YouYuan11.25" />
       <Property Name="Text" Value="#{ZNQQD_210629_01}"/>
       <Property Name="HorzFormatting" Value="HorzCentred"/>
     </Window>
     <Window Type="TLBB_ButtonClose" Name="FeelFeedBack400_Close">
-      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}" />
       <Event Name="Clicked" Function="FeelFeedBack400_Close();" />
     </Window>
     <Window Type="TLBB_ButtonHelp" Name="FeelFeedBack400_Help">
-      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}" />
       <Event Name="Clicked" Function='' />
     </Window>
     <Window Type="DefaultWindow" Name="FeelFeedBack400_Client">
-      <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-55.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,36.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-55.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,36.000000}}" />
       <Property Name="RiseOnClick" Value="False"/>
       <Window Type="TLBB_Frame_Lace3" Name="FeelFeedBack400_DayFrame">
-        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
         <Window Type="TLBB_Frame_Lace6" Name="FeelFeedBack400_TopBK">
-          <Property Name="UnifiedSize" Value="{{1.00000,0.000000},{0.00000,120.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{1.00000,0.000000},{0.00000,120.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
           <Window Type="DefaultWindow" Name="FeelFeedBack400_Top_day1Client">
-            <Property Name="UnifiedSize" Value="{{0.000000,82.000000},{0.000000,109.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.500000,-298.500000},{0.500000,-55.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,82.000000},{0.000000,109.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.500000,-298.500000},{0.500000,-55.000000}}" />
             <Window Type="TLBB_StaticImageNULL" Name="FeelFeedBack400_Top_day1_bk">
               <Property Name="RiseOnClick" Value="False"/>
-              <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.500000,-33.000000},{0.500000,-38.500000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.500000,-33.000000},{0.500000,-38.500000}}" />
               <Property Name="Image" Value="set:CircularTaskTool66 image:CircularTaskTool66_9"/>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="FeelFeedBack400_Top_day1_done">
               <Property Name="Visible" Value="False"/>
               <Property Name="RiseOnClick" Value="False"/>
-              <Property Name="UnifiedSize" Value="{{0.000000,51.000000},{0.000000,36.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.500000,-25.500000},{0.500000,-26.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,51.000000},{0.000000,36.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.500000,-25.500000},{0.500000,-26.000000}}" />
               <Property Name="Image" Value="set:Seven image:Seven_ke"/>
             </Window>
             <Window Type="TLBB_ButtonCheckNULL" Name="FeelFeedBack400_Top_day1_Button1">
               <Property Name="AlwaysOnTop" Value="True"/>
-              <Property Name="UnifiedSize" Value="{{0.000000,82.000000},{0.000000,109.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.00000,0.00000},{0.00000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,82.000000},{0.000000,109.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.00000,0.00000},{0.00000,0.000000}}" />
               <Property Name="PushedImage" Value="set:Seven2 image:Seven2_BtnPush"/>
               <Property Name="NormalImage" Value="set:Seven2 image:Seven2_BtnNormal"/>
               <Property Name="HoverImage" Value="set:Seven2 image:Seven2_BtnHover"/>
@@ -59,8 +59,8 @@
               <Property Name="CheckMode" Value="1"/>
               <Event Name="Clicked" Function="FeelFeedBack400_Click(1);"/>
               <Window Type="TLBB_SimpleText" Name="FeelFeedBack400_Top_day1_Button1_text">
-                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{1.000000,-25.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{1.000000,-25.000000}}" />
                 <Property Name="Text" Value="#{ZNQQD_210629_06}"/>
                 <Property Name="HorzFormatting" Value="HorzCentred"/>
                 <Property Name="Font" Value="YouYuan13"/>
@@ -72,25 +72,25 @@
             </Window>
           </Window>
           <Window Type="DefaultWindow" Name="FeelFeedBack400_Top_day2Client">
-            <Property Name="UnifiedSize" Value="{{0.000000,82.000000},{0.000000,109.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.500000,-212.500000},{0.500000,-55.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,82.000000},{0.000000,109.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.500000,-212.500000},{0.500000,-55.000000}}" />
             <Window Type="TLBB_StaticImageNULL" Name="FeelFeedBack400_Top_day2_bk">
               <Property Name="RiseOnClick" Value="False"/>
-              <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.500000,-33.000000},{0.500000,-38.500000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.500000,-33.000000},{0.500000,-38.500000}}" />
               <Property Name="Image" Value="set:Treasure image:Treasure_16"/>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="FeelFeedBack400_Top_day2_done">
               <Property Name="Visible" Value="False"/>
               <Property Name="RiseOnClick" Value="False"/>
-              <Property Name="UnifiedSize" Value="{{0.000000,51.000000},{0.000000,36.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.500000,-25.500000},{0.500000,-26.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,51.000000},{0.000000,36.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.500000,-25.500000},{0.500000,-26.000000}}" />
               <Property Name="Image" Value="set:Seven image:Seven_ke"/>
             </Window>
             <Window Type="TLBB_ButtonCheckNULL" Name="FeelFeedBack400_Top_day2_Button1">
               <Property Name="AlwaysOnTop" Value="True"/>
-              <Property Name="UnifiedSize" Value="{{0.000000,82.000000},{0.000000,109.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.00000,0.00000},{0.00000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,82.000000},{0.000000,109.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.00000,0.00000},{0.00000,0.000000}}" />
               <Property Name="PushedImage" Value="set:Seven2 image:Seven2_BtnPush"/>
               <Property Name="NormalImage" Value="set:Seven2 image:Seven2_BtnNormal"/>
               <Property Name="HoverImage" Value="set:Seven2 image:Seven2_BtnHover"/>
@@ -98,8 +98,8 @@
               <Property Name="CheckMode" Value="1"/>
               <Event Name="Clicked" Function="FeelFeedBack400_Click(2);"/>
               <Window Type="TLBB_SimpleText" Name="FeelFeedBack400_Top_day2_Button1_text">
-                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{1.000000,-25.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{1.000000,-25.000000}}" />
                 <Property Name="Text" Value="#{ZNQQD_210629_07}"/>
                 <Property Name="HorzFormatting" Value="HorzCentred"/>
                 <Property Name="Font" Value="YouYuan13"/>
@@ -112,25 +112,25 @@
 
           </Window>
           <Window Type="DefaultWindow" Name="FeelFeedBack400_Top_day3Client">
-            <Property Name="UnifiedSize" Value="{{0.000000,82.000000},{0.000000,109.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.500000,-126.500000},{0.500000,-55.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,82.000000},{0.000000,109.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.500000,-126.500000},{0.500000,-55.000000}}" />
             <Window Type="TLBB_StaticImageNULL" Name="FeelFeedBack400_Top_day3_bk">
               <Property Name="RiseOnClick" Value="False"/>
-              <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.500000,-33.000000},{0.500000,-38.500000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.500000,-33.000000},{0.500000,-38.500000}}" />
               <Property Name="Image" Value="set:CircularTaskTool66 image:CircularTaskTool66_6"/>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="FeelFeedBack400_Top_day3_done">
               <Property Name="Visible" Value="False"/>
               <Property Name="RiseOnClick" Value="False"/>
-              <Property Name="UnifiedSize" Value="{{0.000000,51.000000},{0.000000,36.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.500000,-25.500000},{0.500000,-26.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,51.000000},{0.000000,36.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.500000,-25.500000},{0.500000,-26.000000}}" />
               <Property Name="Image" Value="set:Seven image:Seven_ke"/>
             </Window>
             <Window Type="TLBB_ButtonCheckNULL" Name="FeelFeedBack400_Top_day3_Button1">
               <Property Name="AlwaysOnTop" Value="True"/>
-              <Property Name="UnifiedSize" Value="{{0.000000,82.000000},{0.000000,109.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.00000,0.00000},{0.00000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,82.000000},{0.000000,109.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.00000,0.00000},{0.00000,0.000000}}" />
               <Property Name="PushedImage" Value="set:Seven2 image:Seven2_BtnPush"/>
               <Property Name="NormalImage" Value="set:Seven2 image:Seven2_BtnNormal"/>
               <Property Name="HoverImage" Value="set:Seven2 image:Seven2_BtnHover"/>
@@ -138,8 +138,8 @@
               <Property Name="CheckMode" Value="1"/>
               <Event Name="Clicked" Function="FeelFeedBack400_Click(3);"/>
               <Window Type="TLBB_SimpleText" Name="FeelFeedBack400_Top_day3_Button1_text">
-                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{1.000000,-25.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{1.000000,-25.000000}}" />
                 <Property Name="Text" Value="#{ZNQQD_210629_08}"/>
                 <Property Name="HorzFormatting" Value="HorzCentred"/>
                 <Property Name="Font" Value="YouYuan13"/>
@@ -151,25 +151,25 @@
             </Window>
           </Window>
           <Window Type="DefaultWindow" Name="FeelFeedBack400_Top_day4Client">
-            <Property Name="UnifiedSize" Value="{{0.000000,82.000000},{0.000000,109.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.500000,-40.500000},{0.500000,-55.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,82.000000},{0.000000,109.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.500000,-40.500000},{0.500000,-55.000000}}" />
             <Window Type="TLBB_StaticImageNULL" Name="FeelFeedBack400_Top_day4_bk">
               <Property Name="RiseOnClick" Value="False"/>
-              <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.500000,-33.000000},{0.500000,-38.500000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.500000,-33.000000},{0.500000,-38.500000}}" />
               <Property Name="Image" Value="set:Charm5 image:Charm5_8"/>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="FeelFeedBack400_Top_day4_done">
               <Property Name="Visible" Value="False"/>
               <Property Name="RiseOnClick" Value="False"/>
-              <Property Name="UnifiedSize" Value="{{0.000000,51.000000},{0.000000,36.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.500000,-25.500000},{0.500000,-26.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,51.000000},{0.000000,36.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.500000,-25.500000},{0.500000,-26.000000}}" />
               <Property Name="Image" Value="set:Seven image:Seven_ke"/>
             </Window>
             <Window Type="TLBB_ButtonCheckNULL" Name="FeelFeedBack400_Top_day4_Button1">
               <Property Name="AlwaysOnTop" Value="True"/>
-              <Property Name="UnifiedSize" Value="{{0.000000,82.000000},{0.000000,109.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.00000,0.00000},{0.00000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,82.000000},{0.000000,109.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.00000,0.00000},{0.00000,0.000000}}" />
               <Property Name="PushedImage" Value="set:Seven2 image:Seven2_BtnPush"/>
               <Property Name="NormalImage" Value="set:Seven2 image:Seven2_BtnNormal"/>
               <Property Name="HoverImage" Value="set:Seven2 image:Seven2_BtnHover"/>
@@ -177,8 +177,8 @@
               <Property Name="CheckMode" Value="1"/>
               <Event Name="Clicked" Function="FeelFeedBack400_Click(4);"/>
               <Window Type="TLBB_SimpleText" Name="FeelFeedBack400_Top_day4_Button1_text">
-                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{1.000000,-25.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{1.000000,-25.000000}}" />
                 <Property Name="Text" Value="#{ZNQQD_210629_09}"/>
                 <Property Name="HorzFormatting" Value="HorzCentred"/>
                 <Property Name="Font" Value="YouYuan13"/>
@@ -190,25 +190,25 @@
             </Window>
           </Window>
           <Window Type="DefaultWindow" Name="FeelFeedBack400_Top_day5Client">
-            <Property Name="UnifiedSize" Value="{{0.000000,82.000000},{0.000000,109.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.500000,45.500000},{0.500000,-55.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,82.000000},{0.000000,109.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.500000,45.500000},{0.500000,-55.000000}}" />
             <Window Type="TLBB_StaticImageNULL" Name="FeelFeedBack400_Top_day5_bk">
               <Property Name="RiseOnClick" Value="False"/>
-              <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.500000,-33.000000},{0.500000,-38.500000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.500000,-33.000000},{0.500000,-38.500000}}" />
               <Property Name="Image" Value="set:Tattoo image:Tattoo_1"/>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="FeelFeedBack400_Top_day5_done">
               <Property Name="Visible" Value="False"/>
               <Property Name="RiseOnClick" Value="False"/>
-              <Property Name="UnifiedSize" Value="{{0.000000,51.000000},{0.000000,36.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.500000,-25.500000},{0.500000,-26.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,51.000000},{0.000000,36.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.500000,-25.500000},{0.500000,-26.000000}}" />
               <Property Name="Image" Value="set:Seven image:Seven_ke"/>
             </Window>
             <Window Type="TLBB_ButtonCheckNULL" Name="FeelFeedBack400_Top_day5_Button1">
               <Property Name="AlwaysOnTop" Value="True"/>
-              <Property Name="UnifiedSize" Value="{{0.000000,82.000000},{0.000000,109.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.00000,0.00000},{0.00000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,82.000000},{0.000000,109.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.00000,0.00000},{0.00000,0.000000}}" />
               <Property Name="PushedImage" Value="set:Seven2 image:Seven2_BtnPush"/>
               <Property Name="NormalImage" Value="set:Seven2 image:Seven2_BtnNormal"/>
               <Property Name="HoverImage" Value="set:Seven2 image:Seven2_BtnHover"/>
@@ -216,8 +216,8 @@
               <Property Name="CheckMode" Value="1"/>
               <Event Name="Clicked" Function="FeelFeedBack400_Click(5);"/>
               <Window Type="TLBB_SimpleText" Name="FeelFeedBack400_Top_day5_Button1_text">
-                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{1.000000,-25.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{1.000000,-25.000000}}" />
                 <Property Name="Text" Value="#{ZNQQD_210629_10}"/>
                 <Property Name="HorzFormatting" Value="HorzCentred"/>
                 <Property Name="Font" Value="YouYuan13"/>
@@ -229,25 +229,25 @@
             </Window>
           </Window>
           <Window Type="DefaultWindow" Name="FeelFeedBack400_Top_day6Client">
-            <Property Name="UnifiedSize" Value="{{0.000000,82.000000},{0.000000,109.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.500000,131.500000},{0.500000,-55.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,82.000000},{0.000000,109.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.500000,131.500000},{0.500000,-55.000000}}" />
             <Window Type="TLBB_StaticImageNULL" Name="FeelFeedBack400_Top_day6_bk">
               <Property Name="RiseOnClick" Value="False"/>
-              <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.500000,-33.000000},{0.500000,-38.500000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.500000,-33.000000},{0.500000,-38.500000}}" />
               <Property Name="Image" Value="set:Ore image:Ore_13"/>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="FeelFeedBack400_Top_day6_done">
               <Property Name="Visible" Value="False"/>
               <Property Name="RiseOnClick" Value="False"/>
-              <Property Name="UnifiedSize" Value="{{0.000000,51.000000},{0.000000,36.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.500000,-25.500000},{0.500000,-26.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,51.000000},{0.000000,36.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.500000,-25.500000},{0.500000,-26.000000}}" />
               <Property Name="Image" Value="set:Seven image:Seven_ke"/>
             </Window>
             <Window Type="TLBB_ButtonCheckNULL" Name="FeelFeedBack400_Top_day6_Button1">
               <Property Name="AlwaysOnTop" Value="True"/>
-              <Property Name="UnifiedSize" Value="{{0.000000,82.000000},{0.000000,109.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.00000,0.00000},{0.00000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,82.000000},{0.000000,109.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.00000,0.00000},{0.00000,0.000000}}" />
               <Property Name="PushedImage" Value="set:Seven2 image:Seven2_BtnPush"/>
               <Property Name="NormalImage" Value="set:Seven2 image:Seven2_BtnNormal"/>
               <Property Name="HoverImage" Value="set:Seven2 image:Seven2_BtnHover"/>
@@ -255,8 +255,8 @@
               <Property Name="CheckMode" Value="1"/>
               <Event Name="Clicked" Function="FeelFeedBack400_Click(6);"/>
               <Window Type="TLBB_SimpleText" Name="FeelFeedBack400_Top_day6_Button1_text">
-                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{1.000000,-25.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{1.000000,-25.000000}}" />
                 <Property Name="Text" Value="#{ZNQQD_210629_11}"/>
                 <Property Name="HorzFormatting" Value="HorzCentred"/>
                 <Property Name="Font" Value="YouYuan13"/>
@@ -268,25 +268,25 @@
             </Window>
           </Window>
           <Window Type="DefaultWindow" Name="FeelFeedBack400_Top_day7Client">
-            <Property Name="UnifiedSize" Value="{{0.000000,82.000000},{0.000000,109.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.500000,217.500000},{0.500000,-55.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,82.000000},{0.000000,109.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.500000,217.500000},{0.500000,-55.000000}}" />
             <Window Type="TLBB_StaticImageNULL" Name="FeelFeedBack400_Top_day7_bk">
               <Property Name="RiseOnClick" Value="False"/>
-              <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.500000,-33.000000},{0.500000,-38.500000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.500000,-33.000000},{0.500000,-38.500000}}" />
               <Property Name="Image" Value="set:Gem3_2 image:Gem3_2_2"/>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="FeelFeedBack400_Top_day7_done">
               <Property Name="Visible" Value="False"/>
               <Property Name="RiseOnClick" Value="False"/>
-              <Property Name="UnifiedSize" Value="{{0.000000,51.000000},{0.000000,36.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.500000,-25.500000},{0.500000,-26.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,51.000000},{0.000000,36.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.500000,-25.500000},{0.500000,-26.000000}}" />
               <Property Name="Image" Value="set:Seven image:Seven_ke"/>
             </Window>
             <Window Type="TLBB_ButtonCheckNULL" Name="FeelFeedBack400_Top_day7_Button1">
               <Property Name="AlwaysOnTop" Value="True"/>
-              <Property Name="UnifiedSize" Value="{{0.000000,82.000000},{0.000000,109.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.00000,0.00000},{0.00000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,82.000000},{0.000000,109.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.00000,0.00000},{0.00000,0.000000}}" />
               <Property Name="PushedImage" Value="set:Seven2 image:Seven2_BtnPush"/>
               <Property Name="NormalImage" Value="set:Seven2 image:Seven2_BtnNormal"/>
               <Property Name="HoverImage" Value="set:Seven2 image:Seven2_BtnHover"/>
@@ -294,8 +294,8 @@
               <Property Name="CheckMode" Value="1"/>
               <Event Name="Clicked" Function="FeelFeedBack400_Click(7);"/>
               <Window Type="TLBB_SimpleText" Name="FeelFeedBack400_Top_day7_Button1_text">
-                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{1.000000,-25.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{1.000000,-25.000000}}" />
                 <Property Name="Text" Value="#{ZNQQD_210629_12}"/>
                 <Property Name="HorzFormatting" Value="HorzCentred"/>
                 <Property Name="Font" Value="YouYuan13"/>
@@ -308,83 +308,83 @@
           </Window>
         </Window>
         <Window Type="DefaultWindow" Name="FeelFeedBack400_MianBK">
-          <Property Name="UnifiedSize" Value="{{1.00000,0.000000},{1.00000,-120.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,120.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{1.00000,0.000000},{1.00000,-120.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,120.000000}}" />
           <Window Type="TLBB_StaticImageNULL" Name="FeelFeedBack400_MianBKImage">
-            <Property Name="UnifiedSize" Value="{{0.000000,614.000000},{0.000000,401.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,614.000000},{0.000000,401.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
             <Property Name="RiseOnClick" Value="False"/>
             <Property Name="Image" Value="set:ZhengHongYan02 image:FeelFeedBack400_BK"/>
           </Window>
           <Window Type="TLBB_SimpleText" Name="FeelFeedBack400_Text">
-            <Property Name="UnifiedSize" Value="{{0.000000,400.000000},{0.000000,49.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,187.000000},{0.000000,8.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,400.000000},{0.000000,49.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,187.000000},{0.000000,8.000000}}" />
             <Property Name="Text" Value="#{ZNQQD_210629_30}"/>
             <Property Name="AlwaysOnTop" Value="True"/>
             <Property Name="RiseOnClick" Value="False"/>
             <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
           </Window>
           <Window Type="TLBB_SimpleText" Name="FeelFeedBack400_Text2">
-            <Property Name="UnifiedSize" Value="{{0.000000,250.000000},{0.000000,40.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,340.000000},{0.000000,356.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,250.000000},{0.000000,40.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,340.000000},{0.000000,356.000000}}" />
             <Property Name="Text" Value="#{ZNQQD_210629_53}"/>
             <Property Name="AlwaysOnTop" Value="True"/>
             <Property Name="RiseOnClick" Value="False"/>
             <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
           </Window>
           <Window Type="DefaultWindow" Name="FeelFeedBack400_Left_imageBK">
-            <Property Name="UnifiedSize" Value="{{0.000000,228.000000},{0.000000,401.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,19.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,228.000000},{0.000000,401.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,19.000000},{0.000000,0.000000}}" />
             <Property Name="AlwaysOnTop" Value="True"/>
             <Property Name="RiseOnClick" Value="False"/>
             <Window Type="TLBB_StaticImageNULL" Name="FeelFeedBack400_Left_image">
-              <Property Name="UnifiedSize" Value="{{1.00000,0.000000},{1.00000,0.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.00000,0.000000},{0.00000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{1.00000,0.000000},{1.00000,0.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.00000,0.000000},{0.00000,0.000000}}" />
               <Property Name="RiseOnClick" Value="False"/>
               <Property Name="Image" Value="set:ZhengHongYan01 image:FeelFeedBack400_D1Image"/>
             </Window>
           </Window>
           <Window Type="TLBB_StaticImageNULL" Name="FeelFeedBack400_Right_imageBK">
-            <Property Name="UnifiedSize" Value="{{0.000000,370.000000},{0.000000,100.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{1.000000,-404.000000},{0.000000,61.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,370.000000},{0.000000,100.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{1.000000,-404.000000},{0.000000,61.000000}}" />
             <Property Name="RiseOnClick" Value="False"/>
             <Property Name="Image" Value="set:ZhengHongYan02 image:FeelFeedBack400_Text"/>
             <Property Name="AlwaysOnTop" Value="True"/>
           </Window>
           <Window Type="TLBB_StaticImageNULL" Name="FeelFeedBack400_Right_imageDay">
-            <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,60.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{1.000000,-211.000000},{0.000000,58.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,60.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{1.000000,-211.000000},{0.000000,58.000000}}" />
             <Property Name="AlwaysOnTop" Value="True"/>
             <Property Name="Image" Value="set:Thanks1 image:Thanks_1"/>
           </Window>
           <Window Type="TLBB_StaticImageNULL" Name="FeelFeedBack400_Right_imageDayItem">
-            <Property Name="UnifiedSize" Value="{{0.000000,214.000000},{0.000000,56.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{1.000000,-230.000000},{0.000000,116.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,214.000000},{0.000000,56.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{1.000000,-230.000000},{0.000000,116.000000}}" />
             <Property Name="AlwaysOnTop" Value="True"/>
             <Property Name="Image" Value="set:ZhengHongYan01 image:FeelFeedBack400_D1Name"/>
           </Window>
           <Window Type="DefaultWindow" Name="FeelFeedBack400_RightClient">
             <Property Name="AlwaysOnTop" Value="True"/>
-            <Property Name="UnifiedSize" Value="{{0.00000,330.000000},{0.000000,200.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.00000,254.000000},{0.0000,192.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.00000,330.000000},{0.000000,200.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.00000,254.000000},{0.0000,192.000000}}" />
             <Window Type="TLBB_ActionButton" Name="FeelFeedBack400_Right_ShowA">
-              <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.250000,-60.000000},{0.000000,10.0000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.250000,-60.000000},{0.000000,10.0000000}}" />
               <Property Name="RiseOnClick" Value="False"/>
             </Window>
             <Window Type="TLBB_ActionButton" Name="FeelFeedBack400_Right_ShowB">
-              <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.500000,-32.000000},{0.000000,10.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.500000,-32.000000},{0.000000,10.000000}}" />
               <Property Name="RiseOnClick" Value="False"/>
             </Window>
             <Window Type="TLBB_ActionButton" Name="FeelFeedBack400_Right_ShowC">
-              <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.750000,-4.000000},{0.000000,10.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.750000,-4.000000},{0.000000,10.000000}}" />
               <Property Name="RiseOnClick" Value="False"/>
             </Window>
             <Window Type="TLBB_ButtonNULL" Name="FeelFeedBack400_Right_Button1">
-              <Property Name="UnifiedSize" Value="{{0.000000,136.000000},{0.000000,48.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.500000,-68.000000},{1.000000,-98.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,136.000000},{0.000000,48.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.500000,-68.000000},{1.000000,-98.000000}}" />
               <Property Name="PushedImage" Value="set:Seven image:Seven_lingqupush"/>
               <Property Name="NormalImage" Value="set:Seven image:Seven_lingquNormal"/>
               <Property Name="HoverImage" Value="set:Seven image:Seven_lingquHover"/>

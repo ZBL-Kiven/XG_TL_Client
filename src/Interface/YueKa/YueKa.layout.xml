@@ -1,197 +1,197 @@
 <?xml version="1.0"?>
 <GUILayout>
-	<Window Type="TLBB_MainFrame0" Name="YueKa_Frame">
-		<Property Name="UnifiedSize" Value="{{0.000000,356.000000},{0.000000,420.000000}}" />
-		<Property Name="UnifiedPosition" Value="{{0.500000,-178.000000},{0.500000,-180.000000}}" />
-		<Event Name="Hidden" Function="YueKa_Close();" />
-		<Window Type="TLBB_DragTitle" Name="YueKa_DragTitle">
-			<Property Name="AbsolutePosition" Value="x:40.000000 y:11.000000" />
-			<Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}" />
-			<Property Name="DragTarget" Value="YueKa_Frame" />
-			<Window Type="TLBB_SimpleText" Name="YueKa_Title">
-				<Property Name="RelativePosition" Value="x:0.000000 y:0.000000" />
-				<Property Name="RelativeSize" Value="w:1.000000 h:1.000000" />
-				<Property Name="Font" Value="YouYuan11.25" />
-				<Property Name="HorzFormatting" Value="HorzCentred" />
-				<Property Name="RiseOnClick" Value="False" />
-				<Property Name="Text" Value="#Y御龙贴" />
-				<Property Name="VertFormatting" Value="VertCentred" />
-			</Window>
-		</Window>
-		<Window Type="TLBB_ButtonHelp" Name="YueKa_HelpNull">
-			<Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
-			<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
-		</Window>
-		<Window Type="TLBB_ButtonClose" Name="YueKa_Close">
-			<Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
-			<Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
-			<Event Name="Clicked" Function="YueKa_Close();" />
-		</Window>
-		<Window Type="DefaultWindow" Name="YueKa_Frame1">
-			<Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,-46.000000}}" />
-			<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,29.000000}}" />
-			<Window Type="DefaultWindow" Name="YueKa_Client1">
-				<Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{0.000000,124.000000}}" />
-				<Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,9.000000}}" />
-				<Property Name="RiseOnClick" Value="False" />
-				<Window Type="TLBB_StaticText2" Name="YueKa_Text1">
-					<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
-					<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
-					<Property Name="VertFormatting" Value="TopAligned" />
-					<Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
-					<Property Name="Text" Value="#{SSGN_210307_01}" />
-				</Window>
-			</Window>
-			<Window Type="TLBB_Frame_Lace2" Name="YueKa_Client3">
-				<Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{1.000000,-116.000000}}" />
-				<Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,134.000000}}" />
-				<Window Type="DefaultWindow" Name="YueKa_BK1">
-					<Property Name="UnifiedSize" Value="{{0.000000,164.000000},{0.000000,49.000000}}" />
-					<Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,7.000000}}" />
-					<Window Type="TLBB_Frame_Lace1" Name="YueKa_BK1_Back" >
-						<Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.0,0}" />
-						<Property Name="UnifiedSize" Value="{{0.00000,48.000000},{0.00000,48}" />
-						<Property Name="Image" Value="set:CircularTaskTool19  image:CircularTaskTool19_5" />
-						<Property Name="RiseOnClick" Value="False" />
-					</Window>
-					<Window Type="TLBB_ButtonBig" Name="YueKa_BK1_Button">
-						<Property Name="UnifiedSize" Value="{{0.000000,116.000000},{0.000000,48.000000}}" />
-						<Property Name="UnifiedPosition" Value="{{1.000000,-116.000000},{0.000000,0.000000}}" />
-						<Property Name="Text" Value="#Y每日福袋" />
-						<Event Name="Clicked" Function="YueKa_Btn_Clicked(1);" />
-					</Window>
-				</Window>
-				<Window Type="DefaultWindow" Name="YueKa_BK2">
-					<Property Name="UnifiedSize" Value="{{0.000000,164.000000},{0.000000,49.000000}}" />
-					<Property Name="UnifiedPosition" Value="{{1.000000,-168.000000},{0.000000,7.000000}}" />
-					<Window Type="TLBB_Frame_Lace1" Name="YueKa_BK2_Back" >
-						<Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.0,0}" />
-						<Property Name="UnifiedSize" Value="{{0.00000,48.000000},{0.00000,48}" />
-						<Property Name="RiseOnClick" Value="False" />
-						<Property Name="Image" Value="set:CircularTaskTool83  image:CircularTaskTool83_10" />
-					</Window>
-					<Window Type="TLBB_ButtonBig" Name="YueKa_BK2_Button">
-						<Property Name="UnifiedSize" Value="{{0.000000,116.000000},{0.000000,48.000000}}" />
-						<Property Name="UnifiedPosition" Value="{{1.000000,-116.000000},{0.000000,0.000000}}" />
-						<Property Name="Text" Value="#Y便捷传送" />
-						<Event Name="Clicked" Function="YueKa_Btn_Clicked(2);" />
-					</Window>
-				</Window>
-				<Window Type="DefaultWindow" Name="YueKa_BK3">
-					<Property Name="UnifiedSize" Value="{{0.000000,164.000000},{0.000000,49.000000}}" />
-					<Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,57.000000}}" />
-					<Window Type="TLBB_Frame_Lace1" Name="YueKa_BK3_Back" >
-						<Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.0,0}" />
-						<Property Name="UnifiedSize" Value="{{0.00000,48.000000},{0.00000,48}" />
-						<Property Name="RiseOnClick" Value="False" />
-						<Property Name="Image" Value="set:CircularTaskTool42 image:CircularTaskTool42_1" />
-					</Window>
-					<Window Type="TLBB_ButtonBig" Name="YueKa_BK3_Button">
-						<Property Name="UnifiedSize" Value="{{0.000000,116.000000},{0.000000,48.000000}}" />
-						<Property Name="UnifiedPosition" Value="{{1.000000,-116.000000},{0.000000,0.000000}}" />
-						<Property Name="Text" Value="#Y飞花藏宝阁" />
-						<Event Name="Clicked" Function="YueKa_Btn_Clicked(3);" />
-					</Window>
-				</Window>
-				<Window Type="DefaultWindow" Name="YueKa_BK4">
-					<Property Name="UnifiedSize" Value="{{0.000000,164.000000},{0.000000,49.000000}}" />
-					<Property Name="UnifiedPosition" Value="{{1.000000,-168.000000},{0.000000,57.000000}}" />
-					<Window Type="TLBB_Frame_Lace1" Name="YueKa_BK4_Back" >
-						<Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.0,0}" />
-						<Property Name="UnifiedSize" Value="{{0.00000,48.000000},{0.00000,48}" />
-						<Property Name="Image" Value="set:CircularTaskTool43 image:CircularTaskTool43_2" />
-						<Property Name="RiseOnClick" Value="False" />
-					</Window>
-					<Window Type="TLBB_ButtonBig" Name="YueKa_BK4_Button">
-						<Property Name="UnifiedSize" Value="{{0.000000,116.000000},{0.000000,48.000000}}" />
-						<Property Name="UnifiedPosition" Value="{{1.000000,-116.000000},{0.000000,0.000000}}" />
-						<Property Name="Text" Value="#Y随身修理" />
-						<Event Name="Clicked" Function="YueKa_Btn_Clicked(4);" />
-					</Window>
-				</Window>
-				<Window Type="DefaultWindow" Name="YueKa_BK5">
-					<Property Name="UnifiedSize" Value="{{0.000000,164.000000},{0.000000,49.000000}}" />
-					<Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,107.000000}}" />
-					<Window Type="TLBB_Frame_Lace1" Name="YueKa_BK5_Back" >
-						<Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.0,0}" />
-						<Property Name="UnifiedSize" Value="{{0.00000,48.000000},{0.00000,48}" />
-						<Property Name="RiseOnClick" Value="False" />
-						<Property Name="Image" Value="set:CircularTaskTool28  image:CircularTaskTool28_15"/>
-					</Window>
-					<Window Type="TLBB_ButtonBig" Name="YueKa_BK5_Button">
-						<Property Name="UnifiedSize" Value="{{0.000000,116.000000},{0.000000,48.000000}}" />
-						<Property Name="UnifiedPosition" Value="{{1.000000,-116.000000},{0.000000,0.000000}}" />
-						<Property Name="Text" Value="#Y双倍经验存取" />
-						<Event Name="Clicked" Function="YueKa_Btn_Clicked(5);" />
-					</Window>
-				</Window>
-				<Window Type="DefaultWindow" Name="YueKa_BK6">
-					<Property Name="UnifiedSize" Value="{{0.000000,164.000000},{0.000000,49.000000}}" />
-					<Property Name="UnifiedPosition" Value="{{1.000000,-168.000000},{0.000000,107.000000}}" />
-					<Window Type="TLBB_Frame_Lace1" Name="YueKa_BK6_Back" >
-						<Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.0,0}" />
-						<Property Name="UnifiedSize" Value="{{0.00000,48.000000},{0.00000,48}" />
-						<Property Name="RiseOnClick" Value="False" />
-						<Property Name="Image" Value="set:CircularTaskTool44 image:CircularTaskTool44_9" />
-					</Window>
-					<Window Type="TLBB_ButtonBig" Name="YueKa_BK6_Button">
-						<Property Name="UnifiedSize" Value="{{0.000000,116.000000},{0.000000,48.000000}}" />
-						<Property Name="UnifiedPosition" Value="{{1.000000,-116.000000},{0.000000,0.000000}}" />
-						<Property Name="Text" Value="#Y元宝市场" />
-						<Event Name="Clicked" Function="YueKa_Btn_Clicked(6);" />
-					</Window>
-				</Window>
-				<Window Type="DefaultWindow" Name="YueKa_BK7">
-					<Property Name="UnifiedSize" Value="{{0.000000,164.000000},{0.000000,49.000000}}" />
-					<Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,157.000000}}" />
-					<Window Type="TLBB_Frame_Lace1" Name="YueKa_BK7_Back" >
-						<Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.0,0}" />
-						<Property Name="UnifiedSize" Value="{{0.00000,48.000000},{0.00000,48}" />
-						<Property Name="RiseOnClick" Value="False" />
-						<Property Name="Image" Value="set:CircularTaskTool43 image:CircularTaskTool43_4" />
-					</Window>
-					<Window Type="TLBB_ButtonBig" Name="YueKa_BK7_Button">
-						<Property Name="UnifiedSize" Value="{{0.000000,116.000000},{0.000000,48.000000}}" />
-						<Property Name="UnifiedPosition" Value="{{1.000000,-116.000000},{0.000000,0.000000}}" />
-						<Property Name="Text" Value="#Y封号保释" />
-						<Event Name="Clicked" Function="YueKa_Btn_Clicked(7);" />
-					</Window>
-				</Window>
-				<Window Type="DefaultWindow" Name="YueKa_BK8">
-					<Property Name="UnifiedSize" Value="{{0.000000,164.000000},{0.000000,49.000000}}" />
-					<Property Name="UnifiedPosition" Value="{{1.000000,-168.000000},{0.000000,157.000000}}" />
-					<Window Type="TLBB_Frame_Lace1" Name="YueKa_BK8_Back" >
-						<Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.0,0}" />
-						<Property Name="UnifiedSize" Value="{{0.00000,48.000000},{0.00000,48}" />
-						<Property Name="RiseOnClick" Value="False" />
-						<Property Name="Image" Value="set:CircularTaskTool89 image:CircularTaskTool89_5" />
-					</Window>
-					<Window Type="TLBB_ButtonBig" Name="YueKa_BK8_Button">
-						<Property Name="UnifiedSize" Value="{{0.000000,116.000000},{0.000000,48.000000}}" />
-						<Property Name="UnifiedPosition" Value="{{1.000000,-116.000000},{0.000000,0.000000}}" />
-						<Property Name="Text" Value="#Y天龙宝库" />
-						<Event Name="Clicked" Function="YueKa_Btn_Clicked(8);" />
-					</Window>
-				</Window>
-				<Window Type="TLBB_Frame_Lace1" Name="YueKa_Lace3" >
-					<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,30.000000}}"/>
-					<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-50.000000}}"/>
-					<Window Type="TLBB_SimpleText" Name="YueKa_Text2">
-						<Property Name="UnifiedSize" Value="{{0.000000,180.000000},{1.000000,0.000000}}" />
-						<Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,0.000000}}" />
-						<Property Name="Text" Value="您当前的双倍经验时间:" />
-						<Property Name="TextColor" Value="FFFFF263" />
-						<Property Name="HorzFormatting" Value="RightAligned" />
-					</Window>
-					<Window Type="TLBB_StopWatch" Name="YueKa_Text3">
-						<Property Name="UnifiedSize" Value="{{0.000000,70.000000},{1.000000,0.000000}}" />
-						<Property Name="UnifiedPosition" Value="{{0.000000,220.000000},{0.000000,0.000000}}" />
-						<Property Name="Text" Value="00:00:00" />
-						<Property Name="TextColor" Value="FFFFF263" />
-						<Property Name="HorzFormatting" Value="RightAligned" />
-					</Window>
-				</Window>
-			</Window>
-		</Window>
-	</Window>
+    <Window Type="TLBB_MainFrame0" Name="YueKa_Frame">
+        <Property Name="UnifiedSize" Value="{{0.000000,356.000000},{0.000000,420.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.500000,-178.000000},{0.500000,-180.000000}}" />
+        <Event Name="Hidden" Function="YueKa_Close();"/>
+        <Window Type="TLBB_DragTitle" Name="YueKa_DragTitle">
+            <Property Name="AbsolutePosition" Value="x:40.000000 y:11.000000"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}}" />
+            <Property Name="DragTarget" Value="YueKa_Frame"/>
+            <Window Type="TLBB_SimpleText" Name="YueKa_Title">
+                <Property Name="RelativePosition" Value="x:0.000000 y:0.000000"/>
+                <Property Name="RelativeSize" Value="w:1.000000 h:1.000000"/>
+                <Property Name="Font" Value="YouYuan11.25"/>
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="Text" Value="#Y御龙贴"/>
+                <Property Name="VertFormatting" Value="VertCentred"/>
+            </Window>
+        </Window>
+        <Window Type="TLBB_ButtonHelp" Name="YueKa_HelpNull">
+            <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}" />
+        </Window>
+        <Window Type="TLBB_ButtonClose" Name="YueKa_Close">
+            <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}" />
+            <Event Name="Clicked" Function="YueKa_Close();"/>
+        </Window>
+        <Window Type="DefaultWindow" Name="YueKa_Frame1">
+            <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,-46.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,29.000000}}" />
+            <Window Type="DefaultWindow" Name="YueKa_Client1">
+                <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{0.000000,124.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,9.000000}}" />
+                <Property Name="RiseOnClick" Value="False"/>
+                <Window Type="TLBB_StaticText2" Name="YueKa_Text1">
+                    <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+                    <Property Name="VertFormatting" Value="TopAligned"/>
+                    <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+                    <Property Name="Text" Value="#{SSGN_210307_01}"/>
+                </Window>
+            </Window>
+            <Window Type="TLBB_Frame_Lace2" Name="YueKa_Client3">
+                <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{1.000000,-116.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,134.000000}}" />
+                <Window Type="DefaultWindow" Name="YueKa_BK1">
+                    <Property Name="UnifiedSize" Value="{{0.000000,164.000000},{0.000000,49.000000}}" />
+                    <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,7.000000}}" />
+                    <Window Type="TLBB_Frame_Lace1" Name="YueKa_BK1_Back">
+                        <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.0,0}}" />
+                        <Property Name="UnifiedSize" Value="{{0.00000,48.000000},{0.00000,48}}" />
+                        <Property Name="Image" Value="set:CircularTaskTool19  image:CircularTaskTool19_5"/>
+                        <Property Name="RiseOnClick" Value="False"/>
+                    </Window>
+                    <Window Type="TLBB_ButtonBig" Name="YueKa_BK1_Button">
+                        <Property Name="UnifiedSize" Value="{{0.000000,116.000000},{0.000000,48.000000}}" />
+                        <Property Name="UnifiedPosition" Value="{{1.000000,-116.000000},{0.000000,0.000000}}" />
+                        <Property Name="Text" Value="#Y每日福袋"/>
+                        <Event Name="Clicked" Function="YueKa_Btn_Clicked(1);"/>
+                    </Window>
+                </Window>
+                <Window Type="DefaultWindow" Name="YueKa_BK2">
+                    <Property Name="UnifiedSize" Value="{{0.000000,164.000000},{0.000000,49.000000}}" />
+                    <Property Name="UnifiedPosition" Value="{{1.000000,-168.000000},{0.000000,7.000000}}" />
+                    <Window Type="TLBB_Frame_Lace1" Name="YueKa_BK2_Back">
+                        <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.0,0}}" />
+                        <Property Name="UnifiedSize" Value="{{0.00000,48.000000},{0.00000,48}}" />
+                        <Property Name="RiseOnClick" Value="False"/>
+                        <Property Name="Image" Value="set:CircularTaskTool83  image:CircularTaskTool83_10"/>
+                    </Window>
+                    <Window Type="TLBB_ButtonBig" Name="YueKa_BK2_Button">
+                        <Property Name="UnifiedSize" Value="{{0.000000,116.000000},{0.000000,48.000000}}" />
+                        <Property Name="UnifiedPosition" Value="{{1.000000,-116.000000},{0.000000,0.000000}}" />
+                        <Property Name="Text" Value="#Y便捷传送"/>
+                        <Event Name="Clicked" Function="YueKa_Btn_Clicked(2);"/>
+                    </Window>
+                </Window>
+                <Window Type="DefaultWindow" Name="YueKa_BK3">
+                    <Property Name="UnifiedSize" Value="{{0.000000,164.000000},{0.000000,49.000000}}" />
+                    <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,57.000000}}" />
+                    <Window Type="TLBB_Frame_Lace1" Name="YueKa_BK3_Back">
+                        <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.0,0}}" />
+                        <Property Name="UnifiedSize" Value="{{0.00000,48.000000},{0.00000,48}}" />
+                        <Property Name="RiseOnClick" Value="False"/>
+                        <Property Name="Image" Value="set:CircularTaskTool42 image:CircularTaskTool42_1"/>
+                    </Window>
+                    <Window Type="TLBB_ButtonBig" Name="YueKa_BK3_Button">
+                        <Property Name="UnifiedSize" Value="{{0.000000,116.000000},{0.000000,48.000000}}" />
+                        <Property Name="UnifiedPosition" Value="{{1.000000,-116.000000},{0.000000,0.000000}}" />
+                        <Property Name="Text" Value="#Y飞花藏宝阁"/>
+                        <Event Name="Clicked" Function="YueKa_Btn_Clicked(3);"/>
+                    </Window>
+                </Window>
+                <Window Type="DefaultWindow" Name="YueKa_BK4">
+                    <Property Name="UnifiedSize" Value="{{0.000000,164.000000},{0.000000,49.000000}}" />
+                    <Property Name="UnifiedPosition" Value="{{1.000000,-168.000000},{0.000000,57.000000}}" />
+                    <Window Type="TLBB_Frame_Lace1" Name="YueKa_BK4_Back">
+                        <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.0,0}}" />
+                        <Property Name="UnifiedSize" Value="{{0.00000,48.000000},{0.00000,48}}" />
+                        <Property Name="Image" Value="set:CircularTaskTool43 image:CircularTaskTool43_2"/>
+                        <Property Name="RiseOnClick" Value="False"/>
+                    </Window>
+                    <Window Type="TLBB_ButtonBig" Name="YueKa_BK4_Button">
+                        <Property Name="UnifiedSize" Value="{{0.000000,116.000000},{0.000000,48.000000}}" />
+                        <Property Name="UnifiedPosition" Value="{{1.000000,-116.000000},{0.000000,0.000000}}" />
+                        <Property Name="Text" Value="#Y随身修理"/>
+                        <Event Name="Clicked" Function="YueKa_Btn_Clicked(4);"/>
+                    </Window>
+                </Window>
+                <Window Type="DefaultWindow" Name="YueKa_BK5">
+                    <Property Name="UnifiedSize" Value="{{0.000000,164.000000},{0.000000,49.000000}}" />
+                    <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,107.000000}}" />
+                    <Window Type="TLBB_Frame_Lace1" Name="YueKa_BK5_Back">
+                        <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.0,0}}" />
+                        <Property Name="UnifiedSize" Value="{{0.00000,48.000000},{0.00000,48}}" />
+                        <Property Name="RiseOnClick" Value="False"/>
+                        <Property Name="Image" Value="set:CircularTaskTool28  image:CircularTaskTool28_15"/>
+                    </Window>
+                    <Window Type="TLBB_ButtonBig" Name="YueKa_BK5_Button">
+                        <Property Name="UnifiedSize" Value="{{0.000000,116.000000},{0.000000,48.000000}}" />
+                        <Property Name="UnifiedPosition" Value="{{1.000000,-116.000000},{0.000000,0.000000}}" />
+                        <Property Name="Text" Value="#Y双倍经验存取"/>
+                        <Event Name="Clicked" Function="YueKa_Btn_Clicked(5);"/>
+                    </Window>
+                </Window>
+                <Window Type="DefaultWindow" Name="YueKa_BK6">
+                    <Property Name="UnifiedSize" Value="{{0.000000,164.000000},{0.000000,49.000000}}" />
+                    <Property Name="UnifiedPosition" Value="{{1.000000,-168.000000},{0.000000,107.000000}}" />
+                    <Window Type="TLBB_Frame_Lace1" Name="YueKa_BK6_Back">
+                        <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.0,0}}" />
+                        <Property Name="UnifiedSize" Value="{{0.00000,48.000000},{0.00000,48}}" />
+                        <Property Name="RiseOnClick" Value="False"/>
+                        <Property Name="Image" Value="set:CircularTaskTool44 image:CircularTaskTool44_9"/>
+                    </Window>
+                    <Window Type="TLBB_ButtonBig" Name="YueKa_BK6_Button">
+                        <Property Name="UnifiedSize" Value="{{0.000000,116.000000},{0.000000,48.000000}}" />
+                        <Property Name="UnifiedPosition" Value="{{1.000000,-116.000000},{0.000000,0.000000}}" />
+                        <Property Name="Text" Value="#Y元宝市场"/>
+                        <Event Name="Clicked" Function="YueKa_Btn_Clicked(6);"/>
+                    </Window>
+                </Window>
+                <Window Type="DefaultWindow" Name="YueKa_BK7">
+                    <Property Name="UnifiedSize" Value="{{0.000000,164.000000},{0.000000,49.000000}}" />
+                    <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,157.000000}}" />
+                    <Window Type="TLBB_Frame_Lace1" Name="YueKa_BK7_Back">
+                        <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.0,0}}" />
+                        <Property Name="UnifiedSize" Value="{{0.00000,48.000000},{0.00000,48}}" />
+                        <Property Name="RiseOnClick" Value="False"/>
+                        <Property Name="Image" Value="set:CircularTaskTool43 image:CircularTaskTool43_4"/>
+                    </Window>
+                    <Window Type="TLBB_ButtonBig" Name="YueKa_BK7_Button">
+                        <Property Name="UnifiedSize" Value="{{0.000000,116.000000},{0.000000,48.000000}}" />
+                        <Property Name="UnifiedPosition" Value="{{1.000000,-116.000000},{0.000000,0.000000}}" />
+                        <Property Name="Text" Value="#Y封号保释"/>
+                        <Event Name="Clicked" Function="YueKa_Btn_Clicked(7);"/>
+                    </Window>
+                </Window>
+                <Window Type="DefaultWindow" Name="YueKa_BK8">
+                    <Property Name="UnifiedSize" Value="{{0.000000,164.000000},{0.000000,49.000000}}" />
+                    <Property Name="UnifiedPosition" Value="{{1.000000,-168.000000},{0.000000,157.000000}}" />
+                    <Window Type="TLBB_Frame_Lace1" Name="YueKa_BK8_Back">
+                        <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.0,0}}" />
+                        <Property Name="UnifiedSize" Value="{{0.00000,48.000000},{0.00000,48}}" />
+                        <Property Name="RiseOnClick" Value="False"/>
+                        <Property Name="Image" Value="set:CircularTaskTool89 image:CircularTaskTool89_5"/>
+                    </Window>
+                    <Window Type="TLBB_ButtonBig" Name="YueKa_BK8_Button">
+                        <Property Name="UnifiedSize" Value="{{0.000000,116.000000},{0.000000,48.000000}}" />
+                        <Property Name="UnifiedPosition" Value="{{1.000000,-116.000000},{0.000000,0.000000}}" />
+                        <Property Name="Text" Value="#Y天龙宝库"/>
+                        <Event Name="Clicked" Function="YueKa_Btn_Clicked(8);"/>
+                    </Window>
+                </Window>
+                <Window Type="TLBB_Frame_Lace1" Name="YueKa_Lace3">
+                    <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,30.000000}}" />
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-50.000000}}" />
+                    <Window Type="TLBB_SimpleText" Name="YueKa_Text2">
+                        <Property Name="UnifiedSize" Value="{{0.000000,180.000000},{1.000000,0.000000}}" />
+                        <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,0.000000}}" />
+                        <Property Name="Text" Value="您当前的双倍经验时间:"/>
+                        <Property Name="TextColor" Value="FFFFF263"/>
+                        <Property Name="HorzFormatting" Value="RightAligned"/>
+                    </Window>
+                    <Window Type="TLBB_StopWatch" Name="YueKa_Text3">
+                        <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{1.000000,0.000000}}" />
+                        <Property Name="UnifiedPosition" Value="{{0.000000,220.000000},{0.000000,0.000000}}" />
+                        <Property Name="Text" Value="00:00:00"/>
+                        <Property Name="TextColor" Value="FFFFF263"/>
+                        <Property Name="HorzFormatting" Value="RightAligned"/>
+                    </Window>
+                </Window>
+            </Window>
+        </Window>
+    </Window>
 </GUILayout>

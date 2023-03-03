@@ -1,41 +1,41 @@
 ﻿<?xml version="1.0" ?>
 <GUILayout>
   <Window Type="TLBB_HeroFrame01" Name="ZhongQiu_TuanYuanFan_Frame">
-    <Property Name="UnifiedSize" Value="{{0.000000,806.000000},{0.000000,504.000000}}"/>
-    <Property Name="UnifiedPosition" Value="{{0.500000,-403.000000},{0.500000,-252.000000}}"/>
+    <Property Name="UnifiedSize" Value="{{0.000000,806.000000},{0.000000,504.000000}}" />
+    <Property Name="UnifiedPosition" Value="{{0.500000,-403.000000},{0.500000,-252.000000}}" />
     <Event Name="Hidden" Function="ZhongQiu_TuanYuanFan_Hidden();" />
     <Window Type="TLBB_DragTitle" Name="ZhongQiu_TuanYuanFan_DragTitle">
-      <Property Name="UnifiedSize" Value="{{1.000000,-34.000000},{0.000000,30.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,-2.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-34.000000},{0.000000,30.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,-2.000000}}" />
       <Property Name="DragTarget" Value="ZhongQiu_TuanYuanFan_Frame" />
       <Property Name="AlwaysOnTop" Value="True"/>
     </Window>
     <Window Type="TLBB_HeroTitle01" Name="ZhongQiu_TuanYuanFan_DragTitleBK">
-      <Property Name="UnifiedSize" Value="{{0.000000,380.000000},{0.000000,30.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.5000000,-190.000000},{0.000000,-2.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{0.000000,380.000000},{0.000000,30.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.5000000,-190.000000},{0.000000,-2.000000}}" />
       <Property Name="MouseRButtonHollow" Value="True"/>
       <Property Name="MouseMoveHollow" Value="True"/>
       <Property Name="MouseLButtonHollow" Value="True"/>
       <Property Name="MouseHollow" Value="True"/>
       <Window Type="TLBB_SimpleText" Name="ZhongQiu_TuanYuanFan_DragTitleText">
-        <Property Name="UnifiedSize" Value="{{0.000000,148.000000},{0.0000000,22.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.500000,-74.000000},{0.000000,4.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,148.000000},{0.0000000,22.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.500000,-74.000000},{0.000000,4.000000}}" />
         <Property Name="Text" Value="#{TYF_210712_01}"/>
         <Property Name="Font" Value="YouYuan11.25"/>
         <Property Name="HorzFormatting" Value="WordWrapCentred"/>
       </Window>
     </Window>>
     <Window Type="TLBB_ButtonClose2" Name="ZhongQiu_TuanYuanFan_Close">
-      <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,14.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{1.000000,-28.000000},{0.000000,10.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,14.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{1.000000,-28.000000},{0.000000,10.000000}}" />
       <Event Name="Clicked" Function="this:Hide();"/>
     </Window>
     <Window Type="DefaultWindow" Name="ZhongQiu_TuanYuanFan_Function_Frame">
-      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-30.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,30.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-30.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,30.000000}}" />
       <Window Type="TLBB_StaticImageNULL" Name="ZhongQiu_TuanYuanFan_Function_BKup">
-        <Property Name="UnifiedSize" Value="{{0.000000,802.000000},{.000000,204.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,802.000000},{.000000,204.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}" />
         <Property Name="RiseOnClick" Value="False"/>
         <Property Name="MouseRButtonHollow" Value="True"/>
         <Property Name="MouseMoveHollow" Value="True"/>
@@ -44,8 +44,8 @@
         <Property Name="Image" Value="set:ZhongQiu_TuanYuanFan2 image:TuanYuanFan_BK_up"/>
       </Window>
       <Window Type="TLBB_StaticImageNULL" Name="ZhongQiu_TuanYuanFan_Function_BKtable">
-        <Property Name="UnifiedSize" Value="{{0.000000,802.000000},{.000000,268.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,201.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,802.000000},{.000000,268.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,201.000000}}" />
         <Property Name="RiseOnClick" Value="False"/>
         <Property Name="MouseRButtonHollow" Value="True"/>
         <Property Name="MouseMoveHollow" Value="True"/>
@@ -54,29 +54,29 @@
         <Property Name="Image" Value="set:ZhongQiu_TuanYuanFan2 image:TuanYuanFan_Table2_Luxury"/>
       </Window>
       <Window Type="DefaultWindow" Name="ZhongQiu_TuanYuanFan_Table1">
-        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
-        <Property Name="UnifiedSize" Value="{{1.00000,0.000000},{1.0000000.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+        <Property Name="UnifiedSize" Value="{{1.00000,0.000000},{1.0000000.000000}}" />
         <Property Name="MouseRButtonHollow" Value="True"/>
         <Property Name="MouseMoveHollow" Value="True"/>
         <Property Name="MouseLButtonHollow" Value="True"/>
         <Property Name="MouseHollow" Value="True"/>
         <Window Type="DefaultWindow" Name="ZhongQiu_TuanYuanFan_Table1_Member1">
-          <Property Name="UnifiedSize" Value="{{0.000000,220.000000},{0.000000,60.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.500000,-94.000000},{0.000000,204.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,220.000000},{0.000000,60.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.500000,-94.000000},{0.000000,204.000000}}" />
           <Window Type="TLBB_SimpleText" Name="ZhongQiu_TuanYuanFan_Table1_Name1">
-            <Property Name="UnifiedSize" Value="{{0.000000,146.000000},{0.0000000,22.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.000000,4.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,146.000000},{0.0000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.000000,4.000000}}" />
             <Property Name="Text" Value="玩家ID"/>
             <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
           </Window>
           <Window Type="TLBB_StaticImageNULL" Name="ZhongQiu_TuanYuanFan_Table1_Name1BK">
-            <Property Name="UnifiedSize" Value="{{0.000000,146.000000},{0.0000000,16.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.0000000,62.000000},{0.000000,6.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,146.000000},{0.0000000,16.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.0000000,62.000000},{0.000000,6.000000}}" />
             <Property Name="Image" Value="set:ZhongQiu_TuanYuanFan1 image:TuanYuanFan_NameBK"/>
           </Window>
           <Window Type="TLBB_StaticImageNULL" Name="ZhongQiu_TuanYuanFan_Table1_Info1_BK">
-            <Property Name="UnifiedSize" Value="{{0.000000,86.000000},{0.000000,22.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,62.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,86.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,62.000000},{0.000000,24.000000}}" />
             <Property Name="AlwaysOnTop" Value="True"/>
             <Property Name="MouseHollow" Value="True"/>
             <Property Name="MouseLButtonHollow" Value="True"/>
@@ -85,8 +85,8 @@
             <Property Name="Image" Value="set:ZhongQiu_TuanYuanFan1 image:TuanYuanFan_In"/>
           </Window>
           <Window Type="TLBB_StaticImageNULL" Name="ZhongQiu_TuanYuanFan_Table1_Head1">
-            <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}" />
             <Property Name="MouseHollow" Value="true" />
             <Property Name="MouseMoveHollow" Value="true" />
             <Property Name="MouseLButtonHollow" Value="true" />
@@ -95,8 +95,8 @@
             <Property Name="Image" Value="set:ZhongQiu_TuanYuanFan1 image:TuanYuanFan_EmptySeat"/>
           </Window>
           <Window Type="TLBB_StaticImageNULL" Name="ZhongQiu_TuanYuanFan_Table1_Cap">
-            <Property Name="UnifiedSize" Value="{{0.000000,22.000000},{0.000000,34.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,4.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,22.000000},{0.000000,34.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,4.000000}}" />
             <Property Name="MouseHollow" Value="true" />
             <Property Name="MouseMoveHollow" Value="true" />
             <Property Name="MouseLButtonHollow" Value="true" />
@@ -106,22 +106,22 @@
           </Window>
         </Window>
         <Window Type="DefaultWindow" Name="ZhongQiu_TuanYuanFan_Table1_Member2">
-          <Property Name="UnifiedSize" Value="{{0.000000,220.000000},{0.000000,60.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,92.000000},{0.000000,158.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,220.000000},{0.000000,60.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,92.000000},{0.000000,158.000000}}" />
           <Window Type="TLBB_SimpleText" Name="ZhongQiu_TuanYuanFan_Table1_Name2">
-            <Property Name="UnifiedSize" Value="{{0.000000,146.000000},{0.0000000,22.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.000000,4.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,146.000000},{0.0000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.000000,4.000000}}" />
             <Property Name="Text" Value="玩家ID"/>
             <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
           </Window>
           <Window Type="TLBB_StaticImageNULL" Name="ZhongQiu_TuanYuanFan_Table1_Name2BK">
-            <Property Name="UnifiedSize" Value="{{0.000000,146.000000},{0.0000000,16.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.0000000,62.000000},{0.000000,6.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,146.000000},{0.0000000,16.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.0000000,62.000000},{0.000000,6.000000}}" />
             <Property Name="Image" Value="set:ZhongQiu_TuanYuanFan1 image:TuanYuanFan_NameBK"/>
           </Window>
           <Window Type="TLBB_StaticImageNULL" Name="ZhongQiu_TuanYuanFan_Table1_Info2_BK">
-            <Property Name="UnifiedSize" Value="{{0.000000,86.000000},{0.000000,22.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,62.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,86.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,62.000000},{0.000000,24.000000}}" />
             <Property Name="AlwaysOnTop" Value="True"/>
             <Property Name="MouseHollow" Value="True"/>
             <Property Name="MouseLButtonHollow" Value="True"/>
@@ -130,8 +130,8 @@
             <Property Name="Image" Value="set:ZhongQiu_TuanYuanFan1 image:TuanYuanFan_In"/>
           </Window>
           <Window Type="TLBB_StaticImageNULL" Name="ZhongQiu_TuanYuanFan_Table1_Head2">
-            <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}" />
             <Property Name="MouseHollow" Value="true" />
             <Property Name="MouseMoveHollow" Value="true" />
             <Property Name="MouseLButtonHollow" Value="true" />
@@ -141,22 +141,22 @@
           </Window>
         </Window>
         <Window Type="DefaultWindow" Name="ZhongQiu_TuanYuanFan_Table1_Member3">
-          <Property Name="UnifiedSize" Value="{{0.000000,220.000000},{0.000000,60.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,182.000000},{0.000000,64.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,220.000000},{0.000000,60.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,182.000000},{0.000000,64.000000}}" />
           <Window Type="TLBB_SimpleText" Name="ZhongQiu_TuanYuanFan_Table1_Name3">
-            <Property Name="UnifiedSize" Value="{{0.000000,146.000000},{0.0000000,22.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.000000,4.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,146.000000},{0.0000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.000000,4.000000}}" />
             <Property Name="Text" Value="玩家ID"/>
             <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
           </Window>
           <Window Type="TLBB_StaticImageNULL" Name="ZhongQiu_TuanYuanFan_Table1_Name3BK">
-            <Property Name="UnifiedSize" Value="{{0.000000,146.000000},{0.0000000,16.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.0000000,62.000000},{0.000000,6.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,146.000000},{0.0000000,16.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.0000000,62.000000},{0.000000,6.000000}}" />
             <Property Name="Image" Value="set:ZhongQiu_TuanYuanFan1 image:TuanYuanFan_NameBK"/>
           </Window>
           <Window Type="TLBB_StaticImageNULL" Name="ZhongQiu_TuanYuanFan_Table1_Info3_BK">
-            <Property Name="UnifiedSize" Value="{{0.000000,86.000000},{0.000000,22.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,62.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,86.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,62.000000},{0.000000,24.000000}}" />
             <Property Name="AlwaysOnTop" Value="True"/>
             <Property Name="MouseHollow" Value="True"/>
             <Property Name="MouseLButtonHollow" Value="True"/>
@@ -165,8 +165,8 @@
             <Property Name="Image" Value="set:ZhongQiu_TuanYuanFan1 image:TuanYuanFan_In"/>
           </Window>
           <Window Type="TLBB_StaticImageNULL" Name="ZhongQiu_TuanYuanFan_Table1_Head3">
-            <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}" />
             <Property Name="MouseHollow" Value="true" />
             <Property Name="MouseMoveHollow" Value="true" />
             <Property Name="MouseLButtonHollow" Value="true" />
@@ -176,22 +176,22 @@
           </Window>
         </Window>
         <Window Type="DefaultWindow" Name="ZhongQiu_TuanYuanFan_Table1_Member4">
-          <Property Name="UnifiedSize" Value="{{0.000000,220.000000},{0.000000,60.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,414.000000},{0.000000,64.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,220.000000},{0.000000,60.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,414.000000},{0.000000,64.000000}}" />
           <Window Type="TLBB_SimpleText" Name="ZhongQiu_TuanYuanFan_Table1_Name4">
-            <Property Name="UnifiedSize" Value="{{0.000000,146.000000},{0.0000000,22.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.000000,4.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,146.000000},{0.0000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.000000,4.000000}}" />
             <Property Name="Text" Value="玩家ID"/>
             <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
           </Window>
           <Window Type="TLBB_StaticImageNULL" Name="ZhongQiu_TuanYuanFan_Table1_Name4BK">
-            <Property Name="UnifiedSize" Value="{{0.000000,146.000000},{0.0000000,16.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.0000000,62.000000},{0.000000,6.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,146.000000},{0.0000000,16.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.0000000,62.000000},{0.000000,6.000000}}" />
             <Property Name="Image" Value="set:ZhongQiu_TuanYuanFan1 image:TuanYuanFan_NameBK"/>
           </Window>
           <Window Type="TLBB_StaticImageNULL" Name="ZhongQiu_TuanYuanFan_Table1_Info4_BK">
-            <Property Name="UnifiedSize" Value="{{0.000000,86.000000},{0.000000,22.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,62.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,86.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,62.000000},{0.000000,24.000000}}" />
             <Property Name="AlwaysOnTop" Value="True"/>
             <Property Name="MouseHollow" Value="True"/>
             <Property Name="MouseLButtonHollow" Value="True"/>
@@ -200,8 +200,8 @@
             <Property Name="Image" Value="set:ZhongQiu_TuanYuanFan1 image:TuanYuanFan_In"/>
           </Window>
           <Window Type="TLBB_StaticImageNULL" Name="ZhongQiu_TuanYuanFan_Table1_Head4">
-            <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}" />
             <Property Name="MouseHollow" Value="true" />
             <Property Name="MouseMoveHollow" Value="true" />
             <Property Name="MouseLButtonHollow" Value="true" />
@@ -211,22 +211,22 @@
           </Window>
         </Window>
         <Window Type="DefaultWindow" Name="ZhongQiu_TuanYuanFan_Table1_Member5">
-          <Property Name="UnifiedSize" Value="{{0.000000,220.000000},{0.000000,60.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,536.000000},{0.000000,158.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,220.000000},{0.000000,60.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,536.000000},{0.000000,158.000000}}" />
           <Window Type="TLBB_SimpleText" Name="ZhongQiu_TuanYuanFan_Table1_Name5">
-            <Property Name="UnifiedSize" Value="{{0.000000,146.000000},{0.0000000,22.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.000000,4.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,146.000000},{0.0000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.000000,4.000000}}" />
             <Property Name="Text" Value="玩家ID"/>
             <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
           </Window>
           <Window Type="TLBB_StaticImageNULL" Name="ZhongQiu_TuanYuanFan_Table1_Name5BK">
-            <Property Name="UnifiedSize" Value="{{0.000000,146.000000},{0.0000000,16.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.0000000,62.000000},{0.000000,6.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,146.000000},{0.0000000,16.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.0000000,62.000000},{0.000000,6.000000}}" />
             <Property Name="Image" Value="set:ZhongQiu_TuanYuanFan1 image:TuanYuanFan_NameBK"/>
           </Window>
           <Window Type="TLBB_StaticImageNULL" Name="ZhongQiu_TuanYuanFan_Table1_Info5_BK">
-            <Property Name="UnifiedSize" Value="{{0.000000,86.000000},{0.000000,22.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,62.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,86.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,62.000000},{0.000000,24.000000}}" />
             <Property Name="AlwaysOnTop" Value="True"/>
             <Property Name="MouseHollow" Value="True"/>
             <Property Name="MouseLButtonHollow" Value="True"/>
@@ -235,8 +235,8 @@
             <Property Name="Image" Value="set:ZhongQiu_TuanYuanFan1 image:TuanYuanFan_In"/>
           </Window>
           <Window Type="TLBB_StaticImageNULL" Name="ZhongQiu_TuanYuanFan_Table1_Head5">
-            <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}" />
             <Property Name="MouseHollow" Value="true" />
             <Property Name="MouseMoveHollow" Value="true" />
             <Property Name="MouseLButtonHollow" Value="true" />
@@ -247,29 +247,29 @@
         </Window>
       </Window>
       <Window Type="DefaultWindow" Name="ZhongQiu_TuanYuanFan_Table2">
-        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
-        <Property Name="UnifiedSize" Value="{{1.0000000,0.000000},{1.000000,0.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+        <Property Name="UnifiedSize" Value="{{1.0000000,0.000000},{1.000000,0.000000}}" />
         <Property Name="MouseRButtonHollow" Value="True"/>
         <Property Name="MouseMoveHollow" Value="True"/>
         <Property Name="MouseLButtonHollow" Value="True"/>
         <Property Name="MouseHollow" Value="True"/>
         <Window Type="DefaultWindow" Name="ZhongQiu_TuanYuanFan_Table2_Member1">
-          <Property Name="UnifiedSize" Value="{{0.000000,220.000000},{0.000000,60.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.500000,-94.000000},{0.000000,204.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,220.000000},{0.000000,60.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.500000,-94.000000},{0.000000,204.000000}}" />
           <Window Type="TLBB_SimpleText" Name="ZhongQiu_TuanYuanFan_Table2_Name1">
-            <Property Name="UnifiedSize" Value="{{0.000000,146.000000},{0.0000000,22.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.000000,4.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,146.000000},{0.0000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.000000,4.000000}}" />
             <Property Name="Text" Value="玩家ID"/>
             <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
           </Window>
           <Window Type="TLBB_StaticImageNULL" Name="ZhongQiu_TuanYuanFan_Table2_Name1BK">
-            <Property Name="UnifiedSize" Value="{{0.000000,146.000000},{0.0000000,16.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.0000000,62.000000},{0.000000,6.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,146.000000},{0.0000000,16.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.0000000,62.000000},{0.000000,6.000000}}" />
             <Property Name="Image" Value="set:ZhongQiu_TuanYuanFan1 image:TuanYuanFan_NameBK"/>
           </Window>
           <Window Type="TLBB_StaticImageNULL" Name="ZhongQiu_TuanYuanFan_Table2_Info1_BK">
-            <Property Name="UnifiedSize" Value="{{0.000000,86.000000},{0.000000,22.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,62.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,86.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,62.000000},{0.000000,24.000000}}" />
             <Property Name="AlwaysOnTop" Value="True"/>
             <Property Name="MouseHollow" Value="True"/>
             <Property Name="MouseLButtonHollow" Value="True"/>
@@ -278,8 +278,8 @@
             <Property Name="Image" Value="set:ZhongQiu_TuanYuanFan1 image:TuanYuanFan_Leave"/>
           </Window>
           <Window Type="TLBB_StaticImageNULL" Name="ZhongQiu_TuanYuanFan_Table2_Head1">
-            <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}" />
             <Property Name="MouseHollow" Value="true" />
             <Property Name="MouseMoveHollow" Value="true" />
             <Property Name="MouseLButtonHollow" Value="true" />
@@ -288,8 +288,8 @@
             <Property Name="Image" Value="set:ZhongQiu_TuanYuanFan1 image:TuanYuanFan_EmptySeat"/>
           </Window>
           <Window Type="TLBB_StaticImageNULL" Name="ZhongQiu_TuanYuanFan_Table2_Cap">
-            <Property Name="UnifiedSize" Value="{{0.000000,22.000000},{0.000000,34.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,4.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,22.000000},{0.000000,34.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,4.000000}}" />
             <Property Name="MouseHollow" Value="true" />
             <Property Name="MouseMoveHollow" Value="true" />
             <Property Name="MouseLButtonHollow" Value="true" />
@@ -299,22 +299,22 @@
           </Window>
         </Window>
         <Window Type="DefaultWindow" Name="ZhongQiu_TuanYuanFan_Table2_Member2">
-          <Property Name="UnifiedSize" Value="{{0.000000,220.000000},{0.000000,60.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,120.000000},{0.000000,140.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,220.000000},{0.000000,60.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,120.000000},{0.000000,140.000000}}" />
           <Window Type="TLBB_SimpleText" Name="ZhongQiu_TuanYuanFan_Table2_Name2">
-            <Property Name="UnifiedSize" Value="{{0.000000,146.000000},{0.0000000,22.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.000000,4.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,146.000000},{0.0000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.000000,4.000000}}" />
             <Property Name="Text" Value="玩家ID"/>
             <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
           </Window>
           <Window Type="TLBB_StaticImageNULL" Name="ZhongQiu_TuanYuanFan_Table2_Name2BK">
-            <Property Name="UnifiedSize" Value="{{0.000000,146.000000},{0.0000000,16.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.0000000,62.000000},{0.000000,6.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,146.000000},{0.0000000,16.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.0000000,62.000000},{0.000000,6.000000}}" />
             <Property Name="Image" Value="set:ZhongQiu_TuanYuanFan1 image:TuanYuanFan_NameBK"/>
           </Window>
           <Window Type="TLBB_StaticImageNULL" Name="ZhongQiu_TuanYuanFan_Table2_Info2_BK">
-            <Property Name="UnifiedSize" Value="{{0.000000,86.000000},{0.000000,22.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,62.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,86.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,62.000000},{0.000000,24.000000}}" />
             <Property Name="AlwaysOnTop" Value="True"/>
             <Property Name="MouseHollow" Value="True"/>
             <Property Name="MouseLButtonHollow" Value="True"/>
@@ -323,8 +323,8 @@
             <Property Name="Image" Value="set:ZhongQiu_TuanYuanFan1 image:TuanYuanFan_In"/>
           </Window>
           <Window Type="TLBB_StaticImageNULL" Name="ZhongQiu_TuanYuanFan_Table2_Head2">
-            <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}" />
             <Property Name="MouseHollow" Value="true" />
             <Property Name="MouseMoveHollow" Value="true" />
             <Property Name="MouseLButtonHollow" Value="true" />
@@ -334,22 +334,22 @@
           </Window>
         </Window>
         <Window Type="DefaultWindow" Name="ZhongQiu_TuanYuanFan_Table2_Member3">
-          <Property Name="UnifiedSize" Value="{{0.000000,220.000000},{0.000000,60.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.000000,60.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,220.000000},{0.000000,60.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.000000,60.000000}}" />
           <Window Type="TLBB_SimpleText" Name="ZhongQiu_TuanYuanFan_Table2_Name3">
-            <Property Name="UnifiedSize" Value="{{0.000000,146.000000},{0.0000000,22.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.000000,4.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,146.000000},{0.0000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.000000,4.000000}}" />
             <Property Name="Text" Value="玩家ID"/>
             <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
           </Window>
           <Window Type="TLBB_StaticImageNULL" Name="ZhongQiu_TuanYuanFan_Table2_Name3BK">
-            <Property Name="UnifiedSize" Value="{{0.000000,146.000000},{0.0000000,16.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.0000000,62.000000},{0.000000,6.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,146.000000},{0.0000000,16.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.0000000,62.000000},{0.000000,6.000000}}" />
             <Property Name="Image" Value="set:ZhongQiu_TuanYuanFan1 image:TuanYuanFan_NameBK"/>
           </Window>
           <Window Type="TLBB_StaticImageNULL" Name="ZhongQiu_TuanYuanFan_Table2_Info3_BK">
-            <Property Name="UnifiedSize" Value="{{0.000000,86.000000},{0.000000,22.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,62.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,86.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,62.000000},{0.000000,24.000000}}" />
             <Property Name="AlwaysOnTop" Value="True"/>
             <Property Name="MouseHollow" Value="True"/>
             <Property Name="MouseLButtonHollow" Value="True"/>
@@ -358,8 +358,8 @@
             <Property Name="Image" Value="set:ZhongQiu_TuanYuanFan1 image:TuanYuanFan_In"/>
           </Window>
           <Window Type="TLBB_StaticImageNULL" Name="ZhongQiu_TuanYuanFan_Table2_Head3">
-            <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}" />
             <Property Name="MouseHollow" Value="true" />
             <Property Name="MouseMoveHollow" Value="true" />
             <Property Name="MouseLButtonHollow" Value="true" />
@@ -369,22 +369,22 @@
           </Window>
         </Window>
         <Window Type="DefaultWindow" Name="ZhongQiu_TuanYuanFan_Table2_Member4">
-          <Property Name="UnifiedSize" Value="{{0.000000,220.000000},{0.000000,60.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,306.000000},{0.000000,60.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,220.000000},{0.000000,60.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,306.000000},{0.000000,60.000000}}" />
           <Window Type="TLBB_SimpleText" Name="ZhongQiu_TuanYuanFan_Table2_Name4">
-            <Property Name="UnifiedSize" Value="{{0.000000,146.000000},{0.0000000,22.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.000000,4.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,146.000000},{0.0000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.000000,4.000000}}" />
             <Property Name="Text" Value="玩家ID"/>
             <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
           </Window>
           <Window Type="TLBB_StaticImageNULL" Name="ZhongQiu_TuanYuanFan_Table2_Name4BK">
-            <Property Name="UnifiedSize" Value="{{0.000000,146.000000},{0.0000000,16.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.0000000,62.000000},{0.000000,6.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,146.000000},{0.0000000,16.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.0000000,62.000000},{0.000000,6.000000}}" />
             <Property Name="Image" Value="set:ZhongQiu_TuanYuanFan1 image:TuanYuanFan_NameBK"/>
           </Window>
           <Window Type="TLBB_StaticImageNULL" Name="ZhongQiu_TuanYuanFan_Table2_Info4_BK">
-            <Property Name="UnifiedSize" Value="{{0.000000,86.000000},{0.000000,22.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,62.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,86.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,62.000000},{0.000000,24.000000}}" />
             <Property Name="AlwaysOnTop" Value="True"/>
             <Property Name="MouseHollow" Value="True"/>
             <Property Name="MouseLButtonHollow" Value="True"/>
@@ -393,8 +393,8 @@
             <Property Name="Image" Value="set:ZhongQiu_TuanYuanFan1 image:TuanYuanFan_In"/>
           </Window>
           <Window Type="TLBB_StaticImageNULL" Name="ZhongQiu_TuanYuanFan_Table2_Head4">
-            <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}" />
             <Property Name="MouseHollow" Value="true" />
             <Property Name="MouseMoveHollow" Value="true" />
             <Property Name="MouseLButtonHollow" Value="true" />
@@ -404,22 +404,22 @@
           </Window>
         </Window>
         <Window Type="DefaultWindow" Name="ZhongQiu_TuanYuanFan_Table2_Member5">
-          <Property Name="UnifiedSize" Value="{{0.000000,220.000000},{0.000000,60.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,540.000000},{0.000000,60.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,220.000000},{0.000000,60.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,540.000000},{0.000000,60.000000}}" />
           <Window Type="TLBB_SimpleText" Name="ZhongQiu_TuanYuanFan_Table2_Name5">
-            <Property Name="UnifiedSize" Value="{{0.000000,146.000000},{0.0000000,22.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.000000,4.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,146.000000},{0.0000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.000000,4.000000}}" />
             <Property Name="Text" Value="玩家ID"/>
             <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
           </Window>
           <Window Type="TLBB_StaticImageNULL" Name="ZhongQiu_TuanYuanFan_Table2_Name5BK">
-            <Property Name="UnifiedSize" Value="{{0.000000,146.000000},{0.0000000,16.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.0000000,62.000000},{0.000000,6.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,146.000000},{0.0000000,16.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.0000000,62.000000},{0.000000,6.000000}}" />
             <Property Name="Image" Value="set:ZhongQiu_TuanYuanFan1 image:TuanYuanFan_NameBK"/>
           </Window>
           <Window Type="TLBB_StaticImageNULL" Name="ZhongQiu_TuanYuanFan_Table2_Info5_BK">
-            <Property Name="UnifiedSize" Value="{{0.000000,86.000000},{0.000000,22.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,62.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,86.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,62.000000},{0.000000,24.000000}}" />
             <Property Name="AlwaysOnTop" Value="True"/>
             <Property Name="MouseHollow" Value="True"/>
             <Property Name="MouseLButtonHollow" Value="True"/>
@@ -428,8 +428,8 @@
             <Property Name="Image" Value="set:ZhongQiu_TuanYuanFan1 image:TuanYuanFan_In"/>
           </Window>
           <Window Type="TLBB_StaticImageNULL" Name="ZhongQiu_TuanYuanFan_Table2_Head5">
-            <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}" />
             <Property Name="MouseHollow" Value="true" />
             <Property Name="MouseMoveHollow" Value="true" />
             <Property Name="MouseLButtonHollow" Value="true" />
@@ -439,22 +439,22 @@
           </Window>
         </Window>
         <Window Type="DefaultWindow" Name="ZhongQiu_TuanYuanFan_Table2_Member6">
-          <Property Name="UnifiedSize" Value="{{0.000000,220.000000},{0.000000,60.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,496.000000},{0.000000,140.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,220.000000},{0.000000,60.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,496.000000},{0.000000,140.000000}}" />
           <Window Type="TLBB_SimpleText" Name="ZhongQiu_TuanYuanFan_Table2_Name6">
-            <Property Name="UnifiedSize" Value="{{0.000000,146.000000},{0.0000000,22.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.000000,4.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,146.000000},{0.0000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.000000,4.000000}}" />
             <Property Name="Text" Value="玩家ID"/>
             <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
           </Window>
           <Window Type="TLBB_StaticImageNULL" Name="ZhongQiu_TuanYuanFan_Table2_Name6BK">
-            <Property Name="UnifiedSize" Value="{{0.000000,146.000000},{0.0000000,16.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.0000000,62.000000},{0.000000,6.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,146.000000},{0.0000000,16.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.0000000,62.000000},{0.000000,6.000000}}" />
             <Property Name="Image" Value="set:ZhongQiu_TuanYuanFan1 image:TuanYuanFan_NameBK"/>
           </Window>
           <Window Type="TLBB_StaticImageNULL" Name="ZhongQiu_TuanYuanFan_Table2_Info6_BK">
-            <Property Name="UnifiedSize" Value="{{0.000000,86.000000},{0.000000,22.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,62.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,86.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,62.000000},{0.000000,24.000000}}" />
             <Property Name="AlwaysOnTop" Value="True"/>
             <Property Name="MouseHollow" Value="True"/>
             <Property Name="MouseLButtonHollow" Value="True"/>
@@ -463,8 +463,8 @@
             <Property Name="Image" Value="set:ZhongQiu_TuanYuanFan1 image:TuanYuanFan_In"/>
           </Window>
           <Window Type="TLBB_StaticImageNULL" Name="ZhongQiu_TuanYuanFan_Table2_Head6">
-            <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}" />
             <Property Name="MouseHollow" Value="true" />
             <Property Name="MouseMoveHollow" Value="true" />
             <Property Name="MouseLButtonHollow" Value="true" />
@@ -475,8 +475,8 @@
         </Window>
       </Window>
       <Window Type="TLBB_Animate" Name="ZhongQiu_TuanYuanFan_Table_Animate">
-        <Property Name="UnifiedSize" Value="{{0.000000,448.000000},{0.000000,64.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.500000,-224.000000},{0.500000,56.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,448.000000},{0.000000,64.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.500000,-224.000000},{0.500000,56.000000}}" />
         <Property Name="Animate" Value="TYF_Finish" />
         <Property Name="MouseHollow" Value="true" />
         <Property Name="MouseMoveHollow" Value="true" />
@@ -485,8 +485,8 @@
         <Property Name="AlwaysOnTop" Value="True" />
       </Window>
       <Window Type="TLBB_ButtonNULL" Name="ZhongQiu_TuanYuanFan_StartButton">
-        <Property Name="UnifiedSize" Value="{{0.000000,128.000000},{0.000000,32.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.5000000,-64.000000},{0.000000,418.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,128.000000},{0.000000,32.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.5000000,-64.000000},{0.000000,418.000000}}" />
         <Property Name="AlwaysOnTop" Value="True"/>
         <Property Name="PushedImage" Value="set:ZhongQiu_TuanYuanFan1 image:TuanYuanFan_Start_Pushed"/>
         <Property Name="NormalImage" Value="set:ZhongQiu_TuanYuanFan1 image:TuanYuanFan_Start_Normal"/>
@@ -495,8 +495,8 @@
         <Event Name="Clicked" Function="ZhongQiu_TuanYuanFan_StartClick();"/>
       </Window>
        <Window Type="TLBB_ButtonNULL" Name="ZhongQiu_TuanYuanFan_EnterButton">
-         <Property Name="UnifiedSize" Value="{{0.000000,128.000000},{0.000000,32.000000}}"/>
-         <Property Name="UnifiedPosition" Value="{{0.5000000,-64.000000},{0.000000,418.000000}}"/>
+         <Property Name="UnifiedSize" Value="{{0.000000,128.000000},{0.000000,32.000000}}" />
+         <Property Name="UnifiedPosition" Value="{{0.5000000,-64.000000},{0.000000,418.000000}}" />
         <Property Name="AlwaysOnTop" Value="True"/>
         <Property Name="PushedImage" Value="set:ZhongQiu_TuanYuanFan1 image:TuanYuanFan_Enter_Pushed"/>
         <Property Name="NormalImage" Value="set:ZhongQiu_TuanYuanFan1 image:TuanYuanFan_Enter_Normal"/>

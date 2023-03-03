@@ -6,7 +6,7 @@
         <Event Name="Hidden" Function="TargetEquip_CloseUI();" />
         <Window Type="TLBB_DragTitle" Name="TargetEquip_DragTitle">
             <Property Name="AbsolutePosition" Value="x:108.000000 y:11.000000" />
-            <Property Name="UnifiedSize" Value="{{1.000000,-133.000000},{0.000000,20.000000}" />
+            <Property Name="UnifiedSize" Value="{{1.000000,-133.000000},{0.000000,20.000000}}" />
             <Property Name="DragTarget" Value="TargetEquip_Frame" />
             <Window Type="TLBB_SimpleText" Name="TargetEquip_PageHeader">
                 <Property Name="Position" Value="x:0.0 y:0.0" />
@@ -19,18 +19,18 @@
             </Window>
         </Window>
         <Window Type="TLBB_ButtonHelp" Name="TargetEquip_Help">
-            <Property Name="UnifiedPosition" Value="{{0.000000,88.000000},{0.000000,14.000000}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,88.000000},{0.000000,14.000000}}" />
             <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
             <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*TargetEquip&quot;);' />
         </Window>
         <Window Type="TLBB_ButtonClose" Name="TargetEquip_Close">
-            <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+            <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}" />
             <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
             <Event Name="Clicked" Function="TargetEquip_CloseUI()" />
         </Window>
         <Window Type="DefaultWindow" Name="TargetEquip_Frame_Client">
             <Property Name="AbsolutePosition" Value="x:10.000000 y:35.000000" />
-            <Property Name="UnifiedSize" Value="{{1.000000,-17.000000},{1.000000,-60.000000}" />
+            <Property Name="UnifiedSize" Value="{{1.000000,-17.000000},{1.000000,-60.000000}}" />
             <Window Type="TLBB_ActionButton" Name="TargetEquip_Equip1">
                 <Property Name="AbsolutePosition" Value="x:0.000000 y:0.000000" />
                 <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
@@ -102,7 +102,7 @@
                 </Window>
                 <Window Type="TLBB_SimpleText" Name="TargetEquip_Level">
                     <Property Name="Position" Value="x:0.02 y:0.02" />
-                    <Property Name="UnifiedSize" Value="{{0.300000,0.000000},{0.000000,20.000000}" />
+                    <Property Name="UnifiedSize" Value="{{0.300000,0.000000},{0.000000,20.000000}}" />
                     <Property Name="TextColor" Value="FFFFF263" />
                     <Property Name="HorzFormatting" Value="HorzCentred" />
                     <Property Name="VertFormatting" Value="VertCentred" />
@@ -110,8 +110,8 @@
                     <Property Name="Text" Value="#{INTERFACE_XML_114}" />
                 </Window>
                 <Window Type="TLBB_SimpleText" Name="TargetEquip_MenPai">
-         <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,68.000000},{0.020000,0.000000}}"/>
+         <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,68.000000},{0.020000,0.000000}}" />
                     <Property Name="TextColor" Value="FFFFF263" />
           <Property Name="HorzFormatting" Value="HorzCentred" />
           <Property Name="VertFormatting" Value="VertCentred" />
@@ -134,101 +134,101 @@
                 </Window>
             </Window>
             <Window Type="TLBB_SimpleText" Name="TargetEquip_Confraternity_Text">
-                <Property Name="UnifiedPosition" Value="{{0.5,44.000000},{0.000000,0.000000}" />
-                <Property Name="UnifiedSize" Value="{{0.5,-38.000000},{0.000000,11.000000}" />
+                <Property Name="UnifiedPosition" Value="{{0.5,44.000000},{0.000000,0.000000}}" />
+                <Property Name="UnifiedSize" Value="{{0.5,-38.000000},{0.000000,11.000000}}" />
                 <Property Name="HorzFormatting" Value="LeftAligned" />
                 <Property Name="VertFormatting" Value="VertCentred" />
                 <Property Name="Text" Value="#{INTERFACE_XML_124}" />
                 <Property Name="TextColor" Value="FFFFF263" />
             </Window>
             <Window Type="TLBB_SimpleMulitiTextFrame" Name="TargetEquip_Confraternity">
-                <Property Name="UnifiedPosition" Value="{{0.5,38.000000},{0.000000,13.000000}" />
-                <Property Name="UnifiedSize" Value="{{0.5,-40.000000},{0.000000,20.000000}" />
+                <Property Name="UnifiedPosition" Value="{{0.5,38.000000},{0.000000,13.000000}}" />
+                <Property Name="UnifiedSize" Value="{{0.5,-40.000000},{0.000000,20.000000}}" />
                 <Property Name="HorzFormatting" Value="LeftAligned" />
                 <Property Name="VertFormatting" Value="VertCentred" />
                 <Property Name="Text" Value="#{INTERFACE_XML_124}" />
                 <Property Name="TextColor" Value="FFFDF7A7" />
             </Window>
             <Window Type="TLBB_SimpleText" Name="TargetEquip_Agname_Text">
-                <Property Name="UnifiedPosition" Value="{{0.5,44.000000},{0.000000,35.000000}" />
-                <Property Name="UnifiedSize" Value="{{0.5,-38.000000},{0.000000,11.000000}" />
+                <Property Name="UnifiedPosition" Value="{{0.5,44.000000},{0.000000,35.000000}}" />
+                <Property Name="UnifiedSize" Value="{{0.5,-38.000000},{0.000000,11.000000}}" />
                 <Property Name="HorzFormatting" Value="LeftAligned" />
                 <Property Name="VertFormatting" Value="VertCentred" />
                 <Property Name="Text" Value="#{INTERFACE_XML_173}" />
                 <Property Name="TextColor" Value="FFFFF263" />
             </Window>
             <Window Type="TLBB_SimpleMulitiTextFrame" Name="TargetEquip_Agname">
-                <Property Name="UnifiedPosition" Value="{{0.5,38.000000},{0.000000,48.000000}" />
-                <Property Name="UnifiedSize" Value="{{0.5,-38.000000},{0.000000,33.000000}" />
+                <Property Name="UnifiedPosition" Value="{{0.5,38.000000},{0.000000,48.000000}}" />
+                <Property Name="UnifiedSize" Value="{{0.5,-38.000000},{0.000000,33.000000}}" />
                 <Property Name="HorzFormatting" Value="LeftAligned" />
                 <Property Name="VertFormatting" Value="VertCentred" />
                 <Property Name="Text" Value="" />
                 <Property Name="TextColor" Value="FFFDF7A7" />
             </Window>
             <Window Type="TLBB_SimpleText" Name="TargetEquip_Spouse_Text">
-                <Property Name="UnifiedPosition" Value="{{0.5,44.000000},{0.000000,83.000000}" />
-                <Property Name="UnifiedSize" Value="{{0.5,-38.000000},{0.000000,11.000000}" />
+                <Property Name="UnifiedPosition" Value="{{0.5,44.000000},{0.000000,83.000000}}" />
+                <Property Name="UnifiedSize" Value="{{0.5,-38.000000},{0.000000,11.000000}}" />
                 <Property Name="TextColor" Value="FFFFF263" />
                 <Property Name="Text" Value="#{INTERFACE_XML_485}" />
                 <Property Name="HorzFormatting" Value="LeftAligned" />
                 <Property Name="VertFormatting" Value="VertCentred" />
             </Window>
             <Window Type="TLBB_SimpleMulitiTextFrame" Name="TargetEquip_Spouse">
-                <Property Name="UnifiedPosition" Value="{{0.5,38.000000},{0.000000,96.000000}" />
-                <Property Name="UnifiedSize" Value="{{0.5,-38.000000},{0.000000,20.000000}" />
+                <Property Name="UnifiedPosition" Value="{{0.5,38.000000},{0.000000,96.000000}}" />
+                <Property Name="UnifiedSize" Value="{{0.5,-38.000000},{0.000000,20.000000}}" />
                 <Property Name="Text" Value="#{INTERFACE_XML_487}" />
                 <Property Name="TextColor" Value="FFFDF7A7" />
                 <Property Name="HorzFormatting" Value="LeftAligned" />
                 <Property Name="VertFormatting" Value="VertCentred" />
             </Window>
           <Window Type="TLBB_SimpleText" Name="TargetEquip_Date_Text">
-            <Property Name="UnifiedPosition" Value="{{0.5,44.000000},{0.000000,118.000000}" />
-            <Property Name="UnifiedSize" Value="{{0.5,-38.000000},{0.000000,11.000000}" />
+            <Property Name="UnifiedPosition" Value="{{0.5,44.000000},{0.000000,118.000000}}" />
+            <Property Name="UnifiedSize" Value="{{0.5,-38.000000},{0.000000,11.000000}}" />
             <Property Name="TextColor" Value="FFFFF263" />
             <Property Name="Text" Value="#{JHJN_XML_1}" />
             <Property Name="HorzFormatting" Value="LeftAligned" />
             <Property Name="VertFormatting" Value="VertCentred" />
           </Window>
           <Window Type="TLBB_SimpleMulitiTextFrame" Name="TargetEquip_Date">
-            <Property Name="UnifiedPosition" Value="{{0.5,38.000000},{0.000000,131.000000}" />
-            <Property Name="UnifiedSize" Value="{{0.5,-38.000000},{0.000000,20.000000}" />
+            <Property Name="UnifiedPosition" Value="{{0.5,38.000000},{0.000000,131.000000}}" />
+            <Property Name="UnifiedSize" Value="{{0.5,-38.000000},{0.000000,20.000000}}" />
             <Property Name="Text" Value="#{JHJN_XML_1}" />
             <Property Name="TextColor" Value="FFFDF7A7" />
             <Property Name="HorzFormatting" Value="LeftAligned" />
             <Property Name="VertFormatting" Value="VertCentred" />
           </Window>
             <Window Type="TLBB_SimpleText" Name="TargetEquip_Message_Text">
-                <Property Name="UnifiedPosition" Value="{{0.5,44.000000},{0.000000,153.000000}" />
-                <Property Name="UnifiedSize" Value="{{0.5,-38.000000},{0.000000,11.000000}" />
+                <Property Name="UnifiedPosition" Value="{{0.5,44.000000},{0.000000,153.000000}}" />
+                <Property Name="UnifiedSize" Value="{{0.5,-38.000000},{0.000000,11.000000}}" />
                 <Property Name="Text" Value="#{INTERFACE_XML_282}" />
                 <Property Name="TextColor" Value="FFFFF263" />
                 <Property Name="HorzFormatting" Value="LeftAligned" />
                 <Property Name="VertFormatting" Value="VertCentred" />
             </Window>
             <Window Type="TLBB_SimpleMulitiTextFrame" Name="TargetEquip_Message">
-                <Property Name="UnifiedPosition" Value="{{0.5,38.000000},{0.000000,166.000000}" />
-                <Property Name="UnifiedSize" Value="{{0.5,-38.000000},{0.000000,154.000000}" />
+                <Property Name="UnifiedPosition" Value="{{0.5,38.000000},{0.000000,166.000000}}" />
+                <Property Name="UnifiedSize" Value="{{0.5,-38.000000},{0.000000,154.000000}}" />
                 <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
                 <Property Name="VertFormatting" Value="TopAligned" />
                 <Property Name="RiseOnClick" Value="False" />
                 <Property Name="TextColor" Value="FFFDF7A7" />
             </Window>
             <Window Type="TLBB_ButtonCommon" Name="TargetEquip_Chat">
-                <Property Name="UnifiedPosition" Value="{{0.5,38.000000},{1.000000,-21.000000}" />
-                <Property Name="UnifiedSize" Value="{{0.17,0.000000},{0.0,20.000000}" />
+                <Property Name="UnifiedPosition" Value="{{0.5,38.000000},{1.000000,-21.000000}}" />
+                <Property Name="UnifiedSize" Value="{{0.17,0.000000},{0.0,20.000000}}" />
                 <Property Name="Text" Value="#{INTERFACE_XML_665}" />
                 <Event Name="Clicked" Function="Set_To_Private();" />
             </Window>
             <Window Type="TLBB_ButtonCommon" Name="TargetEquip_AddFriend">
-                <Property Name="UnifiedPosition" Value="{{0.8,0.000000},{1.000000,-21.000000}" />
-                <Property Name="UnifiedSize" Value="{{0.2,0.000000},{0.0,20.000000}" />
+                <Property Name="UnifiedPosition" Value="{{0.8,0.000000},{1.000000,-21.000000}}" />
+                <Property Name="UnifiedSize" Value="{{0.2,0.000000},{0.0,20.000000}}" />
                 <Property Name="Text" Value="#{INTERFACE_XML_356}" />
                 <Event Name="Clicked" Function="Set_To_Friend();" />
             </Window>
         </Window>
         <Window Type="DefaultWindow" Name="TargetEquip_Checkbox_Frame">
-            <Property Name="UnifiedPosition" Value="{{0.0,8.000000},{1.000000,-25.000000}" />
-            <Property Name="UnifiedSize" Value="{{0.96,0.000000},{0.000000,24.000000}" />
+            <Property Name="UnifiedPosition" Value="{{0.0,8.000000},{1.000000,-25.000000}}" />
+            <Property Name="UnifiedSize" Value="{{0.96,0.000000},{0.000000,24.000000}}" />
             <Window Type="TLBB_ButtonPageDown" Name="TargetEquip_SelfEquip">
                 <Property Name="AbsolutePosition" Value="x:0.0 y:0.0" />
                 <Property Name="AbsoluteSize" Value="w:42.000000 h:24.000000" />

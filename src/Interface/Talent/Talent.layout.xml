@@ -1,64 +1,64 @@
 ﻿<?xml version="1.0" ?>
 <GUILayout>
   <Window Type="TLBB_MainFrame3" Name="Talent_Frame">
-    <Property Name="UnifiedSize" Value="{{0.000000,528.000000},{0.000000,580.000000}}"/>
-    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.120000,0.0000000}}"/>
+    <Property Name="UnifiedSize" Value="{{0.000000,528.000000},{0.000000,580.000000}}" />
+    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.120000,0.0000000}}" />
     <Event Name="Hidden" Function="Talent_Close();" />
     <Window Type="TLBB_DragTitle" Name="Talent_DragTitle">
       <Property Name="AbsolutePosition" Value="x:104.000000 y:11.000000" />
-      <Property Name="UnifiedSize" Value="{{1.000000,-126.000000},{0.000000,20.000000}" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-126.000000},{0.000000,20.000000}}" />
       <Property Name="DragTarget" Value="Talent_Frame" />
       <Property Name="Font" Value="YouYuan11.25" />
       <Property Name="Text" Value="#{TalentMP_20210804_13}"/>
     </Window>
     <Window Type="TLBB_ButtonHelp" Name="Talent_Help">
-      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,88.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,88.000000},{0.000000,14.000000}}" />
       <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*Talent_Share&quot;);' />
     </Window>
     <Window Type="TLBB_ButtonClose" Name="Talent_Close">
-      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}" />
       <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
       <Event Name="Clicked" Function="Talent_Close();" />
     </Window>
     <Window Type="DefaultWindow" Name="Talent_Frame_Client">
-      <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-60.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,33.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-60.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,33.000000}}" />
       <Window Type="TLBB_StaticImageNULL" Name="Talent_LiuPaiIcon">
-        <Property Name="UnifiedSize" Value="{{0.000000,810.000000},{0.000000,96.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,810.000000},{0.000000,96.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
         <Property Name="Image" Value="set:Talent image:Talent_GBJK"/>
         <Property Name="AlwaysOnTop" Value="True"/>
         <Window Type="TLBB_SimpleText" Name="Talent_LiuPaiName">
-          <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,20.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,136.000000},{0.000000,10.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,136.000000},{0.000000,10.000000}}" />
           <Property Name="TextColor" Value="FFFFF263"/>
           <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
           <Property Name="Font" Value="YouYuan11.25"/>
         </Window>
         <Window Type="TLBB_SimpleText" Name="Talent_LiuPaiDetails">
-          <Property Name="UnifiedSize" Value="{{0.000000,360.000000},{0.000000,40.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,136.000000},{0.000000,38.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,360.000000},{0.000000,40.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,136.000000},{0.000000,38.000000}}" />
           <Property Name="TextColor" Value="FFFFF263"/>
           <Property Name="VertFormatting" Value="TopAligned"/>
           <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
         </Window>
       </Window>
       <Window Type="TLBB_Frame_TalentLace" Name="Talent_SkillTree">
-        <Property Name="UnifiedSize" Value="{{0.000000,514.000000},{1.000000,-96.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,96.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,514.000000},{1.000000,-96.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,96.000000}}" />
         <Window Type="TLBB_StaticImageNULL" Name="Talent_SkillTree_CillBK">
-          <Property Name="UnifiedSize" Value="{{0.000000,510.000000},{0.000000,21.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,1.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,510.000000},{0.000000,21.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,1.000000}}" />
           <Property Name="Image" Value="set:Talent image:Talent_LeftBK"/>
           <Window Type="TLBB_StaticImageNULL" Name="Talent_SkillTree_CillDot">
-            <Property Name="UnifiedSize" Value="{{0.000000,7.000000},{0.000000,7.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,7.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,7.000000},{0.000000,7.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,7.000000}}" />
             <Property Name="Image" Value="set:Talent image:Talent_JuXing"/>
           </Window>
           <Window Type="TLBB_SimpleText" Name="Talent_SkillTree_Cill">
-            <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,16.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,16.000000},{0.000000,0.000000}}" />
             <Property Name="Text" Value="#{TalentMP_20210804_76}"/>
             <Property Name="TextColor" Value="FFFFF263"/>
             <Property Name="Font" Value="YouYuan9.75"/>
@@ -66,19 +66,19 @@
           </Window>
         </Window>
         <Window Type="TLBB_StaticImageNULL" Name="Talent_Skill">
-          <Property Name="UnifiedSize" Value="{{0.000000,152.000000},{0.000000,52.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,152.000000},{0.000000,52.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.000000,30.000000}}" />
           <Property Name="RiseOnClick" Value="False"/>
           <Property Name="AlwaysOnTop" Value="True"/>
           <Property Name="Image" Value="set:Talent image:Talent_HoverBK"/>
           <Window Type="TLBB_ActionButton" Name="Talent_SkillIcon">
-            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}" />
             <Property Name="AlwaysOnTop" Value="True"/>
           </Window>
           <Window Type="TLBB_SimpleText" Name="Talent_SkillName">
-            <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,20.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,45.000000},{0.000000,5.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,45.000000},{0.000000,5.000000}}" />
             <Property Name="Text" Value=""/>
             <Property Name="MouseRButtonHollow" Value="True"/>
             <Property Name="MouseMoveHollow" Value="True"/>
@@ -89,12 +89,12 @@
           </Window>
         </Window>
        <Window Type="TLBB_StaticImageNULL" Name="Talent_SkillTree_AdvanceBK">
-          <Property Name="UnifiedSize" Value="{{0.000000,510.000000},{0.000000,21.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,90.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,510.000000},{0.000000,21.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,90.000000}}" />
           <Property Name="Image" Value="set:Talent image:Talent_LeftBK"/>
           <Window Type="TLBB_ButtonCheckNULL" Name="Talent_SkillTree_Advance">
-            <Property Name="UnifiedSize" Value="{{0.000000,102.000000},{0.000000,20.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,102.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
             <Property Name="TextColor" Value="FFFFF263"/>
             <Property Name="PushedImage" Value="set:Talent image:Talent_OnePush"/>
             <Property Name="NormalImage" Value="set:Talent image:Talent_Onenormal"/>
@@ -103,8 +103,8 @@
             <Event Name="Clicked" Function="Talent_ChangeFenye(1);" />
           </Window>
           <Window Type="TLBB_ButtonCheckNULL" Name="Talent_SkillTree_Advance2">
-            <Property Name="UnifiedSize" Value="{{0.000000,102.000000},{0.000000,20.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,102.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,102.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,102.000000},{0.000000,0.000000}}" />
             <Property Name="TextColor" Value="FFFFF263"/>
             <Property Name="PushedImage" Value="set:Talent image:Talent_TwoPush"/>
             <Property Name="NormalImage" Value="set:Talent image:Talent_TwoNormal"/>
@@ -115,16 +115,16 @@
           </Window>
         </Window>
         <Window Type="TLBB_StaticImageNULL" Name="Talent_Skill1">
-          <Property Name="UnifiedSize" Value="{{0.000000,152.000000},{0.000000,52.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.000000,120.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,152.000000},{0.000000,52.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.000000,120.000000}}" />
           <Property Name="RiseOnClick" Value="False"/>
           <Property Name="AlwaysOnTop" Value="True"/>
           <Property Name="Image" Value="set:Talent image:Talent_HoverBK"/>
           <Window Type="TLBB_ActionButton" Name="Talent_Skill1Icon">
-            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}" />
             <Window Type="TLBB_StaticImageNULL" Name="Talent_Skill1IconMask">
-              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
               <Property Name="MouseLButtonHollow" Value="True"/>
@@ -134,31 +134,31 @@
             </Window>
           </Window>
           <Window Type="TLBB_SimpleText" Name="Talent_Skill1Name">
-            <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,20.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,45.000000},{0.000000,5.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,45.000000},{0.000000,5.000000}}" />
             <Property Name="TextColor" Value="FFFFF263"/>
             <Property Name="Text" Value="昭君出塞"/>
             <Property Name="HorzFormatting" Value="HorzCentred"/>
           </Window>
           <Window Type="TLBB_SimpleText" Name="Talent_Skill1Level">
-            <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,20.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,46.000000},{0.000000,28.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,46.000000},{0.000000,28.000000}}" />
             <Property Name="TextColor" Value="FFFFF263"/>
             <Property Name="Text" Value="#{TalentMP_20210804_14}"/>
             <Property Name="HorzFormatting" Value="HorzCentred"/>
           </Window>
         </Window>
         <Window Type="TLBB_StaticImageNULL" Name="Talent_Skill2">
-          <Property Name="UnifiedSize" Value="{{0.000000,152.000000},{0.000000,52.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,181.000000},{0.000000,120.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,152.000000},{0.000000,52.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,181.000000},{0.000000,120.000000}}" />
           <Property Name="RiseOnClick" Value="False"/>
           <Property Name="AlwaysOnTop" Value="True"/>
           <Property Name="Image" Value="set:Talent image:Talent_HoverBK"/>
           <Window Type="TLBB_ActionButton" Name="Talent_Skill2Icon">
-            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}" />
             <Window Type="TLBB_StaticImageNULL" Name="Talent_Skill2IconMask">
-              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
               <Property Name="MouseLButtonHollow" Value="True"/>
@@ -168,31 +168,31 @@
             </Window>
           </Window>
           <Window Type="TLBB_SimpleText" Name="Talent_Skill2Name">
-            <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,20.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,45.000000},{0.000000,5.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,45.000000},{0.000000,5.000000}}" />
             <Property Name="TextColor" Value="FFFFF263"/>
             <Property Name="Text" Value="昭君出塞"/>
             <Property Name="HorzFormatting" Value="HorzCentred"/>
           </Window>
           <Window Type="TLBB_SimpleText" Name="Talent_Skil12Level">
-            <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,20.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,46.000000},{0.000000,28.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,46.000000},{0.000000,28.000000}}" />
             <Property Name="TextColor" Value="FFFFF263"/>
             <Property Name="Text" Value="#{TalentMP_20210804_14}"/>
             <Property Name="HorzFormatting" Value="HorzCentred"/>
           </Window>
         </Window>
         <Window Type="TLBB_StaticImageNULL" Name="Talent_Skill3">
-          <Property Name="UnifiedSize" Value="{{0.000000,152.000000},{0.000000,52.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,347.000000},{0.000000,120.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,152.000000},{0.000000,52.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,347.000000},{0.000000,120.000000}}" />
           <Property Name="RiseOnClick" Value="False"/>
           <Property Name="AlwaysOnTop" Value="True"/>
           <Property Name="Image" Value="set:Talent image:Talent_HoverBK"/>
           <Window Type="TLBB_ActionButton" Name="Talent_Skill3Icon">
-            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}" />
             <Window Type="TLBB_StaticImageNULL" Name="Talent_Skill3IconMask">
-              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
               <Property Name="MouseLButtonHollow" Value="True"/>
@@ -202,31 +202,31 @@
             </Window>
           </Window>
           <Window Type="TLBB_SimpleText" Name="Talent_Skill3Name">
-            <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,20.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,45.000000},{0.000000,5.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,45.000000},{0.000000,5.000000}}" />
             <Property Name="TextColor" Value="FFFFF263"/>
             <Property Name="Text" Value="昭君出塞"/>
             <Property Name="HorzFormatting" Value="HorzCentred"/>
           </Window>
           <Window Type="TLBB_SimpleText" Name="Talent_Skill3Level">
-            <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,20.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,46.000000},{0.000000,28.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,46.000000},{0.000000,28.000000}}" />
             <Property Name="TextColor" Value="FFFFF263"/>
             <Property Name="Text" Value="#{TalentMP_20210804_14}"/>
             <Property Name="HorzFormatting" Value="HorzCentred"/>
           </Window>
         </Window>
         <Window Type="TLBB_StaticImageNULL" Name="Talent_Skill4">
-          <Property Name="UnifiedSize" Value="{{0.000000,152.000000},{0.000000,52.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.000000,186.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,152.000000},{0.000000,52.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.000000,186.000000}}" />
           <Property Name="RiseOnClick" Value="False"/>
           <Property Name="AlwaysOnTop" Value="True"/>
           <Property Name="Image" Value="set:Talent image:Talent_HoverBK"/>
           <Window Type="TLBB_ActionButton" Name="Talent_Skill4Icon">
-            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}" />
             <Window Type="TLBB_StaticImageNULL" Name="Talent_Skill4IconMask">
-              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
               <Property Name="MouseLButtonHollow" Value="True"/>
@@ -236,31 +236,31 @@
             </Window>
           </Window>
           <Window Type="TLBB_SimpleText" Name="Talent_Skill4Name">
-            <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,20.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,45.000000},{0.000000,5.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,45.000000},{0.000000,5.000000}}" />
             <Property Name="TextColor" Value="FFFFF263"/>
             <Property Name="Text" Value="昭君出塞"/>
             <Property Name="HorzFormatting" Value="HorzCentred"/>
           </Window>
           <Window Type="TLBB_SimpleText" Name="Talent_Skill4Level">
-            <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,20.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,46.000000},{0.000000,28.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,46.000000},{0.000000,28.000000}}" />
             <Property Name="TextColor" Value="FFFFF263"/>
             <Property Name="Text" Value="#{TalentMP_20210804_14}"/>
             <Property Name="HorzFormatting" Value="HorzCentred"/>
           </Window>
         </Window>
         <Window Type="TLBB_StaticImageNULL" Name="Talent_Skill5">
-          <Property Name="UnifiedSize" Value="{{0.000000,152.000000},{0.000000,52.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,181.000000},{0.000000,186.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,152.000000},{0.000000,52.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,181.000000},{0.000000,186.000000}}" />
           <Property Name="RiseOnClick" Value="False"/>
           <Property Name="AlwaysOnTop" Value="True"/>
           <Property Name="Image" Value="set:Talent image:Talent_HoverBK"/>
           <Window Type="TLBB_ActionButton" Name="Talent_Skill5Icon">
-            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}" />
             <Window Type="TLBB_StaticImageNULL" Name="Talent_Skill5IconMask">
-              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
               <Property Name="MouseLButtonHollow" Value="True"/>
@@ -270,31 +270,31 @@
             </Window>
           </Window>
           <Window Type="TLBB_SimpleText" Name="Talent_Skill5Name">
-            <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,20.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,45.000000},{0.000000,5.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,45.000000},{0.000000,5.000000}}" />
             <Property Name="TextColor" Value="FFFFF263"/>
             <Property Name="Text" Value="昭君出塞"/>
             <Property Name="HorzFormatting" Value="HorzCentred"/>
           </Window>
           <Window Type="TLBB_SimpleText" Name="Talent_Skill5Level">
-            <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,20.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,46.000000},{0.000000,28.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,46.000000},{0.000000,28.000000}}" />
             <Property Name="TextColor" Value="FFFFF263"/>
             <Property Name="Text" Value="#{TalentMP_20210804_14}"/>
             <Property Name="HorzFormatting" Value="HorzCentred"/>
           </Window>
         </Window>
         <Window Type="TLBB_StaticImageNULL" Name="Talent_Skill6">
-          <Property Name="UnifiedSize" Value="{{0.000000,152.000000},{0.000000,52.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,347.000000},{0.000000,186.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,152.000000},{0.000000,52.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,347.000000},{0.000000,186.000000}}" />
           <Property Name="RiseOnClick" Value="False"/>
           <Property Name="AlwaysOnTop" Value="True"/>
           <Property Name="Image" Value="set:Talent image:Talent_HoverBK"/>
           <Window Type="TLBB_ActionButton" Name="Talent_Skill6Icon">
-            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}" />
             <Window Type="TLBB_StaticImageNULL" Name="Talent_Skill6IconMask">
-              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
               <Property Name="MouseLButtonHollow" Value="True"/>
@@ -304,31 +304,31 @@
             </Window>
           </Window>
           <Window Type="TLBB_SimpleText" Name="Talent_Skill6Name">
-            <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,20.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,45.000000},{0.000000,5.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,45.000000},{0.000000,5.000000}}" />
             <Property Name="TextColor" Value="FFFFF263"/>
             <Property Name="Text" Value="昭君出塞"/>
             <Property Name="HorzFormatting" Value="HorzCentred"/>
           </Window>
           <Window Type="TLBB_SimpleText" Name="Talent_Skill6Level">
-            <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,20.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,46.000000},{0.000000,28.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,46.000000},{0.000000,28.000000}}" />
             <Property Name="TextColor" Value="FFFFF263"/>
             <Property Name="Text" Value="#{TalentMP_20210804_14}"/>
             <Property Name="HorzFormatting" Value="HorzCentred"/>
           </Window>
         </Window>
         <Window Type="TLBB_StaticImageNULL" Name="Talent_Skill7">
-          <Property Name="UnifiedSize" Value="{{0.000000,152.000000},{0.000000,52.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.000000,252.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,152.000000},{0.000000,52.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.000000,252.000000}}" />
           <Property Name="RiseOnClick" Value="False"/>
           <Property Name="AlwaysOnTop" Value="True"/>
           <Property Name="Image" Value="set:Talent image:Talent_HoverBK"/>
           <Window Type="TLBB_ActionButton" Name="Talent_Skill7Icon">
-            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}" />
             <Window Type="TLBB_StaticImageNULL" Name="Talent_Skill7IconMask">
-              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
               <Property Name="MouseLButtonHollow" Value="True"/>
@@ -338,31 +338,31 @@
             </Window>
           </Window>
           <Window Type="TLBB_SimpleText" Name="Talent_Skill7Name">
-            <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,20.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,45.000000},{0.000000,5.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,45.000000},{0.000000,5.000000}}" />
             <Property Name="TextColor" Value="FFFFF263"/>
             <Property Name="Text" Value="昭君出塞"/>
             <Property Name="HorzFormatting" Value="HorzCentred"/>
           </Window>
           <Window Type="TLBB_SimpleText" Name="Talent_Skill7Level">
-            <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,20.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,46.000000},{0.000000,28.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,46.000000},{0.000000,28.000000}}" />
             <Property Name="TextColor" Value="FFFFF263"/>
             <Property Name="Text" Value="#{TalentMP_20210804_14}"/>
             <Property Name="HorzFormatting" Value="HorzCentred"/>
           </Window>
         </Window>
         <Window Type="TLBB_StaticImageNULL" Name="Talent_Skill8">
-          <Property Name="UnifiedSize" Value="{{0.000000,152.000000},{0.000000,52.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,181.000000},{0.000000,252.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,152.000000},{0.000000,52.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,181.000000},{0.000000,252.000000}}" />
           <Property Name="RiseOnClick" Value="False"/>
           <Property Name="AlwaysOnTop" Value="True"/>
           <Property Name="Image" Value="set:Talent image:Talent_HoverBK"/>
           <Window Type="TLBB_ActionButton" Name="Talent_Skill8Icon">
-            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}" />
             <Window Type="TLBB_StaticImageNULL" Name="Talent_Skill8IconMask">
-              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
               <Property Name="MouseLButtonHollow" Value="True"/>
@@ -372,31 +372,31 @@
             </Window>
           </Window>
           <Window Type="TLBB_SimpleText" Name="Talent_Skill8Name">
-            <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,20.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,45.000000},{0.000000,5.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,45.000000},{0.000000,5.000000}}" />
             <Property Name="TextColor" Value="FFFFF263"/>
             <Property Name="Text" Value="昭君出塞"/>
             <Property Name="HorzFormatting" Value="HorzCentred"/>
           </Window>
           <Window Type="TLBB_SimpleText" Name="Talent_Skill8Level">
-            <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,20.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,46.000000},{0.000000,28.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,46.000000},{0.000000,28.000000}}" />
             <Property Name="TextColor" Value="FFFFF263"/>
             <Property Name="Text" Value="#{TalentMP_20210804_14}"/>
             <Property Name="HorzFormatting" Value="HorzCentred"/>
           </Window>
         </Window>
         <Window Type="TLBB_StaticImageNULL" Name="Talent_Skill9">
-          <Property Name="UnifiedSize" Value="{{0.000000,152.000000},{0.000000,52.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,347.000000},{0.000000,252.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,152.000000},{0.000000,52.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,347.000000},{0.000000,252.000000}}" />
           <Property Name="RiseOnClick" Value="False"/>
           <Property Name="AlwaysOnTop" Value="True"/>
           <Property Name="Image" Value="set:Talent image:Talent_HoverBK"/>
           <Window Type="TLBB_ActionButton" Name="Talent_Skill9Icon">
-            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}" />
             <Window Type="TLBB_StaticImageNULL" Name="Talent_Skill9IconMask">
-              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
               <Property Name="MouseLButtonHollow" Value="True"/>
@@ -406,31 +406,31 @@
             </Window>
           </Window>
           <Window Type="TLBB_SimpleText" Name="Talent_Skill9Name">
-            <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,20.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,45.000000},{0.000000,5.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,45.000000},{0.000000,5.000000}}" />
             <Property Name="TextColor" Value="FFFFF263"/>
             <Property Name="Text" Value="昭君出塞"/>
             <Property Name="HorzFormatting" Value="HorzCentred"/>
           </Window>
           <Window Type="TLBB_SimpleText" Name="Talent_Skill9Level">
-            <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,20.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,46.000000},{0.000000,28.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,46.000000},{0.000000,28.000000}}" />
             <Property Name="TextColor" Value="FFFFF263"/>
             <Property Name="Text" Value="#{TalentMP_20210804_14}"/>
             <Property Name="HorzFormatting" Value="HorzCentred"/>
           </Window>
         </Window>
         <Window Type="TLBB_StaticImageNULL" Name="Talent_Skill10">
-          <Property Name="UnifiedSize" Value="{{0.000000,152.000000},{0.000000,52.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.000000,318.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,152.000000},{0.000000,52.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.000000,318.000000}}" />
           <Property Name="RiseOnClick" Value="False"/>
           <Property Name="AlwaysOnTop" Value="True"/>
           <Property Name="Image" Value="set:Talent image:Talent_HoverBK"/>
           <Window Type="TLBB_ActionButton" Name="Talent_Skill10Icon">
-            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}" />
             <Window Type="TLBB_StaticImageNULL" Name="Talent_Skill10IconMask">
-              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
               <Property Name="MouseLButtonHollow" Value="True"/>
@@ -440,31 +440,31 @@
             </Window>
           </Window>
           <Window Type="TLBB_SimpleText" Name="Talent_Skill10Name">
-            <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,20.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,45.000000},{0.000000,5.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,45.000000},{0.000000,5.000000}}" />
             <Property Name="TextColor" Value="FFFFF263"/>
             <Property Name="Text" Value="昭君出塞"/>
             <Property Name="HorzFormatting" Value="HorzCentred"/>
           </Window>
           <Window Type="TLBB_SimpleText" Name="Talent_Skill10Level">
-            <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,20.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,46.000000},{0.000000,28.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,46.000000},{0.000000,28.000000}}" />
             <Property Name="TextColor" Value="FFFFF263"/>
             <Property Name="Text" Value="#{TalentMP_20210804_14}"/>
             <Property Name="HorzFormatting" Value="HorzCentred"/>
           </Window>
         </Window>
         <Window Type="TLBB_StaticImageNULL" Name="Talent_Skill11">
-          <Property Name="UnifiedSize" Value="{{0.000000,152.000000},{0.000000,52.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,181.000000},{0.000000,318.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,152.000000},{0.000000,52.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,181.000000},{0.000000,318.000000}}" />
           <Property Name="RiseOnClick" Value="False"/>
           <Property Name="AlwaysOnTop" Value="True"/>
           <Property Name="Image" Value="set:Talent image:Talent_HoverBK"/>
           <Window Type="TLBB_ActionButton" Name="Talent_Skill11Icon">
-            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}" />
             <Window Type="TLBB_StaticImageNULL" Name="Talent_Skill11IconMask">
-              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
               <Property Name="MouseLButtonHollow" Value="True"/>
@@ -474,31 +474,31 @@
             </Window>
           </Window>
           <Window Type="TLBB_SimpleText" Name="Talent_Skill11Name">
-            <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,20.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,45.000000},{0.000000,5.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,45.000000},{0.000000,5.000000}}" />
             <Property Name="TextColor" Value="FFFFF263"/>
             <Property Name="Text" Value="昭君出塞"/>
             <Property Name="HorzFormatting" Value="HorzCentred"/>
           </Window>
           <Window Type="TLBB_SimpleText" Name="Talent_Skill11Level">
-            <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,20.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,46.000000},{0.000000,28.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,46.000000},{0.000000,28.000000}}" />
             <Property Name="TextColor" Value="FFFFF263"/>
             <Property Name="Text" Value="#{TalentMP_20210804_14}"/>
             <Property Name="HorzFormatting" Value="HorzCentred"/>
           </Window>
         </Window>
         <Window Type="TLBB_StaticImageNULL" Name="Talent_Skill12">
-          <Property Name="UnifiedSize" Value="{{0.000000,152.000000},{0.000000,52.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,347.000000},{0.000000,318.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,152.000000},{0.000000,52.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,347.000000},{0.000000,318.000000}}" />
           <Property Name="RiseOnClick" Value="False"/>
           <Property Name="AlwaysOnTop" Value="True"/>
           <Property Name="Image" Value="set:Talent image:Talent_HoverBK"/>
           <Window Type="TLBB_ActionButton" Name="Talent_Skill12Icon">
-            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}" />
             <Window Type="TLBB_StaticImageNULL" Name="Talent_Skill12IconMask">
-              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
               <Property Name="MouseLButtonHollow" Value="True"/>
@@ -508,205 +508,205 @@
             </Window>
           </Window>
           <Window Type="TLBB_SimpleText" Name="Talent_Skill12Name">
-            <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,20.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,45.000000},{0.000000,5.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,45.000000},{0.000000,5.000000}}" />
             <Property Name="TextColor" Value="FFFFF263"/>
             <Property Name="Text" Value="昭君出塞"/>
             <Property Name="HorzFormatting" Value="HorzCentred"/>
           </Window>
           <Window Type="TLBB_SimpleText" Name="Talent_Skill12Level">
-            <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,20.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,46.000000},{0.000000,28.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,46.000000},{0.000000,28.000000}}" />
             <Property Name="TextColor" Value="FFFFF263"/>
             <Property Name="Text" Value="#{TalentMP_20210804_14}"/>
             <Property Name="HorzFormatting" Value="HorzCentred"/>
           </Window>
         </Window>
           <Window Type="TLBB_StaticImageNULL" Name="Talent_Tree_Line1">
-            <Property Name="UnifiedSize" Value="{{0.000000,6.000000},{0.000000,54.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,88.000000},{0.000000,144.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,6.000000},{0.000000,54.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,88.000000},{0.000000,144.000000}}" />
             <Property Name="Image" Value="set:Talent image:Talent_VlineD"/>
           </Window>
           <Window Type="TLBB_StaticImageNULL" Name="Talent_Tree_Line1_2">
-            <Property Name="UnifiedSize" Value="{{0.000000,6.000000},{0.000000,54.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,88.000000},{0.000000,144.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,6.000000},{0.000000,54.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,88.000000},{0.000000,144.000000}}" />
             <Property Name="Image" Value="set:Talent image:Talent_VlineH"/>
           </Window>
           <Window Type="DefaultWindow" Name="Talent_Tree_Line2">
-            <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,54.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,167.000000},{0.000000,144.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,54.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,167.000000},{0.000000,144.000000}}" />
             <Window Type="TLBB_StaticImageNULL" Name="Talent_Tree_Line2H">
-              <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,6.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,6.000000}}" />
               <Property Name="Image" Value="set:Talent image:Talent_HlineD"/>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="Talent_Tree_Line2V">
-              <Property Name="UnifiedSize" Value="{{0.000000,6.000000},{0.000000,54.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,84.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,6.000000},{0.000000,54.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,84.000000},{0.000000,0.000000}}" />
               <Property Name="Image" Value="set:Talent image:Talent_VlineD"/>
             </Window>
           </Window>
           <Window Type="DefaultWindow" Name="Talent_Tree_Line2_2">
-            <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,54.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,167.000000},{0.000000,144.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,54.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,167.000000},{0.000000,144.000000}}" />
             <Window Type="TLBB_StaticImageNULL" Name="Talent_Tree_Line2_2H">
-              <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,6.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,6.000000}}" />
               <Property Name="Image" Value="set:Talent image:Talent_HlineH"/>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="Talent_Tree_Line2_2V">
-              <Property Name="UnifiedSize" Value="{{0.000000,6.000000},{0.000000,54.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,84.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,6.000000},{0.000000,54.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,84.000000},{0.000000,0.000000}}" />
               <Property Name="Image" Value="set:Talent image:Talent_VlineH"/>
             </Window>
           </Window>
           <Window Type="TLBB_StaticImageNULL" Name="Talent_Tree_Line3">
-            <Property Name="UnifiedSize" Value="{{0.000000,6.000000},{0.000000,54.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,420.000000},{0.000000,144.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,6.000000},{0.000000,54.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,420.000000},{0.000000,144.000000}}" />
             <Property Name="Image" Value="set:Talent image:Talent_VlineD"/>
           </Window>
           <Window Type="TLBB_StaticImageNULL" Name="Talent_Tree_Line3_2">
-            <Property Name="UnifiedSize" Value="{{0.000000,6.000000},{0.000000,54.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,420.000000},{0.000000,144.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,6.000000},{0.000000,54.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,420.000000},{0.000000,144.000000}}" />
             <Property Name="Image" Value="set:Talent image:Talent_VlineH"/>
           </Window>
           <Window Type="TLBB_StaticImageNULL" Name="Talent_Tree_Line4">
-            <Property Name="UnifiedSize" Value="{{0.000000,6.000000},{0.000000,54.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,88.000000},{0.000000,278.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,6.000000},{0.000000,54.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,88.000000},{0.000000,278.000000}}" />
             <Property Name="Image" Value="set:Talent image:Talent_VlineD"/>
           </Window>
           <Window Type="TLBB_StaticImageNULL" Name="Talent_Tree_Line4_2">
-            <Property Name="UnifiedSize" Value="{{0.000000,6.000000},{0.000000,54.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,88.000000},{0.000000,278.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,6.000000},{0.000000,54.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,88.000000},{0.000000,278.000000}}" />
             <Property Name="Image" Value="set:Talent image:Talent_VlineH"/>
           </Window>
           <Window Type="DefaultWindow" Name="Talent_Tree_Line5">
-            <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,54.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,167.000000},{0.000000,278.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,54.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,167.000000},{0.000000,278.000000}}" />
             <Window Type="TLBB_StaticImageNULL" Name="Talent_Tree_Line5H">
-              <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,6.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,6.000000}}" />
               <Property Name="Image" Value="set:Talent image:Talent_HlineD"/>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="Talent_Tree_Line5V">
-              <Property Name="UnifiedSize" Value="{{0.000000,6.000000},{0.000000,54.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,84.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,6.000000},{0.000000,54.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,84.000000},{0.000000,0.000000}}" />
               <Property Name="Image" Value="set:Talent image:Talent_VlineD"/>
             </Window>
           </Window>
           <Window Type="DefaultWindow" Name="Talent_Tree_Line5_2">
-            <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,54.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,167.000000},{0.000000,278.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,54.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,167.000000},{0.000000,278.000000}}" />
             <Window Type="TLBB_StaticImageNULL" Name="Talent_Tree_Line5_2H">
-              <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,6.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,6.000000}}" />
               <Property Name="Image" Value="set:Talent image:Talent_HlineH"/>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="Talent_Tree_Line5_2V">
-              <Property Name="UnifiedSize" Value="{{0.000000,6.000000},{0.000000,54.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,84.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,6.000000},{0.000000,54.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,84.000000},{0.000000,0.000000}}" />
               <Property Name="Image" Value="set:Talent image:Talent_VlineH"/>
             </Window>
           </Window>
           <Window Type="DefaultWindow" Name="Talent_Tree_Line6">
-            <Property Name="UnifiedSize" Value="{{0.000000,6.000000},{0.000000,108.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,420.000000},{0.000000,212.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,6.000000},{0.000000,108.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,420.000000},{0.000000,212.000000}}" />
             <Window Type="TLBB_StaticImageNULL" Name="Talent_Tree_Line6V1">
-              <Property Name="UnifiedSize" Value="{{0.000000,6.000000},{0.000000,54.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,4.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,6.000000},{0.000000,54.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,4.000000}}" />
               <Property Name="Image" Value="set:Talent image:Talent_VlineD"/>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="Talent_Tree_Line6V2">
-              <Property Name="UnifiedSize" Value="{{0.000000,6.000000},{0.000000,54.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,54.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,6.000000},{0.000000,54.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,54.000000}}" />
               <Property Name="Image" Value="set:Talent image:Talent_VlineD"/>
             </Window>
           </Window>
           <Window Type="DefaultWindow" Name="Talent_Tree_Line6_2">
-            <Property Name="UnifiedSize" Value="{{0.000000,6.000000},{0.000000,108.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,420.000000},{0.000000,212.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,6.000000},{0.000000,108.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,420.000000},{0.000000,212.000000}}" />
             <Window Type="TLBB_StaticImageNULL" Name="Talent_Tree_Line6_2V1">
-              <Property Name="UnifiedSize" Value="{{0.000000,6.000000},{0.000000,54.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,4.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,6.000000},{0.000000,54.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,4.000000}}" />
               <Property Name="Image" Value="set:Talent image:Talent_VlineH"/>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="Talent_Tree_Line6_2V2">
-              <Property Name="UnifiedSize" Value="{{0.000000,6.000000},{0.000000,54.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,54.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,6.000000},{0.000000,54.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,54.000000}}" />
               <Property Name="Image" Value="set:Talent image:Talent_VlineH"/>
             </Window>
           </Window>
           <Window Type="TLBB_StaticImageNULL" Name="Talent_Tree_Line7">
-            <Property Name="UnifiedSize" Value="{{0.000000,6.000000},{0.000000,54.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,420.000000},{0.000000,278.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,6.000000},{0.000000,54.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,420.000000},{0.000000,278.000000}}" />
             <Property Name="Image" Value="set:Talent image:Talent_VlineD"/>
           </Window>
           <Window Type="TLBB_StaticImageNULL" Name="Talent_Tree_Line7_2">
-            <Property Name="UnifiedSize" Value="{{0.000000,6.000000},{0.000000,54.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,420.000000},{0.000000,278.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,6.000000},{0.000000,54.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,420.000000},{0.000000,278.000000}}" />
             <Property Name="Image" Value="set:Talent image:Talent_VlineH"/>
           </Window>
           <Window Type="TLBB_StaticImageNULL" Name="Talent_Tree_Line8">
-            <Property Name="UnifiedSize" Value="{{0.000000,6.000000},{0.000000,54.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,420.000000},{0.000000,212.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,6.000000},{0.000000,54.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,420.000000},{0.000000,212.000000}}" />
             <Property Name="Image" Value="set:Talent image:Talent_VlineD"/>
           </Window>
           <Window Type="TLBB_StaticImageNULL" Name="Talent_Tree_Line8_2">
-            <Property Name="UnifiedSize" Value="{{0.000000,6.000000},{0.000000,54.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,420.000000},{0.000000,212.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,6.000000},{0.000000,54.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,420.000000},{0.000000,212.000000}}" />
             <Property Name="Image" Value="set:Talent image:Talent_VlineH"/>
           </Window>
         <Window Type="DefaultWindow" Name="Talent_Tree_Line9">
-          <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,54.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,257.000000},{0.000000,144.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,54.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,257.000000},{0.000000,144.000000}}" />
           <Window Type="TLBB_StaticImageNULL" Name="Talent_Tree_Line9H">
-            <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,6.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,6.000000}}" />
             <Property Name="Image" Value="set:Talent image:Talent_HlineD"/>
           </Window>
           <Window Type="TLBB_StaticImageNULL" Name="Talent_Tree_Line9V">
-            <Property Name="UnifiedSize" Value="{{0.000000,6.000000},{0.000000,54.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,6.000000},{0.000000,54.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
             <Property Name="Image" Value="set:Talent image:Talent_VlineD"/>
           </Window>
         </Window>
         <Window Type="DefaultWindow" Name="Talent_Tree_Line9_2">
-          <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,54.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,257.000000},{0.000000,144.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,54.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,257.000000},{0.000000,144.000000}}" />
           <Window Type="TLBB_StaticImageNULL" Name="Talent_Tree_Line9_2H">
-            <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,6.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,6.000000}}" />
             <Property Name="Image" Value="set:Talent image:Talent_HlineH"/>
           </Window>
           <Window Type="TLBB_StaticImageNULL" Name="Talent_Tree_Line9_2V">
-            <Property Name="UnifiedSize" Value="{{0.000000,6.000000},{0.000000,54.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,6.000000},{0.000000,54.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
             <Property Name="Image" Value="set:Talent image:Talent_VlineH"/>
           </Window>
         </Window>
         <Window Type="TLBB_ButtonCommon2" Name="Talent_ChatBtn">
-          <Property Name="UnifiedSize" Value="{{0.000000,78.000000},{0.000000,24.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,16.000000},{1.000000,-38.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,78.000000},{0.000000,24.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,16.000000},{1.000000,-38.000000}}" />
           <Property Name="Text" Value="#{TalentMP_20210804_63}" />
           <Event Name="Clicked" Function="Talent_ChatBtn();" />
         </Window>
         <Window Type="TLBB_ButtonCommon2" Name="Talent_UpPage">
-          <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,24.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.500000,-110.000000},{1.000000,-34.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,24.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.500000,-110.000000},{1.000000,-34.000000}}" />
           <Property Name="Text" Value="#{INTERFACE_XML_499}" />
           <Event Name="Clicked" Function="Talent_UpPage();" />
           <Property Name="Visible" Value="False"/>
         </Window>
         <Window Type="TLBB_StaticImageNULL" Name="Talent_Realm">
-          <Property Name="UnifiedSize" Value="{{0.000000,55.000000},{0.000000,54.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.500000,-46.000000},{1.000000,-34.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,55.000000},{0.000000,54.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.500000,-46.000000},{1.000000,-34.000000}}" />
           <Property Name="Image" Value="set:CommonItem image:ActionBK"/>
           <Property Name="Visible" Value="False"/>
         </Window>
         <Window Type="TLBB_ButtonCommon2" Name="Talent_DownPage">
-          <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,24.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.500000,20.000000},{1.000000,-34.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,24.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.500000,20.000000},{1.000000,-34.000000}}" />
           <Property Name="Text" Value="#{INTERFACE_XML_325}" />
           <Property Name="Visible" Value="False"/>
           <Event Name="Clicked" Function="Talent_DownPage();" />
         </Window>
         <Window Type="TLBB_SimpleText" Name="Talent_Have">
-          <Property Name="UnifiedSize" Value="{{0.000000,160.000000},{0.000000,24.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,338.000000},{0.000000,386.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,160.000000},{0.000000,24.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,338.000000},{0.000000,386.000000}}" />
           <Property Name="TextColor" Value="FFFFF263"/>
           <Property Name="Text" Value="#{TalentMP_20210804_21}"/>
           <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
@@ -714,8 +714,8 @@
       </Window>
     </Window>
     <Window Type="DefaultWindow" Name="Talent_Checkbox_Frame">
-      <Property Name="UnifiedPosition" Value="{{0.0,8.000000},{1.000000,-25.000000}" />
-      <Property Name="UnifiedSize" Value="{{0.933333,0.000000},{0.000000,24.000000}" />
+      <Property Name="UnifiedPosition" Value="{{0.0,8.000000},{1.000000,-25.000000}}" />
+      <Property Name="UnifiedSize" Value="{{0.933333,0.000000},{0.000000,24.000000}}" />
       <Window Type="TLBB_ButtonPageDown" Name="Talent_SelfEquip">
         <Property Name="AbsolutePosition" Value="x:0.0 y:0.0" />
         <Property Name="AbsoluteSize" Value="w:42.000000 h:24.000000" />

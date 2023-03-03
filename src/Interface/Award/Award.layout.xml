@@ -1,111 +1,111 @@
 <?xml version="1.0" ?>
 <GUILayout>
   <Window Type="TLBB_MainFrame0" Name="Award_Frame">
-    <Property Name="UnifiedSize" Value="{{0.000000,500.000000},{0.000000,266.000000}}"/>
-    <Property Name="UnifiedPosition" Value="{{0.500000,-250.000000},{0.500000,-146.000000}}"/>
+    <Property Name="UnifiedSize" Value="{{0.000000,500.000000},{0.000000,266.000000}}" />
+    <Property Name="UnifiedPosition" Value="{{0.500000,-250.000000},{0.500000,-146.000000}}" />
     <Event Name="Hidden" Function="Award_OnHiden();"/>
     <Window Type="TLBB_DragTitle" Name="Award_DragTitle">
-      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}" />
       <Property Name="DragTarget" Value="Award_Frame" />
       <Property Name="Font" Value="YouYuan11.25" />
       <Property Name="Text" Value="#{LJSJ_160308_07}"/>
     </Window>
     <Window Type="TLBB_ButtonClose" Name="Award_Close">
-      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}" />
       <Property Name="Text" Value="TLBB_ButtonClose" />
       <Event Name="Clicked" Function="Award_Close();"/>
     </Window>
     <Window Type="TLBB_ButtonHelp" Name="Award_Help">
-      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}" />
     </Window>
     <Window Type="DefaultWindow" Name="Award_Frame_Client">
-      <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-55.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,36.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-55.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,36.000000}}" />
       <Property Name="RiseOnClick" Value="False" />
         <Window Type="DefaultWindow" Name="Award_Frame_Bk1">
-          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,60.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,4.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,60.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,4.000000}}" />
           <Window Type="TLBB_StaticImageNULL" Name="Award_Frame_Icon1">
-            <Property Name="UnifiedSize" Value="{{0.000000,58.000000},{0.000000,58.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,1.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,58.000000},{0.000000,58.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,1.000000}}" />
             <Property Name="RiseOnClick" Value="False"/>
             <Property Name="Image" Value="set:YuanDan1 image:YuanDan1_1"/>
           </Window>
           <Window Type="TLBB_Frame_Lace3" Name="Award_Frame_Info1">
-            <Property Name="UnifiedSize" Value="{{1.000000,-160.000000},{0.000000,60.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,65.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,-160.000000},{0.000000,60.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,65.000000},{0.000000,0.000000}}" />
             <Window Type="TLBB_SimpleText" Name="Award_Frame_Text1">
-              <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{1.000000,-6.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,3.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{1.000000,-6.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,3.000000}}" />
               <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
               <Property Name="Text" Value="#{LJSJ_160308_03}"/>
             </Window>
           </Window>
           <Window Type="TLBB_ButtonExp2" Name="Award_Frame_Button1">
-            <Property Name="UnifiedSize" Value="{{0.000000,94.000000},{0.000000,31.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{1.000000,-95.000000},{0.000000,15.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,94.000000},{0.000000,31.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{1.000000,-95.000000},{0.000000,15.000000}}" />
             <Property Name="Text" Value="#{LJSJ_160308_08}"/>
             <Event Name="Clicked" Function="Award_GetPrize(1);"/>
           </Window>
         </Window>
         <Window Type="DefaultWindow" Name="Award_Frame_Bk2">
-          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,60.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,66.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,60.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,66.000000}}" />
           <Window Type="TLBB_StaticImageNULL" Name="Award_Frame_Icon2">
-            <Property Name="UnifiedSize" Value="{{0.000000,58.000000},{0.000000,58.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,1.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,58.000000},{0.000000,58.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,1.000000}}" />
             <Property Name="RiseOnClick" Value="False"/>
             <Property Name="Image" Value="set:YuanDan1 image:YuanDan1_2"/>
           </Window>
           <Window Type="TLBB_Frame_Lace3" Name="Award_Frame_Info2">
-            <Property Name="UnifiedSize" Value="{{1.000000,-160.000000},{0.000000,60.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,65.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,-160.000000},{0.000000,60.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,65.000000},{0.000000,0.000000}}" />
             <Window Type="TLBB_SimpleText" Name="Award_Frame_Text2">
-              <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{1.000000,-6.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,3.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{1.000000,-6.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,3.000000}}" />
               <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
               <Property Name="Text" Value="#{LJSJ_160308_05}"/>
             </Window>
           </Window>
           <Window Type="TLBB_ButtonExp2" Name="Award_Frame_Button2">
-            <Property Name="UnifiedSize" Value="{{0.000000,94.000000},{0.000000,31.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{1.000000,-95.000000},{0.000000,15.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,94.000000},{0.000000,31.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{1.000000,-95.000000},{0.000000,15.000000}}" />
             <Property Name="Text" Value="#{LJSJ_160308_08}"/>
             <Event Name="Clicked" Function="Award_GetPrize(2);"/>
           </Window>
         </Window>
         <Window Type="DefaultWindow" Name="Award_Frame_Bk3">
-          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,60.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,128.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,60.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,128.000000}}" />
           <Window Type="TLBB_StaticImageNULL" Name="Award_Frame_Icon3">
-            <Property Name="UnifiedSize" Value="{{0.000000,58.000000},{0.000000,58.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,1.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,58.000000},{0.000000,58.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,1.000000}}" />
             <Property Name="RiseOnClick" Value="False"/>
             <Property Name="Image" Value="set:YuanDan1 image:YuanDan1_3"/>
           </Window>
           <Window Type="TLBB_Frame_Lace3" Name="Award_Frame_Info3">
-            <Property Name="UnifiedSize" Value="{{1.000000,-160.000000},{0.000000,60.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,65.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,-160.000000},{0.000000,60.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,65.000000},{0.000000,0.000000}}" />
             <Window Type="TLBB_SimpleText" Name="Award_Frame_Text3">
-              <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{1.000000,-6.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,3.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{1.000000,-6.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,3.000000}}" />
               <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
               <Property Name="Text" Value="#{LJSJ_160308_06}"/>
             </Window>
           </Window>
           <Window Type="TLBB_ButtonExp2" Name="Award_Frame_Button3">
-            <Property Name="UnifiedSize" Value="{{0.000000,94.000000},{0.000000,31.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{1.000000,-95.000000},{0.000000,15.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,94.000000},{0.000000,31.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{1.000000,-95.000000},{0.000000,15.000000}}" />
             <Property Name="Text" Value="#{LJSJ_160308_08}"/>
             <Event Name="Clicked" Function="Award_GetPrize(3);"/>
           </Window>
         </Window>
       <Window Type="TLBB_SimpleText" Name="Award_Frame_Text4">
-        <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{0.000000,18.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{1.000000,-20.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{0.000000,18.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{1.000000,-20.000000}}" />
         <Property Name="Text" Value="#{LJSJ_160308_28}"/>
         <Property Name="HorzFormatting" Value="HorzCentred"/>
       </Window>

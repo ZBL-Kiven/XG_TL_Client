@@ -6,7 +6,7 @@
     <Event Name="Hidden" Function="MysteryShop_OnHidden();" />
     <Window Type="TLBB_DragTitle" Name="MysteryShop_DragTitle">
       <Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
-      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}" />
       <Property Name="DragTarget" Value="MysteryShop_Frame" />
       <Window Type="TLBB_SimpleText" Name="MysteryShop_Text">
         <Property Name="Position" Value="x:0 y:0" />
@@ -19,41 +19,41 @@
       </Window>
     </Window>
     <Window Type="TLBB_ButtonHelp" Name="MysteryShop_Help">
-      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}" />
       <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
       <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*Shop&quot;);' />
     </Window>
     <Window Type="TLBB_ButtonClose" Name="MysteryShop_Close">
-      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}" />
       <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
       <Event Name="Clicked" Function="MysteryShop_Close();" />
     </Window>
     <Window Type="DefaultWindow" Name="MysteryShop_Background_Frame1">
       <Property Name="AbsolutePosition" Value="x:5.000000 y:36.000000" />
-      <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,-55.000000}" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,-55.000000}}" />
       <Window Type="TLBB_ButtonCheck" Name="MysteryShop_querengoumai">
-        <Property Name="UnifiedPosition" Value="{{0.000000,222.000000},{0.000000,16.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,222.000000},{0.000000,16.000000}}" />
         <Property Name="AbsoluteSize" Value="w:12.000000 h:13.000000" />
         <Property Name="CheckMode" Value="0" />
         <Event Name="Clicked" Function="MysteryShop_querengoumai_Clicked();" />
       </Window>
       <Window Type="TLBB_SimpleText" Name="MysteryShop_querengoumai_Text">
-        <Property Name="UnifiedPosition" Value="{{1.000000,-104.000000},{0.000000,13.000000}" />
-        <Property Name="UnifiedSize" Value="{{1.000000,-250.000000},{0.000000,18.000000}" />
+        <Property Name="UnifiedPosition" Value="{{1.000000,-104.000000},{0.000000,13.000000}}" />
+        <Property Name="UnifiedSize" Value="{{1.000000,-250.000000},{0.000000,18.000000}}" />
         <Property Name="Text" Value="#{INTERFACE_XML_SHOP_QUREN1}" />
         <Property Name="HorzFormatting" Value="LeftAligned" />
         <Property Name="Tooltip" Value="#{INTERFACE_XML_SHOP_QUREN2}" />
         <Event Name="Clicked" Function="MysteryShop_querengoumai_Clicked();" />
       </Window>
       <Window Type="TLBB_SimpleText" Name="MysteryShop_querengoumai_Text2">
-        <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,13.000000}" />
-        <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,18.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,13.000000}}" />
+        <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,18.000000}}" />
         <Property Name="Text" Value="#{SMYBSD_091102_13}" />
         <Property Name="HorzFormatting" Value="LeftAligned" />
       </Window>
       <Window Type="DefaultWindow" Name="MysteryShop_Action_Set">
-        <Property Name="UnifiedSize" Value="{{0.960000,-3.399994},{0.000000,230.0000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.026471,0.000000},{0.000000,34.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.960000,-3.399994},{0.000000,230.0000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.026471,0.000000},{0.000000,34.000000}}" />
         <Window Type="TLBB_ActionButton" Name="MysteryShop_Item1">
           <Property Name="AbsolutePosition" Value="x:0.000000 y:1.000000" />
           <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
@@ -369,18 +369,18 @@
         </Window>
       </Window>
       <Window Type="DefaultWindow" Name="MysteryShop_BK">
-        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-24.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-24.000000}}" />
         <Property Name="AlwaysOnTop" Value="True"/>
         <Window Type="TLBB_ButtonCommon2" Name="MysteryShop_UpPage">
-          <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,22.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.500000,-80.000000},{0.000000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,22.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.500000,-80.000000},{0.000000,0.000000}}" />
           <Property Name="Text" Value="#{INTERFACE_XML_499}" />
           <Event Name="Clicked" Function="MysteryShop_PageUp();" />
         </Window>
         <Window Type="TLBB_SimpleMulitiTextFrame" Name="MysteryShop_CurrentlyPage">
-          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,22.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.500000,-30.000000},{0.000000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,22.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.500000,-30.000000},{0.000000,0.000000}}" />
           <Property Name="Text" Value="999/999" />
           <Property Name="TextColor" Value="FFFFF263" />
           <Property Name="HorzFormatting" Value="HorzCentred" />
@@ -388,15 +388,15 @@
           <Property Name="RiseOnClick" Value="False" />
         </Window>
         <Window Type="TLBB_ButtonCommon2" Name="MysteryShop_DownPage">
-          <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,22.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.500000,30.000000},{0.000000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,22.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.500000,30.000000},{0.000000,0.000000}}" />
           <Property Name="Text" Value="#{INTERFACE_XML_325}" />
           <Event Name="Clicked" Function="MysteryShop_PageDown();" />
         </Window>
       </Window>
       <Window Type="TLBB_Frame_Lace5" Name="MysteryShop_Blank">
-        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}}" />
       </Window>
     </Window>
   </Window>

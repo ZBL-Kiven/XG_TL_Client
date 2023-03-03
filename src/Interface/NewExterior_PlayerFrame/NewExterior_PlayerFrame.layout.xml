@@ -1,20 +1,20 @@
 <?xml version="1.0" ?>
 <GUILayout>
   <Window Type="TLBB_MainFrameNULL" Name="NewExterior_PlayerFrame_Frame">
-    <Property Name="UnifiedSize" Value="{{0.000000,966.000000},{0.000000,574.000000}}"/>
-    <Property Name="UnifiedPosition" Value="{{0.500000,-480.000000},{0.500000,-290.000000}" />
+    <Property Name="UnifiedSize" Value="{{0.000000,966.000000},{0.000000,574.000000}}" />
+    <Property Name="UnifiedPosition" Value="{{0.500000,-480.000000},{0.500000,-290.000000}}" />
     <Event Name="Hidden" Function="NewExterior_PlayerFrame_OnHidden();" />
     <Window Type="TLBB_DragTitle" Name="NewExterior_PlayerFrame_DragTitle">
-      <Property Name="UnifiedSize" Value="{{1.000000,-60.000000},{0.000000,30.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,2.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-60.000000},{0.000000,30.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,2.000000}}" />
       <Property Name="Text" Value="#{WGTJ_201222_175}"/>
       <Property Name="Font" Value="YouYuan11.25"/>
       <Property Name="AlwaysOnTop" Value="True"/>
       <Property Name="DragTarget" Value="NewExterior_PlayerFrame_Frame" />
     </Window>
     <Window Type="TLBB_ButtonNULL" Name="NewExterior_PlayerFrame_Close">
-      <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,11.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{1.000000,-26.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,11.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{1.000000,-26.000000},{0.000000,14.000000}}" />
       <Property Name="PushedImage" Value="set:NewExterior3 image:NewExterior_guanbi_Pushed"/>
       <Property Name="NormalImage" Value="set:NewExterior3 image:NewExterior_guanbi_Normal"/>
       <Property Name="HoverImage" Value="set:NewExterior3 image:NewExterior_guanbi_Hover"/>
@@ -22,8 +22,8 @@
       <Event Name="Clicked" Function="NewExterior_PlayerFrame_CloseClick();" />
     </Window>
     <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PlayerFrame_BK">
-      <Property Name="UnifiedSize" Value="{{0.000000,966.000000},{0.000000,574.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{0.000000,966.000000},{0.000000,574.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
       <Property Name="MouseRButtonHollow" Value="True"/>
       <Property Name="MouseMoveHollow" Value="True"/>
       <Property Name="MouseLButtonHollow" Value="True"/>
@@ -32,18 +32,18 @@
       <Property Name="Image" Value="set:NewExterior3 image:NewExterior_BK"/>
     </Window>
     <Window Type="DefaultWindow" Name="NewExterior_PlayerFrame_Function_Frame">
-      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-32.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,32.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-32.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,32.000000}}" />
       <Window Type="DefaultWindow" Name="NewExterior_PlayerFrame_Frame_LeftClient">
-        <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{1.000000,0.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{1.000000,0.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}" />
         <Window Type="TLBB_ButtonNULL" Name="NewExterior_PlayerFrame_Dress_LeftCheckBtn">
-          <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,72.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,10.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,72.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,10.000000}}" />
           <Event Name="Clicked" Function="NewExterior_PlayerFrame_OpenFashion()"/>
           <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PlayerFrame_Dress_LeftCheckBtnActive">
-            <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,72.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,72.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
             <Property Name="MouseRButtonHollow" Value="True"/>
             <Property Name="MouseMoveHollow" Value="True"/>
             <Property Name="MouseLButtonHollow" Value="True"/>
@@ -51,14 +51,14 @@
             <Property Name="Image" Value="set:NewExterior3 image:NewExterior_yeqian_02_Normal"/>
           </Window>
           <Window Type="TLBB_ActionButton" Name="NewExterior_PlayerFrame_Dress_LeftBtn">
-            <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}" />
-            <Property Name="UnifiedPosition" Value="{{0.000000,56.000000},{0.500000,-23.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,56.000000},{0.500000,-23.000000}}" />
             <Property Name="AlwaysOnTop" Value="True"/>
             <Event Name="MouseLButtonDown" Function="NewExterior_PlayerFrame_OpenFashion()"/>
             <Event Name="MouseRClick" Function="NewExterior_PlayerFrame_ActionToDressBox();" />
             <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PlayerFrame_Dress_LockImg">
-              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
               <Property Name="MouseLButtonHollow" Value="True"/>
@@ -66,8 +66,8 @@
               <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PlayerFrame_Dress_ActionImg">
-              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,33.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,33.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}" />
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
               <Property Name="MouseLButtonHollow" Value="True"/>
@@ -77,12 +77,12 @@
           </Window>
         </Window>
         <Window Type="TLBB_ButtonNULL" Name="NewExterior_PlayerFrame_Ride_LeftCheckBtn">
-          <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,72.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,82.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,72.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,82.000000}}" />
           <Event Name="Clicked" Function="NewExterior_PlayerFrame_OpenRide()"/>
           <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PlayerFrame_Ride_LeftCheckBtnActive">
-            <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,72.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,72.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
             <Property Name="MouseRButtonHollow" Value="True"/>
             <Property Name="MouseMoveHollow" Value="True"/>
             <Property Name="MouseLButtonHollow" Value="True"/>
@@ -90,15 +90,15 @@
             <Property Name="Image" Value="set:NewExterior3 image:NewExterior_yeqian_07_Normal"/>
           </Window>
           <Window Type="TLBB_ActionButton" Name="NewExterior_PlayerFrame_Ride_LeftBtn">
-            <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}" />
-            <Property Name="UnifiedPosition" Value="{{0.000000,56.000000},{0.500000,-23.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,56.000000},{0.500000,-23.000000}}" />
             <Property Name="Tooltip" Value=""/>
             <Property Name="AlwaysOnTop" Value="True"/>
             <Event Name="MouseLButtonDown" Function="NewExterior_PlayerFrame_OpenRide()"/>
             <Event Name="MouseRClick" Function="NewExterior_PlayerFrame_TakeOffRide();" />
             <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PlayerFrame_Ride_LockImg">
-              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}" />
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
               <Property Name="MouseLButtonHollow" Value="True"/>
@@ -106,8 +106,8 @@
               <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PlayerFrame_Ride_ActionImg">
-              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,33.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,33.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}" />
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
               <Property Name="MouseLButtonHollow" Value="True"/>
@@ -117,11 +117,11 @@
           </Window>
         </Window>
         <Window Type="TLBB_ButtonNULL" Name="NewExterior_PlayerFrame_FaceStyle_LeftCheckBtn">
-          <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,72.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,154.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,72.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,154.000000}}" />
           <Event Name="Clicked" Function="NewExterior_PlayerFrame_OpenFace()"/>
           <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PlayerFrame_FaceStyle_LeftCheckBtnActive">
-            <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,72.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,72.000000}}" />
             <Property Name="MouseRButtonHollow" Value="True"/>
             <Property Name="MouseMoveHollow" Value="True"/>
             <Property Name="MouseLButtonHollow" Value="True"/>
@@ -129,14 +129,14 @@
             <Property Name="Image" Value="set:NewExterior3 image:NewExterior_yeqian_03_Normal"/>
           </Window>
           <Window Type="TLBB_ActionButton" Name="NewExterior_PlayerFrame_FaceStyle_LeftBtn">
-            <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,56.000000},{0.500000,-23.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,56.000000},{0.500000,-23.000000}}" />
             <Property Name="Tooltip" Value=""/>
             <Property Name="AlwaysOnTop" Value="True"/>
             <Event Name="MouseLButtonDown" Function="NewExterior_PlayerFrame_OpenFace()"/>
             <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PlayerFrame_FaceStyle_LockImg">
-              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
               <Property Name="MouseLButtonHollow" Value="True"/>
@@ -144,8 +144,8 @@
               <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PlayerFrame_FaceStyle_ActionImg">
-              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,33.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,33.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}" />
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
               <Property Name="MouseLButtonHollow" Value="True"/>
@@ -155,12 +155,12 @@
           </Window>
         </Window>
         <Window Type="TLBB_ButtonNULL" Name="NewExterior_PlayerFrame_HairStyle_LeftCheckBtn">
-          <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,72.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,226.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,72.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,226.000000}}" />
           <Event Name="Clicked" Function="NewExterior_PlayerFrame_OpenHair()"/>
           <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PlayerFrame_HairStyle_LeftCheckBtnActive">
-            <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,72.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,72.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
             <Property Name="MouseRButtonHollow" Value="True"/>
             <Property Name="MouseMoveHollow" Value="True"/>
             <Property Name="MouseLButtonHollow" Value="True"/>
@@ -168,14 +168,14 @@
             <Property Name="Image" Value="set:NewExterior3 image:NewExterior_yeqian_04_Normal"/>
           </Window>
           <Window Type="TLBB_ActionButton" Name="NewExterior_PlayerFrame_HairStyle_LeftBtn">
-            <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,56.000000},{0.500000,-23.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,56.000000},{0.500000,-23.000000}}" />
             <Property Name="Tooltip" Value=""/>
             <Property Name="AlwaysOnTop" Value="True"/>
             <Event Name="MouseLButtonDown" Function="NewExterior_PlayerFrame_OpenHair()"/>
             <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PlayerFrame_HairStyle_LockImg">
-              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
               <Property Name="MouseLButtonHollow" Value="True"/>
@@ -183,8 +183,8 @@
               <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PlayerFrame_HairStyle_ActionImg">
-              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,33.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,33.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}" />
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
               <Property Name="MouseLButtonHollow" Value="True"/>
@@ -194,12 +194,12 @@
           </Window>
         </Window>
         <Window Type="TLBB_ButtonNULL" Name="NewExterior_PlayerFrame_PlayerFrame_LeftCheckBtn">
-          <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,72.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,298.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,72.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,298.000000}}" />
           <Event Name="Clicked" Function="NewExterior_PlayerFrame_OpenPortrait()"/>
           <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PlayerFrame_PlayerFrame_LeftCheckBtnActive">
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
-            <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,72.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+            <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,72.000000}}" />
             <Property Name="MouseRButtonHollow" Value="True"/>
             <Property Name="MouseMoveHollow" Value="True"/>
             <Property Name="MouseLButtonHollow" Value="True"/>
@@ -207,14 +207,14 @@
             <Property Name="Image" Value="set:NewExterior3 image:NewExterior_yeqian_06_Pushed"/>
           </Window>
           <Window Type="TLBB_ActionButton" Name="NewExterior_PlayerFrame_PlayerFrame_LeftBtn">
-            <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,56.000000},{0.500000,-23.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,56.000000},{0.500000,-23.000000}}" />
             <Property Name="Tooltip" Value=""/>
             <Property Name="AlwaysOnTop" Value="True"/>
             <Event Name="MouseLButtonDown" Function="NewExterior_PlayerFrame_OpenPortrait()"/>
             <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PlayerFrame_PlayerFrame_LockImg">
-              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
               <Property Name="MouseLButtonHollow" Value="True"/>
@@ -222,8 +222,8 @@
               <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PlayerFrame_PlayerFrame_ActionImg">
-              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,33.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,33.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}" />
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
               <Property Name="MouseLButtonHollow" Value="True"/>
@@ -233,12 +233,12 @@
           </Window>
         </Window>
         <Window Type="TLBB_ButtonNULL" Name="NewExterior_PlayerFrame_Weapon_LeftCheckBtn">
-          <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,72.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,370.000000}}"/>        
+          <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,72.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,370.000000}}" />
           <Event Name="Clicked" Function="NewExterior_PlayerFrame_OpenWeapon()"/>
           <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PlayerFrame_Weapon_LeftCheckBtnActive">
-            <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,72.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,72.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
             <Property Name="MouseRButtonHollow" Value="True"/>
             <Property Name="MouseMoveHollow" Value="True"/>
             <Property Name="MouseLButtonHollow" Value="True"/>
@@ -246,15 +246,15 @@
             <Property Name="Image" Value="set:Weapon image:Weapon_Page_Normal"/>
           </Window>
           <Window Type="TLBB_ActionButton" Name="NewExterior_PlayerFrame_Weapon_LeftBtn">
-            <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,56.000000},{0.500000,-23.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,56.000000},{0.500000,-23.000000}}" />
             <Property Name="Tooltip" Value=""/>
             <Property Name="AlwaysOnTop" Value="True"/>
             <Event Name="MouseLButtonDown" Function="NewExterior_PlayerFrame_OpenWeapon()"/>
 			<Event Name="MouseRClick" Function="NewExterior_PlayerFrame_TakeOffWeapon()" />
             <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PlayerFrame_Weapon_LockImg">
-              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
               <Property Name="MouseLButtonHollow" Value="True"/>
@@ -262,8 +262,8 @@
               <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PlayerFrame_Weapon_ActionImg">
-              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,33.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,33.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}" />
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
               <Property Name="MouseLButtonHollow" Value="True"/>
@@ -274,12 +274,12 @@
         </Window>
 
         <Window Type="TLBB_ButtonNULL" Name="NewExterior_PlayerFrame_PetSoul_LeftCheckBtn">
-          <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,72.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,442.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,72.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,442.000000}}" />
 		  <Event Name="Clicked" Function="NewExterior_PlayerFrame_OpenPoss()"/>
           <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PlayerFrame_PetSoul_LeftCheckBtnActive">
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
-            <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,72.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+            <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,72.000000}}" />
             <Property Name="MouseRButtonHollow" Value="True"/>
             <Property Name="MouseMoveHollow" Value="True"/>
             <Property Name="MouseLButtonHollow" Value="True"/>
@@ -287,14 +287,14 @@
             <Property Name="Image" Value="set:NewExterior3 image:NewExterior_yeqian_08_Normal"/>
           </Window>
           <Window Type="TLBB_ActionButton" Name="NewExterior_PlayerFrame_PetSoul_LeftBtn">
-            <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,56.000000},{0.500000,-23.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,56.000000},{0.500000,-23.000000}}" />
 			<Event Name="MouseLButtonDown" Function="NewExterior_PlayerFrame_OpenPoss()"/>
             <Property Name="Tooltip" Value=""/>
             <Property Name="AlwaysOnTop" Value="True"/>
             <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PlayerFrame_PetSoul_LockImg">
-              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
               <Property Name="MouseLButtonHollow" Value="True"/>
@@ -302,8 +302,8 @@
               <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PlayerFrame_PetSoul_ActionImg">
-              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,33.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,33.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}" />
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
               <Property Name="MouseLButtonHollow" Value="True"/>
@@ -314,23 +314,23 @@
         </Window>
       </Window>
       <Window Type="DefaultWindow" Name="NewExterior_PlayerFrame_Frame_Client">
-        <Property Name="UnifiedSize" Value="{{1.000000,-112.000000},{1.000000,0.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,112.000000},{0.000000,0.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,-112.000000},{1.000000,0.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,112.000000},{0.000000,0.000000}}" />
         <Window Type="DefaultWindow" Name="NewExterior_PlayerFrame_Frame_MiddleClient">
-          <Property Name="UnifiedSize" Value="{{0.000000,492.000000},{1.000000,0.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,18.000000},{0.000000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,492.000000},{1.000000,0.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,18.000000},{0.000000,0.000000}}" />
           <Property Name="AlwaysOnTop" Value="True"/>
           <Window Type="TLBB_MeshWindowNewEx" Name="NewExterior_PlayerFrame_FakeObject">
-            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-4.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,1.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-4.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,1.000000}}" />
             <Property name="BackgroundName" value="Common/MeshBackNewEx.dds" />
             <Property Name="MouseRButtonHollow" Value="True"/>
             <Property Name="MouseMoveHollow" Value="True"/>
             <Property Name="MouseLButtonHollow" Value="True"/>
             <Property Name="MouseHollow" Value="True"/>
             <Window Type="TLBB_ButtonNULL" Name="NewExterior_PlayerFrame_Model_TurnLeft">
-              <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,30.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.800000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,30.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.800000,0.000000}}" />
               <Property Name="PushedImage" Value="set:NewExterior3 image:NewExterior_jianyou_zuo_Pushed"/>
               <Property Name="NormalImage" Value="set:NewExterior3 image:NewExterior_jianyou_zuo_Normal"/>
               <Property Name="HoverImage" Value="set:NewExterior3 image:NewExterior_jianyou_zuo_Hover"/>
@@ -340,8 +340,8 @@
               <Event Name="MouseButtonUp" Function="NewExterior_PlayerFrame_FakeObject_TurnLeft(0);" />
             </Window>
             <Window Type="TLBB_ButtonNULL" Name="NewExterior_PlayerFrame_Model_TurnRight">
-              <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,30.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{1.000000,-78.000000},{0.800000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,30.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{1.000000,-78.000000},{0.800000,0.000000}}" />
               <Property Name="PushedImage" Value="set:NewExterior3 image:NewExterior_jianyou_you_Pushed"/>
               <Property Name="NormalImage" Value="set:NewExterior3 image:NewExterior_jianyou_you_Normal"/>
               <Property Name="HoverImage" Value="set:NewExterior3 image:NewExterior_jianyou_you_Hover"/>
@@ -351,8 +351,8 @@
               <Event Name="MouseButtonUp" Function="NewExterior_PlayerFrame_FakeObject_TurnRight(0);" />
             </Window>
             <Window Type="TLBB_ButtonNULL" Name="NewExterior_PlayerFrame_Model_Plus">
-              <Property Name="UnifiedSize" Value="{{0.000000,28.000000},{0.000000,29.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{1.000000,-72.000000},{0.500000,-30.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,28.000000},{0.000000,29.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{1.000000,-72.000000},{0.500000,-30.000000}}" />
               <Property Name="DisabledImage" Value="set:NewExterior3 image:NewExterior_jiahao_Disabled"/>
               <Property Name="PushedImage" Value="set:NewExterior3 image:NewExterior_AddPush"/>
               <Property Name="NormalImage" Value="set:NewExterior3 image:NewExterior_AddNor"/>
@@ -360,8 +360,8 @@
               <Event Name="Clicked" Function="NewExterior_PlayerFrame_ZoomIn();"/>
             </Window>
             <Window Type="TLBB_ButtonNULL" Name="NewExterior_PlayerFrame_Model_Subtract">
-              <Property Name="UnifiedSize" Value="{{0.000000,28.000000},{0.000000,29.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{1.000000,-72.000000},{0.500000,40.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,28.000000},{0.000000,29.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{1.000000,-72.000000},{0.500000,40.000000}}" />
               <Property Name="DisabledImage" Value="set:NewExterior3 image:NewExterior_jianhao_Disabled"/>
               <Property Name="PushedImage" Value="set:NewExterior3 image:NewExterior_SubPush"/>
               <Property Name="NormalImage" Value="set:NewExterior3 image:NewExterior_SubNor"/>
@@ -370,8 +370,8 @@
             </Window>
           </Window>
           <Window Type="TLBB_ButtonNULL" Name="NewExterior_PlayerFrame_CollectBtn">
-            <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,50.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{1.000000,-50.000000},{0.000000,60.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,50.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{1.000000,-50.000000},{0.000000,60.000000}}" />
             <Property Name="PushedImage" Value="set:NewExterior3 image:NewExterior_qianwang_Pushed"/>
             <Property Name="NormalImage" Value="set:NewExterior3 image:NewExterior_qianwang_Normal"/>
             <Property Name="HoverImage" Value="set:NewExterior3 image:NewExterior_qianwang_Hover"/>
@@ -380,8 +380,8 @@
             <Event Name="Clicked" Function="NewExterior_PlayerFrame_Goto();"/>
           </Window>
           <Window Type="TLBB_ButtonNULL" Name="NewExterior_PlayerFrame_RestoreBtn">
-            <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,50.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{1.000000,-50.000000},{1.000000,-70.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,50.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{1.000000,-50.000000},{1.000000,-70.000000}}" />
             <Property Name="AlwaysOnTop" Value="True"/>
             <Property Name="PushedImage" Value="set:NewExterior3 image:NewExterior_huanyuan_Pushed"/>
             <Property Name="NormalImage" Value="set:NewExterior3 image:NewExterior_huanyuan_Normal"/>
@@ -390,8 +390,8 @@
             <Event Name="Clicked" Function="NewExterior_PlayerFrame_RemovePreview();"/>
           </Window>
           <Window Type="TLBB_ButtonNULL" Name="NewExterior_PlayerFrame_DressChange_RightBtn">
-            <Property Name="UnifiedSize" Value="{{0.000000,127.000000},{0.000000,29.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.500000,-64.000000},{1.000000,-58.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,127.000000},{0.000000,29.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.500000,-64.000000},{1.000000,-58.000000}}" />
             <Property Name="PushedImage" Value="set:NewExterior3 image:NewExterior_baocun_Pushed"/>
             <Property Name="NormalImage" Value="set:NewExterior3 image:NewExterior_baocun_Normal"/>
             <Property Name="HoverImage" Value="set:NewExterior3 image:NewExterior_baocun_Hover"/>
@@ -401,32 +401,32 @@
           </Window>
         </Window>
         <Window Type="DefaultWindow" Name="NewExterior_PlayerFrame_Frame_RightClient">
-          <Property Name="UnifiedSize" Value="{{0.000000,336.000000},{1.000000,-8.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,512.000000},{0.000000,4.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,336.000000},{1.000000,-8.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,512.000000},{0.000000,4.000000}}" />
           <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PlayerFrame_SuperListTitle">
-            <Property Name="UnifiedSize" Value="{{0.000000,116.000000},{0.000000,20.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,10.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,116.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,10.000000}}" />
             <Property Name="RiseOnClick" Value="False"/>
             <Property Name="Image" Value="set:NewExterior3 image:NewExterior_yeqian_zi_07"/>
             <Property Name="RiseOnClick" Value="False"/>
           </Window>
           <Window Type="DefaultWindow" Name="NewExterior_PlayerFrame_SuperList">
-            <Property Name="UnifiedSize" Value="{{1.000000,-38.000000},{0.000000,480.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,18.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,-38.000000},{0.000000,480.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,18.000000},{0.000000,40.000000}}" />
           <Property Name="SelectMode" Value="Single" />
           <Property Name="MouseRButtonHollow" Value="True"/>
           <Property Name="AlwaysOnTop" Value="True"/>
           <Property Name="MultiColumn" Value="1" />
           <Window Type="DefaultWindow" Name="NewExterior_PlayerFrame_SuperListItem1">
-            <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
             <Window Type="TLBB_ActionButton" Name="NewExterior_PlayerFrame_SuperListItemAction1">
-              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}" />
 			  <Event Name="Clicked" Function="NewExterior_PlayerFrame_ItemClicked(1);"/>
               <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PlayerFrame_SuperListItemActionLock1">
-                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                 <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
@@ -436,15 +436,15 @@
             </Window>
           </Window>
           <Window Type="DefaultWindow" Name="NewExterior_PlayerFrame_SuperListItem2">
-            <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.2500000,-16.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.2500000,-16.000000},{0.000000,0.000000}}" />
             <Window Type="TLBB_ActionButton" Name="NewExterior_PlayerFrame_SuperListItemAction2">
-              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}" />
 			  <Event Name="Clicked" Function="NewExterior_PlayerFrame_ItemClicked(2);"/>
               <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PlayerFrame_SuperListItemActionLock2">
-                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                 <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
@@ -454,15 +454,15 @@
             </Window>
           </Window>
           <Window Type="DefaultWindow" Name="NewExterior_PlayerFrame_SuperListItem3">
-            <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.500000,-31.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.500000,-31.000000},{0.000000,0.000000}}" />
             <Window Type="TLBB_ActionButton" Name="NewExterior_PlayerFrame_SuperListItemAction3">
-              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}" />
 			  <Event Name="Clicked" Function="NewExterior_PlayerFrame_ItemClicked(3);"/>
               <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PlayerFrame_SuperListItemActionLock3">
-                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                 <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
@@ -472,15 +472,15 @@
             </Window>
           </Window>
           <Window Type="DefaultWindow" Name="NewExterior_PlayerFrame_SuperListItem4">
-            <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.7500000,-46.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.7500000,-46.000000},{0.000000,0.000000}}" />
             <Window Type="TLBB_ActionButton" Name="NewExterior_PlayerFrame_SuperListItemAction4">
-              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}" />
 			  <Event Name="Clicked" Function="NewExterior_PlayerFrame_ItemClicked(4);"/>
               <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PlayerFrame_SuperListItemActionLock4">
-                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                 <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
@@ -490,15 +490,15 @@
             </Window>
           </Window>
           <Window Type="DefaultWindow" Name="NewExterior_PlayerFrame_SuperListItem5">
-            <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.000000,0.000000}}" />
             <Window Type="TLBB_ActionButton" Name="NewExterior_PlayerFrame_SuperListItemAction5">
-              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}" />
 			  <Event Name="Clicked" Function="NewExterior_PlayerFrame_ItemClicked(5);"/>
               <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PlayerFrame_SuperListItemActionLock5">
-                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                 <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
@@ -508,15 +508,15 @@
             </Window>
           </Window>
           <Window Type="DefaultWindow" Name="NewExterior_PlayerFrame_SuperListItem6">
-            <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.140000,0.310000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.140000,0.310000}}" />
             <Window Type="TLBB_ActionButton" Name="NewExterior_PlayerFrame_SuperListItemAction6">
-              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}" />
 			  <Event Name="Clicked" Function="NewExterior_PlayerFrame_ItemClicked(6);"/>
               <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PlayerFrame_SuperListItemActionLock6">
-                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                 <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
@@ -526,15 +526,15 @@
             </Window>
           </Window>
           <Window Type="DefaultWindow" Name="NewExterior_PlayerFrame_SuperListItem7">
-            <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.2500000,-16.000000},{0.140000,0.310000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.2500000,-16.000000},{0.140000,0.310000}}" />
             <Window Type="TLBB_ActionButton" Name="NewExterior_PlayerFrame_SuperListItemAction7">
-              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}" />
 			  <Event Name="Clicked" Function="NewExterior_PlayerFrame_ItemClicked(7);"/>
               <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PlayerFrame_SuperListItemActionLock7">
-                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                 <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
@@ -544,15 +544,15 @@
             </Window>
           </Window>
           <Window Type="DefaultWindow" Name="NewExterior_PlayerFrame_SuperListItem8">
-            <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.500000,-31.000000},{0.140000,0.310000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.500000,-31.000000},{0.140000,0.310000}}" />
             <Window Type="TLBB_ActionButton" Name="NewExterior_PlayerFrame_SuperListItemAction8">
-              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}" />
  			  <Event Name="Clicked" Function="NewExterior_PlayerFrame_ItemClicked(8);"/>
               <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PlayerFrame_SuperListItemActionLock8">
-                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                 <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
@@ -562,15 +562,15 @@
            </Window>
           </Window>
           <Window Type="DefaultWindow" Name="NewExterior_PlayerFrame_SuperListItem9">
-            <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.7500000,-46.000000},{0.140000,0.310000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.7500000,-46.000000},{0.140000,0.310000}}" />
             <Window Type="TLBB_ActionButton" Name="NewExterior_PlayerFrame_SuperListItemAction9">
-              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}" />
 			  <Event Name="Clicked" Function="NewExterior_PlayerFrame_ItemClicked(9);"/>
               <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PlayerFrame_SuperListItemActionLock9">
-                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                 <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
@@ -580,15 +580,15 @@
             </Window>
           </Window>
           <Window Type="DefaultWindow" Name="NewExterior_PlayerFrame_SuperListItem10">
-            <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.140000,0.310000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.140000,0.310000}}" />
             <Window Type="TLBB_ActionButton" Name="NewExterior_PlayerFrame_SuperListItemAction10">
-              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}" />
 			  <Event Name="Clicked" Function="NewExterior_PlayerFrame_ItemClicked(10);"/>
               <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PlayerFrame_SuperListItemActionLock10">
-                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                 <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
@@ -598,15 +598,15 @@
             </Window>
           </Window>
           <Window Type="DefaultWindow" Name="NewExterior_PlayerFrame_SuperListItem11">
-            <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.0000000,0.000000},{0.280000,0.310000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.0000000,0.000000},{0.280000,0.310000}}" />
             <Window Type="TLBB_ActionButton" Name="NewExterior_PlayerFrame_SuperListItemAction11">
-              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}" />
 			  <Event Name="Clicked" Function="NewExterior_PlayerFrame_ItemClicked(11);"/>
               <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PlayerFrame_SuperListItemActionLock11">
-                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                 <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
@@ -616,15 +616,15 @@
             </Window>
           </Window>
           <Window Type="DefaultWindow" Name="NewExterior_PlayerFrame_SuperListItem12">
-            <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.2500000,-16.000000},{0.280000,0.310000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.2500000,-16.000000},{0.280000,0.310000}}" />
             <Window Type="TLBB_ActionButton" Name="NewExterior_PlayerFrame_SuperListItemAction12">
-              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}" />
 			  <Event Name="Clicked" Function="NewExterior_PlayerFrame_ItemClicked(12);"/>
               <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PlayerFrame_SuperListItemActionLock12">
-                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                 <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
@@ -634,15 +634,15 @@
             </Window>
           </Window>
           <Window Type="DefaultWindow" Name="NewExterior_PlayerFrame_SuperListItem13">
-            <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.500000,-31.000000},{0.280000,0.310000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.500000,-31.000000},{0.280000,0.310000}}" />
             <Window Type="TLBB_ActionButton" Name="NewExterior_PlayerFrame_SuperListItemAction13">
-              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}" />
  			  <Event Name="Clicked" Function="NewExterior_PlayerFrame_ItemClicked(13);"/>
               <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PlayerFrame_SuperListItemActionLock13">
-                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                 <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
@@ -652,15 +652,15 @@
            </Window>
           </Window>
           <Window Type="DefaultWindow" Name="NewExterior_PlayerFrame_SuperListItem14">
-            <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.7500000,-46.000000},{0.280000,0.310000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.7500000,-46.000000},{0.280000,0.310000}}" />
             <Window Type="TLBB_ActionButton" Name="NewExterior_PlayerFrame_SuperListItemAction14">
-              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}" />
 			  <Event Name="Clicked" Function="NewExterior_PlayerFrame_ItemClicked(14);"/>
               <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PlayerFrame_SuperListItemActionLock14">
-                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                 <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
@@ -670,15 +670,15 @@
             </Window>
           </Window>
           <Window Type="DefaultWindow" Name="NewExterior_PlayerFrame_SuperListItem15">
-            <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.280000,0.310000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.280000,0.310000}}" />
             <Window Type="TLBB_ActionButton" Name="NewExterior_PlayerFrame_SuperListItemAction15">
-              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}" />
  			  <Event Name="Clicked" Function="NewExterior_PlayerFrame_ItemClicked(15);"/>
               <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PlayerFrame_SuperListItemActionLock15">
-                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                 <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
@@ -688,15 +688,15 @@
            </Window>
           </Window>
           <Window Type="DefaultWindow" Name="NewExterior_PlayerFrame_SuperListItem16">
-            <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.420000,0.310000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.420000,0.310000}}" />
             <Window Type="TLBB_ActionButton" Name="NewExterior_PlayerFrame_SuperListItemAction16">
-              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}" />
  			  <Event Name="Clicked" Function="NewExterior_PlayerFrame_ItemClicked(16);"/>
               <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PlayerFrame_SuperListItemActionLock16">
-                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                 <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
@@ -706,15 +706,15 @@
            </Window>
           </Window>
           <Window Type="DefaultWindow" Name="NewExterior_PlayerFrame_SuperListItem17">
-            <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.2500000,-16.000000},{0.420000,0.310000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.2500000,-16.000000},{0.420000,0.310000}}" />
             <Window Type="TLBB_ActionButton" Name="NewExterior_PlayerFrame_SuperListItemAction17">
-              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}" />
 			  <Event Name="Clicked" Function="NewExterior_PlayerFrame_ItemClicked(17);"/>
               <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PlayerFrame_SuperListItemActionLock17">
-                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                 <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
@@ -724,15 +724,15 @@
             </Window>
           </Window>
           <Window Type="DefaultWindow" Name="NewExterior_PlayerFrame_SuperListItem18">
-            <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.500000,-31.000000},{0.420000,0.310000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.500000,-31.000000},{0.420000,0.310000}}" />
             <Window Type="TLBB_ActionButton" Name="NewExterior_PlayerFrame_SuperListItemAction18">
-              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}" />
 			  <Event Name="Clicked" Function="NewExterior_PlayerFrame_ItemClicked(18);"/>
               <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PlayerFrame_SuperListItemActionLock18">
-                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                 <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
@@ -742,15 +742,15 @@
             </Window>
           </Window>
           <Window Type="DefaultWindow" Name="NewExterior_PlayerFrame_SuperListItem19">
-            <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.7500000,-46.000000},{0.420000,0.310000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.7500000,-46.000000},{0.420000,0.310000}}" />
             <Window Type="TLBB_ActionButton" Name="NewExterior_PlayerFrame_SuperListItemAction19">
-              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}" />
 			  <Event Name="Clicked" Function="NewExterior_PlayerFrame_ItemClicked(19);"/>
               <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PlayerFrame_SuperListItemActionLock19">
-                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                 <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
@@ -760,15 +760,15 @@
             </Window>
           </Window>
           <Window Type="DefaultWindow" Name="NewExterior_PlayerFrame_SuperListItem20">
-            <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.420000,0.310000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.420000,0.310000}}" />
             <Window Type="TLBB_ActionButton" Name="NewExterior_PlayerFrame_SuperListItemAction20">
-              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}" />
 			  <Event Name="Clicked" Function="NewExterior_PlayerFrame_ItemClicked(20);"/>
               <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PlayerFrame_SuperListItemActionLock20">
-                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                 <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
@@ -778,15 +778,15 @@
             </Window>
           </Window>
           <Window Type="DefaultWindow" Name="NewExterior_PlayerFrame_SuperListItem21">
-            <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.560000,0.310000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.560000,0.310000}}" />
             <Window Type="TLBB_ActionButton" Name="NewExterior_PlayerFrame_SuperListItemAction21">
-              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}" />
 			  <Event Name="Clicked" Function="NewExterior_PlayerFrame_ItemClicked(21);"/>
               <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PlayerFrame_SuperListItemActionLock21">
-                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                 <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
@@ -796,15 +796,15 @@
             </Window>
           </Window>
           <Window Type="DefaultWindow" Name="NewExterior_PlayerFrame_SuperListItem22">
-            <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.2500000,-16.000000},{0.560000,0.310000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.2500000,-16.000000},{0.560000,0.310000}}" />
             <Window Type="TLBB_ActionButton" Name="NewExterior_PlayerFrame_SuperListItemAction22">
-              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}" />
 			  <Event Name="Clicked" Function="NewExterior_PlayerFrame_ItemClicked(22);"/>
               <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PlayerFrame_SuperListItemActionLock22">
-                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                 <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
@@ -814,15 +814,15 @@
             </Window>
           </Window>
           <Window Type="DefaultWindow" Name="NewExterior_PlayerFrame_SuperListItem23">
-            <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.500000,-31.000000},{0.560000,0.310000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.500000,-31.000000},{0.560000,0.310000}}" />
             <Window Type="TLBB_ActionButton" Name="NewExterior_PlayerFrame_SuperListItemAction23">
-              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}" />
 			  <Event Name="Clicked" Function="NewExterior_PlayerFrame_ItemClicked(23);"/>
               <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PlayerFrame_SuperListItemActionLock23">
-                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                 <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
@@ -832,15 +832,15 @@
             </Window>
           </Window>
           <Window Type="DefaultWindow" Name="NewExterior_PlayerFrame_SuperListItem24">
-            <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.7500000,-46.000000},{0.560000,0.310000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.7500000,-46.000000},{0.560000,0.310000}}" />
             <Window Type="TLBB_ActionButton" Name="NewExterior_PlayerFrame_SuperListItemAction24">
-              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}" />
 			  <Event Name="Clicked" Function="NewExterior_PlayerFrame_ItemClicked(24);"/>
               <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PlayerFrame_SuperListItemActionLock24">
-                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                 <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
@@ -850,15 +850,15 @@
             </Window>
           </Window>
           <Window Type="DefaultWindow" Name="NewExterior_PlayerFrame_SuperListItem25">
-            <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.560000,0.310000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.560000,0.310000}}" />
             <Window Type="TLBB_ActionButton" Name="NewExterior_PlayerFrame_SuperListItemAction25">
-              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}" />
 			  <Event Name="Clicked" Function="NewExterior_PlayerFrame_ItemClicked(25);"/>
               <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PlayerFrame_SuperListItemActionLock25">
-                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                 <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
@@ -868,15 +868,15 @@
             </Window>
           </Window>
           <Window Type="DefaultWindow" Name="NewExterior_PlayerFrame_SuperListItem26">
-            <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.70000,0.310000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.70000,0.310000}}" />
             <Window Type="TLBB_ActionButton" Name="NewExterior_PlayerFrame_SuperListItemAction26">
-              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}" />
  			  <Event Name="Clicked" Function="NewExterior_PlayerFrame_ItemClicked(26);"/>
               <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PlayerFrame_SuperListItemActionLock26">
-                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                 <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
@@ -886,15 +886,15 @@
            </Window>
           </Window>
           <Window Type="DefaultWindow" Name="NewExterior_PlayerFrame_SuperListItem27">
-            <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.2500000,-16.000000},{0.70000,0.310000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.2500000,-16.000000},{0.70000,0.310000}}" />
             <Window Type="TLBB_ActionButton" Name="NewExterior_PlayerFrame_SuperListItemAction27">
-              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}" />
 			  <Event Name="Clicked" Function="NewExterior_PlayerFrame_ItemClicked(27);"/>
               <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PlayerFrame_SuperListItemActionLock27">
-                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                 <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
@@ -904,15 +904,15 @@
            </Window>
           </Window>
           <Window Type="DefaultWindow" Name="NewExterior_PlayerFrame_SuperListItem28">
-            <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.500000,-31.000000},{0.70000,0.310000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.500000,-31.000000},{0.70000,0.310000}}" />
             <Window Type="TLBB_ActionButton" Name="NewExterior_PlayerFrame_SuperListItemAction28">
-              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}" />
  			  <Event Name="Clicked" Function="NewExterior_PlayerFrame_ItemClicked(28);"/>
               <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PlayerFrame_SuperListItemActionLock28">
-                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                 <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
@@ -922,15 +922,15 @@
            </Window>
           </Window>
           <Window Type="DefaultWindow" Name="NewExterior_PlayerFrame_SuperListItem29">
-            <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.7500000,-46.000000},{0.70000,0.310000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.7500000,-46.000000},{0.70000,0.310000}}" />
             <Window Type="TLBB_ActionButton" Name="NewExterior_PlayerFrame_SuperListItemAction29">
-              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}" />
 			  <Event Name="Clicked" Function="NewExterior_PlayerFrame_ItemClicked(29);"/>
               <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PlayerFrame_SuperListItemActionLock29">
-                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                 <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
@@ -940,15 +940,15 @@
             </Window>
           </Window>
           <Window Type="DefaultWindow" Name="NewExterior_PlayerFrame_SuperListItem30">
-            <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.70000,0.310000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.70000,0.310000}}" />
             <Window Type="TLBB_ActionButton" Name="NewExterior_PlayerFrame_SuperListItemAction30">
-              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}" />
 			  <Event Name="Clicked" Function="NewExterior_PlayerFrame_ItemClicked(30);"/>
               <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PlayerFrame_SuperListItemActionLock30">
-                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                 <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
@@ -958,15 +958,15 @@
             </Window>
           </Window>
           <Window Type="DefaultWindow" Name="NewExterior_PlayerFrame_SuperListItem31">
-            <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.840000,0.310000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.840000,0.310000}}" />
             <Window Type="TLBB_ActionButton" Name="NewExterior_PlayerFrame_SuperListItemAction31">
-              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}" />
 			  <Event Name="Clicked" Function="NewExterior_PlayerFrame_ItemClicked(31);"/>
               <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PlayerFrame_SuperListItemActionLock31">
-                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                 <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
@@ -976,15 +976,15 @@
             </Window>
           </Window>
           <Window Type="DefaultWindow" Name="NewExterior_PlayerFrame_SuperListItem32">
-            <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.2500000,-16.000000},{0.840000,0.310000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.2500000,-16.000000},{0.840000,0.310000}}" />
             <Window Type="TLBB_ActionButton" Name="NewExterior_PlayerFrame_SuperListItemAction32">
-              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}" />
  			  <Event Name="Clicked" Function="NewExterior_PlayerFrame_ItemClicked(32);"/>
               <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PlayerFrame_SuperListItemActionLock32">
-                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                 <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
@@ -994,15 +994,15 @@
            </Window>
           </Window>
           <Window Type="DefaultWindow" Name="NewExterior_PlayerFrame_SuperListItem33">
-            <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.500000,-31.000000},{0.840000,0.310000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.500000,-31.000000},{0.840000,0.310000}}" />
             <Window Type="TLBB_ActionButton" Name="NewExterior_PlayerFrame_SuperListItemAction33">
-              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}" />
 			  <Event Name="Clicked" Function="NewExterior_PlayerFrame_ItemClicked(33);"/>
               <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PlayerFrame_SuperListItemActionLock33">
-                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                 <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
@@ -1012,15 +1012,15 @@
             </Window>
           </Window>
           <Window Type="DefaultWindow" Name="NewExterior_PlayerFrame_SuperListItem34">
-            <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.7500000,-46.000000},{0.840000,0.310000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.7500000,-46.000000},{0.840000,0.310000}}" />
             <Window Type="TLBB_ActionButton" Name="NewExterior_PlayerFrame_SuperListItemAction34">
-              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}" />
  			  <Event Name="Clicked" Function="NewExterior_PlayerFrame_ItemClicked(34);"/>
               <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PlayerFrame_SuperListItemActionLock34">
-                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                 <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
@@ -1030,15 +1030,15 @@
            </Window>
           </Window>
           <Window Type="DefaultWindow" Name="NewExterior_PlayerFrame_SuperListItem35">
-            <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.840000,0.310000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.840000,0.310000}}" />
             <Window Type="TLBB_ActionButton" Name="NewExterior_PlayerFrame_SuperListItemAction35">
-              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}" />
  			  <Event Name="Clicked" Function="NewExterior_PlayerFrame_ItemClicked(35);"/>
               <Window Type="TLBB_StaticImageNULL" Name="NewExterior_PlayerFrame_SuperListItemActionLock35">
-                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                 <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
@@ -1049,15 +1049,15 @@
           </Window>			  
         </Window>
         <Window Type="TLBB_ButtonFenYe77" Name="NewExterior_PlayerFrame_SuperListItemLast">
-              <Property Name="UnifiedSize" Value="{{0.000000,74.000000},{0.000000,24.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.500000,-100.000000},{1.000000,-30.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,74.000000},{0.000000,24.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.500000,-100.000000},{1.000000,-30.000000}}" />
 		  <Property Name="Text" Value="上一页"/>
 		  <Property Name="AlwaysOnTop" Value="True"/>
 			  <Event Name="MouseLButtonDown" Function="NewExterior_PlayerFrame_Page(-1);" />			  
         </Window>		
         <Window Type="TLBB_ButtonFenYe77" Name="NewExterior_PlayerFrame_SuperListItemNext">
-              <Property Name="UnifiedSize" Value="{{0.000000,74.000000},{0.000000,24.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.500000,40.000000},{1.000000,-30.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,74.000000},{0.000000,24.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.500000,40.000000},{1.000000,-30.000000}}" />
 		  <Property Name="Text" Value="下一页"/>
 		  <Property Name="AlwaysOnTop" Value="True"/>
 			  <Event Name="MouseLButtonDown" Function="NewExterior_PlayerFrame_Page(1);" />			  

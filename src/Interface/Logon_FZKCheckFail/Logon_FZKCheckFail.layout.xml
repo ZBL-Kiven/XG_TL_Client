@@ -1,13 +1,13 @@
 <?xml version="1.0" ?>
 <GUILayout>
   <Window Type="TLBB_MainFrame1" Name="Logon_FZKCheckFail_Frame">
-    <Property Name="UnifiedSize" Value="{{0.000000,344.000000},{0.000000,228.000000}}"/>
-    <Property Name="UnifiedPosition" Value="{{0.500000,-109.000000},{0.500000,-154.000000}}"/>
+    <Property Name="UnifiedSize" Value="{{0.000000,344.000000},{0.000000,228.000000}}" />
+    <Property Name="UnifiedPosition" Value="{{0.500000,-109.000000},{0.500000,-154.000000}}" />
     <Property Name="AlwaysOnTop" Value="True" />
     <Property Name="RiseOnClick" Value="False" />
     <Window Type="TLBB_DragTitle" Name="Logon_FZKCheckFail_DragTitle">
-      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}" />
       <Property Name="DragTarget" Value="Logon_FZKCheckFail_Frame" />
       <Property Name="Font" Value="YouYuan11.25" />
       <Property Name="HorzFormatting" Value="HorzCentred" />
@@ -15,63 +15,63 @@
       <Property Name="Text" Value="#{FZK_151230_28}"/>
     </Window>
     <Window Type="TLBB_ButtonClose" Name="Logon_FZKCheckFail_Close">
-      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}" />
       <Event Name="Clicked" Function="Logon_FZKCheckFail_Close();"/>
     </Window>
     <Window Type="TLBB_ButtonHelp" Name="Logon_FZKCheckFail_Help">
-      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}" />
     </Window>
     <Window Type="DefaultWindow" Name="Logon_FZKCheckFail_Client">
-      <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,-55.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,36.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,-55.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,36.000000}}" />
     <Window Type="TLBB_Frame_Lace6" Name="Logon_FZKCheckFail_Info">
-      <Property Name="UnifiedSize" Value="{{1.000000,-15.000000},{0.000000,90.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,0.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-15.000000},{0.000000,90.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,0.000000}}" />
       <Window Type="TLBB_SimpleText" Name="Logon_FZKCheckFail_Info_Des">
-        <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,-10.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,-10.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}" />
         <Property Name="Text" Value="#{FZK_151230_2}" />
         <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
         <Property Name="VertFormatting" Value="VertCentred" />
       </Window>
     </Window>
     <Window Type="TLBB_SimpleText" Name="Logon_FZKCheckFail_Text">
-      <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,111.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,111.000000}}" />
       <Property Name="Text" Value="#{FZK_151230_6}" />
       <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
       <Property Name="VertFormatting" Value="VertCentred" />
     </Window>
     <Window Type="TLBB_EditBoxNormal" Name="Logon_FZKCheckFail_Edit">
-      <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.500000,10.000000},{0.000000,110.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.500000,10.000000},{0.000000,110.000000}}" />
       <Property Name="ValidationString" Value="[0-9]*" />
       <Property Name="MaxTextLength" Value="12" />
       <Event Name="Activated" Function="Logon_FZKCheckFail_OnActive()" /> 
     </Window>
     <Window Type="TLBB_ButtonGreen" Name="Logon_FZKCheckFail_Get">
-      <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,142.000000},{1.000000,-20.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,142.000000},{1.000000,-20.000000}}" />
       <Property Name="Text" Value="#{FZK_151230_11}" />
       <Event Name="Clicked" Function="Logon_FZKCheckFail_GetCode();"/>
     </Window>    
     <Window Type="TLBB_ButtonCommon" Name="Logon_FZKCheckFail_Check">
-      <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,20.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,225.000000},{1.000000,-20.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,20.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,225.000000},{1.000000,-20.000000}}" />
       <Property Name="Text" Value="#{FZK_151230_12}" />
       <Event Name="Clicked" Function="Logon_FZKCheckFail_CheckCode();"/>
     </Window>
     <Window Type="TLBB_ButtonCommon" Name="Logon_FZKCheckFail_Cancel">
-      <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,20.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,279.000000},{1.000000,-20.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,20.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,279.000000},{1.000000,-20.000000}}" />
       <Property Name="Text" Value="#{INTERFACE_XML_542}" />
       <Event Name="Clicked" Function="Logon_FZKCheckFail_Close();"/>
     </Window>
     <Window Type="TLBB_StopWatch" Name="Logon_FZKCheckFail_TimeLeft">
-      <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{1.000000,-20.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{1.000000,-20.000000}}" />
       <Property Name="Text" Value="00:00"/>
       <Property Name="HorzFormatting" Value="HorzCentred"/>
       <Property Name="AlwaysOnTop" Value="True"/>

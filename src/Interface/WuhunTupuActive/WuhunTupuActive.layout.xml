@@ -2,42 +2,42 @@
 <GUILayout>
     <Window Type="TLBB_MainFrame1" Name="WuhunTupuActive_Frame">
         <Property Name="UnifiedPosition" Value="{{0.500000,-150.000000},{0.500000,-195.000000}}" />
-        <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,390.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,390.000000}}" />
         <Event Name="Hidden" Function="WuhunTupuActive_OnHidden();" />
         <Window Type="TLBB_DragTitle" Name="WuhunTupuActive_DragTitle">
             <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}" />
-            <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+            <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}" />
             <Property Name="DragTarget" Value="WuhunTupuActive_Frame" />
             <Window Type="TLBB_SimpleText" Name="WuhunTupuActive_DragTitleText">
                 <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
-                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}" />
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
                 <Property Name="Font" Value="YouYuan11.25" />
                 <Property Name="Text" Value="#gFF0FA0幻魂激活" />
                 <Property Name="HorzFormatting" Value="HorzCentred" />
             </Window>
         </Window>
         <Window Type="TLBB_ButtonHelp" Name="WuhunTupuActive_Help">
-            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
-            <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}" />
+            <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}" />
             <Property Name="Text" Value="TLBB_ButtonHelp" />
             <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*Wuhun&quot;);' />
         </Window>
         <Window Type="TLBB_ButtonClose" Name="WuhunTupuActive_Close">
-            <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
-            <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}" />
+            <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}" />
+            <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}" />
             <Property Name="Text" Value="TLBB_ButtonClose" />
             <Event Name="Clicked" Function="WuhunTupuActive_OnCloseClicked();" />
         </Window>
 
         <Window Type="DefaultWindow" Name="WuhunTupuActive_Frame_Client">
             <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,36.000000}}" />
-            <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-55.000000}" />
+            <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-55.000000}}" />
             <Window Type="TLBB_Frame_Lace1" Name="WuhunTupuActive_ExplaneBK">
                 <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
-                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,60.000000}" />
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,60.000000}}" />
                 <Window Type="TLBB_SimpleText" Name="WuhunTupuActive_Explane">
-                    <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,-10.000000}}"/>
-                    <Property Name="UnifiedPosition" Value="{{0.008000,5.000000},{0.000000,5.000000}}"/>
+                    <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,-10.000000}}" />
+                    <Property Name="UnifiedPosition" Value="{{0.008000,5.000000},{0.000000,5.000000}}" />
                     <Property Name="Text" Value="#cfff263请选择想要激活的幻魂，并消耗#G50个#cfff263相应的幻魂残篇进行激活："/>
                 <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
                 <Property Name="VertFormatting" Value="VertCentred" />
@@ -45,20 +45,20 @@
             </Window>
             <Window Type="DefaultWindow" Name="WuhunTupuActive_Item_LaceBK">
                 <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,60.000000}}" />
-                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,60.000000}" />
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,60.000000}}" />
                 <Window Type="DefaultWindow" Name="WuhunTupuActive_Item_Lace">
-                    <Property Name="UnifiedSize" Value="{{1.000000,-36.000000},{1.000000,-20.000000}}"/>
-                    <Property Name="UnifiedPosition" Value="{{0.000000,18.000000},{0.000000,10.000000}}"/>
+                    <Property Name="UnifiedSize" Value="{{1.000000,-36.000000},{1.000000,-20.000000}}" />
+                    <Property Name="UnifiedPosition" Value="{{0.000000,18.000000},{0.000000,10.000000}}" />
                     <Property Name="AlwaysOnTop" Value="True"/>
                         <Window Type="TLBB_ActionButton" Name="WuhunTupuActive_Item_1">
-                            <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,0.000000}}"/>
-                            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}" />
+                            <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,0.000000}}" />
+                            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}" />
                             <Property Name="BackImage" Value="set:CommonFrame7 image:WuhunEquip" />
                             <!-- <Property Name="Empty" Value="True" /> -->
 							<Event Name="Clicked" Function="WuhunTupuActive_ItemClicked(1);" />
                             <Window Type="TLBB_ButtonNULL" Name="WuhunTupuActive_Item_Mask_1">
-                                <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
-                                <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,-4.000000}" />
+                                <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}" />
+                                <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,-4.000000}}" />
 								<Property Name="PushedImage" Value="set:Face_04 image:Remind_Bak"/>
 								<Property Name="NormalImage" Value="set:Face_04 image:Remind_Bak"/>
 								<Property Name="HoverImage" Value="set:Face_04 image:Remind_Bak"/>
@@ -68,14 +68,14 @@
                             </Window>
                         </Window>
                         <Window Type="TLBB_ActionButton" Name="WuhunTupuActive_Item_2">
-                            <Property Name="UnifiedPosition" Value="{{0.000000,43.000000},{0.000000,0.000000}}"/>
-                            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}" />
+                            <Property Name="UnifiedPosition" Value="{{0.000000,43.000000},{0.000000,0.000000}}" />
+                            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}" />
                             <Property Name="BackImage" Value="set:CommonFrame7 image:WuhunEquip" />
                             <!-- <Property Name="Empty" Value="True" /> -->
 							<Event Name="Clicked" Function="WuhunTupuActive_ItemClicked(2);" />
                             <Window Type="TLBB_ButtonNULL" Name="WuhunTupuActive_Item_Mask_2">
-                                <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
-                                <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,-4.000000}" />
+                                <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}" />
+                                <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,-4.000000}}" />
 								<Property Name="PushedImage" Value="set:Face_04 image:Remind_Bak"/>
 								<Property Name="NormalImage" Value="set:Face_04 image:Remind_Bak"/>
 								<Property Name="HoverImage" Value="set:Face_04 image:Remind_Bak"/>
@@ -85,14 +85,14 @@
                             </Window>
                         </Window>
                         <Window Type="TLBB_ActionButton" Name="WuhunTupuActive_Item_3">
-                            <Property Name="UnifiedPosition" Value="{{0.000000,86.000000},{0.000000,0.000000}}"/>
-                            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}" />
+                            <Property Name="UnifiedPosition" Value="{{0.000000,86.000000},{0.000000,0.000000}}" />
+                            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}" />
                             <Property Name="BackImage" Value="set:CommonFrame7 image:WuhunEquip" />
                             <!-- <Property Name="Empty" Value="True" /> -->
 							<Event Name="Clicked" Function="WuhunTupuActive_ItemClicked(3);" />
                             <Window Type="TLBB_ButtonNULL" Name="WuhunTupuActive_Item_Mask_3">
-                                <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
-                                <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,-4.000000}" />
+                                <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}" />
+                                <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,-4.000000}}" />
 								<Property Name="PushedImage" Value="set:Face_04 image:Remind_Bak"/>
 								<Property Name="NormalImage" Value="set:Face_04 image:Remind_Bak"/>
 								<Property Name="HoverImage" Value="set:Face_04 image:Remind_Bak"/>
@@ -102,14 +102,14 @@
                             </Window>
                         </Window>
                         <Window Type="TLBB_ActionButton" Name="WuhunTupuActive_Item_4">
-                            <Property Name="UnifiedPosition" Value="{{0.000000,129.000000},{0.000000,0.000000}}"/>
-                            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}" />
+                            <Property Name="UnifiedPosition" Value="{{0.000000,129.000000},{0.000000,0.000000}}" />
+                            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}" />
                             <Property Name="BackImage" Value="set:CommonFrame7 image:WuhunEquip" />
                             <!-- <Property Name="Empty" Value="True" /> -->
 							<Event Name="Clicked" Function="WuhunTupuActive_ItemClicked(4);" />
                             <Window Type="TLBB_ButtonNULL" Name="WuhunTupuActive_Item_Mask_4">
-                                <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
-                                <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,-4.000000}" />
+                                <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}" />
+                                <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,-4.000000}}" />
 								<Property Name="PushedImage" Value="set:Face_04 image:Remind_Bak"/>
 								<Property Name="NormalImage" Value="set:Face_04 image:Remind_Bak"/>
 								<Property Name="HoverImage" Value="set:Face_04 image:Remind_Bak"/>
@@ -119,14 +119,14 @@
                             </Window>
                         </Window>
                         <Window Type="TLBB_ActionButton" Name="WuhunTupuActive_Item_5">
-                            <Property Name="UnifiedPosition" Value="{{0.000000,172.000000},{0.000000,0.000000}}"/>
-                            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}" />
+                            <Property Name="UnifiedPosition" Value="{{0.000000,172.000000},{0.000000,0.000000}}" />
+                            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}" />
                             <Property Name="BackImage" Value="set:CommonFrame7 image:WuhunEquip" />
                             <!-- <Property Name="Empty" Value="True" /> -->
 							<Event Name="Clicked" Function="WuhunTupuActive_ItemClicked(5);" />
                             <Window Type="TLBB_ButtonNULL" Name="WuhunTupuActive_Item_Mask_5">
-                                <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
-                                <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,-4.000000}" />
+                                <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}" />
+                                <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,-4.000000}}" />
 								<Property Name="PushedImage" Value="set:Face_04 image:Remind_Bak"/>
 								<Property Name="NormalImage" Value="set:Face_04 image:Remind_Bak"/>
 								<Property Name="HoverImage" Value="set:Face_04 image:Remind_Bak"/>
@@ -136,14 +136,14 @@
                             </Window>
                         </Window>
                         <Window Type="TLBB_ActionButton" Name="WuhunTupuActive_Item_6">
-                            <Property Name="UnifiedPosition" Value="{{0.000000,215.000000},{0.000000,0.000000}}"/>
-                            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}" />
+                            <Property Name="UnifiedPosition" Value="{{0.000000,215.000000},{0.000000,0.000000}}" />
+                            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}" />
                             <Property Name="BackImage" Value="set:CommonFrame7 image:WuhunEquip" />
                             <!-- <Property Name="Empty" Value="True" /> -->
 							<Event Name="Clicked" Function="WuhunTupuActive_ItemClicked(6);" />
                             <Window Type="TLBB_ButtonNULL" Name="WuhunTupuActive_Item_Mask_6">
-                                <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
-                                <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,-4.000000}" />
+                                <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}" />
+                                <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,-4.000000}}" />
 								<Property Name="PushedImage" Value="set:Face_04 image:Remind_Bak"/>
 								<Property Name="NormalImage" Value="set:Face_04 image:Remind_Bak"/>
 								<Property Name="HoverImage" Value="set:Face_04 image:Remind_Bak"/>
@@ -156,16 +156,16 @@
             </Window>
             <Window Type="DefaultWindow" Name="WuhunTupuActive_Item_InfoBK">
                 <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,120.000000}}" />
-                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,60.000000}" />
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,60.000000}}" />
                 <Property Name="RiseOnClick" Value="False" />
                 <Window Type="TLBB_ActionButton" Name="WuhunTupuActive_ItemIcon">
                     <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.500000,-20.000000}}" />
-                    <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}" />
+                    <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}" />
                     <Property Name="DraggingEnabled" Value="True" />
                 </Window>
                 <Window Type="TLBB_SimpleMulitiTextFrame" Name="WuhunTupuActive_ItemName">
                     <Property Name="UnifiedPosition" Value="{{0.000000,75.000000},{0.500000,-20.000000}}" />
-                    <Property Name="UnifiedSize" Value="{{1.000000,-90.000000},{0.000000,20.000000}" />
+                    <Property Name="UnifiedSize" Value="{{1.000000,-90.000000},{0.000000,20.000000}}" />
                     <Property Name="TextColor" Value="FFFFF263" />
                     <Property Name="Text" Value="#cfff263幻魂名称：" />
                     <Property Name="HorzFormatting" Value="LeftAligned" />
@@ -173,7 +173,7 @@
                 </Window>
                 <Window Type="TLBB_SimpleMulitiTextFrame" Name="WuhunTupuActive_ItemState">
                     <Property Name="UnifiedPosition" Value="{{0.000000,75.000000},{0.500000,0.000000}}" />
-                    <Property Name="UnifiedSize" Value="{{1.000000,-90.000000},{0.000000,20.000000}" />
+                    <Property Name="UnifiedSize" Value="{{1.000000,-90.000000},{0.000000,20.000000}}" />
                     <Property Name="TextColor" Value="FFFFF263" />
                     <Property Name="Text" Value="#cfff263激活状态：" />
                     <Property Name="HorzFormatting" Value="LeftAligned" />
@@ -183,38 +183,38 @@
 
             <Window Type="DefaultWindow" Name="WuhunTupuActive_NeedBk">
                 <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,180.000000}}" />
-                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,60.000000}" />
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,60.000000}}" />
                 <Property Name="RiseOnClick" Value="False" />
                 <Window Type="TLBB_SimpleText" Name="WuhunTupuActive_Need_Info">
-                  <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,20.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.500000,-10.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,20.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.500000,-10.000000}}" />
                     <Property Name="TextColor" Value="FFFFF263"/>
                     <Property Name="Text" Value="#cfff263激活幻魂所需道具："/>
                     <Property Name="RiseOnClick" Value="False"/>
                     <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
                 </Window>
                 <Window Type="TLBB_ActionButton" Name="WuhunTupuActive_Need_Object">
-                    <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-                    <Property Name="UnifiedPosition" Value="{{1.000000,-51.000000},{0.500000,-18.000000}}"/>
+                    <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+                    <Property Name="UnifiedPosition" Value="{{1.000000,-51.000000},{0.500000,-18.000000}}" />
                     <Window Type="TLBB_SimpleText" Name="WuhunTupuActive_Need_Object_Number">
-                        <Property Name="UnifiedSize" Value="{{1.000000,-6.000000},{0.000000,16.000000}}"/>
-                        <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{1.000000,-16.000000}}"/>
+                        <Property Name="UnifiedSize" Value="{{1.000000,-6.000000},{0.000000,16.000000}}" />
+                        <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{1.000000,-16.000000}}" />
                         <Property Name="Text" Value="#{}"/>
                         <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
                     </Window>
                 </Window>                  
             </Window>
             <Window Type="TLBB_SimpleMulitiTextFrame" Name="WuhunTupuActive_Money_Text">
-                <Property Name="UnifiedPosition" Value="{{0.0500,0.000000},{1.000000,-89.000000}" />
-                <Property Name="UnifiedSize" Value="{{0.9,0.000000},{0.000000,22.000000}" />
+                <Property Name="UnifiedPosition" Value="{{0.0500,0.000000},{1.000000,-89.000000}}" />
+                <Property Name="UnifiedSize" Value="{{0.9,0.000000},{0.000000,22.000000}}" />
                 <Property Name="TextColor" Value="FFFFF263" />
                 <Property Name="Text" Value="需要花费:" />
                 <Property Name="HorzFormatting" Value="LeftAligned" />
                 <Property Name="VertFormatting" Value="VertCentred" />
                 <Property Name="RiseOnClick" Value="False" />
                 <Window Type="TLBB_Money" Name="WuhunTupuActive_DemandMoney">
-                    <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}" />
-                    <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}" />
+                    <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}}" />
+                    <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}}" />
                     <Property Name="MoneyNumber" Value="0" />
                     <Property Name="HorzFormatting" Value="RightAligned" />
                     <Property Name="AlignFix" Value="True" />
@@ -224,16 +224,16 @@
                 </Window>
             </Window>
             <Window Type="TLBB_SimpleMulitiTextFrame" Name="WuhunTupuActive_Jiaozi_Text">
-                <Property Name="UnifiedPosition" Value="{{0.0500,0.000000},{1.000000,-67.000000}" />
-                <Property Name="UnifiedSize" Value="{{0.9,0.000000},{0.000000,22.000000}" />
+                <Property Name="UnifiedPosition" Value="{{0.0500,0.000000},{1.000000,-67.000000}}" />
+                <Property Name="UnifiedSize" Value="{{0.9,0.000000},{0.000000,22.000000}}" />
                 <Property Name="TextColor" Value="FFFFF263" />
                 <Property Name="Text" Value="拥有交子:" />
                 <Property Name="HorzFormatting" Value="LeftAligned" />
                 <Property Name="VertFormatting" Value="VertCentred" />
                 <Property Name="RiseOnClick" Value="False" />
                 <Window Type="TLBB_Money" Name="WuhunTupuActive_SelfJiaozi">
-                    <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}" />
-                    <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}" />
+                    <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}}" />
+                    <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}}" />
                     <Property Name="MoneyNumber" Value="0" />
                     <Property Name="HorzFormatting" Value="RightAligned" />
                     <Property Name="AlignFix" Value="True" />
@@ -243,33 +243,33 @@
                 </Window>
             </Window>
             <Window Type="TLBB_SimpleMulitiTextFrame" Name="WuhunTupuActive_SelfMoney_Text">
-                <Property Name="UnifiedPosition" Value="{{0.0500,0.000000},{1.000000,-45.000000}" />
-                <Property Name="UnifiedSize" Value="{{0.9,0.000000},{0.000000,22.000000}" />
+                <Property Name="UnifiedPosition" Value="{{0.0500,0.000000},{1.000000,-45.000000}}" />
+                <Property Name="UnifiedSize" Value="{{0.9,0.000000},{0.000000,22.000000}}" />
                 <Property Name="TextColor" Value="FFFFF263" />
                 <Property Name="Text" Value="拥有金钱:" />
                 <Property Name="HorzFormatting" Value="LeftAligned" />
                 <Property Name="VertFormatting" Value="VertCentred" />
                 <Property Name="RiseOnClick" Value="False" />
                 <Window Type="TLBB_Money" Name="WuhunTupuActive_SelfMoney">
-                    <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}" />
-                    <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}" />
+                    <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}}" />
+                    <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}}" />
                     <Property Name="HorzFormatting" Value="RightAligned" />
                     <Property Name="MoneyNumber" Value="0" />
                 </Window>
             </Window>
             <Window Type="TLBB_Frame_Lace5" Name="WuhunTupuActive_Blank">
-                <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}}" />
             </Window>
             <Window Type="TLBB_ButtonCommon" Name="WuhunTupuActive_ButtonOK">
-                <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{1.000000,-80.000000},{1.000000,-20.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{1.000000,-80.000000},{1.000000,-20.000000}}" />
                 <Property Name="Text" Value="确定"/>
                 <Event Name="Clicked" Function="WuhunTupuActive_DoOk();" />
             </Window>
             <Window Type="TLBB_ButtonCommon" Name="WuhunTupuActive_ButtonCancel">
-                <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{1.000000,-40.000000},{1.000000,-20.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{1.000000,-40.000000},{1.000000,-20.000000}}" />
                 <Property Name="Text" Value="取消"/>
                 <Event Name="Clicked" Function="WuhunTupuActive_DoCancel();" />
             </Window>

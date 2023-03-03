@@ -1,86 +1,86 @@
 <?xml version="1.0" ?>
 <GUILayout>
   <Window Type="TLBB_MainFrame2" Name="YiMin_ReadMe_Frame">
-    <Property Name="UnifiedSize" Value="{{0.000000,667.000000},{0.000000,565.000000}}"/>
-    <Property Name="UnifiedPosition" Value="{{0.500000,-335.000000},{0.500000,-283.000000}}"/>
+    <Property Name="UnifiedSize" Value="{{0.000000,667.000000},{0.000000,565.000000}}" />
+    <Property Name="UnifiedPosition" Value="{{0.500000,-335.000000},{0.500000,-283.000000}}" />
     <Event Name="Hidden" Function="YiMin_ReadMe_Frame_OnHiden();"/> 
     <Window Type="TLBB_ButtonClose" Name="YiMin_ReadMe_Close">
-      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,5.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,5.000000}}" />
       <Event Name="Clicked" Function="YiMin_ReadMe_Bn2Click();"/> 
     </Window>
     <Window Type="TLBB_ButtonHelp" Name="YiMin_ReadMe_Help">
-      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}" />
       <Event Name="Clicked" Function=""/>
     </Window>
     <Window Type="TLBB_DragTitle" Name="YiMin_ReadMe_DragTitle">
       <Property Name="AbsolutePosition" Value="x:40.000000 y:4.000000" />
-      <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}}" />
       <Property Name="DragTarget" Value="YiMin_ReadMe_Frame" />
       <Property Name="Font" Value="YouYuan11.25" />
       <Property Name="VertFormatting" Value="VertCentred" />
       <Property Name="Text" Value="#{FWQYM_160617_264}" />
     </Window>
     <Window Type="DefaultWindow" Name="YiMin_ReadMe_Function_Frame">
-      <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-30.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,25.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-30.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,25.000000}}" />
       <Window Type="TLBB_Frame_Lace3" Name="YiMin_ReadMe_Info">
-        <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,70.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,70.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}" />
         <Window Type="TLBB_SimpleText" Name="YiMin_ReadMe_Info_text">
-          <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,-4.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,-4.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}" />
           <Property Name="Text" Value=""/>
           <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
         </Window>
       </Window>
       <Window Type="TLBB_Frame_Lace2" Name="YiMin_ReadMe_TJClient">
-        <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,140.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,126.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,140.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,126.000000}}" />
         <Window Type="TLBB_Frame_Lace_BhlsSilver" Name="YiMin_ReadMe_TJClient1">
-          <Property Name="UnifiedSize" Value="{{0.400000,0.000000},{1.000000,0.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.400000,0.000000},{1.000000,0.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
         <Window Type="DefaultWindow" Name="YiMin_ReadMe_TJClient1_Title">
-          <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,24.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,3.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,24.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,3.000000}}" />
         <Window Type="TLBB_SimpleText" Name="YiMin_ReadMe_TJClient1_Title_text">
-          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
           <Property Name="Text" Value="#{FWQYM_160617_265}"/>
           <Property Name="HorzFormatting" Value="WordWrapCentred"/>
         </Window>
         </Window>
           <Window Type="DefaultWindow" Name="YiMin_ReadMe_TJClient1_Des">
-            <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,110.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,28.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,110.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,28.000000}}" />
             <Window Type="TLBB_SimpleText" Name="YiMin_ReadMe_TJClient1_Des_text">
-              <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,-4.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,-4.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}" />
               <Property Name="Text" Value="#{FWQYM_160617_267}"/>
               <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
             </Window>
           </Window>
       </Window>
         <Window Type="TLBB_Frame_Lace_BhlsSilver" Name="YiMin_ReadMe_TJClient2">
-          <Property Name="UnifiedSize" Value="{{0.600000,0.000000},{1.000000,0.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.400000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.600000,0.000000},{1.000000,0.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.400000,0.000000},{0.000000,0.000000}}" />
           <Window Type="DefaultWindow" Name="YiMin_ReadMe_TJClient2_Title">
-            <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,24.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,3.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,24.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,3.000000}}" />
             <Window Type="TLBB_SimpleText" Name="YiMin_ReadMe_TJClient2_Title_text">
-              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
               <Property Name="Text" Value="#{FWQYM_160617_266}"/>
               <Property Name="HorzFormatting" Value="WordWrapCentred"/>
             </Window>
           </Window>
           <Window Type="DefaultWindow" Name="YiMin_ReadMe_TJClient2_WDes">
-            <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,110.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,28.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,110.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,28.000000}}" />
             <Window Type="TLBB_SimpleText" Name="YiMin_ReadMe_TJClient2_Des_text">
-              <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,-4.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,-4.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}" />
               <Property Name="Text" Value="#{FWQYM_160617_268}"/>
               <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
             </Window>
@@ -90,51 +90,51 @@
 
 
       <Window Type="TLBB_Frame_Lace2" Name="YiMin_ReadMe_SWClient">
-        <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,170.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,316.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,170.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,316.000000}}" />
         <Window Type="TLBB_Frame_Lace_BhlsSilver" Name="YiMin_ReadMe_SWClient1">
-          <Property Name="UnifiedSize" Value="{{0.400000,0.000000},{1.000000,0.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.400000,0.000000},{1.000000,0.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
           <Window Type="DefaultWindow" Name="YiMin_ReadMe_SWClient1_Title">
-            <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,24.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,3.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,24.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,3.000000}}" />
             <Window Type="TLBB_SimpleText" Name="YiMin_ReadMe_SWClient1_Title_text">
-              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
               <Property Name="Text" Value="#{FWQYM_160617_265}"/>
               <Property Name="HorzFormatting" Value="WordWrapCentred"/>
             </Window>
           </Window>
           <Window Type="DefaultWindow" Name="YiMin_ReadMe_SWClient1_Des">
-            <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,140.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,28.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,140.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,28.000000}}" />
             <Window Type="TLBB_SimpleText" Name="YiMin_ReadMe_SWClient1_Des_text">
-              <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,-4.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,-4.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}" />
               <Property Name="Text" Value="#{FWQYM_160617_269}"/>
               <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
             </Window>
           </Window>
         </Window>
         <Window Type="TLBB_Frame_Lace_BhlsSilver" Name="YiMin_ReadMe_SWClient2">
-          <Property Name="UnifiedSize" Value="{{0.600000,0.000000},{1.000000,0.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.400000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.600000,0.000000},{1.000000,0.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.400000,0.000000},{0.000000,0.000000}}" />
           <Window Type="DefaultWindow" Name="YiMin_ReadMe_SWClient2_Title">
-            <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,24.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,3.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,24.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,3.000000}}" />
             <Window Type="TLBB_SimpleText" Name="YiMin_ReadMe_SWClient2_Title_text">
-              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
               <Property Name="Text" Value="#{FWQYM_160617_266}"/>
               <Property Name="HorzFormatting" Value="WordWrapCentred"/>
             </Window>
           </Window>
           <Window Type="DefaultWindow" Name="YiMin_ReadMe_SWClient2_WDes">
-            <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,140.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,28.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,140.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,28.000000}}" />
             <Window Type="TLBB_SimpleText" Name="YiMin_ReadMe_SWClient2_Des_text">
-              <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,-4.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,-4.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}" />
               <Property Name="Text" Value="#{FWQYM_160617_270}"/>
               <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
             </Window>
@@ -143,46 +143,46 @@
       </Window>
 
       <Window Type="DefaultWindow" Name="YiMin_ReadMe_TJBK">
-        <Property Name="UnifiedSize" Value="{{0.000000,207.000000},{0.000000,46.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.00000,-30.00000},{0.000000,80.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,207.000000},{0.000000,46.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.00000,-30.00000},{0.000000,80.000000}}" />
         <Window Type="TLBB_StaticImageNULL" Name="YiMin_ReadMe_TJBK_image">
-          <Property Name="UnifiedSize" Value="{{0.000000,207.000000},{0.000000,46.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,207.000000},{0.000000,46.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
           <Property Name="RiseOnClick" Value="False"/>
           <Property Name="Image" Value="set:MainFrameLuo06 image:FWQYiMin_YMTJ"/>
         </Window>
       </Window>
 
       <Window Type="DefaultWindow" Name="YiMin_ReadMe_SWBK">
-        <Property Name="UnifiedSize" Value="{{0.000000,207.000000},{0.000000,46.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,-30.00000},{0.000000,270.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,207.000000},{0.000000,46.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,-30.00000},{0.000000,270.000000}}" />
         <Window Type="TLBB_StaticImageNULL" Name="YiMin_ReadMe_SWBK_image">
-          <Property Name="UnifiedSize" Value="{{0.000000,207.000000},{0.000000,46.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,207.000000},{0.000000,46.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
           <Property Name="RiseOnClick" Value="False"/>
           <Property Name="Image" Value="set:MainFrameLuo06 image:FWQYiMin_YMCL"/>
         </Window>
       </Window>
 
       <Window Type="TLBB_ButtonCommon8" Name="YiMin_ReadMe_BtnOK">
-        <Property Name="UnifiedSize" Value="{{0.000000,130.000000},{0.000000,33.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{1.00000,-260.000000},{1.000000,-37.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,130.000000},{0.000000,33.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{1.00000,-260.000000},{1.000000,-37.000000}}" />
         <Property Name="Text" Value="#{FWQYM_160617_271}"/>
         <Property Name="Font" Value="YouYuan13"/>
         <Event Name="Clicked" Function="YiMin_ReadMe_Bn1Click();"/> 
       </Window>
 
       <Window Type="TLBB_ButtonCommon8" Name="YiMin_ReadMe_BtnCancel">
-        <Property Name="UnifiedSize" Value="{{0.000000,130.000000},{0.000000,33.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{1.00000,-130.000000},{1.000000,-37.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,130.000000},{0.000000,33.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{1.00000,-130.000000},{1.000000,-37.000000}}" />
         <Property Name="Text" Value="#{FWQYM_160622_276}"/>
         <Property Name="Font" Value="YouYuan13"/>
         <Event Name="Clicked" Function="YiMin_ReadMe_Bn2Click();"/> 
       </Window>
 
       <Window Type="TLBB_ButtonCommon8" Name="YiMin_ReadMe_BtnQueDing">
-        <Property Name="UnifiedSize" Value="{{0.000000,130.000000},{0.000000,33.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.50000,-65.000000},{1.000000,-37.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,130.000000},{0.000000,33.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.50000,-65.000000},{1.000000,-37.000000}}" />
         <Property Name="Text" Value="#{FWQYM_160623_277}"/>
         <Property Name="Font" Value="YouYuan13"/>
         <Event Name="Clicked" Function="this:Hide();"/>

@@ -1,12 +1,12 @@
 <?xml version="1.0" ?>
 <GUILayout>
   <Window Type="TLBB_MainFrame1" Name="DecorateWeaponEx_Frame">
-    <Property Name="UnifiedPosition" Value="{{0.500000,-282.000000},{0.500000,-170.000000}" />
+    <Property Name="UnifiedPosition" Value="{{0.500000,-282.000000},{0.500000,-170.000000}}" />
     <Property Name="AbsoluteSize" Value="w:564 h:370" />
     <Event Name="Hidden" Function="DecorateWeaponEx_OnHiden();" />
     <Window Type="TLBB_DragTitle" Name="DecorateWeaponEx_DragTitle">
       <Property Name="AbsolutePosition" Value="x:40.000000 y:12.000000" />
-      <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}}" />
       <Property Name="DragTarget" Value="DecorateWeaponEx_Frame" />
       <Property Name="Font" Value="YouYuan11.25" />
       <Property Name="HorzFormatting" Value="HorzCentred" />
@@ -14,84 +14,84 @@
       <Property Name="Text" Value="#{DECOW_160126_5}" />
     </Window>
     <Window Type="TLBB_ButtonClose" Name="DecorateWeaponEx_Close">
-      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}" />
       <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
       <Event Name="Clicked" Function="DecorateWeaponEx_OnHiden();" />
     </Window>
     <Window Type="TLBB_FramePlayerOther" Name="DecorateWeaponEx_Frame_LeftClient">
       <Property Name="AbsolutePosition" Value="x:8.000000 y:30.000000" />
-      <Property Name="UnifiedSize" Value="{{0.000000,260.000000},{1.000000,-62.000000}" />
+      <Property Name="UnifiedSize" Value="{{0.000000,260.000000},{1.000000,-62.000000}}" />
       <Window Type="TLBB_MeshWindow" Name="DecorateWeaponEx_FakeObject">
         <Property Name="Position" Value="x:0.07 y:0.05" />
         <Property Name="Size" Value="w:0.86 h:0.82" />
         <Property Name="MouseHollow" Value="True" />
       </Window>
       <Window Type="TLBB_ButtonTurnLeft" Name="DecorateWeaponEx_Model_TurnLeft">
-        <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{1.000000,-55.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{1.000000,-55.000000}}" />
         <Property Name="AbsoluteSize" Value="w:25.000000 h:25.000000" />
         <Event Name="MouseButtonDown" Function="DecorateWeaponEx_TurnLeft(1);" />
         <Event Name="MouseButtonUp" Function="DecorateWeaponEx_TurnLeft(0);" />
       </Window>
       <Window Type="TLBB_ButtonTurnRight" Name="DecorateWeaponEx_Model_TurnRight">
-        <Property Name="UnifiedPosition" Value="{{1.000000,-40.000000},{1.000000,-55.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-40.000000},{1.000000,-55.000000}}" />
         <Property Name="AbsoluteSize" Value="w:25.000000 h:25.000000" />
         <Event Name="MouseButtonDown" Function="DecorateWeaponEx_TurnRight(1);" />
         <Event Name="MouseButtonUp" Function="DecorateWeaponEx_TurnRight(0);" />
       </Window>
       <Window Type="TLBB_SimpleText" Name="DecorateWeaponEx_Name">
-        <Property Name="UnifiedSize" Value="{{0.000000,65.000000},{0.000000,20.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{1.000000,-28.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,65.000000},{0.000000,20.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{1.000000,-28.000000}}" />
         <Property Name="HorzFormatting" Value="WordWrapCentred"/>
         <Property Name="Text" Value="#{DECOW_160126_7}"/>
       </Window>
       <Window Type="TLBB_ComboList" Name="DecorateWeaponEx_ALLChoice">
-        <Property Name="UnifiedSize" Value="{{0.000000,160.000000},{0.000000,20.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,85.000000},{1.000000,-30.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,160.000000},{0.000000,20.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,85.000000},{1.000000,-30.000000}}" />
         <Property Name="Text" Value="#{DECOW_160126_16}"/>
         <Property Name="AlwaysOnTop" Value="True"/>
         <Event Name="ListSelectionAccepted" Function="DecorateWeaponEx_Level_Changed();"/>
       </Window>
       <Window Type="TLBB_StaticImageNULL" Name="DecorateWeaponEx_ALLChoice_Pic">
-        <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,225.000000},{1.000000,-30.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,225.000000},{1.000000,-30.000000}}" />
         <Property Name="Image" Value="set:Button3 image:ComboListButton_Normal"/>
         <Property Name="Tooltip" Value="#{DECOW_160126_86}"/>
       </Window>
     </Window>
     <Window Type="DefaultWindow" Name="DecorateWeaponEx_Frame_RightClient">
-      <Property Name="UnifiedSize" Value="{{1.000000,-277.000000},{1.000000,-63.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,269.000000},{0.000000,30.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-277.000000},{1.000000,-63.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,269.000000},{0.000000,30.000000}}" />
       <Window Type="TLBB_SimpleMulitiTextFrame" Name="DecorateWeaponEx_Explian">
-        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,2.000000}}"/>
-        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.540000,-2.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,2.000000}}" />
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.540000,-2.000000}}" />
         <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
         <Property Name="RiseOnClick" Value="False" />
         <Property Name="Text" Value="#{DECOW_160126_9}" />
       </Window>
       <Window Type="TLBB_SimpleText" Name="DecorateWeaponEx_Info">
-        <Property Name="UnifiedPosition" Value="{{0.120000,0.000000},{0.660000,-10.000000}}"/>
-        <Property Name="UnifiedSize" Value="{{0.000000,160.000000},{0.000000,20.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.120000,0.000000},{0.660000,-10.000000}}" />
+        <Property Name="UnifiedSize" Value="{{0.000000,160.000000},{0.000000,20.000000}}" />
         <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
         <Property Name="RiseOnClick" Value="False" />
         <Property Name="Text" Value="#{DECOW_160126_10}" />
       </Window>
       <Window Type="TLBB_ActionButton" Name="DecorateWeaponEx_Object">
-        <Property Name="UnifiedPosition" Value="{{0.750000,0.000000},{0.660000,-18.000000}}"/>
-        <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.750000,0.000000},{0.660000,-18.000000}}" />
+        <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
         <Property Name="DragAcceptName" Value="I14" />
         <Property Name="DraggingEnabled" Value="True" />
         <Event Name="RBClicked" Function="DecorateWeaponEx_Resume_Equip();"/>
       </Window>
       <Window Type="TLBB_SimpleMulitiTextFrame" Name="DecorateWeaponEx_Money_Text">
-        <Property Name="UnifiedPosition" Value="{{0.0000,0.000000},{1.000000,-65.000000}" />
-        <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,22.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.0000,0.000000},{1.000000,-65.000000}}" />
+        <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,22.000000}}" />
         <Property Name="Text" Value="#{DECOW_160126_11}" />
         <Property Name="HorzFormatting" Value="LeftAligned" />
         <Property Name="VertFormatting" Value="VertCentred" />
         <Property Name="RiseOnClick" Value="False" />
         <Window Type="TLBB_Money" Name="DecorateWeaponEx_DemandMoney">
-          <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}" />
-          <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}}" />
+          <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}}" />
           <Property Name="MoneyNumber" Value="0" />
           <Property Name="HorzFormatting" Value="RightAligned" />
           <Property Name="AlignFix" Value="True" />
@@ -101,15 +101,15 @@
         </Window>
       </Window>
       <Window Type="TLBB_SimpleMulitiTextFrame" Name="DecorateWeaponEx_Jiaozi_Text">
-        <Property Name="UnifiedPosition" Value="{{00.0000,0.000000},{1.000000,-43.000000}" />
-        <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,22.000000}" />
+        <Property Name="UnifiedPosition" Value="{{00.0000,0.000000},{1.000000,-43.000000}}" />
+        <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,22.000000}}" />
         <Property Name="Text" Value="#{DECOW_160126_12}" />
         <Property Name="HorzFormatting" Value="LeftAligned" />
         <Property Name="VertFormatting" Value="VertCentred" />
         <Property Name="RiseOnClick" Value="False" />
         <Window Type="TLBB_Money" Name="DecorateWeaponEx_SelfJiaozi">
-          <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}" />
-          <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}}" />
+          <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}}" />
           <Property Name="MoneyNumber" Value="0" />
           <Property Name="HorzFormatting" Value="RightAligned" />
           <Property Name="AlignFix" Value="True" />
@@ -119,28 +119,28 @@
         </Window>
       </Window>
       <Window Type="TLBB_SimpleMulitiTextFrame" Name="DecorateWeaponEx_SelfMoney_Text">
-        <Property Name="UnifiedPosition" Value="{{0.0000,0.000000},{1.000000,-21.000000}" />
-        <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,22.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.0000,0.000000},{1.000000,-21.000000}}" />
+        <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,22.000000}}" />
         <Property Name="Text" Value="#{DECOW_160126_13}" />
         <Property Name="HorzFormatting" Value="LeftAligned" />
         <Property Name="VertFormatting" Value="VertCentred" />
         <Property Name="RiseOnClick" Value="False" />
         <Window Type="TLBB_Money" Name="DecorateWeaponEx_SelfMoney">
-          <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}" />
-          <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}}" />
+          <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}}" />
           <Property Name="HorzFormatting" Value="RightAligned" />
           <Property Name="MoneyNumber" Value="0" />
         </Window>
       </Window>
     </Window>
     <Window Type="TLBB_ButtonCommon" Name="DecorateWeaponEx_OK">
-      <Property Name="UnifiedPosition" Value="{{1.000000,-110.000000},{1.000000,-29.000000}" />
+      <Property Name="UnifiedPosition" Value="{{1.000000,-110.000000},{1.000000,-29.000000}}" />
       <Property Name="AbsoluteSize" Value="w:50.000000 h:20.000000" />
       <Property Name="Text" Value="#{DECOW_160126_14}" />
       <Event Name="Clicked" Function="DecorateWeaponEx_OnOK();" />
     </Window>
     <Window Type="TLBB_ButtonCommon" Name="DecorateWeaponEx_Cancel">
-      <Property Name="UnifiedPosition" Value="{{1.000000,-60.000000},{1.000000,-29.000000}" />
+      <Property Name="UnifiedPosition" Value="{{1.000000,-60.000000},{1.000000,-29.000000}}" />
       <Property Name="AbsoluteSize" Value="w:50.000000 h:20.000000" />
       <Property Name="Text" Value="#{DECOW_160126_15}" />
       <Event Name="Clicked" Function="DecorateWeaponEx_OnHiden();" />

@@ -1,17 +1,17 @@
 <?xml version="1.0" ?>
 <GUILayout>
   <Window Type="TLBB_MainFrameNULL" Name="Anniversary_Show_Frame">
-    <Property Name="UnifiedSize" Value="{{0.000000,800.000000},{0.000000,474.000000}}"/>
-    <Property Name="UnifiedPosition" Value="{{0.500000,-400.000000},{0.500000,-237.000000}}"/>
+    <Property Name="UnifiedSize" Value="{{0.000000,800.000000},{0.000000,474.000000}}" />
+    <Property Name="UnifiedPosition" Value="{{0.500000,-400.000000},{0.500000,-237.000000}}" />
     <Event Name="Hidden" Function="Anniversary_Show_OnHiden()"/>
     <Window Type="TLBB_DragTitle" Name="Anniversary_Show_DragTitle">
-      <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{0.000000,20.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,5.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{0.000000,20.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,5.000000}}" />
       <Property Name="DragTarget" Value="Anniversary_Show_Frame"/>
     </Window>
     <Window Type="TLBB_ButtonNULL" Name="Anniversary_Show_Close">
-      <Property Name="UnifiedSize" Value="{{0.000000,28.000000},{0.000000,26.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{1.000000,-42.000000},{0.000000,32.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{0.000000,28.000000},{0.000000,26.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{1.000000,-42.000000},{0.000000,32.000000}}" />
       <Event Name="Clicked" Function="Anniversary_Show_Close()" />
       <Property Name="PushedImage" Value="set:Anniversary01 image:Anniversary_BtnPush"/>
       <Property Name="NormalImage" Value="set:Anniversary01 image:Anniversary_BtnNormal"/>
@@ -19,22 +19,22 @@
       <Property Name="AlwaysOnTop" Value="True"/>
     </Window>
     <Window Type="TLBB_StaticImageNULL" Name="Anniversary_Show_LeftImage">
-      <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,474.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,474.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
       <Property Name="Image" Value="set:Anniversary02 image:AnniversaryLeft"/>
       <Property Name="AlwaysOnTop" Value="True"/>
     </Window>
     <Window Type="DefaultWindow" Name="Anniversary_Show_ALLImage">
-      <Property Name="UnifiedSize" Value="{{0.000000,778.000000},{0.000000,474.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,22.000000},{0.000000,0.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{0.000000,778.000000},{0.000000,474.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,22.000000},{0.000000,0.000000}}" />
       <Property Name="Image" Value="set:Anniversary02 image:AnniversaryLeft"/>
     <Window Type="TLBB_StaticImageNULL" Name="Anniversary_Show_Image1">
-      <Property Name="UnifiedSize" Value="{{0.000000,800.000000},{0.000000,474.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,-22.000000},{0.000000,0.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{0.000000,800.000000},{0.000000,474.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,-22.000000},{0.000000,0.000000}}" />
       <Property Name="Image" Value="set:Anniversary02 image:Anniversary_GR"/>
       <Window Type="TLBB_Animate" Name="Anniversary_Show_Image1Animate">
-        <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,149.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,674.000000},{0.000000,286.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,149.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,674.000000},{0.000000,286.000000}}" />
         <Property Name="MouseRButtonHollow" Value="True"/>
         <Property Name="MouseMoveHollow" Value="True"/>
         <Property Name="MouseLButtonHollow" Value="True"/>
@@ -43,8 +43,8 @@
         <Property Name="AlwaysOnTop" Value="True"/>
       </Window>
       <Window Type="TLBB_StaticImageNULL" Name="Anniversary_Show_Image1Tick">
-        <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,149.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,674.000000},{0.000000,286.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,149.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,674.000000},{0.000000,286.000000}}" />
         <Property Name="RiseOnClick" Value="False"/>
         <Property Name="MouseRButtonHollow" Value="True"/>
         <Property Name="MouseMoveHollow" Value="True"/>
@@ -54,12 +54,12 @@
       </Window>
     </Window>
     <Window Type="TLBB_StaticImageNULL" Name="Anniversary_Show_Image2">
-      <Property Name="UnifiedSize" Value="{{0.000000,800.000000},{0.000000,474.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,-22.000000},{0.000000,0.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{0.000000,800.000000},{0.000000,474.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,-22.000000},{0.000000,0.000000}}" />
       <Property Name="Image" Value="set:Anniversary03 image:Anniversary_ZS"/>
       <Window Type="TLBB_Animate" Name="Anniversary_Show_Image2Animate">
-        <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,149.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,626.000000},{0.000000,248.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,149.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,626.000000},{0.000000,248.000000}}" />
         <Property Name="MouseRButtonHollow" Value="True"/>
         <Property Name="MouseMoveHollow" Value="True"/>
         <Property Name="MouseLButtonHollow" Value="True"/>
@@ -68,8 +68,8 @@
         <Property Name="AlwaysOnTop" Value="True"/>
       </Window>
       <Window Type="TLBB_StaticImageNULL" Name="Anniversary_Show_Image2Tick">
-        <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,149.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,626.000000},{0.000000,248.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,149.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,626.000000},{0.000000,248.000000}}" />
         <Property Name="RiseOnClick" Value="False"/>
         <Property Name="MouseRButtonHollow" Value="True"/>
         <Property Name="MouseMoveHollow" Value="True"/>
@@ -79,12 +79,12 @@
       </Window>
     </Window>
     <Window Type="TLBB_StaticImageNULL" Name="Anniversary_Show_Image3">
-      <Property Name="UnifiedSize" Value="{{0.000000,800.000000},{0.000000,474.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,-22.000000},{0.000000,0.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{0.000000,800.000000},{0.000000,474.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,-22.000000},{0.000000,0.000000}}" />
       <Property Name="Image" Value="set:Anniversary01 image:Anniversary_GJ"/>
       <Window Type="TLBB_Animate" Name="Anniversary_Show_Image3Animate">
-        <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,149.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,630.000000},{0.000000,260.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,149.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,630.000000},{0.000000,260.000000}}" />
         <Property Name="MouseRButtonHollow" Value="True"/>
         <Property Name="MouseMoveHollow" Value="True"/>
         <Property Name="MouseLButtonHollow" Value="True"/>
@@ -93,8 +93,8 @@
         <Property Name="AlwaysOnTop" Value="True"/>
       </Window>
       <Window Type="TLBB_StaticImageNULL" Name="Anniversary_Show_Image3Tick">
-        <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,149.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,630.000000},{0.000000,260.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,149.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,630.000000},{0.000000,260.000000}}" />
         <Property Name="RiseOnClick" Value="False"/>
         <Property Name="MouseRButtonHollow" Value="True"/>
         <Property Name="MouseMoveHollow" Value="True"/>
@@ -104,12 +104,12 @@
       </Window>
     </Window>
     <Window Type="TLBB_StaticImageNULL" Name="Anniversary_Show_Image4">
-      <Property Name="UnifiedSize" Value="{{0.000000,800.000000},{0.000000,474.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,-22.000000},{0.000000,0.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{0.000000,800.000000},{0.000000,474.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,-22.000000},{0.000000,0.000000}}" />
       <Property Name="Image" Value="set:Anniversary01 image:Anniversary_JD"/>
       <Window Type="TLBB_Animate" Name="Anniversary_Show_Image4Animate">
-        <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,149.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,678.000000},{0.000000,274.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,149.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,678.000000},{0.000000,274.000000}}" />
         <Property Name="MouseRButtonHollow" Value="True"/>
         <Property Name="MouseMoveHollow" Value="True"/>
         <Property Name="MouseLButtonHollow" Value="True"/>
@@ -118,8 +118,8 @@
         <Property Name="AlwaysOnTop" Value="True"/>
       </Window>
       <Window Type="TLBB_StaticImageNULL" Name="Anniversary_Show_Image4Tick">
-        <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,149.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,678.000000},{0.000000,274.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,149.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,678.000000},{0.000000,274.000000}}" />
         <Property Name="RiseOnClick" Value="False"/>
         <Property Name="MouseRButtonHollow" Value="True"/>
         <Property Name="MouseMoveHollow" Value="True"/>
@@ -129,12 +129,12 @@
       </Window>
     </Window>
     <Window Type="TLBB_StaticImageNULL" Name="Anniversary_Show_Image5">
-      <Property Name="UnifiedSize" Value="{{0.000000,800.000000},{0.000000,474.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,-22.000000},{0.000000,0.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{0.000000,800.000000},{0.000000,474.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,-22.000000},{0.000000,0.000000}}" />
       <Property Name="Image" Value="set:Anniversary03 image:Anniversary_SZ"/>
       <Window Type="TLBB_Animate" Name="Anniversary_Show_Image5Animate">
-        <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,149.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,636.000000},{0.000000,282.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,149.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,636.000000},{0.000000,282.000000}}" />
         <Property Name="MouseRButtonHollow" Value="True"/>
         <Property Name="MouseMoveHollow" Value="True"/>
         <Property Name="MouseLButtonHollow" Value="True"/>
@@ -143,8 +143,8 @@
         <Property Name="AlwaysOnTop" Value="True"/>
       </Window>
       <Window Type="TLBB_StaticImageNULL" Name="Anniversary_Show_Image5Tick">
-        <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,149.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,636.000000},{0.000000,282.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,149.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,636.000000},{0.000000,282.000000}}" />
         <Property Name="RiseOnClick" Value="False"/>
         <Property Name="MouseRButtonHollow" Value="True"/>
         <Property Name="MouseMoveHollow" Value="True"/>
@@ -154,12 +154,12 @@
       </Window>
     </Window>
     <Window Type="TLBB_StaticImageNULL" Name="Anniversary_Show_Image6">
-      <Property Name="UnifiedSize" Value="{{0.000000,800.000000},{0.000000,474.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,-22.000000},{0.000000,0.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{0.000000,800.000000},{0.000000,474.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,-22.000000},{0.000000,0.000000}}" />
       <Property Name="Image" Value="set:Anniversary02 image:Anniversary_BN"/>
       <Window Type="TLBB_Animate" Name="Anniversary_Show_Image6Animate">
-        <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,149.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,638.000000},{0.000000,264.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,149.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,638.000000},{0.000000,264.000000}}" />
         <Property Name="MouseRButtonHollow" Value="True"/>
         <Property Name="MouseMoveHollow" Value="True"/>
         <Property Name="MouseLButtonHollow" Value="True"/>
@@ -168,8 +168,8 @@
         <Property Name="AlwaysOnTop" Value="True"/>
       </Window>
       <Window Type="TLBB_StaticImageNULL" Name="Anniversary_Show_Image6Tick">
-        <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,149.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,638.000000},{0.000000,264.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,149.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,638.000000},{0.000000,264.000000}}" />
         <Property Name="RiseOnClick" Value="False"/>
         <Property Name="MouseRButtonHollow" Value="True"/>
         <Property Name="MouseMoveHollow" Value="True"/>

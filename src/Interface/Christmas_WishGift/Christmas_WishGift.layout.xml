@@ -1,20 +1,20 @@
 <?xml version="1.0" ?>
 <GUILayout>
     <Window Type="TLBB_MainFrameNULL" Name="Christmas_WishGift_Frame">
-        <Property Name="UnifiedSize" Value="{{0.000000,810.000000},{0.000000,450.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.500000,-405.000000},{0.500000,-225.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,810.000000},{0.000000,450.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.500000,-405.000000},{0.500000,-225.000000}}" />
         <Event Name="Hidden" Function="Christmas_WishGift_OnHiden();" />
         <Window Type="TLBB_HeroFrame01" Name="Christmas_WishGift_FrameBK">
-            <Property Name="UnifiedSize" Value="{{0.000000,650.000000},{0.000000,440.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.500000,-298.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,650.000000},{0.000000,440.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.500000,-298.000000},{0.000000,0.000000}}" />
             <Window Type="TLBB_HeroTitle01" Name="Christmas_WishGift_DragTitleBK">
-                <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,30.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.500000,-150.000000},{0.000000,-2.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,30.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.500000,-150.000000},{0.000000,-2.000000}}" />
                 <Property Name="RiseOnClick" Value="False"/>
             </Window>
             <Window Type="TLBB_DragTitle" Name="Christmas_WishGift_DragTitle">
-                <Property Name="UnifiedSize" Value="{{1.000000,-70.000000},{0.000000,22.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,35.000000},{0.000000,2.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,-70.000000},{0.000000,22.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,35.000000},{0.000000,2.000000}}" />
                 <Property Name="Text" Value="#{SDXY_211103_21}"/>
                 <Property Name="Font" Value="YouYuan9.75"/>
                 <Property Name="HorzFormatting" Value="WordWrapCentred"/>
@@ -22,43 +22,43 @@
             </Window>
             <Window Type="TLBB_ButtonHelp" Name="Christmas_WishGift_Help">
                 <Property Name="Visible" Value="False"/>
-                <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}" />
                 <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*Christmas_WishGift&quot;);' />
             </Window>
             <Window Type="TLBB_ButtonClose2" Name="Christmas_WishGift_Close">
-                <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,14.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{1.000000,-28.000000},{0.000000,8.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,14.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{1.000000,-28.000000},{0.000000,8.000000}}" />
                 <Event Name="Clicked" Function="Christmas_WishGift_Close();" />
             </Window>
         </Window>
         <Window Type="TLBB_StaticImageNULL" Name="Christmas_WishGift_ImageBK">
-            <Property Name="UnifiedSize" Value="{{0.000000,810.000000},{0.000000,392.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.500000,-405.000000},{1.000000,-392.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,810.000000},{0.000000,392.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.500000,-405.000000},{1.000000,-392.000000}}" />
             <Property Name="RiseOnClick" Value="False"/>
             <Property Name="AlwaysOnTop" Value="True"/>
             <Property Name="Image" Value="set:Christmas_WishGift image:Christmas_WishGift_FrameBK"/>
         </Window>
         <Window Type="DefaultWindow" Name="Christmas_WishGift_Frame_Client">
-            <Property Name="UnifiedSize" Value="{{0.000000,650.000000},{0.000000,400.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.500000,-298.000000},{0.500000,-200.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,650.000000},{0.000000,400.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.500000,-298.000000},{0.500000,-200.000000}}" />
             <Property Name="AlwaysOnTop" Value="True"/>
             <Window Type="TLBB_SimpleText" Name="Christmas_WishGift_Info">
-                <Property Name="UnifiedSize" Value="{{1.000000,-122.000000},{0.000000,80.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,106.000000},{0.000000,12.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,-122.000000},{0.000000,80.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,106.000000},{0.000000,12.000000}}" />
                 <Property Name="Text" Value="#{SDXY_211103_22}"/>
                 <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
             </Window>
             <Window Type="DefaultWindow" Name="Christmas_WishGift_Item1BK">
-                <Property Name="UnifiedSize" Value="{{0.000000,54.000000},{0.000000,54.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,215.000000},{0.000000,196.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,54.000000},{0.000000,54.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,215.000000},{0.000000,196.000000}}" />
                 <Window Type="TLBB_ActionButton" Name="Christmas_WishGift_Item1">
-                    <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-                    <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}"/>
+                    <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+                    <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}" />
                     <Event Name="Clicked" Function="Christmas_WishGift_ItemClicked(1);"/>
                     <Window Type="TLBB_Animate" Name="Christmas_WishGift_ItemAnimate1">
-                        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-                        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+                        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                         <Property Name="MouseRButtonHollow" Value="True"/>
                         <Property Name="MouseMoveHollow" Value="True"/>
                         <Property Name="MouseLButtonHollow" Value="True"/>
@@ -66,8 +66,8 @@
                         <Property Name="Animate" Value="Equip_Zhizun"/>
                     </Window>
                     <Window Type="TLBB_StaticImageNULL" Name="Christmas_WishGift_ItemOK1">
-                        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-                        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+                        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                         <Property Name="MouseRButtonHollow" Value="False"/>
                         <Property Name="MouseMoveHollow" Value="True"/>
                         <Property Name="MouseLButtonHollow" Value="False"/>
@@ -76,8 +76,8 @@
                     </Window>
                 </Window>
                 <Window Type="TLBB_StaticImageNULL" Name="Christmas_WishGift_Item1_Tips">
-                    <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
-                    <Property Name="UnifiedPosition" Value="{{1.000000,-13.000000},{0.000000,0.000000}}"/>
+                    <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}" />
+                    <Property Name="UnifiedPosition" Value="{{1.000000,-13.000000},{0.000000,0.000000}}" />
                     <Property Name="MouseRButtonHollow" Value="True"/>
                     <Property Name="MouseMoveHollow" Value="True"/>
                     <Property Name="MouseLButtonHollow" Value="True"/>
@@ -87,15 +87,15 @@
                 </Window>
             </Window>
             <Window Type="DefaultWindow" Name="Christmas_WishGift_Item2BK">
-                <Property Name="UnifiedSize" Value="{{0.000000,54.000000},{0.000000,54.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,374.000000},{0.000000,193.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,54.000000},{0.000000,54.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,374.000000},{0.000000,193.000000}}" />
                 <Window Type="TLBB_ActionButton" Name="Christmas_WishGift_Item2">
-                    <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-                    <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}"/>
+                    <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+                    <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}" />
                     <Event Name="Clicked" Function="Christmas_WishGift_ItemClicked(2);"/>
                     <Window Type="TLBB_Animate" Name="Christmas_WishGift_ItemAnimate2">
-                        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-                        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+                        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                         <Property Name="MouseRButtonHollow" Value="True"/>
                         <Property Name="MouseMoveHollow" Value="True"/>
                         <Property Name="MouseLButtonHollow" Value="True"/>
@@ -103,8 +103,8 @@
                         <Property Name="Animate" Value="Equip_Zhizun"/>
                     </Window>
                     <Window Type="TLBB_StaticImageNULL" Name="Christmas_WishGift_ItemOK2">
-                        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-                        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+                        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                         <Property Name="MouseRButtonHollow" Value="False"/>
                         <Property Name="MouseMoveHollow" Value="True"/>
                         <Property Name="MouseLButtonHollow" Value="False"/>
@@ -113,8 +113,8 @@
                     </Window>
                 </Window>
                 <Window Type="TLBB_StaticImageNULL" Name="Christmas_WishGift_Item2_Tips">
-                    <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
-                    <Property Name="UnifiedPosition" Value="{{1.000000,-13.000000},{0.000000,0.000000}}"/>
+                    <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}" />
+                    <Property Name="UnifiedPosition" Value="{{1.000000,-13.000000},{0.000000,0.000000}}" />
                     <Property Name="MouseRButtonHollow" Value="True"/>
                     <Property Name="MouseMoveHollow" Value="True"/>
                     <Property Name="MouseLButtonHollow" Value="True"/>
@@ -124,15 +124,15 @@
                 </Window>
             </Window>
             <Window Type="DefaultWindow" Name="Christmas_WishGift_Item3BK">
-                <Property Name="UnifiedSize" Value="{{0.000000,54.000000},{0.000000,54.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,544.000000},{0.000000,173.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,54.000000},{0.000000,54.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,544.000000},{0.000000,173.000000}}" />
                 <Window Type="TLBB_ActionButton" Name="Christmas_WishGift_Item3">
-                    <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
-                    <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}"/>
+                    <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}" />
+                    <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}" />
                     <Event Name="Clicked" Function="Christmas_WishGift_ItemClicked(3);"/>
                     <Window Type="TLBB_Animate" Name="Christmas_WishGift_ItemAnimate3">
-                        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-                        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+                        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                         <Property Name="MouseRButtonHollow" Value="True"/>
                         <Property Name="MouseMoveHollow" Value="True"/>
                         <Property Name="MouseLButtonHollow" Value="True"/>
@@ -140,8 +140,8 @@
                         <Property Name="Animate" Value="Equip_Zhizun"/>
                     </Window>
                     <Window Type="TLBB_StaticImageNULL" Name="Christmas_WishGift_ItemOK3">
-                        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-                        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+                        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                         <Property Name="MouseRButtonHollow" Value="False"/>
                         <Property Name="MouseMoveHollow" Value="True"/>
                         <Property Name="MouseLButtonHollow" Value="False"/>
@@ -150,8 +150,8 @@
                     </Window>
                 </Window>
                 <Window Type="TLBB_StaticImageNULL" Name="Christmas_WishGift_Item3_Tips">
-                    <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
-                    <Property Name="UnifiedPosition" Value="{{1.000000,-13.000000},{0.000000,0.000000}}"/>
+                    <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}" />
+                    <Property Name="UnifiedPosition" Value="{{1.000000,-13.000000},{0.000000,0.000000}}" />
                     <Property Name="MouseRButtonHollow" Value="True"/>
                     <Property Name="MouseMoveHollow" Value="True"/>
                     <Property Name="MouseLButtonHollow" Value="True"/>
@@ -161,66 +161,66 @@
                 </Window>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="Christmas_WishGift_WishPoint1BK">
-                <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,172.000000},{0.000000,254.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,172.000000},{0.000000,254.000000}}" />
                 <Property Name="RiseOnClick" Value="False"/>
                 <Property Name="Image" Value="set:Christmas_WishGift image:Christmas_WishGift_TextBK"/>
                 <Window Type="TLBB_SimpleText" Name="Christmas_WishGift_WishPoint1">
-                    <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                    <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                     <Property Name="Text" Value="#{SDXY_211103_24}"/>
                     <Property Name="HorzFormatting" Value="WordWrapCentred"/>
                 </Window>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="Christmas_WishGift_WishPoint2BK">
-                <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,331.000000},{0.000000,251.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,331.000000},{0.000000,251.000000}}" />
                 <Property Name="RiseOnClick" Value="False"/>
                 <Property Name="Image" Value="set:Christmas_WishGift image:Christmas_WishGift_TextBK"/>
                 <Window Type="TLBB_SimpleText" Name="Christmas_WishGift_WishPoint2">
-                    <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                    <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                     <Property Name="Text" Value="#{SDXY_211103_24}"/>
                     <Property Name="HorzFormatting" Value="WordWrapCentred"/>
                 </Window>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="Christmas_WishGift_WishPoint3BK">
-                <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,501.000000},{0.000000,230.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,501.000000},{0.000000,230.000000}}" />
                 <Property Name="RiseOnClick" Value="False"/>
                 <Property Name="Image" Value="set:Christmas_WishGift image:Christmas_WishGift_TextBK"/>
                 <Window Type="TLBB_SimpleText" Name="Christmas_WishGift_WishPoint3">
-                    <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                    <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                     <Property Name="Text" Value="#{SDXY_211103_24}"/>
                     <Property Name="HorzFormatting" Value="WordWrapCentred"/>
                 </Window>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="Christmas_WishGift_UnlockTimeBK">
-                <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,500.000000},{0.000000,142.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,500.000000},{0.000000,142.000000}}" />
                 <Property Name="RiseOnClick" Value="False"/>
                 <Property Name="Image" Value="set:Christmas_WishGift image:Christmas_WishGift_TextBK"/>
                 <Window Type="TLBB_SimpleText" Name="Christmas_WishGift_UnlockTime">
-                    <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-                    <Property Name="UnifiedPosition" Value="{{0.0000000,0.000000},{0.000000,0.000000}}"/>
+                    <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+                    <Property Name="UnifiedPosition" Value="{{0.0000000,0.000000},{0.000000,0.000000}}" />
                     <Property Name="Text" Value="#{SDXY_211103_26}"/>
                     <Property Name="HorzFormatting" Value="WordWrapCentred"/>
                 </Window>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="Christmas_WishGift_WishPointNumBK">
-                <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,495.000000},{1.000000,-20.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,495.000000},{1.000000,-20.000000}}" />
                 <Property Name="RiseOnClick" Value="False"/>
                 <Property Name="Image" Value="set:Christmas_WishGift image:Christmas_WishGift_TextBK"/>
                 <Window Type="TLBB_SimpleText" Name="Christmas_WishGift_WishPointNum">
-                    <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{1.000000,0.000000}}"/>
-                    <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,0.000000}}"/>
+                    <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{1.000000,0.000000}}" />
+                    <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,0.000000}}" />
                     <Property Name="Text" Value="#{SDXY_211103_23}"/>
                     <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
                     <Window Type="TLBB_ButtonHelp" Name="Christmas_WishGift_WishPonitNum_HelpDetail">
-                        <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
-                        <Property Name="UnifiedPosition" Value="{{1.000000,-14.000000},{0.500000,-7.000000}}"/>
+                        <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}" />
+                        <Property Name="UnifiedPosition" Value="{{1.000000,-14.000000},{0.500000,-7.000000}}" />
                         <Event Name="Clicked" Function="Christmas_WishGift_WishPonitNum_HelpClick();"/>
                     </Window>
                 </Window>

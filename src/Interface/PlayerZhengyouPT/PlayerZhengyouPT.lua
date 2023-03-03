@@ -889,10 +889,10 @@ end
 -- 在切换标签时处理查询提示和玩家列表窗口大小 
 function  PlayerZhengyouPT_UpdateSearchTip()
 	 -- 无提示时玩家列表top = 23, height = 272  
-	 -- <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,23.000000}" />
+	 -- <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,23.000000}}" />
 	 -- <Property Name="AbsoluteSize" Value="w:399 h:272" />
 	 -- 有提示时
-	 --<Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,47.000000}" />
+	 --<Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,47.000000}}" />
      --<Property Name="AbsoluteSize" Value="w:399 h:248" />
      if ( 5 == g_curChannel ) then
          --PlayerZhengyouPT_Result:Show();

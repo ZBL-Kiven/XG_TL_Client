@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <GUILayout>
 	<Window Type="TLBB_MainFrame0" Name="Compensate_Frame">
-		<Property Name="UnifiedPosition" Value="{{0.400000,-200.000000},{0.120000,0.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.400000,-200.000000},{0.120000,0.000000}}" />
 		<Property Name="AbsoluteSize" Value="w:604.000000 h:388.000000"/>
 		<Event Name="Hidden" Function="Compensate_Close();"/>
 		<Window Type="TLBB_DragTitle" Name="Compensate_DragTitle">
 			<Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000"/>
-			<Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+			<Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}" />
 			<Property Name="DragTarget" Value="Compensate_Frame"/>
 			<Window Type="TLBB_SimpleText" Name="Compensate_Text">
 				<Property Name="RelativePosition" Value="x:0.000000 y:0.000000"/>
@@ -19,20 +19,20 @@
 				</Window>
 		</Window>
 		<Window Type="TLBB_ButtonHelp" Name="Compensate_Help">
-			<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}" />
 			<Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000"/>
 			<Event Name="Clicked" Function="Helper:GotoHelper(&quot;*Compensate&quot;);"/>
 		</Window>
 		<Window Type="TLBB_ButtonClose" Name="Compensate_Close">
-			<Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}" />
 			<Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000"/>
 			<Event Name="Clicked" Function="Compensate_Close();"/>
 		</Window>
 		<Window Type="DefaultWindow" Name="Compensate_Background_Frame1">
 			<Property Name="AbsolutePosition" Value="x:5.000000 y:36.000000"/>
-			<Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,-55.000000}}"/>       
+			<Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,-55.000000}}" />
                         <Window Type="TLBB_MultiColumnList" Name="Compensate_List" >
-			        <Property Name="UnifiedPosition" Value="{{0.000000,99.000000},{0.000000,68.000000}" />
+			        <Property Name="UnifiedPosition" Value="{{0.000000,99.000000},{0.000000,68.000000}}" />
 			        <Property Name="AbsoluteSize" Value="w:495.000000 h:226.000000" />
 			        <Property Name="ForceHorzScrollbar" Value="False" />
 			        <Property Name="ForceVertScrollbar" Value="False" />
@@ -42,7 +42,7 @@
 	            	</Window>
 			<Window Type="DefaultWindow" Name="Compensate_Action_Set">
 				<Property Name="AbsolutePosition" Value="x:99.000000 y:68.000000"/>
-				<Property Name="UnifiedSize" Value="{{0.000000,499.000000},{0.000000,226.000000}}"/>
+				<Property Name="UnifiedSize" Value="{{0.000000,499.000000},{0.000000,226.000000}}" />
 				<Window Type="TLBB_ActionButton" Name="Compensate_Item1">
 					<Property Name="AbsolutePosition" Value="x:0.000000 y:1.000000"/>
 					<Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000"/>
@@ -405,17 +405,17 @@
 				</Window>
 			</Window>
 			<Window Type="TLBB_Frame_Lace2" Name="Compensate_Bk">
-				<Property Name="UnifiedPosition" Value="{{0.020000,-11.600006},{1.000000,-39.000000}}"/>
-				<Property Name="UnifiedSize" Value="{{0.999000,0.000000},{0.000000,38.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.020000,-11.600006},{1.000000,-39.000000}}" />
+				<Property Name="UnifiedSize" Value="{{0.999000,0.000000},{0.000000,38.000000}}" />
 				<Window Type="TLBB_ButtonCommon2" Name="Compensate_UpPage">
 					<Property Name="AbsolutePosition" Value="x:214.000000 y:9.000000"/>
-					<Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,22.000000}}"/>
+					<Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,22.000000}}" />
 					<Property Name="Text" Value="#{YBSD_081225_078}"/>
 					<Event Name="Clicked" Function="Compensate_PageUp();"/>
 				</Window>
 				<Window Type="TLBB_SimpleMulitiTextFrame" Name="Compensate_CurrentlyPage">
 					<Property Name="AbsolutePosition" Value="x:266.000000 y:9.000000"/>
-					<Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,22.000000}}"/>
+					<Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,22.000000}}" />
 					<Property Name="HorzFormatting" Value="HorzCentred"/>
           <Property Name="VertFormatting" Value="VertCentred"/>
           <Property Name="RiseOnClick" Value="False"/>
@@ -424,13 +424,13 @@
 				</Window>
 				<Window Type="TLBB_ButtonCommon2" Name="Compensate_DownPage">
 					<Property Name="AbsolutePosition" Value="x:328.000000 y:9.000000"/>
-					<Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,22.000000}}"/>
+					<Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,22.000000}}" />
 					<Property Name="Text" Value="#{YBSD_081225_079}"/>
 					<Event Name="Clicked" Function="Compensate_PageDown();"/>
 				</Window>
 			<Window Type="TLBB_ButtonCommon" Name="Compensate2_Receive" >
 				<Property Name="AbsolutePosition" Value="x:475.000000 y:9.000000" />
-				<Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,22.000000}" />
+				<Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,22.000000}}" />
 				<Property Name="Text" Value="#{TLBC_090714_01}" />
                                 <Event Name="Clicked" Function="Compensate_Receive();"/>
 			</Window>
@@ -442,10 +442,10 @@
         </Window>
 			</Window>
 			<Window Type="TLBB_Frame_Lace3" Name="Compensate_Bk1">
-				<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-333.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-333.000000}}" />
 				<Property Name="UnifiedSize" Value="{{1.000,0.000000},{0.000000,68.000000}}" />
           <Window Type="TLBB_SimpleText" Name="Compensate_Direction">
-          <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,5.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,5.000000}}" />
           <Property Name="UnifiedSize" Value="{{0.000000,576.000000},{0.000000,57.000000}}" />
           <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
           <Property Name="VertFormatting" Value="TopAligned" />          
@@ -453,25 +453,25 @@
           </Window>
       </Window> 
       <Window Type="TLBB_Frame_Lace2" Name="Compensate_Bk2">
-				<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,68.000000}}"/>
-				<Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,225.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,68.000000}}" />
+				<Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,225.000000}}" />
 				<Window Type="TLBB_ButtonCheckForRMBShop" Name="Compensate_Button01">
-					<Property Name="UnifiedPosition" Value="{{0.110000,0.000000},{0.040000,0.000000}}"/>
-					<Property Name="UnifiedSize" Value="{{0.000000,75.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.110000,0.000000},{0.040000,0.000000}}" />
+					<Property Name="UnifiedSize" Value="{{0.000000,75.000000},{0.000000,20.000000}}" />
 					<Property Name="CheckMode" Value="1"/>
 					<Property Name="Text" Value="#{TLBC_090617_08}"/>
 					<Event Name="MouseLButtonDown" Function="Compensate_UpdateShop(1);"/>
 				</Window>
 				<Window Type="TLBB_ButtonCheckForRMBShop" Name="Compensate_Button02">
-					<Property Name="UnifiedPosition" Value="{{0.110000,0.000000},{0.160000,0.000000}}"/>
-					<Property Name="UnifiedSize" Value="{{0.000000,75.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.110000,0.000000},{0.160000,0.000000}}" />
+					<Property Name="UnifiedSize" Value="{{0.000000,75.000000},{0.000000,20.000000}}" />
 					<Property Name="CheckMode" Value="1"/>
 					<Property Name="Text" Value="#{TLBC_090617_09}"/>
 					<Event Name="MouseLButtonDown" Function="Compensate_UpdateShop(2);"/>
 				</Window>
 				<Window Type="TLBB_ButtonCheckForRMBShop" Name="Compensate_Button03">
-					<Property Name="UnifiedPosition" Value="{{0.110000,0.000000},{0.280000,0.000000}}"/>
-					<Property Name="UnifiedSize" Value="{{0.000000,75.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.110000,0.000000},{0.280000,0.000000}}" />
+					<Property Name="UnifiedSize" Value="{{0.000000,75.000000},{0.000000,20.000000}}" />
 					<Property Name="CheckMode" Value="1"/>
 					<Property Name="Text" Value="#{TLBC_090617_10}"/>
 					<Event Name="MouseLButtonDown" Function="Compensate_UpdateShop(3);"/>

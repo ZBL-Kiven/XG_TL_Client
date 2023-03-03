@@ -1,352 +1,352 @@
 <?xml version="1.0" ?>
 <GUILayout>
   <Window Type="TLBB_MainFrame7" Name="ValentineRoseTopList_Frame">
-    <Property Name="UnifiedSize" Value="{{0.000000,720.000000},{0.000000,600.000000}}"/>
-    <Property Name="UnifiedPosition" Value="{{0.500000,-360.000000},{0.500000,-330.000000}}"/>
+    <Property Name="UnifiedSize" Value="{{0.000000,720.000000},{0.000000,600.000000}}" />
+    <Property Name="UnifiedPosition" Value="{{0.500000,-360.000000},{0.500000,-330.000000}}" />
     <Window Type="TLBB_DragTitle" Name="ValentineRoseTopList_DragTitle">
-      <Property Name="UnifiedSize" Value="{{1.000000,-170.000000},{0.000000,20.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,84.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-170.000000},{0.000000,20.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,84.000000},{0.000000,14.000000}}" />
       <Property Name="Text" Value="#{MGCQ_151230_100}"/>
       <Property Name="Font" Value="YouYuan11.25"/>
       <Property Name="DragTarget" Value="ValentineRoseTopList_Frame"/>
     </Window>
     <Window Type="TLBB_ButtonClose" Name="ValentineRoseTopList_Close">
-      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{1.000000,-58.000000},{0.000000,18.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{1.000000,-58.000000},{0.000000,18.000000}}" />
       <Event Name="Clicked" Function="ValentineRoseTopList_Close_Click();" />
     </Window>
     <Window Type="DefaultWindow" Name="ValentineRoseTopList_Client">
-      <Property Name="UnifiedSize" Value="{{1.000000,-48.000000},{1.000000,-47.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,24.000000},{0.000000,39.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-48.000000},{1.000000,-47.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,24.000000},{0.000000,39.000000}}" />
       <Window Type="DefaultWindow" Name="ValentineRoseTopList_Top_Frame">
-        <Property Name="UnifiedSize" Value="{{1.000000,-30.000000},{0.000000,20.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.000000,10.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,-30.000000},{0.000000,20.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.000000,10.000000}}" />
         <Window Type="TLBB_ButtonFenYe5" Name="ValentineRoseTopList_Top_TopList1">
-          <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,20.000000}}" />
           <Property Name="Text" Value="#{MGCQ_151230_09}"/>
           <Property Name="CheckMode" Value="1"/>
           <Event Name="Clicked" Function="ValentineRoseTopList_Page_Click(1)" />
         </Window>
         <Window Type="TLBB_ButtonFenYe5" Name="ValentineRoseTopList_Top_TopList2">
-          <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,20.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,90.000000},{0.000000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,90.000000},{0.000000,0.000000}}" />
           <Property Name="Text" Value="#{MGCQ_151230_07}"/>
           <Property Name="CheckMode" Value="1"/>
           <Event Name="Clicked" Function="ValentineRoseTopList_Page_Click(2)" />
         </Window>
         <Window Type="TLBB_ButtonFenYe5" Name="ValentineRoseTopList_Top_TopList3">
-          <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,20.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,180.000000},{0.000000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,180.000000},{0.000000,0.000000}}" />
           <Property Name="Text" Value="#{MGCQ_151230_08}"/>
           <Property Name="CheckMode" Value="1"/>
           <Event Name="Clicked" Function="ValentineRoseTopList_Page_Click(3)" />
         </Window>
         <Window Type="TLBB_ButtonFenYe5" Name="ValentineRoseTopList_Top_Exchange1">
-          <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,20.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,270.000000},{0.000000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,270.000000},{0.000000,0.000000}}" />
           <Property Name="Text" Value="#{MGCQ_151230_10}"/>
           <Property Name="CheckMode" Value="1"/>
           <Event Name="Clicked" Function="ValentineRoseTopList_Page_Click(4)" />
         </Window>
       </Window>
       <Window Type="DefaultWindow" Name="ValentineRoseTopList_Ranking_Frame">
-        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-30.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,30.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-30.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,30.000000}}" />
         <Window Type="TLBB_SimpleMulitiTextFrame" Name="ValentineRoseTopList_Ranking_Info">
-          <Property Name="UnifiedSize" Value="{{1.000000,-24.000000},{1.000000,-415.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{0.000000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,-24.000000},{1.000000,-415.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{0.000000,0.000000}}" />
           <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
           <Window Type="TLBB_ButtonNULL" Name="ValentineRoseTopList_Ranking_links">
-            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{1.000000,-124.000000},{1.000000,-24.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{1.000000,-124.000000},{1.000000,-24.000000}}" />
             <Property Name="Text" Value="#{MGCQ_151230_124}"/>
             <Event Name="Clicked" Function="ValentineRoseTopList_BuyRose()" />
           </Window>
         </Window>
         <Window Type="TLBB_HLine1" Name="ValentineRoseTopList_Ranking_HLine0">
-          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,3.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-415.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,3.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-415.000000}}" />
         </Window>
         <Window Type="TLBB_SimpleMulitiTextFrame" Name="ValentineRoseTopList_Ranking_CountDown">
-          <Property Name="UnifiedSize" Value="{{1.000000,-89.000000},{0.000000,22.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{1.000000,-412.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,-89.000000},{0.000000,22.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{1.000000,-412.000000}}" />
         </Window>
         <Window Type="TLBB_ButtonCommon7" Name="ValentineRoseTopList_Ranking_F5">
-          <Property Name="UnifiedSize" Value="{{0.000000,65.000000},{0.000000,22.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{1.000000,-77.000000},{1.000000,-412.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,65.000000},{0.000000,22.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{1.000000,-77.000000},{1.000000,-412.000000}}" />
           <Property Name="Text" Value="#{MGCQ_161223_24}"/>
           <Event Name="Clicked" Function="ValentineRoseTopList_RankClick_Refresh();" />
         </Window>
         <Window Type="TLBB_HLine1" Name="ValentineRoseTopList_Ranking_HLine1">
-          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,3.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-390.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,3.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-390.000000}}" />
         </Window>
         <Window Type="TLBB_Frame_Lace1" Name="ValentineRoseTopList_Ranking_Present_Frame">
-          <Property Name="UnifiedSize" Value="{{0.500000,-12.000000},{0.000000,270.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{1.000000,-387.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.500000,-12.000000},{0.000000,270.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{1.000000,-387.000000}}" />
           <Window Type="TLBB_SimpleMulitiTextFrame" Name="ValentineRoseTopList_Present_TitleName">
-            <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,22.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}" />
             <Property Name="HorzFormatting" Value="HorzCentred"/>
           </Window>
           <Window Type="DefaultWindow" Name="ValentineRoseTopList_Present_Client">
-            <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,222.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,222.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,24.000000}}" />
             <Window Type="DefaultWindow" Name="ValentineRoseTopList_Present_Top1">
-              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,44.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,44.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,0.000000}}" />
               <Window Type="TLBB_StaticImageNULL" Name="ValentineRoseTopList_Present_Top1_Icon">
-                <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,1.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,1.000000}}" />
                 <Property Name="Image" Value="set:RosebangUI image:RosebangUI_1"/>
               </Window>
               <Window Type="TLBB_SimpleMulitiTextFrame" Name="ValentineRoseTopList_Present_Top1_Name">
-                <Property Name="UnifiedSize" Value="{{0.500000,-22.000000},{0.000000,44.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,43.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.500000,-22.000000},{0.000000,44.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,43.000000},{0.000000,0.000000}}" />
                 <Property Name="Text" Value="#{QRPHB_150113_16}"/>
               </Window>
               <Window Type="TLBB_SimpleMulitiTextFrame" Name="ValentineRoseTopList_Present_Top1_Num">
-                <Property Name="UnifiedSize" Value="{{0.500000,-22.000000},{0.000000,44.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.500000,21.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.500000,-22.000000},{0.000000,44.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.500000,21.000000},{0.000000,0.000000}}" />
                 <Property Name="Text" Value="#{QRPHB_150113_16}"/>
               </Window>
             </Window>
             <Window Type="DefaultWindow" Name="ValentineRoseTopList_Present_Top2">
-              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,44.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,45.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,44.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,45.000000}}" />
               <Window Type="TLBB_StaticImageNULL" Name="ValentineRoseTopList_Present_Top2_Icon">
-                <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,1.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,1.000000}}" />
                 <Property Name="Image" Value="set:RosebangUI image:RosebangUI_2"/>
               </Window>
               <Window Type="TLBB_SimpleMulitiTextFrame" Name="ValentineRoseTopList_Present_Top2_Name">
-                <Property Name="UnifiedSize" Value="{{0.500000,-22.000000},{0.000000,44.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,43.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.500000,-22.000000},{0.000000,44.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,43.000000},{0.000000,0.000000}}" />
                 <Property Name="Text" Value="#{QRPHB_150113_16}"/>
               </Window>
               <Window Type="TLBB_SimpleMulitiTextFrame" Name="ValentineRoseTopList_Present_Top2_Num">
-                <Property Name="UnifiedSize" Value="{{0.500000,-22.000000},{0.000000,44.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.500000,21.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.500000,-22.000000},{0.000000,44.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.500000,21.000000},{0.000000,0.000000}}" />
                 <Property Name="Text" Value="#{QRPHB_150113_16}"/>
               </Window>
             </Window>
             <Window Type="DefaultWindow" Name="ValentineRoseTopList_Present_Top3">
-              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,44.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,89.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,44.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,89.000000}}" />
               <Window Type="TLBB_StaticImageNULL" Name="ValentineRoseTopList_Present_Top3_Icon">
-                <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,1.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,1.000000}}" />
                 <Property Name="Image" Value="set:RosebangUI image:RosebangUI_3"/>
               </Window>
               <Window Type="TLBB_SimpleMulitiTextFrame" Name="ValentineRoseTopList_Present_Top3_Name">
-                <Property Name="UnifiedSize" Value="{{0.500000,-22.000000},{0.000000,44.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,43.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.500000,-22.000000},{0.000000,44.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,43.000000},{0.000000,0.000000}}" />
                 <Property Name="Text" Value="#{QRPHB_150113_16}"/>
               </Window>
               <Window Type="TLBB_SimpleMulitiTextFrame" Name="ValentineRoseTopList_Present_Top3_Num">
-                <Property Name="UnifiedSize" Value="{{0.500000,-22.000000},{0.000000,44.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.500000,21.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.500000,-22.000000},{0.000000,44.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.500000,21.000000},{0.000000,0.000000}}" />
                 <Property Name="Text" Value="#{QRPHB_150113_16}"/>
               </Window>
             </Window>
             <Window Type="DefaultWindow" Name="ValentineRoseTopList_Present_Top4">
-              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,44.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,133.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,44.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,133.000000}}" />
               <Window Type="TLBB_StaticImageNULL" Name="ValentineRoseTopList_Present_Top4_Icon">
-                <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,1.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,1.000000}}" />
                 <Property Name="Image" Value="set:RosebangUI image:RosebangUI_4"/>
               </Window>
               <Window Type="TLBB_SimpleMulitiTextFrame" Name="ValentineRoseTopList_Present_Top4_Name">
-                <Property Name="UnifiedSize" Value="{{0.500000,-22.000000},{0.000000,44.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,43.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.500000,-22.000000},{0.000000,44.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,43.000000},{0.000000,0.000000}}" />
                 <Property Name="Text" Value="#{QRPHB_150113_16}"/>
               </Window>
               <Window Type="TLBB_SimpleMulitiTextFrame" Name="ValentineRoseTopList_Present_Top4_Num">
-                <Property Name="UnifiedSize" Value="{{0.500000,-22.000000},{0.000000,44.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.500000,21.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.500000,-22.000000},{0.000000,44.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.500000,21.000000},{0.000000,0.000000}}" />
                 <Property Name="Text" Value="#{QRPHB_150113_16}"/>
               </Window>
             </Window>
             <Window Type="DefaultWindow" Name="ValentineRoseTopList_Present_Top5">
-              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,44.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,178.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,44.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,178.000000}}" />
               <Window Type="TLBB_StaticImageNULL" Name="ValentineRoseTopList_Present_Top5_Icon">
-                <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,1.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,1.000000}}" />
                 <Property Name="Image" Value="set:RosebangUI image:RosebangUI_5"/>
               </Window>
               <Window Type="TLBB_SimpleMulitiTextFrame" Name="ValentineRoseTopList_Present_Top5_Name">
-                <Property Name="UnifiedSize" Value="{{0.500000,-22.000000},{0.000000,44.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,43.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.500000,-22.000000},{0.000000,44.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,43.000000},{0.000000,0.000000}}" />
                 <Property Name="Text" Value="#{QRPHB_150113_16}"/>
               </Window>
               <Window Type="TLBB_SimpleMulitiTextFrame" Name="ValentineRoseTopList_Present_Top5_Num">
-                <Property Name="UnifiedSize" Value="{{0.500000,-22.000000},{0.000000,44.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.500000,21.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.500000,-22.000000},{0.000000,44.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.500000,21.000000},{0.000000,0.000000}}" />
                 <Property Name="Text" Value="#{QRPHB_150113_16}"/>
               </Window>
             </Window>
           </Window>
           <Window Type="TLBB_SimpleMulitiTextFrame" Name="ValentineRoseTopList_Present_Me">
-            <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,22.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-24.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-24.000000}}" />
           </Window>
         </Window>
         <Window Type="TLBB_Frame_Lace1" Name="ValentineRoseTopList_Ranking_Receive_Frame">
-          <Property Name="UnifiedSize" Value="{{0.500000,-12.000000},{0.000000,270.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.500000,0.000000},{1.000000,-387.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.500000,-12.000000},{0.000000,270.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.500000,0.000000},{1.000000,-387.000000}}" />
           <Window Type="TLBB_SimpleMulitiTextFrame" Name="ValentineRoseTopList_Receive_TitleName">
-            <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,22.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}" />
             <Property Name="HorzFormatting" Value="HorzCentred"/>
           </Window>
           <Window Type="DefaultWindow" Name="ValentineRoseTopList_Receive_Client">
-            <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,222.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,222.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,24.000000}}" />
             <Window Type="DefaultWindow" Name="ValentineRoseTopList_Receive_Top1">
-              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,44.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,44.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,0.000000}}" />
               <Window Type="TLBB_StaticImageNULL" Name="ValentineRoseTopList_Receive_Top1_Icon">
-                <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,1.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,1.000000}}" />
                 <Property Name="Image" Value="set:RosebangUI image:RosebangUI_1"/>
               </Window>
               <Window Type="TLBB_SimpleMulitiTextFrame" Name="ValentineRoseTopList_Receive_Top1_Name">
-                <Property Name="UnifiedSize" Value="{{0.500000,-22.000000},{0.000000,44.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,43.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.500000,-22.000000},{0.000000,44.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,43.000000},{0.000000,0.000000}}" />
                 <Property Name="Text" Value="#{QRPHB_150113_16}"/>
               </Window>
               <Window Type="TLBB_SimpleMulitiTextFrame" Name="ValentineRoseTopList_Receive_Top1_Num">
-                <Property Name="UnifiedSize" Value="{{0.500000,-22.000000},{0.000000,44.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.500000,21.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.500000,-22.000000},{0.000000,44.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.500000,21.000000},{0.000000,0.000000}}" />
                 <Property Name="Text" Value="#{QRPHB_150113_16}"/>
               </Window>
             </Window>
             <Window Type="DefaultWindow" Name="ValentineRoseTopList_Receive_Top2">
-              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,44.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,45.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,44.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,45.000000}}" />
               <Window Type="TLBB_StaticImageNULL" Name="ValentineRoseTopList_Receive_Top2_Icon">
-                <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,1.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,1.000000}}" />
                 <Property Name="Image" Value="set:RosebangUI image:RosebangUI_2"/>
               </Window>
               <Window Type="TLBB_SimpleMulitiTextFrame" Name="ValentineRoseTopList_Receive_Top2_Name">
-                <Property Name="UnifiedSize" Value="{{0.500000,-22.000000},{0.000000,44.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,43.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.500000,-22.000000},{0.000000,44.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,43.000000},{0.000000,0.000000}}" />
                 <Property Name="Text" Value="#{QRPHB_150113_16}"/>
               </Window>
               <Window Type="TLBB_SimpleMulitiTextFrame" Name="ValentineRoseTopList_Receive_Top2_Num">
-                <Property Name="UnifiedSize" Value="{{0.500000,-22.000000},{0.000000,44.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.500000,21.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.500000,-22.000000},{0.000000,44.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.500000,21.000000},{0.000000,0.000000}}" />
                 <Property Name="Text" Value="#{QRPHB_150113_16}"/>
               </Window>
             </Window>
             <Window Type="DefaultWindow" Name="ValentineRoseTopList_Receive_Top3">
-              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,44.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,89.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,44.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,89.000000}}" />
               <Window Type="TLBB_StaticImageNULL" Name="ValentineRoseTopList_Receive_Top3_Icon">
-                <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,1.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,1.000000}}" />
                 <Property Name="Image" Value="set:RosebangUI image:RosebangUI_3"/>
               </Window>
               <Window Type="TLBB_SimpleMulitiTextFrame" Name="ValentineRoseTopList_Receive_Top3_Name">
-                <Property Name="UnifiedSize" Value="{{0.500000,-22.000000},{0.000000,44.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,43.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.500000,-22.000000},{0.000000,44.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,43.000000},{0.000000,0.000000}}" />
                 <Property Name="Text" Value="#{QRPHB_150113_16}"/>
               </Window>
               <Window Type="TLBB_SimpleMulitiTextFrame" Name="ValentineRoseTopList_Receive_Top3_Num">
-                <Property Name="UnifiedSize" Value="{{0.500000,-22.000000},{0.000000,44.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.500000,21.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.500000,-22.000000},{0.000000,44.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.500000,21.000000},{0.000000,0.000000}}" />
                 <Property Name="Text" Value="#{QRPHB_150113_16}"/>
               </Window>
             </Window>
             <Window Type="DefaultWindow" Name="ValentineRoseTopList_Receive_Top4">
-              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,44.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,133.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,44.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,133.000000}}" />
               <Window Type="TLBB_StaticImageNULL" Name="ValentineRoseTopList_Receive_Top4_Icon">
-                <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,1.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,1.000000}}" />
                 <Property Name="Image" Value="set:RosebangUI image:RosebangUI_4"/>
               </Window>
               <Window Type="TLBB_SimpleMulitiTextFrame" Name="ValentineRoseTopList_Receive_Top4_Name">
-                <Property Name="UnifiedSize" Value="{{0.500000,-22.000000},{0.000000,44.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,43.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.500000,-22.000000},{0.000000,44.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,43.000000},{0.000000,0.000000}}" />
                 <Property Name="Text" Value="#{QRPHB_150113_16}"/>
               </Window>
               <Window Type="TLBB_SimpleMulitiTextFrame" Name="ValentineRoseTopList_Receive_Top4_Num">
-                <Property Name="UnifiedSize" Value="{{0.500000,-22.000000},{0.000000,44.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.500000,21.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.500000,-22.000000},{0.000000,44.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.500000,21.000000},{0.000000,0.000000}}" />
                 <Property Name="Text" Value="#{QRPHB_150113_16}"/>
               </Window>
             </Window>
             <Window Type="DefaultWindow" Name="ValentineRoseTopList_Receive_Top5">
-              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,44.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,178.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,44.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,178.000000}}" />
               <Window Type="TLBB_StaticImageNULL" Name="ValentineRoseTopList_Receive_Top5_Icon">
-                <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,1.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,1.000000}}" />
                 <Property Name="Image" Value="set:RosebangUI image:RosebangUI_5"/>
               </Window>
               <Window Type="TLBB_SimpleMulitiTextFrame" Name="ValentineRoseTopList_Receive_Top5_Name">
-                <Property Name="UnifiedSize" Value="{{0.500000,-22.000000},{0.000000,44.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,43.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.500000,-22.000000},{0.000000,44.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,43.000000},{0.000000,0.000000}}" />
                 <Property Name="Text" Value="#{QRPHB_150113_16}"/>
               </Window>
               <Window Type="TLBB_SimpleMulitiTextFrame" Name="ValentineRoseTopList_Receive_Top5_Num">
-                <Property Name="UnifiedSize" Value="{{0.500000,-22.000000},{0.000000,44.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.500000,21.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.500000,-22.000000},{0.000000,44.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.500000,21.000000},{0.000000,0.000000}}" />
                 <Property Name="Text" Value="#{QRPHB_150113_16}"/>
               </Window>
             </Window>
           </Window>
           <Window Type="TLBB_SimpleMulitiTextFrame" Name="ValentineRoseTopList_Receive_Me">
-            <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,22.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-24.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-24.000000}}" />
           </Window>
         </Window>
         <Window Type="DefaultWindow" Name="ValentineRoseTopList_Ranking_Prize_Frame">
-          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,116.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-117.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,116.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-117.000000}}" />
           <Window Type="DefaultWindow" Name="ValentineRoseTopList_Prize_Bk_Frame">
-            <Property Name="UnifiedSize" Value="{{1.000000,-2.000000},{0.000000,115.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,-2.000000},{0.000000,115.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}" />
             <Property Name="RiseOnClick" Value="False"/>
             <Window Type="TLBB_StaticImageNULL" Name="ValentineRoseTopList_Prize_Bk_L">
-              <Property Name="UnifiedSize" Value="{{0.000000,264.000000},{0.000000,115.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,264.000000},{0.000000,115.000000}}" />
               <Property Name="Image" Value="set:RosebangUI1 image:RosebangUI_DITU_L"/>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="ValentineRoseTopList_Prize_Bk_M">
-              <Property Name="UnifiedSize" Value="{{1.000000,-544.000000},{0.000000,115.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,264.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,-544.000000},{0.000000,115.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,264.000000},{0.000000,0.000000}}" />
               <Property Name="Image" Value="set:RosebangUI1 image:RosebangUI_DITU_M"/>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="ValentineRoseTopList_Prize_Bk_R">
-              <Property Name="UnifiedSize" Value="{{0.000000,280.000000},{0.000000,115.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{1.000000,-280.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,280.000000},{0.000000,115.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{1.000000,-280.000000},{0.000000,0.000000}}" />
               <Property Name="Image" Value="set:RosebangUI2 image:RosebangUI_DITU_R"/>
             </Window>
           </Window>
           <Window Type="TLBB_Frame_Lace2" Name="ValentineRoseTopList_Prize_Present_Frame">
-            <Property Name="UnifiedSize" Value="{{0.500000,-1.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.500000,-1.000000},{1.000000,0.000000}}" />
             <Window Type="DefaultWindow" Name="ValentineRoseTopList_Prize_Present_Top1_Client">
-              <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{1.000000,0.000000}}" />
               <Window Type="TLBB_SimpleTextRoseFrame" Name="ValentineRoseTopList_Prize_Present_Top1_Text">
-                <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,5.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,5.000000}}" />
                 <Property Name="Text" Value="#{MGCQ_151230_27}"/>
                 <Property Name="HorzFormatting" Value="HorzCentred"/>
               </Window>
               <Window Type="DefaultWindow" Name="ValentineRoseTopList_Prize_Present_Top1_Item_Frame">
-                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,40.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-26.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,40.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-26.000000}}" />
                 <Window Type="TLBB_ActionButton" Name="ValentineRoseTopList_Prize_Present_Top1_Item">
-                  <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.500000,-20.000000},{0.000000,0.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.500000,-20.000000},{0.000000,0.000000}}" />
                 </Window>
                 <Window Type="TLBB_ButtonNULL" Name="ValentineRoseTopList_Prize_Present_Top1_ItemPreview">
-                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,40.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.500000,20.000000},{0.000000,0.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,40.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.500000,20.000000},{0.000000,0.000000}}" />
                   <Property Name="PushedImage" Value="set:RosebangUI image:Rosebang_YL_Pushed"/>
                   <Property Name="NormalImage" Value="set:RosebangUI image:Rosebang_YL_Normal"/>
                   <Property Name="HoverImage" Value="set:RosebangUI image:Rosebang_YL_Hover"/>
@@ -355,8 +355,8 @@
                 </Window>
               </Window>
               <Window Type="TLBB_ButtonNULL" Name="ValentineRoseTopList_Prize_Present_Top1_Get">
-                <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,32.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.500000,-45.000000},{1.000000,-37.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,32.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.500000,-45.000000},{1.000000,-37.000000}}" />
                 <Property Name="PushedImage" Value="set:BHJS_02 image:XinFu_LQJL_Pushed"/>
                 <Property Name="NormalImage" Value="set:BHJS_02 image:XinFu_LQJL_Normal"/>
                 <Property Name="HoverImage" Value="set:BHJS_02 image:XinFu_LQJL_Hover"/>
@@ -364,24 +364,24 @@
               </Window>
             </Window>
             <Window Type="DefaultWindow" Name="ValentineRoseTopList_Prize_Present_Top2_Client">
-              <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{1.000000,0.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.500000,-55.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{1.000000,0.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.500000,-55.000000},{0.000000,0.000000}}" />
               <Window Type="TLBB_SimpleTextRoseFrame" Name="ValentineRoseTopList_Prize_Present_Top2_Text">
-                <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,5.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,5.000000}}" />
                 <Property Name="Text" Value="#{MGCQ_151230_28}"/>
                 <Property Name="HorzFormatting" Value="HorzCentred"/>
               </Window>
               <Window Type="DefaultWindow" Name="ValentineRoseTopList_Prize_Present_Top2_Item_Frame">
-                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,40.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-26.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,40.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-26.000000}}" />
                 <Window Type="TLBB_ActionButton" Name="ValentineRoseTopList_Prize_Present_Top2_Item">
-                  <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.500000,-20.000000},{0.000000,0.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.500000,-20.000000},{0.000000,0.000000}}" />
                 </Window>
                 <Window Type="TLBB_ButtonNULL" Name="ValentineRoseTopList_Prize_Present_Top2_ItemPreview">
-                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,40.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.500000,20.000000},{0.000000,0.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,40.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.500000,20.000000},{0.000000,0.000000}}" />
                   <Property Name="PushedImage" Value="set:RosebangUI image:Rosebang_YL_Pushed"/>
                   <Property Name="NormalImage" Value="set:RosebangUI image:Rosebang_YL_Normal"/>
                   <Property Name="HoverImage" Value="set:RosebangUI image:Rosebang_YL_Hover"/>
@@ -390,8 +390,8 @@
                 </Window>
               </Window>
               <Window Type="TLBB_ButtonNULL" Name="ValentineRoseTopList_Prize_Present_Top2_Get">
-                <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,32.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.500000,-45.000000},{1.000000,-37.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,32.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.500000,-45.000000},{1.000000,-37.000000}}" />
                 <Property Name="PushedImage" Value="set:BHJS_02 image:XinFu_LQJL_Pushed"/>
                 <Property Name="NormalImage" Value="set:BHJS_02 image:XinFu_LQJL_Normal"/>
                 <Property Name="HoverImage" Value="set:BHJS_02 image:XinFu_LQJL_Hover"/>
@@ -399,24 +399,24 @@
               </Window>
             </Window>
             <Window Type="DefaultWindow" Name="ValentineRoseTopList_Prize_Present_Top3_Client">
-              <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{1.000000,0.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{1.000000,-110.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{1.000000,0.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{1.000000,-110.000000},{0.000000,0.000000}}" />
               <Window Type="TLBB_SimpleTextRoseFrame" Name="ValentineRoseTopList_Prize_Present_Top3_Text">
-                <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,5.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,5.000000}}" />
                 <Property Name="Text" Value="#{MGCQ_151230_29}"/>
                 <Property Name="HorzFormatting" Value="HorzCentred"/>
               </Window>
               <Window Type="DefaultWindow" Name="ValentineRoseTopList_Prize_Present_Top3_Item_Frame">
-                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,40.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-26.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,40.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-26.000000}}" />
                 <Window Type="TLBB_ActionButton" Name="ValentineRoseTopList_Prize_Present_Top3_Item">
-                  <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.500000,-20.000000},{0.000000,0.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.500000,-20.000000},{0.000000,0.000000}}" />
                 </Window>
                 <Window Type="TLBB_ButtonNULL" Name="ValentineRoseTopList_Prize_Present_Top3_ItemPreview">
-                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,40.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.500000,20.000000},{0.000000,0.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,40.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.500000,20.000000},{0.000000,0.000000}}" />
                   <Property Name="PushedImage" Value="set:RosebangUI image:Rosebang_YL_Pushed"/>
                   <Property Name="NormalImage" Value="set:RosebangUI image:Rosebang_YL_Normal"/>
                   <Property Name="HoverImage" Value="set:RosebangUI image:Rosebang_YL_Hover"/>
@@ -425,8 +425,8 @@
                 </Window>
               </Window>
               <Window Type="TLBB_ButtonNULL" Name="ValentineRoseTopList_Prize_Present_Top3_Get">
-                <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,32.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.500000,-45.000000},{1.000000,-37.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,32.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.500000,-45.000000},{1.000000,-37.000000}}" />
                 <Property Name="PushedImage" Value="set:BHJS_02 image:XinFu_LQJL_Pushed"/>
                 <Property Name="NormalImage" Value="set:BHJS_02 image:XinFu_LQJL_Normal"/>
                 <Property Name="HoverImage" Value="set:BHJS_02 image:XinFu_LQJL_Hover"/>
@@ -435,26 +435,26 @@
             </Window>
           </Window>
           <Window Type="TLBB_Frame_Lace2" Name="ValentineRoseTopList_Prize_Receive_Frame">
-            <Property Name="UnifiedSize" Value="{{0.500000,-1.000000},{1.000000,0.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.500000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.500000,-1.000000},{1.000000,0.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.500000,0.000000},{0.000000,0.000000}}" />
             <Window Type="DefaultWindow" Name="ValentineRoseTopList_Prize_Receive_Top1_Client">
-              <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{1.000000,0.000000}}" />
               <Window Type="TLBB_SimpleTextRoseFrame" Name="ValentineRoseTopList_Prize_Receive_Top1_Name">
-                <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,5.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,5.000000}}" />
                 <Property Name="Text" Value="#{MGCQ_151230_146}"/>
                 <Property Name="HorzFormatting" Value="HorzCentred"/>
               </Window>
               <Window Type="DefaultWindow" Name="ValentineRoseTopList_Prize_Receive_Top1_Item_Frame">
-                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,40.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-26.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,40.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-26.000000}}" />
                 <Window Type="TLBB_ActionButton" Name="ValentineRoseTopList_Prize_Receive_Top1_Item">
-                  <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.500000,-20.000000},{0.000000,0.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.500000,-20.000000},{0.000000,0.000000}}" />
                 </Window>
                 <Window Type="TLBB_ButtonNULL" Name="ValentineRoseTopList_Prize_Receive_Top1_ItemPreview">
-                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,40.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.500000,20.000000},{0.000000,0.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,40.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.500000,20.000000},{0.000000,0.000000}}" />
                   <Property Name="PushedImage" Value="set:RosebangUI image:Rosebang_YL_Pushed"/>
                   <Property Name="NormalImage" Value="set:RosebangUI image:Rosebang_YL_Normal"/>
                   <Property Name="HoverImage" Value="set:RosebangUI image:Rosebang_YL_Hover"/>
@@ -463,8 +463,8 @@
                 </Window>
               </Window>
               <Window Type="TLBB_ButtonNULL" Name="ValentineRoseTopList_Prize_Receive_Top1_Get">
-                <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,32.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.500000,-45.000000},{1.000000,-37.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,32.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.500000,-45.000000},{1.000000,-37.000000}}" />
                 <Property Name="PushedImage" Value="set:BHJS_02 image:XinFu_LQJL_Pushed"/>
                 <Property Name="NormalImage" Value="set:BHJS_02 image:XinFu_LQJL_Normal"/>
                 <Property Name="HoverImage" Value="set:BHJS_02 image:XinFu_LQJL_Hover"/>
@@ -472,24 +472,24 @@
               </Window>
             </Window>
             <Window Type="DefaultWindow" Name="ValentineRoseTopList_Prize_Receive_Top2_Client">
-              <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{1.000000,0.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.500000,-55.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{1.000000,0.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.500000,-55.000000},{0.000000,0.000000}}" />
               <Window Type="TLBB_SimpleTextRoseFrame" Name="ValentineRoseTopList_Prize_Receive_Top2_Name">
-                <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,5.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,5.000000}}" />
                 <Property Name="Text" Value="#{MGCQ_151230_147}"/>
                 <Property Name="HorzFormatting" Value="HorzCentred"/>
               </Window>
               <Window Type="DefaultWindow" Name="ValentineRoseTopList_Prize_Receive_Top2_Item_Frame">
-                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,40.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-26.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,40.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-26.000000}}" />
                 <Window Type="TLBB_ActionButton" Name="ValentineRoseTopList_Prize_Receive_Top2_Item">
-                  <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.500000,-20.000000},{0.000000,0.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.500000,-20.000000},{0.000000,0.000000}}" />
                 </Window>
                 <Window Type="TLBB_ButtonNULL" Name="ValentineRoseTopList_Prize_Receive_Top2_ItemPreview">
-                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,40.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.500000,20.000000},{0.000000,0.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,40.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.500000,20.000000},{0.000000,0.000000}}" />
                   <Property Name="PushedImage" Value="set:RosebangUI image:Rosebang_YL_Pushed"/>
                   <Property Name="NormalImage" Value="set:RosebangUI image:Rosebang_YL_Normal"/>
                   <Property Name="HoverImage" Value="set:RosebangUI image:Rosebang_YL_Hover"/>
@@ -498,8 +498,8 @@
                 </Window>
               </Window>
               <Window Type="TLBB_ButtonNULL" Name="ValentineRoseTopList_Prize_Receive_Top2_Get">
-                <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,32.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.500000,-45.000000},{1.000000,-37.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,32.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.500000,-45.000000},{1.000000,-37.000000}}" />
                 <Property Name="PushedImage" Value="set:BHJS_02 image:XinFu_LQJL_Pushed"/>
                 <Property Name="NormalImage" Value="set:BHJS_02 image:XinFu_LQJL_Normal"/>
                 <Property Name="HoverImage" Value="set:BHJS_02 image:XinFu_LQJL_Hover"/>
@@ -507,24 +507,24 @@
               </Window>
             </Window>
             <Window Type="DefaultWindow" Name="ValentineRoseTopList_Prize_Receive_Top3_Client">
-              <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{1.000000,0.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{1.000000,-110.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{1.000000,0.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{1.000000,-110.000000},{0.000000,0.000000}}" />
               <Window Type="TLBB_SimpleTextRoseFrame" Name="ValentineRoseTopList_Prize_Receive_Top3_Name">
-                <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,5.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,5.000000}}" />
                 <Property Name="Text" Value="#{MGCQ_151230_148}"/>
                 <Property Name="HorzFormatting" Value="HorzCentred"/>
               </Window>
               <Window Type="DefaultWindow" Name="ValentineRoseTopList_Prize_Receive_Top3_Item_Frame">
-                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,40.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-26.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,40.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-26.000000}}" />
                 <Window Type="TLBB_ActionButton" Name="ValentineRoseTopList_Prize_Receive_Top3_Item">
-                  <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.500000,-20.000000},{0.000000,0.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.500000,-20.000000},{0.000000,0.000000}}" />
                 </Window>
                 <Window Type="TLBB_ButtonNULL" Name="ValentineRoseTopList_Prize_Receive_Top3_ItemPreview">
-                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,40.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.500000,20.000000},{0.000000,0.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,40.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.500000,20.000000},{0.000000,0.000000}}" />
                   <Property Name="PushedImage" Value="set:RosebangUI image:Rosebang_YL_Pushed"/>
                   <Property Name="NormalImage" Value="set:RosebangUI image:Rosebang_YL_Normal"/>
                   <Property Name="HoverImage" Value="set:RosebangUI image:Rosebang_YL_Hover"/>
@@ -533,8 +533,8 @@
                 </Window>
               </Window>
               <Window Type="TLBB_ButtonNULL" Name="ValentineRoseTopList_Prize_Receive_Top3_Get">
-                <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,32.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.500000,-45.000000},{1.000000,-37.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,32.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.500000,-45.000000},{1.000000,-37.000000}}" />
                 <Property Name="PushedImage" Value="set:BHJS_02 image:XinFu_LQJL_Pushed"/>
                 <Property Name="NormalImage" Value="set:BHJS_02 image:XinFu_LQJL_Normal"/>
                 <Property Name="HoverImage" Value="set:BHJS_02 image:XinFu_LQJL_Hover"/>
@@ -544,51 +544,51 @@
           </Window>
         </Window>
         <Window Type="DefaultWindow" Name="ValentineRoseTopList_Ranking_Prize1_Frame">
-          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,116.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-117.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,116.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-117.000000}}" />
           <Window Type="DefaultWindow" Name="ValentineRoseTopList_Prize1_Bk_Frame">
-            <Property Name="UnifiedSize" Value="{{1.000000,-2.000000},{0.000000,115.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,-2.000000},{0.000000,115.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}" />
             <Property Name="RiseOnClick" Value="False"/>
             <Window Type="TLBB_StaticImageNULL" Name="ValentineRoseTopList_Prize1_Bk_L">
-              <Property Name="UnifiedSize" Value="{{0.000000,264.000000},{0.000000,115.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,264.000000},{0.000000,115.000000}}" />
               <Property Name="Image" Value="set:RosebangUI1 image:RosebangUI_DITU_L"/>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="ValentineRoseTopList_Prize1_Bk_M">
-              <Property Name="UnifiedSize" Value="{{1.000000,-544.000000},{0.000000,115.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,264.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,-544.000000},{0.000000,115.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,264.000000},{0.000000,0.000000}}" />
               <Property Name="Image" Value="set:RosebangUI1 image:RosebangUI_DITU_M"/>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="ValentineRoseTopList_Prize1_Bk_R">
-              <Property Name="UnifiedSize" Value="{{0.000000,280.000000},{0.000000,115.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{1.000000,-280.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,280.000000},{0.000000,115.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{1.000000,-280.000000},{0.000000,0.000000}}" />
               <Property Name="Image" Value="set:RosebangUI2 image:RosebangUI_DITU_R"/>
             </Window>
           </Window>
           <Window Type="TLBB_Frame_Lace2" Name="ValentineRoseTopList_Prize1_Present_Frame">
-            <Property Name="UnifiedSize" Value="{{0.500000,-1.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.500000,-1.000000},{1.000000,0.000000}}" />
             <Window Type="DefaultWindow" Name="ValentineRoseTopList_Prize1_Present_Top1_Client">
-              <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{1.000000,0.000000}}" />
               <Window Type="TLBB_SimpleTextRoseFrame" Name="ValentineRoseTopList_Prize1_Present_Top1_Text">
-                <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,5.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,5.000000}}" />
                 <Property Name="Text" Value="#{MGCQ_151230_27}"/>
                 <Property Name="HorzFormatting" Value="HorzCentred"/>
               </Window>
               <Window Type="DefaultWindow" Name="ValentineRoseTopList_Prize1_Present_Top1_Item_Frame">
-                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,40.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-26.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,40.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-26.000000}}" />
                 <Window Type="TLBB_ActionButton" Name="ValentineRoseTopList_Prize1_Present_Top1_Item">
-                  <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.500000,-50.000000},{0.000000,0.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.500000,-50.000000},{0.000000,0.000000}}" />
                 </Window>
                 <Window Type="TLBB_ActionButton" Name="ValentineRoseTopList_Prize1_Present_Top1_Item2">
-                  <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.500000,-10.000000},{0.000000,0.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.500000,-10.000000},{0.000000,0.000000}}" />
                 </Window>
                 <Window Type="TLBB_ButtonNULL" Name="ValentineRoseTopList_Prize1_Present_Top1_ItemPreview">
-                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,40.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.500000,30.000000},{0.000000,0.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,40.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.500000,30.000000},{0.000000,0.000000}}" />
                   <Property Name="PushedImage" Value="set:RosebangUI image:Rosebang_YL_Pushed"/>
                   <Property Name="NormalImage" Value="set:RosebangUI image:Rosebang_YL_Normal"/>
                   <Property Name="HoverImage" Value="set:RosebangUI image:Rosebang_YL_Hover"/>
@@ -597,8 +597,8 @@
                 </Window>
               </Window>
               <Window Type="TLBB_ButtonNULL" Name="ValentineRoseTopList_Prize1_Present_Top1_Get">
-                <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,32.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.500000,-45.000000},{1.000000,-37.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,32.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.500000,-45.000000},{1.000000,-37.000000}}" />
                 <Property Name="PushedImage" Value="set:BHJS_02 image:XinFu_LQJL_Pushed"/>
                 <Property Name="NormalImage" Value="set:BHJS_02 image:XinFu_LQJL_Normal"/>
                 <Property Name="HoverImage" Value="set:BHJS_02 image:XinFu_LQJL_Hover"/>
@@ -606,24 +606,24 @@
               </Window>
             </Window>
             <Window Type="DefaultWindow" Name="ValentineRoseTopList_Prize1_Present_Top2_Client">
-              <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{1.000000,0.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.500000,-55.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{1.000000,0.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.500000,-55.000000},{0.000000,0.000000}}" />
               <Window Type="TLBB_SimpleTextRoseFrame" Name="ValentineRoseTopList_Prize1_Present_Top2_Text">
-                <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,5.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,5.000000}}" />
                 <Property Name="Text" Value="#{MGCQ_151230_28}"/>
                 <Property Name="HorzFormatting" Value="HorzCentred"/>
               </Window>
               <Window Type="DefaultWindow" Name="ValentineRoseTopList_Prize1_Present_Top2_Item_Frame">
-                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,40.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-26.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,40.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-26.000000}}" />
                 <Window Type="TLBB_ActionButton" Name="ValentineRoseTopList_Prize1_Present_Top2_Item">
-                  <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.500000,-20.000000},{0.000000,0.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.500000,-20.000000},{0.000000,0.000000}}" />
                 </Window>
                 <Window Type="TLBB_ButtonNULL" Name="ValentineRoseTopList_Prize1_Present_Top2_ItemPreview">
-                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,40.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.500000,20.000000},{0.000000,0.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,40.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.500000,20.000000},{0.000000,0.000000}}" />
                   <Property Name="PushedImage" Value="set:RosebangUI image:Rosebang_YL_Pushed"/>
                   <Property Name="NormalImage" Value="set:RosebangUI image:Rosebang_YL_Normal"/>
                   <Property Name="HoverImage" Value="set:RosebangUI image:Rosebang_YL_Hover"/>
@@ -632,8 +632,8 @@
                 </Window>
               </Window>
               <Window Type="TLBB_ButtonNULL" Name="ValentineRoseTopList_Prize1_Present_Top2_Get">
-                <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,32.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.500000,-45.000000},{1.000000,-37.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,32.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.500000,-45.000000},{1.000000,-37.000000}}" />
                 <Property Name="PushedImage" Value="set:BHJS_02 image:XinFu_LQJL_Pushed"/>
                 <Property Name="NormalImage" Value="set:BHJS_02 image:XinFu_LQJL_Normal"/>
                 <Property Name="HoverImage" Value="set:BHJS_02 image:XinFu_LQJL_Hover"/>
@@ -641,24 +641,24 @@
               </Window>
             </Window>
             <Window Type="DefaultWindow" Name="ValentineRoseTopList_Prize1_Present_Top3_Client">
-              <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{1.000000,0.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{1.000000,-110.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{1.000000,0.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{1.000000,-110.000000},{0.000000,0.000000}}" />
               <Window Type="TLBB_SimpleTextRoseFrame" Name="ValentineRoseTopList_Prize1_Present_Top3_Text">
-                <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,5.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,5.000000}}" />
                 <Property Name="Text" Value="#{MGCQ_151230_29}"/>
                 <Property Name="HorzFormatting" Value="HorzCentred"/>
               </Window>
               <Window Type="DefaultWindow" Name="ValentineRoseTopList_Prize1_Present_Top3_Item_Frame">
-                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,40.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-26.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,40.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-26.000000}}" />
                 <Window Type="TLBB_ActionButton" Name="ValentineRoseTopList_Prize1_Present_Top3_Item">
-                  <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.500000,-20.000000},{0.000000,0.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.500000,-20.000000},{0.000000,0.000000}}" />
                 </Window>
                 <Window Type="TLBB_ButtonNULL" Name="ValentineRoseTopList_Prize1_Present_Top3_ItemPreview">
-                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,40.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.500000,20.000000},{0.000000,0.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,40.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.500000,20.000000},{0.000000,0.000000}}" />
                   <Property Name="PushedImage" Value="set:RosebangUI image:Rosebang_YL_Pushed"/>
                   <Property Name="NormalImage" Value="set:RosebangUI image:Rosebang_YL_Normal"/>
                   <Property Name="HoverImage" Value="set:RosebangUI image:Rosebang_YL_Hover"/>
@@ -667,8 +667,8 @@
                 </Window>
               </Window>
               <Window Type="TLBB_ButtonNULL" Name="ValentineRoseTopList_Prize1_Present_Top3_Get">
-                <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,32.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.500000,-45.000000},{1.000000,-37.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,32.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.500000,-45.000000},{1.000000,-37.000000}}" />
                 <Property Name="PushedImage" Value="set:BHJS_02 image:XinFu_LQJL_Pushed"/>
                 <Property Name="NormalImage" Value="set:BHJS_02 image:XinFu_LQJL_Normal"/>
                 <Property Name="HoverImage" Value="set:BHJS_02 image:XinFu_LQJL_Hover"/>
@@ -677,30 +677,30 @@
             </Window>
           </Window>
           <Window Type="TLBB_Frame_Lace2" Name="ValentineRoseTopList_Prize1_Receive_Frame">
-            <Property Name="UnifiedSize" Value="{{0.500000,-1.000000},{1.000000,0.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.500000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.500000,-1.000000},{1.000000,0.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.500000,0.000000},{0.000000,0.000000}}" />
             <Window Type="DefaultWindow" Name="ValentineRoseTopList_Prize1_Receive_Top1_Client">
-              <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{1.000000,0.000000}}" />
               <Window Type="TLBB_SimpleTextRoseFrame" Name="ValentineRoseTopList_Prize1_Receive_Top1_Name">
-                <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,5.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,5.000000}}" />
                 <Property Name="Text" Value="#{MGCQ_151230_146}"/>
                 <Property Name="HorzFormatting" Value="HorzCentred"/>
               </Window>
               <Window Type="DefaultWindow" Name="ValentineRoseTopList_Prize1_Receive_Top1_Item_Frame">
-                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,40.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-26.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,40.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-26.000000}}" />
                 <Window Type="TLBB_ActionButton" Name="ValentineRoseTopList_Prize1_Receive_Top1_Item">
-                  <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.500000,-50.000000},{0.000000,0.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.500000,-50.000000},{0.000000,0.000000}}" />
                 </Window>
                 <Window Type="TLBB_ActionButton" Name="ValentineRoseTopList_Prize1_Receive_Top1_Item2">
-                  <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.500000,-10.000000},{0.000000,0.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.500000,-10.000000},{0.000000,0.000000}}" />
                 </Window>
                 <Window Type="TLBB_ButtonNULL" Name="ValentineRoseTopList_Prize1_Receive_Top1_ItemPreview">
-                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,40.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.500000,30.000000},{0.000000,0.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,40.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.500000,30.000000},{0.000000,0.000000}}" />
                   <Property Name="PushedImage" Value="set:RosebangUI image:Rosebang_YL_Pushed"/>
                   <Property Name="NormalImage" Value="set:RosebangUI image:Rosebang_YL_Normal"/>
                   <Property Name="HoverImage" Value="set:RosebangUI image:Rosebang_YL_Hover"/>
@@ -709,8 +709,8 @@
                 </Window>
               </Window>
               <Window Type="TLBB_ButtonNULL" Name="ValentineRoseTopList_Prize1_Receive_Top1_Get">
-                <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,32.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.500000,-45.000000},{1.000000,-37.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,32.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.500000,-45.000000},{1.000000,-37.000000}}" />
                 <Property Name="PushedImage" Value="set:BHJS_02 image:XinFu_LQJL_Pushed"/>
                 <Property Name="NormalImage" Value="set:BHJS_02 image:XinFu_LQJL_Normal"/>
                 <Property Name="HoverImage" Value="set:BHJS_02 image:XinFu_LQJL_Hover"/>
@@ -718,24 +718,24 @@
               </Window>
             </Window>
             <Window Type="DefaultWindow" Name="ValentineRoseTopList_Prize1_Receive_Top2_Client">
-              <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{1.000000,0.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.500000,-55.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{1.000000,0.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.500000,-55.000000},{0.000000,0.000000}}" />
               <Window Type="TLBB_SimpleTextRoseFrame" Name="ValentineRoseTopList_Prize1_Receive_Top2_Name">
-                <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,5.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,5.000000}}" />
                 <Property Name="Text" Value="#{MGCQ_151230_147}"/>
                 <Property Name="HorzFormatting" Value="HorzCentred"/>
               </Window>
               <Window Type="DefaultWindow" Name="ValentineRoseTopList_Prize1_Receive_Top2_Item_Frame">
-                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,40.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-26.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,40.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-26.000000}}" />
                 <Window Type="TLBB_ActionButton" Name="ValentineRoseTopList_Prize1_Receive_Top2_Item">
-                  <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.500000,-20.000000},{0.000000,0.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.500000,-20.000000},{0.000000,0.000000}}" />
                 </Window>
                 <Window Type="TLBB_ButtonNULL" Name="ValentineRoseTopList_Prize1_Receive_Top2_ItemPreview">
-                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,40.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.500000,20.000000},{0.000000,0.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,40.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.500000,20.000000},{0.000000,0.000000}}" />
                   <Property Name="PushedImage" Value="set:RosebangUI image:Rosebang_YL_Pushed"/>
                   <Property Name="NormalImage" Value="set:RosebangUI image:Rosebang_YL_Normal"/>
                   <Property Name="HoverImage" Value="set:RosebangUI image:Rosebang_YL_Hover"/>
@@ -744,8 +744,8 @@
                 </Window>
               </Window>
               <Window Type="TLBB_ButtonNULL" Name="ValentineRoseTopList_Prize1_Receive_Top2_Get">
-                <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,32.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.500000,-45.000000},{1.000000,-37.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,32.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.500000,-45.000000},{1.000000,-37.000000}}" />
                 <Property Name="PushedImage" Value="set:BHJS_02 image:XinFu_LQJL_Pushed"/>
                 <Property Name="NormalImage" Value="set:BHJS_02 image:XinFu_LQJL_Normal"/>
                 <Property Name="HoverImage" Value="set:BHJS_02 image:XinFu_LQJL_Hover"/>
@@ -753,24 +753,24 @@
               </Window>
             </Window>
             <Window Type="DefaultWindow" Name="ValentineRoseTopList_Prize1_Receive_Top3_Client">
-              <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{1.000000,0.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{1.000000,-110.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{1.000000,0.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{1.000000,-110.000000},{0.000000,0.000000}}" />
               <Window Type="TLBB_SimpleTextRoseFrame" Name="ValentineRoseTopList_Prize1_Receive_Top3_Name">
-                <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,5.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,5.000000}}" />
                 <Property Name="Text" Value="#{MGCQ_151230_148}"/>
                 <Property Name="HorzFormatting" Value="HorzCentred"/>
               </Window>
               <Window Type="DefaultWindow" Name="ValentineRoseTopList_Prize1_Receive_Top3_Item_Frame">
-                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,40.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-26.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,40.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-26.000000}}" />
                 <Window Type="TLBB_ActionButton" Name="ValentineRoseTopList_Prize1_Receive_Top3_Item">
-                  <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.500000,-20.000000},{0.000000,0.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.500000,-20.000000},{0.000000,0.000000}}" />
                 </Window>
                 <Window Type="TLBB_ButtonNULL" Name="ValentineRoseTopList_Prize1_Receive_Top3_ItemPreview">
-                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,40.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.500000,20.000000},{0.000000,0.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,40.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.500000,20.000000},{0.000000,0.000000}}" />
                   <Property Name="PushedImage" Value="set:RosebangUI image:Rosebang_YL_Pushed"/>
                   <Property Name="NormalImage" Value="set:RosebangUI image:Rosebang_YL_Normal"/>
                   <Property Name="HoverImage" Value="set:RosebangUI image:Rosebang_YL_Hover"/>
@@ -779,8 +779,8 @@
                 </Window>
               </Window>
               <Window Type="TLBB_ButtonNULL" Name="ValentineRoseTopList_Prize1_Receive_Top3_Get">
-                <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,32.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.500000,-45.000000},{1.000000,-37.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,32.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.500000,-45.000000},{1.000000,-37.000000}}" />
                 <Property Name="PushedImage" Value="set:BHJS_02 image:XinFu_LQJL_Pushed"/>
                 <Property Name="NormalImage" Value="set:BHJS_02 image:XinFu_LQJL_Normal"/>
                 <Property Name="HoverImage" Value="set:BHJS_02 image:XinFu_LQJL_Hover"/>
@@ -791,41 +791,41 @@
         </Window>
       </Window>
       <Window Type="DefaultWindow" Name="ValentineRoseTopList_Exchange_Client">
-        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-30.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,31.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-30.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,31.000000}}" />
         <Window Type="TLBB_SimpleMulitiTextFrame" Name="ValentineRoseTopList_Exchange_Info">
-          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.250000,6.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.250000,6.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,0.000000}}" />
           <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
           <Property Name="VertFormatting" Value="VertCentred"/>
           <Window Type="TLBB_ButtonNULL" Name="ValentineRoseTopList_Ranking_links1">
-            <Property Name="UnifiedSize" Value="{{1.000000,-540.000000},{1.000000,-75.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,539.000000},{0.000000,72.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,-540.000000},{1.000000,-75.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,539.000000},{0.000000,72.000000}}" />
             <Property Name="Text" Value="#{QRPHB_150113_187}"/>
             <Event Name="Clicked" Function="ValentineRoseTopList_BuyRose();" />
           </Window>
         </Window>
         <Window Type="TLBB_SimpleMulitiTextFrame" Name="ValentineRoseTopList_Exchange_GiftFrame">
-          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,230.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.300000,-16.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,230.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.300000,-16.000000}}" />
           <Window Type="TLBB_SimpleText" Name="ValentineRoseTopList_Exchange_FrameText">
-            <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,20.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,14.000000},{0.000000,5.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,14.000000},{0.000000,5.000000}}" />
             <Property Name="HorzFormatting" Value="LeftAligned"/>
             <Property Name="Text" Value="#{QRPHB_150113_112}"/>
           </Window>
           <Window Type="TLBB_SimpleText" Name="ValentineRoseTopList_ExchangeFrame_BK1">
-            <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,80.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.250000,-140.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,80.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.250000,-140.000000},{0.000000,30.000000}}" />
             <Window Type="TLBB_ActionButton" Name="ValentineRoseTopList_ExchangeFrame_BK1_Icon">
-              <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,8.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,8.000000}}" />
               <Property Name="Tooltip" Value="#{QRPHB_150113_113}"/>
               <Property Name="RiseOnClick" Value="False"/>
             </Window>
             <Window Type="TLBB_ButtonNULL" Name="ValentineRoseTopList_ExchangeFrame_BK1_Button">
-              <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,30.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{1.000000,-98.000000},{0.000000,15.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,30.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{1.000000,-98.000000},{0.000000,15.000000}}" />
               <Property Name="Tooltip" Value="#{QRPHB_150113_113}"/>
               <Property Name="PushedImage" Value="set:RosebangUI image:Rosebang_DH_Pushed"/>
               <Property Name="NormalImage" Value="set:RosebangUI image:Rosebang_DH_Normal"/>
@@ -834,25 +834,25 @@
               <Event Name="Clicked" Function="ValentineRoseTopList_Exchange_Qingrenjie_Click(1);" />
             </Window>
             <Window Type="TLBB_SimpleText" Name="ValentineRoseTopList_ExchangeFrame_BK1_Text">
-              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,60.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,60.000000}}" />
               <Property Name="HorzFormatting" Value="HorzCentred"/>
               <Property Name="Text" Value="#{QRPHB_150113_114}"/>
               <Property Name="Tooltip" Value="#{QRPHB_150113_113}"/>
             </Window>
           </Window>
           <Window Type="TLBB_SimpleText" Name="ValentineRoseTopList_ExchangeFrame_BK2">
-            <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,80.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.500000,-75.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,80.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.500000,-75.000000},{0.000000,30.000000}}" />
             <Window Type="TLBB_ActionButton" Name="ValentineRoseTopList_ExchangeFrame_BK2_Icon">
-              <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,8.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,8.000000}}" />
               <Property Name="Tooltip" Value="#{HQZS_141119_66}"/>
               <Property Name="RiseOnClick" Value="False"/>
             </Window>
             <Window Type="TLBB_ButtonNULL" Name="ValentineRoseTopList_ExchangeFrame_BK2_Button">
-              <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,30.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{1.000000,-98.000000},{0.000000,15.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,30.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{1.000000,-98.000000},{0.000000,15.000000}}" />
               <Property Name="Tooltip" Value="#{QRPHB_150113_113}"/>
               <Property Name="PushedImage" Value="set:RosebangUI image:Rosebang_DH_Pushed"/>
               <Property Name="NormalImage" Value="set:RosebangUI image:Rosebang_DH_Normal"/>
@@ -861,25 +861,25 @@
               <Event Name="Clicked" Function="ValentineRoseTopList_Exchange_Qingrenjie_Click(2);" />
             </Window>
             <Window Type="TLBB_SimpleText" Name="ValentineRoseTopList_ExchangeFrame_BK2_Text">
-              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,60.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,60.000000}}" />
               <Property Name="HorzFormatting" Value="HorzCentred"/>
               <Property Name="Text" Value="#{QRPHB_150113_114}"/>
               <Property Name="Tooltip" Value="#{QRPHB_150113_113}"/>
             </Window>
           </Window>
           <Window Type="TLBB_SimpleText" Name="ValentineRoseTopList_ExchangeFrame_BK3">
-            <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,80.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.750000,-10.000000},{0.00000,30.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,80.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.750000,-10.000000},{0.00000,30.000000}}" />
             <Window Type="TLBB_ActionButton" Name="ValentineRoseTopList_ExchangeFrame_BK3_Icon">
-              <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,8.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,8.000000}}" />
               <Property Name="Tooltip" Value="#{HQZS_141119_68}"/>
               <Property Name="RiseOnClick" Value="False"/>
             </Window>
             <Window Type="TLBB_ButtonNULL" Name="ValentineRoseTopList_ExchangeFrame_BK3_Button">
-              <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,30.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{1.000000,-98.000000},{0.000000,15.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,30.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{1.000000,-98.000000},{0.000000,15.000000}}" />
               <Property Name="Tooltip" Value="#{QRPHB_150113_113}"/>
               <Property Name="PushedImage" Value="set:RosebangUI image:Rosebang_DH_Pushed"/>
               <Property Name="NormalImage" Value="set:RosebangUI image:Rosebang_DH_Normal"/>
@@ -888,25 +888,25 @@
               <Event Name="Clicked" Function="ValentineRoseTopList_Exchange_Qingrenjie_Click(3);" />
             </Window>
             <Window Type="TLBB_SimpleText" Name="ValentineRoseTopList_ExchangeFrame_BK3_Text">
-              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,60.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,60.000000}}" />
               <Property Name="HorzFormatting" Value="HorzCentred"/>
               <Property Name="Text" Value="#{QRPHB_150113_114}"/>
               <Property Name="Tooltip" Value="#{QRPHB_150113_113}"/>
             </Window>
           </Window>
           <Window Type="TLBB_SimpleText" Name="ValentineRoseTopList_ExchangeFrame_BK4">
-            <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,80.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.250000,-140.000000},{0.000000,128.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,80.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.250000,-140.000000},{0.000000,128.000000}}" />
             <Window Type="TLBB_ActionButton" Name="ValentineRoseTopList_ExchangeFrame_BK4_Icon">
-              <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,8.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,8.000000}}" />
               <Property Name="Tooltip" Value="#{HQZS_141119_70}"/>
               <Property Name="RiseOnClick" Value="False"/>
             </Window>
             <Window Type="TLBB_ButtonNULL" Name="ValentineRoseTopList_ExchangeFrame_BK4_Button">
-              <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,30.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{1.000000,-98.000000},{0.000000,15.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,30.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{1.000000,-98.000000},{0.000000,15.000000}}" />
               <Property Name="Tooltip" Value="#{QRPHB_150113_113}"/>
               <Property Name="PushedImage" Value="set:RosebangUI image:Rosebang_DH_Pushed"/>
               <Property Name="NormalImage" Value="set:RosebangUI image:Rosebang_DH_Normal"/>
@@ -915,25 +915,25 @@
               <Event Name="Clicked" Function="ValentineRoseTopList_Exchange_Qingrenjie_Click(4);" />
             </Window>
             <Window Type="TLBB_SimpleText" Name="ValentineRoseTopList_ExchangeFrame_BK4_Text">
-              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,60.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,60.000000}}" />
               <Property Name="HorzFormatting" Value="HorzCentred"/>
               <Property Name="Text" Value="#{QRPHB_150113_114}"/>
               <Property Name="Tooltip" Value="#{QRPHB_150113_113}"/>
             </Window>
           </Window>
           <Window Type="TLBB_SimpleText" Name="ValentineRoseTopList_ExchangeFrame_BK5">
-            <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,80.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.500000,-75.000000},{0.000000,128.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,80.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.500000,-75.000000},{0.000000,128.000000}}" />
             <Window Type="TLBB_ActionButton" Name="ValentineRoseTopList_ExchangeFrame_BK5_Icon">
-              <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,8.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,8.000000}}" />
               <Property Name="Tooltip" Value="#{HQZS_141119_72}"/>
               <Property Name="RiseOnClick" Value="False"/>
             </Window>
             <Window Type="TLBB_ButtonNULL" Name="ValentineRoseTopList_ExchangeFrame_BK5_Button">
-              <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,30.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{1.000000,-98.000000},{0.000000,15.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,30.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{1.000000,-98.000000},{0.000000,15.000000}}" />
               <Property Name="Tooltip" Value="#{QRPHB_150113_113}"/>
               <Property Name="PushedImage" Value="set:RosebangUI image:Rosebang_DH_Pushed"/>
               <Property Name="NormalImage" Value="set:RosebangUI image:Rosebang_DH_Normal"/>
@@ -942,25 +942,25 @@
               <Event Name="Clicked" Function="ValentineRoseTopList_Exchange_Qingrenjie_Click(5);" />
             </Window>
             <Window Type="TLBB_SimpleText" Name="ValentineRoseTopList_ExchangeFrame_BK5_Text">
-              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,60.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,60.000000}}" />
               <Property Name="HorzFormatting" Value="HorzCentred"/>
               <Property Name="Text" Value="#{QRPHB_150113_114}"/>
               <Property Name="Tooltip" Value="#{QRPHB_150113_113}"/>
             </Window>
           </Window>
           <Window Type="TLBB_SimpleText" Name="ValentineRoseTopList_ExchangeFrame_BK6">
-            <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,80.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.750000,-10.000000},{0.000000,128.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,80.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.750000,-10.000000},{0.000000,128.000000}}" />
             <Window Type="TLBB_ActionButton" Name="ValentineRoseTopList_ExchangeFrame_BK6_Icon">
-              <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,8.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,8.000000}}" />
               <Property Name="Tooltip" Value="#{HQZS_141119_74}"/>
               <Property Name="RiseOnClick" Value="False"/>
             </Window>
             <Window Type="TLBB_ButtonNULL" Name="ValentineRoseTopList_ExchangeFrame_BK6_Button">
-              <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,30.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{1.000000,-98.000000},{0.000000,15.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,30.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{1.000000,-98.000000},{0.000000,15.000000}}" />
               <Property Name="Tooltip" Value="#{QRPHB_150113_113}"/>
               <Property Name="PushedImage" Value="set:RosebangUI image:Rosebang_DH_Pushed"/>
               <Property Name="NormalImage" Value="set:RosebangUI image:Rosebang_DH_Normal"/>
@@ -969,8 +969,8 @@
               <Event Name="Clicked" Function="ValentineRoseTopList_Exchange_Qingrenjie_Click(6);" />
             </Window>
             <Window Type="TLBB_SimpleText" Name="ValentineRoseTopList_ExchangeFrame_BK6_Text">
-              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,60.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,60.000000}}" />
               <Property Name="HorzFormatting" Value="HorzCentred"/>
               <Property Name="Text" Value="#{QRPHB_150113_114}"/>
               <Property Name="Tooltip" Value="#{QRPHB_150113_113}"/>
@@ -978,29 +978,29 @@
           </Window>
         </Window>
         <Window Type="DefaultWindow" Name="ValentineRoseTopList_Exchange_GiftFrame1">
-          <Property Name="UnifiedSize" Value="{{1.000000,-2.000000},{0.000000,130.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-148.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,-2.000000},{0.000000,130.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-148.000000}}" />
           <Window Type="TLBB_SimpleMulitiTextFrame" Name="ValentineRoseTopList_Exchange_CHDH">
-            <Property Name="UnifiedSize" Value="{{1.000000,-18.000000},{0.000000,130.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,-18.000000},{0.000000,130.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,0.000000}}" />
             <Window Type="TLBB_SimpleText" Name="ValentineRoseTopList_Exchange_Frame1Text">
-              <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,20.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,14.000000},{0.000000,5.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,20.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,14.000000},{0.000000,5.000000}}" />
               <Property Name="HorzFormatting" Value="LeftAligned"/>
               <Property Name="Text" Value="#{QRPHB_150113_185}"/>
             </Window>
             <Window Type="TLBB_SimpleText" Name="ValentineRoseTopList_ExchangeFrame1_BK1">
-              <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,80.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.030000,0.000000},{0.600000,-40.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,80.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.030000,0.000000},{0.600000,-40.000000}}" />
               <Window Type="TLBB_ActionButton" Name="ValentineRoseTopList_ExchangeFrame1_BK1_Icon">
-                <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,8.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,8.000000}}" />
                 <Property Name="Tooltip" Value="#{QRPHB_150113_113}"/>
                 <Property Name="RiseOnClick" Value="False"/>
               </Window>
               <Window Type="TLBB_ButtonNULL" Name="ValentineRoseTopList_ExchangeFrame1_BK1_Button">
-                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,30.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{1.000000,-98.000000},{0.000000,15.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,30.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{1.000000,-98.000000},{0.000000,15.000000}}" />
                 <Property Name="Tooltip" Value="#{QRPHB_150113_113}"/>
                 <Property Name="PushedImage" Value="set:RosebangUI image:Rosebang_DH_Pushed"/>
                 <Property Name="NormalImage" Value="set:RosebangUI image:Rosebang_DH_Normal"/>
@@ -1009,25 +1009,25 @@
                 <Event Name="Clicked" Function="ValentineRoseTopList_Exchange_Chiqingyu_Click(1);" />
               </Window>
               <Window Type="TLBB_SimpleText" Name="ValentineRoseTopList_ExchangeFrame1_BK1_Text">
-                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,60.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,60.000000}}" />
                 <Property Name="HorzFormatting" Value="HorzCentred"/>
                 <Property Name="Text" Value="#{QRPHB_150113_119}"/>
                 <Property Name="Tooltip" Value="#{QRPHB_150113_113}"/>
               </Window>
             </Window>
             <Window Type="TLBB_SimpleText" Name="ValentineRoseTopList_ExchangeFrame1_BK2">
-              <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,80.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.270000,0.000000},{0.600000,-40.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,80.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.270000,0.000000},{0.600000,-40.000000}}" />
               <Window Type="TLBB_ActionButton" Name="ValentineRoseTopList_ExchangeFrame1_BK2_Icon">
-                <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,8.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,8.000000}}" />
                 <Property Name="Tooltip" Value="#{HQZS_141119_66}"/>
                 <Property Name="RiseOnClick" Value="False"/>
               </Window>
               <Window Type="TLBB_ButtonNULL" Name="ValentineRoseTopList_ExchangeFrame1_BK2_Button">
-                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,30.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{1.000000,-98.000000},{0.000000,15.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,30.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{1.000000,-98.000000},{0.000000,15.000000}}" />
                 <Property Name="Tooltip" Value="#{QRPHB_150113_113}"/>
                 <Property Name="PushedImage" Value="set:RosebangUI image:Rosebang_DH_Pushed"/>
                 <Property Name="NormalImage" Value="set:RosebangUI image:Rosebang_DH_Normal"/>
@@ -1036,25 +1036,25 @@
                 <Event Name="Clicked" Function="ValentineRoseTopList_Exchange_Chiqingyu_Click(2);" />
               </Window>
               <Window Type="TLBB_SimpleText" Name="ValentineRoseTopList_ExchangeFrame1_BK2_Text">
-                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,60.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,60.000000}}" />
                 <Property Name="HorzFormatting" Value="HorzCentred"/>
                 <Property Name="Text" Value="#{QRPHB_150113_119}"/>
                 <Property Name="Tooltip" Value="#{QRPHB_150113_113}"/>
               </Window>
             </Window>
             <Window Type="TLBB_SimpleText" Name="ValentineRoseTopList_ExchangeFrame1_BK3">
-              <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,80.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.510000,0.000000},{0.600000,-40.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,80.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.510000,0.000000},{0.600000,-40.000000}}" />
               <Window Type="TLBB_ActionButton" Name="ValentineRoseTopList_ExchangeFrame1_BK3_Icon">
-                <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,8.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,8.000000}}" />
                 <Property Name="Tooltip" Value="#{HQZS_141119_68}"/>
                 <Property Name="RiseOnClick" Value="False"/>
               </Window>
               <Window Type="TLBB_ButtonNULL" Name="ValentineRoseTopList_ExchangeFrame1_BK3_Button">
-                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,30.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{1.000000,-98.000000},{0.000000,15.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,30.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{1.000000,-98.000000},{0.000000,15.000000}}" />
                 <Property Name="Tooltip" Value="#{QRPHB_150113_113}"/>
                 <Property Name="PushedImage" Value="set:RosebangUI image:Rosebang_DH_Pushed"/>
                 <Property Name="NormalImage" Value="set:RosebangUI image:Rosebang_DH_Normal"/>
@@ -1063,25 +1063,25 @@
                 <Event Name="Clicked" Function="ValentineRoseTopList_Exchange_Chiqingyu_Click(3);" />
               </Window>
               <Window Type="TLBB_SimpleText" Name="ValentineRoseTopList_ExchangeFrame1_BK3_Text">
-                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,60.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,60.000000}}" />
                 <Property Name="HorzFormatting" Value="HorzCentred"/>
                 <Property Name="Text" Value="#{QRPHB_150113_119}"/>
                 <Property Name="Tooltip" Value="#{QRPHB_150113_113}"/>
               </Window>
             </Window>
             <Window Type="TLBB_SimpleText" Name="ValentineRoseTopList_ExchangeFrame1_BK4">
-              <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,80.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.030000,466.500000},{0.600000,-40.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,80.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.030000,466.500000},{0.600000,-40.000000}}" />
               <Window Type="TLBB_ActionButton" Name="ValentineRoseTopList_ExchangeFrame1_BK4_Icon">
-                <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,8.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,8.000000}}" />
                 <Property Name="Tooltip" Value="#{HQZS_141119_70}"/>
                 <Property Name="RiseOnClick" Value="False"/>
               </Window>
               <Window Type="TLBB_ButtonNULL" Name="ValentineRoseTopList_ExchangeFrame1_BK4_Button">
-                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,30.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{1.000000,-98.000000},{0.000000,15.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,30.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{1.000000,-98.000000},{0.000000,15.000000}}" />
                 <Property Name="Tooltip" Value="#{QRPHB_150113_113}"/>
                 <Property Name="PushedImage" Value="set:RosebangUI image:Rosebang_DH_Pushed"/>
                 <Property Name="NormalImage" Value="set:RosebangUI image:Rosebang_DH_Normal"/>
@@ -1090,8 +1090,8 @@
                 <Event Name="Clicked" Function="ValentineRoseTopList_Exchange_Chiqingyu_Click(4);" />
               </Window>
               <Window Type="TLBB_SimpleText" Name="ValentineRoseTopList_ExchangeFrame1_BK4_Text">
-                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,60.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,60.000000}}" />
                 <Property Name="HorzFormatting" Value="HorzCentred"/>
                 <Property Name="Text" Value="#{QRPHB_150113_119}"/>
                 <Property Name="Tooltip" Value="#{QRPHB_150113_113}"/>

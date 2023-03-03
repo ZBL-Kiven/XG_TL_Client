@@ -2,11 +2,11 @@
 <GUILayout>
   <Window Type="TLBB_MainFrame1" Name="PetSoul_ZhuanHua_Frame">
     <Property Name="UnifiedPosition" Value="{{0.5,-128},{0.5,-178}}" />
-    <Property Name="UnifiedSize" Value="{{0.000000,310.000000},{0.000000,228.000000}}"/>
+    <Property Name="UnifiedSize" Value="{{0.000000,310.000000},{0.000000,228.000000}}" />
     <Event Name="Hidden" Function="PetSoul_ZhuanHua_OnHiden();" />
     <Window Type="TLBB_DragTitle" Name="PetSoul_ZhuanHua_DragTitle">
       <Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
-      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}" />
       <Property Name="DragTarget" Value="PetSoul_ZhuanHua_Frame" />
       <Window Type="TLBB_SimpleText" Name="PetSoul_ZhuanHua_Title">
         <Property Name="Position" Value="x:0.0 y:0.0" />
@@ -19,81 +19,81 @@
       </Window>
     </Window>
     <Window Type="TLBB_ButtonHelp" Name="PetSoul_ZhuanHua_Help">
-      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}" />
       <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
       <Property Name="Text" Value="TLBB_ButtonHelp" />
       <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*PetEquipSuitDepart&quot;);' />
     </Window>
     <Window Type="TLBB_ButtonClose" Name="PetSoul_ZhuanHua_Close">
-      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}" />
       <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
       <Property Name="Text" Value="TLBB_ButtonClose" />
       <Event Name="Clicked" Function="this:Hide();" />
     </Window>
     <Window Type="DefaultWindow" Name="PetSoul_ZhuanHua_Frame_Client">
       <Property Name="AbsolutePosition" Value="x:7.000000 y:36.000000" />
-      <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-55.000000}" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-55.000000}}" />
       <Window Type="TLBB_SimpleMulitiTextFrame" Name="PetSoul_ZhuanHua_Info">
-        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,80.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000000,0.000000},{0.0000000,0.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,80.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000000,0.000000},{0.0000000,0.000000}}" />
         <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
         <Property Name="RiseOnClick" Value="False" />
         <Property Name="Text" Value="#{SHXT_20211230_251}"/>
         <Property Name="TextColor" Value="FFFFF263" />
       </Window>
       <Window Type="TLBB_SimpleText" Name="PetSoul_ZhuanHua_Info2">
-        <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,84.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,84.000000}}" />
         <Property Name="TextColor" Value="FFFFF263"/>
         <Property Name="Text" Value="#{SHXT_20211230_109}"/>
         <Property Name="RiseOnClick" Value="False"/>
         <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
       </Window>
       <Window Type="TLBB_ActionButton" Name="PetSoul_ZhuanHua_Icon1">
-        <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,104.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,104.000000}}" />
         <Property Name="DragAcceptName" Value="W15" />
         <Property Name="DraggingEnabled" Value="True" />
         <Event Name="RBClicked" Function="PetSoul_ZhuanHua_Resume(1);" />
       </Window>
       <Window Type="TLBB_ActionButton" Name="PetSoul_ZhuanHua_Icon2">
-        <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,104.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,104.000000}}" />
         <Property Name="DragAcceptName" Value="W16" />
         <Property Name="DraggingEnabled" Value="True" />
         <Event Name="RBClicked" Function="PetSoul_ZhuanHua_Resume(2);" />
       </Window>
       <Window Type="TLBB_StaticImageNULL" Name="PetSoul_ZhuanHua_JianTou">
-        <Property Name="UnifiedSize" Value="{{0.000000,33.000000},{0.000000,33.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,110.000000},{0.000000,105.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,33.000000},{0.000000,33.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,110.000000},{0.000000,105.000000}}" />
         <Property Name="RiseOnClick" Value="False"/>
         <Property Name="Image" Value="set:Buttons image:SceneMap_Right_Normal"/>
       </Window>
       <Window Type="TLBB_SimpleText" Name="PetSoul_ZhuanHua_Info3">
-        <Property Name="UnifiedSize" Value="{{0.000000,136.000000},{0.000000,20.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,146.000000},{0.000000,86.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,136.000000},{0.000000,20.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,146.000000},{0.000000,86.000000}}" />
         <Property Name="TextColor" Value="FFFFF263"/>
         <Property Name="Text" Value="#{SHXT_20211230_252}"/>
         <Property Name="RiseOnClick" Value="False"/>
         <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
       </Window>
       <Window Type="TLBB_ComboList" Name="PetSoul_ZhuanHua_Bind">
-        <Property Name="UnifiedSize" Value="{{0.000000,108.000000},{0.000000,20.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,166.000000},{0.000000,110.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,108.000000},{0.000000,20.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,166.000000},{0.000000,110.000000}}" />
         <Event Name="ListSelectionAccepted" Function="PetSoul_ZhuanHua_DstChanged();" />
       </Window>
       <Window Type="TLBB_Frame_Lace5" Name="PetSoul_ZhuanHua_Blank">
-        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}" />
-        <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}}" />
+        <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}}" />
       </Window>
       <Window Type="TLBB_ButtonCommon" Name="PetSoul_ZhuanHua_OK">
-        <Property Name="UnifiedPosition" Value="{{1.000000,-80.000000},{1.000000,-20.000000}" />
+        <Property Name="UnifiedPosition" Value="{{1.000000,-80.000000},{1.000000,-20.000000}}" />
         <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
         <Property Name="Text" Value="#{SHXT_20211230_61}" />
         <Event Name="Clicked" Function="PetSoul_ZhuanHua_Buttons_Clicked();" />
       </Window>
       <Window Type="TLBB_ButtonCommon" Name="PetSoul_ZhuanHua_Cancel">
-        <Property Name="UnifiedPosition" Value="{{1.000000,-40.000000},{1.000000,-20.000000}" />
+        <Property Name="UnifiedPosition" Value="{{1.000000,-40.000000},{1.000000,-20.000000}}" />
         <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
         <Property Name="Text" Value="#{INTERFACE_XML_542}" />
         <Event Name="Clicked" Function="this:Hide();" />

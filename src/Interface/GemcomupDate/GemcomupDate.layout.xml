@@ -1,12 +1,12 @@
 <?xml version="1.0" ?>
 <GUILayout>
   <Window Type="TLBB_MainFrame1" Name="GemcomupDate_Frame">
-    <Property Name="UnifiedSize" Value="{{0.000000,350.000000},{0.000000,420.000000}}"/>
-    <Property Name="UnifiedPosition" Value="{{0.500000,-158.000000},{0.500000,-210.000000}}"/>
+    <Property Name="UnifiedSize" Value="{{0.000000,350.000000},{0.000000,420.000000}}" />
+    <Property Name="UnifiedPosition" Value="{{0.500000,-158.000000},{0.500000,-210.000000}}" />
     <Event Name="Hidden" Function="GemcomupDate_OnHidden();" />
     <Window Type="TLBB_DragTitle" Name="GemcomupDate_DragTitle">
       <Property Name="AbsolutePosition" Value="x:40.000000 y:11.000000" />
-      <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}}" />
       <Property Name="DragTarget" Value="GemcomupDate_Frame" />
       <Property Name="Font" Value="YouYuan11.25" />
       <Property Name="HorzFormatting" Value="HorzCentred" />
@@ -14,79 +14,79 @@
       <Property Name="Text" Value="#{BSZH_130220_05}" />
     </Window>
     <Window Type="TLBB_ButtonClose" Name="GemcomupDate_Close">
-      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}" />
       <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
       <Event Name="Clicked" Function="this:Hide();"/>
     </Window>
     <Window Type="TLBB_ButtonHelp" Name="GemcomupDate_Help">
-      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}" />
       <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
     </Window>
     <Window Type="TLBB_ButtonFenYe2" Name="GemcomupDate_FenYe1">
-      <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,22.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,30.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,22.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,30.000000}}" />
       <Property Name="Text" Value="#{BSLCYH_130529_125}"/>
       <Property Name="Selected" Value="True"/>
       <Property Name="CheckMode" Value="1"/>
       <Event Name="MouseLButtonDown" Function="GemcomupDate_ChangeTabIndex(1);"/>
     </Window>
     <Window Type="TLBB_ButtonFenYe2" Name="GemcomupDate_FenYe2">
-      <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,22.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,93.000000},{0.000000,30.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,22.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,93.000000},{0.000000,30.000000}}" />
       <Property Name="Text" Value="#{BSLCYH_130529_126}"/>
       <Property Name="Selected" Value="False"/>
       <Property Name="CheckMode" Value="1"/>
       <Event Name="MouseLButtonDown" Function="GemcomupDate_ChangeTabIndex(2);"/>
     </Window>
     <Window Type="TLBB_ButtonFenYe2" Name="GemcomupDate_FenYe3">
-      <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,22.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,136.000000},{0.000000,30.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,22.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,136.000000},{0.000000,30.000000}}" />
       <Property Name="Text" Value="#{BSLCYH_130529_127}"/>
       <Property Name="Selected" Value="False"/>
       <Property Name="CheckMode" Value="1"/>
       <Event Name="MouseLButtonDown" Function="GemcomupDate_ChangeTabIndex(3);"/>
     </Window>
     <Window Type="TLBB_ButtonFenYe2" Name="GemcomupDate_FenYe4">
-      <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,22.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,179.000000},{0.000000,30.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,22.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,179.000000},{0.000000,30.000000}}" />
       <Property Name="Text" Value="#{BSLCYH_130529_128}"/>
       <Property Name="Selected" Value="False"/>
       <Property Name="CheckMode" Value="1"/>
       <Event Name="MouseLButtonDown" Function="GemcomupDate_ChangeTabIndex(4);"/>
     </Window>
     <Window Type="TLBB_ButtonFenYe2" Name="GemcomupDate_FenYe5">
-      <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,22.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,222.000000},{0.000000,30.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,22.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,222.000000},{0.000000,30.000000}}" />
       <Property Name="Text" Value="#{BSLCYH_130529_129}"/>
       <Property Name="Selected" Value="False"/>
       <Property Name="CheckMode" Value="1"/>
       <Event Name="MouseLButtonDown" Function="GemcomupDate_ChangeTabIndex(5);"/>
     </Window>
     <Window Type="TLBB_ButtonFenYe2" Name="GemcomupDate_FenYe6">
-      <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,22.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,30.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,22.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,30.000000}}" />
       <Property Name="Text" Value="#{BSSJ_140816_14}"/>
       <Property Name="Selected" Value="False"/>
       <Property Name="CheckMode" Value="1"/>
       <Event Name="MouseLButtonDown" Function="GemcomupDate_ChangeTabIndex(6);"/>
     </Window>
     <Window Type="DefaultWindow" Name="GemcomupDate_Frame_Client">
-      <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-60.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,51.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-60.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,51.000000}}" />
       <Property Name="RiseOnClick" Value="False" />
       <Window Type="TLBB_SimpleMulitiTextFrame" Name="GemcomupDate_Info">
-        <Property Name="UnifiedSize" Value="{{1.000000,-5.000000},{0.000000,120.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,-5.000000},{0.000000,120.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}" />
         <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
         <Property Name="RiseOnClick" Value="False" />
         <Property Name="Text" Value="#{BSZH_130220_04}" />
       </Window>
       <Window Type="DefaultWindow" Name="GemcomupDate_Special">
-        <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,45.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.500000,-44.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,45.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.500000,-44.000000}}" />
         <Window Type="TLBB_SimpleText" Name="GemcomupDate_Static2">
-          <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{0.000000,20.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,13.000000},{0.000000,12.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,13.000000},{0.000000,12.000000}}" />
           <Property Name="HorzFormatting" Value="HorzCentred" />
           <Property Name="RiseOnClick" Value="False" />
           <Property Name="Text" Value="#{BSZH_130220_06}" />
@@ -94,46 +94,46 @@
           <Property Name="VertFormatting" Value="VertCentred" />
         </Window>
         <Window Type="TLBB_ActionButton" Name="GemcomupDate_Special_Button">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,35.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,235.000000},{0.000000,5.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,35.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,235.000000},{0.000000,5.000000}}" />
           <Property Name="DragAcceptName" Value="G139" />
           <Property Name="DraggingEnabled" Value="True" />
           <Event Name="RBClicked" Function="GemcomupDate_SpecialBTN_RBClicked();" />
         </Window>
       </Window>
       <Window Type="DefaultWindow" Name="GemcomupDate_ShengJi">
-        <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,40.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,186.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,40.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,186.000000}}" />
         <Window Type="TLBB_SimpleText" Name="GemcomupDate_Static1">
-          <Property Name="UnifiedSize" Value="{{1.000000,-137.000000},{0.000000,20.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,14.000000},{0.000000,10.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,-137.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,14.000000},{0.000000,10.000000}}" />
           <Property Name="HorzFormatting" Value="HorzCentred" />
           <Property Name="RiseOnClick" Value="False" />
           <Property Name="Text" Value="#{BSZH_130220_07}" />
         </Window>
         <Window Type="TLBB_ActionButton" Name="GemcomupDate_Space1">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,140.000000},{0.000000,2.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,140.000000},{0.000000,2.000000}}" />
           <Property Name="Empty" Value="False"/>
           <Event Name="Clicked" Function="GemcomupDate_Selected(1);"/>
           <Property Name="Visible" Value="False"/>
         </Window>
         <Window Type="TLBB_ActionButton" Name="GemcomupDate_Space2">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,178.000000},{0.000000,2.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,178.000000},{0.000000,2.000000}}" />
           <Property Name="Empty" Value="False"/>
           <Event Name="Clicked" Function="GemcomupDate_Selected(2);"/>
           <Property Name="Visible" Value="False"/>
         </Window>
         <Window Type="TLBB_ActionButton" Name="GemcomupDate_Space3">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,235.000000},{0.000000,2.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,235.000000},{0.000000,2.000000}}" />
           <Property Name="Empty" Value="False"/>
            <Event Name="RBClicked" Function="GemcomupDate_SpecialBTN_RBClicked();" />
         </Window>
         <Window Type="TLBB_ActionButton" Name="GemcomupDate_Space4">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,254.000000},{0.000000,2.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,254.000000},{0.000000,2.000000}}" />
           <Property Name="Empty" Value="False"/>
           <Event Name="Clicked" Function="GemcomupDate_Selected(4);"/>
           <Property Name="Visible" Value="False"/>
@@ -141,8 +141,8 @@
       </Window>
       
       <Window Type="DefaultWindow" Name="GemcomupDate_JingShiXZ">
-        <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,30.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-108.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,30.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-108.000000}}" />
         <Window Type="TLBB_ComboList" Name="GemcomupDate_Space5_YearAnimal">
 		  <Property Name="AbsolutePosition" Value="x:80 y:0" />
 		  <Property Name="AbsoluteSize" Value="w:135 h:20" />
@@ -151,85 +151,85 @@
 		 </Window>
         
         <Window Type="TLBB_ButtonCheck" Name="GemcomupDate_Mjingshi_Button">
-          <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,14.000000},{0.000000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,14.000000},{0.000000,0.000000}}" />
           <Property Name="CheckMode" Value="1"/>
           <Property Name="Tooltip" Value=""/>
           <Event Name="MouseLButtonDown" Function="GemcomupDate_DoubleGem_Clicked(1);"/>
            <Property Name="Visible" Value="False"/>
         </Window>
         <Window Type="TLBB_SimpleText" Name="GemcomupDate_Mjingshi_TXT">
-          <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,7.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,7.000000}}" />
           <Property Name="Text" Value="#{BSSJ_140816_09}" />
            <Property Name="Visible" Value="False"/>
         </Window>
         <Window Type="TLBB_ButtonCheck" Name="GemcomupDate_Jingshi_Button">
-          <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,151.000000},{0.000000,11.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,151.000000},{0.000000,11.000000}}" />
           <Property Name="CheckMode" Value="1"/>
           <Property Name="Tooltip" Value=""/>
           <Event Name="MouseLButtonDown" Function="GemcomupDate_DoubleGem_Clicked(2);"/>
            <Property Name="Visible" Value="False"/>
         </Window>
         <Window Type="TLBB_SimpleText" Name="GemcomupDate_Jingshi_TXT">
-          <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,168.000000},{0.000000,7.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,168.000000},{0.000000,7.000000}}" />
           <Property Name="Text" Value="#{BSSJ_140816_10}" />
            <Property Name="Visible" Value="False"/>
         </Window>
        
       </Window>
       <Window Type="TLBB_SimpleMulitiTextFrame" Name="GemcomupDate_NeedYuanbao_Text">
-        <Property Name="UnifiedPosition" Value="{{0.05,0.000000},{1.000000,-77.000000}" />
-        <Property Name="UnifiedSize" Value="{{0.9,0.000000},{0.000000,22.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.05,0.000000},{1.000000,-77.000000}}" />
+        <Property Name="UnifiedSize" Value="{{0.9,0.000000},{0.000000,22.000000}}" />
         <Property Name="HorzFormatting" Value="LeftAligned" />
         <Property Name="VertFormatting" Value="VertCentred" />
         <Property Name="Text" Value="#{BSSJ_140816_11}" />
         <Property Name="RiseOnClick" Value="False" />
         <Window Type="TLBB_SimpleText" Name="GemcomupDate_NeedYuanbao">
-          <Property Name="UnifiedSize" Value="{{1.000000,-6.000000},{0.000000,20.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,-6.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
           <Property Name="HorzFormatting" Value="RightAligned" />
           <Property Name="Text" Value="500" />
         </Window>
       </Window>
       <Window Type="TLBB_SimpleMulitiTextFrame" Name="GemcomupDate_SelfYuanbao_Text">
-        <Property Name="UnifiedPosition" Value="{{0.05,0.000000},{1.000000,-55.000000}" />
-        <Property Name="UnifiedSize" Value="{{0.9,0.000000},{0.000000,22.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.05,0.000000},{1.000000,-55.000000}}" />
+        <Property Name="UnifiedSize" Value="{{0.9,0.000000},{0.000000,22.000000}}" />
         <Property Name="HorzFormatting" Value="LeftAligned" />
         <Property Name="VertFormatting" Value="VertCentred" />
         <Property Name="Text" Value="#{BSSJ_140816_12}" />
         <Property Name="RiseOnClick" Value="False" />
         <Window Type="TLBB_SimpleText" Name="GemcomupDate_SelfYuanbao">
-          <Property Name="UnifiedSize" Value="{{1.000000,-6.000000},{0.000000,20.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,-6.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
           <Property Name="HorzFormatting" Value="RightAligned" />
           <Property Name="Text" Value="500" />
         </Window>
       </Window>
       
       <Window Type="TLBB_ButtonCheck" Name="GemcomupDate_YuanBaoPay_Button">
-        <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{1.000000,-26.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{1.000000,-26.000000}}" />
         <Property Name="Tooltip" Value="#{BSSJ_140816_57}"/>
         <Event Name="MouseLButtonDown" Function="GemcomupDate_querengoumai_Clicked();"/>
         <Property Name="Visible" Value="False"/>
       </Window>
       <Window Type="TLBB_SimpleText" Name="GemcomupDate_YuanBaoPay_TXT">
-        <Property Name="UnifiedSize" Value="{{0.000000,106.000000},{0.000000,20.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,24.000000},{1.000000,-30.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,106.000000},{0.000000,20.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,24.000000},{1.000000,-30.000000}}" />
         <Property Name="Text" Value="#{BSSJ_140816_13}" />
         <Property Name="Visible" Value="False"/>
       </Window>
       <Window Type="TLBB_ButtonCommon" Name="GemcomupDate_OK">
-        <Property Name="UnifiedPosition" Value="{{1.000000,-123.000000},{1.000000,-30.000000}" />
+        <Property Name="UnifiedPosition" Value="{{1.000000,-123.000000},{1.000000,-30.000000}}" />
         <Property Name="AbsoluteSize" Value="w:60.000000 h:20.000000" />
         <Property Name="Text" Value="#{BSSJ_140816_14}" />
         <Event Name="Clicked" Function="GemcomupDate_Submit();" />
       </Window>
       <Window Type="TLBB_ButtonCommon" Name="GemcomupDate_Cancel">
-        <Property Name="UnifiedPosition" Value="{{1.000000,-63.000000},{1.000000,-30.000000}" />
+        <Property Name="UnifiedPosition" Value="{{1.000000,-63.000000},{1.000000,-30.000000}}" />
         <Property Name="AbsoluteSize" Value="w:60.000000 h:20.000000" />
         <Property Name="Text" Value="#{BSSJ_140816_15}" />
         <Event Name="Clicked" Function="this:Hide();" />

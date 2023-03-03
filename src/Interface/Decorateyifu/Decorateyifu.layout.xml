@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" ?>
 <GUILayout>
   <Window Type="TLBB_MainFrame1" Name="Decorateyifu_Frame">
-    <Property Name="UnifiedPosition" Value="{{0.500000,-282.000000},{0.500000,-170.000000}" />
+    <Property Name="UnifiedPosition" Value="{{0.500000,-282.000000},{0.500000,-170.000000}}" />
     <Property Name="AbsoluteSize" Value="w:564 h:370" />
     <Event Name="Hidden" Function="Decorateyifu_OnHiden();" />
     <Window Type="TLBB_DragTitle" Name="Decorateyifu_DragTitle">
       <Property Name="AbsolutePosition" Value="x:40.000000 y:10.000000" />
-      <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}}" />
       <Property Name="DragTarget" Value="Decorateyifu_Frame" />
       <Property Name="Font" Value="YouYuan11.25" />
       <Property Name="HorzFormatting" Value="HorzCentred" />
@@ -14,91 +14,91 @@
       <Property Name="Text" Value="#gFF0FA0时装染色" />
     </Window>	
         <Window Type="TLBB_ButtonHelp" Name="Decorateyifu_Help">
-            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}" />
             <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
             <Property Name="Text" Value="TLBB_ButtonHelp" />
             <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*Decorateyifu&quot;);' />
         </Window>
         <Window Type="TLBB_ButtonClose" Name="Decorateyifu_Close">
-            <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+            <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}" />
             <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
             <Property Name="Text" Value="TLBB_ButtonClose" />
             <Event Name="Clicked" Function="Decorateyifu_OnHiden();" />
         </Window>	
     <Window Type="TLBB_FramePlayerOther" Name="Decorateyifu_Frame_LeftClient">
       <Property Name="AbsolutePosition" Value="x:8.000000 y:30.000000" />
-      <Property Name="UnifiedSize" Value="{{0.000000,260.000000},{1.000000,-62.000000}" />
+      <Property Name="UnifiedSize" Value="{{0.000000,260.000000},{1.000000,-62.000000}}" />
       <Window Type="TLBB_MeshWindow" Name="Decorateyifu_FakeObject">
         <Property Name="Position" Value="x:0.07 y:0.05" />
         <Property Name="Size" Value="w:0.86 h:0.82" />
         <Property Name="MouseHollow" Value="True" />
       </Window>
       <Window Type="TLBB_ButtonTurnLeft" Name="Decorateyifu_Model_TurnLeft">
-        <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{1.000000,-55.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{1.000000,-55.000000}}" />
         <Property Name="AbsoluteSize" Value="w:25.000000 h:25.000000" />
         <Event Name="MouseButtonDown" Function="Decorateyifu_TurnLeft(1);" />
         <Event Name="MouseButtonUp" Function="Decorateyifu_TurnLeft(0);" />
       </Window>
       <Window Type="TLBB_ButtonTurnRight" Name="Decorateyifu_Model_TurnRight">
-        <Property Name="UnifiedPosition" Value="{{1.000000,-40.000000},{1.000000,-55.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-40.000000},{1.000000,-55.000000}}" />
         <Property Name="AbsoluteSize" Value="w:25.000000 h:25.000000" />
         <Event Name="MouseButtonDown" Function="Decorateyifu_TurnRight(1);" />
         <Event Name="MouseButtonUp" Function="Decorateyifu_TurnRight(0);" />
       </Window>
       <Window Type="TLBB_SimpleText" Name="Decorateyifu_Name">
-        <Property Name="UnifiedSize" Value="{{0.000000,65.000000},{0.000000,20.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{1.000000,-28.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,65.000000},{0.000000,20.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{1.000000,-28.000000}}" />
         <Property Name="HorzFormatting" Value="WordWrapCentred"/>
         <Property Name="Text" Value="#cfff263选择风格："/>
       </Window>
       <Window Type="TLBB_ComboList" Name="Decorateyifu_ALLChoice">
-        <Property Name="UnifiedSize" Value="{{0.000000,160.000000},{0.000000,20.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,85.000000},{1.000000,-30.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,160.000000},{0.000000,20.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,85.000000},{1.000000,-30.000000}}" />
         <Property Name="Text" Value="选择自动染色"/>
         <Property Name="AlwaysOnTop" Value="True"/>
         <Event Name="ListSelectionAccepted" Function="Decorateyifu_Level_Changed();"/>
       </Window>
       <Window Type="TLBB_StaticImageNULL" Name="Decorateyifu_ALLChoice_Pic">
-        <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,225.000000},{1.000000,-30.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,225.000000},{1.000000,-30.000000}}" />
         <Property Name="Image" Value="set:Button3 image:ComboListButton_Normal"/>
         <Property Name="Tooltip" Value="#Y请放入需要染色的时装"/>
       </Window>
     </Window>
     <Window Type="DefaultWindow" Name="Decorateyifu_Frame_RightClient">
-      <Property Name="UnifiedSize" Value="{{1.000000,-277.000000},{1.000000,-63.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,269.000000},{0.000000,30.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-277.000000},{1.000000,-63.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,269.000000},{0.000000,30.000000}}" />
       <Window Type="TLBB_SimpleMulitiTextFrame" Name="Decorateyifu_Explian">
-        <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,3.000000}}"/>
-        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.540000,-2.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,3.000000}}" />
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.540000,-2.000000}}" />
         <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
         <Property Name="RiseOnClick" Value="False" />
         <Property Name="Text" Value="#{SZPR_091023_10}" />
       </Window>
       <Window Type="TLBB_SimpleText" Name="Decorateyifu_Info">
-        <Property Name="UnifiedPosition" Value="{{0.120000,0.000000},{0.660000,-10.000000}}"/>
-        <Property Name="UnifiedSize" Value="{{0.000000,160.000000},{0.000000,20.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.120000,0.000000},{0.660000,-10.000000}}" />
+        <Property Name="UnifiedSize" Value="{{0.000000,160.000000},{0.000000,20.000000}}" />
         <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
         <Property Name="RiseOnClick" Value="False" />
         <Property Name="Text" Value="#Y请放入需要染色的时装：" />
       </Window>
       <Window Type="TLBB_ActionButton" Name="Decorateyifu_Object">
-        <Property Name="UnifiedPosition" Value="{{0.750000,0.000000},{0.660000,-18.000000}}"/>
-        <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.750000,0.000000},{0.660000,-18.000000}}" />
+        <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
         <Property Name="DragAcceptName" Value="I14" />
         <Property Name="DraggingEnabled" Value="True" />
         <Event Name="RBClicked" Function="Decorateyifu_Resume_Equip();"/>
       </Window>
       <Window Type="TLBB_SimpleMulitiTextFrame" Name="Decorateyifu_Money_Text">
-        <Property Name="UnifiedPosition" Value="{{0.0000,0.000000},{1.000000,-65.000000}" />
-        <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,22.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.0000,0.000000},{1.000000,-65.000000}}" />
+        <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,22.000000}}" />
         <Property Name="Text" Value="#cfff263需要花费：" />
         <Property Name="HorzFormatting" Value="LeftAligned" />
         <Property Name="VertFormatting" Value="VertCentred" />
         <Property Name="RiseOnClick" Value="False" />
         <Window Type="TLBB_Money" Name="Decorateyifu_DemandMoney">
-          <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}" />
-          <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}}" />
+          <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}}" />
           <Property Name="MoneyNumber" Value="0" />
           <Property Name="HorzFormatting" Value="RightAligned" />
           <Property Name="AlignFix" Value="True" />
@@ -108,15 +108,15 @@
         </Window>
       </Window>
       <Window Type="TLBB_SimpleMulitiTextFrame" Name="Decorateyifu_Jiaozi_Text">
-        <Property Name="UnifiedPosition" Value="{{00.0000,0.000000},{1.000000,-43.000000}" />
-        <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,22.000000}" />
+        <Property Name="UnifiedPosition" Value="{{00.0000,0.000000},{1.000000,-43.000000}}" />
+        <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,22.000000}}" />
         <Property Name="Text" Value="#cfff263拥有交子：" />
         <Property Name="HorzFormatting" Value="LeftAligned" />
         <Property Name="VertFormatting" Value="VertCentred" />
         <Property Name="RiseOnClick" Value="False" />
         <Window Type="TLBB_Money" Name="Decorateyifu_SelfJiaozi">
-          <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}" />
-          <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}}" />
+          <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}}" />
           <Property Name="MoneyNumber" Value="0" />
           <Property Name="HorzFormatting" Value="RightAligned" />
           <Property Name="AlignFix" Value="True" />
@@ -126,28 +126,28 @@
         </Window>
       </Window>
       <Window Type="TLBB_SimpleMulitiTextFrame" Name="Decorateyifu_SelfMoney_Text">
-        <Property Name="UnifiedPosition" Value="{{0.0000,0.000000},{1.000000,-21.000000}" />
-        <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,22.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.0000,0.000000},{1.000000,-21.000000}}" />
+        <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,22.000000}}" />
         <Property Name="Text" Value="#cfff263拥有金币：" />
         <Property Name="HorzFormatting" Value="LeftAligned" />
         <Property Name="VertFormatting" Value="VertCentred" />
         <Property Name="RiseOnClick" Value="False" />
         <Window Type="TLBB_Money" Name="Decorateyifu_SelfMoney">
-          <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}" />
-          <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}}" />
+          <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}}" />
           <Property Name="HorzFormatting" Value="RightAligned" />
           <Property Name="MoneyNumber" Value="0" />
         </Window>
       </Window>
     </Window>
     <Window Type="TLBB_ButtonCommon" Name="Decorateyifu_OK">
-      <Property Name="UnifiedPosition" Value="{{1.000000,-110.000000},{1.000000,-34.000000}" />
+      <Property Name="UnifiedPosition" Value="{{1.000000,-110.000000},{1.000000,-34.000000}}" />
       <Property Name="AbsoluteSize" Value="w:50.000000 h:20.000000" />
       <Property Name="Text" Value="染色" />
       <Event Name="Clicked" Function="Decorateyifu_OnOK();" />
     </Window>
     <Window Type="TLBB_ButtonCommon" Name="Decorateyifu_Cancel">
-      <Property Name="UnifiedPosition" Value="{{1.000000,-60.000000},{1.000000,-34.000000}" />
+      <Property Name="UnifiedPosition" Value="{{1.000000,-60.000000},{1.000000,-34.000000}}" />
       <Property Name="AbsoluteSize" Value="w:50.000000 h:20.000000" />
       <Property Name="Text" Value="取消" />
       <Event Name="Clicked" Function="Decorateyifu_OnHiden();" />

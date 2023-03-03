@@ -1,8 +1,8 @@
 <?xml version="1.0" ?>
 <GUILayout>
 	<Window Type="DefaultWindow" Name="MiniMap_Frame">
-    <Property Name="UnifiedSize" Value="{{0.000000,294.000000},{0.000000,260.000000}}"/>
-    <Property Name="UnifiedPosition" Value="{{1.000000,-294.000000},{0.000000,0.000000}}"/>
+    <Property Name="UnifiedSize" Value="{{0.000000,294.000000},{0.000000,260.000000}}" />
+    <Property Name="UnifiedPosition" Value="{{1.000000,-294.000000},{0.000000,0.000000}}" />
 		<Property Name="MouseLButtonHollow" Value="true" />
 		<Property Name="MouseRButtonHollow" Value="true" />
 		<Window Type="TLBB_StaticImageNULL" Name="MiniMap_Background_Time">
@@ -184,7 +184,7 @@
 			</Window>
 		</Window>
 		<Window Type="DefaultWindow" Name="MiniMap_Background_Frame">
-      <Property Name="UnifiedPosition" Value="{{1.000000,-213.000000},{0.000000,0.000000}" />
+      <Property Name="UnifiedPosition" Value="{{1.000000,-213.000000},{0.000000,0.000000}}" />
 			<Property Name="AbsoluteSize" Value="w:213.000000 h:239.000000" />
       <Property Name="RiseOnClick" Value="False" />
       <Window Type="TLBB_ButtonNULL" Name="MiniMap_AutoSearch">
@@ -198,7 +198,7 @@
       </Window>
 
 			<Window Type="TLBB_StaticImageNULL" Name="MiniMap_Background_Map">
-				<Property Name="UnifiedPosition" Value="{{1.000000,-176.000000},{0.000000,20.000000}" />
+				<Property Name="UnifiedPosition" Value="{{1.000000,-176.000000},{0.000000,20.000000}}" />
 				<Property Name="AbsoluteSize" Value="w:176.000000 h:195.000000" />
 				<Property Name="Image" Value="set:MiniMap image:Minimap_Area" />
 				<Property Name="RiseOnClick" Value="False" />
@@ -288,8 +288,8 @@
         <Event Name="Clicked" Function="MiniMap_KeFu();" />
       </Window>
       <Window Type="TLBB_ButtonNULL" Name="MiniMap_Zidongzhandou">
-        <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,30.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.000000,110.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,30.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.000000,110.000000}}" />
         <Property Name="PushedImage" Value="set:Logon01 image:ZiDongZhanDOU_Lv"/>
         <Property Name="NormalImage" Value="set:Logon01 image:ZiDongZhanDOU_Nomal"/>
         <Property Name="HoverImage" Value="set:Logon01 image:ZiDongZhanDOU_LvLiang"/>
@@ -308,7 +308,7 @@
 				<Event Name="Clicked" Function="ToggleLargeMap();" />
 			</Window>
 			<Window Type="TLBB_MapImage" Name="MiniMap_PK_Mode">
-				<Property Name="UnifiedPosition" Value="{{0.000000,152.000000},{0.000000,69.000000}" />
+				<Property Name="UnifiedPosition" Value="{{0.000000,152.000000},{0.000000,69.000000}}" />
 				<Property Name="AbsoluteSize" Value="w:32.000000 h:32.000000" />
 				<Property Name="Image" Value="set:Button4 image:ModeWar" />
 				<Property Name="ChildImage" Value="name:War set:Button4 image:ModeWar" />
@@ -514,14 +514,14 @@
  <!-- fangyuan end 2007-12-10-->
 
 			<Window Type="TLBB_StaticImageNULL" Name="MiniMap_EquipEndurance">
-				<Property Name="UnifiedPosition" Value="{{0.000000,35.000000},{1.000000,-45.000000}" />
+				<Property Name="UnifiedPosition" Value="{{0.000000,35.000000},{1.000000,-45.000000}}" />
 				<Property Name="AbsoluteSize" Value="w:32.000000 h:44.000000" />
 				<Property Name="Image" Value="set:Buttons image:EquipEndurance" />
 				<Property Name="RiseOnClick" Value="False" />
 			</Window>
       <!-- <Window Type="TLBB_ButtonNULL" Name="MiniMap_Huoyuehaoli"> -->
-        <!-- <Property Name="UnifiedSize" Value="{{0.000000,31.000000},{0.000000,32.000000}}"/> -->
-        <!-- <Property Name="UnifiedPosition" Value="{{0.000000,180.000000},{0.000000,132.000000}}"/> -->
+        <!-- <Property Name="UnifiedSize" Value="{{0.000000,31.000000},{0.000000,32.000000}}" /> -->
+        <!-- <Property Name="UnifiedPosition" Value="{{0.000000,180.000000},{0.000000,132.000000}}" /> -->
         <!-- <Property Name="PushedImage" Value="set:CommonFrame15 image:Huoyuehaoli_Pushed"/> -->
         <!-- <Property Name="NormalImage" Value="set:CommonFrame15 image:Huoyuehaoli_Normal"/> -->
         <!-- <Property Name="HoverImage" Value="set:CommonFrame15 image:Huoyuehaoli_Hover"/> -->
@@ -541,8 +541,8 @@
         <!-- <Property Name="Tooltip" Value="#{FJYX_110426_142}" /> -->
         <!-- <Event Name="Clicked" Function="MinMap_Mail_ClickFlash();" /> -->
         <!-- <Window Type="TLBB_Animate" Name="MiniMap_MailAnimate"> -->
-          <!-- <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}" /> -->
-          <!-- <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}" /> -->
+          <!-- <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" /> -->
+          <!-- <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" /> -->
           <!-- <Property Name="Animate" Value="MinMap_Mail_Flash" /> -->
           <!-- <Property Name="MouseHollow" Value="true" /> -->
           <!-- <Property Name="MouseMoveHollow" Value="true" /> -->
@@ -553,12 +553,12 @@
       
     </Window>
     <Window Type="TLBB_ButtonHelp" Name="MiniMap_Help">
-      <Property Name="UnifiedPosition" Value="{{1.000000,-66.000000},{0.000000,18.000000}" />
+      <Property Name="UnifiedPosition" Value="{{1.000000,-66.000000},{0.000000,18.000000}}" />
       <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
       <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*MiniMap&quot;);' />
     </Window>
     <Window Type="TLBB_ButtonNULL" Name="MiniMap_CloseButtons">
-      <Property Name="UnifiedPosition" Value="{{1.000000,-51.000000},{0.000000,18.000000}" />
+      <Property Name="UnifiedPosition" Value="{{1.000000,-51.000000},{0.000000,18.000000}}" />
       <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
       <Property Name="NormalImage" Value="set:CommonStaticImage image:MinimapZoomIn_Normal" />
       <Property Name="HoverImage" Value="set:CommonStaticImage image:MinimapZoomIn_Hover" />
@@ -567,7 +567,7 @@
       <Event Name="Clicked" Function="Minimap_Min();" />
     </Window>
     <Window Type="TLBB_ButtonNULL" Name="MiniMap_OpenButtons">
-      <Property Name="UnifiedPosition" Value="{{1.000000,-51.000000},{0.000000,18.000000}" />
+      <Property Name="UnifiedPosition" Value="{{1.000000,-51.000000},{0.000000,18.000000}}" />
       <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
       <Property Name="NormalImage" Value="set:CommonStaticImage image:MinimapZoomOut_Normal" />
       <Property Name="HoverImage" Value="set:CommonStaticImage image:MinimapZoomOut_Hover" />
@@ -577,8 +577,8 @@
     </Window>
 
   	<Window Type="TLBB_SimpleMulitiTextFrame" Name="MiniMap_SafeTime_Frame">
-			<Property Name="UnifiedPosition" Value="{{1.0,-194.000000},{0.000000,239.000000}" />
-			<Property Name="UnifiedSize" Value="{{0.0,150.000000},{0.000000,20.000000}" />
+			<Property Name="UnifiedPosition" Value="{{1.0,-194.000000},{0.000000,239.000000}}" />
+			<Property Name="UnifiedSize" Value="{{0.0,150.000000},{0.000000,20.000000}}" />
 			<Property Name="HorzFormatting" Value="LeftAligned" />
 			<Property Name="VertFormatting" Value="VertCentred" />
 			<Property Name="TextColor" Value="FFFFF263" />
@@ -586,8 +586,8 @@
 			<Property Name="Tooltip" Value="#{INTERFACE_XML_MINI_01}" />
       <Event Name="MouseClick" Function="MiniMap_OpenSafeTimeDlg();" />
       <Window Type="TLBB_Animate" Name="MiniMap_SafeTimeAnimate">
-	      <Property Name="UnifiedPosition" Value="{{0.0,-1.000000},{0.000000,-1.000000}" />
-	      <Property Name="UnifiedSize" Value="{{0.0,151.000000},{0.000000,21.000000}" />
+	      <Property Name="UnifiedPosition" Value="{{0.0,-1.000000},{0.000000,-1.000000}}" />
+	      <Property Name="UnifiedSize" Value="{{0.0,151.000000},{0.000000,21.000000}}" />
 	    	<Property Name="Animate" Value="AccountSafe_Time_Flash" />
 	      <Property Name="MouseHollow" Value="true" />
 	      <Property Name="MouseMoveHollow" Value="true" />
@@ -595,8 +595,8 @@
 	      <Property Name="MouseRButtonHollow" Value="true" />
     </Window>
 			<Window Type="TLBB_StopWatch" Name="MiniMap_SafeTime_StopWatch">
-				<Property Name="UnifiedPosition" Value="{{0.0,84.000000},{0.000000,0.000000}" />
-				<Property Name="UnifiedSize" Value="{{0.0,60.000000},{0.000000,20.000000}" />
+				<Property Name="UnifiedPosition" Value="{{0.0,84.000000},{0.000000,0.000000}}" />
+				<Property Name="UnifiedSize" Value="{{0.0,60.000000},{0.000000,20.000000}}" />
 				<Property Name="HorzFormatting" Value="HorzCentred" />
 				<Property Name="VertFormatting" Value="VertCentred" />
         <Property Name="MouseHollow" Value="true" />
@@ -611,8 +611,8 @@
       <!-- <Property Name="Tooltip" Value="#{BUGFK_XML_1}"/> -->
     <!-- </Window> -->
     <Window Type="TLBB_ButtonNULL" Name="MiniMap_XinShouNew">
-      <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{1.000000,-247.000000},{1.000000,-49.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{1.000000,-247.000000},{1.000000,-49.000000}}" />
       <Property Name="Tooltip" Value="点击查看七日豪礼活动！"/>
       <Property Name="PushedImage" Value="set:Seven3 image:Seven3_BtnPush"/>
       <Property Name="NormalImage" Value="set:Seven3 image:Seven3_BtnNormal"/>
@@ -632,8 +632,8 @@
       </Window>
     </Window>
       <Window Type="TLBB_ButtonNULL" Name="MiniMap_FeelFeedBack">
-        <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,70.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{1.000000,-256.000000},{1.000000,-70.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,70.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{1.000000,-256.000000},{1.000000,-70.000000}}" />
         <Property Name="Tooltip" Value="#{MYGEHK_20110_29}"/>
         <Property Name="PushedImage" Value="set:Thanks2 image:Thanks_Pushed"/>
         <Property Name="NormalImage" Value="set:Thanks2 image:Thanks_Normal"/>
@@ -648,8 +648,8 @@
         </Window>
       </Window>	
     <Window Type="TLBB_ButtonNULL" Name="MiniMap_PetSoulAwards">
-      <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{1.000000,-247.000000},{1.000000,-147.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{1.000000,-247.000000},{1.000000,-147.000000}}" />
       <Property Name="Tooltip" Value="#{XYSHFC_20211229_100}"/>
       <Property Name="PushedImage" Value="set:KJRK_3 image:PS_FHLPush"/>
       <Property Name="NormalImage" Value="set:KJRK_3 image:PS_FHLNormal"/>
@@ -658,7 +658,7 @@
       <Property Name="AlwaysOnTop" Value="True"/>
       <Event Name="Clicked" Function="MiniMap_PetSoulAwards_Clicked()"/>
       <Window Type="TLBB_Animate" Name="MiniMap_PetSoulAwards_Animate">
-        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
         <Property Name="MouseRButtonHollow" Value="True"/>
         <Property Name="MouseMoveHollow" Value="True"/>
         <Property Name="MouseLButtonHollow" Value="True"/>

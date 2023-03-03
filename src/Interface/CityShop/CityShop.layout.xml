@@ -4,18 +4,18 @@
         <Property Name="UnifiedPosition" Value="{{0.5,-175},{0.12,0}}" />
         <Property Name="AbsoluteSize" Value="w:350 h:370" />
         <Window Type="TLBB_ButtonHelp" Name="CityShop_Help">
-            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}" />
             <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
             <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*CityShop&quot;);' />
         </Window>
         <Window Type="TLBB_ButtonClose" Name="CityShop_Close">
-            <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+            <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}" />
             <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
             <Event Name="Clicked" Function="this:Hide();" />
         </Window>
         <Window Type="TLBB_DragTitle" Name="CityShop_DragTitle">
             <Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
-            <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+            <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}" />
             <Property Name="DragTarget" Value="CityShop_Frame" />
             <Property Name="Text" Value="#{INTERFACE_XML_28}" />
             <Property Name="Font" Value="YouYuan11.25" />
@@ -24,10 +24,10 @@
         </Window>
         <Window Type="DefaultWindow" Name="CityShop_Background_Frame1">
             <Property Name="AbsolutePosition" Value="x:7.000000 y:36.000000" />
-            <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-55.000000}" />
+            <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-55.000000}}" />
             <Window Type="DefaultWindow" Name="CityShop_Action_Set">
                 <Property Name="Position" Value="x:0.023000000 y:0.02" />
-                <Property Name="UnifiedSize" Value="{{0.96,0.000000},{0.73,0.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.96,0.000000},{0.73,0.000000}}" />
                 <Window Type="TLBB_ActionButton" Name="CityShop_Item1">
                     <Property Name="AbsolutePosition" Value="x:0.0 y:1.0" />
                     <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
@@ -356,13 +356,13 @@
             </Window>
             <Window Type="TLBB_ButtonCommon2" Name="CityShop_UpPage">
                 <Property Name="Position" Value="x:0.15 y:0.77" />
-                <Property Name="UnifiedSize" Value="{{0.2000000,0.000000},{0.000000,20.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.2000000,0.000000},{0.000000,20.000000}}" />
                 <Event Name="Clicked" Function="City_Shop_UpPage();" />
                 <Property Name="Text" Value="#{INTERFACE_XML_499}" />
             </Window>
             <Window Type="TLBB_SimpleMulitiTextFrame" Name="CityShop_CurrentlyPage">
                 <Property Name="Position" Value="x:0.4 y:0.77" />
-                <Property Name="UnifiedSize" Value="{{0.2000000,0.000000},{0.000000,20.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.2000000,0.000000},{0.000000,20.000000}}" />
                 <Property Name="Text" Value="999/999" />
                 <Property Name="HorzFormatting" Value="HorzCentred" />
                 <Property Name="VertFormatting" Value="VertCentred" />
@@ -371,7 +371,7 @@
             </Window>
             <Window Type="TLBB_ButtonCommon2" Name="CityShop_DownPage">
                 <Property Name="Position" Value="x:0.65 y:0.77" />
-                <Property Name="UnifiedSize" Value="{{0.2000000,0.000000},{0.000000,20.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.2000000,0.000000},{0.000000,20.000000}}" />
                 <Event Name="Clicked" Function="City_Shop_DownPage();" />
                 <Property Name="Text" Value="#{INTERFACE_XML_325}" />
             </Window>
@@ -379,7 +379,7 @@
                 <Property Name="Position" Value="x:0.0 y:0.855" />
                 <Property Name="Size" Value="w:1.0 h:0.145" />
                 <Window Type="TLBB_StaticImageNULL" Name="CityShop_Repair_bk">
-                    <Property Name="UnifiedPosition" Value="{{0.0,12.000000},{0.0,6.000000}" />
+                    <Property Name="UnifiedPosition" Value="{{0.0,12.000000},{0.0,6.000000}}" />
                     <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
                     <Property Name="Image" Value="set:CommonItem image:ActionBK" />
                     <Window Type="TLBB_ButtonNULL" Name="CityShop_Repair">
@@ -393,7 +393,7 @@
                     </Window>
                 </Window>
                 <Window Type="TLBB_StaticImageNULL" Name="CityShop_AllRepair1_bk">
-                    <Property Name="UnifiedPosition" Value="{{0.174061,0.000000},{0.0,6.000000}" />
+                    <Property Name="UnifiedPosition" Value="{{0.174061,0.000000},{0.0,6.000000}}" />
                     <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
                     <Property Name="Image" Value="set:CommonItem image:ActionBK" />
                     <Window Type="TLBB_ButtonNULL" Name="CityShop_AllRepair">
@@ -407,7 +407,7 @@
                     </Window>
                 </Window>
                 <Window Type="TLBB_StaticImageNULL" Name="CityShop_Callback1_Frame">
-                    <Property Name="UnifiedPosition" Value="{{0.307167,0.000000},{0.0,6.000000}" />
+                    <Property Name="UnifiedPosition" Value="{{0.307167,0.000000},{0.0,6.000000}}" />
                     <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
                     <Property Name="RiseOnClick" Value="False" />
                     <Window Type="TLBB_ActionButton" Name="CityShop_Callback1">
@@ -417,7 +417,7 @@
                     </Window>
                 </Window>
                 <Window Type="TLBB_StaticImageNULL" Name="CityShop_Callback2_Frame">
-                    <Property Name="UnifiedPosition" Value="{{0.440273,0.000000},{0.0,6.000000}" />
+                    <Property Name="UnifiedPosition" Value="{{0.440273,0.000000},{0.0,6.000000}}" />
                     <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
                     <Property Name="RiseOnClick" Value="False" />
                     <Window Type="TLBB_ActionButton" Name="CityShop_Callback2">
@@ -427,7 +427,7 @@
                     </Window>
                 </Window>
                 <Window Type="TLBB_StaticImageNULL" Name="CityShop_Callback3_Frame">
-                    <Property Name="UnifiedPosition" Value="{{0.569966,0.000000},{0.0,6.000000}" />
+                    <Property Name="UnifiedPosition" Value="{{0.569966,0.000000},{0.0,6.000000}}" />
                     <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
                     <Property Name="RiseOnClick" Value="False" />
                     <Window Type="TLBB_ActionButton" Name="CityShop_Callback3">
@@ -437,7 +437,7 @@
                     </Window>
                 </Window>
                 <Window Type="TLBB_StaticImageNULL" Name="CityShop_Callback4_Frame">
-                    <Property Name="UnifiedPosition" Value="{{0.703011,0.000000},{0.0,6.000000}" />
+                    <Property Name="UnifiedPosition" Value="{{0.703011,0.000000},{0.0,6.000000}}" />
                     <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
                     <Property Name="RiseOnClick" Value="False" />
                     <Window Type="TLBB_ActionButton" Name="CityShop_Callback4">
@@ -447,7 +447,7 @@
                     </Window>
                 </Window>
                 <Window Type="TLBB_StaticImageNULL" Name="CityShop_Callback5_Frame">
-                    <Property Name="UnifiedPosition" Value="{{0.836177,0.000000},{0.0,6.000000}" />
+                    <Property Name="UnifiedPosition" Value="{{0.836177,0.000000},{0.0,6.000000}}" />
                     <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
                     <Property Name="RiseOnClick" Value="False" />
                     <Window Type="TLBB_ActionButton" Name="CityShop_Callback5">

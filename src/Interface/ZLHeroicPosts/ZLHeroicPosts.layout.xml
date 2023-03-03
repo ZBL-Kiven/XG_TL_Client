@@ -1,44 +1,44 @@
 <?xml version="1.0" ?>
 <GUILayout>
     <Window Type="DefaultWindow" Name="ZLHeroicPosts_Frame">
-      <Property Name="UnifiedSize" Value="{{0.000000,532.000000},{0.000000,327.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.500000,-266.000000},{0.500000,-163.500000}}"/>
+      <Property Name="UnifiedSize" Value="{{0.000000,532.000000},{0.000000,327.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.500000,-266.000000},{0.500000,-163.500000}}" />
       <Property Name="AlwaysOnTop" Value="True"/>
         <Event Name="Hidden" Function="ZLHeroicPosts_Frame_OnHiden();" />
         <Window Type="TLBB_DragTitle" Name="ZLHeroicPosts_DragTitle">
             <Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
-            <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+            <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}" />
             <Property Name="DragTarget" Value="ZLHeroicPosts_Frame" />
         </Window>
         <Window Type="TLBB_ButtonClose" Name="ZLHeroicPosts_Close">
-          <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{1.000000,-28.000000},{0.000000,10.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{1.000000,-28.000000},{0.000000,10.000000}}" />
           <Property Name="AlwaysOnTop" Value="True"/>
             <Event Name="Clicked" Function="ZLHeroicPosts_Hide();" />
         </Window>
       <Window Type="DefaultWindow" Name="ZLHeroicPosts_background_Frame">
-        <Property Name="UnifiedSize" Value="{{0.000000,532.000000},{0.000000,327.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,532.000000},{0.000000,327.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
         <Property Name="RiseOnClick" Value="False"/>
         <Window Type="TLBB_StaticImageNULL" Name="ZLHeroicPosts_background1">
-          <Property Name="UnifiedSize" Value="{{0.000000,512.000000},{0.000000,327.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,512.000000},{0.000000,327.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
           <Property Name="RiseOnClick" Value="False"/>
           <Property Name="Image" Value="set:ZLLetter3 image:ZLLetter_baitie1"/>
         </Window>
         <Window Type="TLBB_StaticImageNULL" Name="ZLHeroicPosts_background2">
-          <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,327.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,512.000000},{0.000000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,327.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,512.000000},{0.000000,0.000000}}" />
           <Property Name="RiseOnClick" Value="False"/>
           <Property Name="Image" Value="set:ZLLetter2 image:ZLLetter_baitie2"/>
         </Window>
       </Window>
         <Window Type="DefaultWindow" Name="ZLHeroicPosts_Function_Frame">
             <Property Name="AbsolutePosition" Value="x:6.000000 y:36.000000" />
-            <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-55.000000}" />
+            <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-55.000000}}" />
             <Window Type="TLBB_ButtonCommon" Name="ZLHeroicPosts_GotoBtn">
-              <Property Name="UnifiedSize" Value="{{0.000000,72.000000},{0.000000,26.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{1.000000,-86.000000},{1.000000,-32.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,72.000000},{0.000000,26.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{1.000000,-86.000000},{1.000000,-32.000000}}" />
               <Property Name="AlwaysOnTop" Value="True"/>
               <Property Name="Text" Value="已阅" />
                 <Event Name="Clicked" Function="ZLHeroicPosts_Clicked()" />

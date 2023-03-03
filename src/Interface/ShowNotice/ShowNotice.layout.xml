@@ -5,7 +5,7 @@
       <Property Name="AbsoluteSize" Value="w:540 h:350" />
       <Window Type="TLBB_DragTitle" Name="ShowNotice_DragTitle">
          <Property Name="AbsolutePosition" Value="x:40.000000 y:2.000000" />
-         <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}" />
+         <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}}" />
          <Property Name="DragTarget" Value="ShowNotice_Frame" />
          <Property Name="Font" Value="YouYuan11.25" />
          <Property Name="HorzFormatting" Value="HorzCentred" />
@@ -13,19 +13,19 @@
          <Property Name="Text" Value="#{XCZB_160105_3}" />
        </Window>
       <Window Type="TLBB_ButtonClose" Name="ShowNotice_Close">
-        <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,4.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,4.000000}}" />
         <Event Name="Clicked" Function="ShowNotice_Quit_Clicked()" />
       </Window>
       <Window Type="TLBB_ButtonHelp" Name="ShowNotice_Help">
-        <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}" />
       </Window>
       <Window Type="DefaultWindow" Name="ShowNotice_Function_Frame">
         <Property Name="AbsolutePosition" Value="x:9.000000 y:33.000000" />
-        <Property Name="UnifiedSize" Value="{{1.000000,-15.000000},{1.000000,-42.000000}" />
+        <Property Name="UnifiedSize" Value="{{1.000000,-15.000000},{1.000000,-42.000000}}" />
         <Window Type="TLBB_MultiColumnList" Name="ShowNotice_InfoList">
-          <Property Name="UnifiedPosition" Value="{{0.0000000,0.000000},{0.000000,0.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.0000000,0.000000},{0.000000,0.000000}}" />
           <Property Name="Size" Value="w:0.49 h:1" />
           <Property Name="ColumnHeader" Value="text:#{XCZB_160105_4} width:0.23 id:0" />
           <Property Name="ColumnHeader" Value="text:#{XCZB_160105_5} width:0.77 id:1" />
@@ -36,35 +36,35 @@
           <Event Name="SelectionChanged" Function="ShowNotice_OnSelectionChanged()" />
         </Window>
         <Window Type="TLBB_Frame_Lace1" Name="ShowNotice_Content">
-          <Property Name="UnifiedPosition" Value="{{0.4950000,0.000000},{0.000000,0.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.4950000,0.000000},{0.000000,0.000000}}" />
           <Property Name="Size" Value="w:0.5 h:1" />
           <Property Name="RiseOnClick" Value="False" />
           <Window Type="TLBB_Frame_Lace3" Name="ShowNotice_PlayerHead_Frame">
-            <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,50.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,6.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,50.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,6.000000}}" />
             <Window Type="TLBB_StaticImageNULL" Name="ShowNotice_PlayerHead">
-              <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}" />
               <Property Name="RiseOnClick" Value="False"/>
             </Window>
           </Window>
           <Window Type="TLBB_SimpleMulitiTextFrame" Name="ShowNotice_Name">
-            <Property Name="UnifiedSize" Value="{{1.000000,-68.000000},{0.000000,24.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,6.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,-68.000000},{0.000000,24.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,6.000000}}" />
             <Property Name="Text" Value="啦啦啦啦啦啦啦啦啦啦啦啦"/>
           </Window>
           <Window Type="TLBB_SimpleMulitiTextFrame" Name="ShowNotice_Value">
-            <Property Name="UnifiedSize" Value="{{1.000000,-68.000000},{0.000000,24.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,32.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,-68.000000},{0.000000,24.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,32.000000}}" />
             <Property Name="Text" Value="#{XCZB_160105_6}"/>
           </Window>
           <Window Type="TLBB_ComplexWindow" Name="ShowNotice_Desc" >
-            <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,145.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,60.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,145.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,60.000000}}" />
           </Window>
           <Window Type="TLBB_ButtonCommon9" Name="ShowNotice_Enter">
-            <Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,33.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.500000,-90.000000},{1.000000,-48.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,33.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.500000,-90.000000},{1.000000,-48.000000}}" />
             <Property Name="Text" Value="#{XCZB_160105_56}"/>
             <Property Name="Tooltip" Value="#{XCZB_160105_8}"/>
             <Property Name="Font" Value="YouYuan11.25"/>

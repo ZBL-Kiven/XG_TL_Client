@@ -1,15 +1,15 @@
 <?xml version="1.0" ?>
 <GUILayout>
   <Window Type="TLBB_HeroFrame01" Name="ZhouHuoYue_FrameFull">
-    <Property Name="UnifiedSize" Value="{{0.000000,808.000000},{0.000000,530.000000}}"/>
-    <Property Name="UnifiedPosition" Value="{{0.500000,-404.000000},{0.500000,-260.000000}}"/>
+    <Property Name="UnifiedSize" Value="{{0.000000,808.000000},{0.000000,530.000000}}" />
+    <Property Name="UnifiedPosition" Value="{{0.500000,-404.000000},{0.500000,-260.000000}}" />
     <Event Name="Hidden" Function="ZhouHuoYue_Close()"/>
       <Window Type="TLBB_HeroTitle01" Name="ZhouHuoYue_DragTitleBK">
-        <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,30.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.500000,-150.000000},{0.000000,-2.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,30.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.500000,-150.000000},{0.000000,-2.000000}}" />
         <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_DragTitle_Image">
-          <Property Name="UnifiedSize" Value="{{0.000000,102.000000},{0.000000,18.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.500000,-51.000000},{0.000000,7.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,102.000000},{0.000000,18.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.500000,-51.000000},{0.000000,7.000000}}" />
           <Property Name="MouseRButtonHollow" Value="True"/>
           <Property Name="MouseMoveHollow" Value="True"/>
           <Property Name="MouseLButtonHollow" Value="True"/>
@@ -18,26 +18,26 @@
         </Window>
       </Window>
       <Window Type="TLBB_DragTitle" Name="ZhouHuoYue_DragTitle">
-        <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{0.000000,20.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,3.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{0.000000,20.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,3.000000}}" />
         <Property Name="DragTarget" Value="ZhouHuoYue_FrameFull" />
       </Window>
       <Window Type="TLBB_ButtonClose2" Name="ZhouHuoYue_Close">
-        <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,14.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{1.000000,-28.000000},{0.000000,8.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,14.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{1.000000,-28.000000},{0.000000,8.000000}}" />
         <Event Name="Clicked" Function="ZhouHuoYue_Close();" />
       </Window>
       <Window Type="TLBB_HeroLace01" Name="ZhouHuoYue_Client">
-        <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{1.000000,-32.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,28.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{1.000000,-32.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,28.000000}}" />
         <Property Name="RiseOnClick" Value="False"/>
         <Window Type="DefaultWindow" Name="ZhouHuoYue_HuoyueBK">
-          <Property Name="UnifiedSize" Value="{{0.000000,782.000000},{0.000000,168.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.500000,-390.000000},{0.000000,4.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,782.000000},{0.000000,168.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.500000,-390.000000},{0.000000,4.000000}}" />
           <Property Name="AlwaysOnTop" Value="True"/>
           <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_HuoyueBK_L">
-            <Property Name="UnifiedSize" Value="{{0.000000,512.000000},{0.000000,168.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,512.000000},{0.000000,168.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
             <Property Name="MouseRButtonHollow" Value="True"/>
             <Property Name="MouseMoveHollow" Value="True"/>
             <Property Name="MouseLButtonHollow" Value="True"/>
@@ -45,8 +45,8 @@
             <Property Name="Image" Value="set:ZhouHuoYue image:ZhouHuoYue_TopBK_L"/>
           </Window>
           <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_HuoyueBK_R">
-            <Property Name="UnifiedSize" Value="{{0.000000,269.000000},{0.000000,168.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,512.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,269.000000},{0.000000,168.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,512.000000},{0.000000,0.000000}}" />
             <Property Name="MouseRButtonHollow" Value="True"/>
             <Property Name="MouseMoveHollow" Value="True"/>
             <Property Name="MouseLButtonHollow" Value="True"/>
@@ -54,30 +54,30 @@
             <Property Name="Image" Value="set:ZhouHuoYue image:ZhouHuoYue_TopBK_R"/>
           </Window>
           <Window Type="DefaultWindow" Name="ZhouHuoYue_Progress">
-            <Property Name="UnifiedSize" Value="{{0.000000,544.000000},{0.000000,20.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,128.000000},{0.000000,117.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,544.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,128.000000},{0.000000,117.000000}}" />
             <Property Name="MouseRButtonHollow" Value="True"/>
             <Property Name="MouseMoveHollow" Value="True"/>
             <Property Name="MouseLButtonHollow" Value="True"/>
             <Property Name="MouseHollow" Value="True"/>
             <Property Name="RiseOnClick" Value="False"/>
             <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_EXP_BK">
-              <Property Name="UnifiedSize" Value="{{0.000000,544.000000},{0.000000,20.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,544.000000},{0.000000,20.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseLButtonHollow" Value="True"/>
               <Property Name="MouseHollow" Value="True"/>
               <Property Name="Image" Value="set:ZLHeroMeeting image:EXPBK"/>
             </Window>
             <Window Type="DefaultWindow" Name="ZhouHuoYue_EXPTip">
-              <Property Name="UnifiedSize" Value="{{0.000000,544.000000},{0.000000,20.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,544.000000},{0.000000,20.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
               <Property Name="Tooltip" Value="#{ZHY_210301_05}"/>
               <Property Name="AlwaysOnTop" Value="True"/>
             </Window>
             <Window Type="TLBB_ProgressPropertyZhouHuoYue" Name="ZhouHuoYue_EXP">
-              <Property Name="UnifiedSize" Value="{{0.000000,534.000000},{0.000000,10.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,534.000000},{0.000000,10.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}" />
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
               <Property Name="MouseLButtonHollow" Value="True"/>
@@ -87,55 +87,55 @@
             </Window>
           </Window>
           <Window Type="DefaultWindow" Name="ZhouHuoYue_StageLock">
-            <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,20.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,371.000000},{0.000000,117.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,371.000000},{0.000000,117.000000}}" />
             <Property Name="MouseRButtonHollow" Value="True"/>
             <Property Name="MouseMoveHollow" Value="True"/>
             <Property Name="MouseLButtonHollow" Value="True"/>
             <Property Name="MouseHollow" Value="True"/>
             <Window Type="DefaultWindow" Name="ZhouHuoYue_Stages">
-              <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,20.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,20.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
               <Property Name="MouseLButtonHollow" Value="True"/>
               <Property Name="MouseHollow" Value="True"/>
               <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_Stage1">
-                <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                 <Property Name="Tooltip" Value="#{ZHY_210301_65}"/>
                 <Property Name="Image" Value="set:ZhouHuoYue image:ZhouHuoYue_Mask_L"/>
               </Window>
               <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_Stage2">
-                <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,0.000000}}" />
                 <Property Name="Tooltip" Value="#{ZHY_210301_66}"/>
                 <Property Name="Image" Value="set:ZhouHuoYue image:ZhouHuoYue_Mask_L"/>
               </Window>
               <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_Stage3">
-                <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,97.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,97.000000},{0.000000,0.000000}}" />
                 <Property Name="Tooltip" Value="#{ZHY_210301_67}"/>
                 <Property Name="Image" Value="set:ZhouHuoYue image:ZhouHuoYue_Mask_L"/>
               </Window>
               <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_Stage4">
-                <Property Name="UnifiedSize" Value="{{0.000000,155.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,144.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,155.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,144.000000},{0.000000,0.000000}}" />
                 <Property Name="Tooltip" Value="#{ZHY_210301_68}"/>
                 <Property Name="Image" Value="set:ZhouHuoYue image:ZhouHuoYue_Mask_R"/>
               </Window>
             </Window>
             <Window Type="DefaultWindow" Name="ZhouHuoYue_Locks">
-              <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,20.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,20.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
               <Property Name="MouseLButtonHollow" Value="True"/>
               <Property Name="MouseHollow" Value="True"/>
               <Property Name="AlwaysOnTop" Value="True"/>
               <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_Lock1">
-                <Property Name="UnifiedSize" Value="{{0.000000,22.000000},{0.000000,16.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,17.000000},{0.000000,1.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,22.000000},{0.000000,16.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,17.000000},{0.000000,1.000000}}" />
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
                 <Property Name="MouseLButtonHollow" Value="True"/>
@@ -144,8 +144,8 @@
                 <Property Name="Image" Value="set:AgnameLayout image:AgnameLayout_Notgain"/>
               </Window>
               <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_Lock2">
-                <Property Name="UnifiedSize" Value="{{0.000000,22.000000},{0.000000,16.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,65.000000},{0.000000,1.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,22.000000},{0.000000,16.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,65.000000},{0.000000,1.000000}}" />
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
                 <Property Name="MouseLButtonHollow" Value="True"/>
@@ -154,8 +154,8 @@
                 <Property Name="Image" Value="set:AgnameLayout image:AgnameLayout_Notgain"/>
               </Window>
               <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_Lock3">
-                <Property Name="UnifiedSize" Value="{{0.000000,22.000000},{0.000000,16.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,113.000000},{0.000000,1.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,22.000000},{0.000000,16.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,113.000000},{0.000000,1.000000}}" />
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
                 <Property Name="MouseLButtonHollow" Value="True"/>
@@ -164,8 +164,8 @@
                 <Property Name="Image" Value="set:AgnameLayout image:AgnameLayout_Notgain"/>
               </Window>
               <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_Lock4">
-                <Property Name="UnifiedSize" Value="{{0.000000,22.000000},{0.000000,16.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,205.000000},{0.000000,1.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,22.000000},{0.000000,16.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,205.000000},{0.000000,1.000000}}" />
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
                 <Property Name="MouseLButtonHollow" Value="True"/>
@@ -175,15 +175,15 @@
               </Window>
             </Window>
             <Window Type="DefaultWindow" Name="ZhouHuoYue_Sections">
-              <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,20.000000}}" />
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
               <Property Name="MouseLButtonHollow" Value="True"/>
               <Property Name="MouseHollow" Value="True"/>
               <Property Name="AlwaysOnTop" Value="True"/>
               <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_Section1">
-                <Property Name="UnifiedSize" Value="{{0.000000,2.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,2.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,0.000000}}" />
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
                 <Property Name="MouseLButtonHollow" Value="True"/>
@@ -192,8 +192,8 @@
                 <Property Name="Image" Value="set:ZhouHuoYue image:ZhouHuoYue_Progress_Cut"/>
               </Window>
               <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_Section2">
-                <Property Name="UnifiedSize" Value="{{0.000000,2.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,49.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,2.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,49.000000},{0.000000,0.000000}}" />
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
                 <Property Name="MouseLButtonHollow" Value="True"/>
@@ -202,8 +202,8 @@
                 <Property Name="Image" Value="set:ZhouHuoYue image:ZhouHuoYue_Progress_Cut"/>
               </Window>
               <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_Section3">
-                <Property Name="UnifiedSize" Value="{{0.000000,2.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,97.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,2.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,97.000000},{0.000000,0.000000}}" />
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
                 <Property Name="MouseLButtonHollow" Value="True"/>
@@ -212,8 +212,8 @@
                 <Property Name="Image" Value="set:ZhouHuoYue image:ZhouHuoYue_Progress_Cut"/>
               </Window>
               <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_Section4">
-                <Property Name="UnifiedSize" Value="{{0.000000,2.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,143.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,2.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,143.000000},{0.000000,0.000000}}" />
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
                 <Property Name="MouseLButtonHollow" Value="True"/>
@@ -225,16 +225,16 @@
 
           </Window>
           <Window Type="DefaultWindow" Name="ZhouHuoYue_Items">
-            <Property Name="UnifiedSize" Value="{{0.000000,515.000000},{0.000000,75.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,162.000000},{0.000000,34.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,515.000000},{0.000000,75.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,162.000000},{0.000000,34.000000}}" />
             <Property Name="Text" Value="#{HJHL_201224_39}"/>
             <Property Name="RiseOnClick" Value="False"/>
             <Window Type="TLBB_ActionButton" Name="ZhouHuoYue_ItemA_1">
-              <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,3.00000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,3.00000},{0.000000,0.000000}}" />
               <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_ItemA1_Grey">
-                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                 <Property Name="RiseOnClick" Value="True"/>
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
@@ -244,11 +244,11 @@
               </Window>
             </Window>
             <Window Type="TLBB_ActionButton" Name="ZhouHuoYue_ItemA_2">
-              <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,3.00000},{0.000000,38.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,3.00000},{0.000000,38.000000}}" />
               <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_ItemA2_Grey">
-                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                 <Property Name="RiseOnClick" Value="True"/>
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
@@ -258,11 +258,11 @@
               </Window>
             </Window>
             <Window Type="TLBB_ActionButton" Name="ZhouHuoYue_ItemB_1">
-              <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,50.00000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,50.00000},{0.000000,0.000000}}" />
               <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_ItemB1_Grey">
-                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                 <Property Name="RiseOnClick" Value="True"/>
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
@@ -272,11 +272,11 @@
               </Window>
             </Window>
             <Window Type="TLBB_ActionButton" Name="ZhouHuoYue_ItemB_2">
-              <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,50.00000},{0.000000,38.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,50.00000},{0.000000,38.000000}}" />
               <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_ItemB2_Grey">
-                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                 <Property Name="RiseOnClick" Value="True"/>
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
@@ -286,11 +286,11 @@
               </Window>
             </Window>
             <Window Type="TLBB_ActionButton" Name="ZhouHuoYue_ItemC_1">
-              <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,97.00000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,97.00000},{0.000000,0.000000}}" />
               <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_ItemC1_Grey">
-                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                 <Property Name="RiseOnClick" Value="True"/>
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
@@ -300,11 +300,11 @@
               </Window>
             </Window>
             <Window Type="TLBB_ActionButton" Name="ZhouHuoYue_ItemC_2">
-              <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,97.00000},{0.000000,38.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,97.00000},{0.000000,38.000000}}" />
               <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_ItemC2_Grey">
-                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                 <Property Name="RiseOnClick" Value="True"/>
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
@@ -314,11 +314,11 @@
               </Window>
             </Window>
             <Window Type="TLBB_ActionButton" Name="ZhouHuoYue_ItemD_1">
-              <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,145.00000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,145.00000},{0.000000,0.000000}}" />
               <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_ItemD1_Grey">
-                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                 <Property Name="RiseOnClick" Value="True"/>
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
@@ -328,11 +328,11 @@
               </Window>
             </Window>
             <Window Type="TLBB_ActionButton" Name="ZhouHuoYue_ItemD_2">
-              <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,145.00000},{0.000000,38.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,145.00000},{0.000000,38.000000}}" />
               <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_ItemD2_Grey">
-                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                 <Property Name="RiseOnClick" Value="True"/>
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
@@ -342,11 +342,11 @@
               </Window>
             </Window>
             <Window Type="TLBB_ActionButton" Name="ZhouHuoYue_ItemE_1">
-              <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,193.00000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,193.00000},{0.000000,0.000000}}" />
               <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_ItemE1_Grey">
-                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                 <Property Name="RiseOnClick" Value="True"/>
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
@@ -356,11 +356,11 @@
               </Window>
             </Window>
             <Window Type="TLBB_ActionButton" Name="ZhouHuoYue_ItemE_2">
-              <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,193.00000},{0.000000,38.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,193.00000},{0.000000,38.000000}}" />
               <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_ItemE2_Grey">
-                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                 <Property Name="RiseOnClick" Value="True"/>
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
@@ -370,11 +370,11 @@
               </Window>
             </Window>
             <Window Type="TLBB_ActionButton" Name="ZhouHuoYue_ItemF_1">
-              <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,241.00000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,241.00000},{0.000000,0.000000}}" />
               <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_ItemF1_Grey">
-                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                 <Property Name="RiseOnClick" Value="True"/>
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
@@ -384,11 +384,11 @@
               </Window>
             </Window>
             <Window Type="TLBB_ActionButton" Name="ZhouHuoYue_ItemF_2">
-              <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,241.00000},{0.000000,38.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,241.00000},{0.000000,38.000000}}" />
               <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_ItemF2_Grey">
-                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                 <Property Name="RiseOnClick" Value="True"/>
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
@@ -398,11 +398,11 @@
               </Window>
             </Window>
             <Window Type="TLBB_ActionButton" Name="ZhouHuoYue_ItemG_1">
-              <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,289.00000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,289.00000},{0.000000,0.000000}}" />
               <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_ItemG1_Grey">
-                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                 <Property Name="RiseOnClick" Value="True"/>
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
@@ -412,11 +412,11 @@
               </Window>
             </Window>
             <Window Type="TLBB_ActionButton" Name="ZhouHuoYue_ItemG_2">
-              <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,289.00000},{0.000000,38.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,289.00000},{0.000000,38.000000}}" />
               <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_ItemG2_Grey">
-                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                 <Property Name="RiseOnClick" Value="True"/>
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
@@ -426,11 +426,11 @@
               </Window>
             </Window>
             <Window Type="TLBB_ActionButton" Name="ZhouHuoYue_ItemH_1">
-              <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,336.00000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,336.00000},{0.000000,0.000000}}" />
               <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_ItemH1_Grey">
-                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                 <Property Name="RiseOnClick" Value="True"/>
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
@@ -440,11 +440,11 @@
               </Window>
             </Window>
             <Window Type="TLBB_ActionButton" Name="ZhouHuoYue_ItemH_2">
-              <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,336.00000},{0.000000,38.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,336.00000},{0.000000,38.000000}}" />
               <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_ItemH2_Grey">
-                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                 <Property Name="RiseOnClick" Value="True"/>
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
@@ -454,11 +454,11 @@
               </Window>
             </Window>
             <Window Type="TLBB_ActionButton" Name="ZhouHuoYue_ItemI_1">
-              <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,385.00000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,385.00000},{0.000000,0.000000}}" />
               <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_ItemI1_Grey">
-                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                 <Property Name="RiseOnClick" Value="True"/>
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
@@ -468,11 +468,11 @@
               </Window>
             </Window>
             <Window Type="TLBB_ActionButton" Name="ZhouHuoYue_ItemI_2">
-              <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,385.00000},{0.000000,38.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,385.00000},{0.000000,38.000000}}" />
               <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_ItemI2_Grey">
-                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                 <Property Name="RiseOnClick" Value="True"/>
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
@@ -482,11 +482,11 @@
               </Window>
             </Window>
             <Window Type="TLBB_ActionButton" Name="ZhouHuoYue_ItemJ_1">
-              <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,433.00000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,433.00000},{0.000000,0.000000}}" />
               <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_ItemJ1_Grey">
-                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                 <Property Name="RiseOnClick" Value="True"/>
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
@@ -496,11 +496,11 @@
               </Window>
             </Window>
             <Window Type="TLBB_ActionButton" Name="ZhouHuoYue_ItemJ_2">
-              <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,433.00000},{0.000000,38.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,433.00000},{0.000000,38.000000}}" />
               <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_ItemJ2_Grey">
-                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                 <Property Name="RiseOnClick" Value="True"/>
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
@@ -511,12 +511,12 @@
             </Window>
           </Window>
           <Window Type="DefaultWindow" Name="ZhouHuoYue_GetAward">
-            <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,30.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{1.000000,-116.000000},{0.500000,25.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,30.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{1.000000,-116.000000},{0.500000,25.000000}}" />
             <Property Name="AlwaysOnTop" Value="True"/>
             <Window Type="TLBB_ButtonNULL" Name="ZhouHuoYue_ItemsBtn">
-              <Property Name="UnifiedSize" Value="{{0.000000,72.000000},{0.000000,24.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,5.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,72.000000},{0.000000,24.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,5.000000}}" />
               <Property Name="PushedImage" Value="set:ZhouHuoYue image:ZhouHuoYue_ProGet_Pushed"/>
               <Property Name="NormalImage" Value="set:ZhouHuoYue image:ZhouHuoYue_ProGet_Normal"/>
               <Property Name="HoverImage" Value="set:ZhouHuoYue image:ZhouHuoYue_ProGet_Hover"/>
@@ -524,8 +524,8 @@
               <Event Name="Clicked" Function="ZhouHuoYue_GetAwardClick();" />
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_GetAward_tips">
-              <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{1.000000,-12.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{1.000000,-12.000000},{0.000000,0.000000}}" />
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
               <Property Name="MouseLButtonHollow" Value="True"/>
@@ -535,8 +535,8 @@
             </Window>
           </Window>
           <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_Text1">
-            <Property Name="UnifiedSize" Value="{{0.000000,43.000000},{0.000000,144.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,29.000000},{0.000000,6.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,43.000000},{0.000000,144.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,29.000000},{0.000000,6.000000}}" />
             <Property Name="RiseOnClick" Value="True"/>
             <Property Name="MouseRButtonHollow" Value="True"/>
             <Property Name="MouseMoveHollow" Value="True"/>
@@ -545,15 +545,15 @@
             <Property Name="Image" Value="set:ZhouHuoYue image:ZhouHuoYue_Sum"/>
           </Window>
           <Window Type="TLBB_SimpleText" Name="ZhouHuoYue_Text2">
-            <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,50.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,24.000000},{0.000000,92.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,50.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,24.000000},{0.000000,92.000000}}" />
             <Property Name="Text" Value="100"/>
             <Property Name="RiseOnClick" Value="False"/>
             <Property Name="HorzFormatting" Value="WordWrapCentred"/>
           </Window>
           <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_CutlineL">
-            <Property Name="UnifiedSize" Value="{{0.000000,2.000000},{0.000000,156.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,5.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,2.000000},{0.000000,156.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,5.000000}}" />
             <Property Name="RiseOnClick" Value="True"/>
             <Property Name="MouseRButtonHollow" Value="True"/>
             <Property Name="MouseMoveHollow" Value="True"/>
@@ -562,92 +562,92 @@
             <Property Name="Image" Value="set:ZhouHuoYue image:ZhouHuoYue_Cutline_Large"/>
           </Window>
           <Window Type="DefaultWindow" Name="ZhouHuoYue_Text_Progress">
-            <Property Name="UnifiedSize" Value="{{0.000000,515.000000},{0.000000,27.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,163.000000},{1.000000,-33.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,515.000000},{0.000000,27.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,163.000000},{1.000000,-33.000000}}" />
             <Property Name="MouseRButtonHollow" Value="True"/>
             <Property Name="MouseLButtonHollow" Value="True"/>
             <Property Name="MouseHollow" Value="True"/>
             <Window Type="TLBB_SimpleText" Name="ZhouHuoYue_Text_Progress1">
-              <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,30.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,1.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,30.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,1.000000}}" />
               <Property Name="Text" Value="#G200"/>
               <Property Name="RiseOnClick" Value="False"/>
               <Property Name="HorzFormatting" Value="WordWrapCentred"/>
             </Window>
             <Window Type="TLBB_SimpleText" Name="ZhouHuoYue_Text_Progress2">
-              <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,30.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,1.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,30.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,1.000000}}" />
               <Property Name="Text" Value="#G400"/>
               <Property Name="RiseOnClick" Value="False"/>
               <Property Name="HorzFormatting" Value="WordWrapCentred"/>
             </Window>
             <Window Type="TLBB_SimpleText" Name="ZhouHuoYue_Text_Progress3">
-              <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,30.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,95.000000},{0.000000,1.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,30.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,95.000000},{0.000000,1.000000}}" />
               <Property Name="Text" Value="#G600"/>
               <Property Name="RiseOnClick" Value="False"/>
               <Property Name="HorzFormatting" Value="WordWrapCentred"/>
             </Window>
             <Window Type="TLBB_SimpleText" Name="ZhouHuoYue_Text_Progress4">
-              <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,30.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,145.000000},{0.000000,1.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,30.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,145.000000},{0.000000,1.000000}}" />
               <Property Name="Text" Value="#G800"/>
               <Property Name="RiseOnClick" Value="False"/>
               <Property Name="HorzFormatting" Value="WordWrapCentred"/>
             </Window>
             <Window Type="TLBB_SimpleText" Name="ZhouHuoYue_Text_Progress5">
-              <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,30.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,193.000000},{0.000000,1.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,30.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,193.000000},{0.000000,1.000000}}" />
               <Property Name="Text" Value="#G1000"/>
               <Property Name="RiseOnClick" Value="False"/>
               <Property Name="HorzFormatting" Value="WordWrapCentred"/>
             </Window>
             <Window Type="TLBB_SimpleText" Name="ZhouHuoYue_Text_Progress6">
-              <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,30.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,241.000000},{0.000000,1.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,30.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,241.000000},{0.000000,1.000000}}" />
               <Property Name="Text" Value="#G1200"/>
               <Property Name="RiseOnClick" Value="False"/>
               <Property Name="HorzFormatting" Value="WordWrapCentred"/>
             </Window>
             <Window Type="TLBB_SimpleText" Name="ZhouHuoYue_Text_Progress7">
-              <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,30.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,289.000000},{0.000000,1.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,30.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,289.000000},{0.000000,1.000000}}" />
               <Property Name="Text" Value="#G1400"/>
               <Property Name="RiseOnClick" Value="False"/>
               <Property Name="HorzFormatting" Value="WordWrapCentred"/>
             </Window>
             <Window Type="TLBB_SimpleText" Name="ZhouHuoYue_Text_Progress8">
-              <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,30.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,335.000000},{0.000000,1.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,30.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,335.000000},{0.000000,1.000000}}" />
               <Property Name="Text" Value="#G1600"/>
               <Property Name="RiseOnClick" Value="False"/>
               <Property Name="HorzFormatting" Value="WordWrapCentred"/>
             </Window>
             <Window Type="TLBB_SimpleText" Name="ZhouHuoYue_Text_Progress9">
-              <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,30.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,385.000000},{0.000000,1.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,30.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,385.000000},{0.000000,1.000000}}" />
               <Property Name="Text" Value="#G1800"/>
               <Property Name="RiseOnClick" Value="False"/>
               <Property Name="HorzFormatting" Value="WordWrapCentred"/>
             </Window>
             <Window Type="TLBB_SimpleText" Name="ZhouHuoYue_Text_Progress10">
-              <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,30.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,433.000000},{0.000000,1.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,30.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,433.000000},{0.000000,1.000000}}" />
               <Property Name="Text" Value="#G2000"/>
               <Property Name="RiseOnClick" Value="False"/>
               <Property Name="HorzFormatting" Value="WordWrapCentred"/>
             </Window>
           </Window>
           <Window Type="DefaultWindow" Name="ZhouHuoYue_Cutlines">
-            <Property Name="UnifiedSize" Value="{{0.000000,489.000000},{0.000000,101.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,152.000000},{1.000000,-148.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,489.000000},{0.000000,101.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,152.000000},{1.000000,-148.000000}}" />
             <Property Name="MouseRButtonHollow" Value="True"/>
             <Property Name="MouseMoveHollow" Value="True"/>
             <Property Name="MouseLButtonHollow" Value="True"/>
             <Property Name="MouseHollow" Value="True"/>
             <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_Cutline1">
-              <Property Name="UnifiedSize" Value="{{0.000000,2.000000},{0.000000,101.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,52.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,2.000000},{0.000000,101.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,52.000000},{0.000000,0.000000}}" />
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
               <Property Name="MouseLButtonHollow" Value="True"/>
@@ -655,8 +655,8 @@
               <Property Name="Image" Value="set:ZhouHuoYue image:ZhouHuoYue_Cutline_Small"/>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_Cutline2">
-              <Property Name="UnifiedSize" Value="{{0.000000,2.000000},{0.000000,101.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,99.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,2.000000},{0.000000,101.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,99.000000},{0.000000,0.000000}}" />
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
               <Property Name="MouseLButtonHollow" Value="True"/>
@@ -664,8 +664,8 @@
               <Property Name="Image" Value="set:ZhouHuoYue image:ZhouHuoYue_Cutline_Small"/>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_Cutline3">
-              <Property Name="UnifiedSize" Value="{{0.000000,2.000000},{0.000000,101.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,147.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,2.000000},{0.000000,101.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,147.000000},{0.000000,0.000000}}" />
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
               <Property Name="MouseLButtonHollow" Value="True"/>
@@ -673,8 +673,8 @@
               <Property Name="Image" Value="set:ZhouHuoYue image:ZhouHuoYue_Cutline_Small"/>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_Cutline4">
-              <Property Name="UnifiedSize" Value="{{0.000000,2.000000},{0.000000,101.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,196.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,2.000000},{0.000000,101.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,196.000000},{0.000000,0.000000}}" />
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
               <Property Name="MouseLButtonHollow" Value="True"/>
@@ -682,8 +682,8 @@
               <Property Name="Image" Value="set:ZhouHuoYue image:ZhouHuoYue_Cutline_Small"/>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_Cutline5">
-              <Property Name="UnifiedSize" Value="{{0.000000,2.000000},{0.000000,101.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,243.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,2.000000},{0.000000,101.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,243.000000},{0.000000,0.000000}}" />
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
               <Property Name="MouseLButtonHollow" Value="True"/>
@@ -691,8 +691,8 @@
               <Property Name="Image" Value="set:ZhouHuoYue image:ZhouHuoYue_Cutline_Small"/>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_Cutline6">
-              <Property Name="UnifiedSize" Value="{{0.000000,2.000000},{0.000000,101.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,291.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,2.000000},{0.000000,101.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,291.000000},{0.000000,0.000000}}" />
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
               <Property Name="MouseLButtonHollow" Value="True"/>
@@ -700,8 +700,8 @@
               <Property Name="Image" Value="set:ZhouHuoYue image:ZhouHuoYue_Cutline_Small"/>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_Cutline7">
-              <Property Name="UnifiedSize" Value="{{0.000000,2.000000},{0.000000,101.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,338.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,2.000000},{0.000000,101.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,338.000000},{0.000000,0.000000}}" />
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
               <Property Name="MouseLButtonHollow" Value="True"/>
@@ -709,8 +709,8 @@
               <Property Name="Image" Value="set:ZhouHuoYue image:ZhouHuoYue_Cutline_Small"/>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_Cutline8">
-              <Property Name="UnifiedSize" Value="{{0.000000,2.000000},{0.000000,101.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,386.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,2.000000},{0.000000,101.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,386.000000},{0.000000,0.000000}}" />
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
               <Property Name="MouseLButtonHollow" Value="True"/>
@@ -718,8 +718,8 @@
               <Property Name="Image" Value="set:ZhouHuoYue image:ZhouHuoYue_Cutline_Small"/>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_Cutline9">
-              <Property Name="UnifiedSize" Value="{{0.000000,2.000000},{0.000000,101.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,436.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,2.000000},{0.000000,101.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,436.000000},{0.000000,0.000000}}" />
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
               <Property Name="MouseLButtonHollow" Value="True"/>
@@ -728,11 +728,11 @@
             </Window>
           </Window>
           <Window Type="DefaultWindow" Name="ZhouHuoYue_Arrows_Up">
-            <Property Name="UnifiedSize" Value="{{0.000000,500.000000},{0.000000,10.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,173.000000},{1.000000,-58.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,500.000000},{0.000000,10.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,173.000000},{1.000000,-58.000000}}" />
             <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_ArrowUp1">
-              <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,7.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,7.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
               <Property Name="MouseLButtonHollow" Value="True"/>
@@ -740,8 +740,8 @@
               <Property Name="Image" Value="set:ZhouHuoYue image:ZhouHuoYue_ArrowUp"/>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_ArrowUp2">
-              <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,7.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,48.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,7.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,48.000000},{0.000000,0.000000}}" />
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
               <Property Name="MouseLButtonHollow" Value="True"/>
@@ -749,8 +749,8 @@
               <Property Name="Image" Value="set:ZhouHuoYue image:ZhouHuoYue_ArrowUp"/>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_ArrowUp3">
-              <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,7.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,95.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,7.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,95.000000},{0.000000,0.000000}}" />
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
               <Property Name="MouseLButtonHollow" Value="True"/>
@@ -758,8 +758,8 @@
               <Property Name="Image" Value="set:ZhouHuoYue image:ZhouHuoYue_ArrowUp"/>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_ArrowUp4">
-              <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,7.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,145.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,7.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,145.000000},{0.000000,0.000000}}" />
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
               <Property Name="MouseLButtonHollow" Value="True"/>
@@ -767,8 +767,8 @@
               <Property Name="Image" Value="set:ZhouHuoYue image:ZhouHuoYue_ArrowUp"/>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_ArrowUp5">
-              <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,7.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,193.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,7.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,193.000000},{0.000000,0.000000}}" />
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
               <Property Name="MouseLButtonHollow" Value="True"/>
@@ -776,8 +776,8 @@
               <Property Name="Image" Value="set:ZhouHuoYue image:ZhouHuoYue_ArrowUp"/>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_ArrowUp6">
-              <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,7.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,241.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,7.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,241.000000},{0.000000,0.000000}}" />
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
               <Property Name="MouseLButtonHollow" Value="True"/>
@@ -785,8 +785,8 @@
               <Property Name="Image" Value="set:ZhouHuoYue image:ZhouHuoYue_ArrowUp"/>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_ArrowUp7">
-              <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,7.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,289.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,7.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,289.000000},{0.000000,0.000000}}" />
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
               <Property Name="MouseLButtonHollow" Value="True"/>
@@ -794,8 +794,8 @@
               <Property Name="Image" Value="set:ZhouHuoYue image:ZhouHuoYue_ArrowUp"/>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_ArrowUp8">
-              <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,7.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,335.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,7.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,335.000000},{0.000000,0.000000}}" />
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
               <Property Name="MouseLButtonHollow" Value="True"/>
@@ -803,8 +803,8 @@
               <Property Name="Image" Value="set:ZhouHuoYue image:ZhouHuoYue_ArrowUp"/>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_ArrowUp9">
-              <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,7.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,385.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,7.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,385.000000},{0.000000,0.000000}}" />
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
               <Property Name="MouseLButtonHollow" Value="True"/>
@@ -812,8 +812,8 @@
               <Property Name="Image" Value="set:ZhouHuoYue image:ZhouHuoYue_ArrowUp"/>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_ArrowUp10">
-              <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,7.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,433.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,7.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,433.000000},{0.000000,0.000000}}" />
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
               <Property Name="MouseLButtonHollow" Value="True"/>
@@ -822,11 +822,11 @@
             </Window>
           </Window>
           <Window Type="DefaultWindow" Name="ZhouHuoYue_Arrows_Down">
-            <Property Name="UnifiedSize" Value="{{0.000000,500.000000},{0.000000,10.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,173.000000},{1.000000,-31.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,500.000000},{0.000000,10.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,173.000000},{1.000000,-31.000000}}" />
             <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_Arrow1">
-              <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,5.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,5.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
               <Property Name="MouseLButtonHollow" Value="True"/>
@@ -834,8 +834,8 @@
               <Property Name="Image" Value="set:ZhouHuoYue image:ZhouHuoYue_ArrowDown"/>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_Arrow2">
-              <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,5.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,48.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,5.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,48.000000},{0.000000,0.000000}}" />
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
               <Property Name="MouseLButtonHollow" Value="True"/>
@@ -843,8 +843,8 @@
               <Property Name="Image" Value="set:ZhouHuoYue image:ZhouHuoYue_ArrowDown"/>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_Arrow3">
-              <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,5.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,95.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,5.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,95.000000},{0.000000,0.000000}}" />
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
               <Property Name="MouseLButtonHollow" Value="True"/>
@@ -852,8 +852,8 @@
               <Property Name="Image" Value="set:ZhouHuoYue image:ZhouHuoYue_ArrowDown"/>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_Arrow4">
-              <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,5.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,145.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,5.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,145.000000},{0.000000,0.000000}}" />
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
               <Property Name="MouseLButtonHollow" Value="True"/>
@@ -861,8 +861,8 @@
               <Property Name="Image" Value="set:ZhouHuoYue image:ZhouHuoYue_ArrowDown"/>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_Arrow5">
-              <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,5.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,193.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,5.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,193.000000},{0.000000,0.000000}}" />
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
               <Property Name="MouseLButtonHollow" Value="True"/>
@@ -870,8 +870,8 @@
               <Property Name="Image" Value="set:ZhouHuoYue image:ZhouHuoYue_ArrowDown"/>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_Arrow6">
-              <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,5.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,241.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,5.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,241.000000},{0.000000,0.000000}}" />
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
               <Property Name="MouseLButtonHollow" Value="True"/>
@@ -879,8 +879,8 @@
               <Property Name="Image" Value="set:ZhouHuoYue image:ZhouHuoYue_ArrowDown"/>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_Arrow7">
-              <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,5.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,289.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,5.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,289.000000},{0.000000,0.000000}}" />
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
               <Property Name="MouseLButtonHollow" Value="True"/>
@@ -888,8 +888,8 @@
               <Property Name="Image" Value="set:ZhouHuoYue image:ZhouHuoYue_ArrowDown"/>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_Arrow8">
-              <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,5.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,335.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,5.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,335.000000},{0.000000,0.000000}}" />
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
               <Property Name="MouseLButtonHollow" Value="True"/>
@@ -897,8 +897,8 @@
               <Property Name="Image" Value="set:ZhouHuoYue image:ZhouHuoYue_ArrowDown"/>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_Arrow9">
-              <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,5.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,385.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,5.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,385.000000},{0.000000,0.000000}}" />
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
               <Property Name="MouseLButtonHollow" Value="True"/>
@@ -906,8 +906,8 @@
               <Property Name="Image" Value="set:ZhouHuoYue image:ZhouHuoYue_ArrowDown"/>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_Arrow10">
-              <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,5.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,433.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,5.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,433.000000},{0.000000,0.000000}}" />
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
               <Property Name="MouseLButtonHollow" Value="True"/>
@@ -916,25 +916,25 @@
             </Window>
           </Window>
           <Window Type="TLBB_ButtonHelp" Name="ZhouHuoYue_Help2">
-            <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.500000,-65.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.500000,-65.000000}}" />
             <Property Name="Tooltip" Value="#{ZHY_210301_06}"/>
             <Event Name="Clicked" Function="ZhouHuoYue_OnClickHelp();" />
           </Window>
         </Window>
           <Window Type="TLBB_WeekLace01" Name="ZhouHuoYue_PageBK">
-            <Property Name="UnifiedSize" Value="{{0.000000,78.000000},{0.000000,318.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,176.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,78.000000},{0.000000,318.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,176.000000}}" />
             <Property Name="AlwaysOnTop" Value="True"/>
             <Window Type="TLBB_ButtonFenYe7" Name="ZhouHuoYue_All">
-              <Property Name="UnifiedSize" Value="{{0.000000,74.000000},{0.000000,24.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,10.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,74.000000},{0.000000,24.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,10.000000}}" />
               <Property Name="CheckMode" Value="1"/>
               <Property Name="Text" Value="#{ZHY_210301_08}"/>
               <Event Name="MouseLButtonDown" Function="ZhouHuoYue_PageClick(0);" />
               <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_All_tips">
-                <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{1.000000,-12.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{1.000000,-12.000000},{0.000000,0.000000}}" />
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
                 <Property Name="MouseLButtonHollow" Value="True"/>
@@ -944,14 +944,14 @@
               </Window>
             </Window>
             <Window Type="TLBB_ButtonFenYe7" Name="ZhouHuoYue_Daily">
-              <Property Name="UnifiedSize" Value="{{0.000000,74.000000},{0.000000,24.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,48.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,74.000000},{0.000000,24.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,48.000000}}" />
               <Property Name="CheckMode" Value="1"/>
               <Property Name="Text" Value="#{ZHY_210301_09}"/>
               <Event Name="MouseLButtonDown" Function="ZhouHuoYue_PageClick(1);" />
               <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_Daily_tips">
-                <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{1.000000,-12.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{1.000000,-12.000000},{0.000000,0.000000}}" />
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
                 <Property Name="MouseLButtonHollow" Value="True"/>
@@ -961,14 +961,14 @@
               </Window>
             </Window>
             <Window Type="TLBB_ButtonFenYe7" Name="ZhouHuoYue_Fuben">
-              <Property Name="UnifiedSize" Value="{{0.000000,74.000000},{0.000000,24.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,86.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,74.000000},{0.000000,24.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,86.000000}}" />
               <Property Name="CheckMode" Value="1"/>
               <Property Name="Text" Value="#{ZHY_210301_10}"/>
               <Event Name="MouseLButtonDown" Function="ZhouHuoYue_PageClick(2);" />
               <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_Fuben_tips">
-                <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{1.000000,-12.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{1.000000,-12.000000},{0.000000,0.000000}}" />
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
                 <Property Name="MouseLButtonHollow" Value="True"/>
@@ -978,14 +978,14 @@
               </Window>
             </Window>
             <Window Type="TLBB_ButtonFenYe7" Name="ZhouHuoYue_Huodong">
-              <Property Name="UnifiedSize" Value="{{0.000000,74.000000},{0.000000,24.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,124.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,74.000000},{0.000000,24.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,124.000000}}" />
               <Property Name="CheckMode" Value="1"/>
               <Property Name="Text" Value="#{ZHY_210301_11}"/>
               <Event Name="MouseLButtonDown" Function="ZhouHuoYue_PageClick(3);" />
               <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_Huodong_tips">
-                <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{1.000000,-12.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{1.000000,-12.000000},{0.000000,0.000000}}" />
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
                 <Property Name="MouseLButtonHollow" Value="True"/>
@@ -995,14 +995,14 @@
               </Window>
             </Window>
             <Window Type="TLBB_ButtonFenYe7" Name="ZhouHuoYue_Zhandou">
-              <Property Name="UnifiedSize" Value="{{0.000000,74.000000},{0.000000,24.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,162.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,74.000000},{0.000000,24.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,162.000000}}" />
               <Property Name="CheckMode" Value="1"/>
               <Property Name="Text" Value="#{ZHY_210301_12}"/>
               <Event Name="MouseLButtonDown" Function="ZhouHuoYue_PageClick(4);" />
               <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_Zhandou_tips">
-                <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{1.000000,-12.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{1.000000,-12.000000},{0.000000,0.000000}}" />
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
                 <Property Name="MouseLButtonHollow" Value="True"/>
@@ -1012,14 +1012,14 @@
               </Window>
             </Window>
             <Window Type="TLBB_ButtonFenYe7" Name="ZhouHuoYue_Xiuxian">
-              <Property Name="UnifiedSize" Value="{{0.000000,74.000000},{0.000000,24.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,200.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,74.000000},{0.000000,24.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,200.000000}}" />
               <Property Name="CheckMode" Value="1"/>
               <Property Name="Text" Value="#{ZHY_210301_32}"/>
               <Event Name="MouseLButtonDown" Function="ZhouHuoYue_PageClick(5);" />
               <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_Xiuxian_tips">
-                <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{1.000000,-12.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{1.000000,-12.000000},{0.000000,0.000000}}" />
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
                 <Property Name="MouseLButtonHollow" Value="True"/>
@@ -1030,29 +1030,29 @@
             </Window>
           </Window>
           <Window Type="TLBB_Frame_Lace1" Name="ZhouHuoYue_LaceBK">
-            <Property Name="UnifiedSize" Value="{{1.000000,-88.000000},{1.000000,-222.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,84.000000},{0.000000,216.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,-88.000000},{1.000000,-222.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,84.000000},{0.000000,216.000000}}" />
             <Property Name="AlwaysOnTop" Value="True"/>
             <Window Type="DefaultWindow" Name="ZhouHuoYue_Lace">
-              <Property Name="UnifiedSize" Value="{{0.000000,698.000000},{1.000000,-8.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,4.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,698.000000},{1.000000,-8.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,4.000000}}" />
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MultiColumn" Value="1" />
               <Property Name="AlwaysOnTop" Value="True"/>
               <Property Name="VScrollMode" Value="Show"/>
               <Window Type="DefaultWindow" Name="ZhouHuoYue_Item_1">
-                <Property Name="UnifiedSize" Value="{{0.0000000,337.000000},{0.000000,90.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.0000000,337.000000},{0.000000,90.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,0.000000}}" />
                 <Window Type="TLBB_ButtonHelp" Name="ZhouHuoYue_Mission_Help_1">
-                  <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{1.000000,-22.000000},{0.000000,12.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-22.000000},{0.000000,12.000000}}" />
                   <Property Name="Tooltip" Value="#{}"/>
                   <Property Name="AlwaysOnTop" Value="True"/>
 				  <Event Name="Clicked" Function="ZhouHuoYue_MissionHelpClick(1);" />
                 </Window>
                 <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_CutlineMission_1">
-                  <Property Name="UnifiedSize" Value="{{0.000000,249.000000},{0.000000,1.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.000000,63.000000},{0.000000,38.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,249.000000},{0.000000,1.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.000000,63.000000},{0.000000,38.000000}}" />
                   <Property Name="RiseOnClick" Value="True"/>
                   <Property Name="MouseRButtonHollow" Value="True"/>
                   <Property Name="MouseMoveHollow" Value="True"/>
@@ -1062,8 +1062,8 @@
                   <Property Name="Image" Value="set:ZhouHuoYue image:ZhouHuoYue_Cutline_Landscape"/>
                 </Window>
                 <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_MissionBK_1">
-                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                   <Property Name="MouseRButtonHollow" Value="True"/>
                   <Property Name="MouseMoveHollow" Value="True"/>
                   <Property Name="MouseLButtonHollow" Value="True"/>
@@ -1071,14 +1071,14 @@
                   <Property Name="Image" Value="set:ZhouHuoYue image:ZhouHuoYue_MissionBK"/>
                 </Window>
                 <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_Item_Icon1_1">
-                  <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,52.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{0.500000,-26.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,52.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{0.500000,-26.000000}}" />
                   <Property Name="AlwaysOnTop" Value="True"/>
                   <Property Name="Image" Value="set:HDRC01 image:HDRC01_03"/>
                 </Window>
                 <Window Type="TLBB_SimpleText" Name="ZhouHuoYue_Item_Text1_1">
-                  <Property Name="UnifiedSize" Value="{{0.000000,212.000000},{0.000000,20.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.000000,14.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,212.000000},{0.000000,20.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.000000,14.000000}}" />
                   <Property Name="Text" Value="#任务名称"/>
                   <Property Name="TextColor" Value="FFFFFF00"/>
                   <Property Name="Font" Value="YouYuan9.75"/>
@@ -1089,8 +1089,8 @@
                   <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
                 </Window>
                 <Window Type="TLBB_SimpleText" Name="ZhouHuoYue_Item_Text2_1">
-                  <Property Name="UnifiedSize" Value="{{0.000000,198.000000},{0.000000,36.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.500000,-1.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,198.000000},{0.000000,36.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.500000,-1.000000}}" />
                   <Property Name="Text" Value="#任务描述"/>
                   <Property Name="TextColor" Value="FFFFFF00"/>
                   <Property Name="RiseOnClick" Value="True"/>
@@ -1102,8 +1102,8 @@
                   <Property Name="VertFormatting" Value="TopAligned"/>
                 </Window>
                 <Window Type="TLBB_SimpleText" Name="ZhouHuoYue_Item_Text3_1">
-                  <Property Name="UnifiedSize" Value="{{0.000000,82.000000},{0.000000,19.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.000000,177.000000},{0.500000,19.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,82.000000},{0.000000,19.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.000000,177.000000},{0.500000,19.000000}}" />
                   <Property Name="Text" Value="# 20000/20000"/>
                   <Property Name="RiseOnClick" Value="True"/>
                   <Property Name="MouseRButtonHollow" Value="True"/>
@@ -1113,20 +1113,20 @@
                   <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
                 </Window>
                 <Window Type="TLBB_SimpleText" Name="ZhouHuoYue_Item_Text4_1">
-                  <Property Name="UnifiedSize" Value="{{0.000000,19.000000},{0.000000,19.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.000000,298.000000},{0.300000,-9.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,19.000000},{0.000000,19.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.000000,298.000000},{0.300000,-9.000000}}" />
                   <Property Name="Text" Value="35"/>
                   <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
                 </Window>
                 <Window Type="TLBB_SimpleText" Name="ZhouHuoYue_Item_Text5_1">
-                  <Property Name="UnifiedSize" Value="{{0.000000,28.000000},{0.000000,19.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.000000,268.000000},{0.300000,-9.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,28.000000},{0.000000,19.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.000000,268.000000},{0.300000,-9.000000}}" />
                   <Property Name="Text" Value="#{ZHY_210301_35}"/>
                   <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
                 </Window>
                 <Window Type="TLBB_ButtonNULL" Name="ZhouHuoYue_Item_ButtonGet_1">
-                  <Property Name="UnifiedSize" Value="{{0.000000,49.000000},{0.000000,24.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{1.000000,-63.000000},{0.500000,14.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,49.000000},{0.000000,24.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-63.000000},{0.500000,14.000000}}" />
                   <Property Name="PushedImage" Value="set:ZhouHuoYue image:ZhouHuoYue_RewGet_Pushed"/>
                   <Property Name="NormalImage" Value="set:ZhouHuoYue image:ZhouHuoYue_RewGet_Normal"/>
                   <Property Name="HoverImage" Value="set:ZhouHuoYue image:ZhouHuoYue_RewGet_Hover"/>
@@ -1134,8 +1134,8 @@
 				   <Event Name="Clicked" Function="ZhouHuoYue_GetZhouHuoYueAddHuoYueZhi(1);" />
                 </Window>
                 <Window Type="TLBB_ButtonNULL" Name="ZhouHuoYue_Item_ButtonGoto_1">
-                  <Property Name="UnifiedSize" Value="{{0.000000,49.000000},{0.000000,24.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{1.000000,-63.000000},{0.500000,14.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,49.000000},{0.000000,24.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-63.000000},{0.500000,14.000000}}" />
                   <Property Name="PushedImage" Value="set:ZhouHuoYue image:ZhouHuoYue_Goto_Pushed"/>
                   <Property Name="NormalImage" Value="set:ZhouHuoYue image:ZhouHuoYue_Goto_Normal"/>
                   <Property Name="HoverImage" Value="set:ZhouHuoYue image:ZhouHuoYue_Goto_Hover"/>
@@ -1143,8 +1143,8 @@
 				   <Event Name="Clicked" Function="ZhouHuoYue_GotoClick(1);" />
                 </Window>
                 <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_Received_1">
-                  <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,26.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{1.000000,-72.000000},{0.500000,12.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,26.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-72.000000},{0.500000,12.000000}}" />
                   <Property Name="MouseRButtonHollow" Value="True"/>
                   <Property Name="MouseMoveHollow" Value="True"/>
                   <Property Name="MouseLButtonHollow" Value="True"/>
@@ -1154,18 +1154,18 @@
                 </Window>
               </Window>
               <Window Type="DefaultWindow" Name="ZhouHuoYue_Item_2">
-                <Property Name="UnifiedSize" Value="{{0.0000000,337.000000},{0.000000,90.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,338.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.0000000,337.000000},{0.000000,90.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,338.000000},{0.000000,0.000000}}" />
                 <Window Type="TLBB_ButtonHelp" Name="ZhouHuoYue_Mission_Help_2">
-                  <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{1.000000,-22.000000},{0.000000,12.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-22.000000},{0.000000,12.000000}}" />
                   <Property Name="Tooltip" Value="#{}"/>
                   <Property Name="AlwaysOnTop" Value="True"/>
 				  <Event Name="Clicked" Function="ZhouHuoYue_MissionHelpClick(2);" />
                 </Window>
                 <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_CutlineMission_2">
-                  <Property Name="UnifiedSize" Value="{{0.000000,249.000000},{0.000000,1.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.000000,63.000000},{0.000000,38.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,249.000000},{0.000000,1.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.000000,63.000000},{0.000000,38.000000}}" />
                   <Property Name="RiseOnClick" Value="True"/>
                   <Property Name="MouseRButtonHollow" Value="True"/>
                   <Property Name="MouseMoveHollow" Value="True"/>
@@ -1175,8 +1175,8 @@
                   <Property Name="Image" Value="set:ZhouHuoYue image:ZhouHuoYue_Cutline_Landscape"/>
                 </Window>
                 <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_MissionBK_2">
-                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                   <Property Name="MouseRButtonHollow" Value="True"/>
                   <Property Name="MouseMoveHollow" Value="True"/>
                   <Property Name="MouseLButtonHollow" Value="True"/>
@@ -1184,14 +1184,14 @@
                   <Property Name="Image" Value="set:ZhouHuoYue image:ZhouHuoYue_MissionBK"/>
                 </Window>
                 <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_Item_Icon1_2">
-                  <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,52.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{0.500000,-26.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,52.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{0.500000,-26.000000}}" />
                   <Property Name="AlwaysOnTop" Value="True"/>
                   <Property Name="Image" Value="set:HDRC01 image:HDRC01_03"/>
                 </Window>
                 <Window Type="TLBB_SimpleText" Name="ZhouHuoYue_Item_Text1_2">
-                  <Property Name="UnifiedSize" Value="{{0.000000,212.000000},{0.000000,20.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.000000,14.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,212.000000},{0.000000,20.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.000000,14.000000}}" />
                   <Property Name="Text" Value="#任务名称"/>
                   <Property Name="TextColor" Value="FFFFFF00"/>
                   <Property Name="Font" Value="YouYuan9.75"/>
@@ -1202,8 +1202,8 @@
                   <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
                 </Window>
                 <Window Type="TLBB_SimpleText" Name="ZhouHuoYue_Item_Text2_2">
-                  <Property Name="UnifiedSize" Value="{{0.000000,198.000000},{0.000000,36.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.500000,-1.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,198.000000},{0.000000,36.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.500000,-1.000000}}" />
                   <Property Name="Text" Value="#任务描述"/>
                   <Property Name="TextColor" Value="FFFFFF00"/>
                   <Property Name="RiseOnClick" Value="True"/>
@@ -1215,8 +1215,8 @@
                   <Property Name="VertFormatting" Value="TopAligned"/>
                 </Window>
                 <Window Type="TLBB_SimpleText" Name="ZhouHuoYue_Item_Text3_2">
-                  <Property Name="UnifiedSize" Value="{{0.000000,82.000000},{0.000000,19.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.000000,177.000000},{0.500000,19.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,82.000000},{0.000000,19.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.000000,177.000000},{0.500000,19.000000}}" />
                   <Property Name="Text" Value="# 20000/20000"/>
                   <Property Name="RiseOnClick" Value="True"/>
                   <Property Name="MouseRButtonHollow" Value="True"/>
@@ -1226,20 +1226,20 @@
                   <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
                 </Window>
                 <Window Type="TLBB_SimpleText" Name="ZhouHuoYue_Item_Text4_2">
-                  <Property Name="UnifiedSize" Value="{{0.000000,19.000000},{0.000000,19.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.000000,298.000000},{0.300000,-9.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,19.000000},{0.000000,19.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.000000,298.000000},{0.300000,-9.000000}}" />
                   <Property Name="Text" Value="35"/>
                   <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
                 </Window>
                 <Window Type="TLBB_SimpleText" Name="ZhouHuoYue_Item_Text5_2">
-                  <Property Name="UnifiedSize" Value="{{0.000000,28.000000},{0.000000,19.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.000000,268.000000},{0.300000,-9.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,28.000000},{0.000000,19.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.000000,268.000000},{0.300000,-9.000000}}" />
                   <Property Name="Text" Value="#{ZHY_210301_35}"/>
                   <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
                 </Window>
                 <Window Type="TLBB_ButtonNULL" Name="ZhouHuoYue_Item_ButtonGet_2">
-                  <Property Name="UnifiedSize" Value="{{0.000000,49.000000},{0.000000,24.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{1.000000,-63.000000},{0.500000,14.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,49.000000},{0.000000,24.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-63.000000},{0.500000,14.000000}}" />
                   <Property Name="PushedImage" Value="set:ZhouHuoYue image:ZhouHuoYue_RewGet_Pushed"/>
                   <Property Name="NormalImage" Value="set:ZhouHuoYue image:ZhouHuoYue_RewGet_Normal"/>
                   <Property Name="HoverImage" Value="set:ZhouHuoYue image:ZhouHuoYue_RewGet_Hover"/>
@@ -1247,8 +1247,8 @@
 				   <Event Name="Clicked" Function="ZhouHuoYue_GetZhouHuoYueAddHuoYueZhi(2);" />
                 </Window>
                 <Window Type="TLBB_ButtonNULL" Name="ZhouHuoYue_Item_ButtonGoto_2">
-                  <Property Name="UnifiedSize" Value="{{0.000000,49.000000},{0.000000,24.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{1.000000,-63.000000},{0.500000,14.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,49.000000},{0.000000,24.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-63.000000},{0.500000,14.000000}}" />
                   <Property Name="PushedImage" Value="set:ZhouHuoYue image:ZhouHuoYue_Goto_Pushed"/>
                   <Property Name="NormalImage" Value="set:ZhouHuoYue image:ZhouHuoYue_Goto_Normal"/>
                   <Property Name="HoverImage" Value="set:ZhouHuoYue image:ZhouHuoYue_Goto_Hover"/>
@@ -1256,8 +1256,8 @@
 				   <Event Name="Clicked" Function="ZhouHuoYue_GotoClick(2);" />
                 </Window>
                 <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_Received_2">
-                  <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,26.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{1.000000,-72.000000},{0.500000,12.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,26.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-72.000000},{0.500000,12.000000}}" />
                   <Property Name="MouseRButtonHollow" Value="True"/>
                   <Property Name="MouseMoveHollow" Value="True"/>
                   <Property Name="MouseLButtonHollow" Value="True"/>
@@ -1267,18 +1267,18 @@
                 </Window>
               </Window>
               <Window Type="DefaultWindow" Name="ZhouHuoYue_Item_3">
-                <Property Name="UnifiedSize" Value="{{0.0000000,337.000000},{0.000000,90.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,90.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.0000000,337.000000},{0.000000,90.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,90.000000}}" />
                 <Window Type="TLBB_ButtonHelp" Name="ZhouHuoYue_Mission_Help_3">
-                  <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{1.000000,-22.000000},{0.000000,12.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-22.000000},{0.000000,12.000000}}" />
                   <Property Name="Tooltip" Value="#{}"/>
                   <Property Name="AlwaysOnTop" Value="True"/>
 				  <Event Name="Clicked" Function="ZhouHuoYue_MissionHelpClick(3);" />
                 </Window>
                 <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_CutlineMission_3">
-                  <Property Name="UnifiedSize" Value="{{0.000000,249.000000},{0.000000,1.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.000000,63.000000},{0.000000,38.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,249.000000},{0.000000,1.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.000000,63.000000},{0.000000,38.000000}}" />
                   <Property Name="RiseOnClick" Value="True"/>
                   <Property Name="MouseRButtonHollow" Value="True"/>
                   <Property Name="MouseMoveHollow" Value="True"/>
@@ -1288,8 +1288,8 @@
                   <Property Name="Image" Value="set:ZhouHuoYue image:ZhouHuoYue_Cutline_Landscape"/>
                 </Window>
                 <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_MissionBK_3">
-                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                   <Property Name="MouseRButtonHollow" Value="True"/>
                   <Property Name="MouseMoveHollow" Value="True"/>
                   <Property Name="MouseLButtonHollow" Value="True"/>
@@ -1297,14 +1297,14 @@
                   <Property Name="Image" Value="set:ZhouHuoYue image:ZhouHuoYue_MissionBK"/>
                 </Window>
                 <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_Item_Icon1_3">
-                  <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,52.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{0.500000,-26.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,52.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{0.500000,-26.000000}}" />
                   <Property Name="AlwaysOnTop" Value="True"/>
                   <Property Name="Image" Value="set:HDRC01 image:HDRC01_03"/>
                 </Window>
                 <Window Type="TLBB_SimpleText" Name="ZhouHuoYue_Item_Text1_3">
-                  <Property Name="UnifiedSize" Value="{{0.000000,212.000000},{0.000000,20.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.000000,14.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,212.000000},{0.000000,20.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.000000,14.000000}}" />
                   <Property Name="Text" Value="#任务名称"/>
                   <Property Name="TextColor" Value="FFFFFF00"/>
                   <Property Name="Font" Value="YouYuan9.75"/>
@@ -1315,8 +1315,8 @@
                   <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
                 </Window>
                 <Window Type="TLBB_SimpleText" Name="ZhouHuoYue_Item_Text2_3">
-                  <Property Name="UnifiedSize" Value="{{0.000000,198.000000},{0.000000,36.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.500000,-1.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,198.000000},{0.000000,36.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.500000,-1.000000}}" />
                   <Property Name="Text" Value="#任务描述"/>
                   <Property Name="TextColor" Value="FFFFFF00"/>
                   <Property Name="RiseOnClick" Value="True"/>
@@ -1328,8 +1328,8 @@
                   <Property Name="VertFormatting" Value="TopAligned"/>
                 </Window>
                 <Window Type="TLBB_SimpleText" Name="ZhouHuoYue_Item_Text3_3">
-                  <Property Name="UnifiedSize" Value="{{0.000000,82.000000},{0.000000,19.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.000000,177.000000},{0.500000,19.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,82.000000},{0.000000,19.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.000000,177.000000},{0.500000,19.000000}}" />
                   <Property Name="Text" Value="# 20000/20000"/>
                   <Property Name="RiseOnClick" Value="True"/>
                   <Property Name="MouseRButtonHollow" Value="True"/>
@@ -1339,20 +1339,20 @@
                   <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
                 </Window>
                 <Window Type="TLBB_SimpleText" Name="ZhouHuoYue_Item_Text4_3">
-                  <Property Name="UnifiedSize" Value="{{0.000000,19.000000},{0.000000,19.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.000000,298.000000},{0.300000,-9.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,19.000000},{0.000000,19.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.000000,298.000000},{0.300000,-9.000000}}" />
                   <Property Name="Text" Value="35"/>
                   <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
                 </Window>
                 <Window Type="TLBB_SimpleText" Name="ZhouHuoYue_Item_Text5_3">
-                  <Property Name="UnifiedSize" Value="{{0.000000,28.000000},{0.000000,19.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.000000,268.000000},{0.300000,-9.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,28.000000},{0.000000,19.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.000000,268.000000},{0.300000,-9.000000}}" />
                   <Property Name="Text" Value="#{ZHY_210301_35}"/>
                   <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
                 </Window>
                 <Window Type="TLBB_ButtonNULL" Name="ZhouHuoYue_Item_ButtonGet_3">
-                  <Property Name="UnifiedSize" Value="{{0.000000,49.000000},{0.000000,24.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{1.000000,-63.000000},{0.500000,14.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,49.000000},{0.000000,24.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-63.000000},{0.500000,14.000000}}" />
                   <Property Name="PushedImage" Value="set:ZhouHuoYue image:ZhouHuoYue_RewGet_Pushed"/>
                   <Property Name="NormalImage" Value="set:ZhouHuoYue image:ZhouHuoYue_RewGet_Normal"/>
                   <Property Name="HoverImage" Value="set:ZhouHuoYue image:ZhouHuoYue_RewGet_Hover"/>
@@ -1360,8 +1360,8 @@
 				   <Event Name="Clicked" Function="ZhouHuoYue_GetZhouHuoYueAddHuoYueZhi(3);" />
                 </Window>
                 <Window Type="TLBB_ButtonNULL" Name="ZhouHuoYue_Item_ButtonGoto_3">
-                  <Property Name="UnifiedSize" Value="{{0.000000,49.000000},{0.000000,24.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{1.000000,-63.000000},{0.500000,14.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,49.000000},{0.000000,24.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-63.000000},{0.500000,14.000000}}" />
                   <Property Name="PushedImage" Value="set:ZhouHuoYue image:ZhouHuoYue_Goto_Pushed"/>
                   <Property Name="NormalImage" Value="set:ZhouHuoYue image:ZhouHuoYue_Goto_Normal"/>
                   <Property Name="HoverImage" Value="set:ZhouHuoYue image:ZhouHuoYue_Goto_Hover"/>
@@ -1369,8 +1369,8 @@
 				   <Event Name="Clicked" Function="ZhouHuoYue_GotoClick(3);" />
                 </Window>
                 <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_Received_3">
-                  <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,26.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{1.000000,-72.000000},{0.500000,12.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,26.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-72.000000},{0.500000,12.000000}}" />
                   <Property Name="MouseRButtonHollow" Value="True"/>
                   <Property Name="MouseMoveHollow" Value="True"/>
                   <Property Name="MouseLButtonHollow" Value="True"/>
@@ -1380,18 +1380,18 @@
                 </Window>
               </Window>
               <Window Type="DefaultWindow" Name="ZhouHuoYue_Item_4">
-                <Property Name="UnifiedSize" Value="{{0.0000000,337.000000},{0.000000,90.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,338.000000},{0.000000,90.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.0000000,337.000000},{0.000000,90.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,338.000000},{0.000000,90.000000}}" />
                 <Window Type="TLBB_ButtonHelp" Name="ZhouHuoYue_Mission_Help_4">
-                  <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{1.000000,-22.000000},{0.000000,12.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-22.000000},{0.000000,12.000000}}" />
                   <Property Name="Tooltip" Value="#{}"/>
                   <Property Name="AlwaysOnTop" Value="True"/>
 				  <Event Name="Clicked" Function="ZhouHuoYue_MissionHelpClick(4);" />
                 </Window>
                 <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_CutlineMission_4">
-                  <Property Name="UnifiedSize" Value="{{0.000000,249.000000},{0.000000,1.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.000000,63.000000},{0.000000,38.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,249.000000},{0.000000,1.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.000000,63.000000},{0.000000,38.000000}}" />
                   <Property Name="RiseOnClick" Value="True"/>
                   <Property Name="MouseRButtonHollow" Value="True"/>
                   <Property Name="MouseMoveHollow" Value="True"/>
@@ -1401,8 +1401,8 @@
                   <Property Name="Image" Value="set:ZhouHuoYue image:ZhouHuoYue_Cutline_Landscape"/>
                 </Window>
                 <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_MissionBK_4">
-                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                   <Property Name="MouseRButtonHollow" Value="True"/>
                   <Property Name="MouseMoveHollow" Value="True"/>
                   <Property Name="MouseLButtonHollow" Value="True"/>
@@ -1410,14 +1410,14 @@
                   <Property Name="Image" Value="set:ZhouHuoYue image:ZhouHuoYue_MissionBK"/>
                 </Window>
                 <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_Item_Icon1_4">
-                  <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,52.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{0.500000,-26.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,52.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{0.500000,-26.000000}}" />
                   <Property Name="AlwaysOnTop" Value="True"/>
                   <Property Name="Image" Value="set:HDRC01 image:HDRC01_03"/>
                 </Window>
                 <Window Type="TLBB_SimpleText" Name="ZhouHuoYue_Item_Text1_4">
-                  <Property Name="UnifiedSize" Value="{{0.000000,212.000000},{0.000000,20.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.000000,14.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,212.000000},{0.000000,20.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.000000,14.000000}}" />
                   <Property Name="Text" Value="#任务名称"/>
                   <Property Name="TextColor" Value="FFFFFF00"/>
                   <Property Name="Font" Value="YouYuan9.75"/>
@@ -1428,8 +1428,8 @@
                   <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
                 </Window>
                 <Window Type="TLBB_SimpleText" Name="ZhouHuoYue_Item_Text2_4">
-                  <Property Name="UnifiedSize" Value="{{0.000000,198.000000},{0.000000,36.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.500000,-1.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,198.000000},{0.000000,36.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.500000,-1.000000}}" />
                   <Property Name="Text" Value="#任务描述"/>
                   <Property Name="TextColor" Value="FFFFFF00"/>
                   <Property Name="RiseOnClick" Value="True"/>
@@ -1441,8 +1441,8 @@
                   <Property Name="VertFormatting" Value="TopAligned"/>
                 </Window>
                 <Window Type="TLBB_SimpleText" Name="ZhouHuoYue_Item_Text3_4">
-                  <Property Name="UnifiedSize" Value="{{0.000000,82.000000},{0.000000,19.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.000000,177.000000},{0.500000,19.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,82.000000},{0.000000,19.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.000000,177.000000},{0.500000,19.000000}}" />
                   <Property Name="Text" Value="# 20000/20000"/>
                   <Property Name="RiseOnClick" Value="True"/>
                   <Property Name="MouseRButtonHollow" Value="True"/>
@@ -1452,20 +1452,20 @@
                   <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
                 </Window>
                 <Window Type="TLBB_SimpleText" Name="ZhouHuoYue_Item_Text4_4">
-                  <Property Name="UnifiedSize" Value="{{0.000000,19.000000},{0.000000,19.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.000000,298.000000},{0.300000,-9.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,19.000000},{0.000000,19.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.000000,298.000000},{0.300000,-9.000000}}" />
                   <Property Name="Text" Value="35"/>
                   <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
                 </Window>
                 <Window Type="TLBB_SimpleText" Name="ZhouHuoYue_Item_Text5_4">
-                  <Property Name="UnifiedSize" Value="{{0.000000,28.000000},{0.000000,19.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.000000,268.000000},{0.300000,-9.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,28.000000},{0.000000,19.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.000000,268.000000},{0.300000,-9.000000}}" />
                   <Property Name="Text" Value="#{ZHY_210301_35}"/>
                   <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
                 </Window>
                 <Window Type="TLBB_ButtonNULL" Name="ZhouHuoYue_Item_ButtonGet_4">
-                  <Property Name="UnifiedSize" Value="{{0.000000,49.000000},{0.000000,24.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{1.000000,-63.000000},{0.500000,14.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,49.000000},{0.000000,24.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-63.000000},{0.500000,14.000000}}" />
                   <Property Name="PushedImage" Value="set:ZhouHuoYue image:ZhouHuoYue_RewGet_Pushed"/>
                   <Property Name="NormalImage" Value="set:ZhouHuoYue image:ZhouHuoYue_RewGet_Normal"/>
                   <Property Name="HoverImage" Value="set:ZhouHuoYue image:ZhouHuoYue_RewGet_Hover"/>
@@ -1473,8 +1473,8 @@
 				   <Event Name="Clicked" Function="ZhouHuoYue_GetZhouHuoYueAddHuoYueZhi(4);" />
                 </Window>
                 <Window Type="TLBB_ButtonNULL" Name="ZhouHuoYue_Item_ButtonGoto_4">
-                  <Property Name="UnifiedSize" Value="{{0.000000,49.000000},{0.000000,24.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{1.000000,-63.000000},{0.500000,14.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,49.000000},{0.000000,24.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-63.000000},{0.500000,14.000000}}" />
                   <Property Name="PushedImage" Value="set:ZhouHuoYue image:ZhouHuoYue_Goto_Pushed"/>
                   <Property Name="NormalImage" Value="set:ZhouHuoYue image:ZhouHuoYue_Goto_Normal"/>
                   <Property Name="HoverImage" Value="set:ZhouHuoYue image:ZhouHuoYue_Goto_Hover"/>
@@ -1482,8 +1482,8 @@
 				   <Event Name="Clicked" Function="ZhouHuoYue_GotoClick(4);" />
                 </Window>
                 <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_Received_4">
-                  <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,26.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{1.000000,-72.000000},{0.500000,12.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,26.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-72.000000},{0.500000,12.000000}}" />
                   <Property Name="MouseRButtonHollow" Value="True"/>
                   <Property Name="MouseMoveHollow" Value="True"/>
                   <Property Name="MouseLButtonHollow" Value="True"/>
@@ -1493,18 +1493,18 @@
                 </Window>
               </Window>
               <Window Type="DefaultWindow" Name="ZhouHuoYue_Item_5">
-                <Property Name="UnifiedSize" Value="{{0.0000000,337.000000},{0.000000,90.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,180.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.0000000,337.000000},{0.000000,90.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,180.000000}}" />
                 <Window Type="TLBB_ButtonHelp" Name="ZhouHuoYue_Mission_Help_5">
-                  <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{1.000000,-22.000000},{0.000000,12.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-22.000000},{0.000000,12.000000}}" />
                   <Property Name="Tooltip" Value="#{}"/>
                   <Property Name="AlwaysOnTop" Value="True"/>
 				  <Event Name="Clicked" Function="ZhouHuoYue_MissionHelpClick(5);" />
                 </Window>
                 <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_CutlineMission_5">
-                  <Property Name="UnifiedSize" Value="{{0.000000,249.000000},{0.000000,1.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.000000,63.000000},{0.000000,38.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,249.000000},{0.000000,1.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.000000,63.000000},{0.000000,38.000000}}" />
                   <Property Name="RiseOnClick" Value="True"/>
                   <Property Name="MouseRButtonHollow" Value="True"/>
                   <Property Name="MouseMoveHollow" Value="True"/>
@@ -1514,8 +1514,8 @@
                   <Property Name="Image" Value="set:ZhouHuoYue image:ZhouHuoYue_Cutline_Landscape"/>
                 </Window>
                 <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_MissionBK_5">
-                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                   <Property Name="MouseRButtonHollow" Value="True"/>
                   <Property Name="MouseMoveHollow" Value="True"/>
                   <Property Name="MouseLButtonHollow" Value="True"/>
@@ -1523,14 +1523,14 @@
                   <Property Name="Image" Value="set:ZhouHuoYue image:ZhouHuoYue_MissionBK"/>
                 </Window>
                 <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_Item_Icon1_5">
-                  <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,52.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{0.500000,-26.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,52.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{0.500000,-26.000000}}" />
                   <Property Name="AlwaysOnTop" Value="True"/>
                   <Property Name="Image" Value="set:HDRC01 image:HDRC01_03"/>
                 </Window>
                 <Window Type="TLBB_SimpleText" Name="ZhouHuoYue_Item_Text1_5">
-                  <Property Name="UnifiedSize" Value="{{0.000000,212.000000},{0.000000,20.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.000000,14.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,212.000000},{0.000000,20.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.000000,14.000000}}" />
                   <Property Name="Text" Value="#任务名称"/>
                   <Property Name="TextColor" Value="FFFFFF00"/>
                   <Property Name="Font" Value="YouYuan9.75"/>
@@ -1541,8 +1541,8 @@
                   <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
                 </Window>
                 <Window Type="TLBB_SimpleText" Name="ZhouHuoYue_Item_Text2_5">
-                  <Property Name="UnifiedSize" Value="{{0.000000,198.000000},{0.000000,36.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.500000,-1.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,198.000000},{0.000000,36.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.500000,-1.000000}}" />
                   <Property Name="Text" Value="#任务描述"/>
                   <Property Name="TextColor" Value="FFFFFF00"/>
                   <Property Name="RiseOnClick" Value="True"/>
@@ -1554,8 +1554,8 @@
                   <Property Name="VertFormatting" Value="TopAligned"/>
                 </Window>
                 <Window Type="TLBB_SimpleText" Name="ZhouHuoYue_Item_Text3_5">
-                  <Property Name="UnifiedSize" Value="{{0.000000,82.000000},{0.000000,19.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.000000,177.000000},{0.500000,19.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,82.000000},{0.000000,19.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.000000,177.000000},{0.500000,19.000000}}" />
                   <Property Name="Text" Value="# 20000/20000"/>
                   <Property Name="RiseOnClick" Value="True"/>
                   <Property Name="MouseRButtonHollow" Value="True"/>
@@ -1565,20 +1565,20 @@
                   <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
                 </Window>
                 <Window Type="TLBB_SimpleText" Name="ZhouHuoYue_Item_Text4_5">
-                  <Property Name="UnifiedSize" Value="{{0.000000,19.000000},{0.000000,19.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.000000,298.000000},{0.300000,-9.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,19.000000},{0.000000,19.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.000000,298.000000},{0.300000,-9.000000}}" />
                   <Property Name="Text" Value="35"/>
                   <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
                 </Window>
                 <Window Type="TLBB_SimpleText" Name="ZhouHuoYue_Item_Text5_5">
-                  <Property Name="UnifiedSize" Value="{{0.000000,28.000000},{0.000000,19.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.000000,268.000000},{0.300000,-9.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,28.000000},{0.000000,19.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.000000,268.000000},{0.300000,-9.000000}}" />
                   <Property Name="Text" Value="#{ZHY_210301_35}"/>
                   <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
                 </Window>
                 <Window Type="TLBB_ButtonNULL" Name="ZhouHuoYue_Item_ButtonGet_5">
-                  <Property Name="UnifiedSize" Value="{{0.000000,49.000000},{0.000000,24.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{1.000000,-63.000000},{0.500000,14.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,49.000000},{0.000000,24.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-63.000000},{0.500000,14.000000}}" />
                   <Property Name="PushedImage" Value="set:ZhouHuoYue image:ZhouHuoYue_RewGet_Pushed"/>
                   <Property Name="NormalImage" Value="set:ZhouHuoYue image:ZhouHuoYue_RewGet_Normal"/>
                   <Property Name="HoverImage" Value="set:ZhouHuoYue image:ZhouHuoYue_RewGet_Hover"/>
@@ -1586,8 +1586,8 @@
  				   <Event Name="Clicked" Function="ZhouHuoYue_GetZhouHuoYueAddHuoYueZhi(5);" />
                </Window>
                 <Window Type="TLBB_ButtonNULL" Name="ZhouHuoYue_Item_ButtonGoto_5">
-                  <Property Name="UnifiedSize" Value="{{0.000000,49.000000},{0.000000,24.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{1.000000,-63.000000},{0.500000,14.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,49.000000},{0.000000,24.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-63.000000},{0.500000,14.000000}}" />
                   <Property Name="PushedImage" Value="set:ZhouHuoYue image:ZhouHuoYue_Goto_Pushed"/>
                   <Property Name="NormalImage" Value="set:ZhouHuoYue image:ZhouHuoYue_Goto_Normal"/>
                   <Property Name="HoverImage" Value="set:ZhouHuoYue image:ZhouHuoYue_Goto_Hover"/>
@@ -1595,8 +1595,8 @@
 				   <Event Name="Clicked" Function="ZhouHuoYue_GotoClick(5);" />
                 </Window>
                 <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_Received_5">
-                  <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,26.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{1.000000,-72.000000},{0.500000,12.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,26.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-72.000000},{0.500000,12.000000}}" />
                   <Property Name="MouseRButtonHollow" Value="True"/>
                   <Property Name="MouseMoveHollow" Value="True"/>
                   <Property Name="MouseLButtonHollow" Value="True"/>
@@ -1606,18 +1606,18 @@
                 </Window>
               </Window>
               <Window Type="DefaultWindow" Name="ZhouHuoYue_Item_6">
-                <Property Name="UnifiedSize" Value="{{0.0000000,337.000000},{0.000000,90.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,338.000000},{0.000000,180.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.0000000,337.000000},{0.000000,90.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,338.000000},{0.000000,180.000000}}" />
                 <Window Type="TLBB_ButtonHelp" Name="ZhouHuoYue_Mission_Help_6">
-                  <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{1.000000,-22.000000},{0.000000,12.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-22.000000},{0.000000,12.000000}}" />
                   <Property Name="Tooltip" Value="#{}"/>
                   <Property Name="AlwaysOnTop" Value="True"/>
 				  <Event Name="Clicked" Function="ZhouHuoYue_MissionHelpClick(6);" />
                 </Window>
                 <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_CutlineMission_6">
-                  <Property Name="UnifiedSize" Value="{{0.000000,249.000000},{0.000000,1.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.000000,63.000000},{0.000000,38.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,249.000000},{0.000000,1.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.000000,63.000000},{0.000000,38.000000}}" />
                   <Property Name="RiseOnClick" Value="True"/>
                   <Property Name="MouseRButtonHollow" Value="True"/>
                   <Property Name="MouseMoveHollow" Value="True"/>
@@ -1627,8 +1627,8 @@
                   <Property Name="Image" Value="set:ZhouHuoYue image:ZhouHuoYue_Cutline_Landscape"/>
                 </Window>
                 <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_MissionBK_6">
-                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                   <Property Name="MouseRButtonHollow" Value="True"/>
                   <Property Name="MouseMoveHollow" Value="True"/>
                   <Property Name="MouseLButtonHollow" Value="True"/>
@@ -1636,14 +1636,14 @@
                   <Property Name="Image" Value="set:ZhouHuoYue image:ZhouHuoYue_MissionBK"/>
                 </Window>
                 <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_Item_Icon1_6">
-                  <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,52.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{0.500000,-26.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,52.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{0.500000,-26.000000}}" />
                   <Property Name="AlwaysOnTop" Value="True"/>
                   <Property Name="Image" Value="set:HDRC01 image:HDRC01_03"/>
                 </Window>
                 <Window Type="TLBB_SimpleText" Name="ZhouHuoYue_Item_Text1_6">
-                  <Property Name="UnifiedSize" Value="{{0.000000,212.000000},{0.000000,20.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.000000,14.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,212.000000},{0.000000,20.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.000000,14.000000}}" />
                   <Property Name="Text" Value="#任务名称"/>
                   <Property Name="TextColor" Value="FFFFFF00"/>
                   <Property Name="Font" Value="YouYuan9.75"/>
@@ -1654,8 +1654,8 @@
                   <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
                 </Window>
                 <Window Type="TLBB_SimpleText" Name="ZhouHuoYue_Item_Text2_6">
-                  <Property Name="UnifiedSize" Value="{{0.000000,198.000000},{0.000000,36.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.500000,-1.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,198.000000},{0.000000,36.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.500000,-1.000000}}" />
                   <Property Name="Text" Value="#任务描述"/>
                   <Property Name="TextColor" Value="FFFFFF00"/>
                   <Property Name="RiseOnClick" Value="True"/>
@@ -1667,8 +1667,8 @@
                   <Property Name="VertFormatting" Value="TopAligned"/>
                 </Window>
                 <Window Type="TLBB_SimpleText" Name="ZhouHuoYue_Item_Text3_6">
-                  <Property Name="UnifiedSize" Value="{{0.000000,82.000000},{0.000000,19.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.000000,177.000000},{0.500000,19.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,82.000000},{0.000000,19.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.000000,177.000000},{0.500000,19.000000}}" />
                   <Property Name="Text" Value="# 20000/20000"/>
                   <Property Name="RiseOnClick" Value="True"/>
                   <Property Name="MouseRButtonHollow" Value="True"/>
@@ -1678,20 +1678,20 @@
                   <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
                 </Window>
                 <Window Type="TLBB_SimpleText" Name="ZhouHuoYue_Item_Text4_6">
-                  <Property Name="UnifiedSize" Value="{{0.000000,19.000000},{0.000000,19.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.000000,298.000000},{0.300000,-9.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,19.000000},{0.000000,19.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.000000,298.000000},{0.300000,-9.000000}}" />
                   <Property Name="Text" Value="35"/>
                   <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
                 </Window>
                 <Window Type="TLBB_SimpleText" Name="ZhouHuoYue_Item_Text5_6">
-                  <Property Name="UnifiedSize" Value="{{0.000000,28.000000},{0.000000,19.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.000000,268.000000},{0.300000,-9.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,28.000000},{0.000000,19.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.000000,268.000000},{0.300000,-9.000000}}" />
                   <Property Name="Text" Value="#{ZHY_210301_35}"/>
                   <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
                 </Window>
                 <Window Type="TLBB_ButtonNULL" Name="ZhouHuoYue_Item_ButtonGet_6">
-                  <Property Name="UnifiedSize" Value="{{0.000000,49.000000},{0.000000,24.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{1.000000,-63.000000},{0.500000,14.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,49.000000},{0.000000,24.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-63.000000},{0.500000,14.000000}}" />
                   <Property Name="PushedImage" Value="set:ZhouHuoYue image:ZhouHuoYue_RewGet_Pushed"/>
                   <Property Name="NormalImage" Value="set:ZhouHuoYue image:ZhouHuoYue_RewGet_Normal"/>
                   <Property Name="HoverImage" Value="set:ZhouHuoYue image:ZhouHuoYue_RewGet_Hover"/>
@@ -1699,8 +1699,8 @@
 				   <Event Name="Clicked" Function="ZhouHuoYue_GetZhouHuoYueAddHuoYueZhi(6);" />
                 </Window>
                 <Window Type="TLBB_ButtonNULL" Name="ZhouHuoYue_Item_ButtonGoto_6">
-                  <Property Name="UnifiedSize" Value="{{0.000000,49.000000},{0.000000,24.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{1.000000,-63.000000},{0.500000,14.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,49.000000},{0.000000,24.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-63.000000},{0.500000,14.000000}}" />
                   <Property Name="PushedImage" Value="set:ZhouHuoYue image:ZhouHuoYue_Goto_Pushed"/>
                   <Property Name="NormalImage" Value="set:ZhouHuoYue image:ZhouHuoYue_Goto_Normal"/>
                   <Property Name="HoverImage" Value="set:ZhouHuoYue image:ZhouHuoYue_Goto_Hover"/>
@@ -1708,8 +1708,8 @@
 				   <Event Name="Clicked" Function="ZhouHuoYue_GotoClick(6);" />
                 </Window>
                 <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_Received_6">
-                  <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,26.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{1.000000,-72.000000},{0.500000,12.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,26.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-72.000000},{0.500000,12.000000}}" />
                   <Property Name="MouseRButtonHollow" Value="True"/>
                   <Property Name="MouseMoveHollow" Value="True"/>
                   <Property Name="MouseLButtonHollow" Value="True"/>
@@ -1721,11 +1721,11 @@
             </Window>
           </Window>
           <Window Type="TLBB_Frame_Lace1" Name="ZhouHuoYue_Condition">
-            <Property Name="UnifiedSize" Value="{{1.000000,-88.000000},{0.000000,40.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,84.000000},{0.000000,175.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,-88.000000},{0.000000,40.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,84.000000},{0.000000,175.000000}}" />
             <Window Type="TLBB_SimpleText" Name="ZhouHuoYue_Condition_Text">
-              <Property Name="UnifiedSize" Value="{{1.000000,-120.000000},{0.000000,34.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,4.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,-120.000000},{0.000000,34.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,4.000000}}" />
               <Property Name="Text" Value="#{ZHY_210301_70}"/>
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
@@ -1737,8 +1737,8 @@
           </Window>
         </Window>
                 <Window Type="TLBB_ButtonNULL" Name="ZhouHuoYue_Item_PageUp">
-                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,26.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{1.000000,-34.000000},{0.500000,14.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,26.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-34.000000},{0.500000,14.000000}}" />
                   <Property Name="PushedImage" Value="set:Button6 image:PageUp_Btn_Pushed"/>
                   <Property Name="NormalImage" Value="set:Button6 image:PageUp_Btn_Normal"/>
                   <Property Name="HoverImage" Value="set:Button6 image:PageUp_Btn_Hover"/>
@@ -1747,8 +1747,8 @@
 				   <Event Name="Clicked" Function="ZhouHuoYue_PageChange(-1);" />
                 </Window>
                 <Window Type="TLBB_ButtonNULL" Name="ZhouHuoYue_Item_PageDown">
-                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,26.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{1.000000,-34.000000},{0.800000,14.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,26.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-34.000000},{0.800000,14.000000}}" />
                   <Property Name="PushedImage" Value="set:Button6 image:PageDown_Btn_Pushed"/>
                   <Property Name="NormalImage" Value="set:Button6 image:PageDown_Btn_Normal"/>
                   <Property Name="HoverImage" Value="set:Button6 image:PageDown_Btn_Hover"/>

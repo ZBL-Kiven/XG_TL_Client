@@ -1,23 +1,23 @@
 <?xml version="1.0" ?>
 <GUILayout>
   <Window Type="TLBB_HeroFrame01" Name="PanDa_ShopFrame">
-    <Property Name="UnifiedSize" Value="{{0.000000,808.000000},{0.000000,512.000000}}"/>
-    <Property Name="UnifiedPosition" Value="{{0.500000,-400.000000},{0.500000,-250.000000}}"/>
+    <Property Name="UnifiedSize" Value="{{0.000000,808.000000},{0.000000,512.000000}}" />
+    <Property Name="UnifiedPosition" Value="{{0.500000,-400.000000},{0.500000,-250.000000}}" />
     <Window Type="TLBB_HeroTitle01" Name="PanDa_ShopDragTitle_BK">
-      <Property Name="UnifiedSize" Value="{{0.000000,280.000000},{0.000000,30.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.500000,-140.000000},{0.000000,-2.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{0.000000,280.000000},{0.000000,30.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.500000,-140.000000},{0.000000,-2.000000}}" />
       <Property Name="RiseOnClick" Value="False"/>
     </Window>
     <Window Type="TLBB_DragTitle" Name="PanDa_ShopDragTitle">
-      <Property Name="UnifiedSize" Value="{{1.000000,-70.000000},{0.000000,30.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,35.000000},{0.000000,0.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-70.000000},{0.000000,30.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,35.000000},{0.000000,0.000000}}" />
       <Property Name="Text" Value="#{XMBJ_220406_05}"/>
       <Property Name="Font" Value="YouYuan11.25"/>
       <Property Name="DragTarget" Value="PanDa_ShopFrame"/>
     </Window>
     <Window Type="TLBB_ButtonNULL" Name="PanDa_ShopClose">
-      <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.000000,9.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.000000,9.000000}}" />
       <Property Name="PushedImage" Value="set:ZLHeroMeeting image:Close_Push"/>
       <Property Name="NormalImage" Value="set:ZLHeroMeeting image:Close_Normal"/>
       <Property Name="HoverImage" Value="set:ZLHeroMeeting image:Close_Hover"/>
@@ -25,31 +25,31 @@
       <Event Name="Clicked" Function="PanDa_ShopOnHiden()" />
     </Window>
     <Window Type="TLBB_HeroLace01" Name="PanDa_ShopClient">
-      <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{1.000000,-32.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,28.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{1.000000,-32.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,28.000000}}" />
       <Window Type="TLBB_StaticImageNULL" Name="PanDa_Shop_ImageBK">
-        <Property Name="UnifiedSize" Value="{{0.000000,800.000000},{0.000000,480.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,800.000000},{0.000000,480.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
         <Property Name="RiseOnClick" Value="False"/>
         <Property Name="Image" Value="set:Panda_Shop image:PanDa_ShopBK"/>
           <Window Type="TLBB_SimpleText" Name="PanDa_ShopInfo">
-            <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,54.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,54.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,30.000000}}" />
             <Property Name="HorzFormatting" Value="HorzCentred"/>
             <Property Name="Text" Value="#{XMBJ_220406_08}"/>
           </Window>
         <Window Type="DefaultWindow" Name="PanDa_ShopExplain">
-          <Property Name="UnifiedSize" Value="{{0.000000,340.000000},{0.000000,340.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,44.000000},{0.000000,118.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,340.000000},{0.000000,340.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,44.000000},{0.000000,118.000000}}" />
           <Property Name="RiseOnClick" Value="False"/>
           <Property Name="AlwaysOnTop" Value="True"/>
           <Window Type="TLBB_ActionButton" Name="PanDa_Shop_DownIcon1">
-            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,27.000000},{0.000000,72.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,27.000000},{0.000000,72.000000}}" />
             <Property Name="RiseOnClick" Value="False"/>
             <Window Type="TLBB_StaticImageNULL" Name="PanDa_Shop_DownIcon1BtnOK">
-              <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
               <Property Name="RiseOnClick" Value="False"/>
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
@@ -59,12 +59,12 @@
             </Window>
           </Window>
           <Window Type="TLBB_ActionButton" Name="PanDa_Shop_DownIcon2">
-            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,90.000000},{0.000000,177.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,90.000000},{0.000000,177.000000}}" />
             <Property Name="RiseOnClick" Value="False"/>
             <Window Type="TLBB_StaticImageNULL" Name="PanDa_Shop_DownIcon2BtnOK">
-              <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
               <Property Name="RiseOnClick" Value="False"/>
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
@@ -74,12 +74,12 @@
             </Window>
           </Window>
           <Window Type="TLBB_ActionButton" Name="PanDa_Shop_DownIcon3">
-            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,151.000000},{0.000000,72.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,151.000000},{0.000000,72.000000}}" />
             <Property Name="RiseOnClick" Value="False"/>
             <Window Type="TLBB_StaticImageNULL" Name="PanDa_Shop_DownIcon3BtnOK">
-              <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
               <Property Name="RiseOnClick" Value="False"/>
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
@@ -89,12 +89,12 @@
             </Window>
           </Window>
           <Window Type="TLBB_ActionButton" Name="PanDa_Shop_DownIcon4">
-            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,208.000000},{0.000000,177.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,208.000000},{0.000000,177.000000}}" />
             <Property Name="RiseOnClick" Value="False"/>
             <Window Type="TLBB_StaticImageNULL" Name="PanDa_Shop_DownIcon4BtnOK">
-              <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
               <Property Name="RiseOnClick" Value="False"/>
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
@@ -104,12 +104,12 @@
             </Window>
           </Window>
           <Window Type="TLBB_ActionButton" Name="PanDa_Shop_DownIcon5">
-            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,269.000000},{0.000000,72.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,269.000000},{0.000000,72.000000}}" />
             <Property Name="RiseOnClick" Value="False"/>
             <Window Type="TLBB_StaticImageNULL" Name="PanDa_Shop_DownIcon5BtnOK">
-              <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
               <Property Name="RiseOnClick" Value="False"/>
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
@@ -119,28 +119,28 @@
             </Window>
           </Window>
           <Window Type="TLBB_SimpleText" Name="PanDa_Shop_ExpendText">
-            <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,20.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.500000,-94.000000},{0.000000,293.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.500000,-94.000000},{0.000000,293.000000}}" />
             <Property Name="HorzFormatting" Value="HorzCentred"/>
             <Property Name="Text" Value="#{XMBJ_220406_10}"/>
           </Window>
           <Window Type="TLBB_ButtonCommon12" Name="PanDa_Shop_Btn">
-            <Property Name="UnifiedSize" Value="{{0.000000,96.000000},{0.000000,24.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.500000,-40.000000},{1.000000,-80.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,96.000000},{0.000000,24.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.500000,-40.000000},{1.000000,-80.000000}}" />
             <Property Name="Text" Value="#{XMBJ_220406_09}"/>
             <Event Name="Clicked" Function="PanDa_Shop_Btn(1)"/>
           </Window>
         </Window>
         <Window Type="DefaultWindow" Name="PanDa_ShopExplain2">
-          <Property Name="UnifiedSize" Value="{{0.000000,344.000000},{0.000000,340.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,418.000000},{0.000000,118.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,344.000000},{0.000000,340.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,418.000000},{0.000000,118.000000}}" />
           <Window Type="TLBB_ActionButton" Name="PanDa_Shop_HighIcon1">
-            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,35.000000},{0.000000,73.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,35.000000},{0.000000,73.000000}}" />
             <Property Name="RiseOnClick" Value="False"/>
             <Window Type="TLBB_StaticImageNULL" Name="PanDa_Shop_HighIcon1BtnOK">
-              <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
               <Property Name="RiseOnClick" Value="False"/>
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
@@ -150,12 +150,12 @@
             </Window>
           </Window>
           <Window Type="TLBB_ActionButton" Name="PanDa_Shop_HighIcon2">
-            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,79.000000},{0.000000,73.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,79.000000},{0.000000,73.000000}}" />
             <Property Name="RiseOnClick" Value="False"/>
             <Window Type="TLBB_StaticImageNULL" Name="PanDa_Shop_HighIcon2BtnOK">
-              <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
               <Property Name="RiseOnClick" Value="False"/>
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
@@ -165,12 +165,12 @@
             </Window>
           </Window>
           <Window Type="TLBB_ActionButton" Name="PanDa_Shop_HighIcon3">
-            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,64.000000},{0.000000,183.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,64.000000},{0.000000,183.000000}}" />
             <Property Name="RiseOnClick" Value="False"/>
             <Window Type="TLBB_StaticImageNULL" Name="PanDa_Shop_HighIcon3BtnOK">
-              <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
               <Property Name="RiseOnClick" Value="False"/>
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
@@ -180,12 +180,12 @@
             </Window>
           </Window>
           <Window Type="TLBB_ActionButton" Name="PanDa_Shop_HighIcon4">
-            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,108.000000},{0.000000,183.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,108.000000},{0.000000,183.000000}}" />
             <Property Name="RiseOnClick" Value="False"/>
             <Window Type="TLBB_StaticImageNULL" Name="PanDa_Shop_HighIcon4BtnOK">
-              <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
               <Property Name="RiseOnClick" Value="False"/>
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
@@ -195,12 +195,12 @@
             </Window>
           </Window>
           <Window Type="TLBB_ActionButton" Name="PanDa_Shop_HighIcon5">
-            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,199.000000},{0.000000,73.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,199.000000},{0.000000,73.000000}}" />
             <Property Name="RiseOnClick" Value="False"/>
             <Window Type="TLBB_StaticImageNULL" Name="PanDa_Shop_HighIcon5BtnOK">
-              <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
               <Property Name="RiseOnClick" Value="False"/>
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
@@ -210,12 +210,12 @@
             </Window>
           </Window>
           <Window Type="TLBB_ActionButton" Name="PanDa_Shop_HighIcon6">
-            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,243.000000},{0.000000,73.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,243.000000},{0.000000,73.000000}}" />
             <Property Name="RiseOnClick" Value="False"/>
             <Window Type="TLBB_StaticImageNULL" Name="PanDa_Shop_HighIcon6BtnOK">
-              <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
               <Property Name="RiseOnClick" Value="False"/>
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
@@ -225,12 +225,12 @@
             </Window>
           </Window>
           <Window Type="TLBB_ActionButton" Name="PanDa_Shop_HighIcon7">
-            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,227.000000},{0.000000,182.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,227.000000},{0.000000,182.000000}}" />
             <Property Name="RiseOnClick" Value="False"/>
             <Window Type="TLBB_StaticImageNULL" Name="PanDa_Shop_HighIcon7BtnOK">
-              <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
               <Property Name="RiseOnClick" Value="False"/>
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
@@ -240,12 +240,12 @@
             </Window>
           </Window>
           <Window Type="TLBB_ActionButton" Name="PanDa_Shop_HighIcon8">
-            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,271.000000},{0.000000,182.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,271.000000},{0.000000,182.000000}}" />
             <Property Name="RiseOnClick" Value="False"/>
             <Window Type="TLBB_StaticImageNULL" Name="PanDa_Shop_HighIcon8BtnOK">
-              <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
               <Property Name="RiseOnClick" Value="False"/>
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
@@ -255,14 +255,14 @@
             </Window>
           </Window>
           <Window Type="TLBB_SimpleText" Name="PanDa_Shop_ExpendText2">
-            <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,20.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.500000,-94.000000},{0.000000,293.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.500000,-94.000000},{0.000000,293.000000}}" />
             <Property Name="HorzFormatting" Value="HorzCentred"/>
             <Property Name="Text" Value="#{XMBJ_220406_10}"/>
           </Window>
           <Window Type="TLBB_ButtonCommon12" Name="PanDa_Shop_Btn2">
-            <Property Name="UnifiedSize" Value="{{0.000000,96.000000},{0.000000,24.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.500000,-40.000000},{1.000000,-80.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,96.000000},{0.000000,24.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.500000,-40.000000},{1.000000,-80.000000}}" />
             <Property Name="Text" Value="#{XMBJ_220406_09}"/>
             <Event Name="Clicked" Function="PanDa_Shop_Btn(2)"/>
           </Window>

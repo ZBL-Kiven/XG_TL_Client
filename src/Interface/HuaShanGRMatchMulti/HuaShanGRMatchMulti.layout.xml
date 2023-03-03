@@ -1,17 +1,17 @@
 <?xml version="1.0"?>
 <GUILayout>
 	<Window Type="TLBB_MainFrame4" Name="HuaShanGRMatchMulti_BKFrame">
-		<Property Name="UnifiedPosition" Value="{{0.500000,-336.000000},{0.300000,0.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.500000,-336.000000},{0.300000,0.000000}}" />
 		<Property Name="AbsoluteSize" Value="w:673.000000 h:254.000000"/>
 		<Event Name="Hidden" Function="HuaShanGRMatchMulti_Close();"/>
 
     <Window Type="TLBB_DragTitle" Name="HuaShanGRMatchMulti_DragTitle">
       <Property Name="AbsolutePosition" Value="x:65.000000 y:21.000000"/>
-      <Property Name="UnifiedSize" Value="{{0.000000,515.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{0.000000,515.000000},{0.000000,20.000000}}" />
       <Property Name="DragTarget" Value="HuaShanGRMatchMulti_BKFrame"/>
       <Window Type="TLBB_SimpleText" Name="HuaShanGRMatchMulti_Text">
-        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
-        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
         <Property Name="Font" Value="YouYuan11.25"/>
         <Property Name="RiseOnClick" Value="False"/>
         <Property Name="Text" Value="#{XHSLJ_XML_5}"/>
@@ -37,7 +37,7 @@
 			</Window>
     
     	<Window Type="TLBB_MultiColumnList" Name="HuaShanGRMatchMulti_List" >
-				<Property Name="UnifiedPosition" Value="{{0.000000,11.000000},{0.000000,44.000000}" />
+				<Property Name="UnifiedPosition" Value="{{0.000000,11.000000},{0.000000,44.000000}}" />
 				<Property Name="AbsoluteSize" Value="w:652.000000 h:193.000000"/>
 				<Property Name="ColumnHeader" Value="text:#{XHSLJ_XML_6} width:0.1 id:0" />
 				<Property Name="ColumnHeader" Value="text:#{XHSLJ_XML_7} width:0.1 id:1" />

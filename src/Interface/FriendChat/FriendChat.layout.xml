@@ -1,12 +1,12 @@
 <?xml version="1.0" ?>
 <GUILayout>
   <Window Type="TLBB_MainFrame0" Name="FriendChat_Frame">
-    <Property Name="UnifiedSize" Value="{{0.000000,600.000000},{0.000000,420.000000}}"/>
-    <Property Name="UnifiedPosition" Value="{{0.500000,-300.000000},{0.500000,-210.000000}}"/>
+    <Property Name="UnifiedSize" Value="{{0.000000,600.000000},{0.000000,420.000000}}" />
+    <Property Name="UnifiedPosition" Value="{{0.500000,-300.000000},{0.500000,-210.000000}}" />
 	<Event Name="Hidden" Function="FriendChat_OnHidden();"/>
     <Window Type="TLBB_DragTitle" Name="FriendChat_DragTitle">
-      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}" />
       <Property Name="DragTarget" Value="FriendChat_Frame"/>
       <Property Name="Font" Value="YouYuan11.25"/>
       <Property Name="Text" Value="#{KDHYYH_20211025_14}"/>
@@ -14,28 +14,28 @@
       <Property Name="VertFormatting" Value="VertCentred" />
     </Window>
     <Window Type="TLBB_ButtonHelp" Name="FriendChat_Help">
-      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}" />
       <Event Name="Clicked" Function="FriendChat_OnHelpClick();"/>
     </Window>
     <Window Type="TLBB_ButtonClose" Name="FriendChat_Close">
-      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}" />
       <Event Name="Clicked" Function="FriendChat_OnCloseClick();"/>
     </Window>
     <Window Type="DefaultWindow" Name="FriendChat_Client">
-      <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-55.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,36.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-55.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,36.000000}}" />
       <Window Type="TLBB_IMListBoxCommon" Name="FriendChat_List">
-        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
-        <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{1.000000,0.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+        <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{1.000000,0.000000}}" />
         <Event Name="ItemSelectionByRButton" Function="FriendChat_OpenMenu();"/>
         <Event Name="MouseDoubleClick" Function="FriendChat_FriendListDoubleClick()"/>
         <Event Name="ItemSelectionChanged" Function="FriendChat_List_SelectChanged()" />
       </Window>
       <Window Type="TLBB_MultiIMEEditBox" Name="FriendChat_Edit">
-        <Property Name="UnifiedSize" Value="{{1.000000,-202.000000},{1.000000,-280.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,200.000000},{0.000000,260.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,-202.000000},{1.000000,-280.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,200.000000},{0.000000,260.000000}}" />
         <Property Name="MaxTextLength" Value="64" />
         <Property Name="OnReturnEnable" Value="False" />
         <Property Name="ActiveSelectionColour" Value="FF00FF00" />
@@ -43,17 +43,17 @@
         <Event Name="TextAccepted" Function="FriendChat_SendMessage();" />
       </Window>
       <Window Type="TLBB_Frame_Lace1" Name="FriendChat_ChatHistory">
-        <Property Name="UnifiedSize" Value="{{1.000000,-200.000000},{1.000000,-108.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,200.000000},{0.000000,0.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,-200.000000},{1.000000,-108.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,200.000000},{0.000000,0.000000}}" />
       <Window Type="TLBB_IMChatHistory" Name="FriendChat_HistoryContent">
-        <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{1.000000,-8.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{1.000000,-8.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}" />
         <Property Name="ChatBoardNumber" Value="60"/>
       </Window>
       </Window>
       <Window Type="TLBB_Frame_Lace1" Name="FriendChat_ChatButton_Frame">
-        <Property Name="UnifiedSize" Value="{{0.000000,39.000000},{0.000000,22.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,200.000000},{1.000000,-20.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,39.000000},{0.000000,22.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,200.000000},{1.000000,-20.000000}}" />
         <Window Type="TLBB_ButtonNULL" Name="FriendChat_LetterColor">
           <Property Name="AbsolutePosition" Value="x:3.000000 y:3.000000" />
           <Property Name="AbsoluteSize" Value="w:16.000000 h:16.000000" />
@@ -76,18 +76,18 @@
         </Window>
       </Window>
       <Window Type="TLBB_Frame_Lace5" Name="FriendChat_Speaker_Blank">
-        <Property Name="UnifiedSize" Value="{{1.000000,-360.000000},{0.000000,20.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,240.000000},{1.000000,-20.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,-360.000000},{0.000000,20.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,240.000000},{1.000000,-20.000000}}" />
         <Property Name="RiseOnClick" Value="False" />
       </Window>
       <Window Type="TLBB_ButtonCommon" Name="FriendChat_Speaker_OK">
-        <Property Name="UnifiedPosition" Value="{{1.000000,-120.000000},{1.000000,-20.000000}" />
+        <Property Name="UnifiedPosition" Value="{{1.000000,-120.000000},{1.000000,-20.000000}}" />
         <Property Name="AbsoluteSize" Value="w:60.000000 h:20.000000" />
         <Property Name="Text" Value="#{INTERFACE_XML_556}" />
         <Event Name="Clicked" Function="FriendChat_SendMessage();" />
       </Window>
       <Window Type="TLBB_ButtonCommon" Name="FriendChat_Speaker_Cancel">
-        <Property Name="UnifiedPosition" Value="{{1.000000,-60.000000},{1.000000,-20.000000}" />
+        <Property Name="UnifiedPosition" Value="{{1.000000,-60.000000},{1.000000,-20.000000}}" />
         <Property Name="AbsoluteSize" Value="w:60.000000 h:20.000000" />
         <Property Name="Text" Value="#{INTERFACE_XML_539}" />
         <Event Name="Clicked" Function="FriendChat_OnCancel()" />

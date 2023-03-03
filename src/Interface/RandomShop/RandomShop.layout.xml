@@ -1,12 +1,12 @@
 <?xml version="1.0" ?>
 <GUILayout>
     <Window Type="TLBB_MainFrame0" Name="RandomShop_Frame">
-        <Property Name="UnifiedPosition" Value="{{0.500000,-175.000000},{0.500000,-172.500000}" />
+        <Property Name="UnifiedPosition" Value="{{0.500000,-175.000000},{0.500000,-172.500000}}" />
         <Property Name="AbsoluteSize" Value="w:350 h:345" />
         <Event Name="Hidden" Function="Booth_Close();" />
         <Window Type="TLBB_DragTitle" Name="RandomShop_DragTitle">
             <Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
-            <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+            <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}" />
             <Property Name="DragTarget" Value="RandomShop_Frame" />
             <Window Type="TLBB_SimpleText" Name="RandomShop_Text">
                 <Property Name="Position" Value="x:0 y:0" />
@@ -19,46 +19,46 @@
             </Window>
         </Window>
         <Window Type="TLBB_ButtonHelp" Name="RandomShop_Help">
-            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}" />
             <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
             <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*RandomShop&quot;);' />
         </Window>
         <Window Type="TLBB_ButtonClose" Name="RandomShop_Close">
-            <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+            <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}" />
             <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
             <Event Name="Clicked" Function="Booth_Close();" />
         </Window>
         <Window Type="DefaultWindow" Name="RandomShop_Background_Frame1">
             <Property Name="AbsolutePosition" Value="x:5.000000 y:36.000000" />
-            <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,-5.000000}" />
+            <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,-5.000000}}" />
             <Window Type="TLBB_ButtonCheck" Name="RandomShop_querengoumai" >
-                <Property Name="UnifiedPosition" Value="{{0.000000,222.000000},{0.000000,16.000000}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,222.000000},{0.000000,16.000000}}" />
                 <Property Name="AbsoluteSize" Value="w:12.000000 h:13.000000" />
                 <Property Name="CheckMode" Value="0" />
             </Window>
             <Window Type="TLBB_SimpleText" Name="RandomShop_querengoumai_Text">
-				<Property Name="UnifiedPosition" Value="{{1.000000,-104.000000},{0.000000,13.000000}" />
-				<Property Name="UnifiedSize" Value="{{1.000000,-250.000000},{0.000000,18.000000}" />
+				<Property Name="UnifiedPosition" Value="{{1.000000,-104.000000},{0.000000,13.000000}}" />
+				<Property Name="UnifiedSize" Value="{{1.000000,-250.000000},{0.000000,18.000000}}" />
                 <Property Name="Text" Value="#{INTERFACE_XML_RandomShop_QUREN1}" />
                 <Property Name="HorzFormatting" Value="LeftAligned" />
                 <Property Name="Tooltip" Value="#{INTERFACE_XML_RandomShop_QUREN2}" />
             </Window>
             <Window Type="TLBB_SimpleText" Name="RandomShop_Info_Text">
-				<Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,13.000000}" />
-				<Property Name="UnifiedSize" Value="{{.000000,200.000000},{0.000000,18.000000}" />
+				<Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,13.000000}}" />
+				<Property Name="UnifiedSize" Value="{{.000000,200.000000},{0.000000,18.000000}}" />
                 <Property Name="Text" Value="商品每日#G12点#W刷新" />
                 <Property Name="HorzFormatting" Value="LeftAligned" />
             </Window>
             <Window Type="DefaultWindow" Name="RandomShop_Action_Set">
                 <Property Name="Position" Value="x:0.026471 y:0.105556" />
-                <Property Name="UnifiedSize" Value="{{0.960000,-3.399993},{0.830000,-32.800007}" />
+                <Property Name="UnifiedSize" Value="{{0.960000,-3.399993},{0.830000,-32.800007}}" />
                 <Window Type="TLBB_ActionButton" Name="RandomShop_Item1">
                     <Property Name="AbsolutePosition" Value="x:0.000000 y:1.000000" />
                     <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
                     <Event Name="Clicked" Function="RandomShop_Clicked(1);" />
             <Window Type="TLBB_SimpleText" Name="RandomShop_Item1_Text">
-				<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}" />
-				<Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}" />
+				<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}" />
+				<Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}}" />
                 <Property Name="Text" Value="" />
                 <Property Name="HorzFormatting" Value="LeftAligned" />
             </Window>					
@@ -76,8 +76,8 @@
                     <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
                     <Event Name="Clicked" Function="RandomShop_Clicked(2);" />
             <Window Type="TLBB_SimpleText" Name="RandomShop_Item2_Text">
-				<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}" />
-				<Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}" />
+				<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}" />
+				<Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}}" />
                 <Property Name="Text" Value="" />
                 <Property Name="HorzFormatting" Value="LeftAligned" />
             </Window>					
@@ -95,8 +95,8 @@
                     <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
                     <Event Name="Clicked" Function="RandomShop_Clicked(3);" />
             <Window Type="TLBB_SimpleText" Name="RandomShop_Item3_Text">
-				<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}" />
-				<Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}" />
+				<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}" />
+				<Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}}" />
                 <Property Name="Text" Value="" />
                 <Property Name="HorzFormatting" Value="LeftAligned" />
             </Window>					
@@ -114,8 +114,8 @@
                     <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
                     <Event Name="Clicked" Function="RandomShop_Clicked(4);" />
             <Window Type="TLBB_SimpleText" Name="RandomShop_Item4_Text">
-				<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}" />
-				<Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}" />
+				<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}" />
+				<Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}}" />
                 <Property Name="Text" Value="" />
                 <Property Name="HorzFormatting" Value="LeftAligned" />
             </Window>					
@@ -133,8 +133,8 @@
                     <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
                     <Event Name="Clicked" Function="RandomShop_Clicked(5);" />
             <Window Type="TLBB_SimpleText" Name="RandomShop_Item5_Text">
-				<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}" />
-				<Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}" />
+				<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}" />
+				<Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}}" />
                 <Property Name="Text" Value="" />
                 <Property Name="HorzFormatting" Value="LeftAligned" />
             </Window>					
@@ -152,8 +152,8 @@
                     <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
                     <Event Name="Clicked" Function="RandomShop_Clicked(6);" />
             <Window Type="TLBB_SimpleText" Name="RandomShop_Item6_Text">
-				<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}" />
-				<Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}" />
+				<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}" />
+				<Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}}" />
                 <Property Name="Text" Value="" />
                 <Property Name="HorzFormatting" Value="LeftAligned" />
             </Window>					
@@ -171,8 +171,8 @@
                     <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
                     <Event Name="Clicked" Function="RandomShop_Clicked(7);" />
             <Window Type="TLBB_SimpleText" Name="RandomShop_Item7_Text">
-				<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}" />
-				<Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}" />
+				<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}" />
+				<Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}}" />
                 <Property Name="Text" Value="" />
                 <Property Name="HorzFormatting" Value="LeftAligned" />
             </Window>					
@@ -190,8 +190,8 @@
                     <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
                     <Event Name="Clicked" Function="RandomShop_Clicked(8);" />
             <Window Type="TLBB_SimpleText" Name="RandomShop_Item8_Text">
-				<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}" />
-				<Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}" />
+				<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}" />
+				<Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}}" />
                 <Property Name="Text" Value="" />
                 <Property Name="HorzFormatting" Value="LeftAligned" />
             </Window>					
@@ -209,8 +209,8 @@
                     <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
                     <Event Name="Clicked" Function="RandomShop_Clicked(9);" />
             <Window Type="TLBB_SimpleText" Name="RandomShop_Item9_Text">
-				<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}" />
-				<Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}" />
+				<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}" />
+				<Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}}" />
                 <Property Name="Text" Value="" />
                 <Property Name="HorzFormatting" Value="LeftAligned" />
             </Window>					
@@ -228,8 +228,8 @@
                     <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
                     <Event Name="Clicked" Function="RandomShop_Clicked(10);" />
             <Window Type="TLBB_SimpleText" Name="RandomShop_Item10_Text">
-				<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}" />
-				<Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}" />
+				<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}" />
+				<Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}}" />
                 <Property Name="Text" Value="" />
                 <Property Name="HorzFormatting" Value="LeftAligned" />
             </Window>					
@@ -247,8 +247,8 @@
                     <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
                     <Event Name="Clicked" Function="RandomShop_Clicked(11);" />
             <Window Type="TLBB_SimpleText" Name="RandomShop_Item11_Text">
-				<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}" />
-				<Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}" />
+				<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}" />
+				<Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}}" />
                 <Property Name="Text" Value="" />
                 <Property Name="HorzFormatting" Value="LeftAligned" />
             </Window>					
@@ -266,8 +266,8 @@
                     <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
                     <Event Name="Clicked" Function="RandomShop_Clicked(12);" />
             <Window Type="TLBB_SimpleText" Name="RandomShop_Item12_Text">
-				<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}" />
-				<Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}" />
+				<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}" />
+				<Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}}" />
                 <Property Name="Text" Value="" />
                 <Property Name="HorzFormatting" Value="LeftAligned" />
             </Window>					

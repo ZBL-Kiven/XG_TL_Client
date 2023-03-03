@@ -1,42 +1,42 @@
 <?xml version="1.0"?>
 <GUILayout>
   <Window Type="TLBB_MainFrame0" Name="BossTopList">
-		<Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,340.000000}}"/>
-		<Property Name="UnifiedPosition" Value="{{1.000000,-303.000000},{0.500000,30.000000}}"/>
+		<Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,340.000000}}" />
+		<Property Name="UnifiedPosition" Value="{{1.000000,-303.000000},{0.500000,30.000000}}" />
       <Window Type="TLBB_DragTitle" Name="BossTopList_DragTitle">
-		<Property Name="UnifiedSize" Value="{{1.000000,-64.000000},{0.000000,26.000000}}"/>
-		<Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,9.000000}}"/>
+		<Property Name="UnifiedSize" Value="{{1.000000,-64.000000},{0.000000,26.000000}}" />
+		<Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,9.000000}}" />
         <Property Name="DragTarget" Value="BossTopList" />
         <Property Name="AlwaysOnTop" Value="True" />
         <Property Name="Font" Value="Title" />
         <Property Name="Text" Value="#gFF0FA0伤害排行榜" />
       </Window>
       <Window Type="TLBB_ButtonHelp" Name="BossTopList_Help">
-		<Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
-		<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,13.000000}}"/>
+		<Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}" />
+		<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,13.000000}}" />
       </Window>
       <Window Type="TLBB_ButtonClose" Name="BossTopList_Close">
-		<Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
-		<Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,13.000000}}"/>
+		<Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}" />
+		<Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,13.000000}}" />
 		<Event Name="Clicked" Function="this:Hide();" />
       </Window>
     <Window Type="DefaultWindow" Name="BossTopList_Frame_Client">
-		<Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-50.000000}}"/>
-		<Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,33.000000}}"/>
+		<Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-50.000000}}" />
+		<Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,33.000000}}" />
       <Property Name="AlwaysOnTop" Value="True" />
       <Window Type="TLBB_Frame_Lace1" Name="BossTopList_Up">
-		<Property Name="UnifiedSize" Value="{{1.000000,-1.000000},{0.000000,80.000000}}"/>
-		<Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,4.000000}}"/>
+		<Property Name="UnifiedSize" Value="{{1.000000,-1.000000},{0.000000,80.000000}}" />
+		<Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,4.000000}}" />
         <Window Type="TLBB_SimpleText" Name="BossTopList_Text">
-          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{1.000000,-20.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{1.000000,-20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,10.000000}}" />
           <Property Name="Text" Value="#cFFF263    BOSS伤害排行榜说明" />
           <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
         </Window>
       </Window>	  
       <Window Type="TLBB_Frame_Lace1" Name="BossTopList_Down">
-		<Property Name="UnifiedSize" Value="{{1.000000,-1.000000},{0.000000,200.000000}}"/>
-		<Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{1.000000,-210.000000}}"/>
+		<Property Name="UnifiedSize" Value="{{1.000000,-1.000000},{0.000000,200.000000}}" />
+		<Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{1.000000,-210.000000}}" />
           <Window Type="TLBB_MultiColumnList" Name="BossTopList_List">
 			<Property Name="AlwaysOnTop" Value="True" />
             <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />

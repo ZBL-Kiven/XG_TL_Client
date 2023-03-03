@@ -1,43 +1,43 @@
 <?xml version="1.0" ?>
 <GUILayout>
   <Window Type="TLBB_MainFrameNULL" Name="PetSoul_Purify_Frame">
-    <Property Name="UnifiedSize" Value="{{0.000000,537.000000},{0.000000,313.000000}}"/>
-    <Property Name="UnifiedPosition" Value="{{0.500000,-269.000000},{0.500000,-157.000000}}"/>
+    <Property Name="UnifiedSize" Value="{{0.000000,537.000000},{0.000000,313.000000}}" />
+    <Property Name="UnifiedPosition" Value="{{0.500000,-269.000000},{0.500000,-157.000000}}" />
     <Event Name="Hidden" Function="PetSoul_Purify_OnHiden()"/>
     <Window Type="TLBB_HeroFrame01" Name="PetSoul_Purify_MainFrame">
-      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
       <Window Type="TLBB_DragTitle" Name="PetSoul_Purify_DragTitle">
-        <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{0.000000,20.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,5.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{0.000000,20.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,5.000000}}" />
         <Property Name="Font" Value="YouYuan11.25" />
         <Property Name="HorzFormatting" Value="HorzCentred"/>
         <Property Name="Text" Value="#{BBWH_211230_15}" />
         <Property Name="DragTarget" Value="PetSoul_Purify_Frame"/>
       </Window>
       <Window Type="TLBB_HeroTitle01" Name="PetSoul_Purify_DragTitleBK">
-        <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,30.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.500000,-150.000000},{0.000000,-2.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,30.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.500000,-150.000000},{0.000000,-2.000000}}" />
       </Window>
       <Window Type="TLBB_ButtonClose2" Name="PetSoul_Purify_Close">
-        <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,14.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{1.000000,-28.000000},{0.000000,8.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,14.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{1.000000,-28.000000},{0.000000,8.000000}}" />
         <Event Name="Clicked" Function="PetSoul_Purify_Close();" />
       </Window>
       <Window Type="DefaultWindow" Name="PetSoul_Purify_Frame_Client">
-        <Property Name="UnifiedSize" Value="{{0.000000,530.000000},{0.000000,278.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,30.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,530.000000},{0.000000,278.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,30.000000}}" />
         <Property Name="RiseOnClick" Value="False" />
         <Window Type="DefaultWindow" Name="PetSoul_Purify_Frame_Detail">
-          <Property Name="UnifiedSize" Value="{{0.000000,530.000000},{0.000000,278.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,1.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,530.000000},{0.000000,278.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,1.000000}}" />
           <Window Type="DefaultWindow" Name="PetSoul_Purify_Frame_DetailBK">
-            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
             <Property Name="RiseOnClick" Value="False"/>
             <Window Type="TLBB_StaticImageNULL" Name="PetSoul_Purify_Frame_DetailBK_LT">
-              <Property Name="UnifiedSize" Value="{{0.000000,512.000000},{0.000000,256.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,512.000000},{0.000000,256.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
               <Property Name="MouseLButtonHollow" Value="True"/>
@@ -45,8 +45,8 @@
               <Property Name="Image" Value="set:PetSoul_Purify image:PetSoul_Purify_BK_LT"/>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="PetSoul_Purify_Frame_DetailBK_LB">
-              <Property Name="UnifiedSize" Value="{{0.000000,512.000000},{0.000000,22.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,256.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,512.000000},{0.000000,22.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,256.000000}}" />
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
               <Property Name="MouseLButtonHollow" Value="True"/>
@@ -54,8 +54,8 @@
               <Property Name="Image" Value="set:PetSoul_Purify image:PetSoul_Purify_BK_LB"/>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="PetSoul_Purify_Frame_DetailBK_RT">
-              <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,139.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,512.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,139.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,512.000000},{0.000000,0.000000}}" />
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
               <Property Name="MouseLButtonHollow" Value="True"/>
@@ -63,8 +63,8 @@
               <Property Name="Image" Value="set:PetSoul_Purify image:PetSoul_Purify_BK_RT"/>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="PetSoul_Purify_Frame_DetailBK_RB">
-              <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,139.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,512.000000},{0.000000,139.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,139.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,512.000000},{0.000000,139.000000}}" />
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
               <Property Name="MouseLButtonHollow" Value="True"/>
@@ -74,26 +74,26 @@
           </Window>
           <Window Type="TLBB_SimpleText" Name="PetSoul_Purify_Text1">
             <Property Name="VertFormatting" Value="TopAligned"/>
-            <Property Name="UnifiedSize" Value="{{0.000000,430.000000},{0.000000,60.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,22.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,430.000000},{0.000000,60.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,22.000000}}" />
             <Property Name="Text" Value="#{BBWH_211230_16}"/>
             <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
           </Window>
           <Window Type="DefaultWindow" Name="PetSoul_Purify_Frame_Center1">
-            <Property Name="UnifiedSize" Value="{{1.000000,-9.000000},{0.000000,220.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,84.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,-9.000000},{0.000000,220.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,84.000000}}" />
             <Property Name="AlwaysOnTop" Value="True"/>
             <Window Type="DefaultWindow" Name="PetSoul_Purify_Page1_Icon1">
-              <Property Name="UnifiedSize" Value="{{0.000000,72.000000},{0.000000,190.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,120.000000},{0.000000,2.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,72.000000},{0.000000,190.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,120.000000},{0.000000,2.000000}}" />
 				      <Property Name="RiseOnClick" Value="False"/>
               <Window Type="TLBB_StaticImageNULL" Name="PetSoul_Purify_Page1_one_Button">
-                <Property Name="UnifiedSize" Value="{{0.000000,71.000000},{0.000000,71.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.500000,-36.250000},{1.000000,-155.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,71.000000},{0.000000,71.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.500000,-36.250000},{1.000000,-155.000000}}" />
                 <Property Name="Image" Value="set:PetSoul_Purify image:NotGet_Item"/>
                 <Window Type="TLBB_Animate" Name="PetSoul_Purify_Page1_one_ButtonAnimate">
-                  <Property Name="UnifiedSize" Value="{{0.000000,49.000000},{0.000000,49.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.500000,-23.750000},{1.000000,-60.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,49.000000},{0.000000,49.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.500000,-23.750000},{1.000000,-60.000000}}" />
                   <Property Name="MouseRButtonHollow" Value="True"/>
                   <Property Name="MouseMoveHollow" Value="True"/>
                   <Property Name="MouseLButtonHollow" Value="True"/>
@@ -102,12 +102,12 @@
                   <Property Name="AlwaysOnTop" Value="True"/>
                 </Window>
                 <Window Type="TLBB_ActionButton" Name="PetSoul_Purify_Page1_one">
-                  <Property Name="UnifiedSize" Value="{{0.000000,49.000000},{0.000000,49.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.500000,-23.750000},{1.000000,-60.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,49.000000},{0.000000,49.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.500000,-23.750000},{1.000000,-60.000000}}" />
                   <Event Name="Clicked" Function="PetSoul_Purify_Page1_OnClick(1)"/>
                   <Window Type="TLBB_StaticImageNULL" Name="PetSoul_Purify_Page1_oneMark">
-                    <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,34.000000}}"/>
-                    <Property Name="UnifiedPosition" Value="{{0.500000,-22.750000},{1.000000,-42.000000}}"/>
+                    <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,34.000000}}" />
+                    <Property Name="UnifiedPosition" Value="{{0.500000,-22.750000},{1.000000,-42.000000}}" />
                     <Property Name="MouseRButtonHollow" Value="True"/>
                     <Property Name="MouseMoveHollow" Value="True"/>
                     <Property Name="MouseLButtonHollow" Value="True"/>
@@ -118,8 +118,8 @@
                 </Window>
               </Window>
               <Window Type="TLBB_SimpleText" Name="PetSoul_Purify_oneText">
-                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.500000,-31.250000},{1.000000,-86.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.500000,-31.250000},{1.000000,-86.000000}}" />
                 <Property Name="HorzFormatting" Value="HorzCentred"/>
                 <Property Name="VertFormatting" Value="VertCentred"/>
                 <Property Name="Text" Value="#{BBWH_211230_17}"/>
@@ -127,8 +127,8 @@
                 <Property Name="Font" Value="TitleMini"/>
               </Window>
               <Window Type="TLBB_StaticImageNULL" Name="PetSoul_Purify_Page1_Icon1Tips">
-                <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,136.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,136.000000}}" />
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
                 <Property Name="MouseLButtonHollow" Value="True"/>
@@ -137,8 +137,8 @@
                 <Property Name="AlwaysOnTop" Value="True"/>
               </Window>
               <Window Type="TLBB_ButtonNULL" Name="PetSoul_Purify_Page1_Icon1Get">
-                <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,16.000000},{1.000000,-50.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,16.000000},{1.000000,-50.000000}}" />
                 <Property Name="PushedImage" Value="set:ZLHeroMeeting image:Button_Push"/>
                 <Property Name="NormalImage" Value="set:ZLHeroMeeting image:Button_Normal"/>
                 <Property Name="HoverImage" Value="set:ZLHeroMeeting image:Button_Hover"/>
@@ -148,16 +148,16 @@
               </Window>
             </Window>
             <Window Type="DefaultWindow" Name="PetSoul_Purify_Page1_Icon2">
-              <Property Name="UnifiedSize" Value="{{0.000000,72.000000},{0.000000,190.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.00000,240.000000},{0.000000,2.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,72.000000},{0.000000,190.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.00000,240.000000},{0.000000,2.000000}}" />
 				<Property Name="RiseOnClick" Value="False"/>
               <Window Type="TLBB_StaticImageNULL" Name="PetSoul_Purify_Page1_two_Button">
-                <Property Name="UnifiedSize" Value="{{0.000000,71.000000},{0.000000,71.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.500000,-36.250000},{1.000000,-155.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,71.000000},{0.000000,71.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.500000,-36.250000},{1.000000,-155.000000}}" />
                 <Property Name="Image" Value="set:PetSoul_Purify image:NotGet_Item"/>
                 <Window Type="TLBB_Animate" Name="PetSoul_Purify_Page1_two_ButtonAnimate">
-                  <Property Name="UnifiedSize" Value="{{0.000000,49.000000},{0.000000,49.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.500000,-23.750000},{1.000000,-60.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,49.000000},{0.000000,49.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.500000,-23.750000},{1.000000,-60.000000}}" />
                   <Property Name="MouseRButtonHollow" Value="True"/>
                   <Property Name="MouseMoveHollow" Value="True"/>
                   <Property Name="MouseLButtonHollow" Value="True"/>
@@ -166,12 +166,12 @@
                   <Property Name="AlwaysOnTop" Value="True"/>
                 </Window>
                 <Window Type="TLBB_ActionButton" Name="PetSoul_Purify_Page1_two">
-                  <Property Name="UnifiedSize" Value="{{0.000000,49.000000},{0.000000,49.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.500000,-23.750000},{1.000000,-60.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,49.000000},{0.000000,49.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.500000,-23.750000},{1.000000,-60.000000}}" />
                   <Event Name="Clicked" Function="PetSoul_Purify_Page1_OnClick(2)"/>
                   <Window Type="TLBB_StaticImageNULL" Name="PetSoul_Purify_Page1_twoMark">
-                    <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,34.000000}}"/>
-                    <Property Name="UnifiedPosition" Value="{{0.500000,-22.750000},{1.000000,-42.000000}}"/>
+                    <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,34.000000}}" />
+                    <Property Name="UnifiedPosition" Value="{{0.500000,-22.750000},{1.000000,-42.000000}}" />
                     <Property Name="MouseRButtonHollow" Value="True"/>
                     <Property Name="MouseMoveHollow" Value="True"/>
                     <Property Name="MouseLButtonHollow" Value="True"/>
@@ -182,8 +182,8 @@
                 </Window>
               </Window>
               <Window Type="TLBB_SimpleText" Name="PetSoul_Purify_twoText">
-                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.500000,-31.250000},{1.000000,-86.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.500000,-31.250000},{1.000000,-86.000000}}" />
                 <Property Name="HorzFormatting" Value="HorzCentred"/>
                 <Property Name="VertFormatting" Value="VertCentred"/>
                 <Property Name="Text" Value="#{BBWH_211230_18}"/>
@@ -191,8 +191,8 @@
                 <Property Name="Font" Value="TitleMini"/>
               </Window>
               <Window Type="TLBB_StaticImageNULL" Name="PetSoul_Purify_Page1_Icon2Tips">
-                <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,136.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,136.000000}}" />
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
                 <Property Name="MouseLButtonHollow" Value="True"/>
@@ -201,8 +201,8 @@
                 <Property Name="AlwaysOnTop" Value="True"/>
               </Window>
               <Window Type="TLBB_ButtonNULL" Name="PetSoul_Purify_Page1_Icon2Get">
-                <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,16.000000},{1.000000,-50.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,16.000000},{1.000000,-50.000000}}" />
                 <Property Name="Text" Value="#{BBWH_211230_20}"/>
                 <Property Name="PushedImage" Value="set:ZLHeroMeeting image:Button_Push"/>
                 <Property Name="NormalImage" Value="set:ZLHeroMeeting image:Button_Normal"/>
@@ -212,16 +212,16 @@
               </Window>
             </Window>
             <Window Type="DefaultWindow" Name="PetSoul_Purify_Page1_Icon3">
-              <Property Name="UnifiedSize" Value="{{0.000000,72.000000},{0.000000,190.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,440.0000},{0.000000,2.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,72.000000},{0.000000,190.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,440.0000},{0.000000,2.000000}}" />
 			<Property Name="RiseOnClick" Value="False"/>
               <Window Type="TLBB_StaticImageNULL" Name="PetSoul_Purify_Page1_three_Button">
-                <Property Name="UnifiedSize" Value="{{0.000000,71.000000},{0.000000,71.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.500000,-36.250000},{1.000000,-155.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,71.000000},{0.000000,71.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.500000,-36.250000},{1.000000,-155.000000}}" />
                 <Property Name="Image" Value="set:PetSoul_Purify image:NotGet_Item"/>
                 <Window Type="TLBB_Animate" Name="PetSoul_Purify_Page1_three_ButtonAnimate">
-                  <Property Name="UnifiedSize" Value="{{0.000000,49.000000},{0.000000,49.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.500000,-23.750000},{1.000000,-60.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,49.000000},{0.000000,49.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.500000,-23.750000},{1.000000,-60.000000}}" />
                   <Property Name="MouseRButtonHollow" Value="True"/>
                   <Property Name="MouseMoveHollow" Value="True"/>
                   <Property Name="MouseLButtonHollow" Value="True"/>
@@ -230,12 +230,12 @@
                   <Property Name="AlwaysOnTop" Value="True"/>
                 </Window>
                 <Window Type="TLBB_ActionButton" Name="PetSoul_Purify_Page1_three">
-                  <Property Name="UnifiedSize" Value="{{0.000000,49.000000},{0.000000,49.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.500000,-23.750000},{1.000000,-60.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,49.000000},{0.000000,49.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.500000,-23.750000},{1.000000,-60.000000}}" />
                   <Event Name="Clicked" Function="PetSoul_Purify_Page1_OnClick(3)"/>
                   <Window Type="TLBB_StaticImageNULL" Name="PetSoul_Purify_Page1_threeMark">
-                    <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,34.000000}}"/>
-                    <Property Name="UnifiedPosition" Value="{{0.500000,-22.750000},{1.000000,-42.000000}}"/>
+                    <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,34.000000}}" />
+                    <Property Name="UnifiedPosition" Value="{{0.500000,-22.750000},{1.000000,-42.000000}}" />
                     <Property Name="MouseRButtonHollow" Value="True"/>
                     <Property Name="MouseMoveHollow" Value="True"/>
                     <Property Name="MouseLButtonHollow" Value="True"/>
@@ -246,16 +246,16 @@
                 </Window>
               </Window>
               <Window Type="TLBB_SimpleText" Name="PetSoul_Purify_threeText">
-                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.500000,-31.250000},{1.000000,-86.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.500000,-31.250000},{1.000000,-86.000000}}" />
                 <Property Name="Text" Value="#{BBWH_211230_19}"/>
                 <Property Name="HorzFormatting" Value="HorzCentred"/>
                 <Property Name="VertFormatting" Value="VertCentred"/>
                 <Property Name="Font" Value="TitleMini"/>
               </Window>
               <Window Type="TLBB_StaticImageNULL" Name="PetSoul_Purify_Page1_Icon3Tips">
-                <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,136.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,136.000000}}" />
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
                 <Property Name="MouseLButtonHollow" Value="True"/>
@@ -264,8 +264,8 @@
                 <Property Name="AlwaysOnTop" Value="True"/>
               </Window>
               <Window Type="TLBB_ButtonNULL" Name="PetSoul_Purify_Page1_Icon3Get">
-                <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,16.000000},{1.000000,-50.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,16.000000},{1.000000,-50.000000}}" />
                 <Property Name="Text" Value="#{BBWH_211230_20}"/>
                 <Property Name="PushedImage" Value="set:ZLHeroMeeting image:Button_Push"/>
                 <Property Name="NormalImage" Value="set:ZLHeroMeeting image:Button_Normal"/>
@@ -275,18 +275,18 @@
               </Window>
             </Window>
             <Window Type="DefaultWindow" Name="PetSoul_Purify_EXPBK">
-              <Property Name="UnifiedSize" Value="{{0.000000,497.000000},{0.000000,30.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,13.000000},{0.000000,6.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,497.000000},{0.000000,30.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,13.000000},{0.000000,6.000000}}" />
               <Property Name="RiseOnClick" Value="False"/>
               <Window Type="TLBB_StaticImageNULL" Name="PetSoul_Purify_EXPBG">
-                <Property Name="UnifiedSize" Value="{{0.000000,456.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,31.000000},{0.000000,6.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,456.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,31.000000},{0.000000,6.000000}}" />
                 <Property Name="RiseOnClick" Value="False"/>
                 <Property Name="Image" Value="set:ZLHeroMeeting image:EXPBK"/>"/>
               </Window>
               <Window Type="TLBB_ProgressPropertyZhouHuoYue" Name="PetSoul_Purify_EXP">
-                <Property Name="UnifiedSize" Value="{{0.000000,449.000000},{0.000000,10.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,34.000000},{0.000000,11.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,449.000000},{0.000000,10.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,34.000000},{0.000000,11.000000}}" />
                 <Property Name="MoveSpeed" Value="1.0"/>
                 <Property Name="EffectColor" Value="1"/>
                 <Property Name="CurrentProgress" Value="1.000000"/>

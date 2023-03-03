@@ -1,70 +1,70 @@
 <?xml version="1.0" ?>
 <GUILayout>
   <Window Type="TLBB_MainFrameNULL" Name="HerosMemory_Frame">
-    <Property Name="UnifiedSize" Value="{{0.000000,627.000000},{0.000000,405.000000}}"/>
-    <Property Name="UnifiedPosition" Value="{{0.500000,-352.000000},{0.500000,-288.000000}}"/>
+    <Property Name="UnifiedSize" Value="{{0.000000,627.000000},{0.000000,405.000000}}" />
+    <Property Name="UnifiedPosition" Value="{{0.500000,-352.000000},{0.500000,-288.000000}}" />
     <Event Name="Hidden" Function="HerosMemory_OnHiden()"/>
     <Window Type="TLBB_SpecialFrame01" Name="HerosMemory_MainFrame">
-      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
       <Window Type="TLBB_SpecialTitle01" Name="HerosMemory_DragTitleBK">
-        <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,27.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.500000,-100.000000},{0.000000,0.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,27.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.500000,-100.000000},{0.000000,0.000000}}" />
         <Property Name="RiseOnClick" Value="False"/>
       </Window>
       <Window Type="TLBB_DragTitle" Name="HerosMemory_DragTitle">
-        <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{0.000000,20.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,5.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{0.000000,20.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,5.000000}}" />
         <Property Name="Font" Value="YouYuan11.25" />
         <Property Name="HorzFormatting" Value="HorzCentred"/>
         <Property Name="Text" Value="#{TLYXH_210223_43}" />
         <Property Name="DragTarget" Value="HerosMemory_Frame"/>
       </Window>
       <Window Type="TLBB_SpecialClose" Name="HerosMemory_Close">
-        <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,45.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{1.000000,-46.000000},{0.000000,0.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,45.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{1.000000,-46.000000},{0.000000,0.000000}}" />
         <Event Name="Clicked" Function="HerosMemory_Close();" />
       </Window>
       <Window Type="DefaultWindow" Name="HerosMemory_Frame_Client">
-        <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{1.000000,-50.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,30.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{1.000000,-50.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,30.000000}}" />
         <Property Name="RiseOnClick" Value="False" />
         <Window Type="TLBB_StaticImageNULL" Name="HerosMemory_Frame_BK">
-          <Property Name="UnifiedSize" Value="{{0.000000,546.000000},{0.000000,355.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,546.000000},{0.000000,355.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
           <Property Name="RiseOnClick" Value="False"/>
           <Property Name="Image" Value="set:HerosMemory image:BG"/>
         </Window>
         <Window Type="DefaultWindow" Name="HerosMemory_Frame_Detail">
-          <Property Name="UnifiedSize" Value="{{1.000000,-6.000000},{1.000000,-3.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,1.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,-6.000000},{1.000000,-3.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,1.000000}}" />
           <Window Type="TLBB_FrameHero" Name="HerosMemory_Frame_TextBK">
-            <Property Name="UnifiedSize" Value="{{0.000000,516.000000},{0.000000,143.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,13.000000},{0.000000,23.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,516.000000},{0.000000,143.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,13.000000},{0.000000,23.000000}}" />
             <Property Name="RiseOnClick" Value="False"/>
             <Window Type="TLBB_SimpleText" Name="HerosMemory_Text1">
               <Property Name="VertFormatting" Value="TopAligned"/>
-              <Property Name="UnifiedSize" Value="{{0.000000,506.000000},{0.000000,124.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,11.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,506.000000},{0.000000,124.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,11.000000}}" />
               <Property Name="Text" Value="#{TLYXH_210223_77}"/>
               <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
             </Window>
           </Window>
           <Window Type="DefaultWindow" Name="HerosMemory_Frame_Center1">
-            <Property Name="UnifiedSize" Value="{{1.000000,-9.000000},{0.000000,164.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,173.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,-9.000000},{0.000000,164.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,173.000000}}" />
             <Property Name="AlwaysOnTop" Value="True"/>
             <Window Type="DefaultWindow" Name="HerosMemory_Page1_Icon1">
-              <Property Name="UnifiedSize" Value="{{0.000000,72.000000},{0.000000,135.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.125000,-25.000000},{0.000000,2.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,72.000000},{0.000000,135.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.125000,-25.000000},{0.000000,2.000000}}" />
 				<Property Name="RiseOnClick" Value="False"/>
               <Window Type="TLBB_StaticImageNULL" Name="HerosMemory_Page1_one_Button">
-                <Property Name="UnifiedSize" Value="{{0.000000,71.000000},{0.000000,71.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.500000,-36.250000},{1.000000,-118.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,71.000000},{0.000000,71.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.500000,-36.250000},{1.000000,-118.000000}}" />
                 <Property Name="Image" Value="set:HerosMemory image:NotGet_Item"/>
                 <Window Type="TLBB_Animate" Name="HerosMemory_Page1_one_ButtonAnimate">
-                  <Property Name="UnifiedSize" Value="{{0.000000,49.000000},{0.000000,49.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.500000,-23.750000},{1.000000,-60.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,49.000000},{0.000000,49.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.500000,-23.750000},{1.000000,-60.000000}}" />
                   <Property Name="MouseRButtonHollow" Value="True"/>
                   <Property Name="MouseMoveHollow" Value="True"/>
                   <Property Name="MouseLButtonHollow" Value="True"/>
@@ -73,12 +73,12 @@
                   <Property Name="AlwaysOnTop" Value="True"/>
                 </Window>
                 <Window Type="TLBB_ActionButton" Name="HerosMemory_Page1_one">
-                  <Property Name="UnifiedSize" Value="{{0.000000,49.000000},{0.000000,49.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.500000,-23.750000},{1.000000,-60.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,49.000000},{0.000000,49.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.500000,-23.750000},{1.000000,-60.000000}}" />
                   <Event Name="Clicked" Function="HerosMemory_OnClick(1)"/>
                   <Window Type="TLBB_StaticImageNULL" Name="HerosMemory_Page1_oneMark">
-                    <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,34.000000}}"/>
-                    <Property Name="UnifiedPosition" Value="{{0.500000,-22.750000},{1.000000,-42.000000}}"/>
+                    <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,34.000000}}" />
+                    <Property Name="UnifiedPosition" Value="{{0.500000,-22.750000},{1.000000,-42.000000}}" />
                     <Property Name="MouseRButtonHollow" Value="True"/>
                     <Property Name="MouseMoveHollow" Value="True"/>
                     <Property Name="MouseLButtonHollow" Value="True"/>
@@ -89,8 +89,8 @@
                 </Window>
               </Window>
               <Window Type="TLBB_StaticImageNULL" Name="HerosMemory_Page1_oneDot">
-                <Property Name="UnifiedSize" Value="{{0.000000,6.000000},{0.000000,6.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.500000,-3.250000},{1.000000,-37.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,6.000000},{0.000000,6.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.500000,-3.250000},{1.000000,-37.000000}}" />
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
                 <Property Name="MouseLButtonHollow" Value="True"/>
@@ -99,8 +99,8 @@
                 <Property Name="Image" Value="set:HerosMemory image:EXP_Dot"/>
               </Window>
               <Window Type="TLBB_SimpleText" Name="HerosMemory_oneText">
-                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.500000,-31.250000},{1.000000,-31.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.500000,-31.250000},{1.000000,-31.000000}}" />
                 <Property Name="HorzFormatting" Value="HorzCentred"/>
                 <Property Name="VertFormatting" Value="VertCentred"/>
                 <Property Name="Text" Value="#c993333"/>
@@ -108,8 +108,8 @@
                 <Property Name="Font" Value="TitleMini"/>
               </Window>
               <Window Type="TLBB_StaticImageNULL" Name="HerosMemory_oneTips">
-                <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,45.000000},{0.000000,73.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,45.000000},{0.000000,73.000000}}" />
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
                 <Property Name="MouseLButtonHollow" Value="True"/>
@@ -119,16 +119,16 @@
               </Window>
             </Window>
             <Window Type="DefaultWindow" Name="HerosMemory_Page1_Icon2">
-              <Property Name="UnifiedSize" Value="{{0.000000,72.000000},{0.000000,135.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.250000,-25.700000},{0.000000,2.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,72.000000},{0.000000,135.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.250000,-25.700000},{0.000000,2.000000}}" />
 				<Property Name="RiseOnClick" Value="False"/>
               <Window Type="TLBB_StaticImageNULL" Name="HerosMemory_Page1_two_Button">
-                <Property Name="UnifiedSize" Value="{{0.000000,71.000000},{0.000000,71.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.500000,-36.250000},{1.000000,-118.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,71.000000},{0.000000,71.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.500000,-36.250000},{1.000000,-118.000000}}" />
                 <Property Name="Image" Value="set:HerosMemory image:NotGet_Item"/>
                 <Window Type="TLBB_Animate" Name="HerosMemory_Page1_two_ButtonAnimate">
-                  <Property Name="UnifiedSize" Value="{{0.000000,49.000000},{0.000000,49.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.500000,-23.750000},{1.000000,-60.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,49.000000},{0.000000,49.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.500000,-23.750000},{1.000000,-60.000000}}" />
                   <Property Name="MouseRButtonHollow" Value="True"/>
                   <Property Name="MouseMoveHollow" Value="True"/>
                   <Property Name="MouseLButtonHollow" Value="True"/>
@@ -137,12 +137,12 @@
                   <Property Name="AlwaysOnTop" Value="True"/>
                 </Window>
                 <Window Type="TLBB_ActionButton" Name="HerosMemory_Page1_two">
-                  <Property Name="UnifiedSize" Value="{{0.000000,49.000000},{0.000000,49.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.500000,-23.750000},{1.000000,-60.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,49.000000},{0.000000,49.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.500000,-23.750000},{1.000000,-60.000000}}" />
                   <Event Name="Clicked" Function="HerosMemory_OnClick(2)"/>
                   <Window Type="TLBB_StaticImageNULL" Name="HerosMemory_Page1_twoMark">
-                    <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,34.000000}}"/>
-                    <Property Name="UnifiedPosition" Value="{{0.500000,-22.750000},{1.000000,-42.000000}}"/>
+                    <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,34.000000}}" />
+                    <Property Name="UnifiedPosition" Value="{{0.500000,-22.750000},{1.000000,-42.000000}}" />
                     <Property Name="MouseRButtonHollow" Value="True"/>
                     <Property Name="MouseMoveHollow" Value="True"/>
                     <Property Name="MouseLButtonHollow" Value="True"/>
@@ -153,8 +153,8 @@
                 </Window>
               </Window>
               <Window Type="TLBB_StaticImageNULL" Name="HerosMemory_Page1_twoDot">
-                <Property Name="UnifiedSize" Value="{{0.000000,6.000000},{0.000000,6.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.500000,-3.250000},{1.000000,-37.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,6.000000},{0.000000,6.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.500000,-3.250000},{1.000000,-37.000000}}" />
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
                 <Property Name="MouseLButtonHollow" Value="True"/>
@@ -163,8 +163,8 @@
                 <Property Name="Image" Value="set:HerosMemory image:EXP_Dot"/>
               </Window>
               <Window Type="TLBB_SimpleText" Name="HerosMemory_twoText">
-                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.500000,-31.250000},{1.000000,-31.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.500000,-31.250000},{1.000000,-31.000000}}" />
                 <Property Name="HorzFormatting" Value="HorzCentred"/>
                 <Property Name="VertFormatting" Value="VertCentred"/>
                 <Property Name="Text" Value="#c993333"/>
@@ -172,8 +172,8 @@
                 <Property Name="Font" Value="TitleMini"/>
               </Window>
               <Window Type="TLBB_StaticImageNULL" Name="HerosMemory_twoTips">
-                <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,45.000000},{0.000000,73.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,45.000000},{0.000000,73.000000}}" />
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
                 <Property Name="MouseLButtonHollow" Value="True"/>
@@ -183,16 +183,16 @@
               </Window>
             </Window>
             <Window Type="DefaultWindow" Name="HerosMemory_Page1_Icon3">
-              <Property Name="UnifiedSize" Value="{{0.000000,72.000000},{0.000000,135.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.375000,5.0000},{0.000000,2.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,72.000000},{0.000000,135.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.375000,5.0000},{0.000000,2.000000}}" />
 			<Property Name="RiseOnClick" Value="False"/>
               <Window Type="TLBB_StaticImageNULL" Name="HerosMemory_Page1_three_Button">
-                <Property Name="UnifiedSize" Value="{{0.000000,71.000000},{0.000000,71.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.500000,-36.250000},{1.000000,-118.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,71.000000},{0.000000,71.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.500000,-36.250000},{1.000000,-118.000000}}" />
                 <Property Name="Image" Value="set:HerosMemory image:NotGet_Item"/>
                 <Window Type="TLBB_Animate" Name="HerosMemory_Page1_three_ButtonAnimate">
-                  <Property Name="UnifiedSize" Value="{{0.000000,49.000000},{0.000000,49.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.500000,-23.750000},{1.000000,-60.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,49.000000},{0.000000,49.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.500000,-23.750000},{1.000000,-60.000000}}" />
                   <Property Name="MouseRButtonHollow" Value="True"/>
                   <Property Name="MouseMoveHollow" Value="True"/>
                   <Property Name="MouseLButtonHollow" Value="True"/>
@@ -201,12 +201,12 @@
                   <Property Name="AlwaysOnTop" Value="True"/>
                 </Window>
                 <Window Type="TLBB_ActionButton" Name="HerosMemory_Page1_three">
-                  <Property Name="UnifiedSize" Value="{{0.000000,49.000000},{0.000000,49.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.500000,-23.750000},{1.000000,-60.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,49.000000},{0.000000,49.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.500000,-23.750000},{1.000000,-60.000000}}" />
                   <Event Name="Clicked" Function="HerosMemory_OnClick(3)"/>
                   <Window Type="TLBB_StaticImageNULL" Name="HerosMemory_Page1_threeMark">
-                    <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,34.000000}}"/>
-                    <Property Name="UnifiedPosition" Value="{{0.500000,-22.750000},{1.000000,-42.000000}}"/>
+                    <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,34.000000}}" />
+                    <Property Name="UnifiedPosition" Value="{{0.500000,-22.750000},{1.000000,-42.000000}}" />
                     <Property Name="MouseRButtonHollow" Value="True"/>
                     <Property Name="MouseMoveHollow" Value="True"/>
                     <Property Name="MouseLButtonHollow" Value="True"/>
@@ -217,8 +217,8 @@
                 </Window>
               </Window>
               <Window Type="TLBB_StaticImageNULL" Name="HerosMemory_Page1_threeDot">
-                <Property Name="UnifiedSize" Value="{{0.000000,6.000000},{0.000000,6.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.500000,-3.250000},{1.000000,-37.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,6.000000},{0.000000,6.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.500000,-3.250000},{1.000000,-37.000000}}" />
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
                 <Property Name="MouseLButtonHollow" Value="True"/>
@@ -227,16 +227,16 @@
                 <Property Name="Image" Value="set:HerosMemory image:EXP_Dot"/>
               </Window>
               <Window Type="TLBB_SimpleText" Name="HerosMemory_threeText">
-                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.500000,-31.250000},{1.000000,-31.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.500000,-31.250000},{1.000000,-31.000000}}" />
                 <Property Name="Text" Value="#{}"/>
                 <Property Name="HorzFormatting" Value="HorzCentred"/>
                 <Property Name="VertFormatting" Value="VertCentred"/>
                 <Property Name="Font" Value="TitleMini"/>
               </Window>
               <Window Type="TLBB_StaticImageNULL" Name="HerosMemory_threeTips">
-                <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,45.000000},{0.000000,73.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,45.000000},{0.000000,73.000000}}" />
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
                 <Property Name="MouseLButtonHollow" Value="True"/>
@@ -246,16 +246,16 @@
               </Window>
             </Window>
             <Window Type="DefaultWindow" Name="HerosMemory_Page1_Icon4">
-              <Property Name="UnifiedSize" Value="{{0.000000,72.000000},{0.000000,135.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.500000,67.3000000},{0.000000,2.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,72.000000},{0.000000,135.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.500000,67.3000000},{0.000000,2.000000}}" />
 			<Property Name="RiseOnClick" Value="False"/>
               <Window Type="TLBB_StaticImageNULL" Name="HerosMemory_Page1_four_Button">
-                <Property Name="UnifiedSize" Value="{{0.000000,71.000000},{0.000000,71.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.500000,-36.250000},{1.000000,-118.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,71.000000},{0.000000,71.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.500000,-36.250000},{1.000000,-118.000000}}" />
                 <Property Name="Image" Value="set:HerosMemory image:NotGet_Item"/>
                 <Window Type="TLBB_Animate" Name="HerosMemory_Page1_four_ButtonAnimate">
-                  <Property Name="UnifiedSize" Value="{{0.000000,49.000000},{0.000000,49.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.500000,-23.750000},{1.000000,-60.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,49.000000},{0.000000,49.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.500000,-23.750000},{1.000000,-60.000000}}" />
                   <Property Name="MouseRButtonHollow" Value="True"/>
                   <Property Name="MouseMoveHollow" Value="True"/>
                   <Property Name="MouseLButtonHollow" Value="True"/>
@@ -264,12 +264,12 @@
                   <Property Name="AlwaysOnTop" Value="True"/>
                 </Window>
                 <Window Type="TLBB_ActionButton" Name="HerosMemory_Page1_four">
-                  <Property Name="UnifiedSize" Value="{{0.000000,49.000000},{0.000000,49.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.500000,-23.750000},{1.000000,-60.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,49.000000},{0.000000,49.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.500000,-23.750000},{1.000000,-60.000000}}" />
                   <Event Name="Clicked" Function="HerosMemory_OnClick(4)"/>
                   <Window Type="TLBB_StaticImageNULL" Name="HerosMemory_Page1_fourMark">
-                    <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,34.000000}}"/>
-                    <Property Name="UnifiedPosition" Value="{{0.500000,-22.750000},{1.000000,-42.000000}}"/>
+                    <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,34.000000}}" />
+                    <Property Name="UnifiedPosition" Value="{{0.500000,-22.750000},{1.000000,-42.000000}}" />
                     <Property Name="MouseRButtonHollow" Value="True"/>
                     <Property Name="MouseMoveHollow" Value="True"/>
                     <Property Name="MouseLButtonHollow" Value="True"/>
@@ -280,8 +280,8 @@
                 </Window>
               </Window>
               <Window Type="TLBB_StaticImageNULL" Name="HerosMemory_Page1_fourDot">
-                <Property Name="UnifiedSize" Value="{{0.000000,6.000000},{0.000000,6.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.500000,-3.250000},{1.000000,-37.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,6.000000},{0.000000,6.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.500000,-3.250000},{1.000000,-37.000000}}" />
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
                 <Property Name="MouseLButtonHollow" Value="True"/>
@@ -290,16 +290,16 @@
                 <Property Name="Image" Value="set:HerosMemory image:EXP_Dot"/>
               </Window>
               <Window Type="TLBB_SimpleText" Name="HerosMemory_fourText">
-                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.500000,-31.250000},{1.000000,-31.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.500000,-31.250000},{1.000000,-31.000000}}" />
                 <Property Name="Text" Value="#{}"/>
                 <Property Name="HorzFormatting" Value="HorzCentred"/>
                 <Property Name="VertFormatting" Value="VertCentred"/>
                 <Property Name="Font" Value="TitleMini"/>
               </Window>
               <Window Type="TLBB_StaticImageNULL" Name="HerosMemory_fourTips">
-                <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,45.000000},{0.000000,73.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,45.000000},{0.000000,73.000000}}" />
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
                 <Property Name="MouseLButtonHollow" Value="True"/>
@@ -309,16 +309,16 @@
               </Window>
             </Window>
             <Window Type="DefaultWindow" Name="HerosMemory_Page1_Icon5">
-              <Property Name="UnifiedSize" Value="{{0.000000,72.000000},{0.000000,135.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.625000,129.50000},{0.000000,2.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,72.000000},{0.000000,135.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.625000,129.50000},{0.000000,2.000000}}" />
 			<Property Name="RiseOnClick" Value="False"/>
               <Window Type="TLBB_StaticImageNULL" Name="HerosMemory_Page1_five_Button">
-                <Property Name="UnifiedSize" Value="{{0.000000,71.000000},{0.000000,71.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.500000,-36.250000},{1.000000,-118.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,71.000000},{0.000000,71.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.500000,-36.250000},{1.000000,-118.000000}}" />
                 <Property Name="Image" Value="set:HerosMemory image:NotGet_Item"/>
                 <Window Type="TLBB_Animate" Name="HerosMemory_Page1_five_ButtonAnimate">
-                  <Property Name="UnifiedSize" Value="{{0.000000,49.000000},{0.000000,49.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.500000,-23.750000},{1.000000,-60.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,49.000000},{0.000000,49.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.500000,-23.750000},{1.000000,-60.000000}}" />
                   <Property Name="MouseRButtonHollow" Value="True"/>
                   <Property Name="MouseMoveHollow" Value="True"/>
                   <Property Name="MouseLButtonHollow" Value="True"/>
@@ -327,12 +327,12 @@
                   <Property Name="AlwaysOnTop" Value="True"/>
                 </Window>
                 <Window Type="TLBB_ActionButton" Name="HerosMemory_Page1_five">
-                  <Property Name="UnifiedSize" Value="{{0.000000,49.000000},{0.000000,49.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.500000,-23.750000},{1.000000,-60.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,49.000000},{0.000000,49.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.500000,-23.750000},{1.000000,-60.000000}}" />
                   <Event Name="Clicked" Function="HerosMemory_OnClick(5)"/>
                   <Window Type="TLBB_StaticImageNULL" Name="HerosMemory_Page1_fiveMark">
-                    <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,34.000000}}"/>
-                    <Property Name="UnifiedPosition" Value="{{0.500000,-22.750000},{1.000000,-42.000000}}"/>
+                    <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,34.000000}}" />
+                    <Property Name="UnifiedPosition" Value="{{0.500000,-22.750000},{1.000000,-42.000000}}" />
                     <Property Name="MouseRButtonHollow" Value="True"/>
                     <Property Name="MouseMoveHollow" Value="True"/>
                     <Property Name="MouseLButtonHollow" Value="True"/>
@@ -343,8 +343,8 @@
                 </Window>
               </Window>
               <Window Type="TLBB_StaticImageNULL" Name="HerosMemory_Page1_fiveDot">
-                <Property Name="UnifiedSize" Value="{{0.000000,6.000000},{0.000000,6.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.500000,-3.250000},{1.000000,-37.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,6.000000},{0.000000,6.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.500000,-3.250000},{1.000000,-37.000000}}" />
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
                 <Property Name="MouseLButtonHollow" Value="True"/>
@@ -353,16 +353,16 @@
                 <Property Name="Image" Value="set:HerosMemory image:EXP_Dot"/>
               </Window>
               <Window Type="TLBB_SimpleText" Name="HerosMemory_fiveText">
-                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.500000,-31.250000},{1.000000,-31.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.500000,-31.250000},{1.000000,-31.000000}}" />
                 <Property Name="Text" Value="#{}"/>
                 <Property Name="HorzFormatting" Value="HorzCentred"/>
                 <Property Name="VertFormatting" Value="VertCentred"/>
                 <Property Name="Font" Value="TitleMini"/>
               </Window>
               <Window Type="TLBB_StaticImageNULL" Name="HerosMemory_fiveTips">
-                <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,45.000000},{0.000000,73.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,45.000000},{0.000000,73.000000}}" />
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
                 <Property Name="MouseLButtonHollow" Value="True"/>
@@ -372,31 +372,31 @@
               </Window>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="HerosMemory_BottomTextBK">
-              <Property Name="UnifiedSize" Value="{{0.000000,190.000000},{0.000000,30.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,198.000000},{0.000000,131.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,190.000000},{0.000000,30.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,198.000000},{0.000000,131.000000}}" />
               <Property Name="RiseOnClick" Value="False"/>
               <Property Name="Image" Value="set:HerosMemory image:Back"/>
               <Window Type="TLBB_SimpleText" Name="HerosMemory_BottomText">
                 <Property Name="VerticalAlignment" Value="Centre"/>
-                <Property Name="UnifiedSize" Value="{{0.000000,202.000000},{0.000000,29.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,202.000000},{0.000000,29.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}" />
                 <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
                 <Property Name="Text" Value="#{TLYXH_210223_45}"/>
               </Window>
             </Window>
             <Window Type="DefaultWindow" Name="HerosMemory_EXPBK">
-              <Property Name="UnifiedSize" Value="{{0.000000,497.000000},{0.000000,58.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,13.000000},{0.000000,80.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,497.000000},{0.000000,58.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,13.000000},{0.000000,80.000000}}" />
               <Property Name="RiseOnClick" Value="False"/>
               <Window Type="TLBB_StaticImageNULL" Name="HerosMemory_EXPBG">
-                <Property Name="UnifiedSize" Value="{{0.000000,456.000000},{0.000000,6.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,31.000000},{0.000000,14.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,456.000000},{0.000000,6.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,31.000000},{0.000000,14.000000}}" />
                 <Property Name="RiseOnClick" Value="False"/>
                 <Property Name="Image" Value="set:HerosMemory image:EXP"/>
               </Window>
               <Window Type="TLBB_ProgressPropertyZhanjianghu" Name="HerosMemory_EXP">
-                <Property Name="UnifiedSize" Value="{{0.000000,454.000000},{0.000000,4.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,32.000000},{0.000000,15.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,454.000000},{0.000000,4.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,32.000000},{0.000000,15.000000}}" />
                 <Property Name="ProgressImage" Value="set:HeXinChun2 image:EXPGreen"/>
                 <Property Name="MoveSpeed" Value="1.0"/>
                 <Property Name="EffectColor" Value="1"/>

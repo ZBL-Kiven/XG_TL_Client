@@ -1,12 +1,12 @@
 <?xml version="1.0" ?>
 <GUILayout>
     <Window Type="TLBB_MainFrame1" Name="WuhunShuXiangChange_Frame">
-      <Property Name="UnifiedSize" Value="{{0.000000,339.000000},{0.000000,391.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.500000,-179.000000},{0.500000,-226.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{0.000000,339.000000},{0.000000,391.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.500000,-179.000000},{0.500000,-226.000000}}" />
         <Event Name="Hidden" Function="WuhunShuXiangChange_OnHiden();" />
         <Window Type="TLBB_DragTitle" Name="WuhunShuXiangChange_DragTitle">
           <Property Name="AbsolutePosition" Value="x:40.000000 y:11.000000" />
-          <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}" />
+          <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}}" />
             <Property Name="DragTarget" Value="WuhunShuXiangChange_Frame" />
             <Window Type="TLBB_SimpleText" Name="WuhunShuXiangChange_Title">
                 <Property Name="Position" Value="x:0.0 y:0.0" />
@@ -19,46 +19,46 @@
             </Window>
         </Window>
 	<Window Type="TLBB_ButtonHelp" Name="WuhunShuXiangChange_Help">
-          <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}" />
           <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
             <Property Name="Text" Value="TLBB_ButtonHelp" />
         </Window>
         <Window Type="TLBB_ButtonClose" Name="WuhunShuXiangChange_Close">
-          <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+          <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}" />
           <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
             <Property Name="Text" Value="TLBB_ButtonClose" />
             <Event Name="Clicked" Function="this:Hide();" />
         </Window>
         <Window Type="DefaultWindow" Name="WuhunShuXiangChange_Frame_Client">
-          <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-37.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,28.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-37.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,28.000000}}" />
           <Window Type="TLBB_SimpleMulitiTextFrame" Name="WuhunShuXiangChange_Info">
-            <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,0.000000}}"/>
-            <Property Name="UnifiedSize" Value="{{1.000000,-2.000000},{0.000000,120.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,0.000000}}" />
+            <Property Name="UnifiedSize" Value="{{1.000000,-2.000000},{0.000000,120.000000}}" />
                 <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
                 <Property Name="RiseOnClick" Value="False" />
                 <Property Name="Text" Value="#{WHYH_161121_94}" />
                 <Property Name="TextColor" Value="FFFFF263" />
             </Window>
             <Window Type="TLBB_SimpleText" Name="WuhunShuXiangChange_Info2">
-              <Property Name="UnifiedSize" Value="{{0.0,190.000000},{0.000000,22.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,148.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.0,190.000000},{0.000000,22.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,148.000000}}" />
                 <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
                 <Property Name="RiseOnClick" Value="False" />
                 <Property Name="Text" Value="#{WHYH_161121_98}" />
                 <Property Name="TextColor" Value="FFFFF263" />
             </Window>
             <Window Type="TLBB_ActionButton" Name="WuhunShuXiangChange_Object">
-              <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,250.000000},{0.000000,136.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,250.000000},{0.000000,136.000000}}" />
               <Property Name="DragAcceptName" Value="G182" />
                 <Property Name="DraggingEnabled" Value="False" />
                 <Event Name="RBClicked" Function="WuhunShuXiangChange_Resume_Equip();" />
             </Window>
           
           <Window Type="TLBB_SimpleText" Name="WuhunShuXiangChange_Info3">
-            <Property Name="UnifiedSize" Value="{{0.0,190.000000},{0.000000,22.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,186.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.0,190.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,186.000000}}" />
             <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
             <Property Name="RiseOnClick" Value="False" />
             <Property Name="Text" Value="#{WHYH_161121_99}" />
@@ -66,45 +66,45 @@
           </Window>
 
           <Window Type="TLBB_ButtonCheckForRMBShop" Name="WuhunShuXiangChange_ShuXiang1" >
-            <Property Name="UnifiedSize" Value="{{0.000000,155.000000},{0.000000,19.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.0,6.000000},{0.0,210.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,155.000000},{0.000000,19.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.0,6.000000},{0.0,210.000000}}" />
             <Property Name="CheckMode" Value="1"/>
             <Property Name="Text" Value="#{WHYH_161121_113}" />
 				<Event Name="Clicked" Function="WuhunShuXiangChange_ShuXiang_Clicked(1);" />
           </Window>
           <Window Type="TLBB_ButtonCheckForRMBShop" Name="WuhunShuXiangChange_ShuXiang2" >
-            <Property Name="UnifiedSize" Value="{{0.000000,155.000000},{0.000000,19.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.0,165.000000},{0.0,210.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,155.000000},{0.000000,19.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.0,165.000000},{0.0,210.000000}}" />
             <Property Name="CheckMode" Value="1"/>
             <Property Name="Text" Value="#{WHYH_161121_114}" />            
 				<Event Name="Clicked" Function="WuhunShuXiangChange_ShuXiang_Clicked(2);" />
           </Window>
           <Window Type="TLBB_ButtonCheckForRMBShop" Name="WuhunShuXiangChange_ShuXiang3" >
-            <Property Name="UnifiedSize" Value="{{0.000000,155.000000},{0.000000,19.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.0,6.000000},{0.0,235.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,155.000000},{0.000000,19.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.0,6.000000},{0.0,235.000000}}" />
             <Property Name="CheckMode" Value="1"/>
              <Property Name="Text" Value="#{WHYH_161121_111}" />
 				<Event Name="Clicked" Function="WuhunShuXiangChange_ShuXiang_Clicked(3);" />
           </Window>
           <Window Type="TLBB_ButtonCheckForRMBShop" Name="WuhunShuXiangChange_ShuXiang4" >
-            <Property Name="UnifiedSize" Value="{{0.000000,155.000000},{0.000000,19.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.0,165.000000},{0.0,235.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,155.000000},{0.000000,19.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.0,165.000000},{0.0,235.000000}}" />
             <Property Name="CheckMode" Value="1"/>
             <Property Name="Text" Value="#{WHYH_161121_112}" />
 				<Event Name="Clicked" Function="WuhunShuXiangChange_ShuXiang_Clicked(4);" />
           </Window>
           
             <Window Type="TLBB_SimpleMulitiTextFrame" Name="WuhunShuXiangChange_Money_Text">
-                <Property Name="UnifiedPosition" Value="{{0.0500,0.000000},{1.000000,-102.000000}" />
-                <Property Name="UnifiedSize" Value="{{0.9,0.000000},{0.000000,22.000000}" />
+                <Property Name="UnifiedPosition" Value="{{0.0500,0.000000},{1.000000,-102.000000}}" />
+                <Property Name="UnifiedSize" Value="{{0.9,0.000000},{0.000000,22.000000}}" />
                 <Property Name="TextColor" Value="FFFFF263" />
                 <Property Name="Text" Value="#{INTERFACE_XML_789}" />
                 <Property Name="HorzFormatting" Value="LeftAligned" />
                 <Property Name="VertFormatting" Value="VertCentred" />
                 <Property Name="RiseOnClick" Value="False" />
                 <Window Type="TLBB_Money" Name="WuhunShuXiangChange_DemandMoney">
-                    <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}" />
-                    <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}" />
+                    <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}}" />
+                    <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}}" />
                     <Property Name="MoneyNumber" Value="0" />
                     <Property Name="HorzFormatting" Value="RightAligned" />
                     <Property Name="AlignFix" Value="True" />
@@ -114,16 +114,16 @@
                 </Window>
             </Window>
             <Window Type="TLBB_SimpleMulitiTextFrame" Name="WuhunShuXiangChange_Jiaozi_Text">
-                <Property Name="UnifiedPosition" Value="{{0.0500,0.000000},{1.000000,-80.000000}" />
-                <Property Name="UnifiedSize" Value="{{0.9,0.000000},{0.000000,22.000000}" />
+                <Property Name="UnifiedPosition" Value="{{0.0500,0.000000},{1.000000,-80.000000}}" />
+                <Property Name="UnifiedSize" Value="{{0.9,0.000000},{0.000000,22.000000}}" />
                 <Property Name="TextColor" Value="FFFFF263" />
                 <Property Name="Text" Value="#{BDJB_051210_1}" />
                 <Property Name="HorzFormatting" Value="LeftAligned" />
                 <Property Name="VertFormatting" Value="VertCentred" />
                 <Property Name="RiseOnClick" Value="False" />
                 <Window Type="TLBB_Money" Name="WuhunShuXiangChange_SelfJiaozi">
-                    <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}" />
-                    <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}" />
+                    <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}}" />
+                    <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}}" />
                     <Property Name="MoneyNumber" Value="0" />
                     <Property Name="HorzFormatting" Value="RightAligned" />
                     <Property Name="AlignFix" Value="True" />
@@ -133,37 +133,37 @@
                 </Window>
             </Window>
             <Window Type="TLBB_SimpleMulitiTextFrame" Name="WuhunShuXiangChange_SelfMoney_Text">
-                <Property Name="UnifiedPosition" Value="{{0.0500,0.000000},{1.000000,-58.000000}" />
-                <Property Name="UnifiedSize" Value="{{0.9,0.000000},{0.000000,22.000000}" />
+                <Property Name="UnifiedPosition" Value="{{0.0500,0.000000},{1.000000,-58.000000}}" />
+                <Property Name="UnifiedSize" Value="{{0.9,0.000000},{0.000000,22.000000}}" />
                 <Property Name="TextColor" Value="FFFFF263" />
                 <Property Name="Text" Value="#{INTERFACE_XML_834}" />
                 <Property Name="HorzFormatting" Value="LeftAligned" />
                 <Property Name="VertFormatting" Value="VertCentred" />
                 <Property Name="RiseOnClick" Value="False" />
                 <Window Type="TLBB_Money" Name="WuhunShuXiangChange_SelfMoney">
-                    <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}" />
-                    <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}" />
+                    <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}}" />
+                    <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}}" />
                     <Property Name="HorzFormatting" Value="RightAligned" />
                     <Property Name="MoneyNumber" Value="0" />
                 </Window>
             </Window>
             <Window Type="TLBB_Frame_Lace5" Name="WuhunShuXiangChange_Blank">
-              <Property Name="UnifiedSize" Value="{{1.000000,-85.000000},{0.000000,20.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{1.000000,-29.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,-85.000000},{0.000000,20.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{1.000000,-29.000000}}" />
               <Window Type="DefaultWindow" Name="WuhunShuXiangChange_Blank_QuerenLace">
-                <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}" />
                 <Window Type="TLBB_ButtonCheck" Name="WuhunShuXiangChange_Blank_Queren">
-                  <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,13.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,4.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,13.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,4.000000}}" />
                   <Property Name="AlwaysOnTop" Value="True"/>
                   <Property Name="Selected" Value="True"/>
 			<Event Name="Clicked" Function="WuhunShuXiangChange_Queren_Clicked();" />
 
                 </Window>
                 <Window Type="TLBB_SimpleText" Name="WuhunShuXiangChange_Blank_Queren_Text">
-                  <Property Name="UnifiedSize" Value="{{0.000000,85.000000},{0.000000,20.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,1.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,85.000000},{0.000000,20.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,1.000000}}" />
                   <Property Name="Text" Value="#{WHYH_161121_6}"/>
                   <Property Name="Tooltip" Value="#{WHYH_161121_100}"/>
                   <Property Name="AlwaysOnTop" Value="True"/>
@@ -171,13 +171,13 @@
               </Window>
             </Window>
             <Window Type="TLBB_ButtonCommon" Name="WuhunShuXiangChange_OK">
-                <Property Name="UnifiedPosition" Value="{{1.000000,-82.000000},{1.000000,-29.000000}" />
+                <Property Name="UnifiedPosition" Value="{{1.000000,-82.000000},{1.000000,-29.000000}}" />
                 <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
                 <Property Name="Text" Value="#{INTERFACE_XML_557}" />
                 <Event Name="Clicked" Function="WuhunShuXiangChange_OK_Clicked();" />
             </Window>
             <Window Type="TLBB_ButtonCommon" Name="WuhunShuXiangChange_Cancel">
-                <Property Name="UnifiedPosition" Value="{{1.000000,-42.000000},{1.000000,-29.000000}" />
+                <Property Name="UnifiedPosition" Value="{{1.000000,-42.000000},{1.000000,-29.000000}}" />
                 <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
                 <Property Name="Text" Value="#{INTERFACE_XML_542}" />
                 <Event Name="Clicked" Function="this:Hide();" />

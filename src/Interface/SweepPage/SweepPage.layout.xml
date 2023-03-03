@@ -1,92 +1,92 @@
 <?xml version="1.0" ?>
 <GUILayout>
   <Window Type="TLBB_MainFrame1" Name="SweepPage_Frame">
-    <Property Name="UnifiedSize" Value="{{0.000000,420.000000},{0.000000,610.000000}}"/>
-    <Property Name="UnifiedPosition" Value="{{0.500000,-195.000000},{0.500000,-290.000000}}"/>
+    <Property Name="UnifiedSize" Value="{{0.000000,420.000000},{0.000000,610.000000}}" />
+    <Property Name="UnifiedPosition" Value="{{0.500000,-195.000000},{0.500000,-290.000000}}" />
     <Window Type="TLBB_ButtonClose" Name="SweepPage_Close">
-      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}" />
       <Event Name="Clicked" Function="SweepPage_OnClosed();"/>
     </Window>
     <Window Type="TLBB_ButtonHelp" Name="SweepPage_Help">
-      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}" />
       <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
     </Window>
     <Window Type="TLBB_DragTitle" Name="SweepPage_DragTitle">
-      <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,10.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,10.000000}}" />
       <Property Name="Text" Value="#{FBSD_150126_26}"/>
       <Property Name="Font" Value="YouYuan11.25"/>
       <Property Name="DragTarget" Value="SweepPage_Frame"/>
     </Window>
     <Window Type="DefaultWindow" Name="SweepPage_Client">
-      <Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{1.000000,-63.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,30.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{1.000000,-63.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,30.000000}}" />
       <Window Type="TLBB_SimpleMulitiTextFrame" Name="SweepPage_ExplainBK">
         <Property Name="VertFormatting" Value="VertCentred"/>
-        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.00000,150.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,1.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.00000,150.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,1.000000}}" />
         <Window Type="TLBB_SimpleText" Name="SweepPage_Explain">
-          <Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{1.000000,-2.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,1.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{1.000000,-2.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,1.000000}}" />
           <Property Name="Text" Value="#{FBSD_150126_27}"/>
           <Property Name="RiseOnClick" Value="False"/>
           <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
         </Window>
         <Window Type="TLBB_SimpleText" Name="SweepPage_Explain3">
-          <Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{1.000000,-2.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,1.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{1.000000,-2.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,1.000000}}" />
           <Property Name="Text" Value="#{FBSD_130127_3}"/>
           <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
           <Window Type="TLBB_SimpleText" Name="SweepPage_Explain4">
-            <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,18.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{1.000000,-33.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,18.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{1.000000,-33.000000}}" />
             <Property Name="Text" Value="#{}"/>
             <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
           </Window>
         </Window>
       </Window>
       <Window Type="TLBB_ButtonNULL" Name="SweepPage_Button">
-        <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{1.000000,-119.000000},{0.000000,128.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{1.000000,-119.000000},{0.000000,128.000000}}" />
         <Property Name="AlwaysOnTop" Value="True"/>
         <Property Name="Text" Value="#{FBSD_170509_01}"/>
         <Event Name="Clicked" Function="SweepPage_Button_Clicked();"/>
       </Window>
       <Window Type="TLBB_SimpleMulitiTextFrame" Name="SweepPage_Explain1">
-        <Property Name="UnifiedSize" Value="{{0.600000,0.000000},{0.000000,18.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,147.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.600000,0.000000},{0.000000,18.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,147.000000}}" />
         <Property Name="Text" Value="#{FBSD_150126_81}"/>
         <Property Name="RiseOnClick" Value="False"/>
         <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
       </Window>
       <Window Type="TLBB_SimpleMulitiTextFrame" Name="SweepPage_Explain_times">
-        <Property Name="UnifiedSize" Value="{{0.400000,0.000000},{0.000000,18.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.600000,0.000000},{0.000000,147.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.400000,0.000000},{0.000000,18.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.600000,0.000000},{0.000000,147.000000}}" />
         <Property Name="Text" Value="#{SDYH_170123_09}"/>
         <Property Name="RiseOnClick" Value="False"/>
         <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
       </Window>
 
       <Window Type="TLBB_SimpleMulitiTextFrame" Name="SweepPage_Double">
-        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,-1.000000},{0.290000,4.370010}}"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,-1.000000},{0.290000,4.370010}}" />
         <Window Type="TLBB_ButtonCheck" Name="SweepPage_DoubleCheck">
-          <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,4.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,4.000000}}" />
           <Property Name="Tooltip" Value="#{FBSD_150126_25}"/>
           <Event Name="Clicked" Function="SweepPage_OnCheckClick()"/>
         </Window>
         <Window Type="TLBB_SimpleText" Name="SweepPage_DoubleText1">
-          <Property Name="UnifiedSize" Value="{{0.200000,0.000000},{0.000000,18.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,2.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.200000,0.000000},{0.000000,18.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,2.000000}}" />
           <Property Name="Text" Value="#{FBSD_150126_24}"/>
           <Property Name="RiseOnClick" Value="False"/>
           <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
         </Window>
         <Window Type="TLBB_SimpleText" Name="SweepPage_DoubleText2">
-          <Property Name="UnifiedSize" Value="{{0.680000,0.000000},{0.000000,18.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.300000,0.000000},{0.000000,2.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.680000,0.000000},{0.000000,18.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.300000,0.000000},{0.000000,2.000000}}" />
           <Property Name="Text" Value="#{FBSD_150126_83}"/>
           <Property Name="RiseOnClick" Value="False"/>
           <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
@@ -94,456 +94,456 @@
       </Window>
       <Window Type="TLBB_SimpleMulitiTextFrame" Name="SweepPage_Double2">
         <Property Name="Visible" Value="False"/>
-        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.290000,-3.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.290000,-3.000000}}" />
         <Property Name="Text" Value="#{FBSD_130127_3}"/>
       </Window>
       <Window Type="DefaultWindow" Name="SweepPage_Boss">
-        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.350000,0.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.320000,10.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.350000,0.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.320000,10.000000}}" />
         <Window Type="TLBB_Frame_Lace6" Name="SweepPage_BossBK1">
-          <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.210000,-37.000000},{0.050000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.210000,-37.000000},{0.050000,0.000000}}" />
 	        <Window Type="TLBB_StaticImageNULL" Name="SweepPage_Boss1">
-	           <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,50.000000}}"/>
-             <Property Name="UnifiedPosition" Value="{{0.00000,7.000000},{0.000000,7.000000}}"/>
+	           <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,50.000000}}" />
+             <Property Name="UnifiedPosition" Value="{{0.00000,7.000000},{0.000000,7.000000}}" />
              <Property Name="RiseOnClick" Value="False"/>
              <Property Name="Image" Value=""/>
              <Window Type="TLBB_AnimateButton" Name="SweepPage_Boss1AnimateImage">
-                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                 <Property Name="WarningAnimation" Value="SweepFight" />
                 <Property Name="AlwaysOnTop" Value="True"/>
                 <Event Name="Clicked" Function="SweepPage_OnBossButton(1);"/>
              </Window>
              <Window Type="TLBB_Animate" Name="SweepPage_Boss1doing">
-                 <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-                 <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                 <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+                 <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                  <Property Name="Animate" Value="SweepDoing"/>
                  <Property Name="AlwaysOnTop" Value="True"/>
              </Window>
              <Window Type="TLBB_StaticImageNULL" Name="SweepPage_Boss1finish">
-                 <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-                 <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                 <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+                 <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                  <Property Name="RiseOnClick" Value="False"/>
                <Property Name="Image" Value="set:Sweep image:SweepVictory_12" />
              </Window>
 	        </Window>
           <Window Type="TLBB_StopWatch" Name="SweepPage_Boss1_StopWatch">
-            <Property Name="UnifiedSize" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.00000,7.000000},{0.000000,7.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.00000,7.000000},{0.000000,7.000000}}" />
             <Property Name="Timer" Value="-1" />
             <Event Name="ReachedZero" Function="SweepPage_OnTimer(1);" />
           </Window>
         </Window>
         <Window Type="TLBB_SimpleText" Name="SweepPage_Boss1Name">
-          <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.210000,-55.000000},{0.400000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.210000,-55.000000},{0.400000,0.000000}}" />
           <Property Name="HorzFormatting" Value="HorzCentred"/>
           <Property Name="Text" Value=""/>
         </Window>
         <Window Type="TLBB_Frame_Lace6" Name="SweepPage_BossBK2">
-          <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.500000,-32.000000},{0.050000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.500000,-32.000000},{0.050000,0.000000}}" />
 	  	    <Window Type="TLBB_StaticImageNULL" Name="SweepPage_Boss2">
-	           <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,50.000000}}"/>
-             <Property Name="UnifiedPosition" Value="{{0.00000,7.000000},{0.000000,7.000000}}"/>
+	           <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,50.000000}}" />
+             <Property Name="UnifiedPosition" Value="{{0.00000,7.000000},{0.000000,7.000000}}" />
              <Property Name="RiseOnClick" Value="False"/>
              <Property Name="Image" Value=""/>
              <Window Type="TLBB_AnimateButton" Name="SweepPage_Boss2AnimateImage">
-               <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-               <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+               <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+               <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                <Property Name="WarningAnimation" Value="SweepFight" />
                <Property Name="AlwaysOnTop" Value="True"/>
                <Event Name="Clicked" Function="SweepPage_OnBossButton(2);"/>
              </Window>
              <Window Type="TLBB_Animate" Name="SweepPage_Boss2doing">
-               <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-               <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+               <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+               <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                <Property Name="Animate" Value="SweepDoing"/>
                <Property Name="AlwaysOnTop" Value="True"/>
             </Window>
              <Window Type="TLBB_StaticImageNULL" Name="SweepPage_Boss2finish">
-               <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-               <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+               <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+               <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                <Property Name="RiseOnClick" Value="False"/>
                <Property Name="Image" Value="set:Sweep image:SweepVictory_12" />
              </Window>
           </Window>
           <Window Type="TLBB_StopWatch" Name="SweepPage_Boss2_StopWatch">
-            <Property Name="UnifiedSize" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.00000,7.000000},{0.000000,7.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.00000,7.000000},{0.000000,7.000000}}" />
             <Property Name="Timer" Value="-1" />
             <Event Name="ReachedZero" Function="SweepPage_OnTimer(2);" />
           </Window>
       	</Window>
         <Window Type="TLBB_SimpleText" Name="SweepPage_Boss2Name">
-          <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.500000,-50.000000},{0.400000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.500000,-50.000000},{0.400000,0.000000}}" />
           <Property Name="HorzFormatting" Value="HorzCentred"/>
           <Property Name="Text" Value=""/>
         </Window>
         <Window Type="TLBB_Frame_Lace6" Name="SweepPage_BossBK3">
-          <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.790000,-28.000000},{0.050000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.790000,-28.000000},{0.050000,0.000000}}" />
 	       <Window Type="TLBB_StaticImageNULL" Name="SweepPage_Boss3">
-	           <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,50.000000}}"/>
-             <Property Name="UnifiedPosition" Value="{{0.00000,7.000000},{0.000000,7.000000}}"/>
+	           <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,50.000000}}" />
+             <Property Name="UnifiedPosition" Value="{{0.00000,7.000000},{0.000000,7.000000}}" />
           <Property Name="RiseOnClick" Value="False"/>
           <Property Name="Image" Value=""/>
           <Window Type="TLBB_AnimateButton" Name="SweepPage_Boss3AnimateImage">
-            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
             <Property Name="WarningAnimation" Value="SweepFight" />
             <Property Name="AlwaysOnTop" Value="True"/>
             <Event Name="Clicked" Function="SweepPage_OnBossButton(3);"/>
           </Window>
           <Window Type="TLBB_Animate" Name="SweepPage_Boss3doing">
-            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
             <Property Name="Animate" Value="SweepDoing"/>
             <Property Name="AlwaysOnTop" Value="True"/>
           </Window>
           <Window Type="TLBB_StaticImageNULL" Name="SweepPage_Boss3finish">
-            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
             <Property Name="RiseOnClick" Value="False"/>
             <Property Name="Image" Value="set:Sweep image:SweepVictory_12" />
           </Window>
         </Window>
           <Window Type="TLBB_StopWatch" Name="SweepPage_Boss3_StopWatch">
-            <Property Name="UnifiedSize" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.00000,7.000000},{0.000000,7.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.00000,7.000000},{0.000000,7.000000}}" />
             <Property Name="Timer" Value="-1" />
             <Event Name="ReachedZero" Function="SweepPage_OnTimer(3);" />
           </Window>
 	</Window>
         <Window Type="TLBB_SimpleText" Name="SweepPage_Boss3Name">
-          <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.790000,-45.000000},{0.400000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.790000,-45.000000},{0.400000,0.000000}}" />
           <Property Name="HorzFormatting" Value="HorzCentred"/>
           <Property Name="Text" Value=""/>
         </Window>
         <Window Type="TLBB_Frame_Lace6" Name="SweepPage_BossBK4">
-          <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.210000,-37.000000},{0.550000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.210000,-37.000000},{0.550000,0.000000}}" />
 	       <Window Type="TLBB_StaticImageNULL" Name="SweepPage_Boss4">
-	           <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,50.000000}}"/>
-             <Property Name="UnifiedPosition" Value="{{0.00000,7.000000},{0.000000,7.000000}}"/>
+	           <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,50.000000}}" />
+             <Property Name="UnifiedPosition" Value="{{0.00000,7.000000},{0.000000,7.000000}}" />
           <Property Name="RiseOnClick" Value="False"/>
           <Property Name="Image" Value=""/>
           <Window Type="TLBB_AnimateButton" Name="SweepPage_Boss4AnimateImage">
-            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
             <Property Name="WarningAnimation" Value="SweepFight" />
             <Property Name="AlwaysOnTop" Value="True"/>
             <Event Name="Clicked" Function="SweepPage_OnBossButton(4);"/>
           </Window>
           <Window Type="TLBB_Animate" Name="SweepPage_Boss4doing">
-            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
             <Property Name="Animate" Value="SweepDoing"/>
             <Property Name="AlwaysOnTop" Value="True"/>
           </Window>
           <Window Type="TLBB_StaticImageNULL" Name="SweepPage_Boss4finish">
-            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
             <Property Name="RiseOnClick" Value="False"/>
             <Property Name="Image" Value="set:Sweep image:SweepVictory_12" />
           </Window>
         </Window>
           <Window Type="TLBB_StaticImageNULL" Name="SweepPage_Boss4_SanShen">
-            <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,50.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.00000,7.000000},{0.000000,7.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,50.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.00000,7.000000},{0.000000,7.000000}}" />
             <Property Name="Tooltip" Value=""/>
             <Property Name="RiseOnClick" Value="False"/>
             <Property Name="Image" Value=""/>
             <Window Type="TLBB_AnimateButton" Name="SweepPage_Boss4AnimateImage_SanShen">
-              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
               <Property Name="WarningAnimation" Value="SweepFight" />
               <Property Name="AlwaysOnTop" Value="True"/>
               <Event Name="Clicked" Function="SweepPage_OnBossButton(4);"/>
             </Window>
             <Window Type="TLBB_Animate" Name="SweepPage_Boss4doing_SanShen">
-              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
               <Property Name="Animate" Value="SweepDoing"/>
               <Property Name="AlwaysOnTop" Value="True"/>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="SweepPage_Boss4finish_SanShen">
-              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
               <Property Name="RiseOnClick" Value="False"/>
               <Property Name="Image" Value="set:CircularTaskTool78 image:CircularTaskTool78_11" />
             </Window>
           </Window>
           <Window Type="TLBB_StopWatch" Name="SweepPage_Boss4_StopWatch">
-            <Property Name="UnifiedSize" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.00000,7.000000},{0.000000,7.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.00000,7.000000},{0.000000,7.000000}}" />
             <Property Name="Timer" Value="-1" />
             <Event Name="ReachedZero" Function="SweepPage_OnTimer(4);" />
           </Window>
         </Window>
         <Window Type="TLBB_SimpleText" Name="SweepPage_Boss4Name">
-          <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.210000,-55.000000},{0.900000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.210000,-55.000000},{0.900000,0.000000}}" />
           <Property Name="HorzFormatting" Value="HorzCentred"/>
           <Property Name="Text" Value=""/>
         </Window>
         <Window Type="TLBB_Frame_Lace6" Name="SweepPage_BossBK5">
-          <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.500000,-32.000000},{0.550000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.500000,-32.000000},{0.550000,0.000000}}" />
           <Window Type="TLBB_StaticImageNULL" Name="SweepPage_Boss5">
-            <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,50.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.00000,7.000000},{0.000000,7.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,50.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.00000,7.000000},{0.000000,7.000000}}" />
             <Property Name="RiseOnClick" Value="False"/>
             <Property Name="Image" Value=""/>
             <Window Type="TLBB_AnimateButton" Name="SweepPage_Boss5AnimateImage">
-              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
               <Property Name="WarningAnimation" Value="SweepFight" />
               <Property Name="AlwaysOnTop" Value="True"/>
               <Event Name="Clicked" Function="SweepPage_OnBossButton(5);"/>
             </Window>
             <Window Type="TLBB_Animate" Name="SweepPage_Boss5doing">
-              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
               <Property Name="Animate" Value="SweepDoing"/>
               <Property Name="AlwaysOnTop" Value="True"/>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="SweepPage_Boss5finish">
-              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
               <Property Name="RiseOnClick" Value="False"/>
               <Property Name="Image" Value="set:Sweep image:SweepVictory_12" />
             </Window>
           </Window>
           <Window Type="TLBB_StaticImageNULL" Name="SweepPage_Boss5_SanShen">
-            <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,50.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.00000,7.000000},{0.000000,7.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,50.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.00000,7.000000},{0.000000,7.000000}}" />
             <Property Name="Tooltip" Value=""/>
             <Property Name="RiseOnClick" Value="False"/>
             <Property Name="Image" Value=""/>
             <Window Type="TLBB_AnimateButton" Name="SweepPage_Boss5AnimateImage_SanShen">
-              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
               <Property Name="WarningAnimation" Value="SweepFight" />
               <Property Name="AlwaysOnTop" Value="True"/>
               <Event Name="Clicked" Function="SweepPage_OnBossButton(5);"/>
             </Window>
             <Window Type="TLBB_Animate" Name="SweepPage_Boss5doing_SanShen">
-              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
               <Property Name="Animate" Value="SweepDoing"/>
               <Property Name="AlwaysOnTop" Value="True"/>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="SweepPage_Boss5finish_SanShen">
-              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
               <Property Name="RiseOnClick" Value="False"/>
               <Property Name="Image" Value="set:CircularTaskTool78 image:CircularTaskTool78_13" />
             </Window>
           </Window>
           <Window Type="TLBB_StopWatch" Name="SweepPage_Boss5_StopWatch">
-            <Property Name="UnifiedSize" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.00000,7.000000},{0.000000,7.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.00000,7.000000},{0.000000,7.000000}}" />
             <Property Name="Timer" Value="-1" />
             <Event Name="ReachedZero" Function="SweepPage_OnTimer(5);" />
           </Window>
 	</Window>
         <Window Type="TLBB_SimpleText" Name="SweepPage_Boss5Name">
-          <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.500000,-50.000000},{0.900000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.500000,-50.000000},{0.900000,0.000000}}" />
           <Property Name="HorzFormatting" Value="HorzCentred"/>
           <Property Name="Text" Value=""/>
         </Window>
         <Window Type="TLBB_Frame_Lace6" Name="SweepPage_BossBK6">
-          <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.790000,-28.000000},{0.550000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.790000,-28.000000},{0.550000,0.000000}}" />
 	       <Window Type="TLBB_StaticImageNULL" Name="SweepPage_Boss6">
-	           <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,50.000000}}"/>
-             <Property Name="UnifiedPosition" Value="{{0.00000,7.000000},{0.000000,7.000000}}"/>
+	           <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,50.000000}}" />
+             <Property Name="UnifiedPosition" Value="{{0.00000,7.000000},{0.000000,7.000000}}" />
           <Property Name="RiseOnClick" Value="False"/>
           <Property Name="Image" Value=""/>
           <Window Type="TLBB_AnimateButton" Name="SweepPage_Boss6AnimateImage">
-            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
             <Property Name="WarningAnimation" Value="SweepFight" />
             <Property Name="AlwaysOnTop" Value="True"/>
             <Event Name="Clicked" Function="SweepPage_OnBossButton(6);"/>
           </Window>
           <Window Type="TLBB_Animate" Name="SweepPage_Boss6doing">
-            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
             <Property Name="Animate" Value="SweepDoing"/>
             <Property Name="AlwaysOnTop" Value="True"/>
           </Window>
           <Window Type="TLBB_StaticImageNULL" Name="SweepPage_Boss6finish">
-            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
             <Property Name="RiseOnClick" Value="False"/>
             <Property Name="Image" Value="set:Sweep image:SweepVictory_12" />
           </Window>
         </Window>
           <Window Type="TLBB_StaticImageNULL" Name="SweepPage_Boss6_SanShen">
-            <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,50.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.00000,7.000000},{0.000000,7.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,50.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.00000,7.000000},{0.000000,7.000000}}" />
             <Property Name="Tooltip" Value=""/>
             <Property Name="RiseOnClick" Value="False"/>
             <Property Name="Image" Value=""/>
             <Window Type="TLBB_AnimateButton" Name="SweepPage_Boss6AnimateImage_SanShen">
-              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
               <Property Name="WarningAnimation" Value="SweepFight" />
               <Property Name="AlwaysOnTop" Value="True"/>
               <Event Name="Clicked" Function="SweepPage_OnBossButton(6);"/>
             </Window>
             <Window Type="TLBB_Animate" Name="SweepPage_Boss6doing_SanShen">
-              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
               <Property Name="Animate" Value="SweepDoing"/>
               <Property Name="AlwaysOnTop" Value="True"/>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="SweepPage_Boss6finish_SanShen">
-              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
               <Property Name="RiseOnClick" Value="False"/>
               <Property Name="Image" Value="set:CircularTaskTool78 image:CircularTaskTool78_15" />
             </Window>
           </Window>
           <Window Type="TLBB_StopWatch" Name="SweepPage_Boss6_StopWatch">
-            <Property Name="UnifiedSize" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.00000,7.000000},{0.000000,7.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.00000,7.000000},{0.000000,7.000000}}" />
             <Property Name="Timer" Value="-1" />
             <Event Name="ReachedZero" Function="SweepPage_OnTimer(6);" />
           </Window>
 	</Window>
         <Window Type="TLBB_SimpleText" Name="SweepPage_Boss6Name">
-          <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.790000,-45.000000},{0.900000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.790000,-45.000000},{0.900000,0.000000}}" />
           <Property Name="HorzFormatting" Value="HorzCentred"/>
           <Property Name="Text" Value=""/>
         </Window>
       </Window>
       <Window Type="TLBB_SimpleMulitiTextFrame" Name="SweepPage_Drop">
         <Property Name="VertFormatting" Value="BottomAligned"/>
-        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.670000,10.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.670000,10.000000}}" />
         <Property Name="Text" Value="#{FBSD_150126_84}"/>
         <Property Name="RiseOnClick" Value="False"/>
         <Property Name="HorzFormatting" Value="WordWrapCentred"/>
       </Window>
       <Window Type="TLBB_SimpleText" Name="SweepPage_DropExplain">
-        <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,36.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,27.000000},{0.670000,30.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,36.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,27.000000},{0.670000,30.000000}}" />
         <Property Name="Text" Value="#{FBSD_151123_06}"/>
         <Property Name="RiseOnClick" Value="False"/>
         <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
       </Window>
       <Window Type="TLBB_SimpleText" Name="SweepPage_Item">
-        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.190000,0.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.760000,7.280005}}"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.190000,0.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.760000,7.280005}}" />
         <Property Name="AlwaysOnTop" Value="True"/>
         <Window Type="TLBB_ActionButton" Name="SweepPage_Item1">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.125000,-18.000000},{0.125000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.125000,-18.000000},{0.125000,0.000000}}" />
           <Property Name="Empty" Value="False"/>
           <Property Name="DraggingEnabled" Value="False"/>
           <Event Name="RBClicked" Function="SweepPage_Item1:DoAction();"/>
         </Window>
         <Window Type="TLBB_ActionButton" Name="SweepPage_Item2">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.275000,-18.000000},{0.125000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.275000,-18.000000},{0.125000,0.000000}}" />
           <Property Name="Empty" Value="False"/>
           <Property Name="DraggingEnabled" Value="False"/>
           <Event Name="RBClicked" Function="SweepPage_Item2:DoAction();"/>
         </Window>
         <Window Type="TLBB_ActionButton" Name="SweepPage_Item3">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.4250000,-18.000000},{0.125000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.4250000,-18.000000},{0.125000,0.000000}}" />
           <Property Name="Empty" Value="False"/>
           <Property Name="DraggingEnabled" Value="False"/>
           <Event Name="RBClicked" Function="SweepPage_Item3:DoAction();"/>
         </Window>
         <Window Type="TLBB_ActionButton" Name="SweepPage_Item4">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.575000,-18.000000},{0.125000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.575000,-18.000000},{0.125000,0.000000}}" />
           <Property Name="Empty" Value="False"/>
           <Property Name="DraggingEnabled" Value="False"/>
           <Event Name="RBClicked" Function="SweepPage_Item4:DoAction();"/>
         </Window>
         <Window Type="TLBB_ActionButton" Name="SweepPage_Item5">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.725000,-18.000000},{0.125000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.725000,-18.000000},{0.125000,0.000000}}" />
           <Property Name="Empty" Value="False"/>
           <Property Name="DraggingEnabled" Value="False"/>
           <Event Name="RBClicked" Function="SweepPage_Item5:DoAction();"/>
         </Window>
         <Window Type="TLBB_ActionButton" Name="SweepPage_Item6">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.875000,-18.000000},{0.125000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.875000,-18.000000},{0.125000,0.000000}}" />
           <Property Name="Empty" Value="False"/>
           <Property Name="DraggingEnabled" Value="False"/>
           <Event Name="RBClicked" Function="SweepPage_Item6:DoAction();"/>
         </Window>
         <Window Type="TLBB_ActionButton" Name="SweepPage_Item7">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.125000,-18.000000},{0.550000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.125000,-18.000000},{0.550000,0.000000}}" />
           <Property Name="Empty" Value="False"/>
           <Property Name="DraggingEnabled" Value="False"/>
           <Event Name="RBClicked" Function="SweepPage_Item7:DoAction();"/>
         </Window>
         <Window Type="TLBB_ActionButton" Name="SweepPage_Item8">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.275000,-18.000000},{0.550000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.275000,-18.000000},{0.550000,0.000000}}" />
           <Property Name="Empty" Value="False"/>
           <Property Name="DraggingEnabled" Value="False"/>
           <Event Name="RBClicked" Function="SweepPage_Item8:DoAction();"/>
         </Window>
         <Window Type="TLBB_ActionButton" Name="SweepPage_Item9">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.4250000,-18.000000},{0.550000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.4250000,-18.000000},{0.550000,0.000000}}" />
           <Property Name="Empty" Value="False"/>
           <Property Name="DraggingEnabled" Value="False"/>
           <Event Name="RBClicked" Function="SweepPage_Item9:DoAction();"/>
         </Window>
         <Window Type="TLBB_ActionButton" Name="SweepPage_Item10">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.575000,-18.000000},{0.550000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.575000,-18.000000},{0.550000,0.000000}}" />
           <Property Name="Empty" Value="False"/>
           <Property Name="DraggingEnabled" Value="False"/>
           <Event Name="RBClicked" Function="SweepPage_Item10:DoAction();"/>
         </Window>
         <Window Type="TLBB_ActionButton" Name="SweepPage_Item11">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.725000,-18.000000},{0.550000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.725000,-18.000000},{0.550000,0.000000}}" />
           <Property Name="Empty" Value="False"/>
           <Property Name="DraggingEnabled" Value="False"/>
           <Event Name="RBClicked" Function="SweepPage_Item11:DoAction();"/>
         </Window>
         <Window Type="TLBB_ActionButton" Name="SweepPage_Item12">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.875000,-18.000000},{0.550000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.875000,-18.000000},{0.550000,0.000000}}" />
           <Property Name="Empty" Value="False"/>
           <Property Name="DraggingEnabled" Value="False"/>
           <Event Name="RBClicked" Function="SweepPage_Item12:DoAction();"/>
         </Window>
       </Window>
       <!-- <Window Type="DefaultWindow" Name="SweepPage_AbandonCheck"> -->
-        <!-- <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,22.000000}}"/> -->
-        <!-- <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-22.000000}}"/> -->
+        <!-- <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,22.000000}}" /> -->
+        <!-- <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-22.000000}}" /> -->
         <!-- <Property Name="AlwaysOnTop" Value="True"/> -->
         <!-- <Window Type="TLBB_ButtonCheck" Name="SweepPage_AbandonCheckButton"> -->
-          <!-- <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/> -->
-          <!-- <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,5.000000}}"/> -->
+          <!-- <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}" /> -->
+          <!-- <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,5.000000}}" /> -->
           <!-- <Property Name="Tooltip" Value="#{FBSD_151123_02}"/> -->
           <!-- <Property Name="AlwaysOnTop" Value="True"/> -->
           <!-- <Event Name="Clicked" Function="SweepPage_OnGiveUpCheckClick()"/> -->
         <!-- </Window> -->
         <!-- <Window Type="TLBB_SimpleText" Name="SweepPage_DAbandonCheckText1"> -->
-          <!-- <Property Name="UnifiedSize" Value="{{0.900000,0.000000},{0.000000,18.000000}}"/> -->
-          <!-- <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,3.000000}}"/> -->
+          <!-- <Property Name="UnifiedSize" Value="{{0.900000,0.000000},{0.000000,18.000000}}" /> -->
+          <!-- <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,3.000000}}" /> -->
           <!-- <Property Name="Text" Value="#{FBSD_151123_03}"/> -->
           <!-- <Property Name="RiseOnClick" Value="False"/> -->
           <!-- <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/> -->
@@ -551,37 +551,37 @@
       <!-- </Window> -->
     </Window>
     <Window Type="TLBB_ButtonCommon" Name="SweepPage_Abandon">
-      <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,20.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{1.000000,-39.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,20.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{1.000000,-39.000000}}" />
       <Property Name="Text" Value="#{FBSD_151123_01}"/>
       <Property Name="Tooltip" Value="#{FBSD_151123_02}"/>
       <Event Name="Clicked" Function="SweepPage_OnGiveUp()"/>
     </Window>
     <Window Type="TLBB_ButtonCommon" Name="SweepPage_Return">
-      <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,20.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.500000,5.000000},{1.000000,-39.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,20.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.500000,5.000000},{1.000000,-39.000000}}" />
       <Property Name="Text" Value="#{FBSD_151123_04}"/>
       <Property Name="Tooltip" Value="#{FBSD_151123_05}"/>
       <Event Name="Clicked" Function="SweepPage_OnGotoSweepAll()"/>
     </Window>
     <Window Type="TLBB_ButtonCommon" Name="SweepPage_OK">
-      <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,20.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.500000,-95.000000},{1.000000,-39.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,20.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.500000,-95.000000},{1.000000,-39.000000}}" />
       <Property Name="Text" Value="#{FBSD_150126_65}"/>
       <Event Name="Clicked" Function="SweepPage_OnOkClicked()"/>
     </Window>
     <Window Type="TLBB_ButtonCommon" Name="SweepPage_GoOn">
       <Property Name="AlwaysOnTop" Value="True"/>
-      <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,20.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.500000,105.000000},{1.000000,-39.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,20.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.500000,105.000000},{1.000000,-39.000000}}" />
       <Property Name="Text" Value="#{SDYH_170110_01}"/>
       <Property Name="Tooltip" Value="#{SDYH_170110_02}"/>
 			<Event Name="Clicked" Function="SweepPage_OnContinue()"/>
     </Window>
     <Window Type="TLBB_SimpleText" Name="SweepPage_GoOn_tips">
       <Property Name="Visible" Value="False"/>
-      <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,20.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.500000,105.000000},{1.000000,-39.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,20.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.500000,105.000000},{1.000000,-39.000000}}" />
       <Property Name="Tooltip" Value="#{SDYH_170110_02}"/>
     </Window>
   </Window>

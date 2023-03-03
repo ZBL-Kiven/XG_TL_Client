@@ -1,17 +1,17 @@
 <?xml version="1.0" ?>
 <GUILayout>
   <Window Type="TLBB_MainFrame1" Name="SuperWeaponUpNEW_Frame">
-    <Property Name="UnifiedSize" Value="{{0.000000,350.000000},{0.000000,420.000000}}"/>
-    <Property Name="UnifiedPosition" Value="{{0.500000,-175.000000},{0.500000,-200.000000}}"/>
+    <Property Name="UnifiedSize" Value="{{0.000000,350.000000},{0.000000,420.000000}}" />
+    <Property Name="UnifiedPosition" Value="{{0.500000,-175.000000},{0.500000,-200.000000}}" />
     <Event Name="Hidden" Function="SuperWeaponUpNEW_OnHiden();" />
     <Window Type="TLBB_ButtonHelp" Name="SuperWeaponUpNEW_Help">
-      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}" />
       <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
       <Property Name="Text" Value="TLBB_ButtonHelp" />
     </Window>
     <Window Type="TLBB_DragTitle" Name="SuperWeaponUpNEW_DragTitle">
-      <Property Name="UnifiedPosition" Value="{{0.000000,43.000000},{0.000000,12.000000}}"/>
-      <Property Name="UnifiedSize" Value="{{1.000000,-86.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,43.000000},{0.000000,12.000000}}" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-86.000000},{0.000000,20.000000}}" />
       <Property Name="DragTarget" Value="SuperWeaponUpNEW_Frame" />
       <Property Name="Font" Value="YouYuan11.25" />
       <Property Name="HorzFormatting" Value="HorzCentred" />
@@ -19,146 +19,146 @@
       <Property Name="VertFormatting" Value="VertCentred" />
     </Window>
     <Window Type="TLBB_ButtonClose" Name="SuperWeaponUpNEW_Close">
-      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}" />
       <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
       <Property Name="Text" Value="TLBB_ButtonClose" />
       <Event Name="Clicked" Function="SuperWeaponUpNEW_Close()" />
     </Window>
     <Window Type="DefaultWindow" Name="SuperWeaponUpNEW_Frame_Client">
-      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,50.000000}}"/>
-      <Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{0.000000,360.000000}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,50.000000}}" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{0.000000,360.000000}}" />
       <Property Name="RiseOnClick" Value="False" />
       <Window Type="TLBB_SimpleMulitiTextFrame" Name="SuperWeaponUpNEW_Info">
         <Property Name="Position" Value="x:0.0 y:0.0" />
-        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,150.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,150.000000}}" />
         <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
         <Property Name="RiseOnClick" Value="False" />
         <Property Name="Text" Value="#{SQSJ_XML_02}" />
       </Window>
       <Window Type="DefaultWindow" Name="SuperWeaponUpNEW_Before">
         <Property Name="AlwaysOnTop" Value="True"/>
-        <Property Name="UnifiedSize" Value="{{0.500000,-30.000000},{0.000000,70.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.010000,15.000000},{0.000000,160.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.500000,-30.000000},{0.000000,70.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.010000,15.000000},{0.000000,160.000000}}" />
         <Window Type="TLBB_SimpleText" Name="SuperWeaponUpNEW_BeforeText">
-          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}" />
-          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}" />
           <Property Name="Text" Value="#{CXYH_140813_28}" />
           <Property Name="HorzFormatting" Value="HorzCentred"/>
         </Window>
         <Window Type="TLBB_ActionButton" Name="SuperWeaponUpNEW_BeforeIcon">
-          <Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{0.000000,22.000000}" />
-          <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{0.000000,22.000000}}" />
+          <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}" />
           <Property Name="DragAcceptName" Value="G73" />
           <Property Name="DraggingEnabled" Value="True" />
           <Event Name="RBClicked" Function="SuperWeaponUpNEW_Item_cancel();"/>
         </Window>
       </Window>
       <Window Type="TLBB_StaticImageNULL" Name="SuperWeaponUpNEW_Icon">
-        <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.500000,-50.000000},{0.000000,185.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.500000,-50.000000},{0.000000,185.000000}}" />
         <Property Name="Image" Value="set:MijiUI image:MijiUIarrow_hov"/>
       </Window>
       <Window Type="DefaultWindow" Name="SuperWeaponUpNEW_After">
         <Property Name="AlwaysOnTop" Value="True"/>
-        <Property Name="UnifiedSize" Value="{{0.500000,-30.000000},{0.000000,70.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.500000,15.000000},{0.000000,160.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.500000,-30.000000},{0.000000,70.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.500000,15.000000},{0.000000,160.000000}}" />
         <Window Type="TLBB_SimpleText" Name="SuperWeaponUpNEW_AfterText">
-          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}" />
-          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}" />
           <Property Name="Text" Value="#{CXYH_140813_32}" />
           <Property Name="HorzFormatting" Value="HorzCentred"/>
         </Window>
         <Window Type="TLBB_StaticImageNULL" Name="SuperWeaponUpNEW_AfterIcon_BK">
-          <Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{0.000000,20.000000}" />
-          <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}" />
           <Property Name="Image" Value="set:CommonItem image:ActionBK"/>
         </Window>
         <Window Type="TLBB_StaticImageNULL" Name="SuperWeaponUpNEW_AfterIcon">
-          <Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{0.000000,20.000000}" />
-          <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}" />
           <Property Name="AlwaysOnTop" Value="True"/>
           <Property Name="Image" Value="set: image:"/>
         </Window>            
       </Window>
 	  <!-- 371 367  -->
       <Window Type="TLBB_ButtonCheck" Name="SuperWeaponUpNEW_ModeSelect" >
-        <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,31.000000},{0.000000,235.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,31.000000},{0.000000,235.000000}}" />
         <Property Name="CheckMode" Value="1" />
       </Window>
       <Window Type="TLBB_SimpleText" Name="SuperWeaponUpNEW_ModelText" >
-        <Property Name="UnifiedSize" Value="{{0.000000,94.000000},{0.000000,20.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,49.000000},{0.000000,231.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,94.000000},{0.000000,20.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,49.000000},{0.000000,231.000000}}" />
         <Property Name="HorzFormatting" Value="LeftAligned" />
         <Property Name="Text" Value="#{SXLH_XML_01}" />
         <Property Name="Tooltip" Value="#{SXLH_XML_03}"/>
         <Property Name="VertFormatting" Value="VertCentred" />
       </Window>
       <Window Type="TLBB_ButtonCheck" Name="SuperWeaponUpNEW_ModeSelect2" >
-        <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,31.000000},{0.000000,255.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,31.000000},{0.000000,255.000000}}" />
         <Property Name="CheckMode" Value="1" />
       </Window>
       <Window Type="TLBB_SimpleText" Name="SuperWeaponUpNEW_ModelText2" >
-        <Property Name="UnifiedSize" Value="{{0.000000,94.000000},{0.000000,20.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,49.000000},{0.000000,251.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,94.000000},{0.000000,20.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,49.000000},{0.000000,251.000000}}" />
         <Property Name="HorzFormatting" Value="LeftAligned" />
         <Property Name="Text" Value="#{SXLH_XML_02}" />
         <Property Name="Tooltip" Value="#{SXLH_XML_04}"/>
         <Property Name="VertFormatting" Value="VertCentred" />
       </Window>
       <!-- <Window Type="TLBB_ButtonCommon" Name="SuperWeaponUpNEW_Tihuan"> -->
-        <!-- <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,20.000000}}"/> -->
-        <!-- <Property Name="UnifiedPosition" Value="{{0.500000,28.000000},{1.000000,-114.000000}}"/> -->
+        <!-- <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,20.000000}}" /> -->
+        <!-- <Property Name="UnifiedPosition" Value="{{0.500000,28.000000},{1.000000,-114.000000}}" /> -->
         <!-- <Property Name="Text" Value="#{CXYH_140813_36}" /> -->
         <!-- <Event Name="Clicked" Function="SuperWeaponUpNEW_Tihuan_Clicked()" /> -->
       <!-- </Window> -->
       <Window Type="DefaultWindow" Name="SuperWeaponUpNEW_Money">
-        <Property Name="UnifiedPosition" Value="{{0.010000,0.000000},{1.000000,-83.000000}" />
-        <Property Name="UnifiedSize" Value="{{0.980000,0.000000},{0.000000,60.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.010000,0.000000},{1.000000,-83.000000}}" />
+        <Property Name="UnifiedSize" Value="{{0.980000,0.000000},{0.000000,60.000000}}" />
         <Window Type="TLBB_SimpleMulitiTextFrame" Name="SuperWeaponUpNEW_Want">
-          <Property Name="UnifiedSize" Value="{{1,0.000000},{0.000000,20.000000}" />
-          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}" />
+          <Property Name="UnifiedSize" Value="{{1,0.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
           <Property Name="Text" Value="#{ZNSZ_140718_79}" />
           <Window Type="TLBB_JiaoZi" Name="SuperWeaponUpNEW_WantNum">
-            <Property Name="UnifiedPosition" Value="{{0.0,80.000000},{0.000000,2.000000}" />
-            <Property Name="UnifiedSize" Value="{{1.0,-86.000000},{1.000000,-4.000000}" />
+            <Property Name="UnifiedPosition" Value="{{0.0,80.000000},{0.000000,2.000000}}" />
+            <Property Name="UnifiedSize" Value="{{1.0,-86.000000},{1.000000,-4.000000}}" />
             <Property Name="HorzFormatting" Value="RightAligned" />
           </Window>
         </Window>
         <Window Type="TLBB_SimpleMulitiTextFrame" Name="SuperWeaponUpNEW_Have">
-          <Property Name="UnifiedSize" Value="{{1,0.000000},{0.000000,20.000000}" />
-          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,20.000000}" />
+          <Property Name="UnifiedSize" Value="{{1,0.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,20.000000}}" />
           <Property Name="Text" Value="#{ZNSZ_140718_80}" />
           <Window Type="TLBB_JiaoZi" Name="SuperWeaponUpNEW_HaveNum">
-            <Property Name="UnifiedPosition" Value="{{0.0,80.000000},{0.000000,2.000000}" />
-            <Property Name="UnifiedSize" Value="{{1.0,-86.000000},{1.000000,-4.000000}" />
+            <Property Name="UnifiedPosition" Value="{{0.0,80.000000},{0.000000,2.000000}}" />
+            <Property Name="UnifiedSize" Value="{{1.0,-86.000000},{1.000000,-4.000000}}" />
             <Property Name="HorzFormatting" Value="RightAligned" />
           </Window>
         </Window>
         <Window Type="TLBB_SimpleMulitiTextFrame" Name="SuperWeaponUpNEW_HaveGold">
-          <Property Name="UnifiedSize" Value="{{1,0.000000},{0.000000,20.000000}" />
-          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,40.000000}" />
+          <Property Name="UnifiedSize" Value="{{1,0.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,40.000000}}" />
           <Property Name="Text" Value="#{ZNSZ_140718_81}" />
           <Window Type="TLBB_Money" Name="SuperWeaponUpNEW_HaveGoldNum">
-            <Property Name="UnifiedPosition" Value="{{0.0,80.000000},{0.000000,2.000000}" />
-            <Property Name="UnifiedSize" Value="{{1.0,-86.000000},{1.000000,-4.000000}" />
+            <Property Name="UnifiedPosition" Value="{{0.0,80.000000},{0.000000,2.000000}}" />
+            <Property Name="UnifiedSize" Value="{{1.0,-86.000000},{1.000000,-4.000000}}" />
             <Property Name="HorzFormatting" Value="RightAligned" />
           </Window>
         </Window>
       </Window>
       <Window Type="TLBB_Frame_Lace5" Name="SuperWeaponUpNEW_Blank">
-        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-20.000000}" />
-        <Property Name="UnifiedSize" Value="{{1.000000,-84.000000},{0.000000,20.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-20.000000}}" />
+        <Property Name="UnifiedSize" Value="{{1.000000,-84.000000},{0.000000,20.000000}}" />
       </Window>
       <Window Type="TLBB_ButtonCommon" Name="SuperWeaponUpNEW_OK">
-        <Property Name="UnifiedPosition" Value="{{1.000000,-82.000000},{1.000000,-20.000000}" />
+        <Property Name="UnifiedPosition" Value="{{1.000000,-82.000000},{1.000000,-20.000000}}" />
         <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
         <Property Name="Text" Value="#{INTERFACE_XML_557}" />
         <Event Name="Clicked" Function="SuperWeaponUpNEW_Buttons_Clicked()" />
       </Window>
       <Window Type="TLBB_ButtonCommon" Name="SuperWeaponUpNEW_Cancel">
-        <Property Name="UnifiedPosition" Value="{{1.000000,-42.000000},{1.000000,-20.000000}" />
+        <Property Name="UnifiedPosition" Value="{{1.000000,-42.000000},{1.000000,-20.000000}}" />
         <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
         <Property Name="Text" Value="取消" />
         <Event Name="Clicked" Function="SuperWeaponUpNEW_Close()" />

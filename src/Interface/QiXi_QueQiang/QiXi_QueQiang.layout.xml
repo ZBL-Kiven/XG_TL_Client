@@ -1,40 +1,40 @@
 <?xml version="1.0" ?>
 <GUILayout>
   <Window Type="TLBB_HeroFrame01" Name="QiXi_QueQiang_Frame">
-    <Property Name="UnifiedSize" Value="{{0.000000,940.000000},{0.000000,622.000000}}"/>
-    <Property Name="UnifiedPosition" Value="{{0.500000,-470.000000},{0.500000,-311.000000}}"/>
+    <Property Name="UnifiedSize" Value="{{0.000000,940.000000},{0.000000,622.000000}}" />
+    <Property Name="UnifiedPosition" Value="{{0.500000,-470.000000},{0.500000,-311.000000}}" />
     <Event Name="Hidden" Function="QiXi_QueQiang_OnHiden()"/>
       <Window Type="TLBB_HeroTitle01" Name="QiXi_QueQiang_DragTitleBK">
-        <Property Name="UnifiedSize" Value="{{0.000000,314.000000},{0.000000,30.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.500000,-157.500000},{0.000000,-2.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,314.000000},{0.000000,30.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.500000,-157.500000},{0.000000,-2.000000}}" />
         <Property Name="RiseOnClick" Value="False"/>
       </Window>
       <Window Type="TLBB_DragTitle" Name="QiXi_QueQiang_DragTitle">
-        <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{0.000000,20.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,5.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{0.000000,20.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,5.000000}}" />
         <Property Name="Font" Value="YouYuan11.25" />
         <Property Name="HorzFormatting" Value="HorzCentred"/>
         <Property Name="Text" Value="#{QXWH_20210616_02}" />
         <Property Name="DragTarget" Value="QiXi_QueQiang_Frame"/>
       </Window>
       <Window Type="TLBB_ButtonClose2" Name="QiXi_QueQiang_Close">
-        <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,14.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{1.000000,-28.000000},{0.000000,8.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,14.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{1.000000,-28.000000},{0.000000,8.000000}}" />
         <Event Name="Clicked" Function="QiXi_QueQiang_Close()" />
       </Window>
       <Window Type="DefaultWindow" Name="QiXi_QueQiang_Frame_Client">
-        <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{1.000000,-32.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,28.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{1.000000,-32.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,28.000000}}" />
         <Property Name="RiseOnClick" Value="False" />
         <Window Type="TLBB_StaticImageNULL" Name="QiXi_QueQiang_Frame_ClientBK">
-          <Property Name="UnifiedSize" Value="{{0.000000,933.000000},{0.000000,589.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.00000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,933.000000},{0.000000,589.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.00000,0.000000}}" />
           <Property Name="Image" Value="set:QiXi_QueQiao image:QiXi_QueQiaoBK"/>
           <Property Name="RiseOnClick" Value="False"/>
         </Window>
         <Window Type="DefaultWindow" Name="QiXi_QueQiang_Explain1">
-          <Property Name="UnifiedSize" Value="{{0.000000,656.000000},{0.000000,90.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,150.000000},{0.000000,12.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,656.000000},{0.000000,90.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,150.000000},{0.000000,12.000000}}" />
           <Property Name="RiseOnClick" Value="False"/>
           <Property Name="MouseRButtonHollow" Value="True"/>
           <Property Name="MouseMoveHollow" Value="True"/>
@@ -42,21 +42,21 @@
           <Property Name="MouseHollow" Value="True"/>
           <Property Name="AlwaysOnTop" Value="True"/>
           <Window Type="TLBB_SimpleText" Name="QiXi_QueQiang_Explain_Text">
-            <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{1.000000,-8.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,4.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{1.000000,-8.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,4.000000}}" />
             <Property Name="Text" Value="#{QXWH_20210616_87}"/>
             <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
             <Property Name="VertFormatting" Value="TopAligned"/>
           </Window>
         </Window>
         <Window Type="DefaultWindow" Name="QiXi_QueQiang_Explain2">
-          <Property Name="UnifiedSize" Value="{{0.000000,724.000000},{1.000000,-80.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,52.000000},{0.000000,80.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,724.000000},{1.000000,-80.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,52.000000},{0.000000,80.000000}}" />
           <Property Name="RiseOnClick" Value="False"/>
           <Property Name="AlwaysOnTop" Value="True"/>
           <Window Type="TLBB_ButtonCheckNULL" Name="QiXi_QueQiang_General1Btn">
-            <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,130.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,130.000000},{0.000000,30.000000}}" />
             <Event Name="Clicked" Function="QiXi_QueQiang_GeneralBtn(1)"/>
             <Event Name="MouseButtonUp" Function="QiXi_QueQiang_GeneralBtn_UP(1)"/>
             <Property Name="Tooltip" Value="#{QXWH_20210616_90}"/>
@@ -67,8 +67,8 @@
             <Property Name="HoverImage" Value="set:QiXi_QueQiao image:QiXi_QueQiaoBtn1Hover"/>
             <Property Name="DisabledImage" Value="set:QiXi_QueQiao image:QiXi_QueQiaoBtn1Dis"/>
             <Window Type="TLBB_StaticImageNULL" Name="QiXi_QueQiang_General1BtnBK">
-              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
               <Property Name="Image" Value="set:QiXi_QueQiao image:JinBian"/>
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
@@ -76,8 +76,8 @@
               <Property Name="MouseHollow" Value="True"/>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="QiXi_QueQiang_General1NB">
-              <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,18.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,32.000000},{0.000000,50.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,18.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,32.000000},{0.000000,50.000000}}" />
               <Property Name="RiseOnClick" Value="False"/>
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
@@ -89,8 +89,8 @@
 
           </Window>
           <Window Type="TLBB_ButtonCheckNULL" Name="QiXi_QueQiang_General2Btn">
-            <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,225.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,225.000000},{0.000000,30.000000}}" />
             <Property Name="Tooltip" Value="#{QXWH_20210616_90}"/>
             <Property Name="CheckMode" Value="1"/>
             <Property Name="Font" Value="YouYuan9.75"/>
@@ -101,8 +101,8 @@
             <Event Name="Clicked" Function="QiXi_QueQiang_GeneralBtn(2)"/>
             <Event Name="MouseButtonUp" Function="QiXi_QueQiang_GeneralBtn_UP(2)"/>
             <Window Type="TLBB_StaticImageNULL" Name="QiXi_QueQiang_General2BtnBK">
-              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
               <Property Name="Image" Value="set:QiXi_QueQiao image:JinBian"/>
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
@@ -110,8 +110,8 @@
               <Property Name="MouseHollow" Value="True"/>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="QiXi_QueQiang_General2NB">
-              <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,18.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,32.000000},{0.000000,50.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,18.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,32.000000},{0.000000,50.000000}}" />
               <Property Name="RiseOnClick" Value="False"/>
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
@@ -121,8 +121,8 @@
               <Property Name="Image" Value="set:QiXi_QueQiao image:QiXi_QueQiao_NB"/>
             </Window>
             <Window Type="TLBB_ButtonNULL" Name="QiXi_QueQiang_General2Rotate">
-              <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,24.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,24.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}" />
               <Property Name="Visible" Value="False"/>
               <Event Name="Clicked" Function="QiXi_QueQiang_GeneralRotate(2)"/>
               <Property Name="PushedImage" Value="set:QiXi_QueQiao image:XuanZhuanPush"/>
@@ -132,8 +132,8 @@
             </Window>
           </Window>
           <Window Type="TLBB_ButtonCheckNULL" Name="QiXi_QueQiang_General3Btn">
-            <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,318.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,318.000000},{0.000000,30.000000}}" />
             <Property Name="Tooltip" Value="#{QXWH_20210616_90}"/>
             <Property Name="CheckMode" Value="1"/>
             <Property Name="Font" Value="YouYuan9.75"/>
@@ -144,8 +144,8 @@
             <Event Name="Clicked" Function="QiXi_QueQiang_GeneralBtn(3)"/>
             <Event Name="MouseButtonUp" Function="QiXi_QueQiang_GeneralBtn_UP(3)"/>
             <Window Type="TLBB_StaticImageNULL" Name="QiXi_QueQiang_General3BtnBK">
-              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
               <Property Name="Image" Value="set:QiXi_QueQiao image:JinBian"/>
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
@@ -153,8 +153,8 @@
               <Property Name="MouseHollow" Value="True"/>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="QiXi_QueQiang_General3NB">
-              <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,18.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,32.000000},{0.000000,50.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,18.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,32.000000},{0.000000,50.000000}}" />
               <Property Name="RiseOnClick" Value="False"/>
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
@@ -164,8 +164,8 @@
               <Property Name="Image" Value="set:QiXi_QueQiao image:QiXi_QueQiao_NB"/>
             </Window>
             <Window Type="TLBB_ButtonNULL" Name="QiXi_QueQiang_General3Rotate">
-              <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,24.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,24.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}" />
               <Property Name="Visible" Value="False"/>
               <Property Name="PushedImage" Value="set:QiXi_QueQiao image:XuanZhuanPush"/>
               <Property Name="NormalImage" Value="set:QiXi_QueQiao image:XuanZhuan"/>
@@ -175,8 +175,8 @@
             </Window>
           </Window>
           <Window Type="TLBB_ButtonCheckNULL" Name="QiXi_QueQiang_General4Btn">
-            <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,413.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,413.000000},{0.000000,30.000000}}" />
             <Property Name="Tooltip" Value="#{QXWH_20210616_90}"/>
             <Property Name="CheckMode" Value="1"/>
             <Property Name="Font" Value="YouYuan9.75"/>
@@ -187,8 +187,8 @@
             <Event Name="Clicked" Function="QiXi_QueQiang_GeneralBtn(4)"/>
             <Event Name="MouseButtonUp" Function="QiXi_QueQiang_GeneralBtn_UP(4)"/>
             <Window Type="TLBB_StaticImageNULL" Name="QiXi_QueQiang_General4BtnBK">
-              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
               <Property Name="Image" Value="set:QiXi_QueQiao image:JinBian"/>
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
@@ -196,8 +196,8 @@
               <Property Name="MouseHollow" Value="True"/>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="QiXi_QueQiang_General4NB">
-              <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,18.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,32.000000},{0.000000,50.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,18.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,32.000000},{0.000000,50.000000}}" />
               <Property Name="RiseOnClick" Value="False"/>
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
@@ -207,8 +207,8 @@
               <Property Name="Image" Value="set:QiXi_QueQiao image:QiXi_QueQiao_NB"/>
             </Window>
             <Window Type="TLBB_ButtonNULL" Name="QiXi_QueQiang_General4Rotate">
-              <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,24.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,24.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}" />
               <Property Name="Visible" Value="False"/>
               <Property Name="PushedImage" Value="set:QiXi_QueQiao image:XuanZhuanPush"/>
               <Property Name="NormalImage" Value="set:QiXi_QueQiao image:XuanZhuan"/>
@@ -219,63 +219,63 @@
           </Window>
           <Window Type="TLBB_SimpleText" Name="QiXi_QueQiang_General1Text">
             <Property Name="VertFormatting" Value="TopAligned"/>
-            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,160.000000},{0.000000,80.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,160.000000},{0.000000,80.000000}}" />
             <Property Name="Text" Value="#{QXWH_20210616_89}"/>
             <Property Name="HorzFormatting" Value="WordWrapCentred"/>
           </Window>
           <Window Type="TLBB_SimpleText" Name="QiXi_QueQiang_General2Text">
             <Property Name="VertFormatting" Value="TopAligned"/>
-            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,256.000000},{0.000000,80.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,256.000000},{0.000000,80.000000}}" />
             <Property Name="Text" Value="#{QXWH_20210616_89}"/>
             <Property Name="HorzFormatting" Value="WordWrapCentred"/>
           </Window>
           <Window Type="TLBB_SimpleText" Name="QiXi_QueQiang_General3Text">
             <Property Name="VertFormatting" Value="TopAligned"/>
-            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,350.000000},{0.000000,80.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,350.000000},{0.000000,80.000000}}" />
             <Property Name="Text" Value="#{QXWH_20210616_89}"/>
             <Property Name="HorzFormatting" Value="WordWrapCentred"/>
           </Window>
           <Window Type="TLBB_SimpleText" Name="QiXi_QueQiang_General4Text">
             <Property Name="VertFormatting" Value="TopAligned"/>
-            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,446.000000},{0.000000,80.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,446.000000},{0.000000,80.000000}}" />
             <Property Name="Text" Value="#{QXWH_20210616_89}"/>
             <Property Name="HorzFormatting" Value="WordWrapCentred"/>
           </Window>
           <Window Type="TLBB_SimpleText" Name="QiXi_QueQiang_General1Name">
             <Property Name="VertFormatting" Value="TopAligned"/>
-            <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,20.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,130.000000},{0.000000,106.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,130.000000},{0.000000,106.000000}}" />
             <Property Name="Text" Value="#{QXWH_20210616_91}"/>
             <Property Name="HorzFormatting" Value="WordWrapCentred"/>
           </Window>
           <Window Type="TLBB_SimpleText" Name="QiXi_QueQiang_General2Name">
             <Property Name="VertFormatting" Value="TopAligned"/>
-            <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,20.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,225.000000},{0.000000,106.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,225.000000},{0.000000,106.000000}}" />
             <Property Name="Text" Value="#{QXWH_20210616_92}"/>
             <Property Name="HorzFormatting" Value="WordWrapCentred"/>
           </Window>
           <Window Type="TLBB_SimpleText" Name="QiXi_QueQiang_General3Name">
             <Property Name="VertFormatting" Value="TopAligned"/>
-            <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,20.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,318.000000},{0.000000,106.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,318.000000},{0.000000,106.000000}}" />
             <Property Name="Text" Value="#{QXWH_20210616_93}"/>
             <Property Name="HorzFormatting" Value="WordWrapCentred"/>
           </Window>
           <Window Type="TLBB_SimpleText" Name="QiXi_QueQiang_General4Name">
             <Property Name="VertFormatting" Value="TopAligned"/>
-            <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,20.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,414.000000},{0.000000,106.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,414.000000},{0.000000,106.000000}}" />
             <Property Name="Text" Value="#{QXWH_20210616_94}"/>
             <Property Name="HorzFormatting" Value="WordWrapCentred"/>
           </Window>
           <Window Type="TLBB_ButtonCheckNULL" Name="QiXi_QueQiang_Rare1Btn">
-            <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,545.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,545.000000},{0.000000,30.000000}}" />
             <Property Name="Tooltip" Value="#{QXWH_20210616_90}"/>
             <Property Name="Font" Value="YouYuan9.75"/>
             <Property Name="CheckMode" Value="1"/>
@@ -286,8 +286,8 @@
             <Property Name="HoverImage" Value="set:QiXi_QueQiao image:QiXi_QueQiaoBtn5Hover"/>
             <Property Name="DisabledImage" Value="set:QiXi_QueQiao image:QiXi_QueQiaoBtn5Dis"/>
             <Window Type="TLBB_StaticImageNULL" Name="QiXi_QueQiang_General5BtnBK">
-              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
               <Property Name="Image" Value="set:QiXi_QueQiao image:JinBian"/>
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
@@ -295,8 +295,8 @@
               <Property Name="MouseHollow" Value="True"/>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="QiXi_QueQiang_General5NB">
-              <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,18.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,32.000000},{0.000000,50.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,18.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,32.000000},{0.000000,50.000000}}" />
               <Property Name="RiseOnClick" Value="False"/>
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
@@ -307,8 +307,8 @@
             </Window>
           </Window>
           <Window Type="TLBB_ButtonCheckNULL" Name="QiXi_QueQiang_Rare2Btn">
-            <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,640.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,640.000000},{0.000000,30.000000}}" />
             <Property Name="Tooltip" Value="#{QXWH_20210616_90}"/>
             <Property Name="Font" Value="YouYuan9.75"/>
             <Property Name="CheckMode" Value="1"/>
@@ -319,8 +319,8 @@
             <Event Name="Clicked" Function="QiXi_QueQiang_GeneralBtn(6)"/>
             <Event Name="MouseButtonUp" Function="QiXi_QueQiang_GeneralBtn_UP(6)"/>
             <Window Type="TLBB_StaticImageNULL" Name="QiXi_QueQiang_General6BtnBK">
-              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
               <Property Name="Image" Value="set:QiXi_QueQiao image:JinBian"/>
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
@@ -328,8 +328,8 @@
               <Property Name="MouseHollow" Value="True"/>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="QiXi_QueQiang_General6NB">
-              <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,18.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,32.000000},{0.000000,50.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,18.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,32.000000},{0.000000,50.000000}}" />
               <Property Name="RiseOnClick" Value="False"/>
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
@@ -341,40 +341,40 @@
           </Window>
           <Window Type="TLBB_SimpleText" Name="QiXi_QueQiang_Rare1Text">
             <Property Name="VertFormatting" Value="TopAligned"/>
-            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,575.000000},{0.000000,80.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,575.000000},{0.000000,80.000000}}" />
             <Property Name="Text" Value="#{QXWH_20210616_89}"/>
             <Property Name="HorzFormatting" Value="WordWrapCentred"/>
           </Window>
           <Window Type="TLBB_SimpleText" Name="QiXi_QueQiang_Rare2Text">
             <Property Name="VertFormatting" Value="TopAligned"/>
-            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,670.000000},{0.000000,80.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,670.000000},{0.000000,80.000000}}" />
             <Property Name="Text" Value="#{QXWH_20210616_89}"/>
             <Property Name="HorzFormatting" Value="WordWrapCentred"/>
           </Window>
           <Window Type="TLBB_SimpleText" Name="QiXi_QueQiang_Rare1Name">
             <Property Name="VertFormatting" Value="TopAligned"/>
-            <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,20.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,545.000000},{0.000000,106.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,545.000000},{0.000000,106.000000}}" />
             <Property Name="Text" Value="#{QXWH_20210616_95}"/>
             <Property Name="HorzFormatting" Value="WordWrapCentred"/>
           </Window>
           <Window Type="TLBB_SimpleText" Name="QiXi_QueQiang_Rare2Name">
             <Property Name="VertFormatting" Value="TopAligned"/>
-            <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,20.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,640.000000},{0.000000,106.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,640.000000},{0.000000,106.000000}}" />
             <Property Name="Text" Value="#{QXWH_20210616_96}"/>
             <Property Name="HorzFormatting" Value="WordWrapCentred"/>
           </Window>
           <Window Type="DefaultWindow" Name="QiXi_QueQiang_JigsawBK">
-            <Property Name="UnifiedSize" Value="{{0.000000,709.000000},{0.000000,216.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,200.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,709.000000},{0.000000,216.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,200.000000}}" />
             <Property Name="RiseOnClick" Value="False"/>
             <Property Name="AlwaysOnTop" Value="True"/>
             <Window Type="TLBB_ButtonCheckNULL" Name="QiXi_QueQiang_Jigsaw1">
-              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
               <Property Name="PushedImage" Value="set:QiXi_QueQiao image:XuanZhong"/>
               <Property Name="HoverImage" Value="set:QiXi_QueQiao image:GaoLiang"/>
               <Event Name="Clicked" Function="QiXi_QueQiang_Jigsaw(1)"/>
@@ -382,8 +382,8 @@
               <Property Name="CheckMode" Value="1"/>
             </Window>
             <Window Type="TLBB_ButtonCheckNULL" Name="QiXi_QueQiang_Jigsaw2">
-              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,71.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,71.000000},{0.000000,0.000000}}" />
               <Property Name="PushedImage" Value="set:QiXi_QueQiao image:XuanZhong"/>
               <Property Name="HoverImage" Value="set:QiXi_QueQiao image:GaoLiang"/>
               <Event Name="Clicked" Function="QiXi_QueQiang_Jigsaw(2)"/>
@@ -391,8 +391,8 @@
               <Property Name="CheckMode" Value="1"/>
             </Window>
             <Window Type="TLBB_ButtonCheckNULL" Name="QiXi_QueQiang_Jigsaw3">
-              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,142.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,142.000000},{0.000000,0.000000}}" />
               <Property Name="PushedImage" Value="set:QiXi_QueQiao image:XuanZhong"/>
               <Property Name="HoverImage" Value="set:QiXi_QueQiao image:GaoLiang"/>
               <Event Name="Clicked" Function="QiXi_QueQiang_Jigsaw(3)"/>
@@ -400,8 +400,8 @@
               <Property Name="CheckMode" Value="1"/>
             </Window>
             <Window Type="TLBB_ButtonCheckNULL" Name="QiXi_QueQiang_Jigsaw4">
-              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,213.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,213.000000},{0.000000,0.000000}}" />
               <Property Name="PushedImage" Value="set:QiXi_QueQiao image:XuanZhong"/>
               <Property Name="HoverImage" Value="set:QiXi_QueQiao image:GaoLiang"/>
               <Event Name="Clicked" Function="QiXi_QueQiang_Jigsaw(4)"/>
@@ -409,8 +409,8 @@
               <Property Name="CheckMode" Value="1"/>
             </Window>
             <Window Type="TLBB_ButtonCheckNULL" Name="QiXi_QueQiang_Jigsaw5">
-              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,284.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,284.000000},{0.000000,0.000000}}" />
               <Property Name="PushedImage" Value="set:QiXi_QueQiao image:XuanZhong"/>
               <Property Name="HoverImage" Value="set:QiXi_QueQiao image:GaoLiang"/>
               <Event Name="Clicked" Function="QiXi_QueQiang_Jigsaw(5)"/>
@@ -418,8 +418,8 @@
               <Property Name="CheckMode" Value="1"/>
             </Window>
             <Window Type="TLBB_ButtonCheckNULL" Name="QiXi_QueQiang_Jigsaw6">
-              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,355.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,355.000000},{0.000000,0.000000}}" />
               <Property Name="PushedImage" Value="set:QiXi_QueQiao image:XuanZhong"/>
               <Property Name="HoverImage" Value="set:QiXi_QueQiao image:GaoLiang"/>
               <Event Name="Clicked" Function="QiXi_QueQiang_Jigsaw(6)"/>
@@ -427,8 +427,8 @@
               <Property Name="CheckMode" Value="1"/>
             </Window>
             <Window Type="TLBB_ButtonCheckNULL" Name="QiXi_QueQiang_Jigsaw7">
-              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,426.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,426.000000},{0.000000,0.000000}}" />
               <Property Name="PushedImage" Value="set:QiXi_QueQiao image:XuanZhong"/>
               <Property Name="HoverImage" Value="set:QiXi_QueQiao image:GaoLiang"/>
               <Event Name="Clicked" Function="QiXi_QueQiang_Jigsaw(7)"/>
@@ -436,8 +436,8 @@
               <Property Name="CheckMode" Value="1"/>
             </Window>
             <Window Type="TLBB_ButtonCheckNULL" Name="QiXi_QueQiang_Jigsaw8">
-              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,497.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,497.000000},{0.000000,0.000000}}" />
               <Property Name="PushedImage" Value="set:QiXi_QueQiao image:XuanZhong"/>
               <Property Name="HoverImage" Value="set:QiXi_QueQiao image:GaoLiang"/>
               <Event Name="Clicked" Function="QiXi_QueQiang_Jigsaw(8)"/>
@@ -445,8 +445,8 @@
               <Property Name="CheckMode" Value="1"/>
             </Window>
             <Window Type="TLBB_ButtonCheckNULL" Name="QiXi_QueQiang_Jigsaw9">
-              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,568.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,568.000000},{0.000000,0.000000}}" />
               <Property Name="PushedImage" Value="set:QiXi_QueQiao image:XuanZhong"/>
               <Property Name="HoverImage" Value="set:QiXi_QueQiao image:GaoLiang"/>
               <Event Name="Clicked" Function="QiXi_QueQiang_Jigsaw(9)"/>
@@ -454,8 +454,8 @@
               <Property Name="CheckMode" Value="1"/>
             </Window>
             <Window Type="TLBB_ButtonCheckNULL" Name="QiXi_QueQiang_Jigsaw10">
-              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,639.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,639.000000},{0.000000,0.000000}}" />
               <Property Name="PushedImage" Value="set:QiXi_QueQiao image:XuanZhong"/>
               <Property Name="HoverImage" Value="set:QiXi_QueQiao image:GaoLiang"/>
               <Event Name="Clicked" Function="QiXi_QueQiang_Jigsaw(10)"/>
@@ -463,8 +463,8 @@
               <Property Name="CheckMode" Value="1"/>
             </Window>
             <Window Type="TLBB_ButtonCheckNULL" Name="QiXi_QueQiang_Jigsaw11">
-              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,71.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,71.000000}}" />
               <Property Name="PushedImage" Value="set:QiXi_QueQiao image:XuanZhong"/>
               <Property Name="HoverImage" Value="set:QiXi_QueQiao image:GaoLiang"/>
               <Event Name="Clicked" Function="QiXi_QueQiang_Jigsaw(11)"/>
@@ -472,8 +472,8 @@
               <Property Name="CheckMode" Value="1"/>
             </Window>
             <Window Type="TLBB_ButtonCheckNULL" Name="QiXi_QueQiang_Jigsaw12">
-              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,71.000000},{0.000000,71.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,71.000000},{0.000000,71.000000}}" />
               <Property Name="PushedImage" Value="set:QiXi_QueQiao image:XuanZhong"/>
               <Property Name="HoverImage" Value="set:QiXi_QueQiao image:GaoLiang"/>
               <Event Name="Clicked" Function="QiXi_QueQiang_Jigsaw(12)"/>
@@ -481,8 +481,8 @@
               <Property Name="CheckMode" Value="1"/>
             </Window>
             <Window Type="TLBB_ButtonCheckNULL" Name="QiXi_QueQiang_Jigsaw13">
-              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,142.000000},{0.000000,71.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,142.000000},{0.000000,71.000000}}" />
               <Property Name="PushedImage" Value="set:QiXi_QueQiao image:XuanZhong"/>
               <Property Name="HoverImage" Value="set:QiXi_QueQiao image:GaoLiang"/>
               <Event Name="Clicked" Function="QiXi_QueQiang_Jigsaw(13)"/>
@@ -490,8 +490,8 @@
               <Property Name="CheckMode" Value="1"/>
             </Window>
             <Window Type="TLBB_ButtonCheckNULL" Name="QiXi_QueQiang_Jigsaw14">
-              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,213.000000},{0.000000,71.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,213.000000},{0.000000,71.000000}}" />
               <Property Name="PushedImage" Value="set:QiXi_QueQiao image:XuanZhong"/>
               <Property Name="HoverImage" Value="set:QiXi_QueQiao image:GaoLiang"/>
               <Event Name="Clicked" Function="QiXi_QueQiang_Jigsaw(14)"/>
@@ -499,8 +499,8 @@
               <Property Name="CheckMode" Value="1"/>
             </Window>
             <Window Type="TLBB_ButtonCheckNULL" Name="QiXi_QueQiang_Jigsaw15">
-              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,284.000000},{0.000000,71.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,284.000000},{0.000000,71.000000}}" />
               <Property Name="PushedImage" Value="set:QiXi_QueQiao image:XuanZhong"/>
               <Property Name="HoverImage" Value="set:QiXi_QueQiao image:GaoLiang"/>
               <Event Name="Clicked" Function="QiXi_QueQiang_Jigsaw(15)"/>
@@ -508,8 +508,8 @@
               <Property Name="CheckMode" Value="1"/>
             </Window>
             <Window Type="TLBB_ButtonCheckNULL" Name="QiXi_QueQiang_Jigsaw16">
-              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,355.000000},{0.000000,71.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,355.000000},{0.000000,71.000000}}" />
               <Property Name="PushedImage" Value="set:QiXi_QueQiao image:XuanZhong"/>
               <Property Name="HoverImage" Value="set:QiXi_QueQiao image:GaoLiang"/>
               <Event Name="Clicked" Function="QiXi_QueQiang_Jigsaw(16)"/>
@@ -517,8 +517,8 @@
               <Property Name="CheckMode" Value="1"/>
             </Window>
             <Window Type="TLBB_ButtonCheckNULL" Name="QiXi_QueQiang_Jigsaw17">
-              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,426.000000},{0.000000,71.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,426.000000},{0.000000,71.000000}}" />
               <Property Name="PushedImage" Value="set:QiXi_QueQiao image:XuanZhong"/>
               <Property Name="HoverImage" Value="set:QiXi_QueQiao image:GaoLiang"/>
               <Event Name="Clicked" Function="QiXi_QueQiang_Jigsaw(17)"/>
@@ -526,8 +526,8 @@
               <Property Name="CheckMode" Value="1"/>
             </Window>
             <Window Type="TLBB_ButtonCheckNULL" Name="QiXi_QueQiang_Jigsaw18">
-              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,497.000000},{0.000000,71.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,497.000000},{0.000000,71.000000}}" />
               <Property Name="PushedImage" Value="set:QiXi_QueQiao image:XuanZhong"/>
               <Property Name="HoverImage" Value="set:QiXi_QueQiao image:GaoLiang"/>
               <Event Name="Clicked" Function="QiXi_QueQiang_Jigsaw(18)"/>
@@ -535,8 +535,8 @@
               <Property Name="CheckMode" Value="1"/>
             </Window>
             <Window Type="TLBB_ButtonCheckNULL" Name="QiXi_QueQiang_Jigsaw19">
-              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,568.000000},{0.000000,71.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,568.000000},{0.000000,71.000000}}" />
               <Property Name="PushedImage" Value="set:QiXi_QueQiao image:XuanZhong"/>
               <Property Name="HoverImage" Value="set:QiXi_QueQiao image:GaoLiang"/>
               <Event Name="Clicked" Function="QiXi_QueQiang_Jigsaw(19)"/>
@@ -544,8 +544,8 @@
               <Property Name="CheckMode" Value="1"/>
             </Window>
             <Window Type="TLBB_ButtonCheckNULL" Name="QiXi_QueQiang_Jigsaw20">
-              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,639.000000},{0.000000,71.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,639.000000},{0.000000,71.000000}}" />
               <Property Name="PushedImage" Value="set:QiXi_QueQiao image:XuanZhong"/>
               <Property Name="HoverImage" Value="set:QiXi_QueQiao image:GaoLiang"/>
               <Event Name="Clicked" Function="QiXi_QueQiang_Jigsaw(20)"/>
@@ -553,8 +553,8 @@
               <Property Name="CheckMode" Value="1"/>
             </Window>
             <Window Type="TLBB_ButtonCheckNULL" Name="QiXi_QueQiang_Jigsaw21">
-              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,142.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,142.000000}}" />
               <Property Name="PushedImage" Value="set:QiXi_QueQiao image:XuanZhong"/>
               <Property Name="HoverImage" Value="set:QiXi_QueQiao image:GaoLiang"/>
               <Event Name="Clicked" Function="QiXi_QueQiang_Jigsaw(21)"/>
@@ -562,8 +562,8 @@
               <Property Name="CheckMode" Value="1"/>
             </Window>
             <Window Type="TLBB_ButtonCheckNULL" Name="QiXi_QueQiang_Jigsaw22">
-              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,71.000000},{0.000000,142.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,71.000000},{0.000000,142.000000}}" />
               <Property Name="PushedImage" Value="set:QiXi_QueQiao image:XuanZhong"/>
               <Property Name="HoverImage" Value="set:QiXi_QueQiao image:GaoLiang"/>
               <Event Name="Clicked" Function="QiXi_QueQiang_Jigsaw(22)"/>
@@ -571,8 +571,8 @@
               <Property Name="CheckMode" Value="1"/>
             </Window>
             <Window Type="TLBB_ButtonCheckNULL" Name="QiXi_QueQiang_Jigsaw23">
-              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,142.000000},{0.000000,142.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,142.000000},{0.000000,142.000000}}" />
               <Property Name="PushedImage" Value="set:QiXi_QueQiao image:XuanZhong"/>
               <Property Name="HoverImage" Value="set:QiXi_QueQiao image:GaoLiang"/>
               <Event Name="Clicked" Function="QiXi_QueQiang_Jigsaw(23)"/>
@@ -580,8 +580,8 @@
               <Property Name="CheckMode" Value="1"/>
             </Window>
             <Window Type="TLBB_ButtonCheckNULL" Name="QiXi_QueQiang_Jigsaw24">
-              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,213.000000},{0.000000,142.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,213.000000},{0.000000,142.000000}}" />
               <Property Name="PushedImage" Value="set:QiXi_QueQiao image:XuanZhong"/>
               <Property Name="HoverImage" Value="set:QiXi_QueQiao image:GaoLiang"/>
               <Event Name="Clicked" Function="QiXi_QueQiang_Jigsaw(24)"/>
@@ -589,8 +589,8 @@
               <Property Name="CheckMode" Value="1"/>
             </Window>
             <Window Type="TLBB_ButtonCheckNULL" Name="QiXi_QueQiang_Jigsaw25">
-              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,284.000000},{0.000000,142.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,284.000000},{0.000000,142.000000}}" />
               <Property Name="PushedImage" Value="set:QiXi_QueQiao image:XuanZhong"/>
               <Property Name="HoverImage" Value="set:QiXi_QueQiao image:GaoLiang"/>
               <Event Name="Clicked" Function="QiXi_QueQiang_Jigsaw(25)"/>
@@ -598,8 +598,8 @@
               <Property Name="CheckMode" Value="1"/>
             </Window>
             <Window Type="TLBB_ButtonCheckNULL" Name="QiXi_QueQiang_Jigsaw26">
-              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,355.000000},{0.000000,142.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,355.000000},{0.000000,142.000000}}" />
               <Property Name="PushedImage" Value="set:QiXi_QueQiao image:XuanZhong"/>
               <Property Name="HoverImage" Value="set:QiXi_QueQiao image:GaoLiang"/>
               <Event Name="Clicked" Function="QiXi_QueQiang_Jigsaw(26)"/>
@@ -607,8 +607,8 @@
               <Property Name="CheckMode" Value="1"/>
             </Window>
             <Window Type="TLBB_ButtonCheckNULL" Name="QiXi_QueQiang_Jigsaw27">
-              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,426.000000},{0.000000,142.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,426.000000},{0.000000,142.000000}}" />
               <Property Name="PushedImage" Value="set:QiXi_QueQiao image:XuanZhong"/>
               <Property Name="HoverImage" Value="set:QiXi_QueQiao image:GaoLiang"/>
               <Event Name="Clicked" Function="QiXi_QueQiang_Jigsaw(27)"/>
@@ -616,8 +616,8 @@
               <Property Name="CheckMode" Value="1"/>
             </Window>
             <Window Type="TLBB_ButtonCheckNULL" Name="QiXi_QueQiang_Jigsaw28">
-              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,497.000000},{0.000000,142.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,497.000000},{0.000000,142.000000}}" />
               <Property Name="PushedImage" Value="set:QiXi_QueQiao image:XuanZhong"/>
               <Property Name="HoverImage" Value="set:QiXi_QueQiao image:GaoLiang"/>
               <Event Name="Clicked" Function="QiXi_QueQiang_Jigsaw(28)"/>
@@ -625,8 +625,8 @@
               <Property Name="CheckMode" Value="1"/>
             </Window>
             <Window Type="TLBB_ButtonCheckNULL" Name="QiXi_QueQiang_Jigsaw29">
-              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,568.000000},{0.000000,142.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,568.000000},{0.000000,142.000000}}" />
               <Property Name="PushedImage" Value="set:QiXi_QueQiao image:XuanZhong"/>
               <Property Name="HoverImage" Value="set:QiXi_QueQiao image:GaoLiang"/>
               <Event Name="Clicked" Function="QiXi_QueQiang_Jigsaw(29)"/>
@@ -634,8 +634,8 @@
               <Property Name="CheckMode" Value="1"/>
             </Window>
             <Window Type="TLBB_ButtonCheckNULL" Name="QiXi_QueQiang_Jigsaw30">
-              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,639.000000},{0.000000,142.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,639.000000},{0.000000,142.000000}}" />
               <Property Name="PushedImage" Value="set:QiXi_QueQiao image:XuanZhong"/>
               <Property Name="HoverImage" Value="set:QiXi_QueQiao image:GaoLiang"/>
               <Event Name="Clicked" Function="QiXi_QueQiang_Jigsaw(30)"/>
@@ -644,8 +644,8 @@
             </Window>
           </Window>
           <Window Type="TLBB_ButtonNULL" Name="QiXi_QueQiang_Reset">
-            <Property Name="UnifiedSize" Value="{{0.000000,96.000000},{0.000000,24.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{1.000000,-45.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,96.000000},{0.000000,24.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{1.000000,-45.000000}}" />
             <Property Name="Text" Value="#{QXWH_20210616_11}"/>
             <Property Name="PushedImage" Value="set:ZLHeroMeeting image:Button_Push"/>
             <Property Name="NormalImage" Value="set:ZLHeroMeeting image:Button_Normal"/>
@@ -654,8 +654,8 @@
             <Event Name="Clicked" Function="QiXi_QueQiang_Reset()" />
           </Window>
           <Window Type="TLBB_ButtonNULL" Name="QiXi_QueQiang_Fill">
-            <Property Name="UnifiedSize" Value="{{0.000000,96.000000},{0.000000,24.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,250.000000},{1.000000,-33.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,96.000000},{0.000000,24.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,250.000000},{1.000000,-33.000000}}" />
             <Property Name="Text" Value="#{QXWH_20210616_03}"/>
             <Property Name="PushedImage" Value="set:ZLHeroMeeting image:Button_Push"/>
             <Property Name="NormalImage" Value="set:ZLHeroMeeting image:Button_Normal"/>
@@ -664,8 +664,8 @@
             <Event Name="Clicked" Function="QiXi_QueQiang_Fill()" />
           </Window>
           <Window Type="TLBB_ButtonNULL" Name="QiXi_QueQiang_Clear">
-            <Property Name="UnifiedSize" Value="{{0.000000,96.000000},{0.000000,24.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,445.000000},{1.000000,-33.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,96.000000},{0.000000,24.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,445.000000},{1.000000,-33.000000}}" />
             <Property Name="Text" Value="#{QXWH_20210616_04}"/>
             <Property Name="PushedImage" Value="set:ZLHeroMeeting image:Button_Push"/>
             <Property Name="NormalImage" Value="set:ZLHeroMeeting image:Button_Normal"/>
@@ -675,18 +675,18 @@
           </Window>
         </Window>
         <Window Type="DefaultWindow" Name="QiXi_QueQiang_Explain3">
-          <Property Name="UnifiedSize" Value="{{0.000000,122.000000},{1.000000,0.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,810.000000},{0.000000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,122.000000},{1.000000,0.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,810.000000},{0.000000,0.000000}}" />
           <Property Name="RiseOnClick" Value="False"/>
           <Property Name="AlwaysOnTop" Value="True"/>
           <Window Type="TLBB_ActionButton" Name="QiXi_QueQiang_Award1">
-            <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.500000,-25.000000},{0.000000,95.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.500000,-25.000000},{0.000000,95.000000}}" />
             <Event Name="Clicked" Function="QiXi_QueQiang_Award(1)" />
             <Property Name="Tooltip" Value="#{QXWH_20210616_07}"/>
             <Property Name="BackImage" Value="set:CircularTaskTool84 image:CircularTaskTool84_4" />
             <Window Type="TLBB_Animate" Name="QiXi_QueQiang_Award1Animate">
-              <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}" />
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
               <Property Name="MouseLButtonHollow" Value="True"/>
@@ -696,8 +696,8 @@
               <Property Name="Visible" Value="False"/>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="QiXi_QueQiang_Award1OK">
-              <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
               <Property Name="RiseOnClick" Value="False"/>
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
@@ -706,8 +706,8 @@
               <Property Name="Visible" Value="False"/>
               <Property Name="Image" Value="set:QiXi_QueQiao image:ZheZhao"/>
               <Window Type="TLBB_StaticImageNULL" Name="QiXi_QueQiang_Award1OK2">
-                <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,28.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{0.500000,-14.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,28.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{0.500000,-14.000000}}" />
                 <Property Name="RiseOnClick" Value="False"/>
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
@@ -718,13 +718,13 @@
             </Window>
           </Window>
           <Window Type="TLBB_ActionButton" Name="QiXi_QueQiang_Award2">
-            <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.500000,-25.000000},{0.000000,187.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.500000,-25.000000},{0.000000,187.000000}}" />
             <Event Name="Clicked" Function="QiXi_QueQiang_Award(2)" />
             <Property Name="Tooltip" Value="#{QXWH_20210616_08}"/>
             <Property Name="BackImage" Value="set:CircularTaskTool84 image:CircularTaskTool84_5" />
             <Window Type="TLBB_Animate" Name="QiXi_QueQiang_Award2Animate">
-              <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}" />
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
               <Property Name="MouseLButtonHollow" Value="True"/>
@@ -734,8 +734,8 @@
               <Property Name="AlwaysOnTop" Value="True"/>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="QiXi_QueQiang_Award2OK">
-              <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
               <Property Name="RiseOnClick" Value="False"/>
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
@@ -744,8 +744,8 @@
               <Property Name="Visible" Value="False"/>
               <Property Name="Image" Value="set:QiXi_QueQiao image:ZheZhao"/>
               <Window Type="TLBB_StaticImageNULL" Name="QiXi_QueQiang_Award2OK2">
-                <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,28.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{0.500000,-14.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,28.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{0.500000,-14.000000}}" />
                 <Property Name="RiseOnClick" Value="False"/>
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
@@ -756,13 +756,13 @@
             </Window>
           </Window>
           <Window Type="TLBB_ActionButton" Name="QiXi_QueQiang_Award3">
-            <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.500000,-25.000000},{0.000000,280.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.500000,-25.000000},{0.000000,280.000000}}" />
             <Event Name="Clicked" Function="QiXi_QueQiang_Award(3)" />
             <Property Name="Tooltip" Value="#{QXWH_20210616_09}"/>
             <Property Name="BackImage" Value="set:CircularTaskTool84 image:CircularTaskTool84_6" />
             <Window Type="TLBB_Animate" Name="QiXi_QueQiang_Award3Animate">
-              <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}" />
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
               <Property Name="MouseLButtonHollow" Value="True"/>
@@ -772,8 +772,8 @@
               <Property Name="Visible" Value="False"/>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="QiXi_QueQiang_Award3OK">
-              <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
               <Property Name="RiseOnClick" Value="False"/>
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
@@ -782,8 +782,8 @@
               <Property Name="Visible" Value="False"/>
               <Property Name="Image" Value="set:QiXi_QueQiao image:ZheZhao"/>
               <Window Type="TLBB_StaticImageNULL" Name="QiXi_QueQiang_Award3OKBK">
-                <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,28.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{0.500000,-14.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,28.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{0.500000,-14.000000}}" />
                 <Property Name="RiseOnClick" Value="False"/>
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
@@ -794,13 +794,13 @@
             </Window>
           </Window>
           <Window Type="TLBB_ActionButton" Name="QiXi_QueQiang_Award4">
-            <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.500000,-25.000000},{0.000000,380.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.500000,-25.000000},{0.000000,380.000000}}" />
             <Event Name="Clicked" Function="QiXi_QueQiang_Award(4)" />
             <Property Name="Tooltip" Value="#{QXWH_20210616_10}"/>
             <Property Name="BackImage" Value="set:CircularTaskTool84 image:CircularTaskTool84_7" />
             <Window Type="TLBB_Animate" Name="QiXi_QueQiang_Award4Animate">
-              <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}" />
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
               <Property Name="MouseLButtonHollow" Value="True"/>
@@ -810,8 +810,8 @@
               <Property Name="Visible" Value="False"/>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="QiXi_QueQiang_Award4OK">
-            <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
             <Property Name="RiseOnClick" Value="False"/>
             <Property Name="MouseRButtonHollow" Value="True"/>
             <Property Name="MouseMoveHollow" Value="True"/>
@@ -820,8 +820,8 @@
             <Property Name="Visible" Value="False"/>
             <Property Name="Image" Value="set:QiXi_QueQiao image:ZheZhao"/>
             <Window Type="TLBB_StaticImageNULL" Name="QiXi_QueQiang_Award4OKBK">
-              <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,28.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{0.500000,-14.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,28.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{0.500000,-14.000000}}" />
               <Property Name="RiseOnClick" Value="False"/>
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>

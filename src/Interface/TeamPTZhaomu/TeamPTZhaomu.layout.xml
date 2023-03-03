@@ -6,7 +6,7 @@
         <Property Name="AlwaysOnTop" Value="true" />
         <Window Type="TLBB_DragTitle" Name="TeamPTZhaomu_DragTitle">
             <Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
-            <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+            <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}" />
             <Property Name="DragTarget" Value="TeamPTZhaomu_Frame" />
             <Window Type="TLBB_SimpleText" Name="TeamPTZhaomu_PageHeader_Text">
                 <Property Name="Position" Value="x:0.0 y:0.0" />
@@ -18,18 +18,18 @@
             </Window>
         </Window>
         <Window Type="TLBB_ButtonHelp" Name="TeamPTZhaomu_Help">
-            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}" />
             <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
             <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*TeamPTZhaomu&quot;);' />
         </Window>
         <Window Type="TLBB_ButtonClose" Name="TeamPTZhaomu_Close">
-            <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+            <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}" />
             <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
             <Event Name="Clicked" Function="TeamPTZhaomu_Close_Clicked();" />
         </Window>
         <Window Type="DefaultWindow" Name="TeamPTZhaomu_Frame_Client">
             <Property Name="AbsolutePosition" Value="x:7.000000 y:36.000000" />
-            <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-55.000000}" />
+            <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-55.000000}}" />
           <Window Type="TLBB_SimpleText" Name="TeamPTZhaomu_Edit_Direction">
             <Property Name="AbsolutePosition" Value="x:2.000000 y:2.000000" />
             <Property Name="AbsoluteSize" Value="w:280.0 h:18.0" />
@@ -77,27 +77,27 @@
           </Window>
           <Window Type="TLBB_EditBoxNormal" Name="TeamPTZhaomu_EditName">
             <Property Name="AbsolutePosition" Value="x:85.000000 y:22.000000" />
-            <Property Name="UnifiedSize" Value="{{0.36,0.000000},{0.000000,20.000000}" />
+            <Property Name="UnifiedSize" Value="{{0.36,0.000000},{0.000000,20.000000}}" />
                 <Property Name="MaxTextLength" Value="20" />
                 <Property Name="ValidationString" Value="^[^#@.*]*" />
                 <Property Name="Text" Value="#{INTERFACE_XML_885}" />
             </Window>
           <Window Type="TLBB_ComboList" Name="TeamPTZhaomu_Mudi" >
             <Property Name="AbsolutePosition" Value="x:85.000000 y:46.000000" />
-						<Property Name="UnifiedSize" Value="{{0.35000,0.000000},{0.000000,20.000000}" />
+						<Property Name="UnifiedSize" Value="{{0.35000,0.000000},{0.000000,20.000000}}" />
 						<Property Nmae="ForceVertScrollbar" Value="True" />
             <Event Name="ListSelectionAccepted" Function="TeamPTZhaomu_ComboListChanged();" />
           </Window>
           <Window Type="TLBB_SimpleMulitiTextFrame" Name="TeamPTZhaomu_Zhiye" >
             <Property Name="AbsolutePosition" Value="x:85.000000 y:70.000000" />
-            <Property Name="UnifiedSize" Value="{{0.30000,0.000000},{0.000000,20.000000}" />
+            <Property Name="UnifiedSize" Value="{{0.30000,0.000000},{0.000000,20.000000}}" />
           </Window>
           <Window Type="DefaultWindow" Name="TeamPTZhaomu_Checkbox_Frame">
                 <Property Name="AbsolutePosition" Value="x:85.000000 y:95.000000" />
                 <Property Name="AbsoluteSize" Value="w:300.0 h:80.0" />
                 <Window Type="TLBB_ButtonCheck" Name="TeamPTZhaomu_RenyiInfo">
-                  <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.000000,240.000000},{0.000000,34.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.000000,240.000000},{0.000000,34.000000}}" />
                     <Property Name="CheckMode" Value="0" />
 										<Event Name="MouseButtonDown" Function="TeamPTZhaomu_Renyi_Button_Down();" />
                 </Window>
@@ -156,8 +156,8 @@
 										<Event Name="MouseButtonDown" Function="TeamPTZhaomu_Other_Button_Down(10);" />
               </Window>
             <Window Type="TLBB_SimpleText" Name="TeamPTZhaomu_Renyi_Text">
-              <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,18.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,255.000000},{0.000000,30.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,18.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,255.000000},{0.000000,30.000000}}" />
                   <Property Name="TextColor" Value="FFFFF263" />
                   <Property Name="Text" Value="#{ZDPT_XML_31}" />
                   <Property Name="HorzFormatting" Value="LeftAligned" />
@@ -270,17 +270,17 @@
             <Property Name="ValidationString" Value="[0-9]*" />
           </Window>
             <Window Type="TLBB_Frame_Lace5" Name="TeamPTZhaomu_Blank">
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}" />
-                <Property Name="UnifiedSize" Value="{{1.000000,-120.000000},{0.000000,20.000000}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}}" />
+                <Property Name="UnifiedSize" Value="{{1.000000,-120.000000},{0.000000,20.000000}}" />
             </Window>
             <Window Type="TLBB_ButtonCommon" Name="TeamPTZhaomu_Accept">
-                <Property Name="UnifiedPosition" Value="{{1.000000,-120.000000},{1.000000,-20.000000}" />
+                <Property Name="UnifiedPosition" Value="{{1.000000,-120.000000},{1.000000,-20.000000}}" />
                 <Property Name="AbsoluteSize" Value="w:80.000000 h:20.000000" />
                 <Property Name="Text" Value="#{ZDPT_XML_22}" />
                 <Event Name="Clicked" Function="TeamPTZhaomu_Accept_Clicked();" />
             </Window>
             <Window Type="TLBB_ButtonCommon" Name="TeamPTZhaomu_Cancel">
-                <Property Name="UnifiedPosition" Value="{{1.000000,-40.000000},{1.000000,-20.000000}" />
+                <Property Name="UnifiedPosition" Value="{{1.000000,-40.000000},{1.000000,-20.000000}}" />
                 <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
                 <Property Name="Text" Value="#{ZDPT_XML_23}" />
                 <Event Name="Clicked" Function="TeamPTZhaomu_Cancel_Clicked();" />

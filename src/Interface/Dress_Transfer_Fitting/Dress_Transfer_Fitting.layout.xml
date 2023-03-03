@@ -1,29 +1,29 @@
 <?xml version="1.0" ?>
 <GUILayout>
   <Window Type="TLBB_MainFrame1" Name="Dress_Transfer_Fitting_Frame">
-    <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,385.999969}}"/>
-    <Property Name="UnifiedPosition" Value="{{0.500000,167.000000},{0.120000,50.000000}}"/>
+    <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,385.999969}}" />
+    <Property Name="UnifiedPosition" Value="{{0.500000,167.000000},{0.120000,50.000000}}" />
     <Event Name="Hidden" Function="Dress_Transfer_Fitting_OnHiden();" />
     <Property Name="AlwaysOnTop" Value="true" />
     <Window Type="TLBB_DragTitle" Name="Dress_Transfer_Fitting_DragTitle">
-      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}" />
       <Property Name="DragTarget" Value="Dress_Transfer_Fitting_Frame" />
       <Property Name="Font" Value="YouYuan11.25" />
       <Property Name="Text" Value="#{SZPSZY_160314_16}" />
     </Window>
     <Window Type="TLBB_ButtonClose" Name="Dress_Transfer_Fitting_Close">
-      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}" />
       <Event Name="Clicked" Function="Dress_Transfer_Fitting_OnClosed();" />
     </Window>
     <Window Type="TLBB_ButtonHelp" Name="Dress_Transfer_Fitting_Help">
-      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}" />
     </Window>
     <Window Type="TLBB_FramePlayerOther" Name="Dress_Transfer_Fitting_Frame_Client">
-      <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-75.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,36.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-75.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,36.000000}}" />
       <Window Type="TLBB_MeshWindow" Name="Dress_Transfer_Fitting_FakeObject">
         <Property Name="Position" Value="x:0.043243 y:0.041199" />
         <Property Name="Size" Value="w:0.918919 h:0.876405" />
@@ -43,15 +43,15 @@
       </Window>
     </Window>
     <Window Type="TLBB_Frame_Lace5" Name="Dress_Transfer_Fitting_Blank">
-      <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{1.000000,-39.000000}" />
-      <Property Name="UnifiedSize" Value="{{1.000000,-18.000000},{0.000000,20.000000}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{1.000000,-39.000000}}" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-18.000000},{0.000000,20.000000}}" />
       <Property Name="MouseHollow" Value="true" />
       <Property Name="MouseMoveHollow" Value="true" />
       <Property Name="MouseLButtonHollow" Value="true" />
       <Property Name="MouseRButtonHollow" Value="true" />
     </Window>
     <Window Type="TLBB_ButtonCommon" Name="Dress_Transfer_Fitting_Cancel">
-      <Property Name="UnifiedPosition" Value="{{0.5000000,-20.000000},{1.000000,-39.000000}" />
+      <Property Name="UnifiedPosition" Value="{{0.5000000,-20.000000},{1.000000,-39.000000}}" />
       <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
       <Property Name="Text" Value="#{INTERFACE_XML_302}" />
       <Event Name="Clicked" Function="Dress_Transfer_Fitting_OnClosed();" />

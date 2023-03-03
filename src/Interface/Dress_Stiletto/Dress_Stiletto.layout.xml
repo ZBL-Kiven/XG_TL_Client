@@ -1,23 +1,23 @@
 <?xml version="1.0" ?>
 <GUILayout>
   <Window Type="TLBB_MainFrame2" Name="Dress_Stiletto_Frame">
-    <Property Name="UnifiedSize" Value="{{0.000000,465.000000},{0.000000,467.000000}}"/>
-    <Property Name="UnifiedPosition" Value="{{0.500000,-232.000000},{0.50000,-233.0}}"/>
+    <Property Name="UnifiedSize" Value="{{0.000000,465.000000},{0.000000,467.000000}}" />
+    <Property Name="UnifiedPosition" Value="{{0.500000,-232.000000},{0.50000,-233.0}}" />
     <Event Name="Shown" Function="Dress_Stiletto_OnShown();" />
     <Event Name="Hidden" Function="Dress_Stiletto_Close();" />
 <!--     <Window Type="TLBB_ButtonHelp" Name="Dress_Stiletto_Help">
-      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,7.000000}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,7.000000}}" />
       <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
       <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*Dress_Stiletto&quot;);' />
     </Window> -->
     <Window Type="TLBB_ButtonClose" Name="Dress_Stiletto_Close">
-      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,5.000000}" />
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,5.000000}}" />
       <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
       <Event Name="Clicked" Function="Dress_Stiletto_Close();" />
     </Window>
     <Window Type="TLBB_DragTitle" Name="Dress_Stiletto_DragTitle">
       <Property Name="AbsolutePosition" Value="x:40.000000 y:4.000000" />
-      <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}}" />
       <Property Name="DragTarget" Value="Dress_Stiletto_Frame" />
       <Property Name="Font" Value="YouYuan11.25" />
       <Property Name="Text" Value="#{SZZH_170111_24}" />
@@ -26,34 +26,34 @@
     </Window>
     <Window Type="DefaultWindow" Name="Dress_Stiletto_Frame_Client">
       <Property Name="AbsolutePosition" Value="x:7.000000 y:30.000000" />
-      <Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{1.000000,-39.000000}" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{1.000000,-39.000000}}" />
       <Window Type="DefaultWindow" Name="Dress_Stiletto_TopFrame">
-        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,9.000000}}"/>
-        <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,25.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,9.000000}}" />
+        <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,25.000000}}" />
         <Window Type="TLBB_ButtonFenYe2" Name="Dress_Stiletto_TopFrame_Fenye1">
-          <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,25.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,25.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
           <Property Name="Text" Value="#{SZZH_170111_20}"/>
           <Property Name="CheckMode" Value="1" />
 		  		<Event Name="Clicked" Function="Dress_Stiletto_FenYeClick(1);"/>
         </Window>
         <Window Type="TLBB_ButtonFenYe2" Name="Dress_Stiletto_TopFrame_Fenye2">
-          <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,25.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,84.000000},{0.000000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,25.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,84.000000},{0.000000,0.000000}}" />
           <Property Name="Text" Value="#{SZZH_170111_21}"/>
           <Property Name="CheckMode" Value="1" />
 		  		<Event Name="Clicked" Function="Dress_Stiletto_FenYeClick(2);"/>
         </Window>
         <Window Type="TLBB_ButtonFenYe2" Name="Dress_Stiletto_TopFrame_Fenye3">
-          <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,25.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,168.000000},{0.000000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,25.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,168.000000},{0.000000,0.000000}}" />
           <Property Name="Text" Value="#{SZZH_170111_22}"/>
           <Property Name="CheckMode" Value="1" />
 		  		<Event Name="Clicked" Function="Dress_Stiletto_FenYeClick(3);"/>
         </Window>
         <Window Type="TLBB_ButtonFenYe2" Name="Dress_Stiletto_TopFrame_Fenye4">
-          <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,25.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,252.000000},{0.000000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,25.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,252.000000},{0.000000,0.000000}}" />
           <Property Name="Text" Value="#{SZZH_170111_23}"/>
           <Property Name="CheckMode" Value="1" />
 		  		<Event Name="Clicked" Function="Dress_Stiletto_FenYeClick(4);"/>
@@ -61,14 +61,14 @@
         
       </Window>
       <Window Type="DefaultWindow" Name="Dress_Stiletto_FunctionFrame">
-        <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,-35.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,34.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,-35.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,34.000000}}" />
           <Window Type="DefaultWindow" Name="Dress_Stiletto_Function_RightFrame">
-      <Property Name="UnifiedSize" Value="{{0.000000,447.000000},{1.000000,0.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{0.000000,447.000000},{1.000000,0.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
       <Window Type="TLBB_SimpleMulitiTextFrame" Name="Dress_Stiletto_RightFrame_Intro">
-        <Property Name="UnifiedPosition" Value="{{0.00000,2.000000},{0.000000,0.000000}" />
-        <Property Name="UnifiedSize" Value="{{1.0000,-4.0000},{0.000000,120.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.00000,2.000000},{0.000000,0.000000}}" />
+        <Property Name="UnifiedSize" Value="{{1.0000,-4.0000},{0.000000,120.000000}}" />
         <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
         <Property Name="VertFormatting" Value="VertCentred" />
         <Property Name="Text" Value="#{SZZH_170111_27}" />
@@ -77,14 +77,14 @@
       </Window>
 
             <Window Type="TLBB_Frame_Lace3" Name="Dress_Stiletto_RightFrame_FunClient">
-              <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,250.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,120.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,250.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,120.000000}}" />
               <Window Type="DefaultWindow" Name="Dress_Stiletto_RightClient1">
-                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,60.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,60.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
               <Window Type="TLBB_SimpleText" Name="Dress_Stiletto_RightClient1_text" >
-                <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.000000,22.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.000000,22.000000}}" />
                 <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
                 <Property Name="RiseOnClick" Value="False" />
                 <Property Name="Text" Value="#{SZZH_170111_28}" />
@@ -92,7 +92,7 @@
                 <Property Name="VertFormatting" Value="VertCentred" />
               </Window>
               <Window Type="TLBB_ActionButton" Name="Dress_Stiletto_RightClient1_Item">
-                <Property Name="UnifiedPosition" Value="{{0.500000,-21.000000},{0.000000,11.000000}" />
+                <Property Name="UnifiedPosition" Value="{{0.500000,-21.000000},{0.000000,11.000000}}" />
                 <Property Name="AbsoluteSize" Value="w:42.000000 h:42.000000" />
                 <Property Name="DraggingEnabled" Value="True" />
                 <Property Name="Empty" Value="false" />
@@ -101,14 +101,14 @@
               </Window>
               </Window>
               <Window Type="DefaultWindow" Name="Dress_Stiletto_RightClient2">
-                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,115.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,62.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,115.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,62.000000}}" />
                 <Window Type="TLBB_Frame_Lace2" Name="Dress_Stiletto_RightClient2_title">
-                  <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,22.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,2.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,22.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,2.000000}}" />
                 <Window Type="TLBB_SimpleText" Name="Dress_Stiletto_RightClient2_titletext" >
-                  <Property Name="UnifiedSize" Value="{{1.000000,-6.000000},{0.000000,22.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,0.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{1.000000,-6.000000},{0.000000,22.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,0.000000}}" />
                   <Property Name="RiseOnClick" Value="False" />
                   <Property Name="Text" Value="#{SZZH_170111_29}" />
                   <Property Name="TextColor" Value="FFFFF263" />
@@ -117,21 +117,21 @@
                 </Window>
                 </Window>
                 <Window Type="DefaultWindow" Name="Dress_Stiletto_RightClient2_P1">
-                  <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,86.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.500000,-215.000000},{0.000000,27.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,86.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.500000,-215.000000},{0.000000,27.000000}}" />
                   
                   <Window Type="TLBB_ActionButton" Name="Dress_Stiletto_RightClient2_P1_Item">
                     <Property Name="AbsoluteSize" Value="w:42.000000 h:42.000000" />
-                    <Property Name="UnifiedPosition" Value="{{0.500000,-21.000000},{0.000000,11.000000}" />
+                    <Property Name="UnifiedPosition" Value="{{0.500000,-21.000000},{0.000000,11.000000}}" />
                     <Window Type="TLBB_StaticImageNULL" Name="Dress_Stiletto_RightClient2_P1_Item_Feng">
-                      <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
-                      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                      <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}" />
+                      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                       <Property Name="Image" Value="set:BaoJianUI image:Dress_Feng"/>
                       <Property Name="RiseOnClick" Value="False" />
                     </Window>
                     <Window Type="TLBB_SimpleText" Name="Dress_Stiletto_RightClient2_P1_Item_tips">
-                      <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
-                      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                      <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}" />
+                      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                       <Property Name="AlwaysOnTop" Value="True"/>
                       <Property Name="Tooltip" Value=""/>
                       <Property Name="MouseRButtonHollow" Value="True"/>
@@ -140,8 +140,8 @@
                     </Window>
                   </Window>
                   <Window Type="TLBB_SimpleMulitiTextFrame" Name="Dress_Stiletto_RightClient2_P1_text2">
-                    <Property Name="UnifiedSize" Value="{{1.0000,0.0000},{0.000000,22.000000}" />
-                    <Property Name="UnifiedPosition" Value="{{0.00000,0.000000},{0.000000,64.000000}" />
+                    <Property Name="UnifiedSize" Value="{{1.0000,0.0000},{0.000000,22.000000}}" />
+                    <Property Name="UnifiedPosition" Value="{{0.00000,0.000000},{0.000000,64.000000}}" />
                     <Property Name="HorzFormatting" Value="HorzCentred"/>
                     <Property Name="VertFormatting" Value="VertCentred" />
                     <Property Name="Text" Value="#{SZZH_170111_34}" />
@@ -150,21 +150,21 @@
                   </Window>
                 </Window>
                 <Window Type="DefaultWindow" Name="Dress_Stiletto_RightClient2_P2">
-                  <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,86.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.500000,-70.000000},{0.000000,27.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,86.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.500000,-70.000000},{0.000000,27.000000}}" />
                   
                   <Window Type="TLBB_ActionButton" Name="Dress_Stiletto_RightClient2_P2_Item">
                     <Property Name="AbsoluteSize" Value="w:42.000000 h:42.000000" />
-                    <Property Name="UnifiedPosition" Value="{{0.500000,-21.000000},{0.000000,11.000000}" />
+                    <Property Name="UnifiedPosition" Value="{{0.500000,-21.000000},{0.000000,11.000000}}" />
                     <Window Type="TLBB_StaticImageNULL" Name="Dress_Stiletto_RightClient2_P2_Item_Feng">
-                      <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
-                      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                      <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}" />
+                      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                       <Property Name="Image" Value="set:BaoJianUI image:Dress_Feng"/>
                       <Property Name="RiseOnClick" Value="False" />
                     </Window>
                     <Window Type="TLBB_SimpleText" Name="Dress_Stiletto_RightClient2_P2_Item_tips">
-                      <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
-                      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                      <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}" />
+                      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                       <Property Name="AlwaysOnTop" Value="True"/>
                       <Property Name="Tooltip" Value=""/>
                       <Property Name="MouseRButtonHollow" Value="True"/>
@@ -173,8 +173,8 @@
                     </Window>
                   </Window>
                   <Window Type="TLBB_SimpleMulitiTextFrame" Name="Dress_Stiletto_RightClient2_P2_text2">
-                    <Property Name="UnifiedSize" Value="{{1.0000,0.0000},{0.000000,22.000000}" />
-                    <Property Name="UnifiedPosition" Value="{{0.00000,0.000000},{0.000000,64.000000}" />
+                    <Property Name="UnifiedSize" Value="{{1.0000,0.0000},{0.000000,22.000000}}" />
+                    <Property Name="UnifiedPosition" Value="{{0.00000,0.000000},{0.000000,64.000000}}" />
                     <Property Name="HorzFormatting" Value="HorzCentred"/>
                     <Property Name="VertFormatting" Value="VertCentred" />
                     <Property Name="Text" Value="#{SZZH_170111_34}" />
@@ -183,21 +183,21 @@
                   </Window>
                 </Window>
                 <Window Type="DefaultWindow" Name="Dress_Stiletto_RightClient2_P3">
-                  <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,86.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.500000,75.000000},{0.000000,27.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,86.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.500000,75.000000},{0.000000,27.000000}}" />
                   
                   <Window Type="TLBB_ActionButton" Name="Dress_Stiletto_RightClient2_P3_Item">
                     <Property Name="AbsoluteSize" Value="w:42.000000 h:42.000000" />
-                    <Property Name="UnifiedPosition" Value="{{0.500000,-21.000000},{0.000000,11.000000}" />
+                    <Property Name="UnifiedPosition" Value="{{0.500000,-21.000000},{0.000000,11.000000}}" />
                     <Window Type="TLBB_StaticImageNULL" Name="Dress_Stiletto_RightClient2_P3_Item_Feng">
-                      <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
-                      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                      <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}" />
+                      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                       <Property Name="Image" Value="set:BaoJianUI image:Dress_Feng"/>
                       <Property Name="RiseOnClick" Value="False" />
                     </Window>
                     <Window Type="TLBB_SimpleText" Name="Dress_Stiletto_RightClient2_P3_Item_tips">
-                      <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
-                      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                      <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}" />
+                      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                       <Property Name="AlwaysOnTop" Value="True"/>
                       <Property Name="Tooltip" Value=""/>
                       <Property Name="MouseRButtonHollow" Value="True"/>
@@ -206,8 +206,8 @@
                     </Window>
                   </Window>
                   <Window Type="TLBB_SimpleMulitiTextFrame" Name="Dress_Stiletto_RightClient2_P3_text2">
-                    <Property Name="UnifiedSize" Value="{{1.0000,0.0000},{0.000000,22.000000}" />
-                    <Property Name="UnifiedPosition" Value="{{0.00000,0.000000},{0.000000,64.000000}" />
+                    <Property Name="UnifiedSize" Value="{{1.0000,0.0000},{0.000000,22.000000}}" />
+                    <Property Name="UnifiedPosition" Value="{{0.00000,0.000000},{0.000000,64.000000}}" />
                     <Property Name="HorzFormatting" Value="HorzCentred"/>
                     <Property Name="VertFormatting" Value="VertCentred" />
                     <Property Name="Text" Value="#{SZZH_170111_34}" />
@@ -217,16 +217,16 @@
                 </Window>
               </Window>
               <Window Type="TLBB_SimpleMulitiTextFrame" Name="Dress_Stiletto_RightFrame_FunClient_Money_Text">
-                <Property Name="UnifiedPosition" Value="{{0.000,5.000000},{1.000000,-71.000000}" />
-                <Property Name="UnifiedSize" Value="{{1.00000,-10.000000},{0.000000,22.000000}" />
+                <Property Name="UnifiedPosition" Value="{{0.000,5.000000},{1.000000,-71.000000}}" />
+                <Property Name="UnifiedSize" Value="{{1.00000,-10.000000},{0.000000,22.000000}}" />
                 <Property Name="TextColor" Value="FFFFF263" />
                 <Property Name="Text" Value="#{SZZH_170111_37}" />
                 <Property Name="HorzFormatting" Value="LeftAligned" />
                 <Property Name="VertFormatting" Value="VertCentred" />
                 <Property Name="RiseOnClick" Value="False" />
                 <Window Type="TLBB_Money" Name="Dress_Stiletto_RightFrame_FunClient_DemandMoney">
-                  <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}" />
-                  <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}" />
+                  <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}}" />
+                  <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}}" />
                   <Property Name="MoneyNumber" Value="0" />
                   <Property Name="HorzFormatting" Value="RightAligned" />
                   <Property Name="AlignFix" Value="True" />
@@ -236,16 +236,16 @@
                 </Window>
               </Window>
               <Window Type="TLBB_SimpleMulitiTextFrame" Name="Dress_Stiletto_RightFrame_FunClient_Jiaozi_Text">
-                <Property Name="UnifiedPosition" Value="{{0.000,5.000000},{1.000000,-49.000000}" />
-                <Property Name="UnifiedSize" Value="{{1.00000,-10.000000},{0.000000,22.000000}" />
+                <Property Name="UnifiedPosition" Value="{{0.000,5.000000},{1.000000,-49.000000}}" />
+                <Property Name="UnifiedSize" Value="{{1.00000,-10.000000},{0.000000,22.000000}}" />
                 <Property Name="TextColor" Value="FFFFF263" />
                 <Property Name="Text" Value="#{SZZH_170111_38}" />
                 <Property Name="HorzFormatting" Value="LeftAligned" />
                 <Property Name="VertFormatting" Value="VertCentred" />
                 <Property Name="RiseOnClick" Value="False" />
                 <Window Type="TLBB_Money" Name="Dress_Stiletto_RightFrame_FunClient_SelfJiaozi">
-                  <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}" />
-                  <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}" />
+                  <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}}" />
+                  <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}}" />
                   <Property Name="MoneyNumber" Value="0" />
                   <Property Name="HorzFormatting" Value="RightAligned" />
                   <Property Name="AlignFix" Value="True" />
@@ -255,16 +255,16 @@
                 </Window>
               </Window>
               <Window Type="TLBB_SimpleMulitiTextFrame" Name="Dress_Stiletto_RightFrame_FunClient_SelfMoney_Text">
-                <Property Name="UnifiedPosition" Value="{{0.000,5.000000},{1.000000,-27.000000}" />
-                <Property Name="UnifiedSize" Value="{{1.00000,-10.000000},{0.000000,22.000000}" />
+                <Property Name="UnifiedPosition" Value="{{0.000,5.000000},{1.000000,-27.000000}}" />
+                <Property Name="UnifiedSize" Value="{{1.00000,-10.000000},{0.000000,22.000000}}" />
                 <Property Name="TextColor" Value="FFFFF263" />
                 <Property Name="Text" Value="#{SZZH_170111_39}" />
                 <Property Name="HorzFormatting" Value="LeftAligned" />
                 <Property Name="VertFormatting" Value="VertCentred" />
                 <Property Name="RiseOnClick" Value="False" />
                 <Window Type="TLBB_Money" Name="Dress_Stiletto_RightFrame_FunClient_SelfMoney">
-                  <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}" />
-                  <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}" />
+                  <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}}" />
+                  <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}}" />
                   <Property Name="HorzFormatting" Value="RightAligned" />
                   <Property Name="MoneyNumber" Value="0" />
                 </Window>
@@ -275,27 +275,27 @@
               <Property Name="UnifiedSize" Value="{{1.000000,-84.000000},{0.000000,20.000000}}" />
               <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-20.000000}}" />
               <Window Type="TLBB_ButtonCheck" Name="Dress_Stiletto_cost">
-                <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,4.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,4.000000}}" />
                 <Property Name="Selected" Value="True"/>
 
               </Window>
               <Window Type="TLBB_SimpleText" Name="Dress_Stiletto_cost_Text">
-                <Property Name="UnifiedSize" Value="{{0.800000,0.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.800000,0.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,0.000000}}" />
                 <Property Name="Text" Value="#{SZZH_170111_25}"/>
                 <Property Name="Tooltip" Value="#{SZZH_170111_26}"/>
                 <Property Name="RiseOnClick" Value="False"/>
               </Window>
             </Window>
       <Window Type="TLBB_ButtonCommon" Name="Dress_Stiletto_Accept">
-        <Property Name="UnifiedPosition" Value="{{1.000000,-82.000000},{1.000000,-20.000000}" />
+        <Property Name="UnifiedPosition" Value="{{1.000000,-82.000000},{1.000000,-20.000000}}" />
         <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
         <Property Name="Text" Value="#{SZZH_170111_40}" />
         <Event Name="Clicked" Function="Dress_Stiletto_Buttons_Clicked();" />
       </Window>
       <Window Type="TLBB_ButtonCommon" Name="Dress_Stiletto_Cancel">
-        <Property Name="UnifiedPosition" Value="{{1.000000,-42.000000},{1.000000,-20.000000}" />
+        <Property Name="UnifiedPosition" Value="{{1.000000,-42.000000},{1.000000,-20.000000}}" />
         <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
         <Property Name="Text" Value="#{SZZH_170111_41}" />
         <Event Name="Clicked" Function="Dress_Stiletto_Close();" />

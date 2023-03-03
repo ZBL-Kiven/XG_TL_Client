@@ -1,11 +1,11 @@
 <?xml version="1.0" ?>
 <GUILayout>
   <Window Type="TLBB_MainFrame1" Name="ItemCoffer_Frame">
-    <Property Name="UnifiedSize" Value="{{0.000000,315.000000},{0.000000,447.000000}}"/>
-    <Property Name="UnifiedPosition" Value="{{0.500000,-106.000000},{0.500000,-229.000000}}"/>
+    <Property Name="UnifiedSize" Value="{{0.000000,315.000000},{0.000000,447.000000}}" />
+    <Property Name="UnifiedPosition" Value="{{0.500000,-106.000000},{0.500000,-229.000000}}" />
     <Window Type="TLBB_DragTitle" Name="ItemCoffer_DragTitle">
       <Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
-      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}" />
       <Property Name="DragTarget" Value="ItemCoffer_Frame" />
       <Property Name="Text" Value="#{INTERFACE_XML_37}" />
       <Property Name="Font" Value="YouYuan11.25" />
@@ -13,28 +13,28 @@
       <Property Name="VertFormatting" Value="VertCentred" />
     </Window>
     <Window Type="TLBB_ButtonHelp" Name="ItemCoffer_Help">
-      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}" />
       <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
       <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*ItemCoffer&quot;);' />
     </Window>
     <Window Type="TLBB_ButtonClose" Name="ItemCoffer_Close">
-      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}" />
       <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
       <Event Name="Clicked" Function="this:Hide();" />
     </Window>
     <Window Type="DefaultWindow" Name="ItemCoffer_Background_Frame">
       <Property Name="AbsolutePosition" Value="x:6.000000 y:36.000000" />
-      <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-55.000000}" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-55.000000}}" />
       <Property Name="RiseOnClick" Value="False" />
       <Window Type="TLBB_ListBoxCommon" Name="ItemCoffer_PetList">
-        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,23.000000}" />
-        <Property Name="UnifiedSize" Value="{{0.000000,373.000000},{1.000000,-45.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,23.000000}}" />
+        <Property Name="UnifiedSize" Value="{{0.000000,373.000000},{1.000000,-45.000000}}" />
         <Event Name="ItemSelectionChanged" Function="ItemCoffer_ListSelected();" />
         <Event Name="MouseRClick" Function="ItemCoffer_ShowTargetPet();" />
       </Window>
       <Window Type="DefaultWindow" Name="ItemCoffer_Set">
-        <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,23.000000}" />
-        <Property Name="UnifiedSize" Value="{{0.000000,302.000000},{1.000000,-45.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,23.000000}}" />
+        <Property Name="UnifiedSize" Value="{{0.000000,302.000000},{1.000000,-45.000000}}" />
         <Property Name="RiseOnClick" Value="False" />
         <Window Type="TLBB_ActionButton" Name="ItemCoffer_1">
           <Property Name="AbsolutePosition" Value="x:0.000000 y:0.000000" />
@@ -121,8 +121,8 @@
           </Window>
         </Window>
         <Window Type="TLBB_ActionButton" Name="ItemCoffer_8">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,266.000000},{0.000000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,266.000000},{0.000000,0.000000}}" />
           <Property Name="Empty" Value="false" />
           <Event Name="Clicked" Function="ItemCofferClicked(8);" />
           <Window Type="TLBB_StaticImageNULL" Name="ItemCofferIcon_8">
@@ -134,8 +134,8 @@
           </Window>
         </Window>
         <Window Type="TLBB_ActionButton" Name="ItemCoffer_9">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,38.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,38.000000}}" />
           <Property Name="Empty" Value="false" />
           <Event Name="Clicked" Function="ItemCofferClicked(9);" />
           <Window Type="TLBB_StaticImageNULL" Name="ItemCofferIcon_9">
@@ -146,8 +146,8 @@
           </Window>
         </Window>
         <Window Type="TLBB_ActionButton" Name="ItemCoffer_10">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,38.000000},{0.000000,38.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,38.000000},{0.000000,38.000000}}" />
           <Property Name="Empty" Value="false" />
           <Event Name="Clicked" Function="ItemCofferClicked(10);" />
           <Window Type="TLBB_StaticImageNULL" Name="ItemCofferIcon_10">
@@ -158,8 +158,8 @@
           </Window>
         </Window>
         <Window Type="TLBB_ActionButton" Name="ItemCoffer_11">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,76.000000},{0.000000,38.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,76.000000},{0.000000,38.000000}}" />
           <Property Name="Empty" Value="false" />
           <Event Name="Clicked" Function="ItemCofferClicked(11);" />
           <Window Type="TLBB_StaticImageNULL" Name="ItemCofferIcon_11">
@@ -170,8 +170,8 @@
           </Window>
         </Window>
         <Window Type="TLBB_ActionButton" Name="ItemCoffer_12">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,114.000000},{0.000000,38.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,114.000000},{0.000000,38.000000}}" />
           <Property Name="Empty" Value="false" />
           <Event Name="Clicked" Function="ItemCofferClicked(12);" />
           <Window Type="TLBB_StaticImageNULL" Name="ItemCofferIcon_12">
@@ -182,8 +182,8 @@
           </Window>
         </Window>
         <Window Type="TLBB_ActionButton" Name="ItemCoffer_13">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,152.000000},{0.000000,38.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,152.000000},{0.000000,38.000000}}" />
           <Property Name="Empty" Value="false" />
           <Event Name="Clicked" Function="ItemCofferClicked(13);" />
           <Window Type="TLBB_StaticImageNULL" Name="ItemCofferIcon_13">
@@ -194,8 +194,8 @@
           </Window>
         </Window>
         <Window Type="TLBB_ActionButton" Name="ItemCoffer_14">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,190.000000},{0.000000,38.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,190.000000},{0.000000,38.000000}}" />
           <Property Name="Empty" Value="false" />
           <Event Name="Clicked" Function="ItemCofferClicked(14);" />
           <Window Type="TLBB_StaticImageNULL" Name="ItemCofferIcon_14">
@@ -206,8 +206,8 @@
           </Window>
         </Window>
         <Window Type="TLBB_ActionButton" Name="ItemCoffer_15">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,228.000000},{0.000000,38.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,228.000000},{0.000000,38.000000}}" />
           <Property Name="Empty" Value="false" />
           <Event Name="Clicked" Function="ItemCofferClicked(15);" />
           <Window Type="TLBB_StaticImageNULL" Name="ItemCofferIcon_15">
@@ -218,8 +218,8 @@
           </Window>
         </Window>
         <Window Type="TLBB_ActionButton" Name="ItemCoffer_16">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,266.000000},{0.000000,38.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,266.000000},{0.000000,38.000000}}" />
           <Property Name="Empty" Value="false" />
           <Event Name="Clicked" Function="ItemCofferClicked(16);" />
           <Window Type="TLBB_StaticImageNULL" Name="ItemCofferIcon_16">
@@ -230,8 +230,8 @@
           </Window>
         </Window>
         <Window Type="TLBB_ActionButton" Name="ItemCoffer_17">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,76.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,76.000000}}" />
           <Property Name="Empty" Value="false" />
           <Event Name="Clicked" Function="ItemCofferClicked(17);" />
           <Window Type="TLBB_StaticImageNULL" Name="ItemCofferIcon_17">
@@ -242,8 +242,8 @@
           </Window>
         </Window>
         <Window Type="TLBB_ActionButton" Name="ItemCoffer_18">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,38.000000},{0.000000,76.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,38.000000},{0.000000,76.000000}}" />
           <Property Name="Empty" Value="false" />
           <Event Name="Clicked" Function="ItemCofferClicked(18);" />
           <Window Type="TLBB_StaticImageNULL" Name="ItemCofferIcon_18">
@@ -254,8 +254,8 @@
           </Window>
         </Window>
         <Window Type="TLBB_ActionButton" Name="ItemCoffer_19">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,76.000000},{0.000000,76.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,76.000000},{0.000000,76.000000}}" />
           <Property Name="Empty" Value="false" />
           <Event Name="Clicked" Function="ItemCofferClicked(19);" />
           <Window Type="TLBB_StaticImageNULL" Name="ItemCofferIcon_19">
@@ -266,8 +266,8 @@
           </Window>
         </Window>
         <Window Type="TLBB_ActionButton" Name="ItemCoffer_20">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,114.000000},{0.000000,76.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,114.000000},{0.000000,76.000000}}" />
           <Property Name="Empty" Value="false" />
           <Event Name="Clicked" Function="ItemCofferClicked(20);" />
           <Window Type="TLBB_StaticImageNULL" Name="ItemCofferIcon_20">
@@ -278,8 +278,8 @@
           </Window>
         </Window>
         <Window Type="TLBB_ActionButton" Name="ItemCoffer_21">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,152.000000},{0.000000,76.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,152.000000},{0.000000,76.000000}}" />
           <Property Name="Empty" Value="false" />
           <Event Name="Clicked" Function="ItemCofferClicked(21);" />
           <Window Type="TLBB_StaticImageNULL" Name="ItemCofferIcon_21">
@@ -290,8 +290,8 @@
           </Window>
         </Window>
         <Window Type="TLBB_ActionButton" Name="ItemCoffer_22">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,190.000000},{0.000000,76.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,190.000000},{0.000000,76.000000}}" />
           <Property Name="Empty" Value="false" />
           <Event Name="Clicked" Function="ItemCofferClicked(22);" />
           <Window Type="TLBB_StaticImageNULL" Name="ItemCofferIcon_22">
@@ -302,8 +302,8 @@
           </Window>
         </Window>
         <Window Type="TLBB_ActionButton" Name="ItemCoffer_23">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,228.000000},{0.000000,76.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,228.000000},{0.000000,76.000000}}" />
           <Property Name="Empty" Value="false" />
           <Event Name="Clicked" Function="ItemCofferClicked(23);" />
           <Window Type="TLBB_StaticImageNULL" Name="ItemCofferIcon_23">
@@ -314,8 +314,8 @@
           </Window>
         </Window>
         <Window Type="TLBB_ActionButton" Name="ItemCoffer_24">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,266.000000},{0.000000,76.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,266.000000},{0.000000,76.000000}}" />
           <Property Name="Empty" Value="false" />
           <Event Name="Clicked" Function="ItemCofferClicked(24);" />
           <Window Type="TLBB_StaticImageNULL" Name="ItemCofferIcon_24">
@@ -326,8 +326,8 @@
           </Window>
         </Window>
         <Window Type="TLBB_ActionButton" Name="ItemCoffer_25">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,114.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,114.000000}}" />
           <Property Name="Empty" Value="false" />
           <Event Name="Clicked" Function="ItemCofferClicked(25);" />
           <Window Type="TLBB_StaticImageNULL" Name="ItemCofferIcon_25">
@@ -338,8 +338,8 @@
           </Window>
         </Window>
         <Window Type="TLBB_ActionButton" Name="ItemCoffer_26">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,38.000000},{0.000000,114.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,38.000000},{0.000000,114.000000}}" />
           <Property Name="Empty" Value="false" />
           <Event Name="Clicked" Function="ItemCofferClicked(26);" />
           <Window Type="TLBB_StaticImageNULL" Name="ItemCofferIcon_26">
@@ -350,8 +350,8 @@
           </Window>
         </Window>
         <Window Type="TLBB_ActionButton" Name="ItemCoffer_27">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,76.000000},{0.000000,114.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,76.000000},{0.000000,114.000000}}" />
           <Property Name="Empty" Value="false" />
           <Event Name="Clicked" Function="ItemCofferClicked(27);" />
           <Window Type="TLBB_StaticImageNULL" Name="ItemCofferIcon_27">
@@ -362,8 +362,8 @@
           </Window>
         </Window>
         <Window Type="TLBB_ActionButton" Name="ItemCoffer_28">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,114.000000},{0.000000,114.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,114.000000},{0.000000,114.000000}}" />
           <Property Name="Empty" Value="false" />
           <Event Name="Clicked" Function="ItemCofferClicked(28);" />
           <Window Type="TLBB_StaticImageNULL" Name="ItemCofferIcon_28">
@@ -374,8 +374,8 @@
           </Window>
         </Window>
         <Window Type="TLBB_ActionButton" Name="ItemCoffer_29">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,152.000000},{0.000000,114.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,152.000000},{0.000000,114.000000}}" />
           <Property Name="Empty" Value="false" />
           <Event Name="Clicked" Function="ItemCofferClicked(29);" />
           <Window Type="TLBB_StaticImageNULL" Name="ItemCofferIcon_29">
@@ -386,8 +386,8 @@
           </Window>
         </Window>
         <Window Type="TLBB_ActionButton" Name="ItemCoffer_30">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,190.000000},{0.000000,114.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,190.000000},{0.000000,114.000000}}" />
           <Property Name="Empty" Value="false" />
           <Event Name="Clicked" Function="ItemCofferClicked(30);" />
           <Window Type="TLBB_StaticImageNULL" Name="ItemCofferIcon_30">
@@ -398,8 +398,8 @@
           </Window>
         </Window>
         <Window Type="TLBB_ActionButton" Name="ItemCoffer_31">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,228.000000},{0.000000,114.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,228.000000},{0.000000,114.000000}}" />
           <Property Name="Empty" Value="false" />
           <Event Name="Clicked" Function="ItemCofferClicked(31);" />
           <Window Type="TLBB_StaticImageNULL" Name="ItemCofferIcon_31">
@@ -410,8 +410,8 @@
           </Window>
         </Window>
         <Window Type="TLBB_ActionButton" Name="ItemCoffer_32">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,266.000000},{0.000000,114.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,266.000000},{0.000000,114.000000}}" />
           <Property Name="Empty" Value="false" />
           <Event Name="Clicked" Function="ItemCofferClicked(32);" />
           <Window Type="TLBB_StaticImageNULL" Name="ItemCofferIcon_32">
@@ -422,8 +422,8 @@
           </Window>
         </Window>
         <Window Type="TLBB_ActionButton" Name="ItemCoffer_33">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,152.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,152.000000}}" />
           <Property Name="Empty" Value="false" />
           <Event Name="Clicked" Function="ItemCofferClicked(33);" />
           <Window Type="TLBB_StaticImageNULL" Name="ItemCofferIcon_33">
@@ -434,8 +434,8 @@
           </Window>
         </Window>
         <Window Type="TLBB_ActionButton" Name="ItemCoffer_34">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,38.000000},{0.000000,152.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,38.000000},{0.000000,152.000000}}" />
           <Property Name="Empty" Value="false" />
           <Event Name="Clicked" Function="ItemCofferClicked(34);" />
           <Window Type="TLBB_StaticImageNULL" Name="ItemCofferIcon_34">
@@ -446,8 +446,8 @@
           </Window>
         </Window>
         <Window Type="TLBB_ActionButton" Name="ItemCoffer_35">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,76.000000},{0.000000,152.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,76.000000},{0.000000,152.000000}}" />
           <Property Name="Empty" Value="false" />
           <Event Name="Clicked" Function="ItemCofferClicked(35);" />
           <Window Type="TLBB_StaticImageNULL" Name="ItemCofferIcon_35">
@@ -458,8 +458,8 @@
           </Window>
         </Window>
         <Window Type="TLBB_ActionButton" Name="ItemCoffer_36">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,114.000000},{0.000000,152.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,114.000000},{0.000000,152.000000}}" />
           <Property Name="Empty" Value="false" />
           <Event Name="Clicked" Function="ItemCofferClicked(36);" />
           <Window Type="TLBB_StaticImageNULL" Name="ItemCofferIcon_36">
@@ -470,8 +470,8 @@
           </Window>
         </Window>
         <Window Type="TLBB_ActionButton" Name="ItemCoffer_37">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,152.000000},{0.000000,152.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,152.000000},{0.000000,152.000000}}" />
           <Property Name="Empty" Value="false" />
           <Event Name="Clicked" Function="ItemCofferClicked(37);" />
           <Window Type="TLBB_StaticImageNULL" Name="ItemCofferIcon_37">
@@ -482,8 +482,8 @@
           </Window>
         </Window>
         <Window Type="TLBB_ActionButton" Name="ItemCoffer_38">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,190.000000},{0.000000,152.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,190.000000},{0.000000,152.000000}}" />
           <Property Name="Empty" Value="false" />
           <Event Name="Clicked" Function="ItemCofferClicked(38);" />
           <Window Type="TLBB_StaticImageNULL" Name="ItemCofferIcon_38">
@@ -494,8 +494,8 @@
           </Window>
         </Window>
         <Window Type="TLBB_ActionButton" Name="ItemCoffer_39">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,228.000000},{0.000000,152.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,228.000000},{0.000000,152.000000}}" />
           <Property Name="Empty" Value="false" />
           <Event Name="Clicked" Function="ItemCofferClicked(39);" />
           <Window Type="TLBB_StaticImageNULL" Name="ItemCofferIcon_39">
@@ -506,8 +506,8 @@
           </Window>
         </Window>
         <Window Type="TLBB_ActionButton" Name="ItemCoffer_40">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,266.000000},{0.000000,152.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,266.000000},{0.000000,152.000000}}" />
           <Property Name="Empty" Value="false" />
           <Event Name="Clicked" Function="ItemCofferClicked(40);" />
           <Window Type="TLBB_StaticImageNULL" Name="ItemCofferIcon_40">
@@ -518,8 +518,8 @@
           </Window>
         </Window>
         <Window Type="TLBB_ActionButton" Name="ItemCoffer_41">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,190.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,190.000000}}" />
           <Property Name="Empty" Value="false" />
           <Event Name="Clicked" Function="ItemCofferClicked(41);" />
           <Window Type="TLBB_StaticImageNULL" Name="ItemCofferIcon_41">
@@ -530,8 +530,8 @@
           </Window>
         </Window>
         <Window Type="TLBB_ActionButton" Name="ItemCoffer_42">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,38.000000},{0.000000,190.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,38.000000},{0.000000,190.000000}}" />
           <Property Name="Empty" Value="false" />
           <Event Name="Clicked" Function="ItemCofferClicked(42);" />
           <Window Type="TLBB_StaticImageNULL" Name="ItemCofferIcon_42">
@@ -542,8 +542,8 @@
           </Window>
         </Window>
         <Window Type="TLBB_ActionButton" Name="ItemCoffer_43">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,76.000000},{0.000000,190.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,76.000000},{0.000000,190.000000}}" />
           <Property Name="Empty" Value="false" />
           <Event Name="Clicked" Function="ItemCofferClicked(43);" />
           <Window Type="TLBB_StaticImageNULL" Name="ItemCofferIcon_43">
@@ -554,8 +554,8 @@
           </Window>
         </Window>
         <Window Type="TLBB_ActionButton" Name="ItemCoffer_44">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,114.000000},{0.000000,190.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,114.000000},{0.000000,190.000000}}" />
           <Property Name="Empty" Value="false" />
           <Event Name="Clicked" Function="ItemCofferClicked(44);" />
           <Window Type="TLBB_StaticImageNULL" Name="ItemCofferIcon_44">
@@ -566,8 +566,8 @@
           </Window>
         </Window>
         <Window Type="TLBB_ActionButton" Name="ItemCoffer_45">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,152.000000},{0.000000,190.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,152.000000},{0.000000,190.000000}}" />
           <Property Name="Empty" Value="false" />
           <Event Name="Clicked" Function="ItemCofferClicked(45);" />
           <Window Type="TLBB_StaticImageNULL" Name="ItemCofferIcon_45">
@@ -578,8 +578,8 @@
           </Window>
         </Window>
         <Window Type="TLBB_ActionButton" Name="ItemCoffer_46">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,190.000000},{0.000000,190.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,190.000000},{0.000000,190.000000}}" />
           <Property Name="Empty" Value="false" />
           <Event Name="Clicked" Function="ItemCofferClicked(46);" />
           <Window Type="TLBB_StaticImageNULL" Name="ItemCofferIcon_46">
@@ -590,8 +590,8 @@
           </Window>
         </Window>
         <Window Type="TLBB_ActionButton" Name="ItemCoffer_47">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,228.000000},{0.000000,190.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,228.000000},{0.000000,190.000000}}" />
           <Property Name="Empty" Value="false" />
           <Event Name="Clicked" Function="ItemCofferClicked(47);" />
           <Window Type="TLBB_StaticImageNULL" Name="ItemCofferIcon_47">
@@ -602,8 +602,8 @@
           </Window>
         </Window>
         <Window Type="TLBB_ActionButton" Name="ItemCoffer_48">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,266.000000},{0.000000,190.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,266.000000},{0.000000,190.000000}}" />
           <Property Name="Empty" Value="false" />
           <Event Name="Clicked" Function="ItemCofferClicked(48);" />
           <Window Type="TLBB_StaticImageNULL" Name="ItemCofferIcon_48">
@@ -614,8 +614,8 @@
           </Window>
         </Window>
         <Window Type="TLBB_ActionButton" Name="ItemCoffer_49">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,228.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,228.000000}}" />
           <Property Name="Empty" Value="false" />
           <Event Name="Clicked" Function="ItemCofferClicked(49);" />
           <Window Type="TLBB_StaticImageNULL" Name="ItemCofferIcon_49">
@@ -626,8 +626,8 @@
           </Window>
         </Window>
         <Window Type="TLBB_ActionButton" Name="ItemCoffer_50">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,38.000000},{0.000000,228.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,38.000000},{0.000000,228.000000}}" />
           <Property Name="Empty" Value="false" />
           <Event Name="Clicked" Function="ItemCofferClicked(50);" />
           <Window Type="TLBB_StaticImageNULL" Name="ItemCofferIcon_50">
@@ -638,8 +638,8 @@
           </Window>
         </Window>
         <Window Type="TLBB_ActionButton" Name="ItemCoffer_51">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,76.000000},{0.000000,228.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,76.000000},{0.000000,228.000000}}" />
           <Property Name="Empty" Value="false" />
           <Event Name="Clicked" Function="ItemCofferClicked(51);" />
           <Window Type="TLBB_StaticImageNULL" Name="ItemCofferIcon_51">
@@ -650,8 +650,8 @@
           </Window>
         </Window>
         <Window Type="TLBB_ActionButton" Name="ItemCoffer_52">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,114.000000},{0.000000,228.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,114.000000},{0.000000,228.000000}}" />
           <Property Name="Empty" Value="false" />
           <Event Name="Clicked" Function="ItemCofferClicked(52);" />
           <Window Type="TLBB_StaticImageNULL" Name="ItemCofferIcon_52">
@@ -662,8 +662,8 @@
           </Window>
         </Window>
         <Window Type="TLBB_ActionButton" Name="ItemCoffer_53">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,152.000000},{0.000000,228.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,152.000000},{0.000000,228.000000}}" />
           <Property Name="Empty" Value="false" />
           <Event Name="Clicked" Function="ItemCofferClicked(53);" />
           <Window Type="TLBB_StaticImageNULL" Name="ItemCofferIcon_53">
@@ -674,8 +674,8 @@
           </Window>
         </Window>
         <Window Type="TLBB_ActionButton" Name="ItemCoffer_54">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,190.000000},{0.000000,228.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,190.000000},{0.000000,228.000000}}" />
           <Property Name="Empty" Value="false" />
           <Event Name="Clicked" Function="ItemCofferClicked(54);" />
           <Window Type="TLBB_StaticImageNULL" Name="ItemCofferIcon_54">
@@ -686,8 +686,8 @@
           </Window>
         </Window>
         <Window Type="TLBB_ActionButton" Name="ItemCoffer_55">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,228.000000},{0.000000,228.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,228.000000},{0.000000,228.000000}}" />
           <Property Name="Empty" Value="false" />
           <Event Name="Clicked" Function="ItemCofferClicked(55);" />
           <Window Type="TLBB_StaticImageNULL" Name="ItemCofferIcon_55">
@@ -698,8 +698,8 @@
           </Window>
         </Window>
         <Window Type="TLBB_ActionButton" Name="ItemCoffer_56">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,266.000000},{0.000000,228.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,266.000000},{0.000000,228.000000}}" />
           <Property Name="Empty" Value="false" />
           <Event Name="Clicked" Function="ItemCofferClicked(56);" />
           <Window Type="TLBB_StaticImageNULL" Name="ItemCofferIcon_56">
@@ -710,8 +710,8 @@
           </Window>
         </Window>
         <Window Type="TLBB_ActionButton" Name="ItemCoffer_57">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,266.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,266.000000}}" />
           <Property Name="Empty" Value="false" />
           <Event Name="Clicked" Function="ItemCofferClicked(57);" />
           <Window Type="TLBB_StaticImageNULL" Name="ItemCofferIcon_57">
@@ -722,8 +722,8 @@
           </Window>
         </Window>
         <Window Type="TLBB_ActionButton" Name="ItemCoffer_58">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,38.000000},{0.000000,266.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,38.000000},{0.000000,266.000000}}" />
           <Property Name="Empty" Value="false" />
           <Event Name="Clicked" Function="ItemCofferClicked(58);" />
           <Window Type="TLBB_StaticImageNULL" Name="ItemCofferIcon_58">
@@ -734,8 +734,8 @@
           </Window>
         </Window>
         <Window Type="TLBB_ActionButton" Name="ItemCoffer_59">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,76.000000},{0.000000,266.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,76.000000},{0.000000,266.000000}}" />
           <Property Name="Empty" Value="false" />
           <Event Name="Clicked" Function="ItemCofferClicked(59);" />
           <Window Type="TLBB_StaticImageNULL" Name="ItemCofferIcon_59">
@@ -746,8 +746,8 @@
           </Window>
         </Window>
         <Window Type="TLBB_ActionButton" Name="ItemCoffer_60">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,114.000000},{0.000000,266.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,114.000000},{0.000000,266.000000}}" />
           <Property Name="Empty" Value="false" />
           <Event Name="Clicked" Function="ItemCofferClicked(60);" />
           <Window Type="TLBB_StaticImageNULL" Name="ItemCofferIcon_60">
@@ -759,8 +759,8 @@
         </Window>
 
         <Window Type="TLBB_ActionButton" Name="ItemCoffer_61">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,152.000000},{0.000000,266.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,152.000000},{0.000000,266.000000}}" />
           <Property Name="Empty" Value="false" />
           <Event Name="Clicked" Function="ItemCofferClicked(61);" />
           <Window Type="TLBB_StaticImageNULL" Name="ItemCofferIcon_61">
@@ -771,8 +771,8 @@
           </Window>
         </Window>
         <Window Type="TLBB_ActionButton" Name="ItemCoffer_62">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,190.000000},{0.000000,266.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,190.000000},{0.000000,266.000000}}" />
           <Property Name="Empty" Value="false" />
           <Event Name="Clicked" Function="ItemCofferClicked(62);" />
           <Window Type="TLBB_StaticImageNULL" Name="ItemCofferIcon_62">
@@ -783,8 +783,8 @@
           </Window>
         </Window>
         <Window Type="TLBB_ActionButton" Name="ItemCoffer_63">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,228.000000},{0.000000,266.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,228.000000},{0.000000,266.000000}}" />
           <Property Name="Empty" Value="false" />
           <Event Name="Clicked" Function="ItemCofferClicked(63);" />
           <Window Type="TLBB_StaticImageNULL" Name="ItemCofferIcon_63">
@@ -795,8 +795,8 @@
           </Window>
         </Window>
         <Window Type="TLBB_ActionButton" Name="ItemCoffer_64">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,266.000000},{0.000000,266.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,266.000000},{0.000000,266.000000}}" />
           <Property Name="Empty" Value="false" />
           <Event Name="Clicked" Function="ItemCofferClicked(64);" />
           <Window Type="TLBB_StaticImageNULL" Name="ItemCofferIcon_64">
@@ -807,8 +807,8 @@
           </Window>
         </Window>
         <Window Type="TLBB_ActionButton" Name="ItemCoffer_65">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,304.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,304.000000}}" />
           <Property Name="Empty" Value="false" />
           <Event Name="Clicked" Function="ItemCofferClicked(65);" />
           <Window Type="TLBB_StaticImageNULL" Name="ItemCofferIcon_65">
@@ -819,8 +819,8 @@
           </Window>
         </Window>
         <Window Type="TLBB_ActionButton" Name="ItemCoffer_66">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,38.000000},{0.000000,304.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,38.000000},{0.000000,304.000000}}" />
           <Property Name="Empty" Value="false" />
           <Event Name="Clicked" Function="ItemCofferClicked(66);" />
           <Window Type="TLBB_StaticImageNULL" Name="ItemCofferIcon_66">
@@ -831,8 +831,8 @@
           </Window>
         </Window>
         <Window Type="TLBB_ActionButton" Name="ItemCoffer_67">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,76.000000},{0.000000,304.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,76.000000},{0.000000,304.000000}}" />
           <Property Name="Empty" Value="false" />
           <Event Name="Clicked" Function="ItemCofferClicked(67);" />
           <Window Type="TLBB_StaticImageNULL" Name="ItemCofferIcon_67">
@@ -843,8 +843,8 @@
           </Window>
         </Window>
         <Window Type="TLBB_ActionButton" Name="ItemCoffer_68">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,114.000000},{0.000000,304.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,114.000000},{0.000000,304.000000}}" />
           <Property Name="Empty" Value="false" />
           <Event Name="Clicked" Function="ItemCofferClicked(68);" />
           <Window Type="TLBB_StaticImageNULL" Name="ItemCofferIcon_68">
@@ -855,8 +855,8 @@
           </Window>
         </Window>
         <Window Type="TLBB_ActionButton" Name="ItemCoffer_69">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,152.000000},{0.000000,304.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,152.000000},{0.000000,304.000000}}" />
           <Property Name="Empty" Value="false" />
           <Event Name="Clicked" Function="ItemCofferClicked(69);" />
           <Window Type="TLBB_StaticImageNULL" Name="ItemCofferIcon_69">
@@ -867,8 +867,8 @@
           </Window>
         </Window>
         <Window Type="TLBB_ActionButton" Name="ItemCoffer_70">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,190.000000},{0.000000,304.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,190.000000},{0.000000,304.000000}}" />
           <Property Name="Empty" Value="false" />
           <Event Name="Clicked" Function="ItemCofferClicked(70);" />
           <Window Type="TLBB_StaticImageNULL" Name="ItemCofferIcon_70">
@@ -881,25 +881,25 @@
         
       </Window>
       <Window Type="TLBB_ButtonCommon" Name="ItemCoffer_Lock">
-        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}}" />
         <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
         <Property Name="Text" Value="#{INTERFACE_XML_355}" />
         <Property Name="Tooltip" Value="#{INTERFACE_XML_284}" />
         <Event Name="Clicked" Function="ItemCoffer_Lock_Clicked();" />
       </Window>
       <Window Type="TLBB_Frame_Lace5" Name="ItemCoffer_Blank">
-        <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{1.000000,-20.000000}" />
-        <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{1.000000,-20.000000}}" />
+        <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}}" />
       </Window>
       <Window Type="TLBB_ButtonCommon" Name="ItemCoffer_Unlock">
-        <Property Name="UnifiedPosition" Value="{{1.000000,-40.000000},{1.000000,-20.000000}" />
+        <Property Name="UnifiedPosition" Value="{{1.000000,-40.000000},{1.000000,-20.000000}}" />
         <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
         <Property Name="Text" Value="#{INTERFACE_XML_377}" />
         <Event Name="Clicked" Function="ItemCoffer_Unlock_Clicked();" />
       </Window>
       <Window Type="DefaultWindow" Name="ItemCoffer_Check_Frame">
-        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}" />
-        <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,24.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}" />
+        <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,24.000000}}" />
         <Window Type="TLBB_ButtonPageUp" Name="ItemCoffer_Check_Material">
           <Property Name="AbsolutePosition" Value="x:0.000000 y:0.000000" />
           <Property Name="AbsoluteSize" Value="w:42.000000 h:24.000000" />

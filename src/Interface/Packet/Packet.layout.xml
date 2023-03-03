@@ -1,8 +1,8 @@
 <?xml version="1.0" ?>
 <GUILayout>
 	<Window Type="TLBB_MainFrameNULL" Name="Packet_Frame">
-    <Property Name="UnifiedSize" Value="{{0.000000,297.000000},{0.000000,441.000000}}"/>
-    <Property Name="UnifiedPosition" Value="{{1.000000,-300.000000},{1.000000,-555.000000}}"/>
+    <Property Name="UnifiedSize" Value="{{0.000000,297.000000},{0.000000,441.000000}}" />
+    <Property Name="UnifiedPosition" Value="{{1.000000,-300.000000},{1.000000,-555.000000}}" />
 		<Property Name="AttachEnabled" Value="true" />
     <Property Name="MouseRButtonHollow" Value="True"/>
     <Property Name="MouseMoveHollow" Value="True"/>
@@ -11,7 +11,7 @@
 		<Event Name="Hidden" Function="Packet_Close();" />
 		<Window Type="TLBB_DragTitle" Name="Packet_Title">
 			<Property Name="AbsolutePosition" Value="x:61.000000 y:19.000000" />
-			<Property Name="UnifiedSize" Value="{{1.000000,-86.000000},{0.000000,20.000000}" />
+			<Property Name="UnifiedSize" Value="{{1.000000,-86.000000},{0.000000,20.000000}}" />
 			<Property Name="Text" Value="#{INTERFACE_XML_18}" />
 			<Property Name="Font" Value="YouYuan11.25" />
 			<Property Name="HorzFormatting" Value="HorzCentred" />
@@ -20,12 +20,12 @@
 			<Property Name="AlwaysOnTop" Value="True" />
 		</Window>
 		<Window Type="TLBB_MainFrame0" Name="Packet_MainFrame">
-      <Property Name="UnifiedSize" Value="{{0.000000,292.000000},{1.000000,-104.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,8.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{0.000000,292.000000},{1.000000,-104.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,8.000000}}" />
 			<Event Name="Shown" Function="Packet_OnShow();" />
 			<Property Name="RiseOnClick" Value="False" />
 			<Window Type="TLBB_ButtonClose" Name="Packet_Close">
-				<Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+				<Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}" />
 				<Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
 				<Event Name="Clicked" Function="this:Hide();" />
 			</Window>
@@ -36,16 +36,16 @@
 				<Property Name="MouseHollow" Value="true" />
 			</Window>
 			<Window Type="TLBB_ButtonHelp" Name="Packet_Help">
-				<Property Name="UnifiedPosition" Value="{{0.000000,38.000000},{0.000000,14.000000}" />
+				<Property Name="UnifiedPosition" Value="{{0.000000,38.000000},{0.000000,14.000000}}" />
 				<Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
 				<Event Name="Clicked" Function='Helper:GotoHelper(&quot;*Packet&quot;);' />
 			</Window>
 			<Window Type="DefaultWindow" Name="Packet_BackFrame">
-        <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-58.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,36.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-58.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,36.000000}}" />
 				<Window Type="DefaultWindow" Name="Packet_CheckBox_Frame">
-					<Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,0.000000}" />
-					<Property Name="UnifiedSize" Value="{{1.000000,-6.000000},{0.000000,24.000000}" />
+					<Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,0.000000}}" />
+					<Property Name="UnifiedSize" Value="{{1.000000,-6.000000},{0.000000,24.000000}}" />
 					<Window Type="TLBB_ButtonPageUp" Name="Packet_Material">
 						<Property Name="AbsolutePosition" Value="x:0.000000 y:0.000000" />
 						<Property Name="AbsoluteSize" Value="w:42.000000 h:24.000000" />
@@ -83,7 +83,7 @@
 				</Window>
 				<Window Type="DefaultWindow" Name="Packet_Space_Frame">
 					<Property Name="AbsolutePosition" Value="x:0.000000 y:25.000000" />
-					<Property Name="UnifiedSize" Value="{{0.000000,352.000000},{1.000000,-96.000000}" />
+					<Property Name="UnifiedSize" Value="{{0.000000,352.000000},{1.000000,-96.000000}}" />
 					<Property Name="RiseOnClick" Value="False" />
 					<Window Type="DefaultWindow" Name="Packet_Space_Line1">
 						<Property Name="AbsolutePosition" Value="x:0 y:0" />
@@ -860,8 +860,8 @@
             </Window>
 					</Window>
 					<Window Type="DefaultWindow" Name="Packet_Space_Line10">
-            <Property Name="UnifiedSize" Value="{{0.000000,220.000000},{0.000000,35.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,315.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,220.000000},{0.000000,35.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,315.000000}}" />
 						<Window Type="TLBB_ActionButton" Name="Packet_Space_Line10_Row1_button">
 							<Property Name="AbsolutePosition" Value="x:0 y:0" />
 							<Property Name="AbsoluteSize" Value="w:35 h:35" />
@@ -947,40 +947,40 @@
 					</Window>
 				</Window>
 				<Window Type="DefaultWindow" Name="Packet_ButtonAndMoney_Back">
-          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,145.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-145.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,145.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-145.000000}}" />
 					<Window Type="DefaultWindow" Name="Packet_Button_Back">
-            <Property Name="UnifiedSize" Value="{{1.000000,.000000},{0.000000,20.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,1.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,1.000000}}" />
 						<Window Type="TLBB_ButtonCommon" Name="Packet_StallSale">
-							<Property Name="UnifiedPosition" Value="{{0.2,-36.000000},{0.000000,0.000000}" />
+							<Property Name="UnifiedPosition" Value="{{0.2,-36.000000},{0.000000,0.000000}}" />
 							<Property Name="AbsoluteSize" Value="w:36.000000 h:20.000000" />
 							<Property Name="Text" Value="#{INTERFACE_XML_122}" />
 							<Event Name="Clicked" Function="Packet_Sale_Clicked();" />
 						</Window>
 						<Window Type="TLBB_ButtonCommon" Name="Packet_Classify">
-							<Property Name="UnifiedPosition" Value="{{0.4,-24.000000},{0.000000,0.000000}" />
+							<Property Name="UnifiedPosition" Value="{{0.4,-24.000000},{0.000000,0.000000}}" />
 							<Property Name="AbsoluteSize" Value="w:36.000000 h:20.000000" />
 							<Property Name="Text" Value="#{INTERFACE_XML_861}" />
 							<Event Name="Clicked" Function="Packet_PackUp_Clicked();" />
 						</Window>
 						<Window Type="TLBB_ButtonCommon" Name="Packet_Lock">
-							<Property Name="UnifiedPosition" Value="{{0.6,-12.000000},{0.000000,0.000000}" />
+							<Property Name="UnifiedPosition" Value="{{0.6,-12.000000},{0.000000,0.000000}}" />
 							<Property Name="AbsoluteSize" Value="w:36.000000 h:20.000000" />
 							<Property Name="Text" Value="#{INTERFACE_XML_675}" />
 							<Event Name="Clicked" Function="Packet_Lock_Open();" />
               <Property Name="Tooltip" Value="#{FDH_90316_1}" />
 						</Window>
 						<Window Type="TLBB_ButtonCommon" Name="Packet_Pet">
-							<Property Name="UnifiedPosition" Value="{{0.8,0.000000},{0.000000,0.000000}" />
+							<Property Name="UnifiedPosition" Value="{{0.8,0.000000},{0.000000,0.000000}}" />
 							<Property Name="AbsoluteSize" Value="w:36.000000 h:20.000000" />
 							<Property Name="Text" Value="#{INTERFACE_XML_167}" />
 							<Event Name="Clicked" Function="PrepearAsunder();" />
 						</Window>
 					</Window>
 					<Window Type="TLBB_Frame_Lace1" Name="Packet_Money_Back">
-                                                <Property Name="UnifiedSize" Value="{{1.000000,-52.000000},{0.000000,24.000000}" />
-						<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,50.000000}" />
+                                                <Property Name="UnifiedSize" Value="{{1.000000,-52.000000},{0.000000,24.000000}}" />
+						<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,50.000000}}" />
 						<Window Type="TLBB_Money" Name="Packet_Money">
 							<Property Name="Position" Value="x:0.05 y:0.05" />
 							<Property Name="Size" Value="w:0.9 h:0.8" />
@@ -989,8 +989,8 @@
 						</Window>
 					</Window>
           <Window Type="TLBB_Frame_Lace1" Name="Packet_Jiaozi_Back">
-            <Property Name="UnifiedSize" Value="{{1.000000,-52.000000},{0.000000,24.000000}" />
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,25.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,-52.000000},{0.000000,24.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,25.000000}}" />
             <Window Type="TLBB_Money" Name="Packet_Jiaozi">
               <Property Name="Position" Value="x:0.05 y:0.05" />
               <Property Name="Size" Value="w:0.9 h:0.8" />
@@ -1003,12 +1003,12 @@
             </Window>
           </Window>
 				<Window Type="TLBB_Frame_Lace1" Name="Packet_TemporaryBK">
-            				<Property Name="UnifiedPosition" Value="{{1.000000,-50.000000},{0.000000,25.000000}}"/>
-					<Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,50.000000}" />
+            				<Property Name="UnifiedPosition" Value="{{1.000000,-50.000000},{0.000000,25.000000}}" />
+					<Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,50.000000}}" />
 					<Property Name="RiseOnClick" Value="False" />
 					<Window Type="TLBB_ButtonNULL" Name="Packet_Temporary_Button">
-						<Property Name="UnifiedPosition" Value="{{0.500000,-24.000000},{0.500000,-24.000000}" />
-						<Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}" />
+						<Property Name="UnifiedPosition" Value="{{0.500000,-24.000000},{0.500000,-24.000000}}" />
+						<Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}" />
 						<Property Name="Tooltip" Value="点击打开天机锦囊" />
 						<Property Name="PushedImage" Value="set:CommonFrame37 image:Packet_TemporaryClose_Pushed"/>
 						<Property Name="NormalImage" Value="set:CommonFrame37 image:Packet_TemporaryClose_Normal"/>
@@ -1018,8 +1018,8 @@
 					</Window>
 				</Window>
           <Window Type="TLBB_Frame_Lace1" Name="Packet_BangdingYuanbao_Back">
-            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,24.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,75.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,24.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,75.000000}}" />
             <Window Type="TLBB_SimpleText" Name="Packet_BangdingYuanbao">
               <Property Name="Position" Value="x:0.05 y:0.05" />
 							<Property Name="Size" Value="w:0.9 h:0.9" />
@@ -1028,8 +1028,8 @@
             </Window>
           </Window>
 					<Window Type="TLBB_Frame_Lace1" Name="Packet_YuanBao_Back2">
-            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,24.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,100.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,24.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,100.000000}}" />
 						<Window Type="TLBB_SimpleText" Name="Packet_YuanBao2">
 							<Property Name="Position" Value="x:0.05 y:0.05" />
 							<Property Name="Size" Value="w:0.9 h:0.9" />
@@ -1038,22 +1038,22 @@
 						</Window>
 					</Window>
           <Window Type="TLBB_ButtonCommon" Name="Packet_Anti_Steal">
-            <Property Name="UnifiedSize" Value="{{0.000000,76.000000},{0.000000,20.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,125.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,76.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,125.000000}}" />
 						<Property Name="Text" Value="#{INTERFACE_PACKET_XML_01}" />
 						<Event Name="Clicked" Function="Packet_OpenDlgForErjimima();" />
             <Property Name="Tooltip" Value="#{FDH_090302_3}" />
 					</Window>
           <Window Type="TLBB_ButtonCommon" Name="Packet_ChongZhi">
-            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,20.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{1.000000,-76.000000},{0.000000,125.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{1.000000,-76.000000},{0.000000,125.000000}}" />
             <Property Name="Text" Value="#{DHYB_180524_43}" />
             <Event Name="Clicked" Function="Packet_OnChongZhi()" />
             <Property Name="Tooltip" Value="" />
           </Window>
           <Window Type="TLBB_ButtonCommon" Name="Packet_DuiHuan">
-            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,20.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{1.000000,-38.000000},{0.000000,125.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{1.000000,-38.000000},{0.000000,125.000000}}" />
             <Property Name="Text" Value="#{DHYB_180524_08}" />
             <Event Name="Clicked" Function="Packet_OnDuiHuan()" />
             <Property Name="Tooltip" Value="" />

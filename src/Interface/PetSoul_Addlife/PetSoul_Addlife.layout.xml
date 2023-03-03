@@ -6,7 +6,7 @@
     <Event Name="Hidden" Function="PetSoul_Addlife_OnHiden();" />
     <Window Type="TLBB_DragTitle" Name="PetSoul_Addlife_DragTitle">
       <Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
-      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}" />
       <Property Name="DragTarget" Value="PetSoul_Addlife_Frame" />
       <Window Type="TLBB_SimpleText" Name="PetSoul_Addlife_Title">
         <Property Name="Position" Value="x:0.0 y:0.0" />
@@ -19,31 +19,31 @@
       </Window>
     </Window>
     <Window Type="TLBB_ButtonHelp" Name="PetSoul_Addlife_Help">
-      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}" />
       <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
       <Property Name="Text" Value="TLBB_ButtonHelp" />
       <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*PetEquipSuitDepart&quot;);' />
     </Window>
     <Window Type="TLBB_ButtonClose" Name="PetSoul_Addlife_Close">
-      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}" />
       <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
       <Property Name="Text" Value="TLBB_ButtonClose" />
       <Event Name="Clicked" Function="this:Hide();" />
     </Window>
     <Window Type="DefaultWindow" Name="PetSoul_Addlife_Frame_Client">
       <Property Name="AbsolutePosition" Value="x:7.000000 y:36.000000" />
-      <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-55.000000}" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-55.000000}}" />
       <Window Type="TLBB_SimpleMulitiTextFrame" Name="PetSoul_Addlife_Info">
-        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,80.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000000,0.000000},{0.0000000,0.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,80.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000000,0.000000},{0.0000000,0.000000}}" />
         <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
         <Property Name="RiseOnClick" Value="False" />
         <Property Name="Text" Value="#{SHXT_20211230_92}"/>
         <Property Name="TextColor" Value="FFFFF263" />
       </Window>
       <Window Type="TLBB_SimpleText" Name="PetSoul_Addlife_Info2">
-        <Property Name="UnifiedSize" Value="{{0.000000,170.000000},{0.000000,36.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.0000000,10.000000},{0.000000,84.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,170.000000},{0.000000,36.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.0000000,10.000000},{0.000000,84.000000}}" />
         <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
         <Property Name="RiseOnClick" Value="False" />
         <Property Name="Text" Value="#{SHXT_20211230_93}"/>
@@ -51,20 +51,20 @@
         <Property Name="TextColor" Value="FFFFF263" />
       </Window>
       <Window Type="TLBB_ActionButton" Name="PetSoul_Addlife_Object">
-        <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.0000000,184.000000},{0.000000,84.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.0000000,184.000000},{0.000000,84.000000}}" />
         <Property Name="DragAcceptName" Value="W18" />
         <Property Name="DraggingEnabled" Value="True" />
         <Event Name="RBClicked" Function="PetSoul_Addlife_Resume_PetSoul();" />
       </Window>
       <Window Type="TLBB_SimpleMulitiTextFrame" Name="PetSoul_Addlife_Explain_Text1">
-        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,22.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-111.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,22.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-111.000000}}" />
         <Property Name="Text" Value="#{SHXT_20211230_95}" />
         <Property Name="TextColor" Value="FFFFF263" />
         <Window Type="TLBB_SimpleText" Name="PetSoul_Addlife_Explain">
-          <Property Name="UnifiedSize" Value="{{0.750000,0.000000},{0.000000,18.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.250000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.750000,0.000000},{0.000000,18.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.250000,0.000000},{0.000000,0.000000}}" />
           <Property Name="TextColor" Value="FFFFF263" />
           <Property Name="RiseOnClick" Value="False" />
           <Property Name="Visible" Value="False"/>
@@ -72,30 +72,30 @@
         </Window>
       </Window>
       <Window Type="TLBB_SimpleText" Name="PetSoul_Addlife_Explain_Text2">
-        <Property Name="UnifiedSize" Value="{{0.000000,170.000000},{0.000000,20.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,134.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,170.000000},{0.000000,20.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,134.000000}}" />
         <Property Name="TextColor" Value="FFFFF263" />
         <Property Name="Text" Value="#{SHXT_20211230_94}" />
         <Property Name="RiseOnClick" Value="False" />
       </Window>
       <Window Type="TLBB_ActionButton" Name="PetSoul_Addlife_Piece1">
-        <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.0000000,184.000000},{0.000000,124.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.0000000,184.000000},{0.000000,124.000000}}" />
         <Property Name="DragAcceptName" Value="W19" />
         <Property Name="DraggingEnabled" Value="True" />
         <Event Name="RBClicked" Function="PetSoul_Addlife_Resume_Piece(1);" />
       </Window>
       <Window Type="TLBB_SimpleMulitiTextFrame" Name="PetSoul_Addlife_Demand_Jiaozi_Text">
-        <Property Name="UnifiedPosition" Value="{{0.00,0.000000},{1.000000,-89.000000}" />
-        <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,22.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.00,0.000000},{1.000000,-89.000000}}" />
+        <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,22.000000}}" />
         <Property Name="Text" Value="#{INTERFACE_XML_1249}" />
         <Property Name="TextColor" Value="FFFFF263" />
         <Property Name="HorzFormatting" Value="LeftAligned" />
         <Property Name="VertFormatting" Value="VertCentred" />
         <Property Name="RiseOnClick" Value="False" />
         <Window Type="TLBB_Money" Name="PetSoul_Addlife_Demand_Jiaozi">
-          <Property Name="UnifiedPosition" Value="{{0.25,0.000000},{0.000000,0.000000}" />
-          <Property Name="UnifiedSize" Value="{{0.75,0.000000},{0.000000,18.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.25,0.000000},{0.000000,0.000000}}" />
+          <Property Name="UnifiedSize" Value="{{0.75,0.000000},{0.000000,18.000000}}" />
           <Property Name="MoneyNumber" Value="0" />
           <Property Name="HorzFormatting" Value="RightAligned" />
           <Property Name="GoldIcon" Value = "set:Button6 image:Lace_JiaoziJin" />
@@ -104,16 +104,16 @@
         </Window>
       </Window>
       <Window Type="TLBB_SimpleMulitiTextFrame" Name="PetSoul_Addlife_Currently_Jiaozi_Text">
-        <Property Name="UnifiedPosition" Value="{{0.00,0.000000},{1.000000,-67.000000}" />
-        <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,22.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.00,0.000000},{1.000000,-67.000000}}" />
+        <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,22.000000}}" />
         <Property Name="Text" Value="#{BDJB_051021_3}" />
         <Property Name="TextColor" Value="FFFFF263" />
         <Property Name="HorzFormatting" Value="LeftAligned" />
         <Property Name="VertFormatting" Value="VertCentred" />
         <Property Name="RiseOnClick" Value="False" />
         <Window Type="TLBB_Money" Name="PetSoul_Addlife_Currently_Jiaozi">
-          <Property Name="UnifiedPosition" Value="{{0.25,0.000000},{0.000000,0.000000}" />
-          <Property Name="UnifiedSize" Value="{{0.75,0.000000},{0.000000,18.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.25,0.000000},{0.000000,0.000000}}" />
+          <Property Name="UnifiedSize" Value="{{0.75,0.000000},{0.000000,18.000000}}" />
           <Property Name="MoneyNumber" Value="0" />
           <Property Name="HorzFormatting" Value="RightAligned" />
           <Property Name="GoldIcon" Value = "set:Button6 image:Lace_JiaoziJin" />
@@ -122,32 +122,32 @@
         </Window>
       </Window>
       <Window Type="TLBB_SimpleMulitiTextFrame" Name="PetSoul_Addlife_Currently_Money_Text">
-        <Property Name="UnifiedPosition" Value="{{0.00,0.000000},{1.000000,-45.000000}" />
-        <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,22.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.00,0.000000},{1.000000,-45.000000}}" />
+        <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,22.000000}}" />
         <Property Name="Text" Value="#{INTERFACE_XML_833}" />
         <Property Name="TextColor" Value="FFFFF263" />
         <Property Name="HorzFormatting" Value="LeftAligned" />
         <Property Name="VertFormatting" Value="VertCentred" />
         <Property Name="RiseOnClick" Value="False" />
         <Window Type="TLBB_Money" Name="PetSoul_Addlife_Currently_Money">
-          <Property Name="UnifiedPosition" Value="{{0.25,0.000000},{0.000000,0.000000}" />
-          <Property Name="UnifiedSize" Value="{{0.75,0.000000},{0.000000,18.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.25,0.000000},{0.000000,0.000000}}" />
+          <Property Name="UnifiedSize" Value="{{0.75,0.000000},{0.000000,18.000000}}" />
           <Property Name="MoneyNumber" Value="0" />
           <Property Name="HorzFormatting" Value="RightAligned" />
         </Window>
       </Window>
       <Window Type="TLBB_Frame_Lace5" Name="PetSoul_Addlife_Blank">
-        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}" />
-        <Property Name="UnifiedSize" Value="{{1.000000,-120.000000},{0.000000,20.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}}" />
+        <Property Name="UnifiedSize" Value="{{1.000000,-120.000000},{0.000000,20.000000}}" />
       </Window>
       <Window Type="TLBB_ButtonCommon" Name="PetSoul_Addlife_OK">
-        <Property Name="UnifiedPosition" Value="{{1.000000,-120.000000},{1.000000,-20.000000}" />
+        <Property Name="UnifiedPosition" Value="{{1.000000,-120.000000},{1.000000,-20.000000}}" />
         <Property Name="AbsoluteSize" Value="w:80.000000 h:20.000000" />
         <Property Name="Text" Value="#{SHXT_20211230_61}" />
         <Event Name="Clicked" Function="PetSoul_Addlife_Buttons_Clicked();" />
       </Window>
       <Window Type="TLBB_ButtonCommon" Name="PetSoul_Addlife_Cancel">
-        <Property Name="UnifiedPosition" Value="{{1.000000,-40.000000},{1.000000,-20.000000}" />
+        <Property Name="UnifiedPosition" Value="{{1.000000,-40.000000},{1.000000,-20.000000}}" />
         <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
         <Property Name="Text" Value="#{INTERFACE_XML_542}" />
         <Event Name="Clicked" Function="this:Hide();" />

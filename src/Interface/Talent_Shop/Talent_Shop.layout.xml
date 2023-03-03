@@ -1,12 +1,12 @@
 <?xml version="1.0" ?>
 <GUILayout>
   <Window Type="TLBB_MainFrame0" Name="Talent_Shop_Frame">
-    <Property Name="UnifiedSize" Value="{{0.000000,390.000000},{0.000000,370.000000}}"/>
-    <Property Name="UnifiedPosition" Value="{{0.500000,-184.000000},{0.120000,0.000000}}"/>
+    <Property Name="UnifiedSize" Value="{{0.000000,390.000000},{0.000000,370.000000}}" />
+    <Property Name="UnifiedPosition" Value="{{0.500000,-184.000000},{0.120000,0.000000}}" />
     <Event Name="Hidden" Function="Talent_Shop_Close();" />
     <Window Type="TLBB_DragTitle" Name="Talent_Shop_DragTitle">
       <Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
-      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}" />
       <Property Name="DragTarget" Value="Talent_Shop_Frame" />
       <Window Type="TLBB_SimpleText" Name="Talent_Shop_Text">
         <Property Name="Position" Value="x:0 y:0" />
@@ -19,34 +19,34 @@
       </Window>
     </Window>
     <Window Type="TLBB_ButtonHelp" Name="Talent_Shop_Help">
-      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}" />
       <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
       <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*Talent_Shop&quot;);' />
     </Window>
     <Window Type="TLBB_ButtonClose" Name="Talent_Shop_Close">
-      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}" />
       <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
       <Event Name="Clicked" Function="Booth_Close();" />
     </Window>
     <Window Type="DefaultWindow" Name="Talent_Shop_Background_Frame1">
       <Property Name="AbsolutePosition" Value="x:5.000000 y:36.000000" />
-      <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,-55.000000}" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,-55.000000}}" />
       <Window Type="TLBB_SimpleText" Name="Talent_Shop_Text2">
-        <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,40.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,4.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,40.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,4.000000}}" />
         <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
         <Property Name="Text" Value="#{XLRW_210725_113}"/>
       </Window>
       <Window Type="DefaultWindow" Name="Talent_Shop_Action_Set">
-        <Property Name="UnifiedSize" Value="{{0.000000,374.000000},{0.730000,-1.950012}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.5000000,-186.000000},{0.105556,10.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,374.000000},{0.730000,-1.950012}}" />
+        <Property Name="UnifiedPosition" Value="{{0.5000000,-186.000000},{0.105556,10.000000}}" />
         <Window Type="TLBB_ActionButton" Name="Talent_Shop_Item1">
           <Property Name="AbsolutePosition" Value="x:0.000000 y:1.000000" />
           <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
           <Event Name="Clicked" Function="Talent_Shop_GoodButton_Clicked(1);" />
           <Window Type="TLBB_Animate" Name="Talent_Shop_Item1Animate">
-            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
             <Property Name="MouseRButtonHollow" Value="True"/>
             <Property Name="MouseMoveHollow" Value="True"/>
             <Property Name="MouseLButtonHollow" Value="True"/>
@@ -60,8 +60,8 @@
           <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
           <Event Name="Clicked" Function="Talent_Shop_GoodButton_Clicked(2);" />
           <Window Type="TLBB_Animate" Name="Talent_Shop_Item2Animate">
-            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
             <Property Name="MouseRButtonHollow" Value="True"/>
             <Property Name="MouseMoveHollow" Value="True"/>
             <Property Name="MouseLButtonHollow" Value="True"/>
@@ -75,8 +75,8 @@
           <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
           <Event Name="Clicked" Function="Talent_Shop_GoodButton_Clicked(3);" />
           <Window Type="TLBB_Animate" Name="Talent_Shop_Item3Animate">
-            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
             <Property Name="MouseRButtonHollow" Value="True"/>
             <Property Name="MouseMoveHollow" Value="True"/>
             <Property Name="MouseLButtonHollow" Value="True"/>
@@ -90,8 +90,8 @@
           <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
           <Event Name="Clicked" Function="Talent_Shop_GoodButton_Clicked(4);" />
           <Window Type="TLBB_Animate" Name="Talent_Shop_Item4Animate">
-            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
             <Property Name="MouseRButtonHollow" Value="True"/>
             <Property Name="MouseMoveHollow" Value="True"/>
             <Property Name="MouseLButtonHollow" Value="True"/>
@@ -105,8 +105,8 @@
           <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
           <Event Name="Clicked" Function="Talent_Shop_GoodButton_Clicked(5);" />
           <Window Type="TLBB_Animate" Name="Talent_Shop_Item5Animate">
-            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
             <Property Name="MouseRButtonHollow" Value="True"/>
             <Property Name="MouseMoveHollow" Value="True"/>
             <Property Name="MouseLButtonHollow" Value="True"/>
@@ -120,8 +120,8 @@
           <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
           <Event Name="Clicked" Function="Talent_Shop_GoodButton_Clicked(6);" />
           <Window Type="TLBB_Animate" Name="Talent_Shop_Item6Animate">
-            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
             <Property Name="MouseRButtonHollow" Value="True"/>
             <Property Name="MouseMoveHollow" Value="True"/>
             <Property Name="MouseLButtonHollow" Value="True"/>
@@ -135,8 +135,8 @@
           <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
           <Event Name="Clicked" Function="Talent_Shop_GoodButton_Clicked(7);" />
           <Window Type="TLBB_Animate" Name="Talent_Shop_Item7Animate">
-            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
             <Property Name="MouseRButtonHollow" Value="True"/>
             <Property Name="MouseMoveHollow" Value="True"/>
             <Property Name="MouseLButtonHollow" Value="True"/>
@@ -150,8 +150,8 @@
           <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
           <Event Name="Clicked" Function="Talent_Shop_GoodButton_Clicked(8);" />
           <Window Type="TLBB_Animate" Name="Talent_Shop_Item8Animate">
-            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
             <Property Name="MouseRButtonHollow" Value="True"/>
             <Property Name="MouseMoveHollow" Value="True"/>
             <Property Name="MouseLButtonHollow" Value="True"/>
@@ -165,8 +165,8 @@
           <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
           <Event Name="Clicked" Function="Talent_Shop_GoodButton_Clicked(9);" />
           <Window Type="TLBB_Animate" Name="Talent_Shop_Item9Animate">
-            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
             <Property Name="MouseRButtonHollow" Value="True"/>
             <Property Name="MouseMoveHollow" Value="True"/>
             <Property Name="MouseLButtonHollow" Value="True"/>
@@ -180,8 +180,8 @@
           <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
           <Event Name="Clicked" Function="Talent_Shop_GoodButton_Clicked(10);" />
           <Window Type="TLBB_Animate" Name="Talent_Shop_Item10Animate">
-            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
             <Property Name="MouseRButtonHollow" Value="True"/>
             <Property Name="MouseMoveHollow" Value="True"/>
             <Property Name="MouseLButtonHollow" Value="True"/>
@@ -195,8 +195,8 @@
           <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
           <Event Name="Clicked" Function="Talent_Shop_GoodButton_Clicked(11);" />
           <Window Type="TLBB_Animate" Name="Talent_Shop_Item11Animate">
-            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
             <Property Name="MouseRButtonHollow" Value="True"/>
             <Property Name="MouseMoveHollow" Value="True"/>
             <Property Name="MouseLButtonHollow" Value="True"/>
@@ -210,8 +210,8 @@
           <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
           <Event Name="Clicked" Function="Talent_Shop_GoodButton_Clicked(12);" />
           <Window Type="TLBB_Animate" Name="Talent_Shop_Item12Animate">
-            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
             <Property Name="MouseRButtonHollow" Value="True"/>
             <Property Name="MouseMoveHollow" Value="True"/>
             <Property Name="MouseLButtonHollow" Value="True"/>
@@ -475,17 +475,17 @@
         </Window>
       </Window>
       <Window Type="TLBB_Frame_Lace2" Name="Talent_Shop_Bk">
-        <Property Name="UnifiedPosition" Value="{{0.02,0.000000},{1.0,-40.000000}" />
-        <Property Name="UnifiedSize" Value="{{0.96000,0.000000},{0.000000,38.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.02,0.000000},{1.0,-40.000000}}" />
+        <Property Name="UnifiedSize" Value="{{0.96000,0.000000},{0.000000,38.000000}}" />
         <Window Type="TLBB_ButtonCommon2" Name="Talent_Shop_UpPage">
           <Property Name="AbsolutePosition" Value="x:100.000000 y:10.000000" />
-          <Property Name="UnifiedSize" Value="{{0.0,50.000000},{0.000000,22.000000}" />
+          <Property Name="UnifiedSize" Value="{{0.0,50.000000},{0.000000,22.000000}}" />
           <Property Name="Text" Value="#{INTERFACE_XML_499}" />
           <Event Name="Clicked" Function="Talent_Shop_PageUp();" />
         </Window>
         <Window Type="TLBB_SimpleMulitiTextFrame" Name="Talent_Shop_CurrentlyPage">
           <Property Name="AbsolutePosition" Value="x:150.000000 y:10.000000" />
-          <Property Name="UnifiedSize" Value="{{0.0,60.000000},{0.000000,22.000000}" />
+          <Property Name="UnifiedSize" Value="{{0.0,60.000000},{0.000000,22.000000}}" />
           <Property Name="Text" Value="999/999" />
           <Property Name="TextColor" Value="FFFFF263" />
           <Property Name="HorzFormatting" Value="HorzCentred" />
@@ -494,7 +494,7 @@
         </Window>
         <Window Type="TLBB_ButtonCommon2" Name="Talent_Shop_DownPage">
           <Property Name="AbsolutePosition" Value="x:210.000000 y:10.000000" />
-          <Property Name="UnifiedSize" Value="{{0.0,50.000000},{0.000000,22.000000}" />
+          <Property Name="UnifiedSize" Value="{{0.0,50.000000},{0.000000,22.000000}}" />
           <Property Name="Text" Value="#{INTERFACE_XML_325}" />
           <Event Name="Clicked" Function="Talent_Shop_PageDown();" />
         </Window>

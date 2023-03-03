@@ -1,9 +1,9 @@
 <?xml version="1.0" ?>
 <GUILayout>
     <Window Type="TLBB_MainFrameNULL" Name="MainMenuBar">
-        <Property Name="UnifiedPosition" Value="{{0.500000,-480.000000},{1.000000,-71.000000}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-480.000000},{1.000000,-71.000000}}" />
         <Property Name="AbsoluteSize" Value="w:960.000000 h:71.000000"/>
-        <Property Name="UnifiedMaxSize" Value="{{0.0000000,960},{1.000000,0.000000}"/>
+        <Property Name="UnifiedMaxSize" Value="{{0.0000000,960},{1.000000,0.000000}}" />
         <Window Type="TLBB_StaticImageNULL" Name="MainMenuBar_LeftBar">
             <Property Name="AbsolutePosition" Value="x:0.000000 y:0.000000"/>
             <Property Name="AbsoluteSize" Value="w:80.000000 h:73.000000"/>
@@ -15,7 +15,7 @@
             <Property Name="Image" Value="set:CommonStaticImage6 image:MainMenuBar_RightBlock"/>
         </Window>
         <Window Type="DefaultWindow" Name="MainMenuBar_LeftBack">
-            <Property Name="UnifiedPosition" Value="{{0.500000,-427.000000},{0.000000,27.000000}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-427.000000},{0.000000,27.000000}}" />
             <Property Name="AbsoluteSize" Value="w:207.000000 h:45.000000"/>
             <Window Type="TLBB_MainMenuBarLeft" Name="MainMenuBar_Left">
                 <Property Name="AbsolutePosition" Value="x:27.000000 y:0.000000"/>
@@ -101,7 +101,7 @@
                             </Window>
                 </Window> -->
         <Window Type="TLBB_MainMenuBarCenter" Name="MainMenuBar_Center">
-            <Property Name="UnifiedPosition" Value="{{0.500000,-220.00000},{0.000000,0.000000}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-220.00000},{0.000000,0.000000}}" />
             <Property Name="AbsoluteSize" Value="w:440.000000 h:71.000000"/>
             <Property Name="FrameEnabled" Value="true"/>
             <Property Name="BackgroundEnabled" Value="true"/>
@@ -123,14 +123,14 @@
                 <Event Name="MouseMove" Function="MainMenuBar_ShowExpTooltip();"/>
                 <Event Name="MouseEnter" Function="MainMenuBar_ShowExpTooltip();"/>
                 <Window Type="TLBB_StaticImageNULL" Name="MainMenuBar_Doub">
-                    <Property Name="UnifiedSize" Value="{{0.000000,104.000000},{0.000000,18.000000}}"/>
-                    <Property Name="UnifiedPosition" Value="{{0.500000,-52.000000},{1.000000,-10.000000}}"/>
+                    <Property Name="UnifiedSize" Value="{{0.000000,104.000000},{0.000000,18.000000}}" />
+                    <Property Name="UnifiedPosition" Value="{{0.500000,-52.000000},{1.000000,-10.000000}}" />
                     <Property Name="RiseOnClick" Value="False"/>
                     <Property Name="AlwaysOnTop" Value="True"/>
                     <Property Name="Image" Value="set:CommonFrame28 image:Doub_Ditu"/>
                     <Window Type="TLBB_StopWatch" Name="MainMenuBar_Doub_Watch">
-                        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-                        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+                        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                         <Property Name="Text" Value="00:00"/>
                         <Property Name="TextColor" Value="FF00FF00"/>
                         <Property Name="VertFormatting" Value="TopAligned"/>
@@ -158,8 +158,8 @@
                         <Event Name="Clicked" Function="MainMenuBar_Clicked(1);"/>
                         <Event Name="RBClicked" Function="MainMenuBar_Clicked(1);"/>
                         <Window Type="TLBB_SimpleText" Name="Button_Action1CD">
-                            <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,11.000000}}"/>
-                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,16.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,11.000000}}" />
+                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,16.000000}}" />
                             <Property Name="VertFormatting" Value="VertCentred"/>
                             <Property Name="Font" Value="YouYuanMono"/>
                             <Property Name="TextColor" Value="00FFFFF"/>
@@ -178,8 +178,8 @@
                         <Event Name="Clicked" Function="MainMenuBar_Clicked(11);"/>
                         <Event Name="RBClicked" Function="MainMenuBar_Clicked(11);"/>
                         <Window Type="TLBB_SimpleText" Name="Button_Action11CD">
-                            <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,11.000000}}"/>
-                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,16.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,11.000000}}" />
+                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,16.000000}}" />
                             <Property Name="HorzFormatting" Value="HorzCentred"/>
                             <Property Name="VertFormatting" Value="VertCentred"/>
                             <Property Name="Font" Value="YouYuanMono"/>
@@ -199,8 +199,8 @@
                         <Event Name="Clicked" Function="MainMenuBar_Clicked(21);"/>
                         <Event Name="RBClicked" Function="MainMenuBar_Clicked(21);"/>
                         <Window Type="TLBB_SimpleText" Name="Button_Action21CD">
-                            <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,11.000000}}"/>
-                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,16.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,11.000000}}" />
+                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,16.000000}}" />
                             <Property Name="HorzFormatting" Value="HorzCentred"/>
                             <Property Name="VertFormatting" Value="VertCentred"/>
                             <Property Name="Font" Value="YouYuanMono"/>
@@ -226,8 +226,8 @@
                         <Event Name="Clicked" Function="MainMenuBar_Clicked(2);"/>
                         <Event Name="RBClicked" Function="MainMenuBar_Clicked(2);"/>
                         <Window Type="TLBB_SimpleText" Name="Button_Action2CD">
-                            <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,11.000000}}"/>
-                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,16.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,11.000000}}" />
+                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,16.000000}}" />
                             <Property Name="HorzFormatting" Value="HorzCentred"/>
                             <Property Name="VertFormatting" Value="VertCentred"/>
                             <Property Name="Font" Value="YouYuanMono"/>
@@ -247,8 +247,8 @@
                         <Event Name="Clicked" Function="MainMenuBar_Clicked(12);"/>
                         <Event Name="RBClicked" Function="MainMenuBar_Clicked(12);"/>
                         <Window Type="TLBB_SimpleText" Name="Button_Action12CD">
-                            <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,11.000000}}"/>
-                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,16.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,11.000000}}" />
+                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,16.000000}}" />
                             <Property Name="HorzFormatting" Value="HorzCentred"/>
                             <Property Name="VertFormatting" Value="VertCentred"/>
                             <Property Name="Font" Value="YouYuanMono"/>
@@ -269,8 +269,8 @@
                         <Event Name="Clicked" Function="MainMenuBar_Clicked(22);"/>
                         <Event Name="RBClicked" Function="MainMenuBar_Clicked(22);"/>
                         <Window Type="TLBB_SimpleText" Name="Button_Action22CD">
-                            <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,11.000000}}"/>
-                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,16.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,11.000000}}" />
+                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,16.000000}}" />
                             <Property Name="HorzFormatting" Value="HorzCentred"/>
                             <Property Name="VertFormatting" Value="VertCentred"/>
                             <Property Name="Font" Value="YouYuanMono"/>
@@ -296,8 +296,8 @@
                         <Event Name="Clicked" Function="MainMenuBar_Clicked(3);"/>
                         <Event Name="RBClicked" Function="MainMenuBar_Clicked(3);"/>
                         <Window Type="TLBB_SimpleText" Name="Button_Action3CD">
-                            <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,11.000000}}"/>
-                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,16.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,11.000000}}" />
+                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,16.000000}}" />
                             <Property Name="HorzFormatting" Value="HorzCentred"/>
                             <Property Name="VertFormatting" Value="VertCentred"/>
                             <Property Name="Font" Value="YouYuanMono"/>
@@ -317,8 +317,8 @@
                         <Event Name="Clicked" Function="MainMenuBar_Clicked(13);"/>
                         <Event Name="RBClicked" Function="MainMenuBar_Clicked(13);"/>
                         <Window Type="TLBB_SimpleText" Name="Button_Action13CD">
-                            <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,11.000000}}"/>
-                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,16.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,11.000000}}" />
+                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,16.000000}}" />
                             <Property Name="HorzFormatting" Value="HorzCentred"/>
                             <Property Name="VertFormatting" Value="VertCentred"/>
                             <Property Name="Font" Value="YouYuanMono"/>
@@ -338,8 +338,8 @@
                         <Event Name="Clicked" Function="MainMenuBar_Clicked(23);"/>
                         <Event Name="RBClicked" Function="MainMenuBar_Clicked(23);"/>
                         <Window Type="TLBB_SimpleText" Name="Button_Action23CD">
-                            <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,11.000000}}"/>
-                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,16.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,11.000000}}" />
+                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,16.000000}}" />
                             <Property Name="HorzFormatting" Value="HorzCentred"/>
                             <Property Name="VertFormatting" Value="VertCentred"/>
                             <Property Name="Font" Value="YouYuanMono"/>
@@ -365,8 +365,8 @@
                         <Event Name="Clicked" Function="MainMenuBar_Clicked(4);"/>
                         <Event Name="RBClicked" Function="MainMenuBar_Clicked(4);"/>
                         <Window Type="TLBB_SimpleText" Name="Button_Action4CD">
-                            <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,11.000000}}"/>
-                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,16.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,11.000000}}" />
+                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,16.000000}}" />
                             <Property Name="HorzFormatting" Value="HorzCentred"/>
                             <Property Name="VertFormatting" Value="VertCentred"/>
                             <Property Name="Font" Value="YouYuanMono"/>
@@ -386,8 +386,8 @@
                         <Event Name="Clicked" Function="MainMenuBar_Clicked(14);"/>
                         <Event Name="RBClicked" Function="MainMenuBar_Clicked(14);"/>
                         <Window Type="TLBB_SimpleText" Name="Button_Action14CD">
-                            <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,11.000000}}"/>
-                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,16.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,11.000000}}" />
+                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,16.000000}}" />
                             <Property Name="HorzFormatting" Value="HorzCentred"/>
                             <Property Name="VertFormatting" Value="VertCentred"/>
                             <Property Name="Font" Value="YouYuanMono"/>
@@ -407,8 +407,8 @@
                         <Event Name="Clicked" Function="MainMenuBar_Clicked(24);"/>
                         <Event Name="RBClicked" Function="MainMenuBar_Clicked(24);"/>
                         <Window Type="TLBB_SimpleText" Name="Button_Action24CD">
-                            <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,11.000000}}"/>
-                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,16.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,11.000000}}" />
+                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,16.000000}}" />
                             <Property Name="HorzFormatting" Value="HorzCentred"/>
                             <Property Name="VertFormatting" Value="VertCentred"/>
                             <Property Name="Font" Value="YouYuanMono"/>
@@ -434,8 +434,8 @@
                         <Event Name="Clicked" Function="MainMenuBar_Clicked(5);"/>
                         <Event Name="RBClicked" Function="MainMenuBar_Clicked(5);"/>
                         <Window Type="TLBB_SimpleText" Name="Button_Action5CD">
-                            <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,11.000000}}"/>
-                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,16.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,11.000000}}" />
+                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,16.000000}}" />
                             <Property Name="HorzFormatting" Value="HorzCentred"/>
                             <Property Name="VertFormatting" Value="VertCentred"/>
                             <Property Name="Font" Value="YouYuanMono"/>
@@ -455,8 +455,8 @@
                         <Event Name="Clicked" Function="MainMenuBar_Clicked(15);"/>
                         <Event Name="RBClicked" Function="MainMenuBar_Clicked(15);"/>
                         <Window Type="TLBB_SimpleText" Name="Button_Action15CD">
-                            <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,11.000000}}"/>
-                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,16.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,11.000000}}" />
+                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,16.000000}}" />
                             <Property Name="HorzFormatting" Value="HorzCentred"/>
                             <Property Name="VertFormatting" Value="VertCentred"/>
                             <Property Name="Font" Value="YouYuanMono"/>
@@ -476,8 +476,8 @@
                         <Event Name="Clicked" Function="MainMenuBar_Clicked(25);"/>
                         <Event Name="RBClicked" Function="MainMenuBar_Clicked(25);"/>
                         <Window Type="TLBB_SimpleText" Name="Button_Action25CD">
-                            <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,11.000000}}"/>
-                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,16.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,11.000000}}" />
+                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,16.000000}}" />
                             <Property Name="HorzFormatting" Value="HorzCentred"/>
                             <Property Name="VertFormatting" Value="VertCentred"/>
                             <Property Name="Font" Value="YouYuanMono"/>
@@ -503,8 +503,8 @@
                         <Event Name="Clicked" Function="MainMenuBar_Clicked(6);"/>
                         <Event Name="RBClicked" Function="MainMenuBar_Clicked(6);"/>
                         <Window Type="TLBB_SimpleText" Name="Button_Action6CD">
-                            <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,11.000000}}"/>
-                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,16.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,11.000000}}" />
+                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,16.000000}}" />
                             <Property Name="HorzFormatting" Value="HorzCentred"/>
                             <Property Name="VertFormatting" Value="VertCentred"/>
                             <Property Name="Font" Value="YouYuanMono"/>
@@ -524,8 +524,8 @@
                         <Event Name="Clicked" Function="MainMenuBar_Clicked(16);"/>
                         <Event Name="RBClicked" Function="MainMenuBar_Clicked(16);"/>
                         <Window Type="TLBB_SimpleText" Name="Button_Action16CD">
-                            <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,11.000000}}"/>
-                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,16.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,11.000000}}" />
+                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,16.000000}}" />
                             <Property Name="HorzFormatting" Value="HorzCentred"/>
                             <Property Name="VertFormatting" Value="VertCentred"/>
                             <Property Name="Font" Value="YouYuanMono"/>
@@ -545,8 +545,8 @@
                         <Event Name="Clicked" Function="MainMenuBar_Clicked(26);"/>
                         <Event Name="RBClicked" Function="MainMenuBar_Clicked(26);"/>
                         <Window Type="TLBB_SimpleText" Name="Button_Action26CD">
-                            <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,11.000000}}"/>
-                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,16.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,11.000000}}" />
+                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,16.000000}}" />
                             <Property Name="HorzFormatting" Value="HorzCentred"/>
                             <Property Name="VertFormatting" Value="VertCentred"/>
                             <Property Name="Font" Value="YouYuanMono"/>
@@ -572,8 +572,8 @@
                         <Event Name="Clicked" Function="MainMenuBar_Clicked(7);"/>
                         <Event Name="RBClicked" Function="MainMenuBar_Clicked(7);"/>
                         <Window Type="TLBB_SimpleText" Name="Button_Action7CD">
-                            <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,11.000000}}"/>
-                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,16.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,11.000000}}" />
+                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,16.000000}}" />
                             <Property Name="HorzFormatting" Value="HorzCentred"/>
                             <Property Name="VertFormatting" Value="VertCentred"/>
                             <Property Name="Font" Value="YouYuanMono"/>
@@ -593,8 +593,8 @@
                         <Event Name="Clicked" Function="MainMenuBar_Clicked(17);"/>
                         <Event Name="RBClicked" Function="MainMenuBar_Clicked(17);"/>
                         <Window Type="TLBB_SimpleText" Name="Button_Action17CD">
-                            <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,11.000000}}"/>
-                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,16.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,11.000000}}" />
+                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,16.000000}}" />
                             <Property Name="HorzFormatting" Value="HorzCentred"/>
                             <Property Name="VertFormatting" Value="VertCentred"/>
                             <Property Name="Font" Value="YouYuanMono"/>
@@ -614,8 +614,8 @@
                         <Event Name="Clicked" Function="MainMenuBar_Clicked(27);"/>
                         <Event Name="RBClicked" Function="MainMenuBar_Clicked(27);"/>
                         <Window Type="TLBB_SimpleText" Name="Button_Action27CD">
-                            <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,11.000000}}"/>
-                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,16.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,11.000000}}" />
+                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,16.000000}}" />
                             <Property Name="HorzFormatting" Value="HorzCentred"/>
                             <Property Name="VertFormatting" Value="VertCentred"/>
                             <Property Name="Font" Value="YouYuanMono"/>
@@ -641,8 +641,8 @@
                         <Event Name="Clicked" Function="MainMenuBar_Clicked(8);"/>
                         <Event Name="RBClicked" Function="MainMenuBar_Clicked(8);"/>
                         <Window Type="TLBB_SimpleText" Name="Button_Action8CD">
-                            <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,11.000000}}"/>
-                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,16.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,11.000000}}" />
+                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,16.000000}}" />
                             <Property Name="HorzFormatting" Value="HorzCentred"/>
                             <Property Name="VertFormatting" Value="VertCentred"/>
                             <Property Name="Font" Value="YouYuanMono"/>
@@ -662,8 +662,8 @@
                         <Event Name="Clicked" Function="MainMenuBar_Clicked(18);"/>
                         <Event Name="RBClicked" Function="MainMenuBar_Clicked(18);"/>
                         <Window Type="TLBB_SimpleText" Name="Button_Action18CD">
-                            <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,11.000000}}"/>
-                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,16.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,11.000000}}" />
+                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,16.000000}}" />
                             <Property Name="HorzFormatting" Value="HorzCentred"/>
                             <Property Name="VertFormatting" Value="VertCentred"/>
                             <Property Name="Font" Value="YouYuanMono"/>
@@ -683,8 +683,8 @@
                         <Event Name="Clicked" Function="MainMenuBar_Clicked(28);"/>
                         <Event Name="RBClicked" Function="MainMenuBar_Clicked(28);"/>
                         <Window Type="TLBB_SimpleText" Name="Button_Action28CD">
-                            <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,11.000000}}"/>
-                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,16.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,11.000000}}" />
+                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,16.000000}}" />
                             <Property Name="HorzFormatting" Value="HorzCentred"/>
                             <Property Name="VertFormatting" Value="VertCentred"/>
                             <Property Name="Font" Value="YouYuanMono"/>
@@ -710,8 +710,8 @@
                         <Event Name="Clicked" Function="MainMenuBar_Clicked(9);"/>
                         <Event Name="RBClicked" Function="MainMenuBar_Clicked(9);"/>
                         <Window Type="TLBB_SimpleText" Name="Button_Action9CD">
-                            <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,11.000000}}"/>
-                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,16.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,11.000000}}" />
+                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,16.000000}}" />
                             <Property Name="HorzFormatting" Value="HorzCentred"/>
                             <Property Name="VertFormatting" Value="VertCentred"/>
                             <Property Name="Font" Value="YouYuanMono"/>
@@ -731,8 +731,8 @@
                         <Event Name="Clicked" Function="MainMenuBar_Clicked(19);"/>
                         <Event Name="RBClicked" Function="MainMenuBar_Clicked(19);"/>
                         <Window Type="TLBB_SimpleText" Name="Button_Action19CD">
-                            <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,11.000000}}"/>
-                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,16.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,11.000000}}" />
+                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,16.000000}}" />
                             <Property Name="HorzFormatting" Value="HorzCentred"/>
                             <Property Name="VertFormatting" Value="VertCentred"/>
                             <Property Name="Font" Value="YouYuanMono"/>
@@ -752,8 +752,8 @@
                         <Event Name="Clicked" Function="MainMenuBar_Clicked(29);"/>
                         <Event Name="RBClicked" Function="MainMenuBar_Clicked(29);"/>
                         <Window Type="TLBB_SimpleText" Name="Button_Action29CD">
-                            <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,11.000000}}"/>
-                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,16.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,11.000000}}" />
+                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,16.000000}}" />
                             <Property Name="HorzFormatting" Value="HorzCentred"/>
                             <Property Name="VertFormatting" Value="VertCentred"/>
                             <Property Name="Font" Value="YouYuanMono"/>
@@ -779,8 +779,8 @@
                         <Event Name="Clicked" Function="MainMenuBar_Clicked(10);"/>
                         <Event Name="RBClicked" Function="MainMenuBar_Clicked(10);"/>
                         <Window Type="TLBB_SimpleText" Name="Button_Action10CD">
-                            <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,11.000000}}"/>
-                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,16.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,11.000000}}" />
+                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,16.000000}}" />
                             <Property Name="HorzFormatting" Value="HorzCentred"/>
                             <Property Name="VertFormatting" Value="VertCentred"/>
                             <Property Name="Font" Value="YouYuanMono"/>
@@ -800,8 +800,8 @@
                         <Event Name="Clicked" Function="MainMenuBar_Clicked(20);"/>
                         <Event Name="RBClicked" Function="MainMenuBar_Clicked(20);"/>
                         <Window Type="TLBB_SimpleText" Name="Button_Action20CD">
-                            <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,11.000000}}"/>
-                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,16.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,11.000000}}" />
+                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,16.000000}}" />
                             <Property Name="HorzFormatting" Value="HorzCentred"/>
                             <Property Name="VertFormatting" Value="VertCentred"/>
                             <Property Name="Font" Value="YouYuanMono"/>
@@ -821,8 +821,8 @@
                         <Event Name="Clicked" Function="MainMenuBar_Clicked(30);"/>
                         <Event Name="RBClicked" Function="MainMenuBar_Clicked(30);"/>
                         <Window Type="TLBB_SimpleText" Name="Button_Action30CD">
-                            <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,11.000000}}"/>
-                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,16.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,11.000000}}" />
+                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,16.000000}}" />
                             <Property Name="HorzFormatting" Value="HorzCentred"/>
                             <Property Name="VertFormatting" Value="VertCentred"/>
                             <Property Name="Font" Value="YouYuanMono"/>
@@ -1065,7 +1065,7 @@
             </Window>
         </Window>
         <Window Type="DefaultWindow" Name="MainMenuBar_RightBack">
-            <Property Name="UnifiedPosition" Value="{{0.500000,220.000000},{0.000000,27.000000}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,220.000000},{0.000000,27.000000}}" />
             <Property Name="AbsoluteSize" Value="w:207.000000 h:71.000000"/>
             <Window Type="TLBB_MainMenuBarRight" Name="MainMenuBar_Right">
                 <Property Name="AbsolutePosition" Value="x:0.000000 y:0.000000"/>
@@ -1121,7 +1121,7 @@
                     <Property Name="DisabledImage" Value="set:CommonStaticImage5 image:MainMenuBar_BangHui_Normal"/>
                     <Event Name="Clicked" Function="OtherInfo_OnOpenGruidClick();"/>
                     <Window Type="TLBB_Animate" Name="Button_ReputationAnimate">
-                        <Property Name="UnifiedPosition" Value="{{0.000000,0.00000},{0.000000,0.000000}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,0.00000},{0.000000,0.000000}}" />
                         <Property Name="AbsoluteSize" Value="w:36.000000 h:36.000000"/>
                         <Property Name="Animate" Value="MainFrameAni9"/>
                         <Property Name="MouseHollow" Value="true"/>
@@ -1145,7 +1145,7 @@
             </Window>
         </Window>
         <Window Type="TLBB_AnimateImage" Name="Button_ConfraternityPK_Ani">
-            <Property Name="UnifiedPosition" Value="{{0.500000,318.000000},{0.000000,0.000000}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,318.000000},{0.000000,0.000000}}" />
             <Property Name="AbsoluteSize" Value="w:42.000000 h:71.000000"/>
             <Property Name="Animate" Value="Animate_ConfraternityPK"/>
             <Property Name="MouseMoveHollow" Value="True"/>

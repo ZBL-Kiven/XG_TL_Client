@@ -1,16 +1,16 @@
 <?xml version="1.0" ?>
 <GUILayout>
     <Window Type="TLBB_HeroFrame01" Name="FeedYuTu_Frame">
-        <Property Name="UnifiedSize" Value="{{0.000000,613.000000},{0.000000,412.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.500000,-308.000000},{0.50000,-208.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,613.000000},{0.000000,412.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.500000,-308.000000},{0.50000,-208.000000}}" />
         <Window Type="TLBB_HeroTitle01" Name="FeedYuTu_DragTitleBK">
-            <Property Name="UnifiedSize" Value="{{0.000000,320.000000},{0.000000,30.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.500000,-160.00000},{0.000000,-1.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,320.000000},{0.000000,30.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.500000,-160.00000},{0.000000,-1.000000}}" />
             <Property Name="RiseOnClick" Value="False"/>
         </Window>
         <Window Type="TLBB_DragTitle" Name="FeedYuTu_DragTitle">
-            <Property Name="UnifiedSize" Value="{{1.000000,-70.000000},{0.000000,20.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,35.000000},{0.000000,5.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,-70.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,35.000000},{0.000000,5.000000}}" />
             <Property Name="TextColor" Value="FFFFDA00"/>
             <Property Name="Text" Value="#{ZQWYT_20210712_20}"/>
             <Property Name="DragTarget" Value="FeedYuTu_Frame" />
@@ -18,8 +18,8 @@
             <Property Name="Font" Value="YouYuan11.25"/>
         </Window>
         <Window Type="TLBB_ButtonNULL" Name="FeedYuTu_Close">
-            <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,14.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.000000,9.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,14.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.000000,9.000000}}" />
             <Property Name="PushedImage" Value="set:ZLHeroMeeting image:Close_Push"/>
             <Property Name="NormalImage" Value="set:ZLHeroMeeting image:Close_Normal"/>
             <Property Name="HoverImage" Value="set:ZLHeroMeeting image:Close_Hover"/>
@@ -27,71 +27,71 @@
             <Event Name="Clicked" Function="FeedYuTu_OnHiden();" />
         </Window>
         <Window Type="TLBB_StaticImageNULL" Name="FeedYuTu_ClientBK">
-            <Property Name="UnifiedSize" Value="{{0.000000,601.000000},{0.000000,378.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,28.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,601.000000},{0.000000,378.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,28.000000}}" />
             <Property Name="RiseOnClick" Value="False"/>
             <Property Name="Image" Value="set:ZhongQiu_FeedYuTu image:FeedYuTu_BK"/>
             <Window Type="TLBB_SimpleText" Name="FeedYuTu_Description">
-                <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,58.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,58.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}" />
                 <Property Name="Text" Value="#{ZQWYT_20210712_21}"/>
                 <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
                 <Property Name="Font" Value="SongTiBmp12"/>
                 <Window Type="TLBB_ButtonHelp" Name="FeedYuTu_HelpDetail">
-                    <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
-                    <Property Name="UnifiedPosition" Value="{{1.000000,-14.000000},{1.000000,-14.000000}}"/>
+                    <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}" />
+                    <Property Name="UnifiedPosition" Value="{{1.000000,-14.000000},{1.000000,-14.000000}}" />
                     <Event Name="Clicked" Function="FeedYuTu_ShowHelp();" />
                 </Window>
             </Window>
             <Window Type="DefaultWindow" Name="FeedYuTu_Frame_ModelAndProcess">
-                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,320.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,58.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,320.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,58.000000}}" />
                 <Window Type="TLBB_MeshWindowYuTu" Name="FeedYuTu_FakeObject">
-                    <Property Name="UnifiedSize" Value="{{0.000000,482.000000},{0.000000,319.000000}}"/>
-                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                    <Property Name="UnifiedSize" Value="{{0.000000,482.000000},{0.000000,319.000000}}" />
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                     <Property Name="MouseRButtonHollow" Value="True"/>
                     <Property Name="MouseMoveHollow" Value="True"/>
                     <Property Name="MouseLButtonHollow" Value="True"/>
                     <Property Name="MouseHollow" Value="True"/>
                 </Window>
                 <Window Type="DefaultWindow" Name="FeedYuTu_Progress_Frame">
-                    <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,320.000000}}"/>
-                    <Property Name="UnifiedPosition" Value="{{1.000000,-120.000000},{0.000000,0.000000}}"/>
+                    <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,320.000000}}" />
+                    <Property Name="UnifiedPosition" Value="{{1.000000,-120.000000},{0.000000,0.000000}}" />
                     <Window Type="TLBB_StaticImageNULL" Name="FeedYuTu_ProgressBK">
-                        <Property Name="UnifiedSize" Value="{{0.000000,6.000000},{0.000000,237.000000}}"/>
-                        <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,30.000000}}"/>
+                        <Property Name="UnifiedSize" Value="{{0.000000,6.000000},{0.000000,237.000000}}" />
+                        <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,30.000000}}" />
                         <Property Name="Image" Value="set:ZhongQiu_FeedYuTu image:FeedYuTu_ProcessFrame"/>
                         <Window Type="TLBB_ProgressPropertyYuTu" Name="FeedYuTu_ProgressBar">
-                            <Property Name="UnifiedSize" Value="{{1.000000,-2.000000},{1.000000,-2.000000}}"/>
-                            <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                            <Property Name="UnifiedSize" Value="{{1.000000,-2.000000},{1.000000,-2.000000}}" />
+                            <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}" />
                             <Property Name="CurrentProgress" Value="0.300000"/>
                             <Property Name="VerticalProgress" Value="True"/>
                             <Property Name="AlwaysOnTop" Value="True"/>
                         </Window>
                     </Window>
                     <Window Type="DefaultWindow" Name="FeedYuTu_Item4_Frame">
-                        <Property Name="UnifiedSize" Value="{{0.000000,88.000000},{0.000000,40.000000}}"/>
-                        <Property Name="UnifiedPosition" Value="{{0.000000,14.000000},{0.000000,15.000000}}"/>
+                        <Property Name="UnifiedSize" Value="{{0.000000,88.000000},{0.000000,40.000000}}" />
+                        <Property Name="UnifiedPosition" Value="{{0.000000,14.000000},{0.000000,15.000000}}" />
                         <Window Type="TLBB_SimpleText" Name="FeedYuTu_Percent100">
-                            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
-                            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-10.000000}}"/>
+                            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}" />
+                            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-10.000000}}" />
                             <Property Name="Text" Value="#{ZQWYT_20210712_42}"/>
                             <Property Name="HorzFormatting" Value="WordWrapCentred"/>
                             <Property Name="Font" Value="SongTiBmp12"/>
                         </Window>
                         <Window Type="TLBB_StaticImageNULL" Name="FeedYuTu_Arrow4">
-                            <Property Name="UnifiedSize" Value="{{0.000000,5.000000},{0.000000,10.000000}}"/>
-                            <Property Name="UnifiedPosition" Value="{{0.000000,32.000000},{0.500000,-5.000000}}"/>
+                            <Property Name="UnifiedSize" Value="{{0.000000,5.000000},{0.000000,10.000000}}" />
+                            <Property Name="UnifiedPosition" Value="{{0.000000,32.000000},{0.500000,-5.000000}}" />
                             <Property Name="Image" Value="set:ZhongQiu_FeedYuTu image:FeedYuTu_Arrow"/>
                         </Window>
                         <Window Type="TLBB_ActionButton" Name="FeedYuTu_Item4">
-                            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
-                            <Property Name="UnifiedPosition" Value="{{1.000000,-40.000000},{0.000000,0.000000}}"/>
+                            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}" />
+                            <Property Name="UnifiedPosition" Value="{{1.000000,-40.000000},{0.000000,0.000000}}" />
                             <Property Name="DraggingEnabled" Value="True"/>
                             <Property Name="DragAcceptName" Value="G72"/>
                             <Event Name="Clicked" Function="FeedYuTu_OnRewardClick(4);"/>
                             <Window Type="TLBB_Animate" Name="FeedYuTu_ItemAnimate4">
-                                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
                                 <Property Name="MouseRButtonHollow" Value="True"/>
                                 <Property Name="MouseMoveHollow" Value="True"/>
                                 <Property Name="MouseLButtonHollow" Value="True"/>
@@ -100,7 +100,7 @@
                                 <Property Name="AlwaysOnTop" Value="True"/>
                             </Window>
                             <Window Type="TLBB_StaticImageNULL" Name="FeedYuTu_ItemOK4">
-                                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
                                 <Property Name="MouseRButtonHollow" Value="True"/>
                                 <Property Name="MouseMoveHollow" Value="True"/>
                                 <Property Name="MouseLButtonHollow" Value="True"/>
@@ -110,28 +110,28 @@
                         </Window>
                     </Window>
                     <Window Type="DefaultWindow" Name="FeedYuTu_Item3_Frame">
-                        <Property Name="UnifiedSize" Value="{{0.000000,88.000000},{0.000000,40.000000}}"/>
-                        <Property Name="UnifiedPosition" Value="{{0.000000,14.000000},{0.000000,95.000000}}"/>
+                        <Property Name="UnifiedSize" Value="{{0.000000,88.000000},{0.000000,40.000000}}" />
+                        <Property Name="UnifiedPosition" Value="{{0.000000,14.000000},{0.000000,95.000000}}" />
                         <Window Type="TLBB_SimpleText" Name="FeedYuTu_Percent60">
-                            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
-                            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-10.000000}}"/>
+                            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}" />
+                            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-10.000000}}" />
                             <Property Name="Text" Value="#{ZQWYT_20210712_41}"/>
                             <Property Name="HorzFormatting" Value="WordWrapCentred"/>
                             <Property Name="Font" Value="SongTiBmp12"/>
                         </Window>
                         <Window Type="TLBB_StaticImageNULL" Name="FeedYuTu_Arrow3">
-                            <Property Name="UnifiedSize" Value="{{0.000000,5.000000},{0.000000,10.000000}}"/>
-                            <Property Name="UnifiedPosition" Value="{{0.000000,32.000000},{0.500000,-5.000000}}"/>
+                            <Property Name="UnifiedSize" Value="{{0.000000,5.000000},{0.000000,10.000000}}" />
+                            <Property Name="UnifiedPosition" Value="{{0.000000,32.000000},{0.500000,-5.000000}}" />
                             <Property Name="Image" Value="set:ZhongQiu_FeedYuTu image:FeedYuTu_Arrow"/>
                         </Window>
                         <Window Type="TLBB_ActionButton" Name="FeedYuTu_Item3">
-                            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
-                            <Property Name="UnifiedPosition" Value="{{1.000000,-40.000000},{0.000000,0.000000}}"/>
+                            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}" />
+                            <Property Name="UnifiedPosition" Value="{{1.000000,-40.000000},{0.000000,0.000000}}" />
                             <Property Name="DraggingEnabled" Value="True"/>
                             <Property Name="DragAcceptName" Value="G72"/>
                             <Event Name="Clicked" Function="FeedYuTu_OnRewardClick(3);"/>
                             <Window Type="TLBB_Animate" Name="FeedYuTu_ItemAnimate3">
-                                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
                                 <Property Name="MouseRButtonHollow" Value="True"/>
                                 <Property Name="MouseMoveHollow" Value="True"/>
                                 <Property Name="MouseLButtonHollow" Value="True"/>
@@ -140,7 +140,7 @@
                                 <Property Name="AlwaysOnTop" Value="True"/>
                             </Window>
                             <Window Type="TLBB_StaticImageNULL" Name="FeedYuTu_ItemOK3">
-                                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
                                 <Property Name="MouseRButtonHollow" Value="True"/>
                                 <Property Name="MouseMoveHollow" Value="True"/>
                                 <Property Name="MouseLButtonHollow" Value="True"/>
@@ -150,28 +150,28 @@
                         </Window>
                     </Window>
                     <Window Type="DefaultWindow" Name="FeedYuTu_Item2_Frame">
-                        <Property Name="UnifiedSize" Value="{{0.000000,88.000000},{0.000000,40.000000}}"/>
-                        <Property Name="UnifiedPosition" Value="{{0.000000,14.000000},{0.000000,170.000000}}"/>
+                        <Property Name="UnifiedSize" Value="{{0.000000,88.000000},{0.000000,40.000000}}" />
+                        <Property Name="UnifiedPosition" Value="{{0.000000,14.000000},{0.000000,170.000000}}" />
                         <Window Type="TLBB_SimpleText" Name="FeedYuTu_Percent30">
-                            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
-                            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-10.000000}}"/>
+                            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}" />
+                            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-10.000000}}" />
                             <Property Name="Text" Value="#{ZQWYT_20210712_40}"/>
                             <Property Name="HorzFormatting" Value="WordWrapCentred"/>
                             <Property Name="Font" Value="SongTiBmp12"/>
                         </Window>
                         <Window Type="TLBB_StaticImageNULL" Name="FeedYuTu_Arrow2">
-                            <Property Name="UnifiedSize" Value="{{0.000000,5.000000},{0.000000,10.000000}}"/>
-                            <Property Name="UnifiedPosition" Value="{{0.000000,32.000000},{0.500000,-5.000000}}"/>
+                            <Property Name="UnifiedSize" Value="{{0.000000,5.000000},{0.000000,10.000000}}" />
+                            <Property Name="UnifiedPosition" Value="{{0.000000,32.000000},{0.500000,-5.000000}}" />
                             <Property Name="Image" Value="set:ZhongQiu_FeedYuTu image:FeedYuTu_Arrow"/>
                         </Window>
                         <Window Type="TLBB_ActionButton" Name="FeedYuTu_Item2">
-                            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
-                            <Property Name="UnifiedPosition" Value="{{1.000000,-40.000000},{0.000000,0.000000}}"/>
+                            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}" />
+                            <Property Name="UnifiedPosition" Value="{{1.000000,-40.000000},{0.000000,0.000000}}" />
                             <Property Name="DraggingEnabled" Value="True"/>
                             <Property Name="DragAcceptName" Value="G72"/>
                             <Event Name="Clicked" Function="FeedYuTu_OnRewardClick(2);"/>
                             <Window Type="TLBB_Animate" Name="FeedYuTu_ItemAnimate2">
-                                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
                                 <Property Name="MouseRButtonHollow" Value="True"/>
                                 <Property Name="MouseMoveHollow" Value="True"/>
                                 <Property Name="MouseLButtonHollow" Value="True"/>
@@ -180,7 +180,7 @@
                                 <Property Name="AlwaysOnTop" Value="True"/>
                             </Window>
                             <Window Type="TLBB_StaticImageNULL" Name="FeedYuTu_ItemOK2">
-                                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
                                 <Property Name="MouseRButtonHollow" Value="True"/>
                                 <Property Name="MouseMoveHollow" Value="True"/>
                                 <Property Name="MouseLButtonHollow" Value="True"/>
@@ -190,28 +190,28 @@
                         </Window>
                     </Window>
                     <Window Type="DefaultWindow" Name="FeedYuTu_Item1_Frame">
-                        <Property Name="UnifiedSize" Value="{{0.000000,88.000000},{0.000000,40.000000}}"/>
-                        <Property Name="UnifiedPosition" Value="{{0.000000,14.000000},{0.000000,225.000000}}"/>
+                        <Property Name="UnifiedSize" Value="{{0.000000,88.000000},{0.000000,40.000000}}" />
+                        <Property Name="UnifiedPosition" Value="{{0.000000,14.000000},{0.000000,225.000000}}" />
                         <Window Type="TLBB_SimpleText" Name="FeedYuTu_Percent10">
-                            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
-                            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-10.000000}}"/>
+                            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}" />
+                            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-10.000000}}" />
                             <Property Name="Text" Value="#{ZQWYT_20210712_39}"/>
                             <Property Name="HorzFormatting" Value="WordWrapCentred"/>
                             <Property Name="Font" Value="SongTiBmp12"/>
                         </Window>
                         <Window Type="TLBB_StaticImageNULL" Name="FeedYuTu_Arrow1">
-                            <Property Name="UnifiedSize" Value="{{0.000000,5.000000},{0.000000,10.000000}}"/>
-                            <Property Name="UnifiedPosition" Value="{{0.000000,32.000000},{0.500000,-5.000000}}"/>
+                            <Property Name="UnifiedSize" Value="{{0.000000,5.000000},{0.000000,10.000000}}" />
+                            <Property Name="UnifiedPosition" Value="{{0.000000,32.000000},{0.500000,-5.000000}}" />
                             <Property Name="Image" Value="set:ZhongQiu_FeedYuTu image:FeedYuTu_Arrow"/>
                         </Window>
                         <Window Type="TLBB_ActionButton" Name="FeedYuTu_Item1">
-                            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
-                            <Property Name="UnifiedPosition" Value="{{1.000000,-40.000000},{0.000000,0.000000}}"/>
+                            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}" />
+                            <Property Name="UnifiedPosition" Value="{{1.000000,-40.000000},{0.000000,0.000000}}" />
                             <Property Name="DraggingEnabled" Value="True"/>
                             <Property Name="DragAcceptName" Value="G72"/>
                             <Event Name="Clicked" Function="FeedYuTu_OnRewardClick(1);"/>
                             <Window Type="TLBB_Animate" Name="FeedYuTu_ItemAnimate1">
-                                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
                                 <Property Name="MouseRButtonHollow" Value="True"/>
                                 <Property Name="MouseMoveHollow" Value="True"/>
                                 <Property Name="MouseLButtonHollow" Value="True"/>
@@ -220,7 +220,7 @@
                                 <Property Name="AlwaysOnTop" Value="True"/>
                             </Window>
                             <Window Type="TLBB_StaticImageNULL" Name="FeedYuTu_ItemOK1">
-                                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
                                 <Property Name="MouseRButtonHollow" Value="True"/>
                                 <Property Name="MouseMoveHollow" Value="True"/>
                                 <Property Name="MouseLButtonHollow" Value="True"/>
@@ -230,8 +230,8 @@
                         </Window>
                     </Window>
                     <Window Type="TLBB_SimpleText" Name="FeedYuTu_ProgressValue">
-                        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,22.000000}}"/>
-                        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-40.000000}}"/>
+                        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,22.000000}}" />
+                        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-40.000000}}" />
                         <Property Name="TextColor" Value="FFFFDA00"/>
                         <Property Name="Text" Value="#{ZQWYT_20210712_23}"/>
                         <Property Name="HorzFormatting" Value="WordWrapCentred"/>

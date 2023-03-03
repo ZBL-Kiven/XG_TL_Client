@@ -1,60 +1,60 @@
 ﻿<?xml version="1.0" ?>
 <GUILayout>
   <Window Type="TLBB_MainFrame0" Name="PetSoul_Frame">
-    <Property Name="UnifiedSize" Value="{{0.000000,440.000000},{0.000000,360.000000}}"/>
-    <Property Name="UnifiedPosition" Value="{{0.500000,-220.000000},{0.300000,0.000000}}"/>
+    <Property Name="UnifiedSize" Value="{{0.000000,440.000000},{0.000000,360.000000}}" />
+    <Property Name="UnifiedPosition" Value="{{0.500000,-220.000000},{0.300000,0.000000}}" />
     <Event Name="Hidden" Function="PetSoul_OnHidden();"/>
     <Window Type="TLBB_DragTitle" Name="PetSoul_DragTitle">
-      <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,10.000000}" />
-      <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,10.000000}}" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}}" />
       <Property Name="Font" Value="YouYuan11.25" />
       <Property Name="Text" Value="#{SHXT_20211230_03}" />
       <Property Name="DragTarget" Value="PetSoul_Frame" />
     </Window>
     <Window Type="TLBB_ButtonHelp" Name="PetSoul_Help">
-      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
-      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}" />
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}" />
     </Window>
     <Window Type="TLBB_ButtonClose" Name="PetSoul_Close">
-      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
-      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}" />
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}" />
       <Event Name="Clicked" Function="PetSoul_OnCloseClicked();" />
     </Window>
     <Window Type="DefaultWindow" Name="PetSoul_Frame_Client">
-      <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,32.000000}}"/>
-      <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-41.000000}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,32.000000}}" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-41.000000}}" />
       <Window Type="TLBB_FramePet" Name="PetSoul_FakeObject_Frame">
-        <Property Name="UnifiedSize" Value="{{0.000000,190.000000},{0.000000,170.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,2.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,190.000000},{0.000000,170.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,2.000000}}" />
         <Property Name="RiseOnClick" Value="False"/>
         <Window Type="TLBB_MeshWindow" Name="PetSoul_FakeObject">
-          <Property Name="UnifiedSize" Value="{{0.800000,0.000000},{0.850000,0.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.100000,0.000000},{0.100000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.800000,0.000000},{0.850000,0.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.100000,0.000000},{0.100000,0.000000}}" />
           <Property Name="RiseOnClick" Value="False"/>
         </Window>
         <Window Type="TLBB_StaticImageNULL" Name="PetSoul_FakeObject_Frame_PetHead">
-          <Property Name="UnifiedSize" Value="{{0.000000,68.000000},{0.000000,26.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.500000,-34.000000},{0.000000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,68.000000},{0.000000,26.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.500000,-34.000000},{0.000000,0.000000}}" />
           <Property Name="RiseOnClick" Value="False"/>
           <Property Name="Image" Value="set:CommonItem image:PetFrame_Head"/>
         </Window>
         <Window Type="TLBB_ButtonTurnLeft" Name="PetSoul_Model_TurnLeft">
-          <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{1.000000,-40.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{1.000000,-40.000000}}" />
           <Event Name="MouseButtonDown" Function="PetSoul_TurnLeft(1);" />
           <Event Name="MouseButtonUp" Function="PetSoul_TurnLeft(0);" />
           <Event Name="CaptureLost" Function="PetSoul_TurnLeft(0);" />
         </Window>
         <Window Type="TLBB_ButtonTurnRight" Name="PetSoul_TurnRight">
-          <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{1.000000,-37.000000},{1.000000,-40.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{1.000000,-37.000000},{1.000000,-40.000000}}" />
           <Event Name="MouseButtonDown" Function="PetSoul_TurnRight(1);" />
           <Event Name="MouseButtonUp" Function="PetSoul_TurnRight(0);" />
           <Event Name="CaptureLost" Function="PetSoul_TurnRight(0);" />
         </Window>
         <Window Type="TLBB_ButtonNULL" Name="PetSoul_Jian">
-          <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{1.000000,-40.000000},{0.000000,12.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{1.000000,-40.000000},{0.000000,12.000000}}" />
           <Property Name="Tooltip" Value="#{SHXT_20211230_16}"/>
           <Property Name="PushedImage" Value="set:CommonFrame6 image:TuJian_Pushed"/>
           <Property Name="NormalImage" Value="set:CommonFrame6 image:TuJian_Normal"/>
@@ -63,73 +63,73 @@
         </Window>
       </Window>
       <Window Type="TLBB_Frame_Lace1" Name="PetSoul_Explain_MiniTitle1">
-        <Property Name="UnifiedSize" Value="{{0.000000,190.000000},{0.000000,30.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,172.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,190.000000},{0.000000,30.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,172.000000}}" />
         <Property Name="Visible" Value="False"/>
         <Window Type="TLBB_SimpleText" Name="PetSoul_Explain_MiniTitle1_Text">
-          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
           <Property Name="HorzFormatting" Value="WordWrapCentred"/>
           <Property Name="Text" Value="#{}"/>
           <Property Name="RiseOnClick" Value="False"/>
         </Window>
       </Window>
       <Window Type="DefaultWindow" Name="PetSoul_ShowInformation">
-        <Property Name="UnifiedSize" Value="{{0.000000,190.000000},{0.000000,55.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,172.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,190.000000},{0.000000,55.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,172.000000}}" />
         <Property Name="RiseOnClick" Value="False"/>
         <Window Type="TLBB_SimpleTextFrameLeft" Name="PetSoul_BloodStage">
-          <Property Name="UnifiedSize" Value="{{0.000000,76.000000},{0.000000,18.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,76.000000},{0.000000,18.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
           <Property Name="TextColor" Value="FFFFF263"/>
           <Property Name="Text" Value="#{SHXT_20211230_07}"/>
           <Property Name="RiseOnClick" Value="False"/>
           <Property Name="HorzFormatting" Value="LeftAligned"/>
         </Window>
         <Window Type="TLBB_SimpleTextFrameLeft" Name="PetSoul_BloodNum">
-          <Property Name="UnifiedSize" Value="{{0.000000,76.000000},{0.000000,18.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,76.000000},{0.000000,18.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,18.000000}}" />
           <Property Name="TextColor" Value="FFFFF263"/>
           <Property Name="Text" Value="#{SHXT_20211230_08}"/>
           <Property Name="RiseOnClick" Value="False"/>
           <Property Name="HorzFormatting" Value="LeftAligned"/>
         </Window>
         <Window Type="TLBB_SimpleTextFrameLeft" Name="PetSoul_Level">
-          <Property Name="UnifiedSize" Value="{{0.000000,76.000000},{0.000000,18.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,36.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,76.000000},{0.000000,18.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,36.000000}}" />
           <Property Name="TextColor" Value="FFFFF263"/>
           <Property Name="Text" Value="#{SHXT_20211230_09}"/>
           <Property Name="RiseOnClick" Value="False"/>
           <Property Name="HorzFormatting" Value="LeftAligned"/>
         </Window>
         <Window Type="TLBB_SimpleTextFrameRight" Name="PetSoul_BloodStageText">
-          <Property Name="UnifiedSize" Value="{{1.000000,-76.000000},{0.000000,18.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,76.000000},{0.000000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,-76.000000},{0.000000,18.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,76.000000},{0.000000,0.000000}}" />
           <Property Name="TextColor" Value="FFFFF263"/>
           <Property Name="RiseOnClick" Value="False"/>
           <Property Name="HorzFormatting" Value="RightAligned"/>
         </Window>
         <Window Type="TLBB_SimpleTextFrameRight" Name="PetSoul_BloodNumText">
-          <Property Name="UnifiedSize" Value="{{1.000000,-76.000000},{0.000000,18.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,76.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,-76.000000},{0.000000,18.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,76.000000},{0.000000,18.000000}}" />
           <Property Name="TextColor" Value="FFFFF263"/>
           <Property Name="RiseOnClick" Value="False"/>
           <Property Name="HorzFormatting" Value="RightAligned"/>
         </Window>
         <Window Type="TLBB_SimpleTextFrameRight" Name="PetSoul_LevelText">
-          <Property Name="UnifiedSize" Value="{{1.000000,-76.000000},{0.000000,18.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,76.000000},{0.000000,36.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,-76.000000},{0.000000,18.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,76.000000},{0.000000,36.000000}}" />
           <Property Name="TextColor" Value="FFFFF263"/>
           <Property Name="RiseOnClick" Value="False"/>
           <Property Name="HorzFormatting" Value="RightAligned"/>
         </Window>
       </Window>
       <Window Type="TLBB_Frame_Lace2" Name="PetSoul_Bk">
-        <Property Name="UnifiedSize" Value="{{0.000000,190.000000},{0.000000,84.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,0.00000},{0.000000,226.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,190.000000},{0.000000,84.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.00000},{0.000000,226.000000}}" />
         <Window Type="TLBB_SimpleText" Name="PetSoul_StrAptitude_Text">
-          <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,3.000000}}"/>
-          <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,16.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,3.000000}}" />
+          <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,16.000000}}" />
           <Property Name="Text" Value="#{SHXT_20211230_11}" />
           <Property Name="TextColor" Value="FFFAFFA4" />
           <Property Name="HorzFormatting" Value="LeftAligned" />
@@ -137,8 +137,8 @@
           <Property Name="RiseOnClick" Value="False" />
         </Window>
         <Window Type="TLBB_SimpleText" Name="PetSoul_SprAptitude_Text">
-          <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,19.000000}}"/>
-          <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,16.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,19.000000}}" />
+          <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,16.000000}}" />
           <Property Name="Text" Value="#{SHXT_20211230_12}" />
           <Property Name="TextColor" Value="FFFAFFA4" />
           <Property Name="HorzFormatting" Value="LeftAligned" />
@@ -146,8 +146,8 @@
           <Property Name="RiseOnClick" Value="False" />
         </Window>
         <Window Type="TLBB_SimpleText" Name="PetSoul_ConAptitude_Text">
-          <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,35.000000}}"/>
-          <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,16.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,35.000000}}" />
+          <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,16.000000}}" />
           <Property Name="Text" Value="#{SHXT_20211230_13}" />
           <Property Name="TextColor" Value="FFFAFFA4" />
           <Property Name="HorzFormatting" Value="LeftAligned" />
@@ -155,8 +155,8 @@
           <Property Name="RiseOnClick" Value="False" />
         </Window>
         <Window Type="TLBB_SimpleText" Name="PetSoul_IntAptitude_Text">
-          <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,51.000000}}"/>
-          <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,16.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,51.000000}}" />
+          <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,16.000000}}" />
           <Property Name="Text" Value="#{SHXT_20211230_14}" />
           <Property Name="TextColor" Value="FFFAFFA4" />
           <Property Name="HorzFormatting" Value="LeftAligned" />
@@ -164,8 +164,8 @@
           <Property Name="RiseOnClick" Value="False" />
         </Window>
         <Window Type="TLBB_SimpleText" Name="PetSoul_DexAptitude_Text">
-          <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,67.000000}}"/>
-          <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,16.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,67.000000}}" />
+          <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,16.000000}}" />
           <Property Name="Text" Value="#{SHXT_20211230_15}" />
           <Property Name="TextColor" Value="FFFAFFA4" />
           <Property Name="HorzFormatting" Value="LeftAligned" />
@@ -173,8 +173,8 @@
           <Property Name="RiseOnClick" Value="False" />
         </Window>
         <Window Type="TLBB_SimpleMulitiTextFrame" Name="PetSoul_StrAptitude">
-          <Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,3.000000}}"/>
-          <Property Name="UnifiedSize" Value="{{1.00000,-62.000000},{0.000000,16.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,3.000000}}" />
+          <Property Name="UnifiedSize" Value="{{1.00000,-62.000000},{0.000000,16.000000}}" />
           <Property Name="Text" Value="11993(+1.3%)" />
           <Property Name="TextColor" Value="FFFAFFA4" />
           <Property Name="HorzFormatting" Value="RightAligned" />
@@ -182,32 +182,32 @@
           <Property Name="RiseOnClick" Value="False" />
         </Window>
         <Window Type="TLBB_SimpleMulitiTextFrame" Name="PetSoul_SprAptitude">
-          <Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,19.000000}}"/>
-          <Property Name="UnifiedSize" Value="{{1.00000,-62.000000},{0.000000,16.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,19.000000}}" />
+          <Property Name="UnifiedSize" Value="{{1.00000,-62.000000},{0.000000,16.000000}}" />
           <Property Name="HorzFormatting" Value="RightAligned" />
           <Property Name="VertFormatting" Value="VertCentred" />
           <Property Name="RiseOnClick" Value="False" />
           <Property Name="TextColor" Value="FFFAFFA4" />
         </Window>
         <Window Type="TLBB_SimpleMulitiTextFrame" Name="PetSoul_ConAptitude">
-          <Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,35.000000}}"/>
-          <Property Name="UnifiedSize" Value="{{1.00000,-62.000000},{0.000000,16.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,35.000000}}" />
+          <Property Name="UnifiedSize" Value="{{1.00000,-62.000000},{0.000000,16.000000}}" />
           <Property Name="HorzFormatting" Value="RightAligned" />
           <Property Name="VertFormatting" Value="VertCentred" />
           <Property Name="RiseOnClick" Value="False" />
           <Property Name="TextColor" Value="FFFAFFA4" />
         </Window>
         <Window Type="TLBB_SimpleMulitiTextFrame" Name="PetSoul_IntAptitude">
-          <Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,51.000000}}"/>
-          <Property Name="UnifiedSize" Value="{{1.00000,-62.000000},{0.000000,16.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,51.000000}}" />
+          <Property Name="UnifiedSize" Value="{{1.00000,-62.000000},{0.000000,16.000000}}" />
           <Property Name="HorzFormatting" Value="RightAligned" />
           <Property Name="VertFormatting" Value="VertCentred" />
           <Property Name="RiseOnClick" Value="False" />
           <Property Name="TextColor" Value="FFFAFFA4" />
         </Window>
         <Window Type="TLBB_SimpleMulitiTextFrame" Name="PetSoul_DexAptitude">
-          <Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,67.000000}}"/>
-          <Property Name="UnifiedSize" Value="{{1.00000,-62.000000},{0.000000,16.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,67.000000}}" />
+          <Property Name="UnifiedSize" Value="{{1.00000,-62.000000},{0.000000,16.000000}}" />
           <Property Name="HorzFormatting" Value="RightAligned" />
           <Property Name="VertFormatting" Value="VertCentred" />
           <Property Name="RiseOnClick" Value="False" />
@@ -215,11 +215,11 @@
         </Window>
       </Window>
       <Window Type="TLBB_Frame_Lace1" Name="PetSoul_Explain_MiniTitle2">
-        <Property Name="UnifiedSize" Value="{{1.000000,-190.000000},{0.000000,30.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,190.000000},{0.000000,2.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,-190.000000},{0.000000,30.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,190.000000},{0.000000,2.000000}}" />
         <Window Type="TLBB_SimpleText" Name="PetSoul_Explain_MiniTitle2_Text">
-          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
           <Property Name="HorzFormatting" Value="WordWrapCentred"/>
           <Property Name="Text" Value="#{SHXT_20211230_236}"/>
           <Property Name="Font" Value="YouYuan9.75"/>
@@ -227,46 +227,46 @@
         </Window>
       </Window>
       <Window Type="DefaultWindow" Name="PetSoul_Skill">
-        <Property Name="UnifiedSize" Value="{{1.000000,-190.000000},{0.000000,80.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,190.000000},{0.000000,32.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,-190.000000},{0.000000,80.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,190.000000},{0.000000,32.000000}}" />
         <Property Name="RiseOnClick" Value="False"/>
         <Window Type="TLBB_ActionButton" Name="PetSoul_SoulSkill">
-          <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
           <Property Name="DraggingEnabled" Value="True"/>
           <Event Name="MouseEnter" Function="PetSoul_MouseEnter(1);" />
           <Event Name="MouseLeave" Function="PetSoul_MouseLeave();" />
         </Window>
         <Window Type="TLBB_SimpleMulitiTextFrame" Name="PetSoul_SoulSkill_Info1">
-          <Property Name="UnifiedSize" Value="{{1.000000,-40.000000},{0.000000,20.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,-40.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,0.000000}}" />
         </Window>
         <Window Type="TLBB_SimpleMulitiTextFrame" Name="PetSoul_SoulSkill_Info2">
-          <Property Name="UnifiedSize" Value="{{1.000000,-40.000000},{0.000000,20.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,-40.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,20.000000}}" />
         </Window>
         <Window Type="TLBB_ActionButton" Name="PetSoul_InterGrowthSkill">
-          <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,40.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,40.000000}}" />
           <Property Name="DraggingEnabled" Value="False"/>
           <Event Name="MouseEnter" Function="PetSoul_MouseEnter(2);" />
           <Event Name="MouseLeave" Function="PetSoul_MouseLeave();" />
         </Window>
         <Window Type="TLBB_SimpleMulitiTextFrame" Name="PetSoul_InterGrowthSkill_Info1">
-          <Property Name="UnifiedSize" Value="{{1.000000,-40.000000},{0.000000,20.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,-40.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,40.000000}}" />
         </Window>
         <Window Type="TLBB_SimpleMulitiTextFrame" Name="PetSoul_InterGrowthSkill_Info2">
-          <Property Name="UnifiedSize" Value="{{1.000000,-40.000000},{0.000000,20.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,60.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,-40.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,60.000000}}" />
         </Window>
       </Window>
             <Window Type="TLBB_Frame_Lace1" Name="PetSoul_Explain_MiniTitle3">
-        <Property Name="UnifiedSize" Value="{{1.000000,-190.000000},{0.000000,30.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,190.000000},{0.000000,112.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,-190.000000},{0.000000,30.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,190.000000},{0.000000,112.000000}}" />
         <Window Type="TLBB_SimpleText" Name="PetSoul_Explain_MiniTitle3_Text">
-          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
           <Property Name="HorzFormatting" Value="WordWrapCentred"/>
           <Property Name="Text" Value="#{SHXT_20211230_223}"/>
           <Property Name="Font" Value="YouYuan9.75"/>
@@ -274,39 +274,39 @@
         </Window>
       </Window>
       <Window Type="TLBB_Frame_Lace4" Name="PetSoul_Explain_Bk">
-        <Property Name="UnifiedSize" Value="{{1.000000,-190.000000},{1.000000,-152.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,190.000000},{0.000000,142.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,-190.000000},{1.000000,-152.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,190.000000},{0.000000,142.000000}}" />
         <Property Name="RiseOnClick" Value="False"/>
         <Property Name="AlwaysOnTop" Value="True"/>
         <Window Type="DefaultWindow" Name="PetSoul_Explain_Info">
-          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{1.000000,-20.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{1.000000,-20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,10.000000}}" />
           <Property Name="AlwaysOnTop" Value="True"/>
           <Window Type="DefaultWindow" Name="PetSoul_Explain_InfoItem1">
-            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
             <Window Type="TLBB_Frame_Lace1" Name="PetSoul_Explain_InfoItem1BK">
-              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseLButtonHollow" Value="True"/>
               <Property Name="MouseHollow" Value="True"/>
               <Window Type="TLBB_SimpleText" Name="PetSoul_Explain_InfoItem1_Text1">
-                <Property Name="UnifiedSize" Value="{{1.000000,-24.000000},{1.000000,0.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,-24.000000},{1.000000,0.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}" />
                 <Property Name="Text" Value="#{}"/>
                 <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
               </Window>
               <Window Type="TLBB_SimpleText" Name="PetSoul_Explain_InfoItem1_Text2">
-                <Property Name="UnifiedSize" Value="{{1.000000,-24.000000},{1.000000,0.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,-24.000000},{1.000000,0.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}" />
                 <Property Name="Text" Value="#{}"/>
                 <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
               </Window>
               <Window Type="TLBB_ButtonNULL" Name="PetSoul_Explain_InfoItem1_Image">
-                <Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}}" />
 				<Property Name="AlwaysOnTop" Value="True"/>
-                <Property Name="UnifiedPosition" Value="{{1.000000,-18.000000},{0.500000,-7.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-18.000000},{0.500000,-7.000000}}" />
 				<Property Name="PushedImage" Value="set:Button1 image:BtnDown_Normal"/>
 				<Property Name="NormalImage" Value="set:Button1 image:BtnDown_Normal"/>
 				<Property Name="HoverImage" Value="set:Button1 image:BtnDown_Normal"/>
@@ -316,30 +316,30 @@
             </Window>
           </Window>
           <Window Type="DefaultWindow" Name="PetSoul_Explain_InfoItem2">
-            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,20.000000}}" />
             <Window Type="TLBB_Frame_Lace1" Name="PetSoul_Explain_InfoItem2BK">
-              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseLButtonHollow" Value="True"/>
               <Property Name="MouseHollow" Value="True"/>
               <Window Type="TLBB_SimpleText" Name="PetSoul_Explain_InfoItem2_Text1">
-                <Property Name="UnifiedSize" Value="{{1.000000,-24.000000},{1.000000,0.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,-24.000000},{1.000000,0.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}" />
                 <Property Name="Text" Value="#{}"/>
                 <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
               </Window>
               <Window Type="TLBB_SimpleText" Name="PetSoul_Explain_InfoItem2_Text2">
-                <Property Name="UnifiedSize" Value="{{1.000000,-24.000000},{1.000000,0.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,-24.000000},{1.000000,0.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}" />
                 <Property Name="Text" Value="#{}"/>
                 <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
               </Window>
               <Window Type="TLBB_ButtonNULL" Name="PetSoul_Explain_InfoItem2_Image">
-                <Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}}" />
 				<Property Name="AlwaysOnTop" Value="True"/>
-                <Property Name="UnifiedPosition" Value="{{1.000000,-18.000000},{0.500000,-7.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-18.000000},{0.500000,-7.000000}}" />
 				<Property Name="PushedImage" Value="set:Button1 image:BtnDown_Normal"/>
 				<Property Name="NormalImage" Value="set:Button1 image:BtnDown_Normal"/>
 				<Property Name="HoverImage" Value="set:Button1 image:BtnDown_Normal"/>
@@ -349,30 +349,30 @@
             </Window>
           </Window>
           <Window Type="DefaultWindow" Name="PetSoul_Explain_InfoItem3">
-            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,40.000000}}" />
             <Window Type="TLBB_Frame_Lace1" Name="PetSoul_Explain_InfoItem3BK">
-              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseLButtonHollow" Value="True"/>
               <Property Name="MouseHollow" Value="True"/>
               <Window Type="TLBB_SimpleText" Name="PetSoul_Explain_InfoItem3_Text1">
-                <Property Name="UnifiedSize" Value="{{1.000000,-24.000000},{1.000000,0.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,-24.000000},{1.000000,0.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}" />
                 <Property Name="Text" Value="#{}"/>
                 <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
               </Window>
               <Window Type="TLBB_SimpleText" Name="PetSoul_Explain_InfoItem3_Text2">
-                <Property Name="UnifiedSize" Value="{{1.000000,-24.000000},{1.000000,0.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,-24.000000},{1.000000,0.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}" />
                 <Property Name="Text" Value="#{}"/>
                 <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
               </Window>
               <Window Type="TLBB_ButtonNULL" Name="PetSoul_Explain_InfoItem3_Image">
 				<Property Name="AlwaysOnTop" Value="True"/>
-                <Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{1.000000,-18.000000},{0.500000,-7.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{1.000000,-18.000000},{0.500000,-7.000000}}" />
 				<Property Name="PushedImage" Value="set:Button1 image:BtnDown_Normal"/>
 				<Property Name="NormalImage" Value="set:Button1 image:BtnDown_Normal"/>
 				<Property Name="HoverImage" Value="set:Button1 image:BtnDown_Normal"/>
@@ -382,30 +382,30 @@
               </Window>
           </Window>
           <Window Type="DefaultWindow" Name="PetSoul_Explain_InfoItem4">
-            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,60.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,60.000000}}" />
             <Window Type="TLBB_Frame_Lace1" Name="PetSoul_Explain_InfoItem4BK">
-              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseLButtonHollow" Value="True"/>
               <Property Name="MouseHollow" Value="True"/>
               <Window Type="TLBB_SimpleText" Name="PetSoul_Explain_InfoItem4_Text1">
-                <Property Name="UnifiedSize" Value="{{1.000000,-24.000000},{1.000000,0.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,-24.000000},{1.000000,0.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}" />
                 <Property Name="Text" Value="#{}"/>
                 <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
               </Window>
               <Window Type="TLBB_SimpleText" Name="PetSoul_Explain_InfoItem4_Text2">
-                <Property Name="UnifiedSize" Value="{{1.000000,-24.000000},{1.000000,0.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,-24.000000},{1.000000,0.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}" />
                 <Property Name="Text" Value="#{}"/>
                 <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
               </Window>
               <Window Type="TLBB_ButtonNULL" Name="PetSoul_Explain_InfoItem4_Image">
-                <Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}}" />
 				<Property Name="AlwaysOnTop" Value="True"/>
-				<Property Name="UnifiedPosition" Value="{{1.000000,-18.000000},{0.500000,-7.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{1.000000,-18.000000},{0.500000,-7.000000}}" />
 				<Property Name="PushedImage" Value="set:Button1 image:BtnDown_Normal"/>
 				<Property Name="NormalImage" Value="set:Button1 image:BtnDown_Normal"/>
 				<Property Name="HoverImage" Value="set:Button1 image:BtnDown_Normal"/>
@@ -415,30 +415,30 @@
               </Window>
             </Window>
           <Window Type="DefaultWindow" Name="PetSoul_Explain_InfoItem5">
-            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,80.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,80.000000}}" />
             <Window Type="TLBB_Frame_Lace1" Name="PetSoul_Explain_InfoItem5BK">
-              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseLButtonHollow" Value="True"/>
               <Property Name="MouseHollow" Value="True"/>
               <Window Type="TLBB_SimpleText" Name="PetSoul_Explain_InfoItem5_Text1">
-                <Property Name="UnifiedSize" Value="{{1.000000,-24.000000},{1.000000,0.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,-24.000000},{1.000000,0.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}" />
                 <Property Name="Text" Value="#{}"/>
                 <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
               </Window>
               <Window Type="TLBB_SimpleText" Name="PetSoul_Explain_InfoItem5_Text2">
-                <Property Name="UnifiedSize" Value="{{1.000000,-24.000000},{1.000000,0.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,-24.000000},{1.000000,0.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}" />
                 <Property Name="Text" Value="#{}"/>
                 <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
               </Window>
               <Window Type="TLBB_ButtonNULL" Name="PetSoul_Explain_InfoItem5_Image">
 				<Property Name="AlwaysOnTop" Value="True"/>
-                <Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{1.000000,-18.000000},{0.500000,-7.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{1.000000,-18.000000},{0.500000,-7.000000}}" />
 				<Property Name="PushedImage" Value="set:Button1 image:BtnDown_Normal"/>
 				<Property Name="NormalImage" Value="set:Button1 image:BtnDown_Normal"/>
 				<Property Name="HoverImage" Value="set:Button1 image:BtnDown_Normal"/>
@@ -448,30 +448,30 @@
               </Window>
             </Window>
           <Window Type="DefaultWindow" Name="PetSoul_Explain_InfoItem6">
-            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,100.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,100.000000}}" />
             <Window Type="TLBB_Frame_Lace1" Name="PetSoul_Explain_InfoItem6BK">
-              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseLButtonHollow" Value="True"/>
               <Property Name="MouseHollow" Value="True"/>
               <Window Type="TLBB_SimpleText" Name="PetSoul_Explain_InfoItem6_Text1">
-                <Property Name="UnifiedSize" Value="{{1.000000,-24.000000},{1.000000,0.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,-24.000000},{1.000000,0.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}" />
                 <Property Name="Text" Value="#{}"/>
                 <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
               </Window>
               <Window Type="TLBB_SimpleText" Name="PetSoul_Explain_InfoItem6_Text2">
-                <Property Name="UnifiedSize" Value="{{1.000000,-24.000000},{1.000000,0.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,-24.000000},{1.000000,0.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}" />
                 <Property Name="Text" Value="#{}"/>
                 <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
               </Window>
               <Window Type="TLBB_ButtonNULL" Name="PetSoul_Explain_InfoItem6_Image">
 				<Property Name="AlwaysOnTop" Value="True"/>
-                <Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{1.000000,-18.000000},{0.500000,-7.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{1.000000,-18.000000},{0.500000,-7.000000}}" />
 				<Property Name="PushedImage" Value="set:Button1 image:BtnDown_Normal"/>
 				<Property Name="NormalImage" Value="set:Button1 image:BtnDown_Normal"/>
 				<Property Name="HoverImage" Value="set:Button1 image:BtnDown_Normal"/>

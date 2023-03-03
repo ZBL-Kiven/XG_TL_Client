@@ -1,26 +1,26 @@
 <?xml version="1.0"?>
 <GUILayout>
 	<Window Type="TLBB_MainFrameNULL" Name="PhoenixPlainWarMulti_BKFrame">
-		<Property Name="UnifiedPosition" Value="{{0.500000,-310.000000},{0.300000,0.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.500000,-310.000000},{0.300000,0.000000}}" />
 		<Property Name="AbsoluteSize" Value="w:673.000000 h:304.000000"/>
 		<Event Name="Hidden" Function="PhoenixPlainWarMulti_OnHiden();" />
     <Window Type="TLBB_StaticImageNULL" Name="PhoenixPlainWarMulti_DragonHead" >
-      <Property Name="UnifiedPosition" Value="{{0.500000,-76.000000},{0.0,8.0}" />
+      <Property Name="UnifiedPosition" Value="{{0.500000,-76.000000},{0.0,8.0}}" />
       <Property Name="AbsoluteSize" Value="w:153.000000 h:51.000000" />
       <Property Name="AlwaysOnTop" Value="True" />
       <Property Name="Image" Value="set:CommonFrame7 image:Phoenix_Fenghuang" />
     </Window>
 		<Window Type="TLBB_MainFrame4" Name="PhoenixPlainWarMulti_Frame">
-			<Property Name="UnifiedPosition" Value="{{0.500000,-335.500000},{0.300000,-53.200004}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.500000,-335.500000},{0.300000,-53.200004}}" />
 			<Property Name="AbsoluteSize" Value="w:671.000000 h:262.000000"/>
 			<Event Name="Hidden" Function="PhoenixPlainWarMulti_Close();"/>
       <Window Type="TLBB_DragTitle" Name="PhoenixPlainWarMulti_DragTitle">
         <Property Name="AbsolutePosition" Value="x:65.000000 y:21.000000"/>
-        <Property Name="UnifiedSize" Value="{{0.000000,515.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,515.000000},{0.000000,20.000000}}" />
         <Property Name="DragTarget" Value="PhoenixPlainWarMulti_BKFrame"/>
         <Window Type="TLBB_SimpleText" Name="PhoenixPlainWarMulti_Text">
-          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
-          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
           <Property Name="Font" Value="YouYuan11.25"/>
           <Property Name="RiseOnClick" Value="False"/>
           <Property Name="Text" Value="#{FHZD_XML_02}"/>
@@ -44,7 +44,7 @@
 				</Window>
 			</Window>
 			<Window Type="TLBB_MultiColumnList" Name="PhoenixPlainWarMulti_List" >
-				<Property Name="UnifiedPosition" Value="{{0.000000,11.000000},{0.000000,44.000000}" />
+				<Property Name="UnifiedPosition" Value="{{0.000000,11.000000},{0.000000,44.000000}}" />
 				<Property Name="AbsoluteSize" Value="w:650.000000 h:201.000000"/>
 				<Property Name="ColumnHeader" Value="text:#{FHZD_XML_03} width:0.058523 id:0" />
 				<Property Name="ColumnHeader" Value="text:#{FHZD_XML_04} width:0.429169 id:1" />

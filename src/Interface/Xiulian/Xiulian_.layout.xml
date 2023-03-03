@@ -1,16 +1,16 @@
 ﻿<?xml version="1.0" ?>
 <GUILayout>
   <Window Type="TLBB_MainFrameNULL" Name="Xiulian_Frame">
-    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.120000,23.760001}" />
+    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.120000,23.760001}}" />
     <Property Name="AbsoluteSize" Value="w:600.000000 h:397.000000" />
     <Window Type="TLBB_MainFrame3" Name="Xiulian_Frame0">
-      <Property Name="UnifiedSize" Value="{{0.000000,404.000000},{0.000000,379.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{0.000000,404.000000},{0.000000,379.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
         <Event Name="Hidden" Function="Xiulian_Close_Cilcked();" />
         <!--title help close start-->
         <Window Type="TLBB_DragTitle" Name="Xiulian_DragTitle">
-          <Property Name="UnifiedSize" Value="{{1.000000,-146.000000},{0.000000,20.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,106.000000},{0.000000,4.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,-146.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,106.000000},{0.000000,4.000000}}" />
             <Property Name="DragTarget" Value="Xiulian_Frame" />
             <Window Type="TLBB_SimpleText" Name="Xiulian_NpcName">
                 <Property Name="Position" Value="x:0.0 y:0.0" />
@@ -22,13 +22,13 @@
             </Window>
         </Window>
         <Window Type="TLBB_ButtonHelp" Name="Xiulian_Help">
-          <Property Name="UnifiedPosition" Value="{{0.000000,91.000000},{0.000000,7.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,91.000000},{0.000000,7.000000}}" />
           <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
             <Property Name="Text" Value="TLBB_ButtonHelp" />
             <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*Xiulian&quot;);' />
         </Window>
         <Window Type="TLBB_ButtonClose" Name="Xiulian_Close">
-          <Property Name="UnifiedPosition" Value="{{1.000000,-39.000000},{0.000000,7.000000}" />
+          <Property Name="UnifiedPosition" Value="{{1.000000,-39.000000},{0.000000,7.000000}}" />
           <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
             <Property Name="Text" Value="TLBB_ButtonClose" />
             <Event Name="Clicked" Function="Xiulian_Close_Cilcked();" />
@@ -36,12 +36,12 @@
         <!--title help close end-->
         <!--client start-->
         <Window Type="DefaultWindow" Name="Xiulian_Frame_Client">
-          <Property Name="UnifiedSize" Value="{{0.000000,600.000000},{0.000000,346.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,28.239998}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,600.000000},{0.000000,346.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,28.239998}}" />
           <!--心法-->
           <Window Type="TLBB_SimpleText" Name="Xiulian_MenPai_Attr_Intro">
             <Property Name="Position" Value="x:0.118 y:0.005" />
-            <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}" />
+            <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}" />
             <Property Name="HorzFormatting" Value="HorzCentred" />
             <Property Name="Tooltip" Value="#{MPZSX_20071221_10}" />
           </Window>
@@ -76,7 +76,7 @@
                     <Event Name="Clicked" Function="Xiulian_Skill_Clicked(1);" />
                     </Window>
                 <Window Type="TLBB_SimpleText" Name="Xiulian_ZhaoshiSkill_level1" >
-										<Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.000000,40.000000}" />
+										<Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.000000,40.000000}}" />
                 		<Property Name="AbsoluteSize" Value="w:45.0 h:20.0" />
 										<Property Name="HorzFormatting" Value="HorzCentred" />
 										<Property Name="RiseOnClick" Value="False" />
@@ -91,7 +91,7 @@
                     <Event Name="Clicked" Function="Xiulian_Skill_Clicked(2);" />
                 </Window>
                 <Window Type="TLBB_SimpleText" Name="Xiulian_ZhaoshiSkill_level2" >
-										<Property Name="UnifiedPosition" Value="{{0.000000,77.000000},{0.000000,40.000000}" />
+										<Property Name="UnifiedPosition" Value="{{0.000000,77.000000},{0.000000,40.000000}}" />
                 		<Property Name="AbsoluteSize" Value="w:45.0 h:20.0" />
 										<Property Name="HorzFormatting" Value="HorzCentred" />
 										<Property Name="RiseOnClick" Value="False" />
@@ -106,7 +106,7 @@
                     <Event Name="Clicked" Function="Xiulian_Skill_Clicked(3);" />
                 </Window>
                 <Window Type="TLBB_SimpleText" Name="Xiulian_ZhaoshiSkill_level3" >
-										<Property Name="UnifiedPosition" Value="{{0.000000,139.000000},{0.000000,40.000000}" />
+										<Property Name="UnifiedPosition" Value="{{0.000000,139.000000},{0.000000,40.000000}}" />
                 		<Property Name="AbsoluteSize" Value="w:45.0 h:20.0" />
 										<Property Name="HorzFormatting" Value="HorzCentred" />
 										<Property Name="RiseOnClick" Value="False" />
@@ -121,7 +121,7 @@
                     <Event Name="Clicked" Function="Xiulian_Skill_Clicked(4);" />
                 </Window>
                 <Window Type="TLBB_SimpleText" Name="Xiulian_ZhaoshiSkill_level4" >
-										<Property Name="UnifiedPosition" Value="{{0.000000,201.000000},{0.000000,40.000000}" />
+										<Property Name="UnifiedPosition" Value="{{0.000000,201.000000},{0.000000,40.000000}}" />
                 		<Property Name="AbsoluteSize" Value="w:45.0 h:20.0" />
 										<Property Name="HorzFormatting" Value="HorzCentred" />
 										<Property Name="RiseOnClick" Value="False" />
@@ -136,7 +136,7 @@
                     <Event Name="Clicked" Function="Xiulian_Skill_Clicked(5);" />
                 </Window>
                 <Window Type="TLBB_SimpleText" Name="Xiulian_ZhaoshiSkill_level5" >
-										<Property Name="UnifiedPosition" Value="{{0.000000,262.000000},{0.000000,40.000000}" />
+										<Property Name="UnifiedPosition" Value="{{0.000000,262.000000},{0.000000,40.000000}}" />
                 		<Property Name="AbsoluteSize" Value="w:45.0 h:20.0" />
 										<Property Name="HorzFormatting" Value="HorzCentred" />
 										<Property Name="RiseOnClick" Value="False" />
@@ -151,7 +151,7 @@
                     <Event Name="Clicked" Function="Xiulian_Skill_Clicked(6);" />
               </Window>
               <Window Type="TLBB_SimpleText" Name="Xiulian_ZhaoshiSkill_level6" >
-                    <Property Name="UnifiedPosition" Value="{{0.000000,325.000000},{0.000000,40.000000}" />
+                    <Property Name="UnifiedPosition" Value="{{0.000000,325.000000},{0.000000,40.000000}}" />
                     <Property Name="AbsoluteSize" Value="w:45.0 h:20.0" />
                     <Property Name="HorzFormatting" Value="HorzCentred" />
                     <Property Name="RiseOnClick" Value="False" />
@@ -162,38 +162,38 @@
             </Window>
             <!--study window -->
             <Window Type="DefaultWindow" Name="Xiulian_SkillIcon_Frame">
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-222.000000}" />
-                <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,68.000000}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-222.000000}}" />
+                <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,68.000000}}" />
                 <Property Name="RiseOnClick" Value="False" />
                 <Window Type="TLBB_ActionButton" Name="Xiulian_XinfaIcon">
-                    <Property Name="UnifiedPosition" Value="{{0.1,0.000000},{0.000000,18.000000}" />
+                    <Property Name="UnifiedPosition" Value="{{0.1,0.000000},{0.000000,18.000000}}" />
                     <Property Name="AbsoluteSize" Value="w:34.0 h:34.0" />
                     <Property Name="DraggingEnabled" Value="False" />
                 </Window>
                 <Window Type="TLBB_ActionButton" Name="Xiulian_SkillIcon">
-                    <Property Name="UnifiedPosition" Value="{{0.1,0.000000},{0.000000,18.000000}" />
+                    <Property Name="UnifiedPosition" Value="{{0.1,0.000000},{0.000000,18.000000}}" />
                     <Property Name="AbsoluteSize" Value="w:34.0 h:34.0" />
                     <Property Name="DraggingEnabled" Value="False" />
                 </Window>
                 <Window Type="TLBB_SimpleMulitiTextFrame" Name="Xiulian_SkillName">
-                    <Property Name="UnifiedPosition" Value="{{0.3,0.000000},{0.000000,4.000000}" />
-                    <Property Name="UnifiedSize" Value="{{0.6,0.000000},{0.000000,20.000000}" />
+                    <Property Name="UnifiedPosition" Value="{{0.3,0.000000},{0.000000,4.000000}}" />
+                    <Property Name="UnifiedSize" Value="{{0.6,0.000000},{0.000000,20.000000}}" />
                     <Property Name="TextColor" Value="FFFFF263" />
                     <Property Name="Text" Value="" />
                     <Property Name="HorzFormatting" Value="LeftAligned" />
                     <Property Name="VertFormatting" Value="VertCentred" />
                 </Window>
                 <Window Type="TLBB_SimpleMulitiTextFrame" Name="Xiulian_SkillJingjie">
-                    <Property Name="UnifiedPosition" Value="{{0.3,0.000000},{0.000000,24.000000}" />
-                    <Property Name="UnifiedSize" Value="{{0.6,0.000000},{0.000000,20.000000}" />
+                    <Property Name="UnifiedPosition" Value="{{0.3,0.000000},{0.000000,24.000000}}" />
+                    <Property Name="UnifiedSize" Value="{{0.6,0.000000},{0.000000,20.000000}}" />
                     <Property Name="TextColor" Value="FFFFF263" />
                     <Property Name="Text" Value="" />
                     <Property Name="HorzFormatting" Value="LeftAligned" />
                     <Property Name="VertFormatting" Value="VertCentred" />
                 </Window>
                 <Window Type="TLBB_SimpleMulitiTextFrame" Name="Xiulian_SkillLevel">
-                    <Property Name="UnifiedPosition" Value="{{0.3,0.000000},{0.000000,44.000000}" />
-                    <Property Name="UnifiedSize" Value="{{0.6,0.000000},{0.000000,20.000000}" />
+                    <Property Name="UnifiedPosition" Value="{{0.3,0.000000},{0.000000,44.000000}}" />
+                    <Property Name="UnifiedSize" Value="{{0.6,0.000000},{0.000000,20.000000}}" />
                     <Property Name="TextColor" Value="FFFFF263" />
                     <Property Name="Text" Value="" />
                     <Property Name="HorzFormatting" Value="LeftAligned" />
@@ -202,19 +202,19 @@
             </Window>
             <!--textinfo-->
             <Window Type="TLBB_Frame_Lace4" Name="Xiulian_Explain_Bk">
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-153.000000}" />
-                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,129.000000}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-153.000000}}" />
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,129.000000}}" />
                 <Property Name="RiseOnClick" Value="False" />
                 <Window Type="TLBB_StaticText" Name="Xiulian_SkillInfo">
-                    <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,8.000000}" />
-                    <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{1.000000,-16.000000}" />
+                    <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,8.000000}}" />
+                    <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{1.000000,-16.000000}}" />
                     <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
                     <Property Name="VertFormatting" Value="TopAligned" />
 										<Property Name="VertScrollbar" Value="true" />
                 </Window>
             </Window>
 					<Window Type="TLBB_SimpleMulitiTextFrame" Name="Xiulian_Gongli_Text" >
-								<Property Name="UnifiedPosition" Value="{{0.500000,-56.000000},{1.000000,-22.000000}" />
+								<Property Name="UnifiedPosition" Value="{{0.500000,-56.000000},{1.000000,-22.000000}}" />
                 <Property Name="AbsoluteSize" Value="w:112.0 h:20.0" />
 								<Property Name="HorzFormatting" Value="LeftAligned" />
 								<Property Name="RiseOnClick" Value="False" />
@@ -223,7 +223,7 @@
                 <Property Name="Tooltip" Value="#{XL_XML_88}" />
 								<Property Name="VertFormatting" Value="VertCentred" />
 								<Window Type="TLBB_SimpleText" Name="Xiulian_Vigor" >
-										<Property Name="UnifiedPosition" Value="{{1.000000,-65.000000},{0.000000,0.000000}" />
+										<Property Name="UnifiedPosition" Value="{{1.000000,-65.000000},{0.000000,0.000000}}" />
                 		<Property Name="AbsoluteSize" Value="w:60.0 h:20.0" />
 										<Property Name="HorzFormatting" Value="RightAligned" />
 										<Property Name="RiseOnClick" Value="False" />
@@ -237,8 +237,8 @@
         <!--client end-->
     </Window>
     <Window Type="DefaultWindow" Name="Xiulian_Checkbox_Frame">
-      <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{1.000000,-18.000000}" />
-      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,18.000000}" />
+      <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{1.000000,-18.000000}}" />
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,18.000000}}" />
       <Window Type="TLBB_ButtonPageDown" Name="Xiulian_SelfEquip">
         <Property Name="AbsolutePosition" Value="x:0.0 y:0.0" />
         <Property Name="AbsoluteSize" Value="w:42.000000 h:18.000000" />
@@ -347,15 +347,15 @@
         <Property Name="Tooltip" Value="#{RWYQ_150707_07}"/>
       </Window>
       <Window Type="TLBB_ButtonPageDown" Name="Xiulian_JueWei">
-        <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,18.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,420.000000},{0.000000,0.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,18.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,420.000000},{0.000000,0.000000}}" />
         <Property Name="Text" Value="#{JXJW_140822_22}"/>
         <Property Name="MouseRButtonHollow" Value="True"/>
         <Event Name="MouseButtonUp" Function="Xiulian_JueWei_Page_Switch();"/>
       </Window>
       <Window Type="TLBB_SimpleText" Name="Xiulian_JueWei_tips">
-        <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,18.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,420.000000},{0.000000,0.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,18.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,420.000000},{0.000000,0.000000}}" />
         <Property Name="Tooltip" Value="#{RWYQ_150707_08}"/>
       </Window>
       <Window Type="TLBB_ButtonPageDown" Name="Xiulian_BaoJian">

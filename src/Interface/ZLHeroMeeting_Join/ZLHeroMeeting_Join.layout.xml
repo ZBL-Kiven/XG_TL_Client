@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" ?>
 <GUILayout>
   <Window Type="TLBB_HeroFrame01" Name="ZLHeroMeeting_Join_Frame">
-    <Property Name="UnifiedSize" Value="{{0.000000,545.000000},{0.000000,342.000000}}"/>
-    <Property Name="UnifiedPosition" Value="{{0.500000,-280.000000},{0.120000,-0.159996}}"/>
+    <Property Name="UnifiedSize" Value="{{0.000000,545.000000},{0.000000,342.000000}}" />
+    <Property Name="UnifiedPosition" Value="{{0.500000,-280.000000},{0.120000,-0.159996}}" />
 
     <Window Type="TLBB_HeroTitle01" Name="ZLHeroMeeting_Join_DragTitleBK">
-      <Property Name="UnifiedSize" Value="{{1.000000,-200.000000},{0.000000,30.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,-2.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-200.000000},{0.000000,30.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,-2.000000}}" />
       <Window Type="TLBB_SimpleText" Name="ZLHeroMeeting_Join_PageHeader">
-        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,-2.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,-2.000000}}" />
         <Property Name="Font" Value="YouYuan11.25" />
         <Property Name="HorzFormatting" Value="HorzCentred" />
         <Property Name="VertFormatting" Value="VertCentred" />
@@ -18,13 +18,13 @@
       </Window>
     </Window>
     <Window Type="TLBB_DragTitle" Name="ZLHeroMeeting_Join_DragTitle">
-      <Property Name="UnifiedSize" Value="{{1.000000,-39.000000},{0.000000,25.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,18.000000},{0.000000,2.159996}}"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-39.000000},{0.000000,25.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,18.000000},{0.000000,2.159996}}" />
       <Property Name="DragTarget" Value="ZLHeroMeeting_Join_Frame" />
     </Window>
     <Window Type="TLBB_ButtonNULL" Name="ZLHeroMeeting_Join_Close">
-      <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,14.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.000000,8.159996}}"/>
+      <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,14.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.000000,8.159996}}" />
       <Property Name="PushedImage" Value="set:ZLHeroMeeting image:Close_Push"/>
       <Property Name="NormalImage" Value="set:ZLHeroMeeting image:Close_Normal"/>
       <Property Name="HoverImage" Value="set:ZLHeroMeeting image:Close_Hover"/>
@@ -32,65 +32,65 @@
       <Event Name="Clicked" Function="ZLHeroMeeting_join_OnHiden();" />
     </Window>
     <Window Type="TLBB_HeroLace01" Name="ZLHeroMeeting_Join_Function_Frame">
-      <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-35.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,28.159996}}"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-35.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,28.159996}}" />
       <Window Type="TLBB_StaticImageNULL" Name="ZLHeroMeeting_Join_Function_FrameBK">
-        <Property Name="UnifiedSize" Value="{{0.000000,532.000000},{0.000000,306.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,532.000000},{0.000000,306.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
         <Property Name="RiseOnClick" Value="False"/>
         <Property Name="Image" Value="set:ZLHeroMeeting image:DrawBK"/>
       </Window>
 
       <Window Type="TLBB_SimpleText" Name="ZLHeroMeeting_Join_Info0">
-        <Property Name="UnifiedSize" Value="{{1.000000,-353.000000},{0.000000,19.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,49.000000},{0.000000,141.160004}}"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,-353.000000},{0.000000,19.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,49.000000},{0.000000,141.160004}}" />
         <Property Name="HorzFormatting" Value="HorzCentred" />
         <Property Name="VertFormatting" Value="VertCentred" />
         <Property Name="Text" Value="#{YXDHGN_210222_46}" />
       </Window>
       <Window Type="TLBB_SimpleText" Name="ZLHeroMeeting_Join_Info">
-        <Property Name="UnifiedSize" Value="{{1.000000,-353.000000},{0.000000,19.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,49.000000},{0.000000,6.0}}"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,-353.000000},{0.000000,19.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,49.000000},{0.000000,6.0}}" />
         <Property Name="HorzFormatting" Value="HorzCentred" />
         <Property Name="VertFormatting" Value="VertCentred" />
         <Property Name="Text" Value="#{YXDHGN_210222_40}" />
       </Window>
       <Window Type="TLBB_StaticImageNULL" Name="ZLHeroMeeting_Join_Info_Lineleft">
-        <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,6.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,178.000000},{0.000000,14.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,6.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,178.000000},{0.000000,14.000000}}" />
         <Property Name="Image" Value="set:ZLHeroMeeting image:TitleLineLeft"/>
         <Property Name="RiseOnClick" Value="False" />
       </Window>
       <Window Type="TLBB_StaticImageNULL" Name="ZLHeroMeeting_Join_Info_LineRight">
-        <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,6.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,14.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,6.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,14.000000}}" />
         <Property Name="Image" Value="set:ZLHeroMeeting image:TitleLineRight"/>
         <Property Name="RiseOnClick" Value="False" />
       </Window>
 
 
       <Window Type="TLBB_SimpleText" Name="ZLHeroMeeting_Join_Info1">
-        <Property Name="UnifiedSize" Value="{{1.000000,-353.000000},{0.000000,19.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,320.000000},{0.000000,6.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,-353.000000},{0.000000,19.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,320.000000},{0.000000,6.000000}}" />
         <Property Name="HorzFormatting" Value="HorzCentred" />
         <Property Name="VertFormatting" Value="VertCentred" />
         <Property Name="Text" Value="#{YXDHGN_210222_47}" />
       </Window>
       <Window Type="TLBB_StaticImageNULL" Name="ZLHeroMeeting_Join_Info1_Lineleft">
-        <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,6.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,449.000000},{0.000000,14.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,6.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,449.000000},{0.000000,14.000000}}" />
         <Property Name="Image" Value="set:ZLHeroMeeting image:TitleLineLeft"/>
         <Property Name="RiseOnClick" Value="False" />
       </Window>
       <Window Type="TLBB_StaticImageNULL" Name="ZLHeroMeeting_Join_Info1_LineRight">
-        <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,6.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,313.000000},{0.000000,14.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,6.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,313.000000},{0.000000,14.000000}}" />
         <Property Name="Image" Value="set:ZLHeroMeeting image:TitleLineRight"/>
         <Property Name="RiseOnClick" Value="False" />
       </Window>
       <Window Type="TLBB_MultiColumnList" Name="ZLHeroMeeting_Join_ListTitleClient">
-        <Property Name="UnifiedSize" Value="{{1.000000,-248.000000},{0.000000,20.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,34.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,-248.000000},{0.000000,20.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,34.000000}}" />
         <Property Name="ForceHorzScrollbar" Value="False" />
         <Property Name="SortSettingEnabled" Value="False" />
         <Property Name="SelectionMode" Value="RowSingle" />
@@ -103,51 +103,51 @@
         <Property Name="ColumnsMovable" Value="False" />
         <Property Name="ColumnsAdjust" Value="True" />
         <Window Type="DefaultWindow" Name="ZLHeroMeeting_Join_ListTitle1">
-          <Property Name="UnifiedSize" Value="{{0.400000,-79.000000},{0.000000,22.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.400000,-79.000000},{0.000000,22.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}" />
           <Window Type="TLBB_SimpleText" Name="ZLHeroMeeting_Join_ListTitle1_text">
-            <Property Name="UnifiedSize" Value="{{1.000000,-2.000000},{0.000000,20.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,-2.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}" />
             <Property Name="Text" Value="#{YXDHGN_210222_76}"/>
             <Property Name="HorzFormatting" Value="HorzCentred"/>
           </Window>
         </Window>
         <Window Type="DefaultWindow" Name="ZLHeroMeeting_Join_ListTitle2">
-          <Property Name="UnifiedSize" Value="{{0.100000,17.000002},{0.000000,22.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.400000,-44.000000},{0.000000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.100000,17.000002},{0.000000,22.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.400000,-44.000000},{0.000000,0.000000}}" />
           <Window Type="TLBB_SimpleText" Name="ZLHeroMeeting_Join_ListTitle2_text">
-            <Property Name="UnifiedSize" Value="{{1.000000,-2.000000},{0.000000,20.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,-2.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}" />
             <Property Name="Text" Value="#{YXDHGN_210222_77}"/>
             <Property Name="HorzFormatting" Value="HorzCentred"/>
           </Window>
         </Window>
         <Window Type="DefaultWindow" Name="ZLHeroMeeting_Join_ListTitle3">
-          <Property Name="UnifiedSize" Value="{{0.100000,9.000000},{0.000000,22.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.500000,-0.500000},{0.000000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.100000,9.000000},{0.000000,22.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.500000,-0.500000},{0.000000,0.000000}}" />
           <Window Type="TLBB_SimpleText" Name="ZLHeroMeeting_Join_ListTitle3_text">
-            <Property Name="UnifiedSize" Value="{{1.000000,-2.000000},{0.000000,20.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,1.500000},{0.000000,1.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,-2.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,1.500000},{0.000000,1.000000}}" />
             <Property Name="Text" Value="#{YXDHGN_210222_78}"/>
             <Property Name="HorzFormatting" Value="HorzCentred"/>
           </Window>
         </Window>
         <Window Type="DefaultWindow" Name="ZLHeroMeeting_Join_ListTitle4">
-          <Property Name="UnifiedSize" Value="{{0.400000,-70.999992},{0.000000,22.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.600000,12.199997},{0.000000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.400000,-70.999992},{0.000000,22.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.600000,12.199997},{0.000000,0.000000}}" />
           <Window Type="TLBB_SimpleText" Name="ZLHeroMeeting_Join_ListTitle4_text">
-            <Property Name="UnifiedSize" Value="{{1.000000,-2.000000},{0.000000,20.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,-2.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}" />
             <Property Name="Text" Value="#{YXDHGN_210222_79}"/>
             <Property Name="HorzFormatting" Value="HorzCentred"/>
           </Window>
         </Window>
         <Window Type="DefaultWindow" Name="ZLHeroMeeting_Join_ListTitle5">
-          <Property Name="UnifiedSize" Value="{{0.400000,-66.000000000},{0.000000,20.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.600000,59.000000},{0.000000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.400000,-66.000000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.600000,59.000000},{0.000000,0.000000}}" />
           <Window Type="TLBB_SimpleText" Name="ZLHeroMeeting_Join_ListTitle5_text">
-            <Property Name="UnifiedSize" Value="{{1.000000,-2.000000},{0.000000,20.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,-2.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}" />
             <Property Name="Text" Value="#{YXDHGN_210222_45}"/>
             <Property Name="HorzFormatting" Value="HorzCentred"/>
           </Window>
@@ -155,8 +155,8 @@
       </Window>
 
       <Window Type="TLBB_HeroLace02" Name="ZLHeroMeeting_Join_ListBK">
-        <Property Name="UnifiedSize" Value="{{0.000000,283.000000},{0.000000,246.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,54.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,283.000000},{0.000000,246.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,54.000000}}" />
         <Property Name="RiseOnClick" Value="False"/>
         <Property Name="MouseRButtonHollow" Value="True"/>
         <Property Name="MouseMoveHollow" Value="True"/>
@@ -164,47 +164,47 @@
         <Property Name="MouseHollow" Value="True"/>
       </Window>
       <Window Type="TLBB_NotSuperList" Name="ZLHeroMeeting_Join_List">
-        <Property Name="UnifiedSize" Value="{{0.000000,299.000000},{0.000000,246.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,54.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,299.000000},{0.000000,246.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,54.000000}}" />
         <Property Name="SelectMode" Value="Single" />
         <Property Name="MouseRButtonHollow" Value="True" />
         <Property Name="AlwaysOnTop" Value="True" />
         <Property Name="MultiColumn" Value="1" />
         <Property Name="VScrollMode" Value=""/>
         <Window Type="TLBB_NotSuperListItemCommon3" Name="ZLHeroMeeting_Join_ListItem1">
-          <Property Name="UnifiedSize" Value="{{0.500000,123.500000},{0.000000,17.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,1.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.500000,123.500000},{0.000000,17.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,1.000000}}" />
 
           <Window Type="TLBB_SimpleText" Name="ZLHeroMeeting_Join_ListItem1_Rank">
-            <Property Name="UnifiedSize" Value="{{1.000000,-232.500000},{0.000000,17.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,-232.500000},{0.000000,17.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
             <Property Name="HorzFormatting" Value="HorzCentred"/>
           </Window>
           <Window Type="TLBB_SimpleText" Name="ZLHeroMeeting_Join_ListItem1_Name">
-            <Property Name="UnifiedSize" Value="{{1.000000,-175.500000},{0.000000,17.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,44.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,-175.500000},{0.000000,17.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,44.000000},{0.000000,0.000000}}" />
             <Property Name="HorzFormatting" Value="HorzCentred"/>
           </Window>
           <Window Type="TLBB_SimpleText" Name="ZLHeroMeeting_Join_ListItem1_Level">
-            <Property Name="UnifiedSize" Value="{{1.000000,-234.500000},{0.000000,17.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,142.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,-234.500000},{0.000000,17.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,142.000000},{0.000000,0.000000}}" />
             <Property Name="HorzFormatting" Value="HorzCentred"/>
           </Window>
           <Window Type="TLBB_SimpleText" Name="ZLHeroMeeting_Join_ListItem1_Menpai">
-            <Property Name="UnifiedSize" Value="{{1.000000,-226.500000},{0.000000,17.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,182.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,-226.500000},{0.000000,17.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,182.000000},{0.000000,0.000000}}" />
             <Property Name="HorzFormatting" Value="HorzCentred"/>
           </Window>
           <Window Type="TLBB_SimpleText" Name="ZLHeroMeeting_Join_ListItem1_Count">
-            <Property Name="UnifiedSize" Value="{{1.000000,-237.500000},{0.000000,17.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,237.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,-237.500000},{0.000000,17.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,237.000000},{0.000000,0.000000}}" />
             <Property Name="HorzFormatting" Value="HorzCentred"/>
           </Window>
         </Window>
       </Window>
       <Window Type="TLBB_SimpleText" Name="ZLHeroMeeting_Join_Tenet_Text">
-        <Property Name="UnifiedSize" Value="{{0.000000,216.000000},{0.000000,226.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.500000,43.500000},{0.000000,47.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,216.000000},{0.000000,226.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.500000,43.500000},{0.000000,47.000000}}" />
         <Property Name="Text" Value="#{YXDHGN_210222_49}" />
         <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
         <Property Name="VertFormatting" Value="VertCentred" />

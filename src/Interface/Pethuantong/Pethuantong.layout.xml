@@ -5,8 +5,8 @@
     <Property Name="UnifiedSize" Value="{{0,380},{0.0,480}}" />
     <Event Name="Hidden" Function="Pethuantong_Frame_OnHiden();" />
     <Window Type="TLBB_DragTitle" Name="Pethuantong_DragTitle">
-      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}" />
       <Property Name="DragTarget" Value="Pethuantong_Frame" />
       <Window Type="TLBB_SimpleText" Name="Pethuantong_SkillType_Text">
         <Property Name="Position" Value="x:0.0 y:0.0" />
@@ -19,28 +19,28 @@
       </Window>
     </Window>
     <Window Type="TLBB_ButtonClose" Name="Pethuantong_Close">
-      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}" />
       <Event Name="Clicked" Function="Pethuantong_Hide();" />
     </Window>
     <Window Type="TLBB_ButtonHelp" Name="Pethuantong_Help">
-      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}" />
       <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*Pethuantong&quot;);' />
     </Window>
     <Window Type="DefaultWindow" Name="Pethuantong_Function_Frame">
-      <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-55.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,36.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-55.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,36.000000}}" />
       <Window Type="TLBB_SimpleMulitiTextFrame" Name="Pethuantong_Text3" >
-        <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,-304.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,-304.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}" />
         <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
         <Property Name="RiseOnClick" Value="False" />
         <Property Name="Text" Value="#{HTQR_XML_6}" />
       </Window>
       <Window Type="TLBB_FramePet" Name="Pethuantong_PetModel_Frame">
-        <Property Name="UnifiedSize" Value="{{0.000000,182.000000},{0.000000,170.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,129.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,182.000000},{0.000000,170.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,129.000000}}" />
         <Window Type="TLBB_MeshWindow" Name="Pethuantong_PetModel">
           <Property Name="Position" Value="x:0.1 y:0.1" />
           <Property Name="Size" Value="w:0.8 h:0.85" />
@@ -48,164 +48,164 @@
           <Property Name="RiseOnClick" Value="False" />
         </Window>
         <Window Type="TLBB_StaticImageNULL" Name="Pethuantong_Function_Frame_PetHead">
-          <Property Name="UnifiedSize" Value="{{0.000000,68.000000},{0.000000,26.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.500000,-34.000000},{0.000000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,68.000000},{0.000000,26.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.500000,-34.000000},{0.000000,0.000000}}" />
           <Property Name="Image" Value="set:CommonItem image:PetFrame_Head" />
           <Property Name="RiseOnClick" Value="False" />
         </Window>
         <Window Type="TLBB_ButtonTurnLeft" Name="Pethuantong_Model_TurnLeft">
-          <Property Name="UnifiedPosition" Value="{{0.1,0.000000},{1.0,-31.0}" />
+          <Property Name="UnifiedPosition" Value="{{0.1,0.000000},{1.0,-31.0}}" />
           <Property Name="AbsoluteSize" Value="w:25.000000 h:25.000000" />
           <Event Name="MouseButtonDown" Function="Pethuantong_Modle_TurnLeft(1);" />
           <Event Name="MouseButtonUp" Function="Pethuantong_Modle_TurnLeft(0);" />
         </Window>
         <Window Type="TLBB_ButtonTurnRight" Name="Pethuantong_Model_TurnRight">
-          <Property Name="UnifiedPosition" Value="{{0.79,0.000000},{1.0,-31.0}" />
+          <Property Name="UnifiedPosition" Value="{{0.79,0.000000},{1.0,-31.0}}" />
           <Property Name="AbsoluteSize" Value="w:25.000000 h:25.000000" />
           <Event Name="MouseButtonDown" Function="Pethuantong_Modle_TurnRight(1);" />
           <Event Name="MouseButtonUp" Function="Pethuantong_Modle_TurnRight(0);" />
         </Window>
       </Window>
       <Window Type="TLBB_SimpleMulitiTextFrame" Name="Pethuantong_Zizhi" >
-        <Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,171.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.500000,2.000000},{0.000000,128.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,171.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.500000,2.000000},{0.000000,128.000000}}" />
         <Window Type="TLBB_SimpleMulitiTextFrame" Name="Pethuantong_ModeK" >
-          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,24.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,24.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
           <Window Type="TLBB_ButtonCheck" Name="Pethuantong_Mode2" >
-            <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,6.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,6.000000}}" />
             <Property Name="CheckMode" Value="0" />
             <Property Name="Tooltip" Value="#{HTQR_XML_5}" />
             <Event Name="Clicked" Function="Pethuantong_Mode_Clicked(2);" />
           </Window>
           <Window Type="TLBB_SimpleText" Name="Pethuantong_Text2" >
-            <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,18.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.500000,-63.000000},{0.000000,3.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,18.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.500000,-63.000000},{0.000000,3.000000}}" />
             <Property Name="HorzFormatting" Value="LeftAligned" />
             <Property Name="Text" Value="#{HTQR_XML_3}" />
             <Property Name="VertFormatting" Value="VertCentred" />
           </Window>
         </Window>
         <Window Type="TLBB_SimpleText" Name="Pethuantong_Zizhi_Text1">
-          <Property Name="UnifiedSize" Value="{{1.000000,-16.000000},{0.000000,18.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,27.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,-16.000000},{0.000000,18.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,27.000000}}" />
           <Property Name="Text" Value="#{ZSHTYH_150615_1}" />
           <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
           <Property Name="VertFormatting" Value="TopAligned" />
           <Window Type="TLBB_SimpleText" Name="Pethuantong_Zizhi_Text1_1">
-            <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,18.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{1.000000,-80.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,18.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{1.000000,-80.000000},{0.000000,0.000000}}" />
             <Property Name="Text" Value="" />
             <Property Name="HorzFormatting" Value="RightAligned"/>
           </Window>
         </Window>
         <Window Type="TLBB_SimpleMulitiTextFrame" Name="Pethuantong_ModeK1" >
-          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,24.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,45.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,24.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,45.000000}}" />
           <Window Type="TLBB_ButtonCheck" Name="Pethuantong_Mode1" >
-            <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,6.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,6.000000}}" />
             <Property Name="CheckMode" Value="0" />
             <Property Name="Tooltip" Value="#{HTQR_XML_4}" />
             <Event Name="Clicked" Function="Pethuantong_Mode_Clicked(1);" />
           </Window>
           <Window Type="TLBB_SimpleText" Name="Pethuantong_Text1" >
-            <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,18.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.500000,-63.000000},{0.000000,3.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,18.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.500000,-63.000000},{0.000000,3.000000}}" />
             <Property Name="HorzFormatting" Value="LeftAligned" />
             <Property Name="Text" Value="#{HTQR_XML_2}" />
             <Property Name="VertFormatting" Value="VertCentred" />
           </Window>
         </Window>
         <Window Type="TLBB_SimpleText" Name="Pethuantong_Zizhi_Text2">
-          <Property Name="UnifiedSize" Value="{{1.000000,-16.000000},{0.000000,18.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,70.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,-16.000000},{0.000000,18.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,70.000000}}" />
           <Property Name="Text" Value="#{ZSHTYH_150615_8}" />
           <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
           <Property Name="VertFormatting" Value="TopAligned" />
           <Window Type="TLBB_SimpleMulitiTextFrame" Name="Pethuantong_Zizhi_Text2_1">
-            <Property Name="UnifiedSize" Value="{{0.000000,106.000000},{0.000000,16.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{1.000000,-106.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,106.000000},{0.000000,16.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{1.000000,-106.000000},{0.000000,0.000000}}" />
             <Property Name="Text" Value="" />
             <Property Name="HorzFormatting" Value="RightAligned"/>
           </Window>
         </Window>
         <Window Type="TLBB_SimpleText" Name="Pethuantong_Zizhi_Text3">
-          <Property Name="UnifiedSize" Value="{{1.000000,-16.000000},{0.000000,18.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,90.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,-16.000000},{0.000000,18.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,90.000000}}" />
           <Property Name="Text" Value="#{ZSHTYH_150615_9}" />
           <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
           <Property Name="VertFormatting" Value="TopAligned" />
           <Window Type="TLBB_SimpleMulitiTextFrame" Name="Pethuantong_Zizhi_Text3_1">
-            <Property Name="UnifiedSize" Value="{{0.000000,106.000000},{0.000000,16.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{1.000000,-106.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,106.000000},{0.000000,16.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{1.000000,-106.000000},{0.000000,0.000000}}" />
             <Property Name="Text" Value="" />
             <Property Name="HorzFormatting" Value="RightAligned"/>
           </Window>
         </Window>
         <Window Type="TLBB_SimpleText" Name="Pethuantong_Zizhi_Text4">
-          <Property Name="UnifiedSize" Value="{{1.000000,-16.000000},{0.000000,18.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,110.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,-16.000000},{0.000000,18.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,110.000000}}" />
           <Property Name="Text" Value="#{ZSHTYH_150615_10}" />
           <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
           <Property Name="VertFormatting" Value="TopAligned" />
           <Window Type="TLBB_SimpleMulitiTextFrame" Name="Pethuantong_Zizhi_Text4_1">
-            <Property Name="UnifiedSize" Value="{{0.000000,106.000000},{0.000000,16.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{1.000000,-106.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,106.000000},{0.000000,16.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{1.000000,-106.000000},{0.000000,0.000000}}" />
             <Property Name="Text" Value="" />
             <Property Name="HorzFormatting" Value="RightAligned"/>
           </Window>
         </Window>
         <Window Type="TLBB_SimpleText" Name="Pethuantong_Zizhi_Text5">
-          <Property Name="UnifiedSize" Value="{{1.000000,-16.000000},{0.000000,18.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,130.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,-16.000000},{0.000000,18.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,130.000000}}" />
           <Property Name="Text" Value="#{ZSHTYH_150615_11}" />
           <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
           <Property Name="VertFormatting" Value="TopAligned" />
           <Window Type="TLBB_SimpleMulitiTextFrame" Name="Pethuantong_Zizhi_Text5_1">
-            <Property Name="UnifiedSize" Value="{{0.000000,106.000000},{0.000000,16.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{1.000000,-106.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,106.000000},{0.000000,16.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{1.000000,-106.000000},{0.000000,0.000000}}" />
             <Property Name="Text" Value="" />
             <Property Name="HorzFormatting" Value="RightAligned"/>
           </Window>
         </Window>
         <Window Type="TLBB_SimpleText" Name="Pethuantong_Zizhi_Text6">
-          <Property Name="UnifiedSize" Value="{{1.000000,-16.000000},{0.000000,18.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,150.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,-16.000000},{0.000000,18.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,150.000000}}" />
           <Property Name="Text" Value="#{ZSHTYH_150615_12}" />
           <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
           <Property Name="VertFormatting" Value="TopAligned" />
           <Window Type="TLBB_SimpleMulitiTextFrame" Name="Pethuantong_Zizhi_Text6_1">
-            <Property Name="UnifiedSize" Value="{{0.000000,106.000000},{0.000000,16.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{1.000000,-106.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,106.000000},{0.000000,16.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{1.000000,-106.000000},{0.000000,0.000000}}" />
             <Property Name="Text" Value="" />
             <Property Name="HorzFormatting" Value="RightAligned"/>
           </Window>
         </Window>
       </Window>
       <Window Type="TLBB_SimpleText" Name="Pethuantong_Text4">
-        <Property Name="UnifiedSize" Value="{{0.000000,250.000000},{0.000000,34.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,22.000000},{1.000000,-124.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,250.000000},{0.000000,34.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,22.000000},{1.000000,-124.000000}}" />
         <Property Name="Text" Value="#{ZSHTYH_150615_19}" />
         <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
         <Property Name="VertFormatting" Value="VertCentred"/>
         <Property Name="RiseOnClick" Value="False" />
       </Window>
       <Window Type="TLBB_ActionButton" Name="Pethuantong_Object">
-        <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,290.000000},{1.000000,-124.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,290.000000},{1.000000,-124.000000}}" />
         <Property Name="DragAcceptName" Value="G94" />
         <Property Name="DraggingEnabled" Value="True" />
         <Event Name="RBClicked" Function="Pethuantong_Resume_Equip_Gem();" />
       </Window>
       <Window Type="TLBB_SimpleMulitiTextFrame" Name="Pethuantong_MoneyInfo" >
-        <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{0.000000,22.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{1.000000,-89.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{0.000000,22.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{1.000000,-89.000000}}" />
         <Property Name="Text" Value="#{ZSHTYH_150615_13}" />
         <Window Type="TLBB_Money" Name="Pethuantong_Money" >
-          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}" />
-          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}" />
           <Property Name="CopperIcon" Value="set:Button6 image:Lace_JiaoziTong" />
           <Property Name="GoldIcon" Value="set:Button6 image:Lace_JiaoziJin" />
           <Property Name="HorzFormatting" Value="RightAligned" />
@@ -214,12 +214,12 @@
         </Window>
       </Window>
       <Window Type="TLBB_SimpleMulitiTextFrame" Name="Pethuantong_SelfJiaozi_Info" >
-        <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{0.000000,22.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{1.000000,-67.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{0.000000,22.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{1.000000,-67.000000}}" />
         <Property Name="Text" Value="#{ZSHTYH_150615_14}" />
         <Window Type="TLBB_Money" Name="Pethuantong_SelfJiaozi" >
-          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}" />
-          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}" />
           <Property Name="CopperIcon" Value="set:Button6 image:Lace_JiaoziTong" />
           <Property Name="GoldIcon" Value="set:Button6 image:Lace_JiaoziJin" />
           <Property Name="HorzFormatting" Value="RightAligned" />
@@ -228,43 +228,43 @@
         </Window>
       </Window>
       <Window Type="TLBB_SimpleMulitiTextFrame" Name="Pethuantong_SelfMoney_Info" >
-        <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{0.000000,22.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{1.000000,-45.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{0.000000,22.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{1.000000,-45.000000}}" />
         <Property Name="Text" Value="#{ZSHTYH_150615_15}" />
         <Window Type="TLBB_Money" Name="Pethuantong_SelfMoney" >
-          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}" />
-          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}" />
           <Property Name="HorzFormatting" Value="RightAligned" />
           <Property Name="MoneyNumber" Value="0" />
         </Window>
       </Window>
       <Window Type="TLBB_SimpleText" Name="Pethuantong_Yuanbao">
-        <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,20.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,20.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}}" />
         <Property Name="AlwaysOnTop" Value="True"/>
         <Window Type="TLBB_ButtonCheck" Name="Pethuantong_Yuanbao_Bind">
-          <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,13.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,4.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,13.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,4.000000}}" />
           <Property Name="CheckMode" Value="0"/>
           <Property Name="Tooltip" Value="选中该按钮后，进行珍兽还童时，如果背包内未锁定的对应珍兽携带等级的珍兽还童天书数量不足，将弹出直接支付元宝购买本次珍兽还童所需还童天书的确认窗口，以保证您不会因为误操作而扣除元宝。"/>
           <Event Name="Clicked" Function="PetHuantong_YBPay_Clicked();" />
         </Window>
         <Window Type="TLBB_SimpleText" Name="Pethuantong_Yuanbao_Bind_Text">
-          <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,18.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,1.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,18.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,1.000000}}" />
           <Property Name="HorzFormatting" Value="LeftAligned"/>
           <Property Name="Text" Value="元宝购买确认"/>
         </Window>
       </Window>
       <Window Type="TLBB_ButtonCommon" Name="Pethuantong_Quick_Up">
-        <Property Name="UnifiedSize" Value="{{0.000000,65.000000},{0.000000,20.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,220.000000},{1.000000,-20.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,65.000000},{0.000000,20.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,220.000000},{1.000000,-20.000000}}" />
         <Property Name="Text" Value="#{ZSKJT_130428_21}" />
         <Property Name="Tooltip" Value="#{ZSKJT_130428_22}" />
 		<Property Name="AlwaysOnTop" Value="True"/>
 		<Event Name="Clicked" Function="Pethuantong_Quick_Do();" />
         <Window Type="TLBB_Animate" Name="Pethuantong_Quick_Up_Animate">
-          <Property Name="UnifiedSize" Value="{{0.000000,65.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,65.000000},{0.000000,20.000000}}" />
           <Property Name="Animate" Value="YBNotice_65" />
           <Event Name="Clicked" Function="Pethuantong_Quick_Do();" />
 		  <Property Name="Tooltip" Value="#{ZSKJT_130428_22}" />
@@ -272,14 +272,14 @@
         </Window>
       </Window>
       <Window Type="TLBB_ButtonCommon" Name="Pethuantong_Accept">
-        <Property Name="UnifiedPosition" Value="{{1.000000,-83.000000},{1.000000,-20.000000}" />
-        <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}" />
+        <Property Name="UnifiedPosition" Value="{{1.000000,-83.000000},{1.000000,-20.000000}}" />
+        <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}" />
         <Property Name="Text" Value="还童" />
         <Event Name="Clicked" Function="Pethuantong_Do();" />
       </Window>
       <Window Type="TLBB_ButtonCommon" Name="Pethuantong_Cancel">
-        <Property Name="UnifiedPosition" Value="{{1.000000,-43.000000},{1.000000,-20.000000}" />
-        <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}" />
+        <Property Name="UnifiedPosition" Value="{{1.000000,-43.000000},{1.000000,-20.000000}}" />
+        <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}" />
         <Property Name="Text" Value="#{INTERFACE_XML_542}" />
         <Event Name="Clicked" Function="Pethuantong_Hide();" />
       </Window>

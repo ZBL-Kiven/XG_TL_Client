@@ -6,46 +6,46 @@
     <Event Name="Hidden" Function="this:Hide()" />
     <Window Type="TLBB_DragTitle" Name="SongLiao_Shop_DragTitle">
       <Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
-      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}" />
       <Property Name="DragTarget" Value="SongLiao_Shop_Frame" />
       <Property Name="Text" Value="#{XSLDZ_180521_243}"/>
       <Property Name="Font" Value="YouYuan11.25" />
     </Window>
     <Window Type="TLBB_ButtonHelp" Name="SongLiao_Shop_Help">
-      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}" />
       <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
       <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*SongLiao_Shop&quot;);' />
     </Window>
     <Window Type="TLBB_ButtonClose" Name="SongLiao_Shop_Close">
-      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}" />
       <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
       <Event Name="Clicked" Function="this:Hide()" />
     </Window>
     <Window Type="DefaultWindow" Name="SongLiao_Shop_Background_Frame1">
       <Property Name="AbsolutePosition" Value="x:5.000000 y:36.000000" />
-      <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,-55.000000}" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,-55.000000}}" />
       <Window Type="TLBB_SimpleText" Name="SongLiao_Shop_F5_Text">
-        <Property Name="UnifiedSize" Value="{{0.000000,224.000000},{0.000000,13.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,9.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,224.000000},{0.000000,13.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,9.000000}}" />
         <Property Name="Text" Value="#cFFF263每天晚上0点刷新"/>
         <Property Name="HorzFormatting" Value="LeftAligned" />
       </Window>
       <Window Type="TLBB_SimpleText" Name="SongLiao_Shop_Num_Text">
-        <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,13.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{1.000000,-152.000000},{0.000000,9.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,13.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{1.000000,-152.000000},{0.000000,9.000000}}" />
         <Property Name="Text" Value="玲珑齿轮数量：%s0"/>
         <Property Name="HorzFormatting" Value="RightAligned" />
       </Window>
       <Window Type="DefaultWindow" Name="SongLiao_Shop_Action_Set">
-        <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,230.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,34.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,230.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,34.000000}}" />
         <Window Type="TLBB_ActionButton" Name="SongLiao_Shop_Item1">
           <Property Name="AbsolutePosition" Value="x:0.000000 y:1.000000" />
           <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
           <Event Name="Clicked" Function="SongLiao_Shop_ItemClicked(1);" />
           <Window Type="TLBB_StaticImageNULL" Name="SongLiao_Shop_ItemInfo1_Quota">
-            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
             <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
             <Property Name="AlwaysOnTop" Value="True"/>
             <Property Name="MouseRButtonHollow" Value="True"/>
@@ -59,8 +59,8 @@
           <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
           <Event Name="Clicked" Function="SongLiao_Shop_ItemClicked(2);" />
           <Window Type="TLBB_StaticImageNULL" Name="SongLiao_Shop_ItemInfo2_Quota">
-            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
             <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
             <Property Name="AlwaysOnTop" Value="True"/>
             <Property Name="MouseRButtonHollow" Value="True"/>
@@ -74,8 +74,8 @@
           <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
           <Event Name="Clicked" Function="SongLiao_Shop_ItemClicked(3);" />
           <Window Type="TLBB_StaticImageNULL" Name="SongLiao_Shop_ItemInfo3_Quota">
-            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
             <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
             <Property Name="AlwaysOnTop" Value="True"/>
             <Property Name="MouseRButtonHollow" Value="True"/>
@@ -89,8 +89,8 @@
           <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
           <Event Name="Clicked" Function="SongLiao_Shop_ItemClicked(4);" />
           <Window Type="TLBB_StaticImageNULL" Name="SongLiao_Shop_ItemInfo4_Quota">
-            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
             <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
             <Property Name="AlwaysOnTop" Value="True"/>
             <Property Name="MouseRButtonHollow" Value="True"/>
@@ -104,8 +104,8 @@
           <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
           <Event Name="Clicked" Function="SongLiao_Shop_ItemClicked(5);" />
           <Window Type="TLBB_StaticImageNULL" Name="SongLiao_Shop_ItemInfo5_Quota">
-            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
             <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
             <Property Name="AlwaysOnTop" Value="True"/>
             <Property Name="MouseRButtonHollow" Value="True"/>
@@ -119,8 +119,8 @@
           <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
           <Event Name="Clicked" Function="SongLiao_Shop_ItemClicked(6);" />
           <Window Type="TLBB_StaticImageNULL" Name="SongLiao_Shop_ItemInfo6_Quota">
-            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
             <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
             <Property Name="AlwaysOnTop" Value="True"/>
             <Property Name="MouseRButtonHollow" Value="True"/>
@@ -134,8 +134,8 @@
           <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
           <Event Name="Clicked" Function="SongLiao_Shop_ItemClicked(7);" />
           <Window Type="TLBB_StaticImageNULL" Name="SongLiao_Shop_ItemInfo7_Quota">
-            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
             <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
             <Property Name="AlwaysOnTop" Value="True"/>
             <Property Name="MouseRButtonHollow" Value="True"/>
@@ -149,8 +149,8 @@
           <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
           <Event Name="Clicked" Function="SongLiao_Shop_ItemClicked(8);" />
           <Window Type="TLBB_StaticImageNULL" Name="SongLiao_Shop_ItemInfo8_Quota">
-            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
             <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
             <Property Name="AlwaysOnTop" Value="True"/>
             <Property Name="MouseRButtonHollow" Value="True"/>
@@ -164,8 +164,8 @@
           <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
           <Event Name="Clicked" Function="SongLiao_Shop_ItemClicked(9);" />
           <Window Type="TLBB_StaticImageNULL" Name="SongLiao_Shop_ItemInfo9_Quota">
-            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
             <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
             <Property Name="AlwaysOnTop" Value="True"/>
             <Property Name="MouseRButtonHollow" Value="True"/>
@@ -179,8 +179,8 @@
           <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
           <Event Name="Clicked" Function="SongLiao_Shop_ItemClicked(10);" />
           <Window Type="TLBB_StaticImageNULL" Name="SongLiao_Shop_ItemInfo10_Quota">
-            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
             <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
             <Property Name="AlwaysOnTop" Value="True"/>
             <Property Name="MouseRButtonHollow" Value="True"/>
@@ -194,8 +194,8 @@
           <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
           <Event Name="Clicked" Function="SongLiao_Shop_ItemClicked(11);" />
           <Window Type="TLBB_StaticImageNULL" Name="SongLiao_Shop_ItemInfo11_Quota">
-            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
             <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
             <Property Name="AlwaysOnTop" Value="True"/>
             <Property Name="MouseRButtonHollow" Value="True"/>
@@ -209,8 +209,8 @@
           <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
           <Event Name="Clicked" Function="SongLiao_Shop_ItemClicked(12);" />
           <Window Type="TLBB_StaticImageNULL" Name="SongLiao_Shop_ItemInfo12_Quota">
-            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
             <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
             <Property Name="AlwaysOnTop" Value="True"/>
             <Property Name="MouseRButtonHollow" Value="True"/>
@@ -413,8 +413,8 @@
         </Window>
       </Window>
       <Window Type="TLBB_Frame_Lace5" Name="SongLiao_Shop_Blank">
-        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}}" />
       </Window>
     </Window>
   </Window>

@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" ?>
 <GUILayout>
 	<Window Type="TLBB_MainFrame1" Name="Pintu_Frame">
-		<Property Name="UnifiedPosition" Value="{{0.500000,-96.000000},{0.20000,0.0}" />
-		<Property Name="UnifiedSize" Value="{{0.000000,192.000000},{0.0000,223.0}" />
+		<Property Name="UnifiedPosition" Value="{{0.500000,-96.000000},{0.20000,0.0}}" />
+		<Property Name="UnifiedSize" Value="{{0.000000,192.000000},{0.0000,223.0}}" />
 
 		<Window Type="TLBB_DragTitle" Name="Pintu_DragTitle">
 	    <Property Name="AbsolutePosition" Value="x:40.000000 y:4.000000" />
-	    <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}" />
+	    <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}}" />
 			<Property Name="Font" Value="YouYuan11.25" />
 			<Property Name="HorzFormatting" Value="HorzCentred" />
 			<Property Name="VertFormatting" Value="VertCentred" />
@@ -14,20 +14,20 @@
 		</Window>
 
     <Window Type="TLBB_ButtonClose" Name="Pintu_Close">
-      <Property Name="UnifiedPosition" Value="{{1.000000,-39.000000},{0.000000,7.000000}" />
+      <Property Name="UnifiedPosition" Value="{{1.000000,-39.000000},{0.000000,7.000000}}" />
 			<Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
 			<Event Name="Clicked" Function="Pintu_Close();" />
 		</Window>
 
     <Window Type="TLBB_ButtonHelp" Name="Pintu_Help">
-			<Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,7.000000}" />
+			<Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,7.000000}}" />
 			<Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
       <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*Pintu&quot;);' />
 		</Window>
 
       <Window Type="TLBB_SimpleText" Name="Pintu_Text" >
-        <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.00000,43.0}" />
-        <Property Name="UnifiedSize" Value="{{1.000000,-30.000000},{0.0000,30.0}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.00000,43.0}}" />
+        <Property Name="UnifiedSize" Value="{{1.000000,-30.000000},{0.0000,30.0}}" />
         <Property Name="RiseOnClick" Value="False" />
         <Property Name="Text" Value="#{TJRW_100511_71}" />
         <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
@@ -35,23 +35,23 @@
       </Window>
 
     <Window Type="TLBB_Frame_Lace2" Name="Pintu_Image_Lace" >
-      <Property Name="UnifiedPosition" Value="{{0.50000,-45.0},{0.00000,82.0}" />
-      <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.0000,90.0}" />
+      <Property Name="UnifiedPosition" Value="{{0.50000,-45.0},{0.00000,82.0}}" />
+      <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.0000,90.0}}" />
       <Property Name="RiseOnClick" Value="False" />
       <Window Type="TLBB_StaticImageNULL" Name="Pintu_Image" >
-        <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.00000,3.0}" />
-        <Property Name="UnifiedSize" Value="{{0.000000,85.000000},{0.0000,85.0}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.00000,3.0}}" />
+        <Property Name="UnifiedSize" Value="{{0.000000,85.000000},{0.0000,85.0}}" />
         <Property Name="Image" Value="set:Pintu1 image:Pintu_1" />
       </Window>
     </Window>
  
     <Window Type="TLBB_Frame_Lace5" Name="Pintu_Blank">
-      <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{1.000000,-29.000000}" />
-      <Property Name="UnifiedSize" Value="{{1.000000,-58.000000},{0.000000,20.000000}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{1.000000,-29.000000}}" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-58.000000},{0.000000,20.000000}}" />
     </Window>
    
     <Window Type="TLBB_ButtonCommon" Name="Pintu_Cancel_Button">
-      <Property Name="UnifiedPosition" Value="{{1.000000,-50.000000},{1.000000,-29.000000}" />
+      <Property Name="UnifiedPosition" Value="{{1.000000,-50.000000},{1.000000,-29.000000}}" />
       <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
       <Property Name="Text" Value="#{INTERFACE_XML_557}" />
       <Event Name="Clicked" Function="Pintu_Close();" />

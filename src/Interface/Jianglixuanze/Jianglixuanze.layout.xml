@@ -1,24 +1,24 @@
 <?xml version="1.0" ?>
 <GUILayout>
     <Window Type="TLBB_HeroFrame01" Name="Jianglixuanze_Frame">
-        <Property Name="UnifiedSize" Value="{{0.000000,600.000000},{0.000000,410.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.500000,-300.000000},{0.500000,-205.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,600.000000},{0.000000,410.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.500000,-300.000000},{0.500000,-205.000000}}" />
 
         <Window Type="TLBB_HeroTitle01" Name="Jianglixuanze_DragTitle_BK">
-            <Property Name="UnifiedSize" Value="{{0.000000,280.000000},{0.000000,30.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.500000,-140.000000},{0.000000,-2.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,280.000000},{0.000000,30.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.500000,-140.000000},{0.000000,-2.000000}}" />
             <Property Name="RiseOnClick" Value="False"/>
         </Window>
         <Window Type="TLBB_DragTitle" Name="Jianglixuanze_DragTitle">
-            <Property Name="UnifiedSize" Value="{{1.000000,-70.000000},{0.000000,30.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,35.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,-70.000000},{0.000000,30.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,35.000000},{0.000000,0.000000}}" />
             <Property Name="Text" Value="#{KYX_20210715_76}"/>
             <Property Name="Font" Value="YouYuan11.25"/>
             <Property Name="DragTarget" Value="Jianglixuanze_Frame"/>
         </Window>
         <Window Type="TLBB_ButtonNULL" Name="Jianglixuanze_Close">
-            <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.000000,9.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.000000,9.000000}}" />
             <Property Name="PushedImage" Value="set:ZLHeroMeeting image:Close_Push"/>
             <Property Name="NormalImage" Value="set:ZLHeroMeeting image:Close_Normal"/>
             <Property Name="HoverImage" Value="set:ZLHeroMeeting image:Close_Hover"/>
@@ -26,29 +26,29 @@
             <Event Name="Clicked" Function="Jianglixuanze_OnHiden()" />
         </Window>
         <Window Type="DefaultWindow" Name="Jianglixuanze_Client">
-            <Property Name="UnifiedSize" Value="{{1.000000,-16.000000},{1.000000,-38.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,-16.000000},{1.000000,-38.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,30.000000}}" />
 
 
 
 
 
             <Window Type="DefaultWindow" Name="Jianglixuanze_Gift1">
-                <Property Name="UnifiedSize" Value="{{0.000000,184.000000},{0.000000,292.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,75.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,184.000000},{0.000000,292.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,75.000000}}" />
                 <Window Type="TLBB_StaticImageNULL" Name="Jianglixuanze_Image1">
-                    <Property Name="UnifiedSize" Value="{{0.000000,184.000000},{0.000000,262.000000}}"/>
-                    <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+                    <Property Name="UnifiedSize" Value="{{0.000000,184.000000},{0.000000,262.000000}}" />
+                    <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}" />
                     <Property Name="Text" Value="#{TWLB_200729_24}"/>
                     <Property Name="CheckMode" Value="1"/>
                     <Property Name="Image" Value="set:Jianglixuanze image:Jianglixuanze_1"/>
                     <Window Type="TLBB_ActionButton" Name="Jianglixuanze_Item1">
-                        <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
-                        <Property Name="UnifiedPosition" Value="{{0.50000,-24.000000},{0.500000,72.000000}}"/>
+                        <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}" />
+                        <Property Name="UnifiedPosition" Value="{{0.50000,-24.000000},{0.500000,72.000000}}" />
                         <Property Name="AlwaysOnTop" Value="True"/>
                         <Event Name="Clicked" Function="Jianglixuanze_Clicked(1);"/>
                         <Window Type="TLBB_StaticImageNULL" Name="Jianglixuanze_ItemOK1">
-                            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
                             <Property Name="MouseRButtonHollow" Value="True"/>
                             <Property Name="MouseMoveHollow" Value="True"/>
                             <Property Name="MouseLButtonHollow" Value="True"/>
@@ -56,7 +56,7 @@
                             <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
                         </Window>
                         <Window Type="TLBB_Animate" Name="Jianglixuanze_ItemAnimate1">
-                            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
                             <Property Name="MouseRButtonHollow" Value="True"/>
                             <Property Name="MouseMoveHollow" Value="True"/>
                             <Property Name="MouseLButtonHollow" Value="True"/>
@@ -67,29 +67,29 @@
                     </Window>
                 </Window>
                 <Window Type="TLBB_ButtonCommon12" Name="Jianglilingqu_OK1">
-                    <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,25.000000}}"/>
-                    <Property Name="UnifiedPosition" Value="{{0.500000,-35.000000},{0.500000,120.000000}}"/>
+                    <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,25.000000}}" />
+                    <Property Name="UnifiedPosition" Value="{{0.500000,-35.000000},{0.500000,120.000000}}" />
                     <Property Name="Text" Value="#{KYX_20210715_42}"/>
                     <Event Name="Clicked" Function="Jianglixuanze_Clicked(1);"/>
                 </Window>
             </Window>
 
             <Window Type="DefaultWindow" Name="Jianglixuanze_Gift2">
-                <Property Name="UnifiedSize" Value="{{0.000000,182.000000},{0.000000,292.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,202.000000},{0.000000,75.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,182.000000},{0.000000,292.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,202.000000},{0.000000,75.000000}}" />
                 <Window Type="TLBB_StaticImageNULL" Name="Jianglixuanze_Image2">
-                    <Property Name="UnifiedSize" Value="{{0.000000,184.000000},{0.000000,262.000000}}"/>
-                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                    <Property Name="UnifiedSize" Value="{{0.000000,184.000000},{0.000000,262.000000}}" />
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                     <Property Name="Text" Value="#{TWLB_200729_24}"/>
                     <Property Name="CheckMode" Value="1"/>
                     <Property Name="Image" Value="set:Jianglixuanze image:Jianglixuanze_2"/>
                     <Window Type="TLBB_ActionButton" Name="Jianglixuanze_Item2">
-                        <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
-                        <Property Name="UnifiedPosition" Value="{{0.50000,-24.000000},{0.500000,72.000000}}"/>
+                        <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}" />
+                        <Property Name="UnifiedPosition" Value="{{0.50000,-24.000000},{0.500000,72.000000}}" />
                         <Property Name="AlwaysOnTop" Value="True"/>
                         <Event Name="Clicked" Function="Jianglixuanze_Clicked(2);"/>
                         <Window Type="TLBB_StaticImageNULL" Name="Jianglixuanze_ItemOK2">
-                            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
                             <Property Name="MouseRButtonHollow" Value="True"/>
                             <Property Name="MouseMoveHollow" Value="True"/>
                             <Property Name="MouseLButtonHollow" Value="True"/>
@@ -97,7 +97,7 @@
                             <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
                         </Window>
                         <Window Type="TLBB_Animate" Name="Jianglixuanze_ItemAnimate2">
-                            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
                             <Property Name="MouseRButtonHollow" Value="True"/>
                             <Property Name="MouseMoveHollow" Value="True"/>
                             <Property Name="MouseLButtonHollow" Value="True"/>
@@ -108,29 +108,29 @@
                     </Window>
                 </Window>
                 <Window Type="TLBB_ButtonCommon12" Name="Jianglilingqu_OK2">
-                    <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,25.000000}}"/>
-                    <Property Name="UnifiedPosition" Value="{{0.500000,-35.000000},{0.500000,120.000000}}"/>
+                    <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,25.000000}}" />
+                    <Property Name="UnifiedPosition" Value="{{0.500000,-35.000000},{0.500000,120.000000}}" />
                     <Property Name="Text" Value="#{KYX_20210715_42}"/>
                     <Event Name="Clicked" Function="Jianglixuanze_Clicked(2);"/>
                 </Window>
             </Window>
 
             <Window Type="DefaultWindow" Name="Jianglixuanze_Gift3">
-                <Property Name="UnifiedSize" Value="{{0.000000,182.000000},{0.000000,292.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,402.000000},{0.000000,75.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,182.000000},{0.000000,292.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,402.000000},{0.000000,75.000000}}" />
                 <Window Type="TLBB_StaticImageNULL" Name="Jianglixuanze_Image3">
-                    <Property Name="UnifiedSize" Value="{{0.000000,182.000000},{0.000000,262.000000}}"/>
-                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                    <Property Name="UnifiedSize" Value="{{0.000000,182.000000},{0.000000,262.000000}}" />
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                     <Property Name="Text" Value="#{TWLB_200729_24}"/>
                     <Property Name="CheckMode" Value="1"/>
                     <Property Name="Image" Value="set:Jianglixuanze image:Jianglixuanze_3"/>
                     <Window Type="TLBB_ActionButton" Name="Jianglixuanze_Item3">
-                        <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
-                        <Property Name="UnifiedPosition" Value="{{0.50000,-24.000000},{0.500000,72.000000}}"/>
+                        <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}" />
+                        <Property Name="UnifiedPosition" Value="{{0.50000,-24.000000},{0.500000,72.000000}}" />
                         <Property Name="AlwaysOnTop" Value="True"/>
                         <Event Name="Clicked" Function="Jianglixuanze_Clicked(3);"/>
                         <Window Type="TLBB_StaticImageNULL" Name="Jianglixuanze_ItemOK3">
-                            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
                             <Property Name="MouseRButtonHollow" Value="True"/>
                             <Property Name="MouseMoveHollow" Value="True"/>
                             <Property Name="MouseLButtonHollow" Value="True"/>
@@ -138,7 +138,7 @@
                             <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
                         </Window>
                         <Window Type="TLBB_Animate" Name="Jianglixuanze_ItemAnimate3">
-                            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
                             <Property Name="MouseRButtonHollow" Value="True"/>
                             <Property Name="MouseMoveHollow" Value="True"/>
                             <Property Name="MouseLButtonHollow" Value="True"/>
@@ -149,18 +149,18 @@
                     </Window>
                 </Window>
                 <Window Type="TLBB_ButtonCommon12" Name="Jianglilingqu_OK3">
-                    <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,25.000000}}"/>
-                    <Property Name="UnifiedPosition" Value="{{0.500000,-35.000000},{0.500000,120.000000}}"/>
+                    <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,25.000000}}" />
+                    <Property Name="UnifiedPosition" Value="{{0.500000,-35.000000},{0.500000,120.000000}}" />
                     <Property Name="Text" Value="#{KYX_20210715_42}"/>
                     <Event Name="Clicked" Function="Jianglixuanze_Clicked(3);"/>
                 </Window>
             </Window>
             <Window Type="TLBB_SimpleMulitiTextFrame" Name="Jianglixuanze_InfoBK">
-                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,70.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,70.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                 <Window Type="TLBB_SimpleText" Name="Jianglixuanze_Info">
-                    <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{1.000000,-15.000000}}"/>
-                    <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+                    <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{1.000000,-15.000000}}" />
+                    <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,10.000000}}" />
                     <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
                 </Window>
             </Window>

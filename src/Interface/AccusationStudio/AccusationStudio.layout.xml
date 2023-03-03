@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" ?>
 <GUILayout>
     <Window Type="TLBB_MainFrame1" Name="AccusationStudio_Frame">
-      <Property Name="UnifiedSize" Value="{{0.000000,406.000000},{0.000000,368.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,220.000000},{0.000000,180.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{0.000000,406.000000},{0.000000,368.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,220.000000},{0.000000,180.000000}}" />
         <Window Type="TLBB_DragTitle" Name="AccusationStudio_DragTitle">
-          <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}" />
           <Property Name="DragTarget" Value="AccusationStudio_Frame" />
             <Window Type="TLBB_SimpleText" Name="AccusationStudio_PageName">
                 <Property Name="Position" Value="x:0.0 y:0.0" />
@@ -18,195 +18,195 @@
             </Window>
         </Window>
         <Window Type="TLBB_ButtonClose" Name="AccusationStudio_Close">
-          <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}" />
           <Property Name="Text" Value="TLBB_ButtonClose" />
           <Event Name="Clicked" Function="AccusationStudio_Close();" />
         </Window>
       <Window Type="TLBB_ButtonHelp" Name="AccusationStudio_Help">
-        <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}" />
       </Window>
         <Window Type="DefaultWindow" Name="AccusationStudio_Frame_Client">
-          <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-55.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,36.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-55.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,36.000000}}" />
             <Window Type="TLBB_SimpleText" Name="AccusationStudio_Text">
-              <Property Name="UnifiedSize" Value="{{0.000000,350.000000},{0.000000,20.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,10.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,350.000000},{0.000000,20.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,10.000000}}" />
               <Property Name="Text" Value="#{ZDJB_170517_13}"/>
             </Window>
           <Window Type="TLBB_Frame_Lace3" Name="AccusationStudio_Select">
-            <Property Name="UnifiedSize" Value="{{1.000000,-1.000000},{0.000000,160.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,-1.000000},{0.000000,160.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,40.000000}}" />
             <Window Type="TLBB_SimpleText" Name="AccusationStudio_Text1">
-              <Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{0.000000,36.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,5.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{0.000000,36.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,5.000000}}" />
               <Property Name="Text" Value="#{ZDJB_170517_14}"/>
               <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
             </Window>
             <Window Type="DefaultWindow" Name="AccusationStudio_Dailian">
-              <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,20.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,42.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,20.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,42.000000}}" />
               <Property Name="AlwaysOnTop" Value="True"/>
               <Window Type="TLBB_ButtonCheck" Name="AccusationStudio_Dailian_Bind">
-                <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,13.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,4.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,13.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,4.000000}}" />
                 <Property Name="CheckMode" Value="0"/>
                 <Event Name="Clicked" Function="AccusationStudio_SetCheck(1);" />
               </Window>
               <Window Type="TLBB_SimpleText" Name="AccusationStudio_Dailian_Text">
-                <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,18.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,22.000000},{0.000000,1.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,18.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,22.000000},{0.000000,1.000000}}" />
                 <Property Name="HorzFormatting" Value="LeftAligned"/>
                 <Property Name="Text" Value="#{ZDJB_170517_15}"/>
               </Window>
             </Window>
             <Window Type="DefaultWindow" Name="AccusationStudio_Pianzi">
-              <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,20.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,72.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,20.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,72.000000}}" />
               <Property Name="AlwaysOnTop" Value="True"/>
               <Window Type="TLBB_ButtonCheck" Name="AccusationStudio_Pianzi_Bind">
-                <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,13.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,4.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,13.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,4.000000}}" />
                 <Property Name="CheckMode" Value="0"/>
                 <Event Name="Clicked" Function="AccusationStudio_SetCheck(2);" />
               </Window>
               <Window Type="TLBB_SimpleText" Name="AccusationStudio_Pianzi_Text">
-                <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,18.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,22.000000},{0.000000,1.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,18.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,22.000000},{0.000000,1.000000}}" />
                 <Property Name="HorzFormatting" Value="LeftAligned"/>
                 <Property Name="Text" Value="#{ZDJB_170517_17}"/>
               </Window>
             </Window>
             <Window Type="DefaultWindow" Name="AccusationStudio_Datu">
-              <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,20.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,102.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,20.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,102.000000}}" />
               <Property Name="AlwaysOnTop" Value="True"/>
               <Window Type="TLBB_ButtonCheck" Name="AccusationStudio_Datu_Bind">
-                <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,13.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,4.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,13.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,4.000000}}" />
                 <Property Name="CheckMode" Value="0"/>
                 <Event Name="Clicked" Function="AccusationStudio_SetCheck(3);" />
               </Window>
               <Window Type="TLBB_SimpleText" Name="AccusationStudio_Datu_Text">
-                <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,18.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,22.000000},{0.000000,1.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,18.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,22.000000},{0.000000,1.000000}}" />
                 <Property Name="HorzFormatting" Value="LeftAligned"/>
                 <Property Name="Text" Value="#{ZDJB_170517_19}"/>
               </Window>
             </Window>
             <Window Type="DefaultWindow" Name="AccusationStudio_Dacailiao">
-              <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,20.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,132.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,20.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,132.000000}}" />
               <Property Name="AlwaysOnTop" Value="True"/>
               <Window Type="TLBB_ButtonCheck" Name="AccusationStudio_Dacailiao_Bind">
-                <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,13.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,4.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,13.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,4.000000}}" />
                 <Property Name="CheckMode" Value="0"/>
                 <Event Name="Clicked" Function="AccusationStudio_SetCheck(4);" />
               </Window>
               <Window Type="TLBB_SimpleText" Name="AccusationStudio_Dacailiao_Text">
-                <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,18.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,22.000000},{0.000000,1.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,18.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,22.000000},{0.000000,1.000000}}" />
                 <Property Name="HorzFormatting" Value="LeftAligned"/>
                 <Property Name="Text" Value="#{ZDJB_170517_20}"/>
               </Window>
             </Window>
             <Window Type="DefaultWindow" Name="AccusationStudio_Shuama">
-              <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,20.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,200.000000},{0.000000,42.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,20.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,200.000000},{0.000000,42.000000}}" />
               <Property Name="AlwaysOnTop" Value="True"/>
               <Window Type="TLBB_ButtonCheck" Name="AccusationStudio_Shuama_Bind">
-                <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,13.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,4.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,13.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,4.000000}}" />
                 <Property Name="CheckMode" Value="0"/>
                 <Event Name="Clicked" Function="AccusationStudio_SetCheck(5);" />
               </Window>
               <Window Type="TLBB_SimpleText" Name="AccusationStudio_Shuama_Text">
-                <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,18.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,22.000000},{0.000000,1.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,18.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,22.000000},{0.000000,1.000000}}" />
                 <Property Name="HorzFormatting" Value="LeftAligned"/>
                 <Property Name="Text" Value="#{ZDJB_170517_16}"/>
               </Window>
             </Window>
             <Window Type="DefaultWindow" Name="AccusationStudio_Qiangzhan">
-              <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,20.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,200.000000},{0.000000,72.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,20.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,200.000000},{0.000000,72.000000}}" />
               <Property Name="AlwaysOnTop" Value="True"/>
               <Window Type="TLBB_ButtonCheck" Name="AccusationStudio_Qiangzhan_Bind">
-                <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,13.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,4.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,13.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,4.000000}}" />
                 <Property Name="CheckMode" Value="0"/>
                 <Property Name="Tooltip" Value="#{ZDJB_170707_31}"/>
                 <Event Name="Clicked" Function="AccusationStudio_SetCheck(6);" />
               </Window>
               <Window Type="TLBB_SimpleText" Name="AccusationStudio_Qiangzhan_Text">
-                <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,18.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,22.000000},{0.000000,1.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,18.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,22.000000},{0.000000,1.000000}}" />
                 <Property Name="HorzFormatting" Value="LeftAligned"/>
                 <Property Name="Text" Value="#{ZDJB_170517_18}"/>
                 <Property Name="Tooltip" Value="#{ZDJB_170707_31}"/>
               </Window>
             </Window>
             <Window Type="DefaultWindow" Name="AccusationStudio_Weigui">
-              <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,20.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,200.000000},{0.000000,102.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,20.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,200.000000},{0.000000,102.000000}}" />
               <Property Name="AlwaysOnTop" Value="True"/>
               <Window Type="TLBB_ButtonCheck" Name="AccusationStudio_Weigui_Bind">
-                <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,13.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,4.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,13.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,4.000000}}" />
                 <Property Name="CheckMode" Value="0"/>
                 <Event Name="Clicked" Function="AccusationStudio_SetCheck(7);" />
                 <Property Name="Tooltip" Value="#{ZDJB_170707_32}"/>
               </Window>
               <Window Type="TLBB_SimpleText" Name="AccusationStudio_Weigui_Text">
-                <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,18.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,22.000000},{0.000000,1.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,18.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,22.000000},{0.000000,1.000000}}" />
                 <Property Name="HorzFormatting" Value="LeftAligned"/>
                 <Property Name="Text" Value="#{ZDJB_170517_21}"/>
                 <Property Name="Tooltip" Value="#{ZDJB_170707_32}"/>
               </Window>
             </Window>
             <Window Type="DefaultWindow" Name="AccusationStudio_Qita">
-              <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,20.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,200.000000},{0.000000,132.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,20.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,200.000000},{0.000000,132.000000}}" />
               <Property Name="AlwaysOnTop" Value="True"/>
               <Window Type="TLBB_ButtonCheck" Name="AccusationStudio_Qita_Bind">
-                <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,13.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,4.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,13.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,4.000000}}" />
                 <Property Name="CheckMode" Value="0"/>
                 <Event Name="Clicked" Function="AccusationStudio_SetCheck(8);" />
                 
               </Window>
               <Window Type="TLBB_SimpleText" Name="AccusationStudio_Qita_Text">
-                <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,18.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,22.000000},{0.000000,1.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,18.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,22.000000},{0.000000,1.000000}}" />
                 <Property Name="HorzFormatting" Value="LeftAligned"/>
                 <Property Name="Text" Value="#{ZDJB_170517_22}"/>
               </Window>
             </Window>
           </Window>
           <Window Type="TLBB_SimpleText" Name="AccusationStudio_Text2">
-            <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,20.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.630000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.630000,0.000000}}" />
             <Property Name="Text" Value="#{ZDJB_170517_30}"/>
           </Window>
           <Window Type="TLBB_MultiIMEEditBox" Name="AccusationStudio_EditInfo">
-            <Property Name="UnifiedSize" Value="{{1.000000,-1.000000},{0.000000,78.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.700000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,-1.000000},{0.000000,78.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.700000,0.000000}}" />
             <Property Name="DefaultEditBox" Value="True"/>
             <Property Name="MaxTextLength" Value="200" />
           </Window>
             <Window Type="TLBB_ButtonCommon" Name="AccusationStudio_OK">
-              <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{1.000000,-84.000000},{1.000000,-20.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{1.000000,-84.000000},{1.000000,-20.000000}}" />
                 <Property Name="Tooltip" Value="#{ZDJB_170517_25}"/>
                 <Property Name="Text" Value="#{ZDJB_170517_24}" />
                 <Event Name="Clicked" Function="AccusationStudio_Submit();" />
             </Window>
           <Window Type="TLBB_SimpleText" Name="AccusationStudio_Text3">
-            <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,20.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.940000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.940000,0.000000}}" />
             <Property Name="Text" Value="#{ZDJB_170517_23}"/>
           </Window>
         </Window>

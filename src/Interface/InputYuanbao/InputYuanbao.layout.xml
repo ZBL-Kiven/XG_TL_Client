@@ -6,7 +6,7 @@
         <Event Name="Hidden" Function="InputYuanbao_OnCancel();" />
         <Window Type="TLBB_DragTitle" Name="InputYuanbaoFrame_Title">
             <Property Name="AbsolutePosition" Value="x:26.000000 y:2.000000" />
-            <Property Name="UnifiedSize" Value="{{1.000000,-52.000000},{0.000000,20.000000}" />
+            <Property Name="UnifiedSize" Value="{{1.000000,-52.000000},{0.000000,20.000000}}" />
             <Property Name="DragTarget" Value="InputYuanbao_Frame" />
             <Window Type="TLBB_SimpleText" Name="InputYuanbao_Title">
                 <Property Name="Position" Value="x:0.0 y:0.0" />
@@ -19,29 +19,29 @@
             </Window>
         </Window>
         <Window Type="TLBB_ButtonHelp" Name="InputYuanbao_Help">
-            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}" />
             <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
             <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*InputMoney&quot;);' />
         </Window>
         <Window Type="TLBB_ButtonClose" Name="InputYuanbao_Close">
-            <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,5.000000}" />
+            <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,5.000000}}" />
             <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
             <Event Name="Clicked" Function="this:Hide();" />
         </Window>
         <Window Type="TLBB_ButtonCommon" Name="InputYuanbao_Accept_Button">
-            <Property Name="UnifiedPosition" Value="{{1.000000,-90.000000},{1.000000,-25.000000}" />
+            <Property Name="UnifiedPosition" Value="{{1.000000,-90.000000},{1.000000,-25.000000}}" />
             <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
             <Property Name="Text" Value="#{INTERFACE_XML_557}" />
             <Event Name="Clicked" Function="InputYuanbao_OnOK();" />
         </Window>
         <Window Type="TLBB_ButtonCommon" Name="InputYuanbaot_Refuse">
-            <Property Name="UnifiedPosition" Value="{{1.000000,-50.000000},{1.000000,-25.000000}" />
+            <Property Name="UnifiedPosition" Value="{{1.000000,-50.000000},{1.000000,-25.000000}}" />
             <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
             <Property Name="Text" Value="#{INTERFACE_XML_542}" />
             <Event Name="Clicked" Function="InputYuanbao_OnCancel();" />
         </Window>
         <Window Type="TLBB_SimpleText" Name="InputYuanbao_Name_Text">
-            <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,26.000000}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,26.000000}}" />
             <Property Name="AbsoluteSize" Value="w:211.000000 h:18.000000" />
             <Property Name="Text" Value="#{YBBT_81021_03}" />
             <Property Name="TextColor" Value="FFFFF263" />

@@ -2,11 +2,11 @@
 <GUILayout>
   <Window Type="TLBB_MainFrame1" Name="PetRHD_Frame">
     <Property Name="UnifiedPosition" Value="{{0.5,-144},{0.5,-213}}" />
-    <Property Name="UnifiedSize" Value="{{0.000000,288.000000},{0.000000,455.000000}}"/>
+    <Property Name="UnifiedSize" Value="{{0.000000,288.000000},{0.000000,455.000000}}" />
     <Event Name="Hidden" Function="PetRHD_Close();" />
     <Window Type="TLBB_DragTitle" Name="PetRHD_DragTitle">
       <Property Name="AbsolutePosition" Value="x:40.000000 y:19.000000" />
-      <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}}" />
       <Property Name="DragTarget" Value="PetRHD_Frame" />
       <Property Name="Font" Value="YouYuan11.25" />
       <Property Name="HorzFormatting" Value="HorzCentred" />
@@ -14,20 +14,20 @@
       <Property Name="Text" Value="#{ZSHT_XML_08}" />
     </Window>
     <Window Type="TLBB_ButtonHelp" Name="PetRHD_Help">
-      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}" />
       <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
       <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*PetRHD&quot;);' />
     </Window>
     <Window Type="TLBB_ButtonClose" Name="PetRHD_Close">
-      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}" />
       <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
       <Event Name="Clicked" Function="PetRHD_Cancel_Clicked();" />
     </Window>
     <Window Type="DefaultWindow" Name="PetRHD_Function_Frame">
       <Property Name="AbsolutePosition" Value="x:7.000000 y:32.000000" />
-      <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-51.000000}" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-51.000000}}" />
       <Window Type="TLBB_FramePet" Name="PetRHD_FakeObject_Frame" >
-        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}" />
         <Property Name="AbsoluteSize" Value="w:271.000000 h:137.000000" />
         <Property Name="RiseOnClick" Value="False" />
         <Window Type="TLBB_MeshWindow" Name="PetRHD_FakeObject" >
@@ -37,27 +37,27 @@
           <Property Name="ShowControl" Value="PetRHD_Frame" />
         </Window>
         <Window Type="TLBB_StaticImageNULL" Name="PetRHD_FakeObject_Frame_PetHead" >
-          <Property Name="UnifiedPosition" Value="{{0.500000,-34.000000},{0.000000,0.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.500000,-34.000000},{0.000000,0.000000}}" />
           <Property Name="AbsoluteSize" Value="w:68.000000 h:26.000000" />
           <Property Name="Image" Value="set:CommonItem image:PetFrame_Head" />
           <Property Name="RiseOnClick" Value="False" />
         </Window>
         <Window Type="TLBB_ButtonTurnLeft" Name="PetRHD_Model_TurnLeft" >
-          <Property Name="UnifiedPosition" Value="{{0.100000,0.299999},{1.000000,-34.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.100000,0.299999},{1.000000,-34.000000}}" />
           <Property Name="AbsoluteSize" Value="w:25.000000 h:25.000000" />
           <Event Name="MouseButtonDown" Function="PetRHD_Model_TurnLeft(1);" />
           <Event Name="MouseButtonUp" Function="PetRHD_Model_TurnLeft(0);" />
           <Event Name="CaptureLost" Function="PetRHD_Model_TurnLeft(0);" />
         </Window>
         <Window Type="TLBB_ButtonTurnRight" Name="PetRHD_Model_TurnRight" >
-          <Property Name="UnifiedPosition" Value="{{0.790000,4.909988},{1.000000,-34.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.790000,4.909988},{1.000000,-34.000000}}" />
           <Property Name="AbsoluteSize" Value="w:25.000000 h:25.000000" />
           <Event Name="MouseButtonDown" Function="PetRHD_Model_TurnRight(1);" />
           <Event Name="MouseButtonUp" Function="PetRHD_Model_TurnRight(0);" />
           <Event Name="CaptureLost" Function="PetRHD_Model_TurnRight(0);" />
         </Window>
         <Window Type="TLBB_ButtonNULL" Name="PetRHD_Jian">
-          <Property Name="UnifiedPosition" Value="{{1.000000,-37.000000},{0.000000,20.000000}" />
+          <Property Name="UnifiedPosition" Value="{{1.000000,-37.000000},{0.000000,20.000000}}" />
           <Property Name="AbsoluteSize" Value="w:25 h:25" />
           <Property Name="HoverImage" Value="set:CommonFrame6 image:TuJian_Hover" />
           <Property Name="NormalImage" Value="set:CommonFrame6 image:TuJian_Normal" />
@@ -66,47 +66,47 @@
         </Window>
       </Window>
       <Window Type="TLBB_SimpleMulitiTextFrame" Name="PetRHD_Text">
-        <Property Name="UnifiedPosition" Value="{{0.0,2.000000},{0.000000,206.000000}" />
-        <Property Name="UnifiedSize" Value="{{0.000000,271.000000},{0.000000,106.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.0,2.000000},{0.000000,206.000000}}" />
+        <Property Name="UnifiedSize" Value="{{0.000000,271.000000},{0.000000,106.000000}}" />
         <Property Name="Text" Value="#{ZSHT_XML_01}" />
         <Property Name="TextColor" Value="FFFFF263" />
         <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
         <Property Name="VertFormatting" Value="VertCentred" />
       </Window>
       <Window Type="TLBB_SimpleMulitiTextFrame" Name="PetRHD_Text2">
-        <Property Name="UnifiedSize" Value="{{0.000000,211.000000},{0.000000,20.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,32.000000},{0.000000,143.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,211.000000},{0.000000,20.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,32.000000},{0.000000,143.000000}}" />
         <Property Name="Text" Value="#{INTERFACE_XML_177}" />
         <Property Name="TextColor" Value="FFFFF263" />
         <Property Name="HorzFormatting" Value="HorzCentred" />
         <Property Name="VertFormatting" Value="VertCentred" />
       </Window>
       <Window Type="TLBB_SimpleText" Name="PetRHD_Pet_Text">
-        <Property Name="UnifiedPosition" Value="{{0.0,2.000000},{0.000000,166.000000}" />
-        <Property Name="UnifiedSize" Value="{{0.0,200.000000},{0.000000,20.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.0,2.000000},{0.000000,166.000000}}" />
+        <Property Name="UnifiedSize" Value="{{0.0,200.000000},{0.000000,20.000000}}" />
         <Property Name="Text" Value="#{ZSHT_XML_02}" />
         <Property Name="TextColor" Value="FFFAFFA4" />
         <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
         <Property Name="VertFormatting" Value="VertCentred" />
       </Window>
       <Window Type="TLBB_SimpleMulitiTextFrame" Name="PetRHD_Pet">
-        <Property Name="UnifiedPosition" Value="{{0.0,32.000000},{0.000000,186.000000}" />
-        <Property Name="UnifiedSize" Value="{{0.0,130.000000},{0.000000,20.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.0,32.000000},{0.000000,186.000000}}" />
+        <Property Name="UnifiedSize" Value="{{0.0,130.000000},{0.000000,20.000000}}" />
       </Window>
       <Window Type="TLBB_ButtonCommon" Name="PetRHD_Other_PetList_Select">
-        <Property Name="UnifiedPosition" Value="{{0.0,174.000000},{0.000000,186.000000}" />
-        <Property Name="UnifiedSize" Value="{{0.0,70.000000},{0.000000,20.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.0,174.000000},{0.000000,186.000000}}" />
+        <Property Name="UnifiedSize" Value="{{0.0,70.000000},{0.000000,20.000000}}" />
         <Property Name="Text" Value="#{INTERFACE_XML_803}" />
         <Event Name="Clicked" Function='PetRHD_Choose_Clicked( &quot;main&quot; );' />
       </Window>
       <Window Type="TLBB_SimpleMulitiTextFrame" Name="PetRHD_Money_Text">
-        <Property Name="UnifiedPosition" Value="{{0.05,0.000000},{1.000000,-89.000000}" />
-        <Property Name="UnifiedSize" Value="{{0.9,0.000000},{0.000000,22.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.05,0.000000},{1.000000,-89.000000}}" />
+        <Property Name="UnifiedSize" Value="{{0.9,0.000000},{0.000000,22.000000}}" />
         <Property Name="Text" Value="#{INTERFACE_XML_789}" />
         <Property Name="TextColor" Value="FFFFF263" />
         <Window Type="TLBB_Money" Name="PetRHD_NeedMoney">
-          <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}" />
-          <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}}" />
+          <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}}" />
           <Property Name="HorzFormatting" Value="RightAligned" />
           <Property Name="MoneyNumber" Value="0" />
           <Property Name="GoldIcon" Value = "set:Button6 image:Lace_JiaoziJin" />
@@ -115,13 +115,13 @@
         </Window>
       </Window>
       <Window Type="TLBB_SimpleMulitiTextFrame" Name="PetRHD_SelfJiaozi_Text">
-        <Property Name="UnifiedPosition" Value="{{0.05,0.000000},{1.000000,-67.000000}" />
-        <Property Name="UnifiedSize" Value="{{0.9,0.000000},{0.000000,22.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.05,0.000000},{1.000000,-67.000000}}" />
+        <Property Name="UnifiedSize" Value="{{0.9,0.000000},{0.000000,22.000000}}" />
         <Property Name="Text" Value="#{BDJB_051210_1}" />
         <Property Name="TextColor" Value="FFFFF263" />
         <Window Type="TLBB_Money" Name="PetRHD_SelfJiaozi">
-          <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}" />
-          <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}}" />
+          <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}}" />
           <Property Name="HorzFormatting" Value="RightAligned" />
           <Property Name="MoneyNumber" Value="0" />
           <Property Name="GoldIcon" Value = "set:Button6 image:Lace_JiaoziJin" />
@@ -130,25 +130,25 @@
         </Window>
       </Window>
       <Window Type="TLBB_SimpleMulitiTextFrame" Name="PetRHD_SelfMoney_Text">
-        <Property Name="UnifiedPosition" Value="{{0.05,0.000000},{1.000000,-45.000000}" />
-        <Property Name="UnifiedSize" Value="{{0.9,0.000000},{0.000000,22.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.05,0.000000},{1.000000,-45.000000}}" />
+        <Property Name="UnifiedSize" Value="{{0.9,0.000000},{0.000000,22.000000}}" />
         <Property Name="Text" Value="#{INTERFACE_XML_834}" />
         <Property Name="TextColor" Value="FFFFF263" />
         <Window Type="TLBB_Money" Name="PetRHD_SelfMoney">
-          <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}" />
-          <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}}" />
+          <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}}" />
           <Property Name="HorzFormatting" Value="RightAligned" />
           <Property Name="MoneyNumber" Value="0" />
         </Window>
       </Window>
       <Window Type="TLBB_ButtonCommon" Name="PetRHD_OK">
-        <Property Name="UnifiedPosition" Value="{{1.000000,-83.000000},{1.000000,-20.000000}" />
+        <Property Name="UnifiedPosition" Value="{{1.000000,-83.000000},{1.000000,-20.000000}}" />
         <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
         <Property Name="Text" Value="#{INTERFACE_XML_557}" />
         <Event Name="Clicked" Function="PetRHD_OK_Clicked();" />
       </Window>
       <Window Type="TLBB_ButtonCommon" Name="PetRHD_Cancel">
-        <Property Name="UnifiedPosition" Value="{{1.000000,-43.000000},{1.000000,-20.000000}" />
+        <Property Name="UnifiedPosition" Value="{{1.000000,-43.000000},{1.000000,-20.000000}}" />
         <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
         <Property Name="Text" Value="#{INTERFACE_XML_542}" />
         <Event Name="Clicked" Function="PetRHD_Cancel_Clicked();" />

@@ -6,7 +6,7 @@
 		<Event Name="Hidden" Function="ProtectGoodsDel_OnHide();" />
         <Window Type="TLBB_DragTitle" Name="ProtectGoodsDel_DragTitle">
             <Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
-            <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+            <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}" />
             <Property Name="DragTarget" Value="ProtectGoodsDel_Frame" />
             <Window Type="TLBB_SimpleText" Name="ProtectGoodsDel_Title">
                 <Property Name="Position" Value="x:0.0 y:0.0" />
@@ -19,18 +19,18 @@
             </Window>
         </Window>
         <Window Type="TLBB_ButtonHelp" Name="ProtectGoodsDel_Help">
-            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}" />
             <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
             <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*ProtectGoodsDel&quot;);' />
         </Window>
         <Window Type="TLBB_ButtonClose" Name="ProtectGoodsDel_Close">
-            <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+            <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}" />
             <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
             <Event Name="Clicked" Function="ProtectGoodsDel_OnClose();" />
         </Window>
         <Window Type="DefaultWindow" Name="ProtectGoodsDel_Frame_Client">
             <Property Name="AbsolutePosition" Value="x:7.000000 y:36.000000" />
-            <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-55.000000}" />
+            <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-55.000000}}" />
             <Property Name="RiseOnClick" Value="False" />
             <Window Type="TLBB_SimpleMulitiTextFrame" Name="ProtectGoodsDel_Text">
                 <Property Name="Position" Value="x:0.00 y:0.00" />
@@ -41,20 +41,20 @@
                 <Property Name="RiseOnClick" Value="False" />
             </Window>
           <Window Type="TLBB_ButtonCommon" Name="ProtectGoodsDel_Button_Apply">
-            <Property Name="UnifiedPosition" Value="{{0.500000,-90.000000},{0.000000,145.000000}" />
+            <Property Name="UnifiedPosition" Value="{{0.500000,-90.000000},{0.000000,145.000000}}" />
             <Property Name="AbsoluteSize" Value="w:80.000000 h:20.000000" />
             <Property Name="Text" Value="#{SCGZ_xml_02}" />
             <Event Name="Clicked" Function="ProtectGoodsDel_OnApply();" />
           </Window>
           <Window Type="TLBB_ButtonCommon" Name="ProtectGoodsDel_Button_CancelApply">
-            <Property Name="UnifiedPosition" Value="{{0.500000,10.000000},{0.000000,145.000000}" />
+            <Property Name="UnifiedPosition" Value="{{0.500000,10.000000},{0.000000,145.000000}}" />
             <Property Name="AbsoluteSize" Value="w:80.000000 h:20.000000" />
             <Property Name="Text" Value="#{SCGZ_xml_03}" />
             <Event Name="Clicked" Function="ProtectGoodsDel_OnCancelApply();" />
           </Window>
           <Window Type="TLBB_SimpleText" Name="ProtectGoodsDel_Item_Explain">
                 <Property Name="Position" Value="x:0.056180 y:0.725" />
-                <Property Name="UnifiedSize" Value="{{0.0000000,180.000000},{0.000000,40.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0000000,180.000000},{0.000000,40.000000}}" />
                 <Property Name="Text" Value="#{SCGZ_091119_07}" />
                 <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
                 <Property Name="VertFormatting" Value="TopAligned" />
@@ -67,17 +67,17 @@
                 <Property Name="DragAcceptName" Value="G103" />
             </Window>
             <Window Type="TLBB_Frame_Lace5" Name="ProtectGoodsDel_Blank">
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}" />
-                <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}}" />
+                <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}}" />
             </Window>
             <Window Type="TLBB_ButtonCommon" Name="ProtectGoodsDel_Button_Accept">
-                <Property Name="UnifiedPosition" Value="{{1.000000,-80.000000},{1.000000,-20.000000}" />
+                <Property Name="UnifiedPosition" Value="{{1.000000,-80.000000},{1.000000,-20.000000}}" />
                 <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
                 <Property Name="Text" Value="#{INTERFACE_XML_557}" />
                 <Event Name="Clicked" Function="ProtectGoodsDel_OnDestroy();" />
             </Window>
             <Window Type="TLBB_ButtonCommon" Name="ProtectGoodsDel_Button_Refuse">
-                <Property Name="UnifiedPosition" Value="{{1.000000,-40.000000},{1.000000,-20.000000}" />
+                <Property Name="UnifiedPosition" Value="{{1.000000,-40.000000},{1.000000,-20.000000}}" />
                 <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
                 <Property Name="Text" Value="#{INTERFACE_XML_542}" />
                 <Event Name="Clicked" Function="ProtectGoodsDel_OnCancel();" />

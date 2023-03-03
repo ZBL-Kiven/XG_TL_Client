@@ -6,7 +6,7 @@
     <Event Name="Hidden" Function="SelectHeadFrame_Cancel_Clicked();" />
 		<Window Type="TLBB_DragTitle" Name="SelectHeadFrame_DragTitle">
 			<Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
-			<Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+			<Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}" />
 			<Property Name="DragTarget" Value="SelectHeadFrame_Frame" />
 			<Property Name="Font" Value="YouYuan11.25" />
 			<Property Name="Text" Value="#{TXDI_xml_01}" />
@@ -14,21 +14,21 @@
 			<Property Name="VertFormatting" Value="VertCentred" />
 		</Window>
 		<Window Type="TLBB_ButtonHelp" Name="SelectHeadFrame_Help">
-			<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+			<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}" />
 			<Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
 			<Event Name="Clicked" Function='Helper:GotoHelper(&quot;*SelectHeadFrame&quot;);' />
 		</Window>
 		<Window Type="TLBB_ButtonClose" Name="SelectHeadFrame_Close">
-			<Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+			<Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}" />
 			<Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
 			<Event Name="Clicked" Function="this:Hide();" />
 		</Window>
 		<Window Type="DefaultWindow" Name="SelectHeadFrame_Function_Frame">
 			<Property Name="AbsolutePosition" Value="x:7.000000 y:36.000000" />
-			<Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-55.000000}" />
+			<Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-55.000000}}" />
 			<Window Type="TLBB_FramePlayerOther" Name="SelectHeadFrame_Model_Frame">
 				<Property Name="Position" Value="x:0.0 y:0.0" />
-				<Property Name="UnifiedSize" Value="{{0.000000,270.000000},{0.000000,128.000000}" />
+				<Property Name="UnifiedSize" Value="{{0.000000,270.000000},{0.000000,128.000000}}" />
 				<Window Type="DefaultWindow" Name="SelectHeadFrame_Preview">
 					<Property Name="UnifiedPosition" Value="{{0.0,8.000000},{0.0,12.000000}}" />
 					<Property Name="UnifiedSize" Value="{{0.000000,252.000000},{0.000000,95.000000}}" />
@@ -243,7 +243,7 @@
           <Event Name="Clicked" Function="SelectHeadFrame_Clicked(12);" />
 				</Window>
 				<Window Type="TLBB_ButtonNULL" Name="SelectHeadFrame_PageUp">
-					<Property Name="UnifiedPosition" Value="{{1.000000,-23.000000},{0.000000,15.000000}" />
+					<Property Name="UnifiedPosition" Value="{{1.000000,-23.000000},{0.000000,15.000000}}" />
 					<Property Name="AbsoluteSize" Value="w:20.0 h:26.0" />
 					<Property Name="NormalImage" Value="set:Button6 image:PageUp_Btn_Normal" />
 					<Property Name="HoverImage" Value="set:Button6 image:PageUp_Btn_Hover" />
@@ -252,7 +252,7 @@
 					<Event Name="Clicked" Function="SelectHeadFrame_Page(-1);" />
 				</Window>
 				<Window Type="TLBB_ButtonNULL" Name="SelectHeadFrame_PageDown">
-					<Property Name="UnifiedPosition" Value="{{1.000000,-23.000000},{1.000000,-41.000000}" />
+					<Property Name="UnifiedPosition" Value="{{1.000000,-23.000000},{1.000000,-41.000000}}" />
 					<Property Name="AbsoluteSize" Value="w:20.0 h:26.0" />
 					<Property Name="NormalImage" Value="set:Button6 image:PageDown_Btn_Normal" />
 					<Property Name="HoverImage" Value="set:Button6 image:PageDown_Btn_Hover" />
@@ -262,8 +262,8 @@
 				</Window>
 			</Window>
 			<Window Type="TLBB_SimpleMulitiTextFrame" Name="SelectHeadFrame_Require">
-				<Property Name="UnifiedPosition" Value="{{0.0,275.000000},{0.01,106.000000}" />
-				<Property Name="UnifiedSize" Value="{{0.000000,175.000000},{0.000000,20.000000}" />
+				<Property Name="UnifiedPosition" Value="{{0.0,275.000000},{0.01,106.000000}}" />
+				<Property Name="UnifiedSize" Value="{{0.000000,175.000000},{0.000000,20.000000}}" />
 				<Property Name="Text" Value="" />
 				<Property Name="TextColor" Value="FFFFF263" />
 				<Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
@@ -271,25 +271,25 @@
 				<Property Name="RiseOnClick" Value="False" />
 			</Window>
 			<Window Type="TLBB_StaticText" Name="SelectHeadFrame_WarningText">
-				<Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.01,127.000000}" />
-				<Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.99,-150.000000}" />
+				<Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.01,127.000000}}" />
+				<Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.99,-150.000000}}" />
 				<Property Name="Text" Value="#{INTERFACE_XML_1013}" />
 				<Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
 				<Property Name="VertFormatting" Value="TopAligned" />
 				<Property Name="VertScrollbar" Value="true" />
 			</Window>
 			<Window Type="TLBB_Frame_Lace5" Name="SelectHeadFrame_Blank">
-				<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}" />
-				<Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}" />
+				<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}}" />
+				<Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}}" />
 			</Window>
 			<Window Type="TLBB_ButtonCommon" Name="SelectHeadFrame_Accept">
-				<Property Name="UnifiedPosition" Value="{{1.000000,-80.000000},{1.000000,-20.000000}" />
+				<Property Name="UnifiedPosition" Value="{{1.000000,-80.000000},{1.000000,-20.000000}}" />
 				<Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
 				<Property Name="Text" Value="#{INTERFACE_XML_557}" />
         <Event Name="Clicked" Function="SelectHeadFrame_OK_Clicked();" />
 			</Window>
 			<Window Type="TLBB_ButtonCommon" Name="SelectHeadFrame_Cancel">
-				<Property Name="UnifiedPosition" Value="{{1.000000,-40.000000},{1.000000,-20.000000}" />
+				<Property Name="UnifiedPosition" Value="{{1.000000,-40.000000},{1.000000,-20.000000}}" />
 				<Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
 				<Property Name="Text" Value="#{INTERFACE_XML_542}" />
 				<Event Name="Clicked" Function="this:Hide();" />

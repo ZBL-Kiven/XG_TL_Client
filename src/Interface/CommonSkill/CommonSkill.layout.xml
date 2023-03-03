@@ -6,7 +6,7 @@
         <Property Name="MouseHollow" Value="True" />
         <Window Type="TLBB_DragTitle" Name="CommonSkill_DragTitle">
             <Property Name="AbsolutePosition" Value="x:108.000000 y:11.000000" />
-            <Property Name="UnifiedSize" Value="{{1.000000,-133.000000},{0.000000,20.000000}" />
+            <Property Name="UnifiedSize" Value="{{1.000000,-133.000000},{0.000000,20.000000}}" />
             <Property Name="DragTarget" Value="CommonSkill_Frame" />
             <Property Name="Font" Value="YouYuan11.25" />
             <Property Name="HorzFormatting" Value="HorzCentred" />
@@ -14,13 +14,13 @@
             <Property Name="Text" Value="#{INTERFACE_XML_49}" />
         </Window>
         <Window Type="TLBB_ButtonHelp" Name="CommonSkill_Help">
-            <Property Name="UnifiedPosition" Value="{{0.000000,88.000000},{0.000000,14.000000}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,88.000000},{0.000000,14.000000}}" />
             <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
             <Property Name="Text" Value="TLBB_ButtonHelp" />
             <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*CommonSkill&quot;);' />
         </Window>
         <Window Type="TLBB_ButtonClose" Name="CommonSkill_Close">
-            <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+            <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}" />
             <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
             <Property Name="Text" Value="TLBB_ButtonClose" />
             <Event Name="Clicked" Function="CommonSkill_OnClose();" />
@@ -28,10 +28,10 @@
         <!--client start-->
         <Window Type="DefaultWindow" Name="CommonSkill_Frame_Client">
             <Property Name="AbsolutePosition" Value="x:10.000000 y:37.000000" />
-            <Property Name="UnifiedSize" Value="{{1.000000,-15.000000},{1.000000,-66.000000}" />
+            <Property Name="UnifiedSize" Value="{{1.000000,-15.000000},{1.000000,-66.000000}}" />
             <Window Type="TLBB_Frame_Lace2" Name="CommonSkill_Bk">
-                <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,1.000000}" />
-                <Property Name="UnifiedSize" Value="{{0.0,207.000000},{0.000000,159.000000}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,1.000000}}" />
+                <Property Name="UnifiedSize" Value="{{0.0,207.000000},{0.000000,159.000000}}" />
                 <Property Name="RiseOnClick" Value="False" />
             </Window>
             <!--skills-->
@@ -180,7 +180,7 @@
             </Window>
             <Window Type="TLBB_SimpleMulitiTextFrame" Name="CommonSkill_Target_Skill_Name">
                 <Property Name="Position" Value="x:0.3 y:0.57" />
-                <Property Name="UnifiedSize" Value="{{0.4,0.000000},{0.000000,36.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.4,0.000000},{0.000000,36.000000}}" />
                 <Property Name="HorzFormatting" Value="LeftAligned" />
                 <Property Name="VertFormatting" Value="VertCentred" />
                 <Property Name="TextColor" Value="FFFFF263" />
@@ -188,16 +188,16 @@
             </Window>
             <Window Type="TLBB_ButtonCommon" Name="CommonSkill_Use">
                 <Property Name="Position" Value="x:0.72 y:0.6" />
-                <Property Name="UnifiedSize" Value="{{0.2,0.000000},{0.000000,20.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.2,0.000000},{0.000000,20.000000}}" />
                 <Property Name="Text" Value="#{INTERFACE_XML_643}" />
                 <Event Name="Clicked" Function="CommonSkill_Button_Clicked();" />
             </Window>
             <Window Type="TLBB_Frame_Lace4" Name="CommonSkill_Target_Skill_Explain_Bk">
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-80.000000}" />
-                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,80.000000}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-80.000000}}" />
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,80.000000}}" />
                 <Window Type="TLBB_StaticText" Name="CommonSkill_Target_Skill_Explain">
-                    <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,6.000000}" />
-                    <Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{1.000000,-12.000000}" />
+                    <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,6.000000}}" />
+                    <Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{1.000000,-12.000000}}" />
                     <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
                     <Property Name="RiseOnClick" Value="False" />
                     <Property Name="VertFormatting" Value="TopAligned" />
@@ -207,8 +207,8 @@
             </Window>
         </Window>
         <Window Type="DefaultWindow" Name="CommonSkill_Checkbox_Frame">
-            <Property Name="UnifiedPosition" Value="{{0.0,8.000000},{1.000000,-25.000000}" />
-            <Property Name="UnifiedSize" Value="{{0.9,0.000000},{0.000000,24.000000}" />
+            <Property Name="UnifiedPosition" Value="{{0.0,8.000000},{1.000000,-25.000000}}" />
+            <Property Name="UnifiedSize" Value="{{0.9,0.000000},{0.000000,24.000000}}" />
             <Property Name="RiseOnClick" Value="False" />
             <Window Type="TLBB_ButtonPageDown" Name="CommonSkill_CommonlySkill">
                 <Property Name="AbsolutePosition" Value="x:0.0 y:0.0" />

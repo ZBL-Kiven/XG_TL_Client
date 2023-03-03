@@ -1,49 +1,49 @@
 <?xml version="1.0" ?>
 <GUILayout>
   <Window Type="TLBB_HeroFrame01" Name="LoverTimeReceive_Frame">
-    <Property Name="UnifiedSize" Value="{{0.000000,652.000000},{0.000000,442.000000}}"/>
-    <Property Name="UnifiedPosition" Value="{{0.500000,-322.000000},{0.500000,-221.000000}}"/>
+    <Property Name="UnifiedSize" Value="{{0.000000,652.000000},{0.000000,442.000000}}" />
+    <Property Name="UnifiedPosition" Value="{{0.500000,-322.000000},{0.500000,-221.000000}}" />
     <Event Name="Hidden" Function="LoverTimeReceive_OnHiden()"/>
       <Window Type="TLBB_HeroTitle01" Name="LoverTimeReceive_DragTitleBK">
-        <Property Name="UnifiedSize" Value="{{0.000000,314.000000},{0.000000,30.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.500000,-157.500000},{0.000000,-2.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,314.000000},{0.000000,30.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.500000,-157.500000},{0.000000,-2.000000}}" />
         <Property Name="RiseOnClick" Value="False"/>
       </Window>
       <Window Type="TLBB_DragTitle" Name="LoverTimeReceive_DragTitle">
-        <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{0.000000,20.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,5.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{0.000000,20.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,5.000000}}" />
         <Property Name="Font" Value="YouYuan11.25" />
         <Property Name="HorzFormatting" Value="HorzCentred"/>
         <Property Name="Text" Value="#{QRZM_211119_33}" />
         <Property Name="DragTarget" Value="LoverTimeReceive_Frame"/>
       </Window>
       <Window Type="TLBB_ButtonClose2" Name="LoverTimeReceive_Close">
-        <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,14.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{1.000000,-28.000000},{0.000000,8.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,14.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{1.000000,-28.000000},{0.000000,8.000000}}" />
         <Event Name="Clicked" Function="LoverTimeReceive_Close()" />
       </Window>
       <Window Type="TLBB_HeroLace01" Name="LoverTimeReceive_Frame_Client">
-        <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{1.000000,-32.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,28.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{1.000000,-32.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,28.000000}}" />
         <Property Name="RiseOnClick" Value="False" />
           <Window Type="TLBB_SimpleText" Name="LoverTimeReceive_Explain_Text">
-            <Property Name="UnifiedSize" Value="{{1.000000,-24.000000},{0.000000,60.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,14.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,-24.000000},{0.000000,60.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,14.000000}}" />
             <Property Name="Text" Value="#{QRZM_211119_267}"/>
             <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
             <Property Name="VertFormatting" Value="TopAligned"/>
           </Window>
         <Window Type="TLBB_StaticImageNULL" Name="LoverTimeReceive_Award1BK">
-          <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,50.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,44.000000},{1.000000,-76.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,50.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,44.000000},{1.000000,-76.000000}}" />
           <Property Name="Image" Value="set:QiXi_HuaBang2 image:QiXi_HuaBang2IconBK"/>
         <Window Type="TLBB_ActionButton" Name="LoverTimeReceive_Award1">
-          <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.500000,-22.000000},{0.500000,-22.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.500000,-22.000000},{0.500000,-22.000000}}" />
           <Property Name="AlwaysOnTop" Value="True" />
           <Event Name="Clicked" Function="LoverTimeReceive_Award_Item_Clicked(1)"/>
           <Window Type="TLBB_Animate" Name="LoverTimeReceive_Award1Animate">
-            <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}" />
             <Property Name="MouseRButtonHollow" Value="True"/>
             <Property Name="MouseMoveHollow" Value="True"/>
             <Property Name="MouseLButtonHollow" Value="True"/>
@@ -52,8 +52,8 @@
             <Property Name="AlwaysOnTop" Value="True"/>
           </Window>
           <Window Type="TLBB_StaticImageNULL" Name="LoverTimeReceive_Award1OK">
-            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,28.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{0.500000,-14.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,28.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{0.500000,-14.000000}}" />
             <Property Name="RiseOnClick" Value="False"/>
             <Property Name="MouseRButtonHollow" Value="True"/>
             <Property Name="MouseMoveHollow" Value="True"/>
@@ -64,23 +64,23 @@
         </Window>
         </Window>
         <Window Type="TLBB_SimpleText" Name="LoverTimeReceive_Award1Text">
-          <Property Name="UnifiedSize" Value="{{0.000000,66.000000},{0.000000,20.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,36.000000},{1.000000,-24.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,66.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,36.000000},{1.000000,-24.000000}}" />
           <Property Name="AlwaysOnTop" Value="True" />
           <Property Name="Text" Value="#{QRZM_211119_194}"/>
           <Property Name="HorzFormatting" Value="WordWrapCentred"/>
         </Window>
         <Window Type="TLBB_StaticImageNULL" Name="LoverTimeReceive_Award2BK">
-          <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,50.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,144.000000},{1.000000,-76.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,50.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,144.000000},{1.000000,-76.000000}}" />
           <Property Name="Image" Value="set:QiXi_HuaBang2 image:QiXi_HuaBang2IconBK"/>
         <Window Type="TLBB_ActionButton" Name="LoverTimeReceive_Award2">
-          <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.500000,-22.000000},{0.500000,-22.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.500000,-22.000000},{0.500000,-22.000000}}" />
           <Property Name="AlwaysOnTop" Value="True" />
           <Event Name="Clicked" Function="LoverTimeReceive_Award_Item_Clicked(2)"/>
           <Window Type="TLBB_Animate" Name="LoverTimeReceive_Award2Animate">
-            <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}" />
             <Property Name="MouseRButtonHollow" Value="True"/>
             <Property Name="MouseMoveHollow" Value="True"/>
             <Property Name="MouseLButtonHollow" Value="True"/>
@@ -89,8 +89,8 @@
             <Property Name="AlwaysOnTop" Value="True"/>
           </Window>
           <Window Type="TLBB_StaticImageNULL" Name="LoverTimeReceive_Award2OK">
-            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,28.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{0.500000,-14.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,28.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{0.500000,-14.000000}}" />
             <Property Name="RiseOnClick" Value="False"/>
             <Property Name="MouseRButtonHollow" Value="True"/>
             <Property Name="MouseMoveHollow" Value="True"/>
@@ -101,23 +101,23 @@
         </Window>
         </Window>
         <Window Type="TLBB_SimpleText" Name="LoverTimeReceive_Award2Text">
-          <Property Name="UnifiedSize" Value="{{0.000000,66.000000},{0.000000,20.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,136.000000},{1.000000,-24.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,66.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,136.000000},{1.000000,-24.000000}}" />
           <Property Name="AlwaysOnTop" Value="True" />
           <Property Name="HorzFormatting" Value="WordWrapCentred"/>
           <Property Name="Text" Value="#{QRZM_211119_194}"/>
         </Window>
         <Window Type="TLBB_StaticImageNULL" Name="LoverTimeReceive_Award3BK">
-          <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,50.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,244.000000},{1.000000,-76.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,50.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,244.000000},{1.000000,-76.000000}}" />
           <Property Name="Image" Value="set:QiXi_HuaBang2 image:QiXi_HuaBang2IconBK"/>
         <Window Type="TLBB_ActionButton" Name="LoverTimeReceive_Award3">
-          <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.500000,-22.000000},{0.500000,-22.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.500000,-22.000000},{0.500000,-22.000000}}" />
           <Property Name="AlwaysOnTop" Value="True" />
           <Event Name="Clicked" Function="LoverTimeReceive_Award_Item_Clicked(3)"/>
           <Window Type="TLBB_Animate" Name="LoverTimeReceive_Award3Animate">
-            <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}" />
             <Property Name="MouseRButtonHollow" Value="True"/>
             <Property Name="MouseMoveHollow" Value="True"/>
             <Property Name="MouseLButtonHollow" Value="True"/>
@@ -126,8 +126,8 @@
             <Property Name="AlwaysOnTop" Value="True"/>
           </Window>
           <Window Type="TLBB_StaticImageNULL" Name="LoverTimeReceive_Award3OK">
-            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,28.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{0.500000,-14.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,28.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{0.500000,-14.000000}}" />
             <Property Name="RiseOnClick" Value="False"/>
             <Property Name="MouseRButtonHollow" Value="True"/>
             <Property Name="MouseMoveHollow" Value="True"/>
@@ -138,23 +138,23 @@
         </Window>
         </Window>
         <Window Type="TLBB_SimpleText" Name="LoverTimeReceive_Award3Text">
-          <Property Name="UnifiedSize" Value="{{0.000000,66.000000},{0.000000,20.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,236.000000},{1.000000,-24.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,66.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,236.000000},{1.000000,-24.000000}}" />
           <Property Name="AlwaysOnTop" Value="True" />
           <Property Name="Text" Value="#{QRZM_211119_194}"/>
           <Property Name="HorzFormatting" Value="WordWrapCentred"/>
         </Window>
         <Window Type="TLBB_StaticImageNULL" Name="LoverTimeReceive_Award4BK">
-          <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,50.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,344.000000},{1.000000,-76.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,50.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,344.000000},{1.000000,-76.000000}}" />
           <Property Name="Image" Value="set:QiXi_HuaBang2 image:QiXi_HuaBang2IconBK"/>
         <Window Type="TLBB_ActionButton" Name="LoverTimeReceive_Award4">
-          <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.500000,-22.000000},{0.500000,-22.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.500000,-22.000000},{0.500000,-22.000000}}" />
           <Property Name="AlwaysOnTop" Value="True" />
           <Event Name="Clicked" Function="LoverTimeReceive_Award_Item_Clicked(4)"/>
           <Window Type="TLBB_Animate" Name="LoverTimeReceive_Award4Animate">
-            <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}" />
             <Property Name="MouseRButtonHollow" Value="True"/>
             <Property Name="MouseMoveHollow" Value="True"/>
             <Property Name="MouseLButtonHollow" Value="True"/>
@@ -163,8 +163,8 @@
             <Property Name="AlwaysOnTop" Value="True"/>
           </Window>
           <Window Type="TLBB_StaticImageNULL" Name="LoverTimeReceive_Award4OK">
-            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,28.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{0.500000,-14.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,28.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{0.500000,-14.000000}}" />
             <Property Name="RiseOnClick" Value="False"/>
             <Property Name="MouseRButtonHollow" Value="True"/>
             <Property Name="MouseMoveHollow" Value="True"/>
@@ -175,23 +175,23 @@
         </Window>
         </Window>
         <Window Type="TLBB_SimpleText" Name="LoverTimeReceive_Award4Text">
-          <Property Name="UnifiedSize" Value="{{0.000000,66.000000},{0.000000,20.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,336.000000},{1.000000,-24.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,66.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,336.000000},{1.000000,-24.000000}}" />
           <Property Name="AlwaysOnTop" Value="True" />
           <Property Name="Text" Value="#{QRZM_211119_194}"/>
           <Property Name="HorzFormatting" Value="WordWrapCentred"/>
         </Window>
         <Window Type="TLBB_StaticImageNULL" Name="LoverTimeReceive_Award5BK">
-          <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,50.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,444.000000},{1.000000,-76.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,50.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,444.000000},{1.000000,-76.000000}}" />
           <Property Name="Image" Value="set:QiXi_HuaBang2 image:QiXi_HuaBang2IconBK"/>
         <Window Type="TLBB_ActionButton" Name="LoverTimeReceive_Award5">
-          <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.500000,-22.000000},{0.500000,-22.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.500000,-22.000000},{0.500000,-22.000000}}" />
           <Property Name="AlwaysOnTop" Value="True" />
           <Event Name="Clicked" Function="LoverTimeReceive_Award_Item_Clicked(5)"/>
           <Window Type="TLBB_Animate" Name="LoverTimeReceive_Award5Animate">
-            <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}" />
             <Property Name="MouseRButtonHollow" Value="True"/>
             <Property Name="MouseMoveHollow" Value="True"/>
             <Property Name="MouseLButtonHollow" Value="True"/>
@@ -200,8 +200,8 @@
             <Property Name="AlwaysOnTop" Value="True"/>
           </Window>
           <Window Type="TLBB_StaticImageNULL" Name="LoverTimeReceive_Award5OK">
-            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,28.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{0.500000,-14.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,28.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{0.500000,-14.000000}}" />
             <Property Name="RiseOnClick" Value="False"/>
             <Property Name="MouseRButtonHollow" Value="True"/>
             <Property Name="MouseMoveHollow" Value="True"/>
@@ -212,22 +212,22 @@
         </Window>
         </Window>
         <Window Type="TLBB_SimpleText" Name="LoverTimeReceive_Award5Text">
-          <Property Name="UnifiedSize" Value="{{0.000000,66.000000},{0.000000,20.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,436.000000},{1.000000,-24.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,66.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,436.000000},{1.000000,-24.000000}}" />
           <Property Name="AlwaysOnTop" Value="True" />
           <Property Name="Text" Value="#{QRZM_211119_194}"/>
         </Window>
         <Window Type="TLBB_StaticImageNULL" Name="LoverTimeReceive_Award6BK">
-          <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,50.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,544.000000},{1.000000,-76.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,50.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,544.000000},{1.000000,-76.000000}}" />
           <Property Name="Image" Value="set:QiXi_HuaBang2 image:QiXi_HuaBang2IconBK"/>
         <Window Type="TLBB_ActionButton" Name="LoverTimeReceive_Award6">
-          <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.500000,-22.000000},{0.500000,-22.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.500000,-22.000000},{0.500000,-22.000000}}" />
           <Property Name="AlwaysOnTop" Value="True" />
           <Event Name="Clicked" Function="LoverTimeReceive_Award_Item_Clicked(6)"/>
           <Window Type="TLBB_Animate" Name="LoverTimeReceive_Award6Animate">
-            <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}" />
             <Property Name="MouseRButtonHollow" Value="True"/>
             <Property Name="MouseMoveHollow" Value="True"/>
             <Property Name="MouseLButtonHollow" Value="True"/>
@@ -236,8 +236,8 @@
             <Property Name="AlwaysOnTop" Value="True"/>
           </Window>
           <Window Type="TLBB_StaticImageNULL" Name="LoverTimeReceive_Award6OK">
-            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,28.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{0.500000,-14.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,28.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{0.500000,-14.000000}}" />
             <Property Name="RiseOnClick" Value="False"/>
             <Property Name="MouseRButtonHollow" Value="True"/>
             <Property Name="MouseMoveHollow" Value="True"/>
@@ -248,38 +248,38 @@
         </Window>
         </Window>
         <Window Type="TLBB_SimpleText" Name="LoverTimeReceive_Award6Text">
-          <Property Name="UnifiedSize" Value="{{0.000000,66.000000},{0.000000,20.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,536.000000},{1.000000,-24.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,66.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,536.000000},{1.000000,-24.000000}}" />
           <Property Name="AlwaysOnTop" Value="True" />
           <Property Name="HorzFormatting" Value="WordWrapCentred"/>
           <Property Name="Text" Value="#{QRZM_211119_194}"/>
         </Window>
         <Window Type="TLBB_SimpleText" Name="LoverTimeReceive_TakeOn_Text2">
-          <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,18.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,16.000000},{0.000000,312.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,18.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,16.000000},{0.000000,312.000000}}" />
           <Property Name="VertFormatting" Value="TopAligned"/>
           <Property Name="Text" Value="#{QRZM_211119_193}"/>
           <Property Name="HorzFormatting" Value="LeftAligned"/>
         </Window>
         <Window Type="TLBB_StaticImageNULL" Name="LoverTimeReceive_Image">
-          <Property Name="UnifiedSize" Value="{{0.000000,609.000000},{0.000000,236.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.500000,-305.000000},{0.000000,70.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,609.000000},{0.000000,236.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.500000,-305.000000},{0.000000,70.000000}}" />
           <Property Name="RiseOnClick" Value="False"/>
           <Property Name="Image" Value="set:LoverTime02 image:LoverTime_LeiJi"/>
             <Window Type="TLBB_SimpleText" Name="LoverTimeReceive_TakeOn_Text">
-              <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,20.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,44.000000},{0.000000,184.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,20.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,44.000000},{0.000000,184.000000}}" />
               <Property Name="VertFormatting" Value="TopAligned"/>
               <Property Name="Text" Value="#{QRZM_211119_34}"/>
               <Property Name="HorzFormatting" Value="WordWrapCentred"/>
             </Window>
             <Window Type="TLBB_ActionButton" Name="LoverTimeReceive_TakeOnIcon">
-              <Property Name="UnifiedSize" Value="{{0.000000,54.000000},{0.000000,54.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,376.000000},{0.000000,61.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,54.000000},{0.000000,54.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,376.000000},{0.000000,61.000000}}" />
               <Event Name="Clicked" Function="LoverTimeReceive_214_Item_Clicked()"/>
               <Window Type="TLBB_Animate" Name="LoverTimeReceive_TakeOnIconAnimate">
-                <Property Name="UnifiedSize" Value="{{0.000000,54.000000},{0.000000,54.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,54.000000},{0.000000,54.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
                 <Property Name="MouseLButtonHollow" Value="True"/>
@@ -288,8 +288,8 @@
                 <Property Name="AlwaysOnTop" Value="True"/>
               </Window>
               <Window Type="TLBB_StaticImageNULL" Name="LoverTimeReceive_TakeOnIconOK">
-                <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,28.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{0.500000,-14.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,28.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{0.500000,-14.000000}}" />
                 <Property Name="RiseOnClick" Value="False"/>
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
@@ -299,8 +299,8 @@
               </Window>
             </Window>
             <Window Type="TLBB_SimpleText" Name="LoverTimeReceive_TakeOnBtn">
-              <Property Name="UnifiedSize" Value="{{0.000000,154.000000},{0.000000,18.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.000000,156.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,154.000000},{0.000000,18.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.000000,156.000000}}" />
               <Property Name="Text" Value="#{QRZM_211119_35}"/>
               <Property Name="HorzFormatting" Value="WordWrapCentred"/>
             </Window>

@@ -5,7 +5,7 @@
     <Property Name="AbsoluteSize" Value="w:350.000000 h:460.000000" />
     <Window Type="TLBB_DragTitle" Name="AutoAttackSkill_Frame_Title">
       <Property Name="AbsolutePosition" Value="x:108.000000 y:11.000000" />
-      <Property Name="UnifiedSize" Value="{{1.000000,-133.000000},{0.000000,20.000000}" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-133.000000},{0.000000,20.000000}}" />
       <Property Name="Text" Value="#{ZDZD_200724_09}" />
       <Property Name="DragTarget" Value="AutoAttackSkill_Frame" />
       <Property Name="Font" Value="YouYuan11.25" />
@@ -14,20 +14,20 @@
       <Property Name="VertFormatting" Value="VertCentred" />
     </Window>
     <Window Type="TLBB_ButtonHelp" Name="AutoAttackSkill_Help">
-      <Property Name="UnifiedPosition" Value="{{0.000000,88.000000},{0.000000,14.000000}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,88.000000},{0.000000,14.000000}}" />
       <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
       <Property Name="Text" Value="TLBB_ButtonHelp" />
       <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*AutoAttackSkill&quot;);' />
     </Window>
     <Window Type="TLBB_ButtonClose" Name="AutoAttackSkill_Close">
-      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}" />
       <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
       <Property Name="Text" Value="TLBB_ButtonClose" />
       <Event Name="Clicked" Function="AutoAttackSkill_OnClose();" />
     </Window>
     <Window Type="DefaultWindow" Name="AutoAttackSkill_Frame_Client">
       <Property Name="AbsolutePosition" Value="x:10.000000 y:37.000000" />
-      <Property Name="UnifiedSize" Value="{{1.000000,-15.000000},{1.000000,-66.000000}" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-15.000000},{1.000000,-66.000000}}" />
       <Window Type="TLBB_SimpleText" Name="AutoAttackSkill_MenPai_Attr_Intro">
         <Property Name="AbsolutePosition" Value="x:39.000000 y:5.000000" />
         <Property Name="AbsoluteSize" Value="w:75.000000 h:16.000000" />
@@ -78,8 +78,8 @@
         </Window>
       </Window>
       <Window Type="TLBB_Frame_Lace1" Name="AutoAttackSkill_Bk">
-        <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.0,110.000000}" />
-        <Property Name="UnifiedSize" Value="{{0.000000,229.000000},{0.000000,42.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.0,110.000000}}" />
+        <Property Name="UnifiedSize" Value="{{0.000000,229.000000},{0.000000,42.000000}}" />
         <Property Name="RiseOnClick" Value="False" />
         <Window Type="TLBB_ActionButton" Name="AutoAttackSkill_Zhaoshi1">
           <Property Name="AbsolutePosition" Value="x:4.0 y:4.0" />
@@ -112,13 +112,13 @@
           <Event Name="Clicked" Function="AutoAttackSkill_Skill_Clicked(5);" />
         </Window>
         <Window Type="DefaultWindow" Name="AutoAttackSkill_Background1">
-          <Property Name="UnifiedSize" Value="{{0.000000,17.000000},{0.000000,20.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,26.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,17.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,26.000000},{0.000000,20.000000}}" />
           <Property Name="RiseOnClick" Value="False"/>
           <Property Name="AlwaysOnTop" Value="True"/>
           <Window Type="TLBB_StaticImageNULL" Name="AutoAttackSkill_lock1">
-            <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,18.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,18.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
             <Property Name="MouseRButtonHollow" Value="True"/>
             <Property Name="MouseMoveHollow" Value="True"/>
             <Property Name="MouseLButtonHollow" Value="True"/>
@@ -127,8 +127,8 @@
             <Property Name="AlwaysOnTop" Value="True"/>
           </Window>
           <Window Type="TLBB_SimpleText" Name="AutoAttackSkill_Jin1">
-            <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,2.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,2.000000}}" />
             <Property Name="MouseRButtonHollow" Value="True"/>
             <Property Name="MouseMoveHollow" Value="True"/>
             <Property Name="MouseLButtonHollow" Value="True"/>
@@ -137,20 +137,20 @@
             <Property Name="AlwaysOnTop" Value="True"/>
           </Window>
           <Window Type="TLBB_ButtonCheck" Name="AutoAttackSkill_OK1">
-            <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.0000,0.000000},{0.000000,6.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.0000,0.000000},{0.000000,6.000000}}" />
             <Event Name="MouseButtonUp" Function="AutoAttackSkill_SkillLock_Clicked(1)"/>
             <Property Name="AlwaysOnTop" Value="True"/>
           </Window>
         </Window>
         <Window Type="DefaultWindow" Name="AutoAttackSkill_Background2">
-          <Property Name="UnifiedSize" Value="{{0.000000,17.000000},{0.000000,20.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,73.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,17.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,73.000000},{0.000000,20.000000}}" />
           <Property Name="RiseOnClick" Value="False"/>
           <Property Name="AlwaysOnTop" Value="True"/>
           <Window Type="TLBB_StaticImageNULL" Name="AutoAttackSkill_lock2">
-            <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,18.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,18.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
             <Property Name="MouseRButtonHollow" Value="True"/>
             <Property Name="MouseMoveHollow" Value="True"/>
             <Property Name="MouseLButtonHollow" Value="True"/>
@@ -159,8 +159,8 @@
             <Property Name="AlwaysOnTop" Value="True"/>
           </Window>
           <Window Type="TLBB_SimpleText" Name="AutoAttackSkill_Jin2">
-            <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,2.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,2.000000}}" />
             <Property Name="MouseRButtonHollow" Value="True"/>
             <Property Name="MouseMoveHollow" Value="True"/>
             <Property Name="MouseLButtonHollow" Value="True"/>
@@ -169,20 +169,20 @@
             <Property Name="AlwaysOnTop" Value="True"/>
           </Window>
           <Window Type="TLBB_ButtonCheck" Name="AutoAttackSkill_OK2">
-            <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.0000,0.000000},{0.000000,6.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.0000,0.000000},{0.000000,6.000000}}" />
             <Event Name="MouseButtonUp" Function="AutoAttackSkill_SkillLock_Clicked(2)"/>
             <Property Name="AlwaysOnTop" Value="True"/>
           </Window>
         </Window>
         <Window Type="DefaultWindow" Name="AutoAttackSkill_Background3">
-          <Property Name="UnifiedSize" Value="{{0.000000,17.000000},{0.000000,20.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,17.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,120.000000},{0.000000,20.000000}}" />
           <Property Name="RiseOnClick" Value="False"/>
           <Property Name="AlwaysOnTop" Value="True"/>
           <Window Type="TLBB_StaticImageNULL" Name="AutoAttackSkill_lock3">
-            <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,18.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,18.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
             <Property Name="MouseRButtonHollow" Value="True"/>
             <Property Name="MouseMoveHollow" Value="True"/>
             <Property Name="MouseLButtonHollow" Value="True"/>
@@ -191,8 +191,8 @@
             <Property Name="AlwaysOnTop" Value="True"/>
           </Window>
           <Window Type="TLBB_SimpleText" Name="AutoAttackSkill_Jin3">
-            <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,2.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,2.000000}}" />
             <Property Name="MouseRButtonHollow" Value="True"/>
             <Property Name="MouseMoveHollow" Value="True"/>
             <Property Name="MouseLButtonHollow" Value="True"/>
@@ -201,20 +201,20 @@
             <Property Name="AlwaysOnTop" Value="True"/>
           </Window>
           <Window Type="TLBB_ButtonCheck" Name="AutoAttackSkill_OK3">
-            <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.0000,0.000000},{0.000000,6.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.0000,0.000000},{0.000000,6.000000}}" />
             <Event Name="MouseButtonUp" Function="AutoAttackSkill_SkillLock_Clicked(3)"/>
             <Property Name="AlwaysOnTop" Value="True"/>
           </Window>
         </Window>
         <Window Type="DefaultWindow" Name="AutoAttackSkill_Background4">
-          <Property Name="UnifiedSize" Value="{{0.000000,17.000000},{0.000000,20.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,168.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,17.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,168.000000},{0.000000,20.000000}}" />
           <Property Name="RiseOnClick" Value="False"/>
           <Property Name="AlwaysOnTop" Value="True"/>
           <Window Type="TLBB_StaticImageNULL" Name="AutoAttackSkill_lock4">
-            <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,18.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,18.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
             <Property Name="MouseRButtonHollow" Value="True"/>
             <Property Name="MouseMoveHollow" Value="True"/>
             <Property Name="MouseLButtonHollow" Value="True"/>
@@ -223,8 +223,8 @@
             <Property Name="AlwaysOnTop" Value="True"/>
           </Window>
           <Window Type="TLBB_SimpleText" Name="AutoAttackSkill_Jin4">
-            <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,2.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,2.000000}}" />
             <Property Name="MouseRButtonHollow" Value="True"/>
             <Property Name="MouseMoveHollow" Value="True"/>
             <Property Name="MouseLButtonHollow" Value="True"/>
@@ -233,20 +233,20 @@
             <Property Name="AlwaysOnTop" Value="True"/>
           </Window>
           <Window Type="TLBB_ButtonCheck" Name="AutoAttackSkill_OK4">
-            <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.0000,0.000000},{0.000000,6.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.0000,0.000000},{0.000000,6.000000}}" />
             <Event Name="MouseButtonUp" Function="AutoAttackSkill_SkillLock_Clicked(4)"/>
             <Property Name="AlwaysOnTop" Value="True"/>
           </Window>
         </Window>
         <Window Type="DefaultWindow" Name="AutoAttackSkill_Background5">
-          <Property Name="UnifiedSize" Value="{{0.000000,17.000000},{0.000000,20.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,214.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,17.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,214.000000},{0.000000,20.000000}}" />
           <Property Name="RiseOnClick" Value="False"/>
           <Property Name="AlwaysOnTop" Value="True"/>
           <Window Type="TLBB_StaticImageNULL" Name="AutoAttackSkill_lock5">
-            <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,18.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,18.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
             <Property Name="MouseRButtonHollow" Value="True"/>
             <Property Name="MouseMoveHollow" Value="True"/>
             <Property Name="MouseLButtonHollow" Value="True"/>
@@ -255,8 +255,8 @@
             <Property Name="AlwaysOnTop" Value="True"/>
           </Window>
           <Window Type="TLBB_SimpleText" Name="AutoAttackSkill_Jin5">
-            <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,2.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,2.000000}}" />
             <Property Name="MouseRButtonHollow" Value="True"/>
             <Property Name="MouseMoveHollow" Value="True"/>
             <Property Name="MouseLButtonHollow" Value="True"/>
@@ -265,324 +265,324 @@
             <Property Name="AlwaysOnTop" Value="True"/>
           </Window>
           <Window Type="TLBB_ButtonCheck" Name="AutoAttackSkill_OK5">
-            <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.0000,0.000000},{0.000000,6.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.0000,0.000000},{0.000000,6.000000}}" />
             <Event Name="MouseButtonUp" Function="AutoAttackSkill_SkillLock_Clicked(5)"/>
             <Property Name="AlwaysOnTop" Value="True"/>
           </Window>
         </Window>
       </Window>
       <Window Type="DefaultWindow" Name="AutoAttackSkill_Setting_Frame">
-        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,24.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-238.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,24.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-238.000000}}" />
         <Window Type="TLBB_ButtonPageUp" Name="AutoAttackSkill_Setting1">
-          <Property Name="UnifiedSize" Value="{{0.000000,76.000000},{0.000000,24.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,76.000000},{0.000000,24.000000}}" />
           <Property Name="Text" Value="#{ZDZD_200724_10}"/>
           <Property Name="Selected" Value="True"/>
           <Property Name="CheckMode" Value="1"/>
           <Event Name="MouseLButtonDown" Function="AutoAttackSkill_Option_Click(1)"/>
         </Window>
         <Window Type="TLBB_ButtonPageUp" Name="AutoAttackSkill_Setting2">
-          <Property Name="UnifiedSize" Value="{{0.000000,76.000000},{0.000000,24.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,78.000000},{0.000000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,76.000000},{0.000000,24.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,78.000000},{0.000000,0.000000}}" />
           <Property Name="Text" Value="#{ZDZD_200724_11}"/>
           <Property Name="CheckMode" Value="1"/>
           <Event Name="MouseLButtonDown" Function="AutoAttackSkill_Option_Click(2)"/>
         </Window>
         <Window Type="TLBB_ButtonPageUp" Name="AutoAttackSkill_Setting3">
-          <Property Name="UnifiedSize" Value="{{0.000000,76.000000},{0.000000,24.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,156.000000},{0.000000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,76.000000},{0.000000,24.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,156.000000},{0.000000,0.000000}}" />
           <Property Name="Text" Value="#{ZDZD_200724_12}"/>
           <Property Name="CheckMode" Value="1"/>
           <Event Name="MouseLButtonDown" Function="AutoAttackSkill_Option_Click(3)"/>
         </Window>
       </Window>
       <Window Type="TLBB_Frame_Lace4" Name="AutoAttackSkill_Explain_Bk">
-        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,170.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-214.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,170.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-214.000000}}" />
         <Property Name="RiseOnClick" Value="False" />
         <Window Type="TLBB_Frame_Lace1" Name="AutoAttackSkill_Explain1">
-          <Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{0.000000,54.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,4.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{0.000000,54.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,4.000000}}" />
           <Property Name="RiseOnClick" Value="False"/>
           <Window Type="TLBB_SimpleText" Name="AutoAttackSkill_Explain1_Blood">
-            <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,16.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,16.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,10.000000}}" />
             <Property Name="TextColor" Value="FFFFF263"/>
           </Window>
           <Window Type="TLBB_ComboList" Name="AutoAttackSkill_Explain1_BloodHuiFu">
-            <Property Name="UnifiedSize" Value="{{0.000000,164.000000},{0.000000,20.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,150.000000},{0.000000,8.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,164.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,150.000000},{0.000000,8.000000}}" />
             <Property Name="AlwaysOnTop" Value="True"/>
             <Event Name="ListSelectionAccepted" Function="AutoAttackSkill_ComboListSelectChanged(1);" />
           </Window>
           <Window Type="TLBB_ButtonCheck" Name="AutoAttackSkill_Explain1_Blood30">
-            <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,13.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,13.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,30.000000}}" />
             <Event Name="Clicked" Function="AutoAttackSkill_OptionPercent_Click(1,1)"/>
           </Window>
           <Window Type="TLBB_SimpleText" Name="AutoAttackSkill_Explain1_Blood30Text">
-            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,16.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,46.000000},{0.000000,28.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,16.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,46.000000},{0.000000,28.000000}}" />
             <Property Name="TextColor" Value="FFFFF263"/>
             <Property Name="Text" Value="#{ZDZD_200724_18}"/>
           </Window>
           <Window Type="TLBB_ButtonCheck" Name="AutoAttackSkill_Explain1_Blood50">
-            <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,13.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,90.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,13.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,90.000000},{0.000000,30.000000}}" />
             <Event Name="Clicked" Function="AutoAttackSkill_OptionPercent_Click(1,2)"/>
           </Window>
           <Window Type="TLBB_SimpleText" Name="AutoAttackSkill_Explain1_Blood50Text">
-            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,16.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,106.000000},{0.000000,28.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,16.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,106.000000},{0.000000,28.000000}}" />
             <Property Name="TextColor" Value="FFFFF263"/>
             <Property Name="Text" Value="#{ZDZD_200724_19}"/>
           </Window>
           <Window Type="TLBB_ButtonCheck" Name="AutoAttackSkill_Explain1_Blood70">
-            <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,13.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,150.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,13.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,150.000000},{0.000000,30.000000}}" />
             <Event Name="Clicked" Function="AutoAttackSkill_OptionPercent_Click(1,3)"/>
           </Window>
           <Window Type="TLBB_SimpleText" Name="AutoAttackSkill_Explain1_Blood70Text">
-            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,16.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,166.000000},{0.000000,28.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,16.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,166.000000},{0.000000,28.000000}}" />
             <Property Name="TextColor" Value="FFFFF263"/>
             <Property Name="Text" Value="#{ZDZD_200724_20}"/>
           </Window>
         </Window>
         <Window Type="TLBB_Frame_Lace1" Name="AutoAttackSkill_Explain2">
-          <Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{0.000000,54.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,58.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{0.000000,54.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,58.000000}}" />
           <Property Name="RiseOnClick" Value="False"/>
           <Window Type="TLBB_SimpleText" Name="AutoAttackSkill_Explain2_Blood">
-            <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,16.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,16.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,10.000000}}" />
             <Property Name="TextColor" Value="FFFFF263"/>
             <Property Name="Text" Value="#{ZDZD_200724_21}"/>
           </Window>
           <Window Type="TLBB_ComboList" Name="AutoAttackSkill_Explain2_BloodHuiFu">
-            <Property Name="UnifiedSize" Value="{{0.000000,164.000000},{0.000000,20.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,150.000000},{0.000000,8.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,164.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,150.000000},{0.000000,8.000000}}" />
             <Property Name="AlwaysOnTop" Value="True"/>
             <Event Name="ListSelectionAccepted" Function="AutoAttackSkill_ComboListSelectChanged(2);" />
           </Window>
           <Window Type="TLBB_ButtonCheck" Name="AutoAttackSkill_Explain2_Blood30">
-            <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,13.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,13.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,30.000000}}" />
             <Event Name="Clicked" Function="AutoAttackSkill_OptionPercent_Click(2,1)"/>
           </Window>
           <Window Type="TLBB_SimpleText" Name="AutoAttackSkill_Explain2_Blood30Text">
-            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,16.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,46.000000},{0.000000,28.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,16.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,46.000000},{0.000000,28.000000}}" />
             <Property Name="TextColor" Value="FFFFF263"/>
             <Property Name="Text" Value="#{ZDZD_200724_18}"/>
           </Window>
           <Window Type="TLBB_ButtonCheck" Name="AutoAttackSkill_Explain2_Blood50">
-            <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,13.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,90.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,13.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,90.000000},{0.000000,30.000000}}" />
             <Event Name="Clicked" Function="AutoAttackSkill_OptionPercent_Click(2,2)"/>
           </Window>
           <Window Type="TLBB_SimpleText" Name="AutoAttackSkill_Explain2_Blood50Text">
-            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,16.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,106.000000},{0.000000,28.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,16.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,106.000000},{0.000000,28.000000}}" />
             <Property Name="TextColor" Value="FFFFF263"/>
             <Property Name="Text" Value="#{ZDZD_200724_19}"/>
           </Window>
           <Window Type="TLBB_ButtonCheck" Name="AutoAttackSkill_Explain2_Blood70">
-            <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,13.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,150.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,13.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,150.000000},{0.000000,30.000000}}" />
             <Event Name="Clicked" Function="AutoAttackSkill_OptionPercent_Click(2,3)"/>
           </Window>
           <Window Type="TLBB_SimpleText" Name="AutoAttackSkill_Explain2_Blood70Text">
-            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,16.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,166.000000},{0.000000,28.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,16.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,166.000000},{0.000000,28.000000}}" />
             <Property Name="TextColor" Value="FFFFF263"/>
             <Property Name="Text" Value="#{ZDZD_200724_20}"/>
           </Window>
         </Window>
         <Window Type="TLBB_Frame_Lace1" Name="AutoAttackSkill_Explain3">
-          <Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{0.000000,54.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,112.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{0.000000,54.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,112.000000}}" />
           <Property Name="RiseOnClick" Value="False"/>
           <Window Type="TLBB_SimpleText" Name="AutoAttackSkill_Explain3_Blood">
-            <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,16.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,16.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,10.000000}}" />
             <Property Name="TextColor" Value="FFFFF263"/>
             <Property Name="Text" Value="#{ZDZD_200724_22}"/>
           </Window>
           <Window Type="TLBB_ComboList" Name="AutoAttackSkill_Explain3_BloodHuiFu">
-            <Property Name="UnifiedSize" Value="{{0.000000,164.000000},{0.000000,20.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,150.000000},{0.000000,8.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,164.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,150.000000},{0.000000,8.000000}}" />
             <Property Name="AlwaysOnTop" Value="True"/>
             <Event Name="ListSelectionAccepted" Function="AutoAttackSkill_ComboListSelectChanged(3);" />
           </Window>
           <Window Type="TLBB_ButtonCheck" Name="AutoAttackSkill_Explain3_Blood30">
-            <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,13.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,13.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,30.000000}}" />
             <Event Name="Clicked" Function="AutoAttackSkill_OptionPercent_Click(3,1)"/>
           </Window>
           <Window Type="TLBB_SimpleText" Name="AutoAttackSkill_Explain3_Blood30Text">
-            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,16.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,46.000000},{0.000000,28.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,16.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,46.000000},{0.000000,28.000000}}" />
             <Property Name="TextColor" Value="FFFFF263"/>
             <Property Name="Text" Value="#{ZDZD_200724_18}"/>
           </Window>
           <Window Type="TLBB_ButtonCheck" Name="AutoAttackSkill_Explain3_Blood50">
-            <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,13.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,90.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,13.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,90.000000},{0.000000,30.000000}}" />
             <Event Name="Clicked" Function="AutoAttackSkill_OptionPercent_Click(3,2)"/>
           </Window>
           <Window Type="TLBB_SimpleText" Name="AutoAttackSkill_Explain3_Blood50Text">
-            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,16.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,106.000000},{0.000000,28.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,16.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,106.000000},{0.000000,28.000000}}" />
             <Property Name="TextColor" Value="FFFFF263"/>
             <Property Name="Text" Value="#{ZDZD_200724_19}"/>
           </Window>
           <Window Type="TLBB_ButtonCheck" Name="AutoAttackSkill_Explain3_Blood70">
-            <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,13.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,150.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,13.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,150.000000},{0.000000,30.000000}}" />
             <Event Name="Clicked" Function="AutoAttackSkill_OptionPercent_Click(3,3)"/>
           </Window>
           <Window Type="TLBB_SimpleText" Name="AutoAttackSkill_Explain3_Blood70Text">
-            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,16.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,166.000000},{0.000000,28.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,16.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,166.000000},{0.000000,28.000000}}" />
             <Property Name="TextColor" Value="FFFFF263"/>
             <Property Name="Text" Value="#{ZDZD_200724_20}"/>
           </Window>
         </Window>
       </Window>
       <Window Type="TLBB_Frame_Lace4" Name="AutoAttackSkill_Skill_Bk">
-        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,170.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-214.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,170.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-214.000000}}" />
         <Property Name="RiseOnClick" Value="False" />
         <Window Type="TLBB_Frame_Lace1" Name="AutoAttackSkill_Skill1">
-          <Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{0.000000,54.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,4.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{0.000000,54.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,4.000000}}" />
           <Property Name="RiseOnClick" Value="False"/>
           <Window Type="TLBB_SimpleText" Name="AutoAttackSkill_Skill1_Blood">
-            <Property Name="UnifiedSize" Value="{{0.000000,260.000000},{0.000000,16.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,16.000000},{0.000000,10.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,260.000000},{0.000000,16.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,16.000000},{0.000000,10.000000}}" />
             <Property Name="TextColor" Value="FFFFF263"/>
             <Property Name="Text" Value="#{ZDZD_200724_13}"/>
           </Window>
           <Window Type="TLBB_ButtonCheck" Name="AutoAttackSkill_Skill1_Blood30">
-            <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,13.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,13.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,30.000000}}" />
             <Event Name="Clicked" Function="AutoAttackSkill_RecoverOptionPercent_Click(1,1)"/>
           </Window>
           <Window Type="TLBB_SimpleText" Name="AutoAttackSkill_Skill1_Blood30Text">
-            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,16.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,46.000000},{0.000000,28.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,16.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,46.000000},{0.000000,28.000000}}" />
             <Property Name="TextColor" Value="FFFFF263"/>
             <Property Name="Text" Value="#{ZDZD_200724_18}"/>
           </Window>
           <Window Type="TLBB_ButtonCheck" Name="AutoAttackSkill_Skill1_Blood50">
-            <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,13.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,90.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,13.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,90.000000},{0.000000,30.000000}}" />
             <Event Name="Clicked" Function="AutoAttackSkill_RecoverOptionPercent_Click(1,2)"/>
           </Window>
           <Window Type="TLBB_SimpleText" Name="AutoAttackSkill_Skill1_Blood50Text">
-            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,16.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,106.000000},{0.000000,28.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,16.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,106.000000},{0.000000,28.000000}}" />
             <Property Name="TextColor" Value="FFFFF263"/>
             <Property Name="Text" Value="#{ZDZD_200724_19}"/>
           </Window>
           <Window Type="TLBB_ButtonCheck" Name="AutoAttackSkill_Skill1_Blood70">
-            <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,13.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,150.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,13.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,150.000000},{0.000000,30.000000}}" />
             <Event Name="Clicked" Function="AutoAttackSkill_RecoverOptionPercent_Click(1,3)"/>
           </Window>
           <Window Type="TLBB_SimpleText" Name="AutoAttackSkill_Skill1_Blood70Text">
-            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,16.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,166.000000},{0.000000,28.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,16.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,166.000000},{0.000000,28.000000}}" />
             <Property Name="TextColor" Value="FFFFF263"/>
             <Property Name="Text" Value="#{ZDZD_200724_20}"/>
           </Window>
         </Window>
         <Window Type="TLBB_Frame_Lace1" Name="AutoAttackSkill_Skill2">
-          <Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{0.000000,54.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,58.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{0.000000,54.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,58.000000}}" />
           <Property Name="RiseOnClick" Value="False"/>
           <Window Type="TLBB_SimpleText" Name="AutoAttackSkill_Skill2_Blood">
-            <Property Name="UnifiedSize" Value="{{0.000000,260.000000},{0.000000,16.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,16.000000},{0.000000,10.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,260.000000},{0.000000,16.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,16.000000},{0.000000,10.000000}}" />
             <Property Name="TextColor" Value="FFFFF263"/>
             <Property Name="Text" Value="#{ZDZD_200724_13}"/>
           </Window>
           <Window Type="TLBB_ButtonCheck" Name="AutoAttackSkill_Skill2_Blood30">
-            <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,13.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,13.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,30.000000}}" />
             <Event Name="Clicked" Function="AutoAttackSkill_RecoverOptionPercent_Click(2,1)"/>
           </Window>
           <Window Type="TLBB_SimpleText" Name="AutoAttackSkill_Skill2_Blood30Text">
-            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,16.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,46.000000},{0.000000,28.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,16.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,46.000000},{0.000000,28.000000}}" />
             <Property Name="TextColor" Value="FFFFF263"/>
             <Property Name="Text" Value="#{ZDZD_200724_18}"/>
           </Window>
           <Window Type="TLBB_ButtonCheck" Name="AutoAttackSkill_Skill2_Blood50">
-            <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,13.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,90.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,13.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,90.000000},{0.000000,30.000000}}" />
             <Event Name="Clicked" Function="AutoAttackSkill_RecoverOptionPercent_Click(2,2)"/>
           </Window>
           <Window Type="TLBB_SimpleText" Name="AutoAttackSkill_Skill2_Blood50Text">
-            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,16.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,106.000000},{0.000000,28.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,16.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,106.000000},{0.000000,28.000000}}" />
             <Property Name="TextColor" Value="FFFFF263"/>
             <Property Name="Text" Value="#{ZDZD_200724_19}"/>
           </Window>
           <Window Type="TLBB_ButtonCheck" Name="AutoAttackSkill_Skill2_Blood70">
-            <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,13.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,150.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,13.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,150.000000},{0.000000,30.000000}}" />
             <Event Name="Clicked" Function="AutoAttackSkill_RecoverOptionPercent_Click(2,3)"/>
           </Window>
           <Window Type="TLBB_SimpleText" Name="AutoAttackSkill_Skill2_Blood70Text">
-            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,16.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,166.000000},{0.000000,28.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,16.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,166.000000},{0.000000,28.000000}}" />
             <Property Name="TextColor" Value="FFFFF263"/>
             <Property Name="Text" Value="#{ZDZD_200724_20}"/>
           </Window>
         </Window>
         <Window Type="TLBB_Frame_Lace1" Name="AutoAttackSkill_Skill3">
-          <Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{0.000000,54.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,112.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{0.000000,54.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,112.000000}}" />
           <Property Name="RiseOnClick" Value="False"/>
           <Window Type="TLBB_SimpleText" Name="AutoAttackSkill_Skill3_Blood">
-            <Property Name="UnifiedSize" Value="{{0.000000,260.000000},{0.000000,16.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,16.000000},{0.000000,10.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,260.000000},{0.000000,16.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,16.000000},{0.000000,10.000000}}" />
             <Property Name="TextColor" Value="FFFFF263"/>
             <Property Name="Text" Value="#{ZDZD_200724_13}"/>
           </Window>
           <Window Type="TLBB_ButtonCheck" Name="AutoAttackSkill_Skill3_Blood30">
-            <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,13.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,13.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,30.000000}}" />
             <Event Name="Clicked" Function="AutoAttackSkill_RecoverOptionPercent_Click(3,1)"/>
           </Window>
           <Window Type="TLBB_SimpleText" Name="AutoAttackSkill_Skill3_Blood30Text">
-            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,16.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,46.000000},{0.000000,28.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,16.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,46.000000},{0.000000,28.000000}}" />
             <Property Name="TextColor" Value="FFFFF263"/>
             <Property Name="Text" Value="#{ZDZD_200724_18}"/>
           </Window>
           <Window Type="TLBB_ButtonCheck" Name="AutoAttackSkill_Skill3_Blood50">
-            <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,13.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,90.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,13.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,90.000000},{0.000000,30.000000}}" />
             <Event Name="Clicked" Function="AutoAttackSkill_RecoverOptionPercent_Click(3,2)"/>
           </Window>
           <Window Type="TLBB_SimpleText" Name="AutoAttackSkill_Skill3_Blood50Text">
-            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,16.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,106.000000},{0.000000,28.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,16.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,106.000000},{0.000000,28.000000}}" />
             <Property Name="TextColor" Value="FFFFF263"/>
             <Property Name="Text" Value="#{ZDZD_200724_19}"/>
           </Window>
           <Window Type="TLBB_ButtonCheck" Name="AutoAttackSkill_Skill3_Blood70">
-            <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,13.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,150.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,13.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,150.000000},{0.000000,30.000000}}" />
             <Event Name="Clicked" Function="AutoAttackSkill_RecoverOptionPercent_Click(3,3)"/>
           </Window>
           <Window Type="TLBB_SimpleText" Name="AutoAttackSkill_Skill3_Blood70Text">
-            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,16.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,166.000000},{0.000000,28.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,16.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,166.000000},{0.000000,28.000000}}" />
             <Property Name="TextColor" Value="FFFFF263"/>
             <Property Name="Text" Value="#{ZDZD_200724_20}"/>
           </Window>
@@ -590,47 +590,47 @@
       </Window>
 
       <Window Type="DefaultWindow" Name="AutoAttackSkill_NoFight_Button">
-        <Property Name="UnifiedSize" Value="{{0.000000,108.000000},{0.000000,20.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,365.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,108.000000},{0.000000,20.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,365.000000}}" />
         <Window Type="TLBB_ButtonCheck" Name="AutoAttackSkill_NoFightBtn">
-          <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,13.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-6.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,13.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-6.000000}}" />
           <Event Name="Clicked" Function="AutoAttackSkill_OnAttackHumanClick()"/>
         </Window>
         <Window Type="TLBB_SimpleText" Name="AutoAttackSkill_NoFight">
-          <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,16.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.500000,-8.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,16.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.500000,-8.000000}}" />
           <Property Name="TextColor" Value="FFFFF263"/>
           <Property Name="Text" Value="#{ZDZD_200724_55}"/>
         </Window>
       </Window>
       <Window Type="DefaultWindow" Name="AutoAttackSkill_LongFight_Button">
-        <Property Name="UnifiedSize" Value="{{0.000000,108.000000},{0.000000,20.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,125.000000},{0.000000,365.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,108.000000},{0.000000,20.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,125.000000},{0.000000,365.000000}}" />
         <Window Type="TLBB_ButtonCheck" Name="AutoAttackSkill_LongFightBtn">
-          <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,13.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-6.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,13.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-6.000000}}" />
           <Property Name="Tooltip" Value="#{ZDZD_200724_61}"/>
           <Event Name="Clicked" Function="AutoAttackSkill_OnUseLongRangeSkillClick()"/>
         </Window>
         <Window Type="TLBB_SimpleText" Name="AutoAttackSkill_LongFight">
-          <Property Name="UnifiedSize" Value="{{0.000000,85.000000},{0.000000,16.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.500000,-8.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,85.000000},{0.000000,16.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.500000,-8.000000}}" />
           <Property Name="Tooltip" Value="#{ZDZD_200724_61}"/>
           <Property Name="TextColor" Value="FFFFF263"/>
           <Property Name="Text" Value="#{ZDZD_200724_60}"/>
         </Window>
       </Window>
       <Window Type="TLBB_ButtonExpCheck1" Name="AutoAttackSkill_Fight">
-        <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,40.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{1.000000,-105.000000},{1.000000,-40.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,40.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{1.000000,-105.000000},{1.000000,-40.000000}}" />
         <Property Name="Text" Value="开启自动战斗"/>
         <Event Name="Clicked" Function="AutoAttackSkill_OnStartClick();" />
       </Window>
     </Window>
     <Window Type="DefaultWindow" Name="AutoAttackSkill_Checkbox_Frame">
-      <Property Name="UnifiedPosition" Value="{{0.0,8.000000},{1.000000,-25.000000}" />
-      <Property Name="UnifiedSize" Value="{{0.9,0.000000},{0.000000,24.000000}" />
+      <Property Name="UnifiedPosition" Value="{{0.0,8.000000},{1.000000,-25.000000}}" />
+      <Property Name="UnifiedSize" Value="{{0.9,0.000000},{0.000000,24.000000}}" />
       <Property Name="RiseOnClick" Value="False" />
       <Window Type="TLBB_ButtonPageDown" Name="AutoAttackSkill_CommonlySkill">
         <Property Name="AbsolutePosition" Value="x:0.0 y:0.0" />

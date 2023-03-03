@@ -1,12 +1,12 @@
 <?xml version="1.0" ?>
 <GUILayout>
   <Window Type="TLBB_MainFrame1" Name="HunbingzhuCompoundFrame">
-    <Property Name="UnifiedSize" Value="{{0.000000,550.000000},{0.000000,480.000000}}"/>
-    <Property Name="UnifiedPosition" Value="{{0.500000,-275.000000},{0.500000,-240.000000}}"/>
+    <Property Name="UnifiedSize" Value="{{0.000000,550.000000},{0.000000,480.000000}}" />
+    <Property Name="UnifiedPosition" Value="{{0.500000,-275.000000},{0.500000,-240.000000}}" />
     <Event Name="Hidden" Function="HunbingzhuCompound_OnClose()"/>
     <Window Type="TLBB_DragTitle" Name="HunbingzhuCompound_Title">
-      <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,10.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,10.000000}}" />
       <Property Name="DragTarget" Value="HunbingzhuCompoundFrame" />
       <Property Name="Font" Value="YouYuan11.25" />
       <Property Name="Text" Value="#{HBZHC_210923_1}"/>
@@ -14,84 +14,84 @@
       <Property Name="VertFormatting" Value="VertCentred"/>
     </Window>
     <Window Type="TLBB_ButtonClose" Name="HunbingzhuCompound_Close">
-      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
-      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}" />
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}" />
       <Event Name="Clicked" Function="HunbingzhuCompound_OnClose();"/>
     </Window>
     <Window Type="TLBB_ButtonHelp" Name="HunbingzhuCompound_Help">
-      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}" />
       <Event Name="Clicked" Function="Helper:GotoHelper('*Carriage');"/>
     </Window>
     <Window Type="DefaultWindow" Name="HunbingzhuCompound_Client">
-      <Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{1.000000,-38.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,31.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{1.000000,-38.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,31.000000}}" />
       <Window Type="TLBB_ButtonCheckForRMBShop" Name="HunbingzhuCompound_YeQian02">
-        <Property Name="UnifiedSize" Value="{{0.000000,105.000000},{0.000000,20.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,110.000000},{0.000000,5.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,105.000000},{0.000000,20.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,110.000000},{0.000000,5.000000}}" />
         <Property Name="CheckMode" Value="1"/>
         <Property Name="Text" Value="#{HBZHC_210923_3}"/>
         <Event Name="Clicked" Function="HunbingzhuCompound_SwitchPage(2);" />
       </Window>
       <Window Type="TLBB_ButtonCheckForRMBShop" Name="HunbingzhuCompound_YeQian01">
-        <Property Name="UnifiedSize" Value="{{0.000000,105.000000},{0.000000,20.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,5.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,105.000000},{0.000000,20.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,5.000000}}" />
         <Property Name="CheckMode" Value="1"/>
         <Property Name="Text" Value="#{HBZHC_210923_2}"/>
         <Event Name="Clicked" Function="HunbingzhuCompound_SwitchPage(1);" />
       </Window>
       <Window Type="TLBB_Frame_Lace6" Name="HunbingzhuCompound_Explain">
-        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,165.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,25.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,165.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,25.000000}}" />
         <Window Type="TLBB_SimpleText" Name="HunbingzhuCompound_ExplainInfo">
-          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,150.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,5.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,150.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,5.000000}}" />
           <Property Name="Text" Value="#{HBZHC_210923_4}"/>
           <Property Name="RiseOnClick" Value="False"/>
           <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
         </Window>
       </Window>
       <Window Type="TLBB_Frame_Lace2" Name="HunbingzhuCompound_ListContent">
-        <Property Name="UnifiedSize" Value="{{0.000000,170.000000},{0.000000,215.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,190.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,170.000000},{0.000000,215.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,190.000000}}" />
         <Window Type="TLBB_Frame_Lace1" Name="HunbingzhuCompound_ListContent_title_bk">
           <Property Name="AlwaysOnTop" Value="True"/>
-          <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,30.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,30.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}" />
           <Window Type="TLBB_SimpleText" Name="HunbingzhuCompound_ListContent_title">
-            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
             <Property Name="Text" Value="#{HBZHC_210923_5}"/>
             <Property Name="HorzFormatting" Value="HorzCentred"/>
           </Window>
         </Window>
 
         <Window Type="TLBB_ButtonCheckForRMBShop" Name="HunbingzhuCompound_2">
-          <Property Name="UnifiedSize" Value="{{1.000000,-16.000000},{0.000000,30.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,45.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,-16.000000},{0.000000,30.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,45.000000}}" />
           <Property Name="Text" Value="#{HBZHC_210923_6}"/>
           <Property Name="CheckMode" Value="1"/>
           <Property Name="AlwaysOnTop" Value="True"/>
           <Event Name="Clicked" Function="HunbingzhuCompound_SelectTargetLevel(1);" />
         </Window>
         <Window Type="TLBB_ButtonCheckForRMBShop" Name="HunbingzhuCompound_3">
-          <Property Name="UnifiedSize" Value="{{1.000000,-16.000000},{0.000000,30.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,90.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,-16.000000},{0.000000,30.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,90.000000}}" />
           <Property Name="Text" Value="#{HBZHC_210923_7}"/>
           <Property Name="CheckMode" Value="1"/>
           <Property Name="AlwaysOnTop" Value="True"/>
           <Event Name="Clicked" Function="HunbingzhuCompound_SelectTargetLevel(2);" />
         </Window>
         <Window Type="TLBB_ButtonCheckForRMBShop" Name="HunbingzhuCompound_4">
-          <Property Name="UnifiedSize" Value="{{1.000000,-16.000000},{0.000000,30.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,135.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,-16.000000},{0.000000,30.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,135.000000}}" />
           <Property Name="Text" Value="#{HBZHC_210923_8}"/>
           <Property Name="CheckMode" Value="1"/>
           <Property Name="AlwaysOnTop" Value="True"/>
           <Event Name="Clicked" Function="HunbingzhuCompound_SelectTargetLevel(3);" />
         </Window>
         <Window Type="TLBB_ButtonCheckForRMBShop" Name="HunbingzhuCompound_5">
-          <Property Name="UnifiedSize" Value="{{1.000000,-16.000000},{0.000000,30.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,180.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,-16.000000},{0.000000,30.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,180.000000}}" />
           <Property Name="Text" Value="#{HBZHC_210923_9}"/>
           <Property Name="CheckMode" Value="1"/>
           <Property Name="AlwaysOnTop" Value="True"/>
@@ -101,68 +101,68 @@
 
       </Window>
       <Window Type="DefaultWindow" Name="HunbingzhuCompound">
-        <Property Name="UnifiedSize" Value="{{1.000000,-173.000000},{0.000000,215.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,170.000000},{0.000000,190.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,-173.000000},{0.000000,215.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,170.000000},{0.000000,190.000000}}" />
         <Window Type="DefaultWindow" Name="HunbingzhuCompound_Lace">
-          <Property Name="UnifiedSize" Value="{{1.000000,-2.000000},{0.000000,100.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,2.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,-2.000000},{0.000000,100.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,2.000000}}" />
           <Window Type="TLBB_SimpleText" Name="HunbingzhuCompound_ChoiceInfo">
-            <Property Name="UnifiedSize" Value="{{0.000000,240.000000},{0.000000,20.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.500000,-120.000000},{0.000000,15.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,240.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.500000,-120.000000},{0.000000,15.000000}}" />
             <Property Name="Text" Value="#{HBZHC_210923_11}"/>
             <Property Name="RiseOnClick" Value="False"/>
             <Property Name="HorzFormatting" Value="WordWrapCentred"/>
           </Window>
           <Window Type="TLBB_ActionButton" Name="HunbingzhuCompound_Item">
-            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.500000,-20.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.500000,-20.000000},{0.000000,40.000000}}" />
             <Property Name="RiseOnClick" Value="False" />
           </Window>
         </Window>
         <Window Type="TLBB_SimpleMulitiTextFrame" Name="HunbingzhuCompound_Need">
-          <Property Name="UnifiedPosition" Value="{{0.05,0.000000},{1.000000,-113.000000}" />
-          <Property Name="UnifiedSize" Value="{{0.9,0.000000},{0.000000,22.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.05,0.000000},{1.000000,-113.000000}}" />
+          <Property Name="UnifiedSize" Value="{{0.9,0.000000},{0.000000,22.000000}}" />
           <Window Type="TLBB_SimpleText" Name="HunbingzhuCompound_Need_Info">
-            <Property Name="UnifiedPosition" Value="{{0.0,8.000000},{0.000000,2.000000}" />
-            <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}" />
+            <Property Name="UnifiedPosition" Value="{{0.0,8.000000},{0.000000,2.000000}}" />
+            <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}}" />
             <Property Name="Text" Value="#{HBZHC_210923_13}"/>
             <Property Name="RiseOnClick" Value="False"/>
           </Window>
           <Window Type="TLBB_SimpleText" Name="HunbingzhuCompound_Need_Number">
-            <Property Name="UnifiedPosition" Value="{{1.0,-145.000000},{0.000000,2.000000}" />
-            <Property Name="UnifiedSize" Value="{{0.0,140.000000},{0.000000,20.000000}" />
+            <Property Name="UnifiedPosition" Value="{{1.0,-145.000000},{0.000000,2.000000}}" />
+            <Property Name="UnifiedSize" Value="{{0.0,140.000000},{0.000000,20.000000}}" />
             <Property Name="HorzFormatting" Value="RightAligned"/>
             <Property Name="Text" Value="#{}"/>
             <Property Name="RiseOnClick" Value="False"/>
           </Window>
         </Window>
         <Window Type="TLBB_SimpleMulitiTextFrame" Name="HunbingzhuCompound_Have">
-          <Property Name="UnifiedPosition" Value="{{0.05,0.000000},{1.000000,-91.000000}" />
-          <Property Name="UnifiedSize" Value="{{0.9,0.000000},{0.000000,22.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.05,0.000000},{1.000000,-91.000000}}" />
+          <Property Name="UnifiedSize" Value="{{0.9,0.000000},{0.000000,22.000000}}" />
           <Window Type="TLBB_SimpleText" Name="HunbingzhuCompound_Have_Info">
-            <Property Name="UnifiedPosition" Value="{{0.0,8.000000},{0.000000,2.000000}" />
-            <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}" />
+            <Property Name="UnifiedPosition" Value="{{0.0,8.000000},{0.000000,2.000000}}" />
+            <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}}" />
             <Property Name="Text" Value="#{HBZHC_210923_15}"/>
             <Property Name="RiseOnClick" Value="False"/>
           </Window>
           <Window Type="TLBB_SimpleText" Name="HunbingzhuCompound_Have_Number">
-            <Property Name="UnifiedPosition" Value="{{1.0,-145.000000},{0.000000,2.000000}" />
-            <Property Name="UnifiedSize" Value="{{0.0,140.000000},{0.000000,20.000000}" />
+            <Property Name="UnifiedPosition" Value="{{1.0,-145.000000},{0.000000,2.000000}}" />
+            <Property Name="UnifiedSize" Value="{{0.0,140.000000},{0.000000,20.000000}}" />
             <Property Name="HorzFormatting" Value="RightAligned"/>
             <Property Name="Text" Value="#{}"/>
             <Property Name="RiseOnClick" Value="False"/>
           </Window>
         </Window>
         <Window Type="TLBB_SimpleMulitiTextFrame" Name="HunbingzhuCompound_DemandMoney_Text">
-          <Property Name="UnifiedPosition" Value="{{0.05,0.000000},{1.000000,-69.000000}" />
-          <Property Name="UnifiedSize" Value="{{0.9,0.000000},{0.000000,22.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.05,0.000000},{1.000000,-69.000000}}" />
+          <Property Name="UnifiedSize" Value="{{0.9,0.000000},{0.000000,22.000000}}" />
           <Property Name="Text" Value="#{HBZHC_210923_17}" />
           <Property Name="HorzFormatting" Value="LeftAligned" />
           <Property Name="VertFormatting" Value="VertCentred" />
           <Property Name="RiseOnClick" Value="False" />
           <Window Type="TLBB_Money" Name="HunbingzhuCompound_DemandMoney">
-            <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}" />
-            <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}" />
+            <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}}" />
+            <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}}" />
             <Property Name="MoneyNumber" Value="0" />
             <Property Name="HorzFormatting" Value="RightAligned" />
             <Property Name="AlignFix" Value="True" />
@@ -172,15 +172,15 @@
           </Window>
         </Window>
         <Window Type="TLBB_SimpleMulitiTextFrame" Name="HunbingzhuCompound_CurrentlyJiaozi_Text">
-          <Property Name="UnifiedSize" Value="{{0.900000,0.000000},{0.000000,22.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.050000,0.000000},{1.000000,-47.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.900000,0.000000},{0.000000,22.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.050000,0.000000},{1.000000,-47.000000}}" />
           <Property Name="Text" Value="#{HBZHC_210923_18}" />
           <Property Name="HorzFormatting" Value="LeftAligned" />
           <Property Name="VertFormatting" Value="VertCentred" />
           <Property Name="RiseOnClick" Value="False" />
           <Window Type="TLBB_Money" Name="HunbingzhuCompound_CurrentlyJiaozi">
-            <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}" />
-            <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}" />
+            <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}}" />
+            <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}}" />
             <Property Name="MoneyNumber" Value="0" />
             <Property Name="HorzFormatting" Value="RightAligned" />
             <Property Name="AlignFix" Value="True" />
@@ -190,15 +190,15 @@
           </Window>
         </Window>
         <Window Type="TLBB_SimpleMulitiTextFrame" Name="HunbingzhuCompound_CurrentlyMoney_Text">
-          <Property Name="UnifiedPosition" Value="{{0.05,0.000000},{1.000000,-25.000000}" />
-          <Property Name="UnifiedSize" Value="{{0.9,0.000000},{0.000000,22.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.05,0.000000},{1.000000,-25.000000}}" />
+          <Property Name="UnifiedSize" Value="{{0.9,0.000000},{0.000000,22.000000}}" />
           <Property Name="Text" Value="#{HBZHC_210923_19}" />
           <Property Name="HorzFormatting" Value="LeftAligned" />
           <Property Name="VertFormatting" Value="VertCentred" />
           <Property Name="RiseOnClick" Value="False" />
           <Window Type="TLBB_Money" Name="HunbingzhuCompound_CurrentlyMoney">
-            <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}" />
-            <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}" />
+            <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}}" />
+            <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}}" />
             <Property Name="MoneyNumber" Value="0" />
             <Property Name="HorzFormatting" Value="RightAligned" />
             <Property Name="AlignFix" Value="True" />
@@ -206,17 +206,17 @@
         </Window>
       </Window>
       <Window Type="DefaultWindow" Name="HunbingzhuCompound_Blank">
-        <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,24.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-35.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,24.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-35.000000}}" />
         <Window Type="TLBB_ButtonCommon" Name="HunbingzhuCompound_OK">
-          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{1.000000,-123.000000},{1.000000,-22.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{1.000000,-123.000000},{1.000000,-22.000000}}" />
           <Property Name="Text" Value="#{HBZHC_210923_20}" />
           <Event Name="Clicked" Function="HunbingzhuCompound_ConfirmClick(0);" />
         </Window>
         <Window Type="TLBB_ButtonCommon" Name="HunbingzhuCompound_Cancel">
-          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{1.000000,-22.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{1.000000,-22.000000}}" />
           <Property Name="Text" Value="#{HBZHC_210923_21}" />
           <Event Name="Clicked" Function="HunbingzhuCompound_OnClose();" />
         </Window>

@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <GUILayout>
   <Window Type="TLBB_MainFrame1" Name="DWChaiJie_Frame">
-    <Property Name="UnifiedSize" Value="{{0.000000,256.000000},{0.000000,328.000000}}"/>
-    <Property Name="UnifiedPosition" Value="{{0.500000,-128.000000},{0.500000,-164.000000}}"/>
+    <Property Name="UnifiedSize" Value="{{0.000000,256.000000},{0.000000,328.000000}}" />
+    <Property Name="UnifiedPosition" Value="{{0.500000,-128.000000},{0.500000,-164.000000}}" />
     <Event Name="Hidden" Function="DWChaiJie_OnHiden();" />
     <Window Type="TLBB_DragTitle" Name="DWChaiJie_DragTitle">
       <Property Name="AbsolutePosition" Value="x:40.000000 y:11.000000" />
@@ -25,8 +25,8 @@
       <Event Name="Clicked" Function="DWChaiJie_Close()" />
     </Window>
     <Window Type="DefaultWindow" Name="DWChaiJie_Frame_Client">
-      <Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{1.000000,-64.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,30.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{1.000000,-64.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,30.000000}}" />
       <Window Type="TLBB_SimpleMulitiTextFrame" Name="DWChaiJie_Info">
         <Property Name="RelativePosition" Value="x:0.000000 y:0.000000" />
         <Property Name="AbsoluteSize" Value="w:242.000000 h:130.000000" />
@@ -36,31 +36,31 @@
         <Property Name="TextColor" Value="FFFFF263" />
       </Window>
       <Window Type="TLBB_SimpleText" Name="DWChaiJie_Info2">
-        <Property Name="UnifiedSize" Value="{{0.000000,160.000000},{0.000000,40.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,13.000000},{0.000000,138.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,160.000000},{0.000000,40.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,13.000000},{0.000000,138.000000}}" />
         <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
         <Property Name="RiseOnClick" Value="False" />
         <Property Name="Text" Value="#{DWCJJ_140606_05}" />
         <Property Name="TextColor" Value="FFFFF263" />
       </Window>
       <Window Type="TLBB_ActionButton" Name="DWChaiJie_Object">
-        <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,182.000000},{0.000000,140.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,182.000000},{0.000000,140.000000}}" />
         <Property Name="DragAcceptName" Value="G138" />
         <Property Name="DraggingEnabled" Value="True" />
         <Event Name="RBClicked" Function="DWChaiJie_ItemBtnRBClicked();" />
       </Window>
       <Window Type="TLBB_SimpleText" Name="DWChaiJie_Quantity_Text">
-        <Property Name="UnifiedSize" Value="{{0.900000,-71.000000},{0.000000,22.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.050000,0.000000},{1.000000,-80.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.900000,-71.000000},{0.000000,22.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.050000,0.000000},{1.000000,-80.000000}}" />
         <Property Name="HorzFormatting" Value="LeftAligned" />
         <Property Name="RiseOnClick" Value="False" />
         <Property Name="Text" Value="#{DWCJJ_140606_06}" />
         <Property Name="VertFormatting" Value="VertCentred" />
       </Window>
       <Window Type="TLBB_SimpleMulitiTextFrame" Name="DWChaiJie_Quantity">
-        <Property Name="UnifiedSize" Value="{{0.900000,-158.000000},{0.000000,22.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.050000,158.000000},{1.000000,-80.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.900000,-158.000000},{0.000000,22.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.050000,158.000000},{1.000000,-80.000000}}" />
         <Property Name="Text" Value=""/>
         <Property Name="HorzFormatting" Value="HorzCentred"/>
       </Window>
@@ -72,8 +72,8 @@
         <Property Name="Text" Value="#{DWCJJ_140606_07}" />
         <Property Name="VertFormatting" Value="VertCentred" />
         <Window Type="TLBB_SimpleText" Name="DWChaiJie_NeedYuanBao">
-          <Property Name="UnifiedSize" Value="{{0.900000,-65.000000},{0.000000,20.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.050000,70.000000},{1.000000,-21.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.900000,-65.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.050000,70.000000},{1.000000,-21.000000}}" />
           <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
         </Window>
       </Window>
@@ -86,25 +86,25 @@
         <Property Name="TextColor" Value="FFFFF263" />
         <Property Name="VertFormatting" Value="VertCentred" />
         <Window Type="TLBB_SimpleText" Name="DWChaiJie_SelfYuanBao">
-          <Property Name="UnifiedSize" Value="{{0.900000,-65.000000},{0.000000,20.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.050000,70.099998},{1.000000,-21.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.900000,-65.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.050000,70.099998},{1.000000,-21.000000}}" />
           <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
         </Window>
       </Window>
     </Window>
     <Window Type="TLBB_Frame_Lace5" Name="DWChaiJie_Blank">
-      <Property Name="UnifiedSize" Value="{{1.000000,-101.000000},{0.000000,20.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{1.000000,-37.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-101.000000},{0.000000,20.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{1.000000,-37.000000}}" />
     </Window>
     <Window Type="TLBB_ButtonCommon" Name="DWChaiJie_OK">
-      <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{1.000000,-91.000000},{1.000000,-37.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{1.000000,-91.000000},{1.000000,-37.000000}}" />
       <Property Name="Text" Value="#{DWCJJ_140606_09}" />
       <Event Name="Clicked" Function="DWChaiJie_OK_Clicked();" />
     </Window>
     <Window Type="TLBB_ButtonCommon" Name="DWChaiJie_Cancel">
-      <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{1.000000,-50.000000},{1.000000,-37.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{1.000000,-50.000000},{1.000000,-37.000000}}" />
       <Property Name="Text" Value="#{DWCJJ_140606_10}" />
       <Event Name="Clicked" Function="DWChaiJie_Close()" />
     </Window>

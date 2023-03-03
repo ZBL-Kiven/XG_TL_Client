@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" ?>
 <GUILayout>
   <Window Type="TLBB_MainFrame0" Name="SweepAll_Frame">
-    <Property Name="UnifiedSize" Value="{{0.000000,610.000000},{0.000000,520.000000}}"/>
-    <Property Name="UnifiedPosition" Value="{{0.500000,-305.000000},{0.500000,-275.000000}}"/>
+    <Property Name="UnifiedSize" Value="{{0.000000,610.000000},{0.000000,520.000000}}" />
+    <Property Name="UnifiedPosition" Value="{{0.500000,-305.000000},{0.500000,-275.000000}}" />
     <Window Type="TLBB_DragTitle" Name="SweepAll_DragTitle">
-      <Property Name="UnifiedPosition" Value="{{0.000000,43.000000},{0.000000,10.000000}}"/>
-      <Property Name="UnifiedSize" Value="{{1.000000,-86.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,43.000000},{0.000000,10.000000}}" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-86.000000},{0.000000,20.000000}}" />
       <Property Name="DragTarget" Value="SweepAll_Frame" />
       <Window Type="TLBB_SimpleText" Name="SweepAll_Title">
         <Property Name="Position" Value="x:0.0 y:0.0" />
@@ -18,27 +18,27 @@
       </Window>
     </Window>
     <Window Type="TLBB_ButtonHelp" Name="SweepAll_Help">
-      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}" />
       <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
     </Window>
     <Window Type="TLBB_ButtonClose" Name="SweepAll_Close">
-      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}" />
       <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
       <Event Name="Clicked" Function="SweepAll_OnClosed()" />
     </Window>
     <Window Type="DefaultWindow" Name="SweepAll_Client">
-      <Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{1.000000,-48.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,30.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{1.000000,-48.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,30.000000}}" />
       <Window Type="TLBB_SimpleMulitiTextFrame" Name="SweepAll_Explain">
-        <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.210000,10.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.210000,10.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}" />
         <Property Name="Text" Value="#{FBSD_150126_11}"/>
         <Property Name="RiseOnClick" Value="False"/>
         <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
         <Property Name="VertFormatting" Value="TopAligned"/>
         <Window Type="TLBB_SimpleText" Name="SweepAll_Explain1">
-          <Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{0.000000,20.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{1.000000,-22.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{1.000000,-22.000000}}" />
           <Property Name="Text" Value="#{}"/>
           <Property Name="RiseOnClick" Value="False"/>
           <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
@@ -46,8 +46,8 @@
         </Window>
       </Window>
       <Window Type="TLBB_SimpleMulitiTextFrame" Name="SweepAll_Bk">
-        <Property Name="UnifiedSize" Value="{{1.000000,-25.000000},{0.790000,-17.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.210000,15.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,-25.000000},{0.790000,-17.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.210000,15.000000}}" />
         <Window Type="TLBB_MultiColumnList3" Name="SweepAll_Title_Frame">
           <Property Name="AbsolutePosition" Value="x:0.000 y:0.000" />
           <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}" />
@@ -64,43 +64,43 @@
           <Property Name="ColumnsMovable" Value="False" />
           <Property Name="ColumnsAdjust" Value="True" />
           <Window Type="TLBB_SimpleText" Name="SweepAll_Title_activity">
-            <Property Name="UnifiedSize" Value="{{0.270000,0.000000},{1.000000,0.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.270000,0.000000},{1.000000,0.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
             <Property Name="HorzFormatting" Value="HorzCentred" />
             <Property Name="Text" Value="#{FBSD_150126_12}" />
             <Property Name="Tooltip" Value="#{FBSD_150126_75}"/>
           </Window>
           <Window Type="TLBB_SimpleText" Name="SweepAll_Title_level">
-            <Property Name="UnifiedSize" Value="{{0.135000,0.000000},{1.000000,0.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.270000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.135000,0.000000},{1.000000,0.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.270000,0.000000},{0.000000,0.000000}}" />
             <Property Name="HorzFormatting" Value="HorzCentred" />
             <Property Name="Text" Value="#{FBSD_150126_13}" />
             <Property Name="Tooltip" Value="#{FBSD_150126_76}"/>
           </Window>
           <Window Type="TLBB_SimpleText" Name="SweepAll_Title_allpoint">
-            <Property Name="UnifiedSize" Value="{{0.135000,0.000000},{1.000000,0.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.400000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.135000,0.000000},{1.000000,0.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.400000,0.000000},{0.000000,0.000000}}" />
             <Property Name="HorzFormatting" Value="HorzCentred" />
             <Property Name="Text" Value="#{FBSD_150126_14}" />
             <Property Name="Tooltip" Value="#{FBSD_150126_77}"/>
           </Window>
           <Window Type="TLBB_SimpleText" Name="SweepAll_Title_point">
-            <Property Name="UnifiedSize" Value="{{0.135000,0.000000},{1.000000,0.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.535000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.135000,0.000000},{1.000000,0.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.535000,0.000000},{0.000000,0.000000}}" />
             <Property Name="HorzFormatting" Value="HorzCentred" />
             <Property Name="Text" Value="#{FBSD_150126_15}" />
             <Property Name="Tooltip" Value="#{FBSD_150126_78}"/>
           </Window>
           <Window Type="TLBB_SimpleText" Name="SweepAll_Title_times">
-            <Property Name="UnifiedSize" Value="{{0.145000,0.000000},{1.000000,0.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.670000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.145000,0.000000},{1.000000,0.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.670000,0.000000},{0.000000,0.000000}}" />
             <Property Name="HorzFormatting" Value="HorzCentred" />
             <Property Name="Text" Value="#{FBSD_150126_16}" />
             <Property Name="Tooltip" Value="#{FBSD_150126_79}"/>
           </Window>
           <Window Type="TLBB_SimpleText" Name="SweepAll_Title_sweep">
-            <Property Name="UnifiedSize" Value="{{0.18000,0.000000},{1.000000,0.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.82000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.18000,0.000000},{1.000000,0.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.82000,0.000000},{0.000000,0.000000}}" />
             <Property Name="HorzFormatting" Value="HorzCentred" />
             <Property Name="Text" Value="#{FBSD_150126_17}" />
             <Property Name="Tooltip" Value="#{FBSD_150126_80}"/>
@@ -108,49 +108,49 @@
         </Window>
 		<!--ListBox-->
 		<Window Type="DefaultWindow" Name="SweepAll_ListBox"> 
-			<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,21.000000}" />
-			<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-22.0000000}" />
+			<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,21.000000}}" />
+			<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-22.0000000}}" />
 			<Window Type="TLBB_Frame_Lace17" Name="SweepAll_Title_1">
-				<Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{0.000000,42.000000}}"/>
-				<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+				<Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{0.000000,42.000000}}" />
+				<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
 				<Window Type="TLBB_StaticImageNULL" Name="SweepAll_Title_Icon_1">
-					<Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,38.000000}}"/>
-					<Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+					<Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,38.000000}}" />
+					<Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}" />
 					<Property Name="Image" Value="set:RosebangUI image:RosebangUI_1"/>
 				</Window>
 				<Window Type="TLBB_SimpleText" Name="SweepAll_Title_activity_1">
-					<Property Name="UnifiedSize" Value="{{0.000000,110.000000},{1.000000,0.000000}}"/>
-					<Property Name="UnifiedPosition" Value="{{0.000000,42.000000},{0.000000,0.000000}}"/>
+					<Property Name="UnifiedSize" Value="{{0.000000,110.000000},{1.000000,0.000000}}" />
+					<Property Name="UnifiedPosition" Value="{{0.000000,42.000000},{0.000000,0.000000}}" />
 					<Property Name="HorzFormatting" Value="HorzCentred" />
 					<Property Name="Text" Value="#{FBSD_150126_12}" />
 				</Window>
 				<Window Type="TLBB_SimpleText" Name="SweepAll_Title_level_1">
-					<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{1.000000,0.000000}}"/>
-					<Property Name="UnifiedPosition" Value="{{0.000000,153.000000},{0.000000,0.000000}}"/>
+					<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{1.000000,0.000000}}" />
+					<Property Name="UnifiedPosition" Value="{{0.000000,153.000000},{0.000000,0.000000}}" />
 					<Property Name="HorzFormatting" Value="HorzCentred" />
 					<Property Name="Text" Value="#{FBSD_150126_13}" />
 				</Window>
 				<Window Type="TLBB_SimpleText" Name="SweepAll_Title_allpoint_1">
-					<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{1.000000,0.000000}}"/>
-					<Property Name="UnifiedPosition" Value="{{0.000000,233.000000},{0.000000,0.000000}}"/>
+					<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{1.000000,0.000000}}" />
+					<Property Name="UnifiedPosition" Value="{{0.000000,233.000000},{0.000000,0.000000}}" />
 					<Property Name="HorzFormatting" Value="HorzCentred" />
 					<Property Name="Text" Value="#{FBSD_150126_14}" />
 				</Window>
 				<Window Type="TLBB_SimpleText" Name="SweepAll_Title_point_1">
-					<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{1.000000,0.000000}}"/>
-					<Property Name="UnifiedPosition" Value="{{0.000000,310.000000},{0.000000,0.000000}}"/>
+					<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{1.000000,0.000000}}" />
+					<Property Name="UnifiedPosition" Value="{{0.000000,310.000000},{0.000000,0.000000}}" />
 					<Property Name="HorzFormatting" Value="HorzCentred" />
 					<Property Name="Text" Value="#{FBSD_150126_15}" />
 				</Window>
 				<Window Type="TLBB_SimpleText" Name="SweepAll_Title_sweep_1">
-					<Property Name="UnifiedSize" Value="{{0.000000,60.000000},{1.000000,0.000000}}"/>
-					<Property Name="UnifiedPosition" Value="{{0.000000,403.000000},{0.000000,0.000000}}"/>
+					<Property Name="UnifiedSize" Value="{{0.000000,60.000000},{1.000000,0.000000}}" />
+					<Property Name="UnifiedPosition" Value="{{0.000000,403.000000},{0.000000,0.000000}}" />
 					<Property Name="HorzFormatting" Value="HorzCentred" />
 					<Property Name="Text" Value="#{FBSD_150126_17}" />
 				</Window>
 				<Window Type="TLBB_ButtonSweep" Name="SweepAll_List_1">
 					<Property Name="UnifiedPosition" Value="{{0.000000,490.000000},{0.000000,10.000000}}" />
-					<Property Name="UnifiedSize" Value="{{0.000000,65.000000},{0.000000,20.000000}" />
+					<Property Name="UnifiedSize" Value="{{0.000000,65.000000},{0.000000,20.000000}}" />
 					<Property Name="Text" Value="扫荡"/>
 					<Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
 					<Property Name="AlwaysOnTop" Value="True"/>
@@ -158,46 +158,46 @@
 				</Window>
 			</Window>
 			<Window Type="TLBB_Frame_Lace17" Name="SweepAll_Title_2">
-				<Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{0.000000,42.000000}}"/>
-				<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,42.000000}}"/>
+				<Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{0.000000,42.000000}}" />
+				<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,42.000000}}" />
 				<Window Type="TLBB_StaticImageNULL" Name="SweepAll_Title_Icon_2">
-					<Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,38.000000}}"/>
-					<Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+					<Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,38.000000}}" />
+					<Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}" />
 					<Property Name="Image" Value="set:RosebangUI image:RosebangUI_1"/>
 				</Window>
 				<Window Type="TLBB_SimpleText" Name="SweepAll_Title_activity_2">
-					<Property Name="UnifiedSize" Value="{{0.000000,110.000000},{1.000000,0.000000}}"/>
-					<Property Name="UnifiedPosition" Value="{{0.000000,42.000000},{0.000000,0.000000}}"/>
+					<Property Name="UnifiedSize" Value="{{0.000000,110.000000},{1.000000,0.000000}}" />
+					<Property Name="UnifiedPosition" Value="{{0.000000,42.000000},{0.000000,0.000000}}" />
 					<Property Name="HorzFormatting" Value="HorzCentred" />
 					<Property Name="Text" Value="#{FBSD_150126_12}" />
 				</Window>
 				<Window Type="TLBB_SimpleText" Name="SweepAll_Title_level_2">
-					<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{1.000000,0.000000}}"/>
-					<Property Name="UnifiedPosition" Value="{{0.000000,153.000000},{0.000000,0.000000}}"/>
+					<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{1.000000,0.000000}}" />
+					<Property Name="UnifiedPosition" Value="{{0.000000,153.000000},{0.000000,0.000000}}" />
 					<Property Name="HorzFormatting" Value="HorzCentred" />
 					<Property Name="Text" Value="#{FBSD_150126_13}" />
 				</Window>
 				<Window Type="TLBB_SimpleText" Name="SweepAll_Title_allpoint_2">
-					<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{1.000000,0.000000}}"/>
-					<Property Name="UnifiedPosition" Value="{{0.000000,233.000000},{0.000000,0.000000}}"/>
+					<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{1.000000,0.000000}}" />
+					<Property Name="UnifiedPosition" Value="{{0.000000,233.000000},{0.000000,0.000000}}" />
 					<Property Name="HorzFormatting" Value="HorzCentred" />
 					<Property Name="Text" Value="#{FBSD_150126_14}" />
 				</Window>
 				<Window Type="TLBB_SimpleText" Name="SweepAll_Title_point_2">
-					<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{1.000000,0.000000}}"/>
-					<Property Name="UnifiedPosition" Value="{{0.000000,310.000000},{0.000000,0.000000}}"/>
+					<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{1.000000,0.000000}}" />
+					<Property Name="UnifiedPosition" Value="{{0.000000,310.000000},{0.000000,0.000000}}" />
 					<Property Name="HorzFormatting" Value="HorzCentred" />
 					<Property Name="Text" Value="#{FBSD_150126_15}" />
 				</Window>
 				<Window Type="TLBB_SimpleText" Name="SweepAll_Title_sweep_2">
-					<Property Name="UnifiedSize" Value="{{0.000000,60.000000},{1.000000,0.000000}}"/>
-					<Property Name="UnifiedPosition" Value="{{0.000000,403.000000},{0.000000,0.000000}}"/>
+					<Property Name="UnifiedSize" Value="{{0.000000,60.000000},{1.000000,0.000000}}" />
+					<Property Name="UnifiedPosition" Value="{{0.000000,403.000000},{0.000000,0.000000}}" />
 					<Property Name="HorzFormatting" Value="HorzCentred" />
 					<Property Name="Text" Value="#{FBSD_150126_17}" />
 				</Window>
 				<Window Type="TLBB_ButtonSweep" Name="SweepAll_List_2">
 					<Property Name="UnifiedPosition" Value="{{0.000000,490.000000},{0.000000,10.000000}}" />
-					<Property Name="UnifiedSize" Value="{{0.000000,65.000000},{0.000000,20.000000}" />
+					<Property Name="UnifiedSize" Value="{{0.000000,65.000000},{0.000000,20.000000}}" />
 					<Property Name="Text" Value="扫荡"/>
 					<Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
 					<Property Name="AlwaysOnTop" Value="True"/>
@@ -205,46 +205,46 @@
 				</Window>
 			</Window>
 			<Window Type="TLBB_Frame_Lace17" Name="SweepAll_Title_3">
-				<Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{0.000000,42.000000}}"/>
-				<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,84.000000}}"/>
+				<Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{0.000000,42.000000}}" />
+				<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,84.000000}}" />
 				<Window Type="TLBB_StaticImageNULL" Name="SweepAll_Title_Icon_3">
-					<Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,38.000000}}"/>
-					<Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+					<Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,38.000000}}" />
+					<Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}" />
 					<Property Name="Image" Value="set:RosebangUI image:RosebangUI_1"/>
 				</Window>
 				<Window Type="TLBB_SimpleText" Name="SweepAll_Title_activity_3">
-					<Property Name="UnifiedSize" Value="{{0.000000,110.000000},{1.000000,0.000000}}"/>
-					<Property Name="UnifiedPosition" Value="{{0.000000,42.000000},{0.000000,0.000000}}"/>
+					<Property Name="UnifiedSize" Value="{{0.000000,110.000000},{1.000000,0.000000}}" />
+					<Property Name="UnifiedPosition" Value="{{0.000000,42.000000},{0.000000,0.000000}}" />
 					<Property Name="HorzFormatting" Value="HorzCentred" />
 				<Property Name="Text" Value="#{FBSD_150126_12}" />
 				</Window>
 				<Window Type="TLBB_SimpleText" Name="SweepAll_Title_level_3">
-					<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{1.000000,0.000000}}"/>
-					<Property Name="UnifiedPosition" Value="{{0.000000,153.000000},{0.000000,0.000000}}"/>
+					<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{1.000000,0.000000}}" />
+					<Property Name="UnifiedPosition" Value="{{0.000000,153.000000},{0.000000,0.000000}}" />
 					<Property Name="HorzFormatting" Value="HorzCentred" />
 					<Property Name="Text" Value="#{FBSD_150126_13}" />
 				</Window>
 				<Window Type="TLBB_SimpleText" Name="SweepAll_Title_allpoint_3">
-					<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{1.000000,0.000000}}"/>
-					<Property Name="UnifiedPosition" Value="{{0.000000,233.000000},{0.000000,0.000000}}"/>
+					<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{1.000000,0.000000}}" />
+					<Property Name="UnifiedPosition" Value="{{0.000000,233.000000},{0.000000,0.000000}}" />
 					<Property Name="HorzFormatting" Value="HorzCentred" />
 					<Property Name="Text" Value="#{FBSD_150126_14}" />
 				</Window>
 				<Window Type="TLBB_SimpleText" Name="SweepAll_Title_point_3">
-					<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{1.000000,0.000000}}"/>
-					<Property Name="UnifiedPosition" Value="{{0.000000,310.000000},{0.000000,0.000000}}"/>
+					<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{1.000000,0.000000}}" />
+					<Property Name="UnifiedPosition" Value="{{0.000000,310.000000},{0.000000,0.000000}}" />
 					<Property Name="HorzFormatting" Value="HorzCentred" />
 					<Property Name="Text" Value="#{FBSD_150126_15}" />
 				</Window>
 				<Window Type="TLBB_SimpleText" Name="SweepAll_Title_sweep_3">
-					<Property Name="UnifiedSize" Value="{{0.000000,60.000000},{1.000000,0.000000}}"/>
-					<Property Name="UnifiedPosition" Value="{{0.000000,403.000000},{0.000000,0.000000}}"/>
+					<Property Name="UnifiedSize" Value="{{0.000000,60.000000},{1.000000,0.000000}}" />
+					<Property Name="UnifiedPosition" Value="{{0.000000,403.000000},{0.000000,0.000000}}" />
 					<Property Name="HorzFormatting" Value="HorzCentred" />
 					<Property Name="Text" Value="#{FBSD_150126_17}" />
 				</Window>
 				<Window Type="TLBB_ButtonSweep" Name="SweepAll_List_3">
 					<Property Name="UnifiedPosition" Value="{{0.000000,490.000000},{0.000000,10.000000}}" />
-					<Property Name="UnifiedSize" Value="{{0.000000,65.000000},{0.000000,20.000000}" />
+					<Property Name="UnifiedSize" Value="{{0.000000,65.000000},{0.000000,20.000000}}" />
 					<Property Name="Text" Value="扫荡"/>
 					<Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
 					<Property Name="AlwaysOnTop" Value="True"/>
@@ -252,46 +252,46 @@
 				</Window>
            </Window>
 			<Window Type="TLBB_Frame_Lace17" Name="SweepAll_Title_4">
-				<Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{0.000000,42.000000}}"/>
-				<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,126.000000}}"/>
+				<Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{0.000000,42.000000}}" />
+				<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,126.000000}}" />
 				<Window Type="TLBB_StaticImageNULL" Name="SweepAll_Title_Icon_4">
-					<Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,38.000000}}"/>
-					<Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+					<Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,38.000000}}" />
+					<Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}" />
 					<Property Name="Image" Value="set:RosebangUI image:RosebangUI_1"/>
 				</Window>
 				<Window Type="TLBB_SimpleText" Name="SweepAll_Title_activity_4">
-				  <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{1.000000,0.000000}}"/>
-				  <Property Name="UnifiedPosition" Value="{{0.000000,42.000000},{0.000000,0.000000}}"/>
+				  <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{1.000000,0.000000}}" />
+				  <Property Name="UnifiedPosition" Value="{{0.000000,42.000000},{0.000000,0.000000}}" />
 				  <Property Name="HorzFormatting" Value="HorzCentred" />
 					<Property Name="Text" Value="#{FBSD_150126_12}" />
 				</Window>
 				<Window Type="TLBB_SimpleText" Name="SweepAll_Title_level_4">
-				  <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{1.000000,0.000000}}"/>
-				  <Property Name="UnifiedPosition" Value="{{0.000000,153.000000},{0.000000,0.000000}}"/>
+				  <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{1.000000,0.000000}}" />
+				  <Property Name="UnifiedPosition" Value="{{0.000000,153.000000},{0.000000,0.000000}}" />
 				  <Property Name="HorzFormatting" Value="HorzCentred" />
 				  <Property Name="Text" Value="#{FBSD_150126_13}" />
 				</Window>
 				<Window Type="TLBB_SimpleText" Name="SweepAll_Title_allpoint_4">
-				  <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{1.000000,0.000000}}"/>
-				  <Property Name="UnifiedPosition" Value="{{0.000000,233.000000},{0.000000,0.000000}}"/>
+				  <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{1.000000,0.000000}}" />
+				  <Property Name="UnifiedPosition" Value="{{0.000000,233.000000},{0.000000,0.000000}}" />
 				  <Property Name="HorzFormatting" Value="HorzCentred" />
 				  <Property Name="Text" Value="#{FBSD_150126_14}" />
 				</Window>
 				<Window Type="TLBB_SimpleText" Name="SweepAll_Title_point_4">
-				  <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{1.000000,0.000000}}"/>
-				  <Property Name="UnifiedPosition" Value="{{0.000000,310.000000},{0.000000,0.000000}}"/>
+				  <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{1.000000,0.000000}}" />
+				  <Property Name="UnifiedPosition" Value="{{0.000000,310.000000},{0.000000,0.000000}}" />
 				  <Property Name="HorzFormatting" Value="HorzCentred" />
 				  <Property Name="Text" Value="#{FBSD_150126_15}" />
 				</Window>
 				<Window Type="TLBB_SimpleText" Name="SweepAll_Title_sweep_4">
-				  <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{1.000000,0.000000}}"/>
-				  <Property Name="UnifiedPosition" Value="{{0.000000,403.000000},{0.000000,0.000000}}"/>
+				  <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{1.000000,0.000000}}" />
+				  <Property Name="UnifiedPosition" Value="{{0.000000,403.000000},{0.000000,0.000000}}" />
 				  <Property Name="HorzFormatting" Value="HorzCentred" />
 				  <Property Name="Text" Value="#{FBSD_150126_17}" />
 				</Window>
 				<Window Type="TLBB_ButtonSweep" Name="SweepAll_List_4">
 				  <Property Name="UnifiedPosition" Value="{{0.000000,490.000000},{0.000000,10.000000}}" />
-				  <Property Name="UnifiedSize" Value="{{0.000000,65.000000},{0.000000,20.000000}" />
+				  <Property Name="UnifiedSize" Value="{{0.000000,65.000000},{0.000000,20.000000}}" />
 				  <Property Name="Text" Value="扫荡"/>
 				  <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
 				  <Property Name="AlwaysOnTop" Value="True"/>
@@ -300,46 +300,46 @@
 			</Window>
 
 			<Window Type="TLBB_Frame_Lace17" Name="SweepAll_Title_5">
-				<Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{0.000000,42.000000}}"/>
-				<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,168.000000}}"/>          
+				<Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{0.000000,42.000000}}" />
+				<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,168.000000}}" />
 				<Window Type="TLBB_StaticImageNULL" Name="SweepAll_Title_Icon_5">
-				  <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,38.000000}}"/>
-				  <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+				  <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,38.000000}}" />
+				  <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}" />
 				  <Property Name="Image" Value="set:RosebangUI image:RosebangUI_1"/>
 				</Window>
 				<Window Type="TLBB_SimpleText" Name="SweepAll_Title_activity_5">
-				  <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{1.000000,0.000000}}"/>
-				  <Property Name="UnifiedPosition" Value="{{0.000000,42.000000},{0.000000,0.000000}}"/>
+				  <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{1.000000,0.000000}}" />
+				  <Property Name="UnifiedPosition" Value="{{0.000000,42.000000},{0.000000,0.000000}}" />
 				  <Property Name="HorzFormatting" Value="HorzCentred" />
 				  <Property Name="Text" Value="#{FBSD_150126_12}" />
 				</Window>
 				<Window Type="TLBB_SimpleText" Name="SweepAll_Title_level_5">
-				  <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{1.000000,0.000000}}"/>
-				  <Property Name="UnifiedPosition" Value="{{0.000000,153.000000},{0.000000,0.000000}}"/>
+				  <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{1.000000,0.000000}}" />
+				  <Property Name="UnifiedPosition" Value="{{0.000000,153.000000},{0.000000,0.000000}}" />
 				  <Property Name="HorzFormatting" Value="HorzCentred" />
 				  <Property Name="Text" Value="#{FBSD_150126_13}" />
 				</Window>
 				<Window Type="TLBB_SimpleText" Name="SweepAll_Title_allpoint_5">
-				  <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{1.000000,0.000000}}"/>
-				  <Property Name="UnifiedPosition" Value="{{0.000000,233.000000},{0.000000,0.000000}}"/>
+				  <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{1.000000,0.000000}}" />
+				  <Property Name="UnifiedPosition" Value="{{0.000000,233.000000},{0.000000,0.000000}}" />
 				  <Property Name="HorzFormatting" Value="HorzCentred" />
 				  <Property Name="Text" Value="#{FBSD_150126_14}" />
 				</Window>
 				<Window Type="TLBB_SimpleText" Name="SweepAll_Title_point_5">
-				  <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{1.000000,0.000000}}"/>
-				  <Property Name="UnifiedPosition" Value="{{0.000000,310.000000},{0.000000,0.000000}}"/>
+				  <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{1.000000,0.000000}}" />
+				  <Property Name="UnifiedPosition" Value="{{0.000000,310.000000},{0.000000,0.000000}}" />
 				  <Property Name="HorzFormatting" Value="HorzCentred" />
 				  <Property Name="Text" Value="#{FBSD_150126_15}" />
 				</Window>
 				<Window Type="TLBB_SimpleText" Name="SweepAll_Title_sweep_5">
-				  <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{1.000000,0.000000}}"/>
-				  <Property Name="UnifiedPosition" Value="{{0.000000,403.000000},{0.000000,0.000000}}"/>
+				  <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{1.000000,0.000000}}" />
+				  <Property Name="UnifiedPosition" Value="{{0.000000,403.000000},{0.000000,0.000000}}" />
 				  <Property Name="HorzFormatting" Value="HorzCentred" />
 				  <Property Name="Text" Value="#{FBSD_150126_17}" />
 				</Window>
 				<Window Type="TLBB_ButtonSweep" Name="SweepAll_List_5">
 					<Property Name="UnifiedPosition" Value="{{0.000000,490.000000},{0.000000,10.000000}}" />
-					<Property Name="UnifiedSize" Value="{{0.000000,65.000000},{0.000000,20.000000}" />
+					<Property Name="UnifiedSize" Value="{{0.000000,65.000000},{0.000000,20.000000}}" />
 					<Property Name="Text" Value="扫荡"/>
 					<Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
 					<Property Name="AlwaysOnTop" Value="True"/>
@@ -348,47 +348,47 @@
 			</Window>
 
 			<Window Type="TLBB_Frame_Lace17" Name="SweepAll_Title_6">
-				<Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{0.000000,42.000000}}"/>
-				<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,210.000000}}"/>
+				<Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{0.000000,42.000000}}" />
+				<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,210.000000}}" />
             
 				<Window Type="TLBB_StaticImageNULL" Name="SweepAll_Title_Icon_6">
-				  <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,38.000000}}"/>
-				  <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+				  <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,38.000000}}" />
+				  <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}" />
 				  <Property Name="Image" Value="set:RosebangUI image:RosebangUI_1"/>
 				</Window>
 				<Window Type="TLBB_SimpleText" Name="SweepAll_Title_activity_6">
-				  <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{1.000000,0.000000}}"/>
-				  <Property Name="UnifiedPosition" Value="{{0.000000,42.000000},{0.000000,0.000000}}"/>
+				  <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{1.000000,0.000000}}" />
+				  <Property Name="UnifiedPosition" Value="{{0.000000,42.000000},{0.000000,0.000000}}" />
 				  <Property Name="HorzFormatting" Value="HorzCentred" />
 				  <Property Name="Text" Value="#{FBSD_150126_12}" />
 				</Window>
 				<Window Type="TLBB_SimpleText" Name="SweepAll_Title_level_6">
-				  <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{1.000000,0.000000}}"/>
-				  <Property Name="UnifiedPosition" Value="{{0.000000,153.000000},{0.000000,0.000000}}"/>
+				  <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{1.000000,0.000000}}" />
+				  <Property Name="UnifiedPosition" Value="{{0.000000,153.000000},{0.000000,0.000000}}" />
 				  <Property Name="HorzFormatting" Value="HorzCentred" />
 				  <Property Name="Text" Value="#{FBSD_150126_13}" />
 				</Window>
 				<Window Type="TLBB_SimpleText" Name="SweepAll_Title_allpoint_6">
-				  <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{1.000000,0.000000}}"/>
-				  <Property Name="UnifiedPosition" Value="{{0.000000,233.000000},{0.000000,0.000000}}"/>
+				  <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{1.000000,0.000000}}" />
+				  <Property Name="UnifiedPosition" Value="{{0.000000,233.000000},{0.000000,0.000000}}" />
 				  <Property Name="HorzFormatting" Value="HorzCentred" />
 				  <Property Name="Text" Value="#{FBSD_150126_14}" />
 				</Window>
 				<Window Type="TLBB_SimpleText" Name="SweepAll_Title_point_6">
-				  <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{1.000000,0.000000}}"/>
-				  <Property Name="UnifiedPosition" Value="{{0.000000,310.000000},{0.000000,0.000000}}"/>
+				  <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{1.000000,0.000000}}" />
+				  <Property Name="UnifiedPosition" Value="{{0.000000,310.000000},{0.000000,0.000000}}" />
 				  <Property Name="HorzFormatting" Value="HorzCentred" />
 				  <Property Name="Text" Value="#{FBSD_150126_15}" />
 				</Window>
 				<Window Type="TLBB_SimpleText" Name="SweepAll_Title_sweep_6">
-				  <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{1.000000,0.000000}}"/>
-				  <Property Name="UnifiedPosition" Value="{{0.000000,403.000000},{0.000000,0.000000}}"/>
+				  <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{1.000000,0.000000}}" />
+				  <Property Name="UnifiedPosition" Value="{{0.000000,403.000000},{0.000000,0.000000}}" />
 				  <Property Name="HorzFormatting" Value="HorzCentred" />
 				  <Property Name="Text" Value="#{FBSD_150126_17}" />
 				</Window>
 				<Window Type="TLBB_ButtonSweep" Name="SweepAll_List_6">
 				  <Property Name="UnifiedPosition" Value="{{0.000000,490.000000},{0.000000,10.000000}}" />
-				  <Property Name="UnifiedSize" Value="{{0.000000,65.000000},{0.000000,20.000000}" />
+				  <Property Name="UnifiedSize" Value="{{0.000000,65.000000},{0.000000,20.000000}}" />
 				  <Property Name="Text" Value="扫荡"/>
 				  <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
 				  <Property Name="AlwaysOnTop" Value="True"/>
@@ -396,46 +396,46 @@
 				</Window>
 			</Window>
 			<Window Type="TLBB_Frame_Lace17" Name="SweepAll_Title_7">
-				<Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{0.000000,42.000000}}"/>
-				<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,252.000000}}"/>
+				<Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{0.000000,42.000000}}" />
+				<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,252.000000}}" />
 				<Window Type="TLBB_StaticImageNULL" Name="SweepAll_Title_Icon_7">
-				  <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,38.000000}}"/>
-				  <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+				  <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,38.000000}}" />
+				  <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}" />
 				  <Property Name="Image" Value="set:RosebangUI image:RosebangUI_1"/>
 				</Window>
 				<Window Type="TLBB_SimpleText" Name="SweepAll_Title_activity_7">
-				  <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{1.000000,0.000000}}"/>
-				  <Property Name="UnifiedPosition" Value="{{0.000000,42.000000},{0.000000,0.000000}}"/>
+				  <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{1.000000,0.000000}}" />
+				  <Property Name="UnifiedPosition" Value="{{0.000000,42.000000},{0.000000,0.000000}}" />
 				  <Property Name="HorzFormatting" Value="HorzCentred" />
 				  <Property Name="Text" Value="#{FBSD_150126_12}" />
 				</Window>
 				<Window Type="TLBB_SimpleText" Name="SweepAll_Title_level_7">
-				  <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{1.000000,0.000000}}"/>
-				  <Property Name="UnifiedPosition" Value="{{0.000000,153.000000},{0.000000,0.000000}}"/>
+				  <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{1.000000,0.000000}}" />
+				  <Property Name="UnifiedPosition" Value="{{0.000000,153.000000},{0.000000,0.000000}}" />
 				  <Property Name="HorzFormatting" Value="HorzCentred" />
 				  <Property Name="Text" Value="#{FBSD_150126_13}" />
 				</Window>
 				<Window Type="TLBB_SimpleText" Name="SweepAll_Title_allpoint_7">
-				  <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{1.000000,0.000000}}"/>
-				  <Property Name="UnifiedPosition" Value="{{0.000000,233.000000},{0.000000,0.000000}}"/>
+				  <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{1.000000,0.000000}}" />
+				  <Property Name="UnifiedPosition" Value="{{0.000000,233.000000},{0.000000,0.000000}}" />
 				  <Property Name="HorzFormatting" Value="HorzCentred" />
 				  <Property Name="Text" Value="#{FBSD_150126_14}" />
 				</Window>
 				<Window Type="TLBB_SimpleText" Name="SweepAll_Title_point_7">
-				  <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{1.000000,0.000000}}"/>
-				  <Property Name="UnifiedPosition" Value="{{0.000000,310.000000},{0.000000,0.000000}}"/>
+				  <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{1.000000,0.000000}}" />
+				  <Property Name="UnifiedPosition" Value="{{0.000000,310.000000},{0.000000,0.000000}}" />
 				  <Property Name="HorzFormatting" Value="HorzCentred" />
 				  <Property Name="Text" Value="#{FBSD_150126_15}" />
 				</Window>
 				<Window Type="TLBB_SimpleText" Name="SweepAll_Title_sweep_7">
-				  <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{1.000000,0.000000}}"/>
-				  <Property Name="UnifiedPosition" Value="{{0.000000,403.000000},{0.000000,0.000000}}"/>
+				  <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{1.000000,0.000000}}" />
+				  <Property Name="UnifiedPosition" Value="{{0.000000,403.000000},{0.000000,0.000000}}" />
 				  <Property Name="HorzFormatting" Value="HorzCentred" />
 				  <Property Name="Text" Value="#{FBSD_150126_17}" />
 				</Window>
 				<Window Type="TLBB_ButtonSweep" Name="SweepAll_List_7">
 				  <Property Name="UnifiedPosition" Value="{{0.000000,490.000000},{0.000000,10.000000}}" />
-				  <Property Name="UnifiedSize" Value="{{0.000000,65.000000},{0.000000,20.000000}" />
+				  <Property Name="UnifiedSize" Value="{{0.000000,65.000000},{0.000000,20.000000}}" />
 				  <Property Name="Text" Value="扫荡"/>
 				  <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
 				  <Property Name="AlwaysOnTop" Value="True"/>
@@ -444,46 +444,46 @@
 			</Window>
 
 			<Window Type="TLBB_Frame_Lace17" Name="SweepAll_Title_8">
-				<Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{0.000000,42.000000}}"/>
-				<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,294.000000}}"/>
+				<Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{0.000000,42.000000}}" />
+				<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,294.000000}}" />
 				<Window Type="TLBB_StaticImageNULL" Name="SweepAll_Title_Icon_8">
-				  <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,38.000000}}"/>
-				  <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+				  <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,38.000000}}" />
+				  <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}" />
 				  <Property Name="Image" Value="set:RosebangUI image:RosebangUI_1"/>
 				</Window>
 				<Window Type="TLBB_SimpleText" Name="SweepAll_Title_activity_8">
-				  <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{1.000000,0.000000}}"/>
-				  <Property Name="UnifiedPosition" Value="{{0.000000,42.000000},{0.000000,0.000000}}"/>
+				  <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{1.000000,0.000000}}" />
+				  <Property Name="UnifiedPosition" Value="{{0.000000,42.000000},{0.000000,0.000000}}" />
 				  <Property Name="HorzFormatting" Value="HorzCentred" />
 				  <Property Name="Text" Value="#{FBSD_150126_12}" />
 				</Window>
 				<Window Type="TLBB_SimpleText" Name="SweepAll_Title_level_8">
-				  <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{1.000000,0.000000}}"/>
-				  <Property Name="UnifiedPosition" Value="{{0.000000,153.000000},{0.000000,0.000000}}"/>
+				  <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{1.000000,0.000000}}" />
+				  <Property Name="UnifiedPosition" Value="{{0.000000,153.000000},{0.000000,0.000000}}" />
 				  <Property Name="HorzFormatting" Value="HorzCentred" />
 				  <Property Name="Text" Value="#{FBSD_150126_13}" />
 				</Window>
 				<Window Type="TLBB_SimpleText" Name="SweepAll_Title_allpoint_8">
-				  <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{1.000000,0.000000}}"/>
-				  <Property Name="UnifiedPosition" Value="{{0.000000,233.000000},{0.000000,0.000000}}"/>
+				  <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{1.000000,0.000000}}" />
+				  <Property Name="UnifiedPosition" Value="{{0.000000,233.000000},{0.000000,0.000000}}" />
 				  <Property Name="HorzFormatting" Value="HorzCentred" />
 				  <Property Name="Text" Value="#{FBSD_150126_14}" />
 				</Window>
 				<Window Type="TLBB_SimpleText" Name="SweepAll_Title_point_8">
-				  <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{1.000000,0.000000}}"/>
-				  <Property Name="UnifiedPosition" Value="{{0.000000,310.000000},{0.000000,0.000000}}"/>
+				  <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{1.000000,0.000000}}" />
+				  <Property Name="UnifiedPosition" Value="{{0.000000,310.000000},{0.000000,0.000000}}" />
 				  <Property Name="HorzFormatting" Value="HorzCentred" />
 				  <Property Name="Text" Value="#{FBSD_150126_15}" />
 				</Window>
 				<Window Type="TLBB_SimpleText" Name="SweepAll_Title_sweep_8">
-				  <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{1.000000,0.000000}}"/>
-				  <Property Name="UnifiedPosition" Value="{{0.000000,403.000000},{0.000000,0.000000}}"/>
+				  <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{1.000000,0.000000}}" />
+				  <Property Name="UnifiedPosition" Value="{{0.000000,403.000000},{0.000000,0.000000}}" />
 				  <Property Name="HorzFormatting" Value="HorzCentred" />
 				  <Property Name="Text" Value="#{FBSD_150126_17}" />
 				</Window>
 				<Window Type="TLBB_ButtonSweep" Name="SweepAll_List_8">
 				  <Property Name="UnifiedPosition" Value="{{0.000000,490.000000},{0.000000,10.000000}}" />
-				  <Property Name="UnifiedSize" Value="{{0.000000,65.000000},{0.000000,20.000000}" />
+				  <Property Name="UnifiedSize" Value="{{0.000000,65.000000},{0.000000,20.000000}}" />
 				  <Property Name="Text" Value="扫荡"/>
 				  <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
 				  <Property Name="AlwaysOnTop" Value="True"/>
@@ -494,12 +494,12 @@
       </Window>	  
     </Window>
 			<Window Type="DefaultWindow" Name="SweepAll_turn">
-				<Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.500000,0.0000000}" />
-				<Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.300000,20.000000}" />
+				<Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.500000,0.0000000}}" />
+				<Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.300000,20.000000}}" />
 				<Property Name="AlwaysOnTop" Value="True"/>
 				<Window Type="TLBB_ButtonNULL" Name="SweepAll_turn_MoveUp">
-					<Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,26.0000000}" />
-					<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.100000,0.000000}" />
+					<Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,26.0000000}}" />
+					<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.100000,0.000000}}" />
 					<Property Name="NormalImage" Value="set:Button6 image:PageUp_Btn_Normal" />
 					<Property Name="HoverImage" Value="set:Button6 image:PageUp_Btn_Hover" />
 					<Property Name="PushedImage" Value="set:Button6 image:PageUp_Btn_Pushed" />
@@ -507,8 +507,8 @@
 					<Property Name="Tooltip" Value="#{INTERFACE_XML_751}" />
 				</Window>
 				<Window Type="TLBB_ButtonNULL" Name="SweepAll_turn_MoveDown">
-					<Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,26.0000000}" />
-					<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.850000,0.000000}" />
+					<Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,26.0000000}}" />
+					<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.850000,0.000000}}" />
 					<Property Name="NormalImage" Value="set:Button6 image:PageDown_Btn_Normal" />
 					<Property Name="HoverImage" Value="set:Button6 image:PageDown_Btn_Hover" />
 					<Property Name="PushedImage" Value="set:Button6 image:PageDown_Btn_Pushed" />

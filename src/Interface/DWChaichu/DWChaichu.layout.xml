@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <GUILayout>
   <Window Type="TLBB_MainFrame1" Name="DWChaichu_Frame">
-    <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,390.000000}}"/>
-    <Property Name="UnifiedPosition" Value="{{0.500000,-150.000000},{0.500000,-195.000000}}"/>
+    <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,390.000000}}" />
+    <Property Name="UnifiedPosition" Value="{{0.500000,-150.000000},{0.500000,-195.000000}}" />
     <Event Name="Hidden" Function="DWChaichu_OnHiden();" />
     <Window Type="TLBB_DragTitle" Name="DWChaichu_DragTitle">
       <Property Name="AbsolutePosition" Value="x:40.000000 y:11.000000" />
@@ -34,67 +34,67 @@
       <Property Name="AbsolutePosition" Value="x:7.000000 y:30.000000" />
       <Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{1.000000,-39.000000}}" />
       <Window Type="TLBB_SimpleMulitiTextFrame" Name="DWChaichu_Info">
-        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-230.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-230.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
         <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
         <Property Name="RiseOnClick" Value="False" />
         <Property Name="Text" Value="#{ZBDW_XML_26}" />
       </Window>
       <Window Type="TLBB_SimpleText" Name="DWChaichu_Info1">
-        <Property Name="UnifiedSize" Value="{{0.000000,280.000000},{0.000000,40.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{1.000000,-225.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,280.000000},{0.000000,40.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{1.000000,-225.000000}}" />
         <Window Type="TLBB_SimpleText" Name="DWChaichu_Text">
-          <Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,16.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{1.000000,-28.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,16.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{1.000000,-28.000000}}" />
           <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
           <Property Name="VertFormatting" Value="VertCentred" />
           <Property Name="RiseOnClick" Value="False" />
           <Property Name="Text" Value="#{ZBDW_XML_27}" />
         </Window>
         <Window Type="TLBB_ActionButton" Name="DWChaichu_Object">
-          <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,200.000000},{1.000000,-37.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,200.000000},{1.000000,-37.000000}}" />
           <Property Name="DragAcceptName" Value="G101" />
           <Property Name="DraggingEnabled" Value="True" />
           <Event Name="RBClicked" Function="DWChaichu_Resume_Equip(101);" />
         </Window>
       </Window>
       <Window Type="TLBB_SimpleText" Name="DWChaichu_Info2">
-        <Property Name="UnifiedSize" Value="{{0.000000,280.000000},{0.000000,40.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{1.000000,-180.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,280.000000},{0.000000,40.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{1.000000,-180.000000}}" />
         <Window Type="TLBB_SimpleText" Name="DWChaichu_Text1">
-          <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,16.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{1.000000,-28.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,16.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{1.000000,-28.000000}}" />
           <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
           <Property Name="VertFormatting" Value="VertCentred" />
           <Property Name="RiseOnClick" Value="False" />
           <Property Name="Text" Value="#{SSXDW_140819_54}" />
         </Window>
         <Window Type="TLBB_ActionButton" Name="DWChaichu_Gem1">
-          <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,200.000000},{1.000000,-36.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,200.000000},{1.000000,-36.000000}}" />
           <Event Name="Clicked" Function="DWChaichu_Select(1);"/>
         </Window>
         <!-- <Window Type="TLBB_ActionButton" Name="DWChaichu_Gem2"> -->
-          <!-- <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/> -->
-          <!-- <Property Name="UnifiedPosition" Value="{{0.000000,240.000000},{1.000000,-36.000000}}"/> -->
+          <!-- <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}" /> -->
+          <!-- <Property Name="UnifiedPosition" Value="{{0.000000,240.000000},{1.000000,-36.000000}}" /> -->
           <!-- <Event Name="Clicked" Function="DWChaichu_Select(2);"/> -->
         <!-- </Window> -->
       </Window>
       <Window Type="TLBB_SimpleText" Name="DWChaichu_Info3">
-        <Property Name="UnifiedSize" Value="{{0.000000,280.000000},{0.000000,40.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{1.000000,-135.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,280.000000},{0.000000,40.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{1.000000,-135.000000}}" />
         <Window Type="TLBB_SimpleText" Name="DWChaichu_Text2">
-          <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,16.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{1.000000,-28.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,16.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{1.000000,-28.000000}}" />
           <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
           <Property Name="VertFormatting" Value="VertCentred" />
           <Property Name="RiseOnClick" Value="False" />
           <Property Name="Text" Value="#{ZBDW_XML_28}" />
         </Window>
         <Window Type="TLBB_ActionButton" Name="DWChaichu_Object2">
-          <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,200.000000},{1.000000,-37.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,200.000000},{1.000000,-37.000000}}" />
           <Property Name="DragAcceptName" Value="G102" />
           <Property Name="DraggingEnabled" Value="True" />
           <Event Name="RBClicked" Function="DWChaichu_Resume_Equip(102);" />
@@ -154,15 +154,15 @@
         <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-29.000000}}" />
         <Property Name="UnifiedSize" Value="{{1.000000,-84.000000},{0.000000,20.000000}}" />
         <!-- <Window Type="TLBB_ButtonCheck" Name="DWChaichu_Blank_Queren"> -->
-          <!-- <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,13.000000}}"/> -->
-          <!-- <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,4.000000}}"/> -->
+          <!-- <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,13.000000}}" /> -->
+          <!-- <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,4.000000}}" /> -->
           <!-- <Property Name="AlwaysOnTop" Value="True"/> -->
           <!-- <Property Name="Selected" Value="True"/> -->
           <!-- <Event Name="Clicked" Function="DWChaichu_Blank_Queren_Clicked()"/> -->
         <!-- </Window> -->
         <!-- <Window Type="TLBB_SimpleText" Name="DWChaichu_Blank_Queren_Text"> -->
-          <!-- <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,20.000000}}"/> -->
-          <!-- <Property Name="UnifiedPosition" Value="{{0.000000,24.000000},{0.000000,1.000000}}"/> -->
+          <!-- <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,20.000000}}" /> -->
+          <!-- <Property Name="UnifiedPosition" Value="{{0.000000,24.000000},{0.000000,1.000000}}" /> -->
           <!-- <Property Name="Text" Value="#{DWYH_161110_1}"/> -->
           <!-- <Property Name="Tooltip" Value="#{DWYH_161110_14}"/> -->
           <!-- <Property Name="AlwaysOnTop" Value="True"/> -->

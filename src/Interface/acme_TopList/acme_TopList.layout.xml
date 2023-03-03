@@ -6,7 +6,7 @@
 		<Event Name="Hidden" Function="acme_TopList_Frame_OnHiden()" />
 		<Window Type="TLBB_DragTitle" Name="acme_TopList_DragTitle">
             <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}" />
-            <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+            <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}" />
 			<Property Name="DragTarget" Value="acme_TopList_Frame" />
 			<Window Type="TLBB_SimpleText" Name="acme_TopList_Title">
 				<Property Name="Position" Value="x:0.0 y:0.0" />
@@ -17,22 +17,22 @@
 			</Window>
 		</Window>
 		<Window Type="TLBB_ButtonHelp" Name="acme_TopList_Help">
-            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
-            <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}" />
+            <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}" />
 			<Event Name="Clicked" Function='Helper:GotoHelper(&quot;*acme_TopList&quot;);' />
 		</Window>
 		<Window Type="TLBB_ButtonClose" Name="acme_TopList_Close">
-            <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
-            <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}" />
+            <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}" />
+            <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}" />
 			<Property Name="AlwaysOnTop" Value="True" />
 			<Event Name="Clicked" Function="this:Hide();" />
 		</Window>
     <Window Type="DefaultWindow" Name="acme_TopList_Client">
-      <Property Name="UnifiedSize" Value="{{1.000000,-15.000000},{1.000000,-26.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,10.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-15.000000},{1.000000,-26.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,10.000000}}" />
          <Window Type="TLBB_SimpleMulitiTextFrame" Name="acme_TopList_info">
-            <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,50.000000}" />
-            <Property Name="UnifiedSize" Value="{{0.0,450.000000},{0.000000,75.000000}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,50.000000}}" />
+            <Property Name="UnifiedSize" Value="{{0.0,450.000000},{0.000000,75.000000}}" />
             <Property Name="Text" Value="" />
             <Property Name="TextColor" Value="FFFDF7A7" />
             <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
@@ -40,54 +40,54 @@
             <Property Name="RiseOnClick" Value="False" />
         </Window>
       <Window Type="DefaultWindow" Name="acme_TopList_LeftMenu">
-        <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,16.000000}" />
-        <Property Name="UnifiedSize" Value="{{1.000000,-18.000000},{0.000000,35.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,16.000000}}" />
+        <Property Name="UnifiedSize" Value="{{1.000000,-18.000000},{0.000000,35.000000}}" />
             <Window Type="TLBB_ButtonFenYe2" Name="acme_TopList_Lvel">
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,10.000000}" />
-              <Property Name="UnifiedSize" Value="{{0,60.000000},{0.000000,25.000000}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,10.000000}}" />
+              <Property Name="UnifiedSize" Value="{{0,60.000000},{0.000000,25.000000}}" />
               <Property Name="Text" Value="等级" />
 			  <Property Name="CheckMode" Value="1" />
               <Event Name="Clicked" Function="acme_TopList_ItemSelectChanged(1);" />
             </Window>		
             <Window Type="TLBB_ButtonFenYe2" Name="acme_TopList_Prize">
-              <Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,10.000000}" />
-              <Property Name="UnifiedSize" Value="{{0,60.000000},{0.000000,25.000000}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,10.000000}}" />
+              <Property Name="UnifiedSize" Value="{{0,60.000000},{0.000000,25.000000}}" />
               <Property Name="Text" Value="充值" />
 			  <Property Name="CheckMode" Value="1" />
               <Event Name="Clicked" Function="acme_TopList_ItemSelectChanged(2);" />
             </Window>		
             <Window Type="TLBB_ButtonFenYe2" Name="acme_TopList_LaBa">
-              <Property Name="UnifiedPosition" Value="{{0.000000,120.000000},{0.000000,10.000000}" />
-              <Property Name="UnifiedSize" Value="{{0,60.000000},{0.000000,25.000000}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,120.000000},{0.000000,10.000000}}" />
+              <Property Name="UnifiedSize" Value="{{0,60.000000},{0.000000,25.000000}}" />
               <Property Name="Text" Value="喇叭" />
 			  <Property Name="CheckMode" Value="1" />
               <Event Name="Clicked" Function="acme_TopList_ItemSelectChanged(3);" />
             </Window>		
             <Window Type="TLBB_ButtonFenYe2" Name="acme_TopList_SongHua">
-              <Property Name="UnifiedPosition" Value="{{0.000000,180.000000},{0.000000,10.000000}" />
-              <Property Name="UnifiedSize" Value="{{0,60.000000},{0.000000,25.000000}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,180.000000},{0.000000,10.000000}}" />
+              <Property Name="UnifiedSize" Value="{{0,60.000000},{0.000000,25.000000}}" />
               <Property Name="Text" Value="送花" />
 			  <Property Name="CheckMode" Value="1" />
               <Event Name="Clicked" Function="acme_TopList_ItemSelectChanged(4);" />
             </Window>		
             <Window Type="TLBB_ButtonFenYe2" Name="acme_TopList_ShouHua">
-              <Property Name="UnifiedPosition" Value="{{0.000000,240.000000},{0.000000,10.000000}" />
-              <Property Name="UnifiedSize" Value="{{0,60.000000},{0.000000,25.000000}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,240.000000},{0.000000,10.000000}}" />
+              <Property Name="UnifiedSize" Value="{{0,60.000000},{0.000000,25.000000}}" />
               <Property Name="Text" Value="收花" />
 			  <Property Name="CheckMode" Value="1" />
               <Event Name="Clicked" Function="acme_TopList_ItemSelectChanged(5);" />
             </Window>		
             <Window Type="TLBB_ButtonFenYe2" Name="acme_TopList_ShaRen">
-              <Property Name="UnifiedPosition" Value="{{0.000000,300.000000},{0.000000,10.000000}" />
-              <Property Name="UnifiedSize" Value="{{0,60.000000},{0.000000,25.000000}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,300.000000},{0.000000,10.000000}}" />
+              <Property Name="UnifiedSize" Value="{{0,60.000000},{0.000000,25.000000}}" />
               <Property Name="Text" Value="杀人" />
 			  <Property Name="CheckMode" Value="1" />
               <Event Name="Clicked" Function="acme_TopList_ItemSelectChanged(6);" />
             </Window>		
       </Window>
       <Window Type="TLBB_Frame_Lace1" Name="acme_TopList_RightInfo">
-        <Property Name="UnifiedSize" Value="{{1.000000,-7.000000},{1.000000,-125.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,125.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,-7.000000},{1.000000,-125.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,125.000000}}" />
           <Window Type="TLBB_MultiColumnList" Name="acme_TopList_LevelList">
 			<Property Name="AlwaysOnTop" Value="True" />
             <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />

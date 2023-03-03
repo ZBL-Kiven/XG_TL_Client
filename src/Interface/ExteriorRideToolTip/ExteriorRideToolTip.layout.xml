@@ -1,32 +1,32 @@
 <?xml version="1.0" ?>
 <GUILayout>
   <Window Type="TLBB_MainFrameNULL" Name="ExteriorRideToolTip_Frame">
-    <Property Name="UnifiedPosition" Value="{{0.500000,-150.000000},{0.500000,-205.500000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-150.000000},{0.500000,-205.500000}}" />
     <Property Name="AbsoluteSize" Value="w:300 h:411" />
     <Property Name="ClippedByParent" Value="false" />
     <Event Name="Moved" Function="ExteriorRideToolTip_OnMoved();" />
     <Event Name="Hidden" Function="ExteriorRideToolTip_OnHide();" />
   <Window Type="TLBB_SuperTooltip" Name="_ExteriorRideToolTip_">
-    <Property Name="UnifiedPosition" Value="{{0.500000,-150.000000},{0.500000,-205.500000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-150.000000},{0.500000,-205.500000}}" />
     <Property Name="AbsoluteSize" Value="w:300 h:411" />
     <Property Name="ClippedByParent" Value="false" />
     <Window Type="TLBB_Frame_Lace3" Name="ExteriorRideToolTip_PageHeader">
       <Property Name="AbsolutePosition" Value="x:2 y:2" />
-      <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,106.000000}" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,106.000000}}" />
         <Window Type="TLBB_SimpleMulitiTextFrame" Name="ExteriorRideToolTip_Title">
           <Property Name="AbsolutePosition" Value="x:0.000000 y:0.000000" />
-          <Property Name="UnifiedSize" Value="{{1.000000,-3.000000},{1.000000,-80.000000}" />
+          <Property Name="UnifiedSize" Value="{{1.000000,-3.000000},{1.000000,-80.000000}}" />
           <Property Name="Font" Value="YouYuan9.75" />
           <Property Name="HorzFormatting" Value="HorzCentred" />
           <Property Name="VertFormatting" Value="VertCentred" />
           <Property Name="Text" Value="#{WGTJ_201222_133}"/>
           <Window Type="TLBB_DragTitle" Name="ExteriorRideToolTip_Title1">
             <Property Name="AbsolutePosition" Value="x:0.000000 y:0.000000" />
-            <Property Name="UnifiedSize" Value="{{1.000000,-25.000000},{1.000000,0.000000}" />
+            <Property Name="UnifiedSize" Value="{{1.000000,-25.000000},{1.000000,0.000000}}" />
             <Property Name="DragTarget" Value="ExteriorRideToolTip_Frame" />
           </Window>
         <Window Type="TLBB_ButtonClose" Name="ExteriorRideToolTip_Close">
-          <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,5.000000}" />
+          <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,5.000000}}" />
           <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
           <Event Name="Clicked" Function="ExteriorRideToolTip_CloseBtnClick();" />
         </Window>
@@ -38,7 +38,7 @@
     </Window>
     <Window Type="TLBB_StaticImageNULL" Name="ExteriorRideToolTip_ShortDesc">
       <Property Name="AbsolutePosition" Value="x:2.000000 y:107.000000" />
-      <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,18.000000}" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,18.000000}}" />
       <Property Name="RiseOnClick" Value="False" />
       <Window Type="TLBB_SimpleText" Name="ExteriorRideToolTip_ShortDesc_Text">
         <Property Name="AbsolutePosition" Value="x:2.000000 y:0.000000" />
@@ -50,19 +50,19 @@
     </Window>
     <Window Type="TLBB_SimpleMulitiTextFrame" Name="ExteriorRideToolTip_StaticPart_Yuanbaojiaoyi">
       <Property Name="AbsolutePosition" Value="x:2.000000 y:124.000000" />
-      <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,30.000000}" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,30.000000}}" />
       <Property Name="HorzFormatting" Value="HorzCentred" />
       <Property Name="VertFormatting" Value="VertCentred" />
     <Window Type="TLBB_SimpleText" Name="ExteriorRideToolTip_deadline_Text">
-      <Property Name="UnifiedSize" Value="{{0.000000,293.000000},{0.000000,27.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{0.000000,293.000000},{0.000000,27.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}" />
       <Property Name="Text" Value="" />
       <Property Name="HorzFormatting" Value="LeftAligned"/>
     </Window>
     </Window>
       <Window Type="TLBB_SuperTooltip_ResizeText" Name="ExteriorRideToolTip_Tujian_Tips">
       <Property Name="AbsolutePosition" Value="x:2.000000 y:178.000000" />
-      <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,59.000000}" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,59.000000}}" />
       <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
         <Property Name="MaxWidth" Value="296" />
         <Property Name="MinWidth" Value="296" />

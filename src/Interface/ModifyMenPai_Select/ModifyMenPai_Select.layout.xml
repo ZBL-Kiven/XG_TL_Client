@@ -1,155 +1,155 @@
 <?xml version="1.0" ?>
 <GUILayout>
   <Window Type="TLBB_MainFrame0" Name="ModifyMenPai_Select_FrameNULL">
-    <Property Name="UnifiedSize" Value="{{0.000000,780.000000},{0.000000,520.000000}}"/>
-    <Property Name="UnifiedPosition" Value="{{0.500000,-390.000000},{0.500000,-260.000000}}"/>
+    <Property Name="UnifiedSize" Value="{{0.000000,780.000000},{0.000000,520.000000}}" />
+    <Property Name="UnifiedPosition" Value="{{0.500000,-390.000000},{0.500000,-260.000000}}" />
     <Window Type="TLBB_ButtonClose" Name="ModifyMenPai_Select_Close">
-      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}" />
       <Event Name="Clicked" Function="ModifyMenPai_SelectFrame_CloseWindow();"/>
     </Window>
     <Window Type="TLBB_ButtonHelp" Name="ModifyMenPai_Select_Help">
-      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}" />
       <Property Name="AlwaysOnTop" Value="True"/>
     </Window>
     <Window Type="TLBB_DragTitle" Name="ModifyMenPai_Select_DragTitle">
       <Property Name="AlwaysOnTop" Value="True"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,11.000000}}"/>
-      <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,11.000000}}" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}}" />
       <Property Name="Font" Value="YouYuan11.25" />
       <Property Name="Text" Value="#{MPZH_180719_94}"/>
       <Property Name="HorzFormatting" Value="HorzCentred" />
       <Property Name="DragTarget" Value="ModifyMenPai_Select_FrameNULL" />
     </Window>
     <Window Type="DefaultWindow" Name="ModifyMenPai_Select_FrameBK">
-      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-45.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,30.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-45.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,30.000000}}" />
       <Property Name="RiseOnClick" Value="False"/>
       <Window Type="TLBB_SimpleText" Name="ModifyMenPai_Select_Text">
-        <Property Name="UnifiedSize" Value="{{1.00000,-40.000000},{0.000000,80.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.00000,20.000000},{0.000000,0.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{1.00000,-40.000000},{0.000000,80.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.00000,20.000000},{0.000000,0.000000}}" />
         <Property Name="Text" Value="#{MPZH_180719_95}"/>
         <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
       </Window>
       <Window Type="TLBB_Frame_Lace3" Name="ModifyMenPai_Select_MenPaiBK">
-        <Property Name="UnifiedSize" Value="{{0.000000,705.000000},{0.000000,340.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.500000,-353.000000},{0.500000,-150.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,705.000000},{0.000000,340.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.500000,-353.000000},{0.500000,-150.000000}}" />
         <Window Type="DefaultWindow" Name="ModifyMenPai_Select_Button1_None1">
-          <Property Name="UnifiedSize" Value="{{0.000000,170.000000},{0.000000,330.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.500000,-165.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,170.000000},{0.000000,330.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.500000,-165.000000}}" />
           <Property Name="RiseOnClick" Value="False"/>
           <Window Type="TLBB_StaticImageNULL" Name="ModifyMenPai_Select_Button1_NoneUp1">
-            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,165.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.00000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,165.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.00000,0.000000}}" />
             <Property Name="Image" Value="set:ModifyMenPai4 image:Modify_BackGround_Up"/>
             <Property Name="RiseOnClick" Value="False"/>
           </Window>
           <Window Type="TLBB_StaticImageNULL" Name="ModifyMenPai_Select_Button1_NoneDown1">
-            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,165.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.00000,-165.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,165.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.00000,-165.000000}}" />
             <Property Name="Image" Value="set:ModifyMenPai4 image:Modify_BackGround_Down"/>
             <Property Name="RiseOnClick" Value="False"/>
           </Window>
         </Window>
         <Window Type="TLBB_StaticImageNULL" Name="ModifyMenPai_Select_Button1_BK">
-          <Property Name="UnifiedSize" Value="{{0.000000,170.000000},{0.000000,330.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.500000,-165.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,170.000000},{0.000000,330.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.500000,-165.000000}}" />
           <Property Name="Image" Value="set:ModifyMenPai image:Modify_Emei"/>
           <Property Name="AlwaysOnTop" Value="True"/>
           <Window Type="TLBB_ButtonMenPaiSelect" Name="ModifyMenPai_Select_Button1">
-            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.00000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.00000,0.000000}}" />
             <Event Name="Clicked" Function=""/>
             <Event Name="MouseButtonDown" Function="ModifyMenPai_Select_Button1_Clicked();" />
             <Event Name="MouseButtonUp" Function="" />
           </Window>
         </Window>
         <Window Type="DefaultWindow" Name="ModifyMenPai_Select_Button1_None2">
-          <Property Name="UnifiedSize" Value="{{0.000000,170.000000},{0.000000,330.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,180.000000},{0.500000,-165.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,170.000000},{0.000000,330.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,180.000000},{0.500000,-165.000000}}" />
           <Property Name="RiseOnClick" Value="False"/>
           <Window Type="TLBB_StaticImageNULL" Name="ModifyMenPai_Select_Button1_NoneUp2">
-            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,165.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.00000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,165.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.00000,0.000000}}" />
             <Property Name="Image" Value="set:ModifyMenPai4 image:Modify_BackGround_Up"/>
             <Property Name="RiseOnClick" Value="False"/>
           </Window>
           <Window Type="TLBB_StaticImageNULL" Name="ModifyMenPai_Select_Button1_NoneDown2">
-            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,165.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.00000,-165.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,165.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.00000,-165.000000}}" />
             <Property Name="Image" Value="set:ModifyMenPai4 image:Modify_BackGround_Down"/>
             <Property Name="RiseOnClick" Value="False"/>
           </Window>
         </Window>
         <Window Type="TLBB_StaticImageNULL" Name="ModifyMenPai_Select_Button2_BK">
-          <Property Name="UnifiedSize" Value="{{0.000000,170.000000},{0.000000,330.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,180.000000},{0.500000,-165.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,170.000000},{0.000000,330.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,180.000000},{0.500000,-165.000000}}" />
           <Property Name="Image" Value="set:ModifyMenPai image:Modify_GaiBang"/>
           <Property Name="AlwaysOnTop" Value="True"/>
           <Window Type="TLBB_ButtonMenPaiSelect" Name="ModifyMenPai_Select_Button2">
-            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.00000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.00000,0.000000}}" />
             <Event Name="Clicked" Function=""/>
             <Event Name="MouseButtonDown" Function="ModifyMenPai_Select_Button2_Clicked();" />
             <Event Name="MouseButtonUp" Function="" />
           </Window>
         </Window>
         <Window Type="DefaultWindow" Name="ModifyMenPai_Select_Button1_None3">
-          <Property Name="UnifiedSize" Value="{{0.000000,170.000000},{0.000000,330.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.00000,355.000000},{0.500000,-165.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,170.000000},{0.000000,330.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.00000,355.000000},{0.500000,-165.000000}}" />
           <Property Name="RiseOnClick" Value="False"/>
           <Window Type="TLBB_StaticImageNULL" Name="ModifyMenPai_Select_Button1_NoneUp3">
-            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,165.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.00000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,165.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.00000,0.000000}}" />
             <Property Name="Image" Value="set:ModifyMenPai4 image:Modify_BackGround_Up"/>
             <Property Name="RiseOnClick" Value="False"/>
           </Window>
           <Window Type="TLBB_StaticImageNULL" Name="ModifyMenPai_Select_Button1_NoneDown3">
-            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,165.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.00000,-165.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,165.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.00000,-165.000000}}" />
             <Property Name="Image" Value="set:ModifyMenPai4 image:Modify_BackGround_Down"/>
             <Property Name="RiseOnClick" Value="False"/>
           </Window>
         </Window>
         <Window Type="TLBB_StaticImageNULL" Name="ModifyMenPai_Select_Button3_BK">
-          <Property Name="UnifiedSize" Value="{{0.000000,170.000000},{0.000000,330.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.00000,355.000000},{0.500000,-165.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,170.000000},{0.000000,330.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.00000,355.000000},{0.500000,-165.000000}}" />
           <Property Name="Image" Value="set:ModifyMenPai image:Modify_GuiGu"/>
           <Property Name="AlwaysOnTop" Value="True"/>
           <Window Type="TLBB_ButtonMenPaiSelect" Name="ModifyMenPai_Select_Button3">
-            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.00000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.00000,0.000000}}" />
             <Event Name="Clicked" Function=""/>
             <Event Name="MouseButtonDown" Function="ModifyMenPai_Select_Button3_Clicked();" />
             <Event Name="MouseButtonUp" Function="" />
           </Window>
         </Window>
         <Window Type="DefaultWindow" Name="ModifyMenPai_Select_Button1_None4">
-          <Property Name="UnifiedSize" Value="{{0.000000,170.000000},{0.000000,330.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.00000,530.000000},{0.500000,-165.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,170.000000},{0.000000,330.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.00000,530.000000},{0.500000,-165.000000}}" />
           <Property Name="RiseOnClick" Value="False"/>
           <Window Type="TLBB_StaticImageNULL" Name="ModifyMenPai_Select_Button1_NoneUp4">
-            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,165.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.00000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,165.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.00000,0.000000}}" />
             <Property Name="Image" Value="set:ModifyMenPai4 image:Modify_BackGround_Up"/>
             <Property Name="RiseOnClick" Value="False"/>
           </Window>
           <Window Type="TLBB_StaticImageNULL" Name="ModifyMenPai_Select_Button1_NoneDown4">
-            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,165.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.00000,-165.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,165.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.00000,-165.000000}}" />
             <Property Name="Image" Value="set:ModifyMenPai4 image:Modify_BackGround_Down"/>
             <Property Name="RiseOnClick" Value="False"/>
           </Window>
         </Window>
         <Window Type="TLBB_StaticImageNULL" Name="ModifyMenPai_Select_Button4_BK">
-          <Property Name="UnifiedSize" Value="{{0.000000,170.000000},{0.000000,330.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.00000,530.000000},{0.500000,-165.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,170.000000},{0.000000,330.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.00000,530.000000},{0.500000,-165.000000}}" />
           <Property Name="Image" Value="set:ModifyMenPai2 image:Modify_MingJiao"/>
           <Property Name="AlwaysOnTop" Value="True"/>
           <Window Type="TLBB_ButtonMenPaiSelect" Name="ModifyMenPai_Select_Button4">
-            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.00000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.00000,0.000000}}" />
             <Event Name="Clicked" Function=""/>
             <Event Name="MouseButtonDown" Function="ModifyMenPai_Select_Button4_Clicked();" />
             <Event Name="MouseButtonUp" Function="" />
@@ -157,8 +157,8 @@
         </Window>
       </Window>
       <Window Type="TLBB_ButtonNULL" Name="ModifyMenPai_Select_Pre">
-        <Property Name="UnifiedSize" Value="{{0.000000,26.000000},{0.000000,37.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.500000,2.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,26.000000},{0.000000,37.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.500000,2.000000}}" />
         <Property Name="PushedImage" Value="set:ModifyMenPai image:MPLeftButton_Pushed"/>
         <Property Name="NormalImage" Value="set:ModifyMenPai image:MPLeftButton_Normal"/>
         <Property Name="HoverImage" Value="set:ModifyMenPai image:MPLeftButton_Hover"/>
@@ -167,8 +167,8 @@
         <Property Name="AlwaysOnTop" Value="True"/>
       </Window>
       <Window Type="TLBB_ButtonNULL" Name="ModifyMenPai_Select_Next">
-        <Property Name="UnifiedSize" Value="{{0.000000,26.000000},{0.000000,37.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{1.000000,-36.000000},{0.500000,2.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,26.000000},{0.000000,37.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{1.000000,-36.000000},{0.500000,2.000000}}" />
         <Property Name="PushedImage" Value="set:ModifyMenPai image:MPRightButton_Pushed"/>
         <Property Name="NormalImage" Value="set:ModifyMenPai image:MPRightButton_Normal"/>
         <Property Name="HoverImage" Value="set:ModifyMenPai image:MPRightButton_Hover"/>
@@ -177,8 +177,8 @@
         <Property Name="AlwaysOnTop" Value="True"/>
       </Window>
       <Window Type="TLBB_ButtonCommon" Name="ModifyMenPai_Select_ConfirmButton">
-        <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.500000,-60.000000},{1.00000,-35.00000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.500000,-60.000000},{1.00000,-35.00000}}" />
         <Property Name="Text" Value="#{MPZH_180719_33}"/>
         <Event Name="Clicked" Function="ModifyMenPai_Select_Comfirm()"/>
         <Property Name="Tooltip" Value="#{MPZH_180719_110}"/>

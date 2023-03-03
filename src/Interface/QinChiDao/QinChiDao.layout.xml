@@ -1,16 +1,16 @@
 ﻿<?xml version="1.0" ?>
 <GUILayout>
   <Window Type="TLBB_HeroFrame01" Name="QinChiDao_Frame">
-    <Property Name="UnifiedSize" Value="{{0.000000,764.000000},{0.000000,496.000000}}"/>
-    <Property Name="UnifiedPosition" Value="{{0.500000,-382.000000},{0.500000,-270.000000}}"/>
+    <Property Name="UnifiedSize" Value="{{0.000000,764.000000},{0.000000,496.000000}}" />
+    <Property Name="UnifiedPosition" Value="{{0.500000,-382.000000},{0.500000,-270.000000}}" />
     <Event Name="Hidden" Function="QinChiDao_OnHidden();" />
     <Window Type="TLBB_DragTitle" Name="QinChiDao_DragTitle">
-      <Property Name="UnifiedSize" Value="{{1.000000,-39.000000},{0.000000,26.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,18.000000},{0.000000,0.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-39.000000},{0.000000,26.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,18.000000},{0.000000,0.000000}}" />
       <Property Name="DragTarget" Value="QinChiDao_Frame" />
       <Window Type="TLBB_SimpleText" Name="QinChiDao_DragTitle_PageHeader">
-        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,-1.000000},{0.000000,2.160004}}"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,-1.000000},{0.000000,2.160004}}" />
         <Property Name="Text" Value="#{QCD_20210524_48}"/>
         <Property Name="RiseOnClick" Value="False"/>
         <Property Name="HorzFormatting" Value="HorzCentred"/>
@@ -18,52 +18,52 @@
       </Window>
     </Window>
     <Window Type="TLBB_HeroTitle01" Name="QinChiDao_DragTitleBK">
-      <Property Name="UnifiedSize" Value="{{1.000000,-200.000000},{0.000000,30.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,-2.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-200.000000},{0.000000,30.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,-2.000000}}" />
     </Window>
     <Window Type="TLBB_ButtonClose2" Name="QinChiDao_Close">
-      <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,14.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{1.000000,-28.000000},{0.000000,8.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,14.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{1.000000,-28.000000},{0.000000,8.000000}}" />
       <Event Name="Clicked" Function="QinChiDao_OnClosed()" />
     </Window>
     <Window Type="TLBB_HeroLace01" Name="QinChiDao_Client">
-      <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{1.000000,-32.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,28.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{1.000000,-32.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,28.000000}}" />
       <Window Type="TLBB_StaticImageNULL" Name="QinChiDao_ClientBK">
-        <Property Name="UnifiedSize" Value="{{0.000000,756.000000},{0.000000,464.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,756.000000},{0.000000,464.000000}}" />
         <Property Name="RiseOnClick" Value="False"/>
         <Property Name="Image" Value="set:QinChiDao image:QinChiDao_BK"/>
       </Window>
       <Window Type="DefaultWindow" Name="QinChiDao_Explain1">
-        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,80.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,80.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
         <Property Name="RiseOnClick" Value="False"/>
         <Property Name="AlwaysOnTop" Value="True" />
         <Window Type="TLBB_SimpleText" Name="QinChiDao_Explain_text">
-          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{1.000000,-8.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,4.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{1.000000,-8.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,4.000000}}" />
           <Property Name="Text" Value="#{QCD_20210524_27}"/>
           <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
           <Property Name="VertFormatting" Value="TopAligned"/>
           <Window Type="TLBB_ButtonHelp" Name="QinChiDao_Help2">
-            <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{1.000000,-14.000000},{1.000000,-14.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{1.000000,-14.000000},{1.000000,-14.000000}}" />
 	    <Event Name="Clicked" Function="QinChiDao_HelpClicked()"/>
           </Window>
         </Window>
       </Window>
       <Window Type="DefaultWindow" Name="QinChiDao_Explain2">
-        <Property Name="UnifiedSize" Value="{{0.000000,520.000000},{1.000000,-80.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,230.000000},{0.000000,80.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,520.000000},{1.000000,-80.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,230.000000},{0.000000,80.000000}}" />
         <Property Name="RiseOnClick" Value="False"/>
         <Property Name="AlwaysOnTop" Value="True" />
         <Window Type="TLBB_StaticImageNULL" Name="QinChiDao_ScenceImage">
-          <Property Name="UnifiedSize" Value="{{0.000000,93.000000},{0.000000,18.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,18.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,93.000000},{0.000000,18.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,18.000000},{0.000000,18.000000}}" />
           <Property Name="RiseOnClick" Value="False"/>
           <Window Type="TLBB_ButtonNULL" Name="QinChiDao_ScenceBtn">
-            <Property Name="UnifiedSize" Value="{{0.000000,93.000000},{0.000000,18.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,93.000000},{0.000000,18.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
             <Event Name="Clicked" Function="QinChiDao_TodayScnClicked()"/>
             <Property Name="PushedImage" Value="set:QinChiDao image:Today_Push"/>
             <Property Name="NormalImage" Value="set:QinChiDao image:Today_Normal"/>
@@ -72,8 +72,8 @@
           </Window>
         </Window>
         <Window Type="TLBB_ButtonNULL" Name="QinChiDao_ActionBtn">
-          <Property Name="UnifiedSize" Value="{{0.000000,96.000000},{0.000000,24.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.500000,-48.000000},{1.000000,-40.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,96.000000},{0.000000,24.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.500000,-48.000000},{1.000000,-40.000000}}" />
           <Property Name="Text" Value="#{QCD_20210524_52}"/>
           <Property Name="PushedImage" Value="set:ZLHeroMeeting image:Button_Push"/>
           <Property Name="NormalImage" Value="set:ZLHeroMeeting image:Button_Normal"/>
@@ -82,8 +82,8 @@
           <Event Name="Clicked" Function="QinChiDao_StartClicked()"/>
         </Window>
         <Window Type="TLBB_ButtonNULL" Name="QinChiDao_ChallBtn">
-          <Property Name="UnifiedSize" Value="{{0.000000,96.000000},{0.000000,24.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.500000,-48.000000},{1.000000,-40.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,96.000000},{0.000000,24.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.500000,-48.000000},{1.000000,-40.000000}}" />
           <Property Name="Text" Value="#{QCD_20210524_53}"/>
           <Property Name="PushedImage" Value="set:ZLHeroMeeting image:Button_Push"/>
           <Property Name="NormalImage" Value="set:ZLHeroMeeting image:Button_Normal"/>
@@ -92,17 +92,17 @@
           <Event Name="Clicked" Function="QinChiDao_StartClicked()"/>
         </Window>
         <Window Type="TLBB_SimpleText" Name="QinChiDao_OKBtnText">
-          <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,20.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,320.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,320.000000},{0.000000,18.000000}}" />
           <Property Name="Text" Value="#{QCD_20210524_55}"/>
           <Property Name="HorzFormatting" Value="LeftAligned"/>
         </Window>
         <Window Type="TLBB_ActionButton" Name="QinChiDao_OKBtn">
-          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,440.000000},{0.000000,6.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,440.000000},{0.000000,6.000000}}" />
           <Event Name="Clicked" Function="QinChiDao_AwardClicked()"/>
           <Window Type="TLBB_Animate" Name="QinChiDao_OKBtnAnimate">
-            <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}" />
             <Property Name="MouseRButtonHollow" Value="True"/>
             <Property Name="MouseMoveHollow" Value="True"/>
             <Property Name="MouseLButtonHollow" Value="True"/>
@@ -111,8 +111,8 @@
             <Property Name="AlwaysOnTop" Value="True"/>
           </Window>
           <Window Type="TLBB_StaticImageNULL" Name="QinChiDao_OKBtnOK">
-            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,28.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{0.500000,-14.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,28.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{0.500000,-14.000000}}" />
             <Property Name="RiseOnClick" Value="False"/>
             <Property Name="Image" Value="set:Seven image:Seven_ke"/>
             <Property Name="MouseRButtonHollow" Value="True"/>
@@ -123,29 +123,29 @@
         </Window>
       </Window>
       <Window Type="TLBB_Frame_Lace1" Name="QinChiDao_Explain3">
-        <Property Name="UnifiedSize" Value="{{0.000000,230.000000},{1.000000,-80.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,80.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,230.000000},{1.000000,-80.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,80.000000}}" />
         <Window Type="TLBB_StaticImageNULL" Name="QinChiDao_Explain3TitleTextLeft">
-          <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,6.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.500000,-102.000000},{0.000000,12.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,6.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.500000,-102.000000},{0.000000,12.000000}}" />
           <Property Name="RiseOnClick" Value="False"/>
           <Property Name="Image" Value="set:ZLHeroMeeting image:TitleLineRight"/>
         </Window>
         <Window Type="TLBB_StaticImageNULL" Name="QinChiDao_Explain3TitleTextRight">
-          <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,6.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.500000,40.000000},{0.000000,12.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,6.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.500000,40.000000},{0.000000,12.000000}}" />
           <Property Name="RiseOnClick" Value="False"/>
           <Property Name="Image" Value="set:ZLHeroMeeting image:TitleLineLeft"/>
         </Window>
         <Window Type="TLBB_SimpleText" Name="QinChiDao_Explain3TitleText">
-          <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,20.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.0000000,2.000000},{0.000000,6.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.0000000,2.000000},{0.000000,6.000000}}" />
           <Property Name="Text" Value="#{QCD_20210524_54}"/>
           <Property Name="HorzFormatting" Value="HorzCentred"/>
         </Window>
         <Window Type="TLBB_MultiColumnList" Name="QinChiDao_Explain3Title2Text">
-          <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{0.000000,20.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,28.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,28.000000}}" />
           <Property Name="ForceHorzScrollbar" Value="False" />
           <Property Name="SortSettingEnabled" Value="False" />
           <Property Name="SelectionMode" Value="RowSingle" />
@@ -156,58 +156,58 @@
           <Property Name="ColumnsMovable" Value="False" />
           <Property Name="ColumnsAdjust" Value="True" />
           <Window Type="TLBB_SimpleText" Name="QinChiDao_Explain3Title2Text_text1">
-            <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,20.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,1.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,1.000000}}" />
             <Property Name="Text" Value="#{QCD_20210524_49}"/>
             <Property Name="HorzFormatting" Value="HorzCentred"/>
           </Window>
           <Window Type="TLBB_SimpleText" Name="QinChiDao_Explain3Title2Text_text2">
-            <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,48.000000},{0.000000,1.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,48.000000},{0.000000,1.000000}}" />
             <Property Name="Text" Value="#{QCD_20210524_50}"/>
             <Property Name="HorzFormatting" Value="HorzCentred"/>
           </Window>
           <Window Type="TLBB_SimpleText" Name="QinChiDao_Explain3Title2Text_text3">
-            <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,20.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,150.000000},{0.000000,1.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,150.000000},{0.000000,1.000000}}" />
             <Property Name="Text" Value="#{QCD_20210524_51}"/>
             <Property Name="HorzFormatting" Value="HorzCentred"/>
           </Window>
         </Window>
         <Window Type="TLBB_NotSuperList" Name="QinChiDao_Explain3List">
-          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,246.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,246.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,48.000000}}" />
           <Property Name="SelectMode" Value="Single" />
           <Property Name="MouseRButtonHollow" Value="True" />
           <Property Name="AlwaysOnTop" Value="True" />
           <Property Name="MultiColumn" Value="1" />
           <Property Name="VScrollMode" Value=""/>
           <Window Type="TLBB_NotSuperListItemCommon3" Name="QinChiDao_Explain3ListItem">
-            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
             <Window Type="TLBB_StaticImageNULL" Name="QinChiDao_Explain3ListItemNumImage">
-              <Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.500000,-8.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.500000,-8.000000}}" />
               <Property Name="RiseOnClick" Value="False"/>
               <Property Name="Image" Value="set:QinChiDao image:QinChiDao_TouKui"/>
             </Window>
             <Window Type="TLBB_SimpleText" Name="QinChiDao_Explain3ListItemNum">
-              <Property Name="UnifiedSize" Value="{{0.000000,26.000000},{0.000000,20.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,26.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,26.000000},{0.000000,20.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,26.000000},{0.000000,0.000000}}" />
               <Property Name="Text" Value="1"/>
               <Property Name="VertFormatting" Value="TopAligned"/>
               <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
             </Window>
             <Window Type="TLBB_SimpleText" Name="QinChiDao_Explain3ListItemName">
-              <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,58.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,58.000000},{0.000000,0.000000}}" />
               <Property Name="Text" Value=""/>
               <Property Name="VertFormatting" Value="TopAligned"/>
               <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
             </Window>
             <Window Type="TLBB_SimpleText" Name="QinChiDao_Explain3ListItemTime">
-              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,20.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,168.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,20.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,168.000000},{0.000000,0.000000}}" />
               <Property Name="Text" Value="11:30"/>
               <Property Name="VertFormatting" Value="TopAligned"/>
               <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
@@ -215,32 +215,32 @@
           </Window>
         </Window>
         <Window Type="TLBB_SimpleMulitiTextFrame" Name="QinChiDao_Explain3NowNum">
-          <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{0.000000,28.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,294.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{0.000000,28.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,294.000000}}" />
           <Property Name="Text" Value=""/>
           <Window Type="TLBB_SimpleText" Name="QinChiDao_Explain3NowTime">
-            <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{0.000000,20.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}" />
             <Property Name="Text" Value=""/>
             <Property Name="HorzFormatting" Value="RightAligned"/>
           </Window>
         </Window>
         <Window Type="TLBB_StaticImageNULL" Name="QinChiDao_ImageBK">
-          <Property Name="UnifiedSize" Value="{{0.000000,227.000000},{0.000000,60.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-60.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,227.000000},{0.000000,60.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-60.000000}}" />
           <Property Name="RiseOnClick" Value="False"/>
           <Property Name="Image" Value="set:QinChiDao image:QinChiDao_BK2"/>
           <Window Type="TLBB_SimpleText" Name="QinChiDao_Explain3NumText">
-            <Property Name="UnifiedSize" Value="{{0.000000,158.000000},{0.000000,20.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,14.000000},{0.500000,-10.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,158.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,14.000000},{0.500000,-10.000000}}" />
             <Property Name="Text" Value="#{QCD_20210524_39}"/>
           </Window>
           <Window Type="TLBB_ActionButton" Name="QinChiDao_Explain3NumAward">
-            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,180.000000},{0.500000,-17.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,180.000000},{0.500000,-17.000000}}" />
             <Event Name="Clicked" Function="QinChiDao_TopListAwardClicked()"/>
             <Window Type="TLBB_Animate" Name="QinChiDao_Explain3NumAwardAnimate">
-              <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}" />
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
               <Property Name="MouseLButtonHollow" Value="True"/>
@@ -249,8 +249,8 @@
               <Property Name="AlwaysOnTop" Value="True"/>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="QinChiDao_Explain3NumAwardOK">
-              <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,28.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{0.500000,-14.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,28.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{0.500000,-14.000000}}" />
               <Property Name="RiseOnClick" Value="False"/>
               <Property Name="Image" Value="set:Seven image:Seven_ke"/>
               <Property Name="MouseRButtonHollow" Value="True"/>
@@ -260,8 +260,8 @@
             </Window>
           </Window>
           <Window Type="TLBB_ActionButton" Name="QinChiDao_Explain3NumAward2">
-            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,116.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,116.000000},{0.000000,0.000000}}" />
             <Event Name="Clicked" Function=""/>
             <Property Name="Visible" Value="False"/>
           </Window>

@@ -7,7 +7,7 @@
         <Property Name="MouseMoveHollow" Value="True"/>
 
         <Window Type="DefaultWindow" Name="Chat_Frame">
-            <Property Name="UnifiedSize" Value="{{0,320},{0.0,196}}"/>
+            <Property Name="UnifiedSize" Value="{{0,320},{0.0,196}}" />
             <Property Name="UnifiedXPosition" Value="{0.0,0}"/>
             <Property Name="UnifiedYPosition" Value="{1.0,-196}"/>
             <Property Name="MouseHollow" Value="True"/>
@@ -81,8 +81,8 @@
                 </Window>
             </Window>
             <Window Type="TLBB_Frame2" Name="Chat_Frame_HistoryFrame">
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,23.000000}"/>
-                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-24.000000}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,23.000000}}" />
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-24.000000}}" />
                 <Property Name="RiseOnClick" Value="False"/>
                 <Window Type="TLBB_ChatHistory" Name="Chat_Frame_History">
                     <Property Name="Position" Value="x:0.0 y:0.0"/>
@@ -93,8 +93,8 @@
                 </Window>
             </Window>
             <Window Type="TLBB_Frame2" Name="Chat_Frame_FenpingFrame">
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,23.000000}"/>
-                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-84.000000}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,23.000000}}" />
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-84.000000}}" />
                 <Property Name="RiseOnClick" Value="False"/>
                 <Window Type="TLBB_ChatFenping" Name="Chat_Frame_Fenping">
                     <Property Name="Position" Value="x:0.0 y:0.0"/>
@@ -105,7 +105,7 @@
                     <Event Name="Clicked" Function="ChatFrame_MoveCtl_Fenping(1);"/>
                 </Window>
                 <Window Type="TLBB_ButtonNULL" Name="Chat_Frame_Fenping_MoveCtl">
-                    <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-20.000000}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-20.000000}}" />
                     <Property Name="AbsoluteSize" Value="w:16.000000 h:18.000000"/>
                     <Property Name="AlwaysOnTop" Value="true"/>
                     <Property Name="NormalImage" Value="set:MessageBall image:FenpingFangda_Normal"/>
@@ -116,13 +116,13 @@
             </Window>
         </Window>
         <Window Type="DefaultWindow" Name="Chat_Frame_ChannelFrame">
-            <Property Name="UnifiedSize" Value="{{1.0,0},{1.0,0}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.0,0.0},{0.0,0.0}}"/>
+            <Property Name="UnifiedSize" Value="{{1.0,0},{1.0,0}}" />
+            <Property Name="UnifiedPosition" Value="{{0.0,0.0},{0.0,0.0}}" />
             <Property Name="Visible" Value="False"/>
             <Event Name="MouseButtonDown" Function="Chat_Frame_ChannelFrame:Hide();"/>
             <Window Type="TLBB_ChatChannel" Name="Chat_Frame_Channel">
-                <Property Name="UnifiedSize" Value="{{1.0,0},{1.0,0}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.0,0.0},{0.0,0.0}}"/>
+                <Property Name="UnifiedSize" Value="{{1.0,0},{1.0,0}}" />
+                <Property Name="UnifiedPosition" Value="{{0.0,0.0},{0.0,0.0}}" />
                 <Property Name="ItemSize" Value="w:120.0 h:22.0"/>
                 <Property Name="AnchorPosition" Value="x:0.0 y:23.0"/>
                 <Property Name="HoverColor" Value="0xB3277112"/>
@@ -134,7 +134,7 @@
             </Window>
         </Window>
         <Window Type="DefaultWindow" Name="Chat_ChatSpeaker">
-            <Property Name="UnifiedSize" Value="{{0.0,335},{0.0,85}}"/>
+            <Property Name="UnifiedSize" Value="{{0.0,335},{0.0,85}}" />
             <Property Name="UnifiedXPosition" Value="{0.0,0}"/>
             <Property Name="UnifiedYPosition" Value="{1.0,-348}"/>
             <Property Name="AlwaysOnTop" Value="true"/>

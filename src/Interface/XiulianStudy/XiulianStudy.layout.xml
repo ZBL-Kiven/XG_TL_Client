@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" ?>
 <GUILayout>
     <Window Type="TLBB_MainFrame0" Name="XiulianStudy_Frame">
-      <Property Name="UnifiedSize" Value="{{0.000000,325.000000},{0.000000,438.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.500000,-128.000000},{0.100000,0.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{0.000000,325.000000},{0.000000,438.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.500000,-128.000000},{0.100000,0.000000}}" />
         <Event Name="Hidden" Function="XiulianStudy_Close();" />
         <!--title help close start-->
         <Window Type="TLBB_DragTitle" Name="XiulianStudy_DragTitle">
           <Property Name="AbsolutePosition" Value="x:40.000000 y:11.000000" />
-          <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}" />
+          <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}}" />
             <Property Name="DragTarget" Value="XiulianStudy_Frame" />
             <Window Type="TLBB_SimpleText" Name="XiulianStudy_NpcName">
                 <Property Name="Position" Value="x:0.0 y:0.0" />
@@ -17,13 +17,13 @@
             </Window>
         </Window>
         <!-- <Window Type="TLBB_ButtonHelp" Name="XiulianStudy_Help"> -->
-          <!-- <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,7.000000}" /> -->
+          <!-- <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,7.000000}}" /> -->
           <!-- <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" /> -->
             <!-- <Property Name="Text" Value="TLBB_ButtonHelp" /> -->
             <!-- <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*XiulianStudy&quot;);' /> -->
         <!-- </Window> -->
         <Window Type="TLBB_ButtonClose" Name="XiulianStudy_Close">
-          <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+          <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}" />
           <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
             <Property Name="Text" Value="TLBB_ButtonClose" />
             <Event Name="Clicked" Function="XiulianStudy_Close();" />
@@ -31,8 +31,8 @@
         <!--title help close end-->
         <!--client start-->
         <Window Type="DefaultWindow" Name="XiulianStudy_Frame_Client">
-          <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-47.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-47.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,30.000000}}" />
           <!--修炼-->
             <Window Type="TLBB_ActionButton" Name="XiulianStudy_XinfaSkill_1">
                 <Property Name="Position" Value="x:0.128 y:0.029851" />
@@ -65,7 +65,7 @@
                     <Event Name="Clicked" Function="XiulianStudy_Skill_Clicked(1);" />
                 </Window>
                 <Window Type="TLBB_SimpleText" Name="XiulianStudy_ZhaoshiSkill_level1" >
-										<Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,42.000000}" />
+										<Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,42.000000}}" />
                 		<Property Name="AbsoluteSize" Value="w:45.0 h:20.0" />
 										<Property Name="HorzFormatting" Value="HorzCentred" />
 										<Property Name="RiseOnClick" Value="False" />
@@ -80,7 +80,7 @@
                     <Event Name="Clicked" Function="XiulianStudy_Skill_Clicked(2);" />
                 </Window>
                 <Window Type="TLBB_SimpleText" Name="XiulianStudy_ZhaoshiSkill_level2" >
-										<Property Name="UnifiedPosition" Value="{{0.000000,59.000000},{0.000000,42.000000}" />
+										<Property Name="UnifiedPosition" Value="{{0.000000,59.000000},{0.000000,42.000000}}" />
                 		<Property Name="AbsoluteSize" Value="w:45.0 h:20.0" />
 										<Property Name="HorzFormatting" Value="HorzCentred" />
 										<Property Name="RiseOnClick" Value="False" />
@@ -95,7 +95,7 @@
                     <Event Name="Clicked" Function="XiulianStudy_Skill_Clicked(3);" />
                 </Window>
                 <Window Type="TLBB_SimpleText" Name="XiulianStudy_ZhaoshiSkill_level3" >
-										<Property Name="UnifiedPosition" Value="{{0.000000,109.000000},{0.000000,42.000000}" />
+										<Property Name="UnifiedPosition" Value="{{0.000000,109.000000},{0.000000,42.000000}}" />
                 		<Property Name="AbsoluteSize" Value="w:45.0 h:20.0" />
 										<Property Name="HorzFormatting" Value="HorzCentred" />
 										<Property Name="RiseOnClick" Value="False" />
@@ -110,7 +110,7 @@
                     <Event Name="Clicked" Function="XiulianStudy_Skill_Clicked(4);" />
                 </Window>
                 <Window Type="TLBB_SimpleText" Name="XiulianStudy_ZhaoshiSkill_level4" >
-										<Property Name="UnifiedPosition" Value="{{0.000000,159.000000},{0.000000,42.000000}" />
+										<Property Name="UnifiedPosition" Value="{{0.000000,159.000000},{0.000000,42.000000}}" />
                 		<Property Name="AbsoluteSize" Value="w:45.0 h:20.0" />
 										<Property Name="HorzFormatting" Value="HorzCentred" />
 										<Property Name="RiseOnClick" Value="False" />
@@ -125,7 +125,7 @@
                     <Event Name="Clicked" Function="XiulianStudy_Skill_Clicked(5);" />
                 </Window>
                 <Window Type="TLBB_SimpleText" Name="XiulianStudy_ZhaoshiSkill_level5" >
-										<Property Name="UnifiedPosition" Value="{{0.000000,210.000000},{0.000000,42.000000}" />
+										<Property Name="UnifiedPosition" Value="{{0.000000,210.000000},{0.000000,42.000000}}" />
                 		<Property Name="AbsoluteSize" Value="w:45.0 h:20.0" />
 										<Property Name="HorzFormatting" Value="HorzCentred" />
 										<Property Name="RiseOnClick" Value="False" />
@@ -140,7 +140,7 @@
                 <Event Name="Clicked" Function="XiulianStudy_Skill_Clicked(6);" />
               </Window>
               <Window Type="TLBB_SimpleText" Name="XiulianStudy_ZhaoshiSkill_level6" >
-                <Property Name="UnifiedPosition" Value="{{0.000000,260.000000},{0.000000,42.000000}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,260.000000},{0.000000,42.000000}}" />
                 <Property Name="AbsoluteSize" Value="w:45.0 h:20.0" />
                 <Property Name="HorzFormatting" Value="HorzCentred" />
                 <Property Name="RiseOnClick" Value="False" />
@@ -151,38 +151,38 @@
             </Window>
             <!--study window -->
             <Window Type="DefaultWindow" Name="XiulianStudy_SkillIcon_Frame">
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-275.000000}" />
-                <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,68.000000}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-275.000000}}" />
+                <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,68.000000}}" />
                 <Property Name="RiseOnClick" Value="False" />
                 <Window Type="TLBB_ActionButton" Name="XiulianStudy_XinfaIcon">
-                    <Property Name="UnifiedPosition" Value="{{0.1,0.000000},{0.000000,8.000000}" />
+                    <Property Name="UnifiedPosition" Value="{{0.1,0.000000},{0.000000,8.000000}}" />
                     <Property Name="AbsoluteSize" Value="w:34.0 h:34.0" />
                     <Property Name="DraggingEnabled" Value="False" />
                 </Window>
                 <Window Type="TLBB_ActionButton" Name="XiulianStudy_SkillIcon">
-                    <Property Name="UnifiedPosition" Value="{{0.1,0.000000},{0.000000,8.000000}" />
+                    <Property Name="UnifiedPosition" Value="{{0.1,0.000000},{0.000000,8.000000}}" />
                     <Property Name="AbsoluteSize" Value="w:34.0 h:34.0" />
                     <Property Name="DraggingEnabled" Value="False" />
                 </Window>
                 <Window Type="TLBB_SimpleMulitiTextFrame" Name="XiulianStudy_SkillName">
-                    <Property Name="UnifiedPosition" Value="{{0.3,0.000000},{0.000000,4.000000}" />
-                    <Property Name="UnifiedSize" Value="{{0.6,0.000000},{0.000000,20.000000}" />
+                    <Property Name="UnifiedPosition" Value="{{0.3,0.000000},{0.000000,4.000000}}" />
+                    <Property Name="UnifiedSize" Value="{{0.6,0.000000},{0.000000,20.000000}}" />
                     <Property Name="TextColor" Value="FFFFF263" />
                     <Property Name="Text" Value="" />
                     <Property Name="HorzFormatting" Value="LeftAligned" />
                     <Property Name="VertFormatting" Value="VertCentred" />
                 </Window>
                 <Window Type="TLBB_SimpleMulitiTextFrame" Name="XiulianStudy_SkillJingjie">
-                    <Property Name="UnifiedPosition" Value="{{0.3,0.000000},{0.000000,24.000000}" />
-                    <Property Name="UnifiedSize" Value="{{0.6,0.000000},{0.000000,20.000000}" />
+                    <Property Name="UnifiedPosition" Value="{{0.3,0.000000},{0.000000,24.000000}}" />
+                    <Property Name="UnifiedSize" Value="{{0.6,0.000000},{0.000000,20.000000}}" />
                     <Property Name="TextColor" Value="FFFFF263" />
                     <Property Name="Text" Value="" />
                     <Property Name="HorzFormatting" Value="LeftAligned" />
                     <Property Name="VertFormatting" Value="VertCentred" />
                 </Window>
                 <Window Type="TLBB_SimpleMulitiTextFrame" Name="XiulianStudy_SkillLevel">
-                    <Property Name="UnifiedPosition" Value="{{0.3,0.000000},{0.000000,44.000000}" />
-                    <Property Name="UnifiedSize" Value="{{0.6,0.000000},{0.000000,20.000000}" />
+                    <Property Name="UnifiedPosition" Value="{{0.3,0.000000},{0.000000,44.000000}}" />
+                    <Property Name="UnifiedSize" Value="{{0.6,0.000000},{0.000000,20.000000}}" />
                     <Property Name="TextColor" Value="FFFFF263" />
                     <Property Name="Text" Value="" />
                     <Property Name="HorzFormatting" Value="LeftAligned" />
@@ -191,44 +191,44 @@
             </Window>
             <!--textinfo-->
             <Window Type="TLBB_Frame_Lace4" Name="XiulianStudy_Explain_Bk">
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-207.000000}" />
-                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,104.000000}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-207.000000}}" />
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,104.000000}}" />
                 <Property Name="RiseOnClick" Value="False" />
                 <Window Type="TLBB_StaticText" Name="XiulianStudy_SkillInfo">
-                    <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,8.000000}" />
-                    <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{1.000000,-16.000000}" />
+                    <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,8.000000}}" />
+                    <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{1.000000,-16.000000}}" />
                     <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
                     <Property Name="VertFormatting" Value="TopAligned" />
 										<Property Name="VertScrollbar" Value="true" />
                 </Window>
             </Window>
             <Window Type="TLBB_SimpleMulitiTextFrame" Name="XiulianStudy_CurrentlyGongli_Character_Text">
-                <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{1.000000,-101.000000}" />
-                <Property Name="UnifiedSize" Value="{{0.5,0.000000},{0.000000,20.000000}" />
+                <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{1.000000,-101.000000}}" />
+                <Property Name="UnifiedSize" Value="{{0.5,0.000000},{0.000000,20.000000}}" />
                 <Property Name="HorzFormatting" Value="LeftAligned" />
                 <Property Name="TextColor" Value="FFFFF263" />
             </Window>
             <Window Type="TLBB_SimpleMulitiTextFrame" Name="XiulianStudy_DemandGongli_Character_Text">
-                <Property Name="UnifiedPosition" Value="{{0.5,0.000000},{1.000000,-101.000000}" />
-                <Property Name="UnifiedSize" Value="{{0.5,0.000000},{0.000000,20.000000}" />
+                <Property Name="UnifiedPosition" Value="{{0.5,0.000000},{1.000000,-101.000000}}" />
+                <Property Name="UnifiedSize" Value="{{0.5,0.000000},{0.000000,20.000000}}" />
                 <Property Name="HorzFormatting" Value="LeftAligned" />
                 <Property Name="TextColor" Value="FFFFF263" />
             </Window>
             <Window Type="TLBB_SimpleMulitiTextFrame" Name="XiulianStudy_CurrentlyExp_Character_Text">
-                <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{1.000000,-81.000000}" />
-                <Property Name="UnifiedSize" Value="{{0.5,0.000000},{0.000000,20.000000}" />
+                <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{1.000000,-81.000000}}" />
+                <Property Name="UnifiedSize" Value="{{0.5,0.000000},{0.000000,20.000000}}" />
                 <Property Name="HorzFormatting" Value="LeftAligned" />
                 <Property Name="TextColor" Value="FFFFF263" />
             </Window>
             <Window Type="TLBB_SimpleMulitiTextFrame" Name="XiulianStudy_DemandExp_Character_Text">
-                <Property Name="UnifiedPosition" Value="{{0.5,0.000000},{1.000000,-81.000000}" />
-                <Property Name="UnifiedSize" Value="{{0.5,0.000000},{0.000000,20.000000}" />
+                <Property Name="UnifiedPosition" Value="{{0.5,0.000000},{1.000000,-81.000000}}" />
+                <Property Name="UnifiedSize" Value="{{0.5,0.000000},{0.000000,20.000000}}" />
                 <Property Name="HorzFormatting" Value="LeftAligned" />
                 <Property Name="TextColor" Value="FFFFF263" />
             </Window>
             <Window Type="TLBB_SimpleMulitiTextFrame" Name="XiulianStudy_Currently_Money_Text">
-                <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{1.000000,-20.000000}" />
-                <Property Name="UnifiedSize" Value="{{0.76,0.000000},{0.000000,20.000000}" />
+                <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{1.000000,-20.000000}}" />
+                <Property Name="UnifiedSize" Value="{{0.76,0.000000},{0.000000,20.000000}}" />
                 <Property Name="TextColor" Value="FFFFF263" />
                 <Property Name="Text" Value="#{INTERFACE_XML_833}" />
                 <Property Name="HorzFormatting" Value="LeftAligned" />
@@ -236,14 +236,14 @@
                 <Property Name="RiseOnClick" Value="False" />
             </Window>
             <Window Type="TLBB_Money" Name="XiulianStudy_Currently_Money">
-                <Property Name="UnifiedPosition" Value="{{0.25,0.000000},{1.000000,-20.000000}" />
-                <Property Name="UnifiedSize" Value="{{0.5,0.000000},{0.000000,18.000000}" />
+                <Property Name="UnifiedPosition" Value="{{0.25,0.000000},{1.000000,-20.000000}}" />
+                <Property Name="UnifiedSize" Value="{{0.5,0.000000},{0.000000,18.000000}}" />
                 <Property Name="HorzFormatting" Value="RightAligned" />
                 <Property Name="MoneyNumber" Value="0" />
             </Window>
             <Window Type="TLBB_SimpleMulitiTextFrame" Name="XiulianStudy_Demand_Jiaozi_Text">
-                <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{1.000000,-60.000000}" />
-                <Property Name="UnifiedSize" Value="{{0.76,0.000000},{0.000000,20.000000}" />
+                <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{1.000000,-60.000000}}" />
+                <Property Name="UnifiedSize" Value="{{0.76,0.000000},{0.000000,20.000000}}" />
                 <Property Name="TextColor" Value="FFFFF263" />
                 <Property Name="Text" Value="#{INTERFACE_XML_1249}" />
                 <Property Name="HorzFormatting" Value="LeftAligned" />
@@ -251,8 +251,8 @@
                 <Property Name="RiseOnClick" Value="False" />
             </Window>
             <Window Type="TLBB_Money" Name="XiulianStudy_Demand_Jiaozi">
-                <Property Name="UnifiedPosition" Value="{{0.25,0.000000},{1.000000,-60.000000}" />
-                <Property Name="UnifiedSize" Value="{{0.5,0.000000},{0.000000,18.000000}" />
+                <Property Name="UnifiedPosition" Value="{{0.25,0.000000},{1.000000,-60.000000}}" />
+                <Property Name="UnifiedSize" Value="{{0.5,0.000000},{0.000000,18.000000}}" />
                 <Property Name="HorzFormatting" Value="RightAligned" />
                 <Property Name="MoneyNumber" Value="0" />
                 <Property Name="GoldIcon" Value = "set:Button6 image:Lace_JiaoziJin" />
@@ -260,8 +260,8 @@
                 <Property Name="CopperIcon" Value = "set:Button6 image:Lace_JiaoziTong" />
             </Window>
             <Window Type="TLBB_SimpleMulitiTextFrame" Name="XiulianStudy_Currently_Jiaozi_Text">
-                <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{1.000000,-40.000000}" />
-                <Property Name="UnifiedSize" Value="{{0.76,0.000000},{0.000000,20.000000}" />
+                <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{1.000000,-40.000000}}" />
+                <Property Name="UnifiedSize" Value="{{0.76,0.000000},{0.000000,20.000000}}" />
                 <Property Name="TextColor" Value="FFFFF263" />
                 <Property Name="Text" Value="#{BDJB_051021_3}" />
                 <Property Name="HorzFormatting" Value="LeftAligned" />
@@ -269,8 +269,8 @@
                 <Property Name="RiseOnClick" Value="False" />
             </Window>
             <Window Type="TLBB_Money" Name="XiulianStudy_Currently_Jiaozi">
-                <Property Name="UnifiedPosition" Value="{{0.25,0.000000},{1.000000,-40.000000}" />
-                <Property Name="UnifiedSize" Value="{{0.5,0.000000},{0.000000,18.000000}" />
+                <Property Name="UnifiedPosition" Value="{{0.25,0.000000},{1.000000,-40.000000}}" />
+                <Property Name="UnifiedSize" Value="{{0.5,0.000000},{0.000000,18.000000}}" />
                 <Property Name="HorzFormatting" Value="RightAligned" />
                 <Property Name="MoneyNumber" Value="0" />
                 <Property Name="GoldIcon" Value = "set:Button6 image:Lace_JiaoziJin" />
@@ -278,14 +278,14 @@
                 <Property Name="CopperIcon" Value = "set:Button6 image:Lace_JiaoziTong" />
             </Window>
             <Window Type="TLBB_ButtonCommon" Name="XiulianStudy_UpLevel_Frame">
-                <Property Name="UnifiedPosition" Value="{{0.78,0.000000},{1.000000,-42.000000}" />
-                <Property Name="UnifiedSize" Value="{{0.2,0.000000},{0.000000,26.000000}" />
+                <Property Name="UnifiedPosition" Value="{{0.78,0.000000},{1.000000,-42.000000}}" />
+                <Property Name="UnifiedSize" Value="{{0.2,0.000000},{0.000000,26.000000}}" />
                 <Property Name="Text" Value="#{INTERFACE_XML_804}" />
                 <Event Name="Clicked" Function="XiulianStudy_UpLevel_Clicked();" />
             </Window>
             <Window Type="TLBB_ButtonCommon" Name="XiulianStudy_UpJingJie_Frame">
-                <Property Name="UnifiedPosition" Value="{{0.78,0.000000},{1.000000,-42.000000}" />
-                <Property Name="UnifiedSize" Value="{{0.2,0.000000},{0.000000,26.000000}" />
+                <Property Name="UnifiedPosition" Value="{{0.78,0.000000},{1.000000,-42.000000}}" />
+                <Property Name="UnifiedSize" Value="{{0.2,0.000000},{0.000000,26.000000}}" />
                 <Property Name="Text" Value="提升境界" />
                 <Event Name="Clicked" Function="XiulianStudy_UpJingJie_Clicked();" />
             </Window>

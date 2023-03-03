@@ -1,338 +1,338 @@
 <?xml version="1.0"?>
 <GUILayout>
   <Window Type="TLBB_MainFrame2" Name="AgnameFrame">
-    <Property Name="UnifiedSize" Value="{{0.000000,595.000000},{0.000000,470.000000}}"/>
-    <Property Name="UnifiedPosition" Value="{{0.500000,-297.000000},{0.500000,-227.000000}}"/>
+    <Property Name="UnifiedSize" Value="{{0.000000,595.000000},{0.000000,470.000000}}" />
+    <Property Name="UnifiedPosition" Value="{{0.500000,-297.000000},{0.500000,-227.000000}}" />
     <Event Name="Hidden" Function="Agname_CloseUI();" />
       <Window Type="TLBB_DragTitle" Name="Agname_DragTitle">
-        <Property Name="UnifiedSize" Value="{{1.000000,-52.000000},{0.000000,20.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,1.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,-52.000000},{0.000000,20.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,1.000000}}" />
         <Property Name="Font" Value="Title" />
         <Property Name="DragTarget" Value="AgnameFrame" />
         <Property Name="HorzFormatting" Value="HorzCentred" />
         <Property Name="Text" Value="#{XCHXT_180124_01}" />
       </Window>
       <Window Type="TLBB_ButtonClose" Name="Agname_Close">
-        <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,4.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,4.000000}}" />
         <Event Name="Clicked" Function="Agname_CloseUI();" />
         <Property Name="AlwaysOnTop" Value="True" />
       </Window>
       <Window Type="TLBB_ButtonHelp" Name="Agname_Help">
-        <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}" />
       </Window>
     <Window Type="DefaultWindow" Name="AgnameFrame_Client">
-      <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-45.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,24.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-45.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,24.000000}}" />
       <Property Name="AlwaysOnTop" Value="True" />
         <Window Type="DefaultWindow" Name="AgnameFrame_ListContent_Lace">
-          <Property Name="UnifiedSize" Value="{{0.000000,205.000000},{0.000000,430.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,205.000000},{0.000000,430.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}" />
            <Window Type="TLBB_Frame_Lace1" Name="AgnameFrame_ListContent">
 				<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,414.000000}}" />
 				<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
             <Window Type="TLBB_ButtonNULL" Name="AgnameFrame_ListContent_CoinAItem_1">
-              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,25.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,5.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,25.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,5.000000}}" />
               <Property Name="PushedImage" Value="set:AgnameLayout image:AgnameLayout_BK"/>
               <Property Name="HoverImage" Value="set:AgnameLayout image:AgnameLayout_BK"/>			  
 				<Property Name="HorzFormatting" Value="WordWrapCentred"/>	
 				<Property Name="TextColor" Value="FFFFFF00"/>				
  				<Event Name="Clicked" Function="Agname_ListContent_CoinAItem_Click(1);" />				
              <Window Type="TLBB_StaticImageNULL" Name="AgnameFrame_CoinAItem_Image_1">
-                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.500000,-10.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.500000,-10.000000}}" />
                 <Property Name="Image" Value="set:CommonFrame37 image:ChenHao_S"/>
               </Window>
               <Window Type="TLBB_StaticImageNULL" Name="AgnameFrame_CoinAItem_Icon_1">
-                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.500000,-10.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.500000,-10.000000}}" />
                 <Property Name="Image" Value="set:AgnameLayout image:AgnameLayout_Shuxing"/>
               </Window>
             </Window>
             <Window Type="TLBB_ButtonNULL" Name="AgnameFrame_ListContent_CoinAItem_2">
-              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,25.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,30.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,25.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,30.000000}}" />
               <Property Name="PushedImage" Value="set:AgnameLayout image:AgnameLayout_BK"/>
               <Property Name="HoverImage" Value="set:AgnameLayout image:AgnameLayout_BK"/>			  
 				<Property Name="HorzFormatting" Value="WordWrapCentred"/>	
 				<Property Name="TextColor" Value="FFFFFF00"/>				
  				<Event Name="Clicked" Function="Agname_ListContent_CoinAItem_Click(2);" />				
              <Window Type="TLBB_StaticImageNULL" Name="AgnameFrame_CoinAItem_Image_2">
-                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.500000,-10.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.500000,-10.000000}}" />
                 <Property Name="Image" Value="set:CommonFrame37 image:ChenHao_S"/>
               </Window>
               <Window Type="TLBB_StaticImageNULL" Name="AgnameFrame_CoinAItem_Icon_2">
-                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.500000,-10.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.500000,-10.000000}}" />
                 <Property Name="Image" Value="set:AgnameLayout image:AgnameLayout_Shuxing"/>
               </Window>
             </Window>
             <Window Type="TLBB_ButtonNULL" Name="AgnameFrame_ListContent_CoinAItem_3">
-              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,25.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,55.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,25.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,55.000000}}" />
               <Property Name="PushedImage" Value="set:AgnameLayout image:AgnameLayout_BK"/>
               <Property Name="HoverImage" Value="set:AgnameLayout image:AgnameLayout_BK"/>			  
 				<Property Name="HorzFormatting" Value="WordWrapCentred"/>	
 				<Property Name="TextColor" Value="FFFFFF00"/>				
 				<Event Name="Clicked" Function="Agname_ListContent_CoinAItem_Click(3);" />				
               <Window Type="TLBB_StaticImageNULL" Name="AgnameFrame_CoinAItem_Image_3">
-                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.500000,-10.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.500000,-10.000000}}" />
                 <Property Name="Image" Value="set:CommonFrame37 image:ChenHao_S"/>
               </Window>
               <Window Type="TLBB_StaticImageNULL" Name="AgnameFrame_CoinAItem_Icon_3">
-                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.500000,-10.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.500000,-10.000000}}" />
                 <Property Name="Image" Value="set:AgnameLayout image:AgnameLayout_Shuxing"/>
               </Window>
             </Window>
             <Window Type="TLBB_ButtonNULL" Name="AgnameFrame_ListContent_CoinAItem_4">
-              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,25.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,80.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,25.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,80.000000}}" />
               <Property Name="PushedImage" Value="set:AgnameLayout image:AgnameLayout_BK"/>
               <Property Name="HoverImage" Value="set:AgnameLayout image:AgnameLayout_BK"/>			  
 				<Property Name="HorzFormatting" Value="WordWrapCentred"/>	
 				<Property Name="TextColor" Value="FFFFFF00"/>				
 				<Event Name="Clicked" Function="Agname_ListContent_CoinAItem_Click(4);" />				
               <Window Type="TLBB_StaticImageNULL" Name="AgnameFrame_CoinAItem_Image_4">
-                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.500000,-10.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.500000,-10.000000}}" />
                 <Property Name="Image" Value="set:CommonFrame37 image:ChenHao_S"/>
               </Window>
               <Window Type="TLBB_StaticImageNULL" Name="AgnameFrame_CoinAItem_Icon_4">
-                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.500000,-10.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.500000,-10.000000}}" />
                 <Property Name="Image" Value="set:AgnameLayout image:AgnameLayout_Shuxing"/>
               </Window>
             </Window>
             <Window Type="TLBB_ButtonNULL" Name="AgnameFrame_ListContent_CoinAItem_5">
-              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,25.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,105.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,25.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,105.000000}}" />
               <Property Name="PushedImage" Value="set:AgnameLayout image:AgnameLayout_BK"/>
               <Property Name="HoverImage" Value="set:AgnameLayout image:AgnameLayout_BK"/>			  
 				<Property Name="HorzFormatting" Value="WordWrapCentred"/>	
 				<Event Name="Clicked" Function="Agname_ListContent_CoinAItem_Click(5);" />				
 				<Property Name="TextColor" Value="FFFFFF00"/>				
               <Window Type="TLBB_StaticImageNULL" Name="AgnameFrame_CoinAItem_Image_5">
-                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.500000,-10.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.500000,-10.000000}}" />
                 <Property Name="Image" Value="set:CommonFrame37 image:ChenHao_S"/>
               </Window>
               <Window Type="TLBB_StaticImageNULL" Name="AgnameFrame_CoinAItem_Icon_5">
-                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.500000,-10.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.500000,-10.000000}}" />
                 <Property Name="Image" Value="set:AgnameLayout image:AgnameLayout_Shuxing"/>
               </Window>
             </Window>
             <Window Type="TLBB_ButtonNULL" Name="AgnameFrame_ListContent_CoinAItem_6">
-              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,25.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,130.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,25.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,130.000000}}" />
               <Property Name="PushedImage" Value="set:AgnameLayout image:AgnameLayout_BK"/>
               <Property Name="HoverImage" Value="set:AgnameLayout image:AgnameLayout_BK"/>			  
 				<Property Name="HorzFormatting" Value="WordWrapCentred"/>	
 				<Property Name="TextColor" Value="FFFFFF00"/>				
  				<Event Name="Clicked" Function="Agname_ListContent_CoinAItem_Click(6);" />				
              <Window Type="TLBB_StaticImageNULL" Name="AgnameFrame_CoinAItem_Image_6">
-                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.500000,-10.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.500000,-10.000000}}" />
                 <Property Name="Image" Value="set:CommonFrame37 image:ChenHao_S"/>
               </Window>
               <Window Type="TLBB_StaticImageNULL" Name="AgnameFrame_CoinAItem_Icon_6">
-                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.500000,-10.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.500000,-10.000000}}" />
                 <Property Name="Image" Value="set:AgnameLayout image:AgnameLayout_Shuxing"/>
               </Window>
             </Window>
             <Window Type="TLBB_ButtonNULL" Name="AgnameFrame_ListContent_CoinAItem_7">
-              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,25.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,155.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,25.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,155.000000}}" />
               <Property Name="PushedImage" Value="set:AgnameLayout image:AgnameLayout_BK"/>
               <Property Name="HoverImage" Value="set:AgnameLayout image:AgnameLayout_BK"/>			  
 				<Property Name="HorzFormatting" Value="WordWrapCentred"/>	
 				<Property Name="TextColor" Value="FFFFFF00"/>				
  				<Event Name="Clicked" Function="Agname_ListContent_CoinAItem_Click(7);" />				
              <Window Type="TLBB_StaticImageNULL" Name="AgnameFrame_CoinAItem_Image_7">
-                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.500000,-10.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.500000,-10.000000}}" />
                 <Property Name="Image" Value="set:CommonFrame37 image:ChenHao_S"/>
               </Window>
               <Window Type="TLBB_StaticImageNULL" Name="AgnameFrame_CoinAItem_Icon_7">
-                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.500000,-10.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.500000,-10.000000}}" />
                 <Property Name="Image" Value="set:AgnameLayout image:AgnameLayout_Shuxing"/>
               </Window>
             </Window>
             <Window Type="TLBB_ButtonNULL" Name="AgnameFrame_ListContent_CoinAItem_8">
-              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,25.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,180.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,25.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,180.000000}}" />
               <Property Name="PushedImage" Value="set:AgnameLayout image:AgnameLayout_BK"/>
               <Property Name="HoverImage" Value="set:AgnameLayout image:AgnameLayout_BK"/>			  
 				<Property Name="HorzFormatting" Value="WordWrapCentred"/>	
 				<Property Name="TextColor" Value="FFFFFF00"/>				
 				<Event Name="Clicked" Function="Agname_ListContent_CoinAItem_Click(8);" />				
               <Window Type="TLBB_StaticImageNULL" Name="AgnameFrame_CoinAItem_Image_8">
-                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.500000,-10.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.500000,-10.000000}}" />
                 <Property Name="Image" Value="set:CommonFrame37 image:ChenHao_S"/>
               </Window>
               <Window Type="TLBB_StaticImageNULL" Name="AgnameFrame_CoinAItem_Icon_8">
-                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.500000,-10.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.500000,-10.000000}}" />
                 <Property Name="Image" Value="set:AgnameLayout image:AgnameLayout_Shuxing"/>
               </Window>
             </Window>
             <Window Type="TLBB_ButtonNULL" Name="AgnameFrame_ListContent_CoinAItem_9">
-              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,25.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,205.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,25.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,205.000000}}" />
               <Property Name="PushedImage" Value="set:AgnameLayout image:AgnameLayout_BK"/>
               <Property Name="HoverImage" Value="set:AgnameLayout image:AgnameLayout_BK"/>			  
 				<Property Name="HorzFormatting" Value="WordWrapCentred"/>	
 				<Property Name="TextColor" Value="FFFFFF00"/>				
  				<Event Name="Clicked" Function="Agname_ListContent_CoinAItem_Click(9);" />				
              <Window Type="TLBB_StaticImageNULL" Name="AgnameFrame_CoinAItem_Image_9">
-                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.500000,-10.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.500000,-10.000000}}" />
                 <Property Name="Image" Value="set:CommonFrame37 image:ChenHao_S"/>
               </Window>
               <Window Type="TLBB_StaticImageNULL" Name="AgnameFrame_CoinAItem_Icon_9">
-                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.500000,-10.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.500000,-10.000000}}" />
                 <Property Name="Image" Value="set:AgnameLayout image:AgnameLayout_Shuxing"/>
               </Window>
             </Window>
             <Window Type="TLBB_ButtonNULL" Name="AgnameFrame_ListContent_CoinAItem_10">
-              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,25.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,230.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,25.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,230.000000}}" />
               <Property Name="PushedImage" Value="set:AgnameLayout image:AgnameLayout_BK"/>
               <Property Name="HoverImage" Value="set:AgnameLayout image:AgnameLayout_BK"/>			  
 				<Property Name="HorzFormatting" Value="WordWrapCentred"/>	
 				<Property Name="TextColor" Value="FFFFFF00"/>				
  				<Event Name="Clicked" Function="Agname_ListContent_CoinAItem_Click(10);" />				
              <Window Type="TLBB_StaticImageNULL" Name="AgnameFrame_CoinAItem_Image_10">
-                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.500000,-10.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.500000,-10.000000}}" />
                 <Property Name="Image" Value="set:CommonFrame37 image:ChenHao_S"/>
               </Window>
               <Window Type="TLBB_StaticImageNULL" Name="AgnameFrame_CoinAItem_Icon_10">
-                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.500000,-10.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.500000,-10.000000}}" />
                 <Property Name="Image" Value="set:AgnameLayout image:AgnameLayout_Shuxing"/>
               </Window>
             </Window>
             <Window Type="TLBB_ButtonNULL" Name="AgnameFrame_ListContent_CoinAItem_11">
-              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,25.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,255.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,25.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,255.000000}}" />
               <Property Name="PushedImage" Value="set:AgnameLayout image:AgnameLayout_BK"/>
               <Property Name="HoverImage" Value="set:AgnameLayout image:AgnameLayout_BK"/>			  
 				<Property Name="HorzFormatting" Value="WordWrapCentred"/>	
 				<Property Name="TextColor" Value="FFFFFF00"/>				
 				<Event Name="Clicked" Function="Agname_ListContent_CoinAItem_Click(11);" />				
               <Window Type="TLBB_StaticImageNULL" Name="AgnameFrame_CoinAItem_Image_11">
-                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.500000,-10.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.500000,-10.000000}}" />
                 <Property Name="Image" Value="set:CommonFrame37 image:ChenHao_S"/>
               </Window>
               <Window Type="TLBB_StaticImageNULL" Name="AgnameFrame_CoinAItem_Icon_11">
-                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.500000,-10.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.500000,-10.000000}}" />
                 <Property Name="Image" Value="set:AgnameLayout image:AgnameLayout_Shuxing"/>
               </Window>
             </Window>
             <Window Type="TLBB_ButtonNULL" Name="AgnameFrame_ListContent_CoinAItem_12">
-              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,25.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,280.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,25.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,280.000000}}" />
               <Property Name="PushedImage" Value="set:AgnameLayout image:AgnameLayout_BK"/>
               <Property Name="HoverImage" Value="set:AgnameLayout image:AgnameLayout_BK"/>			  
 				<Property Name="HorzFormatting" Value="WordWrapCentred"/>	
 				<Property Name="TextColor" Value="FFFFFF00"/>				
 				<Event Name="Clicked" Function="Agname_ListContent_CoinAItem_Click(12);" />				
               <Window Type="TLBB_StaticImageNULL" Name="AgnameFrame_CoinAItem_Image_12">
-                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.500000,-10.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.500000,-10.000000}}" />
                 <Property Name="Image" Value="set:CommonFrame37 image:ChenHao_S"/>
               </Window>
               <Window Type="TLBB_StaticImageNULL" Name="AgnameFrame_CoinAItem_Icon_12">
-                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.500000,-10.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.500000,-10.000000}}" />
                 <Property Name="Image" Value="set:AgnameLayout image:AgnameLayout_Shuxing"/>
               </Window>
             </Window>
             <Window Type="TLBB_ButtonNULL" Name="AgnameFrame_ListContent_CoinAItem_13">
-              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,25.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,305.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,25.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,305.000000}}" />
               <Property Name="PushedImage" Value="set:AgnameLayout image:AgnameLayout_BK"/>
               <Property Name="HoverImage" Value="set:AgnameLayout image:AgnameLayout_BK"/>			  
 				<Property Name="HorzFormatting" Value="WordWrapCentred"/>	
 				<Property Name="TextColor" Value="FFFFFF00"/>				
 				<Event Name="Clicked" Function="Agname_ListContent_CoinAItem_Click(13);" />				
               <Window Type="TLBB_StaticImageNULL" Name="AgnameFrame_CoinAItem_Image_13">
-                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.500000,-10.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.500000,-10.000000}}" />
                 <Property Name="Image" Value="set:CommonFrame37 image:ChenHao_S"/>
               </Window>
               <Window Type="TLBB_StaticImageNULL" Name="AgnameFrame_CoinAItem_Icon_13">
-                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.500000,-10.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.500000,-10.000000}}" />
                 <Property Name="Image" Value="set:AgnameLayout image:AgnameLayout_Shuxing"/>
               </Window>
             </Window>
             <Window Type="TLBB_ButtonNULL" Name="AgnameFrame_ListContent_CoinAItem_14">
-              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,25.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,330.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,25.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,330.000000}}" />
               <Property Name="PushedImage" Value="set:AgnameLayout image:AgnameLayout_BK"/>
               <Property Name="HoverImage" Value="set:AgnameLayout image:AgnameLayout_BK"/>			  
 				<Property Name="HorzFormatting" Value="WordWrapCentred"/>	
 				<Property Name="TextColor" Value="FFFFFF00"/>				
  				<Event Name="Clicked" Function="Agname_ListContent_CoinAItem_Click(14);" />				
              <Window Type="TLBB_StaticImageNULL" Name="AgnameFrame_CoinAItem_Image_14">
-                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.500000,-10.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.500000,-10.000000}}" />
                 <Property Name="Image" Value="set:CommonFrame37 image:ChenHao_S"/>
               </Window>
               <Window Type="TLBB_StaticImageNULL" Name="AgnameFrame_CoinAItem_Icon_14">
-                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.500000,-10.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.500000,-10.000000}}" />
                 <Property Name="Image" Value="set:AgnameLayout image:AgnameLayout_Shuxing"/>
               </Window>
             </Window>
             <Window Type="TLBB_ButtonNULL" Name="AgnameFrame_ListContent_CoinAItem_15">
-              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,25.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,355.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,25.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,355.000000}}" />
               <Property Name="PushedImage" Value="set:AgnameLayout image:AgnameLayout_BK"/>
               <Property Name="HoverImage" Value="set:AgnameLayout image:AgnameLayout_BK"/>			  
 				<Property Name="HorzFormatting" Value="WordWrapCentred"/>	
 				<Property Name="TextColor" Value="FFFFFF00"/>				
 				<Event Name="Clicked" Function="Agname_ListContent_CoinAItem_Click(15);" />				
               <Window Type="TLBB_StaticImageNULL" Name="AgnameFrame_CoinAItem_Image_15">
-                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.500000,-10.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.500000,-10.000000}}" />
                 <Property Name="Image" Value="set:CommonFrame37 image:ChenHao_S"/>
               </Window>
               <Window Type="TLBB_StaticImageNULL" Name="AgnameFrame_CoinAItem_Icon_15">
-                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.500000,-10.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.500000,-10.000000}}" />
                 <Property Name="Image" Value="set:AgnameLayout image:AgnameLayout_Shuxing"/>
               </Window>
             </Window>
             <Window Type="TLBB_ButtonNULL" Name="AgnameFrame_ListContent_CoinAItem_16">
-              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,25.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,380.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,25.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,380.000000}}" />
               <Property Name="PushedImage" Value="set:AgnameLayout image:AgnameLayout_BK"/>
               <Property Name="HoverImage" Value="set:AgnameLayout image:AgnameLayout_BK"/>			  
 				<Property Name="HorzFormatting" Value="WordWrapCentred"/>	
 				<Property Name="TextColor" Value="FFFFFF00"/>		
 				<Event Name="Clicked" Function="Agname_ListContent_CoinAItem_Click(16);" />				
               <Window Type="TLBB_StaticImageNULL" Name="AgnameFrame_CoinAItem_Image_16">
-                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.500000,-10.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.500000,-10.000000}}" />
                 <Property Name="Image" Value="set:CommonFrame37 image:ChenHao_S"/>
               </Window>
               <Window Type="TLBB_StaticImageNULL" Name="AgnameFrame_CoinAItem_Icon_16">
-                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.500000,-10.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.500000,-10.000000}}" />
                 <Property Name="Image" Value="set:AgnameLayout image:AgnameLayout_Shuxing"/>
               </Window>
             </Window>
@@ -347,22 +347,22 @@
           </Window>
         </Window>
         <Window Type="DefaultWindow" Name="AgnameFrame_FenYeWindow1">
-          <Property Name="UnifiedSize" Value="{{0.000000,376.000000},{1.000000,0.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,201.000000},{0.000000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,376.000000},{1.000000,0.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,201.000000},{0.000000,0.000000}}" />
           <Property Name="MouseRButtonHollow" Value="True"/>
           <Property Name="MouseMoveHollow" Value="True"/>
           <Property Name="MouseLButtonHollow" Value="True"/>
           <Property Name="MouseHollow" Value="True"/>
           <Window Type="DefaultWindow" Name="AgnameFrame_Prize1_Title">
-            <Property Name="UnifiedSize" Value="{{0.000000,367.000000},{0.000000,24.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,4.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,367.000000},{0.000000,24.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,4.000000}}" />
             <Property Name="MouseRButtonHollow" Value="True"/>
             <Property Name="MouseMoveHollow" Value="True"/>
             <Property Name="MouseLButtonHollow" Value="True"/>
             <Property Name="MouseHollow" Value="True"/>
             <Window Type="TLBB_SimpleText" Name="AgnameFrame_Prize1_TitleText">
-              <Property Name="UnifiedSize" Value="{{0.500000,30.000000},{0.000000,24.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,1.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.500000,30.000000},{0.000000,24.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,1.000000}}" />
               <Property Name="Text" Value="#{XCHXT_180428_83}" />
               <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
               <Property Name="HorizontalAlignment" Value="Left" />
@@ -370,8 +370,8 @@
           </Window>
           <!--称号位置就计算基础控件，不要乱动-->
           <Window Type="TLBB_Frame_Lace1" Name="AgnameFrame_Prize1_Image">
-            <Property Name="UnifiedSize" Value="{{0.000000,367.000000},{0.000000,72.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,367.000000},{0.000000,72.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,30.000000}}" />
             <Property Name="MouseRButtonHollow" Value="True"/>
             <Property Name="MouseMoveHollow" Value="True"/>
             <Property Name="MouseLButtonHollow" Value="True"/>
@@ -405,11 +405,11 @@
             </Window>
 				</Window>
           <Window Type="DefaultWindow" Name="Agname_AgnameInfo">
-            <Property Name="UnifiedSize" Value="{{0.000000,367.000000},{0.000000,295.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,100.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,367.000000},{0.000000,295.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,100.000000}}" />
             <Window Type="TLBB_ButtonCheckNULL" Name="Agname_Xinxi">
-              <Property Name="UnifiedSize" Value="{{0.000000,76.000000},{0.000000,24.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,8.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,76.000000},{0.000000,24.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,8.000000}}" />
               <Property Name="Text" Value="#{XCHXT_180428_69}" />
               <Property Name="PushedImage" Value="set:AgnameLayout image:AgnameLayout_BK_Normal"/>
               <Property Name="NormalImage" Value="set:AgnameLayout image:AgnameLayout_BK_Pushed"/>
@@ -419,8 +419,8 @@
               <Event Name="MouseLButtonDown" Function="Agname_TitlteInfoOnChoice(0)" />
             </Window>
             <Window Type="TLBB_ButtonCheckNULL" Name="Agname_Shuxing">
-              <Property Name="UnifiedSize" Value="{{0.000000,104.000000},{0.000000,24.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{.000000,79.000000},{0.000000,8.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,104.000000},{0.000000,24.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{.000000,79.000000},{0.000000,8.000000}}" />
               <Property Name="Text" Value="#{XCHXT_180428_75}" />
               <Property Name="PushedImage" Value="set:AgnameLayout image:AgnameLayout_BK_Normal"/>
               <Property Name="NormalImage" Value="set:AgnameLayout image:AgnameLayout_BK_Pushed"/>
@@ -430,133 +430,133 @@
               <Event Name="MouseLButtonDown" Function="Agname_TitlteInfoOnChoice(1)" />
             </Window>
             <Window Type="DefaultWindow" Name="Agname_Info1_Title_Frame">
-              <Property Name="UnifiedSize" Value="{{0.000000,138.000000},{0.000000,24.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,30.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,138.000000},{0.000000,24.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,30.000000}}" />
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
               <Property Name="MouseLButtonHollow" Value="True"/>
               <Property Name="MouseHollow" Value="True"/>
               <Window Type="TLBB_SimpleText" Name="Agname_Info1_Title">
-                <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,25.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.500000,-12.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,25.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.500000,-12.000000}}" />
                 <Property Name="Text" Value="#{XCHXT_180428_76}" />
                 <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
                 <Property Name="HorizontalAlignment" Value="Left" />
               </Window>
             </Window>
             <Window Type="TLBB_Frame_Lace3" Name="Agname_SelectAgname">
-              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,238.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,53.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,238.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,53.000000}}" />
               <Window Type="TLBB_SimpleText" Name="Agname_Info1_MiniTitle">
                 <Property Name="VertFormatting" Value="VertCentred" />
-                <Property Name="UnifiedSize" Value="{{0.500000,164.500000},{0.000000,211.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,11.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.500000,164.500000},{0.000000,211.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,11.000000}}" />
                 <Property Name="Text" Value="" />
                 <Property Name="HorzFormatting" Value="WordWrapCentred" />
               </Window>
             </Window>
             <Window Type="DefaultWindow" Name="Agname_AllAgname">
-              <Property Name="UnifiedSize" Value="{{0.000000,367.000000},{0.000000,270.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,28.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,367.000000},{0.000000,270.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,28.000000}}" />
               <Property Name="MouseRButtonHollow" Value="True"/>
               <Property Name="MouseMoveHollow" Value="True"/>
               <Property Name="MouseLButtonHollow" Value="True"/>
               <Property Name="MouseHollow" Value="True"/>
               <Window Type="TLBB_Frame_Lace3" Name="Agname_Di1">
-                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,45.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,153.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,45.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,153.000000}}" />
                 <Property Name="MouseRButtonHollow" Value="True" />
                 <Property Name="MouseMoveHollow" Value="True" />
                 <Property Name="MouseLButtonHollow" Value="True" />
                 <Property Name="MouseHollow" Value="True" />
                 <Window Type="TLBB_SimpleText" Name="Agname_Info2_Text3">
-                  <Property Name="UnifiedSize" Value="{{0.000000,349.000000},{0.000000,30.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,7.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,349.000000},{0.000000,30.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,7.000000}}" />
                   <Property Name="Text" Value="" />
                   <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
                   <Property Name="VertFormatting" Value="TopAligned" />
                 </Window>
               </Window>
               <Window Type="TLBB_SimpleText" Name="Agname_Info2_Text1_1">
-                <Property Name="UnifiedSize" Value="{{0.000000,58.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,133.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,58.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,133.000000}}" />
                 <Property Name="Text" Value="#{XCHXT_180428_70}" />
                 <Property Name="Font" Value="SongTiBmp12"/>
               </Window>
               <Window Type="TLBB_Frame_Lace3" Name="Agname_Di2">
-                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,26.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,106.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,26.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,106.000000}}" />
                 <Property Name="MouseRButtonHollow" Value="True" />
                 <Property Name="MouseMoveHollow" Value="True" />
                 <Property Name="MouseLButtonHollow" Value="True" />
                 <Property Name="MouseHollow" Value="True" />
                 <Window Type="TLBB_SimpleText" Name="Agname_Info2_Text2">
-                  <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,20.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,2.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,20.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,2.000000}}" />
                   <Property Name="Text" Value="永久有效" />
                 </Window>
               </Window>
               <Window Type="TLBB_SimpleText" Name="Agname_Info2_Text2_1">
-                <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,86.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,86.000000}}" />
                 <Property Name="Text" Value="#{XCHXT_180428_71}" />
                 <Property Name="Font" Value="SongTiBmp12"/>
               </Window>
               <Window Type="TLBB_Frame_Lace3" Name="Agname_Di3">
-                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,60.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,25.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,60.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,25.000000}}" />
                 <Property Name="MouseRButtonHollow" Value="True" />
                 <Property Name="MouseMoveHollow" Value="True" />
                 <Property Name="MouseLButtonHollow" Value="True" />
                 <Property Name="MouseHollow" Value="True" />
                 <Window Type="TLBB_SimpleText" Name="Agname_Info2_Text5_1">
                   <Property Name="VertFormatting" Value="VertCentred" />
-                  <Property Name="UnifiedSize" Value="{{0.000000,345.000000},{0.000000,41.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,345.000000},{0.000000,41.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,10.000000}}" />
                   <Property Name="Text" Value="#{XCHXT_180322_25}" />
                   <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
                   <Property Name="VertFormatting" Value="TopAligned"/>
                 </Window>
               </Window>
               <Window Type="TLBB_SimpleText" Name="Agname_Info2_Text6">
-                <Property Name="UnifiedSize" Value="{{0.000000,58.000000},{0.000000,24.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,2.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,58.000000},{0.000000,24.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,2.000000}}" />
                 <Property Name="Text" Value="#{XCHXT_180428_37}" />
                 <Property Name="Font" Value="SongTiBmp12"/>
               </Window>
               <Window Type="TLBB_Frame_Lace3" Name="Agname_Di4">
-                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,45.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,218.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,45.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,218.000000}}" />
                 <Property Name="MouseRButtonHollow" Value="True"/>
                 <Property Name="MouseMoveHollow" Value="True"/>
                 <Property Name="MouseLButtonHollow" Value="True"/>
                 <Property Name="MouseHollow" Value="True"/>
                 <Window Type="TLBB_SimpleText" Name="Agname_Info2_Text7_1">
                   <Property Name="VertFormatting" Value="VertCentred" />
-                  <Property Name="UnifiedSize" Value="{{0.000000,346.000000},{0.000000,30.000000}}"/>
-                  <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,7.000000}}"/>
+                  <Property Name="UnifiedSize" Value="{{0.000000,346.000000},{0.000000,30.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,7.000000}}" />
                   <Property Name="Text" Value="#{}" />
                   <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
                   <Property Name="VertFormatting" Value="TopAligned"/>
                 </Window>
               </Window>
               <Window Type="TLBB_SimpleText" Name="Agname_Info4_Text_1">
-                <Property Name="UnifiedSize" Value="{{0.000000,116.000000},{0.000000,20.000000}}"/>
-                <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,198.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,116.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,198.000000}}" />
                 <Property Name="Text" Value="#{XCHXT_180428_84}"/>
               </Window>
             </Window>
           </Window>
           <Window Type="DefaultWindow" Name="Agname_Btn">
-            <Property Name="UnifiedSize" Value="{{0.000000,367.000000},{0.000000,26.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,396.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,367.000000},{0.000000,26.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,396.000000}}" />
             <Property Name="MouseRButtonHollow" Value="True"/>
             <Property Name="MouseMoveHollow" Value="True"/>
             <Property Name="MouseLButtonHollow" Value="True"/>
             <Property Name="MouseHollow" Value="True"/>
             <Window Type="TLBB_ButtonNULL" Name="Agname_Button_Show">
-              <Property Name="UnifiedSize" Value="{{0.000000,102.000000},{0.000000,20.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,3.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,102.000000},{0.000000,20.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,3.000000}}" />
               <Property Name="Text" Value="#{XCHXT_180124_12}" />
               <Property Name="AlwaysOnTop" Value="True" />
               <Property Name="PushedImage" Value="set:AgnameLayout image:AgnameLayout_BK_Pushed"/>
@@ -566,8 +566,8 @@
               <Event Name="Clicked" Function="Agname_SHOW_HIDE_Clicked()" />
             </Window>
             <Window Type="TLBB_ButtonNULL" Name="Agname_Button_Replace">
-              <Property Name="UnifiedSize" Value="{{0.000000,102.000000},{0.000000,20.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,208.000000},{0.000000,3.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,102.000000},{0.000000,20.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,208.000000},{0.000000,3.000000}}" />
               <Property Name="Text" Value="#{XCHXT_180428_58}" />
               <Property Name="AlwaysOnTop" Value="True" />
               <Property Name="PushedImage" Value="set:AgnameLayout image:AgnameLayout_BK_Pushed"/>
@@ -580,14 +580,14 @@
         </Window>
       </Window>
 	<Window Type="TLBB_ButtonCommon" Name="Agname_Button_up">
-		<Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
-		<Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{1.000000,-25.000000}}"/>
+		<Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}" />
+		<Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{1.000000,-25.000000}}" />
 		<Property Name="Text" Value="上一页" />
 		<Event Name="Clicked" Function="Agname_PageChange(-1);" />
 	</Window>
 	<Window Type="TLBB_ButtonCommon" Name="Agname_Button_down">
-		<Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
-		<Property Name="UnifiedPosition" Value="{{0.000000,120.000000},{1.000000,-25.000000}}"/>
+		<Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}" />
+		<Property Name="UnifiedPosition" Value="{{0.000000,120.000000},{1.000000,-25.000000}}" />
 		<Property Name="Text" Value="下一页" />
 		<Event Name="Clicked" Function="Agname_PageChange(1);" />
 	</Window>	  

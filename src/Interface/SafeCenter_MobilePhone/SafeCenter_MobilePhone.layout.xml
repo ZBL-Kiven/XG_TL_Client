@@ -1,23 +1,23 @@
 <?xml version="1.0" ?>
 <GUILayout>
     <Window Type="TLBB_MainFrame1" Name="SafeCenter_MobilePhone_Frame">
-      <Property Name="UnifiedSize" Value="{{0.000000,380.000000},{0.000000,300.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.500000,-210.000000},{0.500000,-210.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{0.000000,380.000000},{0.000000,300.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.500000,-210.000000},{0.500000,-210.000000}}" />
       <Property Name="AttachEnabled" Value="True"/>
       <Event Name="Hidden" Function="SafeCenter_MobilePhone_OnHidden();" />
       <Window Type="TLBB_ButtonClose" Name="SafeCenter_MobilePhone_Close">
-        <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}" />
         <Event Name="Clicked" Function="this:Hide();"/>
       </Window>
       <Window Type="TLBB_ButtonHelp" Name="SafeCenter_MobilePhone_Help">
-        <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}" />
         <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*SafeCenter_MobilePhone&quot;);' />
       </Window>
       <Window Type="TLBB_DragTitle" Name="SafeCenter_MobilePhone_TITLE">
-        <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{0.000000,21.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,10.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{0.000000,21.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,10.000000}}" />
         <Property Name="TextColor" Value="FFFFFF00"/>
         <Property Name="Text" Value="#{SJRZ_180827_02}"/>
         <Property Name="Font" Value="YouYuan11.25"/>
@@ -25,58 +25,58 @@
       </Window>
       
       <Window Type="DefaultWindow" Name="SafeCenter_MobilePhone_Background_Frame">
-        <Property Name="UnifiedSize" Value="{{1.000000,-7.000000},{1.000000,-20.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,31.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,-7.000000},{1.000000,-20.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,31.000000}}" />
         <Property Name="RiseOnClick" Value="False"/>
 
 
   <Window Type="DefaultWindow" Name="SafeCenter_MobilePhone_BackgroundDown_Frame">
-    <Property Name="UnifiedSize" Value="{{0.000000,373.000000},{0.000000,290.000000}}"/>
-    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+    <Property Name="UnifiedSize" Value="{{0.000000,373.000000},{0.000000,290.000000}}" />
+    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
     <Property Name="RiseOnClick" Value="False"/>
 
 
     <!--Frame3-->
     		<Window Type="TLBB_Frame_Lace6" Name="Phone_List">
-	    		<Property Name="UnifiedSize" Value="{{0.000000,353.000000},{0.000000,132.000000}}"/>
-		      	<Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+	    		<Property Name="UnifiedSize" Value="{{0.000000,353.000000},{0.000000,132.000000}}" />
+		      	<Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{0.000000,12.000000}}" />
 			  	<Property Name="RiseOnClick" Value="False"/>
     	</Window>
 
       <Window Type="TLBB_ActionButton" Name="SafeCenter_MobilePhone_ItemA_1">
-		    <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
-		    <Property Name="UnifiedPosition" Value="{{0.000000,156.000000},{0.000000,50.000000}}"/>
+		    <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}" />
+		    <Property Name="UnifiedPosition" Value="{{0.000000,156.000000},{0.000000,50.000000}}" />
     	</Window>
   
 
         <Window Type="TLBB_SimpleText" Name="SafeCenter_MobilePhone_Lace1_BandingText">
-      		<Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,-256.000000}}"/>
-		      <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,224.000000}}"/>
+      		<Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,-256.000000}}" />
+		      <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,224.000000}}" />
           <Property Name="Text" Value="#{SJRZ_180827_12}"/>
           <Property Name="HorzFormatting" Value="WordWrapCentred"/>
         </Window>
 
     <Window Type="TLBB_SimpleText" Name="SafeCenter_MobilePhone_Lace1_SimpleText1">
-         <Property Name="UnifiedSize" Value="{{1.000000,-290.000000},{1.000000,-265.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,162.000000}}"/>
+         <Property Name="UnifiedSize" Value="{{1.000000,-290.000000},{1.000000,-265.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,162.000000}}" />
 	    	<Property Name="Text" Value="#{SJRZ_180827_04}"/>
 	    	<Property Name="HorzFormatting" Value="WordWrapCentred"/>
 	  </Window>
 
 
     	<Window Type="TLBB_Frame_Lace3" Name="SafeCenter_MobilePhone_Frame3_Lace1">
-		    <Property Name="UnifiedSize" Value="{{0.000000,125.000000},{0.000000,25.000000}}"/>
-		    <Property Name="UnifiedPosition" Value="{{0.000000,95.000000},{0.000000,160.000000}}"/>
+		    <Property Name="UnifiedSize" Value="{{0.000000,125.000000},{0.000000,25.000000}}" />
+		    <Property Name="UnifiedPosition" Value="{{0.000000,95.000000},{0.000000,160.000000}}" />
       	<Window Type="TLBB_SimpleText" Name="SafeCenter_MobilePhone_Frame3_Lace2_Text1">
-	        	<Property Name="UnifiedSize" Value="{{1.000000,1.000000},{1.000000,1.000000}}"/>
+	        	<Property Name="UnifiedSize" Value="{{1.000000,1.000000},{1.000000,1.000000}}" />
 	        	<Property Name="Text" Value="#{AQZX_130812_38}"/>
 	        	<Property Name="HorzFormatting" Value="HorzCentred"/>
       	</Window>
 	    </Window>
       
     	<Window Type="TLBB_ButtonGreen" Name="SafeCenter_MobilePhone_Frame3_Button1">
-		      <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,25.000000}}"/>
-		      <Property Name="UnifiedPosition" Value="{{0.000000,240.000000},{0.000000,160.000000}}"/>
+		      <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,25.000000}}" />
+		      <Property Name="UnifiedPosition" Value="{{0.000000,240.000000},{0.000000,160.000000}}" />
 	      	<Property Name="Text" Value="#{SJRZ_180827_07}"/>
 	      	<Event Name="Clicked" Function="SafeCenter_MobilePhone_OnClicked();"/>
     	</Window>
@@ -84,22 +84,22 @@
 
    
         <Window Type="TLBB_SimpleText" Name="SafeCenter_MobilePhone_Lace1_SimpleText">
-          <Property Name="UnifiedSize" Value="{{1.000000,-330.000000},{1.000000,-425.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,220.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,-330.000000},{1.000000,-425.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,220.000000}}" />
           <Property Name="Text" Value="#{SJRZ_180827_14}"/>
           <Property Name="HorzFormatting" Value="WordWrapCentred"/>
         </Window>
      
       <Window Type="TLBB_ButtonGreen" Name="SafeCenter_MobilePhone_Frame3_Button">
-        <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,25.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,240.000000},{0.000000,190.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,25.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,240.000000},{0.000000,190.000000}}" />
         <Property Name="Text" Value="#{SJRZ_180827_11}"/>
         <Event Name="Clicked" Function="SafeCenter_MobilePhone_Approve_OnClicked();"/>
       </Window>
      
       	<Window Type="TLBB_EditBoxNormal" Name="SafeCenter_MobilePhone_Edit1">
-	        	<Property Name="UnifiedSize" Value="{{0.000000,125.000000},{0.000000,25.000000}}"/>
-        		<Property Name="UnifiedPosition" Value="{{0.000000,95.000000},{0.000000,190.000000}}"/>
+	        	<Property Name="UnifiedSize" Value="{{0.000000,125.000000},{0.000000,25.000000}}" />
+        		<Property Name="UnifiedPosition" Value="{{0.000000,95.000000},{0.000000,190.000000}}" />
         		<Property Name="ValidationString" Value="[0-9]*"/>
 	        	<Property Name="MaxTextLength" Value="32"/>
 	        	<Property Name="DefaultEditBox" Value="True"/>
@@ -110,42 +110,42 @@
    </Window>
    
   <Window Type="DefaultWindow" Name="SafeCenter_Bindingphone_BackgroundDown_Frame">
-    <Property Name="UnifiedSize" Value="{{0.000000,375.000000},{0.000000,269.000000}}"/>
-    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+    <Property Name="UnifiedSize" Value="{{0.000000,375.000000},{0.000000,269.000000}}" />
+    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
     <Property Name="RiseOnClick" Value="False"/>
 
 
     <!--Frame3-->
     	<Window Type="TLBB_Frame_Lace6" Name="Binding_List">
-	    	<Property Name="UnifiedSize" Value="{{0.000000,353.000000},{0.000000,132.000000}}"/>
-	    	<Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+	    	<Property Name="UnifiedSize" Value="{{0.000000,353.000000},{0.000000,132.000000}}" />
+	    	<Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{0.000000,12.000000}}" />
 			<Property Name="RiseOnClick" Value="False"/>
     	</Window>
 
     	<Window Type="TLBB_ActionButton" Name="SafeCenter_Bindingphone_ItemA_1">
-		    <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
-	      <Property Name="UnifiedPosition" Value="{{0.000000,156.000000},{0.000000,50.000000}}"/>
+		    <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}" />
+	      <Property Name="UnifiedPosition" Value="{{0.000000,156.000000},{0.000000,50.000000}}" />
     	</Window>
 
     	<Window Type="TLBB_Frame_Lace3" Name="SafeCenter_Bindingphone_Frame3_Lace1">
-		    <Property Name="UnifiedSize" Value="{{0.000000,160.000000},{0.000000,25.000000}}"/>
-				<Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,175.000000}}"/>
+		    <Property Name="UnifiedSize" Value="{{0.000000,160.000000},{0.000000,25.000000}}" />
+				<Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,175.000000}}" />
       	<Window Type="TLBB_SimpleText" Name="SafeCenter_Bindingphone_Frame3_Lace2_Text1">
-	        	<Property Name="UnifiedSize" Value="{{1.000000,1.000000},{1.000000,1.000000}}"/>
+	        	<Property Name="UnifiedSize" Value="{{1.000000,1.000000},{1.000000,1.000000}}" />
 	        	<Property Name="Text" Value="#{SJRZ_180827_05}"/>
 	        	<Property Name="HorzFormatting" Value="HorzCentred"/>
       	</Window>
 	    </Window>
       
     	<Window Type="TLBB_ButtonGreen" Name="SafeCenter_Bindingphone_Frame3_Button1">
-		      <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,25.000000}}"/>
-		      <Property Name="UnifiedPosition" Value="{{0.000000,220.000000},{0.000000,175.000000}}"/>
+		      <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,25.000000}}" />
+		      <Property Name="UnifiedPosition" Value="{{0.000000,220.000000},{0.000000,175.000000}}" />
 	      	<Property Name="Text" Value="#{MYSJRZ_210316_02}"/>
 	      	<Event Name="Clicked" Function="SafeCenter_Bindingphone_OnClicked();"/>
     	</Window>
       	<Window Type="TLBB_SimpleText" Name="SafeCenter_MobilePhone_Lace1_RenZhengText">
-	        	<Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,-236.000000}}"/>
-	        	<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,224.000000}}"/>
+	        	<Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,-236.000000}}" />
+	        	<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,224.000000}}" />
 	        	<Property Name="Text" Value="#{SJRZ_180827_12}"/>
 		        <Property Name="HorzFormatting" Value="WordWrapCentred"/>
       	</Window>
@@ -154,17 +154,17 @@
 
     <!--Frame3-->
    <Window Type="DefaultWindow" Name="SafeCenter_AuthenticationPhone_BackgroundDown_Frame">
-    <Property Name="UnifiedSize" Value="{{0.000000,370.000000},{0.000000,270.000000}}"/>
-    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+    <Property Name="UnifiedSize" Value="{{0.000000,370.000000},{0.000000,270.000000}}" />
+    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
     <Property Name="RiseOnClick" Value="False"/>
 	<Window Type="TLBB_Frame_Lace6" Name="AuthenticationPhone_List">
-		<Property Name="UnifiedSize" Value="{{0.000000,353.000000},{0.000000,132.000000}}"/>
-		<Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+		<Property Name="UnifiedSize" Value="{{0.000000,353.000000},{0.000000,132.000000}}" />
+		<Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{0.000000,12.000000}}" />
 		<Property Name="RiseOnClick" Value="False"/>
 	</Window>
 	<Window Type="TLBB_StaticImageNULL" Name="PlayerFrame_Authenticationphone_tips">
-		<Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
-		<Property Name="UnifiedPosition" Value="{{0.000000,210.000000},{0.000000,44.000000}}"/>
+		<Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}" />
+		<Property Name="UnifiedPosition" Value="{{0.000000,210.000000},{0.000000,44.000000}}" />
 		<Property Name="MouseRButtonHollow" Value="True"/>
 		<Property Name="MouseMoveHollow" Value="True"/>
 		<Property Name="MouseLButtonHollow" Value="True"/>
@@ -174,11 +174,11 @@
 	</Window>
 
     	<Window Type="TLBB_ActionButton" Name="SafeCenter_AuthenticationPhone_ItemA_1">
-		    <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
-	      <Property Name="UnifiedPosition" Value="{{0.000000,156.000000},{0.000000,50.000000}}"/>
+		    <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}" />
+	      <Property Name="UnifiedPosition" Value="{{0.000000,156.000000},{0.000000,50.000000}}" />
 			<Event Name="Clicked" Function="SafeCenter_AuthenticationPhone_GetPrize_Clicked();"/>
         <Window Type="TLBB_StaticImageNULL" Name="SafeCenter_AuthenticationPhone_ItemA_1_Mask">
-					<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
 					<Property Name="MouseRButtonHollow" Value="True"/>
 					<Property Name="MouseMoveHollow" Value="True"/>
 					<Property Name="MouseLButtonHollow" Value="True"/>
@@ -187,17 +187,17 @@
     	</Window>
 
     	<Window Type="TLBB_Frame_Lace3" Name="SafeCenter_AuthenticationPhone_Frame3_Lace1">
-		    <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,25.000000}}"/>
-				<Property Name="UnifiedPosition" Value="{{0.000000,95.000000},{0.000000,175.000000}}"/>
+		    <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,25.000000}}" />
+				<Property Name="UnifiedPosition" Value="{{0.000000,95.000000},{0.000000,175.000000}}" />
       	<Window Type="TLBB_SimpleText" Name="SafeCenter_AuthenticationPhone_Frame3_Lace2_Text1">
-	        	<Property Name="UnifiedSize" Value="{{1.000000,1.000000},{1.000000,1.000000}}"/>
+	        	<Property Name="UnifiedSize" Value="{{1.000000,1.000000},{1.000000,1.000000}}" />
 	        	<Property Name="Text" Value="#{SJRZ_180827_25}"/>
 	        	<Property Name="HorzFormatting" Value="HorzCentred"/>
       	</Window>
 	    </Window>
     	<Window Type="TLBB_SimpleText" Name="SafeCenter_AuthenticationPhone_Lace1_RenZhengText">
-	    	<Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,-236.000000}}"/>
-	    	<Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,224.000000}}"/>
+	    	<Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,-236.000000}}" />
+	    	<Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,224.000000}}" />
 	    	<Property Name="Text" Value="#{SJRZ_180827_12}"/>
 	    	<Property Name="HorzFormatting" Value="WordWrapCentred"/>
 	    </Window>

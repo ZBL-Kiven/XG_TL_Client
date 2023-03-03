@@ -1,12 +1,12 @@
 <?xml version="1.0" ?>
 <GUILayout>
     <Window Type="TLBB_MainFrame1" Name="WuhunSkillStudy_Frame">
-      <Property Name="UnifiedSize" Value="{{0.000000,256.000000},{0.000000,308.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.500000,-128.000000},{0.500000,-178.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{0.000000,256.000000},{0.000000,308.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.500000,-128.000000},{0.500000,-178.000000}}" />
         <Event Name="Hidden" Function="WuhunSkillStudy_OnHiden();" />
         <Window Type="TLBB_DragTitle" Name="WuhunSkillStudy_DragTitle">
           <Property Name="AbsolutePosition" Value="x:40.000000 y:11.000000" />
-          <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}" />
+          <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}}" />
             <Property Name="DragTarget" Value="WuhunSkillStudy_Frame" />
             <Window Type="TLBB_SimpleText" Name="WuhunSkillStudy_Title">
                 <Property Name="Position" Value="x:0.0 y:0.0" />
@@ -19,20 +19,20 @@
             </Window>
         </Window>
          <Window Type="TLBB_ButtonHelp" Name="WuhunSkillStudy_Help">
-          <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}" />
           <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
             <Property Name="Text" Value="TLBB_ButtonHelp" />
             <Event Name="Clicked" Function='WuhunSkillStudy_Help_Clicked()' />
         </Window>
         <Window Type="TLBB_ButtonClose" Name="WuhunSkillStudy_Close">
-          <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+          <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}" />
           <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
             <Property Name="Text" Value="TLBB_ButtonClose" />
             <Event Name="Clicked" Function="this:Hide();" />
         </Window>
         <Window Type="DefaultWindow" Name="WuhunSkillStudy_Frame_Client">
-          <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-37.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,28.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-37.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,28.000000}}" />
           <Window Type="TLBB_SimpleMulitiTextFrame" Name="WuhunSkillStudy_Info">
                 <Property Name="Position" Value="x:0.0 y:0.0" />
                 <Property Name="AbsoluteSize" Value="w:243.000000 h:110.000000" />
@@ -43,7 +43,7 @@
             </Window>
             <Window Type="TLBB_SimpleText" Name="WuhunSkillStudy_Info2">
                 <Property Name="AbsolutePosition" Value="x:12.000000 y:124.000000" />
-                <Property Name="UnifiedSize" Value="{{0.695473,0.000000},{0.000000,40.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.695473,0.000000},{0.000000,40.000000}}" />
                 <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
                 <Property Name="RiseOnClick" Value="False" />
                 <Property Name="Text" Value="" />
@@ -57,16 +57,16 @@
                 <Event Name="RBClicked" Function="WuhunSkillStudy_Resume_Equip();" />
             </Window>
             <Window Type="TLBB_SimpleMulitiTextFrame" Name="WuhunSkillStudy_Money_Text">
-                <Property Name="UnifiedPosition" Value="{{0.0500,0.000000},{1.000000,-102.000000}" />
-                <Property Name="UnifiedSize" Value="{{0.9,0.000000},{0.000000,22.000000}" />
+                <Property Name="UnifiedPosition" Value="{{0.0500,0.000000},{1.000000,-102.000000}}" />
+                <Property Name="UnifiedSize" Value="{{0.9,0.000000},{0.000000,22.000000}}" />
                 <Property Name="TextColor" Value="FFFFF263" />
                 <Property Name="Text" Value="#{INTERFACE_XML_789}" />
                 <Property Name="HorzFormatting" Value="LeftAligned" />
                 <Property Name="VertFormatting" Value="VertCentred" />
                 <Property Name="RiseOnClick" Value="False" />
                 <Window Type="TLBB_Money" Name="WuhunSkillStudy_DemandMoney">
-                    <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}" />
-                    <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}" />
+                    <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}}" />
+                    <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}}" />
                     <Property Name="MoneyNumber" Value="0" />
                     <Property Name="HorzFormatting" Value="RightAligned" />
                     <Property Name="AlignFix" Value="True" />
@@ -76,16 +76,16 @@
                 </Window>
             </Window>
             <Window Type="TLBB_SimpleMulitiTextFrame" Name="WuhunSkillStudy_Jiaozi_Text">
-                <Property Name="UnifiedPosition" Value="{{0.0500,0.000000},{1.000000,-80.000000}" />
-                <Property Name="UnifiedSize" Value="{{0.9,0.000000},{0.000000,22.000000}" />
+                <Property Name="UnifiedPosition" Value="{{0.0500,0.000000},{1.000000,-80.000000}}" />
+                <Property Name="UnifiedSize" Value="{{0.9,0.000000},{0.000000,22.000000}}" />
                 <Property Name="TextColor" Value="FFFFF263" />
                 <Property Name="Text" Value="#{BDJB_051210_1}" />
                 <Property Name="HorzFormatting" Value="LeftAligned" />
                 <Property Name="VertFormatting" Value="VertCentred" />
                 <Property Name="RiseOnClick" Value="False" />
                 <Window Type="TLBB_Money" Name="WuhunSkillStudy_SelfJiaozi">
-                    <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}" />
-                    <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}" />
+                    <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}}" />
+                    <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}}" />
                     <Property Name="MoneyNumber" Value="0" />
                     <Property Name="HorzFormatting" Value="RightAligned" />
                     <Property Name="AlignFix" Value="True" />
@@ -95,32 +95,32 @@
                 </Window>
             </Window>
             <Window Type="TLBB_SimpleMulitiTextFrame" Name="WuhunSkillStudy_SelfMoney_Text">
-                <Property Name="UnifiedPosition" Value="{{0.0500,0.000000},{1.000000,-58.000000}" />
-                <Property Name="UnifiedSize" Value="{{0.9,0.000000},{0.000000,22.000000}" />
+                <Property Name="UnifiedPosition" Value="{{0.0500,0.000000},{1.000000,-58.000000}}" />
+                <Property Name="UnifiedSize" Value="{{0.9,0.000000},{0.000000,22.000000}}" />
                 <Property Name="TextColor" Value="FFFFF263" />
                 <Property Name="Text" Value="#{INTERFACE_XML_834}" />
                 <Property Name="HorzFormatting" Value="LeftAligned" />
                 <Property Name="VertFormatting" Value="VertCentred" />
                 <Property Name="RiseOnClick" Value="False" />
                 <Window Type="TLBB_Money" Name="WuhunSkillStudy_SelfMoney">
-                    <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}" />
-                    <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}" />
+                    <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}}" />
+                    <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}}" />
                     <Property Name="HorzFormatting" Value="RightAligned" />
                     <Property Name="MoneyNumber" Value="0" />
                 </Window>
             </Window>
             <Window Type="TLBB_Frame_Lace5" Name="WuhunSkillStudy_Blank">
-              <Property Name="UnifiedSize" Value="{{1.000000,-85.000000},{0.000000,20.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{1.000000,-29.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,-85.000000},{0.000000,20.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{1.000000,-29.000000}}" />
             </Window>
             <Window Type="TLBB_ButtonCommon" Name="WuhunSkillStudy_OK">
-                <Property Name="UnifiedPosition" Value="{{1.000000,-82.000000},{1.000000,-29.000000}" />
+                <Property Name="UnifiedPosition" Value="{{1.000000,-82.000000},{1.000000,-29.000000}}" />
                 <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
                 <Property Name="Text" Value="#{INTERFACE_XML_557}" />
                 <Event Name="Clicked" Function="WuhunSkillStudy_OK_Clicked();" />
             </Window>
             <Window Type="TLBB_ButtonCommon" Name="WuhunSkillStudy_Cancel">
-                <Property Name="UnifiedPosition" Value="{{1.000000,-42.000000},{1.000000,-29.000000}" />
+                <Property Name="UnifiedPosition" Value="{{1.000000,-42.000000},{1.000000,-29.000000}}" />
                 <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
                 <Property Name="Text" Value="#{INTERFACE_XML_542}" />
                 <Event Name="Clicked" Function="this:Hide();" />

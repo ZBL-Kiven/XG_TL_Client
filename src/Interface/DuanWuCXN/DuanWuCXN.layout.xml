@@ -1,27 +1,27 @@
 ﻿<?xml version="1.0" ?>
 <GUILayout>
   <Window Type="TLBB_HeroFrame01" Name="DuanWuCXN_Frame">
-    <Property Name="UnifiedSize" Value="{{0.000000,756.000000},{0.000000,500.000000}}"/>
-    <Property Name="UnifiedPosition" Value="{{0.500000,-378.000000},{0.500000,-275.000000}}"/>
+    <Property Name="UnifiedSize" Value="{{0.000000,756.000000},{0.000000,500.000000}}" />
+    <Property Name="UnifiedPosition" Value="{{0.500000,-378.000000},{0.500000,-275.000000}}" />
     <Window Type="TLBB_HeroTitle01" Name="DuanWuCXN_DragTitleBK">
-      <Property Name="UnifiedSize" Value="{{1.000000,-200.000000},{0.000000,30.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,-2.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-200.000000},{0.000000,30.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,-2.000000}}" />
       <Window Type="TLBB_SimpleText" Name="DuanWuCXN_DragTitle">
-        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,-2.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,-2.000000}}" />
         <Property Name="Text" Value="#{DWCXN_20210508_46}" />
         <Property Name="HorzFormatting" Value="WordWrapCentred"/>
         <Property Name="Font" Value="YouYuan11.25" />
       </Window>
     </Window>
     <Window Type="TLBB_DragTitle" Name="DuanWuCXN_DragTitle2">
-      <Property Name="UnifiedSize" Value="{{1.000000,-39.000000},{0.000000,25.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,18.000000},{0.000000,2.159996}}"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-39.000000},{0.000000,25.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,18.000000},{0.000000,2.159996}}" />
       <Property Name="DragTarget" Value="DuanWuCXN_Frame" />
     </Window>
     <Window Type="TLBB_ButtonNULL" Name="DuanWuCXN_Close">
-      <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,14.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.000000,8.159996}}"/>
+      <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,14.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.000000,8.159996}}" />
       <Event Name="Clicked" Function="DuanWuCXN_OnClosed()" />
       <Property Name="PushedImage" Value="set:ZLHeroMeeting image:Close_Push"/>
       <Property Name="NormalImage" Value="set:ZLHeroMeeting image:Close_Normal"/>
@@ -29,38 +29,38 @@
       <Property Name="DisabledImage" Value="set:ZLHeroMeeting image:Close_Push"/>
     </Window>
     <Window Type="TLBB_HeroLace01" Name="DuanWuCXN_Client">
-      <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-35.000000}}"/>
-      <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,28.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-35.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,28.000000}}" />
       <Window Type="TLBB_StaticImageNULL" Name="DuanWuCXN_ClientBK">
-        <Property Name="UnifiedSize" Value="{{0.000000,756.000000},{0.000000,464.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,756.000000},{0.000000,464.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
         <Property Name="RiseOnClick" Value="False"/>
         <Property Name="Image" Value="set:JiXiangNang02 image:CaiXiangNangBK"/>
       </Window>
       <Window Type="DefaultWindow" Name="DuanWuCXN_Explainup">
-        <Property Name="UnifiedSize" Value="{{1.000000,-246.000000},{0.000000,80.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,168.000000},{0.000000,0.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,-246.000000},{0.000000,80.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,168.000000},{0.000000,0.000000}}" />
         <Property Name="RiseOnClick" Value="False"/>
         <Window Type="TLBB_SimpleText" Name="DuanWuCXN_Explain_text">
-          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{1.000000,-12.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,6.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{1.000000,-12.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,6.000000}}" />
           <Property Name="Text" Value="#{DWCXN_20210508_24}"/>
           <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
           <Property Name="VertFormatting" Value="TopAligned"/>
         </Window>
       </Window>
         <Window Type="DefaultWindow" Name="DuanWuCXN_ShowBK">
-          <Property Name="UnifiedSize" Value="{{0.000000,256.000000},{0.000000,256.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.00000,294.000000},{0.000000,82.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,256.000000},{0.000000,256.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.00000,294.000000},{0.000000,82.000000}}" />
           <Property Name="RiseOnClick" Value="False"/>
         <Window Type="TLBB_StaticImageNULL" Name="DuanWuCXN_ShowImage">
-          <Property Name="UnifiedSize" Value="{{0.000000,166.000000},{0.000000,177.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,42.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,166.000000},{0.000000,177.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,42.000000},{0.000000,30.000000}}" />
           <Property Name="Image" Value="set:JiXiangNang03 image:XiangNangGuan"/>
         </Window>
         <Window Type="TLBB_Animate" Name="DuanWuCXN_ShowAnimate">
-          <Property Name="UnifiedSize" Value="{{0.000000,256.000000},{0.000000,256.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,256.000000},{0.000000,256.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
           <Property Name="MouseRButtonHollow" Value="True"/>
           <Property Name="MouseMoveHollow" Value="True"/>
           <Property Name="MouseLButtonHollow" Value="True"/>
@@ -69,8 +69,8 @@
           <Property Name="AlwaysOnTop" Value="True"/>
         </Window>
           <Window Type="TLBB_Animate" Name="DuanWuCXN_ShowAnimate2">
-            <Property Name="UnifiedSize" Value="{{0.000000,256.000000},{0.000000,256.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,256.000000},{0.000000,256.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
             <Property Name="MouseRButtonHollow" Value="True"/>
             <Property Name="MouseMoveHollow" Value="True"/>
             <Property Name="MouseLButtonHollow" Value="True"/>
@@ -79,8 +79,8 @@
             <Property Name="AlwaysOnTop" Value="True"/>
           </Window>
           <Window Type="TLBB_Animate" Name="DuanWuCXN_ShowAnimate3">
-            <Property Name="UnifiedSize" Value="{{0.000000,256.000000},{0.000000,256.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,256.000000},{0.000000,256.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
             <Property Name="MouseRButtonHollow" Value="True"/>
             <Property Name="MouseMoveHollow" Value="True"/>
             <Property Name="MouseLButtonHollow" Value="True"/>
@@ -89,8 +89,8 @@
             <Property Name="AlwaysOnTop" Value="True"/>
           </Window>
           <Window Type="TLBB_Animate" Name="DuanWuCXN_ShowAnimate4">
-            <Property Name="UnifiedSize" Value="{{0.000000,170.000000},{0.000000,170.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,42.000000},{0.000000,34.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,170.000000},{0.000000,170.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,42.000000},{0.000000,34.000000}}" />
             <Property Name="MouseRButtonHollow" Value="True"/>
             <Property Name="MouseMoveHollow" Value="True"/>
             <Property Name="MouseLButtonHollow" Value="True"/>
@@ -100,161 +100,161 @@
           </Window>
         </Window>
         <Window Type="DefaultWindow" Name="DuanWuCXN_TodayBK">
-          <Property Name="UnifiedSize" Value="{{0.000000,172.000000},{0.000000,460.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,172.000000},{0.000000,460.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
           <Property Name="RiseOnClick" Value="False"/>
           <Property Name="AlwaysOnTop" Value="True"/>
           <Window Type="DefaultWindow" Name="DuanWuCXN_Todaylevel1">
-            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,140.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,46.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,140.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,46.000000}}" />
             <Window Type="TLBB_SimpleText" Name="DuanWuCXN_Todaylevel1Title">
-              <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,32.000000},{0.000000,6.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,32.000000},{0.000000,6.000000}}" />
               <Property Name="Text" Value="#{DWCXN_20210508_26}"/>
             </Window>
             <Window Type="TLBB_ActionButton" Name="DuanWuCXN_Todaylevel1_Award">
-              <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,32.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,128.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,32.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,128.000000},{0.000000,0.000000}}" />
               <Property Name="Empty" Value="False" />
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="DuanWuCXN_Todaylevel1_1">
-              <Property Name="UnifiedSize" Value="{{0.000000,47.000000},{0.000000,48.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.00000,12.000000},{0.000000,34.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,47.000000},{0.000000,48.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.00000,12.000000},{0.000000,34.000000}}" />
               <Property Name="RiseOnClick" Value="False"/>
               <Property Name="Image" Value="set:JiXiangNang03 image:AiYe"/>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="DuanWuCXN_Todaylevel1_2">
-              <Property Name="UnifiedSize" Value="{{0.000000,47.000000},{0.000000,48.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.00000,59.000000},{0.000000,34.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,47.000000},{0.000000,48.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.00000,59.000000},{0.000000,34.000000}}" />
               <Property Name="RiseOnClick" Value="False"/>
               <Property Name="Image" Value="set:JiXiangNang03 image:AiYe"/>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="DuanWuCXN_Todaylevel1_3">
-              <Property Name="UnifiedSize" Value="{{0.000000,47.000000},{0.000000,48.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.00000,106.000000},{0.000000,34.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,47.000000},{0.000000,48.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.00000,106.000000},{0.000000,34.000000}}" />
               <Property Name="RiseOnClick" Value="False"/>
               <Property Name="Image" Value="set:JiXiangNang03 image:AiYe"/>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="DuanWuCXN_Todaylevel1_4">
-              <Property Name="UnifiedSize" Value="{{0.000000,47.000000},{0.000000,48.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.00000,12.000000},{0.000000,90.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,47.000000},{0.000000,48.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.00000,12.000000},{0.000000,90.000000}}" />
               <Property Name="RiseOnClick" Value="False"/>
               <Property Name="Image" Value="set:JiXiangNang03 image:AiYe"/>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="DuanWuCXN_Todaylevel1_5">
-              <Property Name="UnifiedSize" Value="{{0.000000,47.000000},{0.000000,48.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.00000,59.000000},{0.000000,90.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,47.000000},{0.000000,48.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.00000,59.000000},{0.000000,90.000000}}" />
               <Property Name="RiseOnClick" Value="False"/>
               <Property Name="Image" Value="set:JiXiangNang03 image:AiYe"/>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="DuanWuCXN_Todaylevel1_6">
-              <Property Name="UnifiedSize" Value="{{0.000000,47.000000},{0.000000,48.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.00000,106.000000},{0.000000,90.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,47.000000},{0.000000,48.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.00000,106.000000},{0.000000,90.000000}}" />
               <Property Name="RiseOnClick" Value="False"/>
               <Property Name="Image" Value="set:JiXiangNang03 image:AiYe"/>
             </Window>
           </Window>
           <Window Type="DefaultWindow" Name="DuanWuCXN_Todaylevel2">
-            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,198.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,184.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,198.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,184.000000}}" />
             <Window Type="TLBB_SimpleText" Name="DuanWuCXN_Todaylevel2Title">
-              <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,32.000000},{0.000000,22.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,32.000000},{0.000000,22.000000}}" />
               <Property Name="Text" Value="#{DWCXN_20210508_28}"/>
             </Window>
             <Window Type="TLBB_ActionButton" Name="DuanWuCXN_Todaylevel2_Award">
-              <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,32.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,128.000000},{0.000000,10.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,32.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,128.000000},{0.000000,10.000000}}" />
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="DuanWuCXN_Todaylevel2_1">
-              <Property Name="UnifiedSize" Value="{{0.000000,47.000000},{0.000000,48.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.00000,12.000000},{0.000000,46.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,47.000000},{0.000000,48.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.00000,12.000000},{0.000000,46.000000}}" />
               <Property Name="RiseOnClick" Value="False"/>
               <Property Name="Image" Value="set:JiXiangNang03 image:AiYe"/>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="DuanWuCXN_Todaylevel2_2">
-              <Property Name="UnifiedSize" Value="{{0.000000,47.000000},{0.000000,48.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.00000,59.000000},{0.000000,46.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,47.000000},{0.000000,48.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.00000,59.000000},{0.000000,46.000000}}" />
               <Property Name="RiseOnClick" Value="False"/>
               <Property Name="Image" Value="set:JiXiangNang03 image:AiYe"/>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="DuanWuCXN_Todaylevel2_3">
-              <Property Name="UnifiedSize" Value="{{0.000000,47.000000},{0.000000,48.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.00000,106.000000},{0.000000,46.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,47.000000},{0.000000,48.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.00000,106.000000},{0.000000,46.000000}}" />
               <Property Name="RiseOnClick" Value="False"/>
               <Property Name="Image" Value="set:JiXiangNang03 image:AiYe"/>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="DuanWuCXN_Todaylevel2_4">
-              <Property Name="UnifiedSize" Value="{{0.000000,47.000000},{0.000000,48.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.00000,12.000000},{0.000000,96.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,47.000000},{0.000000,48.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.00000,12.000000},{0.000000,96.000000}}" />
               <Property Name="RiseOnClick" Value="False"/>
               <Property Name="Image" Value="set:JiXiangNang03 image:AiYe"/>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="DuanWuCXN_Todaylevel2_5">
-              <Property Name="UnifiedSize" Value="{{0.000000,47.000000},{0.000000,48.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.00000,59.000000},{0.000000,96.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,47.000000},{0.000000,48.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.00000,59.000000},{0.000000,96.000000}}" />
               <Property Name="RiseOnClick" Value="False"/>
               <Property Name="Image" Value="set:JiXiangNang03 image:AiYe"/>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="DuanWuCXN_Todaylevel2_6">
-              <Property Name="UnifiedSize" Value="{{0.000000,47.000000},{0.000000,48.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.00000,106.000000},{0.000000,96.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,47.000000},{0.000000,48.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.00000,106.000000},{0.000000,96.000000}}" />
               <Property Name="RiseOnClick" Value="False"/>
               <Property Name="Image" Value="set:JiXiangNang03 image:AiYe"/>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="DuanWuCXN_Todaylevel2_7">
-              <Property Name="UnifiedSize" Value="{{0.000000,47.000000},{0.000000,48.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.00000,12.000000},{0.000000,148.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,47.000000},{0.000000,48.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.00000,12.000000},{0.000000,148.000000}}" />
               <Property Name="RiseOnClick" Value="False"/>
               <Property Name="Image" Value="set:JiXiangNang03 image:AiYe"/>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="DuanWuCXN_Todaylevel2_8">
-              <Property Name="UnifiedSize" Value="{{0.000000,47.000000},{0.000000,48.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.00000,59.000000},{0.000000,148.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,47.000000},{0.000000,48.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.00000,59.000000},{0.000000,148.000000}}" />
               <Property Name="RiseOnClick" Value="False"/>
               <Property Name="Image" Value="set:JiXiangNang03 image:AiYe"/>
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="DuanWuCXN_Todaylevel2_9">
-              <Property Name="UnifiedSize" Value="{{0.000000,47.000000},{0.000000,48.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.00000,106.000000},{0.000000,148.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,47.000000},{0.000000,48.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.00000,106.000000},{0.000000,148.000000}}" />
               <Property Name="RiseOnClick" Value="False"/>
               <Property Name="Image" Value="set:JiXiangNang03 image:AiYe"/>
             </Window>
           </Window>
           <Window Type="DefaultWindow" Name="DuanWuCXN_Todaylevel3">
-            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,74.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,384.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,74.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,384.000000}}" />
             <Window Type="TLBB_SimpleText" Name="DuanWuCXN_Todaylevel3Title">
-              <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,10.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,10.000000}}" />
               <Property Name="Text" Value="#{DWCXN_20210508_40}"/>
             </Window>
             <Window Type="TLBB_ActionButton" Name="DuanWuCXN_Todaylevel3_Award">
-              <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,32.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,128.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,32.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,128.000000},{0.000000,0.000000}}" />
             </Window>
           </Window>
         </Window>
         <Window Type="DefaultWindow" Name="DuanWuCXN_DownBK">
-          <Property Name="UnifiedSize" Value="{{1.000000,-252.000000},{1.000000,-290.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,170.000000},{0.000000,290.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,-252.000000},{1.000000,-290.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,170.000000},{0.000000,290.000000}}" />
           <Property Name="RiseOnClick" Value="False"/>
           <Property Name="AlwaysOnTop" Value="True"/>
           <Window Type="DefaultWindow" Name="DuanWuCXN_DownMate">
-            <Property Name="UnifiedSize" Value="{{0.000000,402.000000},{0.000000,66.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.500000,-194.000000},{0.000000,10.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,402.000000},{0.000000,66.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.500000,-194.000000},{0.000000,10.000000}}" />
             <Property Name="RiseOnClick" Value="False"/>
           <Window Type="TLBB_ButtonCheckNULL" Name="DuanWuCXN_Down_1">
-            <Property Name="UnifiedSize" Value="{{0.000000,65.000000},{0.000000,66.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.00000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,65.000000},{0.000000,66.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.00000,0.000000},{0.000000,0.000000}}" />
             <Property Name="PushedImage" Value="set:JiXiangNang03 image:AiYe_Dis"/>
             <Property Name="NormalImage" Value="set:JiXiangNang03 image:AiYe_Nor"/>
             <Property Name="HoverImage" Value="set:JiXiangNang03 image:AiYe_Hover"/>
             <Property Name="DisabledImage" Value="set:JiXiangNang03 image:AiYe_Dis"/>
             <Event Name="Clicked" Function="DuanWuCXN_Select(1);"/>
             <Window Type="TLBB_StaticImageNULL" Name="DuanWuCXN_Down_1OK">
-              <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,36.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{1.000000,-38.000000},{1.000000,-36.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,36.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{1.000000,-38.000000},{1.000000,-36.000000}}" />
               <Property Name="RiseOnClick" Value="False"/>
               <Property Name="Image" Value="set:JiXiangNang03 image:HaoYe"/>
               <Property Name="MouseRButtonHollow" Value="True"/>
@@ -264,16 +264,16 @@
             </Window>
           </Window>
           <Window Type="TLBB_ButtonCheckNULL" Name="DuanWuCXN_Down_2">
-            <Property Name="UnifiedSize" Value="{{0.000000,65.000000},{0.000000,66.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.00000,67.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,65.000000},{0.000000,66.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.00000,67.000000},{0.000000,0.000000}}" />
             <Property Name="PushedImage" Value="set:JiXiangNang03 image:ChangPu_Nor"/>
             <Property Name="NormalImage" Value="set:JiXiangNang03 image:ChangPu_Dis"/>
             <Property Name="HoverImage" Value="set:JiXiangNang03 image:ChangPu_Hover"/>
             <Property Name="DisabledImage" Value="set:JiXiangNang03 image:ChangPu_Dis"/>
             <Event Name="Clicked" Function="DuanWuCXN_Select(2);"/>
             <Window Type="TLBB_StaticImageNULL" Name="DuanWuCXN_Down_2OK">
-              <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,36.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{1.000000,-38.000000},{1.000000,-36.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,36.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{1.000000,-38.000000},{1.000000,-36.000000}}" />
               <Property Name="RiseOnClick" Value="False"/>
               <Property Name="Image" Value="set:JiXiangNang03 image:HaoYe"/>
               <Property Name="MouseRButtonHollow" Value="True"/>
@@ -283,16 +283,16 @@
             </Window>
           </Window>
           <Window Type="TLBB_ButtonCheckNULL" Name="DuanWuCXN_Down_3">
-            <Property Name="UnifiedSize" Value="{{0.000000,65.000000},{0.000000,66.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.00000,134.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,65.000000},{0.000000,66.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.00000,134.000000},{0.000000,0.000000}}" />
             <Property Name="PushedImage" Value="set:JiXiangNang03 image:GeTeng_Nor"/>
             <Property Name="NormalImage" Value="set:JiXiangNang03 image:GeTeng_Dis"/>
             <Property Name="HoverImage" Value="set:JiXiangNang03 image:GeTeng_Hover"/>
             <Property Name="DisabledImage" Value="set:JiXiangNang03 image:GeTeng_Dis"/>
             <Event Name="Clicked" Function="DuanWuCXN_Select(3);"/>
             <Window Type="TLBB_StaticImageNULL" Name="DuanWuCXN_Down_3OK">
-              <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,36.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{1.000000,-38.000000},{1.000000,-36.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,36.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{1.000000,-38.000000},{1.000000,-36.000000}}" />
               <Property Name="RiseOnClick" Value="False"/>
               <Property Name="Image" Value="set:JiXiangNang03 image:HaoYe"/>
               <Property Name="MouseRButtonHollow" Value="True"/>
@@ -302,16 +302,16 @@
             </Window>
           </Window>
           <Window Type="TLBB_ButtonCheckNULL" Name="DuanWuCXN_Down_4">
-            <Property Name="UnifiedSize" Value="{{0.000000,65.000000},{0.000000,66.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.00000,201.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,65.000000},{0.000000,66.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.00000,201.000000},{0.000000,0.000000}}" />
             <Property Name="PushedImage" Value="set:JiXiangNang03 image:RenDong_Nor"/>
             <Property Name="NormalImage" Value="set:JiXiangNang03 image:RenDong_Dis"/>
             <Property Name="HoverImage" Value="set:JiXiangNang03 image:RenDong_Hover"/>
             <Property Name="DisabledImage" Value="set:JiXiangNang03 image:RenDong_Dis"/>
             <Event Name="Clicked" Function="DuanWuCXN_Select(4);"/>
             <Window Type="TLBB_StaticImageNULL" Name="DuanWuCXN_Down_4OK">
-              <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,36.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{1.000000,-38.000000},{1.000000,-36.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,36.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{1.000000,-38.000000},{1.000000,-36.000000}}" />
               <Property Name="RiseOnClick" Value="False"/>
               <Property Name="Image" Value="set:JiXiangNang03 image:HaoYe"/>
               <Property Name="MouseRButtonHollow" Value="True"/>
@@ -321,16 +321,16 @@
             </Window>
           </Window>
           <Window Type="TLBB_ButtonCheckNULL" Name="DuanWuCXN_Down_5">
-            <Property Name="UnifiedSize" Value="{{0.000000,65.000000},{0.000000,66.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.00000,268.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,65.000000},{0.000000,66.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.00000,268.000000},{0.000000,0.000000}}" />
             <Property Name="PushedImage" Value="set:JiXiangNang03 image:BaiZhi_Dis"/>
             <Property Name="NormalImage" Value="set:JiXiangNang03 image:BaiZhi_Nor"/>
             <Property Name="HoverImage" Value="set:JiXiangNang03 image:BaiZhi_Hover"/>
             <Property Name="DisabledImage" Value="set:JiXiangNang03 image:BaiZhi_Dis"/>
             <Event Name="Clicked" Function="DuanWuCXN_Select(5);"/>
             <Window Type="TLBB_StaticImageNULL" Name="DuanWuCXN_Down_5OK">
-              <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,36.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{1.000000,-38.000000},{1.000000,-36.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,36.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{1.000000,-38.000000},{1.000000,-36.000000}}" />
               <Property Name="RiseOnClick" Value="False"/>
               <Property Name="Image" Value="set:JiXiangNang03 image:HaoYe"/>
               <Property Name="MouseRButtonHollow" Value="True"/>
@@ -340,16 +340,16 @@
             </Window>
           </Window>
           <Window Type="TLBB_ButtonCheckNULL" Name="DuanWuCXN_Down_6">
-            <Property Name="UnifiedSize" Value="{{0.000000,65.000000},{0.000000,66.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.00000,335.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,65.000000},{0.000000,66.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.00000,335.000000},{0.000000,0.000000}}" />
             <Property Name="PushedImage" Value="set:JiXiangNang03 image:CangShu_Nor"/>
             <Property Name="NormalImage" Value="set:JiXiangNang03 image:CangShu_Dis"/>
             <Property Name="HoverImage" Value="set:JiXiangNang03 image:CangShu_Hover"/>
             <Property Name="DisabledImage" Value="set:JiXiangNang03 image:CangShu_Dis"/>
             <Event Name="Clicked" Function="DuanWuCXN_Select(6);"/>
             <Window Type="TLBB_StaticImageNULL" Name="DuanWuCXN_Down_6OK">
-              <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,36.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{1.000000,-38.000000},{1.000000,-36.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,36.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{1.000000,-38.000000},{1.000000,-36.000000}}" />
               <Property Name="RiseOnClick" Value="False"/>
               <Property Name="Image" Value="set:JiXiangNang03 image:HaoYe"/>
               <Property Name="MouseRButtonHollow" Value="True"/>
@@ -360,8 +360,8 @@
           </Window>
           </Window>
           <Window Type="TLBB_ButtonNULL" Name="DuanWuCXN_OK">
-            <Property Name="UnifiedSize" Value="{{0.000000,96.000000},{0.000000,24.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.500000,-48.000000},{1.000000,-54.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,96.000000},{0.000000,24.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.500000,-48.000000},{1.000000,-54.000000}}" />
             <Property Name="Text" Value="#{DWCXN_20210508_53}"/>
             <Property Name="DisabledImage" Value="set:ZLHeroMeeting image:Button_Disable" />
             <Property Name="HoverImage" Value="set:ZLHeroMeeting image:Button_Hover" />
@@ -370,32 +370,32 @@
             <Event Name="Clicked" Function="DuanWuCXN_OnOKClick();"/>
           </Window>
           <Window Type="TLBB_SimpleText" Name="DuanWuCXN_Down_TextNum2">
-            <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,20.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.500000,-100.000000},{1.000000,-28.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.500000,-100.000000},{1.000000,-28.000000}}" />
             <Property Name="Text" Value="#{DWCXN_20210508_31}"/>
             <Property Name="HorzFormatting" Value="HorzCentred"/>
           </Window>
         </Window>
       <Window Type="DefaultWindow" Name="DuanWuCXN_RightBK">
-        <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{1.000000,0.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{1.000000,-80.000000},{0.000000,0.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{1.000000,0.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{1.000000,-80.000000},{0.000000,0.000000}}" />
         <Property Name="AlwaysOnTop" Value="True"/>
       <Window Type="DefaultWindow" Name="DuanWuCXN_PageIcon1">
-        <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,52.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,260.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,52.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,260.000000}}" />
         <Window Type="TLBB_ActionButtonNULL" Name="DuanWuCXN_PageIcon1Btn">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.500000,-18.000000},{0.000000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.500000,-18.000000},{0.000000,0.000000}}" />
           <Event Name="Clicked" Function="DuanWuCXN_OnRewardClick(1);"/>
           <Window Type="TLBB_StaticImageNULL" Name="DuanWuCXN_PageIcon1BtnOK">
-            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,18.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.500000,-10.000000},{0.500000,-8.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,18.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.500000,-10.000000},{0.500000,-8.000000}}" />
             <Property Name="RiseOnClick" Value="False"/>
             <Property Name="Image" Value="set:JiXiangNang03 image:HaoYe"/>
           </Window>
           <Window Type="TLBB_StaticImageNULL" Name="DuanWuCXN_PageIcon1BtnTips">
-            <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{1.000000,-13.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{1.000000,-13.000000},{0.000000,0.000000}}" />
             <Property Name="MouseRButtonHollow" Value="True"/>
             <Property Name="MouseMoveHollow" Value="True"/>
             <Property Name="MouseLButtonHollow" Value="True"/>
@@ -406,28 +406,28 @@
         </Window>
         <Window Type="TLBB_SimpleText" Name="DuanWuCXN_PageIcon1Text">
           <Property Name="VertFormatting" Value="BottomAligned"/>
-          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}}" />
           <Property Name="Text" Value="#{DWCXN_20210508_42}"/>
           <Property Name="HorzFormatting" Value="HorzCentred"/>
         </Window>
       </Window>
       <Window Type="DefaultWindow" Name="DuanWuCXN_PageIcon2">
-        <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,52.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,208.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,52.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,208.000000}}" />
         <Window Type="TLBB_ActionButtonNULL" Name="DuanWuCXN_PageIcon2Btn">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.500000,-18.000000},{0.000000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.500000,-18.000000},{0.000000,0.000000}}" />
           <Event Name="Clicked" Function="DuanWuCXN_OnRewardClick(2);"/>
           <Window Type="TLBB_StaticImageNULL" Name="DuanWuCXN_PageIcon2BtnOK">
-            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,18.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.500000,-10.000000},{0.500000,-8.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,18.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.500000,-10.000000},{0.500000,-8.000000}}" />
             <Property Name="RiseOnClick" Value="False"/>
             <Property Name="Image" Value="set:JiXiangNang03 image:HaoYe"/>
           </Window>
           <Window Type="TLBB_StaticImageNULL" Name="DuanWuCXN_PageIcon2BtnTips">
-            <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{1.000000,-13.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{1.000000,-13.000000},{0.000000,0.000000}}" />
             <Property Name="MouseRButtonHollow" Value="True"/>
             <Property Name="MouseMoveHollow" Value="True"/>
             <Property Name="MouseLButtonHollow" Value="True"/>
@@ -438,28 +438,28 @@
         </Window>
         <Window Type="TLBB_SimpleText" Name="DuanWuCXN_PageIcon2Text">
           <Property Name="VertFormatting" Value="BottomAligned"/>
-          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}}" />
           <Property Name="Text" Value="#{DWCXN_20210508_42}"/>
           <Property Name="HorzFormatting" Value="HorzCentred"/>
         </Window>
       </Window>
       <Window Type="DefaultWindow" Name="DuanWuCXN_PageIcon3">
-        <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,52.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,156.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,52.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,156.000000}}" />
         <Window Type="TLBB_ActionButtonNULL" Name="DuanWuCXN_PageIcon3Btn">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.500000,-18.000000},{0.000000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.500000,-18.000000},{0.000000,0.000000}}" />
           <Event Name="Clicked" Function="DuanWuCXN_OnRewardClick(3);"/>
           <Window Type="TLBB_StaticImageNULL" Name="DuanWuCXN_PageIcon3BtnOK">
-            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,18.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.500000,-10.000000},{0.500000,-8.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,18.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.500000,-10.000000},{0.500000,-8.000000}}" />
             <Property Name="RiseOnClick" Value="False"/>
             <Property Name="Image" Value="set:JiXiangNang03 image:HaoYe"/>
           </Window>
           <Window Type="TLBB_StaticImageNULL" Name="DuanWuCXN_PageIcon3BtnTips">
-            <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{1.000000,-13.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{1.000000,-13.000000},{0.000000,0.000000}}" />
             <Property Name="MouseRButtonHollow" Value="True"/>
             <Property Name="MouseMoveHollow" Value="True"/>
             <Property Name="MouseLButtonHollow" Value="True"/>
@@ -470,28 +470,28 @@
         </Window>
         <Window Type="TLBB_SimpleText" Name="DuanWuCXN_PageIcon3Text">
           <Property Name="VertFormatting" Value="BottomAligned"/>
-          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}}" />
           <Property Name="Text" Value="#{DWCXN_20210508_42}"/>
           <Property Name="HorzFormatting" Value="HorzCentred"/>
         </Window>
       </Window>
       <Window Type="DefaultWindow" Name="DuanWuCXN_PageIcon4">
-        <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,52.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,104.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,52.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,104.000000}}" />
         <Window Type="TLBB_ActionButtonNULL" Name="DuanWuCXN_PageIcon4Btn">
-          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.500000,-18.000000},{0.000000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.500000,-18.000000},{0.000000,0.000000}}" />
           <Event Name="Clicked" Function="DuanWuCXN_OnRewardClick(4);"/>
           <Window Type="TLBB_StaticImageNULL" Name="DuanWuCXN_PageIcon4BtnOK">
-            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,18.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.500000,-10.000000},{0.500000,-8.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,18.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.500000,-10.000000},{0.500000,-8.000000}}" />
             <Property Name="RiseOnClick" Value="False"/>
             <Property Name="Image" Value="set:JiXiangNang03 image:HaoYe"/>
           </Window>
           <Window Type="TLBB_StaticImageNULL" Name="DuanWuCXN_PageIcon4BtnTips">
-            <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{1.000000,-13.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{1.000000,-13.000000},{0.000000,0.000000}}" />
             <Property Name="MouseRButtonHollow" Value="True"/>
             <Property Name="MouseMoveHollow" Value="True"/>
             <Property Name="MouseLButtonHollow" Value="True"/>
@@ -502,15 +502,15 @@
         </Window>
         <Window Type="TLBB_SimpleText" Name="DuanWuCXN_PageIcon4Text">
           <Property Name="VertFormatting" Value="BottomAligned"/>
-          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}}" />
           <Property Name="Text" Value="#{DWCXN_20210508_42}"/>
           <Property Name="HorzFormatting" Value="HorzCentred"/>
         </Window>
       </Window>
       <Window Type="TLBB_SimpleText" Name="DuanWuCXN_Down_TextNum">
-        <Property Name="UnifiedSize" Value="{{0.000000,66.000000},{0.000000,72.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{1.000000,-132.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,66.000000},{0.000000,72.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{1.000000,-132.000000}}" />
         <Property Name="Text" Value="#{DWCXN_20210508_45}"/>
         <Property Name="HorzFormatting" Value="WordWrapCentred"/>
       </Window>

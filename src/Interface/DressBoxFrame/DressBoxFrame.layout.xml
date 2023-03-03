@@ -1,43 +1,43 @@
 ﻿<?xml version="1.0" ?>
 <GUILayout>
     <Window Type="TLBB_MainFrame0" Name="DressBox_Frame">
-      <Property Name="UnifiedPosition" Value="{{0.500000,-399.00000},{0.150000,0.000000}" />
+      <Property Name="UnifiedPosition" Value="{{0.500000,-399.00000},{0.150000,0.000000}}" />
       <Property Name="AbsoluteSize" Value="w:798.000000 h:433.000000"  />
         <Window Type="TLBB_DragTitle" Name="DressBox_DragTitle">
             <Property Name="AbsolutePosition" Value="x:40.000000 y:4.000000" />
-            <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}" />
+            <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}}" />
             <Property Name="DragTarget" Value="DressBox_Frame" />
             <Property Name="HorzFormatting" Value="HorzCentred" />
             <Property Name="Font" Value="YouYuan11.25" />
             <Property Name="Text" Value="#{YG_INTERFACE_01}" />
         </Window>
         <Window Type="TLBB_ButtonHelp" Name="DressBox_Help">
-          <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}" />
           <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*DressBoxFrame&quot;);' />
         </Window>
         <Window Type="TLBB_ButtonClose" Name="DressBox_Close">
-          <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
-          <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}" />
             <Event Name="Clicked" Function="DressBoxFrame_CloseWindow();" />
         </Window>
       <Window Type="TLBB_Frame_LaceDress1" Name="DressBox_Lace1">
-        <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,32.000000}" />
-        <Property Name="UnifiedSize" Value="{{1.000000,-16.000000},{0.000000,260.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,32.000000}}" />
+        <Property Name="UnifiedSize" Value="{{1.000000,-16.000000},{0.000000,260.000000}}" />
         <Property Name="RiseOnClick" Value="false" />
       </Window>
       <Window Type="TLBB_Frame_LaceDress2" Name="DressBox_Lace2">
-        <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,292.000000}" />
-        <Property Name="UnifiedSize" Value="{{1.000000,-16.000000},{0.000000,121.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,292.000000}}" />
+        <Property Name="UnifiedSize" Value="{{1.000000,-16.000000},{0.000000,121.000000}}" />
         <Property Name="RiseOnClick" Value="false" />
       </Window>
       <Window Type="DefaultWindow" Name="DressBox_Show">
-        <Property Name="UnifiedPosition" Value="{{0.5000000,-368.000000},{0.000000,45.000000}" />
-        <Property Name="UnifiedSize" Value="{{0.000000,736.000000},{0.000000,239.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.5000000,-368.000000},{0.000000,45.000000}}" />
+        <Property Name="UnifiedSize" Value="{{0.000000,736.000000},{0.000000,239.000000}}" />
         <Property Name="RiseOnClick" Value="false" />
       <Window Type="TLBB_DressFrame" Name="Dress_1">
-        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,3.000000}" />
-        <Property Name="UnifiedSize" Value="{{0.000000,144.000000},{0.000000,233.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,3.000000}}" />
+        <Property Name="UnifiedSize" Value="{{0.000000,144.000000},{0.000000,233.000000}}" />
         <Property Name="RiseOnClick" Value="false" />
         <Window Type="TLBB_MeshWindow" Name="Dress_1_Model">
           <Property Name="Position" Value="x:0.1 y:0.05" />
@@ -45,12 +45,12 @@
           <Property Name="ShowControl" Value="DressBox_Frame" />
         </Window>
         <Window Type="TLBB_StaticImageNULL" Name="Dress_1_Null">
-          <Property Name="UnifiedPosition" Value="{{0.500000,-38.000000},{0.382000,-44.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.500000,-38.000000},{0.382000,-44.000000}}" />
           <Property Name="AbsoluteSize" Value="w:76.000000 h:44.000000" />
           <Property Name="Image" Value="set:DressBox image:DressModel" />
         </Window>
         <Window Type="TLBB_SimpleText" Name="Dress_1_Text">
-          <Property Name="UnifiedPosition" Value="{{0.500000,-65.000000},{1.0,-35.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.500000,-65.000000},{1.0,-35.000000}}" />
           <Property Name="AbsoluteSize" Value="w:130.000000 h:15.000000" />
           <Property Name="RiseOnClick" Value="false" />
           <Property Name="TextColor" Value="FFFFF263" />
@@ -58,7 +58,7 @@
           <Property Name="HorzFormatting" Value="WordWrapCentred"/>
         </Window>
         <Window Type="TLBB_SimpleText" Name="Dress_1_Text2">
-          <Property Name="UnifiedPosition" Value="{{0.500000,-65.000000},{1.0,-20.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.500000,-65.000000},{1.0,-20.000000}}" />
           <Property Name="AbsoluteSize" Value="w:130.000000 h:15.000000" />
           <Property Name="RiseOnClick" Value="false" />
           <Property Name="Text" Value="" />
@@ -66,15 +66,15 @@
         </Window>
       </Window>
       <Window Type="TLBB_ButtonDressSelect" Name="Dress_1_Button">
-        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,3.000000}" />
-        <Property Name="UnifiedSize" Value="{{0.000000,144.000000},{0.000000,233.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,3.000000}}" />
+        <Property Name="UnifiedSize" Value="{{0.000000,144.000000},{0.000000,233.000000}}" />
         <Property Name="CheckMode" Value="1" />
         <Event Name="Clicked" Function="DressBoxFrame_DressButton_BtnClick(1);" />
 	<Event Name="RBClicked" Function="DressBoxFrame_DressButton_RBtnClick(1);" />
 	<Event Name="MouseEnter" Function="DressBoxFrame_DressBox_MouseEnter();" />
 	<Event Name="MouseLeave" Function="DressBoxFrame_DressBox_MouseLeave();" />
         <Window Type="TLBB_ButtonNULL" Name="Dress_1_ButtonL" >
-          <Property Name="UnifiedPosition" Value="{{0,119.000000},{0.0,205.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0,119.000000},{0.0,205.000000}}" />
           <Property Name="UnifiedSize" Value="{{0.0, 16},{0, 14}}" />
           <Property Name="NormalImage" Value="set:DressBox image:DressBoxButton_Right_Normal" />
           <Property Name="HoverImage" Value="set:DressBox image:DressBoxButton_Right_Hover" />
@@ -83,7 +83,7 @@
           <Event Name="MouseButtonUp" Function="DressBoxFrame_Fitting_TurnLeft(1,0);" />
         </Window>
         <Window Type="TLBB_ButtonNULL" Name="Dress_1_ButtonR" >
-          <Property Name="UnifiedPosition" Value="{{0,9.000000},{0.0,205.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0,9.000000},{0.0,205.000000}}" />
           <Property Name="UnifiedSize" Value="{{0.0, 16},{0, 14}}" />
 
           <Property Name="NormalImage" Value="set:DressBox image:DressBoxButton_Left_Normal" />
@@ -96,8 +96,8 @@
 
 
       <Window Type="TLBB_DressFrame" Name="Dress_2">
-        <Property Name="UnifiedPosition" Value="{{0.000000,149.000000},{0.000000,3.000000}" />
-        <Property Name="UnifiedSize" Value="{{0.000000,144.000000},{0.000000,233.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,149.000000},{0.000000,3.000000}}" />
+        <Property Name="UnifiedSize" Value="{{0.000000,144.000000},{0.000000,233.000000}}" />
         <Property Name="RiseOnClick" Value="false" />
         <Window Type="TLBB_MeshWindow" Name="Dress_2_Model">
           <Property Name="Position" Value="x:0.1 y:0.05" />
@@ -105,12 +105,12 @@
           <Property Name="ShowControl" Value="DressBox_Frame" />
         </Window>
         <Window Type="TLBB_StaticImageNULL" Name="Dress_2_Null">
-          <Property Name="UnifiedPosition" Value="{{0.500000,-38.000000},{0.382000,-44.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.500000,-38.000000},{0.382000,-44.000000}}" />
           <Property Name="AbsoluteSize" Value="w:76.000000 h:44.000000" />
           <Property Name="Image" Value="set:DressBox image:DressModel" />
         </Window>
         <Window Type="TLBB_SimpleText" Name="Dress_2_Text">
-          <Property Name="UnifiedPosition" Value="{{0.500000,-65.000000},{1.0,-35.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.500000,-65.000000},{1.0,-35.000000}}" />
           <Property Name="AbsoluteSize" Value="w:130.000000 h:15.000000" />
           <Property Name="RiseOnClick" Value="false" />
           <Property Name="TextColor" Value="FFFFF263" />
@@ -118,7 +118,7 @@
           <Property Name="HorzFormatting" Value="WordWrapCentred"/>
         </Window>
         <Window Type="TLBB_SimpleText" Name="Dress_2_Text2">
-          <Property Name="UnifiedPosition" Value="{{0.500000,-65.000000},{1.0,-20.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.500000,-65.000000},{1.0,-20.000000}}" />
           <Property Name="AbsoluteSize" Value="w:130.000000 h:15.000000" />
           <Property Name="RiseOnClick" Value="false" />
           <Property Name="Text" Value="" />
@@ -127,15 +127,15 @@
       </Window>
 
       <Window Type="TLBB_ButtonDressSelect" Name="Dress_2_Button">
-        <Property Name="UnifiedPosition" Value="{{0.000000,149.000000},{0.000000,3.000000}" />
-        <Property Name="UnifiedSize" Value="{{0.000000,144.000000},{0.000000,233.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,149.000000},{0.000000,3.000000}}" />
+        <Property Name="UnifiedSize" Value="{{0.000000,144.000000},{0.000000,233.000000}}" />
         <Property Name="CheckMode" Value="1" />
 	      <Event Name="Clicked" Function="DressBoxFrame_DressButton_BtnClick(2);" />
 	      <Event Name="RBClicked" Function="DressBoxFrame_DressButton_RBtnClick(2);" />
 	<Event Name="MouseEnter" Function="DressBoxFrame_DressBox_MouseEnter();" />
 	<Event Name="MouseLeave" Function="DressBoxFrame_DressBox_MouseLeave();" />
         <Window Type="TLBB_ButtonNULL" Name="Dress_2_ButtonL" >
-          <Property Name="UnifiedPosition" Value="{{0,119.000000},{0.0,205.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0,119.000000},{0.0,205.000000}}" />
           <Property Name="UnifiedSize" Value="{{0.0, 16},{0, 14}}" />
           <Property Name="NormalImage" Value="set:DressBox image:DressBoxButton_Right_Normal" />
           <Property Name="HoverImage" Value="set:DressBox image:DressBoxButton_Right_Hover" />
@@ -144,7 +144,7 @@
           <Event Name="MouseButtonUp" Function="DressBoxFrame_Fitting_TurnLeft(2,0);" />
         </Window>
         <Window Type="TLBB_ButtonNULL" Name="Dress_2_ButtonR" >
-          <Property Name="UnifiedPosition" Value="{{0,9.000000},{0.0,205.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0,9.000000},{0.0,205.000000}}" />
           <Property Name="UnifiedSize" Value="{{0.0, 16},{0, 14}}" />
           <Property Name="NormalImage" Value="set:DressBox image:DressBoxButton_Left_Normal" />
           <Property Name="HoverImage" Value="set:DressBox image:DressBoxButton_Left_Hover" />
@@ -157,8 +157,8 @@
       </Window>
 
       <Window Type="TLBB_DressFrame" Name="Dress_3">
-        <Property Name="UnifiedPosition" Value="{{0.000000,296.000000},{0.000000,3.000000}" />
-        <Property Name="UnifiedSize" Value="{{0.000000,144.000000},{0.000000,233.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,296.000000},{0.000000,3.000000}}" />
+        <Property Name="UnifiedSize" Value="{{0.000000,144.000000},{0.000000,233.000000}}" />
         <Property Name="RiseOnClick" Value="false" />
         <Window Type="TLBB_MeshWindow" Name="Dress_3_Model">
           <Property Name="Position" Value="x:0.1 y:0.05" />
@@ -166,12 +166,12 @@
           <Property Name="ShowControl" Value="DressBox_Frame" />
         </Window>
         <Window Type="TLBB_StaticImageNULL" Name="Dress_3_Null">
-          <Property Name="UnifiedPosition" Value="{{0.500000,-38.000000},{0.382000,-44.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.500000,-38.000000},{0.382000,-44.000000}}" />
           <Property Name="AbsoluteSize" Value="w:76.000000 h:44.000000" />
           <Property Name="Image" Value="set:DressBox image:DressModel" />
         </Window>
         <Window Type="TLBB_SimpleText" Name="Dress_3_Text">
-          <Property Name="UnifiedPosition" Value="{{0.500000,-65.000000},{1.0,-35.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.500000,-65.000000},{1.0,-35.000000}}" />
           <Property Name="AbsoluteSize" Value="w:130.000000 h:15.000000" />
           <Property Name="RiseOnClick" Value="false" />
           <Property Name="TextColor" Value="FFFFF263" />
@@ -179,7 +179,7 @@
           <Property Name="HorzFormatting" Value="WordWrapCentred"/>
         </Window>
         <Window Type="TLBB_SimpleText" Name="Dress_3_Text2">
-          <Property Name="UnifiedPosition" Value="{{0.500000,-65.000000},{1.0,-20.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.500000,-65.000000},{1.0,-20.000000}}" />
           <Property Name="AbsoluteSize" Value="w:130.000000 h:15.000000" />
           <Property Name="RiseOnClick" Value="false" />
           <Property Name="Text" Value="" />
@@ -188,15 +188,15 @@
       </Window>
 
       <Window Type="TLBB_ButtonDressSelect" Name="Dress_3_Button">
-        <Property Name="UnifiedPosition" Value="{{0.000000,296.000000},{0.000000,3.000000}" />
-        <Property Name="UnifiedSize" Value="{{0.000000,144.000000},{0.000000,233.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,296.000000},{0.000000,3.000000}}" />
+        <Property Name="UnifiedSize" Value="{{0.000000,144.000000},{0.000000,233.000000}}" />
         <Property Name="CheckMode" Value="1" />
 	      <Event Name="Clicked" Function="DressBoxFrame_DressButton_BtnClick(3);" />
 	      <Event Name="RBClicked" Function="DressBoxFrame_DressButton_RBtnClick(3);" />
 	<Event Name="MouseEnter" Function="DressBoxFrame_DressBox_MouseEnter();" />
 	<Event Name="MouseLeave" Function="DressBoxFrame_DressBox_MouseLeave();" />
         <Window Type="TLBB_ButtonNULL" Name="Dress_3_ButtonL" >
-          <Property Name="UnifiedPosition" Value="{{0,119.000000},{0.0,205.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0,119.000000},{0.0,205.000000}}" />
           <Property Name="UnifiedSize" Value="{{0.0, 16},{0, 14}}" />
           <Property Name="NormalImage" Value="set:DressBox image:DressBoxButton_Right_Normal" />
           <Property Name="HoverImage" Value="set:DressBox image:DressBoxButton_Right_Hover" />
@@ -205,7 +205,7 @@
           <Event Name="MouseButtonUp" Function="DressBoxFrame_Fitting_TurnLeft(3,0);" />
         </Window>
         <Window Type="TLBB_ButtonNULL" Name="Dress_3_ButtonR" >
-          <Property Name="UnifiedPosition" Value="{{0,9.000000},{0.0,205.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0,9.000000},{0.0,205.000000}}" />
           <Property Name="UnifiedSize" Value="{{0.0, 16},{0, 14}}" />
 
           <Property Name="NormalImage" Value="set:DressBox image:DressBoxButton_Left_Normal" />
@@ -218,8 +218,8 @@
 
 
       <Window Type="TLBB_DressFrame" Name="Dress_4">
-        <Property Name="UnifiedPosition" Value="{{0.000000,443.000000},{0.000000,3.000000}" />
-        <Property Name="UnifiedSize" Value="{{0.000000,144.000000},{0.000000,233.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,443.000000},{0.000000,3.000000}}" />
+        <Property Name="UnifiedSize" Value="{{0.000000,144.000000},{0.000000,233.000000}}" />
         <Property Name="RiseOnClick" Value="false" />
         <Window Type="TLBB_MeshWindow" Name="Dress_4_Model">
           <Property Name="Position" Value="x:0.1 y:0.05" />
@@ -227,12 +227,12 @@
           <Property Name="ShowControl" Value="DressBox_Frame" />
         </Window>
         <Window Type="TLBB_StaticImageNULL" Name="Dress_4_Null">
-          <Property Name="UnifiedPosition" Value="{{0.500000,-38.000000},{0.382000,-44.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.500000,-38.000000},{0.382000,-44.000000}}" />
           <Property Name="AbsoluteSize" Value="w:76.000000 h:44.000000" />
           <Property Name="Image" Value="set:DressBox image:DressModel" />
         </Window>
         <Window Type="TLBB_SimpleText" Name="Dress_4_Text">
-          <Property Name="UnifiedPosition" Value="{{0.500000,-65.000000},{1.0,-35.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.500000,-65.000000},{1.0,-35.000000}}" />
           <Property Name="AbsoluteSize" Value="w:130.000000 h:15.000000" />
           <Property Name="RiseOnClick" Value="false" />
           <Property Name="TextColor" Value="FFFFF263" />
@@ -240,7 +240,7 @@
           <Property Name="HorzFormatting" Value="WordWrapCentred"/>
         </Window>
         <Window Type="TLBB_SimpleText" Name="Dress_4_Text2">
-          <Property Name="UnifiedPosition" Value="{{0.500000,-65.000000},{1.0,-20.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.500000,-65.000000},{1.0,-20.000000}}" />
           <Property Name="AbsoluteSize" Value="w:130.000000 h:15.000000" />
           <Property Name="RiseOnClick" Value="false" />
           <Property Name="Text" Value="" />
@@ -249,15 +249,15 @@
       </Window>
 
       <Window Type="TLBB_ButtonDressSelect" Name="Dress_4_Button">
-        <Property Name="UnifiedPosition" Value="{{0.000000,443.000000},{0.000000,3.000000}" />
-        <Property Name="UnifiedSize" Value="{{0.000000,144.000000},{0.000000,233.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,443.000000},{0.000000,3.000000}}" />
+        <Property Name="UnifiedSize" Value="{{0.000000,144.000000},{0.000000,233.000000}}" />
         <Property Name="CheckMode" Value="1" />
 	      <Event Name="Clicked" Function="DressBoxFrame_DressButton_BtnClick(4);" />
 	      <Event Name="RBClicked" Function="DressBoxFrame_DressButton_RBtnClick(4);" />
 	<Event Name="MouseEnter" Function="DressBoxFrame_DressBox_MouseEnter();" />
 	<Event Name="MouseLeave" Function="DressBoxFrame_DressBox_MouseLeave();" />
         <Window Type="TLBB_ButtonNULL" Name="Dress_4_ButtonL" >
-          <Property Name="UnifiedPosition" Value="{{0,119.000000},{0.0,205.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0,119.000000},{0.0,205.000000}}" />
           <Property Name="UnifiedSize" Value="{{0.0, 16},{0, 14}}" />
           <Property Name="NormalImage" Value="set:DressBox image:DressBoxButton_Right_Normal" />
           <Property Name="HoverImage" Value="set:DressBox image:DressBoxButton_Right_Hover" />
@@ -266,7 +266,7 @@
           <Event Name="MouseButtonUp" Function="DressBoxFrame_Fitting_TurnLeft(4,0);" />
         </Window>
         <Window Type="TLBB_ButtonNULL" Name="Dress_4_ButtonR" >
-          <Property Name="UnifiedPosition" Value="{{0,9.000000},{0.0,205.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0,9.000000},{0.0,205.000000}}" />
           <Property Name="UnifiedSize" Value="{{0.0, 16},{0, 14}}" />
 
           <Property Name="NormalImage" Value="set:DressBox image:DressBoxButton_Left_Normal" />
@@ -279,8 +279,8 @@
 
 
       <Window Type="TLBB_DressFrame" Name="Dress_5">
-        <Property Name="UnifiedPosition" Value="{{0.000000,590.000000},{0.000000,3.000000}" />
-        <Property Name="UnifiedSize" Value="{{0.000000,144.000000},{0.000000,233.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,590.000000},{0.000000,3.000000}}" />
+        <Property Name="UnifiedSize" Value="{{0.000000,144.000000},{0.000000,233.000000}}" />
         <Property Name="RiseOnClick" Value="false" />
         <Window Type="TLBB_MeshWindow" Name="Dress_5_Model">
           <Property Name="Position" Value="x:0.1 y:0.05" />
@@ -288,12 +288,12 @@
           <Property Name="ShowControl" Value="DressBox_Frame" />
         </Window>
         <Window Type="TLBB_StaticImageNULL" Name="Dress_5_Null">
-          <Property Name="UnifiedPosition" Value="{{0.500000,-38.000000},{0.382000,-44.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.500000,-38.000000},{0.382000,-44.000000}}" />
           <Property Name="AbsoluteSize" Value="w:76.000000 h:44.000000" />
           <Property Name="Image" Value="set:DressBox image:DressModel" />
         </Window>
         <Window Type="TLBB_SimpleText" Name="Dress_5_Text">
-          <Property Name="UnifiedPosition" Value="{{0.500000,-65.000000},{1.0,-35.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.500000,-65.000000},{1.0,-35.000000}}" />
           <Property Name="AbsoluteSize" Value="w:130.000000 h:15.000000" />
           <Property Name="RiseOnClick" Value="false" />
           <Property Name="TextColor" Value="FFFFF263" />
@@ -301,7 +301,7 @@
           <Property Name="HorzFormatting" Value="WordWrapCentred"/>
         </Window>
         <Window Type="TLBB_SimpleText" Name="Dress_5_Text2">
-          <Property Name="UnifiedPosition" Value="{{0.500000,-65.000000},{1.0,-20.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.500000,-65.000000},{1.0,-20.000000}}" />
           <Property Name="AbsoluteSize" Value="w:130.000000 h:15.000000" />
           <Property Name="RiseOnClick" Value="false" />
           <Property Name="Text" Value="" />
@@ -310,15 +310,15 @@
       </Window>
 
       <Window Type="TLBB_ButtonDressSelect" Name="Dress_5_Button">
-        <Property Name="UnifiedPosition" Value="{{0.000000,590.000000},{0.000000,3.000000}" />
-        <Property Name="UnifiedSize" Value="{{0.000000,144.000000},{0.000000,233.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,590.000000},{0.000000,3.000000}}" />
+        <Property Name="UnifiedSize" Value="{{0.000000,144.000000},{0.000000,233.000000}}" />
         <Property Name="CheckMode" Value="1" />
       	<Event Name="Clicked" Function="DressBoxFrame_DressButton_BtnClick(5);" />
 	      <Event Name="RBClicked" Function="DressBoxFrame_DressButton_RBtnClick(5);" />
 	<Event Name="MouseEnter" Function="DressBoxFrame_DressBox_MouseEnter();" />
 	<Event Name="MouseLeave" Function="DressBoxFrame_DressBox_MouseLeave();" />
         <Window Type="TLBB_ButtonNULL" Name="Dress_5_ButtonL" >
-          <Property Name="UnifiedPosition" Value="{{0,119.000000},{0.0,205.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0,119.000000},{0.0,205.000000}}" />
           <Property Name="UnifiedSize" Value="{{0.0, 16},{0, 14}}" />
           <Property Name="NormalImage" Value="set:DressBox image:DressBoxButton_Right_Normal" />
           <Property Name="HoverImage" Value="set:DressBox image:DressBoxButton_Right_Hover" />
@@ -327,7 +327,7 @@
           <Event Name="MouseButtonUp" Function="DressBoxFrame_Fitting_TurnLeft(5,0);" />
         </Window>
         <Window Type="TLBB_ButtonNULL" Name="Dress_5_ButtonR" >
-          <Property Name="UnifiedPosition" Value="{{0,9.000000},{0.0,205.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0,9.000000},{0.0,205.000000}}" />
           <Property Name="UnifiedSize" Value="{{0.0, 16},{0, 14}}" />
 
           <Property Name="NormalImage" Value="set:DressBox image:DressBoxButton_Left_Normal" />
@@ -341,13 +341,13 @@
     </Window>
       
       <Window Type="DefaultWindow" Name="DressBox_Bank">
-        <Property Name="UnifiedPosition" Value="{{0.5000000,-278.000000},{0.000000,301.000000}" />
-        <Property Name="UnifiedSize" Value="{{0.000000,555.000000},{0.000000,37.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.5000000,-278.000000},{0.000000,301.000000}}" />
+        <Property Name="UnifiedSize" Value="{{0.000000,555.000000},{0.000000,37.000000}}" />
         <Property Name="RiseOnClick" Value="false" />
 
        <Window Type="TLBB_ActionButtonDress" Name="DressBox_Bank1">
-         <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}" />
-         <Property Name="UnifiedSize" Value="{{0.000000,35.000000},{0.000000,35.000000}" />
+         <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}" />
+         <Property Name="UnifiedSize" Value="{{0.000000,35.000000},{0.000000,35.000000}}" />
           <Property Name="DraggingEnabled" Value="True" />
  	  <Property Name="DragAcceptName" Value="H00" />
           <Event Name="RBClicked" Function="DressBoxFrame_RBtnClicked(1);" />
@@ -357,8 +357,8 @@
 	</Window>
 
         <Window Type="TLBB_ActionButtonDress" Name="DressBox_Bank2">
-          <Property Name="UnifiedPosition" Value="{{0.000000,38.000000},{0.000000,1.000000}" />
-          <Property Name="UnifiedSize" Value="{{0.000000,35.000000},{0.000000,35.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,38.000000},{0.000000,1.000000}}" />
+          <Property Name="UnifiedSize" Value="{{0.000000,35.000000},{0.000000,35.000000}}" />
           <Property Name="DraggingEnabled" Value="True" />
 	  <Property Name="DragAcceptName" Value="H01" />
           <Event Name="RBClicked" Function="DressBoxFrame_RBtnClicked(2);" />
@@ -368,8 +368,8 @@
         </Window>
         
         <Window Type="TLBB_ActionButtonDress" Name="DressBox_Bank3">
-         <Property Name="UnifiedPosition" Value="{{0.000000,75.000000},{0.000000,1.000000}" />
-         <Property Name="UnifiedSize" Value="{{0.000000,35.000000},{0.000000,35.000000}" />
+         <Property Name="UnifiedPosition" Value="{{0.000000,75.000000},{0.000000,1.000000}}" />
+         <Property Name="UnifiedSize" Value="{{0.000000,35.000000},{0.000000,35.000000}}" />
           <Property Name="DraggingEnabled" Value="True" />
 	  <Property Name="DragAcceptName" Value="H02" />
           <Event Name="RBClicked" Function="DressBoxFrame_RBtnClicked(3);" />
@@ -379,8 +379,8 @@
 	</Window>
 
         <Window Type="TLBB_ActionButtonDress" Name="DressBox_Bank4">
-          <Property Name="UnifiedPosition" Value="{{0.000000,112.000000},{0.000000,1.000000}" />
-          <Property Name="UnifiedSize" Value="{{0.000000,35.000000},{0.000000,35.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,112.000000},{0.000000,1.000000}}" />
+          <Property Name="UnifiedSize" Value="{{0.000000,35.000000},{0.000000,35.000000}}" />
           <Property Name="DraggingEnabled" Value="True" />
 	  <Property Name="DragAcceptName" Value="H03" />
           <Event Name="RBClicked" Function="DressBoxFrame_RBtnClicked(4);" />
@@ -390,8 +390,8 @@
         </Window>
 
         <Window Type="TLBB_ActionButtonDress" Name="DressBox_Bank5">
-          <Property Name="UnifiedPosition" Value="{{0.000000,149.000000},{0.000000,1.000000}" />
-          <Property Name="UnifiedSize" Value="{{0.000000,35.000000},{0.000000,35.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,149.000000},{0.000000,1.000000}}" />
+          <Property Name="UnifiedSize" Value="{{0.000000,35.000000},{0.000000,35.000000}}" />
           <Property Name="DraggingEnabled" Value="True" />
 	  <Property Name="DragAcceptName" Value="H04" />
           <Event Name="RBClicked" Function="DressBoxFrame_RBtnClicked(5);" />
@@ -401,8 +401,8 @@
         </Window>
         
         <Window Type="TLBB_ActionButtonDress" Name="DressBox_Bank6">
-         <Property Name="UnifiedPosition" Value="{{0.000000,186.000000},{0.000000,1.000000}" />
-         <Property Name="UnifiedSize" Value="{{0.000000,35.000000},{0.000000,35.000000}" />
+         <Property Name="UnifiedPosition" Value="{{0.000000,186.000000},{0.000000,1.000000}}" />
+         <Property Name="UnifiedSize" Value="{{0.000000,35.000000},{0.000000,35.000000}}" />
           <Property Name="DraggingEnabled" Value="True" />
 	  <Property Name="DragAcceptName" Value="H05" />
           <Event Name="RBClicked" Function="DressBoxFrame_RBtnClicked(6);" />
@@ -412,8 +412,8 @@
 	</Window>
         
         <Window Type="TLBB_ActionButtonDress" Name="DressBox_Bank7">
-         <Property Name="UnifiedPosition" Value="{{0.000000,223.000000},{0.000000,1.000000}" />
-         <Property Name="UnifiedSize" Value="{{0.000000,35.000000},{0.000000,35.000000}" />
+         <Property Name="UnifiedPosition" Value="{{0.000000,223.000000},{0.000000,1.000000}}" />
+         <Property Name="UnifiedSize" Value="{{0.000000,35.000000},{0.000000,35.000000}}" />
           <Property Name="DraggingEnabled" Value="True" />
 	  <Property Name="DragAcceptName" Value="H06" />
           <Event Name="RBClicked" Function="DressBoxFrame_RBtnClicked(7);" />
@@ -423,8 +423,8 @@
         </Window>
 
         <Window Type="TLBB_ActionButtonDress" Name="DressBox_Bank8">
-          <Property Name="UnifiedPosition" Value="{{0.000000,260.000000},{0.000000,1.000000}" />
-          <Property Name="UnifiedSize" Value="{{0.000000,35.000000},{0.000000,35.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,260.000000},{0.000000,1.000000}}" />
+          <Property Name="UnifiedSize" Value="{{0.000000,35.000000},{0.000000,35.000000}}" />
           <Property Name="DraggingEnabled" Value="True" />
 	  <Property Name="DragAcceptName" Value="H07" />
           <Event Name="RBClicked" Function="DressBoxFrame_RBtnClicked(8);" />
@@ -434,8 +434,8 @@
         </Window>
 
         <Window Type="TLBB_ActionButtonDress" Name="DressBox_Bank9">
-          <Property Name="UnifiedPosition" Value="{{0.000000,297.000000},{0.000000,1.000000}" />
-          <Property Name="UnifiedSize" Value="{{0.000000,35.000000},{0.000000,35.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,297.000000},{0.000000,1.000000}}" />
+          <Property Name="UnifiedSize" Value="{{0.000000,35.000000},{0.000000,35.000000}}" />
           <Property Name="DraggingEnabled" Value="True" />
 	  <Property Name="DragAcceptName" Value="H08" />
           <Event Name="RBClicked" Function="DressBoxFrame_RBtnClicked(9);" />
@@ -445,8 +445,8 @@
         </Window>
 
         <Window Type="TLBB_ActionButtonDress" Name="DressBox_Bank10">
-          <Property Name="UnifiedPosition" Value="{{0.000000,334.000000},{0.000000,1.000000}" />
-          <Property Name="UnifiedSize" Value="{{0.000000,35.000000},{0.000000,35.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,334.000000},{0.000000,1.000000}}" />
+          <Property Name="UnifiedSize" Value="{{0.000000,35.000000},{0.000000,35.000000}}" />
           <Property Name="DraggingEnabled" Value="True" />
 	  <Property Name="DragAcceptName" Value="H09" />
           <Event Name="RBClicked" Function="DressBoxFrame_RBtnClicked(10);" />
@@ -456,8 +456,8 @@
         </Window>
 
         <Window Type="TLBB_ActionButtonDress" Name="DressBox_Bank11">
-          <Property Name="UnifiedPosition" Value="{{0.000000,371.000000},{0.000000,1.000000}" />
-          <Property Name="UnifiedSize" Value="{{0.000000,35.000000},{0.000000,35.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,371.000000},{0.000000,1.000000}}" />
+          <Property Name="UnifiedSize" Value="{{0.000000,35.000000},{0.000000,35.000000}}" />
           <Property Name="DraggingEnabled" Value="True" />
 	  <Property Name="DragAcceptName" Value="H10" />
           <Event Name="RBClicked" Function="DressBoxFrame_RBtnClicked(11);" />
@@ -467,8 +467,8 @@
         </Window>
 
         <Window Type="TLBB_ActionButtonDress" Name="DressBox_Bank12">
-          <Property Name="UnifiedPosition" Value="{{0.000000,408.000000},{0.000000,1.000000}" />
-          <Property Name="UnifiedSize" Value="{{0.000000,35.000000},{0.000000,35.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,408.000000},{0.000000,1.000000}}" />
+          <Property Name="UnifiedSize" Value="{{0.000000,35.000000},{0.000000,35.000000}}" />
           <Property Name="DraggingEnabled" Value="True" />
 	  <Property Name="DragAcceptName" Value="H11" />
           <Event Name="RBClicked" Function="DressBoxFrame_RBtnClicked(12);" />
@@ -478,8 +478,8 @@
         </Window>
 
         <Window Type="TLBB_ActionButtonDress" Name="DressBox_Bank13">
-          <Property Name="UnifiedPosition" Value="{{0.000000,445.000000},{0.000000,1.000000}" />
-          <Property Name="UnifiedSize" Value="{{0.000000,35.000000},{0.000000,35.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,445.000000},{0.000000,1.000000}}" />
+          <Property Name="UnifiedSize" Value="{{0.000000,35.000000},{0.000000,35.000000}}" />
           <Property Name="DraggingEnabled" Value="True" />
 	  <Property Name="DragAcceptName" Value="H12" />
           <Event Name="RBClicked" Function="DressBoxFrame_RBtnClicked(13);" />
@@ -489,8 +489,8 @@
         </Window>
 
         <Window Type="TLBB_ActionButtonDress" Name="DressBox_Bank14">
-          <Property Name="UnifiedPosition" Value="{{0.000000,482.000000},{0.000000,1.000000}" />
-          <Property Name="UnifiedSize" Value="{{0.000000,35.000000},{0.000000,35.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,482.000000},{0.000000,1.000000}}" />
+          <Property Name="UnifiedSize" Value="{{0.000000,35.000000},{0.000000,35.000000}}" />
           <Property Name="DraggingEnabled" Value="True" />
 	  <Property Name="DragAcceptName" Value="H13" />
           <Event Name="RBClicked" Function="DressBoxFrame_RBtnClicked(14);" />
@@ -500,8 +500,8 @@
         </Window>
 
         <Window Type="TLBB_ActionButtonDress" Name="DressBox_Bank15">
-          <Property Name="UnifiedPosition" Value="{{0.000000,519.000000},{0.000000,1.000000}" />
-          <Property Name="UnifiedSize" Value="{{0.000000,35.000000},{0.000000,35.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,519.000000},{0.000000,1.000000}}" />
+          <Property Name="UnifiedSize" Value="{{0.000000,35.000000},{0.000000,35.000000}}" />
           <Property Name="DraggingEnabled" Value="True" />
 	  <Property Name="DragAcceptName" Value="H14" />
           <Event Name="RBClicked" Function="DressBoxFrame_RBtnClicked(15);" />
@@ -511,14 +511,14 @@
         </Window>
       </Window>
       <Window Type="DefaultWindow" Name="DressBox_Bank_2">
-        <Property Name="UnifiedPosition" Value="{{0.5000000,-278.000000},{0.000000,301.000000}" />
-        <Property Name="UnifiedSize" Value="{{0.000000,555.000000},{0.000000,37.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.5000000,-278.000000},{0.000000,301.000000}}" />
+        <Property Name="UnifiedSize" Value="{{0.000000,555.000000},{0.000000,37.000000}}" />
         <Property Name="RiseOnClick" Value="false" />
         <Property Name="Visible" Value="False"/>
 
         <Window Type="TLBB_ActionButtonDress" Name="DressBox_Bank1_2">
-          <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}" />
-          <Property Name="UnifiedSize" Value="{{0.000000,35.000000},{0.000000,35.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}" />
+          <Property Name="UnifiedSize" Value="{{0.000000,35.000000},{0.000000,35.000000}}" />
           <Property Name="DraggingEnabled" Value="True" />
           <Property Name="DragAcceptName" Value="H15" />
           <Event Name="RBClicked" Function="DressBoxFrame_RBtnClicked(16);" />
@@ -528,8 +528,8 @@
         </Window>
 
         <Window Type="TLBB_ActionButtonDress" Name="DressBox_Bank2_2">
-          <Property Name="UnifiedPosition" Value="{{0.000000,38.000000},{0.000000,1.000000}" />
-          <Property Name="UnifiedSize" Value="{{0.000000,35.000000},{0.000000,35.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,38.000000},{0.000000,1.000000}}" />
+          <Property Name="UnifiedSize" Value="{{0.000000,35.000000},{0.000000,35.000000}}" />
           <Property Name="DraggingEnabled" Value="True" />
           <Property Name="DragAcceptName" Value="H16" />
           <Event Name="RBClicked" Function="DressBoxFrame_RBtnClicked(17);" />
@@ -539,8 +539,8 @@
         </Window>
 
         <Window Type="TLBB_ActionButtonDress" Name="DressBox_Bank3_2">
-          <Property Name="UnifiedPosition" Value="{{0.000000,75.000000},{0.000000,1.000000}" />
-          <Property Name="UnifiedSize" Value="{{0.000000,35.000000},{0.000000,35.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,75.000000},{0.000000,1.000000}}" />
+          <Property Name="UnifiedSize" Value="{{0.000000,35.000000},{0.000000,35.000000}}" />
           <Property Name="DraggingEnabled" Value="True" />
           <Property Name="DragAcceptName" Value="H17" />
           <Event Name="RBClicked" Function="DressBoxFrame_RBtnClicked(18);" />
@@ -550,8 +550,8 @@
         </Window>
 
         <Window Type="TLBB_ActionButtonDress" Name="DressBox_Bank4_2">
-          <Property Name="UnifiedPosition" Value="{{0.000000,112.000000},{0.000000,1.000000}" />
-          <Property Name="UnifiedSize" Value="{{0.000000,35.000000},{0.000000,35.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,112.000000},{0.000000,1.000000}}" />
+          <Property Name="UnifiedSize" Value="{{0.000000,35.000000},{0.000000,35.000000}}" />
           <Property Name="DraggingEnabled" Value="True" />
           <Property Name="DragAcceptName" Value="H18" />
           <Event Name="RBClicked" Function="DressBoxFrame_RBtnClicked(19);" />
@@ -561,8 +561,8 @@
         </Window>
 
         <Window Type="TLBB_ActionButtonDress" Name="DressBox_Bank5_2">
-          <Property Name="UnifiedPosition" Value="{{0.000000,149.000000},{0.000000,1.000000}" />
-          <Property Name="UnifiedSize" Value="{{0.000000,35.000000},{0.000000,35.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,149.000000},{0.000000,1.000000}}" />
+          <Property Name="UnifiedSize" Value="{{0.000000,35.000000},{0.000000,35.000000}}" />
           <Property Name="DraggingEnabled" Value="True" />
           <Property Name="DragAcceptName" Value="H19" />
           <Event Name="RBClicked" Function="DressBoxFrame_RBtnClicked(20);" />
@@ -572,8 +572,8 @@
         </Window>
 
         <Window Type="TLBB_ActionButtonDress" Name="DressBox_Bank6_2">
-          <Property Name="UnifiedPosition" Value="{{0.000000,186.000000},{0.000000,1.000000}" />
-          <Property Name="UnifiedSize" Value="{{0.000000,35.000000},{0.000000,35.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,186.000000},{0.000000,1.000000}}" />
+          <Property Name="UnifiedSize" Value="{{0.000000,35.000000},{0.000000,35.000000}}" />
           <Property Name="DraggingEnabled" Value="True" />
           <Property Name="DragAcceptName" Value="H20" />
           <Event Name="RBClicked" Function="DressBoxFrame_RBtnClicked(21);" />
@@ -583,8 +583,8 @@
         </Window>
 
         <Window Type="TLBB_ActionButtonDress" Name="DressBox_Bank7_2">
-          <Property Name="UnifiedPosition" Value="{{0.000000,223.000000},{0.000000,1.000000}" />
-          <Property Name="UnifiedSize" Value="{{0.000000,35.000000},{0.000000,35.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,223.000000},{0.000000,1.000000}}" />
+          <Property Name="UnifiedSize" Value="{{0.000000,35.000000},{0.000000,35.000000}}" />
           <Property Name="DraggingEnabled" Value="True" />
           <Property Name="DragAcceptName" Value="H21" />
           <Event Name="RBClicked" Function="DressBoxFrame_RBtnClicked(22);" />
@@ -594,8 +594,8 @@
         </Window>
 
         <Window Type="TLBB_ActionButtonDress" Name="DressBox_Bank8_2">
-          <Property Name="UnifiedPosition" Value="{{0.000000,260.000000},{0.000000,1.000000}" />
-          <Property Name="UnifiedSize" Value="{{0.000000,35.000000},{0.000000,35.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,260.000000},{0.000000,1.000000}}" />
+          <Property Name="UnifiedSize" Value="{{0.000000,35.000000},{0.000000,35.000000}}" />
           <Property Name="DraggingEnabled" Value="True" />
           <Property Name="DragAcceptName" Value="H22" />
           <Event Name="RBClicked" Function="DressBoxFrame_RBtnClicked(23);" />
@@ -605,8 +605,8 @@
         </Window>
 
         <Window Type="TLBB_ActionButtonDress" Name="DressBox_Bank9_2">
-          <Property Name="UnifiedPosition" Value="{{0.000000,297.000000},{0.000000,1.000000}" />
-          <Property Name="UnifiedSize" Value="{{0.000000,35.000000},{0.000000,35.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,297.000000},{0.000000,1.000000}}" />
+          <Property Name="UnifiedSize" Value="{{0.000000,35.000000},{0.000000,35.000000}}" />
           <Property Name="DraggingEnabled" Value="True" />
           <Property Name="DragAcceptName" Value="H23" />
           <Event Name="RBClicked" Function="DressBoxFrame_RBtnClicked(24);" />
@@ -616,8 +616,8 @@
         </Window>
 
         <Window Type="TLBB_ActionButtonDress" Name="DressBox_Bank10_2">
-          <Property Name="UnifiedPosition" Value="{{0.000000,334.000000},{0.000000,1.000000}" />
-          <Property Name="UnifiedSize" Value="{{0.000000,35.000000},{0.000000,35.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,334.000000},{0.000000,1.000000}}" />
+          <Property Name="UnifiedSize" Value="{{0.000000,35.000000},{0.000000,35.000000}}" />
           <Property Name="DraggingEnabled" Value="True" />
           <Property Name="DragAcceptName" Value="H24" />
           <Event Name="RBClicked" Function="DressBoxFrame_RBtnClicked(25);" />
@@ -627,8 +627,8 @@
         </Window>
 
         <Window Type="TLBB_ActionButtonDress" Name="DressBox_Bank11_2">
-          <Property Name="UnifiedPosition" Value="{{0.000000,371.000000},{0.000000,1.000000}" />
-          <Property Name="UnifiedSize" Value="{{0.000000,35.000000},{0.000000,35.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,371.000000},{0.000000,1.000000}}" />
+          <Property Name="UnifiedSize" Value="{{0.000000,35.000000},{0.000000,35.000000}}" />
           <Property Name="DraggingEnabled" Value="True" />
           <Property Name="DragAcceptName" Value="H25" />
           <Event Name="RBClicked" Function="DressBoxFrame_RBtnClicked(26);" />
@@ -638,8 +638,8 @@
         </Window>
 
         <Window Type="TLBB_ActionButtonDress" Name="DressBox_Bank12_2">
-          <Property Name="UnifiedPosition" Value="{{0.000000,408.000000},{0.000000,1.000000}" />
-          <Property Name="UnifiedSize" Value="{{0.000000,35.000000},{0.000000,35.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,408.000000},{0.000000,1.000000}}" />
+          <Property Name="UnifiedSize" Value="{{0.000000,35.000000},{0.000000,35.000000}}" />
           <Property Name="DraggingEnabled" Value="True" />
           <Property Name="DragAcceptName" Value="H26" />
           <Event Name="RBClicked" Function="DressBoxFrame_RBtnClicked(27);" />
@@ -649,8 +649,8 @@
         </Window>
 
         <Window Type="TLBB_ActionButtonDress" Name="DressBox_Bank13_2">
-          <Property Name="UnifiedPosition" Value="{{0.000000,445.000000},{0.000000,1.000000}" />
-          <Property Name="UnifiedSize" Value="{{0.000000,35.000000},{0.000000,35.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,445.000000},{0.000000,1.000000}}" />
+          <Property Name="UnifiedSize" Value="{{0.000000,35.000000},{0.000000,35.000000}}" />
           <Property Name="DraggingEnabled" Value="True" />
           <Property Name="DragAcceptName" Value="H27" />
           <Event Name="RBClicked" Function="DressBoxFrame_RBtnClicked(28);" />
@@ -660,8 +660,8 @@
         </Window>
 
         <Window Type="TLBB_ActionButtonDress" Name="DressBox_Bank14_2">
-          <Property Name="UnifiedPosition" Value="{{0.000000,482.000000},{0.000000,1.000000}" />
-          <Property Name="UnifiedSize" Value="{{0.000000,35.000000},{0.000000,35.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,482.000000},{0.000000,1.000000}}" />
+          <Property Name="UnifiedSize" Value="{{0.000000,35.000000},{0.000000,35.000000}}" />
           <Property Name="DraggingEnabled" Value="True" />
           <Property Name="DragAcceptName" Value="H28" />
           <Event Name="RBClicked" Function="DressBoxFrame_RBtnClicked(29);" />
@@ -671,8 +671,8 @@
         </Window>
 
         <Window Type="TLBB_ActionButtonDress" Name="DressBox_Bank15_2">
-          <Property Name="UnifiedPosition" Value="{{0.000000,519.000000},{0.000000,1.000000}" />
-          <Property Name="UnifiedSize" Value="{{0.000000,35.000000},{0.000000,35.000000}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,519.000000},{0.000000,1.000000}}" />
+          <Property Name="UnifiedSize" Value="{{0.000000,35.000000},{0.000000,35.000000}}" />
           <Property Name="DraggingEnabled" Value="True" />
           <Property Name="DragAcceptName" Value="H29" />
           <Event Name="RBClicked" Function="DressBoxFrame_RBtnClicked(30);" />
@@ -683,7 +683,7 @@
       </Window>
 
       <Window Type="TLBB_ButtonNULL" Name="DressBox_DresssUp" >
-        <Property Name="UnifiedPosition" Value="{{0.5,-42.000000},{0.0,376.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.5,-42.000000},{0.0,376.000000}}" />
         <Property Name="UnifiedSize" Value="{{0.0, 84},{0, 27}}" />
         <Property Name="NormalImage" Value="set:DressBox image:DressUp_Normal" />
         <Property Name="HoverImage" Value="set:DressBox image:DressUp_Hover" />
@@ -705,8 +705,8 @@
         </Window>
       </Window>
       <Window Type="TLBB_ButtonNULL" Name="DressBox_Left">
-        <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,28.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.500000,-315.000000},{0.000000,305.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,28.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.500000,-315.000000},{0.000000,305.000000}}" />
         <Property Name="PushedImage" Value="set:Button13 image:Btn_Left_Pushed"/>
         <Property Name="NormalImage" Value="set:Button13 image:Btn_Left_Normal"/>
         <Property Name="HoverImage" Value="set:Button13 image:Btn_Left_Hover"/>
@@ -714,8 +714,8 @@
         <Event Name="Clicked" Function="DressBox_Left_Click();"/>
       </Window>
       <Window Type="TLBB_ButtonNULL" Name="DressBox_Right">
-        <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,28.000000}}"/>
-        <Property Name="UnifiedPosition" Value="{{0.500000,283.000000},{0.000000,305.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,28.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.500000,283.000000},{0.000000,305.000000}}" />
         <Property Name="PushedImage" Value="set:Button13 image:Btn_Right_Pushed"/>
         <Property Name="NormalImage" Value="set:Button13 image:Btn_Right_Normal"/>
         <Property Name="HoverImage" Value="set:Button13 image:Btn_Right_Hover"/>

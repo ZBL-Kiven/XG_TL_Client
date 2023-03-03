@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <GUILayout>
 	<Window Type="TLBB_MainFrame0" Name="VIP_Sshangdian_Frame">
-		<Property Name="UnifiedSize" Value="{{0.000000,604.000000},{0.000000,539.000000}}"/>
-		<Property Name="UnifiedPosition" Value="{{0.400000,-200.000000},{0.120000,0.000000}}"/>
+		<Property Name="UnifiedSize" Value="{{0.000000,604.000000},{0.000000,539.000000}}" />
+		<Property Name="UnifiedPosition" Value="{{0.400000,-200.000000},{0.120000,0.000000}}" />
 		<Event Name="Hidden" Function="VIP_Sshangdian_Close();"/>
 		<Window Type="TLBB_DragTitle" Name="VIP_Sshangdian_DragTitle">
 			<Property Name="AbsolutePosition" Value="x:40.000000 y:4.000000"/>
-			<Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}"/>
+			<Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}}"/>
 			<Property Name="DragTarget" Value="VIP_Sshangdian_Frame"/>
 			<Window Type="TLBB_SimpleText" Name="VIP_Sshangdian_Text">
 				<Property Name="RelativePosition" Value="x:0.000000 y:0.000000"/>
@@ -19,12 +19,12 @@
 			</Window>
 		</Window>
 		<Window Type="TLBB_ButtonHelp" Name="VIP_Sshangdian_Help">
-			<Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,7.000000}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,7.000000}}"/>
 			<Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000"/>
 			<Event Name="Clicked" Function="Helper:GotoHelper(&quot;*YuanbaoShop&quot;);"/>
 		</Window>
 		<Window Type="TLBB_ButtonClose" Name="VIP_Sshangdian_Close">
-			<Property Name="UnifiedPosition" Value="{{1.000000,-39.000000},{0.000000,7.000000}"/>
+			<Property Name="UnifiedPosition" Value="{{1.000000,-39.000000},{0.000000,7.000000}}"/>
 			<Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000"/>
 			<Event Name="Clicked" Function="VIP_Sshangdian_Close();"/>
 		</Window>
@@ -36,11 +36,11 @@
 		
 		
 		<Window Type="DefaultWindow" Name="VIP_Sshangdian_Background_Frame1">
-			<Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,-46.000000}}"/>
-			<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,29.000000}}"/>
+			<Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,-46.000000}}" />
+			<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,29.000000}}" />
 			<Window Type="DefaultWindow" Name="VIP_Sshangdian_CheckBox_Frame">
-				<Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,3.000000}"/>
-				<Property Name="UnifiedSize" Value="{{1.000000,-6.000000},{0.000000,24.000000}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,3.000000}}"/>
+				<Property Name="UnifiedSize" Value="{{1.000000,-6.000000},{0.000000,24.000000}}"/>
 
 				<!-- 注释掉
 				<Window Type="TLBB_ButtonFenYe2" Name="VIP_Sshangdian_Gongzi">
@@ -66,12 +66,12 @@
 			
 			<!-- 游戏商城VIP等级######################################################### -->
 			<Window Type="TLBB_Frame_Lace2" Name="VIP_Sshangdian_fbk">
-				<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,30.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,30.000000}}" />
 				<Property Name="AbsoluteSize" Value="w:593.000000 h:57.000000"/>
 					
 					<Window Type="TLBB_ButtonCheckForRMBShop" Name="VIP_Sshangdian_Button1">
-						<Property Name="UnifiedPosition" Value="{{0.050000,0.000000},{0.100000,0.000000}}"/>
-						<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,21.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.050000,0.000000},{0.100000,0.000000}}" />
+						<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,21.000000}}" />
 						<Property Name="CheckMode" Value="1"/>
 						<Property Name="Text" Value="热卖商店"/>
 						<Event Name="MouseLButtonDown" Function="VIP_Sshangdian_UpdateList(1);"/>
@@ -79,8 +79,8 @@
 					</Window>
 					<Window Type="TLBB_ButtonCheckForRMBShop" Name="VIP_Sshangdian_Button2">
 					<Property Name="Visible" Value="False"/>
-						<Property Name="UnifiedPosition" Value="{{0.23750,0.000000},{0.100000,0.000000}}"/>
-						<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,21.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.23750,0.000000},{0.100000,0.000000}}" />
+						<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,21.000000}}" />
 						<Property Name="CheckMode" Value="1"/>
 						<Property Name="Text" Value="宝石商店"/>
 						<Event Name="MouseLButtonDown" Function="VIP_Sshangdian_UpdateList(2);"/>
@@ -88,8 +88,8 @@
 					</Window>
 					<Window Type="TLBB_ButtonCheckForRMBShop" Name="VIP_Sshangdian_Button3">
 					<Property Name="Visible" Value="False"/>
-						<Property Name="UnifiedPosition" Value="{{0.42500,0.000000},{0.100000,0.000000}}"/>
-						<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,21.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.42500,0.000000},{0.100000,0.000000}}" />
+						<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,21.000000}}" />
 						<Property Name="CheckMode" Value="1"/>
 						<Property Name="Text" Value="vip3商店"/>
 						<Event Name="MouseLButtonDown" Function="VIP_Sshangdian_UpdateList(3);"/>
@@ -97,8 +97,8 @@
 					</Window>
 					<Window Type="TLBB_ButtonCheckForRMBShop" Name="VIP_Sshangdian_Button4">
 					<Property Name="Visible" Value="False"/>
-						<Property Name="UnifiedPosition" Value="{{0.61250,0.000000},{0.100000,0.000000}}"/>
-						<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,21.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.61250,0.000000},{0.100000,0.000000}}" />
+						<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,21.000000}}" />
 						<Property Name="CheckMode" Value="1"/>
 						<Property Name="Text" Value="vip4商店"/>
 						<Event Name="MouseLButtonDown" Function="VIP_Sshangdian_UpdateList(4);"/>
@@ -106,8 +106,8 @@
 					</Window>
 					<Window Type="TLBB_ButtonCheckForRMBShop" Name="VIP_Sshangdian_Button5">
 					<Property Name="Visible" Value="False"/>
-						<Property Name="UnifiedPosition" Value="{{0.800000,0.000000},{0.100000,0.000000}}"/>
-						<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,21.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.800000,0.000000},{0.100000,0.000000}}" />
+						<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,21.000000}}" />
 						<Property Name="CheckMode" Value="1"/>
 						<Property Name="Text" Value="vip5商店"/>
 						<Event Name="MouseLButtonDown" Function="VIP_Sshangdian_UpdateList(5);"/>
@@ -119,8 +119,8 @@
 					
 					<Window Type="TLBB_ButtonCheckForRMBShop" Name="VIP_Sshangdian_Button6">
 					<Property Name="Visible" Value="False"/>
-						<Property Name="UnifiedPosition" Value="{{0.050000,0.000000},{0.520000,0.000000}}"/>
-						<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,21.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.050000,0.000000},{0.520000,0.000000}}" />
+						<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,21.000000}}" />
 						<Property Name="CheckMode" Value="1"/>
 						<Property Name="Text" Value="vip6商店"/>
 						<Event Name="MouseLButtonDown" Function="VIP_Sshangdian_UpdateList(6);"/>
@@ -128,8 +128,8 @@
 					</Window>
 					<Window Type="TLBB_ButtonCheckForRMBShop" Name="VIP_Sshangdian_Button7">
 					<Property Name="Visible" Value="False"/>
-						<Property Name="UnifiedPosition" Value="{{0.23750,0.000000},{0.520000,0.000000}}"/>
-						<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,21.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.23750,0.000000},{0.520000,0.000000}}" />
+						<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,21.000000}}" />
 						<Property Name="CheckMode" Value="1"/>
 						<Property Name="Text" Value="vip7商店"/>
 						<Event Name="MouseLButtonDown" Function="VIP_Sshangdian_UpdateList(7);"/>
@@ -137,8 +137,8 @@
 					</Window>
 					<Window Type="TLBB_ButtonCheckForRMBShop" Name="VIP_Sshangdian_Button8">
 					<Property Name="Visible" Value="False"/>
-						<Property Name="UnifiedPosition" Value="{{0.42500,0.000000},{0.520000,0.000000}}"/>
-						<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,21.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.42500,0.000000},{0.520000,0.000000}}" />
+						<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,21.000000}}" />
 						<Property Name="CheckMode" Value="1"/>
 						<Property Name="Text" Value="vip8商店"/>
 						<Event Name="MouseLButtonDown" Function="VIP_Sshangdian_UpdateList(8);"/>
@@ -146,8 +146,8 @@
 					</Window>
 					<Window Type="TLBB_ButtonCheckForRMBShop" Name="VIP_Sshangdian_Button9">
 					<Property Name="Visible" Value="False"/>
-						<Property Name="UnifiedPosition" Value="{{0.61250,0.000000},{0.520000,0.000000}}"/>
-						<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,21.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.61250,0.000000},{0.520000,0.000000}}" />
+						<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,21.000000}}" />
 						<Property Name="CheckMode" Value="1"/>
 						<Property Name="Text" Value="vip9商店"/>
 						<Event Name="MouseLButtonDown" Function="VIP_Sshangdian_UpdateList(9);"/>
@@ -155,8 +155,8 @@
 					</Window>
 					<Window Type="TLBB_ButtonCheckForRMBShop" Name="VIP_Sshangdian_Button10">
 					<Property Name="Visible" Value="False"/>
-						<Property Name="UnifiedPosition" Value="{{0.800000,0.000000},{0.520000,0.000000}}"/>
-						<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,21.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.800000,0.000000},{0.520000,0.000000}}" />
+						<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,21.000000}}" />
 						<Property Name="CheckMode" Value="1"/>
 						<Property Name="Text" Value="vip绑定元宝店"/>
 						<Event Name="MouseLButtonDown" Function="VIP_Sshangdian_UpdateList(10);"/>
@@ -169,61 +169,61 @@
 			
 			<!-- 游戏商城VIP分类######################################################### -->
 			<Window Type="TLBB_Frame_Lace2" Name="VIP_Sshangdian_Bk2">
-				<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,88.000000}}"/>
-				<Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,377.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,88.000000}}" />
+				<Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,377.000000}}" />
 				
 				<Window Type="TLBB_ButtonCheckForRMBShop" Name="VIP_Sshangdian_Button01">
-					<Property Name="UnifiedPosition" Value="{{0.110000,0.000000},{0.000000,0.000000}}"/>
-					<Property Name="UnifiedSize" Value="{{0.000000,75.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.110000,0.000000},{0.000000,0.000000}}" />
+					<Property Name="UnifiedSize" Value="{{0.000000,75.000000},{0.000000,20.000000}}" />
 					<Property Name="CheckMode" Value="1"/>
 					<Property Name="Text" Value=""/>
 					<Event Name="MouseLButtonDown" Function="VIP_Sshangdian_UpdateShop(1);"/>
 				</Window>
 				<Window Type="TLBB_ButtonCheckForRMBShop" Name="VIP_Sshangdian_Button02">
-					<Property Name="UnifiedPosition" Value="{{0.110000,0.000000},{0.060000,0.000000}}"/>
-					<Property Name="UnifiedSize" Value="{{0.000000,75.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.110000,0.000000},{0.060000,0.000000}}" />
+					<Property Name="UnifiedSize" Value="{{0.000000,75.000000},{0.000000,20.000000}}" />
 					<Property Name="CheckMode" Value="1"/>
 					<Property Name="Text" Value=""/>
 					<Event Name="MouseLButtonDown" Function="VIP_Sshangdian_UpdateShop(2);"/>
 				</Window>
 				<Window Type="TLBB_ButtonCheckForRMBShop" Name="VIP_Sshangdian_Button03">
-					<Property Name="UnifiedPosition" Value="{{0.110000,0.000000},{0.120000,0.000000}}"/>
-					<Property Name="UnifiedSize" Value="{{0.000000,75.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.110000,0.000000},{0.120000,0.000000}}" />
+					<Property Name="UnifiedSize" Value="{{0.000000,75.000000},{0.000000,20.000000}}" />
 					<Property Name="CheckMode" Value="1"/>
 					<Property Name="Text" Value=""/>
 					<Event Name="MouseLButtonDown" Function="VIP_Sshangdian_UpdateShop(3);"/>
 				</Window>
 				<Window Type="TLBB_ButtonCheckForRMBShop" Name="VIP_Sshangdian_Button04">
-					<Property Name="UnifiedPosition" Value="{{0.110000,0.000000},{0.180000,0.000000}}"/>
-					<Property Name="UnifiedSize" Value="{{0.000000,75.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.110000,0.000000},{0.180000,0.000000}}" />
+					<Property Name="UnifiedSize" Value="{{0.000000,75.000000},{0.000000,20.000000}}" />
 					<Property Name="CheckMode" Value="1"/>
 					<Property Name="Text" Value=""/>
 					<Event Name="MouseLButtonDown" Function="VIP_Sshangdian_UpdateShop(4);"/>
 				</Window>
 				<Window Type="TLBB_ButtonCheckForRMBShop" Name="VIP_Sshangdian_Button05">
-					<Property Name="UnifiedPosition" Value="{{0.110000,0.000000},{0.240000,0.000000}}"/>
-					<Property Name="UnifiedSize" Value="{{0.000000,75.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.110000,0.000000},{0.240000,0.000000}}" />
+					<Property Name="UnifiedSize" Value="{{0.000000,75.000000},{0.000000,20.000000}}" />
 					<Property Name="CheckMode" Value="1"/>
 					<Property Name="Text" Value=""/>
 					<Event Name="MouseLButtonDown" Function="VIP_Sshangdian_UpdateShop(5);"/>
 				</Window>
 				<Window Type="TLBB_ButtonCheckForRMBShop" Name="VIP_Sshangdian_Button06">
-					<Property Name="UnifiedPosition" Value="{{0.110000,0.000000},{0.300000,0.000000}}"/>
-					<Property Name="UnifiedSize" Value="{{0.000000,75.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.110000,0.000000},{0.300000,0.000000}}" />
+					<Property Name="UnifiedSize" Value="{{0.000000,75.000000},{0.000000,20.000000}}" />
 					<Property Name="CheckMode" Value="1"/>
 					<Property Name="Text" Value=""/>
 					<Event Name="MouseLButtonDown" Function="VIP_Sshangdian_UpdateShop(6);"/>
 				</Window>
 				<Window Type="TLBB_ButtonCheckForRMBShop" Name="VIP_Sshangdian_Button07">
-					<Property Name="UnifiedPosition" Value="{{0.110000,0.000000},{0.360000,0.000000}}"/>
-					<Property Name="UnifiedSize" Value="{{0.000000,75.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.110000,0.000000},{0.360000,0.000000}}" />
+					<Property Name="UnifiedSize" Value="{{0.000000,75.000000},{0.000000,20.000000}}" />
 					<Property Name="CheckMode" Value="1"/>
 					<Property Name="Text" Value=""/>
 					<Event Name="MouseLButtonDown" Function="VIP_Sshangdian_UpdateShop(7);"/>
 				</Window>
 				<Window Type="TLBB_ButtonCheckForRMBShop" Name="VIP_Sshangdian_Button08">
-					<Property Name="UnifiedPosition" Value="{{0.110000,0.000000},{0.420000,0.000000}}"/>
-					<Property Name="UnifiedSize" Value="{{0.000000,75.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.110000,0.000000},{0.420000,0.000000}}" />
+					<Property Name="UnifiedSize" Value="{{0.000000,75.000000},{0.000000,20.000000}}" />
 					<Property Name="CheckMode" Value="1"/>
 					<Property Name="Text" Value=""/>
 					<Event Name="MouseLButtonDown" Function="VIP_Sshangdian_UpdateShop(8);"/>
@@ -234,8 +234,8 @@
 			<!-- 图片框######################################################### -->
 			
 			<Window Type="DefaultWindow" Name="VIP_Sshangdian_Action_Set">
-				<Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,88.000000}}"/>
-				<Property Name="UnifiedSize" Value="{{0.000000,499.000000},{0.000000,378.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,88.000000}}" />
+				<Property Name="UnifiedSize" Value="{{0.000000,499.000000},{0.000000,378.000000}}" />
 				<Window Type="TLBB_ActionButton" Name="VIP_Sshangdian_Item1">
 					<Property Name="AbsolutePosition" Value="x:0.000000 y:1.000000"/>
 					<Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000"/>
@@ -903,13 +903,13 @@
 			
 			
 			<Window Type="TLBB_Frame_Lace3" Name="VIP_Sshangdian_Repair_SaleBack">
-				<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-24.000000}}"/>
-				<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,25.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-24.000000}}" />
+				<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,25.000000}}" />
 			
 				<!-- 道具名-->
 				<Window Type="TLBB_Frame_Lace5" Name="VIP_Sshangdian_Blank">
-					<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.300000}}"/>
-					<Property Name="UnifiedSize" Value="{{1.000000,-84.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.300000}}" />
+					<Property Name="UnifiedSize" Value="{{1.000000,-84.000000},{0.000000,20.000000}}" />
 				</Window> 
 				<!-- 道具名 -->
 				<Window Type="TLBB_SimpleText" Name="VIP_Sshangdian_Frame_Texta1">
@@ -942,13 +942,13 @@
 				
 				
 				<Window Type="TLBB_ButtonCommon" Name="VIP_Sshangdian_OK">
-					<Property Name="UnifiedPosition" Value="{{1.000000,-82.000000},{0.000000,3.300000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-82.000000},{0.000000,3.300000}}" />
 					<Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000"/>
 					<Property Name="Text" Value="购买"/>
 					<Event Name="Clicked" Function="VIP_Sshangdian_OK_Clicked();"/>
 				</Window>
 				<Window Type="TLBB_ButtonCommon" Name="VIP_Sshangdian_Cancel">
-					<Property Name="UnifiedPosition" Value="{{1.000000,-42.000000},{0.000000,3.300000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-42.000000},{0.000000,3.300000}}" />
 					<Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000"/>
 					<Property Name="Text" Value="取消"/>
 					<Event Name="Clicked" Function="this:Hide();"/>
