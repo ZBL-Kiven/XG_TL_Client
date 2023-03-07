@@ -73,12 +73,12 @@ function CountrySelect_Click(index)
 end
 
 function CountrySelect_Changed()
-	local _, countryName = GetUserCountryName(1, 1)
-	local name = Player:GetName()
-	local hasSharpName = string.find(name, "#", 1)
-	if (hasSharpName or -1) > 0 then
-		name = Split(name, "#")[1]
-	end
-	Target:SendCharRnameMsg(name .. countryName)
+	--local _, countryName = GetUserCountryName(1, 1)
+	--local name = Player:GetName()
+	--local hasSharpName = string.find(name, "#", 1)
+	--if (hasSharpName or -1) > 0 then
+	--	name = Split(name, "#")[1]
+	--end
+	--Target:SendCharRnameMsg(name .. countryName)
 	CountrySelect_Cancel_Click()
 end

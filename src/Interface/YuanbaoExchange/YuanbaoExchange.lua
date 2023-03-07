@@ -68,9 +68,6 @@ end
 
 function YuanbaoExchange_OK_Clicked()
 	local str = YuanbaoExchange_Moral_Value : GetText();
-	
-	--AxTrace(0,0,"YuanbaoExchange_OK_Clicked 1 "..tostring(str));
-
 	if str == nil or str == "" then
 		YuanbaoExchange_Text3 : SetText("需要花费点数：0")
 		PushDebugMessage("请输入要兑换的元宝数额")

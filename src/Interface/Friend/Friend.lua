@@ -945,12 +945,12 @@ function Friend_Update_Recent(nIndex)
 
 end
 function Friend_OpenTitleList()
-	Clear_XSCRIPT()
-		Set_XSCRIPT_Function_Name( "OpenAgname" );
-		Set_XSCRIPT_ScriptID(992004);
-		Set_XSCRIPT_Parameter(0,0);
-		Set_XSCRIPT_ParamCount(1);	
-	Send_XSCRIPT()
+	-- Clear_XSCRIPT()
+	-- 	Set_XSCRIPT_Function_Name( "OpenAgname" );
+	-- 	Set_XSCRIPT_ScriptID(992004);
+	-- 	Set_XSCRIPT_Parameter(0,0);
+	-- 	Set_XSCRIPT_ParamCount(1);
+	-- Send_XSCRIPT()
 end
 
 --µã»÷ËÑË÷°´Å¥

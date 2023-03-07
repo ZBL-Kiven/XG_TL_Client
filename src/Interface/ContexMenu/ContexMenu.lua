@@ -913,8 +913,6 @@ function ContexMenu_OnSelectThePlayer()
 	if (nil ~= szName) then
 		Target:SelectThePlayer(szName);
 	end
-	
-	--PushDebugMessage("aaaa")
 	ContexMenuFrame_Close();
 end
 
@@ -1068,17 +1066,17 @@ function ContexMenu_OnInviteTeam()
 end
 
 function ContexMenu_PVP_Peace_Clicked()
-	Player:ChangePVPMode(0);
+	onPvpModeChange(0);
 	ContexMenuFrame_Close();
 end
 
 function ContexMenu_PVP_Country_Clicked()
-	Player:ChangePVPMode(5);
+	onPvpModeChange(5);
 	ContexMenuFrame_Close();
 end
 
 function ContexMenu_PVP_Moral_Clicked()
-	Player:ChangePVPMode(2);
+	onPvpModeChange(2);
 	ContexMenuFrame_Close();
 end
 

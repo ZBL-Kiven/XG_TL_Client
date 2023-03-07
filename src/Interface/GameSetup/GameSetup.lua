@@ -103,12 +103,9 @@ function GameSetup_Accept_Clicked()
 	n11 = GameSetup_Item11:GetCheck();                -- 关闭快捷栏提示  
 	n12 = GameSetup_Lock:GetCheck();                  -- 锁定快捷栏         
 	n13 = GameSetup_Scene:GetCheck();                 -- 快速切换场景       
-	n15 = GameSetup_ChatItem:GetCheck();              -- 快捷键查看链接     
-
+	n15 = GameSetup_ChatItem:GetCheck();              -- 快捷键查看链接
 	SystemSetup:SaveGameSetup ( n1,n2,n3,n4,n5,n6,n7,n8,n9,tonumber(f10),n11,n12,n13,n14,n15 );
-	
 	g_PreAlpha = f10;
-	
 	this:Hide();
 end
 

@@ -1701,17 +1701,17 @@ function MessageBox_Self_OK_Clicked_Ex()
 	if (g_FrameInfo == FrameInfoList.FREEFORALL) then
 		--同意开启个人混战
 		AxTrace(0, 0, "FrameInfoList.FREEFORALL")
-		Player:ChangePVPMode(1);
+		onPvpModeChange(1);
 	end
 	if (g_FrameInfo == FrameInfoList.FREEFORTEAM) then
 		--同意开启队伍混战
 		AxTrace(0, 0, "FrameInfoList.FREEFORTEAM")
-		Player:ChangePVPMode(3);
+		onPvpModeChange(3);
 	end
 	if (g_FrameInfo == FrameInfoList.FREEFORGUILD) then
 		--同意开启帮派混战
 		AxTrace(0, 0, "FrameInfoList.FREEFORGUILD")
-		Player:ChangePVPMode(4);
+		onPvpModeChange(4);
 	end
 	if (g_FrameInfo == FrameInfoList.MAKESUREPVPCHALLENGE) then
 		--确认宣战
@@ -1916,12 +1916,7 @@ function MessageBox_Self_OK_Clicked()
 	end
 	
 	if g_FrameInfo == FrameInfoList.CHAR_RANAME_CONFIRM then
-		local p, countryName = GetUserCountryName(1, 1)
-		if p == 0 then
-			PushDebugMessage("我不为流民服务，还是选好一个国家再来吧！")
-			return
-		end
-		Target:SendCharRnameMsg(g_arg_chrc .. countryName)
+		Target:SendCharRnameMsg(g_arg_chrc)
 		this:Hide()
 		return
 	end

@@ -137,8 +137,6 @@ function Quest_OnEvent(event)
 			Quest_ZhouHuoYue_Help(tonumber(arg1))
 		elseif tonumber(arg0) == 20211201 then
 			Quest_HaoRen_Help(arg1)
-		elseif tonumber(arg0) == 20211229 then
-			Quest_RongYuTitle_Help()
 		end
 	-- ÇÐ»»³¡¾°
 	elseif(event == "PLAYER_LEAVE_WORLD" and this:IsVisible()) then
@@ -166,21 +164,7 @@ function Quest_HaoRen_Help(nIndex)
 		QuestGreeting_Desc:AddTextElement( "#{XSLDZ_180521_238}" )
 	elseif nIndex == "3" then
 		QuestGreeting_Desc:AddTextElement( "#{XSLDZ_180521_250}" )
-	elseif nIndex == "4" then
-		QuestGreeting_Desc:AddTextElement( "#{XSLDZ_180521_172}" )
 	end
-
-	this:Show()
-end
-
-function Quest_RongYuTitle_Help()
-	Quest_Button_Continue:Disable();
-	Quest_Button_Accept:Disable();
-	Quest_Button_Refuse:Disable();
-	QuestGreeting_Desc:ClearAllElement();
-	Quest_Frame_Debug:SetText("");
-	Quest_Button_Accept:SetProperty( "Flash", "0" );
-	QuestGreeting_Desc:AddTextElement( "#{XSLDZ_180521_172}" )
 	this:Show()
 end
 

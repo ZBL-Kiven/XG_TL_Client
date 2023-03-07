@@ -25,7 +25,7 @@ end
 function Agname_Kong_OnEvent(event)
 	if (event == "UI_COMMAND" and tonumber(arg0) == 20170503) then
 		Agname_Kong_()
-		Agname_Kong_Clickea(1)
+		Agname_Kong_Load(1)
 	end
 	if (event == "PLAYER_LEAVE_WORLD") then
 		this:Hide();
@@ -146,10 +146,6 @@ function Agname_Kong_OnLoad()
 		{ str = "苗疆马贼", Num = Agname_Kong_goto14 },
 		{ str = "南海马贼", Num = Agname_Kong_goto15 },
 		{ str = "黄龙府马贼", Num = Agname_Kong_goto16 },
-		-- {str="#G圣兽坐骑",Num=Agname_Kong_goto13},
-		-- {str="#G圣兽时装",Num=Agname_Kong_goto14},
-		-- {str="#G圣兽耳朵",Num=Agname_Kong_goto15},
-		
 	}
 	
 	sceninfo4 = {
@@ -229,13 +225,6 @@ function Agname_Kong_List_Selected()
 	if nSelIndex == -1 then
 		return
 	end
-	if nSelIndex == 0 then
-		-- Agname_Kong_MeshW:SetFakeObject("");
-		-- CachedTarget : SetHorseModel(3000);
-		-- Agname_Kong_MeshW:SetFakeObject("Other_Horse");
-		-- Agname_Kong_Item1:SetText("#K#-27掉落物品：元宝票5万，玄机药尘，武魂材料，龙纹材料，真元魄，5级秘银，5级棉布#r#-23刷新时间：同步官方")
-	end
-	
 	if nSelIndex == 1 then
 		Agname_Kong_MeshW:SetFakeObject("");
 		CachedTarget:SetHorseModel(3000);
@@ -524,7 +513,7 @@ function Agname_Kong_Clicked(index)
 	Set_XSCRIPT_ParamCount(3);
 	Send_XSCRIPT()
 end
-function Agname_Kong_Clickea(index)
+function Agname_Kong_Load(index)
 	if index < 7 and index > 0 then
 		axiaocs = index
 		local nchuansong = 0

@@ -193,7 +193,6 @@ function ChatFrame_OnLoad()
 end
 
 function ChatFrame_OnEvent(event)
-	PushDebugMessage(" ChatFrame_OnEvent " .. event)
 	if (event == "PLAYER_ENTERING_WORLD") then
 		this:Show();
 		--设置历史消息记录保存的最大值
@@ -280,8 +279,6 @@ function ChatFrame_CreateFenping(strCfg)
 	local absCheckHeight = g_MoveCtl.check:GetProperty("AbsoluteHeight");
 	local absFenpingHeight = g_FenpingMinHeight;
 	local udimStr = g_MoveCtl.frame:GetProperty("UnifiedYPosition");
-	-- PushDebugMessage(absFrameHeight)
-	-- PushDebugMessage(g_FenpingMinHeight + absHistoryHeight)
 	if tonumber(absFrameHeight) < g_FenpingMinHeight + absHistoryHeight then
 		--分屏没有显示出来，如果显示出来说明是玩家 刚才选择“返回登录界面导致的”
 		--调整各个控件大小
@@ -480,15 +477,10 @@ function ChatFrame_TextAccepted(arg)
 end
 
 function ChatFrame_ChannelSelect(pos)
-	PushDebugMessage(" ChatFrame_ChannelSelect " .. pos)
 	ChatFrame_ChannelSelect_ChangePosition(pos);
 	Chat_Frame_ChannelFrame:Show();
-	
 	local nChannelNum = Talk:GetChannelNumber();
 	Chat_Frame_Channel:ClearAllChannel();
-	
-	--PushDebugMessage("ChannelNum:"..tostring(nChannelNum))
-	
 	local i = 1;
 	local FoundPrv = -1;
 	while i <= nChannelNum do
@@ -525,7 +517,6 @@ function ChatFrame_ChannelSelect(pos)
 end
 
 function ChatFrame_ChannelListSelect()
-	PushDebugMessage(" ChatFrame_ChannelListSelect ")
 	Chat_Frame_ChannelFrame:Hide();
 	local selCh = Chat_Frame_Channel:GetProperty("HoverChannel");
 	local prv = Chat_Frame_Channel:GetHoverChannelName();
@@ -533,7 +524,6 @@ function ChatFrame_ChannelListSelect()
 end
 
 function ChatFrame_ChannelListChange(selChannel, prvtxt)
-	PushDebugMessage(" ChatFrame_ChannelListChange " .. selChannel .. " " .. prvtxt)
 	if (CHANNEL_DATA[selChannel] == nil) then
 		return ;
 	end
@@ -545,7 +535,6 @@ function ChatFrame_ChannelListChange(selChannel, prvtxt)
 end
 
 function ChatFrame_ChangePrivateName(newname)
-	PushDebugMessage(" ChatFrame_ChangePrivateName " .. newname)
 	if (ChatFrame_IsNameMySelf(newname) > 0) then
 		return ;
 	end
@@ -553,7 +542,6 @@ function ChatFrame_ChangePrivateName(newname)
 end
 
 function ChatFrame_InsertChatContent(chatType, chatTalkerName, chatContent)
-	PushDebugMessage("11111")
 	-- if (CHANNEL_DATA[chatType] == nil) then
 	-- 	return
 	-- end
@@ -876,7 +864,6 @@ function ChatFrame_AskFrameWidthDown()
 end
 
 function ChatFrame_ChannelChanged(force)
-	PushDebugMessage(" ChatFrame_ChannelChanged " .. force)
 	if (force == "force_near") then
 		g_theCurrentChannel = "near"
 		Talk:HandleHistoryAction("listChange", g_theCurrentChannel, "");
@@ -899,7 +886,6 @@ function ChatFrame_ChannelChanged(force)
 end
 
 function Chat_ChangeTabIndex(nIndex)
-	PushDebugMessage(" Chat_ChangeTabIndex " .. nIndex)
 	Chat_Frame_History:RemoveAllChatString();
 	if nIndex < 0 then
 		nIndex = 0
@@ -983,7 +969,6 @@ function ChatFrame_ConfigTab(pos)
 end
 
 function ChatFrame_ConfigTabFinish(tabName, tabCfg, strFlg)
-	PushDebugMessage("ChatFrame_ConfigTabFinish " .. tabName .. " " .. strFlg);
 	if (tabName == nil or tabCfg == nil or strFlg == nil) then
 		return ;
 	end
@@ -1002,7 +987,6 @@ end
 
 -- 更改聊天页面Tab配置
 function ChatFrame_ChangeTabConfig(tabCfg)
-	PushDebugMessage("ChatFrame_ChangeTabConfig " .. tabCfg);
 	local k = 1;
 	for i = 2, table.getn(channel_config[channel_select]) do
 		if (string.byte(tabCfg, k) == 48) then
@@ -1040,8 +1024,6 @@ function Chat_DestoryTabIndex(nIndex)
 end
 
 function ChatFrame_HandleAccKey(op, msg)
-	PushDebugMessage("ChatFrame_HandleAccKey " .. op .. " " .. msg);
-	
 	if (nil == op) then
 		return ;
 	end
@@ -1107,7 +1089,6 @@ function ChatFrame_IsNameMySelf(strName)
 end
 
 function ChatFrame_LoadTabConfig(tabIdx, tabName, tabConfig)
-	PushDebugMessage("ChatFrame_LoadTabConfig " .. tabIdx .. " " .. tabName);
 	if (nil == tabIdx or nil == tabName or nil == tabConfig) then
 		return ;
 	end
@@ -1165,7 +1146,6 @@ function ChatFrame_SetTabMouseRButtonHollow(tabIdx, op)
 end
 
 function ChatFrame_HandleMenuBarAction(op, arg, new)
-	PushDebugMessage("ChatFrame_HandleMenuBarAction " .. op .. " " .. arg .. " " .. new);
 	if (op == "extendRegion") then
 		ChatFrame_extendRegionTest();
 	elseif (op == "createTab") then

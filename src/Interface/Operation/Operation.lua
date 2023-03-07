@@ -2,7 +2,7 @@
 -- OnLoad()
 --===============================================
 function Operation_PreLoad()
-
+	
 	this:RegisterEvent("TOGLE_SYSTEMFRAME");
 	this:RegisterEvent("TOGLE_GAMESETUP");
 	this:RegisterEvent("TOGLE_SOUNDSETUP");
@@ -13,8 +13,7 @@ function Operation_PreLoad()
 
 end
 function Operation_Ret2SelServer_Clicked()
-	 EnterQuitWait(1);
-	--AskRet2SelServer();
+	EnterQuitWait(1);
 end;
 function Operation_OnLoad()
 
@@ -24,37 +23,24 @@ end
 -- OnEvent()
 --===============================================
 function Operation_OnEvent(event)
-	
-	if ( event == "TOGLE_SYSTEMFRAME" ) then
-		if( this:IsVisible()  ) or this:IsVisible("QinHuangTime") == true then
-			Operation_Close();
-		else
-			if this:IsVisible("QinHuangTime") == true then
-				Operation_Close();
-			else
-				Operation_Open();
-			end
-		end
-	elseif(event == "TOGLE_GAMESETUP" ) then
-		
+	if (event == "TOGLE_SYSTEMFRAME") then
+		Operation_Open();
+	elseif (event == "TOGLE_GAMESETUP") then
 		Operation_Close();
-	elseif(event == "TOGLE_SOUNDSETUP" ) then
-		
+	elseif (event == "TOGLE_SOUNDSETUP") then
 		Operation_Close();
-	elseif(event == "TOGLE_VIEWSETUP" ) then
-		
+	elseif (event == "TOGLE_VIEWSETUP") then
 		Operation_Close();
-	elseif(event == "TOGLE_INPUTSETUP" ) then
-		
+	elseif (event == "TOGLE_INPUTSETUP") then
 		Operation_Close();
-	elseif(event == "RELIVE_SHOW") then
+	elseif (event == "RELIVE_SHOW") then
 		Operation_Help:Disable();
 		Operation_View:Disable();
 		Operation_Sound:Disable();
 		Operation_Geme:Disable();
 		Operation_2Menu:Disable();
 		Operation_Acce_Custom:Disable();
-	elseif(event == "RELIVE_HIDE") then
+	elseif (event == "RELIVE_HIDE") then
 		Operation_Help:Enable();
 		Operation_View:Enable();
 		Operation_Sound:Enable();
@@ -62,7 +48,6 @@ function Operation_OnEvent(event)
 		Operation_2Menu:Enable();
 		Operation_Acce_Custom:Enable();
 	end
-
 end
 
 
@@ -111,14 +96,14 @@ end
 -- 按键设置
 --===============================================
 function Operation_Help_Clicked()
---	Helper:GotoHelper("");
+	--	Helper:GotoHelper("");
 end
 
 --===============================================
 -- 退出游戏
 --===============================================
 function Operation_QuitGame_Clicked()
-	 EnterQuitWait(0);
+	EnterQuitWait(0);
 end
 
 --===============================================

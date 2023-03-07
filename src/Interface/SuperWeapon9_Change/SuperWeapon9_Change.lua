@@ -44,9 +44,6 @@ function SuperWeapon9_Change_OnEvent(event)
 			end
 			this:CareObject(g_ObjCared, 1, "SuperWeapon9_Change");
 			SuperWeapon9_Change_UpdataMoney()
-			--SuperWeapon9_Change_Choice:SetText("#{JXSQ_170810_160}")
-			--SuperWeapon9_Change_Choice:Disable()
-			--SuperWeapon9_Change_Choice_Pic:Show()
 			SuperWeapon9_Change_Fitting_FakeObject:SetFakeObject("")
 			this:Show()
 		end

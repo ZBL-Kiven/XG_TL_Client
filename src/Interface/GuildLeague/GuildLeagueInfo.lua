@@ -109,25 +109,20 @@ function GuildLeagueInfo_DoChange()
 	else
 		local txt=GuildLeagueInfo_Desc_Edit:GetText()
 		GuildLeagueInfo_Desc:SetText(txt)
-				
 		if txt==nil or txt=="" then
 			PushDebugMessage("您没有输入同盟宣言")
 			return
 		end
-		
 		local r=GuildLeague:ChangeDescription(txt)
 		if r==-1 then			
 			PushDebugMessage("#{TM_20080311_07}")	
 			return
 		end
-		
 		GuildLeagueInfo_Desc_Edit:Hide()
 		GuildLeagueInfo_Desc:Show()
-		
 		GuildLeagueInfo_Desc_Edit:Disable()
 		GuildLeagueInfo_Change:Disable()
 		GuildLeague:RequestInfo()
-		
 		GuildLeagueInfo_Change:SetText("#{TM_20080318_10}")
 	end
 end
@@ -138,7 +133,6 @@ function GuildLeagueInfo_Member_List_OnMouseRClick()
 		PushDebugMessage("请先选择一个同盟成员！")
 		return
 	end
-	
 	GuildLeague:ShowMemberMenu(GuildLeague:GetMemberID(index))	
 end
 
@@ -148,19 +142,8 @@ function GuildLeagueInfo_Fire()
 		PushDebugMessage("请先选择一个同盟成员！")
 		return
 	end
-	
 	GuildLeague:FireGuild( GuildLeague:GetID(), GuildLeague:GetMemberID(index) )	
 end
 
 function GuildLeagueInfo_OnHidden()
-	
-end
-
-function GuildLeagueInfo_ZhanMeng()
-	Clear_XSCRIPT()
-		Set_XSCRIPT_Function_Name( "zhanmeng" );
-		Set_XSCRIPT_ScriptID(000002);
-		Set_XSCRIPT_Parameter(0,1);
-		Set_XSCRIPT_ParamCount(1);
-	Send_XSCRIPT()	
 end

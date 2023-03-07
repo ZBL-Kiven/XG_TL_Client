@@ -276,7 +276,6 @@ function SuperWeaponUpNEW_Clear(cleanaction)
 	g_NeedMoney = -1
 	g_SuperIsWashed =0
 	g_Accept_Clicked_Num =0
-	g_LongwenPropertyReset_Confirm = -1
 	SuperWeaponUpNEW_OK:Disable()
 
 	--SuperWeaponUpNEW_BeforeAttrFirst:SetText("")

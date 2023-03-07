@@ -165,18 +165,7 @@ function MenPaiWar_TopList_RecordInfo( )
 	end	
 end
 
-
 function MenPaiWar_TopList_HaveRecord( index )
-	-- local nRank, name, usetime, state = DataPool:lua_GetJSRankingListInfo(g_nType, index);
-	-- if nRank == nil then
-		-- return
-	-- end
-			
-	-- local ItemBar = MenPaiWar_TopList:AddChild( "MenPaiWar_TopList_Item")
-	-- if ItemBar == nil then
-		-- return 
-	-- end
-
 	local teamBKButton = MenPaiWar_TopList_ItemBK[index]
 	teamBKButton:Show()
 	local teamBKImage = MenPaiWar_TopList_ItemBKImage[index]

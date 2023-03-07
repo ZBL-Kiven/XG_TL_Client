@@ -100,7 +100,7 @@ function ErjimimaJiesuo_OK_Click()
 			ShowSystemTipInfo( "#{UITEXT_PWTOOSHORT}" )   --("密码不能少于4个字符！");
 			return;
 		end
-		Player:ChangePVPModeWithPassword( g_PKModeWant, strPassword )
+		onPvpModeChange( g_PKModeWant, strPassword )
 	        -- 隐藏窗口.
 		ErjimimaJiesuo_Close();
 		return

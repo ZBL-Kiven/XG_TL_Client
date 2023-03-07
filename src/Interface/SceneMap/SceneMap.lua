@@ -101,6 +101,24 @@ function _0331(CMA, CA, CF, Bv, Ca)
 	Send_XSCRIPT()
 end
 
+function onPvpModeChange(mod, passWord)
+	if passWord ~= nil then
+		Player:ChangePVPModeWithPassword(mod, passWord)
+	else
+		Player:ChangePVPMode(mod)
+	end
+	SetTimer("PKMode", "checkUserPkMode()", 3000)
+end
+
+function checkUserPkMode()
+	Clear_XSCRIPT()
+	Set_XSCRIPT_Function_Name("OpenPvpChallenge");
+	Set_XSCRIPT_ScriptID(2302251);
+	Set_XSCRIPT_ParamCount(0);
+	Send_XSCRIPT()
+	KillTimer("checkUserPkMode()")
+end
+
 function tintUserMenPai(menPaiId)
 	local strName = "";
 	local nTalent = DataPool:GetPlayerMission_DataRound(480)
@@ -198,26 +216,17 @@ function tintUserMenPai(menPaiId)
 	return strName
 end
 
-function GetUserCountryName(colorParse, symbolParse)
+function GetUserCountryName()
 	local countryName = DataPool:GetPlayerMission_DataRound(213)
-	local name, color;
+	local name
 	if countryName == 10001 then
-		color = "#c7f074f"
-		name = "ËÎ#W"
+		name = "ËÎ"
 	elseif countryName == 10002 then
-		color = "#c984009"
-		name = "ÁÉ#W"
+		name = "ÁÉ"
 	elseif countryName == 10003 then
-		color = "#c124b5a"
-		name = "Ñà#W"
+		name = "Ñà"
 	else
 		return 0, "Á÷Ãñ"
-	end
-	if symbolParse == 1 then
-		name = "¡¤" .. name
-	end
-	if colorParse == 1 then
-		return 1, color .. name
 	end
 	return 1, name
 end

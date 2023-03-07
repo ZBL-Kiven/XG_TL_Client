@@ -465,7 +465,6 @@ function MiniMap_NetStatus_MouseLButtonDown()
 end
 
 function MiniMap_AccountSafeFunc()
-	--MiniMap_AccountSafeBack:Hide();
 	MiniMap_AccountSafeFlash:Hide();
 	OpenWordrefence("AccountSafe");
 end
@@ -474,53 +473,28 @@ function MiniMap_Fangchengmi_Click()
 	OpenShimingrenzhengDlg();
 end
 
-function MiniMap_PetSoulAwards_Clicked()
-	if (IsWindowShow("PetSoul_FengHunLu")) then
-		CloseWindow("PetSoul_FengHunLu", true)
-		return
-	end
-	
-	--	MiniMap_FeelFeedBack200_tips:Hide()
-	--	MiniMap_FeelFeedBack200_Animate:Hide();
-	Clear_XSCRIPT()
-	Set_XSCRIPT_Function_Name("AskOpenMainUI");
-	Set_XSCRIPT_ScriptID(791010);                        -- 脚本编号
-	Set_XSCRIPT_ParamCount(0);                        -- 参数个数
-	Send_XSCRIPT()
-end
-
 function MiniMap_PlayerAsk_Bn_Clicked()
 	local menpai = Player:GetData("MEMPAI");
 	local strName = "";
-	
 	-- 得到门派名称.
 	if (0 == menpai) then
 		strName = "少林";
-	
 	elseif (1 == menpai) then
 		strName = "明教";
-	
 	elseif (2 == menpai) then
 		strName = "丐帮";
-	
 	elseif (3 == menpai) then
 		strName = "武当";
-	
 	elseif (4 == menpai) then
 		strName = "峨嵋";
-	
 	elseif (5 == menpai) then
 		strName = "星宿";
-	
 	elseif (6 == menpai) then
 		strName = "天龙";
-	
 	elseif (7 == menpai) then
 		strName = "天山";
-	
 	elseif (8 == menpai) then
 		strName = "逍遥";
-	
 	elseif (9 == menpai) then
 		strName = "无门派";
 	elseif (10 == menpai) then
@@ -529,14 +503,12 @@ function MiniMap_PlayerAsk_Bn_Clicked()
 	
 	local urlStr = "cn=" .. Player:GetData("ACCOUNTNAME")
 	urlStr = urlStr .. "&v=" .. Player:GetAccMD5String()
-	
 	local idWorld = Variable:GetVariable("Login_World")
 	if idWorld == nil then
 		urlStr = urlStr .. "&serverid="
 	else
 		urlStr = urlStr .. "&serverid=" .. idWorld
 	end
-	
 	urlStr = urlStr .. "&level=" .. Player:GetData("LEVEL")
 	urlStr = urlStr .. "&roleName=" .. Player:GetName()
 	urlStr = urlStr .. "&clan=" .. strName
