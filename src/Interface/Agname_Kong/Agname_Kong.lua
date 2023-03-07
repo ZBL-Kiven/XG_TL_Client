@@ -513,6 +513,7 @@ function Agname_Kong_Clicked(index)
 	Set_XSCRIPT_ParamCount(3);
 	Send_XSCRIPT()
 end
+
 function Agname_Kong_Load(index)
 	if index < 7 and index > 0 then
 		axiaocs = index
