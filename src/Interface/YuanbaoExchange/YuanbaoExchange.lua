@@ -60,10 +60,8 @@ end
 
 function YuanbaoExchange_Update()
 	Exchange_Rate = Get_XParam_INT(1)/1000
-	
 	YuanbaoExchange_Text1 : SetText("#cff0000#b剩余点数正在查询中，请稍候……")
 	YuanbaoExchange_Text3 : SetText("需要花费点数：0")
-	
 end
 
 function YuanbaoExchange_OK_Clicked()

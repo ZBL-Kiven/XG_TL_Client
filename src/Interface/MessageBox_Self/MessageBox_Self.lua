@@ -33,15 +33,9 @@ local FrameInfoList = {
 	--这个24一定不能改，改了出错的！！！！！Chris
 	SERVER_CONTROL = 24, --Server控制弹出的提示框
 	DELETE_FRIEND_MESSAGE = 25, --确定删除好友的提示框
-	
 	GEM_COMBINED_CONFIRM = 88, -- 确认宝石合成
 	ENCHASE_CONFIRM = 99, -- 确认镶嵌
 	ENCHASE_FOUR_CONFIRM = 100, -- add:lby20080527确认4镶嵌
-	
-	--CARVE_CONFIRM				= 102,	-- 确认雕琢
-	
-	
-	
 	PS_RENAME_MESSAGE = 116, --更改玩家商店店名
 	PS_READ_MESSAGE = 117, --更改玩家商店介绍（广告）
 	PS_ADD_BASE_MONEY = 118, --充入本金
@@ -1568,9 +1562,7 @@ function MessageBox_Self_UpdateFrame()
 		Server_Script_ID = Get_XParam_INT(0);
 		Server_Return_1 = Get_XParam_INT(1);
 		Server_Return_2 = Get_XParam_INT(2);
-		
 		MessageBox_Self_Text:SetText(Get_XParam_STR(1));
-	
 	elseif (g_FrameInfo == FrameInfoList.PS_ADD_STALL) then
 		MessageBox_Self_DragTitle:SetText("#gFF0FA0扩张柜台");
 		local nGoldCoin;

@@ -25,12 +25,9 @@ function CountrySelect_OnEvent(event)
 		objCared = DataPool:GetNPCIDByServerID(xx);
 		this:CareObject(objCared, 1, "Country")
 		this:Show()
-	elseif
-	event == "UI_COMMAND" and tonumber(arg0) == 919000 then
-		CountrySelect_Changed()
 	elseif (event == "OBJECT_CARED_EVENT") then
 		if (tonumber(arg0) ~= objCared) then
-			return ;
+			return
 		end
 		--如果和NPC的距离大于一定距离或者被删除，自动关闭
 		if (arg1 == "distance" and tonumber(arg2) > MAX_OBJ_DISTANCE or arg1 == "destroy") then
@@ -50,6 +47,7 @@ function CountrySelect_Confirm_Click()
 	Set_XSCRIPT_Parameter(0, g_Country_selected);
 	Set_XSCRIPT_ParamCount(1);
 	Send_XSCRIPT()
+	CountrySelect_Cancel_Click()
 end
 
 function CountrySelect_Cancel_Click()
@@ -70,15 +68,4 @@ function CountrySelect_Click(index)
 		end
 	end
 	g_Country_selected = 10000 + index
-end
-
-function CountrySelect_Changed()
-	--local _, countryName = GetUserCountryName(1, 1)
-	--local name = Player:GetName()
-	--local hasSharpName = string.find(name, "#", 1)
-	--if (hasSharpName or -1) > 0 then
-	--	name = Split(name, "#")[1]
-	--end
-	--Target:SendCharRnameMsg(name .. countryName)
-	CountrySelect_Cancel_Click()
 end

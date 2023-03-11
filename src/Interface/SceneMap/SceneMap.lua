@@ -1,8 +1,10 @@
+local cachedPassWord = ""
+
 function SceneMap_PreLoad()
 	this:RegisterEvent("SCENE_TRANSED");
 	this:RegisterEvent("TOGLE_SCENE_MAP");
 	this:RegisterEvent("UPDATE_MAP");
-
+	this:RegisterEvent("UI_COMMAND");
 end
 
 function SceneMap_OnLoad()
@@ -23,8 +25,12 @@ function SceneMap_GotoDirectly()
 end
 
 function SceneMap_OnEvent(event)
-	
-	if (event == "TOGLE_SCENE_MAP") then
+	if event == "UI_COMMAND" and tonumber(arg0) == 23022511 then
+		local isOk = Get_XParam_INT(0)
+		local target = Get_XParam_INT(1)
+		local old = Get_XParam_INT(2)
+		changeUserPkMode(isOk, target, old)
+	elseif (event == "TOGLE_SCENE_MAP") then
 		if (arg1 == "2") then
 			if (this:IsVisible()) then
 				SceneMap_Close();
@@ -103,20 +109,40 @@ end
 
 function onPvpModeChange(mod, passWord)
 	if passWord ~= nil then
-		Player:ChangePVPModeWithPassword(mod, passWord)
-	else
-		Player:ChangePVPMode(mod)
+		cachedPassWord = passWord
 	end
-	SetTimer("PKMode", "checkUserPkMode()", 3000)
-end
-
-function checkUserPkMode()
 	Clear_XSCRIPT()
 	Set_XSCRIPT_Function_Name("OpenPvpChallenge");
 	Set_XSCRIPT_ScriptID(2302251);
+	Set_XSCRIPT_Parameter(0, mod)
+	Set_XSCRIPT_ParamCount(1);
+	Send_XSCRIPT()
+end
+
+function changeUserPkMode(isOK, mod, old)
+	if isOK == 1 then
+		if cachedPassWord ~= nil then
+			Player:ChangePVPModeWithPassword(mod, cachedPassWord)
+		else
+			Player:ChangePVPMode(mod)
+		end
+		if (mod == 0 or mod == 2) and (old ~= 0 and old ~= 2) then
+			SetTimer("SceneMap", "onPvpModeChangedBySafeTime()", 6002000)
+			return
+		end
+	else
+		PushDebugMessage("国家PK模式未生效，请谨慎行事！")
+		PushDebugMessage("你还没有选择国家，不能开启国家模式！")
+	end
+end
+
+function onPvpModeChangedBySafeTime()
+	Clear_XSCRIPT()
+	Set_XSCRIPT_Function_Name("onPvpModeChangedBySafeTime");
+	Set_XSCRIPT_ScriptID(2302251);
 	Set_XSCRIPT_ParamCount(0);
 	Send_XSCRIPT()
-	KillTimer("checkUserPkMode()")
+	KillTimer("onPvpModeChangedBySafeTime()")
 end
 
 function tintUserMenPai(menPaiId)
