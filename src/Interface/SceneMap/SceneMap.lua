@@ -127,7 +127,7 @@ function changeUserPkMode(isOK, mod, old)
 			Player:ChangePVPMode(mod)
 		end
 		if (mod == 0 or mod == 2) and (old ~= 0 and old ~= 2) then
-			SetTimer("SceneMap", "onPvpModeChangedBySafeTime()", 6002000)
+			SetTimer("SceneMap", "onPvpModeChangedBySafeTime()", 602000)
 			return
 		end
 	else

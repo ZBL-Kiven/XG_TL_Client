@@ -43,7 +43,7 @@ function CountrySelect_Confirm_Click()
 	end
 	Clear_XSCRIPT()
 	Set_XSCRIPT_Function_Name("updateUserCountry");
-	Set_XSCRIPT_ScriptID(888890);
+	Set_XSCRIPT_ScriptID(2302251);
 	Set_XSCRIPT_Parameter(0, g_Country_selected);
 	Set_XSCRIPT_ParamCount(1);
 	Send_XSCRIPT()

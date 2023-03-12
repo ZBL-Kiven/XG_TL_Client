@@ -1,13 +1,10 @@
 local nTheTabIndex = 0;
 local PACKAGE_BUTTONS_NUM = 45;
 local PACKAGE_BUTTONS = {};
-local PACKAGE_BUTTON_BACK = {};
-local PACKAGE_EXTBAG_NUM = 10;
 local PACKAGE_EXTBAG = {};
 local PACKAGE_TAB_TEXT = {};
 local Lock_Flag = 0;
 local g_MaxLine = 0;
-local g_PackageWidth = 183;
 local g_PackageHeight = {};
 local PACKAGE_NUM_PER_LINE = 8;
 Bank_AllEndIndex = 0
@@ -241,7 +238,6 @@ end
 function Package_UpdateBagLine(nMaxLine)
 	
 	g_MaxLine = nMaxLine;
-	local i
 	for i = 1, 10 do
 		if (i <= g_MaxLine) then
 			PACKAGE_EXTBAG[i]:Show();
@@ -256,7 +252,6 @@ function Package_UpdateBagLine(nMaxLine)
 	--设置每一个控件的位置
 end
 function Packet_OnUpdateShow()
-	local i = 1;
 	local szPacketName = "";
 	local CurrNum = 20;
 	local BaseNum = 20;
@@ -373,10 +368,23 @@ function Packet_ItemBtnClicked(nLine, nRow)
 	elseif (nTheTabIndex == 2) then
 		nIndex2 = nIndex2 + 90
 	end
+	local txt
+	if IsWindowShow("Bank") then
+		txt = "true"
+	else
+		txt = "false"
+	end
+	PushDebugMessage(txt .. "  " .. Bank_AllEndIndex)
 	if Bank_AllEndIndex > 60 and IsWindowShow("Bank") then
 		PushEvent("UI_COMMAND", 201107281, tonumber(nIndex2 - 1))
 		return
 	end
+	if IsWindowShow("BigBank") then
+		txt = "true"
+	else
+		txt = "false"
+	end
+	PushDebugMessage("big " .. txt .. "  " .. BigBank_AllEndIndex)
 	if BigBank_AllEndIndex > 60 and IsWindowShow("BigBank") then
 		PushEvent("UI_COMMAND", 201107281, tonumber(nIndex2 - 1))
 		return
