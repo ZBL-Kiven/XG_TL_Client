@@ -17,26 +17,7 @@ local AGNAME_BUTTTONS = {}
 --称号属性处理
 local nAttrTable = { [0] = 0, [1] = 0, [6] = 0, [7] = 0, [9] = 0, [10] = 0, [12] = 0, [13] = 0, [15] = 0, [16] = 0, [19] = 0, [20] = 0, [26] = 0, [27] = 0, [44] = 0, [46] = 0, [48] = 0, [54] = 0, [55] = 0, [56] = 0, [57] = 0, }
 --Board 参考表
--- 0		64	68	74	78		10	68	74	78
 -- 1	nihongleft	64	68	74	78	nihongright	10	68	74	78
--- 2	wuqizuo	64	68	74	78	wuqiyou	10	68	74	78
--- 3	SongLiao1	40	42	36	40		10	68	74	78
--- 4	SongLiao2	45	40	45	44	SongLiao2	0	40	44	44
--- 5	SongLiao3	57	45	60	50	SongLiao3	0	45	60	50
--- 6	ZLHeroMeetingLevel1_Left	41	31	45	24	ZLHeroMeetingLevel1_Right	0	31	45	24
--- 7	ZLHeroMeetingLevel2_Left	57	36	59	33	ZLHeroMeetingLevel2_Right	0	36	59	33
--- 8	ZLHeroMeetingLevel3_Left	66	45	70	46	ZLHeroMeetingLevel3_Right	0	45	70	46
--- 9	ZLHeroMeetingLevel4_Left	89	45	90	50	ZLHeroMeetingLevel4_Right	0	45	90	50
--- 10	JiaRenYing_L	44	40	48	42	JiaRenYing_R	0	40	48	42
--- 11	WanFangZhu_L	90	50	94	56	WanFangZhu_R	0	50	94	56
--- 12	XingMouGu_L	57	45	68	44	XingMouGu_R	0	45	68	44
--- 13	QXHBL_L	63	45	60	48	QXHBL_R	0	45	60	48
--- 14	QXHBM_L	64	55	74	60	QXHBM_R	10	55	74	60
--- 15	QXHBH_L	64	56	74	60	QXHBH_R	10	56	74	60
--- 16	TLNS_GuardKnight_L	54	38	60	33	TLNS_GuardKnight_R	4	38	60	33
--- 17	GHJH_L	60	42	64	46	GHJH_R	2	42	64	46
--- 18	ZXZD_L	46	39	54	50	ZXZD_R	6	39	54	50
--- 19	ZhuJian_L	66	36	76	36	ZhuJian_R	4	36	76	36
 
 local g_Agname_Image = {
 	[1] = "set:AgnameLayout image:AgnameLayout_Inuse", --使用中
@@ -104,27 +85,7 @@ function Agname_OnEvent(event)
 			-- Send_XSCRIPT()
 			return
 		end
-		
-		-- Agname_ListContent:RemoveAllItem()	
-		-- for i = 1,100 do
-		-- Agname_ListContent:AddNewItem("称号名称",0,i)
-		-- end
-		-- 
-		-- Agname_UpdateFrame();
-		-- 
 	elseif (event == "UI_COMMAND" and tonumber(arg0) == 202111131) then
-		------------------------------------------------测试数据
-		-- local nTest = ""
-		-- for i = 1,table.getn(g_Agname_ServerData) do
-		-- nTest = nTest..g_Agname_ServerData[i].."\n"
-		-- end
-		-- local file = io.open("./Log.txt", "wb")
-		-- if file ~= nil and nTest ~= ""then
-		-- file:write(nTest);
-		-- file:close();
-		-- end
-		-----------------------------------------
-		
 		g_Agname_Time = 1
 		nEffectTab = {}
 		nAttrTable = { [0] = 0, [1] = 0, [6] = 0, [7] = 0, [9] = 0, [10] = 0, [12] = 0, [13] = 0, [15] = 0, [16] = 0, [19] = 0, [20] = 0, [26] = 0, [27] = 0, [44] = 0, [46] = 0, [48] = 0, [54] = 0, [55] = 0, [56] = 0, [57] = 0, }
@@ -639,12 +600,6 @@ function Agname_ShowTitle(nIndex)
 	local setvalidstr = function(str)
 		Agname_Info2_Text2:SetText(str)
 	end
-	
-	-- local bHave,bflag,strname,newdesc = Player:HaveTitle(g_Agname_MapIndex[nIndex][1])
-	-- if bHave == 1 and bflag == 2 then
-	-- name = strname
-	-- desc = newdesc
-	-- end
 	Agname_TitlteInfoOnChoice(0)
 	g_Agname_curselect = g_Agname_MapIndex[nIndex][2]
 	
@@ -664,14 +619,6 @@ function Agname_ShowTitle(nIndex)
 			name = Guild:GetMyGuildInfo("Name") .. find_name
 		end
 	end
-	--师傅特写
-	-- if titleindex == 13 then
-	-- local masterLvl = Player : GetData("MASTERLEVEL");
-	-- if masterLvl == level then
-	-- g_Agname_ServerData[i] = 1
-	-- end
-	-- end	
-	--婚烟状态特写
 	local nWife = Lua_GetMarryName()
 	if nWife ~= "" then
 		if titleindex == 2 then
@@ -786,91 +733,12 @@ function Agname_ShowTitle(nIndex)
 		if validtime < 0 then
 			setvalidstr("#{XCHXT_180428_72}")
 		else
-			-- if bHave == 1 then
-			-- local disableDayTime = Player:GetTitleDisableTimeByTitleID(g_Agname_MapIndex[nIndex][1])
-			-- if disableDayTime == 0 then
-			-- disableDayTime =  1
-			-- end
-			-- setvalidstr(string.format("剩余%s天",math.floor( disableDayTime ) ))
-			-- else
 			local nTemp = math.floor(validtime / 24)
 			if nTemp <= 0 then
 				nTemp = 1
 			end
 			setvalidstr(string.format("%s天", nTemp))
-			-- end
-		
 		end
-		-- if(property and string.len(property) > 0 ) then
-		-- Agname_Info2_Text6:SetText("#{XCHXT_180428_37}")
-		-- Agname_Info2_Text5_1:SetText(property)
-		-- else
-		-- Agname_Info2_Text6:SetText("#{XCHXT_180428_37}")
-		-- Agname_Info2_Text5_1:SetText("#{XCHXT_180322_25}")
-		-- end
-		-- else
-		
-		-- if validtype > 0 then
-		-- if validtype == 1 then
-		-- if bHave == 1 then
-		-- local disableDayTime = Player:GetTitleDisableTimeByTitleID(g_Agname_MapIndex[nIndex][1])
-		-- if disableDayTime == 0 then
-		-- disableDayTime =  1
-		-- end
-		-- setvalidstr(ScriptGlobal_Format("#{XCHXT_180428_73}",math.floor( disableDayTime ) ))
-		-- else
-		
-		-- local nTemp= math.floor( validtime/24 )
-		-- if nTemp <= 0 then
-		-- nTemp = 1
-		-- end
-		-- setvalidstr( ScriptGlobal_Format("#{XCHXT_180428_74}",nTemp))
-		-- end
-		
-		-- elseif validtype == 2 then
-		-- if bHave == 1 then
-		-- local DifDay = DataPool:GetDifDayWithServerTime(validtime,2)
-		-- if DifDay <= 0 then
-		-- DifDay = 1
-		-- end
-		-- setvalidstr(ScriptGlobal_Format("#{XCHXT_180428_73}", DifDay))
-		-- else
-		-- local year = math.floor(validtime/10000)
-		-- local month = math.floor(math.mod(validtime,10000)/100)
-		-- local day = math.mod(validtime,100)
-		-- local str = ScriptGlobal_Format("#{XCHXT_180428_34}",year,month,day)
-		-- setvalidstr(str)
-		-- end
-		-- elseif validtype == 3 then
-		-- if bHave == 1 then
-		-- local nTrueTime = Player:GetTitleDisableTimeByTitleID(g_Agname_MapIndex[nIndex][1])
-		-- if nTrueTime == 0 then
-		-- nTrueTime = 1
-		-- end
-		-- setvalidstr( ScriptGlobal_Format("#{XCHXT_180428_73}", math.floor( nTrueTime )))
-		
-		-- else
-		-- local str = ScriptGlobal_Format("#{XCHXT_180428_35}",g_Agname_Time[validtime])
-		-- setvalidstr(str)
-		-- end
-		-- elseif validtype == 4 then
-		
-		-- if bHave == 1 then
-		-- local nTrueTime = Player:GetTitleDisableTimeByTitleID(g_Agname_MapIndex[nIndex][1])
-		-- if nTrueTime == 0 then
-		-- nTrueTime = 1
-		-- end
-		-- setvalidstr( ScriptGlobal_Format("#{XCHXT_180428_73}", math.floor( nTrueTime )))
-		-- else
-		-- local str = ScriptGlobal_Format("#{XCHXT_180428_82}",g_Agname_Time[validtime])
-		-- setvalidstr(str)
-		-- end
-		
-		-- end
-		-- else
-		-- setvalidstr("#{XCHXT_180428_72}")
-		-- end
-		
 		if (property and string.len(property) > 0) then
 			Agname_Info2_Text6:SetText("#{XCHXT_180428_37}")
 			Agname_Info2_Text5_1:SetText("#cFFCC00" .. property)
@@ -906,20 +774,10 @@ function Agname_PlayerTitle()
 	local setvalidstr = function(str)
 		Agname_Info2_Text2:SetText(str)
 	end
-	
-	-- local bHave,bflag,strname,newdesc = Player:HaveTitle(g_Agname_MapIndex[nIndex][1])
-	-- if bHave == 1 and bflag == 2 then
-	-- name = strname
-	-- desc = newdesc
-	-- end
 	Agname_TitlteInfoOnChoice(0)
-	-- g_Agname_curselect = g_Agname_MapIndex[nIndex][2]
-	
-	
 	local banimate = 0
 	local animateindex = 0
 	local boardindex = 0
-	-- if bnew == 1 then
 	banimate, animateindex, boardindex = GetTitleAnimateInfo(curid)
 	-- end
 	if string.find(name, "$N") ~= nil then
@@ -932,14 +790,6 @@ function Agname_PlayerTitle()
 			name = Guild:GetMyGuildInfo("Name") .. find_name
 		end
 	end
-	--师傅特写
-	-- if titleindex == 13 then
-	-- local masterLvl = Player : GetData("MASTERLEVEL");
-	-- if masterLvl == level then
-	-- g_Agname_ServerData[i] = 1
-	-- end
-	-- end	
-	--婚烟状态特写
 	local nWife = Lua_GetMarryName()
 	if nWife ~= "" then
 		if titleindex == 2 then
@@ -1049,95 +899,15 @@ function Agname_PlayerTitle()
 		
 		Agname_Info2_Text3:SetText(desc)
 		Agname_Info2_Text7_1:SetText(desc2)
-		-- if(bnew == 0) then
 		if validtime < 0 then
 			setvalidstr("#{XCHXT_180428_72}")
 		else
-			-- if bHave == 1 then
-			-- local disableDayTime = Player:GetTitleDisableTimeByTitleID(g_Agname_MapIndex[nIndex][1])
-			-- if disableDayTime == 0 then
-			-- disableDayTime =  1
-			-- end
-			-- setvalidstr(string.format("剩余%s天",math.floor( disableDayTime ) ))
-			-- else
 			local nTemp = math.floor(validtime / 24)
 			if nTemp <= 0 then
 				nTemp = 1
 			end
 			setvalidstr(string.format("%s天", nTemp))
-			-- end
-		
 		end
-		-- if(property and string.len(property) > 0 ) then
-		-- Agname_Info2_Text6:SetText("#{XCHXT_180428_37}")
-		-- Agname_Info2_Text5_1:SetText(property)
-		-- else
-		-- Agname_Info2_Text6:SetText("#{XCHXT_180428_37}")
-		-- Agname_Info2_Text5_1:SetText("#{XCHXT_180322_25}")
-		-- end
-		-- else
-		
-		-- if validtype > 0 then
-		-- if validtype == 1 then
-		-- if bHave == 1 then
-		-- local disableDayTime = Player:GetTitleDisableTimeByTitleID(g_Agname_MapIndex[nIndex][1])
-		-- if disableDayTime == 0 then
-		-- disableDayTime =  1
-		-- end
-		-- setvalidstr(ScriptGlobal_Format("#{XCHXT_180428_73}",math.floor( disableDayTime ) ))
-		-- else
-		
-		-- local nTemp= math.floor( validtime/24 )
-		-- if nTemp <= 0 then
-		-- nTemp = 1
-		-- end
-		-- setvalidstr( ScriptGlobal_Format("#{XCHXT_180428_74}",nTemp))
-		-- end
-		
-		-- elseif validtype == 2 then
-		-- if bHave == 1 then
-		-- local DifDay = DataPool:GetDifDayWithServerTime(validtime,2)
-		-- if DifDay <= 0 then
-		-- DifDay = 1
-		-- end
-		-- setvalidstr(ScriptGlobal_Format("#{XCHXT_180428_73}", DifDay))
-		-- else
-		-- local year = math.floor(validtime/10000)
-		-- local month = math.floor(math.mod(validtime,10000)/100)
-		-- local day = math.mod(validtime,100)
-		-- local str = ScriptGlobal_Format("#{XCHXT_180428_34}",year,month,day)
-		-- setvalidstr(str)
-		-- end
-		-- elseif validtype == 3 then
-		-- if bHave == 1 then
-		-- local nTrueTime = Player:GetTitleDisableTimeByTitleID(g_Agname_MapIndex[nIndex][1])
-		-- if nTrueTime == 0 then
-		-- nTrueTime = 1
-		-- end
-		-- setvalidstr( ScriptGlobal_Format("#{XCHXT_180428_73}", math.floor( nTrueTime )))
-		
-		-- else
-		-- local str = ScriptGlobal_Format("#{XCHXT_180428_35}",g_Agname_Time[validtime])
-		-- setvalidstr(str)
-		-- end
-		-- elseif validtype == 4 then
-		
-		-- if bHave == 1 then
-		-- local nTrueTime = Player:GetTitleDisableTimeByTitleID(g_Agname_MapIndex[nIndex][1])
-		-- if nTrueTime == 0 then
-		-- nTrueTime = 1
-		-- end
-		-- setvalidstr( ScriptGlobal_Format("#{XCHXT_180428_73}", math.floor( nTrueTime )))
-		-- else
-		-- local str = ScriptGlobal_Format("#{XCHXT_180428_82}",g_Agname_Time[validtime])
-		-- setvalidstr(str)
-		-- end
-		
-		-- end
-		-- else
-		-- setvalidstr("#{XCHXT_180428_72}")
-		-- end
-		
 		if (property and string.len(property) > 0) then
 			Agname_Info2_Text6:SetText("#{XCHXT_180428_37}")
 			Agname_Info2_Text5_1:SetText("#cFFCC00" .. property)
@@ -1156,9 +926,7 @@ function Agname_MouseEnter(idx)
 end
 
 function Agname_TitlteInfoOnChoice(switch)
-	
 	if switch == 0 then
-		
 		Agname_AllAgname:Show()
 		Agname_SelectAgname:Hide()
 		Agname_Info1_Title:Hide()
@@ -1171,8 +939,6 @@ function Agname_TitlteInfoOnChoice(switch)
 		Agname_Info1_Title:Show()
 		Agname_Shuxing:SetCheck(1)
 	end
-
-
 end
 
 function Agname_ShowAllAttr()
@@ -1184,8 +950,6 @@ function Agname_ShowAllAttr()
 		Agname_Info1_Title:SetText("#{XCHXT_180428_76}")
 		Agname_Info1_MiniTitle:SetText("#{XCHXT_180124_11}")
 	end
-
-
 end
 
 --显示隐藏称号
@@ -1210,24 +974,12 @@ function Agname_SHOW_HIDE_Clicked()
 end
 
 function Agname_SHOW_HIDE_Format()
-	-- local str = GetCurTitleID()
-	-- if str and string.len(str) > 0 then
-	-- local Show_Hide = Lua_Get_IsShow_Hide_Flag()
-	-- if Show_Hide == 1 then
-	-- Agname_Button_Show:SetText("#{XCHXT_180124_12}") --显示称号
-	-- else
 	Agname_Button_Show:SetText("#{XCHXT_180124_17}") --隐藏称号
-	-- end
-	-- else
-	--PushDebugMessage("#{XCHXT_180124_15}")
-	-- end
 end
 
 function Agname_ListContent_CoinAItem_Click(index)
-	
 	Agname_TitlteInfoOnChoice(0)
 	Agname_ShowTitle(index)
-	-- g_Agname_curselect = index
 end
 
 function Agname_ChangeBtn_Clicked()
@@ -1235,22 +987,13 @@ function Agname_ChangeBtn_Clicked()
 		PushDebugMessage("#{XCHXT_180428_60}")
 		return
 	end
-	-- Clear_XSCRIPT()
-	-- 	Set_XSCRIPT_Function_Name( "AgnameChange" );
-	-- 	Set_XSCRIPT_ScriptID(992004);
-	-- 	Set_XSCRIPT_Parameter(0,g_Agname_curselect);
-	-- 	Set_XSCRIPT_Parameter(1,g_Agname_PageIndex);
-	-- 	Set_XSCRIPT_ParamCount(2);
-	-- Send_XSCRIPT()
 	this:Hide()
 end
 
 function Agname_HideTitle_Clicked()
-	
 	Agname_Currently:SetText("当前称号:");
 	Player:SetNullAgname();
 end
-
 
 --================================================
 -- 恢复界面的默认相对位置
