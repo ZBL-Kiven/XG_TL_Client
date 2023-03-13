@@ -236,7 +236,7 @@ function NewExterior_PetSoul_Show()
 	NewExterior_PetSoul_UpdateObj()	
 	
 	--新增部分内容
-	local curPossessionPetIndex = DataPool:GetPlayerMission_DataRound(510)
+	local curPossessionPetIndex = DataPool:GetPlayerMission_DataRound(390)
 	if curPossessionPetIndex > 0 then
 		
 		NewExterior_PetSoul_SuperListNow:Show()
@@ -492,7 +492,7 @@ function LuaFnGetExteriorPossInfo(nIndex)
 end
 
 function NewExterior_PetSoul_UpdateList()
-	local curPossessionPetIndex = DataPool:GetPlayerMission_DataRound(510)
+	local curPossessionPetIndex = DataPool:GetPlayerMission_DataRound(390)
 	local curPossData = DataPool:GetPlayerMission_DataRound(387)
 	for i = 1,15 do
 		PetPossJianList[i].ActionEqu:Hide()

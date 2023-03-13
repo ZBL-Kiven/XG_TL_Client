@@ -114,7 +114,7 @@ function PetList_Choose_Click()
 	if( g_nSelect_Index == -1 )  then
 		return;
 	end
-    local petftA=DataPool:GetPlayerMission_DataRound(510)
+    local petftA=DataPool:GetPlayerMission_DataRound(390)
 	strName,strName2,sex = Pet : GetID(g_nSelect_Index);
 	local petftB = tonumber(""..strName2.."", 16)
 	if petftA == petftB then

@@ -582,7 +582,7 @@ function Pet_Update()
 			g_NowPetGUID = tonumber(nGUID, 16)
 			if(Pet : GetIsFighting(i-1)) then
 				Pet_List : AddItem(szPetName, i-1,"FF0A9605");
-			elseif (g_NowPetGUID == DataPool:GetPlayerMission_DataRound(510)) then
+			elseif (g_NowPetGUID == DataPool:GetPlayerMission_DataRound(390)) then
 				Pet_List : AddItem(szPetName, i-1,"FcFF00FF");
 			else
 				Pet_List : AddItem(szPetName, i-1);
@@ -643,7 +643,7 @@ function Pet_Update()
 end
 
 function Pet_Show_Appoint(nIndex)
-    local Heti_Guid = DataPool:GetPlayerMission_DataRound(510)
+    local Heti_Guid = DataPool:GetPlayerMission_DataRound(390)
 	local i;
     local nPetEquipAttrData = {0,0,0,0,0,0,0,0,0,0,0,0,0,0} 
 	if (Pet:GetIsFighting(nIndex)) then
@@ -1279,7 +1279,7 @@ end
 
 function Pet_Fight_Clicked()
 	local nGUID_1,nGUID_2 = Pet : GetID(PETNUM);
-	if  tonumber(nGUID_2, 16) == DataPool:GetPlayerMission_DataRound(510) then
+	if  tonumber(nGUID_2, 16) == DataPool:GetPlayerMission_DataRound(390) then
 		PushDebugMessage("#H该珍兽所佩戴的兽魂处于融魂状态，无法出战。")
 		return
 	end
@@ -1324,7 +1324,7 @@ function Pet_Free_Clicked()
 		return;
 	end
 	local _,nGUID = Pet : GetID(PETNUM);
-	if  tonumber(nGUID, 16) == DataPool:GetPlayerMission_DataRound(510) then
+	if  tonumber(nGUID, 16) == DataPool:GetPlayerMission_DataRound(390) then
 		PushDebugMessage("#H该珍兽所佩戴的兽魂处于融魂状态，无法放生。")
 		return
 	end	
